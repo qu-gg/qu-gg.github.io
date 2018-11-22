@@ -1,0 +1,10 @@
+.center {
+    margin: auto;
+    text-align: center;
+    padding-top: 30%;   
+}
+
+.header{
+    text-decoration-line: underline;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
