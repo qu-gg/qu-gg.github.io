@@ -1,5 +1,63 @@
 /* ===== BREAK!! PAGE STYLES - Blog Layout ===== */
 
+/* ============================================
+   Floating Table of Contents
+   ============================================ */
+.toc-nav {
+    position: fixed;
+    right: calc(50% + 470px);
+    top: 20%;
+    transform: translateY(-50%);
+    max-width: 160px;
+    z-index: 100;
+}
+
+.toc-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.35rem;
+}
+
+.toc-list li:last-child {
+    margin-bottom: 0;
+}
+
+.toc-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.2s;
+    display: block;
+    padding: 0.15rem 0;
+    opacity: 0.8;
+}
+
+.toc-list a:hover {
+    color: #6b3fa0;
+    opacity: 1;
+}
+
+/* Hide TOC on smaller screens */
+@media (max-width: 1200px) {
+    .toc-nav {
+        display: none;
+    }
+}
+
 /* Page Layout */
 .break-page {
     max-width: 900px;
@@ -12,6 +70,7 @@
    ============================================ */
 .break-intro {
     margin-bottom: 3rem;
+    scroll-margin-top: 100px;
 }
 
 .break-info-card {
@@ -103,7 +162,7 @@
     display: block;
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: var(--text-secondary);;
+    color: var(--text-secondary);
     font-style: italic;
 }
 
@@ -114,6 +173,7 @@
     margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid var(--border);
+    scroll-margin-top: 100px;
 }
 
 .helical-header {
@@ -149,6 +209,27 @@
     color: var(--text-primary);
     line-height: 1.7;
     margin-bottom: 1rem;
+}
+
+.helical-cover-container {
+    flex-shrink: 0;
+    max-width: 350px;
+}
+
+.helical-cover {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.helical-cover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(107, 63, 160, 0.3);
 }
 
 .helical-cover-embed {
@@ -398,6 +479,7 @@
    ============================================ */
 .resources-section {
     margin-bottom: 2rem;
+    scroll-margin-top: 100px;
 }
 
 .resources-grid {
