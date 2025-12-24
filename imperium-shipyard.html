@@ -12,6 +12,11 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Quagg Studios</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="break.html">BREAK!! Homebrew</a></li>
@@ -193,5 +198,12 @@ python shipbuilder.py</code></pre>
     <footer class="footer">
         <p>© 2025 Quagg Studios · Traveller is © Mongoose Publishing</p>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
