@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Landing - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Dusty Desert Survival Theme Palette */
+            --dust-deep: #3A2A1A;
+            --sand-brown: #7D6B5D;
+            --burnt-ochre: #B8860B;
+            --dusty-gold: #C9A961;
+            --rust-red: #A0522D;
+            --bleached-sand: #F5E6D3;
+            --pearl-white: #FEFEFE;
+            --sage-olive: #6B7B59;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--bleached-sand);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--bleached-sand);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--burnt-ochre), var(--sand-brown), var(--rust-red), var(--sand-brown), var(--burnt-ochre));
+        }
+
+        .page.art-page {
+            max-height: none;
+            min-height: auto;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: linear-gradient(135deg, var(--dust-deep) 0%, var(--sand-brown) 50%, var(--burnt-ochre) 100%);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--rust-red);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--rust-red);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                3px 3px 0 var(--rust-red),
+                -1px -1px 0 var(--dust-deep),
+                1px -1px 0 var(--dust-deep),
+                -1px 1px 0 var(--dust-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--dusty-gold);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--sand-brown);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(201, 169, 97, 0.08) 100%);
+            border: 1px solid var(--burnt-ochre);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--sand-brown) 0%, var(--burnt-ochre) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--burnt-ochre);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--sand-brown);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--dust-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: linear-gradient(180deg, rgba(201, 169, 97, 0.1) 0%, rgba(125, 107, 93, 0.1) 100%);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--burnt-ochre);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--rust-red);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--sand-brown);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--sage-olive);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: linear-gradient(180deg, var(--dust-deep) 0%, var(--sand-brown) 100%);
+            border-color: var(--dust-deep);
+        }
+
+        .story-steps h2 {
+            background: linear-gradient(135deg, var(--dusty-gold) 0%, var(--burnt-ochre) 100%);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--dusty-gold);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: linear-gradient(135deg, var(--dusty-gold) 0%, var(--burnt-ochre) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: linear-gradient(135deg, var(--sage-olive) 0%, var(--burnt-ochre) 100%);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--burnt-ochre);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(58, 42, 26, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.15) 0%, rgba(125, 107, 93, 0.1) 100%);
+            border-left: 3px solid var(--rust-red);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--dust-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--rust-red);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 12px;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--sand-brown);
+        }
+
+        .sources-box a {
+            color: var(--burnt-ochre);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--burnt-ochre);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: linear-gradient(135deg, var(--dust-deep) 0%, var(--sand-brown) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--rust-red);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--sand-brown) 0%, var(--burnt-ochre) 100%);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--sage-olive);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(160, 82, 45, 0.08) 100%);
+            border: 1px solid var(--rust-red);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--rust-red) 0%, #8B4513 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--burnt-ochre);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--sand-brown);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--dusty-gold);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(58, 42, 26, 0.08) 100%);
+            border: 1px solid var(--dust-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--dust-deep) 0%, var(--sand-brown) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(160, 82, 45, 0.08) 100%);
+            border-radius: 4px;
+            border: 1px solid var(--rust-red);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--rust-red) 0%, #8B4513 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--rust-red);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--dust-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--sand-brown);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--dust-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--rust-red), var(--dusty-gold), var(--rust-red));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--dusty-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--burnt-ochre);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--sand-brown);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 10pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--dusty-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Crash Landing!</h1>
+            <div class="subtitle">Death Valley • No-Folk Land • Blazing Garden</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">☠</span> Dangerous</div>
+            <div class="theme-item"><span class="emoji">⚔</span> Defense</div>
+            <div class="theme-item"><span class="emoji">☀</span> Sand Dunes</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Starting the Adventure -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Being a globe-wide research organization, the Helical Archive has a decent fleet of Cloud Breaker skyships available to researchers and adventurers. During particularly busy times, however, they outsource to the Verdin Skyfarers Corporation for transportation. The party find themselves on one such flight, actively flying over the inhospitable Death Valley of No-Folk Land on their way to a research contract up north. A comfortable ride turns turbulent when they crash in the desert.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"You stand on the open deck of a Cloud Breaker, taking in the majestic views of the No-Folk Land barrens below. From this height, the cracks in the dry, mineral-rich earth create a fractal pattern, like an irregular mosaic. Suddenly, the ground begins racing towards you at speed, and you realize the ship is nose-diving out of the sky. Instincts kicking in, you clutch the railings and brace for impact."</p>
+                    <p style="margin-top: 6px;">There is little time for the party to react, so they cannot take actions that would slow or stop the skyship's descent. Thankfully, the party land on shredded remains of the skyship's sails held aloft by the ship's shattered Floatstone. Each party member, as well as Captain Zero, immediately take a Light Injury. Wrought, the ship's first mate, is near death. Add to the jeopardy of the wait for rescue by requiring regular Grit Checks for heat exhaustion - inducing a roll on the Burn Injury Table. Each Grit Check requires a Ration or has a Snag.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner" style="padding-bottom: 12px;">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">PILOT-"Zero"</span>
+                            <span class="character-details">— Bio-Mechanoid, Female, ??? (Custrel)</span>
+                        </div>
+                        <div class="character-desc">Recently re-awoken from a Manathene facility in Stahlfeld, Zero discovered an affinity for piloting and has recently been accepted as a captain for the Verdin Fleet.</div>
+                        <div class="character-quote">"Zero's flight suit has been shredded by the impact of the crash, but her uncracked neon eye remains alert."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Wrought Mutton</span>
+                            <span class="character-details">— Dwarf, Male, 85 (Scholar)</span>
+                        </div>
+                        <div class="character-desc">A very craggly and cracked Dwarf, Wrought has an unbeatable, calm attitude. He handles the ship maintenance and navigation.</div>
+                        <div class="character-quote">"Wrought lies in the wreckage, limbs trapped under rubble. His mossy beard is starting to wither in the searing heat."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="4) Crash Landing/Pasted image 20251223010943.jpg" alt="Desert Crash Site">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, describe the impact of the skyship and the aftermath of the crash, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Brace for Impact</span>
+                        <ul>
+                            <li>As they stir, the party see Captain Zero looking for Wrought, who is buried under heavy debris.</li>
+                            <li>Wrought is Near Death [Source, pg. 260], dying in 2 Turns without help. He can only be partially healed to a Wounded state, as toxic fumes have damaged his lungs.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Search for Supplies</span>
+                        <ul>
+                            <li>Zero asks the party to help her find the Transponder that she can use to signal for help. She also suggests they collect any useful survival gear.</li>
+                            <li>If the party make contact with the Verdin Corporation relay, they are told a rescue ship won't be able to attend until the next morning, due to extreme winds.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Head for Shelter</span>
+                        <ul>
+                            <li>Zero says it is unwise to stay at the crash site, due to the weather and the threat of colossal beasts or warlord clans.</li>
+                            <li>The party find some ancient ruins to shelter under, but during the night, a <em>Railgun Shrimp</em> burrows up out of the sand and attacks. The party may become Fatigued from lost sleep.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Exhausting Morning</span>
+                        <ul>
+                            <li>The next morning, the party travel back to the crash site, but are caught in a sandstorm caused by two raging <em>Ghost Peppers</em> and three <em>Dust Mephits</em> who attack the party.</li>
+                            <li>Once the spirits are defeated, the rescue ship appears. The party must signal to it, before being picked up and saved.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources -->
+        <div class="content-box sources-box" style="margin-top: 6px;">
+            <h2>Sources & Adversaries</h2>
+            <div class="content-box-inner">
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Crash Landing</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br>Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+            <ul>
+                <li><strong>Scholar/Custrel:</strong> Source, pg. 185</li>
+                <li><strong>Dust Mephit:</strong> Steam Mephit by Wretched Jarrah (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Ghost Peppers/Obsidian Hexalith:</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Railgun Shrimp/Solar Orb Sentinel:</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Monstrich:</strong> BREAK!! <a href="https://breakrpg.blogspot.com/2025/09/freebie-monstrich-adversary.html" target="_blank">Blog</a></li>
+                <li><strong>Glide Mantle:</strong> BREAK!! <a href="https://breakrpg.blogspot.com/2025/01/freebie-akenian-relics-gear.html" target="_blank">Blog</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="page-credit">Made by Quagg</div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Crash Site</h3>
+                    <p class="loc-desc">"Scattered around you are smoldering chunks of wooden decking, hull and rigging. The terrifying sounds of a malfunctioning Spell Engine whirs near you. The debris has kicked up plumes of dust that clog your throat."</p>
+                    <p>Among the debris, the party can easily find three surviving rations and two Extreme Heat Outfits. The others burned during the engine explosion. <br><br>The emergency Transponder Zero is looking for has launched from the ship and is partially buried in the sand.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Akenian Ruins</h3>
+                    <p class="loc-desc">"The crash site rests next to an ancient, sandblasted road. Up its path lie some ancient ruins of a long-past outpost, sheltered from the sun and winds."</p>
+                    <p>These ruins belong to Akenia, and holds inscribings about the Invincible Bright. Mostly picked clean, however a long-buried and tattered <em>Glide Mantle</em> can be found near the inscribings. <br><br>Unfortunately, this is the home lair of a Railgun Shrimp. Unfortunately for the party, this is the home lair of a Railgun Shrimp. During their rest, it will attempt to Ambush the party, targeting those in metal.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Desert Surroundings</h3>
+                    <p class="loc-desc">"The dry air makes your eyes sting and you quickly become as parched as the hard ground beneath your tired feet."</p>
+                    <p>With no night to fall and beaming light filtering in the ruin's ceiling, sleep is difficult and painful. <br><br>During the morning sandstorm, visibility is severely reduced and the party stumble directly into the path of the raging Ghost Peppers and the swirling Dust Mephits.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Thanks to the colossal creatures that feed and roam freely in the region, No-Folk Land is regarded as an inhospitable place. Only the crazed attempt life here.</li>
+                    <li>Verdin Skyfarer Corporation is only one of two companies offering crossings over No-Folk Land; the other being Nyanko Aeronomics.</li>
+                    <li>Zero's partner, T34 or "Tea", worries about the dangers of flying and has asked her to get a new job. Zero suspects she is literally built for it.</li>
+                    <li>Investigating the wreckage reveals that a Cinder Mephit in the engine caused it to overheat.</li>
+                    <li>The Spell Engine powering the ship has exploded, and is damaged far beyond repair.</li>
+                    <li>If the party can't call for help, Zero deduces a ship will be sent when they don't arrive on time - though that could be multiple days.</li>
+                    <li>Wrought was standing near the Spell Engine when the skyship crashed, so he inhaled a lot of toxic Mana.</li>
+                    <li>The ship's first-aid kit was damaged on pact, destroying the precious Basic Potions and Sun Balms stored within.</li>
+                    <li>Zero deduces a ship will be sent when they don't arrive on time, though that could be multiple days.</li>
+                    <li>Vichar Verdin is the head of the Verdin Skyfarer Corporation and has made a killing on contracting out.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="4) Crash Landing/Pasted image 20251223011408.jpg" alt="Desert Landscape">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>After the rescue, Vichar Verdin himself will meet the party at their destination, offering them a compensation of <strong>500C</strong> and a first-class flight to anywhere in the Outer World.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Social Bonds</h3>
+                        <p>If they survive, Zero and Wrought thank the party profusely for their aid. Consider granting Social Bonds with either or both characters.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank 5-6 Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> You could change the Railgun Shrimp to a Monstrich and only have 1 Ghost Pepper.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> You could change the Railgun Shrimp into a Solar Orb Sentinel or Obsidian Hexalith.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="4) Crash Landing/Pasted image 20251222235508.png" alt="Crash Site Map">
+                <div class="art-caption">"Crash Site Map" <br> Art by <a href="https://www.patreon.com/posts/airships-crash-56655399" target="_blank">Ori the Cartographer</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="4) Crash Landing/Pasted image 20251223003004.png" alt="Desert Inspiration" style="object-position: 55% center;">
+                <div class="art-caption">"Desert Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/89OeR" target="_blank">Tim Mcburnie</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="4) Crash Landing/Pasted image 20251223010910.jpg" alt="Skyship Inspiration" style="object-position: 75% center;">
+                <div class="art-caption">"Desert Inspiration" <br> Journey by <a href="thatgamecompany" target="_blank">thatgamecompany</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="4) Crash Landing/Pasted image 20251223010943.jpg" alt="Desert Crash" style="object-position: 20% center;">
+                <div class="art-caption">"No-Folk Land Inspiration" <br> Art by <a href="https://mattrhodes.artstation.com/projects/bqXvv?album_id=77988" target="_blank">Matt Rhodes (Tellurion)</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="4) Crash Landing/Pasted image 20251223011408.jpg" alt="Desert Landscape">
+                <div class="art-caption">"Akenian Ruins" <br> Art by <a href="https://www.delilahdirk.com/dd3/" target="_blank">Delilah Dirk</a></div>
+            </div>
+            <div class="art-item">
+                <img src="4) Crash Landing/Pasted image 20251223011430.jpg" alt="Desert Ruins">
+                <div class="art-caption">"No-Folk Land Inspiration" <br> Art by <a href="https://www.amazon.com/Land-Called-Tarot-Gael-Bertrand/dp/1534300260" target="_blank">The Land Called Tarot</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

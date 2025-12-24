@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helical Expeditions</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* BREAK!! Inspired Palette - Light Version */
+            --break-pink: #e83a7a;
+            --break-magenta: #c42d6b;
+            --break-light-blue: #5bc0de;
+            --break-sky: #87ceeb;
+            --break-cyan: #00bcd4;
+            --break-purple: #6b3fa0;
+            --break-gold: #f5c542;
+            --break-cream: #faf6ed;
+            --break-light: #fff8f0;
+            --break-dark: #2a1f3d;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            background: #888;
+            color: var(--break-dark);
+        }
+
+        .page {
+            width: 8.5in;
+            height: 11in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.4in;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(91, 192, 222, 0.2) 0%, transparent 35%),
+                radial-gradient(circle at 100% 0%, rgba(232, 58, 122, 0.15) 0%, transparent 35%),
+                radial-gradient(circle at 100% 100%, rgba(91, 192, 222, 0.2) 0%, transparent 35%),
+                radial-gradient(circle at 0% 100%, rgba(232, 58, 122, 0.15) 0%, transparent 35%),
+                var(--break-cream);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative corner accents */
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0.2in;
+            left: 0.2in;
+            width: 1in;
+            height: 1in;
+            border-left: 4px solid var(--break-pink);
+            border-top: 4px solid var(--break-pink);
+            opacity: 0.8;
+        }
+
+        .page::after {
+            content: '';
+            position: absolute;
+            bottom: 0.2in;
+            right: 0.2in;
+            width: 1in;
+            height: 1in;
+            border-right: 4px solid var(--break-light-blue);
+            border-bottom: 4px solid var(--break-light-blue);
+            opacity: 0.8;
+        }
+
+        /* Title Section */
+        .title-section {
+            width: 100%;
+            margin-top: 2.25in;
+            margin-bottom: -1.35in;
+            margin-left: 10%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .title-line-1 {
+            font-size: 48pt;
+            font-weight: bold;
+            color: var(--break-pink);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            line-height: 1;
+            margin-left: 1.5%;
+            margin-bottom: 0;
+            /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); */
+        }
+
+        .title-line-2 {
+            font-size: 48pt;
+            font-weight: bold;
+            color: var(--break-light-blue);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            line-height: 1;
+            margin-left: 1.90in;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+            /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); */
+        }
+
+        /* Image Section */
+        .image-section {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            max-height: 6in;
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Tagline */
+        .tagline {
+            position: absolute;
+            bottom: 0.3in;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tagline-text {
+            font-family: 'Trebuchet MS', 'Arial', sans-serif;
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--break-dark);
+            letter-spacing: 1.5px;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: -0.1in;
+        }
+
+        .tagline-logo {
+            position: relative;
+            height: 0.5in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tagline-logo::before {
+            content: '';
+            position: absolute;
+            width: 2.2in;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.95) 0%, rgba(250, 246, 237, 0.8) 50%, transparent 75%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .tagline-logo img {
+            height: 100%;
+            width: auto;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.788));
+        }
+
+        /* Decorative stars */
+        .star {
+            position: absolute;
+            color: var(--break-light-blue);
+            font-size: 24pt;
+            opacity: 0.7;
+            text-shadow: 0 0 8px rgba(91, 192, 222, 0.5);
+        }
+
+        .star-1 { top: 0.8in; right: 1in; color: var(--break-pink); }
+        .star-2 { top: 1.2in; right: 0.5in; font-size: 16pt; }
+        .star-3 { bottom: 1.2in; left: 0.6in; font-size: 18pt; color: var(--break-pink); }
+
+        /* Adventurers Overlay - add .hidden class to hide */
+        .adventurers-overlay {
+            position: absolute;
+            bottom: 1.5in;
+            left: 0.75in;
+            width: 4.5in;
+            z-index: 10;
+        }
+
+        .adventurers-overlay img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .adventurers-overlay.hidden {
+            display: none;
+        }
+
+        /* Print Styles */
+        @media print {
+            .page {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="title-section">
+            <div class="title-line-1">The Helical</div>
+            <div class="title-line-2">Expeditions</div>
+        </div>
+
+        <div class="image-section">
+            <img src="0) Title Page/WorldMaps.png" alt="World Maps">
+        </div>
+
+        <div class="tagline">
+            <div class="tagline-text">25+ Session Ideas for the Award-Winning TTRPG</div>
+            <div class="tagline-logo">
+                <img src="0) Title Page/BREAK Logo.png" alt="BREAK!!">
+            </div>
+        </div>
+
+        <!-- Decorative stars -->
+        <span class="star star-1">✦</span>
+        <span class="star star-2">✦</span>
+        <span class="star star-3">✦</span>
+
+        <!-- Adventurers overlay - add "hidden" class to toggle off -->
+        <div class="adventurers-overlay">
+            <img src="0) Title Page/confusedAdventurers.png" alt="Confused Adventurers">
+        </div>
+    </div>
+</body>
+</html>

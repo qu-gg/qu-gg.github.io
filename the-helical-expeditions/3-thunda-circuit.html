@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunda Circuit - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Hot Desert Race Theme Palette */
+            --desert-deep: #3D1F0D;
+            --dune-tan: #8B5A2B;
+            --sunset-orange: #D2691E;
+            --sand-gold: #DAA06D;
+            --flame-red: #E8562A;
+            --sand-cream: #FAF0E6;
+            --pearl-white: #FEFEFE;
+            --cactus-olive: #6B8E23;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--sand-cream);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--sand-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--sunset-orange), var(--dune-tan), var(--flame-red), var(--dune-tan), var(--sunset-orange));
+        }
+
+        .page.art-page {
+            max-height: none;
+            min-height: auto;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: linear-gradient(135deg, var(--desert-deep) 0%, var(--dune-tan) 50%, var(--sunset-orange) 100%);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--flame-red);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--flame-red);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                3px 3px 0 var(--flame-red),
+                -1px -1px 0 var(--desert-deep),
+                1px -1px 0 var(--desert-deep),
+                -1px 1px 0 var(--desert-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--sand-gold);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--dune-tan);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(218, 160, 109, 0.08) 100%);
+            border: 1px solid var(--sunset-orange);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--dune-tan) 0%, var(--sunset-orange) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--sunset-orange);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--dune-tan);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--desert-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: linear-gradient(180deg, rgba(218, 160, 109, 0.1) 0%, rgba(139, 90, 43, 0.1) 100%);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--sunset-orange);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--flame-red);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--dune-tan);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cactus-olive);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: linear-gradient(180deg, var(--desert-deep) 0%, var(--dune-tan) 100%);
+            border-color: var(--desert-deep);
+        }
+
+        .story-steps h2 {
+            background: linear-gradient(135deg, var(--sand-gold) 0%, var(--sunset-orange) 100%);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--flame-red);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: linear-gradient(135deg, var(--sand-gold) 0%, var(--sunset-orange) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: linear-gradient(135deg, var(--cactus-olive) 0%, var(--sunset-orange) 100%);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--sunset-orange);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(61, 31, 13, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: linear-gradient(135deg, rgba(218, 160, 109, 0.15) 0%, rgba(139, 90, 43, 0.1) 100%);
+            border-left: 3px solid var(--flame-red);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--desert-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--flame-red);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--dune-tan);
+        }
+
+        .sources-box a {
+            color: var(--sunset-orange);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--sunset-orange);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: linear-gradient(135deg, var(--desert-deep) 0%, var(--dune-tan) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--flame-red);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--dune-tan) 0%, var(--sunset-orange) 100%);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cactus-olive);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(232, 86, 42, 0.08) 100%);
+            border: 1px solid var(--flame-red);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--flame-red) 0%, #c44a2a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--sunset-orange);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--dune-tan);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--sand-gold);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(61, 31, 13, 0.08) 100%);
+            border: 1px solid var(--desert-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--desert-deep) 0%, var(--dune-tan) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(232, 86, 42, 0.08) 100%);
+            border-radius: 4px;
+            border: 1px solid var(--flame-red);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--flame-red) 0%, #c44a2a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--flame-red);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--desert-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--dune-tan);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--desert-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--flame-red), var(--sand-gold), var(--flame-red));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--sand-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--sunset-orange);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--dune-tan);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 10pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--sand-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Thunda Circuit</h1>
+            <div class="subtitle">Deadstone • Thunda Sands • Blazing Garden</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">✿</span> Light-Hearted</div>
+            <div class="theme-item"><span class="emoji">⚑</span> Competition</div>
+            <div class="theme-item"><span class="emoji">☀</span> Desert Raceway</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Starting the Adventure -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>The party sign up as last-minute entrants in the legendary 'Thunda Circuit', and are given their pick of Skimmer Teams to join for the notoriously chaotic race. So, strap yourself in, try to stay inside the Skimmer, and prepare for a thrilling ride.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"In the midst of the scorching Thunda Sands sits an unlikely tourist destination. Decades ago, thrill-seekers began using the flat, rocky expanse for an annual race of crazy spell-engine-loaded platforms known as 'Skimmers'. They can hover, drive, crawl; doesn't matter as long as they're wicked-looking and engine-powered. As the years went on, the event grew into a spectacle that racing enthusiasts and inventors spend all year looking forward to. When you heard some of the racers were still looking for volunteers to join their teams, you rushed to sign up."</p>
+                    <p style="margin-top: 6px;">Arriving at the garages, the party can ally themselves with either Cutt, Soobi or Risky. However, each Skimmer only has space for three individuals, including its owner, so the party may have to distribute themselves across multiple vehicles. There are three roles on each Skimmer: a Driver to steer the vehicle, an Engine Cranker to keep the spell-engine churning, and a Gunner to weaken the competition. All Skimmers start with a 17 Defense Rating and 5 Hearts.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Cutt Throat</span>
+                            <span class="character-details">— Chib, Male, 6 (Hinterland Noble)</span>
+                        </div>
+                        <div class="character-desc">Owner of the Conqueror's Hound, a horrifying wrought-iron contraption adorned in spikes that spews arcane fire straight from the Spell Engine. A warlord from the No Folk's Land come to compete for recognition.</div>
+                        <div class="character-quote">"Rumors state that despite being relatively new in the No Folk's Land, Cutt has unified multiple clans from menacing gaze alone."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Soobi Deymond</span>
+                            <span class="character-details">— Human, Female, 65 (Merchant Scion)</span>
+                        </div>
+                        <div class="character-desc">Owner of the Burgundy Blitzer, made of the finest fabrics and best materials. Head of the renowned Deymond Tailor Corporation out of Portia, she is a wealthy racer who delights in showing off her skill and attempting to advertise her clothing lines.</div>
+                        <div class="character-quote">"Dressed in stunning Twilight Silks and Pilose Fleece, Soobi positively radiates upper class and style."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Risky Idea</span>
+                            <span class="character-details">— Rai-Neko, Female, 20 (Startech Adept)</span>
+                        </div>
+                        <div class="character-desc">Owner of the Charcoal Chariot, a Startech-based sleek angular design that hovers silently. Ambitious, young racer from Nyanko who wants to prove to everyone back home she can win.</div>
+                        <div class="character-quote">"Risky is dressed head-to-toe in black except for reflective glasses, and is muttering calculations under her breath."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="3) Thunda Circuit/Pasted image 20251222001353.jpg" alt="Thunda Sands">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, have the three Owners introduce themselves and their vehicles, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Prepare Your Vehicles</span>
+                        <ul>
+                            <li>After choosing their team, party members can try to recruit extra crew to fill any vacant slots.</li>
+                            <li>Consider all GMCs as relevantly re-flavored Blaster Mages [Source, pg. 366] without access to the Mana Burst Ability.</li>
+                            <li>With all roles filled, the party must tighten rivets on their Skimmer's hover-jets, charge the Spell Engine, and add metal plates to the chassis.</li>
+                            <li>Encourage creativity (and even pre-race sabotage!) in PC Abilities/thoughts, and give Bonuses where applicable.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Start Your Engines</span>
+                        <ul>
+                            <li>At the starting area, the race begins! Initiative order is determined by how well each team prepared their Skimmers.</li>
+                            <li>Three other Skimmers in the race are driven by: Old Iron Dwarves hoping to make their battalion proud; New Ore Goblins come explicitly to make sure the Dwarves lose; and the standard lot of Thunda Clan Barbarians.</li>
+                            <li>On their Skimmer's turn, Engine Crankers can propel the Skimmer 1d10 × 100 ft; Drivers choose how to spend that movement; and Gunners try to weaken their rivals via Attacks, Stunts, Tricks, Abilities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Buckle Your Seatbelts</span>
+                        <ul>
+                            <li>The Skimmers race around the circuit, from the starting area to the <em>Shale Canyon</em>, then across the <em>Arid Trail</em>.</li>
+                            <li>An angry Giga-Gruun, who was disturbed by the noise, will throw rocks at random Skimmers per Turn from the top of the <em>Shale Canyon</em>, while shouting childish insults. To handle this, the relevant Driver makes a Deftness Check. On Failure, a Falling Debris CLICK! Trap targets all members.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Photo Finish</span>
+                        <ul>
+                            <li>As teams complete the circuit, the race ends and they are ranked based on their finishing position.</li>
+                            <li>The racers thank (or curse out) each other for the thrilling race.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-credit">Made by Quagg</div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Deadstone, Starting Area</h3>
+                    <p class="loc-desc">"Blinding sunlight beats off the white, stone track in the middle of this makeshift sandstone town. The smell of burnt Mana, electricity and molten metal fills the air."</p>
+                    <p>Strategies need to be discussed before the race, because all racers gain the Deafened Ailment when they enter this area. <br><br> The first section of track is wide enough for three Skimmers. It runs for 1000ft before the <em>Shale Canyon</em> starts.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Shale Canyon</h3>
+                    <p class="loc-desc">"The dusty cobbles descend into a careful drive through an enclosed, rocky valley. Jagged boulders and loose stones litter the parched ground."</p>
+                    <p>This is a narrow passage through a bumpy chasm. Rocks in the road need to be expertly maneuvered between to get to the other side. <br><br> The track here is wide enough for two Skimmers, and continues for 2000 ft before reaching the <em>Arid Trail</em>.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Arid Trail</h3>
+                    <p class="loc-desc">"The valley road climbs into a fenced-off route through the sand. Flags make a spectacle of an upcoming, steep jump."</p>
+                    <p>Racers must test their strength in the form of Deftness or Might Checks to stay in control during the 'Leap of Faith' jump. Skimmers receive a -2 to their next Cranking Roll for each racer who fails. <br><br>This road is wide enough for five Skimmers, and continues for 2000 ft before reaching the finish line.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>The other Skimmers in the race are called the Iron Banner (Dwarves), the Rust Bucket (Goblins) and the Canyon Splitter (Barbarians).</li>
+                    <li>Skimmers cannot move through another's space, so can only overtake if the track is wide enough.</li>
+                    <li>Skimmers can exit the track before cranking to take a Pit Stop; they rejoin the race on their next Turn.</li>
+                    <li>Crankers and Gunners can swap roles at any time, but a Driver change will require a Pit Stop.</li>
+                    <li>Drivers who continue for more than five rounds of the race without swapping will gain Fatigue, and gain another stack for every Turn continued.</li>
+                    <li>During a Pit Stop, unconscious racers regain 2 Hearts and Skimmers are repaired to 3 Hearts.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="3) Thunda Circuit/Pasted image 20251222001225.jpg" alt="Skimmer Inspiration">
+                <div class="image-caption">"Skimmer Inspiration" <br> Art by <a href="https://www.celine-kim.com/misc" target="_blank">Celine Kim</a></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>🏆 Placement Rewards</h3>
+                        <p>The Team who finish in <strong>first place</strong> receive <strong>100C each</strong>. The racers on the Skimmers who finish in <strong>second</strong> and <strong>third places</strong> receive <strong>50C</strong> and <strong>25C each</strong>, respectively.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>✦ Bonus Rewards</h3>
+                        <p>If an Owner wins with the party, they will consider gifting the group their <em>Skimmer</em> [Source, pg. 198] as a thank you. Consider giving a Social Bond with the relevant Owner too.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank 3-4 Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> You could lower the GMC's Hearts/Stats and remove the Big Magic Shot Ability.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> For a truly harder adventure, replace the stationary Giga-Gruun with a roaming Grimwing PCs have to contend with the entire time!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources -->
+        <div class="content-box sources-box" style="margin-top: 8px;">
+            <h2>Sources & Adversaries</h2>
+            <div class="content-box-inner">
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>No-Horse Race</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br> Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+            <ul>
+                <li><strong>Blaster Mage:</strong> Source, pg. 366 (without Mana Burst Ability)</li>
+                <li><strong>Giga-Gruun:</strong> Source, pg. 374</li>
+                <li><strong>Skimmer:</strong> Source, pg. 198</li>
+                <li><strong>Traps:</strong> <a href="https://cdn.discordapp.com/attachments/1359104566414807231/1359104566586642582/image.png" target="_blank">CLICK! Traps</a> by VictorSeven</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="3) Thunda Circuit/Pasted image 20251222001353.jpg" alt="Observing Thunda Sands">
+                <div class="art-caption">"Observing Thunda Sands" <br> Art by <a href="https://www.shed-works.co.uk/sable" target="_blank">Sable</a></div>
+            </div>
+            <div class="art-item">
+                <img src="3) Thunda Circuit/Pasted image 20251222001601.jpg" alt="Deadstone Inspiration">
+                <div class="art-caption">"Deadstone Inspiration" <br> Art by <a href="https://characterdesignreferences.com/art-of-animation-6/art-of-oban-star-racers" target="_blank">Oban Star Racers</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="3) Thunda Circuit/Pasted image 20251222001715.jpg" alt="Skimmer Inspiration">
+                <div class="art-caption">"Skimmer Inspiration" <br> Artist Unknown</div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="3) Thunda Circuit/Pasted image 20251222001725.jpg" alt="Observers Watching the Race">
+                <div class="art-caption">"Observers Watching the Race" <br> Art by <a href="https://www.artstation.com/artwork/yRnR5" target="_blank">sparth</a></div>
+            </div>
+            <div class="art-item">
+                <img src="3) Thunda Circuit/Pasted image 20251222001758.jpg" alt="Shale Canyon Inspiration">
+                <div class="art-caption">"Shale Canyon Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/3owRnA" target="_blank">J Line</a></div>
+            </div>
+            <div class="art-item">
+                <img src="3) Thunda Circuit/Pasted image 20251222004620.jpg" alt="Skimmer Inspiration">
+                <div class="art-caption">"Skimmer Inspiration" <br> Art by <a href="https://characterdesignreferences.tumblr.com/post/171346277909/art-by-thomas-girard-januarys-theme-bikers" target="_blank">Thomas Girard</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

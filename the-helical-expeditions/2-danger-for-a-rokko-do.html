@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger for a Rokko-Do - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Icy Tundra Theme Palette */
+            --arctic-deep: #1a2a3a;
+            --steel-blue: #2d4a5e;
+            --frost-blue: #5a8fa8;
+            --ice-light: #a8d4e6;
+            --soft-crimson: #c44a5e;
+            --snow-white: #f8fbfd;
+            --pearl-white: #fefefe;
+            --aurora-purple: #6b5b7a;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--snow-white);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--snow-white);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--frost-blue), var(--steel-blue), var(--soft-crimson), var(--steel-blue), var(--frost-blue));
+        }
+
+        .page.art-page {
+            max-height: none;
+            min-height: auto;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: linear-gradient(135deg, var(--arctic-deep) 0%, var(--steel-blue) 50%, var(--frost-blue) 100%);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--soft-crimson);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--soft-crimson);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                3px 3px 0 var(--soft-crimson),
+                -1px -1px 0 var(--arctic-deep),
+                1px -1px 0 var(--arctic-deep),
+                -1px 1px 0 var(--arctic-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--ice-light);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--steel-blue);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 143, 168, 0.08) 100%);
+            border: 1px solid var(--frost-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--steel-blue) 0%, var(--frost-blue) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--frost-blue);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--steel-blue);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--arctic-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: linear-gradient(180deg, rgba(90, 143, 168, 0.1) 0%, rgba(45, 74, 94, 0.1) 100%);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--frost-blue);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--soft-crimson);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--steel-blue);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--aurora-purple);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: linear-gradient(180deg, var(--arctic-deep) 0%, var(--steel-blue) 100%);
+            border-color: var(--arctic-deep);
+        }
+
+        .story-steps h2 {
+            background: linear-gradient(135deg, var(--ice-light) 0%, var(--frost-blue) 100%);
+            color: var(--arctic-deep);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--soft-crimson);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: linear-gradient(135deg, var(--ice-light) 0%, var(--frost-blue) 100%);
+            color: var(--arctic-deep);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: linear-gradient(135deg, var(--aurora-purple) 0%, var(--frost-blue) 100%);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--frost-blue);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 42, 58, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: linear-gradient(135deg, rgba(90, 143, 168, 0.15) 0%, rgba(45, 74, 94, 0.1) 100%);
+            border-left: 3px solid var(--soft-crimson);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--arctic-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--soft-crimson);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--steel-blue);
+        }
+
+        .sources-box a {
+            color: var(--frost-blue);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--frost-blue);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: linear-gradient(135deg, var(--arctic-deep) 0%, var(--steel-blue) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--soft-crimson);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--steel-blue) 0%, var(--frost-blue) 100%);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--aurora-purple);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border: 1px solid var(--soft-crimson);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--soft-crimson) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--steel-blue);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--arctic-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(26, 42, 58, 0.08) 100%);
+            border: 1px solid var(--arctic-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--arctic-deep) 0%, var(--steel-blue) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border-radius: 4px;
+            border: 1px solid var(--soft-crimson);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--soft-crimson) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--soft-crimson);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--arctic-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--steel-blue);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: linear-gradient(135deg, var(--arctic-deep) 0%, var(--steel-blue) 100%);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--frost-blue);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--ice-light);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            width: 100%;
+            height: 5.25in;
+            border: 3px solid var(--steel-blue);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            background: var(--arctic-deep);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .map-line {
+            stroke: var(--soft-crimson);
+            stroke-width: 1.25;
+            fill: none;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--soft-crimson);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .map-marker.m1 { top: 85%; left: 45%; }
+        .map-marker.m2 { top: 60%; left: 55%; }
+        .map-marker.m3 { top: 50%; right: 20%; }
+
+        .site-content-columns {
+            display: grid;
+            grid-template-columns: 1.2fr 1.1fr;
+            gap: 10px;
+        }
+
+        /* Encounters Table */
+        .encounters-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 143, 168, 0.1) 100%);
+            border: 1px solid var(--frost-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .encounters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--steel-blue) 0%, var(--frost-blue) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .encounters-box h2 span {
+            font-size: 9pt;
+            opacity: 0.9;
+        }
+
+        .encounters-table {
+            padding: 6px 8px;
+        }
+
+        .encounter-row {
+            display: flex;
+            gap: 8px;
+            padding: 4px 0;
+            border-bottom: 1px dashed var(--frost-blue);
+            font-size: 9pt;
+        }
+
+        .encounter-row:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-row.has-situation {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .encounter-group {
+            border-bottom: 1px dashed var(--frost-blue);
+        }
+
+        .encounter-group:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-group .encounter-row {
+            border-bottom: none;
+        }
+
+        .encounter-roll {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--soft-crimson);
+            min-width: 35px;
+        }
+
+        .encounter-name {
+            font-weight: bold;
+            color: var(--arctic-deep);
+        }
+
+        .encounter-desc {
+            color: var(--ink-dark);
+        }
+
+        .encounter-situation {
+            background: rgba(90, 143, 168, 0.12);
+            border-left: 2px solid var(--frost-blue);
+            padding: 3px 6px;
+            margin-top: 3px;
+            margin-left: 43px;
+            margin-bottom: 4px;
+            padding-bottom: 6px;
+            font-size: 8pt;
+            color: var(--arctic-deep);
+        }
+
+        .encounter-situation strong {
+            color: var(--frost-blue);
+        }
+
+        /* Location Key */
+        .location-key-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border: 1px solid var(--soft-crimson);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--soft-crimson) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+        }
+
+        .location-entry {
+            margin-bottom: 12px;
+            font-size: 9pt;
+        }
+
+        .location-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--soft-crimson);
+            color: var(--pearl-white);
+            border-radius: 50%;
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--arctic-deep);
+            font-size: 10pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--frost-blue);
+            color: var(--pearl-white);
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.trap {
+            background: var(--soft-crimson);
+        }
+
+        .location-tag.encounter {
+            background: var(--steel-blue);
+        }
+
+        .location-tag.loot {
+            background: var(--aurora-purple);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.35;
+        }
+
+        /* ===== PAGE 4 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--arctic-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--soft-crimson), var(--ice-light), var(--soft-crimson));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--ice-light);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--frost-blue);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--steel-blue);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            min-height: 0;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 10pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+            min-height: 28px;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Danger for a Rokko-Do</h1>
+            <div class="subtitle">Winding Pass • Seven Holy Isles • Twilight Meridian</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">◈</span> Journey</div>
+            <div class="theme-item"><span class="emoji">◉</span> Defense</div>
+            <div class="theme-item"><span class="emoji">❄</span> Snowy Tundra</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Starting the Adventure -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>As poachers close in on an expectant Prism Rokko-Do mother, a passionate conservationist will do everything in his power to protect the animal and her unborn chicks. That includes hiring the party to travel with him to the frozen tundra and guard the eggs after they're laid until the mother regains strength.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"You accepted a bodyguard job at the Archive that offered the chance to explore the frozen tundras of the Seven Holy Isles. A specialist within the Helical Conservation Society, or HCS, is offering decent pay to protect him as he patrols the frozen fields along the Winding Pass. Your contact is named Tumble Treks, a conservationist stationed at the arctic checkpoint you're currently heading to. The trek so far hasn't been easy, and the weather has been anything but predictable. As another blizzard closes in, you spot a hut with a steaming chimney bearing the HCS emblem, and make your way there."</p>
+                    <p style="margin-top: 6px;">Tumble spotted a heavily pregnant Prism Rokko-Do on a recent patrol, and believes it is likely that she will lay eggs within the next few days. He hopes to observe the labour of the endangered creature and protect it until it regains strength. As the arctic fields can be dangerous, he spent some of the HCS quarterly budget on bodyguards for his self-led mission.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Tumble Treks</span>
+                            <span class="character-details">— Chib, Male, 41 (Guide)</span>
+                        </div>
+                        <div class="character-desc">A conservationist who specializes in arctic animal welfare and has a passion for Rokko-Dos.</div>
+                        <div class="character-quote">"Only Tumble's rosy cheeks and bright smile are visible underneath the woolly, HCS-branded anorak and hood that keeps him warm."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Cara Solis</span>
+                            <span class="character-details">— Mundymutt, Female, 24 (Proudhound)</span>
+                        </div>
+                        <div class="character-desc">A criminal who is masquerading as a conservationist; Cara is part of a gang of organized poachers.</div>
+                        <div class="character-quote">"A bottle of animal milk and small packs of bird seed are held in Cara's HCS cargo jacket. Cocky and self-assured in her duties."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Ruh "Roh"</span>
+                            <span class="character-details">— Mundymutt, Male, 20 (Blaster Mage)</span>
+                        </div>
+                        <div class="character-desc">Roh sees animals, especially rare ones, as valuable commodities. He follows Cara's orders.</div>
+                        <div class="character-quote">"Roh's armor is faux-flamboyant and trimmed with crimson fur. His wicked, frostbitten muzzle is full of sharp teeth that he regularly bares in anger or bravado."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="2) Danger for a Rokko-Do/Pasted image 20251219221737.jpg" alt="Frozen Tundra">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, have the party enter the hut, let Cara and Tumble greet everyone, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">No Time to Lose</span>
+                        <ul>
+                            <li>As Tumble explains his plans, Cara asks where he will camp, in case she needs to send help.</li>
+                            <li>Tumble will offer Extreme Cold Outfits to any PC without one.</li>
+                            <li>Tumble guides the party on an arctic trek towards an icy lake, which takes a Day's Travel. Consider showcasing Journey mechanics here - Tumble acts as a Guide.</li>
+                            <li>The Party may Camp and partake in Camping Activities. Good time to check if they brought Rations!</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Polar Panic</span>
+                        <ul>
+                            <li>A Polar Bear is found in a trap near the lake. The party must help Tumble release the trap and treat its wounds. The creature loses 1 Heart (4 total) with every failed attempt to save it.</li>
+                            <ul>
+                                <li>Examples: Aura Check to calm the creature, Might Check to loosen the trap, Insight Check for treating the wounds.</li>
+                            </ul>
+                            <li>The group must cross the frozen lake to continue, which takes another Day's Travel and Camp.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Birthing Pains</span>
+                        <ul>
+                            <li>On day 3, Tumble spots the Prism Rokko-Do near a rocky alcove. He sets up his camp and approaches cautiously with his field kit. The mother lays two healthy-looking Prism Eggs.</li>
+                            <li>Cara, Roh, and another Mutt arrive on a Giant Fluffed Skree, identities concealed. They demand the eggs, willing to fight.</li>
+                            <ul>
+                                <li>The poachers focus on stealing the eggs and putting them in a sack strapped to the Skree.</li> 
+                                <li>If they succeed, the poachers will try to escape.</li>
+                                <li>If badly wounded, Cara confesses and apologizes. Furious, Tumble leaves the poachers' fates to the party.</li>
+                            </ul>
+                            <li>With the poachers defeated, Tumble and the party watch over the mother and eggs until dawn.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-credit">Made by Quagg</div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Conservation Hut</h3>
+                    <p class="loc-desc">"A stoked fireplace keeps this narrow, stone lodge warm. Its walls and tables are covered in annotated maps, anatomical drawings of animals, and books filled with biological essays."</p>
+                    <p>This hut is one of many HCS sites scattered throughout the realm; each serves as a secure base of operations for its conservationists. Cara and Tumble have decent amenities but the majority of the space is reserved for long-term supplies and ecological research equipment.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Lake of Broken Ice</h3>
+                    <p class="loc-desc">"Large chunks of snow-covered, cracked ice make a twisting path across a frozen lake ahead. The footprints of animals who have utilized this temporary route are dotted through the snow."</p>
+                    <p>This large lake freezes and thaws at different points of the year. Anyone attempting to cross the lake will need to keep their balance on the ice, or risk falling and suffering damage from the cold waters below (CLICK! Pit Trap).</p>
+                </div>
+                <div class="location-card">
+                    <h3>Rocky Alcove</h3>
+                    <p class="loc-desc">"Against the rugged, frozen cliffs, a shallow alcove offers protection from the bitterly cold wind and weather. Small weeds cling to its grey walls, benefiting from the shelter."</p>
+                    <p>The respite from the elements makes this alcove the obvious choice for the Prism Rokko-Do mother to lay her eggs. There is a gorgeous view of the valley below. <br><br>The poachers can be spotted circling the skies above this area.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Tumble has worked with Cara for a year; the two have become friends, and he respects her insight.</li>
+                    <li>By leaking key breeding and nesting sites to Roh, Cara has made them both a lot of money.</li>
+                    <li>Prism Rokko-Do are endangered because they are poached for their iridescent plumage, which contains an essence that can accelerate one's movement.</li>
+                    <li>Roh has set up bear traps around the lake, in an attempt to gather expensive Polar Bear fur.</li>
+                    <li>Roh's snow-colored Giant Fluffed Skree wears a spiked collar, and has been treated harshly by him.</li>
+                    <li>Cara's gang are the only poachers in the area, but have caused the HCS major issues.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="2) Danger for a Rokko-Do/Pasted image 20251221021639.jpg" alt="Adventure Art">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>☆ Fighting</h3>
+                        <p>Cara considers this her finest catch yet and is willing to throw away her position at the HCS for this haul - 2 fresh Prism Eggs are prime capital. She'll betray Roh and the other Mutt, leaving by herself if they manage to strap the eggs on. <br><br>If badly wounded, Cara will confess and apologize. Furious, Tumble leaves the poachers' fates to the party.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>Tumble has set aside <strong>100C</strong> from his HCS budget to pay the party. Thankful for the protection, the astute mother Rokko-Do will willingly give up <strong>2 Prism Feathers</strong> [Source, pg. 292] to the party. Roh has a small satchel with <strong>1 Unit of Pilose Bumpo Fleece</strong> [Source, pg. 290] and <strong>2 Rations</strong>. <br><br>To be particularly nice, there is a <em>Giant Fluffed Skree</em> ready as a potential mount if the party calms it!</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank 2-3 Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> You could reduce Roh to another Mundymutt.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> You could boost Cara to a Chosen One and boost Roh to a Proudhound.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Suggested Starting Coin:</strong> Give new PCs 200-300C to spend on Gear.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources -->
+        <div class="content-box sources-box" style="margin-top: 8px;">
+            <h2>Sources & Adversaries</h2>
+            <div class="content-box-inner">
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>The Cat's Mother</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br> Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+            <ul>
+                <li><strong>Yeeti</strong> by The Lonely Sand Person (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Peppermint Lalka</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Polar Bear:</strong> Chompa reflavor</li>
+                <li><strong>Giant Fluffed Skree:</strong> Rokko-Do with Flying Speed of Fast</li>
+                <li><strong>Traps:</strong> <a href="https://cdn.discordapp.com/attachments/1359104566414807231/1359104566586642582/image.png" target="_blank">CLICK! Traps</a> by VictorSeven</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ADVENTURE SITE ==================== -->
+    <div class="page">
+        <div class="adventure-site-header">
+            <h1>Winding Pass <span>[Adventure Site]</span></h1>
+        </div>
+
+        <div class="site-map-container">
+            <img src="2) Danger for a Rokko-Do/Danger for a Rokko-Do - Journey Map.jpg" alt="Winding Pass Map">
+            <!-- Connection Lines -->
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <!-- Line 1↔2 -->
+                <line class="map-line" x1="46.5" y1="88" x2="57.5" y2="62" />
+                <!-- Line 2↔3 -->
+                <line class="map-line" x1="57.5" y1="63" x2="80" y2="52" />
+            </svg>
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+        </div>
+
+        <div class="site-content-columns">
+            <!-- Random Encounters Table -->
+            <div class="encounters-box">
+                <h2>Random Encounters <span>(d20)</span></h2>
+                <div class="encounters-table">
+                    <div class="encounter-row">
+                        <span class="encounter-roll">1-10</span>
+                        <span class="encounter-desc"><span class="encounter-name">No Encounter:</span> A snow mound falsely shifts, a chunk of ice falls, a small creature runs past.</span>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">11-14</span>
+                            <span class="encounter-desc"><span class="encounter-name">Butchered Remains</span></span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> The carcass of some creature hastily butchered by poachers is left in crimson snow. Tumble will take the time to bury it, solemnly explaining how much of a problem these poacher gangs have been and how well they've eluded tracking.
+                        </div>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">15-17</span>
+                            <span class="encounter-desc"><span class="encounter-name">A Sweet Bite:</span> 6x Peppermint Lalka</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> No one knows who created these sweet demons, but in the frozen wastes around the Outer World they are a common nuisance. Unfortunately, this lot has taken an interest in you.
+                            <br><br><strong>Consequence:</strong> Armor Crash injuries from a Peppermint Lalka rupture Extreme Cold Outfits, exposing the wearer. Grit Check/Day's Travel or Fatigue.
+                        </div>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">18-20</span>
+                            <span class="encounter-desc"><span class="encounter-name">Yeeti Pack:</span> 3x Yeetis</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> Thought to have formed a tribal society in the Isles tundras, the HCS has been unable to observe these giants closely on account of their hostility and ability to throw shockingly large objects over vast distances.
+                            <br><br><strong>Consequence:</strong> If unnoticed, Yeetis start with throwing rocks (CLICK! Falling Debris) then engage in combat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Key -->
+            <div class="location-key-box">
+                <h2>Location Key</h2>
+                <div class="location-key-content">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Conservation Hut</span>
+                        </div>
+                        <div class="location-desc">This hut is one of many HCS sites scattered throughout the realm; each serves as a secure base of operations for its conservationists.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Lake of Broken Ice</span>
+                            <span class="location-tag trap">Trap</span>
+                            <span class="location-tag encounter">Encounter</span>
+                        </div>
+                        <div class="location-desc">This large lake freezes and thaws at different points of the year. Anyone attempting to cross the lake will need to keep their balance on the ice, or risk falling and suffering damage from the cold waters below (CLICK! Pit Trap). <br><br>A Polar Bear caught in one of Roh's traps can be found near the lake's edge.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Rocky Alcove</span>
+                            <span class="location-tag encounter">Encounter</span>
+                        </div>
+                        <div class="location-desc">Against the rugged, frozen cliffs, a shallow alcove offers protection from the bitterly cold wind and weather. The respite from the elements makes this alcove the obvious choice for the Prism Rokko-Do mother to lay her eggs. The poachers can be spotted circling the skies above this area.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="2) Danger for a Rokko-Do/Pasted image 20251219221737.jpg" alt="Frozen Tundra">
+                <div class="art-caption">By <a href="https://vk.com/@cglab-etienne-hebinger-pipeline">Etienne Hebinger</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="2) Danger for a Rokko-Do/Danger for a Rokko-Do - Journey Map.jpg" alt="Journey Map">
+                <div class="art-caption">"Jokulldalr - Glacier Valley" by <a href="https://forum.profantasy.com/discussion/5105/kelleemah-sutheimr-1-cc3">Charles Wayne Robinson</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item unknown-source">
+                <img src="2) Danger for a Rokko-Do/Pasted image 20251221021639.jpg" alt="Snowy Scene">
+                <div class="art-caption">Artist Unknown</div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="2) Danger for a Rokko-Do/Pasted image 20251221021838.jpg" alt="Arctic Landscape">
+                <div class="art-caption">Artist Unknown</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,536 @@
+/* ===== BREAK!! PAGE STYLES - Blog Layout ===== */
+
+/* Page Layout */
+.break-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* ============================================
+   BREAK!! Introduction Section
+   ============================================ */
+.break-intro {
+    margin-bottom: 3rem;
+}
+
+.break-info-card {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+}
+
+.break-info-content {
+    flex: 1;
+}
+
+.break-info-content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+    background: linear-gradient(135deg, #6b3fa0, #e83a7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.break-tagline {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.break-description {
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.break-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.break-link {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #6b3fa0, #e83a7a);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.break-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 63, 160, 0.3);
+}
+
+.break-map-container {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.map-link {
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+}
+
+.map-link:hover {
+    transform: scale(1.03);
+}
+
+.map-link:hover .outer-world-map {
+    box-shadow: 0 6px 20px rgba(107, 63, 160, 0.3);
+}
+
+.outer-world-map {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.map-caption {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);;
+    font-style: italic;
+}
+
+/* ============================================
+   Helical Expeditions Introduction
+   ============================================ */
+.helical-intro {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.helical-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.helical-title-block h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.helical-subtitle {
+    color: var(--text-secondary);
+    margin: 0.25rem 0 0;
+    font-size: 1rem;
+}
+
+.helical-content-row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.helical-description {
+    flex: 1;
+}
+
+.helical-description p {
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.helical-cover-embed {
+    flex-shrink: 0;
+}
+
+.cover-image {
+    width: 320px;
+    height: auto;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.inspiration-note {
+    background: var(--bg-primary);
+    border-left: 4px solid #6b3fa0;
+    padding: 0rem 0.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+}
+
+.inspiration-note p {
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.inspiration-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.inspiration-link:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* ============================================
+   Adventure Blog Timeline
+   ============================================ */
+.adventure-blog {
+    margin-bottom: 3rem;
+}
+
+.blog-section-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #6b3fa0;
+}
+
+.blog-post {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+/* Date Column */
+.post-date {
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.date-day {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6b3fa0;
+    line-height: 1;
+}
+
+.date-month {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date-year {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Post Content */
+.post-content {
+    flex: 1;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+.post-header {
+    margin-bottom: 1rem;
+}
+
+.post-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: linear-gradient(135deg, #6b3fa0, #e83a7a);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-header h3 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.4rem;
+}
+
+.post-header h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post-header h3 a:hover {
+    color: var(--accent);
+}
+
+.post-location {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.location-icon {
+    color: #6b3fa0;
+}
+
+/* Post Body */
+.post-body {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.post-image {
+    flex-shrink: 0;
+    width: 180px;
+}
+
+.post-image img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.art-source {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.art-source a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.art-source a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.post-text {
+    flex: 1;
+}
+
+.post-text.full-width {
+    width: 100%;
+}
+
+.post-hook {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+}
+
+.post-themes {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.post-themes span {
+    padding: 0.2rem 0.5rem;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.post-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/* Coming Soon Post */
+.blog-post.coming-soon .post-content {
+    opacity: 0.7;
+    background: var(--bg-primary);
+}
+
+.coming-soon-label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--text-secondary);
+    color: var(--bg-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* ============================================
+   Resources Section
+   ============================================ */
+.resources-section {
+    margin-bottom: 2rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.resource-card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(107, 63, 160, 0.15);
+}
+
+.resource-card h3 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.resource-card p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   Lightbox Modal
+   ============================================ */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+    .break-info-card {
+        flex-direction: column;
+    }
+    
+    .break-map-container {
+        width: 100%;
+    }
+    
+    .outer-world-map {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .helical-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .helical-content-row {
+        flex-direction: column;
+    }
+    
+    .cover-image {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .blog-post {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .post-date {
+        display: flex;
+        gap: 0.5rem;
+        width: auto;
+        align-items: baseline;
+    }
+    
+    .date-day, .date-month, .date-year {
+        display: inline;
+    }
+    
+    .date-day {
+        font-size: 1.2rem;
+    }
+    
+    .post-body {
+        flex-direction: column;
+    }
+    
+    .post-image {
+        width: 100%;
+    }
+    
+    .post-image img {
+        height: 200px;
+    }
+}

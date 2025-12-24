@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Title - BREAK!! Adventure</title>
+    <style>
+        /* ═══════════════════════════════════════════════════════════════════════════
+           BREAK!! ADVENTURE TEMPLATE
+           ═══════════════════════════════════════════════════════════════════════════
+           
+           HOW TO USE THIS TEMPLATE:
+           1. Update the <title> tag above with your adventure name
+           2. Customize the color palette in :root below to match your theme
+           3. Replace placeholder content in the HTML body
+           4. Add your images to a folder and update src paths
+           5. Remove the Adventure Site page (Page 3) if not needed
+           
+           COLOR PALETTE TIPS:
+           - Choose colors that evoke your adventure's mood/setting
+           - Ocean/water themes: blues, teals, coral accents
+           - Desert themes: browns, oranges, sand tones
+           - Forest themes: greens, browns, earth tones
+           - Arctic themes: light blues, whites, soft crimson
+           - Dark/horror themes: deep purples, blacks, blood reds
+           
+           ═══════════════════════════════════════════════════════════════════════════ */
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* ─────────────────────────────────────────────────────────────────────
+               THEME COLOR PALETTE - CUSTOMIZE THESE FOR YOUR ADVENTURE
+               ─────────────────────────────────────────────────────────────────────
+               --color-deep:       Darkest color, used for title backgrounds, headers
+               --color-mid:        Mid-tone, used for secondary headers, borders
+               --color-accent:     Primary accent, used for box borders, emphasis
+               --color-light:      Light accent, used for theme row border, highlights
+               --color-highlight:  Pop color, used for character names, important elements
+               --color-background: Page background color (light, paper-like)
+               --color-secondary:  Secondary accent for quotes, minor elements
+               
+               Example Palettes:
+               
+               OCEAN THEME:
+               --color-deep: #0d2137; --color-mid: #1a4a6e; --color-accent: #2d8a8a;
+               --color-light: #5fbfbf; --color-highlight: #e85a71; --color-background: #f5f0e6;
+               
+               DESERT THEME:
+               --color-deep: #3A2A1A; --color-mid: #7D6B5D; --color-accent: #B8860B;
+               --color-light: #C9A961; --color-highlight: #A0522D; --color-background: #F5E6D3;
+               
+               ARCTIC THEME:
+               --color-deep: #1a2a3a; --color-mid: #2d4a5e; --color-accent: #5a8fa8;
+               --color-light: #a8d4e6; --color-highlight: #c44a5e; --color-background: #f8fbfd;
+               ───────────────────────────────────────────────────────────────────── */
+            
+            --color-deep: #1a2a3a;
+            --color-mid: #2d4a5e;
+            --color-accent: #5a8fa8;
+            --color-light: #a8d4e6;
+            --color-highlight: #c44a5e;
+            --color-background: #f8fbfd;
+            --pearl-white: #fefefe;
+            --color-secondary: #6b5b7a;
+            --ink-dark: #1a1a2e;
+            
+            /* ─────────────────────────────────────────────────────────────────────
+               TYPOGRAPHY - Generally leave these as-is for consistency
+               ───────────────────────────────────────────────────────────────────── */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--color-background);
+        }
+
+        /* ===== PAGE STRUCTURE =====
+           Standard US Letter size (8.5" x 11")
+           Adjust padding if content overflows or needs more breathing room
+           max-height enforces page boundaries for print */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;  /* top right bottom left */
+            background: var(--color-background);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-mid), var(--color-highlight), var(--color-mid), var(--color-accent));
+        }
+
+        .page.art-page {
+            max-height: none;
+            min-height: auto;
+        }
+
+        /* ===== TITLE BOX =====
+           The main adventure title banner at top of page 1
+           Uses gradient from deep → mid → accent colors */
+        .title-box {
+            background: linear-gradient(135deg, var(--color-deep) 0%, var(--color-mid) 50%, var(--color-accent) 100%);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--color-highlight);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--color-highlight);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                3px 3px 0 var(--color-highlight),
+                -1px -1px 0 var(--color-deep),
+                1px -1px 0 var(--color-deep),
+                -1px 1px 0 var(--color-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW =====
+           Displays 3 theme tags with emojis below the title
+           Common emojis: ◈ ◉ ≋ ✦ ☀ ⚔ ☠ ✿ ❄ 
+           Avoid emojis that render as colorful on all platforms */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--color-light);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--color-mid);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT =====
+           Page 1 uses a two-column grid for content organization
+           Left column: Description, Starting, Characters
+           Right column: Image, Suggested Story, Sources */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES =====
+           Generic styled boxes used throughout the document
+           Contains h2 header bar + content-box-inner for body text
+           Use .read-aloud class for text meant to be read to players */
+        .content-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 143, 168, 0.08) 100%);
+            border: 1px solid var(--color-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-mid) 0%, var(--color-accent) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--color-accent);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--color-mid);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--color-deep);
+        }
+
+        /* ===== CHARACTERS BOX =====
+           Styled container for NPC entries
+           Each character has: name, details (species/age/calling), desc, quote
+           Add/remove character-entry divs as needed */
+        .characters-box {
+            background: linear-gradient(180deg, rgba(90, 143, 168, 0.1) 0%, rgba(45, 74, 94, 0.1) 100%);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--color-accent);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--color-highlight);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--color-mid);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--color-secondary);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS =====
+           Dark-background box for the suggested story flow
+           Uses story-section divs with story-section-header spans
+           Add/remove story-section divs as needed (typically 3-4) */
+        .story-steps {
+            font-size: 9.5pt;
+            background: linear-gradient(180deg, var(--color-deep) 0%, var(--color-mid) 100%);
+            border-color: var(--color-deep);
+        }
+
+        .story-steps h2 {
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-accent) 100%);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--color-light);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-accent) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block 
+           Standalone image at top of right column on Page 1
+           Replace .image-placeholder with <img src="path/to/image.jpg"> */
+        .story-image-block {
+            border: 1px solid var(--color-accent);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Image Placeholder - DELETE THESE STYLES WHEN USING REAL IMAGES
+           These create visible placeholder boxes during template editing
+           Replace <div class="image-placeholder">Text</div> with actual <img> tags */
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--color-mid) 0%, var(--color-deep) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ===== SOURCES BOX =====
+           Credits and adversary references
+           Uses two-column grid for source list items
+           adventure-credit class for the main inspiration credit */
+        .sources-box {
+            background: rgba(26, 42, 58, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: linear-gradient(135deg, rgba(90, 143, 168, 0.15) 0%, rgba(45, 74, 94, 0.1) 100%);
+            border-left: 3px solid var(--color-highlight);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--color-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--color-highlight);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 12px;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--color-mid);
+        }
+
+        .sources-box a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════════════════
+           PAGE 2 STYLES
+           Key Locations, Secrets & Clues, Quest Resolution, Rank Adjustments
+           ═══════════════════════════════════════════════════════════════════════════ */
+        
+        /* Key Locations Box - Horizontal layout with 3 location cards
+           Add/remove location-card divs as needed
+           Each card has: h3 title, loc-desc (read-aloud), p (GM info) */
+        .locations-box {
+            border: 1px solid var(--color-accent);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: linear-gradient(135deg, var(--color-deep) 0%, var(--color-mid) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--color-highlight);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-mid) 0%, var(--color-accent) 100%);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--color-secondary);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Minor Locations - Optional section below key locations
+           Shows 3 brief location descriptions in a flex row
+           REMOVE this entire section if not needed */
+        .minor-locations {
+            background: rgba(90, 143, 168, 0.15);
+            border-top: 1px dashed var(--color-accent);
+            padding: 5px 8px;
+        }
+
+        .minor-locations h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--color-mid);
+            margin-bottom: 4px;
+        }
+
+        .minor-locations-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 9pt;
+        }
+
+        .minor-loc-item {
+            flex: 1 1 30%;
+            min-width: 150px;
+        }
+
+        .minor-loc-item strong {
+            color: var(--color-accent);
+        }
+
+        /* Secrets and Image Section - Two-column layout
+           Left: Secrets & Clues numbered list (aim for 8-10 entries)
+           Right: Atmospheric image with caption */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border: 1px solid var(--color-highlight);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-highlight) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        /* Image Box - Styled image container with caption
+           Uses flexbox to keep caption at bottom
+           Caption supports hyperlinked artist credits */
+        .image-box {
+            border: 3px solid var(--color-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-mid);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--color-light);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        .image-box .image-placeholder {
+            height: 100%;
+            min-height: 250px;
+        }
+
+        /* Bottom Section - Two columns: Quest Resolution (2/3) + Rank (1/3)
+           Adjust grid-template-columns ratio if needed */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+        }
+
+        /* Quest Resolution - Shows different ending paths
+           Uses two-column grid for resolution options
+           Common headers: ✦ Fighting, ☆ Negotiation, ★ Rewards */
+        .quest-resolution {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(26, 42, 58, 0.08) 100%);
+            border: 1px solid var(--color-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-deep) 0%, var(--color-mid) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box - Adventure difficulty and scaling suggestions
+           Header shows recommended rank range (e.g., "Rank 5-6 Adventure")
+           Include Lower Rank, Higher Rank, and optional Starting Coin */
+        .rank-section {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border-radius: 4px;
+            border: 1px solid var(--color-highlight);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-highlight) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--color-highlight);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--color-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--color-mid);
+        }
+
+        /* ===== SPREAD LAYOUT ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════════════════
+           PAGE 3 - ADVENTURE SITE (OPTIONAL)
+           Detailed dungeon/location with map, encounters table, and location key
+           DELETE THIS ENTIRE PAGE if your adventure doesn't need a detailed site
+           ═══════════════════════════════════════════════════════════════════════════ */
+        .adventure-site-header {
+            background: linear-gradient(135deg, var(--color-deep) 0%, var(--color-mid) 100%);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--color-accent);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--color-light);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        /* Site Map Container - Holds the map image and numbered markers
+           Adjust height (currently 6in) based on your map's aspect ratio
+           Map markers positioned with CSS classes .m1, .m2, .m3, .m4
+           SVG lines connect markers - adjust coordinates in HTML */
+        .site-map-container {
+            position: relative;
+            width: 100%;
+            height: 6in;
+            border: 3px solid var(--color-mid);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            background: var(--color-deep);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .site-map-container .image-placeholder {
+            height: 100%;
+        }
+
+        .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .map-line {
+            stroke: var(--color-highlight);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--color-highlight);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        /* Map Marker Positions - Adjust these percentages to match your map
+           Use browser dev tools to fine-tune positions
+           Add more markers by copying pattern: .map-marker.m5, .m6, etc. */
+        .map-marker.m1 { top: 10%; left: 20%; }
+        .map-marker.m2 { top: 40%; left: 50%; }
+        .map-marker.m3 { top: 60%; right: 25%; }
+        .map-marker.m4 { top: 85%; left: 40%; }
+
+        .site-content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 10px;
+        }
+
+        /* Encounters Table - Random encounter rolls for the site
+           Use encounter-group for entries with situation descriptions
+           encounter-row.has-situation removes border for multi-part entries */
+        .encounters-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 143, 168, 0.1) 100%);
+            border: 1px solid var(--color-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .encounters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-mid) 0%, var(--color-accent) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .encounters-box h2 span {
+            font-size: 9pt;
+            opacity: 0.9;
+        }
+
+        .encounters-table {
+            padding: 6px 8px;
+        }
+
+        .encounter-row {
+            display: flex;
+            gap: 8px;
+            padding: 4px 0;
+            border-bottom: 1px dashed var(--color-accent);
+            font-size: 9pt;
+        }
+
+        .encounter-row:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-row.has-situation {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .encounter-group {
+            border-bottom: 1px dashed var(--color-accent);
+        }
+
+        .encounter-group:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-group .encounter-row {
+            border-bottom: none;
+        }
+
+        .encounter-roll {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--color-highlight);
+            min-width: 35px;
+        }
+
+        .encounter-name {
+            font-weight: bold;
+            color: var(--color-deep);
+        }
+
+        .encounter-desc {
+            color: var(--ink-dark);
+        }
+
+        .encounter-situation {
+            background: rgba(90, 143, 168, 0.12);
+            border-left: 2px solid var(--color-accent);
+            padding: 3px 6px;
+            margin-top: 3px;
+            margin-left: 43px;
+            margin-bottom: 4px;
+            padding-bottom: 6px;
+            font-size: 8pt;
+            color: var(--color-deep);
+        }
+
+        .encounter-situation strong {
+            color: var(--color-accent);
+        }
+
+        /* Location Key - Numbered entries matching map markers
+           Each entry has: number, name, optional tags, description
+           Tags: .location-tag (default), .trap, .encounter, .loot */
+        .location-key-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 74, 94, 0.08) 100%);
+            border: 1px solid var(--color-highlight);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--color-highlight) 0%, #a03a4a 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+        }
+
+        .location-entry {
+            margin-bottom: 6px;
+            font-size: 9pt;
+        }
+
+        .location-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--color-highlight);
+            color: var(--pearl-white);
+            border-radius: 50%;
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-number-accent {
+            background: var(--color-accent);
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--color-deep);
+            font-size: 10pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--color-accent);
+            color: var(--pearl-white);
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.trap {
+            background: var(--color-highlight);
+        }
+
+        .location-tag.encounter {
+            background: var(--color-mid);
+        }
+
+        .location-tag.loot {
+            background: var(--color-secondary);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.35;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════════════════
+           PAGE 4 - ART VIBEBOARD
+           Inspirational art grid for the adventure's mood and aesthetics
+           Standard 3x2 grid, but can use .wide or .tall classes for variety
+           ═══════════════════════════════════════════════════════════════════════════ */
+        .art-page {
+            background: var(--color-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--color-highlight), var(--color-light), var(--color-highlight));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--color-light);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Art Grid - 3 columns x 2 rows by default
+           Use .wide on art-item to span 2 columns
+           Use .tall on art-item to span 2 rows
+           Use .unknown-source when artist is unknown (italicizes caption) */
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--color-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--color-mid);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Art Item Modifiers */
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 10pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--color-light);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        .art-item .image-placeholder {
+            flex: 1;
+            min-height: 0;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ════════════════════════════════════════════════════════════════════════════
+         PAGE 1 - ADVENTURE OVERVIEW
+         Title, themes, description, characters, story beats
+         ════════════════════════════════════════════════════════════════════════════ -->
+    <div class="page">
+        <!-- Title Box - Adventure name and location subtitle -->
+        <div class="title-box">
+            <h1>Adventure Title</h1>
+            <div class="subtitle">Location Name • Region • Setting</div>
+        </div>
+
+        <!-- Themes Row - 3 thematic tags with emojis -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">◈</span> Theme One</div>
+            <div class="theme-item"><span class="emoji">◉</span> Theme Two</div>
+            <div class="theme-item"><span class="emoji">≋</span> Theme Three</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description & Starting -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Overview of the adventure premise. The hook that draws the party in, the central conflict, and what's at stake.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Read-aloud text that sets the scene for players. Evocative and immersive, describing what the characters see, hear, and feel as the adventure begins."</p>
+                    <p style="margin-top: 6px;">GM-only context: hidden information, NPC motivations, or mechanical considerations at the start.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters - Add/remove character-entry divs as needed -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">CHARACTER NAME</span>
+                            <span class="character-details">— Species, Gender, Age (Calling)</span>
+                        </div>
+                        <div class="character-desc">Character's role, personality, and relevance to the adventure.</div>
+                        <div class="character-quote">"Visual description for the GM to read or paraphrase."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">CHARACTER NAME</span>
+                            <span class="character-details">— Species, Gender, Age (Calling)</span>
+                        </div>
+                        <div class="character-desc">Character's role, personality, and relevance to the adventure.</div>
+                        <div class="character-quote">"Visual description for the GM to read or paraphrase."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">CHARACTER NAME</span>
+                            <span class="character-details">— Species, Gender, Age (Calling)</span>
+                        </div>
+                        <div class="character-desc">Character's role, personality, and relevance to the adventure.</div>
+                        <div class="character-quote">"Visual description for the GM to read or paraphrase."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image - Replace placeholder with <img src="path/to/image.jpg"> -->
+                <div class="story-image-block">
+                    <div class="image-placeholder">Page 1 Image</div>
+                </div>
+
+                <!-- Suggested Story - Add/remove story-section divs as needed -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, then continue with story beats:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Act One Title</span>
+                        <ul>
+                            <li>First story beat. What happens and what choices do players face?</li>
+                            <li>Mechanical notes, skill checks, or combat encounters.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Act Two Title</span>
+                        <ul>
+                            <li>Story escalates. New information or complications arise.</li>
+                            <li>Use <em>italics</em> for location and NPC names.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Act Three Title</span>
+                        <ul>
+                            <li>Climax of the adventure. Main conflict comes to a head.</li>
+                            <li>Possible resolutions and immediate aftermath.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Conclusion</span>
+                        <ul>
+                            <li>How the adventure wraps up after the climax.</li>
+                            <li>Seeds for future adventures or lasting consequences.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources - Credit inspirations and list adversary/item references -->
+        <div class="content-box sources-box" style="margin-top: 6px;">
+            <h2>Sources & Adversaries</h2>
+            <div class="content-box-inner">
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="#" target="_blank"><strong>Original Adventure</strong></a> by Creator Name. Story, mechanics, and setting reworked for BREAK!!'s universe.</p>
+            <ul>
+                <li><strong>Adversary Name:</strong> Source (Book, pg. #)</li>
+                <li><strong>Adversary Name:</strong> Creator (<a href="#" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Adversary Name:</strong> Creator (<a href="#" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Item Name:</strong> BREAK!! <a href="#" target="_blank">Blog</a></li>
+                <li><strong>Trap Reference:</strong> Source or Homebrew</li>
+                <li><strong>Additional:</strong> As needed</li>
+            </ul>
+            </div>
+        </div>
+        <div class="page-credit">Made by Your Name</div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════════════════════
+         PAGE 2 - LOCATIONS & RESOLUTION
+         Key locations, secrets, quest endings, rank adjustments
+         ════════════════════════════════════════════════════════════════════════════ -->
+    <div class="page">
+        <!-- Key Locations Box - Add/remove location-card divs as needed -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Location One</h3>
+                    <p class="loc-desc">"Read-aloud sensory description of this location."</p>
+                    <p>GM information: what can be found here, dangers, NPCs, items, mechanical details.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Location Two</h3>
+                    <p class="loc-desc">"Read-aloud sensory description of this location."</p>
+                    <p>GM information: what can be found here, dangers, NPCs, items, mechanical details.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Location Three</h3>
+                    <p class="loc-desc">"Read-aloud sensory description of this location."</p>
+                    <p>GM information: what can be found here, dangers, NPCs, items, mechanical details.</p>
+                </div>
+            </div>
+
+            <!-- Minor Locations - REMOVE this section if not needed -->
+            <div class="minor-locations">
+                <h3>Minor Locations</h3>
+                <div class="minor-locations-list">
+                    <div class="minor-loc-item"><strong>Minor Location:</strong> Brief description of secondary location.</div>
+                    <div class="minor-loc-item"><strong>Minor Location:</strong> Brief description of secondary location.</div>
+                    <div class="minor-loc-item"><strong>Minor Location:</strong> Brief description of secondary location.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>World-building or backstory that adds depth.</li>
+                    <li>NPC's hidden motivation or secret.</li>
+                    <li>Clue pointing toward adventure's solution.</li>
+                    <li>Historical or lore information.</li>
+                    <li>Secret that changes how players approach conflict.</li>
+                    <li>Foreshadowing for future adventures.</li>
+                    <li>Practical information players might miss.</li>
+                    <li>Connection to the wider world.</li>
+                    <li>NPC's personal secret that humanizes them.</li>
+                    <li>Revelation that ties everything together.</li>
+                </ol>
+                </div>
+            </div>
+            <!-- Image Box - Replace placeholder with <img src="path/to/image.jpg"> -->
+            <div class="image-box">
+                <div class="image-placeholder">Page 2 Image</div>
+                <div class="image-caption">"Image Title" — <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Resolution Path A</h3>
+                        <p>One way the adventure concludes. Rewards, consequences, loot.<br><strong>Loot:</strong> Specific items<br><strong>Reward:</strong> Coin + benefits</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Resolution Path B</h3>
+                        <p>Alternative ending based on different choices. Combat vs. diplomacy, etc.<br><strong>Reward:</strong> Different benefits</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank X-Y Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> Scale down by swapping monsters or reducing numbers.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> Increase challenge by adding monsters or upgrading stats.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Starting Coin:</strong> Suggested gold for new characters.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════════════════════
+         PAGE 3 - ADVENTURE SITE (OPTIONAL)
+         Detailed dungeon/location with map, encounters, and location key
+         DELETE THIS ENTIRE PAGE if not needed for your adventure
+         ════════════════════════════════════════════════════════════════════════════ -->
+    <div class="page">
+        <div class="adventure-site-header">
+            <h1>Site Name <span>[Adventure Site]</span></h1>
+        </div>
+
+        <!-- Map Container - Replace placeholder with <img src="path/to/map.jpg"> -->
+        <div class="site-map-container">
+            <div class="image-placeholder">Adventure Site Map</div>
+            <!-- Connection Lines (SVG) - Adjust x1,y1,x2,y2 coordinates to match your map -->
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <line class="map-line" x1="22" y1="13" x2="52" y2="43" />
+                <line class="map-line" x1="52" y1="43" x2="72" y2="63" />
+                <line class="map-line" x1="52" y1="43" x2="42" y2="88" />
+            </svg>
+            <!-- Map Markers - Adjust positions in CSS (.m1, .m2, etc.) -->
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+        </div>
+
+        <div class="site-content-columns">
+            <!-- Random Encounters Table -->
+            <div class="encounters-box">
+                <h2>Random Encounters <span>(d20)</span></h2>
+                <div class="encounters-table">
+                    <div class="encounter-row">
+                        <span class="encounter-roll">1-10</span>
+                        <span class="encounter-desc"><span class="encounter-name">No Encounter:</span> Atmospheric sounds or minor events.</span>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">11-15</span>
+                            <span class="encounter-desc"><span class="encounter-name">Encounter Name:</span> Creature x#</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> What the encounter is doing and context.
+                            <br><br><strong>Consequences:</strong> Outcomes based on player actions.
+                        </div>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">16-20</span>
+                            <span class="encounter-desc"><span class="encounter-name">Encounter Name:</span> Creature x#</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> What the encounter is doing and context.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Key - Add/remove location-entry divs as needed -->
+            <div class="location-key-box">
+                <h2>Location Key</h2>
+                <div class="location-key-content">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Location Name</span>
+                            <span class="location-tag">Feature</span>
+                        </div>
+                        <div class="location-desc">Description of keyed location. What players find and can interact with.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Location Name</span>
+                            <span class="location-tag trap">Trap</span>
+                        </div>
+                        <div class="location-desc">Description of keyed location. Trap details, triggers, and effects.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Location Name</span>
+                            <span class="location-tag loot">Loot</span>
+                        </div>
+                        <div class="location-desc">Description of keyed location. Loot items and their locations.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Location Name</span>
+                            <span class="location-tag trap">Trap</span>
+                            <span class="location-tag encounter">Guardian</span>
+                        </div>
+                        <div class="location-desc">Description of keyed location. Guardian encounter and final challenge.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════════════════════
+         PAGE 4 - ART VIBEBOARD
+         Inspirational art grid (3x2 by default)
+         Replace placeholders with <img src="path/to/art.jpg">
+         Use .unknown-source class when artist is unknown
+         ════════════════════════════════════════════════════════════════════════════ -->
+    <div class="page art-page">
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 - Replace placeholders with <img src="path/to/image.jpg" alt="Description"> -->
+            <div class="art-item">
+                <div class="image-placeholder">Art 1</div>
+                <div class="art-caption">"Title" by <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+            <div class="art-item">
+                <div class="image-placeholder">Art 2</div>
+                <div class="art-caption">"Title" by <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <div class="image-placeholder">Art 3</div>
+                <div class="art-caption">"Title" — Artist Unknown</div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <div class="image-placeholder">Art 4</div>
+                <div class="art-caption">"Title" by <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+            <div class="art-item">
+                <div class="image-placeholder">Art 5</div>
+                <div class="art-caption">"Title" by <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+            <div class="art-item">
+                <div class="image-placeholder">Art 6</div>
+                <div class="art-caption">"Title" by <a href="#" target="_blank">Artist Name</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
