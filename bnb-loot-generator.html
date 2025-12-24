@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B Loot Generator | Quagg Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="break-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Quagg Studios</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="break.html">BREAK!! Homebrew</a></li>
+                <li><a href="imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="bnb-loot-generator.html" class="active">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Floating Table of Contents -->
+    <nav class="toc-nav">
+        <div class="toc-title">Contents</div>
+        <ul class="toc-list">
+            <li><a href="#about">About B&B</a></li>
+            <li><a href="#lootgen">Loot Generator</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#custom">Custom Parts</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content break-page">
+        
+        <!-- Bunkers & Badasses Info Section -->
+        <section id="about" class="break-intro">
+            <div class="break-info-card">
+                <div class="break-info-content">
+                    <h1><strong><em>Bunkers & Badasses</em></strong></h1>
+                    <p class="break-tagline">The Borderlands TTRPG</p>
+                    <p class="break-description">
+                        <strong><em>Bunkers & Badasses</em></strong> is the official tabletop roleplaying game 
+                        based on the Borderlands video game franchise. Published by Nerdvana Games, it brings 
+                        the chaotic loot-driven mayhem of Pandora to the tabletop with explosive combat, 
+                        procedurally generated guns, and the iconic humor of the series.
+                    </p>
+                    <div class="break-links">
+                        <a href="https://nerdvanagames.myshopify.com/" target="_blank" class="break-link">Nerdvana Games</a>
+                        <a href="https://github.com/eronth/bunkers-and-badasses" target="_blank" class="break-link">FoundryVTT System</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LootGenerator Introduction -->
+        <section id="lootgen" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>B&B Loot Generator</h2>
+                    <p class="helical-subtitle">Automated Loot Card Generator for Bunkers & Badasses</p>
+                </div>
+            </div>
+            
+            <div class="helical-content-row">
+                <div class="helical-description">
+                    <p>
+                        <strong>LootGenerator</strong> is a Python desktop application for generating loot cards 
+                        in <strong><em>Bunkers & Badasses</em></strong>. Built with PyQt5, it automates the 
+                        gun rolling tables from the sourcebook and produces printable PDF cards complete with 
+                        gun art pulled from the Borderlands games.
+                    </p>
+                    <p>
+                        Beyond guns, the application supports generating shields, grenades, relics, potions, and 
+                        melee weapons — all with proper stat calculations and visual cards. It also includes 
+                        <strong>FoundryVTT integration</strong> for direct JSON export to Eronth's B&B system.
+                    </p>
+                    <div class="break-links" style="margin-top: 1rem;">
+                        <a href="https://github.com/qu-gg/BnB-LootGenerator" target="_blank" class="break-link">GitHub Repository</a>
+                        <a href="https://github.com/qu-gg/BnB-LootGenerator/releases" target="_blank" class="break-link">Download Releases</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screenshot Gallery -->
+            <div class="adversary-section-vertical" style="margin-top: 2rem;">
+                <figure style="text-align: center; margin: 1.5rem 0;">
+                    <img src="bnb-loot-generator/app-front.png" alt="Gun Card Front" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px var(--shadow);">
+                    <figcaption style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary);">Fig 1. Front view of the 2-Sided Gun Card.</figcaption>
+                </figure>
+                
+                <figure style="text-align: center; margin: 1.5rem 0;">
+                    <img src="bnb-loot-generator/app-back.png" alt="Gun Card Back" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px var(--shadow);">
+                    <figcaption style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary);">Fig 2. Back/Details view of the 2-Sided Gun Card.</figcaption>
+                </figure>
+                
+                <figure style="text-align: center; margin: 1.5rem 0;">
+                    <img src="bnb-loot-generator/physical-cards.png" alt="Printed Cards" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px var(--shadow);">
+                    <figcaption style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary);">Fig 3. Front/Back of a printed card.</figcaption>
+                </figure>
+                
+                <figure style="text-align: center; margin: 1.5rem 0;">
+                    <img src="bnb-loot-generator/foundry-import.png" alt="FoundryVTT Import" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px var(--shadow);">
+                    <figcaption style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary);">Fig 4. Process of importing items into FoundryVTT.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>Getting Started</h2>
+                    <p class="helical-subtitle">Installation & Running</p>
+                </div>
+            </div>
+            
+            <div class="adversary-section-vertical">
+                <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Option 1: Executable (Windows)</h3>
+                <p>
+                    Download the latest release from GitHub and run <code>BnB-LootGenerator.exe</code> directly. 
+                    No Python installation required.
+                </p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    <em>Note: Some antivirus software may flag PyInstaller executables. This is a false positive - see the 
+                    <a href="https://github.com/hankhank10/false-positive-malware-reporting" target="_blank">false positive reporting guide</a>.</em>
+                </p>
+                
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Option 2: Python (All Platforms)</h3>
+                <p>Clone the repository and run from command line:</p>
+                <pre style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin: 1rem 0; overflow-x: auto;"><code>git clone https://github.com/qu-gg/BnB-LootGenerator.git
+cd BnB-LootGenerator
+pip install -r requirements.txt
+python main.py</code></pre>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">PDF Viewer Note</h3>
+                <p>
+                    Generated PDFs use form fields for text. You'll need a PDF viewer that supports form rendering:
+                </p>
+                <ul class="rec-list" style="margin-top: 0.5rem;">
+                    <li><strong>Works:</strong> Acrobat Reader DC</li>
+                    <li><strong>Doesn't Work:</strong> Foxit (Safe Mode), Browser PDFs, macOS Preview</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Custom Parts Section -->
+        <section id="custom" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>Custom Parts</h2>
+                    <p class="helical-subtitle">Extend with Homebrew Content</p>
+                </div>
+            </div>
+            
+            <div class="adversary-section-vertical">
+                <p>
+                    LootGenerator dynamically parses JSON files at runtime, making it easy to add custom content. 
+                    Simply edit the files in the <code>resources/</code> folder to add your own:
+                </p>
+                
+                <ul class="rec-list" style="margin: 1rem 0;">
+                    <li><strong>Elements</strong> — New damage types and rolling tiers</li>
+                    <li><strong>Guilds</strong> — Custom weapon manufacturers with unique bonuses</li>
+                    <li><strong>Gun Types</strong> — Additional weapon categories</li>
+                    <li><strong>Gun Prefixes</strong> — Named modifiers with stat effects</li>
+                    <li><strong>Red Text Mods</strong> — Legendary weapon effects</li>
+                    <li><strong>Gun Images</strong> — Custom artwork URLs</li>
+                </ul>
+                
+                <p>
+                    Alternative damage balancing tables from community members (McCoby's, RobMWJ's) are also included 
+                    as optional presets.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <h2 class="blog-section-title">Resources</h2>
+            <div class="resources-grid">
+                <a href="https://github.com/qu-gg/BnB-LootGenerator" target="_blank" class="resource-card">
+                    <h3>Source Code</h3>
+                    <p>Full Python source on GitHub</p>
+                </a>
+                <a href="https://github.com/qu-gg/BnB-LootGenerator/releases" target="_blank" class="resource-card">
+                    <h3>Releases</h3>
+                    <p>Download Windows executable</p>
+                </a>
+                <a href="https://github.com/eronth/bunkers-and-badasses" target="_blank" class="resource-card">
+                    <h3>FoundryVTT System</h3>
+                    <p>Eronth's B&B module for Foundry</p>
+                </a>
+                <a href="https://nerdvanagames.myshopify.com/" target="_blank" class="resource-card">
+                    <h3>Nerdvana Games</h3>
+                    <p>Official B&B sourcebooks</p>
+                </a>
+                <a href="https://www.lootlemon.com/db/borderlands-3/weapons" target="_blank" class="resource-card">
+                    <h3>LootLemon</h3>
+                    <p>Gun art image source</p>
+                </a>
+                <a href="https://github.com/qu-gg/BnB-LootGenerator/issues" target="_blank" class="resource-card">
+                    <h3>Issue Tracker</h3>
+                    <p>Report bugs or request features</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Quagg Studios · Bunkers & Badasses is © Nerdvana Games · Borderlands is © Gearbox Software</p>
+    </footer>
+</body>
+</html>

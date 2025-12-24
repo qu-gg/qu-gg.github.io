@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperium Shipyard | Quagg Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="break-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Quagg Studios</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="break.html">BREAK!! Homebrew</a></li>
+                <li><a href="imperium-shipyard.html" class="active">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Floating Table of Contents -->
+    <nav class="toc-nav">
+        <div class="toc-title">Contents</div>
+        <ul class="toc-list">
+            <li><a href="#about">About Traveller</a></li>
+            <li><a href="#shipyard">Imperium Shipyard</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#custom-parts">Custom Parts</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content break-page">
+        
+        <!-- Traveller Info Section -->
+        <section id="about" class="break-intro">
+            <div class="break-info-card">
+                <div class="break-info-content">
+                    <h1><strong><em>Traveller</em></strong></h1>
+                    <p class="break-tagline">Classic Sci-Fi Roleplaying</p>
+                    <p class="break-description">
+                        <strong><em>Traveller</em></strong> is the quintessential science fiction roleplaying game, 
+                        originally published in 1977 and now in its Mongoose 2nd Edition. Players explore a vast 
+                        interstellar civilization, trading goods between worlds, taking on mercenary contracts, 
+                        and charting unexplored star systems aboard their own spacecraft.
+                    </p>
+                    <div class="break-links">
+                        <a href="https://www.mongoosepublishing.com/collections/traveller" target="_blank" class="break-link">Mongoose Publishing</a>
+                        <a href="https://wiki.travellerrpg.com/Main_Page" target="_blank" class="break-link">Traveller Wiki</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imperium Shipyard Introduction -->
+        <section id="shipyard" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>Imperium Shipyard</h2>
+                    <p class="helical-subtitle">Python Ship Designer for Mongoose Traveller SRD</p>
+                </div>
+            </div>
+            
+            <div class="helical-content-row">
+                <div class="helical-description">
+                    <p>
+                        <strong>Imperium Shipyard</strong> is an open-source spacecraft construction tool for 
+                        <strong><em>Mongoose Traveller 1st Edition</em></strong>. Built with Python and PyQt5, it provides 
+                        a visual interface for designing ships according to the official SRD rules, complete with 
+                        automatic cost calculations, cargo tracking, and drive performance validation.
+                    </p>
+                    <p>
+                        The application uses a JSON backend for data management and a custom <code>.srd</code> file format 
+                        for saving, loading, and sharing ship designs. All default ships from the Core Rulebooks are 
+                        included.
+                    </p>
+                    <div class="break-links" style="margin-top: 1rem;">
+                        <a href="https://github.com/Imperium-Tech/imperium-shipyard" target="_blank" class="break-link">GitHub Repository</a>
+                        <a href="https://github.com/Imperium-Tech/imperium-shipyard/releases" target="_blank" class="break-link">Download Releases</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Showcase -->
+            <div class="adversary-section-vertical" style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Video Review & Showcase</h3>
+                <p style="margin-bottom: 1rem;">
+                    A kind walkthrough and review of Imperium Shipyard, demonstrating the ship building process and features:
+                </p>
+                <div class="video-embed" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/Dpdbqx-Kj6M" 
+                        title="Imperium Shipyard Review" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>Getting Started</h2>
+                    <p class="helical-subtitle">Installation & Running</p>
+                </div>
+            </div>
+            
+            <div class="adversary-section-vertical">
+                <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Option 1: Executable (Windows)</h3>
+                <p>
+                    Download the latest release from GitHub and run <code>ImperiumShipyard.exe</code> directly. 
+                    No installation required.
+                </p>
+                
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Option 2: Python (All Platforms)</h3>
+                <p>Clone the repository and run from command line:</p>
+                <pre style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin: 1rem 0; overflow-x: auto;"><code>git clone https://github.com/Imperium-Tech/imperium-shipyard.git
+cd imperium-shipyard
+pip install -r requirements.txt
+python shipbuilder.py</code></pre>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Folder Structure</h3>
+                <pre style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin: 1rem 0; overflow-x: auto;"><code>ImperiumShipyard/
+├── ImperiumShipyard.exe
+├── imperium/
+│   ├── resources/  - Hull data, drives, weapons (JSON)
+│   └── shipyard/   - Ship models (.srd files)
+└── shipbuilder.py  - Main application</code></pre>
+            </div>
+        </section>
+
+        <!-- Custom Parts Section -->
+        <section id="custom-parts" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>Custom Parts</h2>
+                    <p class="helical-subtitle">Extend with Your Own Components</p>
+                </div>
+            </div>
+            
+            <div class="adversary-section-vertical">
+                <p>
+                    Imperium Shipyard allows adding custom parts by editing the JSON files in the 
+                    <code>imperium/resources/</code> folder. The application parses these files at runtime, 
+                    so new items appear automatically without code changes.
+                </p>
+                
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Available Custom Parts</h3>
+                <ul class="rec-list" style="margin-bottom: 1rem;">
+                    <li><strong>hull_armour.json</strong> — Armor types and protection values</li>
+                    <li><strong>hull_computer.json</strong> — Computer models and ratings</li>
+                    <li><strong>hull_software.json</strong> — Software packages and levels</li>
+                    <li><strong>hull_sensors.json</strong> — Sensor suites and DMs</li>
+                    <li><strong>hull_screens.json</strong> — Defensive screen options</li>
+                    <li><strong>hull_misc.json</strong> — Miscellaneous equipment</li>
+                </ul>
+                
+                <p>
+                    Simply add new entries following the existing JSON structure. Check the repository 
+                    for exact format specifications and examples.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <h2 class="blog-section-title">Resources</h2>
+            <div class="resources-grid">
+                <a href="https://github.com/Imperium-Tech/imperium-shipyard" target="_blank" class="resource-card">
+                    <h3>Source Code</h3>
+                    <p>Full Python source on GitHub</p>
+                </a>
+                <a href="https://github.com/Imperium-Tech/imperium-shipyard/releases" target="_blank" class="resource-card">
+                    <h3>Releases</h3>
+                    <p>Download Windows executable</p>
+                </a>
+                <a href="https://github.com/Imperium-Tech/imperium-shipyard/issues" target="_blank" class="resource-card">
+                    <h3>Issue Tracker</h3>
+                    <p>Report bugs or request features</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Quagg Studios · Traveller is © Mongoose Publishing</p>
+    </footer>
+</body>
+</html>
