@@ -406,6 +406,112 @@
             margin-bottom: 6px;
         }
 
+        /* ===== REGIONAL SEPARATOR STYLES ===== */
+        .region-separator-left,
+        .region-separator-right {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            background: var(--region-bg);
+            position: relative;
+        }
+
+        .region-separator-left::before,
+        .region-separator-right::before {
+            content: '';
+            position: absolute;
+            top: 0.25in;
+            left: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-left: 4px solid var(--accent-primary);
+            border-top: 4px solid var(--accent-primary);
+            opacity: 0.8;
+        }
+
+        .region-separator-left::after,
+        .region-separator-right::after {
+            content: '';
+            position: absolute;
+            bottom: 0.25in;
+            right: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-right: 4px solid var(--accent-secondary);
+            border-bottom: 4px solid var(--accent-secondary);
+            opacity: 0.8;
+        }
+
+        .region-separator-right {
+            padding: 0.5in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .region-title {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 38pt;
+            color: var(--title-color, #6b3fa0);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 8px;
+        }
+
+        .region-tagline {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 10pt;
+            color: var(--tagline-color, #2a1f3d);
+            text-align: center;
+            font-style: italic;
+            max-width: 6in;
+            margin: 0 auto 0.2in auto;
+            line-height: 1.5;
+        }
+
+        .region-images {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .region-landscape {
+            width: 100%;
+            height: 1.7in;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 2px solid var(--image-border, #2d4a5e);
+        }
+
+        .region-landscape img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .region-portraits {
+            display: flex;
+            gap: 4px;
+        }
+
+        .region-portrait {
+            flex: 1;
+            height: 2.4in;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 2px solid var(--image-border, #2d4a5e);
+        }
+
+        .region-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         /* ===== ADVENTURE SECTION WRAPPER ===== */
         .adventure-section {
             /* Contains scoped styles for each adventure */
@@ -455,12 +561,48 @@
         const bookStructure = {
             'Wistful Dark': {
                 sublocations: ['Crystalia', 'Murk', 'Shard', 'Shadowed Lands', 'The Eaten Isle', 'Aiden', "Hollow Queen's Kingdom"],
+                tagline: 'The furthest continent from the Sun Machine, a dark and<br>melancholy realm filled with an equal measure of fear and hope.',
+                colors: {
+                    panelBg: 'linear-gradient(135deg, #2a2440 0%, #1a1428 50%, #2a2440 100%)',
+                    panelBorder: '#6b5b8c',
+                    titleColor: '#c4b8d9',
+                    taglineColor: '#a99bc2',
+                    accentPrimary: '#8b7aab',
+                    accentSecondary: '#5c4d7a',
+                    imageBorder: '#6b5b8c'
+                },
+                images: {
+                    landscape: 'Regional Images/page304_Wistful_Dark_image003.png',
+                    portraits: [
+                        'Regional Images/page304_Wistful_Dark_image001.png',
+                        'Regional Images/page304_Wistful_Dark_image002.png',
+                        'Regional Images/page304_Wistful_Dark_image004.png'
+                    ]
+                },
                 adventures: [
                     // No adventures yet
                 ]
             },
             'The Twilight Meridian': {
                 sublocations: ['Seven Holy Isles', 'Night Haven', 'Sunken Isles', 'Stahlfeld', 'Galvanus Archipelago'],
+                tagline: 'On the cusp of dusk and dawn, the Twilight Meridian has no dominant<br>land mass but is instead a series of diverse and interrelated islands.',
+                colors: {
+                    panelBg: 'linear-gradient(135deg, #3d2942 0%, #1f3a4a 50%, #2a3f4f 100%)',
+                    panelBorder: '#d4896a',
+                    titleColor: '#f5c09a',
+                    taglineColor: '#d4b8a8',
+                    accentPrimary: '#e8a070',
+                    accentSecondary: '#4a7a8a',
+                    imageBorder: '#8a6a5a'
+                },
+                images: {
+                    landscape: 'Regional Images/page306_Twilight_Meridian_image001.png',
+                    portraits: [
+                        'Regional Images/page306_Twilight_Meridian_image002.png',
+                        'Regional Images/page306_Twilight_Meridian_image003.png',
+                        'Regional Images/page306_Twilight_Meridian_image004.png'
+                    ]
+                },
                 adventures: [
                     {
                         file: '2-danger-for-a-rokko-do.html',
@@ -484,6 +626,24 @@
             },
             'Blazing Garden': {
                 sublocations: ['Taaga', 'Thunda Sands', 'Sol Alliance', 'No-Folk Land', 'Pride Coast'],
+                tagline: 'Bathed in the glory of the Sun Machine, the Blazing Garden is a bold<br>and bombastic place full of larger-than-life characters and creatures.',
+                colors: {
+                    panelBg: 'linear-gradient(135deg, #5c3a1a 0%, #8a4a1a 50%, #6a3a18 100%)',
+                    panelBorder: '#e8a840',
+                    titleColor: '#ffd875',
+                    taglineColor: '#f5d8a8',
+                    accentPrimary: '#f5c040',
+                    accentSecondary: '#c87830',
+                    imageBorder: '#c8884a'
+                },
+                images: {
+                    landscape: 'Regional Images/page308_Blazing_Garden_image004.png',
+                    portraits: [
+                        'Regional Images/page308_Blazing_Garden_image001.png',
+                        'Regional Images/page308_Blazing_Garden_image002.png',
+                        'Regional Images/page308_Blazing_Garden_image003.png'
+                    ]
+                },
                 adventures: [
                     {
                         file: '3-thunda-circuit.html',
@@ -501,6 +661,24 @@
             },
             'Buried Kingdom': {
                 sublocations: ['Old Iron', 'New Ore', 'The Tunnels', 'Lost Crystal', 'Machine Labyrinth'],
+                tagline: 'Below the crust of the earth, an endless battle<br>rages in the burrows and caverns of the Underland.',
+                colors: {
+                    panelBg: 'linear-gradient(135deg, #2a2a2e 0%, #3a3a40 50%, #2a2a2e 100%)',
+                    panelBorder: '#7a7a80',
+                    titleColor: '#c8c8d0',
+                    taglineColor: '#a8a8b0',
+                    accentPrimary: '#8a6a4a',
+                    accentSecondary: '#5a5a60',
+                    imageBorder: '#6a6a70'
+                },
+                images: {
+                    landscape: 'Regional Images/page310_Buried_Kingdom_image001.png',
+                    portraits: [
+                        'Regional Images/page310_Buried_Kingdom_image002.png',
+                        'Regional Images/page310_Buried_Kingdom_image003.png',
+                        'Regional Images/page310_Buried_Kingdom_image004.png'
+                    ]
+                },
                 adventures: [
                     // No adventures yet
                 ]
@@ -529,7 +707,9 @@
         let currentPageNumber = 1; // Starts at 1 after title pages
 
         async function fetchHTML(url) {
-            const response = await fetch(url);
+            // Add cache-busting to ensure fresh content
+            const cacheBuster = `?t=${Date.now()}`;
+            const response = await fetch(url + cacheBuster, { cache: 'no-store' });
             return await response.text();
         }
 
@@ -599,6 +779,64 @@
             }
             
             return wrapper;
+        }
+
+        function createRegionalSeparator(regionName, regionData) {
+            const spread = document.createElement('div');
+            spread.className = 'spread-container';
+            const colors = regionData.colors;
+            
+            // Shared CSS variables for both pages
+            const colorStyles = `
+                --region-bg: ${colors.panelBg};
+                --title-color: ${colors.titleColor};
+                --tagline-color: ${colors.taglineColor};
+                --accent-primary: ${colors.accentPrimary};
+                --accent-secondary: ${colors.accentSecondary};
+                --image-border: ${colors.imageBorder};
+            `;
+            
+            // Left page - decorative only
+            const leftWrapper = document.createElement('div');
+            leftWrapper.className = 'page-wrapper';
+            const leftPage = document.createElement('div');
+            leftPage.className = 'region-separator-left';
+            leftPage.style.cssText = colorStyles;
+            leftWrapper.appendChild(leftPage);
+            spread.appendChild(leftWrapper);
+            
+            // Right page - title and images
+            const rightWrapper = document.createElement('div');
+            rightWrapper.className = 'page-wrapper';
+            const rightPage = document.createElement('div');
+            rightPage.className = 'region-separator-right';
+            rightPage.style.cssText = colorStyles;
+            
+            rightPage.innerHTML = `
+                <div class="region-title">${regionName}</div>
+                <div class="region-tagline">${regionData.tagline}</div>
+                <div class="region-images">
+                    <div class="region-landscape">
+                        <img src="${regionData.images.landscape}" alt="${regionName} landscape">
+                    </div>
+                    <div class="region-portraits">
+                        <div class="region-portrait">
+                            <img src="${regionData.images.portraits[0]}" alt="${regionName} image 1">
+                        </div>
+                        <div class="region-portrait">
+                            <img src="${regionData.images.portraits[1]}" alt="${regionName} image 2">
+                        </div>
+                        <div class="region-portrait">
+                            <img src="${regionData.images.portraits[2]}" alt="${regionName} image 3">
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            rightWrapper.appendChild(rightPage);
+            spread.appendChild(rightWrapper);
+            
+            return spread;
         }
 
         function generateToC() {
@@ -771,96 +1009,109 @@
                 guideSoloSection.appendChild(guideSection);
                 container.appendChild(guideSoloSection);
                 
-                // 3. Load each adventure in order (by region) - in spreads
-                const orderedAdventures = getOrderedAdventures();
+                // 3. Load adventures by region with regional separators
+                let adventureIndex = 0;
                 
-                // Collect all adventure pages first
-                const allAdventurePages = [];
-                
-                for (let i = 0; i < orderedAdventures.length; i++) {
-                    const adventure = orderedAdventures[i];
-                    status.textContent = `Loading ${adventure.title}...`;
+                for (const [regionName, regionData] of Object.entries(bookStructure)) {
+                    status.textContent = `Adding ${regionName} separator...`;
                     
-                    const html = await fetchHTML(adventure.file);
-                    const styles = extractStyles(html);
-                    const pages = extractPages(html);
+                    // 3a. Add regional separator spread (no page numbers)
+                    const separatorSpread = createRegionalSeparator(regionName, regionData);
+                    container.appendChild(separatorSpread);
                     
-                    const scopeClass = `adventure-${i}`;
-                    
-                    // Record start page for ToC (keyed by region)
-                    tocData[adventure.region].push({
-                        title: adventure.title,
-                        sublocation: adventure.sublocation,
-                        location: adventure.location,
-                        startPage: currentPageNumber
+                    // 3b. Load adventures for this region
+                    // Sort adventures by sublocation order
+                    const sortedAdventures = [...regionData.adventures].sort((a, b) => {
+                        const aIdx = regionData.sublocations.indexOf(a.sublocation);
+                        const bIdx = regionData.sublocations.indexOf(b.sublocation);
+                        return aIdx - bIdx;
                     });
                     
-                    // Add adventure pages with their styles
-                    pages.forEach(page => {
-                        allAdventurePages.push({
-                            page,
-                            styles,
-                            scopeClass
+                    // Collect pages for this region's adventures
+                    const regionAdventurePages = [];
+                    
+                    for (const adventure of sortedAdventures) {
+                        status.textContent = `Loading ${adventure.title}...`;
+                        
+                        const html = await fetchHTML(adventure.file);
+                        const styles = extractStyles(html);
+                        const pages = extractPages(html);
+                        
+                        const scopeClass = `adventure-${adventureIndex}`;
+                        adventureIndex++;
+                        
+                        // Record start page for ToC
+                        tocData[regionName].push({
+                            title: adventure.title,
+                            sublocation: adventure.sublocation,
+                            location: adventure.location,
+                            startPage: currentPageNumber
                         });
-                        currentPageNumber++;
-                    });
-                    
-                    // Pad to 4 pages if only 3 pages
-                    if (pages.length === 3) {
-                        allAdventurePages.push({
-                            page: null, // blank filler
-                            styles: null,
-                            scopeClass: null
+                        
+                        // Add adventure pages with their styles
+                        pages.forEach(page => {
+                            regionAdventurePages.push({
+                                page,
+                                styles,
+                                scopeClass
+                            });
+                            currentPageNumber++;
                         });
-                        currentPageNumber++;
-                    }
-                }
-                
-                // Reset page counter for actual rendering
-                currentPageNumber = 1;
-                
-                // Create spreads (2 pages per spread)
-                for (let i = 0; i < allAdventurePages.length; i += 2) {
-                    const spread = document.createElement('div');
-                    spread.className = 'spread-container';
-                    
-                    // Left page
-                    const leftPageData = allAdventurePages[i];
-                    if (leftPageData.page === null) {
-                        spread.appendChild(createBlankFillerPage());
-                    } else {
-                        const leftSection = document.createElement('div');
-                        leftSection.className = `adventure-section ${leftPageData.scopeClass}`;
-                        const leftStyleEl = document.createElement('style');
-                        leftStyleEl.textContent = scopeStyles(leftPageData.styles, leftPageData.scopeClass);
-                        leftSection.appendChild(leftStyleEl);
-                        leftSection.appendChild(createPageWrapper(leftPageData.page));
-                        spread.appendChild(leftSection);
-                    }
-                    
-                    // Right page (if exists)
-                    if (i + 1 < allAdventurePages.length) {
-                        const rightPageData = allAdventurePages[i + 1];
-                        if (rightPageData.page === null) {
-                            spread.appendChild(createBlankFillerPage());
-                        } else {
-                            const rightSection = document.createElement('div');
-                            rightSection.className = `adventure-section ${rightPageData.scopeClass}`;
-                            const rightStyleEl = document.createElement('style');
-                            rightStyleEl.textContent = scopeStyles(rightPageData.styles, rightPageData.scopeClass);
-                            rightSection.appendChild(rightStyleEl);
-                            rightSection.appendChild(createPageWrapper(rightPageData.page));
-                            spread.appendChild(rightSection);
+                        
+                        // Pad to 4 pages if only 3 pages
+                        if (pages.length === 3) {
+                            regionAdventurePages.push({
+                                page: null,
+                                styles: null,
+                                scopeClass: null
+                            });
+                            currentPageNumber++;
                         }
                     }
                     
-                    container.appendChild(spread);
+                    // Create spreads for this region's adventures
+                    for (let i = 0; i < regionAdventurePages.length; i += 2) {
+                        const spread = document.createElement('div');
+                        spread.className = 'spread-container';
+                        
+                        // Left page
+                        const leftPageData = regionAdventurePages[i];
+                        if (leftPageData.page === null) {
+                            spread.appendChild(createBlankFillerPage());
+                        } else {
+                            const leftSection = document.createElement('div');
+                            leftSection.className = `adventure-section ${leftPageData.scopeClass}`;
+                            const leftStyleEl = document.createElement('style');
+                            leftStyleEl.textContent = scopeStyles(leftPageData.styles, leftPageData.scopeClass);
+                            leftSection.appendChild(leftStyleEl);
+                            leftSection.appendChild(createPageWrapper(leftPageData.page));
+                            spread.appendChild(leftSection);
+                        }
+                        
+                        // Right page (if exists)
+                        if (i + 1 < regionAdventurePages.length) {
+                            const rightPageData = regionAdventurePages[i + 1];
+                            if (rightPageData.page === null) {
+                                spread.appendChild(createBlankFillerPage());
+                            } else {
+                                const rightSection = document.createElement('div');
+                                rightSection.className = `adventure-section ${rightPageData.scopeClass}`;
+                                const rightStyleEl = document.createElement('style');
+                                rightStyleEl.textContent = scopeStyles(rightPageData.styles, rightPageData.scopeClass);
+                                rightSection.appendChild(rightStyleEl);
+                                rightSection.appendChild(createPageWrapper(rightPageData.page));
+                                spread.appendChild(rightSection);
+                            }
+                        }
+                        
+                        container.appendChild(spread);
+                    }
                 }
                 
                 // 4. Populate ToC with page numbers
                 populateToC();
                 
-                status.textContent = `✓ Compiled ${orderedAdventures.length} adventures (${currentPageNumber - 1} pages)`;
+                status.textContent = `✓ Compiled book with ${Object.keys(bookStructure).length} regions`;
                 
             } catch (error) {
                 status.textContent = `Error: ${error.message}`;
