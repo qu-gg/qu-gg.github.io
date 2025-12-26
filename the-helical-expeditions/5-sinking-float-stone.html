@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinking the Float Stone Mine - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Floating Islands & Skyship Theme Palette */
+            --sky-deep: #2D5A87;
+            --cloud-gray: #7A8B9A;
+            --amber-gold: #D4A574;
+            --teal-accent: #4A9BA8;
+            --float-stone: #B8A082;
+            --sky-cream: #F5F8FA;
+            --pearl-white: #FEFEFE;
+            --slate-deep: #3A4A5A;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--sky-cream);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--sky-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--teal-accent), var(--cloud-gray), var(--amber-gold), var(--cloud-gray), var(--teal-accent));
+        }
+
+        .page.art-page {
+            max-height: none;
+            min-height: auto;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: linear-gradient(135deg, var(--slate-deep) 0%, var(--sky-deep) 50%, var(--teal-accent) 100%);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--amber-gold);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--amber-gold);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 
+                3px 3px 0 var(--amber-gold),
+                -1px -1px 0 var(--slate-deep),
+                1px -1px 0 var(--slate-deep),
+                -1px 1px 0 var(--slate-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--amber-gold);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--sky-deep);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(212, 165, 116, 0.08) 100%);
+            border: 1px solid var(--teal-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--sky-deep) 0%, var(--teal-accent) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--teal-accent);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--sky-deep);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--slate-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: linear-gradient(180deg, rgba(212, 165, 116, 0.1) 0%, rgba(122, 139, 154, 0.1) 100%);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--teal-accent);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--amber-gold);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--sky-deep);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cloud-gray);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: linear-gradient(180deg, var(--slate-deep) 0%, var(--sky-deep) 100%);
+            border-color: var(--slate-deep);
+        }
+
+        .story-steps h2 {
+            background: linear-gradient(135deg, var(--amber-gold) 0%, var(--teal-accent) 100%);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--amber-gold);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: linear-gradient(135deg, var(--amber-gold) 0%, var(--teal-accent) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-top: 7.5px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: linear-gradient(135deg, var(--cloud-gray) 0%, var(--teal-accent) 100%);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--teal-accent);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.25);
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(58, 74, 90, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(122, 139, 154, 0.1) 100%);
+            border-left: 3px solid var(--amber-gold);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--slate-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--amber-gold);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2px 12px;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--sky-deep);
+        }
+
+        .sources-box a {
+            color: var(--teal-accent);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--teal-accent);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: linear-gradient(135deg, var(--slate-deep) 0%, var(--sky-deep) 100%);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--amber-gold);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--sky-deep) 0%, var(--teal-accent) 100%);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cloud-gray);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(74, 155, 168, 0.08) 100%);
+            border: 1px solid var(--amber-gold);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--amber-gold) 0%, #B8956A 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--teal-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--sky-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            max-height: 4.5in;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--amber-gold);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(58, 74, 90, 0.08) 100%);
+            border: 1px solid var(--slate-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--slate-deep) 0%, var(--sky-deep) 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(74, 155, 168, 0.08) 100%);
+            border-radius: 4px;
+            border: 1px solid var(--amber-gold);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: linear-gradient(135deg, var(--amber-gold) 0%, #B8956A 100%);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--amber-gold);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--slate-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--sky-deep);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--slate-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--amber-gold), var(--teal-accent), var(--amber-gold));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--amber-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--teal-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--sky-deep);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 10pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--amber-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Sinking the Float Stone Mine</h1>
+            <div class="subtitle">Go Isle's Float Stone Mine • Seven Holy Isles • Twilight Meridian</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">☽</span> Spooky</div>
+            <div class="theme-item"><span class="emoji">🛡</span> Defense</div>
+            <div class="theme-item"><span class="emoji">⛰</span> Floating Islands</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Starting the Adventure -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Two witnesses in a floating island mining malpractice whistleblowing scheme have been placed into the party's care. Their testimonies about their employer are damning, and could ruin the mining corporation. Can the party escort the whistleblowers to court before someone tries to silence them?</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Malpractice in Go Isle's Float Stone Mine led to the collapse of one of its sites...into the ocean below...and the injury of its employees. The Shinobi Rebellion have asked for your help with escorting two whistleblowers to a court hearing taking place on a neighboring island. The pair have been under the Rebellion's care until now, as their accounts could ruin the mining company. Open support from the Rebellion would tarnish the whistleblowers' credibility, so the task is up to a third-party: you."</p>
+                    <p style="margin-top: 6px;">Begin the story after the party have already agreed to the task. People think the whistleblowers died, so it should be a straightforward, simple ride. The party is headed to the neighboring floating island of Rotso not but a day's travel away. There, a regular court review on the mining operations is occurring tomorrow and will be the perfect situation to blow open the whistleblowers' report. The Lord Quidon of Rotso, however, has caught wind of these plans and tries to stop it in secret, parleying with the dreaded assassin Hiratagaan.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Rahm Nobell</span>
+                            <span class="character-details">— Tenebrate, Male, 45 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">Mine site administrator who saw the directors sign off on risky construction and digging methods, which was a cause in the chains snapping and the mine site falling.</div>
+                        <div class="character-quote">"Fidgety and wide-eyed, this spectacled tenebrate has been on a streak of paranoia which, after having literally fallen from the sky, is a little understandable."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Kssek</span>
+                            <span class="character-details">— Promethean, Male, 32 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">A new miner who was ordered to reinforce some connective chains using an illegal, but much cheaper, building technique.</div>
+                        <div class="character-quote">"It is clear to see what happened to Kssek as half of his face alongside his left arm and leg are now that of a stark white reptile. Despite this, he carries an upbeat attitude."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Captain Delain</span>
+                            <span class="character-details">— Tenebrate, Female, 37 (Guide)</span>
+                        </div>
+                        <div class="character-desc">An experienced pilot-for-hire around the Rotso region, Captain Delain has taken many delivery jobs for the mining company.</div>
+                        <div class="character-quote">"A sharp skillset and even sharper attire, Captain Delain is a well-known independent captain within the region. She has already tended to her, seemingly serious, wounds."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="5) Sinking the Float Stone Mine/Pasted image 20251225183900.jpg" alt="Flying near Float Stone Isles">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, have the party depart from Go Isle's skyport with Rahm and Kssek, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Set Up and Set Off</span>
+                        <ul>
+                            <li>The witnesses are scared, but brave enough to continue on the skyship. They are Basic Folk. However, since they are named, they roll on the Injury Table when dropped to 0 Hearts.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">On the Journey</span>
+                        <ul>
+                            <li>If the party look for anyone following them, they will only see a few circling Float Stone Whales. Eventually the party must rest.</li>
+                            <li>At night, Hiratagaan sneaks into Kssek's tent using its <em>Phantom Abomination</em> Ability and tries to kill him. If discovered, Hiratagaan will attack the party briefly, then flee. This is a chance for them to learn how to counter-act it.</li>
+                            <li>The following day, the group sees a stranded skyship - sails cut and the alone pilot asking for help. The pilot is actually Hiratagaan in illusion; he attacks a witness before fleeing again.</li>
+                            <li>On the stranded ship is one surviving crew member, Captain Delain, who has information on Lord Quidon's investments in the mining company and potentially other clues.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Fight the Good Fight</span>
+                        <ul>
+                            <li>Before the party reach Rotso, Hiratagaan descends once more, ambushing with his <em>Wrath of the Dragon</em> Ability to set the Skyship on fire. This causes Areas to become Harmful and the ship to plummet in 3 Turns if not dealt with. This time, he will fight to "death".</li>
+                            <li>With Hiratagaan defeated, the surviving witnesses can be delivered to court and give their report. Lord Quidon and CEO Wiles Go are present. The party may deliver their own report, if they so choose.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-credit">Made by Quagg</div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Go Isle's Float Stone Mine</h3>
+                    <p class="loc-desc">"Called Go Isle, the mine is a series of connected floating islands by way of many now rusting chains, built presumably by Gley. Rebuilt ancient ruins betrays the natural beauty."</p>
+                    <p>Rediscovered as a prominent Float Stone source by CEO Wiles Go in the 4th Aeon, Wiles has since aggressively built up Go Mining Incorporated. It now generates most of Outer World's supply. <br><br>Folks employed here stay on the islands for multiple month stints before taking leave back to the surface. As such, information coming out of the island is well-controlled.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Cloud Breaker</h3>
+                    <p class="loc-desc">"Soaring over the Shining Sea in a Cloud Breaker is a gorgeous visual. To the one side, the dark blanket of the Wistful Dark; the other the purple and pink hues of a far distant Blazing Garden. Below? A long, long drop."</p>
+                    <p>One of the many Portian skyships seen throughout the Twilight Meridian, this one is a bit larger of a vessel meant for material transportation. It has two rooms with bunks and storage, albeit not luxurious ones. <br><br>As part of the disguise, this skyship is arrived to be loaded up with an actual shipment of Float Stone destined to Rotso.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Rotso</h3>
+                    <p class="loc-desc">"An industrial floating city, Rotso is the center of float stone refinement and skyship construction. Given Float Stone...floats, it was found easier to work with directly in the sky. Suspended walkways form paths through the city."</p>
+                    <p>Rotso has the highest skyship density in the world given its many manufacturers. As such, it is a prime location for the party to purchase one at-cost. <br><br>The court is primarily a civil court handling business logistics and is conveniently within the sky port center but has the full jurisdiction of the Shogun Banner.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Hiratagaan has a weakness to the sound of musical instruments, seemingly forcing him to the material world.</li>
+                    <li>Hiratagaan doesn't use all of his skills in the first fights with the party, in an attempt to gauge their power.</li>
+                    <li>Without the testimonies of either whistleblower, the CEO <em>Wiles Go</em> will be able to cover up the incidents.</li>
+                    <li>Lord Quidon is a stark supporter of the Shogun within the Seven Holy Isles, having been gifted this fiefdom of floating isles after betraying his former mentor.</li>
+                    <li>The court, like many throughout the Dynasty, belongs to the Shogun and will be a neutral judge in this hearing.</li>
+                    <li>Damage to the mining company is a huge blow to Lord Quidon, who is heavily invested in them for resources.</li>
+                    <li>The next-in-line to Go Mining Incorporated secretly supports the Shinobi Rebellion and has agreed to supply them much-needed Float Stone at good rates.</li>
+                    <li>The ritual to parlay with Hiratagaan leaves a permanent mark on the summoner, which is the reason Lord Quidon is wearing a ridiculously turtleneck to the court.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225182656.jpg" alt="Rotso Inspiration">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>If successful, <strong>4 Units of Float Stone</strong> will be mysteriously delivered to the party the following day, alongside a cryptic invite to speak should they seek more work. The whistleblowers profusely thank the party.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>⚔ Exposing Quidon</h3>
+                        <p>If the party can expose Lord Quidon's deal, then the Shogun courts will have to depose of him. The courts will then gift the party <strong>400C</strong> and <strong>2 Units of Dusk Amber</strong> in the shape of the Shogun's Banner.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank 5-6 Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> Reduce Hiratagaan's stats but keep the flavor and abilities.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> Follow the Customization in the <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Suggested Starting Coin:</strong> 500C
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources -->
+        <div class="content-box sources-box" style="margin-top: 8px;">
+            <h2>Sources & Adversaries</h2>
+            <div class="content-box-inner">
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Law and Disorder</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br>Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+            <ul>
+                <li><strong>Hiratagaan:</strong> by KeJoRo (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                <li><strong>Dusk Amber:</strong> BREAK!! <a href="https://breakrpg.blogspot.com/2025/11/twilight-meridian-items-freebie-gear.html" target="_blank">Blog</a></li>
+                <li><strong>Float Stone:</strong> Source, pg. 289</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item unknown-source">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225145042.jpg" alt="Chained-together Go Isle">
+                <div class="art-caption">"Chained-together Go Isle" <br> Artist Unknown</div>
+            </div>
+            <div class="art-item">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225181532.jpg" alt="Float Stone Mine">
+                <div class="art-caption">"Float Stone Mine" <br> Art by <a href="https://www.artstation.com/artwork/L3Grnr" target="_blank">Ayla Meridian</a></div>
+            </div>
+            <div class="art-item">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225182656.jpg" alt="Rotso Inspiration">
+                <div class="art-caption">"Rotso Inspiration" <br> Art by <a href="https://mrjakeparker.artstation.com/projects/arl3R" target="_blank">Jake Parker (Skyheart)</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225183613.jpg" alt="General Inspiration">
+                <div class="art-caption">"General Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/KeKrzB" target="_blank">Enora Mercier</a></div>
+            </div>
+            <div class="art-item">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225183900.jpg" alt="Flying near Float Stone Isles">
+                <div class="art-caption">"Flying near Float Stone Isles" <br> Art by <a href="https://www.beanleafpress.com/" target="_blank">Travis Hanson</a></div>
+            </div>
+            <div class="art-item">
+                <img src="5) Sinking the Float Stone Mine/Pasted image 20251225184442.jpg" alt="Float Stone Isle Inspiration">
+                <div class="art-caption">"Float Stone Isle Inspiration" <br> Art by <a href="https://artlister.tistory.com/22" target="_blank">Kim Hwanggyu</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

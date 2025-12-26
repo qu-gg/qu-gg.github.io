@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BREAK!! - The Helical Expeditions</title>
+    <style>
+        /* ===== BOOK COMPILER STYLES ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* BREAK!! Title Page Theme */
+            --break-pink: #e83a7a;
+            --break-magenta: #c42d6b;
+            --break-light-blue: #5bc0de;
+            --break-sky: #87ceeb;
+            --break-cyan: #00bcd4;
+            --break-purple: #6b3fa0;
+            --break-gold: #f5c542;
+            --break-cream: #faf6ed;
+            --break-light: #fff8f0;
+            --break-dark: #2a1f3d;
+        }
+
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+
+        @media print {
+            html, body {
+                background: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 8.5in;
+            }
+            
+            #book-container {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            .page-wrapper {
+                display: block !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            .page, .toc-page, .blank-filler {
+                box-shadow: none !important;
+                margin: 0 !important;
+                width: 8.5in !important;
+                min-height: 11in !important;
+                max-height: 11in !important;
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            
+            .controls {
+                display: none !important;
+            }
+            
+            .page-number {
+                background: transparent !important;
+            }
+        }
+
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.35;
+            background: #555;
+        }
+
+        /* ===== CONTROL PANEL ===== */
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--break-dark);
+            padding: 20px;
+            border-radius: 12px;
+            z-index: 1000;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            max-width: 280px;
+        }
+
+        .controls h3 {
+            margin-bottom: 15px;
+            color: var(--break-pink);
+            font-size: 14pt;
+        }
+
+        .controls label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 9pt;
+        }
+
+        .controls button {
+            width: 100%;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, var(--break-purple), var(--break-pink));
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .controls button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(232, 58, 122, 0.4);
+        }
+
+        .controls .status {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            font-size: 8pt;
+        }
+
+        /* ===== BOOK CONTAINER ===== */
+        #book-container {
+            padding: 20px;
+            padding-right: 320px;
+        }
+
+        /* ===== PAGE NUMBER STYLING ===== */
+        .page-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 0.175in;
+            right: 4.25in;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 10pt;
+            color: #555;
+            z-index: 100;
+            /* background: rgba(255, 255, 255, 0.7); */
+            /* padding: 2px 6px; */
+            /* border-radius: 3px; */
+        }
+
+        /* ===== BLANK FILLER PAGE ===== */
+        .page.blank-filler {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(91, 192, 222, 0.08) 0%, transparent 35%),
+                radial-gradient(circle at 100% 0%, rgba(232, 58, 122, 0.06) 0%, transparent 35%),
+                radial-gradient(circle at 100% 100%, rgba(91, 192, 222, 0.08) 0%, transparent 35%),
+                radial-gradient(circle at 0% 100%, rgba(232, 58, 122, 0.06) 0%, transparent 35%),
+                #e8e4db;
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: relative;
+            page-break-after: always;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blank-filler::before {
+            content: '';
+            position: absolute;
+            top: 0.3in;
+            left: 0.3in;
+            width: 0.6in;
+            height: 0.6in;
+            border-left: 3px solid rgba(232, 58, 122, 0.2);
+            border-top: 3px solid rgba(232, 58, 122, 0.2);
+        }
+
+        .blank-filler::after {
+            content: '';
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            width: 0.6in;
+            height: 0.6in;
+            border-right: 3px solid rgba(91, 192, 222, 0.2);
+            border-bottom: 3px solid rgba(91, 192, 222, 0.2);
+        }
+
+        .blank-filler .filler-decoration {
+            width: 80px;
+            height: 80px;
+            opacity: 0.15;
+            background: 
+                linear-gradient(45deg, transparent 40%, var(--break-pink) 40%, var(--break-pink) 60%, transparent 60%),
+                linear-gradient(-45deg, transparent 40%, var(--break-light-blue) 40%, var(--break-light-blue) 60%, transparent 60%);
+            border-radius: 50%;
+        }
+
+        /* ===== TABLE OF CONTENTS ===== */
+        .toc-page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.5in 0.6in;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(91, 192, 222, 0.15) 0%, transparent 35%),
+                radial-gradient(circle at 100% 0%, rgba(232, 58, 122, 0.1) 0%, transparent 35%),
+                radial-gradient(circle at 100% 100%, rgba(91, 192, 222, 0.15) 0%, transparent 35%),
+                radial-gradient(circle at 0% 100%, rgba(232, 58, 122, 0.1) 0%, transparent 35%),
+                var(--break-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: relative;
+            page-break-after: always;
+        }
+
+        .toc-page::before {
+            content: '';
+            position: absolute;
+            top: 0.25in;
+            left: 0.25in;
+            width: 0.8in;
+            height: 0.8in;
+            border-left: 4px solid var(--break-pink);
+            border-top: 4px solid var(--break-pink);
+            opacity: 0.7;
+        }
+
+        .toc-page::after {
+            content: '';
+            position: absolute;
+            bottom: 0.25in;
+            right: 0.25in;
+            width: 0.8in;
+            height: 0.8in;
+            border-right: 4px solid var(--break-light-blue);
+            border-bottom: 4px solid var(--break-light-blue);
+            opacity: 0.7;
+        }
+
+        .toc-header {
+            text-align: center;
+            margin-bottom: 0.4in;
+        }
+
+        .toc-header h2 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 28pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 8px;
+        }
+
+        .toc-header .toc-subtitle {
+            font-size: 11pt;
+            color: var(--break-magenta);
+            font-style: italic;
+        }
+
+        .toc-divider {
+            width: 60%;
+            height: 3px;
+            margin: 0 auto 0.3in auto;
+            background: linear-gradient(90deg, transparent, var(--break-pink), var(--break-light-blue), transparent);
+            border-radius: 2px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-region {
+            margin-top: 0.2in;
+            margin-bottom: 0.15in;
+        }
+
+        .toc-region:first-child {
+            margin-top: 0;
+        }
+
+        .toc-region-header {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 14pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--break-pink);
+            margin-bottom: 10px;
+        }
+
+        .toc-region-empty {
+            font-size: 9pt;
+            color: #999;
+            font-style: italic;
+            margin-left: 0.15in;
+        }
+
+        .toc-entry {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 8px;
+            margin-left: 0.15in;
+            font-size: 11pt;
+        }
+
+        .toc-title {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: var(--break-dark);
+        }
+
+        .toc-dots {
+            flex-grow: 1;
+            border-bottom: 2px dotted #ccc;
+            margin: 0 10px 4px 10px;
+            min-width: 40px;
+        }
+
+        .toc-page-num {
+            flex-shrink: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: var(--break-purple);
+            min-width: 25px;
+            text-align: right;
+        }
+
+        .toc-sublocation {
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+            margin-left: 0.15in;
+            margin-bottom: 6px;
+        }
+
+        /* ===== ADVENTURE SECTION WRAPPER ===== */
+        .adventure-section {
+            /* Contains scoped styles for each adventure */
+            display: block;
+        }
+
+        /* Loading indicator */
+        .loading {
+            text-align: center;
+            padding: 100px;
+            color: white;
+            font-size: 16pt;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Control Panel -->
+    <div class="controls">
+        <h3>📖 Book Compiler</h3>
+        <div class="status" id="status">Ready to compile...</div>
+        <button onclick="compileBook()">Compile Book</button>
+        <button onclick="window.print()">Print / Save PDF</button>
+    </div>
+
+    <!-- Book Container -->
+    <div id="book-container">
+        <div class="loading" id="loading">Loading adventures</div>
+    </div>
+
+    <script>
+        // ===== REGION & ADVENTURE CONFIGURATION =====
+        // Adventures are organized by region and sub-location
+        // Reorder regions or adventures within regions to change book order
+        // Title page is always first and not included here
+        
+        const bookStructure = {
+            'Wistful Dark': {
+                sublocations: ['Crystalia', 'Murk', 'Shard', 'Shadowed Lands', 'The Eaten Isle', 'Aiden', "Hollow Queen's Kingdom"],
+                adventures: [
+                    // No adventures yet
+                ]
+            },
+            'The Twilight Meridian': {
+                sublocations: ['Seven Holy Isles', 'Night Haven', 'Sunken Isles', 'Stahlfeld', 'Galvanus Archipelago'],
+                adventures: [
+                    {
+                        file: '2-danger-for-a-rokko-do.html',
+                        title: 'Danger for a Rokko-Do',
+                        sublocation: 'Seven Holy Isles',
+                        location: 'Winding Pass'
+                    },
+                    {
+                        file: '5-sinking-float-stone.html',
+                        title: 'Sinking the Float Stone Mine',
+                        sublocation: 'Seven Holy Isles',
+                        location: "Go Isle's Float Stone Mine"
+                    },
+                    {
+                        file: '1-fishy-business.html',
+                        title: 'Deal with a Sea Witch',
+                        sublocation: 'Sunken Isles',
+                        location: 'Dia, Beneath the Waves'
+                    }
+                ]
+            },
+            'Blazing Garden': {
+                sublocations: ['Taaga', 'Thunda Sands', 'Sol Alliance', 'No-Folk Land', 'Pride Coast'],
+                adventures: [
+                    {
+                        file: '3-thunda-circuit.html',
+                        title: 'Thunda Circuit',
+                        sublocation: 'Thunda Sands',
+                        location: 'Deadstone'
+                    },
+                    {
+                        file: '4-crash-landing.html',
+                        title: 'Crash Landing!',
+                        sublocation: 'No-Folk Land',
+                        location: 'Death Valley'
+                    }
+                ]
+            },
+            'Buried Kingdom': {
+                sublocations: ['Old Iron', 'New Ore', 'The Tunnels', 'Lost Crystal', 'Machine Labyrinth'],
+                adventures: [
+                    // No adventures yet
+                ]
+            }
+        };
+
+        // Flatten structure for loading (sorted by sublocation order within each region)
+        function getOrderedAdventures() {
+            const ordered = [];
+            for (const [region, data] of Object.entries(bookStructure)) {
+                // Sort adventures by sublocation order
+                const sortedAdventures = [...data.adventures].sort((a, b) => {
+                    const aIdx = data.sublocations.indexOf(a.sublocation);
+                    const bIdx = data.sublocations.indexOf(b.sublocation);
+                    return aIdx - bIdx;
+                });
+                sortedAdventures.forEach(adv => {
+                    ordered.push({ ...adv, region });
+                });
+            }
+            return ordered;
+        }
+
+        // Track page numbers for ToC
+        const tocData = {}; // Keyed by region
+        let currentPageNumber = 1; // Starts at 1 after title pages
+
+        async function fetchHTML(url) {
+            const response = await fetch(url);
+            return await response.text();
+        }
+
+        function extractStyles(html) {
+            const styleMatch = html.match(/<style>([\s\S]*?)<\/style>/);
+            return styleMatch ? styleMatch[1] : '';
+        }
+
+        function extractPages(html) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            return doc.querySelectorAll('.page');
+        }
+
+        function scopeStyles(css, scopeClass) {
+            // Add scope class to all selectors
+            return css.replace(/([^{}]+)(\{[^{}]+\})/g, (match, selector, rules) => {
+                // Skip @rules
+                if (selector.trim().startsWith('@')) {
+                    return match;
+                }
+                // Skip :root
+                if (selector.includes(':root')) {
+                    return `.${scopeClass} ${selector.replace(':root', '')} ${rules}`;
+                }
+                // Scope each selector
+                const scopedSelectors = selector.split(',').map(sel => {
+                    sel = sel.trim();
+                    if (sel.startsWith('@') || sel === '') return sel;
+                    return `.${scopeClass} ${sel}`;
+                }).join(', ');
+                return `${scopedSelectors} ${rules}`;
+            });
+        }
+
+        function createBlankFillerPage() {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'page-wrapper';
+            
+            const page = document.createElement('div');
+            page.className = 'page blank-filler';
+            
+            const decoration = document.createElement('div');
+            decoration.className = 'filler-decoration';
+            page.appendChild(decoration);
+            
+            const pageNum = document.createElement('div');
+            pageNum.className = 'page-number';
+            pageNum.textContent = currentPageNumber++;
+            
+            wrapper.appendChild(page);
+            wrapper.appendChild(pageNum);
+            
+            return wrapper;
+        }
+
+        function createPageWrapper(pageElement, addNumber = true) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'page-wrapper';
+            wrapper.appendChild(pageElement.cloneNode(true));
+            
+            if (addNumber) {
+                const pageNum = document.createElement('div');
+                pageNum.className = 'page-number';
+                pageNum.textContent = currentPageNumber++;
+                wrapper.appendChild(pageNum);
+            }
+            
+            return wrapper;
+        }
+
+        function generateToC() {
+            const tocPage = document.createElement('div');
+            tocPage.className = 'toc-page';
+            
+            tocPage.innerHTML = `
+                <div class="toc-header">
+                    <h2>Contents</h2>
+                    <p class="toc-subtitle">Adventures Across the Outer World</p>
+                </div>
+                <div class="toc-divider"></div>
+                <div class="toc-list" id="toc-list"></div>
+            `;
+            
+            return tocPage;
+        }
+
+        function populateToC() {
+            const tocList = document.getElementById('toc-list');
+            if (!tocList) return;
+            
+            for (const [region, data] of Object.entries(bookStructure)) {
+                const regionDiv = document.createElement('div');
+                regionDiv.className = 'toc-region';
+                
+                // Region header
+                const header = document.createElement('div');
+                header.className = 'toc-region-header';
+                header.textContent = region;
+                regionDiv.appendChild(header);
+                
+                // Get adventures for this region from tocData
+                const regionAdventures = tocData[region] || [];
+                
+                if (regionAdventures.length === 0) {
+                    const empty = document.createElement('div');
+                    empty.className = 'toc-region-empty';
+                    empty.textContent = 'Adventures coming soon...';
+                    regionDiv.appendChild(empty);
+                } else {
+                    // Group by sublocation
+                    const bySublocaton = {};
+                    regionAdventures.forEach(adv => {
+                        if (!bySublocaton[adv.sublocation]) {
+                            bySublocaton[adv.sublocation] = [];
+                        }
+                        bySublocaton[adv.sublocation].push(adv);
+                    });
+                    
+                    // Output in sublocation order
+                    data.sublocations.forEach(subloc => {
+                        const adventures = bySublocaton[subloc];
+                        if (adventures && adventures.length > 0) {
+                            // Sublocation label
+                            const sublocDiv = document.createElement('div');
+                            sublocDiv.className = 'toc-sublocation';
+                            sublocDiv.textContent = subloc;
+                            regionDiv.appendChild(sublocDiv);
+                            
+                            // Adventures in this sublocation
+                            adventures.forEach(adv => {
+                                const entry = document.createElement('div');
+                                entry.className = 'toc-entry';
+                                entry.innerHTML = `
+                                    <span class="toc-title">${adv.title}</span>
+                                    <span class="toc-dots"></span>
+                                    <span class="toc-page-num">${adv.startPage}</span>
+                                `;
+                                regionDiv.appendChild(entry);
+                            });
+                        }
+                    });
+                }
+                
+                tocList.appendChild(regionDiv);
+            }
+        }
+
+        async function compileBook() {
+            const container = document.getElementById('book-container');
+            const status = document.getElementById('status');
+            
+            container.innerHTML = '';
+            // Reset tocData as object keyed by region
+            for (const region of Object.keys(bookStructure)) {
+                tocData[region] = [];
+            }
+            currentPageNumber = 1;
+            
+            status.textContent = 'Loading title page...';
+            
+            try {
+                // 1. Load and add title page (no page numbers on title pages)
+                const titleHtml = await fetchHTML('0-title-page.html');
+                const titleStyles = extractStyles(titleHtml);
+                const titlePages = extractPages(titleHtml);
+                
+                const titleSection = document.createElement('div');
+                titleSection.className = 'adventure-section title-section';
+                
+                const titleStyleEl = document.createElement('style');
+                titleStyleEl.textContent = scopeStyles(titleStyles, 'title-section');
+                titleSection.appendChild(titleStyleEl);
+                
+                titlePages.forEach(page => {
+                    const wrapper = createPageWrapper(page, false); // No page number
+                    titleSection.appendChild(wrapper);
+                });
+                
+                container.appendChild(titleSection);
+                
+                // 2. Add Table of Contents page (no page number)
+                const tocPage = generateToC();
+                const tocWrapper = document.createElement('div');
+                tocWrapper.className = 'page-wrapper';
+                tocWrapper.appendChild(tocPage);
+                container.appendChild(tocWrapper);
+                
+                // 3. Load each adventure in order (by region)
+                const orderedAdventures = getOrderedAdventures();
+                
+                for (let i = 0; i < orderedAdventures.length; i++) {
+                    const adventure = orderedAdventures[i];
+                    status.textContent = `Loading ${adventure.title}...`;
+                    
+                    const html = await fetchHTML(adventure.file);
+                    const styles = extractStyles(html);
+                    const pages = extractPages(html);
+                    
+                    const scopeClass = `adventure-${i}`;
+                    const section = document.createElement('div');
+                    section.className = `adventure-section ${scopeClass}`;
+                    
+                    // Add scoped styles
+                    const styleEl = document.createElement('style');
+                    styleEl.textContent = scopeStyles(styles, scopeClass);
+                    section.appendChild(styleEl);
+                    
+                    // Record start page for ToC (keyed by region)
+                    tocData[adventure.region].push({
+                        title: adventure.title,
+                        sublocation: adventure.sublocation,
+                        location: adventure.location,
+                        startPage: currentPageNumber
+                    });
+                    
+                    // Add adventure pages
+                    pages.forEach(page => {
+                        section.appendChild(createPageWrapper(page));
+                    });
+                    
+                    // Pad to 4 pages if only 3 pages
+                    if (pages.length === 3) {
+                        section.appendChild(createBlankFillerPage());
+                    }
+                    
+                    container.appendChild(section);
+                }
+                
+                // 4. Populate ToC with page numbers
+                populateToC();
+                
+                status.textContent = `✓ Compiled ${orderedAdventures.length} adventures (${currentPageNumber - 1} pages)`;
+                
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                console.error(error);
+            }
+        }
+
+        // Auto-compile on load
+        window.addEventListener('DOMContentLoaded', () => {
+            compileBook();
+        });
+    </script>
+</body>
+</html>

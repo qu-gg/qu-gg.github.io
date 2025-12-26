@@ -342,6 +342,7 @@
 
 .post-header {
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .post-badge {
@@ -357,7 +358,7 @@
 }
 
 .post-header h3 {
-    margin: 0.5rem 0 0.25rem;
+    margin: 0 0 0rem;
     font-size: 1.4rem;
 }
 
@@ -398,6 +399,10 @@
     border: 1px solid var(--border);
 }
 
+.post-image.crop-edges img {
+    transform: scale(1);
+}
+
 .art-source {
     display: block;
     margin-top: 0.25rem;
@@ -432,10 +437,14 @@
 }
 
 .post-themes {
+    position: absolute;
+    top: 0.15rem;
+    right: 0;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    justify-content: flex-end;
+    max-width: 50%;
 }
 
 .post-themes span {
@@ -456,6 +465,65 @@
 
 .post-link:hover {
     text-decoration: underline;
+}
+
+.post-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.post-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-links a.btn-html {
+    background: linear-gradient(135deg, #6b3fa0, #e83a7a);
+    color: white;
+}
+
+.post-links a.btn-pdf {
+    background: linear-gradient(135deg, #2d7d9a, #3fa089);
+    color: white;
+}
+
+.post-links a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(107, 63, 160, 0.25);
+}
+
+/* Book Compiler Link */
+.helical-cover-embed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-compiler {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    background: linear-gradient(135deg, #6b3fa0, #e83a7a);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-compiler:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(232, 58, 122, 0.3);
 }
 
 /* Coming Soon Post */
