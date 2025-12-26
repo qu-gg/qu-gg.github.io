@@ -93,6 +93,25 @@
             </div>
         </section>
 
+        <!-- RSS Feed Section -->
+        <section class="timeline-section rss-section">
+            <h2 class="section-title">Blog Feed</h2>
+            <p class="section-subtitle">Latest posts from blogs I follow</p>
+            
+            <div class="feed-controls">
+                <select id="author-filter" class="author-filter">
+                    <option value="all">All Authors</option>
+                </select>
+                <span class="feed-updated" id="feed-updated"></span>
+            </div>
+            
+            <div class="feed-list" id="feed-list">
+                <p class="feed-loading">Loading feed...</p>
+            </div>
+            
+            <a href="feeds.html" class="view-all-link">View All Posts →</a>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -105,6 +124,99 @@
             this.classList.toggle('active');
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        // RSS Feed functionality
+        function selectDiversePosts(posts, count) {
+            // Select posts preferring unique authors
+            const selected = [];
+            const usedAuthors = new Set();
+            
+            // First pass: one post per author (most recent)
+            for (const post of posts) {
+                if (selected.length >= count) break;
+                if (!usedAuthors.has(post.author)) {
+                    selected.push(post);
+                    usedAuthors.add(post.author);
+                }
+            }
+            
+            // Second pass: fill remaining slots with most recent
+            for (const post of posts) {
+                if (selected.length >= count) break;
+                if (!selected.includes(post)) {
+                    selected.push(post);
+                }
+            }
+            
+            // Sort by date (newest first)
+            return selected.sort((a, b) => new Date(b.date) - new Date(a.date));
+        }
+
+        async function loadFeed() {
+            try {
+                const response = await fetch('feed-data.json');
+                const data = await response.json();
+                
+                // Populate author filter
+                const filter = document.getElementById('author-filter');
+                data.authors.forEach(author => {
+                    const option = document.createElement('option');
+                    option.value = author;
+                    option.textContent = author;
+                    filter.appendChild(option);
+                });
+                
+                // Show last updated
+                const updated = new Date(data.lastUpdated);
+                document.getElementById('feed-updated').textContent = 
+                    `Updated: ${updated.toLocaleDateString()}`;
+                
+                // Render posts - prefer diverse authors
+                window.feedData = data.posts;
+                renderPosts(selectDiversePosts(data.posts, 5));
+                
+                // Filter event
+                filter.addEventListener('change', (e) => {
+                    const filtered = e.target.value === 'all' 
+                        ? window.feedData 
+                        : window.feedData.filter(p => p.author === e.target.value);
+                    renderPosts(e.target.value === 'all' 
+                        ? selectDiversePosts(filtered, 5)
+                        : filtered.slice(0, 5));
+                });
+                
+            } catch (error) {
+                document.getElementById('feed-list').innerHTML = 
+                    '<p class="feed-error">Unable to load feed</p>';
+            }
+        }
+        
+        function renderPosts(posts) {
+            const list = document.getElementById('feed-list');
+            if (posts.length === 0) {
+                list.innerHTML = '<p class="feed-empty">No posts found</p>';
+                return;
+            }
+            
+            list.innerHTML = posts.map(post => {
+                const date = new Date(post.date);
+                const dateStr = date.toLocaleDateString('en-US', { 
+                    month: 'short', day: 'numeric', year: 'numeric' 
+                });
+                return `
+                    <a href="${post.link}" target="_blank" class="feed-item">
+                        <div class="feed-item-header">
+                            <span class="feed-author">${post.author}</span>
+                            <span class="feed-date">${dateStr}</span>
+                        </div>
+                        <h4 class="feed-title">${post.title}</h4>
+                        <p class="feed-summary">${post.summary}</p>
+                    </a>
+                `;
+            }).join('');
+        }
+        
+        loadFeed();
     </script>
 </body>
 </html>

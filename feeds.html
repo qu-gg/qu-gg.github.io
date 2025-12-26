@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Feed - Quagg Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .feeds-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .feeds-header {
+            margin-bottom: 2rem;
+        }
+
+        .feeds-header h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .feeds-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .feeds-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--bg-secondary);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .feeds-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .post-count {
+            font-weight: 500;
+        }
+
+        .full-feed-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .full-feed-item {
+            display: block;
+            padding: 1.25rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+
+        .full-feed-item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px var(--shadow);
+            transform: translateY(-2px);
+        }
+
+        .full-feed-item .feed-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .full-feed-item .feed-author {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .full-feed-item .feed-date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .full-feed-item .feed-title {
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .full-feed-item .feed-summary {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Quagg Studios</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="break.html">BREAK!! Homebrew</a></li>
+                <li><a href="imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="feeds-page">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="feeds-header">
+            <h1>Blog Feed</h1>
+            <p>Posts from TTRPG blogs I follow, updated daily at 8am ET.</p>
+        </div>
+
+        <div class="feeds-controls">
+            <input type="text" id="search-input" class="search-input" placeholder="Search posts...">
+            <select id="author-filter" class="author-filter">
+                <option value="all">All Authors</option>
+            </select>
+        </div>
+
+        <div class="feeds-meta">
+            <span class="post-count" id="post-count">Loading...</span>
+            <span class="feed-updated" id="feed-updated"></span>
+        </div>
+
+        <div class="full-feed-list" id="feed-list">
+            <p class="no-results">Loading feed...</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Quagg Studios</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        let allPosts = [];
+
+        async function loadFeed() {
+            try {
+                const response = await fetch('feed-data.json');
+                const data = await response.json();
+                
+                allPosts = data.posts;
+                
+                // Populate author filter
+                const filter = document.getElementById('author-filter');
+                data.authors.forEach(author => {
+                    const option = document.createElement('option');
+                    option.value = author;
+                    option.textContent = author;
+                    filter.appendChild(option);
+                });
+                
+                // Show last updated
+                const updated = new Date(data.lastUpdated);
+                document.getElementById('feed-updated').textContent = 
+                    `Updated: ${updated.toLocaleDateString()} at ${updated.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+                
+                // Render all posts
+                renderPosts(allPosts);
+                
+            } catch (error) {
+                document.getElementById('feed-list').innerHTML = 
+                    '<p class="no-results">Unable to load feed</p>';
+                document.getElementById('post-count').textContent = '';
+            }
+        }
+
+        function filterPosts() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const authorFilter = document.getElementById('author-filter').value;
+            
+            let filtered = allPosts;
+            
+            if (authorFilter !== 'all') {
+                filtered = filtered.filter(p => p.author === authorFilter);
+            }
+            
+            if (searchTerm) {
+                filtered = filtered.filter(p => 
+                    p.title.toLowerCase().includes(searchTerm) ||
+                    p.summary.toLowerCase().includes(searchTerm) ||
+                    p.author.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            renderPosts(filtered);
+        }
+        
+        function renderPosts(posts) {
+            const list = document.getElementById('feed-list');
+            document.getElementById('post-count').textContent = `${posts.length} posts`;
+            
+            if (posts.length === 0) {
+                list.innerHTML = '<p class="no-results">No posts found matching your criteria</p>';
+                return;
+            }
+            
+            list.innerHTML = posts.map(post => {
+                const date = new Date(post.date);
+                const dateStr = date.toLocaleDateString('en-US', { 
+                    month: 'short', day: 'numeric', year: 'numeric' 
+                });
+                return `
+                    <a href="${post.link}" target="_blank" class="full-feed-item">
+                        <div class="feed-item-header">
+                            <span class="feed-author">${post.author}</span>
+                            <span class="feed-date">${dateStr}</span>
+                        </div>
+                        <h3 class="feed-title">${post.title}</h3>
+                        <p class="feed-summary">${post.summary}</p>
+                    </a>
+                `;
+            }).join('');
+        }
+        
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', filterPosts);
+        document.getElementById('author-filter').addEventListener('change', filterPosts);
+        
+        loadFeed();
+    </script>
+</body>
+</html>

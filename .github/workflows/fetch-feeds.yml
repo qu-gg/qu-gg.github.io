@@ -1,0 +1,35 @@
+name: Fetch RSS Feeds
+
+on:
+  schedule:
+    # Run at 8am ET (13:00 UTC during EST, 12:00 UTC during EDT)
+    # Using 13:00 to cover EST; adjust if needed
+    - cron: '0 13 * * *'
+  workflow_dispatch:  # Allow manual triggers
+
+jobs:
+  fetch-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install feedparser
+      
+      - name: Fetch RSS feeds
+        run: python scripts/fetch-feeds.py
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add feed-data.json
+          git diff --staged --quiet || git commit -m "Update RSS feed data [skip ci]"
+          git push
