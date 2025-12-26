@@ -88,6 +88,11 @@
             max-height: 11in;
         }
 
+        /* Hide individual page credits in compiled book view */
+        .page-credit {
+            display: none !important;
+        }
+
         html, body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 10pt;
@@ -717,6 +722,54 @@
                 soloSection.appendChild(tocWrapper);
                 
                 container.appendChild(soloSection);
+                
+                // 2.5. Load and add Introduction pages (solo, no page numbers)
+                status.textContent = 'Loading introduction...';
+                const introHtml = await fetchHTML('introduction.html');
+                const introStyles = extractStyles(introHtml);
+                const introPages = extractPages(introHtml);
+                
+                const introSoloSection = document.createElement('div');
+                introSoloSection.className = 'solo-section';
+                
+                const introSection = document.createElement('div');
+                introSection.className = 'adventure-section intro-section';
+                
+                const introStyleEl = document.createElement('style');
+                introStyleEl.textContent = scopeStyles(introStyles, 'intro-section');
+                introSection.appendChild(introStyleEl);
+                
+                introPages.forEach(page => {
+                    const wrapper = createPageWrapper(page, false); // No page number
+                    introSection.appendChild(wrapper);
+                });
+                
+                introSoloSection.appendChild(introSection);
+                container.appendChild(introSoloSection);
+                
+                // 2.6. Load and add "Using This Book" pages (solo, no page numbers)
+                status.textContent = 'Loading guide pages...';
+                const guideHtml = await fetchHTML('using-this-book.html');
+                const guideStyles = extractStyles(guideHtml);
+                const guidePages = extractPages(guideHtml);
+                
+                const guideSoloSection = document.createElement('div');
+                guideSoloSection.className = 'solo-section';
+                
+                const guideSection = document.createElement('div');
+                guideSection.className = 'adventure-section guide-section';
+                
+                const guideStyleEl = document.createElement('style');
+                guideStyleEl.textContent = scopeStyles(guideStyles, 'guide-section');
+                guideSection.appendChild(guideStyleEl);
+                
+                guidePages.forEach(page => {
+                    const wrapper = createPageWrapper(page, false); // No page number
+                    guideSection.appendChild(wrapper);
+                });
+                
+                guideSoloSection.appendChild(guideSection);
+                container.appendChild(guideSoloSection);
                 
                 // 3. Load each adventure in order (by region) - in spreads
                 const orderedAdventures = getOrderedAdventures();

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using This Book - The Helical Expeditions</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --break-pink: #e83a7a;
+            --break-magenta: #c42d6b;
+            --break-light-blue: #5bc0de;
+            --break-sky: #87ceeb;
+            --break-cyan: #00bcd4;
+            --break-purple: #6b3fa0;
+            --break-gold: #f5c542;
+            --break-cream: #faf6ed;
+            --break-light: #fff8f0;
+            --break-dark: #2a1f3d;
+            --ink-dark: #1a1a2e;
+            --pearl-white: #fefefe;
+            
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: #555;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.4in 0.5in;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(91, 192, 222, 0.12) 0%, transparent 30%),
+                radial-gradient(circle at 100% 0%, rgba(232, 58, 122, 0.08) 0%, transparent 30%),
+                radial-gradient(circle at 100% 100%, rgba(91, 192, 222, 0.12) 0%, transparent 30%),
+                radial-gradient(circle at 0% 100%, rgba(232, 58, 122, 0.08) 0%, transparent 30%),
+                var(--break-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0.25in;
+            left: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-left: 4px solid var(--break-pink);
+            border-top: 4px solid var(--break-pink);
+            opacity: 0.7;
+        }
+
+        .page::after {
+            content: '';
+            position: absolute;
+            bottom: 0.25in;
+            right: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-right: 4px solid var(--break-light-blue);
+            border-bottom: 4px solid var(--break-light-blue);
+            opacity: 0.7;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 0.12in;
+            position: relative;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 0 rgba(232, 58, 122, 0.2);
+            margin-bottom: 4px;
+        }
+
+        .page-header .subtitle {
+            font-size: 11pt;
+            color: var(--break-magenta);
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .header-divider {
+            width: 50%;
+            height: 3px;
+            margin: 8px auto 0 auto;
+            background: linear-gradient(90deg, transparent, var(--break-pink), var(--break-light-blue), var(--break-pink), transparent);
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            font-size: 10.5pt;
+            text-align: center;
+            margin-bottom: 0.12in;
+            color: var(--ink-dark);
+            line-height: 1.5;
+            padding: 8px 0.4in;
+            background: linear-gradient(90deg, transparent, rgba(107, 63, 160, 0.06), transparent);
+            border-radius: 4px;
+        }
+
+        /* ===== MOCKUP STYLES ===== */
+        .mockup-section {
+            margin-bottom: 0.1in;
+        }
+
+        .mockup-label {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--break-purple);
+            margin-bottom: 3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mockup-label .label-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(135deg, var(--break-pink), var(--break-magenta));
+            color: white;
+            border-radius: 50%;
+            font-size: 9pt;
+            flex-shrink: 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .mockup-row {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .mockup-box {
+            border: 2px solid var(--break-light-blue);
+            border-radius: 4px;
+            background: white;
+            position: relative;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .mockup-box.pink-border {
+            border-color: var(--break-pink);
+        }
+
+        .mockup-box.purple-border {
+            border-color: var(--break-purple);
+        }
+
+        .mockup-description {
+            flex: 1;
+            font-size: 9.5pt;
+            line-height: 1.45;
+            color: var(--ink-dark);
+            padding: 6px 8px;
+            background: linear-gradient(135deg, rgba(91, 192, 222, 0.08), rgba(232, 58, 122, 0.05));
+            border-radius: 4px;
+            border-left: 3px solid var(--break-light-blue);
+        }
+
+        .mockup-description em {
+            color: var(--break-magenta);
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .mockup-description a {
+            color: var(--break-purple);
+            text-decoration: none;
+        }
+
+        .mockup-description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mini Title Box Mockup */
+        .mini-title-box {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2d4a5e 50%, #5a8fa8 100%);
+            border-radius: 4px;
+            padding: 4px 12px;
+            text-align: center;
+            border: 2px solid var(--break-pink);
+        }
+
+        .mini-title-box h3 {
+            font-family: var(--font-display);
+            font-size: 12pt;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0 var(--break-pink);
+            margin: 0;
+        }
+
+        .mini-title-box .mini-subtitle {
+            font-size: 7pt;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Mini Themes Row */
+        .mini-themes {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 3px 8px;
+            border-bottom: 2px solid var(--break-light-blue);
+            font-size: 8pt;
+            font-weight: bold;
+            color: #2d4a5e;
+        }
+
+        /* Mini Content Box */
+        .mini-content-box {
+            overflow: hidden;
+        }
+
+        .mini-content-box .mini-header {
+            background: linear-gradient(135deg, #2d4a5e 0%, #5a8fa8 100%);
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            padding: 2px 6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .mini-content-box .mini-header.dark {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2d4a5e 100%);
+        }
+
+        .mini-content-box .mini-header.pink {
+            background: linear-gradient(135deg, var(--break-pink) 0%, #a03a4a 100%);
+        }
+
+        .mini-content-box .mini-body {
+            padding: 4px 6px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .mini-content-box .mini-body.dark-bg {
+            background: linear-gradient(180deg, #1a2a3a 0%, #2d4a5e 100%);
+            color: white;
+        }
+
+        /* Mini Character Entry */
+        .mini-character {
+            padding: 3px 0;
+            border-bottom: 1px dashed #5a8fa8;
+        }
+
+        .mini-character:last-child {
+            border-bottom: none;
+        }
+
+        .mini-char-name {
+            font-weight: bold;
+            color: var(--break-pink);
+            font-size: 9pt;
+        }
+
+        .mini-char-details {
+            font-size: 7.5pt;
+            color: #2d4a5e;
+            font-style: italic;
+        }
+
+        .mini-char-desc {
+            font-size: 7.5pt;
+            color: var(--ink-dark);
+            margin-top: 1px;
+        }
+
+        .mini-char-quote {
+            font-size: 7.5pt;
+            font-style: italic;
+            font-weight: bold;
+            color: #6b5b7a;
+            margin-top: 1px;
+        }
+
+        /* Mini Situation Box */
+        .mini-situation {
+            background: rgba(91, 192, 222, 0.12);
+            border-left: 2px solid var(--break-light-blue);
+            padding: 2px 5px;
+            margin-top: 2px;
+            margin-left: 31px;
+            font-size: 6.5pt;
+            color: #1a2a3a;
+        }
+
+        .mini-situation strong {
+            color: var(--break-light-blue);
+        }
+
+        /* Mini Location Description */
+        .mini-loc-desc {
+            font-size: 6.5pt;
+            color: var(--ink-dark);
+            margin-top: 2px;
+            margin-left: 18px;
+            line-height: 1.3;
+        }
+
+        /* Mini Location Card */
+        .mini-locations {
+            display: flex;
+            gap: 0;
+        }
+
+        .mini-loc-card {
+            flex: 1;
+            border-right: 1px solid var(--break-pink);
+            padding: 3px 5px;
+        }
+
+        .mini-loc-card:last-child {
+            border-right: none;
+        }
+
+        .mini-loc-card h4 {
+            background: linear-gradient(135deg, #2d4a5e 0%, #5a8fa8 100%);
+            color: white;
+            font-size: 7pt;
+            padding: 1px 4px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .mini-loc-card .loc-read {
+            font-size: 6.5pt;
+            font-style: italic;
+            color: #6b5b7a;
+        }
+
+        /* Mini Secrets List */
+        .mini-secrets-list {
+            list-style: decimal;
+            padding-left: 14px;
+            font-size: 8pt;
+            margin: 0;
+        }
+
+        .mini-secrets-list li {
+            margin-bottom: 2px;
+        }
+
+        /* Mini Resolution */
+        .mini-resolution-cols {
+            display: flex;
+            gap: 6px;
+        }
+
+        .mini-resolution-opt {
+            flex: 1;
+        }
+
+        .mini-resolution-opt h4 {
+            font-size: 7pt;
+            color: #1a2a3a;
+            margin-bottom: 2px;
+        }
+
+        .mini-resolution-opt p {
+            font-size: 6.5pt;
+            line-height: 1.25;
+        }
+
+        /* Mini Rank Box */
+        .mini-rank {
+            font-size: 8pt;
+        }
+
+        .mini-rank strong {
+            color: var(--break-pink);
+        }
+
+        /* Callout Arrow */
+        .callout-arrow {
+            width: 20px;
+            height: 2px;
+            background: var(--break-pink);
+            position: relative;
+            margin: 0 4px;
+            flex-shrink: 0;
+            align-self: center;
+        }
+
+        .callout-arrow::after {
+            content: '';
+            position: absolute;
+            right: -4px;
+            top: -3px;
+            border: 4px solid transparent;
+            border-left-color: var(--break-pink);
+        }
+
+        /* Two Column Layout */
+        .two-col-mockup {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Section Labels */
+        .page-section-label {
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0.08in 0 0.06in 0;
+            position: relative;
+        }
+
+        .page-section-label::before,
+        .page-section-label::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 1in;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--break-pink));
+        }
+
+        .page-section-label::before {
+            right: calc(50% + 1in);
+            background: linear-gradient(90deg, transparent, var(--break-pink));
+        }
+
+        .page-section-label::after {
+            left: calc(50% + 1in);
+            background: linear-gradient(90deg, var(--break-pink), transparent);
+        }
+
+        /* Page 2 - Adventure Site Styles */
+        .section-divider {
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--break-pink), var(--break-light-blue), transparent);
+            margin: 0.1in auto;
+        }
+
+        .subsection-title {
+            font-family: var(--font-heading);
+            font-size: 13pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--break-pink);
+        }
+
+        .info-box {
+            background: linear-gradient(180deg, white 0%, rgba(91, 192, 222, 0.1) 100%);
+            border: 1px solid var(--break-light-blue);
+            border-radius: 4px;
+            padding: 8px 10px;
+            margin-bottom: 8px;
+            font-size: 9pt;
+        }
+
+        .info-box h4 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--break-purple);
+            margin-bottom: 4px;
+        }
+
+        .info-box p {
+            margin-bottom: 4px;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+
+        .info-box li {
+            margin-bottom: 2px;
+        }
+
+        .info-box em {
+            color: var(--break-magenta);
+        }
+
+        /* Mini Map Mockup */
+        .site-map-example {
+            position: relative;
+            width: 100%;
+            height: 5in;
+            border: 3px solid #2d4a5e;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #1a2a3a;
+        }
+
+        .site-map-example img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 25%;
+        }
+
+        .site-map-example .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .site-map-example .map-line {
+            stroke: var(--break-pink);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .site-map-example .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--break-pink);
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .site-map-example .map-marker.m1 { bottom: 1%; right: 10%; }
+        .site-map-example .map-marker.m2 { top: 75%; left: 50%; }
+        .site-map-example .map-marker.m3 { top: 50%; right: 25%; }
+        .site-map-example .map-marker.m4 { top: 93%; left: 40%; }
+
+        /* Mini Encounter Table */
+        .mini-encounter-row {
+            display: flex;
+            gap: 6px;
+            padding: 2px 0;
+            border-bottom: 1px dashed #5a8fa8;
+            font-size: 7pt;
+        }
+
+        .mini-encounter-row:last-child {
+            border-bottom: none;
+        }
+
+        .mini-encounter-roll {
+            font-weight: bold;
+            color: var(--break-pink);
+            min-width: 25px;
+        }
+
+        /* Mini Location Key Entry */
+        .mini-loc-entry {
+            margin-bottom: 4px;
+        }
+
+        .mini-loc-entry .loc-header {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mini-loc-num {
+            width: 14px;
+            height: 14px;
+            background: var(--break-pink);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8pt;
+            font-weight: bold;
+        }
+
+        .mini-loc-name {
+            font-weight: bold;
+            font-size: 8pt;
+            color: #1a2a3a;
+        }
+
+        .mini-loc-tag {
+            background: #5a8fa8;
+            color: white;
+            font-size: 6pt;
+            padding: 1px 4px;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+
+        .mini-loc-tag.trap {
+            background: var(--break-pink);
+        }
+
+        .trap-reference {
+            background: linear-gradient(180deg, white 0%, rgba(232, 58, 122, 0.1) 100%);
+            border: 1px solid var(--break-pink);
+            border-radius: 4px;
+            padding: 6px 8px;
+            margin-top: 6px;
+        }
+
+        .trap-reference h4 {
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            color: var(--break-pink);
+            margin-bottom: 3px;
+        }
+
+        .trap-reference p {
+            font-size: 8pt;
+            margin-bottom: 2px;
+        }
+
+        .page-ref {
+            font-family: var(--font-heading);
+            color: var(--break-purple);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 - USING THIS BOOK ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <h1>Using This Book</h1>
+            <p class="subtitle">A Guide to Reading These Adventures</p>
+            <div class="header-divider"></div>
+        </div>
+
+        <p class="intro-text">
+            Adventures in this collection follow a consistent format designed to give GMs everything they need at a glance. Here's what you'll find on each page and how to use it.
+        </p>
+
+        <!-- TITLE BOX & THEMES ROW -->
+        <div class="mockup-section">
+            <div class="mockup-row" style="gap: 12px;">
+                <div style="flex: 1;">
+                    <div class="mockup-label"><span class="label-num">1</span> Title Banner</div>
+                    <div class="mockup-box" style="width: 100%;">
+                        <div class="mini-title-box">
+                            <h3>Adventure Title</h3>
+                            <div class="mini-subtitle">Adventure Location • Broad Region • Outer World Region</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <div class="mockup-label"><span class="label-num">2</span> Theme Tags</div>
+                    <div class="mockup-box" style="width: 100%;">
+                        <div class="mini-themes">
+                            <span>◈ Theme</span>
+                            <span>⚔ Objective</span>
+                            <span>☠ Topography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TWO COLUMN SECTION -->
+        <div class="two-col-mockup">
+            <div>
+                <!-- STARTING THE ADVENTURE -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">3</span> Starting the Adventure</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header">Starting the Adventure</div>
+                        <div class="mini-body">
+                            <p style="font-style: italic; font-weight: bold; margin-bottom: 3px;">"Read-aloud text appears in bold italics..."</p>
+                            <p>Setup information for the GM follows, explaining how to hook the party.</p>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        <em>Italicized quotes</em> can be read directly to players. Regular text provides GM-only context and setup instructions.
+                    </div>
+                </div>
+
+                <!-- CHARACTERS -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">4</span> Important Characters</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header">Important Characters</div>
+                        <div class="mini-body">
+                            <div class="mini-character">
+                                <span class="mini-char-name">CHARACTER NAME</span>
+                                <div class="mini-char-details">Species, Gender, Age (Stats Reference)</div>
+                                <div class="mini-char-desc">A brief description of their personality, motivations, and role in the adventure.</div>
+                                <div class="mini-char-quote">"Physical description in quotes for read-aloud when players first meet them."</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Key GMCs with species, gender, calling, and stat block references. <em>Description</em> gives personality/motivation. <em>Quote</em> is read-aloud for first impressions.
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- SUGGESTED STORY -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">5</span> Suggested Story</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header dark">Suggested Story</div>
+                        <div class="mini-body dark-bg">
+                            <div style="background: rgba(168, 212, 230, 0.3); padding: 1px 4px; margin-bottom: 3px; font-size: 7pt; display: inline-block;">INTRO</div>
+                            <p>• Story beat one...</p>
+                            <div style="background: rgba(168, 212, 230, 0.3); padding: 1px 4px; margin: 3px 0; font-size: 7pt; display: inline-block;">DEVELOPMENT</div>
+                            <p>• Story beat two...</p>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        A chronological outline of the adventure's expected flow and unique mechanics. These are <em>suggestions</em> - adapt based on player choices!
+                    </div>
+                </div>
+
+                <!-- SOURCES -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">6</span> Sources & Credits</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header" style="font-size: 7pt;">Sources & Credits</div>
+                        <div class="mini-body" style="font-size: 6.5pt;">
+                            <div style="border-left: 2px solid var(--break-pink); padding-left: 4px; margin-bottom: 3px;">Adapted from "Original Adventure"</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px;">
+                                <span>• Stat Block (pg. X)</span>
+                                <span>• Stat Block (pg. Y)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Original adventure inspiration credits (if adapted from an existing adventure) and page/source references for all adversary stat blocks used.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 2 ELEMENTS -->
+        <div class="mockup-section">
+            <div class="mockup-label"><span class="label-num">7</span> Key Locations</div>
+            <div class="mockup-box mini-content-box" style="width: 100%;">
+                <div class="mini-header dark">Key Locations</div>
+                <div class="mini-locations">
+                    <div class="mini-loc-card">
+                        <h4>Location A</h4>
+                        <p class="loc-read">"Read-aloud..."</p>
+                    </div>
+                    <div class="mini-loc-card">
+                        <h4>Location B</h4>
+                        <p class="loc-read">"Read-aloud..."</p>
+                    </div>
+                    <div class="mini-loc-card">
+                        <h4>Location C</h4>
+                        <p class="loc-read">"Read-aloud..."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-description" style="margin-top: 4px;">
+                Major locations the adventure is centered around. Each includes read-aloud text and GM notes about what's there.
+            </div>
+        </div>
+
+        <div class="two-col-mockup">
+            <div>
+                <!-- SECRETS & CLUES -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">8</span> Secrets & Clues</div>
+                    <div class="mockup-box mini-content-box pink-border" style="width: 100%;">
+                        <div class="mini-header pink">Secrets & Clues</div>
+                        <div class="mini-body">
+                            <ol class="mini-secrets-list">
+                                <li>Hidden information players might discover...</li>
+                                <li>A clue that reveals the true villain...</li>
+                                <li>Background lore about the situation...</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Numbered facts to reveal as players investigate. Drop these in naturally - don't gate important info behind single checks!
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- QUEST RESOLUTION -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">9</span> Quest Resolution</div>
+                    <div class="mockup-box mini-content-box purple-border" style="width: 100%;">
+                        <div class="mini-header dark">Quest Resolution</div>
+                        <div class="mini-body">
+                            <div class="mini-resolution-cols">
+                                <div class="mini-resolution-opt">
+                                    <h4>☆ Fighting</h4>
+                                    <p>Combat outcome + loot</p>
+                                </div>
+                                <div class="mini-resolution-opt">
+                                    <h4>✦ Negotiation</h4>
+                                    <p>Peaceful resolution rewards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Different ways the adventure can conclude - combat often isn't the answer! Each option includes suggested rewards.
+                    </div>
+                </div>
+
+                <!-- RANK -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">10</span> Rank Adjustments</div>
+                    <div class="mockup-box mini-content-box pink-border" style="width: 100%;">
+                        <div class="mini-header pink">Rank X-Y Adventure</div>
+                        <div class="mini-body mini-rank">
+                            <p><strong>Lower Rank:</strong> Swap enemies for weaker variants...</p>
+                            <p><strong>Higher Rank:</strong> Add more foes or use elite versions...</p>
+                            <p><strong>Starting Coin:</strong> Suggested gear budget for new PCs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - ADVENTURE SITES ==================== -->
+    <div class="page">
+        <div class="page-header">
+            <h1>Adventure Sites</h1>
+            <p class="subtitle">Exploration, Encounters & Traps</p>
+            <div class="header-divider"></div>
+        </div>
+
+        <p class="intro-text">
+            Some adventures include an <em>Adventure Site</em> - a dungeon, area map, or other structured exploration. <br>Here's how to run them.
+        </p>
+
+        <!-- SITE MAP -->
+        <div class="mockup-section">
+            <div class="mockup-label"><span class="label-num">1</span> Site Map</div>
+            <div class="site-map-example">
+                <img src="1) Fishy Business/bc2489573ab23a306c30173ad8489c1e.jpg" alt="The Sandpiper Map">
+                <!-- Connection Lines -->
+                <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <line class="map-line" x1="88" y1="96.5" x2="52" y2="77" />
+                    <line class="map-line" x1="52" y1="77" x2="72" y2="53.5" />
+                    <line class="map-line" x1="52" y1="77" x2="42" y2="95" />
+                </svg>
+                <div class="map-marker m1">1</div>
+                <div class="map-marker m2">2</div>
+                <div class="map-marker m3">3</div>
+                <div class="map-marker m4">4</div>
+            </div>
+            <div class="mockup-description" style="margin-top: 6px;">
+                Visual map with numbered location markers. Lines show connections between areas. Represents the <em>Adventure Site</em> from BREAK!!'s Core Rules. Use this to track party movement and describe transitions between locations. <em>Artist Unknown</em>.
+            </div>
+        </div>
+
+        <div class="two-col-mockup">
+            <div>
+                <!-- ENCOUNTERS -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">2</span> Random Encounters</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header">Random Encounters (d20)</div>
+                        <div class="mini-body">
+                            <div class="mini-encounter-row">
+                                <span class="mini-encounter-roll">1-10</span>
+                                <span><strong>No Encounter:</strong> ambiance only</span>
+                            </div>
+                            <div class="mini-encounter-row" style="border-bottom: none; padding-bottom: 0;">
+                                <span class="mini-encounter-roll">11-15</span>
+                                <span><strong>Creature:</strong> Stats × Count</span>
+                            </div>
+                            <div class="mini-situation">
+                                <strong>Situation:</strong> What the creature is doing when encountered.
+                                <br><strong>Consequences:</strong> What happens based on the party's actions.
+                            </div>
+                            <div class="mini-encounter-row" style="border-bottom: none; padding-bottom: 0;">
+                                <span class="mini-encounter-roll">16-20</span>
+                                <span><strong>Interaction:</strong> Stats × Count</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Roll when the party lingers, makes noise, or enters a new area. <em>Situation</em> boxes describe context and <em>Consequences</em> detail outcomes.
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- LOCATION KEY -->
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">3</span> Location Key</div>
+                    <div class="mockup-box mini-content-box pink-border" style="width: 100%;">
+                        <div class="mini-header pink">Location Key</div>
+                        <div class="mini-body">
+                            <div class="mini-loc-entry">
+                                <div class="loc-header">
+                                    <span class="mini-loc-num">1</span>
+                                    <span class="mini-loc-name">Area Name</span>
+                                    <span class="mini-loc-tag trap">Trap</span>
+                                </div>
+                                <div class="mini-loc-desc">Description of the area with setting details and any rule-specific information like traps or hazards.</div>
+                            </div>
+                            <div class="mini-loc-entry">
+                                <div class="loc-header">
+                                    <span class="mini-loc-num">2</span>
+                                    <span class="mini-loc-name">Another Area</span>
+                                    <span class="mini-loc-tag">Loot</span>
+                                </div>
+                                <div class="mini-loc-desc">Additional context, atmosphere, or items found here.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Numbered entries matching map markers. Tags indicate <em>Traps</em>, <em>Encounters</em>, <em>Guardian Encounters</em> or <em>Loot</em>. Descriptions provide setting and rule-specific details.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
