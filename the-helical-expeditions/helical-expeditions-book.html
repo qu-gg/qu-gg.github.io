@@ -580,7 +580,12 @@
                     ]
                 },
                 adventures: [
-                    // No adventures yet
+                    {
+                        file: '6-hold-the-wall.html',
+                        title: 'Hold the Wall',
+                        sublocation: 'Aiden',
+                        location: 'The Red Wall'
+                    }
                 ]
             },
             'The Twilight Meridian': {
@@ -1108,10 +1113,37 @@
                     }
                 }
                 
-                // 4. Populate ToC with page numbers
+                // 4. Add back cover as final standalone page (no page number, centered like title)
+                status.textContent = 'Loading back cover...';
+                const backCoverHtml = await fetchHTML('back-cover.html');
+                const backCoverStyles = extractStyles(backCoverHtml);
+                const backCoverPages = extractPages(backCoverHtml);
+                
+                if (backCoverPages.length > 0) {
+                    const backCoverSolo = document.createElement('div');
+                    backCoverSolo.className = 'solo-section';
+                    
+                    const backCoverSection = document.createElement('div');
+                    backCoverSection.className = 'adventure-section back-cover-section';
+                    const backStyleEl = document.createElement('style');
+                    backStyleEl.textContent = scopeStyles(backCoverStyles, 'back-cover-section');
+                    backCoverSection.appendChild(backStyleEl);
+                    
+                    // Create page wrapper without page number
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'page-wrapper back-cover-wrapper';
+                    wrapper.appendChild(backCoverPages[0]);
+                    backCoverSection.appendChild(wrapper);
+                    
+                    backCoverSolo.appendChild(backCoverSection);
+                    container.appendChild(backCoverSolo);
+                }
+                
+                // 5. Populate ToC with page numbers
                 populateToC();
                 
                 status.textContent = `✓ Compiled book with ${Object.keys(bookStructure).length} regions`;
+
                 
             } catch (error) {
                 status.textContent = `Error: ${error.message}`;

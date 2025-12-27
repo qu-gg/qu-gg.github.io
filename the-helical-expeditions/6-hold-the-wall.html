@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thunda Circuit - BREAK!! Adventure</title>
+    <title>Hold the Wall - BREAK!! Adventure</title>
     <style>
         /* ===== CSS RESET & BASE ===== */
         *, *::before, *::after {
@@ -13,15 +13,16 @@
         }
 
         :root {
-            /* Hot Desert Race Theme Palette */
-            --desert-deep: #3D1F0D;
-            --dune-tan: #8B5A2B;
-            --sunset-orange: #D2691E;
-            --sand-gold: #DAA06D;
-            --flame-red: #E8562A;
-            --sand-cream: #FAF0E6;
+            /* Red Wall & Wistful Dark Theme Palette */
+            --crimson-deep: #8B1E3F;
+            --blood-red: #A62639;
+            --iron-gray: #4A5568;
+            --steel-cold: #718096;
+            --frost-blue: #5A8FA8;
+            --purple-dark: #4A3A5C;
+            --cream-pale: #F5F0E8;
             --pearl-white: #FEFEFE;
-            --cactus-olive: #6B8E23;
+            --slate-deep: #2D3748;
             --ink-dark: #1a1a2e;
             
             /* Typography */
@@ -41,7 +42,7 @@
             font-size: 10pt;
             line-height: 1.35;
             color: var(--ink-dark);
-            background: var(--sand-cream);
+            background: var(--cream-pale);
         }
 
         /* ===== PAGE STRUCTURE ===== */
@@ -50,7 +51,7 @@
             min-height: 11in;
             max-height: 11in;
             padding: 0.15in 0.35in 0.25in 0.35in;
-            background: var(--sand-cream);
+            background: var(--cream-pale);
             margin: 0 auto 5mm auto;
             box-shadow: 0 2px 10px rgba(0,0,0,0.15);
             overflow: hidden;
@@ -65,7 +66,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--sunset-orange), var(--dune-tan), var(--flame-red), var(--dune-tan), var(--sunset-orange));
+            background: linear-gradient(90deg, var(--crimson-deep), var(--iron-gray), var(--frost-blue), var(--iron-gray), var(--crimson-deep));
         }
 
         .page.art-page {
@@ -75,12 +76,12 @@
 
         /* ===== TITLE BOX ===== */
         .title-box {
-            background: var(--desert-deep);
+            background: var(--slate-deep);
             border-radius: 6px;
             padding: 4px 20px;
             text-align: center;
             margin-bottom: 2px;
-            border: 2px solid var(--flame-red);
+            border: 2px solid var(--crimson-deep);
             box-shadow: 
                 0 4px 8px rgba(0,0,0,0.2),
                 inset 0 1px 0 rgba(255,255,255,0.1);
@@ -95,21 +96,21 @@
             transform: translateX(-50%);
             width: 60%;
             height: 3px;
-            background: var(--flame-red);
+            background: var(--crimson-deep);
             border-radius: 2px;
         }
 
         .title-box h1 {
             font-family: var(--font-display);
-            font-size: 28pt;
+            font-size: 24pt;
             color: var(--pearl-white);
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             text-shadow: 
-                3px 3px 0 var(--flame-red),
-                -1px -1px 0 var(--desert-deep),
-                1px -1px 0 var(--desert-deep),
-                -1px 1px 0 var(--desert-deep);
+                3px 3px 0 var(--crimson-deep),
+                -1px -1px 0 var(--slate-deep),
+                1px -1px 0 var(--slate-deep),
+                -1px 1px 0 var(--slate-deep);
             margin: 0;
         }
 
@@ -128,14 +129,14 @@
             gap: 25px;
             margin: 3px 0;
             padding: 3px 0;
-            border-bottom: 2px solid var(--sand-gold);
+            border-bottom: 2px solid var(--crimson-deep);
         }
 
         .theme-item {
             font-family: var(--font-heading);
             font-size: 10pt;
             font-weight: bold;
-            color: var(--dune-tan);
+            color: var(--crimson-deep);
             display: flex;
             align-items: center;
             gap: 4px;
@@ -162,7 +163,7 @@
         /* ===== CONTENT BOXES ===== */
         .content-box {
             background: var(--pearl-white);
-            border: 1px solid var(--sunset-orange);
+            border: 1px solid var(--frost-blue);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -175,7 +176,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--dune-tan);
+            background: var(--crimson-deep);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -196,13 +197,13 @@
         .resolution-option em {
             font-style: italic;
             font-weight: bold;
-            color: var(--sunset-orange);
+            color: var(--frost-blue);
         }
 
         .content-box h3 {
             font-family: var(--font-heading);
             font-size: 11pt;
-            color: var(--dune-tan);
+            color: var(--crimson-deep);
             margin-top: 4px;
             margin-bottom: 2px;
         }
@@ -216,12 +217,12 @@
         .content-box .read-aloud {
             font-style: italic;
             font-weight: bold;
-            color: var(--desert-deep);
+            color: var(--slate-deep);
         }
 
         /* ===== CHARACTERS BOX ===== */
         .characters-box {
-            background: rgba(218, 160, 109, 0.08);
+            background: rgba(139, 30, 63, 0.08);
         }
 
         .character-entry {
@@ -229,7 +230,7 @@
         }
 
         .character-entry:not(:last-child) {
-            border-bottom: 1px dashed var(--sunset-orange);
+            border-bottom: 1px dashed var(--frost-blue);
         }
 
         .character-header {
@@ -243,12 +244,12 @@
             font-family: var(--font-heading);
             font-size: 11pt;
             font-weight: bold;
-            color: var(--flame-red);
+            color: var(--crimson-deep);
         }
 
         .character-details {
             font-size: 9pt;
-            color: var(--dune-tan);
+            color: var(--iron-gray);
             font-style: italic;
         }
 
@@ -261,19 +262,19 @@
             font-size: 9pt;
             font-style: italic;
             font-weight: bold;
-            color: var(--cactus-olive);
+            color: var(--steel-cold);
             margin-top: 1px;
         }
 
         /* ===== STORY STEPS ===== */
         .story-steps {
             font-size: 9.5pt;
-            background: var(--desert-deep);
-            border-color: var(--desert-deep);
+            background: var(--slate-deep);
+            border-color: var(--slate-deep);
         }
 
         .story-steps h2 {
-            background: var(--sunset-orange);
+            background: var(--crimson-deep);
             color: var(--pearl-white);
         }
 
@@ -286,7 +287,7 @@
         }
 
         .story-steps em {
-            color: var(--flame-red);
+            color: var(--frost-blue);
         }
 
         .story-section {
@@ -294,19 +295,20 @@
         }
 
         .story-section-header {
-            background: var(--sunset-orange);
+            background: var(--crimson-deep);
             color: var(--pearl-white);
             font-family: var(--font-heading);
             font-size: 9.5pt;
             font-weight: bold;
             padding: 1px 5px;
             border-radius: 0;
+            margin-top: 7.5px;
             margin-bottom: 4px;
             display: inline-block;
         }
 
         .story-section-header.intro {
-            background: var(--cactus-olive);
+            background: var(--iron-gray);
         }
 
         .story-section ul {
@@ -327,7 +329,7 @@
 
         /* Story Image Block (standalone) */
         .story-image-block {
-            border: 1px solid var(--sunset-orange);
+            border: 1px solid var(--frost-blue);
             border-radius: 3px;
             overflow: hidden;
         }
@@ -336,11 +338,14 @@
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.25);
         }
 
         /* ===== SOURCES BOX ===== */
         .sources-box {
-            background: rgba(61, 31, 13, 0.05);
+            background: rgba(58, 74, 90, 0.05);
             font-size: 8.5pt;
         }
 
@@ -349,16 +354,16 @@
         }
 
         .sources-box .adventure-credit {
-            background: rgba(218, 160, 109, 0.12);
-            border-left: 3px solid var(--flame-red);
+            background: rgba(139, 30, 63, 0.1);
+            border-left: 3px solid var(--crimson-deep);
             padding: 4px 8px;
             margin-bottom: 6px;
             font-size: 9pt;
-            color: var(--desert-deep);
+            color: var(--slate-deep);
         }
 
         .sources-box .adventure-credit a {
-            color: var(--flame-red);
+            color: var(--crimson-deep);
             text-decoration: none;
         }
 
@@ -369,15 +374,18 @@
         .sources-box ul {
             list-style: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 12px;
         }
 
         .sources-box li {
             margin-bottom: 2px;
-            color: var(--dune-tan);
+            color: var(--iron-gray);
         }
 
         .sources-box a {
-            color: var(--sunset-orange);
+            color: var(--frost-blue);
             text-decoration: none;
         }
 
@@ -389,14 +397,14 @@
         
         /* Key Locations Box */
         .locations-box {
-            border: 1px solid var(--sunset-orange);
+            border: 1px solid var(--frost-blue);
             border-radius: 4px;
             margin-bottom: 8px;
             overflow: hidden;
         }
 
         .locations-box-header {
-            background: var(--desert-deep);
+            background: var(--slate-deep);
             color: var(--pearl-white);
             font-family: var(--font-heading);
             font-size: 12pt;
@@ -417,7 +425,7 @@
         .location-card {
             flex: 1;
             padding: 5px 8px;
-            border-right: 2px solid var(--flame-red);
+            border-right: 2px solid var(--crimson-deep);
         }
 
         .location-card:last-child {
@@ -428,7 +436,7 @@
             font-family: var(--font-heading);
             font-size: 11pt;
             color: var(--pearl-white);
-            background: var(--dune-tan);
+            background: var(--crimson-deep);
             padding: 2px 6px;
             margin-bottom: 4px;
             text-transform: uppercase;
@@ -438,7 +446,7 @@
             font-size: 9pt;
             font-style: italic;
             font-weight: bold;
-            color: var(--cactus-olive);
+            color: var(--steel-cold);
             margin-bottom: 2px;
         }
 
@@ -457,7 +465,7 @@
 
         .secrets-box {
             background: var(--pearl-white);
-            border: 1px solid var(--flame-red);
+            border: 1px solid var(--crimson-deep);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -466,7 +474,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--flame-red);
+            background: var(--crimson-deep);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -490,20 +498,21 @@
         }
 
         .image-box {
-            border: 3px solid var(--sunset-orange);
+            border: 3px solid var(--frost-blue);
             border-radius: 6px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: var(--dune-tan);
+            background: var(--slate-deep);
         }
 
         .image-box img {
             width: 100%;
             flex: 1;
             object-fit: cover;
+            max-height: 4.5in;
         }
 
         .image-box .image-caption {
@@ -517,7 +526,7 @@
         }
 
         .image-box .image-caption a {
-            color: var(--sand-gold);
+            color: var(--crimson-deep);
             text-decoration: none;
         }
 
@@ -535,7 +544,7 @@
         /* Quest Resolution */
         .quest-resolution {
             background: var(--pearl-white);
-            border: 1px solid var(--desert-deep);
+            border: 1px solid var(--slate-deep);
             border-radius: 4px;
             overflow: hidden;
             color: var(--ink-dark);
@@ -545,7 +554,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--desert-deep);
+            background: var(--slate-deep);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -567,7 +576,7 @@
         .rank-section {
             background: var(--pearl-white);
             border-radius: 4px;
-            border: 1px solid var(--flame-red);
+            border: 1px solid var(--crimson-deep);
             overflow: hidden;
             color: var(--ink-dark);
             display: flex;
@@ -578,7 +587,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--flame-red);
+            background: var(--crimson-deep);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -600,13 +609,13 @@
         }
 
         .rank-adjust-item strong {
-            color: var(--flame-red);
+            color: var(--crimson-deep);
         }
 
         .resolution-option h3 {
             font-family: var(--font-heading);
             font-size: 11pt;
-            color: var(--desert-deep);
+            color: var(--slate-deep);
             margin-bottom: 3px;
         }
 
@@ -621,7 +630,7 @@
             right: 0.45in;
             font-size: 8pt;
             font-style: italic;
-            color: var(--dune-tan);
+            color: var(--iron-gray);
         }
 
         /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
@@ -644,14 +653,14 @@
 
         /* ===== PAGE 3 - ART VIBEBOARD ===== */
         .art-page {
-            background: var(--desert-deep);
+            background: var(--slate-deep);
             color: var(--pearl-white);
             min-height: 11in;
             max-height: 11in;
         }
 
         .art-page::before {
-            background: linear-gradient(90deg, var(--flame-red), var(--sand-gold), var(--flame-red));
+            background: linear-gradient(90deg, var(--crimson-deep), var(--frost-blue), var(--crimson-deep));
         }
 
         .art-header {
@@ -662,9 +671,10 @@
         .art-header h1 {
             font-family: var(--font-display);
             font-size: 20pt;
-            color: var(--sand-gold);
+            color: var(--pearl-white);
             text-transform: uppercase;
             letter-spacing: 3px;
+            text-shadow: 2px 2px 0 var(--crimson-deep);
         }
 
         .art-grid {
@@ -676,10 +686,10 @@
         }
 
         .art-item {
-            border: 3px solid var(--sunset-orange);
+            border: 3px solid var(--frost-blue);
             border-radius: 6px;
             overflow: hidden;
-            background: var(--dune-tan);
+            background: var(--crimson-deep);
             display: flex;
             flex-direction: column;
         }
@@ -714,7 +724,7 @@
         }
 
         .art-item .art-caption a {
-            color: var(--sand-gold);
+            color: var(--frost-blue);
             text-decoration: none;
         }
 
@@ -749,15 +759,15 @@
     <div class="page">
         <!-- Title Box -->
         <div class="title-box">
-            <h1>Thunda Circuit</h1>
-            <div class="subtitle">Deadstone • Thunda Sands • Blazing Garden</div>
+            <h1>Hold the Wall</h1>
+            <div class="subtitle">The Red Wall • Aiden • Wistful Dark</div>
         </div>
 
         <!-- Themes Row -->
         <div class="themes-row">
-            <div class="theme-item"><span class="emoji">✿</span> Light-Hearted</div>
-            <div class="theme-item"><span class="emoji">⚑</span> Competition</div>
-            <div class="theme-item"><span class="emoji">☀</span> Desert Raceway</div>
+            <div class="theme-item"><span class="emoji">☠</span> Difficult</div>
+            <div class="theme-item"><span class="emoji">🛡</span> Defense</div>
+            <div class="theme-item"><span class="emoji">▦</span> Wall</div>
         </div>
 
         <!-- Two Column Content -->
@@ -768,12 +778,12 @@
                 <div class="content-box">
                     <h2>Adventure Description</h2>
                     <div class="content-box-inner">
-                    <p>The party sign up as last-minute entrants in the legendary 'Thunda Circuit', and are given their pick of Skimmer Teams to join for the notoriously chaotic race. So, strap yourself in, try to stay inside the Skimmer, and prepare for a thrilling ride.</p>
+                    <p>Aiden's Wall has stood for centuries against the Hollow Queen's hordes, unwavering. However, when a routine inspection of its Spell Engines showed it beginning to fail, an emergency task force is gathered. The party must take a stand alongside The Red Blades against the "children" of the Queen, while quick efforts are made to secure the wall.</p>
                     </div>
                     <h2>Starting the Adventure</h2>
                     <div class="content-box-inner">
-                    <p class="read-aloud">"In the midst of the scorching Thunda Sands sits an unlikely tourist destination. Decades ago, thrill-seekers began using the flat, rocky expanse for an annual race of crazy spell-engine-loaded platforms known as 'Skimmers'. They can hover, drive, crawl; doesn't matter as long as they're wicked-looking and engine-powered. As the years went on, the event grew into a spectacle that racing enthusiasts and inventors spend all year looking forward to. When you heard some of the racers were still looking for volunteers to join their teams, you rushed to sign up."</p>
-                    <p style="margin-top: 6px;">Arriving at the garages, the party can ally themselves with either Cutt, Soobi or Risky. However, each Skimmer only has space for three individuals, including its owner, so the party may have to distribute themselves across multiple vehicles. There are three roles on each Skimmer: a Driver to steer the vehicle, an Engine Cranker to keep the spell-engine churning, and a Gunner to weaken the competition. All Skimmers start with a 17 Defense Rating and 5 Hearts.</p>
+                    <p class="read-aloud">"The severity of the situation is etched in the hardened faces of the upper-ranking Red Blades you pass in the wall's top corridors. Rugged and frosted windows give you the faintest view over the desolate tundra beyond the wall where twisted cities and demonic forces lie in the mist. The weight of Aiden's task falls on you as you stand atop this miles-long, cold-iron wall - ever buzzing with the churn of the Mana Barrier engines below. As the briefing room doors open, you see Commander Vashaan, as cold as the stone beneath her, leaning over an arcane device."</p>
+                    <p style="margin-top: 6px;">The party might question why they are there. As it is a high-ranking adventure, maybe they were noted in the area and asked to aid directly. Or were even the ones that discovered the failing engines, on behalf of the Helical Archive. Make the Red Blades formidable and scary but equally match respect for the party. <br><br>Try to make Juk's Sunblade something for the party to protect alongside the Wall, as it directly holds back the lesser demons.</p>
                     </div>
                 </div>
 
@@ -783,29 +793,20 @@
                     <div class="content-box-inner">
                     <div class="character-entry">
                         <div class="character-header">
-                            <span class="character-name">Cutt Throat</span>
-                            <span class="character-details">— Chib, Male, 6 (Hinterland Noble)</span>
+                            <span class="character-name">Commander Vashaan</span>
+                            <span class="character-details">— Elf, Female, 45 (Oppressor)</span>
                         </div>
-                        <div class="character-desc">Owner of the Conqueror's Hound, a horrifying wrought-iron contraption adorned in spikes that spews arcane fire straight from the Spell Engine. A warlord from the No Folk's Land come to compete for recognition.</div>
-                        <div class="character-quote">"Rumors state that despite being relatively new in the No Folk's Land, Cutt has unified multiple clans from menacing gaze alone."</div>
+                        <div class="character-desc">Commander of the Red Blades, this fearsome and ruthless sentinel has stood against the horde since the Calamity itself.</div>
+                        <div class="character-quote">"Donning the most wicked crimson Superheavy Armor in the Outer World, it'd be easy to mistake Vashaan as the conqueror were tables turned."</div>
                     </div>
 
                     <div class="character-entry">
                         <div class="character-header">
-                            <span class="character-name">Soobi Deymond</span>
-                            <span class="character-details">— Human, Female, 65 (Merchant Scion)</span>
+                            <span class="character-name">Captain Juk</span>
+                            <span class="character-details">— Tenebrate, Male, 32 (Proudhound)</span>
                         </div>
-                        <div class="character-desc">Owner of the Burgundy Blitzer, made of the finest fabrics and best materials. Head of the renowned Deymond Tailor Corporation out of Portia, she is a wealthy racer who delights in showing off her skill and attempting to advertise her clothing lines.</div>
-                        <div class="character-quote">"Dressed in stunning Twilight Silks and Pilose Fleece, Soobi positively radiates upper class and style."</div>
-                    </div>
-
-                    <div class="character-entry">
-                        <div class="character-header">
-                            <span class="character-name">Risky Idea</span>
-                            <span class="character-details">— Rai-Neko, Female, 20 (Startech Adept)</span>
-                        </div>
-                        <div class="character-desc">Owner of the Charcoal Chariot, a Startech-based sleek angular design that hovers silently. Ambitious, young racer from Nyanko who wants to prove to everyone back home she can win.</div>
-                        <div class="character-quote">"Risky is dressed head-to-toe in black except for reflective glasses, and is muttering calculations under her breath."</div>
+                        <div class="character-desc">Captain Juk has been assigned as the Star Gem Bearer for the party's mission.</div>
+                        <div class="character-quote">"Not a hair is out of place on the Captain's crimson uniform. Resolute determination is all on his face, staring over the wall."</div>
                     </div>
                     </div>
                 </div>
@@ -815,47 +816,44 @@
             <div class="column">
                 <!-- Story Image -->
                 <div class="story-image-block">
-                    <img src="3) Thunda Circuit/Pasted image 20251222001353.jpg" alt="Thunda Sands">
+                    <img src="6) Hold the Wall/Pasted image 20251227152619.jpg" alt="The Red Wall">
                 </div>
 
                 <!-- Suggested Story -->
                 <div class="content-box story-steps">
                     <h2>Suggested Story</h2>
                     <div class="content-box-inner">
-                    <p class="story-intro-text">Set the scene, have the three Owners introduce themselves and their vehicles, then continue:</p>
+                    <p class="story-intro-text">Set the scene, have the party shown into the strategy chamber to speak with the Commander, then continue:</p>
 
                     <div class="story-section">
-                        <span class="story-section-header">Prepare Your Vehicles</span>
+                        <span class="story-section-header">Sputtering Engines</span>
                         <ul>
-                            <li>After choosing their team, party members can try to recruit extra crew to fill any vacant slots.</li>
-                            <li>Consider all GMCs as relevantly re-flavored Blaster Mages [Source, pg. 366] without access to the Mana Burst Ability.</li>
-                            <li>With all roles filled, the party must tighten rivets on their Skimmer's hover-jets, charge the Spell Engine, and add metal plates to the chassis.</li>
-                            <li>Encourage creativity (and even pre-race sabotage!) in PC Abilities/thoughts, and give Bonuses where applicable.</li>
+                            <li>Vashaan instructs the party to assist the special forces while the six Massive Spell Engines within the wall undergo repairs.</li>
+                            <li>The deactivation of the Mana Barrier will certainly attract a powerful horde, and the wall must be defended while it is vulnerable.</li>
+                            <li>She introduces Captain Juk as their envoy and to protect the Sunblade dearly.</li>
                         </ul>
                     </div>
 
                     <div class="story-section">
-                        <span class="story-section-header">Start Your Engines</span>
+                        <span class="story-section-header">Descent</span>
                         <ul>
-                            <li>At the starting area, the race begins! Initiative order is determined by how well each team prepared their Skimmers.</li>
-                            <li>Three other Skimmers in the race are driven by: Old Iron Dwarves hoping to make their battalion proud; New Ore Goblins come explicitly to make sure the Dwarves lose; and the standard lot of Thunda Clan Barbarians.</li>
-                            <li>On their Skimmer's turn, Engine Crankers can propel the Skimmer 1d10 × 100 ft; Drivers choose how to spend that movement; and Gunners try to weaken their rivals via Attacks, Stunts, Tricks, Abilities.</li>
+                            <li>Commander Vashaan escorts the party to a massive grated elevator, noting that its function will cut out while the Engines are being repaired. Below stands 5 Squads of Red Blades.</li>
+                            <li>The elevator lands, the buzz of the Engines cease, and thundering footsteps approach. From the mist, the party faces a <em>Shadow Sorceress</em> with 6 <em>Malignant Echoes</em>.</li>
+                            <li>At all times, dozens of <em>Blighted Demons</em> are 1 Area outside combat - kept back by Juk's Sunblade.</li>
                         </ul>
                     </div>
 
                     <div class="story-section">
-                        <span class="story-section-header">Buckle Your Seatbelts</span>
+                        <span class="story-section-header">Standing Ground</span>
                         <ul>
-                            <li>The Skimmers race around the circuit, from the starting area to the <em>Shale Canyon</em>, then across the <em>Arid Trail</em>.</li>
-                            <li>An angry Giga-Gruun, who was disturbed by the noise, will throw rocks at random Skimmers per Turn from the top of the <em>Shale Canyon</em>, while shouting childish insults. To handle this, the relevant Driver makes a Deftness Check. On Failure, a Falling Debris CLICK! Trap targets all members.</li>
-                        </ul>
-                    </div>
-
-                    <div class="story-section">
-                        <span class="story-section-header">Photo Finish</span>
-                        <ul>
-                            <li>As teams complete the circuit, the race ends and they are ranked based on their finishing position.</li>
-                            <li>The racers thank (or curse out) each other for the thrilling race.</li>
+                            <li>As the hordes advance, they are clustered around siege-breaking colossi called <em>Marbled Gohma</em>. The Squads split to tackle one each, including one left for the party. It will take 10 Turns before the Engines are repaired.</li>
+                            <li>Every 2 Turns, roll a D20 for each Squad:</li>
+                            <ul>
+                                <li>A Squad's outcome depends on it hitting 3 Successes or Failures first, where a Success is a 10+.</li>
+                                <li>PCs can aid other Squads with Abilities/Actions to give the roll an Edge.</li> 
+                                <li>Failed Squads reduce the Wall's Hearts by 2.</li>
+                            </ul>
+                            <li>After 10 Turns, the buzz of the Engines resume and the Wall lights once more. The lifts will raise in 2 more Turns so the party must go!</li>
                         </ul>
                     </div>
                     </div>
@@ -874,19 +872,14 @@
             <!-- Key Locations Horizontal -->
             <div class="locations-horizontal">
                 <div class="location-card">
-                    <h3>Deadstone, Starting Area</h3>
-                    <p class="loc-desc">"Blinding sunlight beats off the white, stone track in the middle of this makeshift sandstone town. The smell of burnt Mana, electricity and molten metal fills the air."</p>
-                    <p>Strategies need to be discussed before the race, because all racers gain the Deafened Ailment when they enter this area. <br><br> The first section of track is wide enough for three Skimmers. It runs for 1000ft before the <em>Shale Canyon</em> starts.</p>
+                    <h3>Briefing Room</h3>
+                    <p class="loc-desc">"A wall of ruined blades adorns the wall of this place, likely belonging to lost Blades. A simple Star Gem embedded in the ceiling provides warmth against the frost."</p>
+                    <p>Brutalist and practical, this briefing room holds an arcane device in the center, showcasing concentrations of Dark Mana within a wide range of the wall.<br><br>While the wall itself is clear as yet, signs of forces building in the nearby City of Corpses has Vashaan on edge.</p>
                 </div>
                 <div class="location-card">
-                    <h3>Shale Canyon</h3>
-                    <p class="loc-desc">"The dusty cobbles descend into a careful drive through an enclosed, rocky valley. Jagged boulders and loose stones litter the parched ground."</p>
-                    <p>This is a narrow passage through a bumpy chasm. Rocks in the road need to be expertly maneuvered between to get to the other side. <br><br> The track here is wide enough for two Skimmers, and continues for 2000 ft before reaching the <em>Arid Trail</em>.</p>
-                </div>
-                <div class="location-card">
-                    <h3>Arid Trail</h3>
-                    <p class="loc-desc">"The valley road climbs into a fenced-off route through the sand. Flags make a spectacle of an upcoming, steep jump."</p>
-                    <p>Racers must test their strength in the form of Deftness or Might Checks to stay in control during the 'Leap of Faith' jump. Skimmers receive a -2 to their next Cranking Roll for each racer who fails. <br><br>This road is wide enough for five Skimmers, and continues for 2000 ft before reaching the finish line.</p>
+                    <h3>The Red Wall</h3>
+                    <p class="loc-desc">"One could only assume it is made entirely of Shade Iron by how ominous this massive plated wall looks set against frozen mountains."</p>
+                    <p>The wall has a Defense Rating of 20 and 20 Hearts. Its Massive Spell Engines emit enough Shard light to ward off the demons, however they must be deactivated to carry out repairs.<br><br>Unfortunately, it also powers the lifts which means that there is no escape until the repairs are complete...or the wall falls.</p>
                 </div>
             </div>
         </div>
@@ -897,17 +890,17 @@
                 <h2>Secrets & Clues</h2>
                 <div class="secrets-box-inner">
                 <ol class="secrets-list">
-                    <li>The other Skimmers in the race are called the Iron Banner (Dwarves), the Rust Bucket (Goblins) and the Canyon Splitter (Barbarians).</li>
-                    <li>Skimmers cannot move through another's space, so can only overtake if the track is wide enough.</li>
-                    <li>Skimmers can exit the track before cranking to take a Pit Stop; they rejoin the race on their next Turn.</li>
-                    <li>Crankers and Gunners can swap roles at any time, but a Driver change will require a Pit Stop.</li>
-                    <li>Drivers who continue for more than five rounds of the race without swapping will gain Fatigue, and gain another stack for every Turn continued.</li>
-                    <li>During a Pit Stop, unconscious racers regain 2 Hearts and Skimmers are repaired to 3 Hearts.</li>
+                    <li>Vashaan has made contingency plans for evacuation with nearby settlements prepared to leave on notice. However, she believes many would not outpace the horde.</li>
+                    <li>A recent inner-rank betrayal by one of <em>'Her Beloved'</em> has left the Red Blades lacking in numbers.</li>
+                    <li>Each squad has a dedicated Star Gem Bearer within the Red Blades, spaced out as they are due to scarcity of the gems.</li>
+                    <li>The Massive Spell Engines were repurposed from Akenia, and only the greatest magitech engineers can repair it.</li>
+                    <li>The City of Corpses, Cauldron, was once the forward operating ground of the Red Blades before being wiped out early in the 4th Aeon.</li>
+                    <li>Star Gem Bearers are a necessary role, as without them, the hordes of lesser demons would overrun even the greatest warrior.</li>
                 </ol>
                 </div>
             </div>
             <div class="image-box">
-                <img src="3) Thunda Circuit/Pasted image 20251222001225.jpg" alt="Skimmer Inspiration">
+                <img src="6) Hold the Wall/Pasted image 20251227135704.jpg" alt="Marbled Gohma Inspiration" style="object-position: 70% center;">
             </div>
         </div>
 
@@ -919,26 +912,35 @@
                 <div class="quest-resolution-inner">
                 <div class="resolution-columns">
                     <div class="resolution-option">
-                        <h3>🏆 Placement Rewards</h3>
-                        <p>The Team who finish in <strong>first place</strong> receive <strong>100C each</strong>. The racers on the Skimmers who finish in <strong>second</strong> and <strong>third places</strong> receive <strong>50C</strong> and <strong>25C each</strong>, respectively.</p>
+                        <h3>✦ Rewards</h3>
+                        <p>On success, <strong>Sunblade</strong> is offered to the party, a treasured blade reserved for the highest ranks of the Red Blades. Free quarters and meals are provided for as long as the party stays.</p>
                     </div>
                     <div class="resolution-option">
-                        <h3>✦ Bonus Rewards</h3>
-                        <p>If an Owner wins with the party, they will consider gifting the group their <em>Skimmer</em> [Source, pg. 198] as a thank you. Consider giving a Social Bond with the relevant Owner too.</p>
+                        <h3>⚔ Outstanding Success</h3>
+                        <p>If all Squads are saved, Vashaan will offer the party a <strong>Red Blades Insignia</strong>, a powerful icon of status throughout the Wistful Dark.</p>
                     </div>
+                </div>
+                <!-- Sunblade Item Block -->
+                <div style="background: rgba(245, 240, 232, 0.9); border: 2px dotted var(--iron-gray); border-radius: 4px; padding: 6px 10px; margin-top: 8px; font-size: 9pt;">
+                    <div style="margin-bottom: 3px;"><strong style="color: var(--crimson-deep);">Sunblade</strong> <span style="color: var(--iron-gray);">[Master Weapon]</span></div>
+                    <div style="margin-bottom: 3px;">Made of Sun Gold. Absorbs sunlight, storing up to a week's worth while unsheathed; emits light like a <em>Star Gem</em>. Expel all stored sunlight (min. 1 day) for <strong>+1 Damage</strong>.</div>
+                    <div style="color: var(--frost-blue); font-weight: bold;">1 Slot · 4 Gems · Made by Yan Kodiac</div>
                 </div>
                 </div>
             </div>
 
             <!-- Rank Section -->
             <div class="rank-section">
-                <div class="rank-header">Rank 3-4 Adventure</div>
+                <div class="rank-header">Rank 8-9 Adventure</div>
                 <div class="rank-adjustments">
                     <div class="rank-adjust-item">
-                        <strong>Lower Rank:</strong> You could lower the GMC's Hearts/Stats and remove the Big Magic Shot Ability.
+                        <strong>Lower Rank:</strong> Reduce the Shadow Sorceress' stats and lessen the Mooks.
                     </div>
                     <div class="rank-adjust-item">
-                        <strong>Higher Rank:</strong> For a truly harder adventure, replace the stationary Giga-Gruun with a roaming Grimwing PCs have to contend with the entire time!
+                        <strong>Higher Rank:</strong> Add debuff/support Mooks alongside the Marbled Gohma or reduce the Wall's Hearts.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Suggested Starting Coin:</strong> 1200C
                     </div>
                 </div>
             </div>
@@ -948,12 +950,12 @@
         <div class="content-box sources-box" style="margin-top: 8px;">
             <h2>Sources & Adversaries</h2>
             <div class="content-box-inner">
-            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>No-Horse Race</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br> Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Creatures of the Deep</strong></a> by One-Shot Wonders. Some writing blocks used directly. <br>Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
             <ul>
-                <li><strong>Blaster Mage:</strong> Source, pg. 366 (without Mana Burst Ability)</li>
-                <li><strong>Giga-Gruun:</strong> Source, pg. 374</li>
-                <li><strong>Skimmer:</strong> Source, pg. 198</li>
-                <li><strong>Traps:</strong> <a href="https://cdn.discordapp.com/attachments/1359104566414807231/1359104566586642582/image.png" target="_blank">CLICK! Traps</a> by VictorSeven</li>
+                <li><strong>Blighted Demons:</strong> Source, pg. 372</li>
+                <li><strong>Marbled Gohma</strong> by VictorSeven (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                <li><strong>Malignant Echo</strong> by Atyai (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                <li><strong>Shadow Sorceress</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
             </ul>
             </div>
         </div>
@@ -968,29 +970,29 @@
         <div class="art-grid">
             <!-- Row 1 -->
             <div class="art-item">
-                <img src="3) Thunda Circuit/Pasted image 20251222001353.jpg" alt="Observing Thunda Sands">
-                <div class="art-caption">"Observing Thunda Sands" <br> Art by <a href="https://www.shed-works.co.uk/sable" target="_blank">Sable</a></div>
+                <img src="6) Hold the Wall/Pasted image 20251227152619.jpg" alt="The Red Wall">
+                <div class="art-caption">"The Red Wall" <br> Art by Full Metal Alchemist</div>
             </div>
             <div class="art-item">
-                <img src="3) Thunda Circuit/Pasted image 20251222001601.jpg" alt="Deadstone Inspiration">
-                <div class="art-caption">"Deadstone Inspiration" <br> Art by <a href="https://characterdesignreferences.com/art-of-animation-6/art-of-oban-star-racers" target="_blank">Oban Star Racers</a></div>
+                <img src="6) Hold the Wall/Pasted image 20251227135704.jpg" alt="Marbled Gohma Inspiration">
+                <div class="art-caption">"Marbled Gohma Inspiration" <br> Art by Nintendo</div>
             </div>
-            <div class="art-item unknown-source">
-                <img src="3) Thunda Circuit/Pasted image 20251222001715.jpg" alt="Skimmer Inspiration">
-                <div class="art-caption">"Skimmer Inspiration" <br> Artist Unknown</div>
+            <div class="art-item">
+                <img src="6) Hold the Wall/Pasted image 20251227141515.jpg" alt="Malignant Echo Inspiration">
+                <div class="art-caption">"Malignant Echo Inspiration" <br> Art by <a href="https://www.deviantart.com/dasaurian/art/Concept-Dark-Shadow-Monster-Things-419855421" target="_blank">DaSaurian</a></div>
             </div>
             <!-- Row 2 -->
-            <div class="art-item">
-                <img src="3) Thunda Circuit/Pasted image 20251222001725.jpg" alt="Observers Watching the Race">
-                <div class="art-caption">"Observers Watching the Race" <br> Art by <a href="https://www.artstation.com/artwork/yRnR5" target="_blank">sparth</a></div>
+            <div class="art-item unknown-source">
+                <img src="6) Hold the Wall/Pasted image 20251227151910.jpg" alt="Aiden Inspiration">
+                <div class="art-caption">"Aiden Inspiration" <br> Artist Unknown</div>
             </div>
             <div class="art-item">
-                <img src="3) Thunda Circuit/Pasted image 20251222001758.jpg" alt="Shale Canyon Inspiration">
-                <div class="art-caption">"Shale Canyon Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/3owRnA" target="_blank">J Line</a></div>
+                <img src="6) Hold the Wall/Pasted image 20251227155812.jpg" alt="Hollow Queen's Children">
+                <div class="art-caption">"Hollow Queen's Children" <br> Art by Oliver Odmark</div>
             </div>
             <div class="art-item">
-                <img src="3) Thunda Circuit/Pasted image 20251222004620.jpg" alt="Skimmer Inspiration">
-                <div class="art-caption">"Skimmer Inspiration" <br> Art by <a href="https://characterdesignreferences.tumblr.com/post/171346277909/art-by-thomas-girard-januarys-theme-bikers" target="_blank">Thomas Girard</a></div>
+                <img src="6) Hold the Wall/Pasted image 20251227160931.jpg" alt="Red Blade Inspiration" style="object-position: 95% center;">
+                <div class="art-caption">"Red Blade Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/DAL8eo" target="_blank">Nick Bray</a></div>
             </div>
         </div>
     </div>

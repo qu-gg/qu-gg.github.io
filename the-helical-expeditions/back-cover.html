@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helical Expeditions - Back Cover</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* BREAK!! Inspired Palette - Light Version */
+            --break-pink: #e83a7a;
+            --break-magenta: #c42d6b;
+            --break-light-blue: #5bc0de;
+            --break-sky: #87ceeb;
+            --break-cyan: #00bcd4;
+            --break-purple: #6b3fa0;
+            --break-gold: #f5c542;
+            --break-cream: #faf6ed;
+            --break-light: #fff8f0;
+            --break-dark: #2a1f3d;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: 'Trebuchet MS', 'Arial', sans-serif;
+            background: #888;
+            color: var(--break-dark);
+        }
+
+        .page {
+            width: 8.5in;
+            height: 11in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.4in;
+            background: var(--break-cream);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative corner accents - mirrored from front cover */
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0.2in;
+            right: 0.2in;
+            width: 1in;
+            height: 1in;
+            border-right: 4px solid var(--break-pink);
+            border-top: 4px solid var(--break-pink);
+            opacity: 0.8;
+        }
+
+        .page::after {
+            content: '';
+            position: absolute;
+            bottom: 0.2in;
+            left: 0.2in;
+            width: 1in;
+            height: 1in;
+            border-left: 4px solid var(--break-light-blue);
+            border-bottom: 4px solid var(--break-light-blue);
+            opacity: 0.8;
+        }
+
+        /* Main content area */
+        .back-content {
+            max-width: 5.5in;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4in;
+        }
+
+        .back-content p {
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--break-dark);
+            letter-spacing: 0.3px;
+        }
+
+        .tagline-logo {
+            position: relative;
+            height: 0.6in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -0.25in;
+        }
+
+        .tagline-logo::before {
+            content: '';
+            position: absolute;
+            width: 2.2in;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.95) 0%, rgba(250, 246, 237, 0.8) 50%, transparent 75%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .tagline-logo img {
+            height: 100%;
+            width: auto;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.788));
+        }
+
+        /* Disclaimer at bottom */
+        .disclaimer {
+            position: absolute;
+            bottom: 0.5in;
+            left: 0.6in;
+            right: 0.6in;
+            text-align: center;
+        }
+
+        .disclaimer p {
+            font-size: 9pt;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Decorative stars */
+        .star {
+            position: absolute;
+            color: var(--break-light-blue);
+            font-size: 24pt;
+            opacity: 0.7;
+        }
+
+        .star-1 { top: 0.8in; left: 1in; color: var(--break-pink); }
+        .star-2 { top: 1.2in; left: 0.5in; font-size: 16pt; }
+        .star-3 { bottom: 1.4in; right: 0.6in; font-size: 18pt; color: var(--break-pink); }
+
+        /* Print Styles */
+        @media print {
+            .page {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="back-content">
+            <p>
+                X+ expeditions spanning the Outer World - from the mournful shadows <br>of Wistful Dark 
+                to the war-torn depths of the Buried Kingdom. Each expedition is a one-session story, filled with colorful characters, 
+                wondrous locations, worldbuilding, and engaging adversaries waiting to challenge your group. <br>Each are within 3 pages or less for quick-reading, quick-running.
+            </p>
+
+            <p>
+                Whether your adventurers are protecting endangered Prism Rokko-Dos from poachers, 
+                racing Skimmers through craggy canyons, or even flying with <br>sky whales, 
+                The Helical Expeditions has a journey for every table.
+            </p>
+            <p>
+                Designed for the Rammie Award-Winning TTRPG
+            </p>
+            <div class="tagline-logo">
+                <img src="0) Title Page/BREAK Logo.png" alt="BREAK!!">
+            </div>
+
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p>
+                The Helical Expeditions is an independent product published under BREAK!! RPG's <br>Non-Commercial License and is not affiliated with BREAK!!'s creators or publishers.
+            </p>
+        </div>
+
+        <!-- Decorative stars - mirrored positions from front -->
+        <span class="star star-1">✦</span>
+        <span class="star star-2">✦</span>
+        <span class="star star-3">✦</span>
+    </div>
+</body>
+</html>
