@@ -24,3 +24,5 @@ Crossed Bones:
 	- Left the area scorched and desolate
 - Set on one of the main crossroads through the Shadowed Lands, and as such, has a high rate of Knights and recovered Lanterns passing through.
 	- The entire surrounding tundra of the town by this point are ancient armaments in the ground and set lanterns.
+
+Prickly's R&R

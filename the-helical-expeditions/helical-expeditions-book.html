@@ -512,6 +512,79 @@
             object-fit: cover;
         }
 
+        /* ===== SUBZONE SEPARATOR STYLES ===== */
+        .subzone-separator-left,
+        .subzone-separator-right {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            background: var(--subzone-bg);
+            position: relative;
+        }
+
+        .subzone-separator-left::before,
+        .subzone-separator-right::before {
+            content: '';
+            position: absolute;
+            top: 0.25in;
+            left: 0.25in;
+            width: 0.5in;
+            height: 0.5in;
+            border-left: 3px solid var(--subzone-accent);
+            border-top: 3px solid var(--subzone-accent);
+            opacity: 0.6;
+        }
+
+        .subzone-separator-left::after,
+        .subzone-separator-right::after {
+            content: '';
+            position: absolute;
+            bottom: 0.25in;
+            right: 0.25in;
+            width: 0.5in;
+            height: 0.5in;
+            border-right: 3px solid var(--subzone-accent);
+            border-bottom: 3px solid var(--subzone-accent);
+            opacity: 0.6;
+        }
+
+        .subzone-separator-right {
+            padding: 1in 0.75in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subzone-title {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 32pt;
+            color: var(--subzone-title);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+            margin-bottom: 0.3in;
+        }
+
+        .subzone-divider {
+            width: 3in;
+            height: 3px;
+            background: var(--subzone-accent);
+            opacity: 0.5;
+            margin-bottom: 0.4in;
+            border-radius: 2px;
+        }
+
+        .subzone-flavor {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 12pt;
+            color: var(--subzone-text);
+            text-align: center;
+            font-style: italic;
+            max-width: 5.5in;
+            line-height: 1.7;
+        }
+
         /* ===== ADVENTURE SECTION WRAPPER ===== */
         .adventure-section {
             /* Contains scoped styles for each adventure */
@@ -561,6 +634,15 @@
         const bookStructure = {
             'Wistful Dark': {
                 sublocations: ['Crystalia', 'Murk', 'Shard', 'Shadowed Lands', 'The Eaten Isle', 'Aiden', "Hollow Queen's Kingdom"],
+                sublocationFlavor: {
+                    'Crystalia': 'An isolated land of gossamer and glass. No one who has ventured there has returned. Some theorize it might be so beautiful that no one ever wants to leave.',
+                    'Murk': "Home of the fey, said to contain portals that connect all the world's great forests together. The Formless Council of Unshaped meet here, devising ways to return the world to the era of Dreaming.",
+                    'Shard': 'Shard Cities formed around the largest glowing fragments of the broken Sun Machine, the light and warmth from which attract the desperate. Shard Patricians control the cities, but the socio-economic influence of the Guilds and the Church of the Sacred Chain make ruling a delicate balancing act.',
+                    'Shadowed Lands': 'There is no law or order in this haunting landscape of fungal forests and tundra. Nomads contend with the constant threat of the restless dead and desperate raiders. The rag-tag Knights of the Lantern attempt to protect those most in need.',
+                    'The Eaten Isle': "This once divine place is devoid of rational life after a botched ritual. The isle's epicenter now sinks into a magical abyss.",
+                    'Aiden': "This military confederacy repels the Hollow Queen's monstrous army from an ancient fortified wall that divides the dark continent. The Red Blades, the nation's elite troops, perform daring raids deep into enemy territory.",
+                    "Hollow Queen's Kingdom": "The citizens of Calian were warped into twisted demons and wretches, and their glorious queen reduced to a miserable and spiteful creature. She commits her 'children' to a relentless attack on civilisation. Only Aiden stops the advance."
+                },
                 tagline: 'The furthest continent from the Sun Machine, a dark and<br>melancholy realm filled with an equal measure of fear and hope.',
                 colors: {
                     panelBg: 'linear-gradient(135deg, #2a2440 0%, #1a1428 50%, #2a2440 100%)',
@@ -590,6 +672,13 @@
             },
             'The Twilight Meridian': {
                 sublocations: ['Seven Holy Isles', 'Night Haven', 'Sunken Isles', 'Stahlfeld', 'Galvanus Archipelago'],
+                sublocationFlavor: {
+                    'Seven Holy Isles': 'A glorious land of art, ingenuity and perpetual strife. While recently united under the banner of the Shogun, the inhabitants still quarrel among each other. In Meikyuu, The City of Paths, there are whispers of a Shinobi rebellion.',
+                    'Night Haven': "An artificial island constructed of Shade Iron and overrun with unearthly climbing flowers. The Duke of Red Roses, the island's immortal ruler, is charismatic and fair but there are suspicions about what goes on deep below the foreboding Castle Thornbeauty.",
+                    'Sunken Isles': "Once considered a manifestation of the Technocracy's culture and benevolence, these floating cities were a way to expand their empire without conquest and conflict. The events of the 3rd Cataclysm left these constructs submerged.",
+                    'Stahlfeld': 'Much of Stahlfeld is dotted with ruins of the fallen Technocracy of the Gley, where drones wander over rust-covered salvage yards. The few cities that exist here are home to brave and ambitious Junkers who make a prosperous, but risky, living unearthing Techno-Relics.',
+                    'Galvanus Archipelago': "Known as the land of the Eternal Dawn, and considered the most beautiful place in all of Outer World, Galvanus is a series of prosperous islands that function as a global trading hub. Natural beauty is marred by the ugly truths of mercantile warfare and piracy."
+                },
                 tagline: 'On the cusp of dusk and dawn, the Twilight Meridian has no dominant<br>land mass but is instead a series of diverse and interrelated islands.',
                 colors: {
                     panelBg: 'linear-gradient(135deg, #3d2942 0%, #1f3a4a 50%, #2a3f4f 100%)',
@@ -631,6 +720,13 @@
             },
             'Blazing Garden': {
                 sublocations: ['Taaga', 'Thunda Sands', 'Sol Alliance', 'No-Folk Land', 'Pride Coast'],
+                sublocationFlavor: {
+                    'Taaga': 'The final resting place of the Dawn Dragon is a splendid land of lush greenery and clear waters. The region provides an abundance of natural resources for the local allied clans, which gives them the trading leverage to rival even the Galvanus Archipelago.',
+                    'Thunda Sands': "Home to the unruly but courageous Thunda Barbarians, the sands are revered as a place of true freedom and high adventure. While you'll find respite in one of the region's oasis towns, you'll have to contend with the blistering heat, rampaging mechanical monsters, and the occasional resurrected Overlord.",
+                    'Sol Alliance': 'Named after the broken Sun Machine that hangs above, the alliance is unified by the uncompromising vision and might of Emperor Regulus, the First Hero. The region is famed for its sparkling capital Aeon, the mightiest city, and its legion of ferocious young warriors.',
+                    'No-Folk Land': 'Thanks to the colossal creatures that feed and roam freely in the region, No-Folk Land is regarded as an inhospitable place. Despite this, some enterprising individuals have managed to establish small settlements... only to find the neighboring towns are only marginally more amiable than the wandering beasts.',
+                    'Pride Coast': 'This once small nation rose to prominence after the arrival and assimilation of the Rai-Neko and their strange Startech technology. Centered around Nyanko, the city that grew around the site of their crashed star vessel, it is a much more orderly place than much of the Outer World, though many credit its stability to the region\'s brutal justice system.'
+                },
                 tagline: 'Bathed in the glory of the Sun Machine, the Blazing Garden is a bold<br>and bombastic place full of larger-than-life characters and creatures.',
                 colors: {
                     panelBg: 'linear-gradient(135deg, #5c3a1a 0%, #8a4a1a 50%, #6a3a18 100%)',
@@ -666,6 +762,13 @@
             },
             'Buried Kingdom': {
                 sublocations: ['Old Iron', 'New Ore', 'The Tunnels', 'Lost Crystal', 'Machine Labyrinth'],
+                sublocationFlavor: {
+                    'Old Iron': 'The ancient dwarven strongholds of Old Iron have stood for millennia, their forges still burning with the flames of forgotten craft. Here the traditionalists cling to the old ways, distrustful of the surface world and its chaos.',
+                    'New Ore': 'A sprawling mining operation where opportunists and refugees have carved out a precarious existence. The constant excavation unearths both riches and horrors from the deep.',
+                    'The Tunnels': 'An endless maze of passages connecting the disparate settlements of the Underland. Those who know the routes hold power; those who wander lost become prey.',
+                    'Lost Crystal': 'Once a magnificent crystalline city of the deep elves, now a shattered ruin haunted by the echoes of its former glory. Treasure seekers brave its dangers for artifacts of immense power.',
+                    'Machine Labyrinth': 'A vast complex of gears, pipes, and incomprehensible machinery left behind by some ancient civilization. The automatons that patrol its halls answer to no master.'
+                },
                 tagline: 'Below the crust of the earth, an endless battle<br>rages in the burrows and caverns of the Underland.',
                 colors: {
                     panelBg: 'linear-gradient(135deg, #2a2a2e 0%, #3a3a40 50%, #2a2a2e 100%)',
@@ -844,6 +947,50 @@
             return spread;
         }
 
+        function createSubzoneSeparator(subzoneName, flavorText, regionColors) {
+            const spread = document.createElement('div');
+            spread.className = 'spread-container';
+            
+            // Create muted/cream-tinted versions of the region colors
+            // Mix the accent color with cream for a softer look
+            const colorStyles = `
+                --subzone-bg: linear-gradient(135deg, #f5f0e6 0%, #ebe6dc 50%, #f5f0e6 100%);
+                --subzone-accent: ${regionColors.accentPrimary};
+                --subzone-title: ${regionColors.titleColor.replace('#', '')};
+                --subzone-text: #4a4540;
+            `;
+            
+            // Adjust title color to be darker for cream background
+            const titleColorDark = regionColors.accentSecondary || regionColors.accentPrimary;
+            
+            // Left page - decorative only (cream with subtle accent)
+            const leftWrapper = document.createElement('div');
+            leftWrapper.className = 'page-wrapper';
+            const leftPage = document.createElement('div');
+            leftPage.className = 'subzone-separator-left';
+            leftPage.style.cssText = colorStyles;
+            leftWrapper.appendChild(leftPage);
+            spread.appendChild(leftWrapper);
+            
+            // Right page - subzone name and flavor text
+            const rightWrapper = document.createElement('div');
+            rightWrapper.className = 'page-wrapper';
+            const rightPage = document.createElement('div');
+            rightPage.className = 'subzone-separator-right';
+            rightPage.style.cssText = colorStyles + `--subzone-title: ${titleColorDark};`;
+            
+            rightPage.innerHTML = `
+                <div class="subzone-title">${subzoneName}</div>
+                <div class="subzone-divider"></div>
+                <div class="subzone-flavor">${flavorText}</div>
+            `;
+            
+            rightWrapper.appendChild(rightPage);
+            spread.appendChild(rightWrapper);
+            
+            return spread;
+        }
+
         function generateToC() {
             const tocPage = document.createElement('div');
             tocPage.className = 'toc-page';
@@ -1014,7 +1161,7 @@
                 guideSoloSection.appendChild(guideSection);
                 container.appendChild(guideSoloSection);
                 
-                // 3. Load adventures by region with regional separators
+                // 3. Load adventures by region with regional and subzone separators
                 let adventureIndex = 0;
                 
                 for (const [regionName, regionData] of Object.entries(bookStructure)) {
@@ -1032,10 +1179,36 @@
                         return aIdx - bIdx;
                     });
                     
-                    // Collect pages for this region's adventures
+                    // Track which sublocations we've already added separators for
+                    const processedSublocations = new Set();
+                    
+                    // Collect pages for this region's adventures (including subzone separators)
                     const regionAdventurePages = [];
                     
                     for (const adventure of sortedAdventures) {
+                        // Check if we need a subzone separator before this adventure
+                        if (!processedSublocations.has(adventure.sublocation)) {
+                            processedSublocations.add(adventure.sublocation);
+                            
+                            // Get flavor text for this sublocation
+                            const flavorText = regionData.sublocationFlavor?.[adventure.sublocation] || '';
+                            
+                            if (flavorText) {
+                                status.textContent = `Adding ${adventure.sublocation} separator...`;
+                                
+                                // Add subzone separator as a spread (2 pages marked as separator type)
+                                regionAdventurePages.push({
+                                    page: null,
+                                    styles: null,
+                                    scopeClass: null,
+                                    isSubzoneSeparator: true,
+                                    subzoneName: adventure.sublocation,
+                                    flavorText: flavorText,
+                                    regionColors: regionData.colors
+                                });
+                            }
+                        }
+                        
                         status.textContent = `Loading ${adventure.title}...`;
                         
                         const html = await fetchHTML(adventure.file);
@@ -1075,12 +1248,26 @@
                     }
                     
                     // Create spreads for this region's adventures
-                    for (let i = 0; i < regionAdventurePages.length; i += 2) {
+                    for (let i = 0; i < regionAdventurePages.length; i++) {
+                        const pageData = regionAdventurePages[i];
+                        
+                        // Handle subzone separator spreads
+                        if (pageData.isSubzoneSeparator) {
+                            const subzoneSeparator = createSubzoneSeparator(
+                                pageData.subzoneName,
+                                pageData.flavorText,
+                                pageData.regionColors
+                            );
+                            container.appendChild(subzoneSeparator);
+                            continue;
+                        }
+                        
+                        // Regular adventure pages - create spreads of 2
                         const spread = document.createElement('div');
                         spread.className = 'spread-container';
                         
                         // Left page
-                        const leftPageData = regionAdventurePages[i];
+                        const leftPageData = pageData;
                         if (leftPageData.page === null) {
                             spread.appendChild(createBlankFillerPage());
                         } else {
@@ -1093,9 +1280,10 @@
                             spread.appendChild(leftSection);
                         }
                         
-                        // Right page (if exists)
-                        if (i + 1 < regionAdventurePages.length) {
-                            const rightPageData = regionAdventurePages[i + 1];
+                        // Right page (if exists and not a separator)
+                        i++;
+                        if (i < regionAdventurePages.length && !regionAdventurePages[i].isSubzoneSeparator) {
+                            const rightPageData = regionAdventurePages[i];
                             if (rightPageData.page === null) {
                                 spread.appendChild(createBlankFillerPage());
                             } else {
@@ -1107,6 +1295,9 @@
                                 rightSection.appendChild(createPageWrapper(rightPageData.page));
                                 spread.appendChild(rightSection);
                             }
+                        } else if (i < regionAdventurePages.length && regionAdventurePages[i].isSubzoneSeparator) {
+                            // Found a separator - decrement i so it gets processed next iteration
+                            i--;
                         }
                         
                         container.appendChild(spread);
