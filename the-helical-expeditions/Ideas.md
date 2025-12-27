@@ -25,4 +25,8 @@ Crossed Bones:
 - Set on one of the main crossroads through the Shadowed Lands, and as such, has a high rate of Knights and recovered Lanterns passing through.
 	- The entire surrounding tundra of the town by this point are ancient armaments in the ground and set lanterns.
 
-Prickly's R&R
+Prickly's R&R:
+- Something in the Thunda Sands to do with cactus folk/Prickly's R&R
+- "Welcome to the Prickly Tavern, don't worry, the drinks are sharp but they ain't pointy!"
+- https://www.artstation.com/artwork/QXQnJL
+- 
