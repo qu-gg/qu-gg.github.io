@@ -350,6 +350,11 @@
             margin-top: 0;
         }
 
+        .toc-front-matter {
+            padding-bottom: 0.15in;
+            border-bottom: 1px solid #ddd;
+        }
+
         .toc-region-header {
             font-family: 'Impact', 'Arial Black', sans-serif;
             font-size: 14pt;
@@ -812,7 +817,8 @@
 
         // Track page numbers for ToC
         const tocData = {}; // Keyed by region
-        let currentPageNumber = 1; // Starts at 1 after title pages
+        const frontMatterTocData = []; // For front matter pages
+        let currentPageNumber = 1; // Starts at 1 with Introduction
 
         async function fetchHTML(url) {
             // Add cache-busting to ensure fresh content
@@ -880,10 +886,8 @@
             wrapper.appendChild(pageElement.cloneNode(true));
             
             if (addNumber) {
-                const pageNum = document.createElement('div');
-                pageNum.className = 'page-number';
-                pageNum.textContent = currentPageNumber++;
-                wrapper.appendChild(pageNum);
+                // Track page number but don't display it
+                currentPageNumber++;
             }
             
             return wrapper;
@@ -1011,6 +1015,26 @@
             const tocList = document.getElementById('toc-list');
             if (!tocList) return;
             
+            // First, add front matter section
+            if (frontMatterTocData.length > 0) {
+                const frontMatterDiv = document.createElement('div');
+                frontMatterDiv.className = 'toc-region toc-front-matter';
+                
+                frontMatterTocData.forEach(item => {
+                    const entry = document.createElement('div');
+                    entry.className = 'toc-entry';
+                    entry.innerHTML = `
+                        <span class="toc-title">${item.title}</span>
+                        <span class="toc-dots"></span>
+                        <span class="toc-page-num">${item.startPage}</span>
+                    `;
+                    frontMatterDiv.appendChild(entry);
+                });
+                
+                tocList.appendChild(frontMatterDiv);
+            }
+            
+            // Then add adventures by region
             for (const [region, data] of Object.entries(bookStructure)) {
                 const regionDiv = document.createElement('div');
                 regionDiv.className = 'toc-region';
@@ -1077,6 +1101,8 @@
             for (const region of Object.keys(bookStructure)) {
                 tocData[region] = [];
             }
+            // Reset front matter TOC data
+            frontMatterTocData.length = 0;
             currentPageNumber = 1;
             
             status.textContent = 'Loading title page...';
@@ -1113,7 +1139,7 @@
                 
                 container.appendChild(soloSection);
                 
-                // 2.5. Load and add Introduction pages (solo, no page numbers)
+                // 2.5. Load and add Introduction pages (first numbered pages, page 1)
                 status.textContent = 'Loading introduction...';
                 const introHtml = await fetchHTML('introduction.html');
                 const introStyles = extractStyles(introHtml);
@@ -1129,15 +1155,21 @@
                 introStyleEl.textContent = scopeStyles(introStyles, 'intro-section');
                 introSection.appendChild(introStyleEl);
                 
+                // Track for TOC
+                frontMatterTocData.push({
+                    title: 'Introduction',
+                    startPage: currentPageNumber
+                });
+                
                 introPages.forEach(page => {
-                    const wrapper = createPageWrapper(page, false); // No page number
+                    const wrapper = createPageWrapper(page, true); // Track page numbers
                     introSection.appendChild(wrapper);
                 });
                 
                 introSoloSection.appendChild(introSection);
                 container.appendChild(introSoloSection);
                 
-                // 2.6. Load and add "Using This Book" pages (solo, no page numbers)
+                // 2.6. Load and add "Using This Book" pages
                 status.textContent = 'Loading guide pages...';
                 const guideHtml = await fetchHTML('using-this-book.html');
                 const guideStyles = extractStyles(guideHtml);
@@ -1153,13 +1185,49 @@
                 guideStyleEl.textContent = scopeStyles(guideStyles, 'guide-section');
                 guideSection.appendChild(guideStyleEl);
                 
+                // Track for TOC
+                frontMatterTocData.push({
+                    title: 'Using This Book',
+                    startPage: currentPageNumber
+                });
+                
                 guidePages.forEach(page => {
-                    const wrapper = createPageWrapper(page, false); // No page number
+                    const wrapper = createPageWrapper(page, true); // Track page numbers
                     guideSection.appendChild(wrapper);
                 });
                 
                 guideSoloSection.appendChild(guideSection);
                 container.appendChild(guideSoloSection);
+                
+                // 2.7. Load and add Reference Pages (CLICK! Traps + Adversary Compendium side-by-side)
+                status.textContent = 'Loading reference pages...';
+                const referenceHtml = await fetchHTML('reference-pages.html');
+                const referenceStyles = extractStyles(referenceHtml);
+                const referencePages = extractPages(referenceHtml);
+                
+                const referenceSoloSection = document.createElement('div');
+                referenceSoloSection.className = 'solo-section';
+                
+                const referenceSection = document.createElement('div');
+                referenceSection.className = 'adventure-section reference-section';
+                
+                const referenceStyleEl = document.createElement('style');
+                referenceStyleEl.textContent = scopeStyles(referenceStyles, 'reference-section');
+                referenceSection.appendChild(referenceStyleEl);
+                
+                // Track for TOC
+                frontMatterTocData.push({
+                    title: 'Reference Pages',
+                    startPage: currentPageNumber
+                });
+                
+                referencePages.forEach(page => {
+                    const wrapper = createPageWrapper(page, true); // Track page numbers
+                    referenceSection.appendChild(wrapper);
+                });
+                
+                referenceSoloSection.appendChild(referenceSection);
+                container.appendChild(referenceSoloSection);
                 
                 // 3. Load adventures by region with regional and subzone separators
                 let adventureIndex = 0;

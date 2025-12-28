@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Reference Pages - The Helical Expeditions</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --break-pink: #e83a7a;
+            --break-magenta: #c42d6b;
+            --break-light-blue: #5bc0de;
+            --break-sky: #87ceeb;
+            --break-cyan: #00bcd4;
+            --break-purple: #6b3fa0;
+            --break-gold: #f5c542;
+            --break-cream: #faf6ed;
+            --break-light: #fff8f0;
+            --break-dark: #2a1f3d;
+            --ink-dark: #1a1a2e;
+            --pearl-white: #fefefe;
+            
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: #555;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.35in 0.45in;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(91, 192, 222, 0.12) 0%, transparent 30%),
+                radial-gradient(circle at 100% 0%, rgba(232, 58, 122, 0.08) 0%, transparent 30%),
+                radial-gradient(circle at 100% 100%, rgba(91, 192, 222, 0.12) 0%, transparent 30%),
+                radial-gradient(circle at 0% 100%, rgba(232, 58, 122, 0.08) 0%, transparent 30%),
+                var(--break-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0.25in;
+            left: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-left: 4px solid var(--break-pink);
+            border-top: 4px solid var(--break-pink);
+            opacity: 0.7;
+        }
+
+        .page::after {
+            content: '';
+            position: absolute;
+            bottom: 0.25in;
+            right: 0.25in;
+            width: 0.7in;
+            height: 0.7in;
+            border-right: 4px solid var(--break-light-blue);
+            border-bottom: 4px solid var(--break-light-blue);
+            opacity: 0.7;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 0.1in;
+            position: relative;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 0 rgba(232, 58, 122, 0.2);
+            margin-bottom: 2px;
+        }
+
+        .page-header h1.smaller {
+            font-size: 24pt;
+            letter-spacing: 3px;
+        }
+
+        .page-header .subtitle {
+            font-size: 10pt;
+            color: var(--break-magenta);
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .page-header .subtitle a {
+            color: var(--break-magenta);
+            text-decoration: underline;
+        }
+
+        .page-header .subtitle a:hover {
+            text-decoration: underline;
+        }
+
+        .header-divider {
+            width: 50%;
+            height: 3px;
+            margin: 6px auto 0 auto;
+            background: var(--break-pink);
+            border-radius: 2px;
+        }
+
+        /* Reference Callout */
+        .reference-callout {
+            background: linear-gradient(135deg, rgba(232, 58, 122, 0.06) 0%, rgba(91, 192, 222, 0.06) 100%);
+            border: 2px solid var(--break-pink);
+            border-radius: 6px;
+            padding: 0;
+            margin-bottom: 0.12in;
+            overflow: hidden;
+        }
+
+        .reference-callout .callout-header {
+            background: linear-gradient(90deg, var(--break-pink), var(--break-magenta));
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            text-align: center;
+        }
+
+        .reference-callout .callout-body {
+            padding: 8px 12px;
+            font-size: 8.5pt;
+            line-height: 1.5;
+            text-align: center;
+            color: var(--ink-dark);
+            border-bottom: 1px dashed var(--break-pink);
+        }
+
+        .reference-callout .callout-body strong {
+            color: var(--break-purple);
+        }
+
+        .reference-callout .how-it-works {
+            padding: 8px 12px;
+            font-size: 9pt;
+            line-height: 1.5;
+            color: var(--ink-dark);
+        }
+
+        .reference-callout .how-it-works strong {
+            color: var(--break-purple);
+        }
+
+        /* ===== CLICK! TRAPS STYLES ===== */
+
+        /* Main Trap Table */
+        .trap-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin-bottom: 0.1in;
+        }
+
+        .trap-table th {
+            background: #4f4b4c;
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            padding: 5px 6px;
+            text-align: center;
+        }
+
+        .trap-table th:first-child {
+            text-align: left;
+        }
+
+        .trap-table th:nth-child(2) {
+            text-align: left;
+        }
+
+        .trap-table td {
+            background: #f2f3f4;
+            padding: 4px 6px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .trap-table td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .trap-table td:nth-child(2) {
+            text-align: left;
+        }
+
+        .trap-table td:nth-child(3),
+        .trap-table td:nth-child(4),
+        .trap-table td:nth-child(5),
+        .trap-table td:nth-child(6) {
+            text-align: center;
+        }
+
+        /* Result Tables */
+        .result-tables-section {
+            margin-top: 0.08in;
+        }
+
+        .section-label {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            flex: 1;
+            max-width: 0.9in;
+            height: 2px;
+            background: var(--break-pink);
+        }
+
+        .result-tables-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+
+        .result-table-wrapper {
+            background: white;
+            border: 1px solid #ddd;
+        }
+
+        .result-table-header {
+            background: #4f4b4c;
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            padding: 4px 6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .result-table-subheader {
+            background: #f2f3f4;
+            font-size: 7.5pt;
+            padding: 4px 6px;
+            text-align: left;
+            color: var(--ink-dark);
+            line-height: 1.4;
+            border-bottom: 2px solid #4f4b4c;
+        }
+
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+        }
+
+        .result-table td {
+            background: #f2f3f4;
+            padding: 3px 6px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .result-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Brace Info Box */
+        .brace-info {
+            background: rgba(107, 63, 160, 0.06);
+            border: 1px solid var(--break-purple);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 0.08in;
+            font-size: 8pt;
+            line-height: 1.45;
+        }
+
+        .brace-info strong {
+            color: var(--break-purple);
+        }
+
+        .brace-info em {
+            color: var(--break-magenta);
+        }
+
+        /* ===== ADVERSARY COMPENDIUM STYLES ===== */
+
+        /* Content Section */
+        .content-section {
+            margin-bottom: 0.12in;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--break-purple);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid var(--break-pink);
+        }
+
+        .content-section p {
+            font-size: 9pt;
+            line-height: 1.55;
+            margin-bottom: 8px;
+        }
+
+        .content-section p strong {
+            color: var(--break-purple);
+        }
+
+        /* Image Container */
+        .sheet-preview {
+            background: white;
+            border: 2px solid var(--break-light-blue);
+            border-radius: 6px;
+            padding: 8px;
+            margin: 0.1in 0;
+            text-align: center;
+        }
+
+        .sheet-preview img {
+            max-width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .sheet-preview .caption {
+            font-size: 8pt;
+            color: #666;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        /* Link Button */
+        .sheet-link {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--break-pink), var(--break-magenta));
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 8px;
+            box-shadow: 0 2px 6px rgba(232, 58, 122, 0.3);
+        }
+
+        .sheet-link:hover {
+            box-shadow: 0 4px 12px rgba(232, 58, 122, 0.4);
+        }
+
+        /* Credit Callout */
+        .credit-callout {
+            background: rgba(107, 63, 160, 0.08);
+            border: 1px solid var(--break-purple);
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin-top: 0.12in;
+            font-size: 8.5pt;
+            line-height: 1.5;
+        }
+
+        .credit-callout strong {
+            color: var(--break-purple);
+        }
+
+        .credit-callout em {
+            color: var(--break-magenta);
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: CLICK! Traps (Left Page) -->
+    <div class="page">
+        <div class="page-header">
+            <h1>CLICK! Traps</h1>
+            <p class="subtitle">By <a href="https://victorseven.itch.io/wca" target="_blank">VictorSeven</a> (used with permission)</p>
+            <div class="header-divider"></div>
+        </div>
+
+        <div class="reference-callout">
+            <div class="callout-header">QUICK REFERENCE GUIDE</div>
+            <div class="callout-body">Throughout these adventures, <strong>CLICK! Traps</strong> appear as hazards in Adventure Sites and Exploration. <br>When you see a trap referenced, return to this page for the rules and result tables.</div>
+            <div class="how-it-works"><strong>How-To-Use:</strong> When players trigger a trap, announce <strong>CLICK!</strong> and everyone freezes. Go around the table and have each player declare their type of response: <strong>Prone</strong>, <strong>Jump</strong>, or <strong>Brace</strong>. Once everyone has chosen, reveal the trap and the Check. The table below shows which responses grant an Edge or impose a Snag. Fail Results may prompt a roll on the relevant <strong>Result Tables</strong>.</div>
+        </div>
+
+        <!-- Main Trap Table -->
+        <table class="trap-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Trap</th>
+                    <th>Check</th>
+                    <th>Edge</th>
+                    <th>Snag</th>
+                    <th>Fail Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1-2</td>
+                    <td>Darts</td>
+                    <td>DFT</td>
+                    <td>Prone</td>
+                    <td>Jump</td>
+                    <td>PIERCE</td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>Pit</td>
+                    <td>DFT</td>
+                    <td>Jump</td>
+                    <td>Prone</td>
+                    <td>-1 Speed</td>
+                </tr>
+                <tr>
+                    <td>5-6</td>
+                    <td>Snare</td>
+                    <td>MGT</td>
+                    <td>Jump</td>
+                    <td>Prone</td>
+                    <td>Restrained</td>
+                </tr>
+                <tr>
+                    <td>7-8</td>
+                    <td>Spikes</td>
+                    <td>DFT</td>
+                    <td>-</td>
+                    <td>Prone</td>
+                    <td>PIERCE</td>
+                </tr>
+                <tr>
+                    <td>9-10</td>
+                    <td>Falling Debris</td>
+                    <td>MGT</td>
+                    <td>Brace</td>
+                    <td>Prone</td>
+                    <td>SMASH</td>
+                </tr>
+                <tr>
+                    <td>11-12</td>
+                    <td>Swinging Blade</td>
+                    <td>DFT</td>
+                    <td>Prone</td>
+                    <td>Jump</td>
+                    <td>SLASH</td>
+                </tr>
+                <tr>
+                    <td>13-14</td>
+                    <td>Poison</td>
+                    <td>GRT</td>
+                    <td>Prone</td>
+                    <td>-</td>
+                    <td>BREATH</td>
+                </tr>
+                <tr>
+                    <td>15-16</td>
+                    <td>Flame</td>
+                    <td>DFT</td>
+                    <td>Prone</td>
+                    <td>Brace</td>
+                    <td>Burn Injury</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Smash Walls</td>
+                    <td>GRT</td>
+                    <td>Brace</td>
+                    <td>Jump</td>
+                    <td>SMASH</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Knee Blades</td>
+                    <td>DFT</td>
+                    <td>Jump</td>
+                    <td>Brace</td>
+                    <td>SLASH</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Wallmaster</td>
+                    <td>INS</td>
+                    <td>-</td>
+                    <td>Jump</td>
+                    <td>MOVE</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Dark Apparition</td>
+                    <td>AUR</td>
+                    <td>Prone</td>
+                    <td>-</td>
+                    <td>MIND</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Result Tables Grid -->
+        <div class="result-tables-section">
+            <div class="section-label">Result Tables (Roll d20)</div>
+            
+            <div class="result-tables-grid">
+                <!-- PIERCE Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Pierce Results</div>
+                    <div class="result-table-subheader">Gear Sundering (Brace with Gear)<br>Armor Crash</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-5: Burning Injury</td></tr>
+                            <tr><td>6-15: Putrefied (Bleeding)</td></tr>
+                            <tr><td>16-20: Light Injury</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SLASH Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Slash Results</div>
+                    <div class="result-table-subheader">Gear Sundering (Brace with Gear)<br>Armor Crash</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-10: Burning Injury/Ailment</td></tr>
+                            <tr><td>11-20: Light Injury</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SMASH Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Smash Results</div>
+                    <div class="result-table-subheader">Gear Sundering (Brace with Gear)<br>Armor Crash</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-5: Light Injury</td></tr>
+                            <tr><td>6-15: Severe Injury</td></tr>
+                            <tr><td>16-20: Critical Injury</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- MOVE Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Move Results</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-5: Transport to Start</td></tr>
+                            <tr><td>6-15: Transport to Captivity/Escape Puzzle</td></tr>
+                            <tr><td>16-20: Transport to Fight</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- BREATH Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Breath Results</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-5: Out Cold</td></tr>
+                            <tr><td>6-15: Putrefied (Poisoned)</td></tr>
+                            <tr><td>16-20: Shadow Blight</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- MIND Table -->
+                <div class="result-table-wrapper">
+                    <div class="result-table-header">Mind Results</div>
+                    <table class="result-table">
+                        <tbody>
+                            <tr><td>1-5: Disoriented</td></tr>
+                            <tr><td>6-15: Out Cold</td></tr>
+                            <tr><td>16-20: Dispirited</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brace Explanation -->
+        <div class="brace-info">
+            <strong>Pierce, Slash, &amp; Smash:</strong> When hit by these damage types, players may describe how they Brace. If they Brace with a piece of Gear, that Gear takes 1 Heart of Damage. If the Gear is fully Sundered - or they didn't Brace and got hit - they suffer an Armor Crash Injury. If their Armor is destroyed or they have none, roll on the relevant <strong>Result Table</strong>. <em>Alternatively, you can skip Gear/Armor entirely and roll directly on the table if it suits the trap.</em>
+        </div>
+    </div>
+
+    <!-- Page 2: Homebrew Adversary Compendium (Right Page) -->
+    <div class="page">
+        <div class="page-header">
+            <h1 class="smaller">Homebrew Adversary Compendium</h1>
+            <p class="subtitle">Community-Driven Monster Database</p>
+            <div class="header-divider"></div>
+        </div>
+
+        <div class="reference-callout">
+            <div class="callout-header">QUICK REFERENCE GUIDE</div>
+            <div class="callout-body">
+                Throughout these adventures, you'll encounter <strong>Adversaries</strong> drawn from the <strong>Homebrew Adversary Compendium</strong>—a public spreadsheet of community-created monsters. When an adventure references an Adversary by name, you can look it up in the Compendium for its full stat block. <em>Each Adversary used in these adventures is credited to its original creator.</em>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3 class="section-title">What Is It?</h3>
+            <p>
+                The <strong>Homebrew Adversary Compendium</strong> is a collaborative Google Sheet containing 100+ <strong><em>BREAK!!</em></strong> Adversaries created by the community. It's designed to be quick-to-reference during play—search up a monster on the fly and run with it. When an adventure lists an Adversary by name, simply look it up in the Compendium, copy the stat block, and adjust as needed for your party.
+            </p>
+            <p>
+                <strong>Want to contribute?</strong> The Compendium includes a Google Form for submitting your own homebrew creations. All contributors are credited by name, helping grow this community resource for everyone.
+            </p>
+        </div>
+
+        <div class="sheet-preview">
+            <img src="../homebrew-adversary-sheet/homebrew-adversary-sheet.png" alt="Homebrew Adversary Compendium Preview">
+            <p class="caption">Preview of the Homebrew Adversary Compendium spreadsheet</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank" class="sheet-link">
+                Open Compendium →
+            </a>
+        </div>
+
+        <div class="credit-callout">
+            <strong>Community Credits:</strong> Many Adversaries featured throughout these adventures are contributions from the <strong><em>BREAK!!</em></strong> community at large. Each Adversary used is credited to its specific creator wherever it appears. Thank you to all contributors for sharing your creations!
+        </div>
+    </div>
+</body>
+</html>

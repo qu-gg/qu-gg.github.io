@@ -24,6 +24,12 @@ Crossed Bones:
 	- Left the area scorched and desolate
 - Set on one of the main crossroads through the Shadowed Lands, and as such, has a high rate of Knights and recovered Lanterns passing through.
 	- The entire surrounding tundra of the town by this point are ancient armaments in the ground and set lanterns.
+- Their lanterns got left behind on the battlefield, covered by vine. 
+	- Turn to locate the lanterns
+	- Turn to undo the vines
+	- Turn to pick it up
+- Skelemaster of a Knight leads them to a battlefield, ghostly visage of a lamp in its hand (to indicate that perhaps)
+- Skelemen have been seen walking to the remembrance cite as night and are seen as a bad omen for the ceremony.
 
 Prickly's R&R:
 - Something in the Thunda Sands to do with cactus folk/Prickly's R&R
