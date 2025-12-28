@@ -105,6 +105,8 @@
         .page-header h1.smaller {
             font-size: 24pt;
             letter-spacing: 3px;
+            padding-top: 6px;
+            margin-bottom: 3px;
         }
 
         .page-header .subtitle {
@@ -133,7 +135,7 @@
 
         /* Reference Callout */
         .reference-callout {
-            background: linear-gradient(135deg, rgba(232, 58, 122, 0.06) 0%, rgba(91, 192, 222, 0.06) 100%);
+            background: rgba(232, 58, 122, 0.06);
             border: 2px solid var(--break-pink);
             border-radius: 6px;
             padding: 0;
@@ -142,7 +144,7 @@
         }
 
         .reference-callout .callout-header {
-            background: linear-gradient(90deg, var(--break-pink), var(--break-magenta));
+            background: var(--break-magenta);
             color: white;
             font-family: var(--font-heading);
             font-size: 8pt;
@@ -159,6 +161,10 @@
             text-align: center;
             color: var(--ink-dark);
             border-bottom: 1px dashed var(--break-pink);
+        }
+
+        .reference-callout .callout-body:last-child {
+            border-bottom: none;
         }
 
         .reference-callout .callout-body strong {
@@ -637,14 +643,14 @@
         <div class="reference-callout">
             <div class="callout-header">QUICK REFERENCE GUIDE</div>
             <div class="callout-body">
-                Throughout these adventures, you'll encounter <strong>Adversaries</strong> drawn from the <strong>Homebrew Adversary Compendium</strong>—a public spreadsheet of community-created monsters. When an adventure references an Adversary by name, you can look it up in the Compendium for its full stat block. <em>Each Adversary used in these adventures is credited to its original creator.</em>
+                In these adventures, you'll encounter <strong>Adversaries</strong> drawn from the <strong>Homebrew Adversary Compendium</strong> - a public spreadsheet of community-created monsters. When an adventure references an Adversary by name, you can look it up in the Compendium <br>for its full stat block. <em>Each Adversary used in these adventures is credited to its original creator.</em>
             </div>
         </div>
 
         <div class="content-section">
             <h3 class="section-title">What Is It?</h3>
             <p>
-                The <strong>Homebrew Adversary Compendium</strong> is a collaborative Google Sheet containing 100+ <strong><em>BREAK!!</em></strong> Adversaries created by the community. It's designed to be quick-to-reference during play—search up a monster on the fly and run with it. When an adventure lists an Adversary by name, simply look it up in the Compendium, copy the stat block, and adjust as needed for your party.
+                The <strong>Homebrew Adversary Compendium</strong> is a collaborative Google Sheet containing 100+ <strong><em>BREAK!!</em></strong> Adversaries created by the community. It's designed to be quick-to-reference during play - search up a monster on the fly and run with it. When an adventure lists an Adversary by name, simply look it up in the Compendium, copy the stat block, and adjust as needed for your party.
             </p>
             <p>
                 <strong>Want to contribute?</strong> The Compendium includes a Google Form for submitting your own homebrew creations. All contributors are credited by name, helping grow this community resource for everyone.

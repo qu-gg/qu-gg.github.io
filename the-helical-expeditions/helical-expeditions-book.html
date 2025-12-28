@@ -381,6 +381,16 @@
             font-size: 11pt;
         }
 
+        .toc-sub-entry {
+            margin-left: 0.35in;
+            font-size: 10pt;
+        }
+
+        .toc-sub-entry .toc-title {
+            font-weight: normal;
+            font-style: italic;
+        }
+
         .toc-title {
             font-family: 'Trebuchet MS', sans-serif;
             font-weight: bold;
@@ -1021,6 +1031,7 @@
                 frontMatterDiv.className = 'toc-region toc-front-matter';
                 
                 frontMatterTocData.forEach(item => {
+                    // Main entry
                     const entry = document.createElement('div');
                     entry.className = 'toc-entry';
                     entry.innerHTML = `
@@ -1029,6 +1040,20 @@
                         <span class="toc-page-num">${item.startPage}</span>
                     `;
                     frontMatterDiv.appendChild(entry);
+                    
+                    // Sub-entries if present
+                    if (item.subEntries && item.subEntries.length > 0) {
+                        item.subEntries.forEach(sub => {
+                            const subEntry = document.createElement('div');
+                            subEntry.className = 'toc-entry toc-sub-entry';
+                            subEntry.innerHTML = `
+                                <span class="toc-title">${sub.title}</span>
+                                <span class="toc-dots"></span>
+                                <span class="toc-page-num">${sub.page}</span>
+                            `;
+                            frontMatterDiv.appendChild(subEntry);
+                        });
+                    }
                 });
                 
                 tocList.appendChild(frontMatterDiv);
@@ -1124,8 +1149,9 @@
                 titleSection.appendChild(titleStyleEl);
                 
                 titlePages.forEach(page => {
-                    const wrapper = createPageWrapper(page, false); // No page number
+                    const wrapper = createPageWrapper(page, false); // No page number display
                     titleSection.appendChild(wrapper);
+                    currentPageNumber++; // But still count it
                 });
                 
                 soloSection.appendChild(titleSection);
@@ -1136,6 +1162,7 @@
                 tocWrapper.className = 'page-wrapper';
                 tocWrapper.appendChild(tocPage);
                 soloSection.appendChild(tocWrapper);
+                currentPageNumber++; // Count TOC page
                 
                 container.appendChild(soloSection);
                 
@@ -1155,10 +1182,11 @@
                 introStyleEl.textContent = scopeStyles(introStyles, 'intro-section');
                 introSection.appendChild(introStyleEl);
                 
-                // Track for TOC
+                // Track for TOC (no sub-entries)
                 frontMatterTocData.push({
                     title: 'Introduction',
-                    startPage: currentPageNumber
+                    startPage: currentPageNumber,
+                    subEntries: []
                 });
                 
                 introPages.forEach(page => {
@@ -1185,10 +1213,15 @@
                 guideStyleEl.textContent = scopeStyles(guideStyles, 'guide-section');
                 guideSection.appendChild(guideStyleEl);
                 
-                // Track for TOC
+                // Track for TOC with sub-entries for each page
+                const guideStartPage = currentPageNumber;
                 frontMatterTocData.push({
                     title: 'Using This Book',
-                    startPage: currentPageNumber
+                    startPage: guideStartPage,
+                    subEntries: [
+                        { title: 'Reading Adventures', page: guideStartPage },
+                        { title: 'Adventure Sites', page: guideStartPage + 1 }
+                    ]
                 });
                 
                 guidePages.forEach(page => {
@@ -1215,10 +1248,15 @@
                 referenceStyleEl.textContent = scopeStyles(referenceStyles, 'reference-section');
                 referenceSection.appendChild(referenceStyleEl);
                 
-                // Track for TOC
+                // Track for TOC with sub-entries
+                const referenceStartPage = currentPageNumber;
                 frontMatterTocData.push({
                     title: 'Reference Pages',
-                    startPage: currentPageNumber
+                    startPage: referenceStartPage,
+                    subEntries: [
+                        { title: 'CLICK! Traps', page: referenceStartPage },
+                        { title: 'Homebrew Adversary Compendium', page: referenceStartPage + 1 }
+                    ]
                 });
                 
                 referencePages.forEach(page => {
