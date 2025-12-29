@@ -5,6 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quagg Studios</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Art Inspiration Feed Styles */
+        .bsky-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .bsky-post {
+            display: block;
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .bsky-post:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        .bsky-post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            gap: 0.75rem;
+        }
+        .bsky-author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            min-width: 0;
+        }
+        .bsky-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .bsky-avatar-placeholder {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            flex-shrink: 0;
+        }
+        .bsky-author-text { min-width: 0; }
+        .bsky-author-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .bsky-author-handle {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        .bsky-post-time {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .bsky-post-content {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            line-height: 1.55;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .bsky-images {
+            margin-top: 0.75rem;
+            display: grid;
+            gap: 4px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .bsky-images.single { grid-template-columns: 1fr; }
+        .bsky-images.double { grid-template-columns: 1fr 1fr; }
+        .bsky-images.triple, .bsky-images.quad { grid-template-columns: 1fr 1fr; }
+        .bsky-images img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            background: var(--bg-primary);
+            border-radius: 4px;
+        }
+        .bsky-images img:hover { opacity: 0.85; }
+        .bsky-repost-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed var(--border);
+        }
+        .bsky-repost-indicator svg { width: 12px; height: 12px; }
+        .bsky-quote {
+            margin-top: 0.75rem;
+            padding: 0.75rem;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .bsky-quote-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.4rem;
+        }
+        .bsky-quote-avatar { width: 18px; height: 18px; border-radius: 50%; }
+        .bsky-quote-author { font-size: 0.8rem; font-weight: 600; color: var(--text-primary); }
+        .bsky-quote-handle { font-size: 0.7rem; color: var(--text-secondary); }
+        .bsky-quote-content { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4; }
+        .bsky-embed {
+            margin-top: 0.75rem;
+            padding: 0.75rem;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        .bsky-embed:hover { border-color: var(--accent); }
+        .bsky-embed-thumb { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 0.5rem; }
+        .bsky-embed-title { font-weight: 600; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.25rem; }
+        .bsky-embed-desc { font-size: 0.8rem; color: var(--text-secondary); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .bsky-embed-domain { font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.4rem; }
+        .bsky-stats {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+        .bsky-stat { display: flex; align-items: center; gap: 0.35rem; font-size: 0.75rem; color: var(--text-secondary); }
+        .bsky-stat svg { width: 14px; height: 14px; }
+        .bsky-lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+        }
+        .bsky-lightbox.active { display: flex; }
+        .bsky-lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); }
+        .bsky-lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .bsky-lightbox-close:hover { opacity: 1; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -112,6 +294,31 @@
             <a href="feeds.html" class="view-all-link">View All Posts →</a>
         </section>
 
+        <!-- Art Inspiration Feed Section -->
+        <section class="timeline-section rss-section">
+            <h2 class="section-title">Art Inspiration Feed</h2>
+            <p class="section-subtitle">Latest posts from artists I follow</p>
+            
+            <div class="feed-controls">
+                <select id="bsky-author-filter" class="author-filter">
+                    <option value="all">All Authors</option>
+                </select>
+                <span class="feed-updated" id="bsky-updated"></span>
+            </div>
+            
+            <div class="bsky-list" id="bsky-list">
+                <p class="feed-loading">Loading posts...</p>
+            </div>
+            
+            <a href="art-feed.html" class="view-all-link">View All Posts →</a>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="bsky-lightbox" id="bsky-lightbox" onclick="closeLightbox()">
+            <button class="bsky-lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img id="lightbox-img" src="" alt="Full size image">
+        </div>
+
     </main>
 
     <!-- Footer -->
@@ -217,6 +424,232 @@
         }
         
         loadFeed();
+
+        // ===== ART INSPIRATION FEED (loads from static JSON) =====
+        const BSKY_MAX_POSTS = 5;
+        let bskyData = null;
+
+        async function loadBskyFeed() {
+            try {
+                const response = await fetch('art-feed-data.json');
+                bskyData = await response.json();
+                
+                // Show last updated
+                const updated = new Date(bskyData.lastUpdated);
+                document.getElementById('bsky-updated').textContent = 
+                    `Updated: ${updated.toLocaleDateString()}`;
+                
+                // Populate author filter (handles are now prefixed with source)
+                const filter = document.getElementById('bsky-author-filter');
+                filter.innerHTML = '<option value="all">All Artists</option>';
+                Object.entries(bskyData.profiles).forEach(([key, profile]) => {
+                    const option = document.createElement('option');
+                    option.value = profile.handle;
+                    const sourceBadge = profile.source === 'artstation' ? ' (AS)' : '';
+                    option.textContent = (profile.displayName || profile.handle) + sourceBadge;
+                    filter.appendChild(option);
+                });
+                
+                // Filter event
+                filter.addEventListener('change', (e) => {
+                    const filtered = e.target.value === 'all' 
+                        ? bskyData.posts 
+                        : bskyData.posts.filter(p => p.author.handle === e.target.value);
+                    renderBskyPosts(filtered);
+                });
+                
+                renderBskyPosts(bskyData.posts);
+                
+            } catch (error) {
+                console.error('Art feed error:', error);
+                document.getElementById('bsky-list').innerHTML = 
+                    '<p class="feed-error">Unable to load feed</p>';
+            }
+        }
+
+        function renderBskyPosts(posts) {
+            const list = document.getElementById('bsky-list');
+            if (!posts || posts.length === 0) {
+                list.innerHTML = '<p class="feed-empty">No posts found</p>';
+                return;
+            }
+
+            list.innerHTML = posts.slice(0, BSKY_MAX_POSTS).map(post => renderBskyPost(post)).join('');
+        }
+
+        function renderBskyPost(post) {
+            const author = post.author;
+            const repostBy = post.repostBy;
+
+            const avatarHtml = author.avatar 
+                ? `<img src="${author.avatar}" alt="${author.handle}" class="bsky-avatar">`
+                : `<div class="bsky-avatar-placeholder">${(author.displayName || author.handle).charAt(0).toUpperCase()}</div>`;
+
+            const timeAgo = formatBskyTime(new Date(post.indexedAt));
+            
+            // Generate URL based on source
+            let postUrl;
+            if (post.source === 'artstation') {
+                postUrl = post.link || `https://www.artstation.com/${author.handle}`;
+            } else {
+                postUrl = `https://bsky.app/profile/${author.handle}/post/${post.uri.split('/').pop()}`;
+            }
+
+            const processedText = escapeHtmlBsky(post.record.text || '');
+
+            let embedHtml = '';
+            if (post.embed) {
+                embedHtml = renderBskyEmbed(post.embed);
+            }
+
+            const repostIndicator = repostBy ? `
+                <div class="bsky-repost-indicator">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.75 3.79l4.603 4.3-1.706 1.82L6 8.38v7.37c0 .97.784 1.75 1.75 1.75H13V20H7.75c-2.347 0-4.25-1.9-4.25-4.25V8.38L1.853 9.91.147 8.09l4.603-4.3zm11.5 2.71H11V4h5.25c2.347 0 4.25 1.9 4.25 4.25v7.37l1.647-1.53 1.706 1.82-4.603 4.3-4.603-4.3 1.706-1.82L18 15.62V8.25c0-.97-.784-1.75-1.75-1.75z"/>
+                    </svg>
+                    <span>Reposted by ${repostBy.displayName || repostBy.handle}</span>
+                </div>
+            ` : '';
+
+            return `
+                <div class="bsky-post">
+                    ${repostIndicator}
+                    <a href="${postUrl}" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                        <div class="bsky-post-header">
+                            <div class="bsky-author-info">
+                                ${avatarHtml}
+                                <div class="bsky-author-text">
+                                    <span class="bsky-author-name">${author.displayName || author.handle}</span>
+                                    <span class="bsky-author-handle">@${author.handle}</span>
+                                </div>
+                            </div>
+                            <span class="bsky-post-time">${timeAgo}</span>
+                        </div>
+                        <div class="bsky-post-content">${processedText}</div>
+                    </a>
+                    ${embedHtml}
+                    <div class="bsky-stats">
+                        <div class="bsky-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            </svg>
+                            <span>${post.replyCount || 0}</span>
+                        </div>
+                        <div class="bsky-stat">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4.75 3.79l4.603 4.3-1.706 1.82L6 8.38v7.37c0 .97.784 1.75 1.75 1.75H13V20H7.75c-2.347 0-4.25-1.9-4.25-4.25V8.38L1.853 9.91.147 8.09l4.603-4.3zm11.5 2.71H11V4h5.25c2.347 0 4.25 1.9 4.25 4.25v7.37l1.647-1.53 1.706 1.82-4.603 4.3-4.603-4.3 1.706-1.82L18 15.62V8.25c0-.97-.784-1.75-1.75-1.75z"/>
+                            </svg>
+                            <span>${post.repostCount || 0}</span>
+                        </div>
+                        <div class="bsky-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            <span>${post.likeCount || 0}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderBskyEmbed(embed) {
+            const type = embed.type;
+
+            if (type === 'images') {
+                const images = embed.images;
+                const gridClass = images.length === 1 ? 'single' : 
+                                  images.length === 2 ? 'double' : 
+                                  images.length === 3 ? 'triple' : 'quad';
+                
+                return `
+                    <div class="bsky-images ${gridClass}">
+                        ${images.map(img => `
+                            <img src="${img.fullsize}" alt="${img.alt || ''}" 
+                                 onclick="openLightbox('${img.fullsize}'); event.stopPropagation(); event.preventDefault();">
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            if (type === 'external') {
+                let domain = '';
+                try { domain = new URL(embed.uri).hostname; } catch(e) {}
+                
+                return `
+                    <a href="${embed.uri}" target="_blank" class="bsky-embed" onclick="event.stopPropagation();">
+                        ${embed.thumb ? `<img src="${embed.thumb}" alt="" class="bsky-embed-thumb">` : ''}
+                        <div class="bsky-embed-title">${escapeHtmlBsky(embed.title || 'Link')}</div>
+                        ${embed.description ? `<div class="bsky-embed-desc">${escapeHtmlBsky(embed.description)}</div>` : ''}
+                        <div class="bsky-embed-domain">${domain}</div>
+                    </a>
+                `;
+            }
+
+            if (type === 'quote') {
+                const author = embed.author;
+                return `
+                    <div class="bsky-quote">
+                        <div class="bsky-quote-header">
+                            ${author.avatar ? `<img src="${author.avatar}" class="bsky-quote-avatar">` : ''}
+                            <span class="bsky-quote-author">${author.displayName || author.handle}</span>
+                            <span class="bsky-quote-handle">@${author.handle}</span>
+                        </div>
+                        <div class="bsky-quote-content">${escapeHtmlBsky(embed.text || '')}</div>
+                    </div>
+                `;
+            }
+
+            if (type === 'recordWithMedia') {
+                let html = '';
+                if (embed.media) html += renderBskyEmbed(embed.media);
+                if (embed.record) html += renderBskyEmbed(embed.record);
+                return html;
+            }
+
+            return '';
+        }
+
+        function formatBskyTime(date) {
+            const now = new Date();
+            const diff = now - date;
+            const days = Math.floor(diff / 86400000);
+            if (days < 7) {
+                if (days === 0) {
+                    const hours = Math.floor(diff / 3600000);
+                    if (hours === 0) return `${Math.floor(diff / 60000)}m ago`;
+                    return `${hours}h ago`;
+                }
+                return `${days}d ago`;
+            }
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+
+        function escapeHtmlBsky(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Lightbox functions
+        function openLightbox(src) {
+            const lightbox = document.getElementById('bsky-lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('bsky-lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        loadBskyFeed();
     </script>
 </body>
 </html>
