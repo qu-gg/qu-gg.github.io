@@ -74,6 +74,31 @@
             max-height: 11in;
         }
 
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
         /* ===== TITLE BOX ===== */
         .title-box {
             background: var(--slate-deep);
@@ -757,6 +782,13 @@
 <body>
     <!-- ==================== PAGE 1 ==================== -->
     <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
         <!-- Title Box -->
         <div class="title-box">
             <h1>Hold the Wall</h1>
@@ -865,6 +897,13 @@
 
     <!-- ==================== PAGE 2 ==================== -->
     <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
         <!-- Key Locations Box -->
         <div class="locations-box">
             <div class="locations-box-header">Key Locations</div>
@@ -963,6 +1002,13 @@
 
     <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
     <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
         <div class="art-header">
             <h1>Art Vibeboard</h1>
         </div>

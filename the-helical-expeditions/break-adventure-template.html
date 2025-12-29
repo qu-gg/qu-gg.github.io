@@ -124,6 +124,33 @@
             min-height: auto;
         }
 
+        /* ===== PAGE PROGRESS INDICATOR =====
+           Vertical bubbles in top-right showing current page position
+           Uses BREAK!! brand colors for consistency across all adventures */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
         /* ===== TITLE BOX =====
            The main adventure title banner at top of page 1
            Uses gradient from deep → mid → accent colors */
