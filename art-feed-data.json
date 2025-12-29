@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-29T05:43:19.174201Z",
+  "lastUpdated": "2025-12-29T12:01:47.684608Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -22,6 +22,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:c45er5gruigwp3yqcptz6hv4/app.bsky.feed.post/3mb4omm6qzk2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "idlecartulary.itch.io",
+        "displayName": "Idle Cartulary",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i@jpeg"
+      },
+      "record": {
+        "text": "We\u2019re nearing the end of Critique Navidad, but if you want to relive it, might I suggest checking out Time To Drop, the time-loop heist RPG? idlecartulary.com/2025/12/29/c...",
+        "createdAt": "2025-12-29T11:00:03.158Z"
+      },
+      "indexedAt": "2025-12-29T11:00:06.532Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "http://idlecartulary.com/2025/12/29/critique-navidad-time-to-drop/",
+        "title": "Critique Navidad: Time To Drop",
+        "description": "Each holiday season, I review different modules, games or supplements as a thank you to the wider tabletop roleplaying game community. All of the work I review during Critique Navidad is either giv\u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigevmmqeaqtuunjprwhujm5prykxtuh7m2d5yx2sn6r7k23efpmli@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:3g4wbciwexx5aq27e4mzdsus/app.bsky.feed.post/3mb3eebziv22j",
       "source": "bluesky",
       "author": {
@@ -35,8 +64,8 @@
       },
       "indexedAt": "2025-12-28T22:24:03.028Z",
       "replyCount": 2,
-      "repostCount": 92,
-      "likeCount": 223,
+      "repostCount": 98,
+      "likeCount": 252,
       "embed": {
         "type": "images",
         "images": [
