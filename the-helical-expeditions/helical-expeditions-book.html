@@ -207,6 +207,21 @@
             height: 11in;
         }
 
+        /* Progress bubbles positioning - move to outer edge for book binding */
+        /* Left pages (first child in spread) - bubbles on left */
+        .spread-container > :first-child .page-progress,
+        .spread-container > :first-child .page .page-progress {
+            right: auto;
+            left: 0.12in;
+        }
+
+        /* Right pages (last child in spread) - bubbles stay on right (default) */
+        .spread-container > :last-child .page-progress,
+        .spread-container > :last-child .page .page-progress {
+            left: auto;
+            right: 0.12in;
+        }
+
         /* Solo pages (title, toc) */
         .solo-section {
             display: flex;
@@ -333,6 +348,27 @@
                 linear-gradient(45deg, transparent 40%, var(--break-pink) 40%, var(--break-pink) 60%, transparent 60%),
                 linear-gradient(-45deg, transparent 40%, var(--break-light-blue) 40%, var(--break-light-blue) 60%, transparent 60%);
             border-radius: 50%;
+        }
+
+        /* Themed filler pages - matches adventure art vibeboard colors */
+        .blank-filler.themed-filler {
+            --filler-accent-1: rgba(255, 255, 255, 0.3);
+            --filler-accent-2: rgba(255, 255, 255, 0.3);
+            background: var(--themed-bg) !important;
+        }
+
+        .blank-filler.themed-filler::before {
+            border-left-color: var(--filler-accent-1);
+            border-top-color: var(--filler-accent-1);
+        }
+
+        .blank-filler.themed-filler::after {
+            border-right-color: var(--filler-accent-2);
+            border-bottom-color: var(--filler-accent-2);
+        }
+
+        .blank-filler.themed-filler .filler-decoration {
+            display: none;
         }
 
         /* ===== TABLE OF CONTENTS ===== */
@@ -978,6 +1014,43 @@
             return doc.querySelectorAll('.page');
         }
 
+        // Extract theme colors from adventure CSS for filler pages
+        function extractThemeColors(css) {
+            const colors = {
+                background: null,
+                gradientColor1: null,
+                gradientColor2: null
+            };
+            
+            // Extract CSS custom properties from :root
+            const rootMatch = css.match(/:root\s*\{([^}]+)\}/);
+            if (!rootMatch) return colors;
+            
+            const rootContent = rootMatch[1];
+            const varMap = {};
+            
+            // Parse all CSS variables
+            const varMatches = rootContent.matchAll(/--([\w-]+):\s*([^;]+);/g);
+            for (const match of varMatches) {
+                varMap[`--${match[1]}`] = match[2].trim();
+            }
+            
+            // Find .art-page background
+            const artPageMatch = css.match(/\.art-page\s*\{[^}]*background:\s*var\((--[\w-]+)\)/);
+            if (artPageMatch && varMap[artPageMatch[1]]) {
+                colors.background = varMap[artPageMatch[1]];
+            }
+            
+            // Find .art-page::before gradient colors
+            const gradientMatch = css.match(/\.art-page::before\s*\{[^}]*linear-gradient\([^,]+,\s*var\((--[\w-]+)\)\s*,\s*var\((--[\w-]+)\)/);
+            if (gradientMatch) {
+                colors.gradientColor1 = varMap[gradientMatch[1]] || null;
+                colors.gradientColor2 = varMap[gradientMatch[2]] || null;
+            }
+            
+            return colors;
+        }
+
         function scopeStyles(css, scopeClass) {
             // Add scope class to all selectors
             return css.replace(/([^{}]+)(\{[^{}]+\})/g, (match, selector, rules) => {
@@ -1064,13 +1137,27 @@
             return wrapper;
         }
 
-        // Create a blank filler page with a pre-assigned page number
-        function createBlankFillerWithNumber(pageNumber) {
+        // Create a blank filler page with a pre-assigned page number and optional theme colors
+        function createBlankFillerWithNumber(pageNumber, themeColors = null) {
             const wrapper = document.createElement('div');
             wrapper.className = 'page-wrapper';
             
             const page = document.createElement('div');
             page.className = 'page blank-filler';
+            
+            // Apply theme colors if provided
+            if (themeColors && themeColors.background) {
+                page.classList.add('themed-filler');
+                page.style.setProperty('--themed-bg', themeColors.background);
+                
+                // Apply gradient colors to corner decorators via CSS variables
+                if (themeColors.gradientColor1) {
+                    page.style.setProperty('--filler-accent-1', themeColors.gradientColor1);
+                }
+                if (themeColors.gradientColor2) {
+                    page.style.setProperty('--filler-accent-2', themeColors.gradientColor2);
+                }
+            }
             
             const decoration = document.createElement('div');
             decoration.className = 'filler-decoration';
@@ -1622,13 +1709,17 @@
                             startPage: currentPageNumber
                         });
                         
+                        // Extract theme colors for potential filler pages
+                        const themeColors = extractThemeColors(styles);
+                        
                         // Add adventure pages with their styles and page numbers
                         pages.forEach(page => {
                             regionAdventurePages.push({
                                 page,
                                 styles,
                                 scopeClass,
-                                pageNumber: currentPageNumber++
+                                pageNumber: currentPageNumber++,
+                                themeColors: themeColors
                             });
                         });
                         
@@ -1638,7 +1729,8 @@
                                 page: null,
                                 styles: null,
                                 scopeClass: null,
-                                pageNumber: currentPageNumber++
+                                pageNumber: currentPageNumber++,
+                                themeColors: themeColors  // Use same theme as the adventure
                             });
                         }
                     }
@@ -1665,7 +1757,7 @@
                         // Left page
                         const leftPageData = pageData;
                         if (leftPageData.page === null) {
-                            spread.appendChild(createBlankFillerWithNumber(leftPageData.pageNumber));
+                            spread.appendChild(createBlankFillerWithNumber(leftPageData.pageNumber, leftPageData.themeColors));
                         } else {
                             const leftSection = document.createElement('div');
                             leftSection.className = `adventure-section ${leftPageData.scopeClass}`;
@@ -1681,7 +1773,7 @@
                         if (i < regionAdventurePages.length && !regionAdventurePages[i].isSubzoneSeparator) {
                             const rightPageData = regionAdventurePages[i];
                             if (rightPageData.page === null) {
-                                spread.appendChild(createBlankFillerWithNumber(rightPageData.pageNumber));
+                                spread.appendChild(createBlankFillerWithNumber(rightPageData.pageNumber, rightPageData.themeColors));
                             } else {
                                 const rightSection = document.createElement('div');
                                 rightSection.className = `adventure-section ${rightPageData.scopeClass}`;
