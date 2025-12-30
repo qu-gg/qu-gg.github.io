@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prickly's Prickly Situation - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Hot Desert Race Theme Palette (matching Thunda Circuit) */
+            --desert-deep: #3D1F0D;
+            --dune-tan: #8B5A2B;
+            --sunset-orange: #D2691E;
+            --sand-gold: #DAA06D;
+            --flame-red: #E8562A;
+            --sand-cream: #FAF0E6;
+            --pearl-white: #FEFEFE;
+            --cactus-olive: #6B8E23;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--sand-cream);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--sand-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--sunset-orange), var(--dune-tan), var(--flame-red), var(--dune-tan), var(--sunset-orange));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--desert-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--flame-red);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--flame-red);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 
+                3px 3px 0 var(--flame-red),
+                -1px -1px 0 var(--desert-deep),
+                1px -1px 0 var(--desert-deep),
+                -1px 1px 0 var(--desert-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--sand-gold);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--dune-tan);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--sunset-orange);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--dune-tan);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--sunset-orange);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--dune-tan);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--desert-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(218, 160, 109, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--sunset-orange);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--flame-red);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--dune-tan);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cactus-olive);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--desert-deep);
+            border-color: var(--desert-deep);
+        }
+
+        .story-steps h2 {
+            background: var(--sunset-orange);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--flame-red);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--sunset-orange);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--cactus-olive);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-section li ul {
+            margin-top: 3px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--sunset-orange);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(61, 31, 13, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(218, 160, 109, 0.12);
+            border-left: 3px solid var(--flame-red);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--desert-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--flame-red);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--dune-tan);
+        }
+
+        .sources-box a {
+            color: var(--sunset-orange);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--sunset-orange);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--desert-deep);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--flame-red);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--dune-tan);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cactus-olive);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--flame-red);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--flame-red);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--dune-tan);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            max-height: 4in;
+            justify-content: center;
+            background: var(--desert-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank/Sources side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--desert-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--desert-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--flame-red);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--flame-red);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--flame-red);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--desert-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        /* Item Block Style */
+        .item-block {
+            background: rgba(250, 240, 230, 0.9);
+            border: 2px dotted var(--dune-tan);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--flame-red);
+        }
+
+        .item-block .item-type {
+            color: var(--dune-tan);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--sunset-orange);
+            font-weight: bold;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--dune-tan);
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--desert-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--flame-red), var(--sand-gold), var(--flame-red));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--sand-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--sunset-orange);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--dune-tan);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--sand-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Prickly's Prickly Situation</h1>
+            <div class="subtitle">Cereus Plateau • Thunda Sands • Blazing Garden</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">⚔</span> Adventurous</div>
+            <div class="theme-item"><span class="emoji">◈</span> Rescue</div>
+            <div class="theme-item"><span class="emoji">◉</span> Amphitheatre</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Starting the Adventure -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>When a beloved tavern owner's daughter goes missing, he entrusts the party with the ransom money that has been demanded by a group of hostage takers. The party should expect dangerous dealings in dangerous sands, because nothing in the Thunda Sands is ever simple as a fair trade.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Prickly's Rest & Recovery settlement has been a centuries-long staple on the path between the Sol Alliance and the Thunda Sands, passed down through generations. Every traveler or merchant ensures a stop there for their thirst-quenching drinks and world-renowned acupuncture treatments. Word has spread far that the assumed inheritor to the R&R, Senita Prickly, was taken hostage a few days ago. Passing through the area yourselves, and having stopped for a drink, you've offered your aid to the proprietor, Pinta Prickly."</p>
+                    <p style="margin-top: 6px;">With a relatively simple structure, feel free to add more into this adventure. Add an Encounter Table/Trap to the Journey or take some more time exploring the R&R.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Pinta Prickly</span>
+                            <span class="character-details">— Pricklefolk, Male, 96 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">Proprietor of Prickly's R&R, he's been running the show for over 50 years. Above all, though, he values his daughter's happiness.</div>
+                        <div class="character-quote">"A rotund pricklefolk with a neat mustache, a large hat, and the creases of a lifetime of smiles, he is anything but jovial as he desperately asks for help."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Senita Prickly</span>
+                            <span class="character-details">— Pricklefolk, Female, 61 (Custrel)</span>
+                        </div>
+                        <div class="character-desc">Adventurous Senita believes that Pinta won't support her desire to travel the world before settling down.</div>
+                        <div class="character-quote">"Dressed in both the finest weaves of the Blazing Gardens and wild Barbarian armors, Senita has a fire in her eyes when speaking about the world."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Pincushion</span>
+                            <span class="character-details">— Pricklefolk, Male, 155 (Guide)</span>
+                        </div>
+                        <div class="character-desc">Pincushion is a well-known Guide in the Cereus Plateau, but claims to be retired and says he's "not taking another step in those blasted sands". He can be convinced for "one last trip".</div>
+                        <div class="character-quote">"Grizzled with broken needles and a glare sharper than any thorn, Pincushion sits at the bar with arms crossed and wide hat tilted down."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Arie Pryn</span>
+                            <span class="character-details">— Promethean, Female, 34 (Thunda Captain)</span>
+                        </div>
+                        <div class="character-desc">Arie is the leader of a Clan of Thunda Barbarians, and friend of Senita, who respect freedom and travel above all else.</div>
+                        <div class="character-quote">"An imposing Promethean Barbarian who commands the respect of her Clan, she sits high atop a scary Rokko-Do."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="8) Pricky's Rest & Recovery/Pasted image 20250217130406.png" alt="Prickly's R&R">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, introduce Pinta, then continue.</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Taken for a Ride</span>
+                        <ul>
+                            <li>Pinta shares the ransom note, which says the swap will take place in the ruins of a gladiatorial arena nearby. He wants Senita rescued, and to find out who took her.</li>
+                            <li>On foot in the sands, the Journey would take 3 Days and is very dangerous due to heat. Pinta gives the party Sandy Mokko-Dos to ride to the arena, cutting it down to 2 Travel Days and 1 Night of Camping.
+                                <ul>
+                                    <li>Every Day traveled requires a Grit Check against the heat or gain a Fatigue. Extreme Heat Outfits or similar ignores this.</li>
+                                </ul>
+                            </li>
+                            <li>A local Guide named Pincushion is resting at the R&R. He could be convinced or paid to help the party. Pincushion can Trailblaze the Journey with a Major Bonus.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Arena Ambush</span>
+                        <ul>
+                            <li>The party must place the ransom in the arena, then wait. Soon after, 5 Thunda Barbarians appear on Mokko-Dos alongside Arie and Senita on a Rokko-Do.</li>
+                            <li>As Senita walks across the arena "freed", a Barbarian fires at a rigged trap above the party. Heavy jars come smashing down, releasing 3 Mud and 3 Wind Lalkas that attack.</li>
+                            <li>Simultaneously, a Snare Trap (CLICK!) goes off as rope beneath the party snaps taut when the jars fall down.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Mokko-Do Chase</span>
+                        <ul>
+                            <li>In the chaos, Senita grabs the money, jumps onto Arie's <br>Rokko-Do, and rides off with the Barbarians.</li>
+                            <li>The party must give chase on their mounts and fight the Barbarians. When the Barbarians suffer 3 losses, Senita yells to stop the fight and admits she is in on the plot. She returns the money, along with a note for Pinta.</li>
+                            <li>Relieved that Senita is well (if still worried about her plans), Pinta rewards the party.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-credit">Made by Quagg</div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Prickly's R&R</h3>
+                    <p class="loc-desc">"A collection of Pricklefolk taverns, merchants, and spas built into the massive sprawling cacti of Cereus Plateau, it is a welcome rest amidst the dunes."</p>
+                    <p>Prickly's R&R acts as a Luxurious Suite, offering Hearty Meals and Excellent Service [Source pg. 201]. <br><br>The party might acquire Cac-tails (cactus cocktails) that act as temporary Extreme Heat Outfits for 5C, and various travel goods.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Anyder Amphitheater</h3>
+                    <p class="loc-desc">"All that remains of this once grand arena - where elite warriors battled strange engineered creatures - are dusty ruins."</p>
+                    <p>Partially buried in the sands from time, this derelict amphitheater is the perfect spot for an ominous ransom trade. <br><br>Alcoves of shade from rubble create many areas to ambush from, and there are multiple entrances into it.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>These Thunda Barbarians are part of a freedom-loving Clan and were enamored with Senita's dreams to see the world. They may even break out into a musical number.</li>
+                    <li>Senita has been working with her father at the R&R for 50 years, and feels pressure to step up and run the business "soon".</li>
+                    <li>Arie suggested the hostage scheme to give Senita a reason to disappear, and some funds for her trip.</li>
+                    <li>Senita's note to Pinta explains that she intends to return to the R&R in a year's time, after seeing the Blazing Gardens.</li>
+                    <li>Pincushion may have a thorny exterior but is actually a big softie. He secretly wants to help save Senita, so it won't take much convincing to get him out of retirement.</li>
+                    <li>The arena is the ruins of an ancient 2nd Aeon amphitheater, once used to pit elite warriors against strange engineered creatures.</li>
+                    <li>The arena, if investigated, has busted and buried motifs depicting great workings of Mana and the Invincible Bright.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20251229204129.jpg" alt="Anyder Amphitheater Inspiration">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>Pinta will give the party the <strong>Rokko-Lasso</strong> and 50C, and offer them complimentary acupuncture treatment and drinks [Hearty Meal + Excellent Service. Source pg. 201].</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Pincushion's Gift</h3>
+                        <p>If the party makes friends with Pincushion (e.g. Socialization during Camping), he will gift them his pair of lucky boots [<strong>Galvani's Boots</strong>] as he retires "for real this time".</p>
+                    </div>
+                </div>
+                <!-- Rokko-Lasso Item Block -->
+                <div class="item-block">
+                    <div><span class="item-name">Rokko-Lasso</span> <span class="item-type">[Lash Weapon + Utility]</span></div>
+                    <div class="item-desc"><em>Beloved tool of Rokko-Do Tamers within the Thunda Sands.</em><br> Grants a Minor Bonus to Combat Tricks or Attack Stunts attempting to pull or restrain a target.</div>
+                    <div class="item-stats">1 Slot · 50C · Made by Yan Kodiac</div>
+                </div>
+                <!-- Galvani's Boots Item Block -->
+                <div class="item-block">
+                    <div><span class="item-name">Galvani's Boots</span> <span class="item-type">[Footwear]</span></div>
+                    <div class="item-desc"><em>These simple leather boots always seem to fit whoever tries to wear them. Said to have belonged to Galvani, the first person to travel the whole of the Outer World.</em> <br>Wearing these boots allows you to act as a Guide during a journey. If you are already able to act as a Guide, you instead gain a Major (+4) Bonus on Insight Rolls to Trailblaze.</div>
+                    <div class="item-stats">1 Slot · ??? · Made by <a href="https://breakrpg.blogspot.com/2025/03/whats-being-sold-at-radiket-freebie-gear.html" target="_blank">BREAK!! Blog</a></div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank + Sources -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 1-2 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Though there's not much to reduce here, you could lighten up on Lalkas in the pre-fight.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Swap the Lalka for Bizzer Swarms, make Arie a Proudhound, or buff the Barbarians.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Suggested Starting Coin:</strong> 100-200C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Hostage Hoax</strong></a> by One-Shot Wonders. Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
+                    <ul>
+                        <li><strong>Thunda Barbarian:</strong> Reflavored Mundymutts (Source, pg. 372)</li>
+                        <li><strong>Thunda Captain:</strong> Reflavored Skelemaster (Source, pg. 406)</li>
+                        <li><strong>Lalka:</strong> Source, pg. 392</li>
+                        <li><strong>Traps:</strong> CLICK! Traps by VictorSeven</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20250217130406.png" alt="Prickly's R&R">
+                <div class="art-caption">"Prickly's R&R" <br> Art by <a href="https://www.artstation.com/artwork/QXQnJL" target="_blank">Lei Chu</a></div>
+            </div>
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20251229204129.jpg" alt="Anyder Amphitheater Inspiration">
+                <div class="art-caption">"Anyder Amphitheater Inspiration" <br> Art by Seth Engstrom</div>
+            </div>
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20251222001353.jpg" alt="Thunda Sands Inspiration" style="object-position: 20% center;">
+                <div class="art-caption">"Thunda Sands Inspiration" <br> Art by <a href="https://www.shed-works.co.uk/sable" target="_blank">Sable</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Fortress_-_Chocobo_rider.webp" alt="Mokko-Do in the Desert" style="object-position: 70% center;">
+                <div class="art-caption">"Mokko-Do in the Desert" <br> Art by Final Fantasy</div>
+            </div>
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20251229204659.jpg" alt="Thunda Sands Inspiration" style="object-position: 70% center;">
+                <div class="art-caption">"Thunda Sands Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/9meLaq" target="_blank">Corentin Asproni</a></div>
+            </div>
+            <div class="art-item">
+                <img src="8) Pricky's Rest & Recovery/Pasted image 20251229204811.jpg" alt="Thunda Sands Inspiration">
+                <div class="art-caption">"Thunda Sands Inspiration" <br> Art by <a href="https://bsky.app/profile/danidiez.bsky.social" target="_blank">Dani Diez</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

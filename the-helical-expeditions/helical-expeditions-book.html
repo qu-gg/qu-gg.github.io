@@ -421,6 +421,14 @@
             margin-bottom: 6px;
         }
 
+        .toc-rank {
+            font-size: 8pt;
+            color: var(--break-pink);
+            font-weight: bold;
+            margin-left: 6px;
+            white-space: nowrap;
+        }
+
         /* ===== REGIONAL SEPARATOR STYLES ===== */
         .region-separator-left,
         .region-separator-right {
@@ -681,7 +689,8 @@
                         file: '6-hold-the-wall.html',
                         title: 'Hold the Wall',
                         sublocation: 'Aiden',
-                        location: 'The Red Wall'
+                        location: 'The Red Wall',
+                        rank: '8-9'
                     }
                 ]
             },
@@ -717,19 +726,22 @@
                         file: '2-danger-for-a-rokko-do.html',
                         title: 'Danger for a Rokko-Do',
                         sublocation: 'Seven Holy Isles',
-                        location: 'Winding Pass'
+                        location: 'Winding Pass',
+                        rank: '2-3'
                     },
                     {
                         file: '5-sinking-float-stone.html',
                         title: 'Sinking the Float Stone Mine',
                         sublocation: 'Seven Holy Isles',
-                        location: "Go Isle's Float Stone Mine"
+                        location: "Go Isle's Float Stone Mine",
+                        rank: '5-6'
                     },
                     {
                         file: '1-fishy-business.html',
                         title: 'Deal with a Sea Witch',
                         sublocation: 'Sunken Isles',
-                        location: 'Dia, Beneath the Waves'
+                        location: 'Dia, Beneath the Waves',
+                        rank: '7-8'
                     }
                 ]
             },
@@ -762,16 +774,25 @@
                 },
                 adventures: [
                     {
+                        file: '8-pricklys-situation.html',
+                        title: "Prickly's Prickly Situation",
+                        sublocation: 'Thunda Sands',
+                        location: 'Cereus Plateau',
+                        rank: '1-2'
+                    },
+                    {
                         file: '3-thunda-circuit.html',
                         title: 'Thunda Circuit',
                         sublocation: 'Thunda Sands',
-                        location: 'Deadstone'
+                        location: 'Deadstone',
+                        rank: '3-4'
                     },
                     {
                         file: '4-crash-landing.html',
                         title: 'Crash Landing!',
                         sublocation: 'No-Folk Land',
-                        location: 'Death Valley'
+                        location: 'Death Valley',
+                        rank: '5-6'
                     }
                 ]
             },
@@ -1102,8 +1123,9 @@
                             adventures.forEach(adv => {
                                 const entry = document.createElement('div');
                                 entry.className = 'toc-entry';
+                                const rankHtml = adv.rank ? `<span class="toc-rank">[R${adv.rank}]</span>` : '';
                                 entry.innerHTML = `
-                                    <span class="toc-title">${adv.title}</span>
+                                    <span class="toc-title">${adv.title}${rankHtml}</span>
                                     <span class="toc-dots"></span>
                                     <span class="toc-page-num">${adv.startPage}</span>
                                 `;
@@ -1329,6 +1351,7 @@
                             title: adventure.title,
                             sublocation: adventure.sublocation,
                             location: adventure.location,
+                            rank: adventure.rank,
                             startPage: currentPageNumber
                         });
                         
