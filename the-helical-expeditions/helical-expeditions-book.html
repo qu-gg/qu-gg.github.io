@@ -77,7 +77,13 @@
             }
             
             .page-number {
-                background: transparent !important;
+                background: white !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .hide-page-numbers .page-number {
+                display: none !important;
             }
         }
 
@@ -144,6 +150,22 @@
             box-shadow: 0 4px 12px rgba(232, 58, 122, 0.4);
         }
 
+        .controls .toggle-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 10pt;
+        }
+
+        .controls .toggle-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: var(--break-pink);
+        }
+
         .controls .status {
             margin-top: 15px;
             padding: 10px;
@@ -190,10 +212,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
         }
 
         .solo-section .page-wrapper {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .solo-section .page-wrapper:last-child {
+            margin-bottom: 0;
         }
 
         /* ===== PAGE NUMBER STYLING ===== */
@@ -204,15 +235,34 @@
 
         .page-number {
             position: absolute;
-            bottom: 10.75in;
-            right: 0.15in;
+            bottom: 0.15in;
             font-family: 'Trebuchet MS', sans-serif;
-            font-size: 10pt;
-            color: #555;
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1a1a1a;
             z-index: 100;
-            /* background: rgba(255, 255, 255, 0.7); */
-            /* padding: 2px 6px; */
-            /* border-radius: 3px; */
+            /* background: white; */
+            width: 28px;
+            height: 28px;
+            /* border-radius: 50%; */
+            /* border: 2px solid #1a1a1a; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* box-shadow: 0 1px 3px rgba(0,0,0,0.2); */
+        }
+
+        .page-number-left {
+            right: -0.02in;
+        }
+
+        .page-number-right {
+            left: -0.02in;
+        }
+
+        /* Toggle for hiding page numbers */
+        .hide-page-numbers .page-number {
+            display: none !important;
         }
 
         /* ===== BLANK FILLER PAGE ===== */
@@ -419,6 +469,39 @@
             font-style: italic;
             margin-left: 0.15in;
             margin-bottom: 6px;
+        }
+
+        .toc-sublocation-empty {
+            font-size: 9pt;
+            color: #aaa;
+            font-style: italic;
+            margin-left: 0.15in;
+            margin-bottom: 6px;
+        }
+
+        .toc-sublocation-empty::after {
+            content: ' — coming soon';
+            font-size: 8pt;
+            color: #ccc;
+        }
+
+        /* TOC Page variants for spread */
+        .toc-page-left {
+            padding-top: 0.6in;
+        }
+
+        .toc-page-right {
+            padding-top: 0.6in;
+        }
+
+        .toc-page-left .toc-header,
+        .toc-page-right .toc-header {
+            margin-bottom: 0.25in;
+        }
+
+        .toc-page-left .toc-header h2,
+        .toc-page-right .toc-header h2 {
+            font-size: 24pt;
         }
 
         .toc-rank {
@@ -638,13 +721,17 @@
     <!-- Control Panel -->
     <div class="controls">
         <h3>📖 Book Compiler</h3>
+        <label class="toggle-label">
+            <input type="checkbox" id="showPageNumbers" onchange="togglePageNumbers()">
+            <span>Show Page Numbers</span>
+        </label>
         <div class="status" id="status">Ready to compile...</div>
         <button onclick="compileBook()">Compile Book</button>
         <button onclick="window.print()">Print / Save PDF</button>
     </div>
 
     <!-- Book Container -->
-    <div id="book-container">
+    <div id="book-container" class="hide-page-numbers">
         <div class="loading" id="loading">Loading adventures</div>
     </div>
 
@@ -890,6 +977,13 @@
             });
         }
 
+        // Determines if a page number should be on the left (even pages) or right (odd pages)
+        function getPageNumberPosition(pageNum) {
+            // Odd pages (1, 3, 5...) are on the right side of the spread
+            // Even pages (2, 4, 6...) are on the left side of the spread
+            return pageNum % 2 === 0 ? 'page-number-left' : 'page-number-right';
+        }
+
         function createBlankFillerPage() {
             const wrapper = document.createElement('div');
             wrapper.className = 'page-wrapper';
@@ -902,7 +996,8 @@
             page.appendChild(decoration);
             
             const pageNum = document.createElement('div');
-            pageNum.className = 'page-number';
+            const positionClass = getPageNumberPosition(currentPageNumber);
+            pageNum.className = `page-number ${positionClass}`;
             pageNum.textContent = currentPageNumber++;
             
             wrapper.appendChild(page);
@@ -911,17 +1006,74 @@
             return wrapper;
         }
 
-        function createPageWrapper(pageElement, addNumber = true) {
+        function createPageWrapper(pageElement, options = {}) {
+            const { addNumber = true, showNumber = true } = options;
+            
             const wrapper = document.createElement('div');
             wrapper.className = 'page-wrapper';
             wrapper.appendChild(pageElement.cloneNode(true));
             
             if (addNumber) {
-                // Track page number but don't display it
+                if (showNumber) {
+                    const pageNum = document.createElement('div');
+                    const positionClass = getPageNumberPosition(currentPageNumber);
+                    pageNum.className = `page-number ${positionClass}`;
+                    pageNum.textContent = currentPageNumber;
+                    wrapper.appendChild(pageNum);
+                }
                 currentPageNumber++;
             }
             
             return wrapper;
+        }
+
+        // Create a page wrapper with a pre-assigned page number (for adventure pages)
+        function createPageWrapperWithNumber(pageElement, pageNumber) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'page-wrapper';
+            wrapper.appendChild(pageElement.cloneNode(true));
+            
+            const pageNum = document.createElement('div');
+            const positionClass = getPageNumberPosition(pageNumber);
+            pageNum.className = `page-number ${positionClass}`;
+            pageNum.textContent = pageNumber;
+            wrapper.appendChild(pageNum);
+            
+            return wrapper;
+        }
+
+        // Create a blank filler page with a pre-assigned page number
+        function createBlankFillerWithNumber(pageNumber) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'page-wrapper';
+            
+            const page = document.createElement('div');
+            page.className = 'page blank-filler';
+            
+            const decoration = document.createElement('div');
+            decoration.className = 'filler-decoration';
+            page.appendChild(decoration);
+            
+            const pageNum = document.createElement('div');
+            const positionClass = getPageNumberPosition(pageNumber);
+            pageNum.className = `page-number ${positionClass}`;
+            pageNum.textContent = pageNumber;
+            
+            wrapper.appendChild(page);
+            wrapper.appendChild(pageNum);
+            
+            return wrapper;
+        }
+
+        // Toggle page number visibility
+        function togglePageNumbers() {
+            const checkbox = document.getElementById('showPageNumbers');
+            const container = document.getElementById('book-container');
+            if (checkbox.checked) {
+                container.classList.remove('hide-page-numbers');
+            } else {
+                container.classList.add('hide-page-numbers');
+            }
         }
 
         function createRegionalSeparator(regionName, regionData) {
@@ -946,6 +1098,14 @@
             leftPage.className = 'region-separator-left';
             leftPage.style.cssText = colorStyles;
             leftWrapper.appendChild(leftPage);
+            
+            // Add page number to left page
+            const leftPageNum = document.createElement('div');
+            const leftPositionClass = getPageNumberPosition(currentPageNumber);
+            leftPageNum.className = `page-number ${leftPositionClass}`;
+            leftPageNum.textContent = currentPageNumber++;
+            leftWrapper.appendChild(leftPageNum);
+            
             spread.appendChild(leftWrapper);
             
             // Right page - title and images
@@ -977,6 +1137,14 @@
             `;
             
             rightWrapper.appendChild(rightPage);
+            
+            // Add page number to right page
+            const rightPageNum = document.createElement('div');
+            const rightPositionClass = getPageNumberPosition(currentPageNumber);
+            rightPageNum.className = `page-number ${rightPositionClass}`;
+            rightPageNum.textContent = currentPageNumber++;
+            rightWrapper.appendChild(rightPageNum);
+            
             spread.appendChild(rightWrapper);
             
             return spread;
@@ -1005,6 +1173,14 @@
             leftPage.className = 'subzone-separator-left';
             leftPage.style.cssText = colorStyles;
             leftWrapper.appendChild(leftPage);
+            
+            // Add page number to left page
+            const leftPageNum = document.createElement('div');
+            const leftPositionClass = getPageNumberPosition(currentPageNumber);
+            leftPageNum.className = `page-number ${leftPositionClass}`;
+            leftPageNum.textContent = currentPageNumber++;
+            leftWrapper.appendChild(leftPageNum);
+            
             spread.appendChild(leftWrapper);
             
             // Right page - subzone name and flavor text
@@ -1021,32 +1197,88 @@
             `;
             
             rightWrapper.appendChild(rightPage);
+            
+            // Add page number to right page
+            const rightPageNum = document.createElement('div');
+            const rightPositionClass = getPageNumberPosition(currentPageNumber);
+            rightPageNum.className = `page-number ${rightPositionClass}`;
+            rightPageNum.textContent = currentPageNumber++;
+            rightWrapper.appendChild(rightPageNum);
+            
             spread.appendChild(rightWrapper);
             
             return spread;
         }
 
-        function generateToC() {
-            const tocPage = document.createElement('div');
-            tocPage.className = 'toc-page';
+        function generateToCSpread() {
+            const spread = document.createElement('div');
+            spread.className = 'spread-container';
             
-            tocPage.innerHTML = `
+            // Left TOC page
+            const leftWrapper = document.createElement('div');
+            leftWrapper.className = 'page-wrapper';
+            
+            const leftPage = document.createElement('div');
+            leftPage.className = 'toc-page toc-page-left';
+            leftPage.innerHTML = `
                 <div class="toc-header">
                     <h2>Contents</h2>
                     <p class="toc-subtitle">Adventures Across the Outer World</p>
                 </div>
                 <div class="toc-divider"></div>
-                <div class="toc-list" id="toc-list"></div>
+                <div class="toc-list" id="toc-list-left"></div>
             `;
+            leftWrapper.appendChild(leftPage);
             
-            return tocPage;
+            // Add page number to left page
+            const leftPageNum = document.createElement('div');
+            const leftPositionClass = getPageNumberPosition(currentPageNumber);
+            leftPageNum.className = `page-number ${leftPositionClass}`;
+            leftPageNum.textContent = currentPageNumber++;
+            leftWrapper.appendChild(leftPageNum);
+            
+            spread.appendChild(leftWrapper);
+            
+            // Right TOC page
+            const rightWrapper = document.createElement('div');
+            rightWrapper.className = 'page-wrapper';
+            
+            const rightPage = document.createElement('div');
+            rightPage.className = 'toc-page toc-page-right';
+            rightPage.innerHTML = `
+                <div class="toc-header">
+                    <h2>Contents</h2>
+                    <p class="toc-subtitle">Continued</p>
+                </div>
+                <div class="toc-divider"></div>
+                <div class="toc-list" id="toc-list-right"></div>
+            `;
+            rightWrapper.appendChild(rightPage);
+            
+            // Add page number to right page
+            const rightPageNum = document.createElement('div');
+            const rightPositionClass = getPageNumberPosition(currentPageNumber);
+            rightPageNum.className = `page-number ${rightPositionClass}`;
+            rightPageNum.textContent = currentPageNumber++;
+            rightWrapper.appendChild(rightPageNum);
+            
+            spread.appendChild(rightWrapper);
+            
+            return spread;
         }
 
         function populateToC() {
-            const tocList = document.getElementById('toc-list');
-            if (!tocList) return;
+            const tocListLeft = document.getElementById('toc-list-left');
+            const tocListRight = document.getElementById('toc-list-right');
+            if (!tocListLeft || !tocListRight) return;
             
-            // First, add front matter section
+            // Get region names to split between pages
+            const regionNames = Object.keys(bookStructure);
+            const midPoint = Math.ceil(regionNames.length / 2);
+            const leftRegions = regionNames.slice(0, midPoint);
+            const rightRegions = regionNames.slice(midPoint);
+            
+            // First, add front matter section to left page
             if (frontMatterTocData.length > 0) {
                 const frontMatterDiv = document.createElement('div');
                 frontMatterDiv.className = 'toc-region toc-front-matter';
@@ -1077,11 +1309,12 @@
                     }
                 });
                 
-                tocList.appendChild(frontMatterDiv);
+                tocListLeft.appendChild(frontMatterDiv);
             }
             
-            // Then add adventures by region
-            for (const [region, data] of Object.entries(bookStructure)) {
+            // Helper function to create region content
+            function createRegionContent(region, targetList) {
+                const data = bookStructure[region];
                 const regionDiv = document.createElement('div');
                 regionDiv.className = 'toc-region';
                 
@@ -1094,49 +1327,55 @@
                 // Get adventures for this region from tocData
                 const regionAdventures = tocData[region] || [];
                 
-                if (regionAdventures.length === 0) {
-                    const empty = document.createElement('div');
-                    empty.className = 'toc-region-empty';
-                    empty.textContent = 'Adventures coming soon...';
-                    regionDiv.appendChild(empty);
-                } else {
-                    // Group by sublocation
-                    const bySublocaton = {};
-                    regionAdventures.forEach(adv => {
-                        if (!bySublocaton[adv.sublocation]) {
-                            bySublocaton[adv.sublocation] = [];
-                        }
-                        bySublocaton[adv.sublocation].push(adv);
-                    });
-                    
-                    // Output in sublocation order
-                    data.sublocations.forEach(subloc => {
-                        const adventures = bySublocaton[subloc];
-                        if (adventures && adventures.length > 0) {
-                            // Sublocation label
-                            const sublocDiv = document.createElement('div');
-                            sublocDiv.className = 'toc-sublocation';
-                            sublocDiv.textContent = subloc;
-                            regionDiv.appendChild(sublocDiv);
-                            
-                            // Adventures in this sublocation
-                            adventures.forEach(adv => {
-                                const entry = document.createElement('div');
-                                entry.className = 'toc-entry';
-                                const rankHtml = adv.rank ? `<span class="toc-rank">[R${adv.rank}]</span>` : '';
-                                entry.innerHTML = `
-                                    <span class="toc-title">${adv.title}${rankHtml}</span>
-                                    <span class="toc-dots"></span>
-                                    <span class="toc-page-num">${adv.startPage}</span>
-                                `;
-                                regionDiv.appendChild(entry);
-                            });
-                        }
-                    });
-                }
+                // Group adventures by sublocation
+                const bySublocaton = {};
+                regionAdventures.forEach(adv => {
+                    if (!bySublocaton[adv.sublocation]) {
+                        bySublocaton[adv.sublocation] = [];
+                    }
+                    bySublocaton[adv.sublocation].push(adv);
+                });
                 
-                tocList.appendChild(regionDiv);
+                // Output ALL sublocations in order
+                data.sublocations.forEach(subloc => {
+                    const adventures = bySublocaton[subloc];
+                    
+                    if (adventures && adventures.length > 0) {
+                        // Sublocation with adventures
+                        const sublocDiv = document.createElement('div');
+                        sublocDiv.className = 'toc-sublocation';
+                        sublocDiv.textContent = subloc;
+                        regionDiv.appendChild(sublocDiv);
+                        
+                        // Adventures in this sublocation
+                        adventures.forEach(adv => {
+                            const entry = document.createElement('div');
+                            entry.className = 'toc-entry';
+                            const rankHtml = adv.rank ? `<span class="toc-rank">[R${adv.rank}]</span>` : '';
+                            entry.innerHTML = `
+                                <span class="toc-title">${adv.title}${rankHtml}</span>
+                                <span class="toc-dots"></span>
+                                <span class="toc-page-num">${adv.startPage}</span>
+                            `;
+                            regionDiv.appendChild(entry);
+                        });
+                    } else {
+                        // Empty sublocation - show as coming soon
+                        const sublocDiv = document.createElement('div');
+                        sublocDiv.className = 'toc-sublocation-empty';
+                        sublocDiv.textContent = subloc;
+                        regionDiv.appendChild(sublocDiv);
+                    }
+                });
+                
+                targetList.appendChild(regionDiv);
             }
+            
+            // Add left page regions
+            leftRegions.forEach(region => createRegionContent(region, tocListLeft));
+            
+            // Add right page regions
+            rightRegions.forEach(region => createRegionContent(region, tocListRight));
         }
 
         async function compileBook() {
@@ -1171,38 +1410,23 @@
                 titleSection.appendChild(titleStyleEl);
                 
                 titlePages.forEach(page => {
-                    const wrapper = createPageWrapper(page, false); // No page number display
+                    const wrapper = createPageWrapper(page, { addNumber: true, showNumber: false }); // Count but don't display
                     titleSection.appendChild(wrapper);
-                    currentPageNumber++; // But still count it
                 });
                 
                 soloSection.appendChild(titleSection);
                 
-                // 2. Add Table of Contents page (solo, no page number)
-                const tocPage = generateToC();
-                const tocWrapper = document.createElement('div');
-                tocWrapper.className = 'page-wrapper';
-                tocWrapper.appendChild(tocPage);
-                soloSection.appendChild(tocWrapper);
-                currentPageNumber++; // Count TOC page
-                
                 container.appendChild(soloSection);
                 
-                // 2.5. Load and add Introduction pages (first numbered pages, page 1)
+                // 2. Add Table of Contents spread (two pages side-by-side)
+                const tocSpread = generateToCSpread();
+                container.appendChild(tocSpread);
+                
+                // 2.5. Load and add Introduction pages as a spread
                 status.textContent = 'Loading introduction...';
                 const introHtml = await fetchHTML('introduction.html');
                 const introStyles = extractStyles(introHtml);
                 const introPages = extractPages(introHtml);
-                
-                const introSoloSection = document.createElement('div');
-                introSoloSection.className = 'solo-section';
-                
-                const introSection = document.createElement('div');
-                introSection.className = 'adventure-section intro-section';
-                
-                const introStyleEl = document.createElement('style');
-                introStyleEl.textContent = scopeStyles(introStyles, 'intro-section');
-                introSection.appendChild(introStyleEl);
                 
                 // Track for TOC (no sub-entries)
                 frontMatterTocData.push({
@@ -1211,29 +1435,29 @@
                     subEntries: []
                 });
                 
+                const introSpread = document.createElement('div');
+                introSpread.className = 'spread-container';
+                
                 introPages.forEach(page => {
-                    const wrapper = createPageWrapper(page, true); // Track page numbers
+                    const introSection = document.createElement('div');
+                    introSection.className = 'adventure-section intro-section';
+                    
+                    const introStyleEl = document.createElement('style');
+                    introStyleEl.textContent = scopeStyles(introStyles, 'intro-section');
+                    introSection.appendChild(introStyleEl);
+                    
+                    const wrapper = createPageWrapper(page, { addNumber: true, showNumber: true });
                     introSection.appendChild(wrapper);
+                    introSpread.appendChild(introSection);
                 });
                 
-                introSoloSection.appendChild(introSection);
-                container.appendChild(introSoloSection);
+                container.appendChild(introSpread);
                 
-                // 2.6. Load and add "Using This Book" pages
+                // 2.6. Load and add "Using This Book" pages as a spread
                 status.textContent = 'Loading guide pages...';
                 const guideHtml = await fetchHTML('using-this-book.html');
                 const guideStyles = extractStyles(guideHtml);
                 const guidePages = extractPages(guideHtml);
-                
-                const guideSoloSection = document.createElement('div');
-                guideSoloSection.className = 'solo-section';
-                
-                const guideSection = document.createElement('div');
-                guideSection.className = 'adventure-section guide-section';
-                
-                const guideStyleEl = document.createElement('style');
-                guideStyleEl.textContent = scopeStyles(guideStyles, 'guide-section');
-                guideSection.appendChild(guideStyleEl);
                 
                 // Track for TOC with sub-entries for each page
                 const guideStartPage = currentPageNumber;
@@ -1246,29 +1470,29 @@
                     ]
                 });
                 
+                const guideSpread = document.createElement('div');
+                guideSpread.className = 'spread-container';
+                
                 guidePages.forEach(page => {
-                    const wrapper = createPageWrapper(page, true); // Track page numbers
+                    const guideSection = document.createElement('div');
+                    guideSection.className = 'adventure-section guide-section';
+                    
+                    const guideStyleEl = document.createElement('style');
+                    guideStyleEl.textContent = scopeStyles(guideStyles, 'guide-section');
+                    guideSection.appendChild(guideStyleEl);
+                    
+                    const wrapper = createPageWrapper(page, { addNumber: true, showNumber: true });
                     guideSection.appendChild(wrapper);
+                    guideSpread.appendChild(guideSection);
                 });
                 
-                guideSoloSection.appendChild(guideSection);
-                container.appendChild(guideSoloSection);
+                container.appendChild(guideSpread);
                 
-                // 2.7. Load and add Reference Pages (CLICK! Traps + Adversary Compendium side-by-side)
+                // 2.7. Load and add Reference Pages as a spread (CLICK! Traps + Adversary Compendium side-by-side)
                 status.textContent = 'Loading reference pages...';
                 const referenceHtml = await fetchHTML('reference-pages.html');
                 const referenceStyles = extractStyles(referenceHtml);
                 const referencePages = extractPages(referenceHtml);
-                
-                const referenceSoloSection = document.createElement('div');
-                referenceSoloSection.className = 'solo-section';
-                
-                const referenceSection = document.createElement('div');
-                referenceSection.className = 'adventure-section reference-section';
-                
-                const referenceStyleEl = document.createElement('style');
-                referenceStyleEl.textContent = scopeStyles(referenceStyles, 'reference-section');
-                referenceSection.appendChild(referenceStyleEl);
                 
                 // Track for TOC with sub-entries
                 const referenceStartPage = currentPageNumber;
@@ -1281,13 +1505,23 @@
                     ]
                 });
                 
+                const referenceSpread = document.createElement('div');
+                referenceSpread.className = 'spread-container';
+                
                 referencePages.forEach(page => {
-                    const wrapper = createPageWrapper(page, true); // Track page numbers
+                    const referenceSection = document.createElement('div');
+                    referenceSection.className = 'adventure-section reference-section';
+                    
+                    const referenceStyleEl = document.createElement('style');
+                    referenceStyleEl.textContent = scopeStyles(referenceStyles, 'reference-section');
+                    referenceSection.appendChild(referenceStyleEl);
+                    
+                    const wrapper = createPageWrapper(page, { addNumber: true, showNumber: true });
                     referenceSection.appendChild(wrapper);
+                    referenceSpread.appendChild(referenceSection);
                 });
                 
-                referenceSoloSection.appendChild(referenceSection);
-                container.appendChild(referenceSoloSection);
+                container.appendChild(referenceSpread);
                 
                 // 3. Load adventures by region with regional and subzone separators
                 let adventureIndex = 0;
@@ -1355,14 +1589,14 @@
                             startPage: currentPageNumber
                         });
                         
-                        // Add adventure pages with their styles
+                        // Add adventure pages with their styles and page numbers
                         pages.forEach(page => {
                             regionAdventurePages.push({
                                 page,
                                 styles,
-                                scopeClass
+                                scopeClass,
+                                pageNumber: currentPageNumber++
                             });
-                            currentPageNumber++;
                         });
                         
                         // Pad to 4 pages if only 3 pages
@@ -1370,9 +1604,9 @@
                             regionAdventurePages.push({
                                 page: null,
                                 styles: null,
-                                scopeClass: null
+                                scopeClass: null,
+                                pageNumber: currentPageNumber++
                             });
-                            currentPageNumber++;
                         }
                     }
                     
@@ -1398,14 +1632,14 @@
                         // Left page
                         const leftPageData = pageData;
                         if (leftPageData.page === null) {
-                            spread.appendChild(createBlankFillerPage());
+                            spread.appendChild(createBlankFillerWithNumber(leftPageData.pageNumber));
                         } else {
                             const leftSection = document.createElement('div');
                             leftSection.className = `adventure-section ${leftPageData.scopeClass}`;
                             const leftStyleEl = document.createElement('style');
                             leftStyleEl.textContent = scopeStyles(leftPageData.styles, leftPageData.scopeClass);
                             leftSection.appendChild(leftStyleEl);
-                            leftSection.appendChild(createPageWrapper(leftPageData.page));
+                            leftSection.appendChild(createPageWrapperWithNumber(leftPageData.page, leftPageData.pageNumber));
                             spread.appendChild(leftSection);
                         }
                         
@@ -1414,14 +1648,14 @@
                         if (i < regionAdventurePages.length && !regionAdventurePages[i].isSubzoneSeparator) {
                             const rightPageData = regionAdventurePages[i];
                             if (rightPageData.page === null) {
-                                spread.appendChild(createBlankFillerPage());
+                                spread.appendChild(createBlankFillerWithNumber(rightPageData.pageNumber));
                             } else {
                                 const rightSection = document.createElement('div');
                                 rightSection.className = `adventure-section ${rightPageData.scopeClass}`;
                                 const rightStyleEl = document.createElement('style');
                                 rightStyleEl.textContent = scopeStyles(rightPageData.styles, rightPageData.scopeClass);
                                 rightSection.appendChild(rightStyleEl);
-                                rightSection.appendChild(createPageWrapper(rightPageData.page));
+                                rightSection.appendChild(createPageWrapperWithNumber(rightPageData.page, rightPageData.pageNumber));
                                 spread.appendChild(rightSection);
                             }
                         } else if (i < regionAdventurePages.length && regionAdventurePages[i].isSubzoneSeparator) {

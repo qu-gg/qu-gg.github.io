@@ -30,9 +30,3 @@ Crossed Bones:
 	- Turn to pick it up
 - Skelemaster of a Knight leads them to a battlefield, ghostly visage of a lamp in its hand (to indicate that perhaps)
 - Skelemen have been seen walking to the remembrance cite as night and are seen as a bad omen for the ceremony.
-
-Prickly's R&R:
-- Something in the Thunda Sands to do with cactus folk/Prickly's R&R
-- "Welcome to the Prickly Tavern, don't worry, the drinks are sharp but they ain't pointy!"
-- https://www.artstation.com/artwork/QXQnJL
-- 
