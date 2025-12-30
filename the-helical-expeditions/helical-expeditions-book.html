@@ -241,28 +241,46 @@
             font-weight: bold;
             color: #1a1a1a;
             z-index: 100;
-            /* background: white; */
             width: 28px;
             height: 28px;
-            /* border-radius: 50%; */
-            /* border: 2px solid #1a1a1a; */
             display: flex;
             align-items: center;
             justify-content: center;
-            /* box-shadow: 0 1px 3px rgba(0,0,0,0.2); */
         }
 
         .page-number-left {
-            right: -0.02in;
+            left: 0.15in;
         }
 
         .page-number-right {
-            left: -0.02in;
+            right: 0.15in;
         }
 
         /* Toggle for hiding page numbers */
         .hide-page-numbers .page-number {
             display: none !important;
+        }
+
+        /* Toggle for hiding gradient splashes */
+        .hide-gradient-splash .toc-page {
+            background: var(--break-cream) !important;
+        }
+
+        .hide-gradient-splash .blank-filler {
+            background: #e8e4db !important;
+        }
+
+        .hide-gradient-splash .subzone-separator-left,
+        .hide-gradient-splash .subzone-separator-right {
+            background: #f5f0e6 !important;
+        }
+
+        .hide-gradient-splash .guide-section .page {
+            background: var(--break-cream) !important;
+        }
+
+        .hide-gradient-splash .reference-section .page {
+            background: var(--break-cream) !important;
         }
 
         /* ===== BLANK FILLER PAGE ===== */
@@ -725,13 +743,17 @@
             <input type="checkbox" id="showPageNumbers" onchange="togglePageNumbers()">
             <span>Show Page Numbers</span>
         </label>
+        <label class="toggle-label">
+            <input type="checkbox" id="showGradientSplash" onchange="toggleGradientSplash()">
+            <span>Show Gradient Splashes</span>
+        </label>
         <div class="status" id="status">Ready to compile...</div>
         <button onclick="compileBook()">Compile Book</button>
         <button onclick="window.print()">Print / Save PDF</button>
     </div>
 
     <!-- Book Container -->
-    <div id="book-container" class="hide-page-numbers">
+    <div id="book-container" class="hide-page-numbers hide-gradient-splash">
         <div class="loading" id="loading">Loading adventures</div>
     </div>
 
@@ -1073,6 +1095,17 @@
                 container.classList.remove('hide-page-numbers');
             } else {
                 container.classList.add('hide-page-numbers');
+            }
+        }
+
+        // Toggle gradient splash visibility
+        function toggleGradientSplash() {
+            const checkbox = document.getElementById('showGradientSplash');
+            const container = document.getElementById('book-container');
+            if (checkbox.checked) {
+                container.classList.remove('hide-gradient-splash');
+            } else {
+                container.classList.add('hide-gradient-splash');
             }
         }
 
