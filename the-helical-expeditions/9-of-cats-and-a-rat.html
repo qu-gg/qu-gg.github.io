@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Of Cats and a Rat - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Nyanko Urban Noir Theme Palette */
+            --nyanko-deep: #1a1a2e;
+            --indigo-night: #2d2d44;
+            --gold-amber: #d4a04a;
+            --neon-gold: #f5c842;
+            --crimson-accent: #c44a5e;
+            --slate-purple: #4a4a6a;
+            --cream-light: #f5f0e6;
+            --pearl-white: #fefefe;
+            --teal-glow: #3d8a8a;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--cream-light);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--cream-light);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-amber), var(--nyanko-deep), var(--crimson-accent), var(--nyanko-deep), var(--gold-amber));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--nyanko-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--gold-amber);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--gold-amber);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                3px 3px 0 var(--gold-amber),
+                -1px -1px 0 var(--nyanko-deep),
+                1px -1px 0 var(--nyanko-deep),
+                -1px 1px 0 var(--nyanko-deep);
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--gold-amber);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--indigo-night);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--gold-amber);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--indigo-night);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--gold-amber);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--indigo-night);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--nyanko-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(212, 160, 74, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--gold-amber);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--crimson-accent);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--indigo-night);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--teal-glow);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--nyanko-deep);
+            border-color: var(--nyanko-deep);
+        }
+
+        .story-steps h2 {
+            background: var(--gold-amber);
+            color: var(--nyanko-deep);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--neon-gold);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--gold-amber);
+            color: var(--nyanko-deep);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--teal-glow);
+            color: var(--pearl-white);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--gold-amber);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 26, 46, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(212, 160, 74, 0.12);
+            border-left: 3px solid var(--crimson-accent);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--nyanko-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--crimson-accent);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--indigo-night);
+        }
+
+        .sources-box a {
+            color: var(--gold-amber);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--gold-amber);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--nyanko-deep);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--crimson-accent);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--indigo-night);
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--teal-glow);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Minor Locations */
+        .minor-locations {
+            background: rgba(212, 160, 74, 0.15);
+            border-top: 1px dashed var(--gold-amber);
+            padding: 5px 8px;
+        }
+
+        .minor-locations h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--indigo-night);
+            margin-bottom: 4px;
+        }
+
+        .minor-locations-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 9pt;
+        }
+
+        .minor-loc-item {
+            flex: 1 1 30%;
+            min-width: 150px;
+        }
+
+        .minor-loc-item strong {
+            color: var(--gold-amber);
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--crimson-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--crimson-accent);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--indigo-night);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--nyanko-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank/Sources side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--nyanko-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--nyanko-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--crimson-accent);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--crimson-accent);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--crimson-accent);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--nyanko-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        /* Item Block Style */
+        .item-block {
+            background: rgba(245, 240, 230, 0.9);
+            border: 2px dotted var(--indigo-night);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--crimson-accent);
+        }
+
+        .item-block .item-type {
+            color: var(--indigo-night);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--gold-amber);
+            font-weight: bold;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--indigo-night);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--nyanko-deep);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--gold-amber);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--neon-gold);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            width: 100%;
+            height: 6.4in;
+            border: 3px solid var(--indigo-night);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            background: var(--nyanko-deep);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+
+        .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .map-line {
+            stroke: var(--crimson-accent);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--crimson-accent);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        /* Marker positions: 1=top-left, 2=upper-center, 3=lower-right, 4=left-center, 5=below 4 */
+        .map-marker.m1 { top: 10%; left: 20%; }
+        .map-marker.m2 { top: 25%; left: 53%; }
+        .map-marker.m3 { bottom: 24%; right: 29%; }
+        .map-marker.m4 { top: 49%; left: 29%; }
+        .map-marker.m5 { top: 62%; left: 29%; }
+
+        .site-content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 10px;
+        }
+
+        /* Encounters Table */
+        .encounters-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--gold-amber);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .encounters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--indigo-night);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .encounters-box h2 span {
+            font-size: 9pt;
+            opacity: 0.9;
+        }
+
+        .encounters-table {
+            padding: 6px 8px;
+        }
+
+        .encounter-row {
+            display: flex;
+            gap: 8px;
+            padding: 4px 0;
+            border-bottom: 1px dashed var(--gold-amber);
+            font-size: 9pt;
+        }
+
+        .encounter-row:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-row.has-situation {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .encounter-group {
+            border-bottom: 1px dashed var(--gold-amber);
+        }
+
+        .encounter-group:last-child {
+            border-bottom: none;
+        }
+
+        .encounter-group .encounter-row {
+            border-bottom: none;
+        }
+
+        .encounter-roll {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--crimson-accent);
+            min-width: 35px;
+        }
+
+        .encounter-name {
+            font-weight: bold;
+            color: var(--nyanko-deep);
+        }
+
+        .encounter-desc {
+            color: var(--ink-dark);
+        }
+
+        .encounter-situation {
+            background: rgba(212, 160, 74, 0.12);
+            border-left: 2px solid var(--gold-amber);
+            padding: 3px 6px;
+            margin-top: 3px;
+            margin-left: 43px;
+            margin-bottom: 4px;
+            padding-bottom: 6px;
+            font-size: 8pt;
+            color: var(--nyanko-deep);
+        }
+
+        .encounter-situation strong {
+            color: var(--gold-amber);
+        }
+
+        /* Location Key */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--crimson-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--crimson-accent);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+        }
+
+        .location-entry {
+            margin-bottom: 10px;
+            font-size: 9pt;
+        }
+
+        .location-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--crimson-accent);
+            color: var(--pearl-white);
+            border-radius: 50%;
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--nyanko-deep);
+            font-size: 10pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--gold-amber);
+            color: var(--pearl-white);
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.trap {
+            background: var(--crimson-accent);
+        }
+
+        .location-tag.encounter {
+            background: var(--indigo-night);
+        }
+
+        .location-tag.loot {
+            background: var(--teal-glow);
+        }
+
+        .location-tag.stealth {
+            background: var(--slate-purple);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.35;
+        }
+
+        /* ===== PAGE 4 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--nyanko-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--crimson-accent), var(--gold-amber), var(--crimson-accent));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--neon-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--gold-amber);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--indigo-night);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--gold-amber);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Of Cats and a Rat</h1>
+            <div class="subtitle">Nyanko • Pride Coast • Blazing Garden</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">◈</span> Shady</div>
+            <div class="theme-item"><span class="emoji">↯</span> Escape</div>
+            <div class="theme-item"><span class="emoji">≋</span> Sewers</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description & Starting -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>The gig? Simple. Head to the Nyanko alleyways, hand off a token, and receive a bag of Puretech Salvage. Despite the simple task completed, things go south for the party when their rendezvous point with their contractor gets busted...while they're there! The party must escape through the city sewers and make it to a safehouse, unnoticed.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Whatever your personal reason - greed, belief, thrill - dealing with the Seeing Eyes Clan of Nyanko is dangerous business. A criminal organization set in the shadows of the sun-bathed Pride Coast capital, they seek to undermine the brutal Startech Technocracy by smuggling and distributing Puretech on the streets. You've accepted a simple gig to prove your worth - meet at a drop-off point, trade a token for a bag of Puretech Salvage, and bring it to a warehouse far side of town."</p>
+                    <p style="margin-top: 6px;">This adventure is primarily focused around three components of BREAK!! - Negotiation, Combat, and Exploration. Stealth or social characters would do wonders in this story, while still having room for combat characters in the mid-section.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Golden Eyes</span>
+                            <span class="character-details">— Rai-Neko, Male, 34 (Proudhound)</span>
+                        </div>
+                        <div class="character-desc">Publicly named "Anubis", he is a significant figure in the Seeing Eyes Clan of Nyanko. A terrifying presence, known for his direct orders and lethal golden eyes.</div>
+                        <div class="character-quote">"A sphinx cat dressed in a non-descript suit but covered full-body in tattoos, it is said his menacing glance alone can stop a man's heart."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">"Just Runt"</span>
+                            <span class="character-details">— Mundymutt, Male, 25 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">A representative of the Ruff Riders, sent to infiltrate Nyanko as a dealer of Puretech Salvage. Very skittish and distrusting.</div>
+                        <div class="character-quote">"With a demeanor almost as wiry as his fur, the anxiety on his face is plain. Wearing decent attire but stutters and has eyes that distrust everything."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Nyanko Peacekeepers</span>
+                            <span class="character-details">— Rai-Neko, N/A (Peacekeeper)</span>
+                        </div>
+                        <div class="character-desc">Militant enforcers of Nyanko that serve to "keep the peace", enforcing its brutal justice system. They choose non-lethal methods in order to publicly display criminals later.</div>
+                        <div class="character-quote">"Equipped with powerful, repurposed Startech and absolute authority, it is well-known to be a model citizen when Peacekeepers are roaming the streets."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="9) Of Cats and a Rat/Pasted image 20251231005310.png" alt="City of Nyanko">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene of the Drop Site, describe Runt, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">An Unlikely Collaboration</span>
+                        <ul>
+                            <li>Unexpectedly, the Puretech dealer is a Mundymutt named Runt. He is skittish, and suspects foul-play when the party shows for the deal instead of a Clan member.</li>
+                            <li>Runt will initially refuse to hand over the Puretech despite their token. Successful <em>Negotiation</em> is needed for him to hand it over peacefully.</li>
+                            <li>If Negotiation fails, Runt will initiate Combat with a Grenade before attempting to Flee the next Turn. He is a Basic Folk and very easy to stop.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">The Hit</span>
+                        <ul>
+                            <li>The party heads back towards the warehouse, and has to avert the attention of any Peacekeepers patrolling. Require <em>Stealth</em> here, if desired.</li>
+                            <li>On arrival, 2 Clan members are present with their leader <em>Anubis</em> to take the Salvage. As the deal occurs, however, <br>12 Peacekeepers burst through the windows, engaging.</li>
+                            <li>In the aftermath, Anubis offers the party to retreat with them through the sewer-ways to a Safehouse to lay low.</li>
+                            <li>Runt can be found bound in cuffs outside, shown to be the rat that tipped off the warehouse, and will beg for life.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">The Sewer Express</span>
+                        <ul>
+                            <li>The party makes it into the <em>Nyanko Sewers</em> [Adventure Site] and have to navigate them to the Safehouse. Peacekeepers are patrolling. The party can stealth through or fight through.</li>
+                            <li>The Safehouse is the back chambers of a sushi house on the docks. Anubis promises to provide safe passage out of Nyanko if desired but, for now, they may lay low and enjoy some sushi.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Drop Site</h3>
+                    <p class="loc-desc">"Despite their overbearing presence, the Peacekeepers cannot patrol every winding, tiny alleyway in Nyanko. This is one of them."</p>
+                    <p><br>The drop site is a cramped and shaded alleyway, comprised of only 2 Battlefield Areas - one where the party comes in and one for the dealer.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Warehouse</h3>
+                    <p class="loc-desc">"The dusty remnants of a well-used, now-abandoned Startech warehouse hides the activities of the Clan here - manufacturing replicas with Puretech."</p>
+                    <p><br>One base of operations where the Clan manufactures replica items. It is located in an older, abandoned part of Nyanko, ruined by an explosive mistake many years ago.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Nyanko Sewers</h3>
+                    <p class="loc-desc">"Surprisingly, these sewers are mostly rather clean despite being a veritable labyrinth. That said, it is not without its roaming deranged Drone or two."</p>
+                    <p><br>See the Adventure Site page for information on navigating the sewers. Depending on difficulty, consider adding Bonuses or Penalties to Stealth Checks based on how echo-y the tunnels are.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Some Mundymutt Ruff Riders have taken to doing underhanded deals with the Seeing Eyes Clan under the loosely shared goal of "undermining Nyanko rule". Their relationship is a strained one.</li>
+                    <li>Runt was informed that a direct Clan representative would be meeting him for the trade-off.</li>
+                    <li>Runt suspected a breakdown of relations between the Clans and believes that by tipping off the Peacekeepers, he can save his own skin.</li>
+                    <li>A tracking device planted onto the Salvage itself was what let the Peacekeepers know where the hand-off was occurring.</li>
+                    <li>The sushi house is a front but also a legitimate restaurant that has ties to other locations in the Galvanus Archipelago, which supplies much of its fish.</li>
+                    <li>The Nyanko government keeps a tight grip on the supply of Startech throughout the population, seeing it as a means to control.</li>
+                    <li>The Seeing Eyes Clan seeks to undermine the government by distributing cheap Startech replications made with Puretech instead.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231104044.png" alt="Clan's Sushi House">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>The party will receive <strong>Hearty Meal + Excellent Service</strong> [Source pg. 201] amenities for free as long as they stay in Nyanko at the sushi house. <br><br>Anubis gives the party the agreed upon <strong>200C</strong> plus an additional <strong>150C</strong>.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Impressing Anubis</h3>
+                        <p>If a member particularly impresses Anubis, he will consider offering the application of <strong>Clan Tattoos</strong>, a symbol of Clan acceptance.</p>
+                    </div>
+                </div>
+                <!-- Clan Tattoos Item Block -->
+                <div class="item-block">
+                    <div><span class="item-name">Clan Tattoos</span> <span class="item-type">[Armor]</span></div>
+                    <div class="item-desc"><em>Tattoos with ink rumored to derive from a Deva itself, they are said to provide the Clan's protection and authority no matter where one is.</em><br>When applied, they function as a set of Magnificent Light Armor [Source, pg. 166] that cannot suffer Armor Crash Injuries.</div>
+                    <div class="item-stats">0 Slots · 3 Gems</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank + Sources -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 3-4 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Consider nerfing the Peacekeeper stats but retain their numbers for flair.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Consider buffing the Peacekeeper stats or adding in additional crowd-control Abilities.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Suggested Starting Coin:</strong> 300-400C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <ul>
+                        <li><strong>Peacekeeper</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Clan Members:</strong> Reflavored Mundymutts [Source, pg. 400]</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ADVENTURE SITE ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>Nyanko Sewers <span>[Adventure Site]</span></h1>
+        </div>
+
+        <div class="site-map-container">
+            <img src="9) Of Cats and a Rat/NyankoSewers.png" alt="Nyanko Sewers Map">
+            <!-- Connection Lines: 1-2-3-4-5 chain -->
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <!-- Line 1↔2 -->
+                <line class="map-line" x1="22" y1="12" x2="54" y2="27" />
+                <!-- Line 2↔3 -->
+                <line class="map-line" x1="54.5" y1="27" x2="69.5" y2="75" />
+                <!-- Line 3↔4 -->
+                <line class="map-line" x1="69.5" y1="74" x2="30" y2="51" />
+                <!-- Line 4↔5 -->
+                <line class="map-line" x1="31" y1="50" x2="31" y2="64" />
+            </svg>
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+        </div>
+
+        <div class="site-content-columns">
+            <!-- Random Encounters Table -->
+            <div class="encounters-box">
+                <h2>Random Encounters <span>(d20)</span></h2>
+                <div class="encounters-table">
+                    <div class="encounter-row">
+                        <span class="encounter-roll">1-10</span>
+                        <span class="encounter-desc"><span class="encounter-name">No Encounter:</span> Water rushes by, a critter scurries past, machinery whirrs.</span>
+                    </div>
+                    <div class="encounter-row">
+                        <span class="encounter-roll">11-13</span>
+                        <span class="encounter-desc"><span class="encounter-name">Busted Startech:</span> Some long-lost rubble pile, hiding a sundered Scanner [Source, pg. 180].</span>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">14-15</span>
+                            <span class="encounter-desc"><span class="encounter-name">Goop Attack!:</span> 3x Goops</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> They hide on the ceiling and will attempt to Ambush the party.
+                        </div>
+                    </div>
+                    <div class="encounter-group">
+                        <div class="encounter-row has-situation">
+                            <span class="encounter-roll">16-17</span>
+                            <span class="encounter-desc"><span class="encounter-name">Confused Emotions:</span> 2x Drones</span>
+                        </div>
+                        <div class="encounter-situation">
+                            <strong>Situation:</strong> When Nyanko crashlanded, they made early attempts to fuse Puretech with Startech. It didn't go well and these confused, semi-sentient Drones are proof of it.
+                            <br><strong>Consequence:</strong> If not stopped in 2 Turns, they will beep loudly, alerting Peacekeepers to check.
+                        </div>
+                    </div>
+                    <div class="encounter-row">
+                        <span class="encounter-roll">18-20</span>
+                        <span class="encounter-desc"><span class="encounter-name">Found You!:</span> 5x Peacekeepers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Key -->
+            <div class="location-key-box">
+                <h2>Location Key</h2>
+                <div class="location-key-content">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Entrance</span>
+                        </div>
+                        <div class="location-desc">Ladder down from the streets, simple hop over a broken bridge.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Close Call</span>
+                            <span class="location-tag loot">Loot</span>
+                            <span class="location-tag stealth">Stealth</span>
+                        </div>
+                        <div class="location-desc">The open grate requires Stealth - Failure alerts a Wandering Patrol. A hanging key for Node 3 is in one of the sewer grates.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">The Drain</span>
+                            <span class="location-tag trap">Trap</span>
+                        </div>
+                        <div class="location-desc">Passage around the corner requires a means to open the door or creative party ideas. A player might fall into the Drain, a Trap which Suffocates them [Source, pg. 271], and require saving.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Exit</span>
+                            <span class="location-tag encounter">Guardian Encounter</span>
+                        </div>
+                        <div class="location-desc">Exit to the sushi house, which Anubis has the key to. Can force a Peacekeeper Encounter here if desired.</div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">5</span>
+                            <span class="location-name">Lost Loot</span>
+                            <span class="location-tag loot">Loot</span>
+                        </div>
+                        <div class="location-desc">The cracked wall might be busted down to reveal someone's forgotten treasure. 2D20 Coins and 2 Units of Ennui Sludge [Source, pg. 293].</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231005310.png" alt="City of Nyanko">
+                <div class="art-caption">"City of Nyanko Inspiration" <br> Art by Runescape</div>
+            </div>
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231104044.png" alt="Clan's Sushi House">
+                <div class="art-caption">"Sushi House Inspiration" <br> Art by Daniele Turturici</div>
+            </div>
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231105319.jpg" alt="Clan Warehouse">
+                <div class="art-caption">"Warehouse Inspiration" <br> Art by Lai Si Min</div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231105407.png" alt="Anubis Inspiration">
+                <div class="art-caption">"Anubis Inspiration" <br> Art by Zarnala</div>
+            </div>
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/Pasted image 20251231110038.jpg" alt="Nyanko Peacekeeper">
+                <div class="art-caption">"Peacekeeper Inspiration" <br> Art by Tyler Ryan</div>
+            </div>
+            <div class="art-item">
+                <img src="9) Of Cats and a Rat/NyankoSewers.png" alt="Nyanko Sewers">
+                <div class="art-caption">"Nyanko Sewer Inspiration" <br> Art [Modified] by <a href="https://www.instagram.com/p/BnGpcmlhtZ_" target="_blank">ferts.art</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
