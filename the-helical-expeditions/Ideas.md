@@ -30,3 +30,11 @@ Crossed Bones:
 	- Turn to pick it up
 - Skelemaster of a Knight leads them to a battlefield, ghostly visage of a lamp in its hand (to indicate that perhaps)
 - Skelemen have been seen walking to the remembrance cite as night and are seen as a bad omen for the ceremony.
+
+Sunken Crown:
+- Batangis Reef 
+- Neriedian gang 
+- Sunken Crown one-shot wonders
+- Rebreathers
+- Sentient alien reef?
+- Neriedian Helical Researcher
