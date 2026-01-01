@@ -246,6 +246,15 @@
         /* Mini Content Box */
         .mini-content-box {
             overflow: hidden;
+            border-left: 4px solid var(--break-light-blue);
+        }
+
+        .mini-content-box.pink-border {
+            border-left-color: var(--break-pink);
+        }
+
+        .mini-content-box.purple-border {
+            border-left-color: var(--break-purple);
         }
 
         .mini-content-box .mini-header {
@@ -255,15 +264,17 @@
             font-size: 9pt;
             padding: 2px 6px;
             text-transform: uppercase;
-            text-align: center;
+            text-align: left;
         }
 
         .mini-content-box .mini-header.dark {
             background: #5a8fa8;
+            text-align: left;
         }
 
         .mini-content-box .mini-header.pink {
             background: var(--break-pink);
+            text-align: left;
         }
 
         .mini-content-box .mini-body {
@@ -360,6 +371,7 @@
             padding: 1px 4px;
             margin-bottom: 2px;
             text-transform: uppercase;
+            text-align: left;
         }
 
         .mini-loc-card .loc-read {
