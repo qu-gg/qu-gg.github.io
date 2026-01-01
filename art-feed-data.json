@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-01T00:04:44.359713Z",
+  "lastUpdated": "2026-01-01T12:01:53.122503Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -28,6 +28,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mbdnhvazj22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "zedecksiew.bsky.social",
+        "displayName": "Zedeck Siew",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74@jpeg"
+      },
+      "record": {
+        "text": "Came across this piece of advice I saved for myself, on world-building.\n\nDo you build a world like you build a doll's house? Or do you build a world at a person's size, for people to live in?\n\nFrom Le Guin.\n\n\"... the pattern is incomplete ... Let the heart complete the pattern.\"",
+        "createdAt": "2026-01-01T05:28:09.247Z"
+      },
+      "indexedAt": "2026-01-01T05:28:19.033Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 43,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
+            "alt": "\u201cPandora doesn\u2019t want to look into the big end of the telescope and see, jewel-bright, distinct, tiny, and entire, the Valley. She shuts her eyes, she doesn\u2019t want to see, she knows what she will see: Everything Under Control. The dolls\u2019 house. The dolls\u2019 country.\n\nPandora rushes out of the observatory with her eyes shut, grabbing, grabbing with her hands.\n\nWhat does she get, besides cut hands? Bits, chunks, fragments. Shards. Pieces of the Valley, lifesize. Not at a distance, but in the hand, to be felt and held and heard. Not intellectual, but mental. Not spiritual, but heavy. A piece of madrone wood, a piece of obsidian. A piece of blue clay. Even if the bowl is broken (and the bowl is broken), from the clay and the making and the firing and the pattern, even if the pattern is incomplete (and the pattern is incomplete), let the mind draw its energy. Let the heart complete the pattern.\u201d\n\nFrom Ursula K Le Guin\u2019s \u201cAlways Coming Home\u201d, a collection of anthropological texts about a community that does not yet exist, \u201cin the valleys of what will no longer be called Northern California\u201d."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mbcglszjt223",
       "source": "bluesky",
       "author": {
@@ -42,7 +74,7 @@
       "indexedAt": "2025-12-31T17:52:26.631Z",
       "replyCount": 1,
       "repostCount": 9,
-      "likeCount": 47,
+      "likeCount": 50,
       "embed": {
         "type": "images",
         "images": [
@@ -70,7 +102,7 @@
       "indexedAt": "2025-12-31T16:01:07.031Z",
       "replyCount": 3,
       "repostCount": 9,
-      "likeCount": 50,
+      "likeCount": 54,
       "embed": {
         "type": "images",
         "images": [
@@ -101,7 +133,7 @@
       },
       "indexedAt": "2025-12-31T14:45:47.132Z",
       "replyCount": 0,
-      "repostCount": 6,
+      "repostCount": 7,
       "likeCount": 25,
       "embed": {
         "type": "external",
@@ -131,7 +163,7 @@
       "indexedAt": "2025-12-31T14:12:27.437Z",
       "replyCount": 4,
       "repostCount": 13,
-      "likeCount": 73,
+      "likeCount": 74,
       "embed": {
         "type": "images",
         "images": [
@@ -163,7 +195,7 @@
       "indexedAt": "2025-12-31T01:48:50.429Z",
       "replyCount": 9,
       "repostCount": 37,
-      "likeCount": 224,
+      "likeCount": 226,
       "embed": {
         "type": "images",
         "images": [
@@ -194,8 +226,8 @@
       },
       "indexedAt": "2025-12-30T20:09:06.532Z",
       "replyCount": 6,
-      "repostCount": 34,
-      "likeCount": 57,
+      "repostCount": 35,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -443,8 +475,8 @@
       },
       "indexedAt": "2025-12-28T22:24:03.028Z",
       "replyCount": 2,
-      "repostCount": 141,
-      "likeCount": 320,
+      "repostCount": 144,
+      "likeCount": 327,
       "embed": {
         "type": "images",
         "images": [
@@ -481,7 +513,7 @@
       "indexedAt": "2025-12-28T02:57:19.333Z",
       "replyCount": 3,
       "repostCount": 43,
-      "likeCount": 95,
+      "likeCount": 96,
       "embed": {
         "type": "images",
         "images": [
@@ -606,7 +638,7 @@
       "indexedAt": "2025-12-26T14:27:05.748Z",
       "replyCount": 2,
       "repostCount": 34,
-      "likeCount": 198,
+      "likeCount": 199,
       "embed": {
         "type": "images",
         "images": [
@@ -638,7 +670,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 35,
       "repostCount": 1151,
-      "likeCount": 6181,
+      "likeCount": 6183,
       "embed": {
         "type": "images",
         "images": [
@@ -1532,7 +1564,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1938,
-      "likeCount": 8380,
+      "likeCount": 8381,
       "embed": {
         "type": "images",
         "images": [
@@ -1721,8 +1753,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2323,
-      "likeCount": 11789,
+      "repostCount": 2322,
+      "likeCount": 11788,
       "embed": {
         "type": "images",
         "images": [
@@ -1781,8 +1813,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 718,
-      "likeCount": 3285,
+      "repostCount": 717,
+      "likeCount": 3284,
       "embed": {
         "type": "images",
         "images": [
@@ -1809,8 +1841,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
-      "repostCount": 544,
-      "likeCount": 3015,
+      "repostCount": 543,
+      "likeCount": 3014,
       "embed": {
         "type": "images",
         "images": [
@@ -1921,8 +1953,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1880,
-      "likeCount": 8968,
+      "repostCount": 1879,
+      "likeCount": 8966,
       "embed": {
         "type": "images",
         "images": [
@@ -1977,8 +2009,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2621,
-      "likeCount": 15424,
+      "repostCount": 2620,
+      "likeCount": 15422,
       "embed": {
         "type": "images",
         "images": [
