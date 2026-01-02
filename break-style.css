@@ -508,9 +508,15 @@
     align-items: center;
 }
 
+.cover-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
 .btn-compiler {
     display: inline-block;
-    margin-top: 0.75rem;
     padding: 0.4rem 0.9rem;
     background: linear-gradient(135deg, #6b3fa0, #e83a7a);
     color: white;
@@ -524,6 +530,28 @@
 .btn-compiler:hover {
     transform: translateY(-1px);
     box-shadow: 0 3px 10px rgba(232, 58, 122, 0.3);
+}
+
+.btn-rss {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #f26522;
+    color: white;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-rss:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(242, 101, 34, 0.4);
+}
+
+.btn-rss svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Coming Soon Post */

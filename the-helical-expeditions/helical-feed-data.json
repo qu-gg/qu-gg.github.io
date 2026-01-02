@@ -1,0 +1,91 @@
+{
+  "feed": {
+    "title": "The Helical Expeditions - BREAK!! Adventures",
+    "description": "WIP booklet of 3-4 page adventures for the BREAK!! TTRPG, set across the Outer World's locations. New adventures published as they are completed.",
+    "link": "http://its.quagg.studio/the-helical-expeditions/",
+    "language": "en-us",
+    "author": "Quagg Studio"
+  },
+  "adventures": [
+    {
+      "file": "1-fishy-business.html",
+      "title": "Deal with a Sea Witch",
+      "region": "The Twilight Meridian",
+      "sublocation": "Sunken Isles",
+      "location": "Dia, Beneath the Waves",
+      "rank": "7-8",
+      "description": "Dive into the depths of the Sunken Isles where an ancient sea witch holds court. Navigate treacherous underwater ruins and negotiate with creatures of the deep.",
+      "publishDate": "2025-12-18"
+    },
+    {
+      "file": "2-danger-for-a-rokko-do.html",
+      "title": "Danger for a Rokko-Do",
+      "region": "The Twilight Meridian",
+      "sublocation": "Seven Holy Isles",
+      "location": "Winding Pass",
+      "rank": "2-3",
+      "description": "A beloved rokko-do (a gentle beast of burden) has gone missing in the treacherous Winding Pass. Can you brave the dangers to rescue it?",
+      "publishDate": "2025-12-20"
+    },
+    {
+      "file": "3-thunda-circuit.html",
+      "title": "Thunda Circuit",
+      "region": "Blazing Garden",
+      "sublocation": "Thunda Sands",
+      "location": "Deadstone",
+      "rank": "3-4",
+      "description": "Race through the scorching Thunda Sands in this high-octane adventure featuring mechanical beasts and desert outlaws.",
+      "publishDate": "2025-12-22"
+    },
+    {
+      "file": "4-crash-landing.html",
+      "title": "Crash Landing!",
+      "region": "Blazing Garden",
+      "sublocation": "No-Folk Land",
+      "location": "Death Valley",
+      "rank": "5-6",
+      "description": "A vessel has crashed in the monster-infested Death Valley. Rescue the survivors before the colossal creatures of No-Folk Land claim them.",
+      "publishDate": "2025-12-23"
+    },
+    {
+      "file": "5-sinking-float-stone.html",
+      "title": "Sinking the Float Stone Mine",
+      "region": "The Twilight Meridian",
+      "sublocation": "Seven Holy Isles",
+      "location": "Go Isle's Float Stone Mine",
+      "rank": "5-6",
+      "description": "Investigate strange happenings at a float stone mine. Something sinister lurks in the depths, threatening to bring the whole operation crashing down.",
+      "publishDate": "2025-12-25"
+    },
+    {
+      "file": "6-hold-the-wall.html",
+      "title": "Hold the Wall",
+      "region": "Wistful Dark",
+      "sublocation": "Aiden",
+      "location": "The Red Wall",
+      "rank": "8-9",
+      "description": "Stand with the defenders of Aiden against the Hollow Queen's relentless forces. A desperate battle on the ancient Red Wall that divides civilization from darkness.",
+      "publishDate": "2025-12-27"
+    },
+    {
+      "file": "8-pricklys-situation.html",
+      "title": "Prickly's Prickly Situation",
+      "region": "Blazing Garden",
+      "sublocation": "Thunda Sands",
+      "location": "Cereus Plateau",
+      "rank": "1-2",
+      "description": "A perfect starter adventure! Help a friendly cactus creature deal with some unexpected trouble on the Cereus Plateau.",
+      "publishDate": "2025-12-29"
+    },
+    {
+      "file": "9-of-cats-and-a-rat.html",
+      "title": "Of Cats and a Rat",
+      "region": "Blazing Garden",
+      "sublocation": "Pride Coast",
+      "location": "Nyanko",
+      "rank": "3-4",
+      "description": "In the orderly streets of Nyanko, home of the Rai-Neko, a cunning rat has upset the delicate balance. Unravel the mystery in this feline-themed urban adventure.",
+      "publishDate": "2025-12-31"
+    }
+  ]
+}
