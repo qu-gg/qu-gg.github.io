@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-01T12:01:53.122503Z",
+  "lastUpdated": "2026-01-02T00:03:49.194191Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -28,6 +28,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:c45er5gruigwp3yqcptz6hv4/app.bsky.feed.post/3mbe7eld4522t",
+      "source": "bluesky",
+      "author": {
+        "handle": "idlecartulary.itch.io",
+        "displayName": "Idle Cartulary",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i@jpeg"
+      },
+      "record": {
+        "text": "Two silly big posts today, the first being the Idle Digest for December of 2025, featuring a recap of Critique Navidad for those who couldn\u2019t follow it closely: open.substack.com/pub/idlecart...",
+        "createdAt": "2026-01-01T10:48:25.596Z"
+      },
+      "indexedAt": "2026-01-01T10:48:26.834Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 24,
+      "embed": {
+        "type": "external",
+        "uri": "https://open.substack.com/pub/idlecartulary/p/the-idle-digest-14?r=11843d&utm_medium=ios&shareImageVariant=overlay",
+        "title": "The Idle Digest #14",
+        "description": "Idle Cartulary's Digest for December 2025",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mbdnhvazj22f",
       "source": "bluesky",
       "author": {
@@ -41,8 +70,8 @@
       },
       "indexedAt": "2026-01-01T05:28:19.033Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 43,
+      "repostCount": 9,
+      "likeCount": 54,
       "embed": {
         "type": "images",
         "images": [
@@ -50,6 +79,38 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
             "alt": "\u201cPandora doesn\u2019t want to look into the big end of the telescope and see, jewel-bright, distinct, tiny, and entire, the Valley. She shuts her eyes, she doesn\u2019t want to see, she knows what she will see: Everything Under Control. The dolls\u2019 house. The dolls\u2019 country.\n\nPandora rushes out of the observatory with her eyes shut, grabbing, grabbing with her hands.\n\nWhat does she get, besides cut hands? Bits, chunks, fragments. Shards. Pieces of the Valley, lifesize. Not at a distance, but in the hand, to be felt and held and heard. Not intellectual, but mental. Not spiritual, but heavy. A piece of madrone wood, a piece of obsidian. A piece of blue clay. Even if the bowl is broken (and the bowl is broken), from the clay and the making and the firing and the pattern, even if the pattern is incomplete (and the pattern is incomplete), let the mind draw its energy. Let the heart complete the pattern.\u201d\n\nFrom Ursula K Le Guin\u2019s \u201cAlways Coming Home\u201d, a collection of anthropological texts about a community that does not yet exist, \u201cin the valleys of what will no longer be called Northern California\u201d."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3mbd3gd2i622k",
+      "source": "bluesky",
+      "author": {
+        "handle": "letitmelo.bsky.social",
+        "displayName": "Melo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreihg6bsstf46gjxierqvfg2ph43zt6y45f4qavct5dwk446rzqkuzu@jpeg"
+      },
+      "record": {
+        "text": "2025 threw a wrench in a lot of my art goals, but I still put out some comics and covers and shitpost art.",
+        "createdAt": "2026-01-01T00:05:09.288Z"
+      },
+      "indexedAt": "2026-01-01T00:05:12.330Z",
+      "replyCount": 1,
+      "repostCount": 14,
+      "likeCount": 62,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreif5rdhch4vkzchwoz6u4imri5c6d3hwzb7hsieafehdnbkjf44nbq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreif5rdhch4vkzchwoz6u4imri5c6d3hwzb7hsieafehdnbkjf44nbq@jpeg",
+            "alt": ""
           }
         ]
       },
@@ -73,8 +134,8 @@
       },
       "indexedAt": "2025-12-31T17:52:26.631Z",
       "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 50,
+      "repostCount": 11,
+      "likeCount": 61,
       "embed": {
         "type": "images",
         "images": [
@@ -102,7 +163,7 @@
       "indexedAt": "2025-12-31T16:01:07.031Z",
       "replyCount": 3,
       "repostCount": 9,
-      "likeCount": 54,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -134,7 +195,7 @@
       "indexedAt": "2025-12-31T14:45:47.132Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 25,
+      "likeCount": 26,
       "embed": {
         "type": "external",
         "uri": "https://www.hismajestytheworm.games/",
@@ -163,7 +224,7 @@
       "indexedAt": "2025-12-31T14:12:27.437Z",
       "replyCount": 4,
       "repostCount": 13,
-      "likeCount": 74,
+      "likeCount": 75,
       "embed": {
         "type": "images",
         "images": [
@@ -195,7 +256,7 @@
       "indexedAt": "2025-12-31T01:48:50.429Z",
       "replyCount": 9,
       "repostCount": 37,
-      "likeCount": 226,
+      "likeCount": 229,
       "embed": {
         "type": "images",
         "images": [
@@ -287,8 +348,8 @@
       },
       "indexedAt": "2025-12-30T12:56:00.740Z",
       "replyCount": 3,
-      "repostCount": 19,
-      "likeCount": 138,
+      "repostCount": 20,
+      "likeCount": 140,
       "embed": {
         "type": "images",
         "images": [
@@ -475,8 +536,8 @@
       },
       "indexedAt": "2025-12-28T22:24:03.028Z",
       "replyCount": 2,
-      "repostCount": 144,
-      "likeCount": 327,
+      "repostCount": 145,
+      "likeCount": 328,
       "embed": {
         "type": "images",
         "images": [
@@ -574,7 +635,7 @@
       "indexedAt": "2025-12-26T16:44:29.132Z",
       "replyCount": 2,
       "repostCount": 46,
-      "likeCount": 195,
+      "likeCount": 196,
       "embed": {
         "type": "images",
         "images": [
@@ -638,7 +699,7 @@
       "indexedAt": "2025-12-26T14:27:05.748Z",
       "replyCount": 2,
       "repostCount": 34,
-      "likeCount": 199,
+      "likeCount": 200,
       "embed": {
         "type": "images",
         "images": [
@@ -670,7 +731,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 35,
       "repostCount": 1151,
-      "likeCount": 6183,
+      "likeCount": 6185,
       "embed": {
         "type": "images",
         "images": [
@@ -745,75 +806,6 @@
       }
     },
     {
-      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3maqwmzvnrk2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "friendricestudios.bsky.social",
-        "displayName": "Friend Rice Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi@jpeg"
-      },
-      "record": {
-        "text": "IT'S OUR BOOTH AT VGX!\n\nThese photos look so much nicer\n\nIt's been quiet around here, but we're still working through some kinks in the demo and visual upgrades, but here's hoping for news in the new year!",
-        "createdAt": "2025-12-24T18:51:30.612Z"
-      },
-      "indexedAt": "2025-12-24T18:51:36.237Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 1,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiccgai3bw34k6nvgr4dbwsom4bdr23pp722ud6huwhbsx4iriezba@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiccgai3bw34k6nvgr4dbwsom4bdr23pp722ud6huwhbsx4iriezba@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreica3tuwdlnbwhey56od3gyxc22mcvfynycle5qs54gx2q2w6rjuuu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreica3tuwdlnbwhey56od3gyxc22mcvfynycle5qs54gx2q2w6rjuuu@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:guvpvflztxolufrakhsyrug2/app.bsky.feed.post/3maqn4tcr3223",
-      "source": "bluesky",
-      "author": {
-        "handle": "thomasnoppers.com",
-        "displayName": "Noppy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:guvpvflztxolufrakhsyrug2/bafkreibh6uzsblsmapfyd6tm5psc2f5rekcloo6uzhqyztmunovsnvddqe@jpeg"
-      },
-      "record": {
-        "text": "If you are feeling low or lonely today say 'Hi' and I'll draw you a little guy waving Hi back at you. A new friend.",
-        "createdAt": "2025-12-24T16:01:23.155Z"
-      },
-      "indexedAt": "2025-12-24T16:01:26.638Z",
-      "replyCount": 10,
-      "repostCount": 22,
-      "likeCount": 77,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:guvpvflztxolufrakhsyrug2/bafkreihiqumug3ks4ymputasa55o4xm6dggddupewpryphw5aoc5s3cisa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:guvpvflztxolufrakhsyrug2/bafkreihiqumug3ks4ymputasa55o4xm6dggddupewpryphw5aoc5s3cisa@jpeg",
-            "alt": "a little robo guy waving at you. he looks friendly. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3maoqjtcxks2w",
       "source": "bluesky",
       "author": {
@@ -855,8 +847,8 @@
       },
       "indexedAt": "2025-12-23T13:50:56.230Z",
       "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 11,
+      "repostCount": 8,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://wayspell.blogspot.com/2025/12/hmtw-grumpus-blogwagon-holiday-special.html",
@@ -1144,7 +1136,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 610,
-      "likeCount": 2689,
+      "likeCount": 2690,
       "embed": {
         "type": "images",
         "images": [
@@ -1226,7 +1218,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 394,
-      "likeCount": 1665,
+      "likeCount": 1666,
       "embed": {
         "type": "images",
         "images": [
@@ -1564,7 +1556,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1938,
-      "likeCount": 8381,
+      "likeCount": 8382,
       "embed": {
         "type": "images",
         "images": [
@@ -1754,7 +1746,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2322,
-      "likeCount": 11788,
+      "likeCount": 11790,
       "embed": {
         "type": "images",
         "images": [
@@ -2010,7 +2002,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2620,
-      "likeCount": 15422,
+      "likeCount": 15424,
       "embed": {
         "type": "images",
         "images": [
