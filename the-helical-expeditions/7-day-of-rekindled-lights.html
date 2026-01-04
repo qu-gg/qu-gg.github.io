@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of Rekindled Lights - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Shadowed Lands Tundra & Lantern Theme Palette */
+            --lantern-gold: #D4A84B;
+            --lantern-gold-text: #B8923A;
+            --lantern-glow: #E8C97A;
+            --frost-tundra: #8BA4B4;
+            --slate-shadow: #3D4A5C;
+            --deep-night: #1E2530;
+            --bone-pale: #C9C0B0;
+            --grave-moss: #6B7F6B;
+            --purple-dusk: #5A4A6A;
+            --cream-pale: #F0EDE6;
+            --pearl-white: #FEFEFE;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--cream-pale);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--cream-pale);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--lantern-gold), var(--frost-tundra), var(--lantern-glow), var(--frost-tundra), var(--lantern-gold));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--deep-night);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--lantern-gold);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--lantern-gold);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            color: var(--lantern-glow);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--lantern-gold);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--slate-shadow);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--frost-tundra);
+            border-left: 4px solid var(--frost-tundra);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--slate-shadow);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--lantern-gold);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--slate-shadow);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--deep-night);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(212, 168, 75, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--frost-tundra);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-header.stacked {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .character-header.stacked .character-details {
+            font-size: 8pt;
+            margin-top: 1px;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--lantern-gold-text);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--slate-shadow);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--grave-moss);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--deep-night);
+            border-color: var(--deep-night);
+            border-left: 4px solid var(--lantern-gold);
+        }
+
+        .story-steps h2 {
+            background: var(--lantern-gold);
+            color: var(--deep-night);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--lantern-glow);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--lantern-gold);
+            color: var(--deep-night);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-top: 7.5px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--frost-tundra);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-section li ul {
+            margin-top: 3px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--lantern-gold);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(61, 74, 92, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(212, 168, 75, 0.12);
+            border-left: 3px solid var(--lantern-gold);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--deep-night);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--lantern-gold);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--slate-shadow);
+        }
+
+        .sources-box a {
+            color: var(--frost-tundra);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--frost-tundra);
+            border-left: 4px solid var(--frost-tundra);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--deep-night);
+            color: var(--lantern-glow);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--lantern-gold);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--slate-shadow);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--grave-moss);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--lantern-gold);
+            border-left: 4px solid var(--lantern-gold);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--deep-night);
+            background: var(--lantern-gold);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--slate-shadow);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            max-height: 5in;
+            justify-content: center;
+            background: var(--deep-night);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank/Sources side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--deep-night);
+            border-left: 4px solid var(--deep-night);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--deep-night);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--lantern-gold);
+            border-left: 4px solid var(--lantern-gold);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--deep-night);
+            background: var(--lantern-gold);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .rank-adjustments {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--lantern-gold);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--deep-night);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        /* Item Block Style */
+        .item-block {
+            background: rgba(212, 168, 75, 0.15);
+            border: 2px dotted var(--slate-shadow);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--lantern-gold-text);
+        }
+
+        .item-block .item-type {
+            color: var(--slate-shadow);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--frost-tundra);
+            font-weight: bold;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--slate-shadow);
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--deep-night);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--lantern-gold), var(--frost-tundra), var(--lantern-gold));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--lantern-glow);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--lantern-gold);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--slate-shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--lantern-glow);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Day of Rekindled Lights</h1>
+            <div class="subtitle">Grim Crossing • Shadowed Lands • Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">☽</span> Spooky</div>
+            <div class="theme-item"><span class="emoji">◉</span> Investigation</div>
+            <div class="theme-item"><span class="emoji">☠</span> Haunted Graveyard</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description & Starting -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>On the night before a remembrance ceremony for the Knights of the Lantern, the party find that one fallen Knight is no longer resting in peace. They must work with a local priest to help the Knight's soul find rest before the ceremony, but not all is as holy as it seems for the clergy in town.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"In the chilly and haunted tundra of the Shadowed Lands, you finally arrive at Grim Crossing. It is a desperate little Sun Shard haven built on the region's main intersection, and acts as a base of operations for the Knights of the Lantern, a chivalric order that protects the roads. On the morrow, you plan to attend the Day of Rekindled Lights, a remembrance ceremony for fallen Knights. But for now, the bitter winds whip loudly at your cloaks as you attempt to locate an inn amongst a handful of bleak buildings."</p>
+                    <p style="margin-top: 6px;">The lantern graveyard the party are due to visit is being haunted by the skeletal remains of Sir Gerard Laughs-a-Lot, alongside the echoes of other fallen soldiers. Note that while Sir Gerard has the stats of a Skele-Master, he cannot speak like others can but still tries to help the party find the lanterns. <br><br>While the Knights and Priest Lieza disagree on principles of belief, they have a good relationship and trust her advice on matters of spirits and undead. As such, the potential reveal that she caused this will be hard-hitting for the Knights.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Dame Mico</span>
+                            <span class="character-details">— Human, Female, 25 (Custrel)</span>
+                        </div>
+                        <div class="character-desc">A younger Knight of the Lantern, Dame Mico is also the current caretaker of retrieved lanterns for the remembrance day.</div>
+                        <div class="character-quote">"Donning the standard attire of a Lantern Knight - silvery metals housing yellow cloth - Dame Mico whips around in a panic looking for any aid."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Priest Lieza</span>
+                            <span class="character-details">— Human, Female, 46 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">Priest of the Church of the Sacred Chain, she has come to Grim Crossing in an attempt to convert the populace, and has gotten desperate as attempts continue to fail.</div>
+                        <div class="character-quote">"She wraps her flowing vestments around her like a cloak, her shiver seeming to come from more than the mere cold."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header stacked">
+                            <span class="character-name">Sir Gerard Laughs-a-Lot</span>
+                            <span class="character-details">Undead, Male, ??? (Skele-Master)</span>
+                        </div>
+                        <div class="character-desc">A fallen Knight of the Lantern, who used to guide the way for those in need. His lantern has been lost for an Aeon but, even now in undeath, he continues to aid the lost and the fallen.</div>
+                        <div class="character-quote">"Demonic scratches riddle the rider's back, making his cause of death clear. He and his Skeletal Rokko-Do wear frost-covered, metal armor bearing the Lantern's symbol."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="7) Day of Rekindled Lights/Pasted image 20260103204904.png" alt="Day of Rekindled Lights Inspiration">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, describe Grim Crossing's inn, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Undead Visitor</span>
+                        <ul>
+                            <li>Dame Mico staggers into the inn, shakily reporting that the undead have returned, cursing about the "lost lanterns causing this". She looks at the party, asking them to seek out the local priest who has been helping the Knights while she looks more.</li>
+                            <li>The church is pointed out and the party meet <em>Priest Lieza</em>. She explains her efforts so far, and gives them Bright Water to use against the undead. She has applied it twice already but claims she was wounded by the undead last time so she cannot go herself for the last application.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">The Spicy Dead</span>
+                        <ul>
+                            <li>At the Lantern Fields, the party see the undead Knight riding a Skeletal Rokko-Do. The rider is <em>Sir Gerard Laughs-a-Lot</em>, who attempts to lead the party to where the recovered lanterns are traditionally held. If attacked, he will not strike back.</li>
+                            <li>The storage is completely empty despite disturbed ground. While there, the party are attacked by 2 Ghost Peppers, which are immune to Mundane Damage unless Bright Water is used.</li>
+                            <li>Nearby, the party find clues linking the stolen lanterns to Lieza.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Clergy's Shadows</span>
+                        <ul>
+                            <li>When confronted, Lieza will confess to having buried the lanterns but try to deflect guilt as much as possible. She gives the burial location nearby but begs the party not to tell anyone.</li>
+                            <li>At the hiding spot, the party must dig a hole, break through roots, and pick up the lanterns. As the party starts to dig, four Malignant Echoes of these missing lanterns' owners rise and attack. Each step takes an Action (for a full Turn) to complete.</li>
+                            <li>With the lanterns retrieved, the disturbances cease. Sir Gerard reappears and blesses the party with his sword before striding off. The Knights profusely thank the party. The ceremony goes ahead as planned, and Lieza's fate is left up to the party.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Grim Crossing</h3>
+                    <p class="loc-desc">"Hope is a hard thing to muster in the Shadowed Lands but it seems to have clustered here with these hardy folks."</p>
+                    <p>A small Shard haven set on an ancient battleground of experimental weapons, Grim Crossing sits on the main intersection of the Shadowed Lands. Given its location and traffic, it has become a large base of operations for the Knights of the Lantern.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Sacred Chain Church</h3>
+                    <p class="loc-desc">"Even amongst the bleak houses of Grim Crossing, this desolate church sticks out as particularly depressed."</p>
+                    <p>Without much funding from the Church in Shard, Lieza has had to "make do" in setting up her place of worship here. <br><br>Some hand-me-down iconography and texts are all that is to be found here.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Lantern Fields</h3>
+                    <p class="loc-desc">"Despite the intent of remembrance, <br>the ambiance of dozens of rusty lantern weapons overflowing a frozen battle-scarred field is rather disconcerting."</p>
+                    <p>The Day of Rekindled Lights has been a long-standing tradition, and over the Aeon has, unfortunately, accumulated many, many lanterns. In the center, Sir Gerard waits impassively upon his steed.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>The battlefield upon which Grim Crossing sits was the site of a wicked confrontation between Akenia and Calian, where each used experimental weapons in a show of force, eternally scarring the land.</li>
+                    <li>Priest Lieza has been trying to convert folks here to the Sacred Chain, though has had a hard time as people look to the Knights of the Lantern for realizable hope instead.</li>
+                    <li>She buried the lanterns in a desperate attempt to ruin the ceremony and discourage people, showing the Knights of the Lanterns failing. She hoped it would "encourage" people to accept the Knights of the Sacred Chain here instead.</li>
+                    <li>She didn't know that burying the lanterns would cause Sir Gerard to appear, but plans to leverage solving it as a means to convince people of her faith.</li>
+                    <li>The method she employs to tackle this undead is destructive, severing its connection, rather than putting the soul to rest.</li>
+                    <li>Priest Lieza's wound doesn't seem to align with her story - it isn't a slashing wound but rather a burning injury.</li>
+                    <li>Clues at the storage site linking the stolen weapons back to Lieza: 1) ripped cloth fabric matches Sacred Chain colors, 2) Sir Gerard's sword is clean, and 3) some lingering Bright Water in this area seemingly attracts angry Ghost Peppers.</li>
+                    <li>The Day of Rekindled Lights serves another purpose besides remembrance. The "light" a fallen Knight leaves behind is a tangible thing, and is used to reinforce wards on the roads.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103014213.jpg" alt="Dame Mico Inspiration">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>Upon retrieving the lanterns and defeating the Malignant Echoes, Sir Gerard will appear and offer his Lantern Sword on one knee. Upon returning the lanterns to the town, the Knights of the Lantern will gift the party <strong>100C</strong> and a <strong>Unit of Sun Gold</strong> they haven't been able to put to use.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Lieza's Fate</h3>
+                        <p>What becomes of Priest Lieza is left to the party's discretion. They may report her actions to the Knights, keep her secret for a price, or negotiate a form of atonement.</p>
+                    </div>
+                </div>
+                <!-- Gerard's Lantern Sword Item Block -->
+                <div class="item-block">
+                    <div><span class="item-name">Gerard's Lantern Sword</span> <span class="item-type">[Master Weapon + Utility]</span></div>
+                    <div class="item-desc"><em>Gerard's blade was known throughout the Shadowed Lands as a beacon any could follow and feel not only safe, but hopeful. A lantern sits embedded in its crossguard.</em><br>Made of Sun Gold and deals Bright Damage. As an Action, the sword <br>can light up as if using the Sage's Magelight Ability [Source, pg. 59].</div>
+                    <div class="item-stats">2 Slots · 75C</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank + Sources -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 1-2 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Consider replacing the Ghost Peppers with some Mooks.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Add more Malignant Echoes, or swap them for <br>Skele-Masters.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>PC Starting Coin:</strong> 200C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Storybeats inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Crossed Bones</strong></a> by One-Shot Wonders.</p>
+                    <ul>
+                        <li><strong>Skele-Master:</strong> Source, pg. 406</li>
+                        <li><strong>Ghost Peppers</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Malignant Echoes</strong> by Atyai (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103204904.png" alt="Day of Rekindled Lights Inspiration">
+                <div class="art-caption">"Day of Rekindled Lights Inspiration" <br> Art by <a href="https://ann_maulina.artstation.com/albums/817972" target="_blank">Ann Maulina</a></div>
+            </div>
+            <div class="art-item">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103014213.jpg" alt="Dame Mico Inspiration">
+                <div class="art-caption">"Dame Mico Inspiration" <br> Art by <a href="https://www.gallerynucleus.com/detail/19278/?page=5" target="_blank">Sam Bosma</a></div>
+            </div>
+            <div class="art-item">
+                <img src="7) Day of Rekindled Lights/Pasted image 20251227152136.jpg" alt="Shadowed Lands Inspiration" style="object-position: 20% 50%;">
+                <div class="art-caption">"Shadowed Lands Inspiration" <br> Art by <a href="https://avatar.fandom.com/wiki/Fanon:Chapter_1:_Soulmates_(The_Prodigy)" target="_blank">Legend of Korra</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103135022.png" alt="Field of Knight's Weapons" style="object-fit: contain; background: #2a3040;">
+                <div class="art-caption">"Field of Knight's Weapons" <br> Art by <a href="https://www.artstation.com/artwork/58zOvW" target="_blank">A. Shipwright</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103201141.png" alt="Knight of the Lantern">
+                <div class="art-caption">"Knight of the Lantern" <br> Art by Unknown</div>
+            </div>
+            <div class="art-item">
+                <img src="7) Day of Rekindled Lights/Pasted image 20260103203850.jpg" alt="Ghost Pepper Inspiration" style="object-position: 80% 50%;">
+                <div class="art-caption">"Ghost Pepper Inspiration" <br> Art by <a href="https://x.com/A_Zedig_Diboine/status/16555854257743339540" target="_blank">Alexandre Diboine</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
