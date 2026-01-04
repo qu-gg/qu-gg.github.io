@@ -729,9 +729,70 @@
             z-index: 2;
         }
 
-        .map-marker.m1 { top: 85%; left: 45%; }
+        .time-badge {
+            position: absolute;
+            background: var(--pearl-white);
+            border: 2px solid var(--arctic-deep);
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--arctic-deep);
+            z-index: 3;
+            white-space: nowrap;
+        }
+
+        .map-legend {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 2px solid var(--arctic-deep);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 8pt;
+            z-index: 5;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 2px 0;
+        }
+
+        .legend-item svg {
+            flex-shrink: 0;
+            width: 24px;
+        }
+
+        .legend-item span {
+            color: var(--arctic-deep);
+            font-family: var(--font-body);
+        }
+
+        .map-marker.m1 { top: 87%; left: 45%; }
         .map-marker.m2 { top: 60%; left: 55%; }
         .map-marker.m3 { top: 50%; right: 20%; }
+
+        .camp-marker {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: var(--pearl-white);
+            border: 2px solid var(--soft-crimson);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            z-index: 2;
+        }
+
+        .camp-marker.c12 { top: 71%; left: 50%; }
+        .camp-marker.c23 { top: 53%; left: 64%; }
 
         .site-content-columns {
             display: grid;
@@ -1270,11 +1331,29 @@
             <img src="2) Danger for a Rokko-Do/Danger for a Rokko-Do - Journey Map.jpg" alt="Winding Pass Map">
             <!-- Connection Lines -->
             <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <!-- Line 1↔2 -->
-                <line class="map-line" x1="46.5" y1="88" x2="57.5" y2="62" />
-                <!-- Line 2↔3 -->
-                <line class="map-line" x1="57.5" y1="63" x2="80" y2="52" />
+                <!-- Line 1↔2 (Trailblazing - wavy) -->
+                <path class="map-line" d="M46.5,88 Q44,82 49,79 Q54,76 51,72 50,68 53,65 Q58,62 57.5,62" />
+                <!-- Line 2↔3 (Trailblazing - wavy): Start(57.5,63) → Camp(62,57) → End(80,52) -->
+                <path class="map-line" d="M57.5,63 Q59,60 62,57 Q65,54 68,55 Q71,56 74,54 Q77,52 80,52" />
             </svg>
+            <!-- Map Legend -->
+            <div class="map-legend">
+                <div class="legend-item">
+                    <svg width="24" height="8" viewBox="0 0 24 8"><path d="M0,4 Q6,0 12,4 T24,4" stroke="var(--soft-crimson)" stroke-width="2" fill="none"/></svg>
+                    <span><strong>Trailblazing</strong> [Source, pg. 244]</span>
+                </div>
+                <div class="legend-item">
+                    <svg width="24" height="14" viewBox="0 0 24 14"><circle cx="12" cy="7" r="6" fill="white" stroke="var(--soft-crimson)" stroke-width="2"/><text x="12" y="10" text-anchor="middle" font-size="8">⛺</text></svg>
+                    <span><strong>Camp</strong> [Source, pg. 229]</span>
+                </div>
+            </div>
+            <!-- Time Badges -->
+            <!-- <div class="time-badge" style="top: 80%; left: 52%;">1 Day</div>
+            <div class="time-badge" style="top: 65%; left: 59%;">1 Day</div>
+            <div class="time-badge" style="top: 48%; left: 67%;">1/2 Day</div> -->
+            <!-- Camp Markers -->
+            <div class="camp-marker c12">⛺</div>
+            <div class="camp-marker c23">⛺</div>
             <div class="map-marker m1">1</div>
             <div class="map-marker m2">2</div>
             <div class="map-marker m3">3</div>
@@ -1339,7 +1418,7 @@
                             <span class="location-tag trap">Trap</span>
                             <span class="location-tag encounter">Encounter</span>
                         </div>
-                        <div class="location-desc">This large lake freezes and thaws at different points of the year. Anyone attempting to cross the lake will need to keep their balance on the ice, or risk falling and suffering damage from the cold waters below (CLICK! Pit Trap). <br><br>A Polar Bear caught in one of Roh's traps can be found near the lake's edge.</div>
+                        <div class="location-desc">This large lake freezes and thaws at different points of the year. Anyone attempting to cross the lake will need to keep their balance on the ice, or risk falling and suffering damage from the cold waters below (CLICK! Pit Trap). <br><br>A Polar Bear caught in one of Roh's traps can be found near the lake's farther edge.</div>
                     </div>
                     <div class="location-entry">
                         <div class="location-header">

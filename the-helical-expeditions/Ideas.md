@@ -16,21 +16,6 @@ Foes in the Foliage:
 - Local herbalist has asked the party to protect
 - Minions of the Unshaped attempt to sabotage the tree transformation as it undermines their influence in the Outer World
 
-Crossed Bones:
-- Shadowed Lands
-- Day of Rekindled Lights - day to remember all the Knights of the Lanterns who have fallen protecting the roads and people of the Wistful Dark. Any recovered fallen lanterns are placed into a local remembrance site and are re-lit as people send sky lanterns out over the tundra.
-- Set in the village of Grimund (Grim End), a tiny sun shard haven
-	- Set on a devastating battlefield between Akenia and Calian
-	- Left the area scorched and desolate
-- Set on one of the main crossroads through the Shadowed Lands, and as such, has a high rate of Knights and recovered Lanterns passing through.
-	- The entire surrounding tundra of the town by this point are ancient armaments in the ground and set lanterns.
-- Their lanterns got left behind on the battlefield, covered by vine. 
-	- Turn to locate the lanterns
-	- Turn to undo the vines
-	- Turn to pick it up
-- Skelemaster of a Knight leads them to a battlefield, ghostly visage of a lamp in its hand (to indicate that perhaps)
-- Skelemen have been seen walking to the remembrance cite as night and are seen as a bad omen for the ceremony.
-
 Sunken Crown:
 - Batangis Reef 
 - Neriedian gang 

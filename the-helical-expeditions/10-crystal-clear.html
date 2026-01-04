@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Clear - BREAK!! Adventure</title>
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Crystalia Ice & Crystal Theme Palette */
+            --crystal-blue: #88c9d4;
+            --deep-indigo: #1a2040;
+            --mystic-violet: #7a6b9c;
+            --frost-silver: #c8d9e0;
+            --ice-white: #f0f5f8;
+            --pearl-white: #fefefe;
+            --gossamer-ice: #5a9ab0;
+            --frozen-purple: #5a4a7a;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--ice-white);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--ice-white);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--crystal-blue), var(--mystic-violet), var(--gossamer-ice), var(--mystic-violet), var(--crystal-blue));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--deep-indigo);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--crystal-blue);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--crystal-blue);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 28pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--gossamer-ice);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--frozen-purple);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--crystal-blue);
+            border-left: 4px solid var(--crystal-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--frozen-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--mystic-violet);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--frozen-purple);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--deep-indigo);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(136, 201, 212, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--crystal-blue);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--mystic-violet);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--frozen-purple);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: #4a8a9a;
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--deep-indigo);
+            border-color: var(--deep-indigo);
+            border-left: 4px solid var(--crystal-blue);
+        }
+
+        .story-steps h2 {
+            background: var(--crystal-blue);
+            color: var(--deep-indigo);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--gossamer-ice);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--crystal-blue);
+            color: var(--deep-indigo);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--mystic-violet);
+            color: var(--pearl-white);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--crystal-blue);
+            border-radius: 3px;
+            max-height: 3in;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .story-image-block.cropped-horizontal img {
+            width: 200%;
+            margin-left: -50%;
+            margin-top: -5%;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 32, 64, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(136, 201, 212, 0.12);
+            border-left: 3px solid var(--mystic-violet);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--deep-indigo);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--mystic-violet);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--frozen-purple);
+        }
+
+        .sources-box a {
+            color: var(--crystal-blue);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--crystal-blue);
+            border-left: 4px solid var(--crystal-blue);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--deep-indigo);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--mystic-violet);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--frozen-purple);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: #4a8a9a;
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--mystic-violet);
+            border-left: 4px solid var(--mystic-violet);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--mystic-violet);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--frozen-purple);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--deep-indigo);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank/Sources side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--deep-indigo);
+            border-left: 4px solid var(--deep-indigo);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--deep-indigo);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--mystic-violet);
+            border-left: 4px solid var(--mystic-violet);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--mystic-violet);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--mystic-violet);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--deep-indigo);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        /* Item Block Style */
+        .item-block {
+            background: rgba(136, 201, 212, 0.15);
+            border: 2px dotted var(--frozen-purple);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--mystic-violet);
+        }
+
+        .item-block .item-type {
+            color: var(--frozen-purple);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: #4a8a9a;
+            font-weight: bold;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--frozen-purple);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        /* When in spread mode, allow pages to sit side-by-side and avoid forced page breaks */
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--deep-indigo);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--crystal-blue);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--gossamer-ice);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            width: 100%;
+            height: 5.8in;
+            border: 3px solid var(--frozen-purple);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            background: var(--deep-indigo);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+
+        .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .map-line {
+            stroke: #fc2a4d;
+            stroke-width: 1;
+            fill: none;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--mystic-violet);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .time-badge {
+            position: absolute;
+            background: var(--pearl-white);
+            border: 2px solid var(--deep-indigo);
+            border-radius: 3px;
+            padding: 1px 4px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--deep-indigo);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            z-index: 3;
+        }
+
+        .time-badge.t12 { top: 54%; left: 60%; }
+        .time-badge.t23 { top: 36%; left: 54%; }
+        .time-badge.t24 { top: 48%; left: 49%; }
+        .time-badge.t45 { top: 36.5%; left: 36.5%; }
+
+        /* Marker positions based on user description */
+        .map-marker.m1 { top: 62%; left: 56%; }
+        .map-marker.m2 { top: 42%; left: 55%; }
+        .map-marker.m3 { top: 32%; left: 47%; }
+        .map-marker.m4 { top: 45%; left: 45%; }
+        .map-marker.m5 { top: 24%; left: 40%; }
+
+        .site-content-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        /* Location Key */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--mystic-violet);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--mystic-violet);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .location-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .location-entry {
+            font-size: 9pt;
+        }
+
+        .map-legend {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 2px solid var(--deep-indigo);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 8pt;
+            z-index: 5;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 2px 0;
+        }
+
+        .legend-item svg {
+            flex-shrink: 0;
+        }
+
+        .legend-item span {
+            color: var(--deep-indigo);
+            font-family: var(--font-body);
+        }
+
+        .legend-item a {
+            color: var(--mystic-violet);
+            text-decoration: none;
+            font-size: 7pt;
+        }
+
+        .legend-item a:hover {
+            text-decoration: underline;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--mystic-violet);
+            color: var(--pearl-white);
+            border-radius: 50%;
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--deep-indigo);
+            font-size: 10pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--crystal-blue);
+            color: var(--pearl-white);
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.trap {
+            background: var(--mystic-violet);
+        }
+
+        .location-tag.encounter {
+            background: var(--frozen-purple);
+        }
+
+        .location-tag.loot {
+            background: var(--crystal-blue);
+        }
+
+        .location-tag.hazard {
+            background: #c44a5e;
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.35;
+        }
+
+        .location-desc p {
+            margin: 0 0 3px 0;
+        }
+
+        .location-desc ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+
+        .location-desc li {
+            margin-bottom: 2px;
+            color: #4a8a9a;
+        }
+
+        .location-desc li::marker {
+            color: var(--mystic-violet);
+        }
+
+        /* ===== PAGE 4 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--deep-indigo);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--mystic-violet), var(--crystal-blue), var(--mystic-violet));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--gossamer-ice);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            border: 3px solid var(--crystal-blue);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--frozen-purple);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .art-item .art-caption a {
+            color: var(--gossamer-ice);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Crystal Clear?</h1>
+            <div class="subtitle">White Moth Opera House • Crystalia • Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">◈</span> Mysterious</div>
+            <div class="theme-item"><span class="emoji">⚐</span> Rescue</div>
+            <div class="theme-item"><span class="emoji">✧</span> Crystal Fields</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description & Starting -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>A Helical benefactor has vanished after sneaking off on an ill-advised expedition to tour Crystalia's White Moth Opera House. Contracted to track him down, the party arrives to discover ominous signs that this is no ordinary rescue.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"After no shortage of odd sea encounters and arcane disturbances, you finally reach the shores of Crystalia near the White Moth Opera House. This is the last known location of the stubborn Shard Patrician, and your Helical benefactor, Halowen Sool. You breathe a frigid sigh of relief into the glimmering air as you see signs of the landing hub set against a cliff's base ahead. But, as you approach, it's clear it has been abandoned for a while."</p>
+                    <p style="margin-top: 6px;">Halowen is a powerful Shard Patrician who has helped fund the Helical Research Archive for the better part of his long Elven life. Enthralled with "the daring unknown", he's lived vicariously through the Archive until an opportunity was presented by a local Adventuring Guild to give him a tour of The White Moth Opera House in Crystalia...for a hefty, hefty price. Despite protest by both the Archive and his cabinet, he quietly slipped away with the Guild. The Helical Archive has contracted the party, a few days later, to ensure his safety.</p>
+                    <p style="margin-top: 6px;">A few days ago, Doppelgangers killed and replaced his hired guides. They are now leading him to their nest as food for their children. Require Grit Checks (or appropriate Gear) per Day against the Cold or characters take levels of Fatigue. To add tension, add a strict time limit to this adventure, forcing the party to Rush instead of Camping if they get Lost.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Halowen Sool</span>
+                            <span class="character-details">— Elf, Male, 134 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">This wealthy diplomat wishes to tour Crystalia despite all protest.</div>
+                        <div class="character-quote">"Halowen tries to take pride in his appearance, but harsh winds have blown the auburn toupée upon his head into a scruffy mess"</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Lookout Beello</span>
+                            <span class="character-details">— Gruun, Female, 34 (Doppelganger)</span>
+                        </div>
+                        <div class="character-desc">This Doppelganger uses Lookout's influence as the lead guide to deceive and manipulate Halowen.</div>
+                        <div class="character-quote">"Most of Lookout's features are obscured by the hooded, fur-trimmed coat that keeps her warm. She stands upright with assertive confidence."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Sap Hire</span>
+                            <span class="character-details">— Dwarf, Male, 26 (Doppelganger)</span>
+                        </div>
+                        <div class="character-desc">Disguised as the younger and eager guide, this Doppelganger tries to follow all of Lookout and Halowen's requests.</div>
+                        <div class="character-quote">"Belts around this stocky dwarf's body hold satchels, climbing tools and coils of rope."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block cropped-horizontal">
+                    <img src="10) Crystal Clear/Pasted image 20260104143447.jpg" alt="Crystalian Tunnels">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene of Crystalia and the landing hub, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">A Gory Clue</span>
+                        <ul>
+                            <li>Nearby, the party finds a bloody trail leading off behind some frosted trees. Lookout's body has been scavenged by 3 Crystalline Dregs, who will attack.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Campsite to Campsite</span>
+                        <ul>
+                            <li>Footprints lead through the Prismatic Wasteland instead of to the Opera House.</li>
+                            <li>Sap's half-eaten body can be found inside a hollowed crystal.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Doppel Trouble</span>
+                        <ul>
+                            <li>Halowen and the Doppelgangers can be found in a relaxed conversation at the <em>Opera Overlook</em> campsite.</li>
+                            <li>If the party mention Halowen's safety, or the bodies they found, the Doppelgangers will quarrel with them and defend themselves. If pressed, they will attempt to Ambush, surprising both Halowen and the party.</li>
+                            <li>With the Doppelgangers defeated, the party can descend back to the Landing Hub with Halowen, if he survived.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box" style="margin-top: 6px;">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Frozen Asset</strong></a> by One-Shot Wonders. Some writing blocks used directly. Story, setting, mechanics, characters, and vibes reworked to fit BREAK!!.</p>
+                    <ul>
+                        <li><strong>Crystalline Dreg:</strong> by ichiCharmed (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                        <li><strong>Doppelganger:</strong> Changinc by Luui (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                        <li><strong>Synthisters:</strong> by ichiCharmed (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                        <li><strong>Betrayal Demon:</strong> by Wretched Jarrah (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew Sheet</a>)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Landing Hub</h3>
+                    <p class="loc-desc">"Just off the icy shore, a relatively sheltered site with some makeshift huts sits at the base of a cliff, right next to a shimmering tunnel."</p>
+                    <p><br>A Doppelganger ambushed Lookout when she was looking for firewood nearby and shapeshifted into her. Its claws left bloody prints in the snow. Recent footprints in the crystal dust lead inwards on a dedicated path through crystalline tunnels.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Prismatic Campsite</h3>
+                    <p class="loc-desc">"The trail leads off the obvious route into a dense crystal wasteland instead, eventually ending with another campsite in a broken crystal alcove."</p>
+                    <p><br>The Doppelganger posing as Lookout killed Sap in the night; its mate shapeshifted to replace him. <br><br>Displaced crystals suggest the group went up the ridge around the Opera House.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Opera Overlook</h3>
+                    <p class="loc-desc">"Along the ridge's edge, a stunning view of the Opera House unfolds. Occasionally the haunting interior can be seen through holes in its walls."</p>
+                    <p><br>Halowen and the Doppelgangers' moods are upbeat and jolly. The fake guides tell Halowen they are making good progress.<br><br>If possible, the Doppelgangers will try to sway the party to leave.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Despite the Adventuring Guild's scouting of this place, the presence of Doppelgangers is not widely known in Crystalia.</li>
+                    <li>The Doppelgangers' brood of children live in a cave a Day's travel from the Opera Overlook.</li>
+                    <li>Since meeting Halowen, the Doppelgangers have been fattening him up with generous meals.</li>
+                    <li>Humanoid-sized bites can be found on Lookout's body that don't quite match the larger Dreg bites.</li>
+                    <li>It is difficult to discern identifying features on the bodies, due to their conditions and frost damage.</li>
+                    <li>The Doppelgangers convinced Halowen to take a path to the back entrance instead due to an Urarani sighting on the main walkway.</li>
+                    <li>A journal in Sap's satchel refers to a change in Lookout's attitude after leaving the base campsite.</li>
+                    <li>Halowen's group stayed at the landing hub for a few days to acclimate to the mana flux here, and avoid Arcane Contamination Syndrome farther in.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="10) Crystal Clear/Pasted image 20260104124348.jpg" alt="White Moth Opera House">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>Upon Halowen's safe return to Shard, he will reward the party with <strong>400C</strong>, <strong>Arcane Contamination Treatment</strong>, and a <strong>Social Bond with the House of Sool</strong>, should favors be needed later.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Loot</h3>
+                        <p>A <strong>Crystalian Blade</strong> can be found on the Doppelgangers' bodies. In addition, Adventuring Gear [Source, pg. 179] in the form of a <strong>Grappling Hook</strong> and <strong>Pitons</strong> can be retrieved.</p>
+                    </div>
+                </div>
+                <!-- Crystalian Blade Item Block -->
+                <div class="item-block">
+                    <div><span class="item-name">Crystalian Blade</span> <span class="item-type">[Magical Quick Weapon]</span></div>
+                    <div class="item-desc"><em>Swords made of Crystal often believed to have come from Crystalia...somehow. <br>No one could actually verify this claim until now.</em><br>Made of Gossamer Ice, and deals Frost Damage. <br>This blade can unleash mesmerizing light once per Day. Targets within the same Area that see the light must make an Aura Check or become Disoriented.</div>
+                    <div class="item-stats">1 Slot · 2 Gems</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 5-6 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Consider swapping the Doppelgangers for Synthisters.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Consider swapping the Doppelgangers for Betrayal Demons.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>PC Starting Coin:</strong> 600C
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ADVENTURE SITE ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>White Moth Fields <span>[Adventure Site]</span></h1>
+        </div>
+
+        <div class="site-map-container">
+            <img src="10) Crystal Clear/Pasted image 20260104122226.jpg" alt="White Moth Fields Map">
+            <!-- Connection Lines -->
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <!-- Line 1↔2 (Path) -->
+                <line class="map-line" x1="58" y1="65" x2="56.5" y2="42" />
+                <!-- Line 2↔3 (Road) -->
+                <line class="map-line" x1="56.5" y1="44" x2="48" y2="34" />
+                <!-- Line 2↔4 (Trailblazing - wavy) -->
+                <path class="map-line trailblazing" d="M56,45 Q55,42 54,45 T51,46 T47,50" />
+                <!-- Line 4↔5 (Trailblazing - wavy) -->
+                <path class="map-line trailblazing" d="M47,48 Q46,42 44,40 T43,34 T42,28" />
+            </svg>
+            <!-- Map Legend -->
+            <div class="map-legend">
+                <div class="legend-item">
+                    <svg width="24" height="8" viewBox="0 0 24 8"><line x1="0" y1="4" x2="24" y2="4" stroke="#c44a5e" stroke-width="2"/></svg>
+                    <span><strong>Road</strong> [Source, pg. 244]</span>
+                </div>
+                <div class="legend-item">
+                    <svg width="24" height="8" viewBox="0 0 24 8"><path d="M0,4 Q6,0 12,4 T24,4" stroke="#c44a5e" stroke-width="2" fill="none"/></svg>
+                    <span><strong>Trailblazing</strong> [Source, pg. 244]</span>
+                </div>
+            </div>
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+            <!-- Time Badges -->
+            <div class="time-badge t12">1/2 Day</div>
+            <div class="time-badge t23">1/2 Day</div>
+            <div class="time-badge t24">1/2 Day</div>
+            <div class="time-badge t45">1 Day</div>
+        </div>
+
+        <div class="site-content-columns">
+            <!-- Location Key -->
+            <div class="location-key-box">
+                <h2>Location Key</h2>
+                <div class="location-key-content">
+                    <div class="location-column">
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">1</span>
+                                <span class="location-name">Expedition Landing Hub</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>A cluster of weathered huts marks where the Adventurer's Guild acclimates to Crystalia's mana flux before venturing deeper.</p>
+                                <ul>
+                                    <li>A trail of footsteps leads into the crystalline tunnel nearby.</li>
+                                    <li>Lookout's body can be found a short distance away, being scavenged by 3 Crystalline Dregs who attack on sight.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">3</span>
+                                <span class="location-name">Opera House Entrance</span>
+                                <span class="location-tag encounter">Guardian Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Along this cracked reflective walkway, ancient statues of elegant performers strike dramatic poses. Blocking the path, an <strong>Urarani</strong> rampages in destructive frustration and turns its sights on the party.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">5</span>
+                                <span class="location-name">Opera Overlook</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Halfway up the ridge, this cliff-side overlook offers a stunning view of the Opera House - its haunting interior exposed by wall cracks.</p>
+                                <ul>
+                                    <li>Halowen and his guides have set up camp with three tents, chatting happily as something strange roasts on a spit.</li>
+                                    <li>The Doppelgangers will try to sway the party to leave.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-column">
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">2</span>
+                                <span class="location-name">Crystal Tunnel's Exit</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Exiting the tunnel, the party sees a beautiful gossamer walkway leading to a gleaming ivory tower suspended in a crumbling state.</p>
+                                <ul>
+                                    <li>Despite the theatre being Halowen's target, the party distinctly sees the trail go off-course into a Prismatic Wasteland nearby.</li>
+                                    <li>The party can choose to follow the walkway to the Opera House (3) or continue on the trail to the Prismatic Wasteland (4).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">4</span>
+                                <span class="location-name">Prismatic Wasteland</span>
+                                <span class="location-tag hazard">Harmful Terrain</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>This sloped jungle of jagged crystals was warped long ago by a powerful ritual, its lingering energies transforming the terrain into a <a href="https://breakrpg.blogspot.com/2025/01/freebie-harmful-terrain.html" target="_blank">Prismatic Wasteland</a>. At its exit, another campsite is found.</p>
+                                <ul>
+                                    <li>Anti-Hazard Suits are required to prevent <a href="https://breakrpg.blogspot.com/2024/11/freebie-arcane-contamination-syndrom.html" target="_blank">Arcane Contamination Syndrome</a> as the party hasn't had time to acclimate yet.</li>
+                                    <li>Sap was killed during their rest here and similarly replaced.</li>
+                                    <li>His half-eaten body can be found in a hollow crystal nearby.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104143447.jpg" alt="Crystalian Tunnels">
+                <div class="art-caption">"Crystalian Tunnels Inspiration" <br> Art by <a href="https://www.behance.net/gallery/7913437/Ice-World" target="_blank">Andrey Egorov</a></div>
+            </div>
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104124348.jpg" alt="White Moth Opera House">
+                <div class="art-caption">"White Moth Opera House Inspiration" <br> Art by <a href="https://www.instagram.com/p/CUfkr3SLAN2/" target="_blank">mcrockefeller</a></div>
+            </div>
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104144401.png" alt="Landing Hub">
+                <div class="art-caption">"Landing Hub Inspiration" <br> Art by <a href="https://orithecarto.com/" target="_blank">Ori The Cartographer</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104145059.jpg" alt="Crystalia Inspiration">
+                <div class="art-caption">"Crystalia Inspiration" <br> Art by <a href="https://www.rafaelmayani.com/about" target="_blank">Rafael Mayani</a></div>
+            </div>
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104145617.jpg" alt="Ridge Campsite">
+                <div class="art-caption">"Ridge Campsite Inspiration" <br> Art by Steven Universe</div>
+            </div>
+            <div class="art-item">
+                <img src="10) Crystal Clear/Pasted image 20260104122226.jpg" alt="White Moth Fields Map">
+                <div class="art-caption">"White Moth Fields Map" <br> Art by Inkarnate</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
