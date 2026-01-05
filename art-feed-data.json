@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-04T12:01:42.772366Z",
+  "lastUpdated": "2026-01-05T00:04:47.176492Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -27,6 +27,70 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mbmzi7npsc2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
+      },
+      "record": {
+        "text": "After the deluge of collabs and special events, some semblance of normalcy for streams next week. On Saturday at 7 PM CST I'll be on @kywardkyoti.bsky.social's channel to talk about soloing Ennie award-winning game, BREAK!! #vtubers #vsky #solottrpg",
+        "createdAt": "2026-01-04T22:57:02.772Z"
+      },
+      "indexedAt": "2026-01-04T22:57:07.331Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 9,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreickdptb36fyxfgizsjwq5bwxznpfsrazcwfvstwsb4epqf7jrxmre@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreickdptb36fyxfgizsjwq5bwxznpfsrazcwfvstwsb4epqf7jrxmre@jpeg",
+            "alt": "Hime's Twitch stream schedule for the week of January 5-11\n\n- Fomoria quickstart (I'm DMing!) Monday, January 5, 2026 6:00 PM CST\n- In the Shadow of Glory (with Kappa) 7:00 PM CST\n- Solo Drakonym Sunday, January 11, 2026 10:00 AM CST"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mbmsh5wghk2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "kywardkyoti.bsky.social",
+        "displayName": "Kyward [Insomniac Coyote VTuber]",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreihfgsre3kgi72j6luagjlj6rtm3mnga5xf4aj4vj5fmsb5sqv2bzy@jpeg"
+      },
+      "record": {
+        "text": "An actual stream schedule for the week, gonna be mixing in TTRPGs and video games! will also be streaming tonight but will make a proper post for it, my days might be a bit scrungled as i find what days work for me but at the least i want 8pm to be my usual start time as it works best for me!",
+        "createdAt": "2026-01-04T20:51:11.213Z"
+      },
+      "indexedAt": "2026-01-04T20:51:15.028Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiefwbcessbtj3hxulqbwikb5rm7xqej2bk5u3aup5qx6ibwe6eoza@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiefwbcessbtj3hxulqbwikb5rm7xqej2bk5u3aup5qx6ibwe6eoza@jpeg",
+            "alt": "Streaming schedule for the the week of January 5th through the 11th: Monday the 5th, no stream. Tuesday the 6th, Solo ttrpg play with Rosethorn Keep at 8pm est. Wednesday the 7th, Hades 2 at 8pm est. Thursday the 8th, no stream. Friday the 9th, Resident Evil Zero playthrough at 8pm est. Saturday the 10th, going over BREAK!! rpg with Himeutsugi for solo play at 8pm est. Sunday the 11th, no stream. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
     {
       "uri": "at://did:plc:7drlurnmq2zztwn4qlf32sfg/app.bsky.feed.post/3mbjo5jd25s23",
       "source": "bluesky",
@@ -70,8 +134,8 @@
       },
       "indexedAt": "2026-01-03T14:02:06.737Z",
       "replyCount": 11,
-      "repostCount": 746,
-      "likeCount": 1585,
+      "repostCount": 757,
+      "likeCount": 1616,
       "embed": {
         "type": "images",
         "images": [
@@ -199,8 +263,8 @@
       },
       "indexedAt": "2026-01-02T05:57:41.432Z",
       "replyCount": 2,
-      "repostCount": 62,
-      "likeCount": 247,
+      "repostCount": 65,
+      "likeCount": 263,
       "embed": {
         "type": "images",
         "images": [
@@ -414,7 +478,7 @@
       "indexedAt": "2025-12-31T16:01:07.031Z",
       "replyCount": 3,
       "repostCount": 10,
-      "likeCount": 61,
+      "likeCount": 62,
       "embed": {
         "type": "images",
         "images": [
@@ -539,7 +603,7 @@
       "indexedAt": "2025-12-30T20:09:06.532Z",
       "replyCount": 7,
       "repostCount": 36,
-      "likeCount": 65,
+      "likeCount": 66,
       "embed": {
         "type": "images",
         "images": [
@@ -788,7 +852,7 @@
       "indexedAt": "2025-12-28T22:24:03.028Z",
       "replyCount": 2,
       "repostCount": 145,
-      "likeCount": 331,
+      "likeCount": 332,
       "embed": {
         "type": "images",
         "images": [
@@ -824,8 +888,8 @@
       },
       "indexedAt": "2025-12-28T02:57:19.333Z",
       "replyCount": 3,
-      "repostCount": 43,
-      "likeCount": 97,
+      "repostCount": 48,
+      "likeCount": 125,
       "embed": {
         "type": "images",
         "images": [
@@ -898,9 +962,9 @@
         ]
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
       }
     },
     {
@@ -949,8 +1013,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1157,
-      "likeCount": 6204,
+      "repostCount": 1156,
+      "likeCount": 6205,
       "embed": {
         "type": "images",
         "images": [
@@ -1090,8 +1154,8 @@
       },
       "indexedAt": "2025-12-23T01:41:14.632Z",
       "replyCount": 30,
-      "repostCount": 649,
-      "likeCount": 1840,
+      "repostCount": 650,
+      "likeCount": 1850,
       "embed": {
         "type": "images",
         "images": [
@@ -1326,7 +1390,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 612,
-      "likeCount": 2697,
+      "likeCount": 2698,
       "embed": {
         "type": "images",
         "images": [
@@ -1408,7 +1472,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 395,
-      "likeCount": 1670,
+      "likeCount": 1671,
       "embed": {
         "type": "images",
         "images": [
@@ -1714,7 +1778,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1940,
-      "likeCount": 8384,
+      "likeCount": 8385,
       "embed": {
         "type": "images",
         "images": [
@@ -1904,7 +1968,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2327,
-      "likeCount": 11803,
+      "likeCount": 11804,
       "embed": {
         "type": "images",
         "images": [
@@ -1964,7 +2028,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 718,
-      "likeCount": 3289,
+      "likeCount": 3290,
       "embed": {
         "type": "images",
         "images": [
@@ -1992,7 +2056,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 544,
-      "likeCount": 3017,
+      "likeCount": 3018,
       "embed": {
         "type": "images",
         "images": [
@@ -2020,7 +2084,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 170,
-      "likeCount": 1236,
+      "likeCount": 1237,
       "embed": {
         "type": "images",
         "images": [
@@ -2048,7 +2112,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 247,
-      "likeCount": 1481,
+      "likeCount": 1482,
       "embed": {
         "type": "images",
         "images": [
@@ -2076,7 +2140,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 454,
-      "likeCount": 2413,
+      "likeCount": 2414,
       "embed": {
         "type": "images",
         "images": [
@@ -2104,7 +2168,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1877,
-      "likeCount": 8963,
+      "likeCount": 8964,
       "embed": {
         "type": "images",
         "images": [
@@ -2132,7 +2196,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2325,
+      "likeCount": 2326,
       "embed": {
         "type": "images",
         "images": [
@@ -2188,7 +2252,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 450,
-      "likeCount": 2393,
+      "likeCount": 2394,
       "embed": {
         "type": "images",
         "images": [
