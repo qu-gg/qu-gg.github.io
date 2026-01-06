@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAK!! Character Converter</title>
+    <style>
+        /* ===== CSS RESET & VARIABLES ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Neutral Palette */
+            --bg-primary: #fafafa;
+            --bg-secondary: #ffffff;
+            --text-primary: #2d3436;
+            --text-secondary: #636e72;
+            --accent: #6c5ce7;
+            --accent-hover: #5b4cdb;
+            --border: #dfe6e9;
+            --shadow: rgba(0, 0, 0, 0.08);
+
+            /* Typography */
+            --font-display: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+            /* Spacing */
+            --nav-height: 60px;
+            --max-width: 900px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            height: var(--nav-height);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        main {
+            flex: 1;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            width: 100%;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .page-header a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .page-header a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONVERTER SECTIONS ===== */
+        .converter-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 0;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .section-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        /* ===== TEXTAREA ===== */
+        .text-area-container {
+            position: relative;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 1rem;
+            font-family: "Monaco", "Menlo", "Consolas", monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            resize: vertical;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: border-color 0.2s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        textarea.readonly {
+            background: #f5f5f5;
+            cursor: default;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--border);
+            color: var(--text-primary);
+        }
+
+        .btn-icon {
+            padding: 0.5rem;
+            min-width: 36px;
+            justify-content: center;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* ===== CONVERT BUTTON SECTION ===== */
+        .convert-section {
+            display: flex;
+            justify-content: center;
+            padding: 0.75rem 0;
+            margin: 0.75rem 0;
+        }
+
+        .btn-convert {
+            padding: 0.8rem 2.5rem;
+            font-size: 1rem;
+        }
+
+        /* ===== FILE INPUT ===== */
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ===== STATUS MESSAGE ===== */
+        .status-message {
+            text-align: center;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .status-message.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+
+        .status-message.info {
+            background: #e7e3fc;
+            color: #5b4cdb;
+            display: block;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .section-actions {
+                width: 100%;
+            }
+
+            .section-actions .btn {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Quagg Studios</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>BREAK!! Character Converter</h1>
+            <p>Convert characters from <a href="https://nboughton.uk/apps/break-sheet/#/" target="_blank">Break-Sheet</a> format to <a href="https://questlinevtt.com/home" target="_blank">Questline</a> format</p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="converter-section">
+            <div class="section-header">
+                <h2>📥 Input (Break-Sheet JSON)</h2>
+                <div class="section-actions">
+                    <div class="file-input-wrapper">
+                        <button class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17 8 12 3 7 8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                            Upload File
+                        </button>
+                        <input type="file" id="fileInput" accept=".json">
+                    </div>
+                    <button class="btn btn-secondary" onclick="clearInput()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <div class="text-area-container">
+                <textarea id="inputArea" placeholder="Paste your Questline JSON here, or upload a file..."></textarea>
+            </div>
+        </div>
+
+        <!-- Convert Button -->
+        <div class="convert-section">
+            <button class="btn btn-primary btn-convert" onclick="convertCharacters()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 3 21 3 21 8"/>
+                    <line x1="4" y1="20" x2="21" y2="3"/>
+                    <polyline points="21 16 21 21 16 21"/>
+                    <line x1="15" y1="15" x2="21" y2="21"/>
+                    <line x1="4" y1="4" x2="9" y2="9"/>
+                </svg>
+                Convert
+            </button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="converter-section">
+            <div class="section-header">
+                <h2>📤 Output (Questline .characters File)</h2>
+                <div class="section-actions">
+                    <button class="btn btn-secondary" onclick="copyOutput()" id="copyBtn" disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                        Copy
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadOutput()" id="downloadBtn" disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div class="text-area-container">
+                <textarea id="outputArea" class="readonly" readonly placeholder="Converted output will appear here..."></textarea>
+            </div>
+            <div id="statusMessage" class="status-message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>BREAK!! Character Converter • <a href="https://github.com/qu-gg" target="_blank">Quagg Studios</a></p>
+    </footer>
+
+    <script>
+        // ===== Firebase-style ID Generation =====
+        function generateFirebaseId() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let id = '';
+            for (let i = 0; i < 20; i++) {
+                id += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return id;
+        }
+
+        // ===== Speed Rating Conversion =====
+        function convertSpeedRating(speed) {
+            const speedMap = {
+                'Slow': '0',
+                'Average': '1',
+                'Fast': '2',
+                'Very Fast': '3'
+            };
+            return speedMap[speed] || '1';
+        }
+
+        // ===== Name Cleaning Utilities =====
+        function cleanName(name) {
+            if (!name) return '';
+            // Trim whitespace and trailing punctuation
+            let cleaned = name.trim().replace(/[,.\s]+$/, '').trim();
+            return cleaned;
+        }
+
+        function toTitleCase(str) {
+            if (!str) return '';
+            // Convert to title case, preserving some words
+            return str.toLowerCase().replace(/(?:^|\s|-)\w/g, match => match.toUpperCase());
+        }
+
+        function normalizeAbilityName(name) {
+            if (!name) return 'Ability';
+            let cleaned = cleanName(name);
+            // If all caps, convert to title case
+            if (cleaned === cleaned.toUpperCase() && cleaned.length > 2) {
+                cleaned = toTitleCase(cleaned);
+            }
+            return cleaned;
+        }
+
+        // ===== Page Reference Formatting =====
+        function formatPageRef(text) {
+            if (!text) return '';
+            // Convert (´ p177) style refs to cleaner format
+            return text.replace(/\(´\s*p\.?(\d+)\)/g, '(p.$1)');
+        }
+
+        // ===== Item Name Parsing =====
+        function parseItemName(fullText) {
+            if (!fullText) return { name: 'Item', description: '' };
+            
+            let text = fullText.trim();
+            let name = '';
+            let description = '';
+            
+            // Take first line as name, clean up page refs
+            const firstLine = text.split('\n')[0];
+            // Try to split on comma for "Type, specific name" pattern
+            const commaParts = firstLine.split(',');
+            if (commaParts.length >= 2) {
+                // e.g., "Treat x10, mama's cookies (´ p179)"
+                name = commaParts.slice(0, 2).join(',').trim();
+                // Clean page refs from name
+                name = name.replace(/\s*\(´\s*p\.?\d+\)\.?\s*$/, '').trim();
+            } else {
+                name = firstLine.replace(/\s*\(´\s*p\.?\d+\)\.?\s*$/, '').trim();
+            }
+            description = text;
+            
+            // Clean trailing punctuation from name
+            name = cleanName(name);
+            
+            return { name, description };
+        }
+
+        // ===== Text Formatting =====
+        function formatAbilityText(text) {
+            if (!text) return '';
+            
+            // Clean up page references first
+            let formatted = formatPageRef(text);
+            
+            // Clean up excessive newlines and normalize spacing
+            formatted = formatted
+                .replace(/\r\n/g, '\n')
+                .replace(/\n{3,}/g, '\n\n')
+                .trim();
+            
+            // Check if text contains any bullet markers
+            const hasBullets = formatted.includes('\u001a') || formatted.includes('\u001b') || formatted.includes('◆');
+            
+            // Split into lines for processing
+            let lines = formatted.split('\n');
+            let result = [];
+            let inDescription = true;
+            let descriptionLines = [];
+            
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+                if (!line) {
+                    if (inDescription && descriptionLines.length > 0) {
+                        // End of description block - italicize it
+                        result.push('*' + descriptionLines.join(' ') + '*');
+                        result.push('');
+                        descriptionLines = [];
+                        inDescription = false;
+                    } else if (!inDescription) {
+                        result.push('');
+                    }
+                    continue;
+                }
+                
+                // Check for bullet indicators - these end the description section
+                if (line.includes('\u001a') || line.startsWith('•')) {
+                    if (inDescription && descriptionLines.length > 0) {
+                        result.push('*' + descriptionLines.join(' ') + '*');
+                        result.push('');
+                        descriptionLines = [];
+                        inDescription = false;
+                    }
+                    // Main bullet point
+                    line = line.replace(/\u001a/g, '').trim();
+                    result.push('• ' + line);
+                } else if (line.includes('\u001b') || line.includes('◆')) {
+                    if (inDescription && descriptionLines.length > 0) {
+                        result.push('*' + descriptionLines.join(' ') + '*');
+                        result.push('');
+                        descriptionLines = [];
+                        inDescription = false;
+                    }
+                    // Sub-bullet point
+                    line = line.replace(/\u001b/g, '').replace(/◆/g, '').trim();
+                    result.push('  - ' + line);
+                } else if (line.startsWith('Advantages') || line.startsWith('Disadvantages') || 
+                           line.startsWith('Success:') || line.startsWith('Failure:') ||
+                           line.startsWith('Requires')) {
+                    if (inDescription && descriptionLines.length > 0) {
+                        result.push('*' + descriptionLines.join(' ') + '*');
+                        result.push('');
+                        descriptionLines = [];
+                        inDescription = false;
+                    }
+                    result.push('');
+                    result.push('**' + line + '**');
+                } else if (line.startsWith('"') || line.startsWith('#') || line.startsWith('?')) {
+                    // Special markers from source
+                    if (inDescription && descriptionLines.length > 0) {
+                        result.push('*' + descriptionLines.join(' ') + '*');
+                        result.push('');
+                        descriptionLines = [];
+                        inDescription = false;
+                    }
+                    let cleanLine = line.replace(/^["#?]\s*/, '').trim();
+                    result.push('• ' + cleanLine);
+                } else if (inDescription && hasBullets) {
+                    // Part of description (only collect if there are bullets later)
+                    descriptionLines.push(line);
+                } else if (inDescription && !hasBullets) {
+                    // No bullets in text, just collect for joining
+                    descriptionLines.push(line);
+                } else {
+                    result.push(line);
+                }
+            }
+            
+            // Handle remaining description
+            if (descriptionLines.length > 0) {
+                const joinedDesc = descriptionLines.join(' ');
+                if (hasBullets) {
+                    result.push('*' + joinedDesc + '*');
+                } else {
+                    // No bullets, just output joined text without italics
+                    result.push(joinedDesc);
+                }
+            }
+            
+            return result.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+        }
+
+        // ===== Parse Gifts Text =====
+        function parseGifts(giftsText, bonds) {
+            const gifts = [];
+            
+            // Handle bonds as Social Bond type
+            if (bonds && bonds.trim()) {
+                gifts.push({
+                    id: generateFirebaseId(),
+                    originId: null,
+                    type: 'Social Bond',
+                    name: 'Bond',
+                    description: bonds.trim(),
+                    subtext: '',
+                    value: 0,
+                    valuePrefix: null,
+                    valueSuffix: null,
+                    bonus: 0,
+                    linkedValue: null,
+                    starValue: null,
+                    counters: {},
+                    counterOverrides: {},
+                    modifiers: [],
+                    modifiersPostCalculationFunc: null,
+                    rollDetails: []
+                });
+            }
+            
+            // Parse allegiance gifts
+            if (giftsText && giftsText.trim()) {
+                // Try to split by common patterns
+                // Usually format: "Gift Name, Description text"
+                const giftParts = giftsText.split(/,\s*/);
+                if (giftParts.length >= 2) {
+                    const name = giftParts[0].trim();
+                    const description = giftParts.slice(1).join(', ').trim();
+                    gifts.push({
+                        id: generateFirebaseId(),
+                        originId: null,
+                        type: 'Allegiance Gift',
+                        name: name,
+                        description: formatAbilityText(description),
+                        subtext: '',
+                        value: 0,
+                        valuePrefix: null,
+                        valueSuffix: null,
+                        bonus: 0,
+                        linkedValue: null,
+                        starValue: null,
+                        counters: {},
+                        counterOverrides: {},
+                        modifiers: [],
+                        modifiersPostCalculationFunc: null,
+                        rollDetails: []
+                    });
+                } else {
+                    // Couldn't parse, just use full text
+                    gifts.push({
+                        id: generateFirebaseId(),
+                        originId: null,
+                        type: 'Allegiance Gift',
+                        name: 'Gift',
+                        description: formatAbilityText(giftsText),
+                        subtext: '',
+                        value: 0,
+                        valuePrefix: null,
+                        valueSuffix: null,
+                        bonus: 0,
+                        linkedValue: null,
+                        starValue: null,
+                        counters: {},
+                        counterOverrides: {},
+                        modifiers: [],
+                        modifiersPostCalculationFunc: null,
+                        rollDetails: []
+                    });
+                }
+            }
+            
+            return gifts;
+        }
+
+        // ===== Create Weapon Action =====
+        function createWeaponAction(weapon, baseAttackBonus) {
+            const weaponBonus = parseInt(weapon.bonuses) || 0;
+            const totalBonus = (parseInt(baseAttackBonus) || 0) + weaponBonus;
+            const weaponName = cleanName(weapon.name) || 'Weapon Attack';
+            
+            let description = '';
+            // Format range: 0 = Melee, 1 = 1 Area, 2+ = X Areas
+            const rangeNum = parseInt(weapon.range) || 0;
+            if (rangeNum === 0) {
+                description += `**Range:** Melee\n`;
+            } else if (rangeNum === 1) {
+                description += `**Range:** 1 Area\n`;
+            } else {
+                description += `**Range:** ${rangeNum} Areas\n`;
+            }
+            if (weapon.extra) {
+                description += `**Extra Damage Threshold:** ${weapon.extra}+\n`;
+            }
+            description += `**Attack Bonus:** +${totalBonus}`;
+            
+            if (weapon.description) {
+                description += '\n\n' + formatAbilityText(weapon.description);
+            }
+            
+            return {
+                id: generateFirebaseId(),
+                displayName: weaponName,
+                effects: [
+                    {
+                        type: 'roll',
+                        name: weaponName,
+                        selectedDie: 'd20',
+                        quantity: 1,
+                        bonus: weaponBonus,
+                        baseRoll: '1d20',
+                        advantageType: 'none',
+                        hide: false,
+                        encounterRoll: false,
+                        baseValue: 0,
+                        damageType: 'none',
+                        targetNumber: null,
+                        useLowest: false,
+                        successTarget: false,
+                        bonusSymbols: [],
+                        difficulty: 0,
+                        exploding: false,
+                        secondaryDice: false,
+                        delayedBonus: false,
+                        delayedBonusAmount: 0,
+                        challengeDice: false,
+                        challengeRoll: null,
+                        rollDirection: 'high',
+                        successMultiplier: 1,
+                        options: [],
+                        modifiers: [
+                            {
+                                linkedValue: 'attack-bonus.attributes.attack-bonus.value.value',
+                                operator: 'add'
+                            }
+                        ],
+                        bonusRoll: ''
+                    }
+                ],
+                details: [
+                    {
+                        type: 'image',
+                        value: {
+                            image: {
+                                tokenCrop: {
+                                    unit: '%',
+                                    width: 100,
+                                    height: 100,
+                                    aspect: 1,
+                                    x: 0,
+                                    y: 0
+                                },
+                                url: null
+                            }
+                        },
+                        visibility: 'full'
+                    },
+                    {
+                        type: 'description',
+                        value: {
+                            description: description
+                        },
+                        visibility: 'full'
+                    }
+                ],
+                ready: false,
+                privacy: {
+                    level: 'private',
+                    users: []
+                },
+                version: 2,
+                type: '',
+                subtype: ''
+            };
+        }
+
+        // ===== Convert Single Character =====
+        function convertCharacter(source) {
+            const id = source.identity || {};
+            const characterId = generateFirebaseId();
+            // Use the BREAK!! Player sheet ID for proper rendering in Questline
+            const sheetId = 'JhUsxZOelsROtFyksRAP';
+            
+            // Clean calling name (often ALL CAPS)
+            const callingName = id.calling ? toTitleCase(cleanName(id.calling)) : '';
+            
+            // Format purviews text
+            const purviewsFormatted = id.purviews ? formatAbilityText(id.purviews) : '';
+            
+            // Build background from size (the only field without a direct mapping)
+            let backgroundParts = [];
+            if (id.size) backgroundParts.push(`**Size:** ${id.size}`);
+            const background = backgroundParts.join('\n\n');
+            
+            // Calculate defense rating (base + armor mods)
+            let defenseTotal = parseInt(source.defense?.base) || 10;
+            if (source.defense?.mods && Array.isArray(source.defense.mods)) {
+                source.defense.mods.forEach(mod => {
+                    defenseTotal += parseInt(mod.value) || 0;
+                });
+            }
+            
+            // Build quirk and abilities array
+            const quirksAndAbilities = [];
+            
+            // Add quirk if present
+            if (source.quirk && source.quirk.trim()) {
+                // Try to extract quirk name from first line
+                const quirkLines = source.quirk.trim().split('\n');
+                let quirkName = 'Quirk';
+                let quirkDescription = source.quirk;
+                
+                if (quirkLines.length > 0) {
+                    const firstLine = quirkLines[0].trim();
+                    // Check if first line looks like a title (short, no special chars)
+                    if (firstLine.length < 50 && !firstLine.includes('\u001a') && !firstLine.includes('•')) {
+                        quirkName = cleanName(firstLine);
+                        quirkDescription = quirkLines.slice(1).join('\n');
+                    }
+                }
+                
+                quirksAndAbilities.push({
+                    id: generateFirebaseId(),
+                    name: normalizeAbilityName(quirkName),
+                    description: formatAbilityText(quirkDescription),
+                    value: 0,
+                    counters: {},
+                    modifiers: [],
+                    modifiersPostCalculationFunc: null,
+                    rollDetails: [],
+                    type: 'Quirk',
+                    subtext: ''
+                });
+            }
+            
+            // Add abilities
+            if (source.abl && Array.isArray(source.abl)) {
+                source.abl.forEach(ability => {
+                    quirksAndAbilities.push({
+                        id: generateFirebaseId(),
+                        name: normalizeAbilityName(ability.name),
+                        description: formatAbilityText(ability.text || ''),
+                        value: 0,
+                        counters: {},
+                        modifiers: [],
+                        modifiersPostCalculationFunc: null,
+                        rollDetails: [],
+                        type: ability.type || 'Basic Ability',
+                        subtext: ability.allegiance && ability.allegiance !== 'None' ? ability.allegiance : ''
+                    });
+                });
+            }
+            
+            // Build inventory items
+            const inventoryItems = [];
+            
+            // Add worn outfit as item (equipped: false in Questline means visually equipped)
+            if (source.inventory?.worn && source.inventory.worn.trim()) {
+                inventoryItems.push({
+                    id: generateFirebaseId(),
+                    itemId: generateFirebaseId(),
+                    name: 'Worn Outfit',
+                    description: source.inventory.worn.trim(),
+                    type: 'none',
+                    privacy: { level: 'public', users: [] },
+                    creator: '',
+                    data: { encumbrance: 0 },
+                    version: 0,
+                    owners: [],
+                    quantity: 1,
+                    equipped: false,
+                    isCustom: true,
+                    actions: []
+                });
+            }
+            
+            // Add inventory slots (equipped: true in Questline means NOT visually equipped)
+            if (source.inventory?.slots && Array.isArray(source.inventory.slots)) {
+                source.inventory.slots.forEach(slot => {
+                    if (slot.name && slot.name.trim()) {
+                        const parsed = parseItemName(slot.name);
+                        inventoryItems.push({
+                            id: generateFirebaseId(),
+                            itemId: generateFirebaseId(),
+                            name: parsed.name,
+                            description: formatAbilityText(parsed.description),
+                            type: 'none',
+                            privacy: { level: 'public', users: [] },
+                            creator: '',
+                            data: { encumbrance: parseInt(slot.slots) || 1 },
+                            version: 0,
+                            owners: [],
+                            quantity: 1,
+                            equipped: true,
+                            isCustom: true,
+                            actions: []
+                        });
+                    }
+                });
+            }
+            
+            // Build actions from weapons
+            const actions = [];
+            if (source.attacks?.weapons && Array.isArray(source.attacks.weapons)) {
+                source.attacks.weapons.forEach(weapon => {
+                    if (weapon.name && weapon.name.trim()) {
+                        actions.push(createWeaponAction(weapon, source.attacks.base));
+                    }
+                });
+            }
+            
+            // Build gifts
+            const gifts = parseGifts(source.allegiance?.gifts, source.bonds);
+            
+            // Get hearts value
+            const heartsValue = parseInt(source.hearts?.base) || 2;
+            
+            return {
+                activeSheet: sheetId,
+                version: 9,
+                sheetData: {
+                    'quirk-and-abilities': quirksAndAbilities,
+                    'attack-bonus': {
+                        attributes: {
+                            'attack-bonus': {
+                                value: {
+                                    visible: true,
+                                    value: String(source.attacks?.base || 0)
+                                }
+                            }
+                        }
+                    },
+                    'rank-and-xp': {
+                        attributes: {
+                            'rank-and-xp': {
+                                'next-xp': {
+                                    visible: true,
+                                    value: parseInt(source.xp?.toNext) || 0
+                                },
+                                'current-xp': {
+                                    value: parseInt(source.xp?.current) || 0,
+                                    visible: true
+                                },
+                                rank: {
+                                    value: String(id.rank || 1),
+                                    visible: true
+                                }
+                            }
+                        }
+                    },
+                    bio: {
+                        appearance: id.description || '',
+                        characteristics: {
+                            skin: '',
+                            hair: '',
+                            eyes: '',
+                            age: '',
+                            gender: '',
+                            height: '',
+                            weight: ''
+                        },
+                        tokenCrop: '',
+                        profileImage: null,
+                        name: id.name || 'Unknown',
+                        subname: callingName,
+                        species: id.species || '',
+                        homeland: id.homeland || '',
+                        languages: cleanName(id.languages) || '',
+                        purviews: purviewsFormatted,
+                        details: id.history || '',
+                        background: background
+                    },
+                    allegiance: {
+                        attributes: {
+                            allegiance: {
+                                'dark-points': {
+                                    visible: true,
+                                    value: String(source.allegiance?.dark || 0)
+                                },
+                                'bright-points': {
+                                    value: String(source.allegiance?.bright || 0),
+                                    visible: true
+                                }
+                            }
+                        }
+                    },
+                    actions: actions,
+                    'allegiance-area': {
+                        attributes: {
+                            alignment: {
+                                bright: {
+                                    visible: true,
+                                    value: 0
+                                },
+                                twilight: {
+                                    value: 0,
+                                    visible: true
+                                },
+                                none: {
+                                    value: 1,
+                                    visible: true
+                                },
+                                dark: {
+                                    value: 0,
+                                    visible: true
+                                }
+                            }
+                        }
+                    },
+                    inventory: {
+                        currency: {
+                            stones: parseInt(source.wealth?.stones) || 0,
+                            coins: parseInt(source.wealth?.coins) || 0,
+                            gems: parseInt(source.wealth?.gems) || 0
+                        },
+                        items: inventoryItems,
+                        maxEncumbrance: parseInt(source.inventory?.base) || 10
+                    },
+                    'speed-rating': {
+                        attributes: {
+                            'speed-rating': {
+                                value: {
+                                    visible: true,
+                                    value: convertSpeedRating(source.speed?.selected || source.speed?.base || 'Average')
+                                }
+                            }
+                        }
+                    },
+                    hearts: {
+                        max: heartsValue,
+                        temp: 0,
+                        current: heartsValue,
+                        showTokenMeter: true,
+                        tempMax: 0
+                    },
+                    gifts: gifts,
+                    'defense-rating': {
+                        attributes: {
+                            'defense-rating': {
+                                value: {
+                                    value: String(defenseTotal),
+                                    visible: true
+                                }
+                            }
+                        }
+                    }
+                },
+                groups: [],
+                image: {
+                    tokenCrop: {
+                        y: 25,
+                        aspect: 1,
+                        x: 25,
+                        unit: '%',
+                        height: 50,
+                        width: 50
+                    },
+                    url: null
+                },
+                privacy: {
+                    level: 'public',
+                    users: []
+                },
+                name: id.name || 'Unknown',
+                isActive: true,
+                baseScale: 1,
+                id: characterId
+            };
+        }
+
+        // ===== Main Conversion Function =====
+        function convertCharacters() {
+            const inputArea = document.getElementById('inputArea');
+            const outputArea = document.getElementById('outputArea');
+            const statusMessage = document.getElementById('statusMessage');
+            const copyBtn = document.getElementById('copyBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+            
+            // Clear previous status
+            statusMessage.className = 'status-message';
+            statusMessage.textContent = '';
+            
+            const inputText = inputArea.value.trim();
+            
+            if (!inputText) {
+                statusMessage.className = 'status-message error';
+                statusMessage.textContent = 'Please provide input JSON to convert.';
+                return;
+            }
+            
+            try {
+                const sourceData = JSON.parse(inputText);
+                
+                // Check for characters array
+                if (!sourceData.characters || !Array.isArray(sourceData.characters)) {
+                    throw new Error('Invalid format: Expected a "characters" array in the JSON.');
+                }
+                
+                if (sourceData.characters.length === 0) {
+                    throw new Error('No characters found in the input JSON.');
+                }
+                
+                // Convert all characters
+                const convertedCharacters = sourceData.characters.map(char => convertCharacter(char));
+                
+                // Output as array
+                const outputText = JSON.stringify(convertedCharacters, null, 2);
+                outputArea.value = outputText;
+                
+                // Enable buttons
+                copyBtn.disabled = false;
+                downloadBtn.disabled = false;
+                
+                // Show success message
+                const charCount = convertedCharacters.length;
+                statusMessage.className = 'status-message success';
+                statusMessage.textContent = `✓ Successfully converted ${charCount} character${charCount !== 1 ? 's' : ''}!`;
+                
+            } catch (error) {
+                statusMessage.className = 'status-message error';
+                statusMessage.textContent = `Error: ${error.message}`;
+                outputArea.value = '';
+                copyBtn.disabled = true;
+                downloadBtn.disabled = true;
+            }
+        }
+
+        // ===== File Upload Handler =====
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    document.getElementById('inputArea').value = event.target.result;
+                    // Show info message
+                    const statusMessage = document.getElementById('statusMessage');
+                    statusMessage.className = 'status-message info';
+                    statusMessage.textContent = `Loaded file: ${file.name}`;
+                };
+                reader.onerror = function() {
+                    const statusMessage = document.getElementById('statusMessage');
+                    statusMessage.className = 'status-message error';
+                    statusMessage.textContent = 'Error reading file.';
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        // ===== Clear Input =====
+        function clearInput() {
+            document.getElementById('inputArea').value = '';
+            document.getElementById('outputArea').value = '';
+            document.getElementById('copyBtn').disabled = true;
+            document.getElementById('downloadBtn').disabled = true;
+            document.getElementById('statusMessage').className = 'status-message';
+            document.getElementById('fileInput').value = '';
+        }
+
+        // ===== Copy Output =====
+        function copyOutput() {
+            const outputArea = document.getElementById('outputArea');
+            const statusMessage = document.getElementById('statusMessage');
+            
+            navigator.clipboard.writeText(outputArea.value).then(() => {
+                statusMessage.className = 'status-message success';
+                statusMessage.textContent = '✓ Copied to clipboard!';
+            }).catch(() => {
+                // Fallback for older browsers
+                outputArea.select();
+                document.execCommand('copy');
+                statusMessage.className = 'status-message success';
+                statusMessage.textContent = '✓ Copied to clipboard!';
+            });
+        }
+
+        // ===== Download Output =====
+        function downloadOutput() {
+            const outputArea = document.getElementById('outputArea');
+            const blob = new Blob([outputArea.value], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'converted-characters.characters';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.className = 'status-message success';
+            statusMessage.textContent = '✓ Download started!';
+        }
+    </script>
+</body>
+</html>
