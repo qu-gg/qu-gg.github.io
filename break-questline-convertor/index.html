@@ -475,13 +475,47 @@
                     });
                 }
                 
+                // Build bonusValue from ALL mods and bonusText from non-Trait mod names
+                let bonusValue = null;
+                let bonusText = null;
+                if (apt.mods && Array.isArray(apt.mods) && apt.mods.length > 0) {
+                    // bonusValue: include all mod values
+                    if (apt.mods.length === 1) {
+                        // Single mod: just the value (e.g., "1" or "-1")
+                        const val = parseInt(apt.mods[0].value) || 0;
+                        bonusValue = String(val);
+                    } else {
+                        // Multiple mods: format as "+1/-1" style
+                        const parts = apt.mods.map(mod => {
+                            const val = parseInt(mod.value) || 0;
+                            return val >= 0 ? `+${val}` : String(val);
+                        });
+                        bonusValue = parts.join('/');
+                    }
+                    
+                    // bonusText: collect non-Trait mod names
+                    const nonTraitMods = apt.mods.filter(mod => 
+                        mod.name && mod.name.toLowerCase().trim() !== 'trait'
+                    );
+                    if (nonTraitMods.length > 0) {
+                        bonusText = nonTraitMods.map(mod => mod.name.trim()).join(', ');
+                    }
+                }
+                
                 // Map to lowercase key
                 const key = apt.name.toLowerCase();
                 if (aptitudes[key] !== undefined) {
-                    aptitudes[key] = {
+                    const aptData = {
                         value: String(total),
                         visible: true
                     };
+                    if (bonusValue !== null) {
+                        aptData.bonusValue = bonusValue;
+                    }
+                    if (bonusText !== null) {
+                        aptData.bonusText = bonusText;
+                    }
+                    aptitudes[key] = aptData;
                 }
             });
             
@@ -1135,6 +1169,68 @@
             };
         }
 
+        // ===== Security: Safe JSON Parse (Prototype Pollution Protection) =====
+        function safeJsonParse(text) {
+            return JSON.parse(text, (key, value) => {
+                // Block prototype pollution attempts
+                if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+                    return undefined;
+                }
+                return value;
+            });
+        }
+
+        // ===== Security: Input Size Limit =====
+        const MAX_INPUT_SIZE = 5 * 1024 * 1024; // 5MB limit
+
+        // ===== Security: Schema Validation =====
+        function validateCharacterSchema(char, index) {
+            const errors = [];
+            
+            // Check required structure
+            if (typeof char !== 'object' || char === null) {
+                errors.push(`Character ${index + 1}: Must be an object`);
+                return errors;
+            }
+            
+            // Validate identity (optional but should be object if present)
+            if (char.identity !== undefined && (typeof char.identity !== 'object' || char.identity === null)) {
+                errors.push(`Character ${index + 1}: 'identity' must be an object`);
+            }
+            
+            // Validate aptitudes (optional but should be array if present)
+            if (char.aptitudes !== undefined && !Array.isArray(char.aptitudes)) {
+                errors.push(`Character ${index + 1}: 'aptitudes' must be an array`);
+            }
+            
+            // Validate attacks (optional but should be object if present)
+            if (char.attacks !== undefined && (typeof char.attacks !== 'object' || char.attacks === null)) {
+                errors.push(`Character ${index + 1}: 'attacks' must be an object`);
+            }
+            
+            // Validate weapons array if present
+            if (char.attacks?.weapons !== undefined && !Array.isArray(char.attacks.weapons)) {
+                errors.push(`Character ${index + 1}: 'attacks.weapons' must be an array`);
+            }
+            
+            // Validate abilities array if present
+            if (char.abl !== undefined && !Array.isArray(char.abl)) {
+                errors.push(`Character ${index + 1}: 'abl' must be an array`);
+            }
+            
+            // Validate inventory if present
+            if (char.inventory !== undefined && (typeof char.inventory !== 'object' || char.inventory === null)) {
+                errors.push(`Character ${index + 1}: 'inventory' must be an object`);
+            }
+            
+            // Validate inventory slots if present
+            if (char.inventory?.slots !== undefined && !Array.isArray(char.inventory.slots)) {
+                errors.push(`Character ${index + 1}: 'inventory.slots' must be an array`);
+            }
+            
+            return errors;
+        }
+
         // ===== Main Conversion Function =====
         function convertCharacters() {
             const inputArea = document.getElementById('inputArea');
@@ -1155,8 +1251,16 @@
                 return;
             }
             
+            // Security: Check input size
+            if (inputText.length > MAX_INPUT_SIZE) {
+                statusMessage.className = 'status-message error';
+                statusMessage.textContent = `Error: Input too large (${(inputText.length / 1024 / 1024).toFixed(2)}MB). Maximum size is 5MB.`;
+                return;
+            }
+            
             try {
-                const sourceData = JSON.parse(inputText);
+                // Security: Use safe JSON parse to prevent prototype pollution
+                const sourceData = safeJsonParse(inputText);
                 
                 // Check for characters array
                 if (!sourceData.characters || !Array.isArray(sourceData.characters)) {
@@ -1165,6 +1269,17 @@
                 
                 if (sourceData.characters.length === 0) {
                     throw new Error('No characters found in the input JSON.');
+                }
+                
+                // Security: Validate schema for each character
+                const allErrors = [];
+                sourceData.characters.forEach((char, index) => {
+                    const errors = validateCharacterSchema(char, index);
+                    allErrors.push(...errors);
+                });
+                
+                if (allErrors.length > 0) {
+                    throw new Error(`Schema validation failed:\n${allErrors.slice(0, 5).join('\n')}${allErrors.length > 5 ? `\n...and ${allErrors.length - 5} more errors` : ''}`);
                 }
                 
                 // Convert all characters
@@ -1196,16 +1311,36 @@
         document.getElementById('fileInput').addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (file) {
+                const statusMessage = document.getElementById('statusMessage');
+                
+                // Security: Validate file type
+                const validExtensions = ['.json'];
+                const fileName = file.name.toLowerCase();
+                const hasValidExtension = validExtensions.some(ext => fileName.endsWith(ext));
+                
+                if (!hasValidExtension && !file.type.includes('json')) {
+                    statusMessage.className = 'status-message error';
+                    statusMessage.textContent = 'Error: Please upload a JSON file.';
+                    e.target.value = ''; // Clear the file input
+                    return;
+                }
+                
+                // Security: Check file size
+                if (file.size > MAX_INPUT_SIZE) {
+                    statusMessage.className = 'status-message error';
+                    statusMessage.textContent = `Error: File too large (${(file.size / 1024 / 1024).toFixed(2)}MB). Maximum size is 5MB.`;
+                    e.target.value = ''; // Clear the file input
+                    return;
+                }
+                
                 const reader = new FileReader();
                 reader.onload = function(event) {
                     document.getElementById('inputArea').value = event.target.result;
                     // Show info message
-                    const statusMessage = document.getElementById('statusMessage');
                     statusMessage.className = 'status-message info';
                     statusMessage.textContent = `Loaded file: ${file.name}`;
                 };
                 reader.onerror = function() {
-                    const statusMessage = document.getElementById('statusMessage');
                     statusMessage.className = 'status-message error';
                     statusMessage.textContent = 'Error reading file.';
                 };
