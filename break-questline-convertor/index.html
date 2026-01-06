@@ -449,6 +449,42 @@
             return speedMap[speed] || '1';
         }
 
+        // ===== Aptitudes Conversion =====
+        function convertAptitudes(aptitudesArray) {
+            const aptitudes = {
+                might: { value: '7', visible: true },
+                deftness: { value: '7', visible: true },
+                grit: { value: '7', visible: true },
+                insight: { value: '7', visible: true },
+                aura: { value: '7', visible: true }
+            };
+            
+            if (!aptitudesArray || !Array.isArray(aptitudesArray)) {
+                return aptitudes;
+            }
+            
+            aptitudesArray.forEach(apt => {
+                // Calculate total: base + sum of mods
+                let total = parseInt(apt.base) || 7;
+                if (apt.mods && Array.isArray(apt.mods)) {
+                    apt.mods.forEach(mod => {
+                        total += parseInt(mod.value) || 0;
+                    });
+                }
+                
+                // Map to lowercase key
+                const key = apt.name.toLowerCase();
+                if (aptitudes[key] !== undefined) {
+                    aptitudes[key] = {
+                        value: String(total),
+                        visible: true
+                    };
+                }
+            });
+            
+            return aptitudes;
+        }
+
         // ===== Name Cleaning Utilities =====
         function cleanName(name) {
             if (!name) return '';
@@ -935,11 +971,19 @@
             // Get hearts value
             const heartsValue = parseInt(source.hearts?.base) || 2;
             
+            // Convert aptitudes
+            const aptitudes = convertAptitudes(source.aptitudes);
+            
             return {
                 activeSheet: sheetId,
                 version: 9,
                 sheetData: {
                     'quirk-and-abilities': quirksAndAbilities,
+                    aptitudes: {
+                        attributes: {
+                            aptitudes: aptitudes
+                        }
+                    },
                     'attack-bonus': {
                         attributes: {
                             'attack-bonus': {
