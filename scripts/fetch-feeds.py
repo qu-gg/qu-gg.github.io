@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RSS Feed Aggregator for Quagg Studios
+RSS Feed Aggregator for Studio Quagg
 Fetches RSS feeds defined in feeds.json and outputs aggregated feed-data.json
 """
 

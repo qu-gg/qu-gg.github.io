@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Art Inspiration Feed Aggregator for Quagg Studios
+Art Inspiration Feed Aggregator for Studio Quagg
 Fetches posts from Bluesky (AT Protocol) and ArtStation (RSS)
 """
 
