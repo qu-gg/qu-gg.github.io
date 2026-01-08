@@ -10,6 +10,10 @@ The Door Dasher:
 - Needs to be a particularly interesting location where there is a chase sequence 
 	- Taaga jungle going through the jungle over a river waterfall into some ruins alluding to the door's origins?
 	- Machine Labyrinth, getting lost in that hell - dodging rampaging machines, dodging an active engagement between Old Iron x New ore?
+- Acts:
+	- Reviewing the information on the Door Dasher en-route (the massive books the graduate gave you...)
+	- Seeing it sprint through the jungles of Taaga
+	- Land at a nearby settlement and set up the trap
 
 Foes in the Foliage:
 - Murk
@@ -26,3 +30,11 @@ Sunken Crown:
 
 Emberclaw Brigade:
 - *The Emberclaw Brigade is a nomadic tribe of fiery Salamanders that primarily live on the seas, and have built a lineage of powerful fire magicks. They've been eternally tasked by some entity - likely a whimsical Unshaped - to wage war against water itself. So, what better battlefield than the sea? While they primarily stick to the Shining Sea around Taaga (due to the prevalence of massive sea life), they on occasion make landfall most to resupply. Sometimes, however, they land to celebrate the heroic slaying of a notable sea monster. This is one such occasion, and you find yourself swept up in spirit as a boatload of Emberclaws march into the beachside bar you are relaxing in.*
+
+To Tame a Colossi
+![[Pasted image 20260106121810.png]]
+- No-Folk Land
+- Rank 7-8
+- A rare, deadly Colossi Crab has been spotted and some Warlords are seeking to get their hands on it!
+- Up to you to stop them and tame it for yourself, put it down, or send it packing.
+

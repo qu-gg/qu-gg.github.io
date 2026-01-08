@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hold the Wall - BREAK!! Adventure</title>
+    <title>Horror in the Deynali - BREAK!! Adventure</title>
     <style>
         /* ===== CSS RESET & BASE ===== */
         *, *::before, *::after {
@@ -13,16 +13,15 @@
         }
 
         :root {
-            /* Red Wall & Wistful Dark Theme Palette */
-            --crimson-deep: #8B1E3F;
-            --blood-red: #A62639;
-            --iron-gray: #4A5568;
-            --steel-cold: #718096;
-            --frost-blue: #5A8FA8;
-            --purple-dark: #4A3A5C;
-            --cream-pale: #F5F0E8;
+            /* River/Water Theme Palette */
+            --river-deep: #0D3D3D;
+            --river-teal: #2B8B7B;
+            --aqua-bright: #1E9ED2;
+            --foam-white: #E6F7F7;
+            --coral-accent: #E86A4F;
+            --sand-tan: #C9A961;
             --pearl-white: #FEFEFE;
-            --slate-deep: #2D3748;
+            --seaweed-green: #4A7C59;
             --ink-dark: #1a1a2e;
             
             /* Typography */
@@ -42,7 +41,7 @@
             font-size: 10pt;
             line-height: 1.35;
             color: var(--ink-dark);
-            background: var(--cream-pale);
+            background: var(--foam-white);
         }
 
         /* ===== PAGE STRUCTURE ===== */
@@ -51,7 +50,7 @@
             min-height: 11in;
             max-height: 11in;
             padding: 0.15in 0.35in 0.25in 0.35in;
-            background: var(--cream-pale);
+            background: var(--foam-white);
             margin: 0 auto 5mm auto;
             box-shadow: 0 2px 10px rgba(0,0,0,0.15);
             overflow: hidden;
@@ -66,7 +65,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--crimson-deep), var(--iron-gray), var(--frost-blue), var(--iron-gray), var(--crimson-deep));
+            background: linear-gradient(90deg, var(--aqua-bright), var(--river-teal), var(--seaweed-green), var(--river-teal), var(--aqua-bright));
         }
 
         .page.art-page {
@@ -89,24 +88,24 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            border: 2px solid #6b3fa0;
+            border: 2px solid #2B8B7B;
             background: transparent;
             transition: background 0.2s;
         }
 
         .progress-bubble.active {
-            background: #6b3fa0;
-            border-color: #6b3fa0;
+            background: #2B8B7B;
+            border-color: #2B8B7B;
         }
 
         /* ===== TITLE BOX ===== */
         .title-box {
-            background: var(--slate-deep);
+            background: var(--river-deep);
             border-radius: 6px;
             padding: 4px 20px;
             text-align: center;
             margin-bottom: 2px;
-            border: 2px solid var(--crimson-deep);
+            border: 2px solid var(--river-teal);
             box-shadow: 
                 0 4px 8px rgba(0,0,0,0.2),
                 inset 0 1px 0 rgba(255,255,255,0.1);
@@ -121,21 +120,16 @@
             transform: translateX(-50%);
             width: 60%;
             height: 3px;
-            background: var(--crimson-deep);
+            background: var(--river-teal);
             border-radius: 2px;
         }
 
         .title-box h1 {
             font-family: var(--font-display);
-            font-size: 24pt;
+            font-size: 28pt;
             color: var(--pearl-white);
             text-transform: uppercase;
-            letter-spacing: 3px;
-            /* text-shadow: 
-                3px 3px 0 var(--crimson-deep),
-                -1px -1px 0 var(--slate-deep),
-                1px -1px 0 var(--slate-deep),
-                -1px 1px 0 var(--slate-deep); */
+            letter-spacing: 4px;
             margin: 0;
         }
 
@@ -154,14 +148,14 @@
             gap: 25px;
             margin: 3px 0;
             padding: 3px 0;
-            border-bottom: 2px solid var(--crimson-deep);
+            border-bottom: 2px solid var(--river-teal);
         }
 
         .theme-item {
             font-family: var(--font-heading);
             font-size: 10pt;
             font-weight: bold;
-            color: var(--crimson-deep);
+            color: var(--river-deep);
             display: flex;
             align-items: center;
             gap: 4px;
@@ -188,8 +182,8 @@
         /* ===== CONTENT BOXES ===== */
         .content-box {
             background: var(--pearl-white);
-            border: 1px solid var(--frost-blue);
-            border-left: 4px solid var(--frost-blue);
+            border: 1px solid var(--river-teal);
+            border-left: 4px solid var(--river-teal);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -202,7 +196,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--crimson-deep);
+            background: var(--river-teal);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -223,13 +217,13 @@
         .resolution-option em {
             font-style: italic;
             font-weight: bold;
-            color: var(--frost-blue);
+            color: var(--coral-accent);
         }
 
         .content-box h3 {
             font-family: var(--font-heading);
             font-size: 11pt;
-            color: var(--crimson-deep);
+            color: var(--river-teal);
             margin-top: 4px;
             margin-bottom: 2px;
         }
@@ -243,12 +237,12 @@
         .content-box .read-aloud {
             font-style: italic;
             font-weight: bold;
-            color: var(--slate-deep);
+            color: var(--river-deep);
         }
 
         /* ===== CHARACTERS BOX ===== */
         .characters-box {
-            background: rgba(139, 30, 63, 0.08);
+            background: rgba(43, 139, 123, 0.08);
         }
 
         .character-entry {
@@ -256,7 +250,7 @@
         }
 
         .character-entry:not(:last-child) {
-            border-bottom: 1px dashed var(--frost-blue);
+            border-bottom: 1px dashed var(--river-teal);
         }
 
         .character-header {
@@ -270,12 +264,12 @@
             font-family: var(--font-heading);
             font-size: 11pt;
             font-weight: bold;
-            color: var(--crimson-deep);
+            color: var(--coral-accent);
         }
 
         .character-details {
             font-size: 9pt;
-            color: var(--iron-gray);
+            color: var(--river-teal);
             font-style: italic;
         }
 
@@ -288,20 +282,20 @@
             font-size: 9pt;
             font-style: italic;
             font-weight: bold;
-            color: var(--steel-cold);
+            color: var(--seaweed-green);
             margin-top: 1px;
         }
 
         /* ===== STORY STEPS ===== */
         .story-steps {
             font-size: 9.5pt;
-            background: var(--slate-deep);
-            border-color: var(--slate-deep);
-            border-left: 4px solid var(--crimson-deep);
+            background: var(--river-deep);
+            border-color: var(--river-deep);
+            border-left: 4px solid var(--coral-accent);
         }
 
         .story-steps h2 {
-            background: var(--crimson-deep);
+            background: var(--coral-accent);
             color: var(--pearl-white);
         }
 
@@ -314,7 +308,7 @@
         }
 
         .story-steps em {
-            color: var(--frost-blue);
+            color: var(--aqua-bright);
         }
 
         .story-section {
@@ -322,20 +316,19 @@
         }
 
         .story-section-header {
-            background: var(--crimson-deep);
+            background: var(--coral-accent);
             color: var(--pearl-white);
             font-family: var(--font-heading);
             font-size: 9.5pt;
             font-weight: bold;
             padding: 1px 5px;
             border-radius: 0;
-            margin-top: 7.5px;
             margin-bottom: 4px;
             display: inline-block;
         }
 
         .story-section-header.intro {
-            background: var(--iron-gray);
+            background: var(--seaweed-green);
         }
 
         .story-section ul {
@@ -354,9 +347,32 @@
             color: var(--ink-dark);
         }
 
+        /* Fishing Results Badges */
+        .fishing-results {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: 4px;
+        }
+
+        .fishing-result-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 3px 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+            font-size: 9pt;
+        }
+
+        .result-icon {
+            font-size: 11pt;
+            flex-shrink: 0;
+        }
+
         /* Story Image Block (standalone) */
         .story-image-block {
-            border: 1px solid var(--frost-blue);
+            border: 1px solid var(--river-teal);
             border-radius: 3px;
             overflow: hidden;
         }
@@ -367,12 +383,43 @@
             display: block;
             object-fit: cover;
             object-position: center;
-            transform: scale(1.25);
+        }
+
+        /* ===== ADVERSARY BOX (Deadwitch) ===== */
+        .adversary-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--coral-accent);
+            border-left: 4px solid var(--coral-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .adversary-box h2 {
+            background: var(--coral-accent);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .adversary-box .content-box-inner {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .adversary-box .character-quote {
+            color: var(--river-deep);
+            font-size: 9pt;
+            margin-top: 3px;
         }
 
         /* ===== SOURCES BOX ===== */
         .sources-box {
-            background: rgba(58, 74, 90, 0.05);
+            background: rgba(13, 61, 61, 0.05);
             font-size: 8.5pt;
         }
 
@@ -381,16 +428,16 @@
         }
 
         .sources-box .adventure-credit {
-            background: rgba(139, 30, 63, 0.1);
-            border-left: 3px solid var(--crimson-deep);
+            background: rgba(43, 139, 123, 0.12);
+            border-left: 3px solid var(--coral-accent);
             padding: 4px 8px;
             margin-bottom: 6px;
             font-size: 9pt;
-            color: var(--slate-deep);
+            color: var(--river-deep);
         }
 
         .sources-box .adventure-credit a {
-            color: var(--crimson-deep);
+            color: var(--coral-accent);
             text-decoration: none;
         }
 
@@ -408,11 +455,11 @@
 
         .sources-box li {
             margin-bottom: 2px;
-            color: var(--iron-gray);
+            color: var(--river-teal);
         }
 
         .sources-box a {
-            color: var(--frost-blue);
+            color: var(--river-teal);
             text-decoration: none;
         }
 
@@ -424,15 +471,15 @@
         
         /* Key Locations Box */
         .locations-box {
-            border: 1px solid var(--frost-blue);
-            border-left: 4px solid var(--frost-blue);
+            border: 1px solid var(--river-teal);
+            border-left: 4px solid var(--river-teal);
             border-radius: 4px;
             margin-bottom: 8px;
             overflow: hidden;
         }
 
         .locations-box-header {
-            background: var(--slate-deep);
+            background: var(--river-deep);
             color: var(--pearl-white);
             font-family: var(--font-heading);
             font-size: 12pt;
@@ -453,7 +500,7 @@
         .location-card {
             flex: 1;
             padding: 5px 8px;
-            border-right: 2px solid var(--crimson-deep);
+            border-right: 2px solid var(--river-teal);
         }
 
         .location-card:last-child {
@@ -463,7 +510,7 @@
         .location-card h3 {
             font-family: var(--font-heading);
             font-size: 11pt;
-            color: var(--crimson-deep);
+            color: var(--river-teal);
             margin-bottom: 4px;
             text-transform: uppercase;
         }
@@ -472,7 +519,7 @@
             font-size: 9pt;
             font-style: italic;
             font-weight: bold;
-            color: var(--steel-cold);
+            color: var(--seaweed-green);
             margin-bottom: 2px;
         }
 
@@ -491,8 +538,8 @@
 
         .secrets-box {
             background: var(--pearl-white);
-            border: 1px solid var(--crimson-deep);
-            border-left: 4px solid var(--crimson-deep);
+            border: 1px solid var(--river-teal);
+            border-left: 4px solid var(--river-teal);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -501,7 +548,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--crimson-deep);
+            background: var(--river-teal);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -525,87 +572,64 @@
         }
 
         .image-box {
-            border: 3px solid var(--frost-blue);
+            border: 3px solid var(--river-teal);
             border-radius: 6px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: var(--slate-deep);
+            background: var(--river-teal);
         }
 
         .image-box img {
             width: 100%;
             flex: 1;
             object-fit: cover;
-            max-height: 4.5in;
         }
 
-        .image-box .image-caption {
-            width: 100%;
-            padding: 4px 8px;
-            font-size: 9pt;
-            color: var(--pearl-white);
-            text-align: center;
-            background: rgba(0,0,0,0.4);
-            flex-shrink: 0;
-        }
-
-        .image-box .image-caption a {
-            color: var(--crimson-deep);
-            text-decoration: none;
-        }
-
-        .image-box .image-caption a:hover {
-            text-decoration: underline;
-        }
-
-        /* Bottom Section - Resolution + Rank side by side */
+        /* ===== BOTTOM SECTION (Quest Resolution + Deadwitch + Rank) ===== */
         .bottom-section {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 8px;
+            margin-top: 6px;
         }
 
         /* Quest Resolution */
         .quest-resolution {
             background: var(--pearl-white);
-            border: 1px solid var(--slate-deep);
-            border-left: 4px solid var(--slate-deep);
+            border: 1px solid var(--river-teal);
+            border-left: 4px solid var(--river-teal);
             border-radius: 4px;
             overflow: hidden;
-            color: var(--ink-dark);
         }
 
         .quest-resolution h2 {
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--slate-deep);
+            background: var(--river-teal);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
-            text-align: left;
         }
 
         .quest-resolution-inner {
             padding: 6px 10px;
         }
 
-        .resolution-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
+        .resolution-option {
+            font-size: 9pt;
         }
 
         /* Rank Box */
         .rank-section {
             background: var(--pearl-white);
             border-radius: 4px;
-            border: 1px solid var(--crimson-deep);
-            border-left: 4px solid var(--crimson-deep);
+            border: 1px solid var(--coral-accent);
+            border-left: 4px solid var(--coral-accent);
             overflow: hidden;
             color: var(--ink-dark);
             display: flex;
@@ -616,7 +640,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--crimson-deep);
+            background: var(--coral-accent);
             padding: 4px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -638,13 +662,13 @@
         }
 
         .rank-adjust-item strong {
-            color: var(--crimson-deep);
+            color: var(--coral-accent);
         }
 
         .resolution-option h3 {
             font-family: var(--font-heading);
             font-size: 11pt;
-            color: var(--slate-deep);
+            color: var(--river-deep);
             margin-bottom: 3px;
         }
 
@@ -659,7 +683,7 @@
             right: 0.45in;
             font-size: 8pt;
             font-style: italic;
-            color: var(--iron-gray);
+            color: var(--river-teal);
         }
 
         /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
@@ -682,14 +706,14 @@
 
         /* ===== PAGE 3 - ART VIBEBOARD ===== */
         .art-page {
-            background: var(--slate-deep);
+            background: var(--river-deep);
             color: var(--pearl-white);
             min-height: 11in;
             max-height: 11in;
         }
 
         .art-page::before {
-            background: linear-gradient(90deg, var(--crimson-deep), var(--frost-blue), var(--crimson-deep));
+            background: linear-gradient(90deg, var(--coral-accent), var(--aqua-bright), var(--coral-accent));
         }
 
         .art-header {
@@ -700,48 +724,44 @@
         .art-header h1 {
             font-family: var(--font-display);
             font-size: 20pt;
-            color: var(--pearl-white);
+            color: var(--aqua-bright);
             text-transform: uppercase;
             letter-spacing: 3px;
-            text-shadow: 2px 2px 0 var(--crimson-deep);
         }
 
         .art-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            gap: 10px;
-            height: calc(11in - 0.5in - 50px);
+            gap: 8px;
+            height: calc(11in - 0.4in - 40px);
         }
 
         .art-item {
             position: relative;
-            border: 3px solid var(--frost-blue);
-            border-radius: 6px;
             overflow: hidden;
-            background: var(--crimson-deep);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .art-item.wide {
-            grid-column: span 2;
-        }
-
-        .art-item.tall {
-            grid-row: span 2;
-        }
-
-        .art-item.unknown-source .art-caption {
-            font-style: italic;
-            opacity: 0.85;
+            border-radius: 4px;
+            border: 2px solid var(--aqua-bright);
+            background: rgba(0, 0, 0, 0.3);
         }
 
         .art-item img {
             width: 100%;
-            flex: 1;
+            height: 100%;
             object-fit: cover;
             display: block;
+        }
+
+        .art-item:nth-child(3) img {
+            object-position: 25% 50%;
+        }
+
+        .art-item:nth-child(4) img {
+            object-position: 55% 50%;
+        }
+
+        .art-item:nth-child(6) img {
+            object-position: 25% 50%;
         }
 
         .art-item .art-caption {
@@ -750,14 +770,14 @@
             left: 0;
             right: 0;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
-            color: var(--pearl-white);
+            color: var(--foam-white);
             padding: 8px 10px 6px 10px;
             font-size: 8pt;
             line-height: 1.3;
         }
 
         .art-item .art-caption a {
-            color: var(--frost-blue);
+            color: var(--aqua-bright);
             text-decoration: none;
         }
 
@@ -799,15 +819,15 @@
 
         <!-- Title Box -->
         <div class="title-box">
-            <h1>Hold the Wall</h1>
-            <div class="subtitle">The Red Wall • Aiden • Wistful Dark</div>
+            <h1>Horror in the Deynali</h1>
+            <div class="subtitle">Tikuto • Sol Alliance • Blazing Garden</div>
         </div>
 
         <!-- Themes Row -->
         <div class="themes-row">
-            <div class="theme-item"><span class="emoji">☠</span> Difficult</div>
-            <div class="theme-item"><span class="emoji">🛡</span> Defense</div>
-            <div class="theme-item"><span class="emoji">▦</span> Wall</div>
+            <div class="theme-item"><span class="emoji">🐟</span> Fishing Village</div>
+            <div class="theme-item"><span class="emoji">⚔</span> Confrontation</div>
+            <div class="theme-item"><span class="emoji">⛵</span> River Adventure</div>
         </div>
 
         <!-- Two Column Content -->
@@ -818,35 +838,44 @@
                 <div class="content-box">
                     <h2>Adventure Description</h2>
                     <div class="content-box-inner">
-                    <p>Aiden's Wall has stood for centuries against the Hollow Queen's hordes, unwavering. When a routine inspection of its Spell Engines showed it beginning to fail, however, an emergency task force is gathered. The party must take a stand with The Red Blades against the "children" of the Queen, while quick efforts are made to secure the wall.</p>
+                    <p>The tranquil, jungle waters near a fishing hamlet have been invaded by a huge, aquatic monster. It is threatening the ecosystem, attacking villagers, and blocking passage to necessary local herbs. The party need to act quickly to save the river, before the creature claims its next victim.</p>
                     </div>
                     <h2>Starting the Adventure</h2>
                     <div class="content-box-inner">
-                    <p class="read-aloud">"The severity of the situation is etched in the hardened faces of the upper-ranking Red Blades you pass in the wall's top corridors. Rugged and frosted windows give you the faintest view over the desolate tundra beyond the wall where twisted cities and demonic forces lie in the mist. The weight of Aiden's task falls on you as you stand atop this miles-long, cold-iron wall - ever buzzing with the churn of the Mana Barrier engines below. As the briefing room doors open, you see Commander Vashaan, as cold as the stone beneath her, leaning over an arcane device."</p>
-                    <p style="margin-top: 6px;">The party might question why they are there. As it is a high-ranking adventure, maybe they were noted in the area and asked to aid directly. Or were even the ones that discovered the failing engines, on behalf of the Helical Archive. Make the Red Blades formidable and scary but equally match respect for the party. <br><br>Try to make Juk's Sunblade something for the party to protect alongside the Wall, as it directly holds back the lesser demons.</p>
+                    <p class="read-aloud">Bruised and soaked after being boat-wrecked by that <strong>Thing</strong>, you have finally stumbled your way to the river village of Tikuto. Reknowned for Pheeka's Fishing Shop, it is known as a prosperous and lively fishing village built on stilts and walkways. This seems far from accurate, however, as melancholic faces and dour mood physically washes over you. No coracles are in the water, nor any isle fisherman or playful folk. You know why for you've seen it yourself - a monster lurks in the waves.</p>
+                    <p style="margin-top: 6px;">A vicious Deadwitch has moved into the waters near the usually happy fishing village of Tikuto, sat along the Deynali River in the Sol Alliance. She has begun manipulating the ecosystem for her vile experiments, attacking fishers, and worse yet, has taken up residence on a nearby island that has much needed restorative herbs. The village has run out of supplies and larger boats, the injured are stuck in pain, including the increasing number of waylaid travelers. The town guardian named Brassa had been tasked with at the least driving away the monster, but was seriously wounded in her attempt. Use the BREAK!! Fishing <a href="https://breakrpg.blogspot.com/2025/06/adventure-hooks-fishing-activity-for.html" target="_blank" style="color: var(--coral-accent);">Rules</a>.</p>
                     </div>
                 </div>
 
                 <!-- Important Characters -->
                 <div class="content-box characters-box">
                     <h2>Important Characters</h2>
-                    <div class="content-box-inner">
+                    <div class="content-box-inner" style="padding-bottom: 12px;">
                     <div class="character-entry">
                         <div class="character-header">
-                            <span class="character-name">Commander Vashaan</span>
-                            <span class="character-details">— Elf, Female, ??? (Oppressor)</span>
+                            <span class="character-name">Brassa</span>
+                            <span class="character-details">— Promethean, Female, 31 (Custrel)</span>
                         </div>
-                        <div class="character-desc">Commander of the Red Blades, this fearsome and ruthless sentinel has stood against the horde since the Calamity itself.</div>
-                        <div class="character-quote">"Donning the most wicked crimson Superheavy Armor in the Outer World, it'd be easy to mistake Vashaan as the conqueror were tables turned."</div>
+                        <div class="character-desc">Everyone in town sees her as its protector and best fisher. Though generally well-meaning, she can be loud and aggressive.</div>
+                        <div class="character-quote">"Towering high above most in the village, this proud Promethean is adorned in armor made from various fish scales. It kinda smells, but no one dares tell her."</div>
                     </div>
 
                     <div class="character-entry">
                         <div class="character-header">
-                            <span class="character-name">Captain Juk</span>
-                            <span class="character-details">— Tenebrate, Male, 32 (Proudhound)</span>
+                            <span class="character-name">Speaker Talki</span>
+                            <span class="character-details">— Human, Female, 74 (Scholar)</span>
                         </div>
-                        <div class="character-desc">Captain Juk has been assigned as the Star Gem Bearer for the party's mission.</div>
-                        <div class="character-quote">"Not a hair is out of place on the Captain's crimson uniform. Resolute determination is all on his face, staring over the wall."</div>
+                        <div class="character-desc">Tikuto's spiritual leader, and the one who handles all communication with Sol Alliance officials. Folks look to her in matters of conflict resolution.</div>
+                        <div class="character-quote">"Despite wiry grey hair from a lifetime of solving other's problems, she has the laugh lines of a life well-lived."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Pheeka</span>
+                            <span class="character-details">— Undead, Female, ??? (Undead Peddlar)</span>
+                        </div>
+                        <div class="character-desc">Owner of the famed Pheeka's Fishing Shop, she is actually a well-preserved Undead Peddlar. Oldest member of Tikuto <em>by far</em>.</div>
+                        <div class="character-quote">"A knowing smirk is set across this eccentric old lady's face as seashells hanging from her hair clunk together."</div>
                     </div>
                     </div>
                 </div>
@@ -856,51 +885,68 @@
             <div class="column">
                 <!-- Story Image -->
                 <div class="story-image-block">
-                    <img src="6) Hold the Wall/Pasted image 20251227152619.jpg" alt="The Red Wall">
+                    <img src="12) Horror in the Deynali/Pasted image 20260106101517.jpg" alt="Belu Thicket Shrines">
                 </div>
 
                 <!-- Suggested Story -->
                 <div class="content-box story-steps">
                     <h2>Suggested Story</h2>
                     <div class="content-box-inner">
-                    <p class="story-intro-text">Set the scene, have the party shown into the strategy chamber to speak with the Commander, then continue:</p>
+                    <p class="story-intro-text">Describe the party stumble into town, evaluate the village, have Brassa limp into the party's path, then continue:</p>
 
                     <div class="story-section">
-                        <span class="story-section-header">Sputtering Engines</span>
+                        <span class="story-section-header">Fishing for Help</span>
                         <ul>
-                            <li>Vashaan instructs the party to assist the special forces while the six Massive Spell Engines within the wall undergo repairs.</li>
-                            <li>The deactivation of the Mana Barrier will certainly attract a powerful horde, and the wall must be defended while it is vulnerable.</li>
-                            <li>She introduces Captain Juk as their envoy and to protect the Sunblade dearly.</li>
+                            <li>Brassa recounts, and confirms, the village's trouble, and offers substantial reward by the village elder for those who help.</li>
+                            <li>Once the party agree to help, Brassa shares her proposed next plan. She hopes to repair a larger fishing vessel, place bait into the water, then ambush it.</li>
                         </ul>
                     </div>
 
                     <div class="story-section">
-                        <span class="story-section-header">Descent</span>
+                        <span class="story-section-header">Sink or Swim</span>
                         <ul>
-                            <li>Commander Vashaan escorts the party to a massive grated elevator, noting that its function will cut out while the Engines are being repaired. Below stands 5 Squads of Red Blades.</li>
-                            <li>The elevator lands, the buzz of the Engines cease, and thundering footsteps approach. From the mist, the party faces a <em>Shadow Sorceress</em> with 6 <em>Malignant Echoes</em>.</li>
-                            <li>At all times, dozens of <em>Blighted Demons</em> are 1 Area outside combat - kept back by Juk's Sunblade.</li>
+                            <li>To repair a boat, the party will need to ask Talki permission to use reeds from a nearby magical thicket. It has been defaced with decaying fish corpses and claw marks against the shrines.</li>
+                            <li>Depending on the quality of repairs, the boat will have 1, 2, or 4 Hearts. It has a Defense Rating of 12.</li>
                         </ul>
                     </div>
 
                     <div class="story-section">
-                        <span class="story-section-header">Standing Ground</span>
+                        <span class="story-section-header">Barrels of Bait</span>
                         <ul>
-                            <li>As the hordes advance, they are clustered around siege-breaking colossi called <em>Marbled Gohma</em>. The Squads split to tackle one each, including one left for the party. It will take 10 Turns before the Engines are repaired.</li>
-                            <li>Every 2 Turns, roll a D20 for each Squad:</li>
-                            <ul>
-                                <li>A Squad's outcome depends on it hitting 3 Successes or Failures first, where a Success is a 10+.</li>
-                                <li>PCs can aid other Squads with Abilities/Actions to give the roll an Edge.</li> 
-                                <li>Failed Squads reduce the Wall's Hearts by 2.</li>
-                            </ul>
-                            <li>After 10 Turns, the buzz of the Engines resume and the Wall lights once more. The lifts will raise in 2 more Turns so the party must go!</li>
+                            <li>The party need to learn what would be the best bait; Brassa directs them to Pheeka, the famed storekeeper.</li>
+                            <li>She suggests the rare Razormouth, and to fish for it on a nearby jetty with her Fishing Rods. Results affect Combat start:
+                                <ul style="margin-top: 2px; margin-left: 8px;">
+                                    <li>✓ Razormouth: Party can Ambush the Deadwitch. </li>
+                                    <li>⚠ Non-common fish: Normal Combat start.</li>
+                                    <li>✗ No catch: Deadwitch Ambushes the Party.</li>
+                                </ul>
+                            </li>
                         </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Briny Brawl</span>
+                        <ul>
+                            <li>When the party is ready for the showdown, Brassa gives them directions to the herbal island and wishes them luck. Combat starts depending on the bait's quality. The Deadwitch attacks the boat first, then the party once they're in the water.</li>
+                            <li>The Deadwitch will look to flee, or hide and regenerate, at 1 Heart. Regardless of it fleeing or being slain, Tikuto will celebrate and prepare what feast they can.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Storybeats & layout inspired from <strong>Wave of Destruction</strong> by One-Shot Wonders. Some writing blocks used directly.</p>
+                    <div style="margin-top: 6px; line-height: 1.4;">
+                        <div><strong>Deadwitch:</strong> Drakkenheim Sewer Gator by ichiCharmed (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</div>
+                        <div><strong>Tikuto:</strong> BREAK!! <a href="https://breakrpg.blogspot.com/2025/12/river-village-tikuto-freebie-settlement.html" target="_blank">Blog</a></div>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page-credit">Made by Quagg</div>
     </div>
 
     <!-- ==================== PAGE 2 ==================== -->
@@ -912,21 +958,24 @@
             <div class="progress-bubble"></div>
         </div>
 
-        <!-- Key Locations Box -->
+        <!-- Key Locations -->
         <div class="locations-box">
             <div class="locations-box-header">Key Locations</div>
-            
-            <!-- Key Locations Horizontal -->
             <div class="locations-horizontal">
                 <div class="location-card">
-                    <h3>Briefing Room</h3>
-                    <p class="loc-desc">"A wall of ruined blades adorns the wall of this place, likely belonging to lost Blades. A simple Star Gem embedded in the ceiling provides warmth against the frost."</p>
-                    <p>Brutalist and practical, this briefing room holds an arcane device in the center, showcasing concentrations of Dark Mana within a wide range of the wall.<br><br>While the wall itself is clear as yet, signs of forces building in the nearby City of Corpses has Vashaan on edge.</p>
+                    <h3>Pheeka's Fishing Shop</h3>
+                    <p class="loc-desc">"At the edge of town and so close to the Deynali it's nearly falling in, this is the premier shop for fishing supplies. Technically it's the only fishing shop, but still, it is impressive."</p>
+                    <p>An Undead Peddlar Pheeka runs this shop and has for a long, long time. She keeps her ear to the ground and is a good source of information for adventurers she likes. Her Inventory is in the <a href="https://breakrpg.blogspot.com/2025/12/river-village-tikuto-freebie-settlement.html" target="_blank" style="color: var(--river-teal);">blogpost</a>.</p>
                 </div>
                 <div class="location-card">
-                    <h3>The Red Wall</h3>
-                    <p class="loc-desc">"One could only assume it is made entirely of Shade Iron by how ominous this massive plated wall looks set against frozen mountains."</p>
-                    <p>The wall has a Defense Rating of 20 and 20 Hearts. Its Massive Spell Engines emit enough Shard light to ward off the demons, however they must be deactivated to carry out repairs.<br><br>Unfortunately, it also powers the lifts which means that there is no escape until the repairs are complete...or the wall falls.</p>
+                    <h3>Belu Thicket</h3>
+                    <p class="loc-desc">"A serene and tranquil grove set down a stream from Tikuto, several ancient statues to a river god have been brutally defaced here."</p>
+                    <p><br>Besides holding shrines to Belugosh, the ancient river god, this place is also home to a collection of <a href="https://breakrpg.blogspot.com/2025/11/blazing-garden-items-freebie-gear.html" target="_blank" style="color: var(--river-teal);">Strengthened Scroll Reeds</a>, magically-infused bright blue reeds. The Deadwitch defaced this place.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Deynali River</h3>
+                    <p class="loc-desc">"Traversing back up the river you came, the gentle waters are unsettling in their silence. Reflections of the sun make it hard to see through the waves."</p>
+                    <p><br>Halfway to the island of herbs, the party may set up the bait and lie in wait, result of which depends on their fishing success. Create a suspenseful atmosphere against the beautiful surroundings.</p>
                 </div>
             </div>
         </div>
@@ -937,17 +986,19 @@
                 <h2>Secrets & Clues</h2>
                 <div class="secrets-box-inner">
                 <ol class="secrets-list">
-                    <li>Vashaan has made contingency plans for evacuation with nearby settlements prepared to leave on notice. However, she believes many would not outpace the horde, even if they started now.</li>
-                    <li>A recent inner-rank betrayal by one of <em>'Her Beloved'</em> has left the Red Blades sorely lacking in numbers.</li>
-                    <li>Each squad has a dedicated Star Gem Bearer within the Red Blades, spaced out due to scarcity of the gems.</li>
-                    <li>The Massive Spell Engines were repurposed from Akenia, and only the greatest engineers can repair it.</li>
-                    <li>The City of Corpses, Cauldron, was once the forward operating ground of the Red Blades before being wiped out early in the 4th Aeon.</li>
-                    <li>Star Gem Bearers are a necessary role, as without them, the hordes of lesser demons would overrun even the greatest warrior.</li>
+                    <li>The ribbit motif throughout Tikuto and the Deynali river is deference to an ancient river god named Belugosh, said to take on any aquatic form. Fishers from far and wide come here for a chance to meet her.</li>
+                    <li>The Deadwitch was named Afumi in life and was focused on findings ways to displace gods in their domains. When she was getting close to that goal, Belugosh put an end to her...or so Belugosh thought. Now, Afumi's goal is displacing <em>her</em> specifically.</li>
+                    <li>All of Tikuto's sturdier boats were destroyed by the monster, the ones stemming from the thicket's wood.</li>
+                    <li>Belugosh is known to appear to and reward those who manage to catch a Razormouth in her waters. As such, they are very valuable to the Deadwitch.</li>
+                    <li>It is common for villagers to give Talki gifts and mementos after seeking her insight, many seeing her as Tikuto's grandmother.</li>
+                    <li>The Belu Thicket a sacred site holding shrines to Belugosh known for its extra-buoyant wood.</li>
+                    <li>Pheeka has some dusty old tomes on Deadwitches, indicating their singular focus in death and indiscriminate use of ambush tactics in their waters.</li>
+                    <li>The Deadwitch only assaulted the village itself once, raiding a fish storage shack. Oddly, the only thing it took was a prized Razormouth fish.</li>
                 </ol>
                 </div>
             </div>
             <div class="image-box">
-                <img src="6) Hold the Wall/Pasted image 20251227135704.jpg" alt="Marbled Gohma Inspiration" style="object-position: 70% center;">
+                <img src="12) Horror in the Deynali/Pasted image 20260107144103.jpg" alt="Deadwitch Inspiration">
             </div>
         </div>
 
@@ -957,53 +1008,38 @@
             <div class="quest-resolution">
                 <h2>Quest Resolution</h2>
                 <div class="quest-resolution-inner">
-                <div class="resolution-columns">
-                    <div class="resolution-option">
-                        <h3>✦ Rewards</h3>
-                        <p>On success, <strong>Sunblade</strong> is offered to the party, a treasured blade reserved for the highest ranks of the Red Blades. Free quarters and meals are provided for as long as the party stays.</p>
-                    </div>
-                    <div class="resolution-option">
-                        <h3>⚔ Outstanding Success</h3>
-                        <p>If all Squads are saved, Vashaan will offer the party a <strong>Red Blades Insignia</strong>, a powerful icon of status throughout the Wistful Dark.</p>
-                    </div>
+                <div class="resolution-option">
+                    <h3>✦ Rewards</h3>
+                    <p>Talki will let the party keep the repaired <strong>Felucca</strong> [Source, pg. 198], offering to help retrieve and repair it if it was sunk. As well, she'll offer 2 baskets of <strong>Pini Beans</strong> [Trade Goods. Source, pg. 179].</p>
+                    <br><p style="margin-top: 3px;">The village will throw a great feast, and the party will have free <strong>Pleasant Room & Hearty Meals</strong> [Source, pg. 201] for the duration of their stay.</p>
                 </div>
-                <!-- Sunblade Item Block -->
-                <div style="background: rgba(245, 240, 232, 0.9); border: 2px dotted var(--iron-gray); border-radius: 4px; padding: 6px 10px; margin-top: 8px; font-size: 9pt;">
-                    <div style="margin-bottom: 3px;"><strong style="color: var(--crimson-deep);">Sunblade</strong> <span style="color: var(--iron-gray);">[Master Weapon]</span></div>
-                    <div style="margin-bottom: 3px;">Made of Sun Gold. Absorbs sunlight, storing up to a week's worth while unsheathed; emits light like a <em>Star Gem</em>. Expel all stored sunlight (min. 1 day) for <strong>+1 Damage</strong>.</div>
-                    <div style="color: var(--frost-blue); font-weight: bold;">1 Slot · 4 Gems · Made by Yan Kodiac</div>
                 </div>
+            </div>
+
+            <!-- Deadwitch Adversary -->
+            <div class="adversary-box">
+                <h2>Deadwitch Stats</h2>
+                <div class="content-box-inner">
+                <!-- <div class="character-quote">"The lifetime of a Sea Witch is quite long, but even then, sometimes their lives are ended prior to their goals being realized. Given their domain, it is not a large step to undeath for these Witches, temporary as it is. All negotiable or scheming nature disappears, regressing into an obsessive monster for their pursuits."</div> -->
+                <div class="character-quote">"A Sea Witch lives long, but even then, sometimes they die before satiating their desires. Thankfully, for them, undeath is an easy leap. All negotiable nature disappears, regressing into a wicked monster obsessed with their singular goal."</div>
+                <p>The Deadwitch is a reflavored Drakkenheim Sewer Gator, with the addition: it has an Edge on Attacks and Might Checks against Targets in Water.</p>                
                 </div>
             </div>
 
             <!-- Rank Section -->
             <div class="rank-section">
-                <div class="rank-header">Rank 8-9 Adventure</div>
+                <div class="rank-header">Rank 5-6 Adventure</div>
                 <div class="rank-adjustments">
                     <div class="rank-adjust-item">
-                        <strong>Lower Rank:</strong> Reduce the Shadow Sorceress' stats and lessen the Mooks.
+                        <strong>Lower Rank:</strong> Consider swapping the Monster for a water-based Chompa that can swim.
                     </div>
                     <div class="rank-adjust-item">
-                        <strong>Higher Rank:</strong> Add debuff/support Mooks alongside the Marbled Gohma or reduce the Wall's Hearts.
+                        <strong>Higher Rank:</strong> Consider adding a family of the Monsters, or some accompanying water-based Mooks.
                     </div>
                     <div class="rank-adjust-item">
-                        <strong>PC Starting Coin:</strong> 1200C
+                        <strong>PC Starting Coins:</strong> 600C
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Sources -->
-        <div class="content-box sources-box" style="margin-top: 8px;">
-            <h2>Sources & Adversaries</h2>
-            <div class="content-box-inner">
-            <p class="adventure-credit">Storybeats & layout inspired from <a href="https://rollandplaypress.com/products/one-shot-wonders" target="_blank"><strong>Creatures of the Deep</strong></a> by One-Shot Wonders. <br>Story, mechanics, setting, characters, and vibes reworked to fit BREAK!!'s universe.</p>
-            <ul>
-                <li><strong>Blighted Demons:</strong> Source, pg. 372</li>
-                <li><strong>Marbled Gohma</strong> by VictorSeven (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
-                <li><strong>Malignant Echo</strong> by Atyai (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
-                <li><strong>Shadow Sorceress</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
-            </ul>
             </div>
         </div>
     </div>
@@ -1024,29 +1060,29 @@
         <div class="art-grid">
             <!-- Row 1 -->
             <div class="art-item">
-                <img src="6) Hold the Wall/Pasted image 20251227152619.jpg" alt="The Red Wall">
-                <div class="art-caption">"The Red Wall" <br> Art by Full Metal Alchemist</div>
+                <img src="12) Horror in the Deynali/Pasted image 20260106101517.jpg" alt="Belu Thicket Shrines">
+                <div class="art-caption">"Shrines for Belugosh at the Thicket" <br> Art by <a href="https://www.artstation.com/artwork/yDD1Qx" target="_blank">Maria Sadre</a></div>
             </div>
             <div class="art-item">
-                <img src="6) Hold the Wall/Pasted image 20251227135704.jpg" alt="Marbled Gohma Inspiration">
-                <div class="art-caption">"Marbled Gohma Inspiration" <br> Art by Nintendo</div>
+                <img src="12) Horror in the Deynali/Pasted image 20260106101617.jpg" alt="Tikuto Inspiration">
+                <div class="art-caption">"Tikuto Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/A9GBde" target="_blank">Raven Y</a></div>
             </div>
             <div class="art-item">
-                <img src="6) Hold the Wall/Pasted image 20251227141515.jpg" alt="Malignant Echo Inspiration">
-                <div class="art-caption">"Malignant Echo Inspiration" <br> Art by <a href="https://www.deviantart.com/dasaurian/art/Concept-Dark-Shadow-Monster-Things-419855421" target="_blank">DaSaurian</a></div>
+                <img src="12) Horror in the Deynali/Pasted image 20260106102111.jpg" alt="Pheeka's Fishing Hut">
+                <div class="art-caption">"Phreeka's Fishing Hut" <br> Artist Unknown</div>
             </div>
             <!-- Row 2 -->
-            <div class="art-item unknown-source">
-                <img src="6) Hold the Wall/Pasted image 20251227151910.jpg" alt="Aiden Inspiration">
-                <div class="art-caption">"Aiden Inspiration" <br> Artist Unknown</div>
+            <div class="art-item">
+                <img src="12) Horror in the Deynali/Pasted image 20260107143956.jpg" alt="Roaming Shellstomps">
+                <div class="art-caption">"Roaming Shellstomps" <br> Artist Unknown</div>
             </div>
             <div class="art-item">
-                <img src="6) Hold the Wall/Pasted image 20251227155812.jpg" alt="Hollow Queen's Children">
-                <div class="art-caption">"Hollow Queen's Children" <br> Art by Oliver Odmark</div>
+                <img src="12) Horror in the Deynali/Pasted image 20260107144103.jpg" alt="Deadwitch Inspiration">
+                <div class="art-caption">"Deadwitch Inspiration" <br> Art by <a href="https://www.sssscomic.com/" target="_blank">Minna Sundberg</a></div>
             </div>
             <div class="art-item">
-                <img src="6) Hold the Wall/Pasted image 20251227160931.jpg" alt="Red Blade Inspiration" style="object-position: 95% center;">
-                <div class="art-caption">"Red Blade Inspiration" <br> Art by <a href="https://www.artstation.com/artwork/DAL8eo" target="_blank">Nick Bray</a></div>
+                <img src="12) Horror in the Deynali/Pasted image 20260107145959.jpg" alt="Deynali River">
+                <div class="art-caption">"Deynali River Inspiration" <br> Art by <a href="https://shant.artstation.com/projects/vwQAO" target="_blank">Anton Fadeev</a></div>
             </div>
         </div>
     </div>

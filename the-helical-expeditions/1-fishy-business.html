@@ -986,6 +986,7 @@
         }
 
         .art-item {
+            position: relative;
             border: 3px solid var(--teal-accent);
             border-radius: 6px;
             overflow: hidden;
@@ -1015,12 +1016,15 @@
         }
 
         .art-item .art-caption {
-            padding: 4px 8px;
-            font-size: 10pt;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
             color: var(--pearl-white);
-            text-align: center;
-            background: rgba(0,0,0,0.4);
-            flex-shrink: 0;
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
         }
 
         /* ===== PRINT STYLES ===== */
