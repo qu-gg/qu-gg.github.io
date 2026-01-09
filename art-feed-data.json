@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-08T12:01:55.056098Z",
+  "lastUpdated": "2026-01-09T00:03:53.395288Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:rrvzltc5ywowrv25ox33p2qh/app.bsky.feed.post/3mbwbf2uhv22e",
+      "source": "bluesky",
+      "author": {
+        "handle": "forlornencystment.bsky.social",
+        "displayName": "Woefully Encysted Creature",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rrvzltc5ywowrv25ox33p2qh/bafkreifngc7ig2an55dm6wuihw3xmk2xv25dqymrm65gm7bccdbhukmcie@jpeg"
+      },
+      "record": {
+        "text": "Here I will begin reading Dungeon Module B3: Palace of the Silver Princess! I am of course reading the orange version.",
+        "createdAt": "2026-01-08T15:12:24.665Z"
+      },
+      "indexedAt": "2026-01-08T15:12:30.529Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 22,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rrvzltc5ywowrv25ox33p2qh/bafkreiaybhli4wfgfrsrvwsst4r72ahwngesb6duksircrgudtdn4lj43q@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rrvzltc5ywowrv25ox33p2qh/bafkreiaybhli4wfgfrsrvwsst4r72ahwngesb6duksircrgudtdn4lj43q@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:pzgrbtvn36vjyboumu4fye2v/app.bsky.feed.post/3mbulybbmmk2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "birdmilk-rpg.bsky.social",
+        "displayName": "birdmilk",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pzgrbtvn36vjyboumu4fye2v/bafkreidhagyrxlakc4ugykwxvsvqkhayhw6end7pzyyaek5bd3kn64y2za@jpeg"
+      },
+      "record": {
+        "text": "Sometimes I am worried I am too positive when I write reviews, but it is impossible not to be with games that nail the intended theme and mechanics as hard as Fomoria by @thebreadwyrm.bsky.social does. \n\nbirdmilkcafe.com/2026/01/06/f...",
+        "createdAt": "2026-01-07T23:16:46.867Z"
+      },
+      "indexedAt": "2026-01-07T23:16:43.634Z",
+      "replyCount": 3,
+      "repostCount": 3,
+      "likeCount": 20,
+      "embed": {
+        "type": "external",
+        "uri": "https://birdmilkcafe.com/2026/01/06/fomoria/",
+        "title": "Fomoria",
+        "description": "(All art in this post is by Tania Herrero from the unbelievably generous Fomoria Quick Start) Foromia is pitched as epic horror. Epic. Horror. Horror The horror bit is clear, the setting includes a\u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pzgrbtvn36vjyboumu4fye2v/bafkreiczblmcgkjwgpfq3edf7ixu6yp5pmcym2vpwkedgmua6kpsxircne@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mbua2xqkis25",
       "source": "bluesky",
       "author": {
@@ -65,8 +126,8 @@
       },
       "indexedAt": "2026-01-07T19:43:36.029Z",
       "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 9,
+      "repostCount": 8,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +159,7 @@
       "indexedAt": "2026-01-07T18:11:49.245Z",
       "replyCount": 0,
       "repostCount": 11,
-      "likeCount": 11,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://morphs.itch.io/free-tabletop-art-pack",
@@ -159,7 +220,7 @@
       "indexedAt": "2026-01-07T03:53:33.436Z",
       "replyCount": 0,
       "repostCount": 13,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -219,8 +280,8 @@
       },
       "indexedAt": "2026-01-05T21:44:51.629Z",
       "replyCount": 4,
-      "repostCount": 47,
-      "likeCount": 123,
+      "repostCount": 48,
+      "likeCount": 124,
       "embed": {
         "type": "external",
         "uri": "https://idlecartulary.com/2026/01/06/what-to-randomise-when-youre-randomising/",
@@ -277,8 +338,8 @@
       },
       "indexedAt": "2026-01-05T10:47:01.632Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 14,
+      "repostCount": 7,
+      "likeCount": 15,
       "embed": {
         "type": "external",
         "uri": "http://idlecartulary.com/2026/01/05/bathtub-review-providers/",
@@ -500,8 +561,8 @@
       },
       "indexedAt": "2026-01-03T14:02:06.737Z",
       "replyCount": 12,
-      "repostCount": 859,
-      "likeCount": 1868,
+      "repostCount": 861,
+      "likeCount": 1874,
       "embed": {
         "type": "images",
         "images": [
@@ -565,7 +626,7 @@
       "indexedAt": "2026-01-02T23:25:51.834Z",
       "replyCount": 0,
       "repostCount": 15,
-      "likeCount": 84,
+      "likeCount": 85,
       "embed": {
         "type": "images",
         "images": [
@@ -630,7 +691,7 @@
       "indexedAt": "2026-01-02T05:57:41.432Z",
       "replyCount": 2,
       "repostCount": 68,
-      "likeCount": 276,
+      "likeCount": 277,
       "embed": {
         "type": "images",
         "images": [
@@ -691,7 +752,7 @@
       "indexedAt": "2026-01-01T15:19:53.254Z",
       "replyCount": 1,
       "repostCount": 55,
-      "likeCount": 87,
+      "likeCount": 88,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/bloggies-2026/",
@@ -920,67 +981,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mbc2ccw2ic2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "zedecksiew.bsky.social",
-        "displayName": "Zedeck Siew",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74@jpeg"
-      },
-      "record": {
-        "text": "RINGS OF REMINDER\n\nHere's practice I started in 2024, to balance out my severe insecurities: every time I finish a personal project and it is fully out in the world, I get a ring to wear.\n\nHere are all the projects I've finished, in the last two years:\n\n1/",
-        "createdAt": "2025-12-31T14:12:21.485Z"
-      },
-      "indexedAt": "2025-12-31T14:12:27.437Z",
-      "replyCount": 5,
-      "repostCount": 14,
-      "likeCount": 81,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreidetmzf52yyuitdxggheu36tfrr4sb3ck6zjnzx5gtxjbdbhkjyu4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreidetmzf52yyuitdxggheu36tfrr4sb3ck6zjnzx5gtxjbdbhkjyu4@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:svejhnsmkpjuuu2x4ovqydpf/app.bsky.feed.post/3mb7tffrdlk2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "blerdydisposition.bsky.social",
-        "displayName": "Blerdy Disposition (Yapping \ud83c\udf08)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:svejhnsmkpjuuu2x4ovqydpf/bafkreib6yo4janm376kwobmdacoalvb2vjhfwi5ky5rjflcslcrrzfiby4@jpeg"
-      },
-      "record": {
-        "text": "It's the end of the year and with the end comes some reflection. So what not a better way then to celebrate some of my favorite TTRPGs, Artists, blog posts, and podcast in this TTRPG Wrap Up post for 2025\n\nyoutu.be/0vPmrfIkAds",
-        "createdAt": "2025-12-30T17:03:29.470Z"
-      },
-      "indexedAt": "2025-12-30T17:04:18.835Z",
-      "replyCount": 2,
-      "repostCount": 17,
-      "likeCount": 29,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/0vPmrfIkAds",
-        "title": "My Favorite TTRPG & DnD Work and Art of 2025",
-        "description": "YouTube video by Blerdy Disposition",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:svejhnsmkpjuuu2x4ovqydpf/bafkreidhu54kwqjggs7bcwz7en2nfugwklqaahb7wiwsu672gbfs54cghe@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mavqho7mck2z",
       "source": "bluesky",
       "author": {
@@ -1167,8 +1167,8 @@
       },
       "indexedAt": "2025-12-23T01:41:14.632Z",
       "replyCount": 30,
-      "repostCount": 655,
-      "likeCount": 1862,
+      "repostCount": 657,
+      "likeCount": 1865,
       "embed": {
         "type": "images",
         "images": [
@@ -2420,7 +2420,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2329,
-      "likeCount": 11808,
+      "likeCount": 11807,
       "embed": {
         "type": "images",
         "images": [
@@ -2476,8 +2476,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 721,
-      "likeCount": 3300,
+      "repostCount": 723,
+      "likeCount": 3303,
       "embed": {
         "type": "images",
         "images": [
@@ -2829,7 +2829,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15431,
+      "likeCount": 15430,
       "embed": {
         "type": "images",
         "images": [
