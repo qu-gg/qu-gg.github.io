@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-09T12:01:51.130759Z",
+  "lastUpdated": "2026-01-10T00:03:34.610495Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,75 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mbz22aphos2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
+      },
+      "record": {
+        "text": "It actually says \"Lord Sunsany\" in OD&D",
+        "createdAt": "2026-01-09T17:39:04.708Z"
+      },
+      "indexedAt": "2026-01-09T17:39:13.036Z",
+      "replyCount": 3,
+      "repostCount": 9,
+      "likeCount": 66,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihjjwgff2ckcerfusliwmxyqwckjgcwrg4zu2qebrrjn3unhh3poi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihjjwgff2ckcerfusliwmxyqwckjgcwrg4zu2qebrrjn3unhh3poi@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mbyzusp46s2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "alphabetsauce.bsky.social",
+        "displayName": "Daemon Soup",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreidrq6lcm4byqj7xkadcngg3h3u3jnabwhq2aye64saoxf22gpqkum@jpeg"
+      },
+      "record": {
+        "text": "A thing that was real silly but made coming up with these much more fun was naming all of the god-tier abilities after songs and artists. I'll probably have to change all 144 of their names eventually which will SUCK but till then we've got some real silly ones. \"Supermassive Black Hole\" is my fav.",
+        "createdAt": "2026-01-09T17:36:02.204Z"
+      },
+      "indexedAt": "2026-01-09T17:36:24.040Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 1,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihk5yj466xykai2dpt2nvt7qp6773wiblzo2xv6h5da5hxsza7xrm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihk5yj466xykai2dpt2nvt7qp6773wiblzo2xv6h5da5hxsza7xrm@jpeg",
+            "alt": "A table from a tabletop roleplaying game showing a list of abilities. At the top left it is labelled \"Genius Gadgeteer\"."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihtwycu2qinexwb6jzhygsq7okgiwolrtey7vxg6uhhlrtnr6fxwm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihtwycu2qinexwb6jzhygsq7okgiwolrtey7vxg6uhhlrtnr6fxwm@jpeg",
+            "alt": "A table from a tabletop roleplaying game showing a list of abilities. The bottom right corner has art of a pink kamen rider-like character in a big magenta outfit, posed ready to punch something with large gauntlets. Those gauntlets match the magical girl Hibiki from Symphogear."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:rrvzltc5ywowrv25ox33p2qh/app.bsky.feed.post/3mbwbf2uhv22e",
       "source": "bluesky",
       "author": {
@@ -64,9 +133,9 @@
         "createdAt": "2026-01-08T15:12:24.665Z"
       },
       "indexedAt": "2026-01-08T15:12:30.529Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 22,
+      "replyCount": 3,
+      "repostCount": 2,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
@@ -127,7 +196,7 @@
       "indexedAt": "2026-01-07T19:43:36.029Z",
       "replyCount": 1,
       "repostCount": 9,
-      "likeCount": 14,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -561,8 +630,8 @@
       },
       "indexedAt": "2026-01-03T14:02:06.737Z",
       "replyCount": 12,
-      "repostCount": 861,
-      "likeCount": 1875,
+      "repostCount": 862,
+      "likeCount": 1876,
       "embed": {
         "type": "images",
         "images": [
@@ -884,95 +953,6 @@
             "alt": ""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mbcglszjt223",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      },
-      "record": {
-        "text": "In spite of everything 2025 was a pretty fulfilling year for me, games wise. I wrote a lot of BREAK!! stuff (Please check out the blog/START coming soon) and got to connect with other creators as well as members of our community. I'm really looking forward to building off these foundations in 2026.",
-        "createdAt": "2025-12-31T17:52:25.268Z"
-      },
-      "indexedAt": "2025-12-31T17:52:26.631Z",
-      "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 63,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibux3v5jb7okd2g46nhcpdzbnrbs3g4hpmyl6peyhn4aeq2ktivsa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibux3v5jb7okd2g46nhcpdzbnrbs3g4hpmyl6peyhn4aeq2ktivsa@jpeg",
-            "alt": "An assembled group of fantasy adventurers, staring right at you! "
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mbcaefxop22x",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
-      },
-      "record": {
-        "text": "I can't decide if I like big lizard or big chicken basilisk more. I made this after  reading Dungeon Meshi for the first time. I modeled the Basilisk after Dong Tao chicken",
-        "createdAt": "2025-12-31T16:00:54.224Z"
-      },
-      "indexedAt": "2025-12-31T16:01:07.031Z",
-      "replyCount": 3,
-      "repostCount": 10,
-      "likeCount": 64,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiggowukxt5nxwo53cp5ooek3aqs2mtobl5gwgzcyvvdeij7p6gvhm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiggowukxt5nxwo53cp5ooek3aqs2mtobl5gwgzcyvvdeij7p6gvhm@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mbc45z4r6c2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
-      },
-      "record": {
-        "text": "Here's the most important thing I can say about HIS MAJESTY THE WORM. \n\nIt\u2019s fun. I\u2019ve been playing this game once a week for over 8 years and look forward to every session. It\u2019s got staying power.\n\nI hope you will have fun with it.\n\nIf you wanna check it out, you can do so here \ud83d\udc47",
-        "createdAt": "2025-12-31T14:45:44.486Z"
-      },
-      "indexedAt": "2025-12-31T14:45:47.132Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 27,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.hismajestytheworm.games/",
-        "title": "His Majesty the Worm",
-        "description": "His Majesty the Worm is a new-school game with old-school sensibilities: the classic megadungeon experience given fresh life through a focus on the mundanities and small moments of daily life inside t...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiabxdljufi5awyqb2j3zwtvdagzmcpjyfc62ffn5zgq4h3fsgcs4q@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1510,7 +1490,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 612,
-      "likeCount": 2702,
+      "likeCount": 2703,
       "embed": {
         "type": "images",
         "images": [
@@ -1679,8 +1659,8 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 396,
-      "likeCount": 1677,
+      "repostCount": 397,
+      "likeCount": 1679,
       "embed": {
         "type": "images",
         "images": [
@@ -2829,7 +2809,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15430,
+      "likeCount": 15429,
       "embed": {
         "type": "images",
         "images": [
