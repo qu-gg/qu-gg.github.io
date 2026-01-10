@@ -37,4 +37,6 @@ To Tame a Colossi
 - Rank 7-8
 - A rare, deadly Colossi Crab has been spotted and some Warlords are seeking to get their hands on it!
 - Up to you to stop them and tame it for yourself, put it down, or send it packing.
+- Warlord Cutt Throat
+	- After having lost the Thunda Circuit, Cutt has returned to the No-Folk Land in rampaging search of a "proper mount", forsaking technology.
 

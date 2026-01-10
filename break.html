@@ -6,6 +6,7 @@
     <title>BREAK!! Projects | Quagg's Blog-home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="break-style.css">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <!-- RSS Feed temporarily hidden -->
     <!-- <link rel="alternate" type="application/rss+xml" title="The Helical Expeditions RSS Feed" href="the-helical-expeditions/feed.xml"> -->
 </head>
@@ -844,6 +845,23 @@
         }
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closeLightbox();
+        });
+        
+        // Track PDF downloads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track all PDF download links
+            document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    var pdfName = this.getAttribute('href').split('/').pop();
+                    if (window.goatcounter) {
+                        goatcounter.count({
+                            path: 'pdf-download/' + pdfName,
+                            title: 'PDF Download: ' + pdfName,
+                            event: true,
+                        });
+                    }
+                });
+            });
         });
         
         // Mobile nav toggle
