@@ -26,6 +26,23 @@
            
            ═══════════════════════════════════════════════════════════════════════════ */
 
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
         /* ===== CSS RESET & BASE ===== */
         *, *::before, *::after {
             box-sizing: border-box;
@@ -73,10 +90,10 @@
             /* ─────────────────────────────────────────────────────────────────────
                TYPOGRAPHY - Generally leave these as-is for consistency
                ───────────────────────────────────────────────────────────────────── */
-            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
-            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
-            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            --font-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         @page {
