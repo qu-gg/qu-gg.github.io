@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-10T00:03:34.610495Z",
+  "lastUpdated": "2026-01-10T12:01:38.593018Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mbzvfuey7s2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq@jpeg"
+      },
+      "record": {
+        "text": "Next month I will launch Cairn Press. \nI tried to make a publishing agreement that is fair, free, and mutually beneficial. Once the lawyer approves final contract I'll release it as CC-BY-SA, if possible. I've also written up a \"plain English\" version that you can read here:\n\ncairnpress.ink#terms",
+        "createdAt": "2026-01-10T01:48:45.475Z"
+      },
+      "indexedAt": "2026-01-10T01:48:46.735Z",
+      "replyCount": 14,
+      "repostCount": 58,
+      "likeCount": 178,
+      "embed": {
+        "type": "external",
+        "uri": "https://cairnpress.ink/#terms",
+        "title": "Cairn Press",
+        "description": "The official website for the Cairn Press imprint.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreih6pfkniq67emz4rolakerkizwvwptk5yj5kglheh6qpn5e4haata@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mbz22aphos2n",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-01-09T17:39:13.036Z",
       "replyCount": 3,
-      "repostCount": 9,
-      "likeCount": 66,
+      "repostCount": 10,
+      "likeCount": 72,
       "embed": {
         "type": "images",
         "images": [
@@ -96,7 +125,7 @@
         "createdAt": "2026-01-09T17:36:02.204Z"
       },
       "indexedAt": "2026-01-09T17:36:24.040Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 1,
       "likeCount": 1,
       "embed": {
@@ -760,7 +789,7 @@
       "indexedAt": "2026-01-02T05:57:41.432Z",
       "replyCount": 2,
       "repostCount": 68,
-      "likeCount": 278,
+      "likeCount": 280,
       "embed": {
         "type": "images",
         "images": [
@@ -897,70 +926,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mbdnhvazj22f",
-      "source": "bluesky",
-      "author": {
-        "handle": "zedecksiew.bsky.social",
-        "displayName": "Zedeck Siew",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74@jpeg"
-      },
-      "record": {
-        "text": "Came across this piece of advice I saved for myself, on world-building.\n\nDo you build a world like you build a doll's house? Or do you build a world at a person's size, for people to live in?\n\nFrom Le Guin.\n\n\"... the pattern is incomplete ... Let the heart complete the pattern.\"",
-        "createdAt": "2026-01-01T05:28:09.247Z"
-      },
-      "indexedAt": "2026-01-01T05:28:19.033Z",
-      "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 57,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreigxpmtqndmazx65rnkp32zlydjq56mz45bdsb6i37c3wxfdw7jcp4@jpeg",
-            "alt": "\u201cPandora doesn\u2019t want to look into the big end of the telescope and see, jewel-bright, distinct, tiny, and entire, the Valley. She shuts her eyes, she doesn\u2019t want to see, she knows what she will see: Everything Under Control. The dolls\u2019 house. The dolls\u2019 country.\n\nPandora rushes out of the observatory with her eyes shut, grabbing, grabbing with her hands.\n\nWhat does she get, besides cut hands? Bits, chunks, fragments. Shards. Pieces of the Valley, lifesize. Not at a distance, but in the hand, to be felt and held and heard. Not intellectual, but mental. Not spiritual, but heavy. A piece of madrone wood, a piece of obsidian. A piece of blue clay. Even if the bowl is broken (and the bowl is broken), from the clay and the making and the firing and the pattern, even if the pattern is incomplete (and the pattern is incomplete), let the mind draw its energy. Let the heart complete the pattern.\u201d\n\nFrom Ursula K Le Guin\u2019s \u201cAlways Coming Home\u201d, a collection of anthropological texts about a community that does not yet exist, \u201cin the valleys of what will no longer be called Northern California\u201d."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3mbd3gd2i622k",
-      "source": "bluesky",
-      "author": {
-        "handle": "letitmelo.bsky.social",
-        "displayName": "Melo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreihg6bsstf46gjxierqvfg2ph43zt6y45f4qavct5dwk446rzqkuzu@jpeg"
-      },
-      "record": {
-        "text": "2025 threw a wrench in a lot of my art goals, but I still put out some comics and covers and shitpost art.",
-        "createdAt": "2026-01-01T00:05:09.288Z"
-      },
-      "indexedAt": "2026-01-01T00:05:12.330Z",
-      "replyCount": 1,
-      "repostCount": 18,
-      "likeCount": 84,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreif5rdhch4vkzchwoz6u4imri5c6d3hwzb7hsieafehdnbkjf44nbq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreif5rdhch4vkzchwoz6u4imri5c6d3hwzb7hsieafehdnbkjf44nbq@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mavqho7mck2z",
       "source": "bluesky",
       "author": {
@@ -1007,7 +972,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1189,
-      "likeCount": 6286,
+      "likeCount": 6285,
       "embed": {
         "type": "images",
         "images": [
@@ -1148,7 +1113,7 @@
       "indexedAt": "2025-12-23T01:41:14.632Z",
       "replyCount": 30,
       "repostCount": 657,
-      "likeCount": 1866,
+      "likeCount": 1865,
       "embed": {
         "type": "images",
         "images": [
@@ -2028,8 +1993,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1941,
-      "likeCount": 8391,
+      "repostCount": 1940,
+      "likeCount": 8390,
       "embed": {
         "type": "images",
         "images": [
