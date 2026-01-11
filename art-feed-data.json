@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-10T12:01:38.593018Z",
+  "lastUpdated": "2026-01-11T00:04:47.587317Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mc3y32mpes2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "kywardkyoti.bsky.social",
+        "displayName": "Kyward [Insomniac Coyote VTuber]",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreihfgsre3kgi72j6luagjlj6rtm3mnga5xf4aj4vj5fmsb5sqv2bzy@jpeg"
+      },
+      "record": {
+        "text": "Tonight at 8pm est me and @hime.vtubers.social will be going over BREAK!! rpg to see how soloable it is, what adjustments can be made, or if anything needs to be made for it!  With the plans of me running a big solo campaign of it in the future! \n\n#vtuber #vsky #ttrpg #solottrpg #BREAKrpg",
+        "createdAt": "2026-01-10T21:41:43.620Z"
+      },
+      "indexedAt": "2026-01-10T21:41:49.630Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 12,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiawmx6aaeydskj74pbo7osatws75y2mxraonbjuyhhwnynyhaldoy@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiawmx6aaeydskj74pbo7osatws75y2mxraonbjuyhhwnynyhaldoy@jpeg",
+            "alt": "Thumbnail featuring the cover of BREAK!! rpg, which is 5 characters standing on a soft green hill, the character in the front is a blue woman with youthful energy wearing fantasy armor with a pink cat next to her with a wide head, the character to her left is a green ogre-like character eating some meat on a bone wearing a tunic and large belt, the character to her right is an office worker looking person clutching their suitcase, with a small gnome-like person wearing classic wizard robes and hat that are red. Over top the cover is my model on the left with Himeutsugi's model on the right pointing inwards. The title in the top left corner saying \"How soloable is BREAK!!\"."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mbzvfuey7s2i",
       "source": "bluesky",
       "author": {
@@ -64,9 +96,9 @@
         "createdAt": "2026-01-10T01:48:45.475Z"
       },
       "indexedAt": "2026-01-10T01:48:46.735Z",
-      "replyCount": 14,
-      "repostCount": 58,
-      "likeCount": 178,
+      "replyCount": 15,
+      "repostCount": 71,
+      "likeCount": 212,
       "embed": {
         "type": "external",
         "uri": "https://cairnpress.ink/#terms",
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-01-09T17:39:13.036Z",
       "replyCount": 3,
-      "repostCount": 10,
-      "likeCount": 72,
+      "repostCount": 11,
+      "likeCount": 74,
       "embed": {
         "type": "images",
         "images": [
@@ -195,8 +227,8 @@
       },
       "indexedAt": "2026-01-07T23:16:43.634Z",
       "replyCount": 3,
-      "repostCount": 3,
-      "likeCount": 21,
+      "repostCount": 4,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://birdmilkcafe.com/2026/01/06/fomoria/",
@@ -224,8 +256,8 @@
       },
       "indexedAt": "2026-01-07T19:43:36.029Z",
       "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 18,
+      "repostCount": 10,
+      "likeCount": 19,
       "embed": {
         "type": "images",
         "images": [
@@ -286,7 +318,7 @@
       "indexedAt": "2026-01-07T16:33:25.037Z",
       "replyCount": 1,
       "repostCount": 6,
-      "likeCount": 25,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -349,8 +381,8 @@
       },
       "indexedAt": "2026-01-06T19:28:05.939Z",
       "replyCount": 1,
-      "repostCount": 39,
-      "likeCount": 70,
+      "repostCount": 40,
+      "likeCount": 71,
       "embed": {
         "type": "external",
         "uri": "https://metalweavegames.com/collections/tales-from-myriad",
@@ -379,7 +411,7 @@
       "indexedAt": "2026-01-05T21:44:51.629Z",
       "replyCount": 4,
       "repostCount": 48,
-      "likeCount": 124,
+      "likeCount": 126,
       "embed": {
         "type": "external",
         "uri": "https://idlecartulary.com/2026/01/06/what-to-randomise-when-youre-randomising/",
@@ -659,8 +691,8 @@
       },
       "indexedAt": "2026-01-03T14:02:06.737Z",
       "replyCount": 12,
-      "repostCount": 862,
-      "likeCount": 1876,
+      "repostCount": 863,
+      "likeCount": 1878,
       "embed": {
         "type": "images",
         "images": [
@@ -724,7 +756,7 @@
       "indexedAt": "2026-01-02T23:25:51.834Z",
       "replyCount": 0,
       "repostCount": 15,
-      "likeCount": 85,
+      "likeCount": 86,
       "embed": {
         "type": "images",
         "images": [
@@ -789,7 +821,7 @@
       "indexedAt": "2026-01-02T05:57:41.432Z",
       "replyCount": 2,
       "repostCount": 68,
-      "likeCount": 280,
+      "likeCount": 281,
       "embed": {
         "type": "images",
         "images": [
@@ -862,35 +894,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:c45er5gruigwp3yqcptz6hv4/app.bsky.feed.post/3mbe7eld4522t",
-      "source": "bluesky",
-      "author": {
-        "handle": "idlecartulary.itch.io",
-        "displayName": "Idle Cartulary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i@jpeg"
-      },
-      "record": {
-        "text": "Two silly big posts today, the first being the Idle Digest for December of 2025, featuring a recap of Critique Navidad for those who couldn\u2019t follow it closely: open.substack.com/pub/idlecart...",
-        "createdAt": "2026-01-01T10:48:25.596Z"
-      },
-      "indexedAt": "2026-01-01T10:48:26.834Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 31,
-      "embed": {
-        "type": "external",
-        "uri": "https://open.substack.com/pub/idlecartulary/p/the-idle-digest-14?r=11843d&utm_medium=ios&shareImageVariant=overlay",
-        "title": "The Idle Digest #14",
-        "description": "Idle Cartulary's Digest for December 2025",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
       }
     },
     {
@@ -2774,7 +2777,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15429,
+      "likeCount": 15428,
       "embed": {
         "type": "images",
         "images": [
