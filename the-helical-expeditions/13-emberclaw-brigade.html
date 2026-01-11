@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Emberclaw Brigade - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Emberclaw Brigade - Fiery Beach Theme Palette */
+            --ember-deep: #6B1C00;
+            --flame-orange: #B84A1C;
+            --blaze-gold: #C48820;
+            --sand-tan: #A8875A;
+            --coral-accent: #C4623A;
+            --sand-cream: #FDF5E6;
+            --pearl-white: #FFF9F0;
+            --char-brown: #3D2914;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--sand-cream);
+        }
+
+        /* ===== GLOBAL LINK STYLES ===== */
+        a {
+            color: var(--ember-deep);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--flame-orange);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--sand-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--ember-deep), var(--flame-orange), var(--blaze-gold), var(--flame-orange), var(--ember-deep));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--ember-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--blaze-gold);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--blaze-gold);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--sand-tan);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--flame-orange);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--flame-orange);
+            border-left: 4px solid var(--flame-orange);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--flame-orange);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--char-brown);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--flame-orange);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--ember-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(212, 101, 42, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--flame-orange);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--coral-accent);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--flame-orange);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--char-brown);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--ember-deep);
+            border-color: var(--ember-deep);
+            border-left: 4px solid var(--flame-orange);
+        }
+
+        .story-steps h2 {
+            background: var(--flame-orange);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--blaze-gold);
+        }
+
+        .story-steps a {
+            color: var(--blaze-gold);
+        }
+
+        .story-steps a:hover {
+            color: var(--sand-tan);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--flame-orange);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            margin-top: 6px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--blaze-gold);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-section li ul {
+            margin-top: 3px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--flame-orange);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(139, 37, 0, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(201, 166, 107, 0.12);
+            border-left: 3px solid var(--coral-accent);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--ember-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--ember-deep);
+            text-decoration: underline;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            color: var(--flame-orange);
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--flame-orange);
+        }
+
+        .sources-box a {
+            color: var(--ember-deep);
+            text-decoration: underline;
+        }
+
+        .sources-box a:hover {
+            color: var(--flame-orange);
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--flame-orange);
+            border-left: 4px solid var(--flame-orange);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--ember-deep);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--coral-accent);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--flame-orange);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--char-brown);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--coral-accent);
+            border-left: 4px solid var(--coral-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--coral-accent);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--flame-orange);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-height: 5in;
+            background: var(--ember-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--sand-tan);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: stretch;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--ember-deep);
+            border-left: 4px solid var(--ember-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--ember-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--flame-orange);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+        }
+
+        /* Item Block */
+        .item-block {
+            background: rgba(255, 248, 231, 0.9);
+            border: 2px dotted var(--char-brown);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--coral-accent);
+        }
+
+        .item-block .item-type {
+            color: var(--char-brown);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--blaze-gold);
+            font-weight: bold;
+        }
+
+        .item-block .item-stats a {
+            color: var(--blaze-gold);
+            text-decoration: none;
+        }
+
+        .item-block .item-stats a:hover {
+            text-decoration: underline;
+        }
+
+        .item-block ul {
+            margin: 3px 0 0 16px;
+            font-size: 9pt;
+        }
+
+        .item-block li {
+            margin-bottom: 2px;
+        }
+
+        .item-block li ul {
+            margin-top: 2px;
+            margin-left: 12px;
+        }
+
+        /* Right Column: Rank + Sources */
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--coral-accent);
+            border-left: 4px solid var(--coral-accent);
+            overflow: hidden;
+        }
+
+        .rank-header {
+            background: var(--coral-accent);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--flame-orange);
+        }
+
+        /* Page Credit */
+        .page-credit {
+            position: absolute;
+            bottom: 0.1in;
+            left: 0.35in;
+            font-size: 7pt;
+            color: var(--char-brown);
+            font-style: italic;
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--ember-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--blaze-gold), var(--flame-orange), var(--blaze-gold));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 0 var(--flame-orange);
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            position: relative;
+            border: 3px solid var(--blaze-gold);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--ember-deep);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
+            color: var(--pearl-white);
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .art-item .art-caption a {
+            color: var(--blaze-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>The Emberclaw Brigade</h1>
+            <div class="subtitle">Glistening Coast • Taaga • Blazing Garden</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">☆</span> Party</div>
+            <div class="theme-item"><span class="emoji">✎</span> Planning</div>
+            <div class="theme-item"><span class="emoji">♨</span> Tavern</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>When a literal boatload of fiery little salamanders haul an outrageously large fish into a beachside bar and demand a feast, the party must aid the weary bartender in preparing the grand meal - while defending the catch from sworn enemies.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"No trip in Taaga is complete without hitting up the legendary Glistening Coast, famed for shimmering waters, the best waves, and unusually large fish. In the wake of an exhausting contract, you decided to take a break and relax. Here you found open-air Shark Head Bar with the perfect vibes and view of the picturesque coast. Just as you get settled, however, dozens of small red amphibian-folk dressed in bargain bin wizard robes step off a boat. Held aloft on their tiny hands is the largest fish you've ever seen. When they demand a great feast, the solo bartender tiredly asks for your aid in preparations."</p>
+                    <p style="margin-top: 6px;">This is a silly, light-hearted adventure meant to showcase the party's diverse skill sets. Be transparent about the requirements of each Feast Task. <br><br>In addition, consider leveraging the <a href="https://breakrpg.blogspot.com/2023/12/freebie-troublesome-trio-adversaries.html" target="_blank">Refuge in Slapstick</a> rules which limits the Injuries that can be dealt to the Party.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Shark Head</span>
+                            <span class="character-details">— Neridian, Male, 46 (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">Proprietor of Shark Head Bar, running its chill vibes for most of his life. Uses the fish trade system to trade with land-locked settlements farther in Taaga.</div>
+                        <div class="character-quote">"Despite eyes that seem ill-suited for most land-dwelling tasks, they prove surprisingly effective for keeping simultaneous tabs on customers."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">The Flamebearer</span>
+                            <span class="character-details">— Emberclaw, Male, 75 (Emberclaw)</span>
+                        </div>
+                        <div class="character-desc">Commander of The Emberclaw Brigade. Proclaims grandiose statements about their conquest of the water that are actually quite mundane.</div>
+                        <div class="character-quote">"The only way one could distinguish this Commander from the others is by the fact his little wizard hat and robe are of a slightly different color."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Mero Croaken the Wise</span>
+                            <span class="character-details">— Ribbit, Male, 80 (Hopper Majo)</span>
+                        </div>
+                        <div class="character-desc">Archmage of The Great Ribbit Coven. Considers the Brigade to be buffoons that make fun of the serious discipline of wizardry. Insufferably regal and petty.</div>
+                        <div class="character-quote">"Dressed in the finest garbs of an ostentatious wizard, this ribbit's uptight, serious demeanor is betrayed by the fact he is a cute frog in a wizard's hat."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="13) The Emberclaw Brigade/Pasted image 20260110121026.jpg" alt="Shark Head Bar">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, describe Shark Head Bar, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">A Day to Relax?</span>
+                        <ul>
+                            <li>To begin, let the Party take the <a href="https://breakrpg.blogspot.com/2025/06/adventure-hooks-fishing-activity-for.html" target="_blank">Fishing</a>, Socialization, or Preparation Activity, describing how peaceful it is.</li>
+                            <li>Once settled, describe the procession of the Brigade carrying the fish to the bar and demanding a feast. The weary bartender Shark Head asks the party to help prepare it, offering coin.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Grand Preparation</span>
+                        <p>Shark describes the three Tasks required to make the feast, handing over a <strong>Grapple Shot</strong> to aid with the first:</p>
+                        <ul>
+                            <li><strong>Gather:</strong> <a href="https://breakrpg.blogspot.com/2025/11/blazing-garden-items-freebie-gear.html" target="_blank">Spriki Nuts</a> are the perfect seasoning. The problem is their rare trees are found in remote riverbeds. Guide/Insight Check to find them (Fatigue on failure) and Deftness Check with Major Bonus to harvest them (Falling Injury on failure).</li>
+                            <li><strong>Filet:</strong> The massive fish needs skinning and scoring. An Attack Roll of 15 required. Failure still completes the job but deals a Light Injury to the character. Characters with the ability to Cook may elect to use that (and its Aptitude) instead, with an Edge.</li>
+                            <li><strong>Direct:</strong> The feast grounds must be set. Emberclaws are plentiful but easily distracted. Negotiation required (any Aptitude vs. their Insight). Failure causes Fatigue.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Mood Dampeners</span>
+                        <ul>
+                            <li>The great cooking fire is lit! During cooking, the Great Ribbit Coven [1 <em>Hopper Majo</em> + 6 <em>Froggie Ninjas</em>] strikes! Panicking Emberclaws make all Battlefield Areas Precarious for Medium+ Species and Isolated for Small Species.</li>
+                            <li>The Hopper Majo uses <strong>Splash Zone</strong> every Turn on the fish-spit. 3 applications ruin the fish! Ninjas use Defend or other crowd-control tactics to protect the Majo.</li>
+                            <li>Coven defeated, the feast proceeds. The Brigade offers to teach the party's most festive member their ancient fire magicks aboard their ship.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Shark Head Bar</h3>
+                    <p class="loc-desc">"Welcome to Shark Head's! I'm Shark Head. Simple rules here: bring a fish, get a drink on the house. Bigger fish, bigger drink."</p>
+                    <p>Characters who opt Socialize at Shark Head Bar rather than fish gain the benefit of a <strong>Relaxing</strong> Recreational Attraction [Source, pg. 202]. So-called Sharktails (themed cocktails) act as Basic Potions.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Feast Grounds</h3>
+                    <p class="loc-desc">"The dedicated feast grounds are easily spotted for it is a large circle of charred sand, littered with scorch marks, amidst the otherwise pristine beach."</p>
+                    <p>The grounds are near Shark Head Bar but purposefully tucked out of sight behind a bend. A variety of furniture and decorations are available here, though all are in varying states of being charred.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Ship of the Brigade</h3>
+                    <p class="loc-desc">"Despite their goofy personality, their ship is a veritable war machine. Stocked with cutting crimson sails and a massive metal cannon, you'd be afraid were it anyone else at the helm."</p>
+                    <p>The Emberclaw Brigade spends most of their time and coin on this ship. Its lower chambers are filled with glowing ritual teaching circles etched into the floor.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>The Emberclaw Brigade is a nomadic tribe of fiery Salamanders that sail the seas, and have built a mostly respected lineage of powerful fire magicks.</li>
+                    <li>They've been eternally tasked by some entity—likely a whimsical Unshaped—to wage war against water itself. So, what better battlefield than the sea?</li>
+                    <li>The Brigade primarily sticks to the Shining Sea around Taaga (due to the prevalence of massive sea life) but, on occasion, make landfall to resupply or celebrate the heroic slaying of a notable sea creature.</li>
+                    <li>Eternal enemies of the Brigade, the Great Ribbit Coven has been bound to snuff fire itself.</li>
+                    <li>The conflict between the Coven and Brigade is said to be the result of a petty squabble between two Divine Rulers claiming domain of fire and water, respectively. Despite them being gone, this war wages on.</li>
+                    <li>There is a suspicion that both of these parties are actually immortal (or incredibly incompetent) as despite constant warfare, their ranks have not diminished.</li>
+                    <li>Shark is tired only because the Brigade does this with some frequency, causing the cook to quit the last time. He puts up with it because they pay well.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260109130331.png" alt="Emberclaw Inspiration">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>On a successful feast, the Emberclaws invite the party's biggest partier to receive a flame ritual gift. Shark lets the party keep the <strong>Grapple Shot</strong> and offers free drinks for the week alongside <strong>100C</strong> for all the help.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>☆ Ability Reward</h3>
+                        <p>The Emberclaws will impart their knowledge of the <strong>Emberclaws' Firebreath</strong> ability to the chosen party member.</p>
+                    </div>
+                </div>
+                <div class="item-block">
+                    <span class="item-name">Emberclaws' Firebreath</span><br>
+                    <span class="item-desc">Having no written text on their mastery of Flame Mana, the Emberclaws are quite adept at teaching verbally. It's recommended not to use this in flammable spaces.</span>
+                    <ul>
+                        <li>Once per Fight, you can breathe a gout of fire at a Target up to 1 Area away.</li>
+                        <li><strong>Requires a Contest:</strong> Your Grit vs. their Deftness.
+                            <ul>
+                                <li><strong>Success:</strong> The shot does 2 Hearts of Flame Damage.</li>
+                                <li><strong>Failure:</strong> The shot fizzles, doing nothing.</li>
+                            </ul>
+                        </li>
+                        <li>Adds 1 Bright Allegiance Point.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank + Sources -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 1-2 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Consider leveraging the <a href="https://breakrpg.blogspot.com/2023/12/freebie-troublesome-trio-adversaries.html" target="_blank">Refuge in Slapstick</a> rules to limit Injuries.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Consider swapping (or adding) Naiads for Froggie Ninjas.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>PC Starting Coin:</strong> 100C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources Box -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Original adventure content for BREAK!!'s universe by Quagg.</p>
+                    <ul>
+                        <li><strong>Grapple Shot</strong> (<a href="https://breakrpg.blogspot.com/2025/11/blazing-garden-items-freebie-gear.html" target="_blank">BREAK!! Blog</a>)</li>
+                        <li><strong>Emberclaw</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Hopper Majo</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Froggie Ninja</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Naiad</strong> by wretched Jarrah (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260110121026.jpg" alt="Shark Head Bar">
+                <div class="art-caption">"Shark Head Bar" <br> Art by <a href="#">べかさく</a></div>
+            </div>
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260109130331.png" alt="Emberclaw Inspiration">
+                <div class="art-caption">"Emberclaw Inspiration" <br> Art by <a href="https://www.behance.net/gallery/56530635/dnd-character-design" target="_blank">Sammy Savos</a></div>
+            </div>
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260111015842.png" alt="The Emberclaw Brigade's Ship">
+                <div class="art-caption">"The Emberclaw Brigade's Ship" <br> Art by <a href="https://jason_brubaker.artstation.com/projects/lxbodz" target="_blank">Jason Brubaker</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260111021036.jpg" alt="Great Ribbit Coven Inspiration">
+                <div class="art-caption">"Great Ribbit Coven Inspiration" <br> Art by <a href="https://www.instagram.com/ra.ro81/" target="_blank">Rosalia Radosti</a></div>
+            </div>
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260111021209.jpg" alt="Taaga Inspiration">
+                <div class="art-caption">"Taaga Inspiration" <br> Art by <a href="https://www.feinsilverfoundry.com/puss-in-boots-the-last-wish0" target="_blank">Joseph Feinsilver</a></div>
+            </div>
+            <div class="art-item">
+                <img src="13) The Emberclaw Brigade/Pasted image 20260111022320.jpg" alt="Waters of the Glistening Coast">
+                <div class="art-caption">"Waters of the Glistening Coast" <br> Art by <a href="https://www.pixiv.net/en/artworks/81238981" target="_blank">Yishi Yao</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
