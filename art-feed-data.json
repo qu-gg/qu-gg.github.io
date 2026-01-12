@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-12T00:04:44.661737Z",
+  "lastUpdated": "2026-01-12T12:02:04.198871Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mc6rjrb3o22w",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
+      },
+      "record": {
+        "text": "New Patreon-exclusive video going over some cool zines and books we received from @zonware.bsky.social , @dairykillsme.bsky.social & @exaltedfuneral.bsky.social !!\n\nHave a watch, and stay tuned for a Mausritter giveaway for one of our patrons!",
+        "createdAt": "2026-01-12T00:22:40.143Z"
+      },
+      "indexedAt": "2026-01-12T00:22:42.534Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 9,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.patreon.com/posts/patreon-new-147982909",
+        "title": "Patreon Exclusive : New Zines + Exalted Funeral Unboxing! | Weird Place",
+        "description": "Get more from Weird Place on Patreon",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreidmjddzot6awlgksojibcyizmcm26ffmfwudp6emx4i3xgx53hqrm@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mc5zfjsxv32x",
       "source": "bluesky",
       "author": {
@@ -98,7 +127,7 @@
       "indexedAt": "2026-01-11T13:32:05.336Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 5,
+      "likeCount": 7,
       "embed": {
         "type": "images",
         "images": [
@@ -130,7 +159,7 @@
       "indexedAt": "2026-01-10T21:41:49.630Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 14,
+      "likeCount": 15,
       "embed": {
         "type": "images",
         "images": [
@@ -191,7 +220,7 @@
       "indexedAt": "2026-01-09T17:39:13.036Z",
       "replyCount": 3,
       "repostCount": 11,
-      "likeCount": 75,
+      "likeCount": 76,
       "embed": {
         "type": "images",
         "images": [
@@ -897,38 +926,6 @@
       }
     },
     {
-      "uri": "at://did:plc:55a5f3bcsaul4az2dzcixsnx/app.bsky.feed.post/3mbdosffdtc22",
-      "source": "bluesky",
-      "author": {
-        "handle": "andreslmignucci.bsky.social",
-        "displayName": "Andr\u00e9s L. Mignucci",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:55a5f3bcsaul4az2dzcixsnx/bafkreibwoaftnqtd7fouoiyqbkay2m7bmzxja3bfrngqbgs2iftaiyjwuu@jpeg"
-      },
-      "record": {
-        "text": "Here are some of the best illustrations I made in 2025! And because there's so much to say about them, I'll make a thread detailing each set right down here. \u2193 Happy 2026!",
-        "createdAt": "2026-01-01T05:51:55.313Z"
-      },
-      "indexedAt": "2026-01-01T05:52:04.333Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 19,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:55a5f3bcsaul4az2dzcixsnx/bafkreifbak6jvacmzjurby6kibovsmwn6ul6u7tttmluy6jcavkmd5rl3u@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:55a5f3bcsaul4az2dzcixsnx/bafkreifbak6jvacmzjurby6kibovsmwn6ul6u7tttmluy6jcavkmd5rl3u@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mavqho7mck2z",
       "source": "bluesky",
       "author": {
@@ -975,7 +972,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1188,
-      "likeCount": 6285,
+      "likeCount": 6286,
       "embed": {
         "type": "images",
         "images": [
@@ -1426,7 +1423,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 612,
-      "likeCount": 2704,
+      "likeCount": 2705,
       "embed": {
         "type": "images",
         "images": [
@@ -1596,7 +1593,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 397,
-      "likeCount": 1680,
+      "likeCount": 1681,
       "embed": {
         "type": "images",
         "images": [
@@ -2745,7 +2742,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15428,
+      "likeCount": 15429,
       "embed": {
         "type": "images",
         "images": [
