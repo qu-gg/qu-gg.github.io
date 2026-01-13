@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-12T12:02:04.198871Z",
+  "lastUpdated": "2026-01-13T00:03:23.846024Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,143 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mcare5uavc2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
+      },
+      "record": {
+        "text": "Green Dragon",
+        "createdAt": "2026-01-12T19:24:51.499Z"
+      },
+      "indexedAt": "2026-01-12T19:25:03.428Z",
+      "replyCount": 4,
+      "repostCount": 7,
+      "likeCount": 43,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreifn3egbaalhuqf2kjqppv7oonkeixaeqgqo2giqw2k6pnearw3hgm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreifn3egbaalhuqf2kjqppv7oonkeixaeqgqo2giqw2k6pnearw3hgm@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mcafhghusk2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "dgchapman.bsky.social",
+        "displayName": "D G Chapman",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreihqugoeyufcsebs6rvpcmchq6cacd63mknoy3yj56zvcz7enroese@jpeg"
+      },
+      "record": {
+        "text": "I am currently looking for work! Writing, design, editing and proofreading for tabletop games and just about anything else besides.\n\nI've worked with indie giants and first-time self-publishers and  I always smash it. Some examples below.\n\nEmail in bio, get in touch, let's make stuff x",
+        "createdAt": "2026-01-12T15:51:56.287Z"
+      },
+      "indexedAt": "2026-01-12T15:52:09.736Z",
+      "replyCount": 3,
+      "repostCount": 21,
+      "likeCount": 47,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi@jpeg",
+            "alt": "Another Bug Hunt"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce@jpeg",
+            "alt": "The Haunting of Ypsilon 14"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiagutjpebvvwzh3twxbw5g2t2ftunishuv3ep6dgpi7stxv54l5gm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiagutjpebvvwzh3twxbw5g2t2ftunishuv3ep6dgpi7stxv54l5gm@jpeg",
+            "alt": "The Horror on Tau Sigma 7"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiao6ud777ujgi45j64wbtevccnmpnlnkeb2eujmgn3y4qyc63zwv4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiao6ud777ujgi45j64wbtevccnmpnlnkeb2eujmgn3y4qyc63zwv4@jpeg",
+            "alt": "GoGoGolf!"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:p6bhrb2rs6qdsobor73dcygg/app.bsky.feed.post/3mcadkcqhuc2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "jellyfishlines.itch.io",
+        "displayName": "\ud83e\udebcJellyfishlines: card-carrying sicko freak\ud83e\udebc",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreidk22wntpdyjviqus2ncae4tqh4dnh7jh7vsqwuumuu72pdifzzw4@jpeg"
+      },
+      "record": {
+        "text": "Doing a little thread about my ZineMo game, TOWNIE(S)\nwww.kickstarter.com/projects/jel...",
+        "createdAt": "2026-01-12T15:17:45.565Z"
+      },
+      "indexedAt": "2026-01-12T15:17:46.328Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/jellyfishlines/townies",
+        "title": "Coming soon: TOWNIE(S)",
+        "description": "A Lost & Found Rustbelt solo journaling game.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreigw6civow45xx7d7ey4xg7qtqiqap7cykunwyrc4mrym55xbzujhi@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mc7zqvghb223",
+      "source": "bluesky",
+      "author": {
+        "handle": "pennyblake.bsky.social",
+        "displayName": "Penny Blake",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4@jpeg"
+      },
+      "record": {
+        "text": "\ud83d\ude2d\ud83d\udc96\ud83d\ude4f\ud83d\udd2595%!!!!!!\ud83d\udd25\ud83d\ude4f\ud83d\udc96\ud83d\ude2d\nTHANKYOU ALL SO MUCH!\nWe're so close to getting the amount for him to sit the minimum to get to college!\ud83d\udd25\ud83d\ude4f\ud83e\udd73Any extra we raise will hopefully be enough for him to sit more of the subjects he's studied! itch.io/b/3469/path-...",
+        "createdAt": "2026-01-12T12:22:29.068Z"
+      },
+      "indexedAt": "2026-01-12T12:22:28.735Z",
+      "replyCount": 2,
+      "repostCount": 22,
+      "likeCount": 31,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/b/3469/path-to-education-mutual-aid-ttrpg-bundle",
+        "title": "Path to Education - Mutual Aid TTRPG Bundle by gothHoblin and 31 others",
+        "description": "Path to Education - Mutual Aid TTRPG Bundle: 111 items for $10.00",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mc6rjrb3o22w",
       "source": "bluesky",
       "author": {
@@ -95,7 +232,7 @@
       "indexedAt": "2026-01-11T17:10:48.434Z",
       "replyCount": 0,
       "repostCount": 6,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "images",
         "images": [
@@ -191,7 +328,7 @@
       "indexedAt": "2026-01-10T01:48:46.735Z",
       "replyCount": 15,
       "repostCount": 76,
-      "likeCount": 230,
+      "likeCount": 231,
       "embed": {
         "type": "external",
         "uri": "https://cairnpress.ink/#terms",
@@ -289,7 +426,7 @@
       "indexedAt": "2026-01-08T15:12:30.529Z",
       "replyCount": 3,
       "repostCount": 3,
-      "likeCount": 32,
+      "likeCount": 33,
       "embed": {
         "type": "images",
         "images": [
@@ -742,99 +879,6 @@
       }
     },
     {
-      "uri": "at://did:plc:7drlurnmq2zztwn4qlf32sfg/app.bsky.feed.post/3mbjo5jd25s23",
-      "source": "bluesky",
-      "author": {
-        "handle": "bigbisdotdotdot.bsky.social",
-        "displayName": "Big B trans rights are human rights",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7drlurnmq2zztwn4qlf32sfg/bafkreidb3ynj2dffblxgsuzvpb2udcsyi6blmytsh24udozsdrip4m7mwe@jpeg"
-      },
-      "record": {
-        "text": "It's the first #selfpromotionsaturday of the year! Stop on by #ttrpgcommunity and show us the things you've got for display, wow us with your creativity! After posting, don't forget to like and comment on others, rising tides raises all ships!",
-        "createdAt": "2026-01-03T14:56:13.435Z"
-      },
-      "indexedAt": "2026-01-03T14:56:12.530Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 5,
-      "embed": {
-        "type": "external",
-        "uri": "https://media.tenor.com/3wUl34Vw5PIAAAAC/sml-bowser-junior.gif?hh=278&ww=498",
-        "title": "a blurred image of a bed with the words show me show me",
-        "description": "Alt: A stuffed doll of Bowser Jr. in between the cracks of a beds foot or headrest shaking excitedly with the words show me show me",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7drlurnmq2zztwn4qlf32sfg/bafkreiadkkfnf3cuzhx3ow4j7vsikeeixhdzttha2tr45b4jf3lqa7eyia@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:hyyqshfmzarjhybykciopfw6/app.bsky.feed.post/3mbjl4l476223",
-      "source": "bluesky",
-      "author": {
-        "handle": "nikitagill.bsky.social",
-        "displayName": "Nikita Gill",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hyyqshfmzarjhybykciopfw6/bafkreictl3oummttkbwjhxgnga7hxojhttxzmoymfagwdf3rtxzralaoy4@jpeg"
-      },
-      "record": {
-        "text": "Ever relevant, this poem by Mary Oliver, especially today.",
-        "createdAt": "2026-01-03T14:02:00.521Z"
-      },
-      "indexedAt": "2026-01-03T14:02:06.737Z",
-      "replyCount": 12,
-      "repostCount": 863,
-      "likeCount": 1878,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hyyqshfmzarjhybykciopfw6/bafkreihhc7emavqmke47rknsybeosthon5r4hcl7gaq5m7j7quewwxa4da@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hyyqshfmzarjhybykciopfw6/bafkreihhc7emavqmke47rknsybeosthon5r4hcl7gaq5m7j7quewwxa4da@jpeg",
-            "alt": "OF THE EMPIRE\n\nWe will be known as a culture that feared death and adored power, that tried to vanquish insecurity for the few and cared little for the penury of the many. We will be known as a culture that taught and rewarded the amassing of things, that spoke little if at all about the quality of life for people (other people), for dogs, for rivers. All the world, in our eyes, they will say, was a commodity. And they will say that this structure was held together politically, which it was, and they will say also that our politics was no more than an apparatus to accommodate the feelings of the heart, and that the heart, in those days, was small, and hard, and full of meanness."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mbjjowu3ec2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "sinland.gay",
-        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f (Comms open)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi@jpeg"
-      },
-      "record": {
-        "text": "late nite doodles, first art of the year. \ud83d\ude0a Just a bunch of character sketches from different adventures at my home table. #ttrpg #art #digitalart #illustration #absentiaart",
-        "createdAt": "2026-01-03T13:36:29.238Z"
-      },
-      "indexedAt": "2026-01-03T13:36:36.833Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 31,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreiefhbmlmkcv6difftlqx3r3i5uyrmk5vjtt2kcigdavrcr4iajkki@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreiefhbmlmkcv6difftlqx3r3i5uyrmk5vjtt2kcigdavrcr4iajkki@jpeg",
-            "alt": "Some doodles of different characters from various tabletop games that Absentia plays with friends. From left to right: An armored tiefling warlock and beholder minion from DnD, an armored elf knight, hooded elf enchanter, and tall animated suit of armor from Dolmenwood, and a submachine-gun wielding changeling from Dowager (Absentia's ttrpg)"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mbhmnwugrs2k",
       "source": "bluesky",
       "author": {
@@ -849,7 +893,7 @@
       "indexedAt": "2026-01-02T19:24:31.730Z",
       "replyCount": 2,
       "repostCount": 14,
-      "likeCount": 67,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -972,7 +1016,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1188,
-      "likeCount": 6286,
+      "likeCount": 6285,
       "embed": {
         "type": "images",
         "images": [
@@ -1593,7 +1637,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 397,
-      "likeCount": 1681,
+      "likeCount": 1680,
       "embed": {
         "type": "images",
         "images": [
@@ -2575,7 +2619,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 454,
-      "likeCount": 2415,
+      "likeCount": 2414,
       "embed": {
         "type": "images",
         "images": [
@@ -2742,7 +2786,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15429,
+      "likeCount": 15428,
       "embed": {
         "type": "images",
         "images": [
