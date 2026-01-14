@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14T00:04:08.377988Z",
+  "lastUpdated": "2026-01-14T12:02:00.869622Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,39 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mcewktb6ok22",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      },
+      "record": {
+        "text": "I day dream of a future where I've actually finished more than one project. Doing mock ups helps me manifest. \ud83e\uddd8\ud83d\udcaa\ud83d\udd7a",
+        "createdAt": "2026-01-14T11:08:42.928Z"
+      },
+      "indexedAt": "2026-01-14T11:08:54.230Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:zurp543cyfrfzhxtvnjfnaux/app.bsky.feed.post/3mcdh7qla6c2l",
       "source": "bluesky",
       "author": {
@@ -93,9 +126,9 @@
         "createdAt": "2026-01-13T17:13:55.837Z"
       },
       "indexedAt": "2026-01-13T17:14:12.429Z",
-      "replyCount": 2,
-      "repostCount": 24,
-      "likeCount": 79,
+      "replyCount": 3,
+      "repostCount": 27,
+      "likeCount": 91,
       "embed": {
         "type": "images",
         "images": [
@@ -142,7 +175,7 @@
       "indexedAt": "2026-01-13T15:05:05.831Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 14,
+      "likeCount": 15,
       "embed": {
         "type": "external",
         "uri": "https://www.failforward.moe/2026/01/villains-building-baddie.html",
@@ -242,7 +275,7 @@
       "indexedAt": "2026-01-12T19:25:03.428Z",
       "replyCount": 6,
       "repostCount": 15,
-      "likeCount": 101,
+      "likeCount": 104,
       "embed": {
         "type": "images",
         "images": [
@@ -631,7 +664,7 @@
       "indexedAt": "2026-01-08T15:12:30.529Z",
       "replyCount": 3,
       "repostCount": 3,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -1933,34 +1966,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3lyvg7ltojk2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      },
-      "record": {
-        "text": "",
-        "createdAt": "2025-09-15T18:19:25.426Z"
-      },
-      "indexedAt": "2025-09-15T18:19:33.110Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 25,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibyb2ybsbscp2eksypmdibio4tdb733a4zk5culqxvtwklj55x3sm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibyb2ybsbscp2eksypmdibio4tdb733a4zk5culqxvtwklj55x3sm@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/zxwnyq",
       "source": "artstation",
       "author": {
@@ -2781,7 +2786,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2326,
+      "likeCount": 2327,
       "embed": {
         "type": "images",
         "images": [
