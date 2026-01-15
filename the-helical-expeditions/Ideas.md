@@ -31,6 +31,10 @@ Sunken Crown:
 Emberclaw Brigade:
 - *The Emberclaw Brigade is a nomadic tribe of fiery Salamanders that primarily live on the seas, and have built a lineage of powerful fire magicks. They've been eternally tasked by some entity - likely a whimsical Unshaped - to wage war against water itself. So, what better battlefield than the sea? While they primarily stick to the Shining Sea around Taaga (due to the prevalence of massive sea life), they on occasion make landfall most to resupply. Sometimes, however, they land to celebrate the heroic slaying of a notable sea monster. This is one such occasion, and you find yourself swept up in spirit as a boatload of Emberclaws march into the beachside bar you are relaxing in.*
 
+A Pet Dilemma:
+- Whole party turned into Animal Companions, using their stats.
+- Can take on Ability from their Calling with them
+
 To Tame a Colossi
 ![[Pasted image 20260106121810.png]]
 - No-Folk Land
