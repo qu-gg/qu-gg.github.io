@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-16T12:01:44.919006Z",
+  "lastUpdated": "2026-01-17T00:03:35.481997Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mckidn2klc2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "ipr.bsky.social",
+        "displayName": "Indie Press Revolution",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774@jpeg"
+      },
+      "record": {
+        "text": "Down to our last 6 copies of the 4th printing of Ryuutama! Another printing is in the works but may take a couple months.\n\nwww.indiepressrevolution.com/xcart/Ryuuta...",
+        "createdAt": "2026-01-16T16:10:07.593Z"
+      },
+      "indexedAt": "2026-01-16T16:10:10.431Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 22,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiezgslyxcxrnqyo5fvdgytkslgwd2be7jxzudo5flwifbgvmqoepe@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiezgslyxcxrnqyo5fvdgytkslgwd2be7jxzudo5flwifbgvmqoepe@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mcjttvcyus2m",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-01-16T10:03:32.028Z",
       "replyCount": 2,
-      "repostCount": 1,
-      "likeCount": 6,
+      "repostCount": 2,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -93,8 +125,8 @@
       },
       "indexedAt": "2026-01-15T18:28:21.133Z",
       "replyCount": 5,
-      "repostCount": 23,
-      "likeCount": 84,
+      "repostCount": 26,
+      "likeCount": 97,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/aXpjxPvG5aU",
@@ -152,7 +184,7 @@
       "indexedAt": "2026-01-15T13:06:37.532Z",
       "replyCount": 0,
       "repostCount": 10,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://www.patreon.com/posts/downward-spiral-147986148?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
@@ -180,8 +212,8 @@
       },
       "indexedAt": "2026-01-14T21:26:30.039Z",
       "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 11,
+      "repostCount": 9,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -245,7 +277,7 @@
       "indexedAt": "2026-01-14T12:58:47.734Z",
       "replyCount": 22,
       "repostCount": 190,
-      "likeCount": 616,
+      "likeCount": 617,
       "embed": {
         "type": "images",
         "images": [
@@ -292,7 +324,7 @@
       "indexedAt": "2026-01-14T11:08:54.230Z",
       "replyCount": 8,
       "repostCount": 12,
-      "likeCount": 99,
+      "likeCount": 101,
       "embed": {
         "type": "images",
         "images": [
@@ -579,8 +611,8 @@
       },
       "indexedAt": "2026-01-12T15:52:09.736Z",
       "replyCount": 4,
-      "repostCount": 28,
-      "likeCount": 68,
+      "repostCount": 30,
+      "likeCount": 75,
       "embed": {
         "type": "images",
         "images": [
@@ -854,75 +886,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mbz22aphos2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
-      },
-      "record": {
-        "text": "It actually says \"Lord Sunsany\" in OD&D",
-        "createdAt": "2026-01-09T17:39:04.708Z"
-      },
-      "indexedAt": "2026-01-09T17:39:13.036Z",
-      "replyCount": 4,
-      "repostCount": 11,
-      "likeCount": 77,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihjjwgff2ckcerfusliwmxyqwckjgcwrg4zu2qebrrjn3unhh3poi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihjjwgff2ckcerfusliwmxyqwckjgcwrg4zu2qebrrjn3unhh3poi@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mbyzusp46s2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "alphabetsauce.bsky.social",
-        "displayName": "Daemon Soup",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreidrq6lcm4byqj7xkadcngg3h3u3jnabwhq2aye64saoxf22gpqkum@jpeg"
-      },
-      "record": {
-        "text": "A thing that was real silly but made coming up with these much more fun was naming all of the god-tier abilities after songs and artists. I'll probably have to change all 144 of their names eventually which will SUCK but till then we've got some real silly ones. \"Supermassive Black Hole\" is my fav.",
-        "createdAt": "2026-01-09T17:36:02.204Z"
-      },
-      "indexedAt": "2026-01-09T17:36:24.040Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 1,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihk5yj466xykai2dpt2nvt7qp6773wiblzo2xv6h5da5hxsza7xrm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihk5yj466xykai2dpt2nvt7qp6773wiblzo2xv6h5da5hxsza7xrm@jpeg",
-            "alt": "A table from a tabletop roleplaying game showing a list of abilities. At the top left it is labelled \"Genius Gadgeteer\"."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihtwycu2qinexwb6jzhygsq7okgiwolrtey7vxg6uhhlrtnr6fxwm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreihtwycu2qinexwb6jzhygsq7okgiwolrtey7vxg6uhhlrtnr6fxwm@jpeg",
-            "alt": "A table from a tabletop roleplaying game showing a list of abilities. The bottom right corner has art of a pink kamen rider-like character in a big magenta outfit, posed ready to punch something with large gauntlets. Those gauntlets match the magical girl Hibiki from Symphogear."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/2BoGkY",
       "source": "artstation",
       "author": {
@@ -1068,7 +1031,7 @@
       "indexedAt": "2026-01-01T21:18:12.737Z",
       "replyCount": 1,
       "repostCount": 3,
-      "likeCount": 13,
+      "likeCount": 15,
       "embed": {
         "type": "images",
         "images": [
@@ -1752,8 +1715,8 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 397,
-      "likeCount": 1683,
+      "repostCount": 398,
+      "likeCount": 1682,
       "embed": {
         "type": "images",
         "images": [
@@ -2381,8 +2344,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 723,
-      "likeCount": 3305,
+      "repostCount": 724,
+      "likeCount": 3304,
       "embed": {
         "type": "images",
         "images": [
@@ -2734,7 +2697,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15427,
+      "likeCount": 15426,
       "embed": {
         "type": "images",
         "images": [
