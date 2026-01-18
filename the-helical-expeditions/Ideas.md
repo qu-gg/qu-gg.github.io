@@ -27,9 +27,9 @@ Sunken Crown:
 - Rebreathers
 - Sentient alien reef?
 - Neriedian Helical Researcher
-
-Emberclaw Brigade:
-- *The Emberclaw Brigade is a nomadic tribe of fiery Salamanders that primarily live on the seas, and have built a lineage of powerful fire magicks. They've been eternally tasked by some entity - likely a whimsical Unshaped - to wage war against water itself. So, what better battlefield than the sea? While they primarily stick to the Shining Sea around Taaga (due to the prevalence of massive sea life), they on occasion make landfall most to resupply. Sometimes, however, they land to celebrate the heroic slaying of a notable sea monster. This is one such occasion, and you find yourself swept up in spirit as a boatload of Emberclaws march into the beachside bar you are relaxing in.*
+- The Batangis Reef is said to have been formed when strange seed-like spores dropped from the heavens and landed around this island within the Galvanus Archipelago. Nowhere else in the world can this sealife be found, and its mind-altering effects are potent.
+- Crown fell too? Some creature from beyond the heavens died and fell into the sea, its blood becoming the reef while its crown fading away. 
+- It was found and used by a once-kind, turned malevolent Divine Ruler before being banished in the 3rd Aeon, the crown fading into obscurity. The Subjugator, Once Kind.
 
 A Pet Dilemma:
 - Whole party turned into Animal Companions, using their stats.
