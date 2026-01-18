@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17T12:01:39.912118Z",
+  "lastUpdated": "2026-01-18T00:04:29.670374Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mcn264b7ts2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
+      },
+      "record": {
+        "text": "Playing more Drakonym after a long while! twitch.tv/himeutsugi #vtubers #vsky #solottrpg",
+        "createdAt": "2026-01-17T16:34:29.042Z"
+      },
+      "indexedAt": "2026-01-17T16:34:31.937Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreidceppsnstsgxtxru3agqrkjyw35hdp2dt7leehxgjo2axzvk3m64@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreidceppsnstsgxtxru3agqrkjyw35hdp2dt7leehxgjo2axzvk3m64@jpeg",
+            "alt": "Hime going live on Twitch"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mckidn2klc2d",
       "source": "bluesky",
       "author": {
@@ -64,9 +96,9 @@
         "createdAt": "2026-01-16T16:10:07.593Z"
       },
       "indexedAt": "2026-01-16T16:10:10.431Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 22,
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -245,7 +277,7 @@
       "indexedAt": "2026-01-14T13:55:08.230Z",
       "replyCount": 1,
       "repostCount": 44,
-      "likeCount": 109,
+      "likeCount": 111,
       "embed": {
         "type": "images",
         "images": [
@@ -277,7 +309,7 @@
       "indexedAt": "2026-01-14T12:58:47.734Z",
       "replyCount": 22,
       "repostCount": 190,
-      "likeCount": 617,
+      "likeCount": 618,
       "embed": {
         "type": "images",
         "images": [
@@ -432,7 +464,7 @@
       },
       "indexedAt": "2026-01-13T17:14:12.429Z",
       "replyCount": 3,
-      "repostCount": 28,
+      "repostCount": 29,
       "likeCount": 96,
       "embed": {
         "type": "images",
@@ -857,35 +889,6 @@
       }
     },
     {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mbzvfuey7s2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq@jpeg"
-      },
-      "record": {
-        "text": "Next month I will launch Cairn Press. \nI tried to make a publishing agreement that is fair, free, and mutually beneficial. Once the lawyer approves final contract I'll release it as CC-BY-SA, if possible. I've also written up a \"plain English\" version that you can read here:\n\ncairnpress.ink#terms",
-        "createdAt": "2026-01-10T01:48:45.475Z"
-      },
-      "indexedAt": "2026-01-10T01:48:46.735Z",
-      "replyCount": 15,
-      "repostCount": 76,
-      "likeCount": 231,
-      "embed": {
-        "type": "external",
-        "uri": "https://cairnpress.ink/#terms",
-        "title": "Cairn Press",
-        "description": "The official website for the Cairn Press imprint.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreih6pfkniq67emz4rolakerkizwvwptk5yj5kglheh6qpn5e4haata@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/2BoGkY",
       "source": "artstation",
       "author": {
@@ -1123,8 +1126,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
-      "repostCount": 1190,
-      "likeCount": 6288,
+      "repostCount": 1189,
+      "likeCount": 6287,
       "embed": {
         "type": "images",
         "images": [
@@ -1546,7 +1549,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 614,
-      "likeCount": 2710,
+      "likeCount": 2712,
       "embed": {
         "type": "images",
         "images": [
@@ -1917,7 +1920,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1939,
-      "likeCount": 8388,
+      "likeCount": 8390,
       "embed": {
         "type": "images",
         "images": [
@@ -2287,8 +2290,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2331,
-      "likeCount": 11810,
+      "repostCount": 2335,
+      "likeCount": 11825,
       "embed": {
         "type": "images",
         "images": [
@@ -2345,7 +2348,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 724,
-      "likeCount": 3303,
+      "likeCount": 3304,
       "embed": {
         "type": "images",
         "images": [
@@ -2474,7 +2477,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 170,
-      "likeCount": 1237,
+      "likeCount": 1238,
       "embed": {
         "type": "images",
         "images": [
@@ -2502,7 +2505,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 247,
-      "likeCount": 1482,
+      "likeCount": 1483,
       "embed": {
         "type": "images",
         "images": [
@@ -2530,7 +2533,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 454,
-      "likeCount": 2415,
+      "likeCount": 2416,
       "embed": {
         "type": "images",
         "images": [
@@ -2640,7 +2643,7 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1876,
+      "repostCount": 1875,
       "likeCount": 8961,
       "embed": {
         "type": "images",
@@ -2669,7 +2672,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2328,
+      "likeCount": 2329,
       "embed": {
         "type": "images",
         "images": [
@@ -2696,8 +2699,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2623,
-      "likeCount": 15426,
+      "repostCount": 2622,
+      "likeCount": 15429,
       "embed": {
         "type": "images",
         "images": [
