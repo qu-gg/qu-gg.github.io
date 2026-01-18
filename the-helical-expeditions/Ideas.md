@@ -20,17 +20,6 @@ Foes in the Foliage:
 - Local herbalist has asked the party to protect
 - Minions of the Unshaped attempt to sabotage the tree transformation as it undermines their influence in the Outer World
 
-Sunken Crown:
-- Batangis Reef 
-- Neriedian gang 
-- Sunken Crown one-shot wonders
-- Rebreathers
-- Sentient alien reef?
-- Neriedian Helical Researcher
-- The Batangis Reef is said to have been formed when strange seed-like spores dropped from the heavens and landed around this island within the Galvanus Archipelago. Nowhere else in the world can this sealife be found, and its mind-altering effects are potent.
-- Crown fell too? Some creature from beyond the heavens died and fell into the sea, its blood becoming the reef while its crown fading away. 
-- It was found and used by a once-kind, turned malevolent Divine Ruler before being banished in the 3rd Aeon, the crown fading into obscurity. The Subjugator, Once Kind.
-
 A Pet Dilemma:
 - Whole party turned into Animal Companions, using their stats.
 - Can take on Ability from their Calling with them

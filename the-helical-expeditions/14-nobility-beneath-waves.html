@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobility Beneath Waves - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Deep Sea Eldritch Theme Palette */
+            --abyss-deep: #1A0A2E;
+            --xeno-purple: #5C3D7A;
+            --bloodcrystal: #7B2D8E;
+            --coral-teal: #2D6B7A;
+            --biolum-cyan: #4FA8B8;
+            --seafoam-light: #E8F4F8;
+            --pearl-white: #FEFEFE;
+            --abyssal-violet: #3D1F5C;
+            --ink-dark: #1a1a2e;
+            
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--seafoam-light);
+        }
+
+        /* ===== GLOBAL LINK STYLES ===== */
+        a {
+            color: var(--abyss-deep);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--xeno-purple);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--seafoam-light);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--abyss-deep), var(--xeno-purple), var(--bloodcrystal), var(--xeno-purple), var(--abyss-deep));
+        }
+
+        .page.art-page {
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #6b3fa0;
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: #6b3fa0;
+            border-color: #6b3fa0;
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--abyss-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--bloodcrystal);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--bloodcrystal);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--coral-teal);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--xeno-purple);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--xeno-purple);
+            border-left: 4px solid var(--xeno-purple);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--xeno-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--abyssal-violet);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--xeno-purple);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--abyss-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(92, 61, 122, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--xeno-purple);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--bloodcrystal);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--xeno-purple);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--abyssal-violet);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--abyss-deep);
+            border-color: var(--abyss-deep);
+            border-left: 4px solid var(--xeno-purple);
+        }
+
+        .story-steps h2 {
+            background: var(--xeno-purple);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--biolum-cyan);
+        }
+
+        .story-steps a {
+            color: var(--biolum-cyan);
+        }
+
+        .story-steps a:hover {
+            color: var(--coral-teal);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--xeno-purple);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-bottom: 4px;
+            margin-top: 6px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--bloodcrystal);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-section li ul {
+            margin-top: 3px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--xeno-purple);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 10, 46, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(92, 61, 122, 0.12);
+            border-left: 3px solid var(--bloodcrystal);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--abyss-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--abyss-deep);
+            text-decoration: underline;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            color: var(--xeno-purple);
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--xeno-purple);
+        }
+
+        .sources-box a {
+            color: var(--abyss-deep);
+            text-decoration: underline;
+        }
+
+        .sources-box a:hover {
+            color: var(--xeno-purple);
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--xeno-purple);
+            border-left: 4px solid var(--xeno-purple);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--abyss-deep);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--bloodcrystal);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--xeno-purple);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--abyssal-violet);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+            align-items: start;
+        }
+
+        .secrets-image-section .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--bloodcrystal);
+            border-left: 4px solid var(--bloodcrystal);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--bloodcrystal);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 10pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--xeno-purple);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-height: 5in;
+            background: var(--abyss-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+        }
+
+        .image-box.image-slice {
+            max-height: 0.95in;
+            height: 0.95in;
+        }
+
+        .image-box.image-slice img {
+            object-position: center 40%;
+        }
+
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+
+        .image-box .image-caption a {
+            color: var(--biolum-cyan);
+            text-decoration: none;
+        }
+
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: stretch;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--abyss-deep);
+            border-left: 4px solid var(--abyss-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--abyss-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--xeno-purple);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+        }
+
+        /* Item Block */
+        .item-block {
+            background: rgba(232, 244, 248, 0.9);
+            border: 2px dotted var(--abyssal-violet);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--bloodcrystal);
+        }
+
+        .item-block .item-type {
+            color: var(--abyssal-violet);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-stats {
+            color: var(--coral-teal);
+            font-weight: bold;
+        }
+
+        .item-block .item-stats a {
+            color: var(--coral-teal);
+            text-decoration: none;
+        }
+
+        .item-block .item-stats a:hover {
+            text-decoration: underline;
+        }
+
+        .item-block ul {
+            margin: 3px 0 0 16px;
+            font-size: 9pt;
+        }
+
+        .item-block li {
+            margin-bottom: 2px;
+        }
+
+        .item-block li ul {
+            margin-top: 2px;
+            margin-left: 12px;
+        }
+
+        /* Right Column: Rank + Sources */
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--bloodcrystal);
+            border-left: 4px solid var(--bloodcrystal);
+            overflow: hidden;
+        }
+
+        .rank-header {
+            background: var(--bloodcrystal);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--xeno-purple);
+        }
+
+        /* Page Credit */
+        .page-credit {
+            position: absolute;
+            bottom: 0.1in;
+            left: 0.35in;
+            font-size: 7pt;
+            color: var(--abyssal-violet);
+            font-style: italic;
+        }
+
+        /* ===== PAGE 3 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--abyss-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--bloodcrystal), var(--xeno-purple), var(--bloodcrystal));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 0 var(--xeno-purple);
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            position: relative;
+            border: 3px solid var(--bloodcrystal);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--abyss-deep);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
+            color: var(--pearl-white);
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .art-item .art-caption a {
+            color: var(--biolum-cyan);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Nobility Beneath Waves</h1>
+            <div class="subtitle">Batangis Reef • Galvanus Archipelago • Twilight Meridian</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">⚠</span> Dangerous</div>
+            <div class="theme-item"><span class="emoji">◆</span> Acquisition</div>
+            <div class="theme-item"><span class="emoji">≈</span> Deep Sea</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Citizens of an underwater city have begun abandoning their homes in a trance, drawn toward the otherworldly Batangis Reef. The party must investigate the ancient resting place of an alien creature - and the Asura exploiting its power.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Neridians from a city near Batangis Reef have begun acting strangely - glazed eyes, mumbling about a 'ruler rising again' - before abandoning their homes entirely. The Helical Archive has contracted you to investigate, partnered with a local Balladeer versed in the sea's ancient history. After a long voyage, you've arrived at the Archive's marine base: a small island atoll directly above the Reef. You are to be briefed by the respected, though eccentric, marine biologist Larimar."</p>
+                    <p style="margin-top: 6px;">As a one-shot, the Citadel is a simple node - but feel free to expand it into a full Adventure Site! For inspiration, "The Lantern of Wyv" by Trilemma Adventures could fit well. You may incorporate Journey mechanics in too but they are hand-waved here for time.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Larimar Stonedepth</span>
+                            <span class="character-details">— Dwarf, Male, 43 (Scholar)</span>
+                        </div>
+                        <div class="character-desc">A renowned Helical marine biologist, famed for establishing ties with Neridian and Shimmershell societies across the Shining Sea.</div>
+                        <div class="character-quote">"Even when above water, this boulder of a Dwarf wears a full atmospheric diving suit and is surprisingly deft in it."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Foam's Requiem</span>
+                            <span class="character-details">— Neridian, Female, 25 (Balladeer R4)</span>
+                        </div>
+                        <div class="character-desc">A "chosen" born with psychic abilities in the Neridian city of Lemuria. She treasures the sea's ancient stories and fears the strange "pull" that's been drawing her toward the Reef lately.</div>
+                        <div class="character-quote">"Draped in elegant and flowing silks, this young bard's excitement to explore the depths just barely covers up the nervousness underneath."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Ophyr the Usurper</span>
+                            <span class="character-details">— Asura, Female, ??? (Bellzuub)</span>
+                        </div>
+                        <div class="character-desc">Former servitor of The Subjugator. Aeons in the sea depths have warped her beyond recognition - no longer resembling anything from the Celestial Order. Her breathing is constant and labored.</div>
+                        <div class="character-quote">"Even if one doesn't consider the wicked crown and blood-extraction tubes embedded directly into her skull, her visage alone is a veritable eldritch sea horror."</div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <ul>
+                        <li><strong>Ophyr the Usurper:</strong> Bellzuub with Bladed Hunter, Spinnerets, <br>Fast in Water, and Venomous Strike [Source, pg. 420]</li>
+                        <li><strong>Foam's Requiem:</strong> Balladeer Rank 4 w/ Glorious Echo <br>and Beast Song (<a href="https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html" target="_blank">BREAK!! Blog</a>)</li>
+                        <li><strong>Puppets:</strong> Reflavored Killservants [Source, pg. 388]</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="14) Nobility Beneath Waves/Pasted image 20260117005937.jpg" alt="Remains of the alien creature">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene, have Larimar introduce the marine base, then continue:</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Prep to Descend</span>
+                        <ul>
+                            <li>Larimar invites them in, explaining the mission: protect Foam's, investigate the corpse site, and try to rescue any lost folk.</li>
+                            <li>Foam's arrives and distributes Rebreathers [Source, pg. 173] before leading the party down.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Out-of-This-World Reef</span>
+                        <ul>
+                            <li>Reaching the corpse requires passing through Batangis Reef, which is Harmful Terrain. Each PC must make an Aura Check or become Disoriented.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Puppets Mining Co</span>
+                        <ul>
+                            <li>Four Puppets are excavating crystallized blood from the corpse. Mixed with Asura blood, it can create more Puppets.</li>
+                            <li>Infusing bloodcrystals with Mana (Foam's can do this reliably) cures the Disoriented condition - and can restore the Puppets to their former selves.</li>
+                            <li>The Puppets bear The Subjugator's iconography. PCs or Foam's may recognize it; the Subjugator's long-sealed Citadel lies buried nearby.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Dance with the Divine</span>
+                        <ul>
+                            <li>The Citadel's massive doors lie open. The foyer is empty, though signs of mining and redecorating are evident.</li>
+                            <li>Ophyr the Usurper awaits on a throne in the main chamber with 2 more Puppets. She'll welcome visitors - but quickly grows paranoid they're after her crown and attacks.</li>
+                            <li>Anyone touching the crown directly must make an Insight Check every 5 minutes or be Wounded from its power.</li>
+                            <li>Returning the crown to base for containment completes the mission. The party is rewarded, plus an invitation to Lemuria.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Batangis Reef</h3>
+                    <p class="loc-desc">"All manner of densely-packed, otherworldly flora and rock formations make up this reef. You continue to catch yourself spacing out in their mesmerizing allure."</p>
+                    <p>Long before the shattering of the Sun Machine, this reef has grown here, blood nourishment making it a foreigner to this world. Occasional puffs of thick purple mist come out from various flora.<br><br>Passing through requires an Aura Check (or Anti-Hazard Suit) or the character becomes Disoriented. Only the creature's bloodcrystals can cure this effect.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Corpse of the Creature</h3>
+                    <p class="loc-desc">"A colossal skeletal structure and theoretical physiology unlike anything on the Outer World, which is saying something, only pockets of deep purple rock dot its remains."</p>
+                    <p>All that's left is a skeleton and the deep purple rock, which is portions of its blood that crystallized.<br><br>Mining requires an Insight Check; failure results in a Wound. Success yields 2 Units of <strong>Xeno Bloodshards</strong>. Let players understand which Aptitude the Check is.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Subjugator's Citadel</h3>
+                    <p class="loc-desc">"Open, massive pearlescent doors welcome you into an imposing structure filled with sculptures and architecture plundered far and wide over ages past."</p>
+                    <p>For this one-shot, consider the citadel to be primarily a massive long foyer filled with wonders of the past world before leading into a main chamber where Ophyr awaits on a broken throne.<br><br>This Citadel contains hidden writings by scholars of eld detailing the crown's cursed history and being forced to work under The Subjugator's reign.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>The Batangis Reef is said to have formed Aeons ago when an alien creature's fresh corpse dropped from the heavens into the Galvanus Archipelago.</li>
+                    <li>Its blood seeped into the soil, altering the ecosystem. Nowhere else in the world can this seaflora be found, and its mind-altering effects are particularly potent.</li>
+                    <li>Occasionally people in the nearby Neridian city, even at its distance, will be born with psychic abilities. Many of these "gifted" were the first to leave.</li>
+                    <li>Foam's is one such gifted. She's always felt a strange pull toward the corpse site. Recently it's grown stronger, and she fears waiting any longer.</li>
+                    <li>During the 2nd Aeon, a benevolent Divine Ruler found this corpse, and taking a liking to it, fashioned a crown and jewelry from its crystallized blood.</li>
+                    <li>This Divine Ruler was consumed by its psychic potency and turned mad, seeking to bring all into its hivemind. This ruler was known as The Subjugator, Once-Kind.</li>
+                    <li>The Subjugator was banished alongside other Divine Rulers in the 3rd Aeon, the crown falling into obscurity.</li>
+                    <li>After 2 Aeons, an Asura formerly under the Subjuator's rule, Ophyr, found the crown, wearing it for herself, and beginning the cycle anew.</li>
+                    <li>Ophyr is siphoning citizens from the local city, amassing forces while acclimating to the crown's power - which overwhelms even her. Erratic behavior and talking to nothing are common.</li>
+                    <li>Ophyr plans to first conquer Lemuria, then move along weak coastal villages before taking on larger prey. She sees the broken world as ripe for conquest.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="right-column">
+                <!-- Citadel Image Slice -->
+                <div class="image-box image-slice">
+                    <img src="14) Nobility Beneath Waves/Pasted image 20260117013623.jpg" alt="Citadel of the Subjugator">
+                </div>
+
+                <!-- Quest Resolution -->
+                <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>On successfully taking down Ophyr and recovering the crown:</p>
+                        <ul style="margin: 4px 0 6px 16px; font-size: 9pt;">
+                            <li>2 Units of Dew Silver (gift from Lemuria)</li>
+                            <li>2 Gems (from the Archive)</li>
+                        </ul>
+                        <p>If Foam's survives, the party gains a Social Bond with her and an invitation to visit Lemuria.</p>
+                        <p style="margin-top: 6px;">The <strong>Coralweave Piercing</strong> rests on the Citadel's throne.</p>
+                    </div>
+                <div class="item-block">
+                    <span class="item-name">Coralweave Piercing</span> <span class="item-type">[Legendary Artifact]</span><br>
+                    <span class="item-desc">Unlike the other jagged pieces of crystallized blood from the corpse, this piece is polished and beautiful. Constellations are always visible in its shimmer.</span>
+                    <ul>
+                        <li>As an Action, you may turn the Artifact into armor for a specific task or Fight.</li>
+                        <li>The Artifact grows unnaturally fast into a wicked suit of defensive coral.</li>
+                        <li>It has the following specifications: Superheavy Armor, Rebreather, Mechanical Motion.</li>
+                        <li>While in water, the wearer's Speed Rating is Average, bypassing Superheavy restrictions.</li>
+                        <li>The armor lasts until the task it was activated for is completed, or you have been reduced to 0 Hearts.</li>
+                        <li>You cannot use this Ability again for 24 hours.</li>
+                    </ul>
+                    <div class="item-stats">1/2 Slot · 5 Gems</div>
+                </div>
+                <div class="item-block">
+                    <span class="item-name">Xeno Bloodshard</span> <span class="item-type">[Magical Additive, Eldritch]</span><br>
+                    Anyone ingesting an Imbued Consumable gains 1 Use of the Dreamer Quirk [Source, pg. 142].
+                    <div class="item-stats">1 Slot · 1 Gem</div>
+                </div>
+                </div>
+                </div>
+
+                <!-- Rank Header -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 9-10 Adventure</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117005937.jpg" alt="Remains of the alien creature">
+                <div class="art-caption">"Remains of the Alien Creature" <br> Art by Unknown</div>
+            </div>
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117013358.jpg" alt="Ophyr the Usurper">
+                <div class="art-caption">"Ophyr the Usurper" <br> Art by <a href="https://x.com/VincentVinsight/status/1656731045285318657">Vincent Coviello</a></div>
+            </div>
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117013623.jpg" alt="Citadel of the Subjugator">
+                <div class="art-caption">"Citadel of the Subjugator" <br> Art by <a href="https://dinotopia.fandom.com/wiki/Chamber_of_the_Guardians">Dinotopia</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117003116.jpg" alt="Larimar's Atoll Hut">
+                <div class="art-caption">"Marine Base Inspiration" <br> Art by <a href="https://victorinripert.artstation.com/projects/wqLEZ">Victorin Ripert</a></div>
+            </div>
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117014524.jpg" alt="Foam's Requiem">
+                <div class="art-caption">"Foam's Requiem, Balladeer" <br> Art by <a href="https://www.artstation.com/artwork/3db5am">Reir</a></div>
+            </div>
+            <div class="art-item">
+                <img src="14) Nobility Beneath Waves/Pasted image 20260117121448.jpg" alt="Batangis Reef">
+                <div class="art-caption">"Batangis Reef" <br> Art by <a href="https://kemineko.tumblr.com/" target="_blank">Kemineko</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
