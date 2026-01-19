@@ -1068,6 +1068,22 @@
             line-height: 1.7;
         }
 
+        /* ===== HIDE REGION/SUBZONE CONTENT TOGGLE ===== */
+        .hide-separator-content .region-images,
+        .hide-separator-content .region-tagline,
+        .hide-separator-content .subzone-flavor,
+        .hide-separator-content .subzone-divider {
+            display: none !important;
+        }
+
+        .hide-separator-content .region-separator-right {
+            justify-content: center;
+        }
+
+        .hide-separator-content .region-title {
+            margin-bottom: 0;
+        }
+
         /* ===== ADVENTURE SECTION WRAPPER ===== */
         .adventure-section {
             /* Contains scoped styles for each adventure */
@@ -1139,6 +1155,10 @@
     </div>
 
     <script>
+        // ===== LOCAL CONFIG OPTIONS =====
+        // Set to false to hide region images, taglines, and subzone flavor text
+        const SHOW_SEPARATOR_CONTENT = false;
+
         // ===== REGION & ADVENTURE CONFIGURATION =====
         // Adventures are organized by region and sub-location
         // Reorder regions or adventures within regions to change book order
@@ -1335,37 +1355,37 @@
                     }
                 ]
             },
-            'Buried Kingdom': {
-                sublocations: ['Old Iron', 'New Ore', 'The Tunnels', 'Lost Crystal', 'Machine Labyrinth'],
-                sublocationFlavor: {
-                    'Old Iron': 'The ancient dwarven strongholds of Old Iron have stood for millennia, their forges still burning with the flames of forgotten craft. Here the traditionalists cling to the old ways, distrustful of the surface world and its chaos.',
-                    'New Ore': 'A sprawling mining operation where opportunists and refugees have carved out a precarious existence. The constant excavation unearths both riches and horrors from the deep.',
-                    'The Tunnels': 'An endless maze of passages connecting the disparate settlements of the Underland. Those who know the routes hold power; those who wander lost become prey.',
-                    'Lost Crystal': 'Once a magnificent crystalline city of the deep elves, now a shattered ruin haunted by the echoes of its former glory. Treasure seekers brave its dangers for artifacts of immense power.',
-                    'Machine Labyrinth': 'A vast complex of gears, pipes, and incomprehensible machinery left behind by some ancient civilization. The automatons that patrol its halls answer to no master.'
-                },
-                tagline: 'Below the crust of the earth, an endless battle<br>rages in the burrows and caverns of the Underland.',
-                colors: {
-                    panelBg: 'linear-gradient(135deg, #2a2a2e 0%, #3a3a40 50%, #2a2a2e 100%)',
-                    panelBorder: '#7a7a80',
-                    titleColor: '#c8c8d0',
-                    taglineColor: '#a8a8b0',
-                    accentPrimary: '#8a6a4a',
-                    accentSecondary: '#5a5a60',
-                    imageBorder: '#6a6a70'
-                },
-                images: {
-                    landscape: 'Regional Images/page310_Buried_Kingdom_image001.png',
-                    portraits: [
-                        'Regional Images/page310_Buried_Kingdom_image002.png',
-                        'Regional Images/page310_Buried_Kingdom_image003.png',
-                        'Regional Images/page310_Buried_Kingdom_image004.png'
-                    ]
-                },
-                adventures: [
-                    // No adventures yet
-                ]
-            }
+            // 'Buried Kingdom': {
+            //     sublocations: ['Old Iron', 'New Ore', 'The Tunnels', 'Lost Crystal', 'Machine Labyrinth'],
+            //     sublocationFlavor: {
+            //         'Old Iron': 'The ancient dwarven strongholds of Old Iron have stood for millennia, their forges still burning with the flames of forgotten craft. Here the traditionalists cling to the old ways, distrustful of the surface world and its chaos.',
+            //         'New Ore': 'A sprawling mining operation where opportunists and refugees have carved out a precarious existence. The constant excavation unearths both riches and horrors from the deep.',
+            //         'The Tunnels': 'An endless maze of passages connecting the disparate settlements of the Underland. Those who know the routes hold power; those who wander lost become prey.',
+            //         'Lost Crystal': 'Once a magnificent crystalline city of the deep elves, now a shattered ruin haunted by the echoes of its former glory. Treasure seekers brave its dangers for artifacts of immense power.',
+            //         'Machine Labyrinth': 'A vast complex of gears, pipes, and incomprehensible machinery left behind by some ancient civilization. The automatons that patrol its halls answer to no master.'
+            //     },
+            //     tagline: 'Below the crust of the earth, an endless battle<br>rages in the burrows and caverns of the Underland.',
+            //     colors: {
+            //         panelBg: 'linear-gradient(135deg, #2a2a2e 0%, #3a3a40 50%, #2a2a2e 100%)',
+            //         panelBorder: '#7a7a80',
+            //         titleColor: '#c8c8d0',
+            //         taglineColor: '#a8a8b0',
+            //         accentPrimary: '#8a6a4a',
+            //         accentSecondary: '#5a5a60',
+            //         imageBorder: '#6a6a70'
+            //     },
+            //     images: {
+            //         landscape: 'Regional Images/page310_Buried_Kingdom_image001.png',
+            //         portraits: [
+            //             'Regional Images/page310_Buried_Kingdom_image002.png',
+            //             'Regional Images/page310_Buried_Kingdom_image003.png',
+            //             'Regional Images/page310_Buried_Kingdom_image004.png'
+            //         ]
+            //     },
+            //     adventures: [
+            //         // No adventures yet
+            //     ]
+            // }
         };
 
         // Flatten structure for loading (sorted by sublocation order within each region)
@@ -2697,6 +2717,10 @@
 
         // Auto-compile on load
         window.addEventListener('DOMContentLoaded', () => {
+            // Apply local config options
+            if (!SHOW_SEPARATOR_CONTENT) {
+                document.getElementById('book-container').classList.add('hide-separator-content');
+            }
             compileBook();
         });
     </script>

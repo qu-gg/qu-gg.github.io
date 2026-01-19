@@ -24,6 +24,10 @@ A Pet Dilemma:
 - Whole party turned into Animal Companions, using their stats.
 - Can take on Ability from their Calling with them
 
+Light the Way:
+- Be an adventure trying to keep lanterns lit along the Shadowed Lands
+- Knights of the Lantern in a farther out outpost asking for adventurer help in lighting 
+
 To Tame a Colossi
 ![[Pasted image 20260106121810.png]]
 - No-Folk Land
