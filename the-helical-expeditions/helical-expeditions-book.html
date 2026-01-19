@@ -1108,9 +1108,104 @@
             40% { content: '..'; }
             60%, 100% { content: '...'; }
         }
+
+        /* ===== MOBILE WARNING BANNER ===== */
+        .mobile-warning {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--break-purple), var(--break-pink));
+            color: white;
+            padding: 12px 20px;
+            z-index: 2000;
+            text-align: center;
+            font-size: 11pt;
+            line-height: 1.4;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+
+        .mobile-warning-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .mobile-warning-icon {
+            font-size: 18pt;
+        }
+
+        .mobile-warning-text {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .mobile-warning-text strong {
+            display: block;
+            font-size: 12pt;
+            margin-bottom: 2px;
+        }
+
+        .mobile-warning-text small {
+            opacity: 0.9;
+            font-size: 9pt;
+        }
+
+        .mobile-warning-dismiss {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.4);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 9pt;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+
+        .mobile-warning-dismiss:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Show on mobile devices */
+        @media screen and (max-width: 900px) {
+            .mobile-warning:not(.dismissed) {
+                display: block;
+            }
+
+            /* Adjust body content when warning is visible */
+            body:has(.mobile-warning:not(.dismissed)) .hamburger-btn {
+                top: 85px;
+            }
+
+            body:has(.mobile-warning:not(.dismissed)) #book-container {
+                padding-top: 90px;
+            }
+        }
+
+        @media print {
+            .mobile-warning {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Mobile Warning Banner -->
+    <div class="mobile-warning" id="mobile-warning" onclick="dismissMobileWarning(event)">
+        <div class="mobile-warning-content">
+            <div class="mobile-warning-text">
+                <strong>DISCLAIMER! Best viewed on Desktop</strong>
+                <small>For the optimal experience, view on a desktop browser or enable "Desktop Site" in your mobile browser menu.</small>
+            </div>
+            <button class="mobile-warning-dismiss" onclick="dismissMobileWarning(event)">Got it!</button>
+        </div>
+    </div>
+
     <!-- Hamburger Menu Button (mobile) -->
     <button class="hamburger-btn" id="hamburger-btn" onclick="toggleMobileMenu()">
         <span></span>
@@ -1155,6 +1250,23 @@
     </div>
 
     <script>
+        // ===== MOBILE WARNING =====
+        function dismissMobileWarning(event) {
+            event.stopPropagation();
+            const warning = document.getElementById('mobile-warning');
+            warning.classList.add('dismissed');
+            // Remember dismissal for this session
+            sessionStorage.setItem('mobileWarningDismissed', 'true');
+        }
+
+        // Check if warning was already dismissed this session
+        if (sessionStorage.getItem('mobileWarningDismissed') === 'true') {
+            document.addEventListener('DOMContentLoaded', () => {
+                const warning = document.getElementById('mobile-warning');
+                if (warning) warning.classList.add('dismissed');
+            });
+        }
+
         // ===== LOCAL CONFIG OPTIONS =====
         // Set to false to hide region images, taglines, and subzone flavor text
         const SHOW_SEPARATOR_CONTENT = false;
