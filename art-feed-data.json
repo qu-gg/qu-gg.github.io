@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-20T12:01:53.885470Z",
+  "lastUpdated": "2026-01-21T00:04:19.247775Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,77 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mcvanr47ac2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "stickydoodler.bsky.social",
+        "displayName": "Sticky Doodler",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreihipauhj4jwwsmgbun5a2ftav63j5jokitqzah5lebzjy6s4uyroe@jpeg"
+      },
+      "record": {
+        "text": "Designed in the DMV is a local artist's collective based in DC, Maryland, and Virginia. We help each other create and promote tabletop games of all types, including role-playing games, board games, card games, and LARPs.\n\nOne of the most visible things we do is publish a catalog...\n1/4\u25b6\ufe0f",
+        "createdAt": "2026-01-20T22:51:54.523Z"
+      },
+      "indexedAt": "2026-01-20T22:52:29.430Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 6,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreic7rnuozfwohpztvdnt4doxgbfs3irrg7wq7wlrw7jnahvaa4euri@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreic7rnuozfwohpztvdnt4doxgbfs3irrg7wq7wlrw7jnahvaa4euri@jpeg",
+            "alt": "Zine-sized catalog showing the center spread of McCricket Publishing Co and their game, Magica Mechanica; and Graftbround Press and their game, The Peddler's Prize"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreih4lx4wa3tx6ubax63do6255y36bgppnek3jbjhlj4c75cfc4y3ka@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreih4lx4wa3tx6ubax63do6255y36bgppnek3jbjhlj4c75cfc4y3ka@jpeg",
+            "alt": "Zine-sized catalog showing Angela Bell's game, How Much Do You Really Know? and Ben Hammer's game, We All Take From the River"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreif77kxxskhmrbv7epolfthxds5wp3ael6ia7pgcargiw5scuaxcqm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreif77kxxskhmrbv7epolfthxds5wp3ael6ia7pgcargiw5scuaxcqm@jpeg",
+            "alt": "Zine-sized catalog showing the \"Designed in the DMV\" placard and photos of its placement in various retail settings."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3ftif5ymfyuzstyi5ciexv4w/app.bsky.feed.post/3mcujulp6zs2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "quigjam.bsky.social",
+        "displayName": "Quigley",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3ftif5ymfyuzstyi5ciexv4w/bafkreieng2xwvkxaaoa2yr4ku5cx74s27xqnfsn7qgh7v5b7hve3tvqjti@jpeg"
+      },
+      "record": {
+        "text": "Fantasy in My Backyard, my map-labeling game that uses real cities, is launching on Zine Month in 13 Days!\n\nIf you've ever thought, \"damn it would be so cool to run an rpg campaign in [insert city]\" this is the game for you!\n\nFree fully playable preview now available!\n\nBit.ly/backyard-teaser-bsky",
+        "createdAt": "2026-01-20T16:04:07.723Z"
+      },
+      "indexedAt": "2026-01-20T16:04:09.644Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://Bit.ly/backyard-teaser-bsky",
+        "title": "Build Urban Fantasy in Real Places with Google Maps",
+        "description": "From Chase Call and James Quigley - Build Urban Fantasy in Real Places with Google Maps",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3ftif5ymfyuzstyi5ciexv4w/bafkreidstaybyerbjsw7nywhdwiuoghlqnfgs2bo5lvwng7o6seejv2dby@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mcshiomuns2g",
       "source": "bluesky",
       "author": {
@@ -103,7 +174,7 @@
       "indexedAt": "2026-01-17T19:20:17.132Z",
       "replyCount": 9,
       "repostCount": 52,
-      "likeCount": 253,
+      "likeCount": 254,
       "embed": {
         "type": "images",
         "images": [
@@ -135,7 +206,7 @@
       "indexedAt": "2026-01-17T16:34:31.937Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 9,
+      "likeCount": 10,
       "embed": {
         "type": "images",
         "images": [
@@ -227,7 +298,7 @@
       "indexedAt": "2026-01-15T18:28:21.133Z",
       "replyCount": 5,
       "repostCount": 26,
-      "likeCount": 100,
+      "likeCount": 101,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/aXpjxPvG5aU",
@@ -314,7 +385,7 @@
       "indexedAt": "2026-01-14T21:26:30.039Z",
       "replyCount": 0,
       "repostCount": 9,
-      "likeCount": 13,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -750,8 +821,8 @@
       "source": "bluesky",
       "author": {
         "handle": "jellyfishlines.itch.io",
-        "displayName": "\ud83e\udebcJellyfishlines: card-carrying sicko freak\ud83e\udebc",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreidk22wntpdyjviqus2ncae4tqh4dnh7jh7vsqwuumuu72pdifzzw4@jpeg"
+        "displayName": "\ud83e\udebcJellyfishlines needs a break\ud83e\udebc",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreidtp7zx3lkxgyednweletf2g3opxiawy3nhkeuoea64goyboqw7ie@jpeg"
       },
       "record": {
         "text": "Doing a little thread about my ZineMo game, TOWNIE(S)\nwww.kickstarter.com/projects/jel...",
@@ -854,38 +925,6 @@
         "title": "Patreon Exclusive : New Zines + Exalted Funeral Unboxing! | Weird Place",
         "description": "Get more from Weird Place on Patreon",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreidmjddzot6awlgksojibcyizmcm26ffmfwudp6emx4i3xgx53hqrm@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mc5zfjsxv32x",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "LostHaven",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreib6odzss46vl2kurogjbechpgtuynvrz5w2jhkucqucfsmz6x3vj4@jpeg"
-      },
-      "record": {
-        "text": "Finally launched WildSpace into the wild! Anthro space western adventure with custom star fighters and faction wars. Been designing, writing, and creating art for this frontier experience for months. losthavengames.itch.... #WildSpace #ttrpg",
-        "createdAt": "2026-01-11T17:10:47.000Z"
-      },
-      "indexedAt": "2026-01-11T17:10:48.434Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 9,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiavocyrxxeskj2dalygj4uzw54apnz37lepeas2uhnftgllm6weai@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiavocyrxxeskj2dalygj4uzw54apnz37lepeas2uhnftgllm6weai@jpeg",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1132,7 +1171,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1190,
-      "likeCount": 6287,
+      "likeCount": 6288,
       "embed": {
         "type": "images",
         "images": [
@@ -1925,7 +1964,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1938,
-      "likeCount": 8388,
+      "likeCount": 8387,
       "embed": {
         "type": "images",
         "images": [
@@ -2649,7 +2688,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1875,
-      "likeCount": 8960,
+      "likeCount": 8959,
       "embed": {
         "type": "images",
         "images": [
@@ -2677,7 +2716,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2329,
+      "likeCount": 2328,
       "embed": {
         "type": "images",
         "images": [
@@ -2705,7 +2744,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2622,
-      "likeCount": 15429,
+      "likeCount": 15428,
       "embed": {
         "type": "images",
         "images": [
@@ -2819,7 +2858,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 450,
-      "likeCount": 2395,
+      "likeCount": 2394,
       "embed": {
         "type": "images",
         "images": [
