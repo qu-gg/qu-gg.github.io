@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-22T00:04:04.078264Z",
+  "lastUpdated": "2026-01-22T12:02:25.655684Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mcy5a3kqps23",
+      "source": "bluesky",
+      "author": {
+        "handle": "hessan-yongdi.itch.io",
+        "displayName": "Hessan Yongdi",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreierjtouydh4y7wrkinajyptzsxmjhfjyihcehj65aotkuj7gltmme@jpeg"
+      },
+      "record": {
+        "text": "Finally listed some new items on my Etsy store! A couple of handbound copies of two of my #TTRPGs, The Tutelary Society and Sageuk: Roleplay in Joseon, are now available!\n\nwww.etsy.com/shop/Hessans...",
+        "createdAt": "2026-01-22T02:28:33.764Z"
+      },
+      "indexedAt": "2026-01-22T02:28:34.033Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 2,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.etsy.com/shop/HessansCounty?ref=shop_profile&listing_id=4443447267",
+        "title": "",
+        "description": "",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:yzlrck7haxxsjopdta6ndpom/app.bsky.feed.post/3mcxi7icvyc2v",
       "source": "bluesky",
       "author": {
@@ -84,6 +113,43 @@
       }
     },
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mcx77x35ps2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
+      },
+      "record": {
+        "text": "Just in case it isn't clear- this is a license free set of 16 pages of full color artwork that I'm offering for $21 dollars. I decided to keep the price on the lower end to increase viability for smaller creators taking part in something I hope is interesting.\n\nbetter-legends.itch.io/dungeon-of-s...",
+        "createdAt": "2026-01-21T17:31:36.798Z"
+      },
+      "indexedAt": "2026-01-21T17:31:49.141Z",
+      "replyCount": 0,
+      "repostCount": 21,
+      "likeCount": 57,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihbbxnih2mgwchb6eqau5p2l6ykttfxtatzx4nffyie4ianwtwqoi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihbbxnih2mgwchb6eqau5p2l6ykttfxtatzx4nffyie4ianwtwqoi@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreid45wychb5rv4v2excmgbb2n2seulmauafkuknjucpatwjhh5tyoy@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreid45wychb5rv4v2excmgbb2n2seulmauafkuknjucpatwjhh5tyoy@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mcvanr47ac2f",
       "source": "bluesky",
       "author": {
@@ -97,7 +163,7 @@
       },
       "indexedAt": "2026-01-20T22:52:29.430Z",
       "replyCount": 1,
-      "repostCount": 29,
+      "repostCount": 30,
       "likeCount": 64,
       "embed": {
         "type": "images",
@@ -234,8 +300,8 @@
       },
       "indexedAt": "2026-01-17T19:20:17.132Z",
       "replyCount": 9,
-      "repostCount": 52,
-      "likeCount": 254,
+      "repostCount": 54,
+      "likeCount": 267,
       "embed": {
         "type": "images",
         "images": [
@@ -637,7 +703,7 @@
       "indexedAt": "2026-01-13T21:01:26.027Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 6,
+      "likeCount": 5,
       "embed": {
         "type": "external",
         "uri": "http://arachnibot.com/",
@@ -699,35 +765,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mcctchikls2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "sandroad.moe",
-        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am@jpeg"
-      },
-      "record": {
-        "text": "BLOG TIME\n\nThere's nothing that makes a setting sing like a cast of villains to set it on fire ~ But what's beneath the evil grin and immaculate costumes? Today I'm exploring (and providing some roll tables/archetypes) for making dynamic and dastardly disruptors:\n\nwww.failforward.moe/2026/01/vill...",
-        "createdAt": "2026-01-13T15:05:01.460Z"
-      },
-      "indexedAt": "2026-01-13T15:05:05.831Z",
-      "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 17,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.failforward.moe/2026/01/villains-building-baddie.html",
-        "title": "Villains - Building a Baddie",
-        "description": "Twisted views. Dastardly schemes. Impeccable fashion. The kind of character you just love to hate ~ Villains are a central cog in any campai...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiggxlrm24dsjyfmicwws226vwr7r6lgyyebforz5f4rcf4oxa6jji@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mcchpef76c2w",
       "source": "bluesky",
       "author": {
@@ -749,48 +786,6 @@
         "title": "Simple Marker Style JRPG Portraits",
         "description": "Commission available on Ko-fi.com",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreihuqbe2vpchhhdcjornlu3s23rvgu237flz5aqzdyo5zq6rlf7cry@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:qytcxdl6sbaucyugocixeula/app.bsky.feed.post/3mcaw72phds2w",
-      "source": "bluesky",
-      "author": {
-        "handle": "sariahoward.bsky.social",
-        "displayName": "AnimaloftheElements",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreichu4b7vzcwzsvov74w4mf5imsc3qdl7fsmjlqwpe5kkt4wliwdze@jpeg"
-      },
-      "record": {
-        "text": "Heading to Japan for family reasons, but money is TIGHT\n\nSo, I'm doing 10% discounts on all commissions this month! Fill out the form in the replies to claim a slot\n\nAll help and shares are appreciated\n\n#commissions #ocsky #artcomm",
-        "createdAt": "2026-01-12T20:51:29.129Z"
-      },
-      "indexedAt": "2026-01-12T20:51:35.737Z",
-      "replyCount": 1,
-      "repostCount": 19,
-      "likeCount": 19,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreihoda6hchun4fnqmxsyi52tculdrpfcsg4s3tjteid2edl5xoj55i@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreihoda6hchun4fnqmxsyi52tculdrpfcsg4s3tjteid2edl5xoj55i@jpeg",
-            "alt": "A graphic showing digital art commission examples. Each example is split into Headshot, Halfbody, and Fullbody. Sketches are $20, $35, $50. Black and White Lineart is $40, $60, $80. Flat colors with no shading or lighting is $60, $80, $120. A full rendered character is $80, $100, $180"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreic774tecioyq4althddlaq7w457hluja7s4hy7vdpg2ywghyl37f4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreic774tecioyq4althddlaq7w457hluja7s4hy7vdpg2ywghyl37f4@jpeg",
-            "alt": "Illustrations $400<. Art with a focus on creating a scene/environment as opposed to focusing on a character. Fully rendered and comes with a detailed backgrou8nd. Prices increase based on the content.\nReference Sheets $200<. Baseline sketched fullbody front and rear. Prices increase based on sketch lined vs clean lines, extra angles, clothes, details, etc."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreienr75fnoegq2pguikdrusdwbi77q7cgan37ps3jczw6tfb3ng4ry@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qytcxdl6sbaucyugocixeula/bafkreienr75fnoegq2pguikdrusdwbi77q7cgan37ps3jczw6tfb3ng4ry@jpeg",
-            "alt": "Will Do: OCs/FCs, Fanart, Furries/Ferals, Humanoids, Monsters, Gore/Horror, Ship/Couple art\nWon't Do: Extreme fetish art, offensive content/politics, violence directed towards a real person (unless permission is granted by said person), anything I may find to be too uncomfortable to draw\nAsk About: Mecha, NSFW/Pinups, Animations/Animatics, Merch, such as buttons/charms, Character/Outfit design\nAdditional Fees: Anything in the \"ask about\" section will result in extra fees depending on the commission. Extra Characters +$40< depending on complexity, Detailed Characters +$40< Depending on complexity"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -875,35 +870,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:bktssur4phxokmndtgekh3eo/app.bsky.feed.post/3mcabbg637s2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "mindstorm.bsky.social",
-        "displayName": "Ty",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreieudskyzwgnyjhbwinw4ruymod2swea42h3tmf3q5gibke53pxkqy@jpeg"
-      },
-      "record": {
-        "text": "New mindstorm post! 2026 is the year of the shameless self-indulgent posting. I've started a new game, and this first post is both design notes and play report. Check it out if you like PIRATES\n\nwww.mindstormpress.com/shimmernight...",
-        "createdAt": "2026-01-12T14:36:59.682Z"
-      },
-      "indexedAt": "2026-01-12T14:37:01.338Z",
-      "replyCount": 5,
-      "repostCount": 13,
-      "likeCount": 40,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.mindstormpress.com/shimmernight-session-one",
-        "title": "Shimmernight: Session One",
-        "description": "I talk about the launch of my new campaign, with both notes on designing a nautical campaign and a play report.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreibwjzopq6ftrrfuxaazhanvavzqlvr3rkfpqfh4ccuuqajyc7da5u@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
       }
     },
     {
@@ -2309,7 +2275,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11824,
+      "likeCount": 11823,
       "embed": {
         "type": "images",
         "images": [
@@ -2662,7 +2628,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1875,
-      "likeCount": 8959,
+      "likeCount": 8958,
       "embed": {
         "type": "images",
         "images": [
@@ -2690,7 +2656,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2328,
+      "likeCount": 2327,
       "embed": {
         "type": "images",
         "images": [
@@ -2718,7 +2684,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2622,
-      "likeCount": 15427,
+      "likeCount": 15426,
       "embed": {
         "type": "images",
         "images": [
@@ -2832,7 +2798,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 450,
-      "likeCount": 2394,
+      "likeCount": 2393,
       "embed": {
         "type": "images",
         "images": [
