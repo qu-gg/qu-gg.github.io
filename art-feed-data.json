@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-21T12:01:55.034545Z",
+  "lastUpdated": "2026-01-22T00:04:04.078264Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,12 +52,44 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:yzlrck7haxxsjopdta6ndpom/app.bsky.feed.post/3mcxi7icvyc2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "cabinetofcuriosities.games",
+        "displayName": "Emanoel Melo from The Cabinet of Curiosities",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yzlrck7haxxsjopdta6ndpom/bafkreic25tslegcfkxfjxcf7lmmfdadkql3wvrl74th7daf2odqtvj6xra@jpeg"
+      },
+      "record": {
+        "text": "Pre-orders for CBR+PNK: OVERLOAD are LIVE!\n\nThe official follow-up to the Silver ENNIE-winning TTRPG for Best Layout and Design is HERE!\n\nENTER: Y/N?\n\nf.mtr.cool/ykkijiibaq",
+        "createdAt": "2026-01-21T20:12:25.000Z"
+      },
+      "indexedAt": "2026-01-21T20:12:33.541Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yzlrck7haxxsjopdta6ndpom/bafkreie6x5klf6f5xvwuuahqgdye74qlw7ozro3ojspoewi4zaysomromm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yzlrck7haxxsjopdta6ndpom/bafkreie6x5klf6f5xvwuuahqgdye74qlw7ozro3ojspoewi4zaysomromm@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mcvanr47ac2f",
       "source": "bluesky",
       "author": {
         "handle": "stickydoodler.bsky.social",
         "displayName": "Sticky Doodler",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreihipauhj4jwwsmgbun5a2ftav63j5jokitqzah5lebzjy6s4uyroe@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq@jpeg"
       },
       "record": {
         "text": "Designed in the DMV is a local artist's collective based in DC, Maryland, and Virginia. We help each other create and promote tabletop games of all types, including role-playing games, board games, card games, and LARPs.\n\nOne of the most visible things we do is publish a catalog...\n1/4\u25b6\ufe0f",
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-01-20T22:52:29.430Z",
       "replyCount": 1,
-      "repostCount": 27,
-      "likeCount": 59,
+      "repostCount": 29,
+      "likeCount": 64,
       "embed": {
         "type": "images",
         "images": [
@@ -107,14 +139,43 @@
       },
       "indexedAt": "2026-01-20T16:04:09.644Z",
       "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 6,
+      "repostCount": 9,
+      "likeCount": 16,
       "embed": {
         "type": "external",
         "uri": "https://Bit.ly/backyard-teaser-bsky",
         "title": "Build Urban Fantasy in Real Places with Google Maps",
         "description": "From Chase Call and James Quigley - Build Urban Fantasy in Real Places with Google Maps",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3ftif5ymfyuzstyi5ciexv4w/bafkreidstaybyerbjsw7nywhdwiuoghlqnfgs2bo5lvwng7o6seejv2dby@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3gdtfpto2psaswasnbto7573/app.bsky.feed.post/3mcuftvrq2k24",
+      "source": "bluesky",
+      "author": {
+        "handle": "jvwest.bsky.social",
+        "displayName": "JV West",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3gdtfpto2psaswasnbto7573/bafkreih3sbl6n44pskcav4foaf6ycqkxgtb7inrendkdnvw56rjz6wmcea@jpeg"
+      },
+      "record": {
+        "text": "Cleaning up the blog list on my blog and finding cool shit. Here's Monsterparts. You play kids dealing with weirdness that only you are able to see. 2013... maybe 1 yr after I got back into the gaming scene.\n\ngameswithothers.blogspot.com/2013/08/mons...",
+        "createdAt": "2026-01-20T14:52:09.770Z"
+      },
+      "indexedAt": "2026-01-20T14:52:11.037Z",
+      "replyCount": 3,
+      "repostCount": 2,
+      "likeCount": 24,
+      "embed": {
+        "type": "external",
+        "uri": "https://gameswithothers.blogspot.com/2013/08/monsterparts-attribute-less-d.html",
+        "title": "Monsterparts (attribute-less D&D)",
+        "description": "an infrequent blog on pulp lit speculative fiction weird art and role playing games, especially dungeons and dragons, especially ODandD",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3gdtfpto2psaswasnbto7573/bafkreic4u3wghylja2r72teclayyjga73ssveneidlvi533ita4yvffcny@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -237,8 +298,8 @@
       },
       "indexedAt": "2026-01-16T16:10:10.431Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 29,
+      "repostCount": 7,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -354,9 +415,9 @@
         "createdAt": "2026-01-15T13:06:36.360Z"
       },
       "indexedAt": "2026-01-15T13:06:37.532Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 34,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://www.patreon.com/posts/downward-spiral-147986148?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
@@ -449,7 +510,7 @@
       "indexedAt": "2026-01-14T12:58:47.734Z",
       "replyCount": 22,
       "repostCount": 192,
-      "likeCount": 628,
+      "likeCount": 629,
       "embed": {
         "type": "images",
         "images": [
@@ -811,38 +872,9 @@
         ]
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:p6bhrb2rs6qdsobor73dcygg/app.bsky.feed.post/3mcadkcqhuc2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "jellyfishlines.itch.io",
-        "displayName": "\ud83e\udebcJellyfishlines needs a break\ud83e\udebc",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreidtp7zx3lkxgyednweletf2g3opxiawy3nhkeuoea64goyboqw7ie@jpeg"
-      },
-      "record": {
-        "text": "Doing a little thread about my ZineMo game, TOWNIE(S)\nwww.kickstarter.com/projects/jel...",
-        "createdAt": "2026-01-12T15:17:45.565Z"
-      },
-      "indexedAt": "2026-01-12T15:17:46.328Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/jellyfishlines/townies",
-        "title": "Coming soon: TOWNIE(S)",
-        "description": "A Lost & Found Rustbelt solo journaling game.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:p6bhrb2rs6qdsobor73dcygg/bafkreigw6civow45xx7d7ey4xg7qtqiqap7cykunwyrc4mrym55xbzujhi@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
       }
     },
     {
@@ -867,64 +899,6 @@
         "title": "Shimmernight: Session One",
         "description": "I talk about the launch of my new campaign, with both notes on designing a nautical campaign and a play report.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreibwjzopq6ftrrfuxaazhanvavzqlvr3rkfpqfh4ccuuqajyc7da5u@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mc7zqvghb223",
-      "source": "bluesky",
-      "author": {
-        "handle": "pennyblake.bsky.social",
-        "displayName": "Penny Blake",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4@jpeg"
-      },
-      "record": {
-        "text": "\ud83d\ude2d\ud83d\udc96\ud83d\ude4f\ud83d\udd2595%!!!!!!\ud83d\udd25\ud83d\ude4f\ud83d\udc96\ud83d\ude2d\nTHANKYOU ALL SO MUCH!\nWe're so close to getting the amount for him to sit the minimum to get to college!\ud83d\udd25\ud83d\ude4f\ud83e\udd73Any extra we raise will hopefully be enough for him to sit more of the subjects he's studied! itch.io/b/3469/path-...",
-        "createdAt": "2026-01-12T12:22:29.068Z"
-      },
-      "indexedAt": "2026-01-12T12:22:28.735Z",
-      "replyCount": 2,
-      "repostCount": 22,
-      "likeCount": 31,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/b/3469/path-to-education-mutual-aid-ttrpg-bundle",
-        "title": "Path to Education - Mutual Aid TTRPG Bundle by gothHoblin and 31 others",
-        "description": "Path to Education - Mutual Aid TTRPG Bundle: 111 items for $10.00",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mc6rjrb3o22w",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
-      },
-      "record": {
-        "text": "New Patreon-exclusive video going over some cool zines and books we received from @zonware.bsky.social , @dairykillsme.bsky.social & @exaltedfuneral.bsky.social !!\n\nHave a watch, and stay tuned for a Mausritter giveaway for one of our patrons!",
-        "createdAt": "2026-01-12T00:22:40.143Z"
-      },
-      "indexedAt": "2026-01-12T00:22:42.534Z",
-      "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 9,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.patreon.com/posts/patreon-new-147982909",
-        "title": "Patreon Exclusive : New Zines + Exalted Funeral Unboxing! | Weird Place",
-        "description": "Get more from Weird Place on Patreon",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreidmjddzot6awlgksojibcyizmcm26ffmfwudp6emx4i3xgx53hqrm@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1171,7 +1145,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1190,
-      "likeCount": 6289,
+      "likeCount": 6291,
       "embed": {
         "type": "images",
         "images": [
@@ -1964,7 +1938,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1938,
-      "likeCount": 8387,
+      "likeCount": 8388,
       "embed": {
         "type": "images",
         "images": [
@@ -2334,8 +2308,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2335,
-      "likeCount": 11825,
+      "repostCount": 2334,
+      "likeCount": 11824,
       "embed": {
         "type": "images",
         "images": [
