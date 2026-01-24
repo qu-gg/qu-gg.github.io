@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-23T12:03:17.385224Z",
+  "lastUpdated": "2026-01-24T00:03:49.822092Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -206,7 +206,7 @@
       "indexedAt": "2026-01-21T17:31:49.141Z",
       "replyCount": 0,
       "repostCount": 24,
-      "likeCount": 65,
+      "likeCount": 66,
       "embed": {
         "type": "images",
         "images": [
@@ -380,7 +380,7 @@
       "indexedAt": "2026-01-17T19:20:17.132Z",
       "replyCount": 9,
       "repostCount": 55,
-      "likeCount": 269,
+      "likeCount": 270,
       "embed": {
         "type": "images",
         "images": [
@@ -655,7 +655,7 @@
       "indexedAt": "2026-01-14T12:58:47.734Z",
       "replyCount": 22,
       "repostCount": 192,
-      "likeCount": 629,
+      "likeCount": 631,
       "embed": {
         "type": "images",
         "images": [
@@ -1024,7 +1024,7 @@
       "indexedAt": "2026-01-01T20:40:52.937Z",
       "replyCount": 1,
       "repostCount": 9,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -1117,7 +1117,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 37,
       "repostCount": 1190,
-      "likeCount": 6293,
+      "likeCount": 6294,
       "embed": {
         "type": "images",
         "images": [
@@ -2203,6 +2203,43 @@
       "link": "https://www.artstation.com/artwork/a0bmgJ"
     },
     {
+      "uri": "at://did:plc:muzjhmsedtz3yytindxdv46f/app.bsky.feed.post/3lnfmow7hpk2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "queerwizard.co.uk",
+        "displayName": "Ripley \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiexbndbrs466iq77lbvfa5md6g723w65zkj6a2k4b2brsmxmw5cdy@jpeg"
+      },
+      "record": {
+        "text": "Here\u2019s an actual example - if I described a goblin guard, all alone outside the tower, and then provided a handout to illustrate them. Which of these images do you imagine is going to elicit a more engaged response?",
+        "createdAt": "2025-04-22T11:55:38.372Z"
+      },
+      "indexedAt": "2025-04-22T11:55:41.185Z",
+      "replyCount": 11,
+      "repostCount": 25,
+      "likeCount": 173,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreihujj7dkoexxjngbpcguksewg4s36mooxqidjddawgtuyeqqb5vbi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreihujj7dkoexxjngbpcguksewg4s36mooxqidjddawgtuyeqqb5vbi@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreibtfqsumd357oulw5oy27agajjalxp7nl4mclfqf7kyxmiz6ffrtu@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreibtfqsumd357oulw5oy27agajjalxp7nl4mclfqf7kyxmiz6ffrtu@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "https://www.artstation.com/artwork/2BLm8B",
       "source": "artstation",
       "author": {
@@ -2690,7 +2727,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2623,
-      "likeCount": 15427,
+      "likeCount": 15426,
       "embed": {
         "type": "images",
         "images": [
