@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28T12:01:46.877262Z",
+  "lastUpdated": "2026-01-29T00:05:03.925297Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,43 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mdih7il3bs2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
+      },
+      "record": {
+        "text": "In the CASTLE AUTOMATIC, you'll find a planetarium with five statues surrounding a central rotating pillar. Each has a slot, as if something was missing, at its base. \n\nElsewhere, in the Temple of Bones, the skeletal monks have stone tiles hung on their necks.\n\n(Art by @felipefaria.bsky.social )",
+        "createdAt": "2026-01-28T14:09:47.074Z"
+      },
+      "indexedAt": "2026-01-28T14:09:56.349Z",
+      "replyCount": 5,
+      "repostCount": 14,
+      "likeCount": 72,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiavztjqwcl3amc62wkkvsvfytwjxonyz7e75bmf5zld7zqtrrzgge@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiavztjqwcl3amc62wkkvsvfytwjxonyz7e75bmf5zld7zqtrrzgge@jpeg",
+            "alt": "Statues surrounding a central rotating pillar"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicjutmyab6o6trby7xnq6pnte2elepoe35gxeghtlxjffctt5r7fe@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicjutmyab6o6trby7xnq6pnte2elepoe35gxeghtlxjffctt5r7fe@jpeg",
+            "alt": "A battle of a nun with a whirling censer versus a skeletal monk"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:f2esmw5mwbxebyrsaduivhvn/app.bsky.feed.post/3mdfvywzqps2b",
       "source": "bluesky",
       "author": {
@@ -95,7 +132,7 @@
       "indexedAt": "2026-01-27T11:49:26.151Z",
       "replyCount": 2,
       "repostCount": 45,
-      "likeCount": 67,
+      "likeCount": 70,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/shewstonepublishing/drintera-fantasy-ttrpg-world-2025?ref=discovery&total_hits=103&category_id=34",
@@ -124,7 +161,7 @@
       "indexedAt": "2026-01-27T03:08:57.952Z",
       "replyCount": 3,
       "repostCount": 7,
-      "likeCount": 23,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -155,8 +192,8 @@
       },
       "indexedAt": "2026-01-26T15:51:58.150Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 18,
+      "repostCount": 12,
+      "likeCount": 19,
       "embed": {
         "type": "external",
         "uri": "https://puzzledungeon.com/a-look-back-at-puzzle-dungeon-jam/",
@@ -372,7 +409,7 @@
       "indexedAt": "2026-01-21T17:31:49.141Z",
       "replyCount": 0,
       "repostCount": 24,
-      "likeCount": 67,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -977,7 +1014,7 @@
       "indexedAt": "2026-01-01T15:19:53.254Z",
       "replyCount": 1,
       "repostCount": 55,
-      "likeCount": 89,
+      "likeCount": 90,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/bloggies-2026/",
@@ -1630,7 +1667,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 400,
-      "likeCount": 1685,
+      "likeCount": 1684,
       "embed": {
         "type": "images",
         "images": [
@@ -1831,7 +1868,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1938,
-      "likeCount": 8383,
+      "likeCount": 8384,
       "embed": {
         "type": "images",
         "images": [
@@ -2295,8 +2332,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 721,
-      "likeCount": 3302,
+      "repostCount": 720,
+      "likeCount": 3301,
       "embed": {
         "type": "images",
         "images": [
@@ -2480,8 +2517,8 @@
       },
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
-      "repostCount": 455,
-      "likeCount": 2413,
+      "repostCount": 454,
+      "likeCount": 2412,
       "embed": {
         "type": "images",
         "images": [
@@ -2591,8 +2628,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1875,
-      "likeCount": 8955,
+      "repostCount": 1874,
+      "likeCount": 8954,
       "embed": {
         "type": "images",
         "images": [
