@@ -727,6 +727,15 @@
             margin-top: 10px;
         }
 
+        /* ===== ART PAGE (for book padding theme extraction) ===== */
+        .art-page {
+            background: var(--shadow-black);
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--blight-purple), var(--sickly-green), var(--blight-purple));
+        }
+
         /* ===== PRINT STYLES ===== */
         @media print {
             html, body {
