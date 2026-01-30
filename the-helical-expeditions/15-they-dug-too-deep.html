@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>They Dug Too Deep - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Shadow Blight Theme Palette */
+            --shadow-black: #1a1520;
+            --blight-purple: #4a3a5c;
+            --sickly-green: #5a7a5a;
+            --corrupted-red: #8a3a4a;
+            --bone-white: #e8e4dc;
+            --pearl-white: #fefefe;
+            --murk-violet: #6a5a7c;
+            --decay-brown: #5a4a3a;
+            --ink-dark: #0f0a14;
+            --faded-cream: #f0ece4;
+            
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--faded-cream);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--faded-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--shadow-black), var(--blight-purple), var(--sickly-green), var(--blight-purple), var(--shadow-black));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--blight-purple);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--blight-purple);
+            border-color: var(--blight-purple);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--shadow-black);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--blight-purple);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--blight-purple);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 26pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--bone-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--blight-purple);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--blight-purple);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--murk-violet);
+            border-left: 4px solid var(--murk-violet);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--blight-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--sickly-green);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--blight-purple);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--shadow-black);
+        }
+
+        /* ===== CREATURE STAT BLOCK ===== */
+        .creature-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--corrupted-red);
+            border-left: 4px solid var(--corrupted-red);
+        }
+
+        .creature-box h2 {
+            background: var(--corrupted-red);
+        }
+
+        .creature-desc {
+            font-size: 8.5pt;
+            color: var(--ink-dark);
+            margin-bottom: 6px;
+            line-height: 1.35;
+            padding-bottom: 4px;
+            border-bottom: 1px dashed var(--murk-violet);
+        }
+
+        .creature-stats-inline {
+            font-size: 8.5pt;
+            margin-bottom: 4px;
+            padding: 4px 6px;
+            background: rgba(74, 58, 92, 0.12);
+            border-radius: 3px;
+            border-left: 3px solid var(--corrupted-red);
+        }
+
+        .creature-stats-inline .stat-label {
+            font-weight: bold;
+            color: var(--corrupted-red);
+        }
+
+        .creature-stats-inline .stat-value {
+            color: var(--shadow-black);
+        }
+
+        .creature-stats-inline .stat-sep {
+            color: var(--murk-violet);
+            margin: 0 4px;
+        }
+
+        .creature-abilities {
+            font-size: 8.5pt;
+            margin-bottom: 4px;
+        }
+
+        .creature-abilities ul {
+            margin: 0;
+            padding-left: 14px;
+        }
+
+        .creature-abilities li {
+            margin-bottom: 2px;
+        }
+
+        .creature-abilities li strong {
+            color: var(--blight-purple);
+        }
+
+        .attack-chance-box {
+            font-size: 8.5pt;
+            padding: 4px 8px;
+            background: rgba(138, 58, 74, 0.12);
+            border: 1px solid var(--corrupted-red);
+            border-radius: 3px;
+        }
+
+        .attack-chance-box .chance-label {
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--corrupted-red);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .attack-chance-box ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 8pt;
+        }
+
+        .attack-chance-box li {
+            margin-bottom: 1px;
+        }
+
+        .attack-chance-box li strong {
+            color: var(--shadow-black);
+        }
+
+        /* ===== STORY IMAGE BLOCK ===== */
+        .story-image-block {
+            border: 1px solid var(--murk-violet);
+            border-radius: 3px;
+            overflow: hidden;
+            background: var(--shadow-black);
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: 2.5in;
+            display: block;
+            object-fit: cover;
+            object-position: center 99%;
+        }
+
+        .story-image-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--bone-white);
+            text-align: center;
+            background: var(--shadow-black);
+        }
+
+        .story-image-caption a {
+            color: #8fbf8f;
+            text-decoration: none;
+        }
+
+        .story-image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 21, 32, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(74, 58, 92, 0.1);
+            border-left: 3px solid var(--blight-purple);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--shadow-black);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--blight-purple);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--decay-brown);
+        }
+
+        .sources-box a {
+            color: var(--murk-violet);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== QUEST RESOLUTION ===== */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--shadow-black);
+            border-left: 4px solid var(--shadow-black);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--shadow-black);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--blight-purple);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+
+        /* Item Block */
+        .item-block {
+            background: rgba(240, 236, 228, 0.9);
+            border: 2px dotted var(--decay-brown);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin-top: 6px;
+            font-size: 9pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--corrupted-red);
+        }
+
+        .item-block .item-type {
+            color: var(--decay-brown);
+        }
+
+        .item-block .item-desc {
+            margin: 3px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-effect {
+            margin: 3px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--sickly-green);
+            font-weight: bold;
+        }
+
+        .item-block ul {
+            margin: 3px 0;
+            padding-left: 14px;
+        }
+
+        .item-block li {
+            margin-bottom: 2px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--corrupted-red);
+            border-left: 4px solid var(--corrupted-red);
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .rank-header {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--corrupted-red);
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--blight-purple);
+        }
+
+        /* ===== PAGE 2 & 3 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--shadow-black);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--blight-purple);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--sickly-green);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            border: 3px solid var(--blight-purple);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--shadow-black);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-caption {
+            background: var(--shadow-black);
+            color: var(--bone-white);
+            padding: 4px 10px;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        .map-caption a {
+            color: #8fbf8f;
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* Location Key */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--murk-violet);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--blight-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .location-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .location-entry {
+            font-size: 8.5pt;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--blight-purple);
+            color: var(--pearl-white);
+            border-radius: 9px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--shadow-black);
+            font-size: 9pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--murk-violet);
+            color: var(--pearl-white);
+            font-size: 6.5pt;
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.entrance {
+            background: var(--sickly-green);
+        }
+
+        .location-tag.encounter {
+            background: var(--corrupted-red);
+        }
+
+        .location-tag.trap {
+            background: var(--decay-brown);
+        }
+
+        .location-tag.loot {
+            background: var(--murk-violet);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.3;
+        }
+
+        .location-desc p {
+            margin: 0 0 2px 0;
+        }
+
+        /* Key items/people highlighting */
+        .location-desc .key-item {
+            font-weight: bold;
+            color: var(--blight-purple);
+        }
+
+        .location-desc .loot {
+            color: var(--sickly-green);
+        }
+
+        .location-desc .clue {
+            font-style: italic;
+            color: var(--murk-violet);
+        }
+
+        /* ===== BOTTOM SECTION (Rank + Sources) ===== */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>They Dug Too Deep</h1>
+            <div class="subtitle">Red Eye Chasm • Hollow Queen's Kingdom • Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">☠</span> Spooky</div>
+            <div class="theme-item"><span class="emoji">◎</span> Investigation</div>
+            <div class="theme-item"><span class="emoji">⛏</span> Haunted Mine</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Professor Galahad Gallant's expedition to unearth an ancient Calian temple has missed their scheduled check-in. Sent to investigate, the party ventures into the wicked Hollow Queen's Kingdom to find the missing crew - only to discover that something old and sinister lurks in the depths below.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"A trip to the Hollow Queen's Kingdom is no peaceful feat, and touching down the airship on a small ledge in the desolate Red Eye Chasm doesn't help your anxiety either. The persistent groans of the Queen's "Children" lay ever on the outskirts of your hearing as unnatural winds chill you. At the landing site, you spot your quarry - an excavation site said to contain ancient Calian texts. Petitioned for research by the Helical researcher Galahad Gallant, you were sent in when the agreed upon check-in date was missed. You see no signs of the contracted mining team, and to make matters worse, the front entrance appears to be caved in. Best find a way in as it is sure not safe outside."</p>
+                    <p style="margin-top: 6px;">Given the breadth of the Adventure Site, this adventure may comprise more than a one-shot. This is a great introduction to Exploration mechanics and a bit of the OSR roots BREAK!! has. The interior is entirely dark so emphasis sources of light.</p>
+                    <p style="margin-top: 6px;">Encourage the alternate entrances if PCs explore outside! <br>It doesn't have to be the standard entrance.</p>
+                    <p style="margin-top: 6px;">Given the Shadow Blight, it can be likely for a PC or two to contract it...which naturally leads to a follow-up adventure!</p>
+                    </div>
+                </div>
+
+                <!-- Creature Stat Block -->
+                <div class="content-box creature-box">
+                    <h2>The Creature</h2>
+                    <div class="content-box-inner">
+                    <div class="creature-desc">The fleshy and shadowy demon-like creature is always hungry. It has poor vision but can track the scent of blood. Use Adventure Site Wandering Encounter Rules [Source, pg. 236] for when to check if the Creature attacks, its chance depending where the Party is. If misled, it camouflages itself in the darkness and disappears. If defeated, it will come back after exploring 2 Areas. It can only be finished if the Bloody Tome is destroyed.</div>
+                    <div class="creature-stats-inline">
+                        <span class="stat-label">ATK</span> <span class="stat-value">+4</span><span class="stat-sep">|</span>
+                        <span class="stat-label">DEF</span> <span class="stat-value">12</span><span class="stat-sep">|</span>
+                        <span class="stat-label">Hearts</span> <span class="stat-value">2</span><span class="stat-sep">|</span>
+                        <span class="stat-label">Speed</span> <span class="stat-value">Average</span>
+                        <br><span class="stat-label">Aptitudes:</span> <span class="stat-value">Might 8 | Deft 11 | Grit 9 | Insight 9 | Aura 11</span>
+                    </div>
+                    <div class="creature-abilities">
+                        <ul>
+                            <li><strong>Bright Weakness:</strong> +1 Heart from Bright Damage</li>
+                            <li><strong>Dark Resistance:</strong> -1 Heart from Dark Damage</li>
+                            <li><strong>Life Drain:</strong> Damage dealt converts to 1 Heart of Healing</li>
+                            <li><strong>Claws:</strong> Dual Wields Standard Weapons</li>
+                            <li><strong>Shadow Blight Host:</strong> [Source, pg. 374]</li>
+                        </ul>
+                    </div>
+                    <div class="attack-chance-box">
+                        <div class="chance-label">Attack Chance [D20]</div>
+                        <ul>
+                            <li><strong>Inside the Mine:</strong> 18-20</li>
+                            <li><strong>The Temple:</strong> 15-20</li>
+                            <li><strong>Master's Room:</strong> 10-20</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image (adjust --crop-offset to show different parts: -45% shows bottom 55%) -->
+                <div class="story-image-block">
+                    <img src="15) They Dug Too Deep/Pasted image 20260129233126.png" alt="Creature Inspiration">
+                    <div class="story-image-caption">Creature Inspiration. Art by <a href="https://imgur.com/gallery/horror-artist-sketchbook-practice-gc7X71C" target="_blank">margotxxrose</a></div>
+                </div>
+
+                <!-- Quest Resolution -->
+                <div class="quest-resolution">
+                    <h2>Quest Resolution</h2>
+                    <div class="quest-resolution-inner">
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>If the party neutralize the Creature and Bloody Tome, as well as reveal the fate of the excavation, the Archive will reward the party with 200C and let them keep any items found within.</p>
+                    </div>
+                    <!-- Lenin Obscurity Shades -->
+                    <div class="item-block">
+                        <div><span class="item-name">Lenin Obscurity Shades</span> <span class="item-type">[Magical Accessory]</span></div>
+                        <div class="item-desc">A practical but very fashionable choice for Calian <br>engineers working on the Divine Battery Project.</div>
+                        <div class="item-effect">Magical glasses that prevents the wearer from suffering the Obscured Condition caused by non-magical sources.</div>
+                        <div class="item-stats">1 Slot · 25 Coins</div>
+                    </div>
+                    <!-- Bloodstone Staff -->
+                    <div class="item-block">
+                        <div><span class="item-name">Bloodstone Staff</span> <span class="item-type">[Magical Staff]</span></div>
+                        <div class="item-desc">A wicked cane made of Shade Iron, it looks as if it grew into its shape rather than being forged. A deep crimson stone is embedded at its tip, a viscous vile liquid swirling within.</div>
+                        <div class="item-effect">This can be used as an augmentation to a Sage's Staff, inheriting its base Abilities, or as a dedicated spell item.</div>
+                        <div style="margin-top: 4px;"><strong>Spell - Crimson Rite:</strong></div>
+                        <ul>
+                            <li>As an Action, you can expend 1 Heart during Combat to summon a Crimson Demon:</li>
+                            <li style="margin-left: 12px;">This Crimson Demon takes the stats of a Custrel.</li>
+                            <li style="margin-left: 12px;">It has 10 Defense Rating and 1 Heart.</li>
+                            <li style="margin-left: 12px;">All of its stats are 7.</li>
+                            <li style="margin-left: 12px;">Its speed is Average.</li>
+                            <li style="margin-left: 12px;">It dual wields Standard Weapons.</li>
+                            <li>The Crimson Demon lasts the duration of the Fight or until it reaches 0 Hearts.</li>
+                            <li>You may only use this once every 24 Hours.</li>
+                        </ul>
+                        <div class="item-stats">1 Slot · 2 Gems</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - THE MINE ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Mine <span>[Adventure Map]</span></h1>
+        </div>
+
+        <!-- Map Container -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="15) They Dug Too Deep/dugtoodeepmap.png" alt="They Dug Too Deep Map">
+            <div class="map-caption">Map of the Mine. Art by <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank">Moira Games</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Location Key - The Mine -->
+        <div class="location-key-box">
+            <h2>Mine Locations (1-12)</h2>
+            <div class="location-key-content">
+                <div class="location-column">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Mine Entrance</span>
+                            <span class="location-tag entrance">Entrance</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>The entrance was blown up from the inside. Leaning on a rock is the <span class="key-item">dead professor</span>, charred from an explosion. <span class="key-item">Journal</span> on their body starts with disappointment before remarking a "potential breakthrough." An <span class="key-item">elevator</span> leads to the lower floor and can hold a total of 30 Slots of weight (risk of crashing if overloaded, causing Falling Injury).</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Abandoned Mine</span>
+                            <span class="location-tag encounter">Encounter</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Scattered 2d6 dwarf corpses, all with rotting moss and cracked forms. <br>If disturbed, they rise as Demons and attack the party! <br>3 Zones: Party | 1d6 Corpses | 1d6 Corpses. <br><span class="clue">A message hurriedly scrawled on the wall, in Under Warble: <br>"GET OUT. BEWARE THE..."</span></p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Miner's Workshop</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Boxes: <span class="loot">2 Dynamite [Grenade], 2 Lanterns, 2 Units of Fuel</span>.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Dormitory</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Chests: <span class="loot">1d6 Standard Weapons, a Small Shield, 2d20 Coins</span>.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">5</span>
+                            <span class="location-name">Secret Vault</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Behind secret passage: <span class="loot">4d20 gold, 3 Beer Barrels [Trade Goods]</span>, <span class="key-item">Distilled Axe</span> [Mighty, Magical, +1 ATK when Drunk].</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">6</span>
+                            <span class="location-name">Bizzer Nest</span>
+                            <span class="location-tag encounter">Encounter</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Room with small tunnels on the walls: <span class="key-item">2 Bizzer Swarms</span> and 3 dwarf bodies with <span class="loot">1d4 Units of Shade Iron</span>. The entrances are blocked.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-column">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">7</span>
+                            <span class="location-name">Tumbled Cart</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Inside the cart: <span class="loot">1 Dynamite [Grenade]</span>. <br><span class="clue">On the floor, a message in Under Warble: "IT COMES BACK"</span></p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">8</span>
+                            <span class="location-name">Mining Area</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Uneven lower area with Shade Iron in the rocky floor. <br>Mining (Location Action) grants <span class="loot">1d4 Units</span>.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">9</span>
+                            <span class="location-name">Underground Lake</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>All the Areas in here are Precarious, requiring Deftness Checks to Move or become Toppled. 1 old raft in good condition near the lake.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">10</span>
+                            <span class="location-name">Mine Exit</span>
+                            <span class="location-tag entrance">Entrance</span>
+                            <span class="location-tag encounter">Encounter</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Very deep underground lake: where does it lead? <br><span class="key-item">2 Water Chompas</span> prevent the exit.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">11</span>
+                            <span class="location-name">Dwarf Ghosts</span>
+                        </div>
+                        <div class="location-desc">
+                            <p><span class="key-item">Ghost dwarves</span> believe they're alive, awaiting rescue. Treat adventurers as fellow trapped dwarves. They know about the Creature.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">12</span>
+                            <span class="location-name">Unstable Area</span>
+                            <span class="location-tag trap">Trap</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Loud noises cause Falling Debris (CLICK!). Bodies of dwarves in skin and bone scattered around the room.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - THE TEMPLE ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Temple <span>[Locations 13-18]</span></h1>
+        </div>
+
+        <!-- Map Reference -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="15) They Dug Too Deep/dugtoodeepmap.png" alt="They Dug Too Deep Map">
+            <div class="map-caption">Map of the Mine. Art by <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank">Moira Games</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Location Key - The Temple -->
+        <div class="location-key-box">
+            <h2>Temple Locations (13-18)</h2>
+            <div class="location-key-content">
+                <div class="location-column">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">13</span>
+                            <span class="location-name">Temple Main Hall</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Stone statues holding <span class="loot">4 decorative amethyst weapons (25C each)</span>.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">14</span>
+                            <span class="location-name">Statue of the Master</span>
+                        </div>
+                        <div class="location-desc">
+                            <p><span class="key-item">Amethyst Statue</span> [Gargoyle, Rank 3]: becomes animated and attacks when someone approaches. <span class="loot">Sundered Magnificent Heavy Armor</span>.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">15</span>
+                            <span class="location-name">Old Entrance Hall</span>
+                            <span class="location-tag entrance">Entrance</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Original temple entrance. 2 amethyst idols depict cultists cutting their palms - putting blood on wall between idols opens a secret entrance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-column">
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">16</span>
+                            <span class="location-name">Ritual Room</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Dead dwarves and cultists lay near a strange symbol. On the floor are <span class="loot">2 Bright Damage Concealed Weapons</span> and the <span class="key-item">Bloody Tome</span>.</p>
+                            <p><span class="key-item">Bloody Tome</span> [Forgotten Lore]: Notes on Fleshwarping by a wicked Sage after Calian's Fall, discussing the creation of horrific creatures via blood sacrifice and transferring life essence into magical materials.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">17</span>
+                            <span class="location-name">Dining Room</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Refined, ancient furniture: bodies of blood-dry cultists sat at the table.</p>
+                        </div>
+                    </div>
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">18</span>
+                            <span class="location-name">Master's Room</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Ancient Sage corpse next to <span class="key-item">Bloodstone Staff</span> and <span class="key-item">Lenin Obscurity Shades</span>. Shelves contain anatomy books and bottles of blood. The closet has a false back, connecting the room to a false corridor wall.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Rank + Sources -->
+        <div class="bottom-section">
+            <!-- Rank Section -->
+            <div class="rank-section">
+                <div class="rank-header">Rank 3-4 Adventure</div>
+                <div class="rank-adjustments">
+                    <div class="rank-adjust-item">
+                        <strong>Lower Rank:</strong> Consider reducing the Creature's <br>stats down a bit or remove its healing ability.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>Higher Rank:</strong> For a Rank 5+ adventure, consider <br>creating an Ascended Demon using source rules.
+                    </div>
+                    <div class="rank-adjust-item">
+                        <strong>PC Starting Coin:</strong> 200C
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sources -->
+            <div class="content-box sources-box">
+                <h2>Sources & Adversaries</h2>
+                <div class="content-box-inner">
+                <p class="adventure-credit">This is an adaptation of the one-page dungeon <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank"><strong>They Dug Too Deep</strong></a> by Moira Games, licensed under CC-by-SA.</p>
+                <ul>
+                    <li><strong>Blighted Demon:</strong> Source, pg. 372</li>
+                    <li><strong>Chompa:</strong> Fast in Water. Source, pg. 368</li>
+                    <li><strong>Bizzer Swarm:</strong> Source, pg. 364</li>
+                    <li><strong>Custrel:</strong> Source, pg. 184</li>
+                    <li><strong>Gargoyle:</strong> by Wretched Jarrah (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

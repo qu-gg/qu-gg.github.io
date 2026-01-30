@@ -28,6 +28,16 @@ Light the Way:
 - Be an adventure trying to keep lanterns lit along the Shadowed Lands
 - Knights of the Lantern in a farther out outpost asking for adventurer help in lighting 
 
+Cleaning of the Century
+- Stahlfeld
+- Rank 3-4
+- A junker city's water supply - an ancient irrigation system that drains out from a derelict manathene facility - has recently turned deadly as fuel is polluting it.
+- Goops within the facility of course
+
+Leprechaun Blues:
+- Conversion of the module: https://1pagedungeons.itch.io/cryptic-crypts
+- CC-by-SA
+
 To Tame a Colossi
 ![[Pasted image 20260106121810.png]]
 - No-Folk Land
