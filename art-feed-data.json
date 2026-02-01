@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-31T12:01:56.053337Z",
+  "lastUpdated": "2026-02-01T00:05:08.164458Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-01-30T14:25:25.657Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 12,
+      "repostCount": 10,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +97,8 @@
       },
       "indexedAt": "2026-01-30T03:43:26.250Z",
       "replyCount": 5,
-      "repostCount": 100,
-      "likeCount": 252,
+      "repostCount": 105,
+      "likeCount": 258,
       "embed": {
         "type": "external",
         "uri": "https://cairnpress.ink/",
@@ -662,38 +662,6 @@
       }
     },
     {
-      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mcn264b7ts2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "hime.vtubers.social",
-        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
-      },
-      "record": {
-        "text": "Playing more Drakonym after a long while! twitch.tv/himeutsugi #vtubers #vsky #solottrpg",
-        "createdAt": "2026-01-17T16:34:29.042Z"
-      },
-      "indexedAt": "2026-01-17T16:34:31.937Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 10,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreidceppsnstsgxtxru3agqrkjyw35hdp2dt7leehxgjo2axzvk3m64@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreidceppsnstsgxtxru3agqrkjyw35hdp2dt7leehxgjo2axzvk3m64@jpeg",
-            "alt": "Hime going live on Twitch"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mckidn2klc2d",
       "source": "bluesky",
       "author": {
@@ -1043,7 +1011,7 @@
       "indexedAt": "2026-01-01T20:40:52.937Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 33,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -2336,8 +2304,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2334,
-      "likeCount": 11815,
+      "repostCount": 2333,
+      "likeCount": 11814,
       "embed": {
         "type": "images",
         "images": [
