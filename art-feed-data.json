@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-03T12:04:56.427378Z",
+  "lastUpdated": "2026-02-04T00:04:58.177464Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,104 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3mdybmwzoh22v",
+      "source": "bluesky",
+      "author": {
+        "handle": "theurbanavian.bsky.social",
+        "displayName": "Yanni \ud83e\uddff",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreibkzmj5gjc36btef42d6laflvs772kr6g4c5e6dssbmft3dlrtoyu@jpeg"
+      },
+      "record": {
+        "text": "My beloved solo-divination ttrpg \u2014 Heir of Swords, is available for preorder with @plusoneexp.bsky.social as part February Zine Club!\n\nThe original Heir of Swords put me on the path to winning Gamefound's RPG Party and this version honors that significance with the best layout work I've ever done.",
+        "createdAt": "2026-02-03T21:12:31.812Z"
+      },
+      "indexedAt": "2026-02-03T21:12:36.059Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 20,
+      "embed": {
+        "type": "external",
+        "uri": "https://plusoneexp.com/products/heir-of-swords",
+        "title": "Heir of Swords",
+        "description": "The First Cut Is the Hardest The sharp pain, the fear, the regret. It all comes crashing down, you betray your body for loving you. It begs you to stop, and you cut again. Heir of Swords is a solo div...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreiacm7n3cxidphm3ubr2pjfkm6izuxnvldxbpyrbzx6ivpkdbbhrn4@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mdy3fwqrb22b",
+      "source": "bluesky",
+      "author": {
+        "handle": "setincement.bsky.social",
+        "displayName": "Chazz Runs A Comic Book Club!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihlwbdbkzwcnlenjiqntipvlpzv4xnbzar2g47pttroik66zubpgy@jpeg"
+      },
+      "record": {
+        "text": "WHOA!\nNEW WEEK NEW WHEEL!\nThis time we're checking out @zimmeh.bsky.social's \nZYRA SLASH! over on WHEEL OF WEBCOMICS!\nCheck the comic out HERE: zyraslash.webcomic.ws\n\nAnd YOU can join a community over 200 comic creators and readers over here on discord - it's chill, I promise! discord.gg/ksM6sJFGBR",
+        "createdAt": "2026-02-03T19:21:14.185Z"
+      },
+      "indexedAt": "2026-02-03T19:21:17.153Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreic5vsr53ykdvpxajpgnhfaimx3y7nx57evas35kymlzuaha5v4xku@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreic5vsr53ykdvpxajpgnhfaimx3y7nx57evas35kymlzuaha5v4xku@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreiec65fwjxunjw6d5n4mbcfbtdaudiziaheuujcejypde57x3eo3vu@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreiec65fwjxunjw6d5n4mbcfbtdaudiziaheuujcejypde57x3eo3vu@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mdxgf3n6uc2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
+      },
+      "record": {
+        "text": "What a mail day! Connected with @outridercreative.bsky.social and they were kind enough to send me Perils & Princesses\n\nThere's tons of OSR DNA I love here - beautifully illustrated. Beyond the Wall + GLoG influences.\n\nLove seeing a game supported with adventures! Looking forward to reading them all",
+        "createdAt": "2026-02-03T13:04:57.178Z"
+      },
+      "indexedAt": "2026-02-03T13:04:59.856Z",
+      "replyCount": 2,
+      "repostCount": 6,
+      "likeCount": 56,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreic5y2i5nlwlze3fzi3tif34zhi54ecp3zinfozxznr3jjhazvpqbi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreic5y2i5nlwlze3fzi3tif34zhi54ecp3zinfozxznr3jjhazvpqbi@jpeg",
+            "alt": "Four digest size RPG books of Perils & Princesses, a Fairy Tale RPG. Light pastel colors, female protagonists. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:wx4wbjfz54gblm4t2xckirie/app.bsky.feed.post/3mdvmzrgqcc2l",
       "source": "bluesky",
       "author": {
@@ -65,8 +163,8 @@
       },
       "indexedAt": "2026-02-02T19:58:35.160Z",
       "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 23,
+      "repostCount": 11,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://puzzledungeon.com/tower?ref=bsky",
@@ -93,9 +191,9 @@
         "createdAt": "2026-02-02T18:32:20.286Z"
       },
       "indexedAt": "2026-02-02T18:32:30.657Z",
-      "replyCount": 2,
+      "replyCount": 8,
       "repostCount": 7,
-      "likeCount": 19,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -142,7 +240,7 @@
       "indexedAt": "2026-02-02T18:08:06.257Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "images",
         "images": [
@@ -202,8 +300,8 @@
       },
       "indexedAt": "2026-02-02T16:02:35.858Z",
       "replyCount": 1,
-      "repostCount": 20,
-      "likeCount": 36,
+      "repostCount": 21,
+      "likeCount": 38,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -411,8 +509,8 @@
       },
       "indexedAt": "2026-01-30T03:43:26.250Z",
       "replyCount": 5,
-      "repostCount": 106,
-      "likeCount": 263,
+      "repostCount": 107,
+      "likeCount": 265,
       "embed": {
         "type": "external",
         "uri": "https://cairnpress.ink/",
@@ -2177,43 +2275,6 @@
       "link": "https://www.artstation.com/artwork/a0bmgJ"
     },
     {
-      "uri": "at://did:plc:muzjhmsedtz3yytindxdv46f/app.bsky.feed.post/3lnfmow7hpk2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "queerwizard.co.uk",
-        "displayName": "Ripley \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiexbndbrs466iq77lbvfa5md6g723w65zkj6a2k4b2brsmxmw5cdy@jpeg"
-      },
-      "record": {
-        "text": "Here\u2019s an actual example - if I described a goblin guard, all alone outside the tower, and then provided a handout to illustrate them. Which of these images do you imagine is going to elicit a more engaged response?",
-        "createdAt": "2025-04-22T11:55:38.372Z"
-      },
-      "indexedAt": "2025-04-22T11:55:41.185Z",
-      "replyCount": 11,
-      "repostCount": 26,
-      "likeCount": 179,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreihujj7dkoexxjngbpcguksewg4s36mooxqidjddawgtuyeqqb5vbi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreihujj7dkoexxjngbpcguksewg4s36mooxqidjddawgtuyeqqb5vbi@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreibtfqsumd357oulw5oy27agajjalxp7nl4mclfqf7kyxmiz6ffrtu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreibtfqsumd357oulw5oy27agajjalxp7nl4mclfqf7kyxmiz6ffrtu@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/2BLm8B",
       "source": "artstation",
       "author": {
@@ -2292,7 +2353,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11815,
+      "likeCount": 11816,
       "embed": {
         "type": "images",
         "images": [
@@ -2450,7 +2511,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 544,
-      "likeCount": 3011,
+      "likeCount": 3010,
       "embed": {
         "type": "images",
         "images": [
