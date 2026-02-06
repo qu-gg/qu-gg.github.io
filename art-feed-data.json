@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-05T12:05:37.383005Z",
+  "lastUpdated": "2026-02-06T00:04:01.844640Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3me55a5mdq22s",
+      "source": "bluesky",
+      "author": {
+        "handle": "theuglygoblin.bsky.social",
+        "displayName": "The Ugly Goblin",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreifqmibd5puqj7lwqf32uz2rjqx4sxqqnxma5kqkkcrvla4kym3eaq@jpeg"
+      },
+      "record": {
+        "text": "Gotta a juicy lil one here for y\u2019all\n\nyoutu.be/Nvq6UFaV9jg?...",
+        "createdAt": "2026-02-05T19:37:06.232Z"
+      },
+      "indexedAt": "2026-02-05T19:37:08.256Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 2,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/Nvq6UFaV9jg?si=ffMcSh6KunYEjkI-",
+        "title": "What these 5 TTRPGs taught me",
+        "description": "YouTube video by The Ugly Goblin",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreibyr4bay4eehwng535nmagarj7w3bnujqwbaqdic7x46pyk2szpme@jpeg"
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:b2riqkwdtxhyyt3weujdwpy7/app.bsky.feed.post/3me4hy4v5ck23",
+      "source": "bluesky",
+      "author": {
+        "handle": "stevekenson.com",
+        "displayName": "Steve Kenson \u274c\ud83d\udc51",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:b2riqkwdtxhyyt3weujdwpy7/bafkreiafw3ju7ojshdcvqj73gibhdb6y3sovjeuatfja5fhefbc7dygrka@jpeg"
+      },
+      "record": {
+        "text": "The Mutants & Masterminds fourth edition Kickstarter has smashed through most of its current stretch goals and is approaching the $100K mark! Will we reach it today and unlock the Earth-Prime Gazetteer preview? What goals and new developments await beyond it?",
+        "createdAt": "2026-02-05T13:16:48.458Z"
+      },
+      "indexedAt": "2026-02-05T13:16:50.361Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 21,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/greenroninpub/mutants-and-masterminds-4th-edition",
+        "title": "Mutants & Masterminds 4th Edition Tabletop RPG",
+        "description": "A new edition of our classic superhero TTRPG with updated and streamlined game systems, more options, and a new look!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:b2riqkwdtxhyyt3weujdwpy7/bafkreihh4pl4yfjev4g2ocowmrgsgxmntqg27mqqsqe5ruo3ik6oop42yu@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:zzwzdj4ao4cwxxgtnymgvg7o/app.bsky.feed.post/3me2chd655c2w",
       "source": "bluesky",
       "author": {
@@ -65,8 +123,8 @@
       },
       "indexedAt": "2026-02-04T16:32:38.655Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 8,
+      "repostCount": 7,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://mint-rabbit.itch.io/protect-the-child-playtest",
@@ -153,7 +211,7 @@
       "indexedAt": "2026-02-03T19:21:17.153Z",
       "replyCount": 2,
       "repostCount": 7,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -221,8 +279,8 @@
       },
       "indexedAt": "2026-02-02T19:58:35.160Z",
       "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 27,
+      "repostCount": 15,
+      "likeCount": 31,
       "embed": {
         "type": "external",
         "uri": "https://puzzledungeon.com/tower?ref=bsky",
@@ -987,7 +1045,7 @@
         "createdAt": "2026-01-12T15:51:56.287Z"
       },
       "indexedAt": "2026-01-12T15:52:09.736Z",
-      "replyCount": 4,
+      "replyCount": 3,
       "repostCount": 34,
       "likeCount": 79,
       "embed": {
@@ -1228,7 +1286,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1188,
-      "likeCount": 6292,
+      "likeCount": 6291,
       "embed": {
         "type": "images",
         "images": [
@@ -2364,7 +2422,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11817,
+      "likeCount": 11816,
       "embed": {
         "type": "images",
         "images": [
