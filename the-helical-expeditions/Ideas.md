@@ -1,8 +1,8 @@
-Wedding Crashers:
+**Wedding Crashers:**
 - Shadow Sea Pirates
 - Night Haven wedding 
 
-The Door Dasher:
+**The Door Dasher:**
 - The Door Dasher has finally been spotted in a location where it *might* be possible to trap it long enough to open the door.
 - Last component for a thesis by a graduate researcher
 - Idea around it is to have the party be creative in tackling the Door Dasher problem, however...
@@ -15,30 +15,33 @@ The Door Dasher:
 	- Seeing it sprint through the jungles of Taaga
 	- Land at a nearby settlement and set up the trap
 
-Foes in the Foliage:
+**Foes in the Foliage:**
 - Murk
 - Local herbalist has asked the party to protect
 - Minions of the Unshaped attempt to sabotage the tree transformation as it undermines their influence in the Outer World
 
-A Pet Dilemma:
+**A Pet Dilemma:**
 - Whole party turned into Animal Companions, using their stats.
 - Can take on Ability from their Calling with them
 
-Light the Way:
+**Light the Way:**
 - Be an adventure trying to keep lanterns lit along the Shadowed Lands
 - Knights of the Lantern in a farther out outpost asking for adventurer help in lighting 
 
-Cleaning of the Century
+**Cleaning of the Century**
 - Stahlfeld
 - Rank 3-4
 - A junker city's water supply - an ancient irrigation system that drains out from a derelict manathene facility - has recently turned deadly as fuel is polluting it.
 - Goops within the facility of course
 
-Leprechaun Blues:
+**Leprechaun Blues:**
 - Conversion of the module: https://1pagedungeons.itch.io/cryptic-crypts
 - CC-by-SA
 
-To Tame a Colossi
+
+
+
+**To Tame a Colossi**
 ![[Pasted image 20260106121810.png]]
 - No-Folk Land
 - Rank 7-8

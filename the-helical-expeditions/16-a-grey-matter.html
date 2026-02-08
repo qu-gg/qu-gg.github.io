@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grey Matter - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Prism Crypt Theme Palette - Monochrome with Prismatic Accents */
+            --crypt-black: #1e1e24;
+            --ash-grey: #5a5a64;
+            --stone-grey: #7a7a84;
+            --dust-pale: #9a9aa4;
+            --bone-white: #e8e6e0;
+            --pearl-white: #fefefe;
+            --ink-dark: #141418;
+            --faded-parchment: #eceae4;
+
+            /* Prism Accent Colors - extracted from map image */
+            --prism-red: #ca2727;
+            --prism-green: #27ca35;
+            --prism-blue: #4428cc;
+
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--faded-parchment);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--faded-parchment);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--crypt-black), var(--ash-grey), var(--stone-grey), var(--ash-grey), var(--crypt-black));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--ash-grey);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--ash-grey);
+            border-color: var(--ash-grey);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--crypt-black);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--ash-grey);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--ash-grey);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 26pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--bone-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--ash-grey);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--ash-grey);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== PRISMATIC COLOR CLASSES ===== */
+        .color-red {
+            color: var(--prism-red);
+            font-weight: bold;
+        }
+
+        .color-green {
+            color: var(--prism-green);
+            font-weight: bold;
+        }
+
+        .color-blue {
+            color: var(--prism-blue);
+            font-weight: bold;
+        }
+
+        .color-rainbow {
+            background: linear-gradient(90deg, var(--prism-red), #dd8800, var(--prism-green), var(--prism-blue), #8833cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--stone-grey);
+            border-left: 4px solid var(--stone-grey);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--ash-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .secrets-list em,
+        .location-desc em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--stone-grey);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--ash-grey);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--crypt-black);
+        }
+
+        /* ===== STORY IMAGE BLOCK ===== */
+        .story-image-block {
+            border: 1px solid var(--stone-grey);
+            border-radius: 3px;
+            overflow: hidden;
+            background: var(--crypt-black);
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: 2.5in;
+            display: block;
+            object-fit: cover;
+            object-position: center var(--story-image-y, 20%);
+        }
+
+        .story-image-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--bone-white);
+            text-align: center;
+            background: var(--crypt-black);
+        }
+
+        .story-image-caption a {
+            color: #8fbf8f;
+            text-decoration: none;
+        }
+
+        .story-image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SECRETS BOX ===== */
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--prism-red);
+            border-left: 4px solid var(--prism-red);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--prism-red);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .secrets-list ul {
+            list-style: disc;
+            padding-left: 14px;
+            margin-top: 2px;
+        }
+
+        .secrets-list ul li {
+            margin-bottom: 2px;
+        }
+
+        /* ===== RANK BOX ===== */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--crypt-black);
+            border-left: 4px solid var(--crypt-black);
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .rank-header {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--crypt-black);
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--ash-grey);
+        }
+
+        /* ===== COLORFUL ITEMS BOX ===== */
+        .items-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--prism-blue);
+            border-left: 4px solid var(--prism-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .items-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--prism-blue);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .items-box-inner {
+            padding: 5px 8px;
+        }
+
+        .item-entry {
+            margin-bottom: 5px;
+            font-size: 9.5pt;
+            line-height: 1.35;
+        }
+
+        .item-entry .item-name {
+            font-weight: bold;
+            color: var(--crypt-black);
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(30, 30, 36, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(90, 90, 100, 0.1);
+            border-left: 3px solid var(--ash-grey);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--crypt-black);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--ash-grey);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--stone-grey);
+        }
+
+        .sources-box a {
+            color: var(--ash-grey);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RANDOM ENCOUNTERS BOX ===== */
+        .encounters-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--prism-green);
+            border-left: 4px solid var(--prism-green);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .encounters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--prism-green);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .encounters-box-inner {
+            padding: 5px 8px;
+            font-size: 9pt;
+        }
+
+        .encounter-entry {
+            margin-bottom: 3px;
+        }
+
+        .encounter-entry .roll-range {
+            font-weight: bold;
+            color: var(--crypt-black);
+        }
+
+        /* ===== PAGE 2 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--crypt-black);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--ash-grey);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--dust-pale);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            border: 3px solid var(--ash-grey);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--pearl-white);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            max-height: 4.5in;
+            display: block;
+            object-fit: contain;
+        }
+
+        .map-caption {
+            background: var(--crypt-black);
+            color: var(--bone-white);
+            padding: 4px 10px;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        .map-caption a {
+            color: #8fbf8f;
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== MAP LOCATION MARKERS ===== */
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--ash-grey);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .map-label {
+            position: absolute;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--crypt-black);
+            background: rgba(254, 254, 254, 0.85);
+            padding: 1px 5px;
+            border-radius: 3px;
+            z-index: 2;
+            white-space: nowrap;
+        }
+
+        /* Page 2 marker positions */
+        .map-marker.m1 { top: 12%; left: 30%; }
+        .map-marker.m2 { top: 2.5%; left: 53%; }
+        .map-marker.m3 { top: 20%; right: 28%; }
+        .map-marker.m4 { top: 36%; right: 23%; }
+        .map-marker.m5 { top: 50%; left: 53.15%; }
+        .map-marker.m6 { top: 75%; left: 53.15%; }
+        .map-marker.m7 { top: 38%; left: 23%; }
+        .map-marker.m8a { top: 10%; right: 28%; }
+        .map-marker.m8b { top: 56%; right: 23%; }
+        .map-marker.m8c { top: 56%; left: 38%; }
+        .map-label.rubite { top: 38%; left: 44%; transform: translateX(-50%); }
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--stone-grey);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--ash-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .location-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .location-entry {
+            font-size: 8.5pt;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--ash-grey);
+            color: var(--pearl-white);
+            border-radius: 9px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--crypt-black);
+            font-size: 9pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--dust-pale);
+            color: var(--pearl-white);
+            font-size: 6.5pt;
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.entrance {
+            background: var(--stone-grey);
+        }
+
+        .location-tag.encounter {
+            background: var(--crypt-black);
+        }
+
+        .location-tag.lantern {
+            background: var(--ash-grey);
+        }
+
+        .location-tag.puzzle {
+            background: var(--stone-grey);
+        }
+
+        .location-tag.loot {
+            background: var(--dust-pale);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.3;
+        }
+
+        .location-desc p {
+            margin: 0 0 2px 0;
+        }
+
+        /* Key items/people highlighting */
+        .location-desc .key-item {
+            font-weight: bold;
+            color: var(--ash-grey);
+        }
+
+        .location-desc .loot {
+            color: var(--stone-grey);
+        }
+
+        /* Creature inline blocks within locations */
+        .creature-inline {
+            margin-top: 3px;
+            padding: 3px 6px;
+            background: rgba(30, 30, 36, 0.06);
+            border-left: 4px solid var(--crypt-black);
+            border-radius: 2px;
+            font-size: 8.5pt;
+        }
+
+        .creature-inline .creature-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 9.5pt;
+            color: var(--crypt-black);
+        }
+
+        .creature-inline .creature-source {
+            color: var(--stone-grey);
+            font-size: 8pt;
+        }
+
+        .creature-inline .creature-header-line {
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .creature-inline .creature-desc {
+            font-style: italic;
+            color: var(--ash-grey);
+            font-size: 8pt;
+            margin-top: 1px;
+        }
+
+        .creature-inline.accent-red   { border-left-color: var(--prism-red); }
+        .creature-inline.accent-green { border-left-color: var(--prism-green); }
+        .creature-inline.accent-blue  { border-left-color: var(--prism-blue); }
+
+        .creature-inline ul {
+            margin: 1px 0 0 0;
+            padding-left: 12px;
+        }
+
+        .creature-inline li {
+            margin-bottom: 1px;
+        }
+
+        /* Mirrorfolk table */
+        .mirrorfolk-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin-top: 2px;
+        }
+
+        .mirrorfolk-table th {
+            background: var(--ash-grey);
+            color: var(--pearl-white);
+            padding: 1px 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .mirrorfolk-table td {
+            padding: 1px 4px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        /* Item Block within locations */
+        .item-block {
+            background: rgba(236, 234, 228, 0.9);
+            border: 2px dotted var(--stone-grey);
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-top: 4px;
+            font-size: 8pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--crypt-black);
+        }
+
+        .item-block .item-type {
+            color: var(--stone-grey);
+        }
+
+        .item-block .item-desc {
+            margin: 2px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-effect {
+            margin: 2px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--ash-grey);
+            font-weight: bold;
+        }
+
+        .item-block ul {
+            margin: 2px 0;
+            padding-left: 12px;
+        }
+
+        .item-block li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== GROUPED SOURCES ===== */
+        .sources-grouped {
+            padding: 0;
+        }
+
+        .source-author-group {
+            padding: 3px 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .source-author-group:last-child {
+            border-bottom: none;
+        }
+
+        .source-author-name {
+            font-weight: bold;
+            color: var(--ash-grey);
+            font-size: 8.5pt;
+        }
+
+        .source-author-name a {
+            color: var(--ash-grey);
+            text-decoration: none;
+        }
+
+        .source-author-name a:hover {
+            text-decoration: underline;
+        }
+
+        .source-entries {
+            color: var(--stone-grey);
+            font-size: 8pt;
+            margin-left: 2px;
+        }
+
+        /* ===== BOTTOM SECTION ===== */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 6px;
+        }
+
+        /* ===== ART PAGE (for book padding theme extraction) ===== */
+        .art-page {
+            background: var(--crypt-black);
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--prism-red), var(--prism-blue), var(--prism-green));
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>A Grey Matter</h1>
+            <div class="subtitle">Prism Sage's Crypt • Night Haven • The Twilight Meridian</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">░</span> Drab</div>
+            <div class="theme-item"><span class="emoji">◈</span> Puzzle</div>
+            <div class="theme-item"><span class="emoji">✝</span> Bleak Crypt</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>When a blanket of grey draining all color it touches begins leaking from an ancient Calian crypt, a nearby Night Haven village sends desperate cries for help to the party.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Traveling to an artificial island made entirely of rusted Shade Iron and crawling red roses, you hardly expected the 'expanding Grey' the village-folk described to be all that dreary in comparison. Your expectations are shattered, however, as you cross into its threshold and everything becomes gray-scale and drab, including you. You were told that the likely source of this phenomenon is the old crypt of a Calian Sage uncovered before you, cracked stairs leading into the earth. Rumor has it that one of Night Haven's immortal nobles took up residence here for reasons unknown, so not even the bravest villagers dared check inside. This is where you come in."</p>
+                    <p style="margin-top: 6px;">This scenario is a puzzle-driven Adventure Site where the party must return color to the crypt by opening the three <strong>Color Caskets</strong>, stopping the expanding Grey. Only gray-tones exist within due to the Dusty Miller's actions - anything brought in loses its color too. <strong>Lanterns</strong> are the only source of color.</p>
+                    <p style="margin-top: 6px;">Most entities here have their own goals and can be dealt with via Negotiation rather than Combat. There are great potential interactions between the crypt's denizens (e.g., Minotaurs x the Dark-Webber, Mirrorfolk x The Dusty Miller, etc.), so encourage them if possible! Follow BREAK!!'s Exploration rules (Source, pg. 230) for navigation and Random Events.</p>
+                    </div>
+                </div>
+
+                <!-- Colorful Item Descriptions -->
+                <div class="items-box">
+                    <h2>Colorful Item Descriptions</h2>
+                    <div class="items-box-inner">
+                        <div class="item-entry"><span class="item-name">Lantern:</span> Beams a specific color in all four orthogonal directions.</div>
+                        <div class="item-entry"><span class="item-name">Rubite:</span> A metal that magically disappears when it's exposed to pure <span class="color-red">Red</span> light. It reappears when exposed to <span class="color-blue">Blue</span> light.</div>
+                        <div class="item-entry"><span class="item-name">Grey Coin:</span> Heavy and Bulky to carry, taking up a full Slot per 100 Coins. Regains its worth when it's exposed to <span class="color-red">Red</span> and <span class="color-green">Green</span> (= yellow) light.</div>
+                        <div class="item-entry"><span class="item-name">Casket:</span> Rat-sized. Traps light of a specific color. When opened, everyone within an Area must make a Grit Check or have their skin turn that color. The light will then return. When closed, it erases that color of light from your current location.</div>
+                    </div>
+                </div>
+
+                <!-- Plant Image -->
+                <div class="story-image-block">
+                    <img src="16) A Grey Matter/dustymillerplant.jpg" alt="Dusty Miller Plant" style="height: 0.85in; object-position: center var(--plant-image-y, 50%);">
+                    <div class="story-image-caption">The (real) Dusty Miller plant. Picture by: <a href="https://fabulousflorals.com/wholesale-flowers/grey-flat-leaf-dusty-miller/" target="_blank">Fabulous Florals</a></div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="16) A Grey Matter/Pasted image 20260207135223.png" alt="The Dusty Miller">
+                    <div class="story-image-caption">The Dusty Miller inspiration. Art by: <a href="https://characterdesignreferences.tumblr.com/post/177517348187/art-by-isaac-jadraque-julys-theme" target="_blank">Isaac Jadraque</a></div>
+                </div>
+
+                <!-- Secrets and Clues -->
+                <div class="secrets-box">
+                    <h2>Secrets & Clues</h2>
+                    <div class="secrets-box-inner">
+                    <ol class="secrets-list">
+                        <li>The crypt was the hidden site of a Calian Sage dedicated to combining the art of Fleshwarping with color stimuli.</li>
+                        <li>The Mirrorfolk were the first successful experiment of the Sage, who was quite egotistical and wanted a wave of compliments every morning.</li>
+                        <li>The Lalka were a more serious experiment - lifeforms capable of warping their bodies based on light. The Sage often preferred their <span class="color-green">Green</span> variant, for reasons they didn't even understand.</li>
+                        <li>Having the unfortunate life of being born on Night Haven where the color <span class="color-red">Red</span> permeates the entire island, these Minotaurs have found a safe haven in this grey crypt. The Alpha Minotaur has taken on the noble cause of hiding the <span class="color-red">Red</span> Lantern from the others.</li>
+                        <li>The Dark-Webber has grand ambitions to uncover the crypt's secrets and leverage the Prism's power for herself - but never quite gets around to acting on them.</li>
+                        <li>The Dusty Miller is a disgraced noble of Night Haven whose power is to drain color from his environment. This, alongside his drab fashion sense, led the other more colorful nobles (i.e., the Duke of Red Roses, the Lady of Lavender, etc.) to excommunicate him. Despite this, he's actually quite docile - he just wants to be left alone.</li>
+                        <li>During exile, the Miller uncovered this crypt, and seeing its experiments with color, snapped. He trapped each base light color in <strong>Caskets</strong> imbued with his draining ability. To his frustration, the Lanterns keep shining - and unknown to him, his ongoing attempts are causing the Grey to leak.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - THE CRYPT (Locations 1-5) ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Crypt <span>[Adventure Map]</span></h1>
+        </div>
+
+        <!-- Map Container -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="16) A Grey Matter/BlueLeprechansMap-cropped.png" alt="Map of the Crypt">
+
+            <!-- Location Markers -->
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+            <div class="map-marker m6">6</div>
+            <div class="map-marker m7">7</div>
+            <div class="map-marker m8a">8</div>
+            <div class="map-marker m8b">8</div>
+            <div class="map-marker m8c">8</div>
+            <div class="map-label rubite">Rubite Bridge</div>
+
+            <div class="map-caption">Map of the Crypt. Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Location Key - Locations 1-5 -->
+        <div class="location-key-box">
+            <h2>Crypt Locations (1-5)</h2>
+            <div class="location-key-content">
+                <div class="location-column">
+                    <!-- Location 1 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Entrance</span>
+                            <span class="location-tag lantern">Lantern</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Smells lovely. Grey clovers cover the ground. A <span class="color-green">Green Lantern</span> beams light in the corner, turning lit clovers green. The Lantern is immovable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Mirrorfolk Quarters</span>
+                            <span class="location-tag puzzle">Puzzle Key</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>A group of Mirrorfolk chatter and laugh, playing games. They've built a simple habitat for themselves, which is kept very spic and span.</p>
+                        </div>
+                        <div class="creature-inline accent-blue">
+                            <div class="creature-header-line"><span class="creature-name">Mirrorfolk</span> <span class="creature-source">[Crystalline Dreg]</span></div>
+                            <div class="creature-desc">Happy. Flailing Limbs. Very Reflective.</div>
+                            <ul>
+                                <li>Breaking one gives the culprit bad luck (= Snag) for a Day.</li>
+                                <li>Each desire a different present before helping anyone.</li>
+                                <li>Roll a D20 twice to determine what they want:</li>
+                            </ul>
+                            <table class="mirrorfolk-table">
+                                <tr><th>Roll</th><th></th><th></th></tr>
+                                <tr><td>1-5</td><td>A Poem About:</td><td>Rain</td></tr>
+                                <tr><td>6-10</td><td>The Sound of:</td><td>Thunder</td></tr>
+                                <tr><td>11-15</td><td>To Reflect:</td><td>Death</td></tr>
+                                <tr><td>16-20</td><td>Be Touched By:</td><td>A <strong>Good-Luck Lalka</strong></td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Location 3 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Webbed Intersection</span>
+                            <span class="location-tag encounter">Guardian</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>A completely webbed intersection. The Dark-Webber guards it, plotting and chewing on food. Moving through without her permission requires a Deftness Check or the traveler becomes Restrained.</p>
+                        </div>
+                        <div class="creature-inline">
+                            <div class="creature-header-line"><span class="creature-name">Dark Webber</span> <span class="creature-source">[Dizzy Slither]</span></div>
+                            <div class="creature-desc">Soft-spoken. Shadowy. Weaving her plots.</div>
+                            <ul>
+                                <li>Spins webs that absorb all color.</li>
+                                <li>Desires the light from someone's eyes, which would make them see in grayscale.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-column">
+                    <!-- Location 4 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Ashy Room</span>
+                            <span class="location-tag lantern">Lantern</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>A <span class="color-blue">Blue Lantern</span> colors the room. 6 Downer Lalkas sit moping and half-heartedly try to escape. <strong>Rubite</strong> portcullises block both doorways out.</p>
+                        </div>
+                        <div class="creature-inline accent-blue">
+                            <div class="creature-header-line"><span class="creature-name">Downer Lalka</span> <span class="creature-source">[Delinquent Goon]</span></div>
+                            <div class="creature-desc">Mopey. Passive-Aggressive. Vulgar. Ticked-Off.</div>
+                            <ul>
+                                <li>Wear a blue, drooping clover on their hats.</li>
+                                <li>Transform into a Good-Luck Lalka when exposed to <span class="color-green">Green</span> Light.</li>
+                            </ul>
+                        </div>
+                        <div class="creature-inline accent-green" style="margin-top: 2px;">
+                            <div class="creature-header-line"><span class="creature-name">Good-Luck Lalka</span> <span class="creature-source">[Delinquent Goon]</span></div>
+                            <div class="creature-desc">Friendly. Dancing. High-pitched Voices.</div>
+                            <ul>
+                                <li>Transform into a Downer Lalka when not in <span class="color-green">Green</span> Light.</li>
+                                <li>Bestows a Blessing that gives an Edge on one's next Check.</li>
+                                <li>Know how to create the <span class="color-rainbow">Rainbow</span> Bridge at the <strong>Prism Hall</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Location 5 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">5</span>
+                            <span class="location-name">Prism Hall</span>
+                            <span class="location-tag puzzle">Puzzle Key</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Main grand hall with an immovable Prism. Shining <span class="color-red">Red</span>, <span class="color-green">Green</span>, and <span class="color-blue">Blue</span> light on it creates a <span class="color-rainbow">Rainbow</span> bridge across the chasm. The Dusty Miller flies around nearby, taunting anyone he meets.</p>
+                        </div>
+                        <div class="creature-inline accent-red">
+                            <div class="creature-header-line"><span class="creature-name">The Dusty Miller</span> <span class="creature-source">[Count Algebra]</span></div>
+                            <div class="creature-desc">Flying. Vain. Acts like he doesn't care.</div>
+                            <ul>
+                                <li>Carries the <span class="color-red">Red</span> <strong>Casket</strong> with him.</li>
+                                <li>Can only be destroyed if hit by a combination of <span class="color-red">Red</span>, <span class="color-green">Green</span> and <span class="color-blue">Blue</span> (= white) light. If defeated in Combat, he'll disappear into the grey before reappearing after 3 Location Actions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - THE CRYPT (Locations 6-8) ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Crypt <span>[Locations 6-8]</span></h1>
+        </div>
+
+        <!-- Map Container (repeated for reference) -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="16) A Grey Matter/BlueLeprechansMap-cropped.png" alt="Map of the Crypt">
+
+            <!-- Location Markers -->
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+            <div class="map-marker m6">6</div>
+            <div class="map-marker m7">7</div>
+            <div class="map-marker m8a">8</div>
+            <div class="map-marker m8b">8</div>
+            <div class="map-marker m8c">8</div>
+            <div class="map-label rubite">Rubite Bridge</div>
+
+            <div class="map-caption">Map of the Crypt. Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Two Column Layout: Locations left, Info blocks right -->
+        <div class="two-columns">
+            <!-- Left Column: Location Key -->
+            <div class="column">
+                <div class="location-key-box">
+                    <h2>Crypt Locations (6-8)</h2>
+                    <div class="location-key-content" style="flex-direction: column;">
+                        <!-- Location 6 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">6</span>
+                                <span class="location-name">Burial Crypt</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Burial site of the long-past Sage whose home this was. Cold and dusty now. <span class="loot">200 Grey Coins</span> and a small <span class="color-green">Green</span> <strong>Casket</strong> are here.</p>
+                            </div>
+                        </div>
+
+                        <!-- Location 7 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">7</span>
+                                <span class="location-name">Minotaur Den</span>
+                                <span class="location-tag lantern">Lantern</span>
+                                <span class="location-tag encounter">Guardian</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Dirty; hay everywhere causing the Area to be <strong>Precarious</strong>.</p>
+                                <p>A balcony surveys the den.</p>
+                                <p>A single Alpha Minotaur [Werebear] keeps his <span class="color-red">Red Lantern</span> close, concealing its light to prevent hostilities. Change the Were-Bear's Bear-Zerker ability to activate on seeing <span class="color-red">Red</span> instead.</p>
+                            </div>
+                            <div class="creature-inline accent-red">
+                                <div class="creature-header-line"><span class="creature-name">Minotaurs</span> <span class="creature-source">[Yeeti]</span></div>
+                                <div class="creature-desc">Powerful. Emotional and anxious. Breathing heavily.</div>
+                                <ul>
+                                    <li>Hostile to anything colored <span class="color-red">Red</span>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 8 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">8</span>
+                                <span class="location-name">Treasure Rooms</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Each hold 50 <strong>Grey Coins</strong>. The third one holds <strong>Dusty Miller's Rapier</strong>.</p>
+                            </div>
+                            <!-- Dusty Miller's Rapier Item Block -->
+                            <div class="item-block">
+                                <div><span class="item-name">Dusty Miller's Rapier</span></div>
+                                <div class="item-desc">An exquisitely crafted sword, forged of Shade Iron and designed to match the sensibilities befitting a noble such as himself.</div>
+                                <div class="item-effect">A Combination Master/Quick Weapon made from Shade Iron.</div>
+                                <ul>
+                                    <li>The blade has no magical abilities, but if a Forger Imbues it with anything darkness-themed (Dark Damage, causing Blindness, etc), the Forger gains an Edge on their Crafting Check due to the Dark mana it has absorbed in his possession. The GM is the final arbiter of what counts as darkness-themed.</li>
+                                </ul>
+                                <div class="item-stats">2 Slots · 400 Coins</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Random Encounters, Rank, Sources -->
+            <div class="column">
+                <!-- Random Encounters -->
+                <div class="encounters-box">
+                    <h2>Random Encounters [D20]</h2>
+                    <div class="encounters-box-inner">
+                        <div class="encounter-entry"><span class="roll-range">1-8:</span> 1d4 Minotaurs, chained together, demand everyone empty their pockets and give anything <span class="color-red">Red</span>.</div>
+                        <div class="encounter-entry"><span class="roll-range">9-10:</span> The Miller coughs, opening his <strong>Casket</strong> for an instant, returning <span class="color-red">Red</span> to the dungeon for a second.</div>
+                        <div class="encounter-entry"><span class="roll-range">11-12:</span> 1d6 Downer Lalka try to open a <span class="color-blue">Blue</span> <strong>Casket</strong> (Deftness Check of 4), locked by The Miller.</div>
+                        <div class="encounter-entry"><span class="roll-range">13-20:</span> The Miller messes with the party directing the <strong>Lanterns</strong>.</div>
+                    </div>
+                </div>
+
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 5-6 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Decrease:</strong> Consider swapping the Alpha Minotaur for another Yeeti and dropping the Miller's stats.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Increase:</strong> Consider swapping the Alpha Minotaur for a Giga-Gruun and buffing the Miller's stats.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Starting Coin:</strong> 600
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">This is an adaptation of the lovely one-page dungeon <a href="https://1pagedungeons.itch.io/cryptic-crypts" target="_blank"><strong>Blue Leprechauns</strong></a> by 1PageDungeons, licensed under CC-by-SA.</p>
+                    <div class="sources-grouped">
+                        <div class="source-author-group">
+                            <span class="source-author-name">Yan Kodiac</span> (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)<br>
+                            <span class="source-entries">Dizzy Slither · Werebear · Delinquent Goon</span>
+                        </div>
+                        <div class="source-author-group">
+                            <span class="source-author-name">ichiCharmed</span> (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>) - <span class="source-entries">Crystalline Dregs</span>
+                        </div>
+                        <div class="source-author-group">
+                            <span class="source-author-name">The Lonely Sand Person</span> (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>) - <span class="source-entries">Yeeti</span>
+                        </div>
+                        <div class="source-author-group">
+                            <span class="source-author-name">KeJoRo</span> (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>) - <span class="source-entries">Count Algebra</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

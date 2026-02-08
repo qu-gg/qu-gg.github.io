@@ -1412,6 +1412,13 @@
                         sublocation: 'Galvanus Archipelago',
                         location: 'Batangis Reef',
                         rank: '9-10'
+                    },
+                    {
+                        file: '16-a-grey-matter.html',
+                        title: 'A Grey Matter',
+                        sublocation: 'Night Haven',
+                        location: "Prism Sage's Crypt",
+                        rank: '5-6'
                     }
                 ]
             },
@@ -1927,10 +1934,10 @@
             if (!tocListLeft || !tocListRight) return;
             
             // Get region names to split between pages
+            // Blazing Garden on the left page; Twilight Meridian + Wistful Dark on the right
             const regionNames = Object.keys(bookStructure);
-            const midPoint = Math.ceil(regionNames.length / 2);
-            const leftRegions = regionNames.slice(0, midPoint);
-            const rightRegions = regionNames.slice(midPoint);
+            const leftRegions = regionNames.slice(0, 1);
+            const rightRegions = regionNames.slice(1);
             
             // First, add front matter section to left page
             if (frontMatterTocData.length > 0) {
