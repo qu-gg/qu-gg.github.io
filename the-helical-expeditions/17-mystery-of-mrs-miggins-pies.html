@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery of Mrs Miggins' Pies - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Fey Forest / Murk Theme Palette */
+            --murk-deep: #1a2a1e;
+            --forest-dark: #2d4a3a;
+            --fern-green: #3d7a5a;
+            --moss-light: #6aab7a;
+            --amber-warm: #c47a2a;
+            --pearl-white: #fefefe;
+            --ink-dark: #141816;
+            --parchment-warm: #f0ece4;
+
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--parchment-warm);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--parchment-warm);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--murk-deep), var(--fern-green), var(--amber-warm), var(--fern-green), var(--murk-deep));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--fern-green);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--fern-green);
+            border-color: var(--fern-green);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--murk-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--fern-green);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--fern-green);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--moss-light);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--forest-dark);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--fern-green);
+            border-left: 4px solid var(--fern-green);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--forest-dark);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-card em,
+        .secrets-list em,
+        .resolution-option em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--forest-dark);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--forest-dark);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--murk-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(61, 122, 90, 0.08);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--fern-green);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--amber-warm);
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--forest-dark);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--fern-green);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY STEPS ===== */
+        .story-steps {
+            font-size: 9.5pt;
+            background: var(--murk-deep);
+            border-color: var(--murk-deep);
+            border-left: 4px solid var(--fern-green);
+        }
+
+        .story-steps h2 {
+            background: var(--fern-green);
+            color: var(--pearl-white);
+        }
+
+        .story-steps .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .story-steps .story-intro-text {
+            color: var(--pearl-white);
+        }
+
+        .story-steps em {
+            color: var(--amber-warm);
+        }
+
+        .story-section {
+            margin-bottom: 3px;
+        }
+
+        .story-section-header {
+            background: var(--fern-green);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 9.5pt;
+            font-weight: bold;
+            padding: 1px 5px;
+            border-radius: 0;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .story-section-header.intro {
+            background: var(--amber-warm);
+        }
+
+        .story-section ul {
+            margin: 0;
+            padding-left: 14px;
+            font-size: 9pt;
+        }
+
+        .story-section li {
+            margin-bottom: 5px;
+        }
+
+        .story-intro-text {
+            font-size: 9pt;
+            margin-bottom: 4px;
+            color: var(--ink-dark);
+        }
+
+        /* Story Image Block (standalone) */
+        .story-image-block {
+            border: 1px solid var(--fern-green);
+            border-radius: 3px;
+            max-height: 3in;
+            overflow: hidden;
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 42, 30, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(61, 122, 90, 0.12);
+            border-left: 3px solid var(--amber-warm);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--murk-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--amber-warm);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--forest-dark);
+        }
+
+        .sources-box a {
+            color: var(--fern-green);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        .location-card a {
+            color: var(--fern-green);
+            text-decoration: none;
+        }
+
+        .location-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 STYLES ===== */
+        
+        /* Key Locations Box */
+        .locations-box {
+            border: 1px solid var(--fern-green);
+            border-left: 4px solid var(--fern-green);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .locations-box-header {
+            background: var(--murk-deep);
+            color: var(--pearl-white);
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        /* Key Locations Horizontal */
+        .locations-horizontal {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            background: var(--pearl-white);
+        }
+
+        .location-card {
+            flex: 1;
+            padding: 5px 8px;
+            border-right: 2px solid var(--amber-warm);
+        }
+
+        .location-card:last-child {
+            border-right: none;
+        }
+
+        .location-card h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--forest-dark);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .location-card .loc-desc {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--fern-green);
+            margin-bottom: 2px;
+        }
+
+        .location-card p {
+            font-size: 9pt;
+            text-align: left;
+        }
+
+        /* Minor Locations */
+        .minor-locations {
+            background: rgba(106, 171, 122, 0.15);
+            border-top: 1px dashed var(--fern-green);
+            padding: 5px 8px;
+        }
+
+        .minor-locations h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--forest-dark);
+            margin-bottom: 4px;
+        }
+
+        .minor-locations-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 9pt;
+        }
+
+        .minor-loc-item {
+            flex: 1 1 30%;
+            min-width: 150px;
+        }
+
+        .minor-loc-item strong {
+            color: var(--fern-green);
+        }
+
+        /* Secrets and Image Section */
+        .secrets-image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--amber-warm);
+            border-left: 4px solid var(--amber-warm);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--amber-warm);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .image-box {
+            border: 3px solid var(--forest-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            max-height: 5in;
+            align-items: center;
+            justify-content: center;
+            background: var(--murk-deep);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Section - Resolution + Rank side by side */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .bottom-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Quest Resolution */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--murk-deep);
+            border-left: 4px solid var(--murk-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--murk-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        /* Rank Box */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--amber-warm);
+            border-left: 4px solid var(--amber-warm);
+            overflow: hidden;
+            color: var(--ink-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rank-section .rank-header {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--amber-warm);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .rank-adjustments {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 6px 10px;
+        }
+
+        .rank-adjust-item {
+            line-height: 1.4;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--amber-warm);
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--murk-deep);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page-credit {
+            position: absolute;
+            bottom: 0.15in;
+            right: 0.45in;
+            font-size: 8pt;
+            font-style: italic;
+            color: var(--forest-dark);
+        }
+
+        /* ===== SPREAD LAYOUT (Enable two-page side-by-side view) ===== */
+        .page-spread {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
+        .page-spread .page {
+            margin: 0;
+            page-break-after: auto !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform-origin: top center;
+        }
+
+        /* ===== PAGE 3 - ADVENTURE MAP ===== */
+        .adventure-site-header {
+            background: var(--murk-deep);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--fern-green);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--moss-light);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            width: 100%;
+            height: 4.35in;
+            border: 3px solid var(--forest-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            background: var(--murk-deep);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .map-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .map-line {
+            stroke: var(--ink-dark);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--amber-warm);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .time-badge {
+            position: absolute;
+            background: var(--pearl-white);
+            border: 2px solid var(--murk-deep);
+            border-radius: 3px;
+            padding: 1px 4px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--murk-deep);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            z-index: 3;
+        }
+
+        /* Marker positions */
+        .map-marker.m1 { bottom: 47%; right: 16%; }
+        .map-marker.m2 { bottom: 39%; right: 18%; }
+        .map-marker.m3 { bottom: 43%; right: 12%; }
+        .map-marker.m5 { top: 18%; left: 60%; }
+        .map-marker.m7 { top: 42%; left: 33%; }
+        .map-marker.m8 { top: 39%; left: 29%; }
+
+        /* Zone badges - elongated pills for terrain that spans a travel segment */
+        .zone-badge {
+            position: absolute;
+            background: rgba(196, 74, 94, 0.85);
+            border: 2px solid var(--pearl-white);
+            border-radius: 12px;
+            padding: 2px 10px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            white-space: nowrap;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 3;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .zone-badge .zone-number {
+            font-size: 10pt;
+        }
+
+        /* Zone 4: along path from Roost (1) to Holg (5) */
+        .zone-badge.z4 {
+            top: 28%; left: 66%;
+            transform: rotate(38deg);
+        }
+
+        /* Zone 6: along trailblazing from Holg (5) to Shack (7) */
+        .zone-badge.z6 {
+            top: 47%; left: 53%;
+            transform: rotate(3deg);
+        }
+
+        /* Zone 6: along trailblazing from Holg (5) to Shack (7) */
+        .zone-badge.z7 {
+            top: 23%; left: 39%;
+            transform: rotate(-28deg);
+        }
+
+        /* Time badge positions */
+        .time-badge.t14 { top: 24.5%; left: 72.75%; transform: rotate(38deg);}
+        .time-badge.t56 { top: 53.5%; left: 56.5%; transform: rotate(3deg);}
+        .time-badge.t57 { top: 18.5%; left: 40.75%; transform: rotate(-28deg);}
+
+        .site-content-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        /* Location Key */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--amber-warm);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--amber-warm);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .location-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .location-entry {
+            font-size: 9pt;
+        }
+
+        .location-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--amber-warm);
+            color: var(--pearl-white);
+            border-radius: 50%;
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--murk-deep);
+            font-size: 10pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--fern-green);
+            color: var(--pearl-white);
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.trap {
+            background: var(--amber-warm);
+        }
+
+        .location-tag.encounter {
+            background: var(--forest-dark);
+        }
+
+        .location-tag.loot {
+            background: var(--fern-green);
+        }
+
+        .location-tag.hazard {
+            background: #c44a5e;
+        }
+
+        .location-tag.start {
+            background: var(--murk-deep);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.35;
+        }
+
+        .location-desc p {
+            margin: 0 0 3px 0;
+        }
+
+        .location-desc ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+
+        .location-desc li {
+            margin-bottom: 2px;
+            color: var(--fern-green);
+        }
+
+        .location-desc li::marker {
+            color: var(--amber-warm);
+        }
+
+        /* Map Legend */
+        .map-legend {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 2px solid var(--murk-deep);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 8pt;
+            z-index: 5;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 2px 0;
+        }
+
+        .legend-item svg {
+            flex-shrink: 0;
+        }
+
+        .legend-item span {
+            color: var(--murk-deep);
+            font-family: var(--font-body);
+        }
+
+        /* ===== PAGE 4 - ART VIBEBOARD ===== */
+        .art-page {
+            background: var(--murk-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--amber-warm), var(--fern-green), var(--amber-warm));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--moss-light);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            position: relative;
+            border: 3px solid var(--fern-green);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--forest-dark);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item.wide {
+            grid-column: span 2;
+        }
+
+        .art-item.tall {
+            grid-row: span 2;
+        }
+
+        .art-item.unknown-source .art-caption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
+            color: var(--pearl-white);
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .art-item .art-caption a {
+            color: var(--moss-light);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page-spread {
+                display: block;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Mystery of Mrs Miggins' Pies</h1>
+            <div class="subtitle">Roost • Murk • Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">◈</span> Mysterious</div>
+            <div class="theme-item"><span class="emoji">◉</span> Investigation</div>
+            <div class="theme-item"><span class="emoji">✧</span> Fey Forest</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description & Starting -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>Mrs Miggins' pie shop is the first place any self-respecting adventurer would head to on their way into the Murk. When Mundymutts ransack her shop and her secret spice mix is found missing, the party must follow the trail and uncover a rival baker's scheme before the Murk loses its pies for good.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"Mrs Miggins' pie shop is the talk of every Shard tavern - her pies' delicious seasoning and flaky crust have bolstered many a venture into the wilderness. Naturally, as you prepare to brave the Murk for a research gig, you'd stop here first. But as you approach her cozy stone shop, something is clearly wrong. The door hangs off its hinges and the gates to the herb garden have been torn apart."</p>
+                    <p style="margin-top: 6px;">Mrs Miggins is tied up, badly injured, and unconscious. She requires stabilization (Physician's Kit, a Basic Potion, etc.) before she can talk. If aided, she explains she came down this morning to find the Mundymutts rooting around and is shocked to discover her secret spice mix has been stolen - the Mundymutts know nothing about it. She begs the party to help recover the spices, offering lifetime credit at her shop, and insists on reheating her last frozen pies as provisions for the road (one per PC, act as random Aptitude Booster Cakes).</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Mrs Miggins</span>
+                            <span class="character-details">- Elf, Female, ??? (Basic Folk)</span>
+                        </div>
+                        <div class="character-desc">An Elf who has been making pies for as long as anyone can remember. Lately having a tattoo-punk phase. Blunt but poppy.</div>
+                        <div class="character-quote">"Bruised but bright-eyed, ink crawls up her arms and neck in floral patterns, and flour dust on her apron is chaos itself."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Symon "The Pie Man"</span>
+                            <span class="character-details">- ???, Male, ??? (Werebear)</span>
+                        </div>
+                        <div class="character-desc">A person of unknown species, always in full regal armor under a baker's outfit. All show and no substance in his baking skills.</div>
+                        <div class="character-quote">"The gleam of his polished breastplate is offset by the flour-dusted apron tied over it. He speaks with grand dramatic flair, gesturing with a rolling pin as though it were a scepter."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Holg the Herbalist</span>
+                            <span class="character-details">- Gruun, Male, 60 (Mushdoom)</span>
+                        </div>
+                        <div class="character-desc">An older herbalist who lives just inside the Murk, visiting Roost to trade warnings and remedies. Big fan of Miggins' pies.</div>
+                        <div class="character-quote">"Covered in moss-like patches and smelling faintly of damp earth, the old Gruun moves like he's got nowhere to be."</div>
+                    </div>
+
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Crawford Ellison</span>
+                            <span class="character-details">- Chib, Male, 45 (Sage)</span>
+                        </div>
+                        <div class="character-desc">An uptight, posh, and studious Chib who leads the Alchemists Guild. Offers protective arcane wards for houses to the townsfolk.</div>
+                        <div class="character-quote">"Huge spectacles sit crooked on his nose and his wispy beard is a mess. For leading a frontier guild, he has the frantic energy of someone expecting an inspector."</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110140702.png" alt="The Shack in the Murk">
+                </div>
+
+                <!-- Suggested Story -->
+                <div class="content-box story-steps">
+                    <h2>Suggested Story</h2>
+                    <div class="content-box-inner">
+                    <p class="story-intro-text">Set the scene of Mrs Miggins' shop, describe the ransacking, then continue.</p>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Pie Shop Pandemonium</span>
+                        <ul>
+                            <li>3 Mundymutts are ransacking the shop. They are extremely cowardly and will try to run as soon as one of them falls.</li>
+                            <li>If captured, the Mundymutts can be easily persuaded (Negotiation with a free Minor Bonus) to reveal they were tipped off by Holg the Herbalist that there would be no wards.</li>
+                            <li>Mrs Miggins offhandedly mentions that Symon "the Pie Man" in town would love to get his hands on her spice formula. A search of her spice cupboard reveals a scrap of black velvet caught on the wall - certainly not belonging to any Mundymutt.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">Following the Trail</span>
+                        <ul>
+                            <li>The party can investigate in any order - the Alchemists Guild in town (Node 2) or Holg's dwelling in the Murk (Node 5).</li>
+                            <li><em>Alchemists Guild:</em> Crawford needs persuading but his records reveal Symon was warded the same week as Miggins, still hasn't paid, and has asked for wards on a hut deep into Murk.</li>
+                            <li><em>Holg's Hut:</em> Holg has had a bad feeling about organizing the raid and is keen to make amends. He reveals Symon used him as a go-between but knows nothing about the spice mix theft itself. He can give directions to the shack.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-section">
+                        <span class="story-section-header">The Shack & The Showdown</span>
+                        <ul>
+                            <li>The shack is trapped with a (literal) bear trap. Past the locked door is Symon's laboratory, where the spice mix can be found.</li>
+                            <li>If the party recovers the spice mix and confronts Symon at his shop in Roost, he fights to silence them, giving dramatic monologues about how Miggins stole his family's secret recipe.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources & Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">Storybeats & layout inspired from <a href="https://burnafterrunningrpg.com/2018/01/08/the-goblins-and-the-pie-shop-a-1st-level-dd-adventure/" target="_blank"><strong>The Goblins <br>and the Pie Shop</strong></a> by Grant Sheridan.</p>
+                    <ul>
+                        <li><strong>Werebear</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Mushdoom:</strong> BREAK!! Blog (<a href="https://breakrpg.blogspot.com/2023/09/freebie-funguy-and-mushdoom-adversaries.html" target="_blank">Freebie</a>)</li>
+                        <li><strong>Chompa/Proudhound/Snarl:</strong> Source Book, pg. 368/402/436.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Key Locations Box -->
+        <div class="locations-box">
+            <div class="locations-box-header">Key Locations</div>
+            
+            <!-- Key Locations Horizontal -->
+            <div class="locations-horizontal">
+                <div class="location-card">
+                    <h3>Mrs Miggins' Pie Shop</h3>
+                    <p class="loc-desc">"A cozy stone shop from which the smell of delicious baking normally drifts, its door now hangs ajar and the cottage garden gates have been torn from their hinges."</p>
+                    <p>Despite the ransacking, the place still smells faintly of cinnamon. Flour-dusted shelves line the walls and a modest kitchen sits behind a serving counter. Freshly paid-up magical wards from the Alchemists Guild should have kept intruders out.</p>
+                </div>
+                <div class="location-card">
+                    <h3>Alchemists Guild</h3>
+                    <p class="loc-desc">"A bone carapace of some massive horned creature, propped up on bricks at the edge of town. Smoke puffs from a clipped horn while alchemical trinkets dangle from the other."</p>
+                    <p>The Guild sells Anti-Hazard Suits for travel. Crawford requires Negotiation to cooperate, boosted by offering a pie or promising help on a brutal deadline.<br>The warding roster can be found in his back office. <strong>If caught:</strong> Grit Check or become Ballooned from their own wards.</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Murk</h3>
+                    <p class="loc-desc">"Towering fungi glow faintly in the permanent twilight, and the canopy shifts when no wind blows. Sounds carry strangely here - laughter from no one, footsteps that aren't yours."</p>
+                    <p>Emphasize the creepy, fey atmosphere of Murk and how the flora feel maybe <i>alive</i>. <br><br>Random Encounters during Travel can include a Petrifrog (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>) or Mutts.</p>
+                </div>
+            </div>
+
+            <!-- Minor Locations -->
+            <div class="minor-locations">
+                <h3>Minor Locations</h3>
+                <div class="minor-locations-list">
+                    <div class="minor-loc-item"><strong>White Lion Tavern:</strong> The local watering hole where adventurers gather before heading into the Murk. Rumors flow freely here.</div>
+                    <div class="minor-loc-item"><strong>Symon's Pie Shop:</strong> Freshly painted and gorgeously adorned, the aroma is disappointingly stale and the meat under-seasoned. Shelves groan with unsold pies.</div>
+                    <div class="minor-loc-item"><strong>Symon's Shack:</strong> A falling-down shack deep in the Murk, sitting alone on an island over a shallow pond. See Location Key Node 7.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secrets and Image Section -->
+        <div class="secrets-image-section">
+            <div class="secrets-box">
+                <h2>Secrets & Clues</h2>
+                <div class="secrets-box-inner">
+                <ol class="secrets-list">
+                    <li>Mrs Miggins' magical wards were standard-issue from the Alchemists Guild, changed weekly - anyone warded that same week could bypass them.</li>
+                    <li>Symon had his wards installed the same week as Mrs Miggins, and still hasn't paid for them.</li>
+                    <li>Symon used Holg as a go-between to get the Mundymutts to ransack the shop as a cover-up, after his own men had already stolen the spice mix the night before.</li>
+                    <li>Holg is quite fond of Mrs Miggins and didn't go himself - he sent the Mutts on the condition they wouldn't hurt her.</li>
+                    <li>Symon has asked Crawford for wards on a remote shack deeper in the forest - "a godforsaken place that surely can't be his next business venture."</li>
+                    <li>A scrap of black velvet found in Miggins' spice cupboard certainly doesn't belong to any Mundymutt - a clear sign someone else was here first.</li>
+                    <li>Mrs Miggins vaguely recalls that Symon claims she stole his family's recipe generations ago - a grudge he (and, if true, his entire family) has clearly never let go of.</li>
+                    <li>Rumor around Roost is that Symon comes from a genuine Shard noble family, and is trying to prove himself to them.</li>
+                    <li>Holg often throws odd jobs to the Murk Mutts tribe in return for help with distracting adventurers from his herb patches.</li>
+                </ol>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110015333.png" alt="Mrs Miggins Inspiration">
+            </div>
+        </div>
+
+        <!-- Bottom Section: Quest Resolution + Rank -->
+        <div class="bottom-section">
+            <!-- Quest Resolution -->
+            <div class="quest-resolution">
+                <h2>Quest Resolution</h2>
+                <div class="quest-resolution-inner">
+                <div class="resolution-columns">
+                    <div class="resolution-option">
+                        <h3>☆ Handling Symon</h3>
+                        <p>The party can play at Symon's familial honor for him to back down, fight him in his shop, or tip off the authorities with proof.<br><strong>On Symon:</strong> 50C, Engraved Rolling Pin [Mighty Weapon, Minor Bonus on Cooking Checks], Magnificent Heavy Armor.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>✦ Rewards</h3>
+                        <p>Mrs Miggins provides the party a lifetime pie credit and 1 Gem. Recipe back in hand, she whips up way too many fresh pies for the party.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Rank -->
+            <div class="bottom-right-column">
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 2-3 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Lower Rank:</strong> Swap Symon's Werebear stats for a Proudhound.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Higher Rank:</strong> Add a Snarl to Symon's fight. Swap the Chompa for a War Drone.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>PC Starting Coin:</strong> 300C
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ADVENTURE MAP ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>Roost and the Murk <span>[Adventure Map]</span></h1>
+        </div>
+
+        <div class="site-map-container">
+            <img src="Pasted image 20260209184317.jpg" alt="Roost and the Murk Map">
+            <!-- Connection Lines -->
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <!-- Roost (1) to Guild (2) - short walk in village -->
+                <line class="map-line" x1="82" y1="51" x2="80.5" y2="57" />
+                <!-- Roost (1) to Pie Shop (3) - short walk in village -->
+                <line class="map-line" x1="82" y1="50" x2="85" y2="53" />
+                <!-- Roost (1) to Holg (5) - path through Outskirts (Zone 4) -->
+                <line class="map-line" x1="81" y1="48" x2="62" y2="21.5" />
+                <!-- Holg (5) to Shack (7) - trailblazing through Deep Murk (Zone 6) -->
+                <path class="map-line" d="M62,21 Q50,25 33,46" style="stroke-dasharray: 4 3;" />
+                <!-- Roost (1) to Shack (7) - trailblazing through Deep Murk (Zone 6) -->
+                <path class="map-line" d="M80,49 Q60,42 35,45" style="stroke-dasharray: 4 3;" />
+                <!-- Shack (7) to Lab (8) -->
+                <line class="map-line" x1="35" y1="46" x2="32" y2="43" />
+            </svg>
+            <!-- Map Legend -->
+            <div class="map-legend">
+                <div class="legend-item">
+                    <svg width="24" height="8" viewBox="0 0 24 8"><line x1="0" y1="4" x2="24" y2="4" stroke="#c47a2a" stroke-width="2"/></svg>
+                    <span><strong>Path</strong> [Source, pg. 244]</span>
+                </div>
+                <div class="legend-item">
+                    <svg width="24" height="8" viewBox="0 0 24 8"><line x1="0" y1="4" x2="24" y2="4" stroke="#c47a2a" stroke-width="2" stroke-dasharray="4 3"/></svg>
+                    <span><strong>Trailblazing</strong> [Source, pg. 244]</span>
+                </div>
+                <div class="legend-item">
+                    <svg width="24" height="12" viewBox="0 0 24 12"><rect x="1" y="2" width="22" height="8" rx="4" fill="rgba(196, 74, 94, 0.85)" stroke="white" stroke-width="1"/></svg>
+                    <span><strong>Hazard Zone</strong></span>
+                </div>
+            </div>
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="zone-badge z4"><span class="zone-number">④</span> Murk Outskirts</div>
+            <div class="map-marker m5">5</div>
+            <div class="zone-badge z6"><span class="zone-number">⑥</span> Deep Murk</div>
+            <div class="zone-badge z7"><span class="zone-number">⑥</span> Deep Murk</div>
+            <div class="map-marker m7">7</div>
+            <div class="map-marker m8">8</div>
+            <!-- Time Badges -->
+            <div class="time-badge t14">1/2 Day</div>
+            <div class="time-badge t56">1 Day</div>
+            <div class="time-badge t57">1 Day</div>
+        </div>
+
+        <div class="site-content-columns">
+            <!-- Location Key -->
+            <div class="location-key-box">
+                <h2>Location Key</h2>
+                <div class="location-key-content">
+                    <div class="location-column">
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">1</span>
+                                <span class="location-name">Mrs Miggins' Shop</span>
+                                <span class="location-tag start">Start</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>The adventure's starting point. Mrs Miggins' stone building is in upper Roost, currently ransacked. The Alchemists Guild and Symon's Pie Shop are a short walk across the village.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">2</span>
+                                <span class="location-name">Alchemists Guild</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>On the edge of town. Crawford's records reveal who all was warded that week (Miggins, Symon, and Ferryman Rezzik). The location of the Shack (via Symon's ward request) is also present.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">3</span>
+                                <span class="location-name">Symon's Pie Shop</span>
+                                <span class="location-tag encounter">Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>In the village. The final confrontation point if the party presents <br>solid evidence. Symon (and optionally a Snarl) fights here.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">4</span>
+                                <span class="location-name">Murk Outskirts</span>
+                                <span class="location-tag hazard">Harmful Terrain</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Half a Day's Travel from Roost to Holg's Hut on a Path. Each Journey Check, all Players must make an Aura Check or take a level of Fatigue as the Murk's flora drains their energy. Avoided by being a Bio-Mechanoid or wearing a Rebreather/Anti-Hazard Suit.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">5</span>
+                                <span class="location-name">Holg's Hut</span>
+                                <span class="location-tag encounter">Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>An isolated, tumbledown cottage deeper into the woods. Holg waves the party away but can be persuaded via Negotiation or subdued in Combat (surrenders at 2 Hearts or below). He reveals Symon used him as a go-between for the Mundymutt raid, but knows nothing about the spice mix theft itself. He gives directions to the Shack.</p>
+                                <ul>
+                                    <li>If any PC is Fatigued, he offers a tea remedy as a show of good faith. In exchange for a pie, he gives 2 Jellyfication Antidotes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-column">
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">6</span>
+                                <span class="location-name">Deep Murk</span>
+                                <span class="location-tag hazard">Harmful Terrain</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>1 Day's Travel from either Holg's or Roost via Trailblazing. Each Journey Check, all Players must make a Grit Check or become Jellyfied as bioluminescent spores touch their skin. Avoided by being a Bio-Mechanoid or wearing an Anti-Hazard Suit.</p>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">7</span>
+                                <span class="location-name">The Shack</span>
+                                <span class="location-tag trap">Trap</span>
+                                <span class="location-tag encounter">Guardian Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>An eerie, falling-down shack on an island over a shallow, knee-high pond. The door reads "Bear Trap, beware." If any Player is Jellyfied, the pond counts as Harmful Terrain to them.</p>
+                                <div style="width: 178px; overflow: hidden; border-radius: 4px; border: 2px solid var(--fern-green); float: right; margin: 3px 0 4px 8px; position: relative;">
+                                    <img src="17) Mystery of Mrs Miggins' Pies/beartrap.webp" alt="Bear Trap Example" style="width: 100%; display: block; margin-top: -20%; margin-bottom: -2%;">
+                                    <div style="position: absolute; bottom: -5px; left: 2px; right: 0; color: var(--black); padding: 8px 6px 4px 6px; font-size: 8pt; font-weight: bold; text-align: left; line-height: 1.3;">Art by CrimsBacon</div>
+                                </div>
+                                <ul>
+                                    <li>Inside, a staircase leads down to a stone-fortified hallway. A solitary, clearly visible bear trap sits in the middle of the room before a heavy locked stone door - but this is a decoy.</li>
+                                    <li>The real trap is a pressure plate in front of the door. Insight Check (or Cautious Movement) to detect it. If set off, a Chompa drops from the ceiling with a large stone key around its neck.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">8</span>
+                                <span class="location-name">Symon's Laboratory</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Past the locked door, Symon has set this up as a secret lab to duplicate Mrs Miggins' spice mix. Shelves are lined with herbs and spices, and different crust mixtures sit in an ice-box alongside packets of Miggins' pies. Hidden in the shelves is <strong>Mrs Miggins' Secret Recipe</strong>, with the label half-peeled off.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110015042.png" alt="Village of Roost">
+                <div class="art-caption">"Village of Roost" <br> Art by <a href="https://www.artstation.com/artwork/xDR9DX" target="_blank">Matt Forsyth</a></div>
+            </div>
+            <div class="art-item">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110015333.png" alt="Mrs Miggins Inspiration">
+                <div class="art-caption">"Mrs Miggins Inspiration" <br> Art by <a href="https://leslierosique.tumblr.com/" target="_blank">Leslie Rosique</a></div>
+            </div>
+            <div class="art-item">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110014700.png" alt="Symon The Pieman Inspiration">
+                <div class="art-caption">"Symon The Pieman Inspiration" <br> Art by <a href="https://x.com/Yasen_Stoilov/status/1320315186222407681?lang=en" target="_blank">Yasen Stoilov</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110140702.png" alt="The Shack in the Murk">
+                <div class="art-caption">"The Shack in the Murk" <br> Art by <a href="https://youtu.be/bw99J5G4rsI?t=245" target="_blank">Matt Forsyth</a></div>
+            </div>
+            <div class="art-item unknown-source">
+                <img src="17) Mystery of Mrs Miggins' Pies/Pasted image 20250110140150.png" alt="Alchemists Guild Inspiration">
+                <div class="art-caption">"Alchemists Guild Inspiration" <br> Art by Unknown</div>
+            </div>
+            <div class="art-item">
+                <img src="Pasted image 20260209184317.jpg" alt="Roost and the Murk Map">
+                <div class="art-caption">"Roost and the Murk Map" <br> Art by <a href="https://www.deviantart.com/brian-van-hunsel/art/The-Gravic-Swamp-397125283" target="_blank">Brian Van Hunsel</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
