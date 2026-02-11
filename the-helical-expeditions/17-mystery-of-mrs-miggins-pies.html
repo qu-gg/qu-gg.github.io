@@ -808,6 +808,23 @@
         .map-marker.m7 { top: 42%; left: 33%; }
         .map-marker.m8 { top: 39%; left: 29%; }
 
+        /* Village nameplate */
+        .map-nameplate {
+            position: absolute;
+            background: rgba(30, 30, 20, 1);
+            color: var(--pearl-white);
+            font-size: 7.5pt;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border: 1.5px solid var(--amber-warm);
+            border-radius: 3px;
+            z-index: 4;
+            white-space: nowrap;
+        }
+        .map-nameplate.roost { bottom: 53%; right: 8%; }
+
         /* Zone badges - elongated pills for terrain that spans a travel segment */
         .zone-badge {
             position: absolute;
@@ -1414,6 +1431,7 @@
                     <span><strong>Hazard Zone</strong></span>
                 </div>
             </div>
+            <div class="map-nameplate roost">Roost</div>
             <div class="map-marker m1">1</div>
             <div class="map-marker m2">2</div>
             <div class="map-marker m3">3</div>
