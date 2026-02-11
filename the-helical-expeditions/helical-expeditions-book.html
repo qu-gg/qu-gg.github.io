@@ -1818,7 +1818,7 @@
             return spread;
         }
 
-        function createSubzoneSeparator(subzoneName, flavorText, regionColors) {
+        function createSubzoneSeparator(subzoneName, flavorText, regionColors, startPageNumber) {
             const spread = document.createElement('div');
             spread.className = 'spread-container';
             
@@ -1844,9 +1844,9 @@
             
             // Add page number to left page
             const leftPageNum = document.createElement('div');
-            const leftPositionClass = getPageNumberPosition(currentPageNumber);
+            const leftPositionClass = getPageNumberPosition(startPageNumber);
             leftPageNum.className = `page-number ${leftPositionClass}`;
-            leftPageNum.textContent = currentPageNumber++;
+            leftPageNum.textContent = startPageNumber;
             leftWrapper.appendChild(leftPageNum);
             
             spread.appendChild(leftWrapper);
@@ -1868,9 +1868,9 @@
             
             // Add page number to right page
             const rightPageNum = document.createElement('div');
-            const rightPositionClass = getPageNumberPosition(currentPageNumber);
+            const rightPositionClass = getPageNumberPosition(startPageNumber + 1);
             rightPageNum.className = `page-number ${rightPositionClass}`;
-            rightPageNum.textContent = currentPageNumber++;
+            rightPageNum.textContent = startPageNumber + 1;
             rightWrapper.appendChild(rightPageNum);
             
             spread.appendChild(rightWrapper);
@@ -2226,6 +2226,10 @@
                             if (flavorText) {
                                 status.textContent = `Adding ${adventure.sublocation} separator...`;
                                 
+                                // Account for 2 separator pages in the page count
+                                const sepStartPage = currentPageNumber;
+                                currentPageNumber += 2;
+                                
                                 // Add subzone separator as a spread (2 pages marked as separator type)
                                 regionAdventurePages.push({
                                     page: null,
@@ -2234,7 +2238,8 @@
                                     isSubzoneSeparator: true,
                                     subzoneName: adventure.sublocation,
                                     flavorText: flavorText,
-                                    regionColors: regionData.colors
+                                    regionColors: regionData.colors,
+                                    startPageNumber: sepStartPage
                                 });
                             }
                         }
@@ -2292,7 +2297,8 @@
                             const subzoneSeparator = createSubzoneSeparator(
                                 pageData.subzoneName,
                                 pageData.flavorText,
-                                pageData.regionColors
+                                pageData.regionColors,
+                                pageData.startPageNumber
                             );
                             container.appendChild(subzoneSeparator);
                             continue;
