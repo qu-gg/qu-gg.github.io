@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T00:10:20.429088Z",
+  "lastUpdated": "2026-02-11T12:10:55.710651Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:laiha6g7jnflmhopfzthhi4e/app.bsky.feed.post/3mekis2x2m22t",
+      "source": "bluesky",
+      "author": {
+        "handle": "gentrigger.com",
+        "displayName": "Gen",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreiahrbi7uoskrpl6b7n5xyein2bzsmg5gn5rlh66so7zzwg5nhiluy@jpeg"
+      },
+      "record": {
+        "text": "The steam page for Lancer Tactics is now up!\n\nThrow us on your wishlist!\n\n#lancerrpg #mech #mecha",
+        "createdAt": "2026-02-11T03:08:35.177Z"
+      },
+      "indexedAt": "2026-02-11T03:08:37.356Z",
+      "replyCount": 1,
+      "repostCount": 260,
+      "likeCount": 450,
+      "embed": {
+        "type": "external",
+        "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
+        "title": "Lancer Tactics on Steam",
+        "description": "Create your pilot, craft your mech, then join the revolution. The iconic Lancer TTRPG has arrived, re-imagined as a mech-based tactics simulation. Put your synergies to the test in Instant Action, tac...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreigeqaenangcjfnoaotgvvrwoev3grechdijuqzcrsrgpisqw5gz4e@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mekaapunps2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdwonder.bsky.social",
+        "displayName": "Amanda P. \u27a1\ufe0f GaryCon",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky@jpeg"
+      },
+      "record": {
+        "text": "The awesome @bommyknocker.bsky.social, @elmc.at, Grace of Choir of Fire @seraphimseraphina.bsky.social and many community members have organized a group recording effort of every Bloggies post as podcast episodes inspired by Blogs on Tape!https://podcast.bloggies.org/",
+        "createdAt": "2026-02-11T00:35:43.198Z"
+      },
+      "indexedAt": "2026-02-11T00:35:47.258Z",
+      "replyCount": 2,
+      "repostCount": 35,
+      "likeCount": 51,
+      "embed": {
+        "type": "external",
+        "uri": "https://podcast.bloggies.org/",
+        "title": "We Read The Bloggies (@WeReadTheBloggies) \u2022 Activity",
+        "description": "We\u2019re volunteers turning Bloggies-nominated blog posts into audio. So you can enjoy them anywhere, in a more accessible format.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreibn6ja7utzcpcclbozolwnpikogjfzcfj7n5l3mvo6yvcdmac2v4y@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3megzb3lwf22w",
       "source": "bluesky",
       "author": {
@@ -66,7 +124,7 @@
       "indexedAt": "2026-02-09T17:52:41.651Z",
       "replyCount": 1,
       "repostCount": 64,
-      "likeCount": 143,
+      "likeCount": 144,
       "embed": {
         "type": "external",
         "uri": "https://yochaigal.itch.io/cairn-barebones-edition",
@@ -94,8 +152,8 @@
       },
       "indexedAt": "2026-02-09T17:40:29.052Z",
       "replyCount": 3,
-      "repostCount": 31,
-      "likeCount": 70,
+      "repostCount": 32,
+      "likeCount": 72,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -124,7 +182,7 @@
       "indexedAt": "2026-02-09T15:41:19.653Z",
       "replyCount": 3,
       "repostCount": 67,
-      "likeCount": 112,
+      "likeCount": 113,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/this-years-bloggies-nominees/",
@@ -152,8 +210,8 @@
       },
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
-      "repostCount": 76,
-      "likeCount": 237,
+      "repostCount": 82,
+      "likeCount": 258,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -1489,7 +1547,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1194,
-      "likeCount": 6305,
+      "likeCount": 6306,
       "embed": {
         "type": "images",
         "images": [
@@ -2597,7 +2655,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11817,
+      "likeCount": 11816,
       "embed": {
         "type": "images",
         "images": [
@@ -2978,7 +3036,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 400,
-      "likeCount": 2323,
+      "likeCount": 2324,
       "embed": {
         "type": "images",
         "images": [
