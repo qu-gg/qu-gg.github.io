@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T12:10:55.710651Z",
+  "lastUpdated": "2026-02-12T00:05:15.520538Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,95 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mem7nrph222p",
+      "source": "bluesky",
+      "author": {
+        "handle": "manysidedmedia.bsky.social",
+        "displayName": "Many Sided Media",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu@jpeg"
+      },
+      "record": {
+        "text": "Wanna meet a fairy godmother?\n\nTune in tomorrow for Episode 2 of Perils & Princesses!",
+        "createdAt": "2026-02-11T19:30:27.069Z"
+      },
+      "indexedAt": "2026-02-11T19:30:30.552Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 14,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreibbgfy4mjye4udnp427ofw2oxp2e3feigzjeg5cgzujoaybfs3t5q@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreibbgfy4mjye4udnp427ofw2oxp2e3feigzjeg5cgzujoaybfs3t5q@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3melwv3fkbk2u",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      },
+      "record": {
+        "text": "I do this gag every year but I thought I'd try to use a different picture this time\n\n(It's funny because she's doing just that, I guess)",
+        "createdAt": "2026-02-11T16:53:28.438Z"
+      },
+      "indexedAt": "2026-02-11T16:53:29.551Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 22,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibbjtselvaxdki36nptbbm3tsumf2zf4zcuunc46nu2chryldqzk4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibbjtselvaxdki36nptbbm3tsumf2zf4zcuunc46nu2chryldqzk4@jpeg",
+            "alt": "A picture of Mariah Doeheart making an attack - a heart (symbol of vitality in the BREAK!! tabletop rpg) is shown being shattered, but a message hopes that doesn't happen to YOU this year, valentine"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mel4ce5ltc2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae@jpeg"
+      },
+      "record": {
+        "text": "It's been exciting and terrifying reading all the questions, hopes, and fears about Intergalactic Bastionland.\n\nI'll shed some light during tonight's stream, reading through the playtest doc and talking about my goals for the game.\n\nJoin me in 12 hours at 9pm GMT.\n\nwww.youtube.com/live/xloSEPJ...",
+        "createdAt": "2026-02-11T08:57:42.793Z"
+      },
+      "indexedAt": "2026-02-11T08:57:47.955Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 71,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.youtube.com/live/xloSEPJV18M",
+        "title": "Intergalactic Bastionland Playtest Chat",
+        "description": "YouTube video by Bastionland",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreihkz632gnnohc42hvm5hirnltnlev4gd5u2dswnzrw7xshkyhk5ti@jpeg"
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:laiha6g7jnflmhopfzthhi4e/app.bsky.feed.post/3mekis2x2m22t",
       "source": "bluesky",
       "author": {
@@ -64,9 +153,9 @@
         "createdAt": "2026-02-11T03:08:35.177Z"
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
-      "replyCount": 1,
-      "repostCount": 260,
-      "likeCount": 450,
+      "replyCount": 6,
+      "repostCount": 459,
+      "likeCount": 914,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -94,8 +183,8 @@
       },
       "indexedAt": "2026-02-11T00:35:47.258Z",
       "replyCount": 2,
-      "repostCount": 35,
-      "likeCount": 51,
+      "repostCount": 46,
+      "likeCount": 73,
       "embed": {
         "type": "external",
         "uri": "https://podcast.bloggies.org/",
@@ -124,7 +213,7 @@
       "indexedAt": "2026-02-09T17:52:41.651Z",
       "replyCount": 1,
       "repostCount": 64,
-      "likeCount": 144,
+      "likeCount": 146,
       "embed": {
         "type": "external",
         "uri": "https://yochaigal.itch.io/cairn-barebones-edition",
@@ -152,8 +241,8 @@
       },
       "indexedAt": "2026-02-09T17:40:29.052Z",
       "replyCount": 3,
-      "repostCount": 32,
-      "likeCount": 72,
+      "repostCount": 34,
+      "likeCount": 76,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -210,8 +299,8 @@
       },
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
-      "repostCount": 82,
-      "likeCount": 258,
+      "repostCount": 83,
+      "likeCount": 260,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -442,7 +531,7 @@
       "indexedAt": "2026-02-07T08:22:43.150Z",
       "replyCount": 2,
       "repostCount": 6,
-      "likeCount": 34,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -939,125 +1028,6 @@
       }
     },
     {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mdvdwyyvzc2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids - Mystery Snacks LIVE on Backerkit!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq@jpeg"
-      },
-      "record": {
-        "text": "AH!!!  Mystery Snacks goes live in 45 minutes!\n\nwww.backerkit.com/c/projects/t...",
-        "createdAt": "2026-02-02T17:15:57.698Z"
-      },
-      "indexedAt": "2026-02-02T17:15:58.752Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 4,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/ttrpgkids/mystery-snacks/launch_party",
-        "title": "Mystery Snacks Launch Party",
-        "description": "Get excited about Mystery Snacks on BackerKit - come join!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiavsl3wginn6zpwkrvi75w3kixjz3bczq34crkfuoemf25sednz2y@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mdv7sdlclk2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - Check Pinned!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka@jpeg"
-      },
-      "record": {
-        "text": "I'm really excited to announce that Dollhouse has launch date! \n\nThe Kickstarter will be live on the 16th (in two weeks), and I'll be sharing more of the details for it in the time between! If you're interested in my work, please give the page a follow!\nwww.kickstarter.com/projects/125...",
-        "createdAt": "2026-02-02T16:01:46.047Z"
-      },
-      "indexedAt": "2026-02-02T16:02:35.858Z",
-      "replyCount": 1,
-      "repostCount": 24,
-      "likeCount": 47,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
-        "title": "Coming soon: Dollhouse: A TTRPG about management",
-        "description": "A game where you and your fellow \"Handlers\" complete contracts for the titular Dollhouse.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreicpebpqfpblm7ougis2nnxuwvozxs64ta7qsv6ckktbmpz7l23bpi@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mdv6uhhpyk2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "setincement.bsky.social",
-        "displayName": "Chazz Runs A Comic Book Club!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihnvgt7b3mes63gjcw2hlpv4amxtexu6zlnrbq4nrchbwbob26jbe@jpeg"
-      },
-      "record": {
-        "text": "One Time Taxes looks like this\nlike come on\nhow are you not gonna check this out\nit's also!!\nBlack history month :)\nonetimetaxes.the-comic.org/comics/1/#co...",
-        "createdAt": "2026-02-02T15:45:03.481Z"
-      },
-      "indexedAt": "2026-02-02T15:45:08.159Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 6,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreid5eobjtbisiuegsaxnwmhjx5wuhswzj2u4wbovr7feyum37kw5aq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreid5eobjtbisiuegsaxnwmhjx5wuhswzj2u4wbovr7feyum37kw5aq@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:33b5n6xepwevjgytjfix5ovj/app.bsky.feed.post/3mdpmyag47k2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "johnerrwin.bsky.social",
-        "displayName": "halfminotaur farmer",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:33b5n6xepwevjgytjfix5ovj/bafkreiak2ladjhspik66dl2zansunav4bs7ud7ppv3m5c6yammqwfn5k64@jpeg"
-      },
-      "record": {
-        "text": "If you interested in my #RPGSEA tabletop adventure game, Dimawari, then here's a tease. I also talk about why I removed initiative rolls in it.\n\nOriginally wanted to release playtest in January but instead chose to blog and tease the details first.\n\nhalfminotaurfarmer.blogspot.com/2026/01/devl...",
-        "createdAt": "2026-01-31T10:41:44.262Z"
-      },
-      "indexedAt": "2026-01-31T10:41:49.553Z",
-      "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 15,
-      "embed": {
-        "type": "external",
-        "uri": "https://halfminotaurfarmer.blogspot.com/2026/01/devlog-teasing-dimawari-and-killing.html?m=1",
-        "title": "Devlog: Teasing Dimawari and Killing Initiative Rolls",
-        "description": "a short description of Dimawari, my new game, and what initiative system I have inflicted on it",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:33b5n6xepwevjgytjfix5ovj/bafkreih5emee2rx7q22qkjka75iuom5v2ceqnccrlnwwz5wr7cfw4yy45a@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/L4g8D0",
       "source": "artstation",
       "author": {
@@ -1276,7 +1246,7 @@
       "indexedAt": "2026-01-12T19:25:03.428Z",
       "replyCount": 6,
       "repostCount": 15,
-      "likeCount": 106,
+      "likeCount": 107,
       "embed": {
         "type": "images",
         "images": [
@@ -1547,7 +1517,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1194,
-      "likeCount": 6306,
+      "likeCount": 6307,
       "embed": {
         "type": "images",
         "images": [
@@ -1969,7 +1939,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 616,
-      "likeCount": 2719,
+      "likeCount": 2718,
       "embed": {
         "type": "images",
         "images": [
@@ -3008,7 +2978,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1874,
-      "likeCount": 8952,
+      "likeCount": 8951,
       "embed": {
         "type": "images",
         "images": [
