@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T00:07:46.022767Z",
+  "lastUpdated": "2026-02-13T12:04:19.646481Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -66,7 +66,7 @@
       "indexedAt": "2026-02-12T23:03:36.955Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 21,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +98,7 @@
       "indexedAt": "2026-02-12T16:24:53.455Z",
       "replyCount": 2,
       "repostCount": 8,
-      "likeCount": 34,
+      "likeCount": 37,
       "embed": {
         "type": "images",
         "images": [
@@ -130,7 +130,7 @@
       "indexedAt": "2026-02-12T15:57:50.258Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 23,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://open.spotify.com/episode/4kgiCsDUue0jSSXypuJP43?si=7a0285f8aca142f0",
@@ -157,15 +157,62 @@
         "createdAt": "2026-02-12T15:16:47.766Z"
       },
       "indexedAt": "2026-02-12T15:16:49.951Z",
-      "replyCount": 6,
-      "repostCount": 22,
-      "likeCount": 100,
+      "replyCount": 7,
+      "repostCount": 25,
+      "likeCount": 112,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-human-advancement.html",
         "title": "Random Human Advancement",
         "description": "When you level up, you gain a random benefit based on your race or class. Here's what humans get. You can either roll a d9 for your culture ...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreigu264nrsbhpfp5juxae245kvnbh7rhdvud2sn22yzjexc46wnvcy@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:fovaxznxa3qizw2eovyahkad/app.bsky.feed.post/3meo5zvibxk2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "perplexingruins.bsky.social",
+        "displayName": "Perplexing Ruins",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihvmfng2oypivekt2niz26p6pw453kcsoapvomb36mo56ynrzpqay@jpeg"
+      },
+      "record": {
+        "text": "Pleased to have this little project out in the world! Initially inspired by the tale of Elizabeth Bathory. It's a dark gothic valley with crypts & castles & angry dimensional shears-wielding rabbit & a village to explore! Lot's of dark gothic adventure to be had!\nmanadawnttg.itch.io/valley-of-wr...",
+        "createdAt": "2026-02-12T14:06:45.664Z"
+      },
+      "indexedAt": "2026-02-12T14:06:49.754Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 37,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreickfqb5oysmtsybbhq376bkbc5rgtxazl6cy2cgbil3fjmcwlwb2u@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreickfqb5oysmtsybbhq376bkbc5rgtxazl6cy2cgbil3fjmcwlwb2u@jpeg",
+            "alt": "hexcrawl map for valley of wrecked fortune, showing woods, castles, "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreigfcx24ajfegnvrlhhnqfzgejq67uc3vvhamur4cags75tkantrgq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreigfcx24ajfegnvrlhhnqfzgejq67uc3vvhamur4cags75tkantrgq@jpeg",
+            "alt": "ttrpg map and greenman art"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihs4sbring4lgt7b64aw7f73dxkb2iioauypyajj7k2k65naobq6u@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihs4sbring4lgt7b64aw7f73dxkb2iioauypyajj7k2k65naobq6u@jpeg",
+            "alt": "depiction of robed figure chocking another figure and a sideview vertical map of a castle"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreidxk225q3dyh6alen47wrwu426vudveln43b6zghghe3pwcpsf6re@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreidxk225q3dyh6alen47wrwu426vudveln43b6zghghe3pwcpsf6re@jpeg",
+            "alt": "rabbit with shears"
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -276,8 +323,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 501,
-      "likeCount": 1013,
+      "repostCount": 504,
+      "likeCount": 1019,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -353,7 +400,7 @@
       "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3megyizpj5k2k",
       "source": "bluesky",
       "author": {
-        "handle": "handle.invalid",
+        "handle": "joelhappyhil.bsky.social",
         "displayName": "Joel Happyhil - Check Pinned!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka@jpeg"
       },
@@ -393,7 +440,7 @@
       "indexedAt": "2026-02-09T15:41:19.653Z",
       "replyCount": 3,
       "repostCount": 67,
-      "likeCount": 115,
+      "likeCount": 116,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/this-years-bloggies-nominees/",
@@ -422,7 +469,7 @@
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
       "repostCount": 87,
-      "likeCount": 265,
+      "likeCount": 266,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -558,7 +605,7 @@
       },
       "indexedAt": "2026-02-07T21:54:30.157Z",
       "replyCount": 12,
-      "repostCount": 89,
+      "repostCount": 90,
       "likeCount": 172,
       "embed": {
         "type": "images",
@@ -2267,8 +2314,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1938,
-      "likeCount": 8379,
+      "repostCount": 1937,
+      "likeCount": 8378,
       "embed": {
         "type": "images",
         "images": [
