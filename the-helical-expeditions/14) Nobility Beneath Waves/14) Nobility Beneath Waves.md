@@ -2,7 +2,7 @@
 > Remains of the alien creature. Art by: 
 
 **Themes:** Dangerous | Acquisition | Deep Sea
-**Location:** Batangis Reef, Galvanus Archipelago, Twilight Meriian
+**Location:** Batangis Reef, Galvanus Archipelago, Twilight Meridian
 
 **Rank Range:** 9-10
 - **Decrease:** Consider leveraging the [Refuge in Slapstick](https://breakrpg.blogspot.com/2023/12/freebie-troublesome-trio-adversaries.html) rules to limit Injuries.

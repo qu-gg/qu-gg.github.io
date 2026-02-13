@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cog's Finest Gadgeteer - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Industrial Stahlfeld Theme Palette */
+            --iron-dark: #2a2630;
+            --rust-orange: #b05a2a;
+            --copper-mid: #7a6a5a;
+            --brass-warm: #c4a050;
+            --steel-grey: #5a5660;
+            --gunmetal: #3a3640;
+            --bone-white: #e8e4dc;
+            --pearl-white: #fefefe;
+            --ink-dark: #141418;
+            --faded-cream: #f0ece4;
+
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--faded-cream);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--faded-cream);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--iron-dark), var(--rust-orange), var(--brass-warm), var(--rust-orange), var(--iron-dark));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--rust-orange);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--rust-orange);
+            border-color: var(--rust-orange);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--iron-dark);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--rust-orange);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--rust-orange);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 26pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--bone-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--rust-orange);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--rust-orange);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--copper-mid);
+            border-left: 4px solid var(--copper-mid);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--steel-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .secrets-list em,
+        .location-desc em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--rust-orange);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--steel-grey);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--iron-dark);
+        }
+
+        /* ===== STORY IMAGE BLOCK ===== */
+        .story-image-block {
+            border: 1px solid var(--copper-mid);
+            border-radius: 3px;
+            overflow: hidden;
+            background: var(--iron-dark);
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: 2.5in;
+            display: block;
+            object-fit: cover;
+            object-position: center var(--story-image-y, 20%);
+        }
+
+        .story-image-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--bone-white);
+            text-align: center;
+            background: var(--iron-dark);
+        }
+
+        .story-image-caption a {
+            color: #c4a050;
+            text-decoration: none;
+        }
+
+        .story-image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SECRETS BOX ===== */
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--rust-orange);
+            border-left: 4px solid var(--rust-orange);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--rust-orange);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .secrets-list ul {
+            list-style: disc;
+            padding-left: 14px;
+            margin-top: 2px;
+        }
+
+        .secrets-list ul li {
+            margin-bottom: 2px;
+        }
+
+        /* ===== QUEST RESOLUTION ===== */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--iron-dark);
+            border-left: 4px solid var(--iron-dark);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--iron-dark);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .resolution-option h3 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--rust-orange);
+            margin-bottom: 3px;
+        }
+
+        .resolution-option p {
+            font-size: 9pt;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+
+        /* Item Block */
+        .item-block {
+            background: rgba(240, 236, 228, 0.9);
+            border: 2px dotted var(--copper-mid);
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-top: 4px;
+            font-size: 8pt;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--iron-dark);
+        }
+
+        .item-block .item-type {
+            color: var(--copper-mid);
+        }
+
+        .item-block .item-desc {
+            margin: 2px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-effect {
+            margin: 2px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--rust-orange);
+            font-weight: bold;
+        }
+
+        .item-block ul {
+            margin: 2px 0;
+            padding-left: 12px;
+        }
+
+        .item-block li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== PAGE 2 & 3 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--iron-dark);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--rust-orange);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--brass-warm);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .site-map-container {
+            position: relative;
+            border: 3px solid var(--rust-orange);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--pearl-white);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            max-height: 4.5in;
+            display: block;
+            object-fit: contain;
+        }
+
+        .map-caption {
+            background: var(--iron-dark);
+            color: var(--bone-white);
+            padding: 4px 10px;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        .map-caption a {
+            color: #c4a050;
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== MAP LOCATION MARKERS ===== */
+        .map-marker {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: var(--rust-orange);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        /* Map marker positions - to be adjusted based on actual map */
+        .map-marker.m1 { top: 70%; left: 22%; }
+        .map-marker.m2 { top: 73%; left: 58%; }
+        .map-marker.m3 { top: 50%; left: 35%; }
+        .map-marker.m4 { top: 25%; left: 40%; }
+        .map-marker.m5 { top: 61%; right: 42.5%; }
+        .map-marker.m6 { top: 16%; right: 26.5%; }
+        .map-marker.m7 { top: 45%; right: 31.5%; }
+
+        /* ===== LOCATION KEY ===== */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--copper-mid);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--steel-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .location-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .location-entry {
+            font-size: 8.5pt;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--rust-orange);
+            color: var(--pearl-white);
+            border-radius: 9px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--iron-dark);
+            font-size: 9pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--copper-mid);
+            color: var(--pearl-white);
+            font-size: 6.5pt;
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.entrance {
+            background: var(--brass-warm);
+        }
+
+        .location-tag.encounter {
+            background: var(--iron-dark);
+        }
+
+        .location-tag.harmful {
+            background: var(--rust-orange);
+        }
+
+        .location-tag.loot {
+            background: var(--steel-grey);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.3;
+        }
+
+        .location-desc p {
+            margin: 0 0 3px 0;
+        }
+
+        .location-desc ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+
+        .location-desc li {
+            margin-bottom: 2px;
+            color: var(--steel-grey);
+        }
+
+        .location-desc li::marker {
+            color: var(--rust-orange);
+        }
+
+        /* Key items/people highlighting */
+        .key-item {
+            font-weight: bold;
+            color: var(--rust-orange);
+        }
+
+        .location-desc .loot,
+        .loot:not(.location-tag) {
+            color: var(--copper-mid);
+        }
+
+        /* Creature inline blocks within locations */
+        .creature-inline {
+            margin-top: 3px;
+            padding: 3px 6px;
+            background: rgba(42, 38, 48, 0.06);
+            border-left: 4px solid var(--iron-dark);
+            border-radius: 2px;
+            font-size: 8.5pt;
+        }
+
+        .creature-inline .creature-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 9.5pt;
+            color: var(--iron-dark);
+        }
+
+        .creature-inline .creature-source {
+            color: var(--copper-mid);
+            font-size: 8pt;
+        }
+
+        .creature-inline .creature-header-line {
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .creature-inline .creature-desc {
+            font-style: italic;
+            color: var(--steel-grey);
+            font-size: 8pt;
+            margin-top: 1px;
+        }
+
+        .creature-inline.accent-rust   { border-left-color: var(--rust-orange); }
+        .creature-inline.accent-brass  { border-left-color: var(--brass-warm); }
+        .creature-inline.accent-copper { border-left-color: var(--copper-mid); }
+
+        .creature-inline ul {
+            margin: 1px 0 0 0;
+            padding-left: 12px;
+        }
+
+        .creature-inline li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== RANDOM ENCOUNTERS BOX ===== */
+        .encounters-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--brass-warm);
+            border-left: 4px solid var(--brass-warm);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .encounters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--brass-warm);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .encounters-box-inner {
+            padding: 5px 8px;
+            font-size: 9pt;
+        }
+
+        .encounter-entry {
+            margin-bottom: 3px;
+        }
+
+        .encounter-entry .roll-range {
+            font-weight: bold;
+            color: var(--iron-dark);
+        }
+
+        /* ===== RANK BOX ===== */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--iron-dark);
+            border-left: 4px solid var(--iron-dark);
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .rank-header {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--iron-dark);
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--rust-orange);
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(42, 38, 48, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(90, 86, 96, 0.1);
+            border-left: 3px solid var(--steel-grey);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--iron-dark);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--rust-orange);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--copper-mid);
+        }
+
+        .sources-box a {
+            color: var(--rust-orange);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== BOTTOM SECTION ===== */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 6px;
+        }
+
+        /* ===== ART PAGE (for book padding theme extraction) ===== */
+        .art-page {
+            background: var(--iron-dark);
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--rust-orange), var(--brass-warm), var(--rust-orange));
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>Cog's Finest Gadgeteer</h1>
+            <div class="subtitle">Cog &#8226; Stahlfeld &#8226; Twilight Meridian</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">&#9881;</span> Mechanical</div>
+            <div class="theme-item"><span class="emoji">&#10022;</span> Rescue</div>
+            <div class="theme-item"><span class="emoji">&#9874;</span> Gadgeteer Workshop</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>The Helical Archive has been expecting time-sensitive orders from Cog's finest gadgeteer - but recent deliveries have arrived late and at noticeably worse quality. Concerned, they've dispatched the party to find out why.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"In the center of the junkyard island that is Stahlfeld lies Cog, the clockwork city of inventors. No inventor is better known here than the Rai-Neko Gadgeteer, Inner Working. It is said he can take any Gleysian scrap found in the junkyards and make it a functioning marvel again...for a hefty price, of course. His workshop, Working's Works, is a trusted partner of the Helical Archive. When deliveries stopped arriving on time - and those that did were noticeably worse - the Archive dispatched you to check in. Standing outside the workshop's rather humble storefront, nothing seems out of the ordinary."</p>
+                    <p style="margin-top: 6px;">The Adventure Site is confined to the workshop, but there are many avenues of resolution - from a cut-and-dry rescue to exposing or directly blackmailing Inner Working. Stealth and Negotiation work just as well as storming the storefront, so run with whichever way the party goes! <br><br>To extend the Adventure, consider including scenes at the Archive to track down and expose the shady researcher.</p>
+                    </div>
+                </div>
+
+                <!-- Quest Resolution -->
+                <div class="quest-resolution">
+                    <h2>Quest Resolution</h2>
+                    <div class="quest-resolution-inner">
+                    <div class="resolution-option">
+                        <h3>&#10022; Rescue</h3>
+                        <p>On a successful rescue, <strong class="key-item">Working</strong> will let the party keep anything they looted during the rescue and provide a free Advanced Gadgeteering service to each PC. If <strong class="key-item">Pinch's</strong> plans are exposed, <strong class="key-item">Working</strong> will disown him but not press charges. Surviving <strong class="key-item">Kidnappers'</strong> fates are left up to the party.</p>
+                    </div>
+                    <div class="resolution-option">
+                        <h3>&#10022; Confronting the Gadgeteer</h3>
+                        <p>If the party learns the truth about <strong class="key-item">Working's</strong> use of Cores, and cares about it, <strong class="key-item">Working</strong> will try to cut a "hush-hush" deal with the party to not inform the Archive, offering his <strong>Sludge Wrench</strong> up.</p>
+                    </div>
+                    <!-- Sludge Wrench -->
+                    <div class="item-block">
+                        <div><span class="item-name">Sludge Wrench</span> <span class="item-type">[Standard Weapon]</span></div>
+                        <div class="item-desc">Despite a hefty weight, whenever this wrench is dropped it simply floats a few inches off the floor. Looks constantly slicked with oil.</div>
+                        <ul>
+                            <li>Magical weapon made of Sky Steel.</li>
+                            <li>Imbued with <strong>Eldritch Ennui Sludge</strong> (Source, pg. 292): Imbued items can slow the operation of vehicles and other moving mechanical contraptions to a virtual stop. Any machine in physical contact with the imbued item will refuse to move.</li>
+                        </ul>
+                        <div class="item-stats">1 Slot · 200 Coins</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="18) Cog's Finest Gadgeteer/Pasted image 20260212122300.jpg" alt="Autodrone working on a project" style="width: 115%; margin-left: -7.5%;">
+                    <div class="story-image-caption">Autodrone working on a project. Art by: <a href="https://characterdesignreferences.com/artist-of-the-week-14/ryo-yambe" target="_blank">Ryo Yambe</a></div>
+                </div>
+
+                <!-- Secrets and Clues -->
+                <div class="secrets-box">
+                    <h2>Secrets &amp; Clues</h2>
+                    <div class="secrets-box-inner">
+                    <ol class="secrets-list">
+                        <li>Unlike the rebuilt Gleysian Drones of other workshops in Cog, the <em>Autodrones</em> of Working's Works seem unusually intelligent, capable of prolonged autonomous work.</li>
+                        <li>The secret of <em>Working's</em> craft is the direct use of Gleysian Bio-Mechanoid "soul cores" in his repairs, imbuing the devices with a level of awareness eerily close to the Bio-Mechanoids they came from, though lacking personality.</li>
+                        <li><em>Working</em> doesn't know the specifics of how the infusion truly works; he knows it works with no questions asked.</li>
+                        <li>If confronted about the secret, <em>Working</em> will become defensive and upset, claiming he only uses irreparable cores and has an agreement with the Archive. This is a half-truth - it's via unofficial channels with a specific researcher.</li>
+                        <li><em>Working</em> is planning to only share this knowledge of the craft with his first-born son, <em>Drop</em>, and is careful not to share secrets with his second, <em>Pinch</em>.</li>
+                        <li><em>Pinch</em>, the second-born, won't inherit the forge or its knowledge. Envy towards <em>Drop</em> drove him to hire <em>Kidnappers</em> to take his "stolen" inheritance by force. He speaks to them via <strong>Hush Bands</strong>.</li>
+                        <li>The <em>Kidnappers</em> are a gang of unsuccessful Chib Junkers seeking to steal the secrets of <em>Working's</em> craft and set up a competitor in Sprocket. With <em>Working</em> holding out so long, their patience is running thin and they're considering robbing the workshop empty instead.</li>
+                        <li>Both <em>Drop</em> and <em>Pinch</em> were away at the time of <em>Working's</em> disappearance, at <em>Pinch's</em> behest.</li>
+                        <li>Concerned neighbors mention hearing strange cries coming from the top of the larger workshop recently.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - THE WORKSHOP (Locations 1-4) ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Workshop <span>[Adventure Map]</span></h1>
+        </div>
+
+        <!-- Map Container -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="18) Cog's Finest Gadgeteer/workshopmap.png" alt="Map of the Workshop">
+
+            <!-- Location Markers -->
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+            <div class="map-marker m6">6</div>
+            <div class="map-marker m7">7</div>
+
+            <div class="map-caption">Map of the Workshop. Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Location Key - Locations 1-4 -->
+        <div class="location-key-box">
+            <h2>Workshop Locations (1-4)</h2>
+            <div class="location-key-content">
+                <div class="location-column">
+                    <!-- Location 1 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">Storefront</span>
+                            <span class="location-tag entrance">Entrance</span>
+                            <span class="location-tag encounter">Guardian</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>No customers inside. Half-empty racks of minor arcane devices - a <span class="loot">Techatiel Build-Kit</span> and <span class="loot">Hush Bands</span>. A splatter of blood on the floor. <br><strong class="key-item">2 Kidnappers</strong> pretend to keep shop.</p>
+                        </div>
+                        <div class="creature-inline accent-rust">
+                            <div class="creature-header-line"><span class="creature-name">Kidnappers</span> <span class="creature-source">[Peacekeeper]</span></div>
+                            <div class="creature-desc">Chibs. Junkers. Impatient.</div>
+                            <ul>
+                                <li><strong>Pretend</strong> they help Working run the shop in his absence.</li>
+                                <li>Communicate via <strong>Hush Bands</strong>.</li>
+                            </ul>
+                        </div>
+                        <!-- Techatiel Build-Kit -->
+                        <div class="item-block">
+                            <div><span class="item-name">Techatiel Build-Kit</span></div>
+                            <div class="item-desc">Often eerily seen staring at you off on some distant ledge or tree, these dark button-eyed birds are actually man-made contraptions, acting as mobile scouts for anyone looking to protect their territory.</div>
+                            <div class="item-effect">A Gadgeteer can use these kits to Craft a Techatiel of their own.</div>
+                            <div class="item-stats">1 Slot · 50 Coins</div>
+                        </div>
+                        <!-- Hush Bands -->
+                        <div class="item-block">
+                            <div><span class="item-name">Hush Bands</span></div>
+                            <div class="item-desc">After an academic discovered that folks' vocal cords ever so slightly vibrate when they simply think up a sentence, crafty Gadgeteers made fashionable chokers allowing for, essentially, short-range telepathy.</div>
+                            <ul>
+                                <li>Anyone wearing a matching choker may telepathically speak to each other, not requiring vocal components at all.</li>
+                                <li>Effective range of 100ft, or 3 Areas.</li>
+                                <li>Works up to 200ft (6 Areas) with an Aura Check or the intended message becomes altered against the user's intent.</li>
+                            </ul>
+                            <div class="item-stats">0.5 Slots · 75 Coins</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="location-column">
+                    <!-- Location 2 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">Sleeping Quarters</span>
+                            <span class="location-tag encounter">Guardian</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Messy beds, as if recently searched. <strong class="key-item">2 Kidnappers</strong> whisper about the state of plans with <strong class="key-item">Pinch</strong>. The closet holds a secret door. <br><span class="loot">2 Extreme Heat Outfits</span> (Source, pg. 172) within the room.</p>
+                        </div>
+                        <div class="creature-inline accent-brass">
+                            <div class="creature-header-line"><span class="creature-name">Penny Drop &amp; Penny Pinch</span> <span class="creature-source">[Custrel]</span></div>
+                            <div class="creature-desc">Young Rai-Neko adults. Twins. Working's sons.</div>
+                            <ul>
+                                <li><strong>Indistinguishable</strong> from each other.</li>
+                                <!-- <li><strong>Claim</strong> Working is missing for different reasons.</li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Location 3 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Foundry</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Hot. Constant buzzing and puffing. Low Pipes hinder movement for anyone but Small Species - all Areas here are <strong>Cramped</strong> and <strong>Isolated</strong>. 3 <strong class="key-item">Autodrones</strong> move around, and perform meticulous repair work. <br>The Room is protected by <strong class="key-item">4 Scout Drones</strong> hovering in the corners.</p>
+                        </div>
+                        <div class="creature-inline accent-copper">
+                            <div class="creature-header-line"><span class="creature-name">Autodrones</span> <span class="creature-source">[Drone]</span></div>
+                            <div class="creature-desc">Gleysian, remade. Surprisingly intelligent.</div>
+                            <ul>
+                                <li><strong>Uncaring</strong> about who runs the smithy, <strong>focused</strong> on their work.</li>
+                                <li><strong>Hostile</strong> to anyone messing with the machinery or projects.</li>
+                            </ul>
+                        </div>
+                        <div class="creature-inline accent-brass" style="margin-top: 2px;">
+                            <div class="creature-header-line"><span class="creature-name">Scout Drones</span> <span class="creature-source">[Scout Drone]</span></div>
+                            <div class="creature-desc">Buzzing. Refined. Laser Pointers.</div>
+                            <ul>
+                                <li><strong>Perceive</strong> intentions of anyone around.</li>
+                                <li><strong>Attack</strong> anyone wishing others harm.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Location 4 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Compactor</span>
+                            <span class="location-tag harmful">Harmful Terrain</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>15ft across. LOUD. Powered by the Waterwheel. Crushes everything.</p>
+                            <ul>
+                                <li>Falling into the Compactor results in escalating Injuries per Turn, starting from a Light Injury. Requires use of an appropriate Item/Ability or a successful Might Check to escape.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - THE WORKSHOP (Locations 5-7) ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Workshop <span>[Locations 5-7]</span></h1>
+        </div>
+
+        <!-- Map Container (repeated for reference) -->
+        <div class="site-map-container" style="margin-bottom: 8px;">
+            <img src="18) Cog's Finest Gadgeteer/workshopmap.png" alt="Map of the Workshop">
+
+            <!-- Location Markers -->
+            <div class="map-marker m1">1</div>
+            <div class="map-marker m2">2</div>
+            <div class="map-marker m3">3</div>
+            <div class="map-marker m4">4</div>
+            <div class="map-marker m5">5</div>
+            <div class="map-marker m6">6</div>
+            <div class="map-marker m7">7</div>
+
+            <div class="map-caption">Map of the Workshop. Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+        </div>
+
+        <!-- Two Column Layout: Locations left, Info blocks right -->
+        <div class="two-columns">
+            <!-- Left Column: Location Key -->
+            <div class="column">
+                <div class="location-key-box">
+                    <h2>Workshop Locations (5-7)</h2>
+                    <div class="location-key-content" style="flex-direction: column;">
+                        <!-- Location 5 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">5</span>
+                                <span class="location-name">Hearth</span>
+                                <span class="location-tag harmful">Harmful Terrain</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Zone full of flames, heating the Pipes and the Cores within. The Cores must be kept hot and circulating through the system to maintain their charge before infusion. There's a door behind the flames to <strong class="key-item">Working's</strong> Secret Office.</p>
+                                <ul>
+                                    <li>Direct exposure to the flames results in a Burning Injury <br>(Source, pg. 267) per Turn.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 6 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">6</span>
+                                <span class="location-name">Waterwheel</span>
+                                <span class="location-tag entrance">Entrance</span>
+                                <span class="location-tag encounter">Guardian</span>
+                            </div>
+                            <div class="location-desc">
+                                <p><strong class="key-item">Gadgeteer Working</strong> is bound to the waterwheel itself - a stream of water constantly turning him. <strong class="key-item">3 bored Kidnappers</strong> hold guard, playing games. A door hides behind the water-powered gears, leading to <strong class="key-item">Working's</strong> Secret Office.</p>
+                                <ul>
+                                    <li>The waterway that powers the Waterwheel can be accessed via the roof - though it's a bit slippery!</li>
+                                </ul>
+                            </div>
+                            <div class="creature-inline accent-rust">
+                                <div class="creature-header-line"><span class="creature-name">Gadgeteer Inner Working</span> <span class="creature-source">[Custrel]</span></div>
+                                <div class="creature-desc">Rai-Neko. Drowsy. Soft-spoken. Full prosthetic torso and arms.</div>
+                                <ul>
+                                    <li><strong>Knows</strong> how to build/fix Autodrones.</li>
+                                    <li><strong>Knows</strong> how to repair very complex Gleysian relics.</li>
+                                    <li><strong>Unwilling</strong> to share this knowledge.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 7 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">7</span>
+                                <span class="location-name">Secret Office</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p><strong class="key-item">2 Autodrones</strong> protect schematics on a desk. These papers hold <br>the secrets to the use of Bio-Mechanoid Cores in <strong class="key-item">Working's</strong> work.</p>
+                                <ul>
+                                    <li>A hatch can open a Pipe ending here. Just inside the Pipe is an inert <span class="loot">Soul Core</span>, which functions as a Small Spell Engine.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Random Encounters, Rank, Sources -->
+            <div class="column">
+                <!-- Random Encounters -->
+                <div class="encounters-box">
+                    <h2>Random Encounters [D20]</h2>
+                    <div class="encounters-box-inner">
+                        <div class="encounter-entry"><span class="roll-range">1-4:</span> The <strong>Kidnappers</strong> in the room become Hostile, and Ambush!</div>
+                        <div class="encounter-entry"><span class="roll-range">5-9:</span> 2 <strong>Autodrones</strong> short-circuit, making them attack the party.</div>
+                        <div class="encounter-entry"><span class="roll-range">10-13:</span> <strong>Drop</strong> &amp; <strong>Pinch</strong> argue about the disappearance of <strong>Working</strong>, forcing the party to take a side.</div>
+                        <div class="encounter-entry"><span class="roll-range">14-16:</span> A faint trail of bloodsplatter points towards the Waterwheel.</div>
+                        <div class="encounter-entry"><span class="roll-range">17-18:</span> <strong>Pinch</strong> assures everyone his dad has gone on a spontaneous vacation and not to worry.</div>
+                        <div class="encounter-entry"><span class="roll-range">19-20:</span> <strong>Drop</strong> is asking around if anyone has seen his dad.</div>
+                    </div>
+                </div>
+
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 1-2 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Decrease:</strong> Consider changing the Kidnappers to Mundymutts.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Increase:</strong> For a much higher adventure, change the Kidnappers to Hopper Majo and the Drones to War Drones.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Starting Coin:</strong> 200C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources &amp; Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">This is an adaptation of the one-page dungeon <a href="https://1pagedungeons.itch.io/urban-crawl" target="_blank"><strong>Secrets of the Smith</strong></a> by 1PageDungeons, licensed under CC-by-SA.</p>
+                    <ul>
+                        <li><strong>Custrel:</strong> Source, pg. 184</li>
+                        <li><strong>Drone:</strong> Source, pg. 376</li>
+                        <li><strong>Peacekeepers/Scout Drones/Techatiel:</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
