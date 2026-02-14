@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T12:04:19.646481Z",
+  "lastUpdated": "2026-02-14T00:06:28.774449Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,128 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:beikjqnksmmn6eprnrijv543/app.bsky.feed.post/3meqwpgd5js2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "aquavertigo.bsky.social",
+        "displayName": "AquaVertigo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:beikjqnksmmn6eprnrijv543/bafkreichzoklze7u6kzsog4di5ct4dje5gr2dfmresdw4nhnxgj46mgrdy@jpeg"
+      },
+      "record": {
+        "text": "Final day to back Swords Without Master ttrpg!\n\nwww.kickstarter.com/projects/unw...",
+        "createdAt": "2026-02-13T16:33:37.259Z"
+      },
+      "indexedAt": "2026-02-13T16:33:43.254Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 9,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/unwrittenearths/swords-without-master",
+        "title": "Swords Without Master",
+        "description": "A ttrpg of strange sorceries, ferocious deeds, and astounding wonder by Epidiah Ravachol.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:beikjqnksmmn6eprnrijv543/bafkreif4iamdbvm3jgsrszbds3fpnbzixgw2bfctcvbshbfq4ixdtqqgtm@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:fp7z6py7lxiujwngnn7dmjpj/app.bsky.feed.post/3meqq2ktfr22k",
+      "source": "bluesky",
+      "author": {
+        "handle": "stickyhunter.bsky.social",
+        "displayName": "Steph \"StickyHunter\" Farrow\ud83d\udc9b\ud83e\udd0d\ud83d\udc9c\ud83d\udda4",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreihtvsioftcui63j7u36gxo7dqjt22n7qy54oyei26qae3z5uruztm@jpeg"
+      },
+      "record": {
+        "text": "It's Melody! @pipopixie.bsky.social's funky Break!! TTRPG character! She CAN and WILL try to eat berries that will give her a tummyache.\n\n#StickyHunterArt #SKEB #VGenComm",
+        "createdAt": "2026-02-13T14:34:34.881Z"
+      },
+      "indexedAt": "2026-02-13T14:34:38.249Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 15,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigszoolzxeluhb2gfrpc2vlscxq2v5coddejm4fnynx6lethpp25y@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigszoolzxeluhb2gfrpc2vlscxq2v5coddejm4fnynx6lethpp25y@jpeg",
+            "alt": "a cutesy character doing a peace sign toward the viewer. She has big baggy trousers on and a crop top. She has big fuzzy round ears and sleight buck teeth."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:l3slakasygku3s2cxaky3zcf/app.bsky.feed.post/3meqkiiizrk2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "kobayashi-rpg.bsky.social",
+        "displayName": "Alexandre Kobayashi",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreibgxxonfar6y2ftczyug6ph4ozr2e5x4jn33cfyoorn4c4itj2j4i@jpeg"
+      },
+      "record": {
+        "text": "The GUNS MAGES CORPSES Kickstarter is a go. And I made a character sheet :) www.kickstarter.com/projects/ale...",
+        "createdAt": "2026-02-13T12:54:59.764Z"
+      },
+      "indexedAt": "2026-02-13T12:55:03.456Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 14,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreic5szsicirnd3d5gq3im6tozgs42hujetcgzczihs34zvvjhj7biq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreic5szsicirnd3d5gq3im6tozgs42hujetcgzczihs34zvvjhj7biq@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:ebm4zblojs2vewc5455ntav2/app.bsky.feed.post/3mepnjd4gs22l",
+      "source": "bluesky",
+      "author": {
+        "handle": "sean.tuesdayknightgames.com",
+        "displayName": "Sean McCoy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ebm4zblojs2vewc5455ntav2/bafkreic4gkgaeboqy7yhugza5fdblcxpge3lhwfulz2k3kxgcbahvqjj44@jpeg"
+      },
+      "record": {
+        "text": "Wrote a bit about making a dungeon book and how I'm starting to view dungeon crawls as a conversation between the dungeon and the players. And what that kind of storytelling means.\n\nwww.failuretolerated.com/talking-to-t...",
+        "createdAt": "2026-02-13T04:16:29.151Z"
+      },
+      "indexedAt": "2026-02-13T04:16:29.551Z",
+      "replyCount": 4,
+      "repostCount": 17,
+      "likeCount": 92,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.failuretolerated.com/talking-to-the-dungeon",
+        "title": "Talking to the Dungeon",
+        "description": "<p>Prepping dungeons is hard and while I\u2019ve read a lot of great modules, I never seem to remember what I loved about them other than the vibe. So now, whenever I read a module and notice a cool monste...",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:w5awjlrjxlv2xpqlh76jqudc/app.bsky.feed.post/3mep3zrosk22c",
       "source": "bluesky",
       "author": {
@@ -66,7 +188,7 @@
       "indexedAt": "2026-02-12T23:03:36.955Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 24,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -159,7 +281,7 @@
       "indexedAt": "2026-02-12T15:16:49.951Z",
       "replyCount": 7,
       "repostCount": 25,
-      "likeCount": 112,
+      "likeCount": 113,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-human-advancement.html",
@@ -188,7 +310,7 @@
       "indexedAt": "2026-02-12T14:06:49.754Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -323,8 +445,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 504,
-      "likeCount": 1019,
+      "repostCount": 505,
+      "likeCount": 1023,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -353,7 +475,7 @@
       "indexedAt": "2026-02-11T00:35:47.258Z",
       "replyCount": 2,
       "repostCount": 45,
-      "likeCount": 77,
+      "likeCount": 78,
       "embed": {
         "type": "external",
         "uri": "https://podcast.bloggies.org/",
@@ -469,7 +591,7 @@
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
       "repostCount": 87,
-      "likeCount": 266,
+      "likeCount": 267,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -605,8 +727,8 @@
       },
       "indexedAt": "2026-02-07T21:54:30.157Z",
       "replyCount": 12,
-      "repostCount": 90,
-      "likeCount": 172,
+      "repostCount": 96,
+      "likeCount": 178,
       "embed": {
         "type": "images",
         "images": [
@@ -731,8 +853,8 @@
       },
       "indexedAt": "2026-02-06T18:29:12.556Z",
       "replyCount": 7,
-      "repostCount": 50,
-      "likeCount": 114,
+      "repostCount": 55,
+      "likeCount": 121,
       "embed": {
         "type": "external",
         "uri": "https://www.zimmerit.moe/protoculture-addicts-mecha-press-heavy-gear/",
@@ -1047,38 +1169,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreiec65fwjxunjw6d5n4mbcfbtdaudiziaheuujcejypde57x3eo3vu@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreiec65fwjxunjw6d5n4mbcfbtdaudiziaheuujcejypde57x3eo3vu@jpeg",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mdxgf3n6uc2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
-      },
-      "record": {
-        "text": "What a mail day! Connected with @outridercreative.bsky.social and they were kind enough to send me Perils & Princesses\n\nThere's tons of OSR DNA I love here - beautifully illustrated. Beyond the Wall + GLoG influences.\n\nLove seeing a game supported with adventures! Looking forward to reading them all",
-        "createdAt": "2026-02-03T13:04:57.178Z"
-      },
-      "indexedAt": "2026-02-03T13:04:59.856Z",
-      "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 58,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreic5y2i5nlwlze3fzi3tif34zhi54ecp3zinfozxznr3jjhazvpqbi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreic5y2i5nlwlze3fzi3tif34zhi54ecp3zinfozxznr3jjhazvpqbi@jpeg",
-            "alt": "Four digest size RPG books of Perils & Princesses, a Fairy Tale RPG. Light pastel colors, female protagonists. "
           }
         ]
       },
@@ -2844,7 +2934,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 544,
-      "likeCount": 3012,
+      "likeCount": 3011,
       "embed": {
         "type": "images",
         "images": [
@@ -3095,7 +3185,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2624,
-      "likeCount": 15420,
+      "likeCount": 15419,
       "embed": {
         "type": "images",
         "images": [
