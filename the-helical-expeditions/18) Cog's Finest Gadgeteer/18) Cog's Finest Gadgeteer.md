@@ -112,3 +112,7 @@ Random Events:
 - Magical weapon made of Sky Steel.
 - Imbued with **Eldritch Ennui Sludge** (Source, pg. 292): Imbued items can slow the operation of vehicles and other moving mechanical contraptions to a virtual stop. Any machine in physical contact with the imbued item will refuse to move.
 - 1 Slot | 200 Coins
+
+### Art Vibeboard
+![[Pasted image 20260213020053.jpg]]
+> Observer over Cog

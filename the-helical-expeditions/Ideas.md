@@ -39,6 +39,15 @@
 **Magia Sigil Hunting**
 - https://1pagedungeons.itch.io/urban-crawl
 - Trying to get a Magia Sigil illegally within the Bazaar for a Helical Journalist who got rejected for investigating too much
+- You need a Magia Sigil, and fast. The normal bureaucratic means of applying and waiting for consideration is far too slow and you're far too broke to afford the "fast route." Sigils are heavily controlled and the illicit trade of them heavily punished. Despite this, rumors have it that one can *acquire* a Sigil in the Shard Guild's markets through a specific contact.
+- While the read-aloud indicates the party is needing to acquire a Sigil illegally for themselves, this adventure can take on many different forms. For example, a dubious patron could have hired the party as a middleman or the Shard Guild has hired the party to capture the Dealer alive.
+- Vendor | Situation
+	- Grave Weaponsmith | Obviously drunk
+	- Tattoo Artist | Pickpocketing Ruffians!
+	- Spiritual Artificer | Overcrowded
+	- Grumpy Butcher | No customers
+	- Angry Preacher of the Sacred Chain | 2 Patrols on duty
+	- Rich Jeweler | Hiding a body
 
 **To Tame a Colossi**
 ![[Pasted image 20260106121810.png]]
