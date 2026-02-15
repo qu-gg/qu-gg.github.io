@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Deal a Sigil - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Shard City Theme Palette */
+            --shard-deep: #1e1828;
+            --arcane-violet: #6a5080;
+            --barrier-blue: #4a6a8a;
+            --guild-gold: #b8923a;
+            --shadow-purple: #4a3a58;
+            --dusk-mauve: #8a7a9a;
+            --bone-white: #e8e4dc;
+            --pearl-white: #fefefe;
+            --ink-dark: #141418;
+            --faded-parchment: #eeeae4;
+
+            /* Sigil Property Colors */
+            --sigil-jelly: #7a5a9a;
+            --sigil-smoke: #4a7a8a;
+            --sigil-null: #b8923a;
+
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--faded-parchment);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--faded-parchment);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--shard-deep), var(--arcane-violet), var(--guild-gold), var(--arcane-violet), var(--shard-deep));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--arcane-violet);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--arcane-violet);
+            border-color: var(--arcane-violet);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--shard-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--arcane-violet);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--arcane-violet);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 26pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--bone-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--arcane-violet);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--arcane-violet);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--barrier-blue);
+            border-left: 4px solid var(--barrier-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--shadow-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .location-desc em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--arcane-violet);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--shadow-purple);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--shard-deep);
+        }
+
+        /* ===== STORY IMAGE BLOCK ===== */
+        .story-image-block {
+            border: 1px solid var(--barrier-blue);
+            border-radius: 3px;
+            overflow: hidden;
+            background: var(--shard-deep);
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: 2.2in;
+            display: block;
+            object-fit: cover;
+            object-position: center var(--story-image-y, 20%);
+        }
+
+        .story-image-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--bone-white);
+            text-align: center;
+            background: var(--shard-deep);
+        }
+
+        .story-image-caption a {
+            color: var(--guild-gold);
+            text-decoration: none;
+        }
+
+        .story-image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SIGIL PROPERTY BADGES ===== */
+        .sigil-prop {
+            display: inline-block;
+            font-size: 7pt;
+            padding: 1px 5px;
+            border-radius: 3px;
+            color: var(--pearl-white);
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            vertical-align: middle;
+        }
+
+        .sigil-prop.jelly {
+            background: var(--sigil-jelly);
+        }
+
+        .sigil-prop.smoke {
+            background: var(--sigil-smoke);
+        }
+
+        .sigil-prop.null {
+            background: var(--sigil-null);
+        }
+
+        /* ===== ITEM BLOCK ===== */
+        .item-block {
+            background: rgba(238, 234, 228, 0.9);
+            border: 2px dotted var(--barrier-blue);
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-top: 4px;
+            font-size: 8pt;
+        }
+
+        .content-box-inner .item-block {
+            margin-top: 2px;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--shard-deep);
+        }
+
+        .item-block .item-type {
+            color: var(--barrier-blue);
+        }
+
+        .item-block .item-desc {
+            margin: 2px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-effect {
+            margin: 2px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--arcane-violet);
+            font-weight: bold;
+        }
+
+        .item-block ul {
+            margin: 2px 0;
+            padding-left: 12px;
+        }
+
+        .item-block li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== RANDOM VENDOR TABLE ===== */
+        .vendor-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--guild-gold);
+            border-left: 4px solid var(--guild-gold);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .vendor-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--guild-gold);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .vendor-box-inner {
+            padding: 5px 8px;
+            font-size: 8.5pt;
+        }
+
+        .vendor-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+        }
+
+        .vendor-table th {
+            text-align: left;
+            font-weight: bold;
+            color: var(--shard-deep);
+            border-bottom: 1px solid var(--barrier-blue);
+            padding: 2px 4px;
+            font-size: 8pt;
+        }
+
+        .vendor-table td {
+            padding: 1px 4px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .vendor-table td:first-child {
+            font-weight: bold;
+            color: var(--shadow-purple);
+            width: 16px;
+        }
+
+        .magic-items-list {
+            margin-top: 6px;
+            padding-top: 4px;
+            border-top: 1px solid var(--barrier-blue);
+        }
+
+        .magic-items-list h3 {
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            color: var(--guild-gold);
+            margin-bottom: 2px;
+        }
+
+        .magic-items-list ul {
+            padding-left: 14px;
+            font-size: 8.5pt;
+        }
+
+        .magic-items-list li {
+            margin-bottom: 1px;
+        }
+
+        .magic-items-list a {
+            color: var(--arcane-violet);
+            text-decoration: none;
+        }
+
+        .magic-items-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RANK BOX ===== */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--shard-deep);
+            border-left: 4px solid var(--shard-deep);
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .rank-header {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--shard-deep);
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--arcane-violet);
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(30, 24, 40, 0.05);
+            font-size: 8.5pt;
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(74, 58, 88, 0.1);
+            border-left: 3px solid var(--shadow-purple);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--shard-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--arcane-violet);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--barrier-blue);
+        }
+
+        .sources-box a {
+            color: var(--arcane-violet);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--shard-deep);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--arcane-violet);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--guild-gold);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        /* Page 2 layout - top row: map + side boxes, bottom row: locations + imposters */
+        .page2-top {
+            display: grid;
+            grid-template-columns: 63% 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .page2-bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .side-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .side-stack > *:last-child {
+            flex: 1;
+        }
+
+        .site-map-container {
+            position: relative;
+            border: 3px solid var(--arcane-violet);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--pearl-white);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            display: block;
+            object-fit: contain;
+        }
+
+        .map-caption {
+            background: var(--shard-deep);
+            color: var(--bone-white);
+            padding: 4px 10px;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        .map-caption a {
+            color: var(--guild-gold);
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== MAP LOCATION MARKERS ===== */
+        .map-marker {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: var(--arcane-violet);
+            border: 2px solid var(--pearl-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            font-weight: bold;
+            color: var(--pearl-white);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        /* Map marker positions - adjust to match map */
+        .map-marker.m1 { top: 25%; left: 50%; }
+        .map-marker.m2a { top: 7.5%; left: 86.5%; }
+        .map-marker.m2b { top: 35%; right: 75%; }
+        .map-marker.m2c { top: 56%; right: 19%; }
+        .map-marker.m3 { top: 67.5%; right: 88%; }
+
+        /* (removed - replaced by .side-stack) */
+
+        /* ===== LOCATION KEY ===== */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--barrier-blue);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--shadow-purple);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .location-key-content {
+            padding: 5px 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .location-entry {
+            font-size: 8.5pt;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--arcane-violet);
+            color: var(--pearl-white);
+            border-radius: 9px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--shard-deep);
+            font-size: 9pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--barrier-blue);
+            color: var(--pearl-white);
+            font-size: 6.5pt;
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.encounter {
+            background: var(--shard-deep);
+        }
+
+        .location-tag.loot {
+            background: var(--shadow-purple);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.3;
+        }
+
+        .location-desc p {
+            margin: 0 0 3px 0;
+        }
+
+        .location-desc ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+
+        .location-desc li {
+            margin-bottom: 2px;
+            color: var(--shadow-purple);
+        }
+
+        .location-desc li::marker {
+            color: var(--arcane-violet);
+        }
+
+        /* Key items/people highlighting */
+        .key-item {
+            font-weight: bold;
+            color: var(--arcane-violet);
+        }
+
+        .location-desc .loot,
+        .loot:not(.location-tag) {
+            color: var(--barrier-blue);
+            font-weight: bold;
+        }
+
+        /* ===== GUARDS / SUSPICION BOX ===== */
+        .guards-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--arcane-violet);
+            border-left: 4px solid var(--arcane-violet);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .guards-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--arcane-violet);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .guards-box-inner {
+            padding: 5px 8px;
+            font-size: 8.5pt;
+        }
+
+        .guards-box-inner > p {
+            margin-bottom: 4px;
+            font-size: 8.5pt;
+        }
+
+        .suspicion-tracker {
+            background: rgba(106, 80, 128, 0.08);
+            border: 1px solid rgba(106, 80, 128, 0.2);
+            border-radius: 3px;
+            padding: 4px 6px;
+            margin-bottom: 5px;
+        }
+
+        .suspicion-header {
+            font-family: var(--font-heading);
+            font-size: 9pt;
+            font-weight: bold;
+            color: var(--arcane-violet);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .suspicion-desc {
+            font-size: 8pt;
+            margin-bottom: 3px;
+            line-height: 1.3;
+        }
+
+        .suspicion-levels {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .suspicion-level {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 8pt;
+        }
+
+        .suspicion-num {
+            font-family: var(--font-heading);
+            font-size: 8.5pt;
+            font-weight: bold;
+            color: var(--shard-deep);
+            flex-shrink: 0;
+            min-width: 10px;
+        }
+
+        /* ===== CREATURE INLINE BLOCKS ===== */
+        .creature-inline {
+            margin-top: 3px;
+            padding: 3px 6px;
+            background: rgba(30, 24, 40, 0.06);
+            border-left: 4px solid var(--shard-deep);
+            border-radius: 2px;
+            font-size: 8.5pt;
+        }
+
+        .creature-inline .creature-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 9.5pt;
+            color: var(--shard-deep);
+        }
+
+        .creature-inline .creature-source {
+            color: var(--barrier-blue);
+            font-size: 8pt;
+        }
+
+        .creature-inline .creature-header-line {
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .creature-inline .creature-desc {
+            font-style: italic;
+            color: var(--shadow-purple);
+            font-size: 9pt;
+            margin-top: 1px;
+        }
+
+        .creature-inline .creature-desc.prominent {
+            font-size: 9.5pt;
+            color: var(--shard-deep);
+            letter-spacing: 0.3px;
+        }
+
+        .creature-inline.accent-violet { border-left-color: var(--arcane-violet); }
+        .creature-inline.accent-gold   { border-left-color: var(--guild-gold); }
+        .creature-inline.accent-blue   { border-left-color: var(--barrier-blue); }
+
+        /* Flush variant - sits level with parent box, no nested indent */
+        .creature-inline.flush {
+            background: transparent;
+            border-left: none;
+            border-radius: 0;
+            padding: 2px 0;
+            margin-top: 0;
+        }
+
+        .creature-inline ul {
+            margin: 1px 0 0 0;
+            padding-left: 12px;
+        }
+
+        .creature-inline li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== LIFE / IMPOSTERS BOXES ===== */
+        .life-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--guild-gold);
+            border-left: 4px solid var(--guild-gold);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .life-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--guild-gold);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .life-box-inner {
+            padding: 5px 8px;
+            font-size: 8.5pt;
+        }
+
+        .imposters-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--shard-deep);
+            border-left: 4px solid var(--shard-deep);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .imposters-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--shard-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .imposters-box-inner {
+            padding: 5px 8px;
+            font-size: 8.5pt;
+        }
+
+        .imposters-box-inner > p {
+            margin-bottom: 4px;
+        }
+
+        .imposter-entry {
+            margin-bottom: 4px;
+            padding: 3px 6px;
+            background: rgba(30, 24, 40, 0.04);
+            border-left: 3px solid var(--barrier-blue);
+            border-radius: 2px;
+            font-size: 8pt;
+        }
+
+        .imposter-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .imposter-desc {
+            margin-top: 2px;
+        }
+
+        /* ===== ART PAGE (for book padding theme extraction) ===== */
+        .art-page {
+            background: var(--shard-deep);
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--arcane-violet), var(--guild-gold), var(--arcane-violet));
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>To Deal a Sigil</h1>
+            <div class="subtitle">Magia &#8226; Shard &#8226; Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">&#9676;</span> Stealth</div>
+            <div class="theme-item"><span class="emoji">&#9830;</span> Acquisition</div>
+            <div class="theme-item"><span class="emoji">&#9670;</span> Dense Bazaar</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>The party need a Magia Sigil to get into Magia's innermost districts - and fast. The legal route is too slow and the expedited one too expensive, leaving one option: a shady deal in an overcrowded bazaar.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"You need a Magia Sigil, and fast. Applying through normal channels is far too slow and you're far too broke to afford the exclusive "expedited route." Sigils are heavily controlled, and their illicit trade is harshly punished. Despite this, rumors have it that a Sigil can be 'acquired' in the Shard's Guild markets through a specific contact. Desperate, you've made your way to the most prominent bazaar in Magia, the Sub-Barrier Market, so named for sitting directly underneath the Magia Barrier. A dense cluster of stalls and buildings, thick with smoke and draped silks that make it hard to see more than a few steps ahead. Guild patrols and watchtowers keep watch at every turn, pushing illicit deals into the dark alleyways. With no name or face of this Dealer to go off, your search through the Bazaar begins."</p>
+                    <p style="margin-top: 6px;">While the read-aloud assumes the party needs a Sigil for themselves, the adventure is flexible. A dubious patron could have hired them as a middleman, or the Shard Guild has directly tasked them with capturing the <strong class="key-item">Dealer</strong> alive.</p>
+                    </div>
+                </div>
+
+                <!-- The Thing You're Here For -->
+                <div class="content-box" style="border-left-color: var(--guild-gold); border-color: var(--guild-gold);">
+                    <h2 style="background: var(--guild-gold);">The Thing You're Here For</h2>
+                    <div class="content-box-inner">
+                    <p><strong>Magia Sigil</strong> <em style="color: var(--arcane-violet);">[Magical Accessory]</em></p>
+                    <p>The innermost parts of the city are cut off from the rest by a powerful magical barrier. Only those with the Magia Sigil can move freely through it.</p>
+                    <p style="margin-top: 3px;">An authentic sigil has 3 well-known properties:</p>
+                    <ul>
+                        <li><span class="sigil-prop jelly">&#9672; JELLY</span> <strong>Jellyfying:</strong> Holding the item prompts an Insight Check. On a Failure, the holder becomes Jellyfied. The Holder is aware of the magic when it occurs, even on a Success.</li>
+                        <li><span class="sigil-prop smoke">&#9729; SMOKE</span> <strong>Moist-smoking:</strong> Pouring water over it causes it to emit thick smoke clouds, making its Area Obscured.</li>
+                        <li><span class="sigil-prop null">&#8856; NULL</span> <strong>Anti-magic:</strong> Once per Day, it can nullify 1 Source of minor magic (i.e., from Basic Abilities) within 2 Areas.</li>
+                    </ul>
+                    <div class="item-stats" style="margin-top: 4px;">1 Slot · 3 Gems</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="19) To Deal a Sigil/Pasted image 20260215021333.jpg" alt="The Sub-Barrier Market">
+                    <div class="story-image-caption">The Sub-Barrier Market. Art by: <a href="https://gumroad.com/janurschel" target="_blank">Jan Urschel</a></div>
+                </div>
+
+                <!-- Random Bazaar Stall -->
+                <div class="vendor-box">
+                    <h2>Random Bazaar Stall [D6 + D6]</h2>
+                    <div class="vendor-box-inner">
+                        <table class="vendor-table">
+                            <tr><th></th><th>Vendor</th><th>Situation</th></tr>
+                            <tr><td>1</td><td>Solemn <strong>Weaponsmith</strong></td><td>Obviously drunk</td></tr>
+                            <tr><td>2</td><td>Bubbly <strong>Tattoo Artist</strong></td><td>Pickpocketing <strong class="key-item">Ruffians</strong>!</td></tr>
+                            <tr><td>3</td><td>Spiritual <strong>Artificer</strong></td><td>Overcrowded</td></tr>
+                            <tr><td>4</td><td>Grumpy <strong>Butcher</strong></td><td>No customers</td></tr>
+                            <tr><td>5</td><td>Angry Sacred Chain <strong>Preacher</strong></td><td><strong class="key-item">2 Patrols</strong> on duty</td></tr>
+                            <tr><td>6</td><td>Rich <strong>Jeweler</strong></td><td>Hiding a body</td></tr>
+                        </table>
+                        <div class="magic-items-list">
+                            <h3>Magic Items (D20 per Stall, Item on a 16-20)</h3>
+                            <ul>
+                                <li>Bag o' Feathers (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?gid=1257115321#gid=1257115321" target="_blank">Homebrew Items</a>)</li>
+                                <li>Grass Sword (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?gid=1257115321#gid=1257115321" target="_blank">Homebrew Items</a>)</li>
+                                <li>Holy Icon [Church of the Sacred Chain] (Source, pg. 180)</li>
+                                <li>Jellyfication Antidotes [15C]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 1-2 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Decrease:</strong> Consider increasing the Suspicion needed per tier.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Increase:</strong> Increase the Peacekeepers to Skele-Masters and the Lookouts to Blaster Mages.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Starting Coin:</strong> 200C
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources &amp; Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">This is an adaptation of the one-page dungeon <a href="https://1pagedungeons.itch.io/urban-crawl" target="_blank"><strong>Bazaar of Lies</strong></a> by 1PageDungeons, licensed under CC-by-SA.</p>
+                    <ul>
+                        <li><strong>Scout Drone:</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Peacekeeper:</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Assassin:</strong> by Quagg (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                        <li><strong>Delinquent Goon:</strong> by Yan Kodiac (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank">Homebrew</a>)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - THE SUB-BARRIER MARKET ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Sub-Barrier Market <span>[Adventure Map]</span></h1>
+        </div>
+
+        <!-- Top Row: Map + Side Content -->
+        <div class="page2-top">
+            <!-- Left: Map -->
+            <div class="site-map-container">
+                <img src="19) To Deal a Sigil/bazaarmap.png" alt="Map of the Sub-Barrier Market">
+
+                <!-- Location Markers -->
+                <div class="map-marker m1">1</div>
+                <div class="map-marker m2a">2</div>
+                <div class="map-marker m2b">2</div>
+                <div class="map-marker m2c">2</div>
+                <div class="map-marker m3">3</div>
+
+                <div class="map-caption">Map of the Bazaar. Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a>. <em>(Right-click + Open in new tab for full size)</em></div>
+            </div>
+
+            <!-- Right: Side Stack -->
+            <div class="side-stack">
+                <!-- Guards of the Bazaar -->
+                <div class="guards-box">
+                    <h2>Guards of the Bazaar</h2>
+                    <div class="guards-box-inner">
+                        <p>Hired peacekeepers within the Market, <br>loyal to the Shard's Guild.</p>
+                        <div class="suspicion-tracker">
+                            <div class="suspicion-header">Suspicion</div>
+                            <p class="suspicion-desc">Guards share <strong>Suspicion</strong>. Noticeable or hostile actions increase it. The Market opening fresh for the day decreases it by one. The party starts with no <strong>Suspicion</strong>.</p>
+                            <div class="suspicion-levels">
+                                <div class="suspicion-level"><span class="suspicion-num">1.</span> You were seen in the Bazaar.</div>
+                                <div class="suspicion-level"><span class="suspicion-num">2.</span> <strong class="key-item">Lookouts</strong> track your movements.</div>
+                                <div class="suspicion-level"><span class="suspicion-num">3.</span> Pairs of <strong class="key-item">Patrols</strong> follow you around.</div>
+                                <div class="suspicion-level"><span class="suspicion-num">4.</span> All <strong class="key-item">Lookouts</strong>/<strong class="key-item">Patrols</strong> are hostile.</div>
+                            </div>
+                        </div>
+                        <div class="creature-inline flush accent-violet">
+                            <div class="creature-header-line"><span class="creature-name">Lookout</span> <span class="creature-source">[Scout Drone]</span></div>
+                            <div class="creature-desc">Camouflaged. Boasting. Acrobatic.</div>
+                            <ul>
+                                <li><strong>Eagle-eyed</strong>, sees the entire Bazaar.</li>
+                                <li>If hostile, mark party members with tracking pointers (Ability: Target Acquired).</li>
+                            </ul>
+                        </div>
+                        <div class="creature-inline flush accent-violet">
+                            <div class="creature-header-line"><span class="creature-name">Patrol</span> <span class="creature-source">[Peacekeeper]</span></div>
+                            <div class="creature-desc">Decisive. Sturdy. Guild adornments.</div>
+                            <ul>
+                                <li><strong>On the streets</strong>, overseeing deals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Life of the Market -->
+                <div class="life-box">
+                    <h2>Life in the Market</h2>
+                    <div class="life-box-inner">
+                        <p>Many honest folks live and sell wares here despite its reputation. It's easier to breathe here than under the gaze of the Church or Patricians. That said, plenty of delinquents <i>do</i> live here.</p>
+                        <br>
+                        <div class="creature-inline flush accent-gold">
+                            <div class="creature-header-line"><span class="creature-name">Ruffian</span> <span class="creature-source">[Delinquent Goon]</span></div>
+                            <div class="creature-desc">Under-fed. Dismissive. Quick to run.</div>
+                            <ul>
+                                <li>Each <strong>knows</strong> one descriptor of the <strong class="key-item">Dealer</strong>. Will <strong>share</strong> it for a random cost:</li>
+                                <li style="margin-left: 10px;">A custom trinket for their mother</li>
+                                <li style="margin-left: 10px;">A <strong class="key-item">Patrol</strong>'s feathered helmet</li>
+                                <li style="margin-left: 10px;">A specific vendor's head</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="creature-inline flush accent-blue">
+                            <div class="creature-header-line">
+                                <span class="creature-name">Dealer</span> <span class="creature-source">[Assassin]<br></span>
+                                <span class="sigil-prop jelly" style="margin-left: 4px;">&#9672; JELLY</span>
+                                <span class="sigil-prop smoke">&#9729; SMOKE</span>
+                                <span class="sigil-prop null">&#8856; NULL</span>
+                            </div>
+                            <div class="creature-desc prominent">Tenebrate. Blond. Moustached.</div>
+                            <ul>
+                                <li><strong>Sells</strong> the <span class="loot">Magia Sigil</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Locations + Imposters -->
+        <div class="page2-bottom">
+            <!-- Bazaar Locations -->
+            <div class="location-key-box">
+                <h2>Bazaar Locations</h2>
+                <div class="location-key-content">
+                    <!-- Location 1 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">1</span>
+                            <span class="location-name">The Streets</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Overcrowded with people. Visibility is limited. Each Area is Isolated when running through. <strong class="key-item">4 Patrols</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">2</span>
+                            <span class="location-name">The Watchtowers</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>Each watchtower has <strong class="key-item">2 Lookouts</strong> on the roof. <strong class="key-item">2 Patrols</strong> guard the chest inside, containing <span class="loot">Patrol Outfits</span> and <span class="loot">50C each</span>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location 3 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">3</span>
+                            <span class="location-name">Warehouse</span>
+                        </div>
+                        <div class="location-desc">
+                            <p><strong class="key-item">Ruffians</strong> roam here, heckling anyone coming through.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location 4 -->
+                    <div class="location-entry">
+                        <div class="location-header">
+                            <span class="location-number">4</span>
+                            <span class="location-name">Dealer &amp; Imposters</span>
+                        </div>
+                        <div class="location-desc">
+                            <p>On the map, randomly determine which stalls each is located at.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Imposters -->
+            <div class="imposters-box">
+                <h2>The Imposters</h2>
+                <div class="imposters-box-inner">
+                    <p>3 disguised <strong class="key-item">Patrols</strong> pretend to be selling <span class="loot">Magia Sigils</span>. They stock incomplete replicas and raise <strong>Suspicion</strong> on anyone who shows interest.</p>
+                    <div class="imposter-entry">
+                        <span class="imposter-desc">One sells Jellyfying Sigils <span class="sigil-prop jelly">&#9672; JELLY</span><br>Vendor is moustached and blond but a <strong>Chib</strong>.</span>
+                    </div>
+                    <div class="imposter-entry">
+                        <span class="imposter-desc">One sells Moist-Smoking Sigils <span class="sigil-prop smoke">&#9729; SMOKE</span><br>Vendor is blond and a <strong>Tenebrate</strong> but no moustache.</span>
+                    </div>
+                    <div class="imposter-entry">
+                        <span class="imposter-desc">One sells Anti-Magic Sigils <span class="sigil-prop null">&#8856; NULL</span><br> Vendor is a <strong>Tenebrate</strong> and moustached but not blond.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
