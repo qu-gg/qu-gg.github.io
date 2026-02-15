@@ -82,3 +82,13 @@ Magic Items (1/5 Chance per Stall)
 
 
 ![[Pasted image 20260215021446.jpg]]
+> Overhead view of the Sub-Barrier Market. Art by: [Jan Urschel](https://gumroad.com/janurschel)
+
+![[Pasted image 20260215132657.jpg]]
+> Shard's Guild Guard. Art by: [Jess Jones](https://www.artstation.com/artwork/3dVOOm)
+
+![[Pasted image 20260215133134.jpg]]
+> Magia Sigil Pendant. Art by: [The Dragon Prince](https://dragonprince.fandom.com/wiki/Archmage_Akiyu/Gallery?file=Credit242.png)
+
+![[Pasted image 20260215133353.jpg]]
+> Magia Concept Art. Art by: [BREAK!! Blog](https://breakrpg.blogspot.com/2019/05/magia-arcane.html)

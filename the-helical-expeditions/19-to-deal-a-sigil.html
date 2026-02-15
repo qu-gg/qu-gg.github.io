@@ -962,13 +962,75 @@
             margin-top: 2px;
         }
 
-        /* ===== ART PAGE (for book padding theme extraction) ===== */
+        /* ===== ART PAGE (PAGE 3 - ART VIBEBOARD) ===== */
         .art-page {
             background: var(--shard-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
         }
 
         .art-page::before {
             background: linear-gradient(90deg, var(--arcane-violet), var(--guild-gold), var(--arcane-violet));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--guild-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            position: relative;
+            border: 3px solid var(--arcane-violet);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--shadow-purple);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
+            color: var(--pearl-white);
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .art-item .art-caption a {
+            color: var(--guild-gold);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
         }
 
         /* ===== PRINT STYLES ===== */
@@ -995,6 +1057,7 @@
         <!-- Page Progress Indicator -->
         <div class="page-progress">
             <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
             <div class="progress-bubble"></div>
         </div>
 
@@ -1118,6 +1181,7 @@
         <div class="page-progress">
             <div class="progress-bubble"></div>
             <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
         </div>
 
         <div class="adventure-site-header">
@@ -1277,6 +1341,49 @@
                         <span class="imposter-desc">One sells Anti-Magic Sigils <span class="sigil-prop null">&#8856; NULL</span><br> Vendor is a <strong>Tenebrate</strong> and moustached but not blond.</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ==================== -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="19) To Deal a Sigil/Pasted image 20260215021333.jpg" alt="The Sub-Barrier Market">
+                <div class="art-caption">"The Sub-Barrier Market" <br> Art by <a href="https://gumroad.com/janurschel" target="_blank">Jan Urschel</a></div>
+            </div>
+            <div class="art-item">
+                <img src="19) To Deal a Sigil/Pasted image 20260215021446.jpg" alt="Overhead view of the Sub-Barrier Market">
+                <div class="art-caption">"Overhead view of the Sub-Barrier Market" <br> Art by <a href="https://gumroad.com/janurschel" target="_blank">Jan Urschel</a></div>
+            </div>
+            <div class="art-item" style="background: var(--pearl-white);">
+                <img src="19) To Deal a Sigil/bazaarmap.png" alt="Map of the Sub-Barrier Market">
+                <div class="art-caption">"Map of the Bazaar" <br> Art by <a href="https://1pagedungeons.itch.io/" target="_blank">1pagedungeons</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="19) To Deal a Sigil/Pasted image 20260215132657.jpg" alt="Shard's Guild Guard">
+                <div class="art-caption">"Shard's Guild Guard" <br> Art by <a href="https://www.artstation.com/artwork/3dVOOm" target="_blank">Jess Jones</a></div>
+            </div>
+            <div class="art-item">
+                <img src="19) To Deal a Sigil/Pasted image 20260215133134.jpg" alt="Magia Sigil Pendant">
+                <div class="art-caption">"Magia Sigil Pendant" <br> Art by <a href="https://dragonprince.fandom.com/wiki/Archmage_Akiyu/Gallery?file=Credit242.png" target="_blank">The Dragon Prince</a></div>
+            </div>
+            <div class="art-item">
+                <img src="19) To Deal a Sigil/Pasted image 20260215133353.jpg" alt="Magia Concept Art" style="object-position: 22% center;">
+                <div class="art-caption">"Magia Concept Art" <br> Art by <a href="https://breakrpg.blogspot.com/2019/05/magia-arcane.html" target="_blank">BREAK!! Blog</a></div>
             </div>
         </div>
     </div>
