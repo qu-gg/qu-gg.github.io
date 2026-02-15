@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T00:05:19.230485Z",
+  "lastUpdated": "2026-02-15T12:01:58.237785Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-02-14T15:58:43.952Z",
       "replyCount": 1,
-      "repostCount": 20,
-      "likeCount": 30,
+      "repostCount": 23,
+      "likeCount": 36,
       "embed": {
         "type": "external",
         "uri": "https://plusoneexp.com/products/digital-angel?_pos=1&_sid=425eb93de&_ss=r&variant=47898395312350",
@@ -95,13 +95,45 @@
       "indexedAt": "2026-02-14T14:45:29.849Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 5,
+      "likeCount": 7,
       "embed": {
         "type": "images",
         "images": [
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rbc7cksdufukfsezu6mnqqiw/bafkreigev6fcvy5qhhu3ejamx7ul7z37w32ys7ribja5ugnvrtl6io54mq@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rbc7cksdufukfsezu6mnqqiw/bafkreigev6fcvy5qhhu3ejamx7ul7z37w32ys7ribja5ugnvrtl6io54mq@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mes5e2ovzk2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "save.vs.totalpartykill.ca",
+        "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve@jpeg"
+      },
+      "record": {
+        "text": "The other book I got today is one I\u2019ve also wanted for ages, perhaps most notable for always being sold out: His Majesty the Worm! It\u2019s chonky.",
+        "createdAt": "2026-02-14T04:05:11.893Z"
+      },
+      "indexedAt": "2026-02-14T04:05:16.653Z",
+      "replyCount": 3,
+      "repostCount": 5,
+      "likeCount": 80,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreiey2psisyvvuba6hiihhuu6r5rlkldeu2ojhilxphwfcmirbrccui@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreiey2psisyvvuba6hiihhuu6r5rlkldeu2ojhilxphwfcmirbrccui@jpeg",
             "alt": ""
           }
         ]
@@ -341,8 +373,8 @@
       },
       "indexedAt": "2026-02-12T15:16:49.951Z",
       "replyCount": 7,
-      "repostCount": 26,
-      "likeCount": 124,
+      "repostCount": 27,
+      "likeCount": 126,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-human-advancement.html",
@@ -506,8 +538,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 514,
-      "likeCount": 1043,
+      "repostCount": 515,
+      "likeCount": 1045,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -535,8 +567,8 @@
       },
       "indexedAt": "2026-02-11T00:35:47.258Z",
       "replyCount": 2,
-      "repostCount": 45,
-      "likeCount": 79,
+      "repostCount": 46,
+      "likeCount": 80,
       "embed": {
         "type": "external",
         "uri": "https://podcast.bloggies.org/",
@@ -622,7 +654,7 @@
       },
       "indexedAt": "2026-02-09T15:41:19.653Z",
       "replyCount": 3,
-      "repostCount": 67,
+      "repostCount": 68,
       "likeCount": 116,
       "embed": {
         "type": "external",
@@ -882,8 +914,8 @@
       },
       "indexedAt": "2026-02-07T08:22:43.150Z",
       "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 37,
+      "repostCount": 7,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -1137,35 +1169,6 @@
         "title": "Protect The Child (Playtesting!) by Mint-Rabbit",
         "description": "A game about monster babysitters.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreihzounvmf5bbvx5y7i52svr4x4xccrilm4pnehv4755yxdw4onglq@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:j2xg7klhbmawzlk6uqa7huhg/app.bsky.feed.post/3mdzv2svpps2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "jezgordon.bsky.social",
-        "displayName": "El Jezident\u00e9",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j2xg7klhbmawzlk6uqa7huhg/bafkreihzfk3kvcx43bgirnkqhbmvgniyvz2kmquqswoi442atd5v7mhohq@jpeg"
-      },
-      "record": {
-        "text": "go buy a cool poster, if not the coolest N\u00famen\u00f3r poster there is.\n\nwww.inprnt.com/gallery/arto...",
-        "createdAt": "2026-02-04T12:32:58.083Z"
-      },
-      "indexedAt": "2026-02-04T12:33:05.453Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 9,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.inprnt.com/gallery/artofjez/the-realm-of-numenor-map/",
-        "title": "The Realm of Numenor Map, an art print by Jez Gordon",
-        "description": "Gallery Quality Prints",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:j2xg7klhbmawzlk6uqa7huhg/bafkreig4ju3ttn3awm7ss5f7wxtqsacvlrefe7yohzgwbrrtxonavchbki@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
