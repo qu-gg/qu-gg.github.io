@@ -1151,7 +1151,7 @@
                             <div class="suspicion-header">Suspicion</div>
                             <p class="suspicion-desc">Guards share <strong>Suspicion</strong>. Noticeable or hostile actions increase it. The Market opening fresh for the day decreases it by one. The party starts with no <strong>Suspicion</strong>.</p>
                             <div class="suspicion-levels">
-                                <div class="suspicion-level"><span class="suspicion-num">1.</span> You were seen in the Bazaar.</div>
+                                <div class="suspicion-level"><span class="suspicion-num">1.</span> Guards take note of you.</div>
                                 <div class="suspicion-level"><span class="suspicion-num">2.</span> <strong class="key-item">Lookouts</strong> track your movements.</div>
                                 <div class="suspicion-level"><span class="suspicion-num">3.</span> Pairs of <strong class="key-item">Patrols</strong> follow you around.</div>
                                 <div class="suspicion-level"><span class="suspicion-num">4.</span> All <strong class="key-item">Lookouts</strong>/<strong class="key-item">Patrols</strong> are hostile.</div>
@@ -1180,18 +1180,17 @@
                     <h2>Life in the Market</h2>
                     <div class="life-box-inner">
                         <p>Many honest folks live and sell wares here despite its reputation. It's easier to breathe here than under the gaze of the Church or Patricians. That said, plenty of delinquents <i>do</i> live here.</p>
-                        <br>
+
                         <div class="creature-inline flush accent-gold">
                             <div class="creature-header-line"><span class="creature-name">Ruffian</span> <span class="creature-source">[Delinquent Goon]</span></div>
                             <div class="creature-desc">Under-fed. Dismissive. Quick to run.</div>
                             <ul>
-                                <li>Each <strong>knows</strong> one descriptor of the <strong class="key-item">Dealer</strong>. Will <strong>share</strong> it for a random cost:</li>
+                                <li>Each <strong>knows</strong> one descriptor of the <strong class="key-item">Dealer</strong>. <br>Will <strong>share</strong> it for a random cost:</li>
                                 <li style="margin-left: 10px;">A custom trinket for their mother</li>
                                 <li style="margin-left: 10px;">A <strong class="key-item">Patrol</strong>'s feathered helmet</li>
                                 <li style="margin-left: 10px;">A specific vendor's head</li>
                             </ul>
                         </div>
-                        <br>
                         <div class="creature-inline flush accent-blue">
                             <div class="creature-header-line">
                                 <span class="creature-name">Dealer</span> <span class="creature-source">[Assassin]<br></span>
@@ -1202,6 +1201,8 @@
                             <div class="creature-desc prominent">Tenebrate. Blond. Moustached.</div>
                             <ul>
                                 <li><strong>Sells</strong> the <span class="loot">Magia Sigil</span>.</li>
+                                <li><strong>Won't deal</strong> with anyone followed by <strong class="key-item">Patrols</strong>.</li>
+                                <li>If threatened, uses the Sigil's smoke to Flee.</li>
                             </ul>
                         </div>
                     </div>
@@ -1233,7 +1234,7 @@
                             <span class="location-name">The Watchtowers</span>
                         </div>
                         <div class="location-desc">
-                            <p>Each watchtower has <strong class="key-item">2 Lookouts</strong> on the roof. <strong class="key-item">2 Patrols</strong> guard the chest inside, containing <span class="loot">Patrol Outfits</span> and <span class="loot">50C each</span>.</p>
+                            <p>Each watchtower has <strong class="key-item">2 Lookouts</strong> on the roof. <strong class="key-item">2 Patrols</strong> guard the chest inside, containing <span class="loot">Patrol Outfits</span> [Authoritative Outfit, grants Edge on Checks to avoid Suspicion from a distance] and <span class="loot">50C each</span>.</p>
                         </div>
                     </div>
 
@@ -1265,7 +1266,7 @@
             <div class="imposters-box">
                 <h2>The Imposters</h2>
                 <div class="imposters-box-inner">
-                    <p>3 disguised <strong class="key-item">Patrols</strong> pretend to be selling <span class="loot">Magia Sigils</span>. They stock incomplete replicas and raise <strong>Suspicion</strong> on anyone who shows interest.</p>
+                    <p>3 disguised <strong class="key-item">Patrols</strong> pretend to be selling <span class="loot">Magia Sigils</span>. They stock incomplete replicas that will fail at the Barrier and raise <strong>Suspicion</strong> on anyone who shows interest. Can be tested for missing properties.</p>
                     <div class="imposter-entry">
                         <span class="imposter-desc">One sells Jellyfying Sigils <span class="sigil-prop jelly">&#9672; JELLY</span><br>Vendor is moustached and blond but a <strong>Chib</strong>.</span>
                     </div>
