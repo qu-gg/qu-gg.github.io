@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T00:06:11.488652Z",
+  "lastUpdated": "2026-02-16T12:06:35.129464Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -110,6 +110,53 @@
       }
     },
     {
+      "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mevvcuqwic2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "hessan-yongdi.itch.io",
+        "displayName": "Hessan Yongdi",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreierjtouydh4y7wrkinajyptzsxmjhfjyihcehj65aotkuj7gltmme@jpeg"
+      },
+      "record": {
+        "text": "The kids fell in love with the shipbuilding system from Traveller so I decided to bind them a copy of the 2022 version of High Guard. I think it\u2019s my best #TTRPG #bookbinding to date. \n\nDecided to sew the cover to reduce strain on the end papers a bit and make it easier to glue them on straight.",
+        "createdAt": "2026-02-15T15:52:01.128Z"
+      },
+      "indexedAt": "2026-02-15T15:52:06.453Z",
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 27,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiczuxubn7ykaev77xaxl4f3e5pymhxjf5ukbu5gp2dtymg5kzikgy@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiczuxubn7ykaev77xaxl4f3e5pymhxjf5ukbu5gp2dtymg5kzikgy@jpeg",
+            "alt": "The cover, showing the black star-spangled bookcloth used for the cover."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiema2t2biwwm5kzsl4rdz54b2k4b3lqgyu7cxdx5k4ccjjrt6azi4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiema2t2biwwm5kzsl4rdz54b2k4b3lqgyu7cxdx5k4ccjjrt6azi4@jpeg",
+            "alt": "The spine, showing the twin tapes with French links overtop them, a pair of Coptic link stitching in the middle, and how the sewing on the cover links to the spine stitching."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreielpguia5aiin5wzquuliuk5acu234gwfpvkfaqxgvuk5ulmwzsbi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreielpguia5aiin5wzquuliuk5acu234gwfpvkfaqxgvuk5ulmwzsbi@jpeg",
+            "alt": "An interior shot, showing the blue endpapers and the title sheet. It is the 2022 edition of the Traveler High Guard manual released by Mongoose. "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreibyw6jtc7azyfuw5a354tkbwlarw56af2nqenemzunlrsmvrxeg4y@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreibyw6jtc7azyfuw5a354tkbwlarw56af2nqenemzunlrsmvrxeg4y@jpeg",
+            "alt": "An interior shot, showing ship stat blocks two of the spacecraft that come with the book, a military gig and a ship\u2019s launch. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3metf7qu7ic2v",
       "source": "bluesky",
       "author": {
@@ -185,7 +232,7 @@
       "indexedAt": "2026-02-14T04:05:16.653Z",
       "replyCount": 4,
       "repostCount": 5,
-      "likeCount": 88,
+      "likeCount": 89,
       "embed": {
         "type": "images",
         "images": [
@@ -310,7 +357,7 @@
       "indexedAt": "2026-02-13T04:16:29.551Z",
       "replyCount": 4,
       "repostCount": 21,
-      "likeCount": 115,
+      "likeCount": 116,
       "embed": {
         "type": "external",
         "uri": "https://www.failuretolerated.com/talking-to-the-dungeon",
@@ -371,7 +418,7 @@
       "indexedAt": "2026-02-12T20:21:55.855Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 9,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/dicemonkey/courts-of-rememory-a-supplement-to-song-of-the-river-prince",
@@ -432,7 +479,7 @@
       "indexedAt": "2026-02-12T15:57:50.258Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 24,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://open.spotify.com/episode/4kgiCsDUue0jSSXypuJP43?si=7a0285f8aca142f0",
@@ -625,8 +672,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 516,
-      "likeCount": 1049,
+      "repostCount": 525,
+      "likeCount": 1063,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -805,8 +852,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/164/941/large/ru-.jpg?1770553470",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/164/941/large/ru-.jpg?1770553470",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/164/941/large/ru-.webp?1770553470",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/164/941/large/ru-.webp?1770553470",
             "alt": ""
           }
         ]
@@ -834,53 +881,53 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/338/large/ru-08.jpg?1770530285",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/338/large/ru-08.jpg?1770530285",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/338/large/ru-08.webp?1770530285",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/338/large/ru-08.webp?1770530285",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/323/large/ru-02.jpg?1770530187",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/323/large/ru-02.jpg?1770530187",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/323/large/ru-02.webp?1770530187",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/323/large/ru-02.webp?1770530187",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/337/large/ru-07.jpg?1770530228",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/337/large/ru-07.jpg?1770530228",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/337/large/ru-07.webp?1770530228",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/337/large/ru-07.webp?1770530228",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/326/large/ru-03.jpg?1770530195",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/326/large/ru-03.jpg?1770530195",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/326/large/ru-03.webp?1770530195",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/326/large/ru-03.webp?1770530195",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/335/large/ru-06.jpg?1770530220",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/335/large/ru-06.jpg?1770530220",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/335/large/ru-06.webp?1770530220",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/335/large/ru-06.webp?1770530220",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/332/large/ru-05.jpg?1770530212",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/332/large/ru-05.jpg?1770530212",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/332/large/ru-05.webp?1770530212",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/332/large/ru-05.webp?1770530212",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/346/large/ru-010.jpg?1770530252",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/346/large/ru-010.jpg?1770530252",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/346/large/ru-010.webp?1770530252",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/346/large/ru-010.webp?1770530252",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/330/large/ru-04.jpg?1770530204",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/330/large/ru-04.jpg?1770530204",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/159/330/large/ru-04.webp?1770530204",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/159/330/large/ru-04.webp?1770530204",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/343/large/ru-09.jpg?1770530244",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/343/large/ru-09.jpg?1770530244",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/343/large/ru-09.webp?1770530244",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/343/large/ru-09.webp?1770530244",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/319/large/ru-01.jpg?1770530178",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/319/large/ru-01.jpg?1770530178",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/159/319/large/ru-01.webp?1770530178",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/159/319/large/ru-01.webp?1770530178",
             "alt": ""
           },
           {
@@ -1043,9 +1090,9 @@
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreibyr4bay4eehwng535nmagarj7w3bnujqwbaqdic7x46pyk2szpme@jpeg"
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
       }
     },
     {
@@ -1992,7 +2039,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 616,
-      "likeCount": 2720,
+      "likeCount": 2721,
       "embed": {
         "type": "images",
         "images": [
@@ -2307,7 +2354,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1937,
-      "likeCount": 8376,
+      "likeCount": 8377,
       "embed": {
         "type": "images",
         "images": [
@@ -3087,7 +3134,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2624,
-      "likeCount": 15419,
+      "likeCount": 15418,
       "embed": {
         "type": "images",
         "images": [
