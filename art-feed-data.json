@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T12:01:58.237785Z",
+  "lastUpdated": "2026-02-16T00:06:11.488652Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mew5jei4ts2u",
+      "source": "bluesky",
+      "author": {
+        "handle": "alphabetsauce.bsky.social",
+        "displayName": "Daemon Soup",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreidrq6lcm4byqj7xkadcngg3h3u3jnabwhq2aye64saoxf22gpqkum@jpeg"
+      },
+      "record": {
+        "text": "Made an anime ending theme animatic for my current weird Deltarune and Homestuck inspired TTRPG campaign. Why? {shrugs} I like my players and I wanted them to see I guess!\n\nyoutu.be/EfQq_KjYe2o",
+        "createdAt": "2026-02-15T18:18:48.882Z"
+      },
+      "indexedAt": "2026-02-15T18:18:56.757Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/EfQq_KjYe2o",
+        "title": "Yearning and Pining - Homestuck Inspired RPG Anime Ending Theme",
+        "description": "YouTube video by Planless Dan",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreierwxw3bn2rwkna55shzxrdfud2qg5acmho3j2kiblvti5aq7gu3e@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:zzwzdj4ao4cwxxgtnymgvg7o/app.bsky.feed.post/3mevvjonngs2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "mint-rabbit.bsky.social",
+        "displayName": "There's A TTRPG For That",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreifhb24suuhwskh2qe64exgndg2emim2nhovknriieamjlcexn5c4y@jpeg"
+      },
+      "record": {
+        "text": "I've got another #ttrpg playkit for you to check out! This is a Google Sheets playkit for Warrenguard, by @luckoftheharbor.com. You copy and paste info from each playbook and dragon to your character sheet!\nIf you like my work, you can also commission me! Check out my pinned post.",
+        "createdAt": "2026-02-15T15:55:49.615Z"
+      },
+      "indexedAt": "2026-02-15T15:55:55.851Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://docs.google.com/spreadsheets/d/1eZ1Dhta6rU511fQd8YTkOzXMVqLelMUhVcQbj2MrrEM/edit?usp=sharing",
+        "title": "Warrenguard Playkit",
+        "description": "",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreidvb2uecbsu3muljwvd2mgpgf4eix4hcytck4yrxcq7i4k63gmn3m@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3metf7qu7ic2v",
       "source": "bluesky",
       "author": {
@@ -65,8 +123,8 @@
       },
       "indexedAt": "2026-02-14T15:58:43.952Z",
       "replyCount": 1,
-      "repostCount": 23,
-      "likeCount": 36,
+      "repostCount": 25,
+      "likeCount": 38,
       "embed": {
         "type": "external",
         "uri": "https://plusoneexp.com/products/digital-angel?_pos=1&_sid=425eb93de&_ss=r&variant=47898395312350",
@@ -125,9 +183,9 @@
         "createdAt": "2026-02-14T04:05:11.893Z"
       },
       "indexedAt": "2026-02-14T04:05:16.653Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 5,
-      "likeCount": 80,
+      "likeCount": 88,
       "embed": {
         "type": "images",
         "images": [
@@ -291,6 +349,35 @@
             "alt": "Rat head with two hearts doodle on a yellow mailer."
           }
         ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:uehvi4xi2ej44ge5qxf3cyug/app.bsky.feed.post/3meosyokoc22k",
+      "source": "bluesky",
+      "author": {
+        "handle": "dicemonkey.itch.io",
+        "displayName": "Mark Meredith",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uehvi4xi2ej44ge5qxf3cyug/bafkreihncycpel4ltwjrkw25ihsn67qgqsp5c3sa7hblbr3topcharqzk4@jpeg"
+      },
+      "record": {
+        "text": "I'm less than 3 days to go in this Kickstarter. I'm only about $550 away from funding! Any help you can provide is a HUGE help to getting us funded! www.kickstarter.com/projects/dic...",
+        "createdAt": "2026-02-12T20:21:53.440Z"
+      },
+      "indexedAt": "2026-02-12T20:21:55.855Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 9,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/dicemonkey/courts-of-rememory-a-supplement-to-song-of-the-river-prince",
+        "title": "Courts of Rememory: A Supplement to Song of the River Prince",
+        "description": "A book about the Fey and their Kind throughout the Riverlands",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uehvi4xi2ej44ge5qxf3cyug/bafkreih4jr7jeipcgdaifvzevqntyk3lck6qqmnf4u2r4jmi3oumnzb42a@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -538,8 +625,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 515,
-      "likeCount": 1045,
+      "repostCount": 516,
+      "likeCount": 1049,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -595,9 +682,9 @@
         "createdAt": "2026-02-09T17:52:40.092Z"
       },
       "indexedAt": "2026-02-09T17:52:41.651Z",
-      "replyCount": 1,
-      "repostCount": 65,
-      "likeCount": 149,
+      "replyCount": 2,
+      "repostCount": 66,
+      "likeCount": 151,
       "embed": {
         "type": "external",
         "uri": "https://yochaigal.itch.io/cairn-barebones-edition",
@@ -797,8 +884,8 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/140/704/large/ru-20260207000442.jpg?1770464684",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/140/704/large/ru-20260207000442.jpg?1770464684",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/140/704/large/ru-20260207000442.webp?1770464684",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/140/704/large/ru-20260207000442.webp?1770464684",
             "alt": ""
           }
         ]
@@ -915,138 +1002,13 @@
       "indexedAt": "2026-02-07T08:22:43.150Z",
       "replyCount": 2,
       "repostCount": 7,
-      "likeCount": 39,
+      "likeCount": 40,
       "embed": {
         "type": "images",
         "images": [
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreie65t3lljapcp2msjuovpwfsgmfvjaf5rskzvfm24ilgv2cskbl74@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreie65t3lljapcp2msjuovpwfsgmfvjaf5rskzvfm24ilgv2cskbl74@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:pfr3dma4zowxuyrrko3eqh7i/app.bsky.feed.post/3me7jvlsyu22b",
-      "source": "bluesky",
-      "author": {
-        "handle": "sean.zimmerit.moe",
-        "displayName": "Sean | zimmerit.moe ",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pfr3dma4zowxuyrrko3eqh7i/bafkreietzlpp3zer4hh5fp26y2wjrilq6q3fzlzlnscwagwmsvnujzgbaq@jpeg"
-      },
-      "record": {
-        "text": "I've slowly been working on series of article tracing the history of Heavy Gear, the VOTOMS-influenced tabletop game that arrived in 1995 and still exists today. The game's origins lay with a couple of early anime magazines, Protoculture Addicts and Mecha Press.\n\nwww.zimmerit.moe/protoculture...",
-        "createdAt": "2026-02-06T18:29:10.153Z"
-      },
-      "indexedAt": "2026-02-06T18:29:12.556Z",
-      "replyCount": 7,
-      "repostCount": 55,
-      "likeCount": 121,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.zimmerit.moe/protoculture-addicts-mecha-press-heavy-gear/",
-        "title": "Mecha from Montreal, A History of Heavy Gear Ch. I: Protoculture Addicts & Mecha Press",
-        "description": "Wearing its VOTOMS influence on its sleeve, the tabletop game Heavy Gear rose to prominence in the late \u201990s. It had come, albeit indirectly, out of foundations laid in 1987 by a handful of C\u2026",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pfr3dma4zowxuyrrko3eqh7i/bafkreidf66qyx3fmmpxriv2lgi7a5uz32lf7mjj5p6wvgyyw76lsuyebcu@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:5ip66pwlywudmckkz3txxxcs/app.bsky.feed.post/3me7cw3rwac2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "gbloodworth.bsky.social",
-        "displayName": "Graeme",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5ip66pwlywudmckkz3txxxcs/bafkreihmmd7bdmzo2mityhj6xhvwhiyk4prvgr7h3lmira6kc6itmkk3vy@jpeg"
-      },
-      "record": {
-        "text": "Been a long while since I talked about this, but if for some reason you're jonesing to play a legally distinct Crystal Gem in 5e. I've had this freebee up for a long time and it just passed its 300th download!  www.drivethrurpg.com/en/product/4...",
-        "createdAt": "2026-02-06T16:24:10.682Z"
-      },
-      "indexedAt": "2026-02-06T16:24:13.652Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 11,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5ip66pwlywudmckkz3txxxcs/bafkreib3m3wrvuise5aqqmjdmlb3kszqxaxoxedlirltrszyber2aepr4a@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5ip66pwlywudmckkz3txxxcs/bafkreib3m3wrvuise5aqqmjdmlb3kszqxaxoxedlirltrszyber2aepr4a@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3me73zyjz3c2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
-      },
-      "record": {
-        "text": "HIS MAJESTY THE WORM has a new game+ option. If you complete your quest and retire your adventurer, you can convert their XP into mastered talents from any path. This lets you start a new adventurer as something of a cross-class character.",
-        "createdAt": "2026-02-06T14:21:05.320Z"
-      },
-      "indexedAt": "2026-02-06T14:21:09.552Z",
-      "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 55,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreieaxpqjjfawoxqf7x5jrf3i4ugxgizhgkucexf7rkhi6ax2gafnwe@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreieaxpqjjfawoxqf7x5jrf3i4ugxgizhgkucexf7rkhi6ax2gafnwe@jpeg",
-            "alt": "A page from His Majesty the Worm provided the rules summarized in the post. The art depicts adventurers going up portrait-laden stairs."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:v3eyk4vpqk4eroenx2w32s6j/app.bsky.feed.post/3me73tw5mds2c",
-      "source": "bluesky",
-      "author": {
-        "handle": "ateliermimir.bsky.social",
-        "displayName": "Atelier Mimir",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:v3eyk4vpqk4eroenx2w32s6j/bafkreidxxlgqe4lssodda3ihfql4ajn4dcixxj3p74u7yhgwbsvxxc5i3e@jpeg"
-      },
-      "record": {
-        "text": "\u6765\u9031\u304b\u3089\u6e0b\u8c37\u3067\u300c\u3053\u308c\u306f\u30b2\u30fc\u30e0\u306a\u306e\u304b\uff1f\u5c55\uff13\u300d\u958b\u50ac\u3067\u3059\u3002\u30ae\u30ea\u30ae\u30ea\u307e\u3067\u5236\u4f5c\u3057\u3066\u307e\u3059\u3002\u8ca9\u58f2\u3057\u306a\u3044\u4f5c\u54c1\u3092\u4f5c\u308b\u306e\u3082\u3001\u305f\u307e\u306b\u306f\u826f\u3044\u3067\u3059\u306d\u3002\n\nThe exhibition \u201cIs This a Game?\u201d opens in Shibuya next week.\nI\u2019ll be working on the piece right up until the last minute.\nIt\u2019s actually refreshing to make a work that isn\u2019t for sale once in a while.",
-        "createdAt": "2026-02-06T14:17:41.490Z"
-      },
-      "indexedAt": "2026-02-06T14:17:49.151Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 23,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:v3eyk4vpqk4eroenx2w32s6j/bafkreibiskkvno5hikyiyi2uaxbupvhuicm57chwotaiq6lfpzoriyteri@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:v3eyk4vpqk4eroenx2w32s6j/bafkreibiskkvno5hikyiyi2uaxbupvhuicm57chwotaiq6lfpzoriyteri@jpeg",
             "alt": ""
           }
         ]
@@ -1111,64 +1073,6 @@
             "alt": "Promo image for Skies Above Secrets of the Twilit Skysles which will be every other Sunday (starting Sunday 8th of Feb) at 7pm GMT"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:b2riqkwdtxhyyt3weujdwpy7/app.bsky.feed.post/3me4hy4v5ck23",
-      "source": "bluesky",
-      "author": {
-        "handle": "stevekenson.com",
-        "displayName": "Steve Kenson \u274c\ud83d\udc51",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:b2riqkwdtxhyyt3weujdwpy7/bafkreiafw3ju7ojshdcvqj73gibhdb6y3sovjeuatfja5fhefbc7dygrka@jpeg"
-      },
-      "record": {
-        "text": "The Mutants & Masterminds fourth edition Kickstarter has smashed through most of its current stretch goals and is approaching the $100K mark! Will we reach it today and unlock the Earth-Prime Gazetteer preview? What goals and new developments await beyond it?",
-        "createdAt": "2026-02-05T13:16:48.458Z"
-      },
-      "indexedAt": "2026-02-05T13:16:50.361Z",
-      "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 23,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/greenroninpub/mutants-and-masterminds-4th-edition",
-        "title": "Mutants & Masterminds 4th Edition Tabletop RPG",
-        "description": "A new edition of our classic superhero TTRPG with updated and streamlined game systems, more options, and a new look!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:b2riqkwdtxhyyt3weujdwpy7/bafkreihh4pl4yfjev4g2ocowmrgsgxmntqg27mqqsqe5ruo3ik6oop42yu@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:zzwzdj4ao4cwxxgtnymgvg7o/app.bsky.feed.post/3me2chd655c2w",
-      "source": "bluesky",
-      "author": {
-        "handle": "mint-rabbit.bsky.social",
-        "displayName": "There's A TTRPG For That",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreifhb24suuhwskh2qe64exgndg2emim2nhovknriieamjlcexn5c4y@jpeg"
-      },
-      "record": {
-        "text": "Want to support a #ttrpg creator but you don't have the $ to do so?\n\nRun our games and tell us about them!\n\nI'm currently looking for as much feedback as possible regarding the GM side of Protect the Child. I even have a \"Your First Game\" document that folks can use to ease them into a game session!",
-        "createdAt": "2026-02-04T16:32:36.433Z"
-      },
-      "indexedAt": "2026-02-04T16:32:38.655Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://mint-rabbit.itch.io/protect-the-child-playtest",
-        "title": "Protect The Child (Playtesting!) by Mint-Rabbit",
-        "description": "A game about monster babysitters.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreihzounvmf5bbvx5y7i52svr4x4xccrilm4pnehv4755yxdw4onglq@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1665,8 +1569,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1195,
-      "likeCount": 6309,
+      "repostCount": 1196,
+      "likeCount": 6315,
       "embed": {
         "type": "images",
         "images": [
@@ -2403,7 +2307,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1937,
-      "likeCount": 8377,
+      "likeCount": 8376,
       "embed": {
         "type": "images",
         "images": [
@@ -2831,7 +2735,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 722,
-      "likeCount": 3304,
+      "likeCount": 3303,
       "embed": {
         "type": "images",
         "images": [
@@ -2987,7 +2891,7 @@
       },
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
-      "repostCount": 247,
+      "repostCount": 246,
       "likeCount": 1479,
       "embed": {
         "type": "images",
@@ -3126,7 +3030,7 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1874,
+      "repostCount": 1873,
       "likeCount": 8950,
       "embed": {
         "type": "images",
