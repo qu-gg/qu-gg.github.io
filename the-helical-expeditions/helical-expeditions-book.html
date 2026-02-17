@@ -803,6 +803,16 @@
             display: none;
         }
 
+        /* Gradient bar at top of filler pages - mirrors art-page ::before gradient */
+        .filler-gradient-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            z-index: 1;
+        }
+
         /* ===== TABLE OF CONTENTS ===== */
         .toc-page {
             width: 8.5in;
@@ -2004,6 +2014,14 @@
                 }
                 if (themeColors.gradientColor2) {
                     page.style.setProperty('--filler-accent-2', themeColors.gradientColor2);
+                }
+
+                // Add gradient bar at top to mirror the art-page ::before gradient
+                if (themeColors.gradientColor1 && themeColors.gradientColor2) {
+                    const gradientBar = document.createElement('div');
+                    gradientBar.className = 'filler-gradient-bar';
+                    gradientBar.style.background = `linear-gradient(90deg, ${themeColors.gradientColor1}, ${themeColors.gradientColor2}, ${themeColors.gradientColor1})`;
+                    page.appendChild(gradientBar);
                 }
             }
             
