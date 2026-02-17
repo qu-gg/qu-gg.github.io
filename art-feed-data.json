@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T12:06:35.129464Z",
+  "lastUpdated": "2026-02-17T00:07:03.882381Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3meyjmhjn222a",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - Dollhouse Is Live!!!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka@jpeg"
+      },
+      "record": {
+        "text": "Dollhouse, my next major TTRPG, is now live!\n\nThank you to everyone who's been patiently waiting, and I hope you all like what you see from the game!\n\nwww.kickstarter.com/projects/125...",
+        "createdAt": "2026-02-16T17:00:37.120Z"
+      },
+      "indexedAt": "2026-02-16T17:02:05.859Z",
+      "replyCount": 4,
+      "repostCount": 51,
+      "likeCount": 115,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
+        "title": "Dollhouse: A TTRPG about management",
+        "description": "A game where you and your fellow Handlers complete contracts for the titular \"Dollhouse\".",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreicpebpqfpblm7ougis2nnxuwvozxs64ta7qsv6ckktbmpz7l23bpi@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3meyfr24ze22c",
+      "source": "bluesky",
+      "author": {
+        "handle": "bradkerr.net",
+        "displayName": "Brad Kerr",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii@jpeg"
+      },
+      "record": {
+        "text": "Between Two Cairns is organizing a gaming convention in Portland, OR. Please come! betweentwocons.com @betterlegends.bsky.social @yochaigal.bsky.social",
+        "createdAt": "2026-02-16T15:51:35.870Z"
+      },
+      "indexedAt": "2026-02-16T15:51:40.756Z",
+      "replyCount": 5,
+      "repostCount": 31,
+      "likeCount": 105,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibgkgs3svnqudzyixnku3lroqbj76g2jdaidka5en5julr5k7cxtm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibgkgs3svnqudzyixnku3lroqbj76g2jdaidka5en5julr5k7cxtm@jpeg",
+            "alt": "Two big stone heads with ruby eyes. Text: \"Tabletop Gaming Convention. Between Two Cons. Norse Hall, Portland OR. June 26 - 27 2026. Betweentwocons.com for more information\". "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mew5jei4ts2u",
       "source": "bluesky",
       "author": {
@@ -95,7 +156,7 @@
       "indexedAt": "2026-02-15T15:55:55.851Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 3,
+      "likeCount": 4,
       "embed": {
         "type": "external",
         "uri": "https://docs.google.com/spreadsheets/d/1eZ1Dhta6rU511fQd8YTkOzXMVqLelMUhVcQbj2MrrEM/edit?usp=sharing",
@@ -124,7 +185,7 @@
       "indexedAt": "2026-02-15T15:52:06.453Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -232,7 +293,7 @@
       "indexedAt": "2026-02-14T04:05:16.653Z",
       "replyCount": 4,
       "repostCount": 5,
-      "likeCount": 89,
+      "likeCount": 92,
       "embed": {
         "type": "images",
         "images": [
@@ -507,8 +568,8 @@
       },
       "indexedAt": "2026-02-12T15:16:49.951Z",
       "replyCount": 7,
-      "repostCount": 27,
-      "likeCount": 126,
+      "repostCount": 28,
+      "likeCount": 127,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-human-advancement.html",
@@ -672,8 +733,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 525,
-      "likeCount": 1063,
+      "repostCount": 527,
+      "likeCount": 1065,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -750,7 +811,7 @@
       "source": "bluesky",
       "author": {
         "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - Check Pinned!",
+        "displayName": "Joel Happyhil - Dollhouse Is Live!!!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka@jpeg"
       },
       "record": {
@@ -787,7 +848,7 @@
         "createdAt": "2026-02-09T15:41:17.633Z"
       },
       "indexedAt": "2026-02-09T15:41:19.653Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 68,
       "likeCount": 116,
       "embed": {
@@ -818,7 +879,7 @@
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
       "repostCount": 87,
-      "likeCount": 269,
+      "likeCount": 270,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -988,85 +1049,6 @@
       }
     },
     {
-      "uri": "at://did:plc:k3h2vdfpqh5ud6onmiw2hmgd/app.bsky.feed.post/3mecbz5ydlc2j",
-      "source": "bluesky",
-      "author": {
-        "handle": "corvidarts.bsky.social",
-        "displayName": "CorvidArts",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreighzwt4vyh4bimk56qsv36rpidfrloktipwtmrjxqgx3xpaethuhm@jpeg"
-      },
-      "record": {
-        "text": "Hiii, here's a little preview of our goodies for KatsuCon and GenghisCon this month.\n\nI'm trying to have everything available, but we'll see! \ud83e\udd1e",
-        "createdAt": "2026-02-07T20:45:59.125Z"
-      },
-      "indexedAt": "2026-02-07T20:46:04.051Z",
-      "replyCount": 5,
-      "repostCount": 3,
-      "likeCount": 7,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreidpzkhx5nf2roqye5mglpt3kb24s22kkxux5ecdy4ig3jqo5ykjbe@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreidpzkhx5nf2roqye5mglpt3kb24s22kkxux5ecdy4ig3jqo5ykjbe@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreig3q4nf3bqlxt4eoewk7lngbjz6ghy4sbnx3mrr65k2u3d5pkc5j4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreig3q4nf3bqlxt4eoewk7lngbjz6ghy4sbnx3mrr65k2u3d5pkc5j4@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreibyz7oqvlu7gjywcsrejrohmww73ibiheummtupm45oeegbhwe7w4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreibyz7oqvlu7gjywcsrejrohmww73ibiheummtupm45oeegbhwe7w4@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreieuhhipb5ukp4ezle4yga6pxccbh2ajvb2xbxahvcwmf5rwxrwduu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k3h2vdfpqh5ud6onmiw2hmgd/bafkreieuhhipb5ukp4ezle4yga6pxccbh2ajvb2xbxahvcwmf5rwxrwduu@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3meayhx73kk2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "zedecksiew.bsky.social",
-        "displayName": "Zedeck Siew",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74@jpeg"
-      },
-      "record": {
-        "text": "Not new, but:\n\nLorn Song of the Bachelor, an adventure inspired by East Malaysian crocodile stories and colonial-capitalist extraction.\n\nCover art by @nadhirnor.bsky.social , of a ritual feast / flower bath / disembowelment, at once bloody and sumptuous, an evocation of the text's themes.",
-        "createdAt": "2026-02-07T08:22:38.185Z"
-      },
-      "indexedAt": "2026-02-07T08:22:43.150Z",
-      "replyCount": 2,
-      "repostCount": 7,
-      "likeCount": 40,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreie65t3lljapcp2msjuovpwfsgmfvjaf5rskzvfm24ilgv2cskbl74@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreie65t3lljapcp2msjuovpwfsgmfvjaf5rskzvfm24ilgv2cskbl74@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3me55a5mdq22s",
       "source": "bluesky",
       "author": {
@@ -1093,38 +1075,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3me4n2on63c2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq@jpeg"
-      },
-      "record": {
-        "text": "It draws nearer!!! 3 Days until the first session of my Actual Play campaign for Skies Above - Secret of the Twilit Skysles! Looking forward to delving into this with both the players and an audience!\n\n#ttrpg",
-        "createdAt": "2026-02-05T14:47:42.888Z"
-      },
-      "indexedAt": "2026-02-05T14:47:46.552Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreick4iqx4ky6rqpupy2gp3lq7e2pe3tg6k3kicsuxpjp4aj43kxfim@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreick4iqx4ky6rqpupy2gp3lq7e2pe3tg6k3kicsuxpjp4aj43kxfim@jpeg",
-            "alt": "Promo image for Skies Above Secrets of the Twilit Skysles which will be every other Sunday (starting Sunday 8th of Feb) at 7pm GMT"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
       }
     },
     {
@@ -1617,7 +1567,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1196,
-      "likeCount": 6315,
+      "likeCount": 6316,
       "embed": {
         "type": "images",
         "images": [
