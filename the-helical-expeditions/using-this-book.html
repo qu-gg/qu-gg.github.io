@@ -226,10 +226,26 @@
         /* Mini Title Box Mockup */
         .mini-title-box {
             background: #1a2a3a;
-            border-radius: 4px;
-            padding: 4px 12px;
+            border-radius: 6px;
+            padding: 4px 20px;
             text-align: center;
             border: 2px solid var(--break-pink);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .mini-title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--break-pink);
+            border-radius: 2px;
         }
 
         .mini-title-box h3 {
@@ -238,7 +254,6 @@
             color: white;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 1px 1px 0 var(--break-pink);
             margin: 0;
         }
 
@@ -275,17 +290,18 @@
         }
 
         .mini-content-box .mini-header {
-            background: #2d4a5e;
+            background: var(--ink-dark);
             color: white;
             font-family: var(--font-heading);
             font-size: 9pt;
             padding: 2px 6px;
             text-transform: uppercase;
+            letter-spacing: 1px;
             text-align: left;
         }
 
         .mini-content-box .mini-header.dark {
-            background: #5a8fa8;
+            background: var(--ink-dark);
             text-align: left;
         }
 
@@ -382,13 +398,11 @@
         }
 
         .mini-loc-card h4 {
-            background: #2d4a5e;
-            color: white;
-            font-size: 7pt;
-            padding: 1px 4px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            color: var(--break-purple);
             margin-bottom: 2px;
             text-transform: uppercase;
-            text-align: left;
         }
 
         .mini-loc-card .loc-read {
@@ -436,7 +450,7 @@
         }
 
         .mini-rank strong {
-            color: var(--break-pink);
+            color: var(--break-purple);
         }
 
         /* Callout Arrow */
@@ -648,9 +662,10 @@
         }
 
         .mini-loc-name {
+            font-family: var(--font-heading);
             font-weight: bold;
             font-size: 8pt;
-            color: #1a2a3a;
+            color: var(--ink-dark);
         }
 
         .mini-loc-tag {
@@ -664,6 +679,37 @@
 
         .mini-loc-tag.trap {
             background: var(--break-pink);
+        }
+
+        /* Mini Item Block */
+        .mini-item-block {
+            background: rgba(240, 236, 228, 0.9);
+            border: 2px dotted var(--break-light-blue);
+            border-radius: 4px;
+            padding: 3px 6px;
+            font-size: 7pt;
+        }
+
+        .mini-item-block .mini-item-name {
+            font-weight: bold;
+            color: var(--ink-dark);
+        }
+
+        .mini-item-block .mini-item-type {
+            color: var(--break-light-blue);
+            font-size: 6.5pt;
+        }
+
+        .mini-item-block .mini-item-desc {
+            font-style: italic;
+            font-size: 6.5pt;
+            margin: 1px 0;
+        }
+
+        .mini-item-block .mini-item-stats {
+            color: var(--break-pink);
+            font-weight: bold;
+            font-size: 6.5pt;
         }
 
         .trap-reference {
@@ -758,8 +804,8 @@
                             <div class="mini-character">
                                 <span class="mini-char-name">CHARACTER NAME</span>
                                 <div class="mini-char-details">Species, Gender, Age (Stats Reference)</div>
-                                <div class="mini-char-desc">A brief description of their personality, motivations, and role in the adventure.</div>
-                                <div class="mini-char-quote">"Physical description in quotes for read-aloud when players first meet them."</div>
+                                <div class="mini-char-desc">A brief description of their personality, motivations, and story role.</div>
+                                <div class="mini-char-quote">"A read-aloud physical description of the character."</div>
                             </div>
                         </div>
                     </div>
@@ -783,7 +829,7 @@
                         </div>
                     </div>
                     <div class="mockup-description" style="margin-top: 4px;">
-                        A chronological outline of the adventure's expected flow and unique mechanics. These are <em>suggestions</em> - adapt based on player choices!
+                        An outline of the adventure's expected flow and unique mechanics. These are <em>suggestions</em> - adapt as needed!
                     </div>
                 </div>
 
@@ -808,27 +854,41 @@
         </div>
 
         <!-- PAGE 2 ELEMENTS -->
-        <div class="mockup-section">
-            <div class="mockup-label"><span class="label-num">7</span> Key Locations</div>
-            <div class="mockup-box mini-content-box" style="width: 100%;">
-                <div class="mini-header dark">Key Locations</div>
-                <div class="mini-locations">
-                    <div class="mini-loc-card">
-                        <h4>Location A</h4>
-                        <p class="loc-read">"Read-aloud..."</p>
+        <div class="mockup-row" style="gap: 10px; align-items: flex-start;">
+            <div style="flex: 3;">
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">7</span> Key Locations</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%;">
+                        <div class="mini-header dark">Key Locations</div>
+                        <div class="mini-locations">
+                            <div class="mini-loc-card">
+                                <h4>Location A</h4>
+                                <p class="loc-read">"Read-aloud..."</p>
+                            </div>
+                            <div class="mini-loc-card">
+                                <h4>Location B</h4>
+                                <p class="loc-read">"Read-aloud..."</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mini-loc-card">
-                        <h4>Location B</h4>
-                        <p class="loc-read">"Read-aloud..."</p>
-                    </div>
-                    <div class="mini-loc-card">
-                        <h4>Location C</h4>
-                        <p class="loc-read">"Read-aloud..."</p>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Major locations the adventure is centered around. Each includes read-aloud text and GM notes about what's there.
                     </div>
                 </div>
             </div>
-            <div class="mockup-description" style="margin-top: 4px;">
-                Major locations the adventure is centered around. Each includes read-aloud text and GM notes about what's there.
+            <div style="flex: 2;">
+                <div class="mockup-section">
+                    <div class="mockup-label"><span class="label-num">8</span> Item Blocks</div>
+                    <div class="mini-item-block">
+                        <div><span class="mini-item-name">Magic Item</span> <span class="mini-item-type">[Gear Type]</span></div>
+                        <div class="mini-item-desc">A brief flavor description of the item's appearance and feel.</div>
+                        <div class="mini-char-desc">Item's mechanical effects and usage details.</div>
+                        <div class="mini-item-stats">1 Slot · 50 Coins</div>
+                    </div>
+                    <div class="mockup-description" style="margin-top: 4px;">
+                        Loot and equipment found during adventures.
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -836,7 +896,7 @@
             <div>
                 <!-- SECRETS & CLUES -->
                 <div class="mockup-section">
-                    <div class="mockup-label"><span class="label-num">8</span> Secrets & Clues</div>
+                    <div class="mockup-label"><span class="label-num">9</span> Secrets & Clues</div>
                     <div class="mockup-box mini-content-box pink-border" style="width: 100%;">
                         <div class="mini-header pink">Secrets & Clues</div>
                         <div class="mini-body">
@@ -856,7 +916,7 @@
             <div>
                 <!-- QUEST RESOLUTION -->
                 <div class="mockup-section">
-                    <div class="mockup-label"><span class="label-num">9</span> Quest Resolution</div>
+                    <div class="mockup-label"><span class="label-num">10</span> Quest Resolution</div>
                     <div class="mockup-box mini-content-box purple-border" style="width: 100%;">
                         <div class="mini-header dark">Quest Resolution</div>
                         <div class="mini-body">
@@ -879,9 +939,9 @@
 
                 <!-- RANK -->
                 <div class="mockup-section">
-                    <div class="mockup-label"><span class="label-num">10</span> Rank Adjustments</div>
-                    <div class="mockup-box mini-content-box pink-border" style="width: 100%;">
-                        <div class="mini-header pink">Rank X-Y Adventure</div>
+                    <div class="mockup-label"><span class="label-num">11</span> Rank Adjustments</div>
+                    <div class="mockup-box mini-content-box" style="width: 100%; border-left-color: var(--ink-dark);">
+                        <div class="mini-header">Rank X-Y Adventure</div>
                         <div class="mini-body mini-rank">
                             <p><strong>Lower Rank:</strong> Swap enemies for weaker variants...</p>
                             <p><strong>Higher Rank:</strong> Add more foes or use elite versions...</p>

@@ -34,11 +34,6 @@
 - A junker city's water supply - an ancient irrigation system that drains out from a derelict manathene facility - has recently turned deadly as fuel is polluting it.
 - Goops within the facility of course
 
-**Of Cog's Finest Gadgeteer**
-
-**Magia Sigil Hunting**
-
-
 **To Tame a Colossi**
 ![[Pasted image 20260106121810.png]]
 - No-Folk Land

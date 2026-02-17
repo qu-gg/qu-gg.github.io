@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A View Between Time - BREAK!! Adventure</title>
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Eaten Isle Clockwork Ruin Theme Palette */
+            --ruin-deep: #1a2828;
+            --brass-accent: #8a6a20;
+            --verdigris: #5a8a7a;
+            --iron-grey: #5a5e68;
+            --patina-teal: #3a6a6a;
+            --clockwork-bronze: #8a6a3a;
+            --bone-white: #e8e4dc;
+            --pearl-white: #fefefe;
+            --ink-dark: #141418;
+            --faded-parchment: #eae8e2;
+
+            /* Typography */
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+            --font-accent: 'Liberation Sans', 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        html, body {
+            font-family: var(--font-body);
+            font-size: 10pt;
+            line-height: 1.35;
+            color: var(--ink-dark);
+            background: var(--faded-parchment);
+        }
+
+        /* ===== PAGE STRUCTURE ===== */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            max-height: 11in;
+            padding: 0.15in 0.35in 0.25in 0.35in;
+            background: var(--faded-parchment);
+            margin: 0 auto 5mm auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--ruin-deep), var(--verdigris), var(--brass-accent), var(--verdigris), var(--ruin-deep));
+        }
+
+        /* ===== PAGE PROGRESS INDICATOR ===== */
+        .page-progress {
+            position: absolute;
+            top: 0.2in;
+            right: 0.12in;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .progress-bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--brass-accent);
+            background: transparent;
+            transition: background 0.2s;
+        }
+
+        .progress-bubble.active {
+            background: var(--brass-accent);
+            border-color: var(--brass-accent);
+        }
+
+        /* ===== TITLE BOX ===== */
+        .title-box {
+            background: var(--ruin-deep);
+            border-radius: 6px;
+            padding: 4px 20px;
+            text-align: center;
+            margin-bottom: 2px;
+            border: 2px solid var(--brass-accent);
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .title-box::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--brass-accent);
+            border-radius: 2px;
+        }
+
+        .title-box h1 {
+            font-family: var(--font-display);
+            font-size: 26pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+
+        .title-box .subtitle {
+            font-family: var(--font-accent);
+            font-size: 10pt;
+            color: var(--bone-white);
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* ===== THEMES ROW ===== */
+        .themes-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 2px solid var(--brass-accent);
+        }
+
+        .theme-item {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--brass-accent);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .theme-item .emoji {
+            font-size: 12pt;
+        }
+
+        /* ===== TWO COLUMN LAYOUT ===== */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* ===== CONTENT BOXES ===== */
+        .content-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--verdigris);
+            border-left: 4px solid var(--verdigris);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .content-box-inner {
+            padding: 5px 8px;
+        }
+
+        .content-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--iron-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .content-box h2 + .content-box-inner,
+        .content-box h2 + p,
+        .content-box h2 + .character-entry {
+            margin-top: 0;
+        }
+
+        /* Emphasized locations/names in text */
+        .content-box em,
+        .secrets-list em,
+        .location-desc em {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--brass-accent);
+        }
+
+        .content-box h3 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--iron-grey);
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .content-box p {
+            margin-bottom: 3px;
+            text-align: left;
+            font-size: 9.5pt;
+        }
+
+        .content-box .read-aloud {
+            font-style: italic;
+            font-weight: bold;
+            color: var(--ruin-deep);
+        }
+
+        /* ===== CHARACTERS BOX ===== */
+        .characters-box {
+            background: rgba(176, 138, 58, 0.08);
+            border-color: var(--clockwork-bronze);
+            border-left: 4px solid var(--clockwork-bronze);
+        }
+
+        .characters-box h2 {
+            background: var(--clockwork-bronze);
+        }
+
+        .character-entry {
+            padding: 4px 0;
+        }
+
+        .character-entry:not(:last-child) {
+            border-bottom: 1px dashed var(--verdigris);
+        }
+
+        .character-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .character-name {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            font-weight: bold;
+            color: #6a5018;
+        }
+
+        .character-details {
+            font-size: 9pt;
+            color: var(--ruin-deep);
+            font-style: italic;
+        }
+
+        .character-desc {
+            font-size: 9pt;
+            margin-top: 2px;
+        }
+
+        .character-quote {
+            font-size: 9pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--verdigris);
+            margin-top: 1px;
+        }
+
+        /* ===== STORY IMAGE BLOCK ===== */
+        .story-image-block {
+            border: 1px solid var(--verdigris);
+            border-radius: 3px;
+            overflow: hidden;
+            background: var(--ruin-deep);
+        }
+
+        .story-image-block img {
+            width: 100%;
+            height: 2.2in;
+            display: block;
+            object-fit: cover;
+            object-position: center var(--story-image-y, 20%);
+        }
+
+        .story-image-caption {
+            padding: 4px 8px;
+            font-size: 8pt;
+            color: var(--bone-white);
+            text-align: center;
+            background: var(--ruin-deep);
+        }
+
+        .story-image-caption a {
+            color: var(--brass-accent);
+            text-decoration: none;
+        }
+
+        .story-image-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SECRETS BOX ===== */
+        .secrets-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--brass-accent);
+            border-left: 4px solid var(--brass-accent);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .secrets-box h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--brass-accent);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .secrets-box-inner {
+            padding: 6px 8px;
+        }
+
+        .secrets-list {
+            list-style: decimal;
+            padding-left: 16px;
+            font-size: 9.5pt;
+        }
+
+        .secrets-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        /* ===== PUZZLE MECHANIC BOX ===== */
+        .puzzle-box {
+            background: rgba(58, 106, 106, 0.06);
+            border: 2px solid var(--patina-teal);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .puzzle-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--patina-teal);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .puzzle-box-inner {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .puzzle-box-inner .puzzle-intro {
+            font-style: italic;
+            margin-bottom: 5px;
+            color: var(--ruin-deep);
+            font-size: 8.5pt;
+            background: rgba(90, 94, 104, 0.1);
+            border-left: 3px solid var(--iron-grey);
+            padding: 4px 8px;
+        }
+
+        .puzzle-rule {
+            margin-bottom: 4px;
+        }
+
+        .puzzle-rule-label {
+            font-weight: 700;
+            color: var(--patina-teal);
+        }
+
+        .puzzle-box-inner strong {
+            color: var(--patina-teal);
+        }
+
+        /* ===== QUEST RESOLUTION ===== */
+        .quest-resolution {
+            background: var(--pearl-white);
+            border: 1px solid var(--ruin-deep);
+            border-left: 4px solid var(--ruin-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .quest-resolution h2 {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--pearl-white);
+            background: var(--ruin-deep);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .quest-resolution-inner {
+            padding: 6px 10px;
+        }
+
+        .quest-resolution-inner > p {
+            font-size: 9pt;
+            margin-bottom: 4px;
+        }
+
+        .vision-entry {
+            border-left: 3px solid var(--brass-accent);
+            padding: 3px 8px;
+            margin-bottom: 4px;
+            background: rgba(176, 138, 58, 0.06);
+            font-size: 9pt;
+        }
+
+        .vision-entry strong {
+            color: var(--brass-accent);
+            font-style: normal;
+        }
+
+        .resolution-rewards {
+            margin-top: 6px;
+            padding-top: 4px;
+            border-top: 1px solid var(--verdigris);
+            font-size: 9pt;
+        }
+
+        .resolution-rewards p {
+            margin-bottom: 3px;
+        }
+
+        /* ===== ITEM BLOCK ===== */
+        .item-block {
+            background: rgba(234, 232, 226, 0.9);
+            border: 2px dotted var(--verdigris);
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-top: 4px;
+            font-size: 8pt;
+        }
+
+        .content-box-inner .item-block {
+            margin-top: 2px;
+        }
+
+        .item-block .item-name {
+            font-weight: bold;
+            color: var(--ruin-deep);
+        }
+
+        .item-block .item-type {
+            color: var(--verdigris);
+        }
+
+        .item-block .item-desc {
+            margin: 2px 0;
+            font-style: italic;
+        }
+
+        .item-block .item-effect {
+            margin: 2px 0;
+        }
+
+        .item-block .item-stats {
+            color: var(--brass-accent);
+            font-weight: bold;
+        }
+
+        .item-block ul {
+            margin: 2px 0;
+            padding-left: 12px;
+        }
+
+        .item-block li {
+            margin-bottom: 1px;
+        }
+
+        /* ===== PAGE 2 - ADVENTURE SITE ===== */
+        .adventure-site-header {
+            background: var(--ruin-deep);
+            border-radius: 6px;
+            padding: 6px 20px;
+            text-align: center;
+            margin-bottom: 8px;
+            border: 2px solid var(--brass-accent);
+        }
+
+        .adventure-site-header h1 {
+            font-family: var(--font-display);
+            font-size: 22pt;
+            color: var(--pearl-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .adventure-site-header h1 span {
+            font-family: var(--font-heading);
+            font-size: 12pt;
+            color: var(--brass-accent);
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        /* ===== MAP CONTAINER ===== */
+        .site-map-container {
+            position: relative;
+            border: 3px solid var(--brass-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--pearl-white);
+        }
+
+        .site-map-container img {
+            width: 100%;
+            display: block;
+            object-fit: contain;
+            margin-bottom: 6px;
+        }
+
+        .map-caption {
+            background: var(--ruin-deep);
+            color: var(--bone-white);
+            padding: 4px 10px;
+            font-size: 8pt;
+            text-align: center;
+            margin: 0 -6px -6px -6px;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .map-caption a {
+            color: var(--brass-accent);
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PAGE 2 LAYOUT - MAP + CONTENT SIDE BY SIDE ===== */
+        .page2-layout {
+            display: grid;
+            grid-template-columns: 35% 1fr;
+            gap: 8px;
+        }
+
+        .map-side {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .content-side {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        /* ===== LOCATION KEY ===== */
+        .location-key-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--verdigris);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .location-key-box h2 {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--iron-grey);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .location-key-content {
+            padding: 6px 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .location-entry {
+            font-size: 8.5pt;
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+
+        .location-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--brass-accent);
+            color: var(--pearl-white);
+            border-radius: 9px;
+            font-family: var(--font-heading);
+            font-size: 8pt;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .location-name {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            color: var(--ruin-deep);
+            font-size: 9pt;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background: var(--verdigris);
+            color: var(--pearl-white);
+            font-size: 6.5pt;
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .location-tag.entrance {
+            background: var(--clockwork-bronze);
+        }
+
+        .location-tag.encounter {
+            background: var(--ruin-deep);
+        }
+
+        .location-tag.harmful {
+            background: var(--brass-accent);
+        }
+
+        .location-tag.loot {
+            background: var(--iron-grey);
+        }
+
+        .location-desc {
+            margin-top: 2px;
+            color: var(--ink-dark);
+            line-height: 1.3;
+        }
+
+        .location-desc p {
+            margin: 0 0 3px 0;
+        }
+
+        .location-desc ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+
+        .location-desc li {
+            margin-bottom: 2px;
+            color: var(--iron-grey);
+        }
+
+        .location-desc li::marker {
+            color: var(--brass-accent);
+        }
+
+        /* Key items/people highlighting */
+        .key-item {
+            font-weight: bold;
+            color: #7a5a1a;
+        }
+
+        .location-desc .loot,
+        .loot:not(.location-tag) {
+            color: var(--verdigris);
+        }
+
+        /* ===== RANDOM EVENTS BOX ===== */
+        .events-box {
+            background: var(--pearl-white);
+            border: 1px solid var(--clockwork-bronze);
+            border-left: 4px solid var(--clockwork-bronze);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .events-box h2 {
+            font-family: var(--font-heading);
+            font-size: 10pt;
+            color: var(--pearl-white);
+            background: var(--clockwork-bronze);
+            padding: 4px 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .events-box-inner {
+            padding: 5px 8px;
+            font-size: 9pt;
+        }
+
+        .event-entry {
+            margin-bottom: 3px;
+        }
+
+        .event-entry .roll-range {
+            font-weight: bold;
+            color: var(--ruin-deep);
+        }
+
+        /* ===== RANK BOX ===== */
+        .rank-section {
+            background: var(--pearl-white);
+            border-radius: 4px;
+            border: 1px solid var(--ruin-deep);
+            border-left: 4px solid var(--ruin-deep);
+            overflow: hidden;
+            color: var(--ink-dark);
+        }
+
+        .rank-header {
+            font-family: var(--font-heading);
+            font-size: 11pt;
+            color: var(--pearl-white);
+            background: var(--ruin-deep);
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rank-adjustments {
+            padding: 6px 10px;
+            font-size: 9pt;
+        }
+
+        .rank-adjust-item {
+            margin-bottom: 4px;
+        }
+
+        .rank-adjust-item strong {
+            color: var(--brass-accent);
+        }
+
+        /* ===== SOURCES BOX ===== */
+        .sources-box {
+            background: rgba(26, 40, 40, 0.05);
+            font-size: 8.5pt;
+            border-color: var(--ruin-deep);
+            border-left: 4px solid var(--ruin-deep);
+        }
+
+        .sources-box h2 {
+            font-size: 10pt;
+            background: var(--ruin-deep);
+        }
+
+        .sources-box .adventure-credit {
+            background: rgba(90, 94, 104, 0.1);
+            border-left: 3px solid var(--iron-grey);
+            padding: 4px 8px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--ruin-deep);
+        }
+
+        .sources-box .adventure-credit a {
+            color: var(--brass-accent);
+            text-decoration: none;
+        }
+
+        .sources-box .adventure-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .sources-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-box li {
+            margin-bottom: 2px;
+            color: var(--iron-grey);
+        }
+
+        .sources-box a {
+            color: var(--brass-accent);
+            text-decoration: none;
+        }
+
+        .sources-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== ART PAGE ===== */
+        .art-page {
+            background: var(--ruin-deep);
+            color: var(--pearl-white);
+            min-height: 11in;
+            max-height: 11in;
+        }
+
+        .art-page::before {
+            background: linear-gradient(90deg, var(--brass-accent), var(--verdigris), var(--brass-accent));
+        }
+
+        .art-header {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .art-header h1 {
+            font-family: var(--font-display);
+            font-size: 20pt;
+            color: var(--brass-accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: calc(11in - 0.5in - 50px);
+        }
+
+        .art-item {
+            position: relative;
+            border: 3px solid var(--brass-accent);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--ruin-deep);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-item img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-item .art-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 85%, transparent);
+            color: var(--pearl-white);
+            padding: 8px 10px 6px 10px;
+            font-size: 8pt;
+            line-height: 1.3;
+        }
+
+        .art-item .art-caption a {
+            color: var(--brass-accent);
+            text-decoration: none;
+        }
+
+        .art-item .art-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            html, body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <!-- Title Box -->
+        <div class="title-box">
+            <h1>A View Between Time</h1>
+            <div class="subtitle">Profaned Oculory &#8226; Eaten Isle &#8226; Wistful Dark</div>
+        </div>
+
+        <!-- Themes Row -->
+        <div class="themes-row">
+            <div class="theme-item"><span class="emoji">&#9673;</span> Investigation</div>
+            <div class="theme-item"><span class="emoji">&#9670;</span> Discovery</div>
+            <div class="theme-item"><span class="emoji">&#9737;</span> Observatory</div>
+        </div>
+
+        <!-- Two Column Content -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Adventure Description -->
+                <div class="content-box">
+                    <h2>Adventure Description</h2>
+                    <div class="content-box-inner">
+                    <p>The Helical Archive's Head Field Researcher believes they've found a mythical Divine Ruler relic buried in the Eaten Isle - and needs the party's help to reach it.</p>
+                    </div>
+                    <h2>Starting the Adventure</h2>
+                    <div class="content-box-inner">
+                    <p class="read-aloud">"As so many times before, your skyship touches down and you are immediately on alert from the deadly surroundings. This expedition, you find yourselves on the Eaten Isle - the wasteland of the infamous ritual gone wrong. The Helical Archive's Head Field Researcher, Limit Testing, has contracted you to investigate the supposed site of an ancient Divine Ruler relic - a telescope said to see the past and future of whatever it's pointed at. They will be joining you on this one. Past the writhing flora, a plain bunker-like entrance sits in the mountainside ahead. You strap your gear on - another expedition awaits."</p>
+                    <p style="margin-top: 6px;">The tilt mechanism is the central fun of this Adventure Site. Players shouldn't know about it until they move from Node 2 to either 3 or 5. Start with rumblings underfoot and feelings of vertigo to set the tone. After a tilt or two, the penny will drop that they need to head down both corridors at roughly the same rate and weight. It's up to you if they can hear each other between the paths enough to effectively communicate.</p>
+                    </div>
+                </div>
+
+                <!-- Important Characters -->
+                <div class="content-box characters-box">
+                    <h2>Important Characters</h2>
+                    <div class="content-box-inner">
+                    <div class="character-entry">
+                        <div class="character-header">
+                            <span class="character-name">Limit Testing</span>
+                            <span class="character-details">— Bio-Mechanoid, Male, ???</span>
+                        </div>
+                        <div class="character-desc">Limit is a Rank 5 Factotum (Source, pg. 16) with Folklorist, Healer's Hands, and Pack Tactics. If a Player is already a Factotum, change Limit to a Battle Butler (Source, pg. 390).<br><br><strong>NOTE:</strong> Limit takes up a total weight of 16 Inventory Slots.</div>
+                        <div class="character-quote">"The wicked pistol and beat-up Gleysian briefcase Limit carries would make one forget they are, in fact, an accomplished researcher."</div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="content-box sources-box">
+                    <h2>Sources &amp; Adversaries</h2>
+                    <div class="content-box-inner">
+                    <p class="adventure-credit">This is an adaptation of the 1-page dungeon <a href="https://www.drivethrurpg.com/en/product/552289/one-page-dungeon-compendium-2025-edition" target="_blank"><strong>Loosely in the Sky A Diamond</strong></a> by ChrispyChikin, licensed under CC-by-SA.</p>
+                    <ul>
+                        <li><strong>Eaten Isle:</strong> <a href="https://breakrpg.blogspot.com/2024/10/setting-eaten-isle.html" target="_blank">BREAK!! Blog</a></li>
+                        <li><strong>Outer World Technology:</strong> <a href="https://breakrpg.blogspot.com/2026/01/high-technology-of-outer-world-setting.html" target="_blank">BREAK!! Blog</a></li>
+                        <li><strong>Atropol:</strong> by ichiCharmed (<a href="#">Homebrew</a>)</li>
+                        <li><strong>Yeeti:</strong> by The Lonely Sand Person (<a href="#">Homebrew</a>)</li>
+                        <li><strong>Akaobato:</strong> by GoblinJunkyard (<a href="#">Homebrew</a>)</li>
+                        <li><strong>Grim Wing/Skele-Master/Proudhound/Battle Butler:</strong> Source, pg. 386/404/400/388</li>
+                        <li><strong>Chrono Creamer:</strong> <a href="https://breakrpg.blogspot.com/2024/12/freebie-sipping-sojourn-or-beverages-of.html" target="_blank">BREAK!! Blog</a></li>
+                        <li><strong>Aetheric Monocle:</strong> <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?gid=1257115321#gid=1257115321" target="_blank">Homebrew Items</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Story Image -->
+                <div class="story-image-block">
+                    <img src="20) A View Between Time/Pasted image 20260216021359.jpg" alt="Creation of the Oculory" style="width: 175%; margin-left: -47.5%;">
+                </div>
+
+                <!-- Secrets and Clues -->
+                <div class="secrets-box">
+                    <h2>Secrets &amp; Clues</h2>
+                    <div class="secrets-box-inner">
+                    <ol class="secrets-list">
+                        <li>The <em>Profaned Oculory</em> was a scrying facility used by the Divine Rulers to foresee - and influence - the future.</li>
+                        <li>Purposefully built at the peak of the Eaten Isle to overlook the Divine Rulers' favorite domain - Yeso the Splendid.</li>
+                        <li>The entire facility can rotate along its central axis (through 1-2-4-6-7) using hidden gyroscopic hubs built into the mountain.</li>
+                        <li>When the scryers began to foretell the Heaven's Seal and fall of the Divine Rulers - and nothing the Rulers did altered the forecast - the <em>Clockwork Creator</em> executed them all.</li>
+                        <li>To ensure the creation lived on in the Rulers' absence, the <em>Clockwork Creator</em> ripped out its Heart, embedding it into the Device, and declared this "their last creation". Even now, it beats rhythmically.</li>
+                        <li>The Divine Ruler who built this is lost to history. Known as the <em>Clockwork Creator</em>, they were devoted to grand clockwork creations - their ultimate ambition being to replicate the entire Outer World in metallic miniature.</li>
+                        <li>Much of <em>Akenia's</em> Magitech prowess traces back to knowledge recovered from the <em>Clockwork Creator's</em> work.</li>
+                    </ol>
+                    </div>
+                </div>
+
+                <!-- Puzzle Mechanic -->
+                <div class="puzzle-box">
+                    <h2>&#9881; Puzzle Mechanic</h2>
+                    <div class="puzzle-box-inner">
+                        <p class="puzzle-intro">Below is how to run the weight balance mechanic of this Adventure Site. Follow BREAK!!'s Exploration mechanics (Source, pg. 230) for Location Actions and when to roll events.</p>
+                        <div class="puzzle-rule">
+                            <span class="puzzle-rule-label">&#9878; Weight Split:</span> The party must evenly split weight between the two paths. Each PC's weight = Species Weight (6/8/10 for Small/Medium/Large) + filled Inventory Slots.
+                        </div>
+                        <div class="puzzle-rule">
+                            <span class="puzzle-rule-label">&#9878; Balance Check:</span> Check after every Location Action or Combat Turn. To be in Balance, the weight split must be within <strong>3 Slots</strong> of each other - which might require the Party to exchange items!
+                        </div>
+                        <div class="puzzle-rule">
+                            <span class="puzzle-rule-label">&#9878; Tilt:</span> A <strong>Deftness Check</strong> is required every time the Device lurches into a new position, or a Falling Injury is taken. Falling Debris (CLICK!) may also occur.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 2 - ADVENTURE SITE ==================== -->
+    <div class="page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+            <div class="progress-bubble"></div>
+        </div>
+
+        <div class="adventure-site-header">
+            <h1>The Profaned Oculory <span>[Adventure Map]</span></h1>
+        </div>
+
+        <!-- Map + Content Side by Side -->
+        <div class="page2-layout">
+            <!-- Left: Map + Random Events + Rank + Sources -->
+            <div class="map-side">
+                <div class="site-map-container" style="background: var(--pearl-white); padding: 6px;">
+                    <img src="20) A View Between Time/oculorymap.png" alt="Map of the Profaned Oculory">
+
+                    <div class="map-caption">Map of the Oculory. Art by <a href="https://www.drivethrurpg.com/en/product/552289/one-page-dungeon-compendium-2025-edition" target="_blank">ChrispyChikin</a>.</div>
+                </div>
+
+                <!-- Random Events -->
+                <div class="events-box">
+                    <h2>Random Events [D6]</h2>
+                    <div class="events-box-inner">
+                        <div class="event-entry"><span class="roll-range">1:</span> Gravity Reverses! Requires a <br>Deftness Check or become Toppled.</div>
+                        <div class="event-entry"><span class="roll-range">2:</span> A heavy Clockwork Spider runs <br>down one corridor, making the Device tilt!</div>
+                        <div class="event-entry"><span class="roll-range">3:</span> Part of the floor falls away, <br>leaving a gaping hole to the void below.</div>
+                        <div class="event-entry"><span class="roll-range">4:</span> The party finds a mirror that shows <br>them at various stages of their lives.</div>
+                        <div class="event-entry"><span class="roll-range">5:</span> A massive chain breaks, adding 5 <br>Slots of weight to one half of the Device.</div>
+                        <div class="event-entry"><span class="roll-range">6:</span> A voice over an invisible loudspeaker urges the party to leave in Bright Speech.</div>
+                    </div>
+                </div>
+
+                <!-- Rank Section -->
+                <div class="rank-section">
+                    <div class="rank-header">Rank 7-8 Adventure</div>
+                    <div class="rank-adjustments">
+                        <div class="rank-adjust-item">
+                            <strong>Decrease:</strong> Remove the emerging Spiders and lower the Clockwork Heart's stats.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Increase:</strong> Replace the Spiders with a War-Drone in the Clockwork Heart Encounter.
+                        </div>
+                        <div class="rank-adjust-item">
+                            <strong>Starting Coin:</strong> 800C
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: All Locations + Quest Resolution -->
+            <div class="content-side">
+                <div class="location-key-box">
+                    <h2>Oculory Locations</h2>
+                    <div class="location-key-content">
+                        <!-- Location 1 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">1</span>
+                                <span class="location-name">Ancient Security Station</span>
+                                <span class="location-tag entrance">Entrance</span>
+                                <span class="location-tag harmful">Trap</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>The entrance-way is mostly non-descript, built to look like a bunker. Inside, Cramped Pathways funnel the party one-by-one through ancient, still functioning security devices.</p>
+                                <ul>
+                                    <li>Shattered glass barriers reveal operating desks with personnel clearance badges.</li>
+                                    <li>Failure to present a badge results in a Smash Walls Trap (CLICK!) against the front PC.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 2 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">2</span>
+                                <span class="location-name">Cracked Plinth</span>
+                                <span class="location-tag encounter">Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>The tunnel opens into the machine's foyer - a small disk platform floating over an endless void. A massive <strong class="key-item">Clockwork Raven</strong> [Grim Wing] perches on a cracked plinth, whirring as it recites riddles on "level headedness". Its wings are razored for those who mean it harm.</p>
+                            </div>
+                        </div>
+
+                        <!-- Location 3 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">3</span>
+                                <span class="location-name">Mural Room</span>
+                                <span class="location-tag encounter">Encounter</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>A gorgeous mural covers every wall of this circular chamber, depicting an unknown Divine Ruler creating this device. "The Clockwork Creator's <s>Greatest</s> Last Creation" is written in Bright Speech on a plaque underneath, defaced. Slumped against the mural is <strong class="key-item">Fio</strong> [Proudhound], a Chib Mana Blight Raider with a twisted ankle. <em>"You! You did this to me!"</em></p>
+                            </div>
+                        </div>
+
+                        <!-- Location 4 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">4</span>
+                                <span class="location-name">Central Library</span>
+                                <span class="location-tag encounter">Encounter</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>A small clerical desk and ancient library sit over the churning mechanisms below.</p>
+                                <ul>
+                                    <li>The executed <strong class="key-item">Head Scryer</strong>'s spirit [Akaobato] lingers here, hungry for new knowledge. If threatened, it summons <strong class="key-item">Spirits</strong> [Yeeti] that can throw PCs and cause the Device to lurch!</li>
+                                    <li>Secrets &amp; Clues can be discovered here - ancient writing is etched on spinning gears.</li>
+                                    <li><strong>Loot:</strong> Forgotten Tome on Yeso, a Can of Chrono Creamer, and an Aetheric Monocle.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 5 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">5</span>
+                                <span class="location-name">Repair Quarters</span>
+                                <span class="location-tag encounter">Encounter</span>
+                                <span class="location-tag loot">Loot</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Operating beds and heavy magitech machinery pack the room. Inert, rusted Clockwork Soldiers litter the floor. <strong class="key-item">Davine</strong> [Proudhound], a Tenebrate Mana Blight Raider leans on a halberd, bitterly muttering about "that idiot Fio". Cooperates in exchange for finding <strong class="key-item">Fio</strong>.</p>
+                                <ul>
+                                    <li><strong>Loot:</strong> Cabinets contain repair tools and a vial of Ennui Sludge (Source, pg. 292).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 6 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">6</span>
+                                <span class="location-name">The Clockwork Heart</span>
+                                <span class="location-tag encounter">Boss</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>Massive tubes line the walls, creaking and groaning. Suspended in the center of this circular chamber is a <strong class="key-item">Clockwork Heart</strong> [Atropol], still-beating. <strong class="key-item">2 Clockwork Spiders</strong> [Skele-Master] crawl out of some tubes as the door slams shut!</p>
+                                <ul>
+                                    <li>Applying Ennui Sludge to the Heart's exposed gears (repeatable Deftness Check, <br>Snag from Magic Resistance) slows it to a halt, ending Combat.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Location 7 -->
+                        <div class="location-entry">
+                            <div class="location-header">
+                                <span class="location-number">7</span>
+                                <span class="location-name">Profaned Oculory</span>
+                                <span class="location-tag entrance">Resolution</span>
+                            </div>
+                            <div class="location-desc">
+                                <p>When the <strong class="key-item">Clockwork Heart</strong> is defeated, the complex to the south powers down and crumbles. The party must dash across a thin bridge over the void to reach an enclosed observatory atop the mountain. It houses the Profaned Oculory, with just enough power for one last use, and overlooks a sweeping view of the Eaten Isle below. <strong class="key-item">Limit</strong> activates the Device and the party see the results within <strong>Quest Resolution</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quest Resolution -->
+                <div class="quest-resolution">
+                    <h2>Quest Resolution</h2>
+                    <div class="quest-resolution-inner">
+                        <p>The telescope peers over the Isle's crater and the party sees the Eaten Isle of eld:</p>
+                        <div class="vision-entry">
+                            First, they see Yeso the Splendid in its full glory during the 2nd Aeon - serene lakes set against great seats of power, the Iron King himself walking the land.
+                        </div>
+                        <div class="vision-entry">
+                            It cuts to the Fall of Yeso - the moment the first mages turned the Rulers' very own Divine Sigils against them, leaving the beautiful capital city in ruins.
+                        </div>
+                        <div class="vision-entry">
+                            Finally, they witness the final moments of the war between Akenia and Calian, the Gigaframe Paladinius and the bio-titan Ragnarok exchanging lethal blows to each other's spellcore as the display turns white.
+                        </div>
+                        <div class="resolution-rewards">
+                            <p>On top of any loot found, <strong class="key-item">Limit</strong> rewards the party with <strong>3 Gems</strong> and offers their services - and the Archive's resources - for whatever venture comes next.</p>
+                            <p>With the complex crumbled, the question <strong class="key-item">Limit</strong> asks is <em>"...so, how do we leave?"</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3 - ART VIBEBOARD ====================  -->
+    <div class="page art-page">
+        <!-- Page Progress Indicator -->
+        <div class="page-progress">
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble"></div>
+            <div class="progress-bubble active"></div>
+        </div>
+
+        <div class="art-header">
+            <h1>Art Vibeboard</h1>
+        </div>
+
+        <div class="art-grid">
+            <!-- Row 1 -->
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260216021359.jpg" alt="Creation of the Oculory" style="object-position: center 30%;">
+                <div class="art-caption">"Creation of the Oculory" <br> Art by <a href="https://www.artstation.com/artwork/RYZoOO" target="_blank">Pavel Shipilin</a></div>
+            </div>
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260215234038.png" alt="Source Adventure Document">
+                <div class="art-caption">"Source Adventure Document" <br> Work by: <a href="https://www.drivethrurpg.com/en/product/552289/one-page-dungeon-compendium-2025-edition" target="_blank">ChrispyChikin</a></div>
+            </div>
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260216021947.jpg" alt="Clockwork Raven" style="object-position: 8% center;">
+                <div class="art-caption">"Clockwork Raven" <br> Art by <a href="https://es.pinterest.com/pin/391531761375316359/" target="_blank">Steampunk Legends</a></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260216022148.jpg" alt="Telescope">
+                <div class="art-caption">"Telescope" <br> Art by <a href="https://www.artstation.com/artwork/6lgyr" target="_blank">PhantomChaser</a></div>
+            </div>
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260216124507.png" alt="The Clockwork Heart">
+                <div class="art-caption">"The Clockwork Heart" <br> Art by <a href="https://en.uesp.net/wiki/File:LG-cardart-The_Mechanical_Heart.png" target="_blank">Elder Scroll Legends</a></div>
+            </div>
+            <div class="art-item">
+                <img src="20) A View Between Time/Pasted image 20260216181019.jpg" alt="Limit Testing character inspiration">
+                <div class="art-caption">"Limit Testing" <br> Art by <a href="https://tomercs.artstation.com/projects/yGA4n" target="_blank">Tom McDowell</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
