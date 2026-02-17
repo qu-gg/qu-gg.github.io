@@ -1301,6 +1301,92 @@
                 display: none !important;
             }
         }
+
+        /* ===== ZOOM CONTROLS ===== */
+        .zoom-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1500;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            background: var(--break-dark);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.1);
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .zoom-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 18pt;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.15s;
+            line-height: 1;
+        }
+
+        .zoom-btn:hover {
+            background: rgba(232, 58, 122, 0.4);
+        }
+
+        .zoom-btn:active {
+            background: rgba(232, 58, 122, 0.6);
+        }
+
+        .zoom-level {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 9pt;
+            font-weight: bold;
+            color: rgba(255,255,255,0.9);
+            min-width: 48px;
+            text-align: center;
+            padding: 0 2px;
+            border-left: 1px solid rgba(255,255,255,0.15);
+            border-right: 1px solid rgba(255,255,255,0.15);
+            cursor: pointer;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s;
+        }
+
+        .zoom-level:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        @media print {
+            .zoom-controls {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .zoom-controls {
+                bottom: 12px;
+                right: 12px;
+            }
+            .zoom-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 16pt;
+            }
+            .zoom-level {
+                min-width: 42px;
+                font-size: 8pt;
+                height: 36px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1354,12 +1440,94 @@
         </div>
     </div>
 
+    <!-- Zoom Controls -->
+    <div class="zoom-controls" id="zoom-controls">
+        <button class="zoom-btn" onclick="zoomOut()" title="Zoom out">−</button>
+        <span class="zoom-level" id="zoom-level" onclick="resetZoom()" title="Click to reset">100%</span>
+        <button class="zoom-btn" onclick="zoomIn()" title="Zoom in">+</button>
+    </div>
+
     <!-- Book Container -->
     <div id="book-container" class="hide-page-numbers hide-gradient-splash">
         <div class="loading" id="loading">Loading adventures</div>
     </div>
 
     <script>
+        // ===== ZOOM CONTROLS =====
+        let currentZoom = 100;
+        const ZOOM_STEP = 10;
+        const ZOOM_MIN = 50;
+        const ZOOM_MAX = 200;
+
+        function applyZoom(level) {
+            currentZoom = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, level));
+            document.getElementById('zoom-level').textContent = currentZoom + '%';
+
+            const container = document.getElementById('book-container');
+            if (!container) return;
+
+            const zoom = currentZoom / 100;
+
+            if (currentZoom === 100) {
+                // At default zoom, clear all inline overrides
+                container.style.zoom = '';
+                container.style.height = '';
+                container.style.scrollPaddingTop = '';
+                container.style.paddingLeft = '';
+            } else {
+                // Apply zoom to book container only (sidebar, zoom widget stay unscaled)
+                container.style.zoom = zoom;
+
+                // Counter-scale height so container still fills viewport
+                container.style.height = `calc(100vh / ${zoom})`;
+
+                // Counter-scale desktop-specific properties
+                const isMobile = window.matchMedia('(max-width: 900px)').matches;
+                if (!isMobile) {
+                    // Sidebar clearance: 240px visual → 240/zoom CSS px
+                    container.style.paddingLeft = `${240 / zoom}px`;
+                    // Snap centering: keep 1076px page centered in real viewport
+                    container.style.scrollPaddingTop = `calc((100vh / ${zoom} - 1076px) / 2)`;
+                } else {
+                    // On mobile, let the media query handle padding
+                    container.style.paddingLeft = '';
+                    container.style.scrollPaddingTop = '';
+                }
+            }
+
+            sessionStorage.setItem('helicalBookZoom', currentZoom.toString());
+        }
+
+        function zoomIn() {
+            applyZoom(currentZoom + ZOOM_STEP);
+        }
+
+        function zoomOut() {
+            applyZoom(currentZoom - ZOOM_STEP);
+        }
+
+        function resetZoom() {
+            applyZoom(100);
+        }
+
+        // Restore zoom from session
+        (function() {
+            const saved = sessionStorage.getItem('helicalBookZoom');
+            if (saved) {
+                currentZoom = parseInt(saved, 10) || 100;
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => applyZoom(currentZoom));
+                } else {
+                    applyZoom(currentZoom);
+                }
+            }
+        })();
+
+        // Re-apply zoom on resize (mobile ↔ desktop padding switch)
+        window.addEventListener('resize', () => {
+            if (currentZoom !== 100) applyZoom(currentZoom);
+        });
+
         // ===== MOBILE WARNING =====
         function dismissMobileWarning(event) {
             event.stopPropagation();
