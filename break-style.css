@@ -491,7 +491,7 @@
 }
 
 .post-links a.btn-pdf {
-    background: linear-gradient(135deg, #2d7d9a, #3fa089);
+    background: linear-gradient(135deg, #c4792a, #d4a03a);
     color: white;
 }
 
@@ -529,6 +529,23 @@
 .btn-compiler:hover {
     transform: translateY(-1px);
     box-shadow: 0 3px 10px rgba(232, 58, 122, 0.3);
+}
+
+.btn-compiler-pdf {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    background: linear-gradient(135deg, #c4792a, #d4a03a);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-compiler-pdf:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(196, 121, 42, 0.4);
 }
 
 .btn-rss {
