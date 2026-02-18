@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T12:06:30.299503Z",
+  "lastUpdated": "2026-02-18T00:07:09.323687Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6r5nbp3h32isphdjgkncr43h/app.bsky.feed.post/3mf35xjavms2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "watcherdm.com",
+        "displayName": "WatcherDM (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6r5nbp3h32isphdjgkncr43h/bafkreigyfff7fq433vwft752nnbo27pedovqk5ttn76zaxxtpxqmkxu354@jpeg"
+      },
+      "record": {
+        "text": "youtu.be/rmQDxOcTI-w?...\n\nI\u2019m finally an odd man.",
+        "createdAt": "2026-02-17T18:10:02.344Z"
+      },
+      "indexedAt": "2026-02-17T18:10:06.251Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/rmQDxOcTI-w?si=7b09CaAGdIwY6Tm3",
+        "title": "Into the Odd - Flip Through and Review",
+        "description": "YouTube video by WatcherDM",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6r5nbp3h32isphdjgkncr43h/bafkreibcpo6woqwz7bvdkamfvwo4ivrflky4l32qs572f224h2cxzllobe@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mf2qj4gmic2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "binarystar.games",
+        "displayName": "Binary",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim@jpeg"
+      },
+      "record": {
+        "text": "NULL_SPACE's 3rd pamphlet job has hit the itch page! \n\nHALTING_PROBLEM; details getting something important back from a factory with a malfunctioning security system, but is that the only thing going on here?\n\nGet it here (the itchfund is ongoing!)\n\nbinary-star-games.itch.io/null-space",
+        "createdAt": "2026-02-17T14:09:20.493Z"
+      },
+      "indexedAt": "2026-02-17T14:09:21.455Z",
+      "replyCount": 1,
+      "repostCount": 15,
+      "likeCount": 22,
+      "embed": {
+        "type": "external",
+        "uri": "https://binary-star-games.itch.io/null-space",
+        "title": "NULL_SPACE by Binary Star Games",
+        "description": "Freelancing in the solar system of the 24th century",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiczkt7fpsert7ukcxvbnvf2x5kswymthdg7l2r6sorap24x35ifxi@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3mf2m5pjsl22s",
+      "source": "bluesky",
+      "author": {
+        "handle": "letitmelo.bsky.social",
+        "displayName": "Melo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreihg6bsstf46gjxierqvfg2ph43zt6y45f4qavct5dwk446rzqkuzu@jpeg"
+      },
+      "record": {
+        "text": "Today\u2019s Monsters & Mysteries update: No, you can\u2019t use Charisma on a Strength check.\n\nLatest page:\nmnmcomic.com/comic/m4-p18\nChapter start:\nmnmcomic.com/comic/m4-cov...",
+        "createdAt": "2026-02-17T12:51:22.894Z"
+      },
+      "indexedAt": "2026-02-17T12:51:24.555Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 33,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreigqjd45ybr6bppklxbvz73moj42buh74nvnezgknuz7f5kgfyerrq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreigqjd45ybr6bppklxbvz73moj42buh74nvnezgknuz7f5kgfyerrq@jpeg",
+            "alt": "A paladin and a rogue are pulling a large, glowing spear from some rubble. \u201c\u2018\u2018Tis no use. The will of the gods was not meant for man\u201d says the paladin. \u201cCan\u2019t you command it? I thought that\u2019s what paladins do.\u201d replies the rogue. The paladin responds \u201can oath is not a lever.\u201d\n\nIn the next panel, the rogue bemoans all the work it took to get there, when the paladin puts his finger to her mouth, cutting her off. \u201cDo you hear that?\u201d He asks. A pregnant pause fills the darkness. \u201cI don\u2019t hear any-\u201c she responds, before being cut off again. \u201cExactly.\u201d"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3meyjmhjn222a",
       "source": "bluesky",
       "author": {
@@ -65,8 +155,8 @@
       },
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 6,
-      "repostCount": 79,
-      "likeCount": 182,
+      "repostCount": 83,
+      "likeCount": 200,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -93,9 +183,9 @@
         "createdAt": "2026-02-16T15:51:35.870Z"
       },
       "indexedAt": "2026-02-16T15:51:40.756Z",
-      "replyCount": 5,
-      "repostCount": 32,
-      "likeCount": 109,
+      "replyCount": 6,
+      "repostCount": 35,
+      "likeCount": 123,
       "embed": {
         "type": "images",
         "images": [
@@ -418,7 +508,7 @@
       "indexedAt": "2026-02-13T04:16:29.551Z",
       "replyCount": 4,
       "repostCount": 21,
-      "likeCount": 116,
+      "likeCount": 117,
       "embed": {
         "type": "external",
         "uri": "https://www.failuretolerated.com/talking-to-the-dungeon",
@@ -733,8 +823,8 @@
       },
       "indexedAt": "2026-02-11T03:08:37.356Z",
       "replyCount": 9,
-      "repostCount": 528,
-      "likeCount": 1066,
+      "repostCount": 530,
+      "likeCount": 1069,
       "embed": {
         "type": "external",
         "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
@@ -878,8 +968,8 @@
       },
       "indexedAt": "2026-02-09T15:05:05.954Z",
       "replyCount": 4,
-      "repostCount": 87,
-      "likeCount": 270,
+      "repostCount": 89,
+      "likeCount": 273,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/02/intergalactic-bastionland-public.html",
@@ -1000,53 +1090,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/6LryYN"
-    },
-    {
-      "uri": "at://did:plc:whk4wrdfddif2feq55mai4wb/app.bsky.feed.post/3mecftjhyjc2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "seaexcursion.itch.io",
-        "displayName": "caro",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreias5x4bzombmtsty6tgwqseivz5euedoa5z7yvpqcuj7vapbvsghu@jpeg"
-      },
-      "record": {
-        "text": "you know what time it is. another valentines day right around the corner, another set of indie tabletop rpg valentines",
-        "createdAt": "2026-02-07T21:54:24.722Z"
-      },
-      "indexedAt": "2026-02-07T21:54:30.157Z",
-      "replyCount": 12,
-      "repostCount": 98,
-      "likeCount": 179,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreiep2s5ay5qfsfqjt64cf7ukl4lm7mifhb6ss25knqumbwz537gp6u@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreiep2s5ay5qfsfqjt64cf7ukl4lm7mifhb6ss25knqumbwz537gp6u@jpeg",
-            "alt": "Arranged like a grade school valentine\u2019s card, art from the tabletop game BETTER STRANGERS by Tyler Crumrine (illustrations by Ellie White): a stack of playing cards peppered with expressive cartoon figures. Text on the card reads, \u201cDon\u2019t be a stranger, valentine!\u201d"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreidp2l6b3j2tdq6o3mewswcclivxwoyb7qoikze6nfveayoaf2uuom@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreidp2l6b3j2tdq6o3mewswcclivxwoyb7qoikze6nfveayoaf2uuom@jpeg",
-            "alt": "Arranged like a grade school valentine\u2019s card, art from the tabletop game A LAND ONCE MAGIC by Viditya Voleti (illustration by John Gagne): a vivid, technicolor castles cape with a heroic-looking figure standing in the foreground. Text on the card reads, \u201cYour magic never fades\u201d"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreihzr55m56qo2dw3rn4ag65hl36t6uu3bqpfnxy6ixn5r254hmbxe4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreihzr55m56qo2dw3rn4ag65hl36t6uu3bqpfnxy6ixn5r254hmbxe4@jpeg",
-            "alt": "Arranged like a grade school valentine\u2019s card, art from the tabletop game FIGHT TRUCK: 10TH ANNIVERSARY EDITION by Crows Danger (illustration by Samwise Lastname): a technicolor U-Haul truck, surrounded by white flowers on a black background. Text on the card reads, \u201cValentine, nothing worth doing is safe\u201d"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreigb6yeltuqdhs352ctdoou3se47hrpfj3pp2txkib2jcsmatg7jve@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:whk4wrdfddif2feq55mai4wb/bafkreigb6yeltuqdhs352ctdoou3se47hrpfj3pp2txkib2jcsmatg7jve@jpeg",
-            "alt": "Arranged like a grade school valentine\u2019s card, art from the tabletop game GIRL FRAME by Isabelle Ruebsaat (illustration by MossAndTwigs): a girl in a mechanical flightsuit with a neural jack, standing in front of a massive mech hangar. Text on the card reads, \u201chey girl / i mean frame\u201d"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreie2yrd54bk2tk7m7yqsrj54dmxvnpa6xffgoxnkk3tglbaefjbmda@jpeg"
-      }
     },
     {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3me55a5mdq22s",
@@ -1566,8 +1609,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1196,
-      "likeCount": 6316,
+      "repostCount": 1195,
+      "likeCount": 6315,
       "embed": {
         "type": "images",
         "images": [
@@ -1989,7 +2032,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 616,
-      "likeCount": 2721,
+      "likeCount": 2720,
       "embed": {
         "type": "images",
         "images": [
@@ -2304,7 +2347,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1937,
-      "likeCount": 8377,
+      "likeCount": 8378,
       "embed": {
         "type": "images",
         "images": [
@@ -2675,7 +2718,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11813,
+      "likeCount": 11812,
       "embed": {
         "type": "images",
         "images": [
@@ -3084,7 +3127,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2624,
-      "likeCount": 15418,
+      "likeCount": 15416,
       "embed": {
         "type": "images",
         "images": [
