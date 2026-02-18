@@ -2803,13 +2803,13 @@
             sidebarContent.appendChild(titleItem);
             sidebarTocItems.push({ element: titleItem, spreadIndex: 0 });
             
-            // Table of Contents (second spread)
-            const tocItem = createTocItem('Table of Contents', 1, 'toc-sidebar-item front-matter');
+            // Table of Contents (after title + post-cover filler)
+            const tocItem = createTocItem('Table of Contents', 2, 'toc-sidebar-item front-matter');
             sidebarContent.appendChild(tocItem);
-            sidebarTocItems.push({ element: tocItem, spreadIndex: 1 });
+            sidebarTocItems.push({ element: tocItem, spreadIndex: 2 });
             
             // Front matter from frontMatterTocData
-            let spreadIndex = 2; // Start after title + TOC
+            let spreadIndex = 3; // Start after title + post-cover filler + TOC
             frontMatterTocData.forEach(item => {
                 const fmItem = createTocItem(item.title, spreadIndex, 'toc-sidebar-item front-matter');
                 sidebarContent.appendChild(fmItem);
