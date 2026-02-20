@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T12:07:14.176018Z",
+  "lastUpdated": "2026-02-20T00:06:10.091056Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,157 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:sg3np2mzl2awrdsexyf3eok5/app.bsky.feed.post/3mfahvkzluk2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "pandiongames.com",
+        "displayName": "Andy | Pandion Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreiekjrb33bzksuzuniq5vivkaidljytmlf6m6pstoz6tfh4ejmnboi@jpeg"
+      },
+      "record": {
+        "text": "\ud83c\udf47 New store banner is up! \ud83c\udf47",
+        "createdAt": "2026-02-19T20:51:13.202Z"
+      },
+      "indexedAt": "2026-02-19T20:51:17.056Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 17,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreidgbiyjim5lo5nayszapi5cbopdbger4b7z5mcrj5xnthtk6hthbm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreidgbiyjim5lo5nayszapi5cbopdbger4b7z5mcrj5xnthtk6hthbm@jpeg",
+            "alt": "A screen capture of the pandiongames.com homepage, showing the new Midnight Muscadines-based banner image for the site."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mfa7dffqek2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "luckynewtgames.bsky.social",
+        "displayName": "Mama Newt \ud83e\udd8e\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreib56zsektiqx2pxthdkzk7kj7egxiwddov7leaqo64ozo7ng3xyjm@jpeg"
+      },
+      "record": {
+        "text": "There's less than 3 days left for this amazing deal!\n\n34 games over 80% off!\n\nCan you help us make our second goal?\n\nitch.io/b/3490/welco...",
+        "createdAt": "2026-02-19T18:17:53.394Z"
+      },
+      "indexedAt": "2026-02-19T18:17:52.957Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/b/3490/welcome-to-indie-ttrpgs",
+        "title": "Welcome To Indie TTRPGs! by kumada1 and 25 others",
+        "description": "Welcome To Indie TTRPGs!: 34 items for $20.00",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mfa65vkrp22v",
+      "source": "bluesky",
+      "author": {
+        "handle": "sandroad.moe",
+        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am@jpeg"
+      },
+      "record": {
+        "text": "BLOG POST TIME!\n\nToday we're dice posting ~ I talk about my love for the deeply cursed d6+d3 random roll table, and show off some stuff I've been working on for Project Tears!\n\nwww.failforward.moe/2026/02/d6d3...",
+        "createdAt": "2026-02-19T17:56:55.269Z"
+      },
+      "indexedAt": "2026-02-19T17:56:57.650Z",
+      "replyCount": 4,
+      "repostCount": 10,
+      "likeCount": 30,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.failforward.moe/2026/02/d6d3-and-other-cursed-dice-curves.html",
+        "title": "d6+d3 - And Other Cursed Dice Curves",
+        "description": "Nova over on Playful Void has a lovely little series called \" Make Dice Work For You \" - It's an excellent primer on dice, maths and using p...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifwzk4dbpwqwyuc6zae33x3ho7m2nz3lclc4h3cnswpz5rak5he6i@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mfa2dhmyr225",
+      "source": "bluesky",
+      "author": {
+        "handle": "evlynmoreau.bsky.social",
+        "displayName": "Evlyn Moreau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihh2og4d4gul63hyeic3fdjc63h6i5xle4qhqp7nc227cv4qta62u@jpeg"
+      },
+      "record": {
+        "text": "Finished the hex map. Taking a break before doing the alternate version. Curious to see how it will look in print.",
+        "createdAt": "2026-02-19T16:48:27.016Z"
+      },
+      "indexedAt": "2026-02-19T16:48:38.152Z",
+      "replyCount": 13,
+      "repostCount": 30,
+      "likeCount": 149,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
+            "alt": "Forest tiles hex map with 19 hexes"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mf7xuhl5cs2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae@jpeg"
+      },
+      "record": {
+        "text": "Intergalactic Bastionland playtest just got an update including:\nSample ship the Infinitis Wake with a crew and (incomplete) deck spreads\nAdded more guidance for each officer\u2019s preferences in the Bearing Council\nMedical care defined more clearly\nNote on recruitment in dock\nbit.ly/ibplaytest",
+        "createdAt": "2026-02-19T16:04:16.159Z"
+      },
+      "indexedAt": "2026-02-19T16:04:15.160Z",
+      "replyCount": 0,
+      "repostCount": 8,
+      "likeCount": 33,
+      "embed": {
+        "type": "external",
+        "uri": "https://bit.ly/ibplaytest",
+        "title": "Intergalactic Bastionland Playtest - Google Drive",
+        "description": "",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:nklihk5cftitsywyqbzzrugw/app.bsky.feed.post/3mf62fsiuhs2m",
       "source": "bluesky",
       "author": {
@@ -65,14 +216,43 @@
       },
       "indexedAt": "2026-02-18T21:44:28.454Z",
       "replyCount": 0,
-      "repostCount": 15,
-      "likeCount": 27,
+      "repostCount": 17,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://theplayreports.com/posts/instructional-design-and-ttrpgs/",
         "title": "The Play Reports",
         "description": "TTRPGs Need Instructional Designers",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nklihk5cftitsywyqbzzrugw/bafkreigaxdlmwqektvei6zzp7vyscgchbimmw3ukotet4v54l5bdbgdbpa@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mf5z6frxss2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
+      },
+      "record": {
+        "text": "Come visit our website. There\u2019s plenty of fun stuff in there, and it took us a long time to get the vibes right, but it\u2019s looking really nice!",
+        "createdAt": "2026-02-18T21:22:24.096Z"
+      },
+      "indexedAt": "2026-02-18T21:22:25.454Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.weirdplace.net",
+        "title": "Weird Place",
+        "description": "Weird Place",
+        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -94,8 +274,8 @@
       },
       "indexedAt": "2026-02-18T17:55:05.871Z",
       "replyCount": 5,
-      "repostCount": 23,
-      "likeCount": 259,
+      "repostCount": 24,
+      "likeCount": 287,
       "embed": {
         "type": "images",
         "images": [
@@ -123,7 +303,7 @@
       "indexedAt": "2026-02-18T15:35:09.752Z",
       "replyCount": 5,
       "repostCount": 14,
-      "likeCount": 110,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -153,9 +333,9 @@
         "createdAt": "2026-02-18T14:37:12.709Z"
       },
       "indexedAt": "2026-02-18T14:37:18.053Z",
-      "replyCount": 7,
-      "repostCount": 39,
-      "likeCount": 127,
+      "replyCount": 8,
+      "repostCount": 53,
+      "likeCount": 167,
       "embed": {
         "type": "images",
         "images": [
@@ -186,8 +366,8 @@
       },
       "indexedAt": "2026-02-18T12:23:06.152Z",
       "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 8,
+      "repostCount": 4,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/live/RkNqCOHSgFM?si=joJfwEhfL3Y7Amx1",
@@ -276,8 +456,8 @@
       },
       "indexedAt": "2026-02-17T14:09:21.455Z",
       "replyCount": 1,
-      "repostCount": 18,
-      "likeCount": 28,
+      "repostCount": 19,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://binary-star-games.itch.io/null-space",
@@ -338,13 +518,55 @@
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 8,
       "repostCount": 87,
-      "likeCount": 209,
+      "likeCount": 213,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
         "title": "Dollhouse: A TTRPG about management",
         "description": "A game where you and your fellow Handlers complete contracts for the titular \"Dollhouse\".",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreicpebpqfpblm7ougis2nnxuwvozxs64ta7qsv6ckktbmpz7l23bpi@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:5j2subtw3azb2bud72ls2t2e/app.bsky.feed.post/3meyizq6imk2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "eldjester.bsky.social",
+        "displayName": "Eld the Anti-fascist Malewife",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreigolumq5ob7yodaegr2jnk42dvf7uubelfi3l3dnd7qs7nuvfwhpa@jpeg"
+      },
+      "record": {
+        "text": "SHIRTLESS ON A ROOFTOP V0.9.5 is now OUT!\nNow with BETTER Layout!\nUppercut someone into a window, do a chainsaw grind on a wall, kick someone through a train car, you can do all of that when you're not busy solving a case or simply eating delicious food.\nCheck it!\neldjester.itch.io/soar-shirtle...",
+        "createdAt": "2026-02-16T16:50:08.454Z"
+      },
+      "indexedAt": "2026-02-16T16:50:47.154Z",
+      "replyCount": 2,
+      "repostCount": 27,
+      "likeCount": 39,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiaa2m2ykhce3yr3p6ws7yk32nvnxbmqwtkwhffiaaf7ou4yc3fto4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiaa2m2ykhce3yr3p6ws7yk32nvnxbmqwtkwhffiaaf7ou4yc3fto4@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiaqfy6bzfqh5gez45e3xtumspptydyfim66wj2q57hiqjdxsuuqiq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiaqfy6bzfqh5gez45e3xtumspptydyfim66wj2q57hiqjdxsuuqiq@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiasqi3nsltssvj54lbmvty77mzdmaz2iyfxcyyot67lp55532332a@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreiasqi3nsltssvj54lbmvty77mzdmaz2iyfxcyyot67lp55532332a@jpeg",
+            "alt": ""
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -629,7 +851,7 @@
       "indexedAt": "2026-02-13T16:33:43.254Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 10,
+      "likeCount": 11,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/unwrittenearths/swords-without-master",
@@ -737,38 +959,6 @@
       }
     },
     {
-      "uri": "at://did:plc:w5awjlrjxlv2xpqlh76jqudc/app.bsky.feed.post/3mep3zrosk22c",
-      "source": "bluesky",
-      "author": {
-        "handle": "ratti.bsky.social",
-        "displayName": "ratti incantati",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:w5awjlrjxlv2xpqlh76jqudc/bafkreigow2bkqiobsvwccfn4rr54uz4j4qb5vldtvprfwowhfyqpajrriy@jpeg"
-      },
-      "record": {
-        "text": "Doodles on the envelopes will always feel like a special little treat! Thanks, @evlynmoreau.bsky.social",
-        "createdAt": "2026-02-12T23:03:33.939Z"
-      },
-      "indexedAt": "2026-02-12T23:03:36.955Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 26,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w5awjlrjxlv2xpqlh76jqudc/bafkreidwuu5ucentzwexospsvj2fej4evojdndioo2cryvvrcbvkevenle@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:w5awjlrjxlv2xpqlh76jqudc/bafkreidwuu5ucentzwexospsvj2fej4evojdndioo2cryvvrcbvkevenle@jpeg",
-            "alt": "Rat head with two hearts doodle on a yellow mailer."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:uehvi4xi2ej44ge5qxf3cyug/app.bsky.feed.post/3meosyokoc22k",
       "source": "bluesky",
       "author": {
@@ -798,203 +988,6 @@
       }
     },
     {
-      "uri": "at://did:plc:muzjhmsedtz3yytindxdv46f/app.bsky.feed.post/3meofqpohxk2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "queerwizard.co.uk",
-        "displayName": "Ripley \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiexbndbrs466iq77lbvfa5md6g723w65zkj6a2k4b2brsmxmw5cdy@jpeg"
-      },
-      "record": {
-        "text": "really enjoying doing this sort of 90s Lucasarts point and click 'fuck perspective' sort of thing with these maps",
-        "createdAt": "2026-02-12T16:24:47.493Z"
-      },
-      "indexedAt": "2026-02-12T16:24:53.455Z",
-      "replyCount": 2,
-      "repostCount": 8,
-      "likeCount": 37,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiatq45ctd6honatxde55pwfaizhypzwzbhgtft26u2ehodqon2ebm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiatq45ctd6honatxde55pwfaizhypzwzbhgtft26u2ehodqon2ebm@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3meoeaheuok2p",
-      "source": "bluesky",
-      "author": {
-        "handle": "manysidedmedia.bsky.social",
-        "displayName": "Many Sided Media",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu@jpeg"
-      },
-      "record": {
-        "text": "Perils & Princesses | Ep. 2 - The Fairy Godmother\n\nThe princesses call upon their fairy godmother for help with their quest \n\nFt.\n@bobigail.bsky.social \n@symphonyhorror.bsky.social \n@danielleradford.bsky.social \n@shenuque.bsky.social \n@brianflaherty.bsky.social \n\nopen.spotify.com/episode/4kgi...",
-        "createdAt": "2026-02-12T15:57:48.218Z"
-      },
-      "indexedAt": "2026-02-12T15:57:50.258Z",
-      "replyCount": 1,
-      "repostCount": 8,
-      "likeCount": 25,
-      "embed": {
-        "type": "external",
-        "uri": "https://open.spotify.com/episode/4kgiCsDUue0jSSXypuJP43?si=7a0285f8aca142f0",
-        "title": "Perils & Princesses | Ep. 2 - The Fairy Godmother",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreifpp3goxoqkgo7at2ps4tqmpxaizitrozgejtqmcujg2frqoftf6y@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3meobx4vtjk2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
-      },
-      "record": {
-        "text": "I wrote a d100 random advancement table for humans. Ostensibly for my Middle-earth Hexcrawl ruleset, I think this could easily be used for any fantasy adventure game. As I think that humans are the most warlike of peoples, this list could be used for your fighter random advancements:",
-        "createdAt": "2026-02-12T15:16:47.766Z"
-      },
-      "indexedAt": "2026-02-12T15:16:49.951Z",
-      "replyCount": 7,
-      "repostCount": 28,
-      "likeCount": 127,
-      "embed": {
-        "type": "external",
-        "uri": "https://riseupcomus.blogspot.com/2026/02/random-human-advancement.html",
-        "title": "Random Human Advancement",
-        "description": "When you level up, you gain a random benefit based on your race or class. Here's what humans get. You can either roll a d9 for your culture ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreigu264nrsbhpfp5juxae245kvnbh7rhdvud2sn22yzjexc46wnvcy@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:fovaxznxa3qizw2eovyahkad/app.bsky.feed.post/3meo5zvibxk2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "perplexingruins.bsky.social",
-        "displayName": "Perplexing Ruins",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihvmfng2oypivekt2niz26p6pw453kcsoapvomb36mo56ynrzpqay@jpeg"
-      },
-      "record": {
-        "text": "Pleased to have this little project out in the world! Initially inspired by the tale of Elizabeth Bathory. It's a dark gothic valley with crypts & castles & angry dimensional shears-wielding rabbit & a village to explore! Lot's of dark gothic adventure to be had!\nmanadawnttg.itch.io/valley-of-wr...",
-        "createdAt": "2026-02-12T14:06:45.664Z"
-      },
-      "indexedAt": "2026-02-12T14:06:49.754Z",
-      "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreickfqb5oysmtsybbhq376bkbc5rgtxazl6cy2cgbil3fjmcwlwb2u@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreickfqb5oysmtsybbhq376bkbc5rgtxazl6cy2cgbil3fjmcwlwb2u@jpeg",
-            "alt": "hexcrawl map for valley of wrecked fortune, showing woods, castles, "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreigfcx24ajfegnvrlhhnqfzgejq67uc3vvhamur4cags75tkantrgq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreigfcx24ajfegnvrlhhnqfzgejq67uc3vvhamur4cags75tkantrgq@jpeg",
-            "alt": "ttrpg map and greenman art"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihs4sbring4lgt7b64aw7f73dxkb2iioauypyajj7k2k65naobq6u@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihs4sbring4lgt7b64aw7f73dxkb2iioauypyajj7k2k65naobq6u@jpeg",
-            "alt": "depiction of robed figure chocking another figure and a sideview vertical map of a castle"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreidxk225q3dyh6alen47wrwu426vudveln43b6zghghe3pwcpsf6re@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreidxk225q3dyh6alen47wrwu426vudveln43b6zghghe3pwcpsf6re@jpeg",
-            "alt": "rabbit with shears"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mem7nrph222p",
-      "source": "bluesky",
-      "author": {
-        "handle": "manysidedmedia.bsky.social",
-        "displayName": "Many Sided Media",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu@jpeg"
-      },
-      "record": {
-        "text": "Wanna meet a fairy godmother?\n\nTune in tomorrow for Episode 2 of Perils & Princesses!",
-        "createdAt": "2026-02-11T19:30:27.069Z"
-      },
-      "indexedAt": "2026-02-11T19:30:30.552Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 17,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreibbgfy4mjye4udnp427ofw2oxp2e3feigzjeg5cgzujoaybfs3t5q@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreibbgfy4mjye4udnp427ofw2oxp2e3feigzjeg5cgzujoaybfs3t5q@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3melwv3fkbk2u",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      },
-      "record": {
-        "text": "I do this gag every year but I thought I'd try to use a different picture this time\n\n(It's funny because she's doing just that, I guess)",
-        "createdAt": "2026-02-11T16:53:28.438Z"
-      },
-      "indexedAt": "2026-02-11T16:53:29.551Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 37,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibbjtselvaxdki36nptbbm3tsumf2zf4zcuunc46nu2chryldqzk4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibbjtselvaxdki36nptbbm3tsumf2zf4zcuunc46nu2chryldqzk4@jpeg",
-            "alt": "A picture of Mariah Doeheart making an attack - a heart (symbol of vitality in the BREAK!! tabletop rpg) is shown being shattered, but a message hopes that doesn't happen to YOU this year, valentine"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mel4ce5ltc2x",
       "source": "bluesky",
       "author": {
@@ -1021,64 +1014,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:laiha6g7jnflmhopfzthhi4e/app.bsky.feed.post/3mekis2x2m22t",
-      "source": "bluesky",
-      "author": {
-        "handle": "gentrigger.com",
-        "displayName": "Gen",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreiahrbi7uoskrpl6b7n5xyein2bzsmg5gn5rlh66so7zzwg5nhiluy@jpeg"
-      },
-      "record": {
-        "text": "The steam page for Lancer Tactics is now up!\n\nThrow us on your wishlist!\n\n#lancerrpg #mech #mecha",
-        "createdAt": "2026-02-11T03:08:35.177Z"
-      },
-      "indexedAt": "2026-02-11T03:08:37.356Z",
-      "replyCount": 9,
-      "repostCount": 534,
-      "likeCount": 1074,
-      "embed": {
-        "type": "external",
-        "uri": "https://store.steampowered.com/app/4049810/Lancer_Tactics/",
-        "title": "Lancer Tactics on Steam",
-        "description": "Create your pilot, craft your mech, then join the revolution. The iconic Lancer TTRPG has arrived, re-imagined as a mech-based tactics simulation. Put your synergies to the test in Instant Action, tac...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreigeqaenangcjfnoaotgvvrwoev3grechdijuqzcrsrgpisqw5gz4e@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mekaapunps2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdwonder.bsky.social",
-        "displayName": "Amanda P. \u27a1\ufe0f GaryCon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky@jpeg"
-      },
-      "record": {
-        "text": "The awesome @bommyknocker.bsky.social, @elmc.at, Grace of Choir of Fire @seraphimseraphina.bsky.social and many community members have organized a group recording effort of every Bloggies post as podcast episodes inspired by Blogs on Tape!https://podcast.bloggies.org/",
-        "createdAt": "2026-02-11T00:35:43.198Z"
-      },
-      "indexedAt": "2026-02-11T00:35:47.258Z",
-      "replyCount": 2,
-      "repostCount": 46,
-      "likeCount": 80,
-      "embed": {
-        "type": "external",
-        "uri": "https://podcast.bloggies.org/",
-        "title": "We Read The Bloggies (@WeReadTheBloggies) \u2022 Activity",
-        "description": "We\u2019re volunteers turning Bloggies-nominated blog posts into audio. So you can enjoy them anywhere, in a more accessible format.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreibn6ja7utzcpcclbozolwnpikogjfzcfj7n5l3mvo6yvcdmac2v4y@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
       }
     },
     {
