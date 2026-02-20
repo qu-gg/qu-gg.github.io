@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T00:06:10.091056Z",
+  "lastUpdated": "2026-02-20T12:05:08.411639Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,39 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mfbyok74ts2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      },
+      "record": {
+        "text": "In START (for BREAK!!) adventure locations will have 'architectural' drawings to help GMs/Players visualise the space (complementing conventional maps and illustrations)\n\nFollow here...\nwww.kickstarter.com/projects/gre...",
+        "createdAt": "2026-02-20T11:24:10.792Z"
+      },
+      "indexedAt": "2026-02-20T11:24:15.658Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 12,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq@jpeg",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
     {
       "uri": "at://did:plc:sg3np2mzl2awrdsexyf3eok5/app.bsky.feed.post/3mfahvkzluk2k",
       "source": "bluesky",
@@ -125,9 +158,9 @@
         "createdAt": "2026-02-19T17:56:55.269Z"
       },
       "indexedAt": "2026-02-19T17:56:57.650Z",
-      "replyCount": 4,
-      "repostCount": 10,
-      "likeCount": 30,
+      "replyCount": 5,
+      "repostCount": 13,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://www.failforward.moe/2026/02/d6d3-and-other-cursed-dice-curves.html",
@@ -155,8 +188,8 @@
       },
       "indexedAt": "2026-02-19T16:48:38.152Z",
       "replyCount": 13,
-      "repostCount": 30,
-      "likeCount": 149,
+      "repostCount": 33,
+      "likeCount": 158,
       "embed": {
         "type": "images",
         "images": [
@@ -188,7 +221,7 @@
       "indexedAt": "2026-02-19T16:04:15.160Z",
       "replyCount": 0,
       "repostCount": 8,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://bit.ly/ibplaytest",
@@ -217,7 +250,7 @@
       "indexedAt": "2026-02-18T21:44:28.454Z",
       "replyCount": 0,
       "repostCount": 17,
-      "likeCount": 29,
+      "likeCount": 30,
       "embed": {
         "type": "external",
         "uri": "https://theplayreports.com/posts/instructional-design-and-ttrpgs/",
@@ -334,8 +367,8 @@
       },
       "indexedAt": "2026-02-18T14:37:18.053Z",
       "replyCount": 8,
-      "repostCount": 53,
-      "likeCount": 167,
+      "repostCount": 55,
+      "likeCount": 170,
       "embed": {
         "type": "images",
         "images": [
@@ -517,7 +550,7 @@
       },
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 8,
-      "repostCount": 87,
+      "repostCount": 88,
       "likeCount": 213,
       "embed": {
         "type": "external",
@@ -547,7 +580,7 @@
       "indexedAt": "2026-02-16T16:50:47.154Z",
       "replyCount": 2,
       "repostCount": 27,
-      "likeCount": 39,
+      "likeCount": 40,
       "embed": {
         "type": "images",
         "images": [
@@ -589,7 +622,7 @@
       "indexedAt": "2026-02-16T15:51:40.756Z",
       "replyCount": 6,
       "repostCount": 35,
-      "likeCount": 124,
+      "likeCount": 125,
       "embed": {
         "type": "images",
         "images": [
@@ -817,9 +850,9 @@
         "createdAt": "2026-02-14T04:01:27.618Z"
       },
       "indexedAt": "2026-02-14T04:01:33.151Z",
-      "replyCount": 2,
+      "replyCount": 3,
       "repostCount": 2,
-      "likeCount": 41,
+      "likeCount": 45,
       "embed": {
         "type": "images",
         "images": [
@@ -2380,7 +2413,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1937,
-      "likeCount": 8377,
+      "likeCount": 8376,
       "embed": {
         "type": "images",
         "images": [
@@ -2751,7 +2784,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11811,
+      "likeCount": 11810,
       "embed": {
         "type": "images",
         "images": [
@@ -2965,7 +2998,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 245,
-      "likeCount": 1477,
+      "likeCount": 1476,
       "embed": {
         "type": "images",
         "images": [
@@ -3159,7 +3192,7 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2623,
+      "repostCount": 2622,
       "likeCount": 15413,
       "embed": {
         "type": "images",
