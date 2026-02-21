@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T12:05:08.411639Z",
+  "lastUpdated": "2026-02-21T00:06:06.085877Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:degzgkbpiitz45k3dbcrw66l/app.bsky.feed.post/3mfcaicj4rk2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "traversefantasy.itch.io",
+        "displayName": "Marcia B.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:degzgkbpiitz45k3dbcrw66l/bafkreigdogasa2tisuhomw26h54ootkmwdvrkmvepupfe5sk4rm3oddo2e@jpeg"
+      },
+      "record": {
+        "text": "i was super inspired by @knightattheopera.bsky.social and @forlornencystment.bsky.social\u2019s posts about mapping to incorporate similar dynamics into my pirate game\n\nand i felt the best way in my context was to make maps and mapping into a resource \ud83d\uddfa\ufe0f\n\ntraversefantasy.blogspot.com/2026/02/stat...",
+        "createdAt": "2026-02-20T13:43:51.346Z"
+      },
+      "indexedAt": "2026-02-20T13:43:51.958Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 12,
+      "embed": {
+        "type": "external",
+        "uri": "https://traversefantasy.blogspot.com/2026/02/stationery-maps.html?m=1",
+        "title": "Stationery & Maps",
+        "description": "Basically: I was inspired by Dwiz\u2019s post about how \u2018 the maze game \u2019 of charting sites was central to early D&D  in contrast to later approa...",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mfc5nskevs2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
+      },
+      "record": {
+        "text": "We are back with my continuing series on random class advancements. Today: elves!\n\nLike how B/X elves are both warriors and mages, these elves have a prowess with weapons but also a variety of almost clerical powers. \n\nTheir also mess a lot with the wilderness hexcrawling rules.",
+        "createdAt": "2026-02-20T12:53:14.715Z"
+      },
+      "indexedAt": "2026-02-20T12:53:16.757Z",
+      "replyCount": 3,
+      "repostCount": 6,
+      "likeCount": 32,
+      "embed": {
+        "type": "external",
+        "uri": "https://riseupcomus.blogspot.com/2026/02/random-elf-advancement.html",
+        "title": "Random Elf Advancement",
+        "description": "When you level up, you gain a random benefit based on your race or class. Here's what elves get. This is ostensibly for the\u00a0 Middle-earth He...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidyglx4yy5o2oyugg57xb4wpgmtaorxbf7pzrxbauwblhbhsxr6du@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mfbyok74ts2a",
       "source": "bluesky",
       "author": {
@@ -64,9 +122,9 @@
         "createdAt": "2026-02-20T11:24:10.792Z"
       },
       "indexedAt": "2026-02-20T11:24:15.658Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 12,
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 55,
       "embed": {
         "type": "images",
         "images": [
@@ -130,8 +188,8 @@
       },
       "indexedAt": "2026-02-19T18:17:52.957Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 5,
+      "repostCount": 7,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3490/welcome-to-indie-ttrpgs",
@@ -159,8 +217,8 @@
       },
       "indexedAt": "2026-02-19T17:56:57.650Z",
       "replyCount": 5,
-      "repostCount": 13,
-      "likeCount": 34,
+      "repostCount": 15,
+      "likeCount": 37,
       "embed": {
         "type": "external",
         "uri": "https://www.failforward.moe/2026/02/d6d3-and-other-cursed-dice-curves.html",
@@ -188,8 +246,8 @@
       },
       "indexedAt": "2026-02-19T16:48:38.152Z",
       "replyCount": 13,
-      "repostCount": 33,
-      "likeCount": 158,
+      "repostCount": 34,
+      "likeCount": 164,
       "embed": {
         "type": "images",
         "images": [
@@ -221,7 +279,7 @@
       "indexedAt": "2026-02-19T16:04:15.160Z",
       "replyCount": 0,
       "repostCount": 8,
-      "likeCount": 34,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://bit.ly/ibplaytest",
@@ -308,7 +366,7 @@
       "indexedAt": "2026-02-18T17:55:05.871Z",
       "replyCount": 5,
       "repostCount": 24,
-      "likeCount": 287,
+      "likeCount": 288,
       "embed": {
         "type": "images",
         "images": [
@@ -336,7 +394,7 @@
       "indexedAt": "2026-02-18T15:35:09.752Z",
       "replyCount": 5,
       "repostCount": 14,
-      "likeCount": 115,
+      "likeCount": 116,
       "embed": {
         "type": "images",
         "images": [
@@ -367,8 +425,8 @@
       },
       "indexedAt": "2026-02-18T14:37:18.053Z",
       "replyCount": 8,
-      "repostCount": 55,
-      "likeCount": 170,
+      "repostCount": 56,
+      "likeCount": 174,
       "embed": {
         "type": "images",
         "images": [
@@ -551,7 +609,7 @@
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 8,
       "repostCount": 88,
-      "likeCount": 213,
+      "likeCount": 214,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -580,7 +638,7 @@
       "indexedAt": "2026-02-16T16:50:47.154Z",
       "replyCount": 2,
       "repostCount": 27,
-      "likeCount": 40,
+      "likeCount": 41,
       "embed": {
         "type": "images",
         "images": [
@@ -622,7 +680,7 @@
       "indexedAt": "2026-02-16T15:51:40.756Z",
       "replyCount": 6,
       "repostCount": 35,
-      "likeCount": 125,
+      "likeCount": 126,
       "embed": {
         "type": "images",
         "images": [
@@ -712,7 +770,7 @@
       "indexedAt": "2026-02-15T15:52:06.453Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 28,
+      "likeCount": 29,
       "embed": {
         "type": "images",
         "images": [
@@ -852,7 +910,7 @@
       "indexedAt": "2026-02-14T04:01:33.151Z",
       "replyCount": 3,
       "repostCount": 2,
-      "likeCount": 45,
+      "likeCount": 46,
       "embed": {
         "type": "images",
         "images": [
@@ -862,128 +920,6 @@
             "alt": ""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:beikjqnksmmn6eprnrijv543/app.bsky.feed.post/3meqwpgd5js2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "aquavertigo.bsky.social",
-        "displayName": "AquaVertigo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:beikjqnksmmn6eprnrijv543/bafkreichzoklze7u6kzsog4di5ct4dje5gr2dfmresdw4nhnxgj46mgrdy@jpeg"
-      },
-      "record": {
-        "text": "Final day to back Swords Without Master ttrpg!\n\nwww.kickstarter.com/projects/unw...",
-        "createdAt": "2026-02-13T16:33:37.259Z"
-      },
-      "indexedAt": "2026-02-13T16:33:43.254Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 11,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/unwrittenearths/swords-without-master",
-        "title": "Swords Without Master",
-        "description": "A ttrpg of strange sorceries, ferocious deeds, and astounding wonder by Epidiah Ravachol.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:beikjqnksmmn6eprnrijv543/bafkreif4iamdbvm3jgsrszbds3fpnbzixgw2bfctcvbshbfq4ixdtqqgtm@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:fp7z6py7lxiujwngnn7dmjpj/app.bsky.feed.post/3meqq2ktfr22k",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickyhunter.bsky.social",
-        "displayName": "Steph \"StickyHunter\" Farrow\ud83d\udc9b\ud83e\udd0d\ud83d\udc9c\ud83d\udda4",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreihtvsioftcui63j7u36gxo7dqjt22n7qy54oyei26qae3z5uruztm@jpeg"
-      },
-      "record": {
-        "text": "It's Melody! @pipopixie.bsky.social's funky Break!! TTRPG character! She CAN and WILL try to eat berries that will give her a tummyache.\n\n#StickyHunterArt #SKEB #VGenComm",
-        "createdAt": "2026-02-13T14:34:34.881Z"
-      },
-      "indexedAt": "2026-02-13T14:34:38.249Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigszoolzxeluhb2gfrpc2vlscxq2v5coddejm4fnynx6lethpp25y@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigszoolzxeluhb2gfrpc2vlscxq2v5coddejm4fnynx6lethpp25y@jpeg",
-            "alt": "a cutesy character doing a peace sign toward the viewer. She has big baggy trousers on and a crop top. She has big fuzzy round ears and sleight buck teeth."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:l3slakasygku3s2cxaky3zcf/app.bsky.feed.post/3meqkiiizrk2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "kobayashi-rpg.bsky.social",
-        "displayName": "Alexandre Kobayashi",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreibgxxonfar6y2ftczyug6ph4ozr2e5x4jn33cfyoorn4c4itj2j4i@jpeg"
-      },
-      "record": {
-        "text": "The GUNS MAGES CORPSES Kickstarter is a go. And I made a character sheet :) www.kickstarter.com/projects/ale...",
-        "createdAt": "2026-02-13T12:54:59.764Z"
-      },
-      "indexedAt": "2026-02-13T12:55:03.456Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreic5szsicirnd3d5gq3im6tozgs42hujetcgzczihs34zvvjhj7biq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l3slakasygku3s2cxaky3zcf/bafkreic5szsicirnd3d5gq3im6tozgs42hujetcgzczihs34zvvjhj7biq@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:ebm4zblojs2vewc5455ntav2/app.bsky.feed.post/3mepnjd4gs22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "sean.tuesdayknightgames.com",
-        "displayName": "Sean McCoy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ebm4zblojs2vewc5455ntav2/bafkreic4gkgaeboqy7yhugza5fdblcxpge3lhwfulz2k3kxgcbahvqjj44@jpeg"
-      },
-      "record": {
-        "text": "Wrote a bit about making a dungeon book and how I'm starting to view dungeon crawls as a conversation between the dungeon and the players. And what that kind of storytelling means.\n\nwww.failuretolerated.com/talking-to-t...",
-        "createdAt": "2026-02-13T04:16:29.151Z"
-      },
-      "indexedAt": "2026-02-13T04:16:29.551Z",
-      "replyCount": 4,
-      "repostCount": 21,
-      "likeCount": 118,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.failuretolerated.com/talking-to-the-dungeon",
-        "title": "Talking to the Dungeon",
-        "description": "<p>Prepping dungeons is hard and while I\u2019ve read a lot of great modules, I never seem to remember what I loved about them other than the vibe. So now, whenever I read a module and notice a cool monste...",
-        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1676,7 +1612,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1195,
-      "likeCount": 6314,
+      "likeCount": 6313,
       "embed": {
         "type": "images",
         "images": [
@@ -2841,7 +2777,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 721,
-      "likeCount": 3301,
+      "likeCount": 3300,
       "embed": {
         "type": "images",
         "images": [
