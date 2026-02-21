@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T00:06:06.085877Z",
+  "lastUpdated": "2026-02-21T12:02:11.106252Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:46w7lghakdao42mav264cjuo/app.bsky.feed.post/3mfdk643fic23",
+      "source": "bluesky",
+      "author": {
+        "handle": "bernietheflumph.bsky.social",
+        "displayName": "Josh Burnett",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:46w7lghakdao42mav264cjuo/bafkreibq2eoqdu2fs7hj5yqbuotv44uxnhduwhmv6tc2cgbzqvrnkrad6m@jpeg"
+      },
+      "record": {
+        "text": "Vault of Villainy is a mere SIX DOLLARS away from funding!\nWho will put us over the finish line??\n\nwww.kickstarter.com/projects/lei...",
+        "createdAt": "2026-02-21T02:09:46.222Z"
+      },
+      "indexedAt": "2026-02-21T02:09:50.054Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/leightonconnor/vault-of-villainy",
+        "title": "Vault of Villainy",
+        "description": "A Menagerie of Malevolent Miscreants for the Million-Colored Sun RPG",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:46w7lghakdao42mav264cjuo/bafkreihyx2ddzhvdnnsdyqaflkhd5z7ybdoqbhlme5r742ykeyu3lcwkuu@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3hqkeaob75zmzrimwngpv7tm/app.bsky.feed.post/3mfdhgz2w622z",
+      "source": "bluesky",
+      "author": {
+        "handle": "ajeffschiller.bsky.social",
+        "displayName": "Back THE ELF WITH NO NAME Today!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreics3ylsyh25dmuauywnsv6mtj63l5haj3jml6id5t6aclcz6zhqg4@jpeg"
+      },
+      "record": {
+        "text": "Can we break 90 today?",
+        "createdAt": "2026-02-21T01:21:03.818Z"
+      },
+      "indexedAt": "2026-02-21T01:21:09.359Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreifzlwt2dzdov3mytvlc24agcqcyfnl6ayl2p2paatoixg66gdbqdm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreifzlwt2dzdov3mytvlc24agcqcyfnl6ayl2p2paatoixg66gdbqdm@jpeg",
+            "alt": "88/90"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:degzgkbpiitz45k3dbcrw66l/app.bsky.feed.post/3mfcaicj4rk2c",
       "source": "bluesky",
       "author": {
@@ -95,7 +156,7 @@
       "indexedAt": "2026-02-20T12:53:16.757Z",
       "replyCount": 3,
       "repostCount": 6,
-      "likeCount": 32,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-elf-advancement.html",
@@ -123,8 +184,8 @@
       },
       "indexedAt": "2026-02-20T11:24:15.658Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 55,
+      "repostCount": 7,
+      "likeCount": 57,
       "embed": {
         "type": "images",
         "images": [
@@ -218,7 +279,7 @@
       "indexedAt": "2026-02-19T17:56:57.650Z",
       "replyCount": 5,
       "repostCount": 15,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "external",
         "uri": "https://www.failforward.moe/2026/02/d6d3-and-other-cursed-dice-curves.html",
@@ -247,7 +308,7 @@
       "indexedAt": "2026-02-19T16:48:38.152Z",
       "replyCount": 13,
       "repostCount": 34,
-      "likeCount": 164,
+      "likeCount": 165,
       "embed": {
         "type": "images",
         "images": [
@@ -426,7 +487,7 @@
       "indexedAt": "2026-02-18T14:37:18.053Z",
       "replyCount": 8,
       "repostCount": 56,
-      "likeCount": 174,
+      "likeCount": 176,
       "embed": {
         "type": "images",
         "images": [
@@ -608,8 +669,8 @@
       },
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 8,
-      "repostCount": 88,
-      "likeCount": 214,
+      "repostCount": 90,
+      "likeCount": 216,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -638,7 +699,7 @@
       "indexedAt": "2026-02-16T16:50:47.154Z",
       "replyCount": 2,
       "repostCount": 27,
-      "likeCount": 41,
+      "likeCount": 42,
       "embed": {
         "type": "images",
         "images": [
@@ -770,7 +831,7 @@
       "indexedAt": "2026-02-15T15:52:06.453Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 29,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
@@ -824,38 +885,6 @@
         "title": "Digital Angel",
         "description": "It is the dystopic far-future of 2 0 2 6 Advanced supercities have exploded with new and horrible technologies. Rampant factories on their outskirts choke the remnants of the ecosystem. Wealth dispari...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreicjz52o7kfrooftg4r7mxsp2zimoazhqcpwvt7hyqmcr46wowizae@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:rbc7cksdufukfsezu6mnqqiw/app.bsky.feed.post/3metb4t3n7s2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "agamemnonpress.bsky.social",
-        "displayName": "Willett",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbc7cksdufukfsezu6mnqqiw/bafkreicaprmaiiycqnejwsdfcvelguipukydqp5belqjj6nsfspk3yq4cu@jpeg"
-      },
-      "record": {
-        "text": "We want you to join the Knights of Dust! Don\u2019t you want to dedicate the rest of your life to eradication of nightmares and demons in the Lands of Dust? Live on Kickstarter now. www.kickstarter.com/projects/the...",
-        "createdAt": "2026-02-14T14:45:23.742Z"
-      },
-      "indexedAt": "2026-02-14T14:45:29.849Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 7,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rbc7cksdufukfsezu6mnqqiw/bafkreigev6fcvy5qhhu3ejamx7ul7z37w32ys7ribja5ugnvrtl6io54mq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rbc7cksdufukfsezu6mnqqiw/bafkreigev6fcvy5qhhu3ejamx7ul7z37w32ys7ribja5ugnvrtl6io54mq@jpeg",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1216,7 +1245,7 @@
       "indexedAt": "2026-01-16T16:10:10.431Z",
       "replyCount": 1,
       "repostCount": 7,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
