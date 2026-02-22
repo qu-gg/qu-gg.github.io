@@ -6,10 +6,11 @@
 .toc-nav {
     position: fixed;
     right: calc(50% + 470px);
-    top: 20%;
-    transform: translateY(-50%);
+    top: calc(var(--nav-height, 60px) + 2rem);
     max-width: 160px;
-    z-index: 100;
+    max-height: calc(100vh - var(--nav-height, 60px) - 4rem);
+    overflow-y: auto;
+    z-index: 99;
 }
 
 .toc-title {
