@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T12:02:11.106252Z",
+  "lastUpdated": "2026-02-22T00:04:33.451379Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,66 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mffgsh4m5c2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
+      },
+      "record": {
+        "text": "It's the 40th anniversary of #zelda so here's an old image I did of Link refusing to give up even though the low heart sound is really annoying.",
+        "createdAt": "2026-02-21T20:14:53.369Z"
+      },
+      "indexedAt": "2026-02-21T20:14:56.853Z",
+      "replyCount": 0,
+      "repostCount": 20,
+      "likeCount": 117,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreib2aoq7rox3qsv25ysrux6h36nub6i4n7jia2utsklnje3pxmmsyu@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreib2aoq7rox3qsv25ysrux6h36nub6i4n7jia2utsklnje3pxmmsyu@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mfeut6iucs2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      },
+      "record": {
+        "text": "Happy Birthday to the Legend of Zelda, perhaps the most formative piece of media for me. It was the first game I owned, and in a way has never left me. My dear friends understood that so well that when they got me this NES BREAK!! cartridge as a gift, they made sure it too promised Endless Adventure",
+        "createdAt": "2026-02-21T14:53:10.514Z"
+      },
+      "indexedAt": "2026-02-21T14:53:20.159Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 63,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiaaykxuqonckq2to222ztc4mw4ua6rpwtgknjhxnx44iie63jkxfe@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiaaykxuqonckq2to222ztc4mw4ua6rpwtgknjhxnx44iie63jkxfe@jpeg",
+            "alt": "A pair of Nintendo Entertainment system cartridges - one is the original golden \"The Legend of Zelda\" cart and the other is a replica for a hypothetical BREAK!! NES game gifted to the author by his dear friends. Both invite you to Endless Adventure."
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:46w7lghakdao42mav264cjuo/app.bsky.feed.post/3mfdk643fic23",
       "source": "bluesky",
       "author": {
@@ -66,7 +126,7 @@
       "indexedAt": "2026-02-21T02:09:50.054Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 4,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/leightonconnor/vault-of-villainy",
@@ -156,7 +216,7 @@
       "indexedAt": "2026-02-20T12:53:16.757Z",
       "replyCount": 3,
       "repostCount": 6,
-      "likeCount": 34,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/02/random-elf-advancement.html",
@@ -306,9 +366,9 @@
         "createdAt": "2026-02-19T16:48:27.016Z"
       },
       "indexedAt": "2026-02-19T16:48:38.152Z",
-      "replyCount": 13,
+      "replyCount": 14,
       "repostCount": 34,
-      "likeCount": 165,
+      "likeCount": 166,
       "embed": {
         "type": "images",
         "images": [
@@ -486,8 +546,8 @@
       },
       "indexedAt": "2026-02-18T14:37:18.053Z",
       "replyCount": 8,
-      "repostCount": 56,
-      "likeCount": 176,
+      "repostCount": 59,
+      "likeCount": 184,
       "embed": {
         "type": "images",
         "images": [
@@ -669,8 +729,8 @@
       },
       "indexedAt": "2026-02-16T17:02:05.859Z",
       "replyCount": 8,
-      "repostCount": 90,
-      "likeCount": 216,
+      "repostCount": 91,
+      "likeCount": 217,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1252750842/dollhouse-a-ttrpg-about-management",
@@ -788,35 +848,6 @@
       }
     },
     {
-      "uri": "at://did:plc:zzwzdj4ao4cwxxgtnymgvg7o/app.bsky.feed.post/3mevvjonngs2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "mint-rabbit.bsky.social",
-        "displayName": "There's A TTRPG For That",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreifhb24suuhwskh2qe64exgndg2emim2nhovknriieamjlcexn5c4y@jpeg"
-      },
-      "record": {
-        "text": "I've got another #ttrpg playkit for you to check out! This is a Google Sheets playkit for Warrenguard, by @luckoftheharbor.com. You copy and paste info from each playbook and dragon to your character sheet!\nIf you like my work, you can also commission me! Check out my pinned post.",
-        "createdAt": "2026-02-15T15:55:49.615Z"
-      },
-      "indexedAt": "2026-02-15T15:55:55.851Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 4,
-      "embed": {
-        "type": "external",
-        "uri": "https://docs.google.com/spreadsheets/d/1eZ1Dhta6rU511fQd8YTkOzXMVqLelMUhVcQbj2MrrEM/edit?usp=sharing",
-        "title": "Warrenguard Playkit",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zzwzdj4ao4cwxxgtnymgvg7o/bafkreidvb2uecbsu3muljwvd2mgpgf4eix4hcytck4yrxcq7i4k63gmn3m@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mevvcuqwic2q",
       "source": "bluesky",
       "author": {
@@ -864,67 +895,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3metf7qu7ic2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "sandroad.moe",
-        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am@jpeg"
-      },
-      "record": {
-        "text": "Feeling lonely?\u02d6\u00b0.\u2727\n\nWhy not fill the void with the warmth only consumerism can buy? <3 Wouldn't it look so good on your shelf? ~~\n\nDigital Angel is available IN PRINT on @plusoneexp.bsky.social ~ So go grab it plssss \u2661\n\nXOXOXOXXXXX\n\nplusoneexp.com/products/dig...",
-        "createdAt": "2026-02-14T15:58:37.038Z"
-      },
-      "indexedAt": "2026-02-14T15:58:43.952Z",
-      "replyCount": 1,
-      "repostCount": 25,
-      "likeCount": 38,
-      "embed": {
-        "type": "external",
-        "uri": "https://plusoneexp.com/products/digital-angel?_pos=1&_sid=425eb93de&_ss=r&variant=47898395312350",
-        "title": "Digital Angel",
-        "description": "It is the dystopic far-future of 2 0 2 6 Advanced supercities have exploded with new and horrible technologies. Rampant factories on their outskirts choke the remnants of the ecosystem. Wealth dispari...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreicjz52o7kfrooftg4r7mxsp2zimoazhqcpwvt7hyqmcr46wowizae@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mes5e2ovzk2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "save.vs.totalpartykill.ca",
-        "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve@jpeg"
-      },
-      "record": {
-        "text": "The other book I got today is one I\u2019ve also wanted for ages, perhaps most notable for always being sold out: His Majesty the Worm! It\u2019s chonky.",
-        "createdAt": "2026-02-14T04:05:11.893Z"
-      },
-      "indexedAt": "2026-02-14T04:05:16.653Z",
-      "replyCount": 5,
-      "repostCount": 6,
-      "likeCount": 111,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreiey2psisyvvuba6hiihhuu6r5rlkldeu2ojhilxphwfcmirbrccui@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreiey2psisyvvuba6hiihhuu6r5rlkldeu2ojhilxphwfcmirbrccui@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mes55esngc2z",
       "source": "bluesky",
       "author": {
@@ -939,7 +909,7 @@
       "indexedAt": "2026-02-14T04:01:33.151Z",
       "replyCount": 3,
       "repostCount": 2,
-      "likeCount": 46,
+      "likeCount": 52,
       "embed": {
         "type": "images",
         "images": [
@@ -1640,8 +1610,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1195,
-      "likeCount": 6313,
+      "repostCount": 1194,
+      "likeCount": 6312,
       "embed": {
         "type": "images",
         "images": [
