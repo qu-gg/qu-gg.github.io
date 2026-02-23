@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T12:01:40.264580Z",
+  "lastUpdated": "2026-02-23T00:05:56.611865Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,99 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4kf5yyonhbxgv7yawa5yfnn5/app.bsky.feed.post/3mfiakurku223",
+      "source": "bluesky",
+      "author": {
+        "handle": "splendid.land",
+        "displayName": "splendidland\ud83c\udf31",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreiae3wtj6ls6ijnqbqmoajyygunxnkva3m7y4yefexoqtqkzomzd2q@jpeg"
+      },
+      "record": {
+        "text": "i've made a new comic called \"TOY STORY II: a sequel to Toy Story\".",
+        "createdAt": "2026-02-22T23:01:15.998Z"
+      },
+      "indexedAt": "2026-02-22T23:01:24.651Z",
+      "replyCount": 6,
+      "repostCount": 169,
+      "likeCount": 676,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreigxiy2xv2v3w2j4qn2zfdg6u3r7hqfl4kgv336kxrno3qncp2hoci@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreigxiy2xv2v3w2j4qn2zfdg6u3r7hqfl4kgv336kxrno3qncp2hoci@jpeg",
+            "alt": "\"TOY STORY II: a sequel to Toy Story\" by splendidland.\ntwo bell shaped clay figures of warriors are standing."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:fp7z6py7lxiujwngnn7dmjpj/app.bsky.feed.post/3mfhcnjgmz22h",
+      "source": "bluesky",
+      "author": {
+        "handle": "stickyhunter.bsky.social",
+        "displayName": "Steph \"StickyHunter\" Farrow\ud83d\udc9b\ud83e\udd0d\ud83d\udc9c\ud83d\udda4",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreihtvsioftcui63j7u36gxo7dqjt22n7qy54oyei26qae3z5uruztm@jpeg"
+      },
+      "record": {
+        "text": "Quick render of my Break!! character, Adaah. They're a gruun sage and very apathetic\n\n#StickyHunterArt #BreakTTRPG #TTRPGArt",
+        "createdAt": "2026-02-22T14:05:52.438Z"
+      },
+      "indexedAt": "2026-02-22T14:05:59.652Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 15,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigz4jqsbdut3rejklou7kffjshfjl2ch5yi2zd2uyuhx7uqmenwgq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigz4jqsbdut3rejklou7kffjshfjl2ch5yi2zd2uyuhx7uqmenwgq@jpeg",
+            "alt": "Adaah sitting on a shallow windowsill reading a tome. They have large tusks and horns and floppy ears with piercings. They are wearing a blue jumpsuit topped with black overalls and a burgandy cloak. They also have a large pointy with hat, the underside of which is filled with roses.\n\nthe lighting is warm, flooding in from the window, it's sunset."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mfhcc5tcwk22",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
+      },
+      "record": {
+        "text": "Hello! Thanks for the space. We\u2019re launching our game on the 25th and showcasing zines live too on our yt channel. Come hang with us, y\u2019all!\n\nwww.kickstarter.com/projects/wei...",
+        "createdAt": "2026-02-22T13:59:31.289Z"
+      },
+      "indexedAt": "2026-02-22T13:59:33.952Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/weirdplace/residue-rpg",
+        "title": "Coming soon: Residue: a solo-survival RPG",
+        "description": "A solo survival sci-fi horror TTRPG set in a non-Euclidean world, where resource management intertwines with the mystery of The Hum.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreifctbusgumxjz5rxz34aet2ceazev2nqb5kqjf77unozcnknw4gwa@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mffgsh4m5c2x",
       "source": "bluesky",
       "author": {
@@ -65,8 +158,8 @@
       },
       "indexedAt": "2026-02-21T20:14:56.853Z",
       "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 142,
+      "repostCount": 32,
+      "likeCount": 149,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +190,8 @@
       },
       "indexedAt": "2026-02-21T14:53:20.159Z",
       "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 68,
+      "repostCount": 11,
+      "likeCount": 69,
       "embed": {
         "type": "images",
         "images": [
@@ -110,6 +203,38 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:4npkxjw4hom3c2wmdcqbovia/app.bsky.feed.post/3mfeaiya6ak25",
+      "source": "bluesky",
+      "author": {
+        "handle": "hatchlingdm.itch.io",
+        "displayName": "Hatchlings Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreiboapkcozvuerv6uoepmigyihuthj5izpiuncmurz7vaqh7ikaqle@jpeg"
+      },
+      "record": {
+        "text": "Saturday #ttrpgteaser!\n\nPost your indie #zine and #ttrpg project crowdfunds for @zinemonth.bsky.social below.\n\n- Like & Share this post\n- Showcase your games below\n- Back your favs!\n\n#Kickstarter #BackerKit #indie #selfpromosaturday #ZineMonth #ZiMo #zinetopia #ZineQuest",
+        "createdAt": "2026-02-21T08:49:33.598Z"
+      },
+      "indexedAt": "2026-02-21T08:49:41.653Z",
+      "replyCount": 19,
+      "repostCount": 18,
+      "likeCount": 30,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreighct77brmdgm6daz4lzq5m7wp4f2p3zciowueqaitfe7hl6tckbq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreighct77brmdgm6daz4lzq5m7wp4f2p3zciowueqaitfe7hl6tckbq@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
     },
     {
       "uri": "at://did:plc:46w7lghakdao42mav264cjuo/app.bsky.feed.post/3mfdk643fic23",
@@ -346,38 +471,6 @@
         "title": "d6+d3 - And Other Cursed Dice Curves",
         "description": "Nova over on Playful Void has a lovely little series called \" Make Dice Work For You \" - It's an excellent primer on dice, maths and using p...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifwzk4dbpwqwyuc6zae33x3ho7m2nz3lclc4h3cnswpz5rak5he6i@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mfa2dhmyr225",
-      "source": "bluesky",
-      "author": {
-        "handle": "evlynmoreau.bsky.social",
-        "displayName": "Evlyn Moreau",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihh2og4d4gul63hyeic3fdjc63h6i5xle4qhqp7nc227cv4qta62u@jpeg"
-      },
-      "record": {
-        "text": "Finished the hex map. Taking a break before doing the alternate version. Curious to see how it will look in print.",
-        "createdAt": "2026-02-19T16:48:27.016Z"
-      },
-      "indexedAt": "2026-02-19T16:48:38.152Z",
-      "replyCount": 14,
-      "repostCount": 34,
-      "likeCount": 166,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
-            "alt": "Forest tiles hex map with 19 hexes"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -758,8 +851,8 @@
       },
       "indexedAt": "2026-02-16T16:50:47.154Z",
       "replyCount": 2,
-      "repostCount": 27,
-      "likeCount": 42,
+      "repostCount": 30,
+      "likeCount": 49,
       "embed": {
         "type": "images",
         "images": [
@@ -819,35 +912,6 @@
       }
     },
     {
-      "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mew5jei4ts2u",
-      "source": "bluesky",
-      "author": {
-        "handle": "alphabetsauce.bsky.social",
-        "displayName": "Daemon Soup",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreidrq6lcm4byqj7xkadcngg3h3u3jnabwhq2aye64saoxf22gpqkum@jpeg"
-      },
-      "record": {
-        "text": "Made an anime ending theme animatic for my current weird Deltarune and Homestuck inspired TTRPG campaign. Why? {shrugs} I like my players and I wanted them to see I guess!\n\nyoutu.be/EfQq_KjYe2o",
-        "createdAt": "2026-02-15T18:18:48.882Z"
-      },
-      "indexedAt": "2026-02-15T18:18:56.757Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 4,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/EfQq_KjYe2o",
-        "title": "Yearning and Pining - Homestuck Inspired RPG Anime Ending Theme",
-        "description": "YouTube video by Planless Dan",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreierwxw3bn2rwkna55shzxrdfud2qg5acmho3j2kiblvti5aq7gu3e@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mevvcuqwic2q",
       "source": "bluesky",
       "author": {
@@ -862,7 +926,7 @@
       "indexedAt": "2026-02-15T15:52:06.453Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -909,7 +973,7 @@
       "indexedAt": "2026-02-14T04:01:33.151Z",
       "replyCount": 3,
       "repostCount": 2,
-      "likeCount": 52,
+      "likeCount": 53,
       "embed": {
         "type": "images",
         "images": [
@@ -919,35 +983,6 @@
             "alt": ""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:uehvi4xi2ej44ge5qxf3cyug/app.bsky.feed.post/3meosyokoc22k",
-      "source": "bluesky",
-      "author": {
-        "handle": "dicemonkey.itch.io",
-        "displayName": "Mark Meredith",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uehvi4xi2ej44ge5qxf3cyug/bafkreihncycpel4ltwjrkw25ihsn67qgqsp5c3sa7hblbr3topcharqzk4@jpeg"
-      },
-      "record": {
-        "text": "I'm less than 3 days to go in this Kickstarter. I'm only about $550 away from funding! Any help you can provide is a HUGE help to getting us funded! www.kickstarter.com/projects/dic...",
-        "createdAt": "2026-02-12T20:21:53.440Z"
-      },
-      "indexedAt": "2026-02-12T20:21:55.855Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 10,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/dicemonkey/courts-of-rememory-a-supplement-to-song-of-the-river-prince",
-        "title": "Courts of Rememory: A Supplement to Song of the River Prince",
-        "description": "A book about the Fey and their Kind throughout the Riverlands",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uehvi4xi2ej44ge5qxf3cyug/bafkreih4jr7jeipcgdaifvzevqntyk3lck6qqmnf4u2r4jmi3oumnzb42a@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2348,7 +2383,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1937,
-      "likeCount": 8376,
+      "likeCount": 8375,
       "embed": {
         "type": "images",
         "images": [
