@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-23T00:05:56.611865Z",
+  "lastUpdated": "2026-02-23T12:06:48.931709Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mfioerskuk2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
+      },
+      "record": {
+        "text": "Sorry for the wait! I'm returning to the land of Song for more Midnight Muscadines by @pandiongames.com !! Come hang out~ twitch.tv/himeutsugi #vtubers #vsky #solottrpg #ttrpg",
+        "createdAt": "2026-02-23T03:08:23.984Z"
+      },
+      "indexedAt": "2026-02-23T03:08:27.657Z",
+      "replyCount": 0,
+      "repostCount": 9,
+      "likeCount": 12,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
+            "alt": "Hime going live on Twitch"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:4kf5yyonhbxgv7yawa5yfnn5/app.bsky.feed.post/3mfiakurku223",
       "source": "bluesky",
       "author": {
@@ -64,9 +96,9 @@
         "createdAt": "2026-02-22T23:01:15.998Z"
       },
       "indexedAt": "2026-02-22T23:01:24.651Z",
-      "replyCount": 6,
-      "repostCount": 169,
-      "likeCount": 676,
+      "replyCount": 13,
+      "repostCount": 372,
+      "likeCount": 1717,
       "embed": {
         "type": "images",
         "images": [
@@ -471,6 +503,38 @@
         "title": "d6+d3 - And Other Cursed Dice Curves",
         "description": "Nova over on Playful Void has a lovely little series called \" Make Dice Work For You \" - It's an excellent primer on dice, maths and using p...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifwzk4dbpwqwyuc6zae33x3ho7m2nz3lclc4h3cnswpz5rak5he6i@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mfa2dhmyr225",
+      "source": "bluesky",
+      "author": {
+        "handle": "evlynmoreau.bsky.social",
+        "displayName": "Evlyn Moreau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihh2og4d4gul63hyeic3fdjc63h6i5xle4qhqp7nc227cv4qta62u@jpeg"
+      },
+      "record": {
+        "text": "Finished the hex map. Taking a break before doing the alternate version. Curious to see how it will look in print.",
+        "createdAt": "2026-02-19T16:48:27.016Z"
+      },
+      "indexedAt": "2026-02-19T16:48:38.152Z",
+      "replyCount": 14,
+      "repostCount": 34,
+      "likeCount": 166,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifkcrdw4vw5fw7fqdhfz5ek5y24jjn2xuphk64brcix4c64uucgaa@jpeg",
+            "alt": "Forest tiles hex map with 19 hexes"
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -902,53 +966,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibgkgs3svnqudzyixnku3lroqbj76g2jdaidka5en5julr5k7cxtm@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibgkgs3svnqudzyixnku3lroqbj76g2jdaidka5en5julr5k7cxtm@jpeg",
             "alt": "Two big stone heads with ruby eyes. Text: \"Tabletop Gaming Convention. Between Two Cons. Norse Hall, Portland OR. June 26 - 27 2026. Betweentwocons.com for more information\". "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mevvcuqwic2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "hessan-yongdi.itch.io",
-        "displayName": "Hessan Yongdi",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreierjtouydh4y7wrkinajyptzsxmjhfjyihcehj65aotkuj7gltmme@jpeg"
-      },
-      "record": {
-        "text": "The kids fell in love with the shipbuilding system from Traveller so I decided to bind them a copy of the 2022 version of High Guard. I think it\u2019s my best #TTRPG #bookbinding to date. \n\nDecided to sew the cover to reduce strain on the end papers a bit and make it easier to glue them on straight.",
-        "createdAt": "2026-02-15T15:52:01.128Z"
-      },
-      "indexedAt": "2026-02-15T15:52:06.453Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 31,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiczuxubn7ykaev77xaxl4f3e5pymhxjf5ukbu5gp2dtymg5kzikgy@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiczuxubn7ykaev77xaxl4f3e5pymhxjf5ukbu5gp2dtymg5kzikgy@jpeg",
-            "alt": "The cover, showing the black star-spangled bookcloth used for the cover."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiema2t2biwwm5kzsl4rdz54b2k4b3lqgyu7cxdx5k4ccjjrt6azi4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreiema2t2biwwm5kzsl4rdz54b2k4b3lqgyu7cxdx5k4ccjjrt6azi4@jpeg",
-            "alt": "The spine, showing the twin tapes with French links overtop them, a pair of Coptic link stitching in the middle, and how the sewing on the cover links to the spine stitching."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreielpguia5aiin5wzquuliuk5acu234gwfpvkfaqxgvuk5ulmwzsbi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreielpguia5aiin5wzquuliuk5acu234gwfpvkfaqxgvuk5ulmwzsbi@jpeg",
-            "alt": "An interior shot, showing the blue endpapers and the title sheet. It is the 2022 edition of the Traveler High Guard manual released by Mongoose. "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreibyw6jtc7azyfuw5a354tkbwlarw56af2nqenemzunlrsmvrxeg4y@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreibyw6jtc7azyfuw5a354tkbwlarw56af2nqenemzunlrsmvrxeg4y@jpeg",
-            "alt": "An interior shot, showing ship stat blocks two of the spacecraft that come with the book, a military gig and a ship\u2019s launch. "
           }
         ]
       },
@@ -2754,7 +2771,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11810,
+      "likeCount": 11811,
       "embed": {
         "type": "images",
         "images": [
