@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-24T00:07:02.084999Z",
+  "lastUpdated": "2026-02-24T12:08:17.519930Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,38 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:evur5dfsnxksnvpel3e7ynrz/app.bsky.feed.post/3mflbv723ck2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "andrewmisisco.bsky.social",
+        "displayName": "Andrew Misisco",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreifqmmalyqjdr45pg2xhmejtxlfme7rkqeggiefw667ut7ftc5cub4@jpeg"
+      },
+      "record": {
+        "text": "Felice is one of my precious daughters from my current (and first) play through of Final Fantasy Tactics the ivalice chronicles. I didn\u2019t expect to get so attached to these characters, but man, am I! Expect more of Felice and her twin brother, Conphas.",
+        "createdAt": "2026-02-24T04:02:55.295Z"
+      },
+      "indexedAt": "2026-02-24T04:02:59.753Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 4,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreiandeyt4onfetfjlzsvb7mmvmlecclwrkzcvobcr6v3k2xbrocqni@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreiandeyt4onfetfjlzsvb7mmvmlecclwrkzcvobcr6v3k2xbrocqni@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
     {
       "uri": "at://did:plc:l273ogahvzmitwvo27kej3v3/app.bsky.feed.post/3mfkbqsqojs2z",
       "source": "bluesky",
@@ -131,8 +163,8 @@
       },
       "indexedAt": "2026-02-23T15:21:18.855Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 13,
+      "repostCount": 6,
+      "likeCount": 14,
       "embed": {
         "type": "external",
         "uri": "https://pennyblake.itch.io/curiomancers",
@@ -161,7 +193,7 @@
       "indexedAt": "2026-02-23T15:21:09.453Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 15,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -188,8 +220,8 @@
       },
       "indexedAt": "2026-02-23T13:54:14.155Z",
       "replyCount": 1,
-      "repostCount": 8,
-      "likeCount": 11,
+      "repostCount": 9,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://binary-star-games.itch.io/null-space",
@@ -217,8 +249,8 @@
       },
       "indexedAt": "2026-02-23T12:25:06.051Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 10,
+      "repostCount": 6,
+      "likeCount": 11,
       "embed": {
         "type": "images",
         "images": [
@@ -249,8 +281,8 @@
       },
       "indexedAt": "2026-02-23T11:35:07.953Z",
       "replyCount": 0,
-      "repostCount": 20,
-      "likeCount": 42,
+      "repostCount": 21,
+      "likeCount": 45,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/jam/the-old-school-rules-jam/entries",
@@ -309,9 +341,9 @@
         "createdAt": "2026-02-22T23:01:15.998Z"
       },
       "indexedAt": "2026-02-22T23:01:24.651Z",
-      "replyCount": 16,
-      "repostCount": 501,
-      "likeCount": 2355,
+      "replyCount": 20,
+      "repostCount": 599,
+      "likeCount": 2669,
       "embed": {
         "type": "images",
         "images": [
@@ -615,7 +647,7 @@
       "indexedAt": "2026-02-20T11:24:15.658Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 58,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -709,7 +741,7 @@
       "indexedAt": "2026-02-19T17:56:57.650Z",
       "replyCount": 5,
       "repostCount": 15,
-      "likeCount": 38,
+      "likeCount": 39,
       "embed": {
         "type": "external",
         "uri": "https://www.failforward.moe/2026/02/d6d3-and-other-cursed-dice-curves.html",
@@ -917,7 +949,7 @@
       "indexedAt": "2026-02-18T14:37:18.053Z",
       "replyCount": 9,
       "repostCount": 61,
-      "likeCount": 192,
+      "likeCount": 193,
       "embed": {
         "type": "images",
         "images": [
@@ -927,35 +959,6 @@
             "alt": "The cover of the Ghost in the Shell RPG, an illustration of the Major in a bodysuit, plugged into a machine."
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mf52zzhag22c",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids - Mystery Snacks LIVE on Backerkit!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq@jpeg"
-      },
-      "record": {
-        "text": "Last night, I got to chat with YEET from @9thlevelgames.bsky.social about zines, mysteries, and TTRPGs for kids!\n\nIt's a fun 13 minute show with a great kobold host, so go check it out!!  \n\nAnd thank you to 9th Level for inviting me for the episode!\n\nwww.youtube.com/live/RkNqCOH...",
-        "createdAt": "2026-02-18T12:23:04.688Z"
-      },
-      "indexedAt": "2026-02-18T12:23:06.152Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.youtube.com/live/RkNqCOHSgFM?si=joJfwEhfL3Y7Amx1",
-        "title": "Yeet vs ZineQuest",
-        "description": "YouTube video by 9th Level Games",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreicpcgkoii3szt3u4apxwbxmxmw6ict7frhpns6ty4madg5wlbtcbe@jpeg"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2773,7 +2776,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2334,
-      "likeCount": 11811,
+      "likeCount": 11809,
       "embed": {
         "type": "images",
         "images": [
@@ -3126,7 +3129,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1872,
-      "likeCount": 8950,
+      "likeCount": 8951,
       "embed": {
         "type": "images",
         "images": [
