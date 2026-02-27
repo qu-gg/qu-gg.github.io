@@ -1,0 +1,1484 @@
+[
+  {
+    "shortName": "Second To None ",
+    "fieldName": "second-to-none",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Second To None ",
+    "notes": "*While now leading a life of high adventure, you rely on the little skills that have always served you well in the past.*\n\n- You have an Edge whenever you roll for a Check or Contest covered by one of your Purviews.\n- This replaces the Minor Bonus you normally receive on rolls related to your Purview."
+  },
+  {
+    "displayName": "Dont Mind Me ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "dont-mind-me",
+    "shortName": "Dont Mind Me ",
+    "notes": "*You have a distaste for direct combat and your mind is often looking for a way to help without going toe to toe.*\n\nDuring a Fight, your opponents will not target you for Attack in any Turn where you are not intending to perform an offensive Action, or doing something that will obviously cause them harm or spoil their plans. For example, healing a friend would go unchecked but setting up a bomb would not."
+  },
+  {
+    "shortName": "Factotum Pack ",
+    "modType": "strength",
+    "fieldName": "factotum-pack",
+    "subtext": "",
+    "displayName": "Factotum Pack ",
+    "notes": "*You carry your oversized backpack around effortlessly and, despite it being crammed full, you are able to produce the required item from it almost instantly.*\n\n- You start with a giant backpack that takes up 1 of your Inventory Slots, it is worn instead of a Travellers Bag or Backpack.\n- The Pack provides 8 additional Inventory Slots before you become Overburdened (p270), and can hold anything that doesnt exceed the available Slots, including a rider (p187).\n- You can retrieve and use any item stored in the pack in 1 Turn, rather than the usual 2.\n- If lost or destroyed, you can make a new Factotum Pack by spending an evening modifying a regular Backpack (p173).\n- Your Pack functions like a normal Backpack if used by anyone else."
+  },
+  {
+    "notes": "*You have a passion and flair for making things. With the right materials and a little time, you can create wonders.*\n\n- Select a Crafting Discipline to specialise in: Forging, Gadgeteering, Tailoring, Artificing, Alchemy or Cooking.\n- For specific rules on creating items refer to Craft (p280).\n- You can use either your Insight or Deftness for your Crafting rolls.\n- You can identify items related to your Craft with an Insight Check.\n- You can select this Ability more than once, to gain a new Craft.",
+    "shortName": "Crafting Prodigy ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "crafting-prodigy",
+    "displayName": "Crafting Prodigy "
+  },
+  {
+    "subtext": "",
+    "fieldName": "folklorist",
+    "modType": "strength",
+    "shortName": "Folklorist ",
+    "displayName": "Folklorist ",
+    "notes": "*You've heard the old tales that say even the scariest monsters can be subdued with a pinch of spice or deterred by a drop of moon-plum juice. Is there something to them, or are they just stories?*\n\nYou may choose a consumable material (such as lantern oil or a treat) to act as a deterrent to an Unearthly Adversary.\n- **Unearthly Adversaries include:** Asura, Devas, Demons, Undead, Unshaped, or any creature with 4 or more Allegiance points.\n\n**Requires a Contest**\n- Your Insight vs. the Adversarys Aura. In addition:\n  - You must expend 1 Unit of the chosen consumable material.\n  - If a rare or appropriate consumable is selected, your GM may offer you a Minor Bonus (+2). For example, Bright Water against a Dark Aligned enemy.\n- **Success:** You can choose between one of two outcomes:\n  - **Ability loss:** The Adversary loses the use of an Ability of your choice.\n  - **Protective circle:** The Adversary cannot enter a circle made from the protective consumable. 1 Unit can create a circle for a single PC, more Units can be used to create larger circles on this basis.\n  - The effect lasts for 24 hours.\n- **Failure:** Youve wasted your consumable and look rather silly!\n\nUse of this Ability is subject to the rule of Diminishing Returns."
+  },
+  {
+    "displayName": "Healers Hands ",
+    "shortName": "Healers Hands ",
+    "modType": "strength",
+    "fieldName": "healers-hands",
+    "subtext": "",
+    "notes": "*You have trained as a physician or medic and are able to administer an array of field surgery procedures.*\n\n**Rank 1:**\n- **Heal:** After a Fight, you can remove a single Injury (p259) from a patient.\n- **Harvest:** You can remove two useful body parts from a dead, or inert, creature without spoiling them.\n\n**Rank 5:**\n- **Graft:** You can now attach a Prosthetic Replacement to a patient.\n\n**Requires a Deftness Check**\n- A Physicians Kit (p176) and a clean space are also required.\n- An individual can only benefit from this Ability once a week."
+  },
+  {
+    "notes": "*You can organize a team offensive.*\n\n- When you perform an Attack Assist (p256), you target an enemy instead of an ally.\n\n**Rank 1:**\n- Any Attack rolls made on the chosen enemy during that Turn receive a Minor Bonus (+2).\n\n**Rank 5:**\n- Any Attack rolls on your target now receive an Edge, instead of the Minor Bonus.",
+    "shortName": "Combat Coordinated ",
+    "subtext": "",
+    "fieldName": "combat-coordinated",
+    "modType": "strength",
+    "displayName": "Combat Coordinated "
+  },
+  {
+    "notes": "*A seductive accent or eloquent phrasing makes your argument more convincing.*\n\nYou have an Edge on all Negotiation rolls as long as you are given a chance to speak.",
+    "shortName": "Silver Tongue ",
+    "subtext": "",
+    "fieldName": "silver-tongue",
+    "modType": "strength",
+    "displayName": "Silver Tongue "
+  },
+  {
+    "displayName": "Social Learner ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "social-learner",
+    "shortName": "Social Learner ",
+    "notes": "*Good friends share a lot of things without even realizing it. If you listen, you can learn.*\n\n- You gain a Purview of your choice from each Character you form a Social Bond (p279) with.\n- If the Character is GM controlled, you should ask your GM what Purviews are available."
+  },
+  {
+    "notes": "*Words may not break their bones, but they can still cut deep.*\n\nIn a Fight, you can attempt to unsettle an enemy by directing inflammatory words at them.\n\n**Requires a Contest**\n- Your Aura vs. your targets Grit.\n- **Success:** Your target must either:\n  - Immediately attempt to Attack you on their next Turn, or\n  - Lose 1 Heart.\n  - If they have no Hearts left, they must try and Attack you.",
+    "shortName": "Cutting Wit ",
+    "fieldName": "cutting-wit",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Cutting Wit "
+  },
+  {
+    "notes": "*Whether it's thanks to wanderlust, a natural sense of direction or an encyclopedic knowledge of the world, you always seem to be able to find your way around.*\n\nGuide: You are able to act as a Guide when going on a Journey.\n- **Cartography:** You can attempt to make a Map good enough to be used by others or sold.\n\n**Rank 1:**\n- You can create a Local Map of any area you have journeyed through. If you have enough Local Maps you can combine them into a Kingdom Map.\n\n**Rank 5:**\n- You are now able to create Region Maps from the appropriate Kingdom Maps. If you have a map of the four main surface Regions, you can combine them into a World Map.\n\n**Cartography requires an Insight Check.**\n- **Success:** You created a usable Map.\n- **Failure:** You need 24 hours to reset your instruments before trying again.",
+    "displayName": "Stalwart Navigator ",
+    "fieldName": "stalwart-navigator",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Stalwart Navigator "
+  },
+  {
+    "displayName": "Boon Companion ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "boon-companion",
+    "shortName": "Boon Companion ",
+    "notes": "*Sometimes a trusted pet suddenly begins to talk. This is a phenomenon that is often appreciated, occasionally lamented, but never questioned.*\n\n- An Animal Companion of your choice gains the power of reason and speech.\n- Your Companion can speak the same languages as you.\n- Your Companion will remain loyal to you unless you mistreat it.\n- Your Companions personality and vocal tics will be true to their animalistic nature. For example, a Rokko-Do would be proud and aloof but a Slime might be easy going and relaxed.\n- If the Boon Companion dies, you can select a new Companion to assign this Ability to, although this Companion must be in your service for at least a week before being eligible."
+  },
+  {
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "troubleshooter",
+    "shortName": "Troubleshooter ",
+    "displayName": "Troubleshooter ",
+    "notes": "*When the proper tools aren't at hand, you can make do with the next best thing.*\n\n**You can attempt an Ability Check that requires a specific tool with an improvised alternative. For example, instead of requiring a Physicians Kit to perform Healers Hands, you might use a ripped cloak as a substitute bandage.**\n- Any Checks performed with an inferior substitute incur a Minor Penalty (-2).\n- Your GM decides whether a proposed substitute is acceptable. Is Immortal dandruff just as good as Arcane Powder? Ask your GM."
+  },
+  {
+    "displayName": "Multi-Tasker ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "multi-tasker",
+    "shortName": "Multi-Tasker ",
+    "notes": "*You make the most of your spare time with good scheduling and enthusiasm.*\n\n- You can perform two Activities during Downtime, instead of one.\n- Exception! You cannot Multi-Task if you have chosen Healing an Injury."
+  },
+  {
+    "notes": "*A few extra spikes here, a metal plate or two there, and your bulky Factotum's Pack is now combat ready! Cower behind it or swing it at your foes.*\n\n- On your combat Turn, you can use your Pack as either:\n  - A Mighty Weapon (p153), or.\n  - A Large Shield (p169).\n\nGear Allowance Restrictions dont apply when using your Pack as a piece of Combat Gear.",
+    "displayName": "Pack Tactics ",
+    "shortName": "Pack Tactics ",
+    "fieldName": "pack-tactics",
+    "subtext": "",
+    "modType": "strength"
+  },
+  {
+    "displayName": "Master Of Spectacle ",
+    "shortName": "Master Of Spectacle ",
+    "modType": "strength",
+    "fieldName": "master-of-spectacle",
+    "subtext": "",
+    "notes": "*Your showmanship can draw a crowd.*\n\n- You may attempt to gain the full attention of anyone within earshot.\n- If uninterrupted, you can make the spectacle last for about 10 minutes.\n\n**Requires a Contest**\n- Your Aura vs. the observers Grit.\n- GM Characters roll individually.\n- Your GM can choose to make a single roll for groups or crowds."
+  },
+  {
+    "notes": "*Running away can't grant you an extra life, but it can preserve the one you've got.*\n\n- Your Speed Rating increases by a single level.\n- If running for your life, you have Supernatural Leaping.",
+    "displayName": "The Better Part Of Valor ",
+    "shortName": "The Better Part Of Valor ",
+    "modType": "strength",
+    "fieldName": "the-better-part-of-valor",
+    "subtext": ""
+  },
+  {
+    "notes": "*You're better at outsmarting your foe than you are at going toe to toe.*\n\nYou receive a Minor Bonus (+2) when attempting a Combat Trick.",
+    "displayName": "Tricky Combatant ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "tricky-combatant",
+    "shortName": "Tricky Combatant "
+  },
+  {
+    "fieldName": "fortunes-fool",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Fortunes Fool ",
+    "displayName": "Fortunes Fool ",
+    "notes": "*Why rely on skill when you can cheat fate itself? Just be careful fate doesn't catch you trying to pull a fast one!*\n\n- You can request any roll be re-rolled if the outcome would have some sort of effect on you.\n- You can only use this Ability once per game Session and you must accept the new outcome even if its worse!"
+  },
+  {
+    "shortName": "Light Footed ",
+    "modType": "strength",
+    "fieldName": "light-footed",
+    "subtext": "",
+    "displayName": "Light Footed ",
+    "notes": "*As one might expect, you are especially nimble. You can move through terrain that impedes others and scale surfaces with deceptive lease.*\n\n- You are unaffected by Isolated and Precarious Battlefield Conditions.\n- You are able to climb vertical surfaces with the slightest of foot holds without being slowed down or requiring a Check."
+  },
+  {
+    "notes": "*You are so used to skulking around in the shadows that you conduct yourself with a habitual stealth.*\n\n- You always gain the benefit of Stealthy Movement while Exploring, even if your Team is using a different Movement Type.\n- You have an Edge on Stealth rolls while acting as a Scout on a Journey or Exploring.",
+    "displayName": "Furtive ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "furtive",
+    "shortName": "Furtive "
+  },
+  {
+    "fieldName": "many-masks",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Many Masks ",
+    "displayName": "Many Masks ",
+    "notes": "*You're able to alter your voice and mannerisms to conceal your true identity. Very handy when you're cornered and there is no obvious escape route.*\n\n- You have an Edge on all rolls involving acting out different personas to fool others. You might even be able to trick people you know if your face is covered.\n- You have an Edge when attempting to create Alter-Egos during Reputation Management."
+  },
+  {
+    "displayName": "Sticky Fingers ",
+    "shortName": "Sticky Fingers ",
+    "subtext": "",
+    "fieldName": "sticky-fingers",
+    "modType": "strength",
+    "notes": "- You can attempt to take an item from an individual in the same Battlefield Area as you after you perform a successful Attack, Attack Stunt, or Combat Trick on them.\n- The item you can acquire is limited by the following:\n  - It cannot be armor, an outfit or something currently being held by the target.\n  - It must be something within your reach. A worn locket or ring would count, something sealed away in a backpack would not.\n  - It cannot occupy more than 2 Inventory Slots.\n\n**Requires a Deftness Check. On Success, you snatch it.**"
+  },
+  {
+    "notes": "*This technique allows you to nullify an attack via a misdirection. Your opponent strikes, convinced their blow has reached its target only to discover they've hit a log wearing your hat!*\n\nIf youve been hit by an Attack, you can attempt to avoid taking any Damage with Kawarimi.\n\n**Requires a Deftness Check**\n- **Success:** You manage to completely dodge the blow by slipping out of something you were wearing. For example, a cloak, a hat, or even by tearing off a sleeve.\n  - Normal Outfits used with this Ability are only partially removed, becoming a Tattered Outfit (p172).\n  - Already Tattered Outfits are simply destroyed. Embarrassing!\n  - Armor or Outfits of Magical Materials are discarded but otherwise undamaged.\n- **Failure:** You take the Damage.\n\nThis Ability will not work if you have nothing left to slip out of!\n\nThis Ability may only be used once per Fight.",
+    "displayName": "Kawarimi ",
+    "shortName": "Kawarimi ",
+    "subtext": "",
+    "fieldName": "kawarimi",
+    "modType": "strength"
+  },
+  {
+    "notes": "*You have become rather good at gathering information with a mere glance, even when you’re in the most dangerous of places.*\n\nYou’re able to perform the Inspect Location Action without prompting a roll on the Adventure Site’s Encounter Table.",
+    "subtext": "",
+    "fieldName": "meticulous-dungeoneer",
+    "modType": "strength",
+    "shortName": "Meticulous Dungeoneer ",
+    "displayName": "Meticulous Dungeoneer "
+  },
+  {
+    "notes": "*You are wired for self-preservation and have developed an almost supernatural sense of danger.*\n\n- You have an odd reaction that warns you that you are about to do something dangerous without realizing it.\n- Perhaps you sneeze before opening a trapped door, or maybe your palms itch before you sip from a poisoned goblet.",
+    "shortName": "Twitchy ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "twitchy",
+    "displayName": "Twitchy "
+  },
+  {
+    "shortName": "Sudden Strikes ",
+    "modType": "strength",
+    "fieldName": "sudden-strikes",
+    "subtext": "",
+    "displayName": "Sudden Strikes ",
+    "notes": "*Thanks to some lessons from a choice tutor, the Ninja of the Seven Holy Isles or your sucker punching sibling, you have become pretty good at catching others off guard with your fists.*\n\nYou are able to make Unarmed Attacks as if wielding a Concealed Weapon."
+  },
+  {
+    "displayName": "Able Alchemist ",
+    "shortName": "Able Alchemist ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "able-alchemist",
+    "notes": "*Alchemy allows you to create a number of useful concoctions that greatly benefit practitioners of chicanery or skulduggery.*\n\n- You gain the Crafting Discipline Alchemy (p282).\n- For specific rules on creating items refer to Craft (p280).\n- You can identify potions and poisons related to your craft with an Insight Check.\n- You use Deftness for your Crafting rolls."
+  },
+  {
+    "displayName": "Legerdemain ",
+    "fieldName": "legerdemain",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Legerdemain ",
+    "notes": "*Developing quick fingers is something that happens naturally in your line of work, and you're happy to use them to fool or entertain.*\n\n- You have an Edge on all Deftness rolls that involve:\n  - Removing or attaching an item to someones person without them noticing.\n  - Picking a lock or tampering with a mechanical device.\n  - Performing card tricks, shell games and other forms of sleight of hand."
+  },
+  {
+    "notes": "*While a one-on-one fight is not an attractive proposition to you, ganging up on someone certainly is.*\n\nDuring a Fight, you gain a Minor Bonus (+2) on your Attack rolls against opponents who are being attacked by another character in the same Turn.",
+    "shortName": "Flanker ",
+    "fieldName": "flanker",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Flanker "
+  },
+  {
+    "notes": "*You aren't the best shot or the biggest hitter\n- but sometimes it's all about timing.*\n\nYou have an Edge on all Attack rolls made when you’ve chosen to React.",
+    "displayName": "Combat Opportunist ",
+    "shortName": "Combat Opportunist ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "combat-opportunist"
+  },
+  {
+    "displayName": "Stowing ",
+    "shortName": "Stowing ",
+    "modType": "strength",
+    "fieldName": "stowing",
+    "subtext": "",
+    "notes": "- You may hide a single item, no larger than 1 Inventory Slot, somewhere on your person.. even if naked!\n- The stowed item does not take up one of your Inventory Slots\n- The stowed item cannot be found via conventional search methods.\n- It takes a Turn to retrieve a stowed item from its hiding place."
+  },
+  {
+    "shortName": "Inner Dramatics ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "inner-dramatics",
+    "displayName": "Inner Dramatics ",
+    "notes": "*Your overactive imagination is constantly scheming and assessing the odds. If Plan A looks like it ain't gonna happen, then you've already got Plan B all figured out.*\n\n- You may cancel an Action you have made if you are dissatisfied with the results...it turns out you were only playing it out in your mind.\n- You can now choose a new Action, but it must be different from the cancelled Action.\n- This Ability may only be used once a game Session, so you are stuck with however your second choice works out."
+  },
+  {
+    "fieldName": "borrowed-blade",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Borrowed Blade ",
+    "displayName": "Borrowed Blade ",
+    "notes": "*Like a rat, you are most deadly when cornered. When you find yourself encircled by the town guard or an angry mob, you have a few manoeuvres to tip the balance back in your favor.*\n\nYou can attempt to redirect a failed Attack roll against you onto another target, if they are in the offending weapons Range.\n\n**Requires a Deftness Check**\n- **Success:** You redirect the attack towards your chosen target.\n  - If the original Attack roll exceeds your chosen targets Defense Rating, they suffer the consequences."
+  },
+  {
+    "displayName": "Charming Grifter ",
+    "shortName": "Charming Grifter ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "charming-grifter",
+    "notes": "- During Negotiation you add an Edge to the Primary Negotiators Aura Check If they are using the Honeyed Words/Outright Deceit Tactic (p240).\n- If your team is using another Negotiation Tactic, you can offer 'total lies' as an Influencing Factor, granting a Minor Bonus (+2)."
+  },
+  {
+    "notes": "*You can lose pursuers even when they are right on top of you, it's like you just vanished into thin air.*\n\nYou can attempt to hide while being observed, assuming there is room to move, somewhere to hide and/or something to provide a distraction.\n- This Ability can not be used if you are being Restrained, or in an empty and well lit room.\n\n**Requires a Contest**\n- Your Deftness VS. the observers Insight.\n- **Success:** You have disappeared. You remain hidden until you Move or take another Action. Any foe must spend a Turn to re-enter the Contest to detect you.",
+    "displayName": "Hide In Plain Sight ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "hide-in-plain-sight",
+    "shortName": "Hide In Plain Sight "
+  },
+  {
+    "notes": "*Darkness is your ally in all things. You are able to see, or at least sense, in total darkness.*\n\n- You are immune to the Obscured Battlefield Condition.\n- You are immune to the Blinded/ Deafened Ailment.",
+    "fieldName": "cats-eyes",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Cats Eyes ",
+    "displayName": "Cats Eyes "
+  },
+  {
+    "modType": "strength",
+    "fieldName": "desperate-scurry",
+    "subtext": "",
+    "shortName": "Desperate Scurry ",
+    "displayName": "Desperate Scurry ",
+    "notes": "*Your quick feet are jokingly referred to as your 'Ultimate Technique'.*\n\nYour Speed Rating increases by a single level."
+  },
+  {
+    "notes": "*You are a master of cutting a destructive path through a swarm of enemies.*\n\n- If you land a finishing blow against an opponent in Melee, you gain a Chain Attack against another foe in the same Area.\n\n**Rank 1:**\n- You have one Chain Attack per Round which\n- Has a Minor Bonus (+2) on the Attack roll.\n- Does an extra Heart of Damage if you land a successful strike.\n\n**Rank 5:**\n- You gain a second Chain Attack, if the previous one also finishes its opponent.",
+    "shortName": "Combat Momentum ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "combat-momentum",
+    "displayName": "Combat Momentum "
+  },
+  {
+    "shortName": "Favored Weapon ",
+    "modType": "strength",
+    "fieldName": "favored-weapon",
+    "subtext": "",
+    "displayName": "Favored Weapon ",
+    "notes": "*You are intimate with all weapons, and tend to them like a good parent would their children. But, like all parents, you harbor a secret favorite.*\n\n- You gain +1 to your Attack Bonus when using your favored weapon.\n\n**Rank 1:**\n- Select a Weapon Type to favor: Standard, Concealed, Quick, Master, Mighty, Arc, etc.(p152)\n\n**Rank 5:**\n- Select a second favored Weapon Type.\n- This bonus is applied to Combination weapons that include one of your favored types. If a weapon combines both favored types, the bonus increases to +2."
+  },
+  {
+    "shortName": "Into The Fray ",
+    "fieldName": "into-the-fray",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Into The Fray ",
+    "notes": "*You are able to vary your fighting style to suit the battle, applying caution, flair or precision when and where it is required.*\n\n- Each Round during a Fight, you can choose between the following:\n  - **Daring:** Perform an Attack Stunt (p255) without making a wager.\n  - **Tooth and Nail:** Use a mundane (non-magical) Attack to harm a creature that is normally immune to them.\n  - **Whirlwind Defense:** Temporarily increase your Defense Rating: Rank 1: +1 to Defense Rating. Rank 5: +2 to Defense Rating.\n  - All bonuses last until the start of your next Turn."
+  },
+  {
+    "displayName": "Valiant ",
+    "fieldName": "valiant",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Valiant ",
+    "notes": "*While all Champions possess great courage, you can laugh in the face of incomprehensible terror.*\n\n- You have immunity to the Terrified Ailment (p271).\n- You can help allies defend against the Ailment by shouting encouraging words. Those within earshot gain an Edge on their roll to resist, or remove, the Ailment."
+  },
+  {
+    "notes": "*Monster slaying is often such a wasteful business, but you see your next kill as your next meal. As you always say, every beast is a potential feast.*\n\n- A Small or Medium sized creature will yield 3 days worth of Rations\n- A Large or Massive creature will yield 6 days worth of Rations.\n- A Tiny creature might only provide a satisfying snack.\n- Colossal creatures might feed an entire village, but whos got time to carve it up!\n- **Harvest:** You can also remove one useful body part from the creature during the preparation process.\n\nThis Ability can not be used on inedible creatures, such as Undead or Mechanoids.",
+    "displayName": "Opportunistic Butcher ",
+    "modType": "strength",
+    "fieldName": "opportunistic-butcher",
+    "subtext": "",
+    "shortName": "Opportunistic Butcher "
+  },
+  {
+    "notes": "You can act as a Guide when on a Journey.\n- You can attempt to get free Room & Board (p201) for up to a week.\n\n**Finding lodgings requires an Aura Check**\n- **Success:** Your stay is free.",
+    "displayName": "Vagrant Blade ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "vagrant-blade",
+    "shortName": "Vagrant Blade "
+  },
+  {
+    "notes": "*A working knowledge of combined warfare, and the ability to organize the troops, is all you need to turn the tide of a battle.*\n\n- If you have a Social Bond with an ally, you can grant them an additional Action on their Turn during a Fight.\n- This Ability can be used in addition to any other Actions youre allowed to perform on your Turn.\n- This can be used once per Fight.",
+    "shortName": "Master Tactician ",
+    "fieldName": "master-tactician",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Master Tactician "
+  },
+  {
+    "displayName": "Brazen Defense ",
+    "modType": "strength",
+    "fieldName": "brazen-defense",
+    "subtext": "",
+    "shortName": "Brazen Defense ",
+    "notes": "*You have such contempt for your opponents that it's all the armor you need.*\n\n- You get +4 to your Naked Defense Rating.\n- This bonus is applied instead of, not in addition to, any bonus related to the Armor you wear, or any Quirks and Abilities you have.\n- When you wear Armor you can choose whether to use the bonus from Brazen Defense or the one provided by your Armor."
+  },
+  {
+    "modType": "strength",
+    "fieldName": "brute",
+    "subtext": "",
+    "shortName": "Brute ",
+    "displayName": "Brute ",
+    "notes": "*The quickest path between two places is often right through whatever is in the way.*\n\n- You get an Edge on any Attack rolls dedicated to Sundering (p263) something.\n- Any non-magical shield used to Parry your physical Attacks is immediately Sundered, due to the crushing power of your blows.\n\nThis Ability can not be used in conjunction with an Attack Stunt (p255)."
+  },
+  {
+    "displayName": "Brawler ",
+    "shortName": "Brawler ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "brawler",
+    "notes": "*Sometimes you just need to punch someone, really hard.*\n\n- You strike as if wielding a Standard Weapon when fighting Unarmed.\n- If using both hands, treat Attacks as if Dual Wielding (p254)."
+  },
+  {
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "giant-killer",
+    "shortName": "Giant Killer ",
+    "displayName": "Giant Killer ",
+    "notes": "*The bigger they are, the harder you hit.*\n\n- You do an additional Heart of Damage on a successful Attack against Massive or Colossal Creatures (p264).\n- You get an Edge on any rolls needed to move between, scale, or remain on a Colossal Creatures Strike Points."
+  },
+  {
+    "shortName": "Berserker ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "berserker",
+    "displayName": "Berserker ",
+    "notes": "*When the heat of the battle is upon you, the red mist descends and your rage takes control. This is very bad news for your foes... but your allies should be careful too.*\n\nYou can enter Berserk Mode while fighting or participating in a Check or Contest that calls for brute force.\n- While Berserk, the following applies:\n  - +2 on Attack rolls.\n  - -1 to Defense Rating.\n  - +2 Might and Grit.\n  - You are unable to communicate or participate in any coordinated actions or team efforts.\n- After youve dispatched a foe, or completed the objective of your Check or Contest you will:\n  - Attack the closest individual in the same Battlefield Area as you, whether its friend or foe.\n  - Continue to find and Attack targets until none are left.\n  - You can attempt to exit Berserk Mode at the end of your Turn.\n\n**Ending Berserk Mode requires an Aura Check**\n- **Success:** You regain control.\n- **Failure:** You must wait until the end of the next Round before you can make another attempt to exit Berserk Mode."
+  },
+  {
+    "notes": "*Being the toughest among your companions means you're happy to soak up hits for them when you can.*\n\n- You can redirect any successful physical Attack on an ally occupying the same Battlefield Area as you onto yourself.\n- The original Attack roll must now beat your Defense Rating to do you harm.\n- This ability cant be used against area effects like harmful smoke.",
+    "shortName": "Sentinel ",
+    "fieldName": "sentinel",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Sentinel "
+  },
+  {
+    "notes": "*Bravery, or recklessness, can be contagious. Your battle scarred body lends credibility to your bellowing voice. 'I say kill the beast!'*\n\n- You gain an Edge on all Aura rolls when attempting to inspire or Negotiate with a crowd.\n- Any Companions have an Edge on Loyalty Checks (p183).",
+    "displayName": "Galvanizer ",
+    "modType": "strength",
+    "fieldName": "galvanizer",
+    "subtext": "",
+    "shortName": "Galvanizer "
+  },
+  {
+    "subtext": "",
+    "fieldName": "overbearing-antagonist",
+    "modType": "strength",
+    "shortName": "Overbearing Antagonist ",
+    "displayName": "Overbearing Antagonist ",
+    "notes": "*Your mere presence is overwhelming. A shout, smirk, or simple glare can unsettle even a worthy opponent.*\n\nDuring a Fight, you can use your Action to attempt to intimidate an opponent up to 2 Battlefield Areas away.\n\n**Requires a Contest**\n- Your Aura vs. the targets Grit.\n- **Success:** You lock eyes. Your target is rendered temporarily inactive, missing their next Turn.\n\nThis ability will only work once on the same target every 24 hours.\n\nCreatures that are incapable of fear (such as unthinking machines, mindless undead, or colossi) are immune to such intimidation."
+  },
+  {
+    "displayName": "Indomitable ",
+    "shortName": "Indomitable ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "indomitable",
+    "notes": "*You refuse to be broken.*\n\nWhen reduced to 0 Hearts or below, you can attempt to find some extra vitality.\n\n**Requires a Grit Check**\n- **Success:** You recover half your maximum Hearts Total, rounded up.\n\nThis ability does not remove any Injuries incurred."
+  },
+  {
+    "notes": "*Tacticians live in the moment. Strategists live two steps ahead. Your foes will learn the difference once it's too late!*\n\n- You can take a single Action during an enemys Turn to perform a countermeasure to their intended Action.\n- If your intervention renders the foes declared Action impossible, they are forced to choose a new course of action or lose their Turn.\n\nUsing this Ability means that you cannot act on your next Turn.",
+    "displayName": "Uncanny Strategist ",
+    "subtext": "",
+    "fieldName": "uncanny-strategist",
+    "modType": "strength",
+    "shortName": "Uncanny Strategist "
+  },
+  {
+    "notes": "*Taking up a more advantageous position is much easier when you can jump really high.*\n\nYou gain Supernatural Leaping.",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "bounder",
+    "shortName": "Bounder ",
+    "displayName": "Bounder "
+  },
+  {
+    "notes": "*Even when calm and still, your soul crackles with a terrifying energy. A mere look can spread this force outwards, sapping the fighting spirit and bloodlust from lesser warriors in your presence.*\n\nYou can attempt to subdue opponents of lower Rank with a menacing glower.\n\n**Requires an Aura Check**\n- **Success:** All adversaries within shouting distance step back and wont engage you, or your allies, unless you strike first.\n\nThis ability has no effect on adversaries with a Rank equal to or higher than yours.\n\nThis Ability may only be used once in a game Session.",
+    "shortName": "Roaring Spirit ",
+    "fieldName": "roaring-spirit",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Roaring Spirit "
+  },
+  {
+    "notes": "*You train long and hard to ensure you move with effortless swiftness and grace.*\n\nYou start with a Speed Rating of Fast.",
+    "displayName": "Like The Wind ",
+    "fieldName": "like-the-wind",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Like The Wind "
+  },
+  {
+    "notes": "*The chaos and clamor of battle do not muddy your predatory instinct. Once your gaze has singled out a target, all distraction melts away and only your prey remains.*\n\n- Once per Fight you can choose a target for your Hunters Focus. You can do this at any time during the Fight.\n- Your Focus can be an opponent, but could also be an object you wish to destroy.\n- You cannot switch your Focus, even after your original target has been defeated or pacified.\n- You gain an Edge on all Attack rolls made against your Focus.\n- Your GM can grant you an Edge on Checks and Contests that get you closer to dispatching your Focus. For example, leaping over a chasm to get within striking distance.",
+    "displayName": "Hunters Focus ",
+    "fieldName": "hunters-focus",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Hunters Focus "
+  },
+  {
+    "notes": "*Anyone trying to strike you finds it trickier than it ought to be. You are an elusive opponent, able to twist away from a devastating strike at the very last moment.*\n\n- Once per Fight you can Sidestep an Attack or Ability that would normally have hit you.\n- You can Sidestep any Attack that could be feasibly avoided with a last second manoeuver. For example, avoiding a sword thrust with a nonchalant turn of your head or shielding your eyes from a mesmerising gaze.\n- The Sidestep prevents an Attack from connecting with or affecting you.\n- Youll need freedom to move and adequate space to execute your Sidestep.",
+    "displayName": "Sidestep ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "sidestep",
+    "shortName": "Sidestep "
+  },
+  {
+    "notes": "*You zip through the battlefield, darting back and forth while landing blow after blow on enemies too slow to keep up.*\n\nYou can Move through an additional Battlefield Area on your Turn during a Fight.",
+    "shortName": "Dashing Attacker ",
+    "subtext": "",
+    "fieldName": "dashing-attacker",
+    "modType": "strength",
+    "displayName": "Dashing Attacker "
+  },
+  {
+    "notes": "*You can be quiet and unassuming when you need to be, passing undetected by your foes until it's too late.*\n\n- You gain an Edge when making rolls to avoid detection by sight or sound.\n- You have an Edge on Stealth rolls while acting as a Scout on a Journey or Exploring.",
+    "subtext": "",
+    "fieldName": "silent-strider",
+    "modType": "strength",
+    "shortName": "Silent Strider ",
+    "displayName": "Silent Strider "
+  },
+  {
+    "displayName": "Trusted Comrade ",
+    "shortName": "Trusted Comrade ",
+    "fieldName": "trusted-comrade",
+    "subtext": "",
+    "modType": "strength",
+    "notes": "*Most folk can't be trusted, and you prefer the company of animals. You embrace their code: protect the pack, show no fear, survive another day. In return you are accepted as one of their own.*\n\n- You can forge a special bond with an Animal Companion that has spent a week or more with you:\n  - Your Trusted Comrades seem to understand your words, and you are able to sense what they are thinking or feeling.\n  - You and your Trusted Comrades are able to sense each others presence and, if separated, know which direction to go in order to find one another.\n  - Trusted Comrades will never abandon you, and never have to make Loyalty Checks (p183).\n- This Ability can extend to Tamed Monsters with your GMs Approval."
+  },
+  {
+    "shortName": "Free Runner ",
+    "subtext": "",
+    "fieldName": "free-runner",
+    "modType": "strength",
+    "displayName": "Free Runner ",
+    "notes": "*A sure-footed and decisive stride enables you to navigate a safe path over hazardous ground, run up sheer surfaces, and speed along narrow walls.*\n\n- You can move through Isolated (p250) or Precarious (p251) Battlefield Areas without penalty.\n- This Ability can be used inventively to perform otherwise impossible Attack Stunts, Attack Assists, and Combat Tricks (p255-256).\n- You must end your Turn on a stable surface, like the top of a wall or ledge. If not you will fall and be subject to Falling Injury."
+  },
+  {
+    "displayName": "Rushing Fist Style ",
+    "fieldName": "rushing-fist-style",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Rushing Fist Style ",
+    "notes": "*You are a master of a swift and fluid martial art, able to protect yourself and strike fatal blows even without a weapon.*\n\nYou make Unarmed attacks as if wielding a Quick Weapon."
+  },
+  {
+    "notes": "*Nature is your friend. It reveals to you the true path through dense bush and yields nourishment from barren landscapes.*\n\n- You can act as a Guide when on a Journey (p226).\n- You get an Edge on your Hunting/ Foraging roll when Camping.",
+    "displayName": "Ranger ",
+    "fieldName": "ranger",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Ranger "
+  },
+  {
+    "notes": "*Your mental clarity and steady hand make an impossible long shot a reality.*\n\nThe Range of any Missile Weapon you use is extended by 1 Battlefield Area.",
+    "shortName": "Faith In The Wind ",
+    "modType": "strength",
+    "fieldName": "faith-in-the-wind",
+    "subtext": "",
+    "displayName": "Faith In The Wind "
+  },
+  {
+    "notes": "*You seek intimacy with the weapons you wield. To make them is to know them.*\n\n- You gain the Crafting Discipline Forging (p283).\n- For specific rules on creating items refer to Craft (p280).\n- You use Deftness for your Crafting rolls.",
+    "displayName": "Artisan Smithy ",
+    "shortName": "Artisan Smithy ",
+    "fieldName": "artisan-smithy",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "notes": "*When surrounded by lesser warriors you enter Counter Fang stance. From this meditative state you visualise the flow of the fight and then, when engaged by predictable foes, you lay waste to them with choreographed efficiency.*\n\n- During a Fight you can choose to enter the Counter Fang stance instead of making an Attack or taking another Action.\n- While in the Counter Fang stance, any opponent that fails their Attack roll on you is subject to a retaliatory Attack, Attack Stunt, or Combat Trick (p254-256).\n- The benefit of this Ability lasts until the start of your next Turn, when you can move and re-enter the Counter Fang stance if desired.",
+    "subtext": "",
+    "fieldName": "counter-fang",
+    "modType": "strength",
+    "shortName": "Counter Fang ",
+    "displayName": "Counter Fang "
+  },
+  {
+    "displayName": "Flash Step ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "flash-step",
+    "shortName": "Flash Step ",
+    "notes": "*You levelled up your Sidestep. Now, as your enemies find themselves striking thin air, you take up a more advantageous position.*\n\n- You can now move to an adjacent Battlefield Area, or a more strategic place in the same Area, whenever you use your Sidestep.\n- All other Sidestep restrictions apply (p35).\n- This Ability does not allow you to move to an Area you could not normally enter."
+  },
+  {
+    "fieldName": "blistering-pace",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Blistering Pace ",
+    "displayName": "Blistering Pace ",
+    "notes": "*Already fast, you can now attain almost inhuman speeds.*\n\nYour Speed Rating increases by a single level."
+  },
+  {
+    "notes": "*You're a true hunter, able to find a path through any built-up defense.*\n\nYou can attempt to find a weak spot on an opponent that is the target of your Hunters Focus (p35).\n\n**Requires an Insight Check**\n- **Success:** You can ignore any Defense Bonus the Target has from Armor and Speed Rating.",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "wind-wears-away-stone",
+    "shortName": "Wind Wears Away Stone ",
+    "displayName": "Wind Wears Away Stone "
+  },
+  {
+    "notes": "*While your enemies struggle to focus in chaotic conditions, you are able to filter out distraction to gain a precious battlefield advantage.*\n\n- You cannot be Ambushed. Even if the rest of your group is caught off guard, you can Move and take your Action as normal.\n- You are immune to the Obscured Battlefield Condition.\n- You are immune to the Blinded/ Deafened Ailment.",
+    "displayName": "Mindfulness ",
+    "shortName": "Mindfulness ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "mindfulness"
+  },
+  {
+    "shortName": "Spell Cutter ",
+    "fieldName": "spell-cutter",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Spell Cutter ",
+    "notes": "*While imperceptible to regular folk, your eyes can distinguish the tiny distortions in the air created by coalescing mana. A well placed swipe can sometimes disrupt a spell's formation.*\n\nYou can attempt to nullify a Magic Ability that has targeted you, or an ally in the same Battlefield Area.\n\n**Requires a Contest**\n- Your Deftness vs. the Aptitude related to the magical Abilitys use. If no Aptitude is specified, then use the casters Aura.\n- **Success:** The spell is shattered and does not affect its intended targets.\n  - Successful or not, you cannot act during your next Turn."
+  },
+  {
+    "displayName": "Lightning And Thunder ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "lightning-and-thunder",
+    "shortName": "Lightning And Thunder ",
+    "notes": "*Diligent training and discipline allow you to pacify your enemy with a flurry of blows.*\n\n- Once per Turn you can take a follow-up Action after a successful Attack roll.\n- The follow-up Action must be an Attack, Attack Stunt, Attack Assist, or Combat Trick.\n- Making this follow-up Action is physically demanding, and you lose a Heart after performing the technique.\n- If youve run out of Hearts you will roll on the Injury Table."
+  },
+  {
+    "notes": "*To you, execution is an art form.*\n\nTo attempt a Sure Kill Strike you must first declare a target at the beginning of your Turn.\n- Next, you must make an Attack roll against your chosen target. If successful...Make an Execution Roll:\n  - If your initial Attack roll was over the Extra Damage threshold, then + 2 to the result.\n  - Next, Divide the end result by 2 (rounding up).\n  - To succeed, the result must be higher than your targets remaining Hearts.\n- **Success:** Your target loses all their remaining Hearts and dies. If its a PC, they are forced to roll on the Injury Table (p260).\n- **Failure:** Your hit is resolved like a standard Attack.\n\nSure Kill can only be attempted once every 24 hours.",
+    "displayName": "Sure Kill Strike ",
+    "shortName": "Sure Kill Strike ",
+    "subtext": "",
+    "fieldName": "sure-kill-strike",
+    "modType": "strength"
+  },
+  {
+    "notes": "*You can call forth a weapon forged from the wishes in your heart. These magically manifested weapons are of the finest quality and grow in power and possibility as you do.*\n\n**Creating your Heart's Blade:**\n- Your Hearts Blade grows in power as you rise in Rank. Add the new properties to your Hearts Blade when you reach the required Rank.\n\n**Rank 1:**\n- Select your weapons primary form and what it is made of.\n- Choose a Weapon Type: Quick, Master, Mighty, Arc, Lash, Drawn or Mechanical Missile (p152).\n- Choose a Magical Material: Sun Gold, Ash Bronze, or Sky Steel (p289).\n\n**Rank 3:**\n- Your Hearts Blade gains one of the following properties:\n  - **Glittering:** +1 on Attack rolls.\n  - **Righteous:** The weapons Extra Damage Threshold is reduced by 2 (p152).\n  - **Sheltering:** The weapon can Parry once per combat in the same manner as a Standard Shield (p169).\n\n**Rank 6:**\n- Your Hearts Blade can now transform into a secondary form, pick from the Weapon Types listed above.\n- Your Hearts Blade gains the Combination Weapon Ability allowing a hybrid weapon form\n\n**Using your Heart's Blade:**\n- You can call this weapon into existence through force of will.\n- Melee Weapons are formed instantly and can be used on the same Turn they are called.\n- Drawn and Mechanical Missile weapons take a Turn to fully form and appear with 4 Units of ammunition included.\n- Your Hearts Blade (and any ammunition) will vanish instantly on command.\n- Only a single form of the Hearts Blade may be summoned at any one time: either the primary, secondary, or combination form.\n- If the weapon is Sundered or lost during combat, you can will it away and summon a new Blade.",
+    "shortName": "Hearts Blade ",
+    "fieldName": "hearts-blade",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Hearts Blade "
+  },
+  {
+    "notes": "*Your compassion can manifest itself as a protective force for your allies. This might take the form of an iridescent aura or a heart-shaped crystal shield.*\n\n- Once per Fight you can bestow an ally within your sight a force field that can absorb 1 Heart of Damage, after which it disappears.\n- You can perform this Ability in addition to any other Actions permitted on your Turn.\n\n**Rank 1:**\n- You can Shield 1 person.\n\n**Rank 4:**\n- You can Shield 2 people.\n\n**Rank 8:**\n- You can Shield 3 people.\n- If you can protect more than one person, you can allocate your Shields in one go, or as required.",
+    "displayName": "Shield Of Love",
+    "shortName": "Hearts Blade Example ",
+    "fieldName": "shield-of-love",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "notes": "*Just as your heart has the power to summon mighty weapons, so too can it muster a loyal companion. This devoted sidekick never leaves your side and will even return, in due time, if struck down.*\n\n- You begin your adventures with a magical Companion.\n- This Companion does not count against your normal allowance of Companions (p183).\n- Create your Soul Companion following the steps listed at the end of this Calling.",
+    "shortName": "Soul Companion ",
+    "modType": "strength",
+    "fieldName": "soul-companion",
+    "subtext": "",
+    "displayName": "Soul Companion "
+  },
+  {
+    "notes": "- You can make your hand gem glow at will. It provides light equivalent to a Torch (p175).\n- You can use the gem to transfer a single Injury from a target to yourself with a gentle touch.\n- Gain 1 Bright Allegiance Point.",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "gemlight-m",
+    "shortName": "Gemlight ",
+    "displayName": "Gemlight "
+  },
+  {
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "glittering-machine",
+    "shortName": "Glittering Machine ",
+    "displayName": "Glittering Machine ",
+    "notes": "*When not in battle, you are able to channel your powers to summon a helpful tool or device, instead of your mighty Heart's Blade.*\n\n- You can summon a tool made of the same Magical Material chosen for your Hearts Blade.\n\n**Rank 1:**\n- You can summon any simple tool, such as a grappling hook or lock pick.\n\n**Rank 5:**\n- You can summon a simple Techno-Relic or Gadget you are familiar with. Unlike the real things, your glittering version does not require fuel or an additional power source to work.\n- The summoned tool remains, until:\n  - You swap it for another tool.\n  - You call for your Hearts Blade.\n  - You invoke Spirit Wings."
+  },
+  {
+    "displayName": "Love-Love Chef ",
+    "shortName": "Love-Love Chef ",
+    "subtext": "",
+    "fieldName": "love-love-chef",
+    "modType": "strength",
+    "notes": "*You're a passionate cook and you pour your heart and soul into the food you make.*\n\n- You gain the Crafting Discipline Cooking (p283).\n- For specific rules on creating items refer to Craft (p280).\n- You use Aura for Crafting rolls."
+  },
+  {
+    "notes": "*Your kind attention is so sincere that it can dispel ill effects. Your hug can lift a dispirited companion, your tears can thaw a petrified ally.*\n\n- With a touch, you can attempt to remove a psychological, physical, or magical Ailment (p268) from someone you care about.\n- Attempting this Ability during a Fight requires you to spend your Action.\n- This Ability cannot be used for situational Ailments: Toppled, Restrained, and Overburdened.",
+    "displayName": "Compassion Cure ",
+    "shortName": "Compassion Cure ",
+    "subtext": "",
+    "fieldName": "compassion-cure",
+    "modType": "strength"
+  },
+  {
+    "notes": "*When you so desire, a brilliant flame flickers around your Heart’s Blade, making it all the more deadly.*\n\n- **Blazing Desire:** Your Hearts Blade is ablaze and now does Flame Damage (p259) instead of Mundane Damage.\n- **Yearning Embrace:** After a successful Attack, the fire can be discharged to engulf your target and cause an additional Heart of Damage. This exhausts the Ability.\n- Passions Fire can only be used once per Fight.\n- Gain 1 Bright Allegiance Point.",
+    "shortName": "Passions Fire ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "passions-fire",
+    "displayName": "Passions Fire "
+  },
+  {
+    "notes": "*A strange sort of empathic magic allows you to understand what lies in the hearts of all those you speak to.*\n\n- You can target this Ability on anyone you have spoken to for a few moments.\n- After this time you are able to discern the primary emotional motivation that is driving their current actions and discourse (love, greed, fear, etc.).\n- If applicable, information gleaned from this Ability can be used as an Influencing Factor (p241) when Negotiating with the individual in the future.\n- This Ability is mostly inconspicuous, although you may appear to be staring uncomfortably deep into your targets eyes.\n- Gain 1 Bright Allegiance Point.",
+    "displayName": "Cry Of The Heart ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "cry-of-the-heart",
+    "shortName": "Cry Of The Heart "
+  },
+  {
+    "notes": "*Your animated and tuneful battle commands grant those listening a coordinated, rhythmic, combat flair.*\n\nYou can attempt to coordinate your allies during a Fight, granting all participants a Minor Bonus (+2) to a single roll on their Turn.\n- This Ability can be used in conjunction with your other permitted Actions, but you must declare the use of this Ability at the beginning of your Turn.\n\n**Requires an Aura Check:**\n- **Success:** 3-2-1...Go! Your Battle Dance begins...\n  - You can apply a Minor Bonus (+2) to a single roll made on your Turn.\n  - Once you have started a Dance, allies in the same Battlefield Area can choose to join in. To do so they must make an Aura Check at the start of your teams Turn.\n  - **Ally success:** Your ally jumps into the groove gaining a Minor Bonus (+2) for a roll made on their Turn.\n  - **Ally failure:** Your ally makes a misstep, disrupting the Dance. All Dancers lose their bonus this Turn. An ally can attempt to re-join the dance on the next Turn.\n  - Each Turn Dancers must make a successful Aura Check for the Dance to continue.\n- **Failure:** You stumble or stutter, and must apply a Minor Penalty (-2) to a roll of your choice made this Turn.\n\nAfter starting a Dance, you can not use this Ability again for 24 hours.\n\nWith your GMs approval, you can use this Ability in Linked Contests, like a chase sequence.",
+    "shortName": "Requires An Aura Check ",
+    "fieldName": "requires-an-aura-check",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Requires An Aura Check "
+  },
+  {
+    "subtext": "",
+    "fieldName": "battle-bonds",
+    "modType": "strength",
+    "shortName": "Battle Bonds ",
+    "displayName": "Battle Bonds ",
+    "notes": "*You have a merciful nature that can be felt in even your fiercest attacks. Your clemency does not go unnoticed and, in the midst of battle, you can make friends out of enemies.*\n\nWhenever you reduce a foe to 0 Hearts or less and choose to spare their life, you can attempt to soften their resolve.\n\n**Requires an Aura Check**\n- **Success:** You form a Social Bond with the beaten opponent. Discuss with your GM and decide on an appropriate Bond. For example, a begrudging admiration.\n  - A Bonded opponent is less inclined to target you for attack in the future, and will avoid dealing you a finishing blow unless absolutely necessary."
+  },
+  {
+    "subtext": "",
+    "fieldName": "at-your-side",
+    "modType": "strength",
+    "shortName": "At Your Side ",
+    "displayName": "At Your Side ",
+    "notes": "*Your strikes can create opportunities for your comrades-at-arms to exploit.*\n\nIf one of your Attacks is successful, it also counts as an Attack Assist for the next ally attacking the same opponent."
+  },
+  {
+    "displayName": "Spirit Wings ",
+    "modType": "strength",
+    "fieldName": "spirit-wings",
+    "subtext": "",
+    "shortName": "Spirit Wings ",
+    "notes": "*The wishes in your heart allow you to soar literally!*\n\n- You sprout glowing wings, and now you can fly at your normal Speed Rating.\n- Your wings remain until:\n  - You call for your Hearts Blade.\n  - You invoke the Glittering Machine Ability.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "displayName": "Shining Resolve ",
+    "fieldName": "shining-resolve",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Shining Resolve ",
+    "notes": "*Your spirit is indomitable and will always remain so.*\n\nYou gain Supernatural Will."
+  },
+  {
+    "shortName": "Opened Hearts ",
+    "fieldName": "opened-hearts-m",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Opened Hearts ",
+    "notes": "*Powerful Bright Magic lies within you. It can wash away all falsehoods and leave nothing but the naked truth, including both honest wishes and dark secrets.*\n\n**Requires a Contest**\n- Your Aura VS. the Grit of anyone in earshot.\n- Anyone who loses the Contest is unable to lie, deceive, or mislead you for a 24 hour period, although they can still refuse to answer your questions.\n- Unfortunately, you are also subject to the effects of this Ability for the same 24 hour period.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "subtext": "",
+    "fieldName": "radiant-blade-m",
+    "modType": "strength",
+    "shortName": "Radiant Blade ",
+    "displayName": "Radiant Blade ",
+    "notes": "*Your soul burns so brightly that your Heart's Blade transcends its material form to become a shard of devastating light.*\n\n- You can activate this Ability at will upon summoning your Hearts Blade.\n- **Slice of Light:** Your Hearts Blade is now a glowing shaft of light that does an extra Heart of Bright Damage (p259) in addition to the weapons Mundane Damage.\n- **Purifying Flare:** After a successful strike with the Hearts Blade, the light can be discharged to irradiate your target, causing an additional Heart of Bright Damage which dispels the Ability.\n- This Ability can be used once per Session and lasts for the duration of the Fight. If Purifying Flare is used, the Ability is exhausted immediately.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "shortName": "Legend In Your Own Time ",
+    "fieldName": "legend-in-your-own-time",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Legend In Your Own Time ",
+    "notes": "*Whether it's your heroic deeds or your legendary tenderness, you have become a source of inspiration for public works of art and epic tavern tales. Your reputation precedes you...sometimes.*\n\nWhenever you enter a new Settlement you can attempt Reputation Management (p275).\n\n**Requires an Aura Check**\n- **Success:** Youve already established a positive Reputation in this locale. If possible, the Reputation should be based on heroic efforts made in a previous Session. For example, Savior of Homble Village\" or Slayer of the Ooze Beast.\n- **Failure:** The locals have never heard of you, or your daring exploits."
+  },
+  {
+    "notes": "*Those touched by your kindness often come to help you in your darkest hour.*\n\n- If youre in mortal peril, maybe alone and outnumbered or stranded without hope, you can use this Ability to summon help.\n- Once activated, your GM will choose a character with whom you have a Social Bond (p279) to come to your assistance. This could even be a spared foe with whom youve formed a Battle Bond (p44).\n- The chosen character will miraculously appear just in time to offer you required assistance. For example, they might arrive with reinforcements or a convenient escape craft.\n- This Ability cannot be used again until you have had the time to participate in a Downtime Activity.\n- You can turn your Companion into armor for a specific task or Fight.\n- The magic armor has the following specifications:\n  - Superheavy Armor (p163).\n  - Anti-Hazard Abilities (p166).\n  - Mechanical Motion (p167).\n  - No one other than you can wear the armor.\n- The armor lasts until:\n  - The task it was activated for is completed, or...\n  - You have been reduced to 0 Hearts or less.\n- After you use it, the Armor, and your Soul Companion, will vanish until the next morning.\n- You cannot use this Ability again for 24 hours.",
+    "displayName": "Never Stand Alone",
+    "shortName": "Never Stand Alone ",
+    "modType": "strength",
+    "fieldName": "never-stand-alone",
+    "subtext": ""
+  },
+  {
+    "subtext": "",
+    "fieldName": "hearts-aegis",
+    "modType": "strength",
+    "shortName": "Heart's Aegis ",
+    "displayName": "Heart's Aegis",
+    "notes": "*Your Soul Companion is able to transmute into a magical suit of Armor that wraps around you in battle. This armor retains traces of your Companion’s aesthetics.*\n\n- You can turn your Companion into armor for a specific task or Fight.\n- The magic armor has the following specifications:\n  - Superheavy Armor (p163).\n  - Anti-Hazard Abilities (p166).\n  - Mechanical Motion (p167).\n  - No one other than you can wear the armor.\n- The armor lasts until:\n  - The task it was activated for is completed, or...\n  - You have been reduced to 0 Hearts or less.\n- After you use it, the Armor, and your Soul Companion, will vanish until the next morning.\n- You cannot use this Ability again for 24 hours.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "displayName": "Wraths Blade ",
+    "shortName": "Wraths Blade ",
+    "modType": "strength",
+    "fieldName": "wraths-blade",
+    "subtext": "",
+    "notes": "*You can call upon a weapon forged from your righteous anger or untempered fury. The weapon's appearance reflects the magnificence of your volatile and unyielding psyche.*\n\n**Creating your Wrath's Blade:**\n- Your Wraths Blade grows in power as you rise in Rank. Add the new properties to your Wraths Blade when you reach the required Rank.\n\n**Rank 1:**\n- Select your weapons primary form and what it is made of.\n- Choose a Weapon Type: Quick, Master, Mighty, Arc, Lash, Drawn or Mechanical Missile (p152).\n- Choose a Magical Material: Shade Iron, Dew Silver, or Warp Root (p289).\n\n**Rank 3:**\n- Your Wraths Blade gains one of the following properties:\n  - **Glistening:** +1 to Attack rolls.\n  - **Retributive:** The weapons Extra Damage Threshold is reduced by 2 (p152).\n  - **Denying:** The weapon can Parry once per combat in the same manner as a Standard Shield (p169).\n\n**Rank 6:**\n- Your Wraths Blade can now transform into a secondary form from the Weapon Types listed above.\n- Your Wraths Blade gains the Combination Weapon Ability allowing a hybrid weapon form.\n\n**Using your Wrath's Blade:**\n- You can call this weapon into existence through force of will.\n- Melee Weapons are formed instantly and may be used on the same Turn they are called.\n- Drawn and Mechanical Missile weapons take a Turn to fully form and appear with 4 units of ammunition included.\n- Your Wraths Blade (and any ammunition) will vanish instantly on command.\n- Only a single form of the Wraths Blade may be summoned at any one time: either the primary, secondary or combination form.\n- If the weapon is Sundered or lost during combat, you can will it away and summon a new Blade."
+  },
+  {
+    "notes": "*Your frightful countenance shakes the resolve of even the strongest foes.*\n\nAt the start of a Fight you can Glare at a single enemy at the start of your Turn.\n\n**Rank 1:**\n- The target of your Glare loses a single Heart.\n\n**Rank 5:**\n- Your target must now also participate in a Contest with you, their Grit VS. your Aura.\n- **Success:** Your enemy is unnerved and incurs a Snag on all Attack rolls against you.\n  - If this Ability reduces an adversary to 0 Hearts, or lower, they flee from the battle or surrender on the spot.\n\nA target may only be affected by one Glare per Fight.",
+    "modType": "strength",
+    "fieldName": "withering-glare",
+    "subtext": "",
+    "shortName": "Withering Glare ",
+    "displayName": "Withering Glare "
+  },
+  {
+    "shortName": "Tenacity ",
+    "fieldName": "tenacity",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Tenacity ",
+    "notes": "*Your focus and drive is unequivocal. You feed on the adrenaline rush of combat, pushing your body and spirit beyond their limits for any task deemed worthy enough.*\n\n- During a Fight, or other perilous encounter, you can expend a single Heart to re-roll any failed Attacks, Stunts, or Might and Grit Checks (and Contests).\n- The outcome of the second roll must be accepted regardless of whether the result is beneficial or not.\n- If you are out of Hearts when invoking this Ability, you must roll on the Injury Table."
+  },
+  {
+    "displayName": "Couturier ",
+    "fieldName": "couturier",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Couturier ",
+    "notes": "*Clothes are a statement of intent, and you are always dressed to kill.*\n\n- You gain the Crafting Discipline Tailoring (p284).\n- For specific rules on creating items refer to Craft (p280).\n- You use Grit for Crafting rolls."
+  },
+  {
+    "fieldName": "frost-blade",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Frost Blade ",
+    "displayName": "Frost Blade ",
+    "notes": "*Your Wrath's Blade does not always burn with rage, sometimes it is chillingly dispassionate.*\n\n- **Frost Damage:** Your Wraths Blade has iced over and now does Frost Damage (p259).\n- **Freezing Blow:** After a successful Attack, the ice can be discharged to freeze one of your opponents limbs. The chosen limb is Restrained (p270) until your opponent, or someone trying to assist them, makes a successful Might Check to break free. This exhausts the Ability.\n- Frost Blade can only be used once per Fight.\n- Gain 1 Dark Allegiance Point."
+  },
+  {
+    "displayName": "Wrath Bolt ",
+    "shortName": "Wrath Bolt ",
+    "subtext": "",
+    "fieldName": "wrath-bolt",
+    "modType": "strength",
+    "notes": "*You are able to fill your hand with dark, crackling energy. This charged mana can be hurled at your enemies or used to envelop your Wrath’s Blade.*\n\n- **Wrath Bolts:** You are able to fire Wrath Bolts at enemies up to one Battlefield Area away.\n- Bolts strike as Thrown Missile Weapons (p158).\n- Bolts do 1 Heart of Dark Damage on a successful Attack.\n- **Wrath Blade:** If you envelop your Wraths Blade with this Ability it now deals Dark Damage instead of Mundane Damage.\n- Gain 1 Dark Allegiance Point."
+  },
+  {
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "bulwark-of-disdain",
+    "shortName": "Bulwark Of Disdain ",
+    "displayName": "Bulwark Of Disdain ",
+    "notes": "*Your utter contempt for those that oppose you is armor enough.*\n\n- You get a +4 to your Naked Defense Rating.\n- This bonus is applied instead of, not in addition to, any bonus related to the Armor you wear.\n- When you wear Armor you can choose whether to use the bonus from Bulwark of Disdain or the one provided by your Armor."
+  },
+  {
+    "modType": "strength",
+    "fieldName": "the-hard-way",
+    "subtext": "",
+    "shortName": "The Hard Way ",
+    "displayName": "The Hard Way ",
+    "notes": "*If more level-headed attempts at reasoning fail, you are always willing to step in and use your unwavering presence to remind everyone that you are terrifyingly committed to having things your way.*\n\nYou get an Edge on all Negotiation attempts that use Physical Intimidation or a similar threatening strategy."
+  },
+  {
+    "shortName": "Desperate Friendship ",
+    "modType": "strength",
+    "fieldName": "desperate-friendship",
+    "subtext": "",
+    "displayName": "Desperate Friendship ",
+    "notes": "*You do not make friends readily but when you commit, you take the responsibility seriously.*\n\n- You are now subconsciously connected to anyone you have a Social Bond (p279) with and if separated:\n  - You know which direction to go in order to find them.\n  - You can sense if any of them are in mortal danger."
+  },
+  {
+    "notes": "*Your unabated fury manifests itself as large spikes or thorns that project from your Wrath’s Blade, making its wounds even more grievous. However, the toll on your spirit is great.*\n\n- You can choose to inflict an extra Heart of Damage on a successful Attack, but lose 2 of your own.\n- If you drop below 0 Hearts when using this Ability, you must roll on the Injury Table (p260) after each successful Attack.\n- Gain 1 Dark Allegiance Point.",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "barbed-justice-m",
+    "shortName": "Barbed Justice ",
+    "displayName": "Barbed Justice "
+  },
+  {
+    "modType": "strength",
+    "fieldName": "caustic-truth",
+    "subtext": "",
+    "shortName": "Caustic Truth ",
+    "displayName": "Caustic Truth ",
+    "notes": "*When physical force fails, you resort to psychological assault. By ridiculing your opponent’s deeply held beliefs, or competence, you can send your foe into an unbalancing rage.*\n\nOnce per Fight, you can attempt to enrage your opponent with a disparaging or spiteful truth.\n- Targets for this Ability must:\n  - Be engaged in a Fight with you for a Turn or more.\n  - Be able to understand you.\n  - Be capable of feeling emotions.\n\n**Requires a Contest**\n- Your Grit vs. your opponents Aura.\n- **Success:** Your comment unsettles your opponent:\n  - Their rage now provides them with an Edge on all Attack rolls and Abilities aimed at you, but..\n  - This leaves them open to attack. All Attack rolls made against the enraged foe benefit from an Edge.\n  - Their rage ends if you die, are no longer visible, or when the current Fight ends.\n\nThis Ability may only be used on one opponent per Fight, whether it is successful or not.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*With a cry of defiance you can summon a blizzard of magical blades that tear through anyone nearby.*\n\n- On your Turn you can summon clones of your Wrath’s Blade (or ammunition if it’s a Missile Weapon) to appear over the Battlefield, that rain down upon anyone surrounding you:\n  - You make a single Attack roll.\n  - The result of the roll is used as an Attack roll against everyone in the same Battlefield Area as you.\n  - A hit does 2 Hearts of Damage.\n  - Characters who have a Social Bond with you are exempt from the Attack.\n  - After the Storm, the summoned weapons disintegrate.\n  - You can use Sword Storm once every 24 hours without penalty.\n  - Using a Sword Storm in excess of this means you have to roll on the Injury Table after use.\n- Gain 1 Dark Allegiance Point.",
+    "displayName": "Sword Storm ",
+    "fieldName": "sword-storm",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Sword Storm"
+  },
+  {
+    "displayName": "Relentless Pursuer ",
+    "subtext": "",
+    "fieldName": "relentless-pursuer",
+    "modType": "strength",
+    "shortName": "Relentless Pursuer ",
+    "notes": "*Chasing down cowardly foes has done wonders for your athletic prowess!*\n\nYour Speed Rating increases by a single level."
+  },
+  {
+    "displayName": "Iconoclast ",
+    "shortName": "Iconoclast ",
+    "subtext": "",
+    "fieldName": "iconoclast",
+    "modType": "strength",
+    "notes": "*You have a reputation for avenging the oppressed even if you have only done so inadvertently. Downtrodden people who know of your deeds will assist you in whatever humble way they can.*\n\nYou can attempt to enlist the help of any poor, enslaved, or otherwise disenfranchised local residents.\n\n**Requires an Aura Check**\n- **Success:** The rabble have heard of you. Assuming they are friendly, or at least non-hostile, they will agree to any reasonable requests you make of them.\n  - For example, a street urchin will direct you into a side alley to hide you from the town guard, or a crowd might deliberately divert or obstruct pursuers.\n  - Helpers will not be prepared to put themselves in real danger, or be able to muster courage beyond their normal capacity."
+  },
+  {
+    "notes": "*You have a hidden strength powered by hatred deep within your soul.*\n\nYou have attained Supernatural Might.",
+    "displayName": "Overwhelming Might ",
+    "shortName": "Overwhelming Might ",
+    "fieldName": "overwhelming-might",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "notes": "*You can summon a Wrath’s Blade composed of pure dark energy, capable of wounding the soul.*\n\n- You can activate this Ability at will upon summoning your Wraths Blade.\n- **Dark Strike:** Your Wraths Blade is a cosmic void that now drains an additional Heart of Dark Damage in addition to the weapons Mundane Damage.\n- **Wrapped in Darkness:** After a strike with the Wraths Blade, the energy can be discharged to engulf your target and cause an additional Heart of Dark Damage; which dispels the Ability.\n- Using Wrapped in Darkness prevents you from using this Ability again for another 24 hours.\n- Gain 1 Dark Allegiance Point.",
+    "shortName": "Blade Of Darkness ",
+    "fieldName": "blade-of-darkness",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Blade Of Darkness "
+  },
+  {
+    "shortName": "Red Petal Revenge ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "red-petal-revenge-m",
+    "displayName": "Red Petal Revenge ",
+    "notes": "*Picking a rose in haste can prick your fingers, and so those who wish to do you harm will suffer the consequences.*\n\nIf you are hit in a Fight, or suffer an Ailment caused by an enemys Ability, you can attempt to get revenge on your aggressor.\n\n**Requires a Contest**\n- Your Grit vs. the attackers Grit.\n- **Success:** Your attacker suffers the same Damage, or Ailment, that they inflicted on you.\n  - If an Ailment can not be applied to your attacker, they take a Heart of Damage instead.\n  - Red Petal Revenge may only be used once every 24 hours.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "displayName": "Vexed Dispel ",
+    "modType": "strength",
+    "fieldName": "vexed-dispel",
+    "subtext": "",
+    "shortName": "Vexed Dispel ",
+    "notes": "*Your patience with hostile magic is thin, and your mere annoyance can unravel even the most carefully crafted spell.*\n\nYou can attempt to nullify a single persistent magical effect that is irritating you, or any of your allies that are located in the same Battlefield Area as you. For example, you can try to dispel a magically inflicted Ailment or a sorcerous barrier.\n\n**Requires a Grit Check**\n- **Success:** The magic will be suppressed so long as you are in the same Battlefield Area and still subject to the annoying effect. For example, the caster would regain the use of their suppressed Ability or the sorcerous barrier would return once you have passed or been pacified.\n\nVexed Dispel can be triggered the instant you are annoyed, and does not require an Action to cast.\n\nYou cannot Dispel magic that is instant, such as a damaging magical blast.\n\nYou cannot use this Ability again for 24 Hours after it has been successfully used.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "displayName": "Spirited Slaughter ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "spirited-slaughter",
+    "shortName": "Spirited Slaughter ",
+    "notes": "*Fresh from the kill, you have a twinkle in your eye and a spring in your step.*\n\nIf you slay an opponent during a Fight, you can immediately take another Action afterwards, as long as it continues or accelerates further violence."
+  },
+  {
+    "notes": "*Knowledge is your passion. Your Grimoire, a strange tome that’s always at hand, is filled to the brim with notes of your discoveries and experiences.*\n\n- Your Grand Grimoire is a large, personalized book that is always in your hands when needed, but nowhere to be found when you have no use for it.\n- Only you can write in the Grimoire, but it is quite capable of filling its own pages! It can magically sketch pictures of things you stare at for a few minutes and record messages you speak into its pages.\n- If you fail an Insight Check when attempting to recall a piece of information, you may consult your Grimoire for clues. Stuffed full of factual titbits, the tome will allow the GM to reveal a hint to where the elusive piece of information can be found.\n- If you die, your Grimoire manifests permanently. The tomes of great Sages are extremely valuable!\n- **Spell Push:** With a dramatic gesture and a shout, you can use your staff to magically shove things about.\n- The Push can affect things up to 15 ft away.\n- The Push exerts the same amount of force as an adult human.\n- The Push is always executed with full power and can not be used with any delicacy.\n- If the Push is used in a Check or Contest, the spells Might is the same as your Insight. This might include attempting to shove against a monster, or moving a heavy stone.\n- If the Push is used as an Attack, it is treated as an Unarmed strike, and can strike at a target up to 1 Battlefield Area away.\n- **Magelight:** Your Staff can glow with a radiance equivalent to a Torch (p175).\n- This light can be turned on and off by lightly tapping the staff.\n- The light remains in effect as long as you are holding your staff and are conscious.\n- Long, heavy staves can be used as a Standard Weapon. Shorter wands double as Concealed Weapons.\n- While you may only have one Staff at any time, creating a new one is as simple as carving your personal sigil on to your chosen piece.",
+    "fieldName": "grand-grimoire",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Starting Abilities ",
+    "displayName": "Grand Grimoire "
+  },
+  {
+    "displayName": "Sage's Staff ",
+    "subtext": "",
+    "fieldName": "sages-staff",
+    "modType": "strength",
+    "shortName": "Sage's Staff",
+    "notes": "*Staves are an iconic part of any Sage’s inventory. Your elegant wand, or gnarled walking stick,  carries your personal sigil and is the primary conduit for your magic.*\n\n**Spell Push:** With a dramatic gesture and a shout, you can use your staff to magically shove things about.\n- The Push can affect things up to 15 ft away.\n- The Push exerts the same amount of force as an adult human.\n- The Push is always executed with full power and can not be used with any delicacy.\n- If the Push is used in a Check or Contest, the spells Might is the same as your Insight. This might include attempting to shove against a monster, or moving a heavy stone.\n- If the Push is used as an Attack, it is treated as an Unarmed strike, and can strike at a target up to 1 Battlefield Area away.\n\n**Magelight:** Your Staff can glow with a radiance equivalent to a Torch (p175).\n- This light can be turned on and off by lightly tapping the staff.\n- The light remains in effect as long as you are holding your staff and are conscious.\n- Long, heavy staves can be used as a Standard Weapon. Shorter wands double as Concealed Weapons.\n- While you may only have one Staff at any time, creating a new one is as simple as carving your personal sigil on to your chosen piece."
+  },
+  {
+    "shortName": "Prestidigitonium ",
+    "fieldName": "prestidigitonium",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Prestidigitonium ",
+    "notes": "*One of the earliest tricks you learned was how to animate objects using the mana left behind by another living creature's touch. With this you can breathe wondrous life into simple tools and children's toys.*\n\nWith some singing, or gentle coaxing, you can attempt to make a single object spring to life and perform the function it was originally designed for.\n- An object needs to have been used within the last 3 months to retain the residual mana required for the spell.\n\n**Requires an Insight Check**\n- **Success:** Your chosen object begins to move. A door knob will rotate and the door click open, a toy soldier will march, and a Physicians Kit will perform surgery.\n  - The object will perform long enough to complete a single task, then the mana is expended.\n  - If a Check or Contest is required, your Insight is used.\n  - A Melee Weapon may be animated for a single Attack. The strike uses your Attack Bonus.\n  - A Shield can float and Parry a single Attack on you, or a nearby ally, before falling to the ground.\n  - A Missile Weapon can fire a single shot, if ammunition is available.\n  - Successful or not, once an object has been targeted by Prestidigitonium the ambient mana is disrupted and the Ability wont work on it again unless The object is used again, although it takes 24 hours for the required mana to settle."
+  },
+  {
+    "displayName": "Everyday Divination ",
+    "shortName": "Everyday Divination ",
+    "fieldName": "everyday-divination",
+    "subtext": "",
+    "modType": "strength",
+    "notes": "*Divination is such a popular Wizardry skill that Sages have gained a reputation for being rather nosy.*\n\nYou can tap a reflective surface once, and politely request to see a particular person or object.\n- The surface must be larger than your hand but no taller than yourself. Mirrors, windows and even puddles can be used.\n\n**Requires An Insight Check/Contest:**\n- Attempting to see a person, or creature, triggers a contest; your Insight vs. your targets Aura.\n\n**Attempting to see an object requires an Insight check.**\n- **Success:** You can see and hear your chosen target and the immediate area around them.\n  - The divination lasts for a few minutes.\n  - If you share a Social Bond (p279) with the target, you may talk to each other, although only you will be able to hear their words.\n- **Failure:** The view is clouded. A second try at Divination cannot be attempted for another 24 hours.\n\nAn individual surface may only be used for Divination once every 24 hours."
+  },
+  {
+    "fieldName": "mortifying-bloat",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Mortifying Bloat ",
+    "displayName": "Mortifying Bloat ",
+    "notes": "*You can agitate the ambient mana inside another creature, causing it to swell and expand. Performing the spell requires you to make an exaggerated gesture; exhaling a deep breath into your own thumb. Huuffff!*\n\nYou can attempt to inflate a single enemy from up to 1 Battlefield Area away.\n\n**Requires a Contest**\n- your Insight vs your target's Grit.\n- **Success:** Your target begins to bloat. By the start of their next Turn they will be afflicted by the Ballooned Ailment.\n  - Only one creature may be affected by this Ability at any time. If you target another individual, the previous target will return to normal size. Otherwise, the affliction wears off after an hour or if you will it away.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*You have whiled away many hours tinkering with magical devices. Whether a passion or a hobby, you have learned enough to repair, maintain and even create such devices in your spare time.*\n\n- You gain the Crafting Discipline Artificing (p282).\n- For specific rules on creating things refer to Craft (p280).\n- You can identify Oddities, Artifacts, and Gadgets related to your craft with an Insight Check.\n- You use Insight for your Crafting rolls.\n- You can use your Mage Staff as if it were a giant pen or paintbrush as long as the Magelight Ability is active.\n- The ink glows as brightly as a torch, but vanishes after a day.\n- You can squirt ink on an enemy up to 1 Battlefield Area away with a successful Attack roll.\n- The ink does no damage, but prevents enemies from hiding in the shadows.\n- Targets that are vulnerable to light may suffer other ill effects. This is at your GMs discretion.",
+    "shortName": "Arcane Artificing ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "arcane-artificing",
+    "displayName": "Arcane Artificing "
+  },
+  {
+    "displayName": "Glowing Ink ",
+    "fieldName": "glowing-ink",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Glowing Ink ",
+    "notes": "*You can wring out a special luminescent ink from your staff,  drawing on its Magelight Ability. Now you can leave a glowing crumb trail or honor the tavern toilet wall with your sigil.*\n\n- You can use your Mage Staff as if it were a giant pen or paintbrush as long as the Magelight Ability is active.\n- The ink glows as brightly as a torch, but vanishes after a day.\n- You can squirt ink on an enemy up to 1 Battlefield Area away with a successful Attack roll.\n- The ink does no damage, but prevents enemies from hiding in the shadows.\n- Targets that are vulnerable to light may suffer other ill effects. This is at your GMs discretion.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "notes": "*You can use malicious mana to infect your foes with a debilitating disease. Symptoms include purple spots, mana vulnerability and utter exhaustion.*\n\nYou can attempt to infect someone up to 15 ft, or 1 Battlefield Area, away with Hocus Pox.\n\n**Requires a Contest**\n- Your Insight vs. your targets Grit.\n- **Success:** Your target contracts Hocus Pox and they break out in purple spots.\n  - Victims have a Snag when making rolls to resist other Magical Abilities.\n  - Victims are afflicted with the Putrefied Ailment (p270).\n  - When a victim is reduced to 0 Hearts by this Ailment, they collapse and are helplessly exhausted. This will pass with a weeks worth of rest, but the purple spots remain for another week.\n\nOnce a chosen target has fallen foul of this Ability, you cannot use it again for another 24 hours.\n\nGain 1 Dark Allegiance Point.",
+    "shortName": "Hocus Pox ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "hocus-pox",
+    "displayName": "Hocus Pox "
+  },
+  {
+    "fieldName": "murky-mask",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Murky Mask ",
+    "displayName": "Murky Mask ",
+    "notes": "*By coating yourself with malleable mana, you can mould your features into an incredibly convincing disguise.*\n\nYou can moderately alter your build, coloring, face and height, but cannot exactly mimic another.\n- Drastic changes in mass are not possible. You can transform into a Species of a similar size to you. For example, a human could imitate an Elf or Tenebrate, but not a tiny Chib or bulky Promethean.\n- Your Mask lasts for an hour, unless:\n  - You are caught lying.\n  - You lose a Heart, suffer an Injury, or are affected by some other harmful effect.\n  - You will the Mask away.\n\nAfter use, you must wait an hour before using the Mask again.\n- Gain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*You can coalesce the moisture in the air into a small cloud. This odd little being floats along next to you and has some very useful applications.*\n\n- Your Cloud is oddly sturdy, despite its gaseous nature, and is about the size of a large cushion.\n- Summoning a Cloud requires:\n  - Moisture in the air.\n  - During a Fight, it requires a Turns worth of gesticulation.\n- The Cloud has two key functions:\n  - **Carrier:** The cloud can hold 6 Inventory Slots.\n  - **Messenger:** The cloud can deliver a message, of no more than 40 words, to anyone you are familiar with.\n- The Clouds basic capabilities:\n  - **Aptitudes:** The Clouds Aptitudes are the same as yours.\n  - **Combat Values:** Hearts 2, Defense Rating 12, and Speed Rating Average.\n  - **Range:** It can exist up to a mile away from your current location.\n  - **Flight:** It cannot float more than 20 feet off the ground.\n  - You can dissipate the cloud at will, which will result in any items it carries dropping to the ground.\n- Anyone mean enough to Attack the cloud will cause it to dissipate when it is reduced to 0 Hearts.\n- You can only summon and control one cloud at a time.\n- A new cloud cannot be summoned for 24 hours after the last one has been destroyed or dismissed.\n- Gain 1 Bright Allegiance Point.",
+    "shortName": "Very Useful Cloud ",
+    "modType": "strength",
+    "fieldName": "very-useful-cloud-m",
+    "subtext": "",
+    "displayName": "Very Useful Cloud "
+  },
+  {
+    "subtext": "",
+    "fieldName": "eldritch-explosives",
+    "modType": "strength",
+    "shortName": "Eldritch Explosives ",
+    "displayName": "Eldritch Explosives ",
+    "notes": "*Nothing clears a room like a mana kaboom! You make magical explosives.*\n\n**Rank 1:**\n- Once per Fight, you can conjure a Mana Grenade, a non-lethal weapon designed to subdue.\n- Mana Grenades work like regular Grenades (p178), except.\n- They do Twilight Magic Damage (p259).\n- Targets reduced to 0 Hearts, or less, are knocked unconscious (or fall inert if they are Mechanoids or Undead) for an hour.\n\n**Rank 5:**\n- Once every 24 hours, you can conjure a Mana Bomb, a more violent and deadly variant of the Mana Grenade. Mana Bombs work like standard Bombs, except...\n- They do Twilight Magic Damage.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "notes": "*You can slip behind a mantle of subtle darkness and become a shadow. While you’re not invisible, you are definitely more difficult to notice for those not expecting you.*\n\n- When covered by the Cloak, you use your Insight, rather than Deftness, when making your Stealth rolls.\n- When your Team is Exploring using Stealthy Movement (p234), you make an independent Stealth roll.\n- When Cloaked, even if your Team is Exploring using Cautious or Hasty Movement you also benefit from the effects of Stealthy Movement.\n- If you are Cloaked when discovered by a Map or Site Encounter, you can make a Stealth roll to remain hidden.\n- Gain 1 Dark Allegiance Point.",
+    "displayName": "Cloak Of Obscurity ",
+    "shortName": "Cloak Of Obscurity ",
+    "fieldName": "cloak-of-obscurity",
+    "subtext": "",
+    "modType": "strength"
+  },
+  {
+    "shortName": "Demystify ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "demystify",
+    "displayName": "Demystify ",
+    "notes": "*Just as you can weave a web of mana, so too can you unravel it. Deep knowledge of mana manipulation allows you to undo others' spells. The performance of this counter-magic is usually accompanied by a rude or condescending gesture toward the opposing spell caster.*\n\nYou can attempt to end a single persistent magical effect. This might be a curse, arcane barrier, or the enchantments on an Artifact or Imbued Item.\n- In a Fight, Demystify requires the use of your Action to cast.\n\n**Requires a Contest**\n- Your Insight vs. the Aptitude required to cast the opposing Magical Ability. If no Aptitude is specified, then use Aura.\n- **Success:** The spell is unravelled.\n- **Failure:** You cannot dispel the effect, and cannot try to dispel the effect again for 24 hours.\n\nThis Ability only causes Artifacts or Imbued items to lose their enchantment for 24 hours."
+  },
+  {
+    "displayName": "Mana Crush ",
+    "fieldName": "mana-crush",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Mana Crush ",
+    "notes": "*Sometimes even the patience of the wise can be tested. By clenching your fist you can solidify the mana emanating from your target and use it to crush like a vise.*\n\nYou can target an opponent up to 15 ft, or 1 Battlefield Area, away.\n- During a Fight, Mana Crush requires the use of your Action to cast.\n\n**Requires a Contest**\n- Your Insight VS. your targets Deftness.\n- **Success:** The target is crushed within a cocoon of mana, taking 3 Hearts of Damage.\n- **Failure:** The Target avoids the brunt of the assault and only takes 1 Heart of Damage.\n\nThis spell is physically taxing to cast and may only safely be used once per Fight. Attempting the spell in the same Fight, or within a few minutes of the last attempt, means you must roll on the Injury Table after the Contest.\n\nGain 1 Bright Allegiance Point."
+  },
+  {
+    "notes": "*Powerful Sages are able to defy gravity to float and flutter about. While you look incredibly elegant, you're not terribly fast.*\n\n- You have two modes of flight at your disposal\n- **Drift:** A slow and graceful form of levitation.\n- Speed Rating while flying is Slow.\n- Lasts until you decide to stop it.\n- **Thrust:** A short, sharp surge of speed. You may want to sit astride your Staff for balance.\n- Speed Rating while flying is Fast.\n- Thrust lasts for 3 Rounds during a Fight, or approximately 30 seconds.\n- Using Thrust means you cannot use Flight again for 24 hours.\n- You cannot fly if Overburdened.",
+    "shortName": "Practical Flight ",
+    "modType": "strength",
+    "fieldName": "practical-flight",
+    "subtext": "",
+    "displayName": "Practical Flight "
+  },
+  {
+    "notes": "*You politely request cooperation from ambient mana. With some clear spoken instructions and a bow, or curtsy, you can re-arrange a cluttered room, or quickly assemble a barricade in front of an approaching enemy.*\n\nYou can attempt to persuade local mana to manipulate objects in your immediate surroundings.\n\n**Requires an Insight Check**\n- **Success:** The local mana swirls and twists to do your bidding.\n  - You can perform a simple task that would normally require several creatures acting together to accomplish.\n  - For example: Smashing all the breakable pots in a shed at once, alphabetizing a room full of books, or stacking loose stones into a makeshift set of stairs.\n  - The area of effect should be no larger than a small house.\n  - During a Fight, you can manipulate a single Battlefield Area to:\n    - Add the Precarious or Sheltered Condition to a Battlefield Area, providing there are enough suitable objects scattered around.\n    - Remove an existing Condition from a Battlefield Area, if you can agree with your GM on how this Ability could do it. For example, pushing away a choking mist.\n\nSuccessful or not, any objects moved or disrupted by this spell have their ambient mana burnt away and cannot be affected by this Ability or Prestidigitonium (p60) for another 24 hours.\n\nGain 1 Bright Allegiance Point.",
+    "displayName": "Harmonious Geomancy ",
+    "subtext": "",
+    "fieldName": "harmonious-geomancy",
+    "modType": "strength",
+    "shortName": "Harmonious Geomancy "
+  },
+  {
+    "notes": "*You can seize another’s shadow and, by proxy, their physical agency. While you make menacing gestures, resembling those of a puppeteer, your victim dances to your desire.*\n\nYou can use this Ability on any creature that casts a shadow and is roughly 10 feet, or 1 Battlefield Area, away.\n\n**Requires a Contest**\n- Your Insight vs. your targets Aura.\n- **Success:** You can control your target for the next 10 seconds, or their Turn during a Fight. For example, you can make them speak, shout, or even attack themselves (which still requires an Attack roll!).\n  - You must repeat, and win, the Contest each Turn to retain control of your target.\n  - You can only control one Puppet at a time.\n- **Failure:** The target breaks free of your mana strings and you cannot target them with this Ability again for 24 hours.\n\nGain 1 Dark Allegiance Point.",
+    "displayName": "Shadow Puppet ",
+    "subtext": "",
+    "fieldName": "shadow-puppet",
+    "modType": "strength",
+    "shortName": "Shadow Puppet "
+  },
+  {
+    "notes": "*You can create a protective pyramid, sphere, or cube of light around you that is able to repel physical and magical attacks.*\n\nDuring a Fight, you can use the Fortress to attempt to block one inbound physical or magical Attack against you each Turn.\n- If the Attack targets a Battlefield Area (like a magic blast) then everyone in the same Area as you benefits from the Fortress including foes!\n- If cast outside of combat, the Fortress can be used to block harmful environmental effects. For example, Impact Damage (p267) from falling rocks or Burn Damage (p267) from caustic gas.\n- The Fortress is only visible when struck or resisting a harmful effect.\n- The Fortress can be erected during your enemys Turn, but this means you cannot take an Action on your next Turn.\n- **Strength Attacks:** The opposing Aptitude for Melee Weapons, and other brute force attacks, should be the Attackers Might\n- **Skill Attacks:** The opposing Aptitude for Missile Weapons, and other attacks that utilise finesse, should be the Attackers Deftness.\n- **Success:** The Attack is blocked, or dissipated, by a wall of impenetrable light.\n  - If successful, the Fortress remains intact and you benefit from its protection in the next Turn.\n- **Failure:** The panel of light shatters like glass, and the Fortress cannot be used again for 24 hours.\n\nGain 1 Bright Allegiance Point.",
+    "modType": "strength",
+    "fieldName": "momentary-fortress",
+    "subtext": "",
+    "shortName": "Momentary Fortress ",
+    "displayName": "Momentary Fortress "
+  },
+  {
+    "displayName": "Soothing Darkness ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "soothing-darkness-m",
+    "shortName": "Soothing Darkness ",
+    "notes": "*You can bring forth a blanket of darkness to temporarily alleviate pain, although its sweet caress cannot heal.*\n\nYou can attempt to Soothe someone with an Injury (p259), including yourself, within 15 ft or in the same Battlefield Area as you.\n- If your target has multiple Injuries, you must choose one to Soothe.\n\n**Requires an Insight Check**\n- **Success:** The effects of the Soothed Injury subside temporarily while the Ability is in effect. For example, a shadow binds a Broken Arm or a ghost limb materialises to replace a Severed one.\n  - The Soothing effect lasts until you use the Ability again, or willingly cancel the effect.\n- **Failure:** The Injury remains and you cannot attempt to Soothe the same Injury again.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "fieldName": "fitful-sleep",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Fitful Sleep ",
+    "displayName": "Fitful Sleep ",
+    "notes": "*Sleep is not a peaceful haven. While your body is refreshed, your mind is plagued with incoherent and disturbing images brought to you by the Sealed Names. Sometimes you understand the significance of these visions.*\n\n- Once per game Session you can ask your GM for clues on anything puzzling you about your adventure. For example, the location of a nemesis or the answer to a perplexing riddle.\n- This secret, or clue, is chosen by your GM, and emerges as a fully formed thought in your Mind."
+  },
+  {
+    "notes": "*Extended contact with the Sealed Names has altered your appearance and mannerisms, making you deeply unsettling to be around. You have also developed a twisted empathy that enables you to sense the fears and weaknesses of others.*\n\nYou have an Edge on rolls that involve intimidating, frightening or repulsing someone.\n- After a short period of observation, or 1 Turn during a Fight, you can attempt to detect what someone fears the most.\n\n**Requires an Aura Check**\n- **Success:** You learn one thing that upsets, scares or disgusts your target. The weakness revealed could be emotional or physical.",
+    "displayName": "Dreadful ",
+    "shortName": "Dreadful ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "dreadful"
+  },
+  {
+    "notes": "*Marlow, Whom All Chosen Know, is there to make sure all your needs are attended to. This genteel and unfailingly polite figure is a great deal more forgiving than the other Sealed Names.*\n\nSpeak his name calmly and Marlow, a servant-like spirit, emerges from the shadow to do your bidding.\n- Summoning takes 1 Action.\n- **Success:** Marlow will appear and carry out a single task you give him.\n  - The task must be something that Marlow can complete in a few minutes. He will attempt to accomplish his task with competence and endeavour.\n  - In a Fight, Marlow performs as a Custrel equipped with a Quick Weapon.\n  - Marlow vanishes upon the completion of his task, or if reduced to 0 Hearts.\n  - He must be summoned again if you wish to make further use of his services.\n- **Failure:** Marlow gently refuses your request, and promptly vanishes.\n\nAfter a failed summoning, Marlow cant be called again for 24 hours.",
+    "shortName": "Squire Marlow ",
+    "fieldName": "squire-marlow-m",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Squire Marlow "
+  },
+  {
+    "subtext": "",
+    "fieldName": "the-widow-prisma",
+    "modType": "strength",
+    "shortName": "The Widow Prisma ",
+    "displayName": "The Widow Prisma ",
+    "notes": "*Prisma, The Crystal Martyr suffers for the chosen, although her curious moans while doing so suggest she receives some strange pleasure from her sacrifice.*\n\n- Upon a cry for help, The Widow Prisma will immediately crystalize in front of you and absorb any inbound Attack.\n- Summoning is instantaneous.\n- Prisma suffers any Damage, Ailment, or detrimental effect directed at you then dies.\n- Her dramatic death throes last a Turn, until she shatters into fragments and disappears.\n- Prisma can only be summoned once every 24 hours.\n- Gain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*Galrave, Cloaked in Fear, is a broad and imposing figure. His terrible smile is frightening enough, but his laugh is blood-curdling.*\n\nThrow your hands in the air and shout his full name and Galrave, a fearsome spirit, swirls into being.\n- Summoning requires 1 Action.\n- Hostiles within 1 Battlefield Area of you must make a successful Grit Check or be Terrified (p271) of you for 24 Hours.\n- **Failure:** Galrave honors you with his grim regard then vanishes. You shudder for a moment, and miss your next Turn.\n\nGain 1 Dark Allegiance Point.",
+    "displayName": "Deacon Galrave ",
+    "shortName": "Deacon Galrave ",
+    "fieldName": "deacon-galrave-m",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "shortName": "Bushi Miyabi ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "bushi-miyabi",
+    "displayName": "Bushi Miyabi ",
+    "notes": "*Miyabi, Apparition of Borrowed Wrath, is a raging spirit contained within elaborate armor. Her hand grasps a broken blade,  which she swings with vengeful fury.*\n\nPoint at an enemy, yell her name, and Miyabi will materialize next to your chosen foe.\n- Summoning requires 1 Action.\n- **Success:** Miyabi manifests next to your chosen target and engages them in combat.\n  - You can set Miyabi on a foe up to 2 Battlefield Areas away from you.\n  - She strikes with a Standard Weapon.\n  - Her Attack Bonus is always the same as her targets.\n  - She has Defense Rating 12.\n  - Her Speed Rating is Fast.\n  - She evaporates if struck or when her target has been killed, but once summoned she cannot be called off or dismissed.\n- **Failure:** Miyabi manifests to take a single swipe at you for your impertinence, then vanishes.\n  - When striking you, her Attack Bonus is +2 and does 1 Heart of Damage.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*Kasnah, Lady of the Orb, looked too often into her divining ball and was absorbed by it. Now she is a small, smooth sphere with an unblinking stare. She is willing to show you what she sees.*\n\nWhisper her name and Kasnah, a floating eye, can be drawn forth from the folds of your clothes.\n- Summoning requires 1 Action.\n- **Success:** Kasnah floats into the air.\n  - You see whatever Kasnah sees from her vantage point in the sky.\n  - Kasnah can be directed to any point within shouting distance, enabling you to get unique views of a location or scout ahead.\n  - She has Defense Rating 12.\n  - Her Speed Rating is Average.\n  - She vanishes if struck.\n- **Failure:** Fickle Kasnah does not appear but instead you are Blinded (p268) for 1 Turn.\n\nShe ignores further summoning requests for 1 hour.\n\nGain 1 Dark Allegiance Point.",
+    "displayName": "Seer Kasnah ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "seer-kasnah",
+    "shortName": "Seer Kasnah "
+  },
+  {
+    "notes": "*Call on Tulpa, First and Most Patient, when you seek answers. This wizened figure is said to have studied all things. However, whether he actually remembers any of it is another thing altogether.*\n\nWhen standing in a quiet area, politely state his name and Tulpa will emerge from the ground and attempt to answer a single question you ask him.\n- Your question cannot be spoken, but must be written on something soft, like parchment or cloth.\n- Summoning is instantaneous.\n\n**Requires a Grit Check**\n- **Success:** Tulpa emerges from the ground with a yawn and a stretch, taking the prepared question and swallowing it. After some thoughtful chewing he answers the question, then returns to his immortal slumber.\n  - You suffer a Snag on your Grit Check if you attempt to summon Tulpa again within 24 hours.\n- **Failure:** Tulpa coughs and chokes on the question. He then lectures you on the failures of this aeons youth before vanishing.\n\nNo further attempt to summon Tulpa can be made for 24 Hours.\n\nGain 1 Bright Allegiance Point.",
+    "displayName": "Yogi Tulpa ",
+    "shortName": "Yogi Tulpa ",
+    "subtext": "",
+    "fieldName": "yogi-tulpa",
+    "modType": "strength"
+  },
+  {
+    "notes": "*Kaila, Whisper Most Pleasant, is a sultry figure in a flowing dress and decorated mask. Her voice is quiet but authoritative. When she speaks, her message is always heard by those for whom it was meant.*\n\n- Say her name and Kaila appears ready to deliver a message for you.\n- Summoning requires 1 Action.\n- Kaila drapes herself over your shoulders, and will commit a message of no more than 50 words to memory, then vanishes.\n- Your message can be delivered to a single recipient with whom you are at least familiar. Kaila appears behind the recipient and whispers into their ear, so only they can hear then vanishes.\n- Kaila is amused by attempts to harm her spectral form.\n- Kaila may only be called upon once every 24 hours.\n- Gain 1 Dark Allegiance Point.",
+    "displayName": "Messenger Kaila ",
+    "shortName": "Messenger Kaila ",
+    "modType": "strength",
+    "fieldName": "messenger-kaila",
+    "subtext": ""
+  },
+  {
+    "displayName": "Wretched Jarah ",
+    "shortName": "Wretched Jarah ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "wretched-jarah",
+    "notes": "*Jarah, That Gasps Endlessly, was so frightened that he shrivelled into a small, rasping insectoid. Those willing to endure his revolting appearance may drink of his desperate breaths.*\n\n- Cry his name in desperation and Jarah will instantly appear. Hell grab your head with his spindly limbs and move his body across your face to form a grotesque mask.\n- Summoning is instantaneous.\n- You are immune to Suffocation (p271) when Jarah is attached, enabling you to breathe in water or toxic fumes.\n- You are unable to speak while wearing this insectoid mask.\n- Jarah remains for an hour or until he is cast off in disgust.\n- Jarah may only be called upon once every 24 hours.\n- Gain 1 Bright Allegiance Point."
+  },
+  {
+    "shortName": "Count Paris ",
+    "fieldName": "count-paris",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Count Paris ",
+    "notes": "*The Count, With Heart Most Cold, is a loveless and noble figure. His joyless gaze petrifies those who lock eyes with him.*\n\nTurn dispassionately towards a target, up to 2 Battlefield Areas away, and Paris will materialise by your side to stare them down.\n- Summoning requires 1 Action.\n\n**Requires a Contest**\n- Your Grit vs. the targets Deftness.\n- **Success:** Paris levels his icy glare at your enemy:\n  - Your target is encased in ice and is Petrified (p270).\n\n**The target can be freed if anyone spends a Turn to break the ice. This requires a successful Might Check.**\n- **Failure:** Paris scoffs then freezes your legs and vanishes. You cannot move from your current position.\n\nParis wont return unless you are freed from the ice. This requires you, or an assisting ally, to use an Action and make a Might Check.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*Ultima, Whose Fist is Just, is a massive warrior in ultra-heavy armor who is keen to mete out justice on your behalf.*\n\nThrow your arms wide open, shout his name dramatically, and Ultima appears to smite a foe.\n- Summoning requires 1 Action.\n- **Success:** Ultima thunders towards a target of your choice. He shouts their greatest sin aloud (For example: Pride!, Indolence!, or Chicanery!) and hammers them with his enormous righteous fist.\n  - You can target any foe up to 1 Battlefield Area away from you.\n  - The target takes 1 Heart of Damage and must make a Might Check:\n    - **Success:** They partially deflect the blow and avoid further damage.\n    - **Failure:** They have been smashed to the ground, taking an additional Heart of Damage and are now Toppled (p271).\n- **Failure:** Ultima appears behind you and swats you to the ground before vanishing. You are Toppled.\n\nGain 1 Bright Allegiance Point.",
+    "fieldName": "altgrave-ultima",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Altgrave Ultima ",
+    "displayName": "Altgrave Ultima "
+  },
+  {
+    "notes": "*Justiniaus, The Prince in Chains, is bound to his throne with barbed shackles. A wicked grin graces his torn face when he inflicts suffering upon others.*\n\nKneel and whisper his name and Justiniaus will appear to ensnare your enemies.\n- Summoning requires 1 Action.\n- **Success:** Barbed chains erupt around your chosen target.\n  - You can target a foe up to 2 Battlefield Areas away from you.\n  - All your targets limbs are Restrained (p270) as the chains circle and constrict around them.\n\n**The target can be freed if anyone spends a Turn to break the chains. This requires a Might Check. The target loses 1 Heart every time this is attempted, successfully or not.**\n- The chains will vanish in an hour, or when you attempt to summon Justiniaus again.\n- **Failure:** A single chain, accompanied by a sinister cackle, erupts from the ground and binds your dominant arm to your body. Your arm is Restrained (p270).\n\n**You, or an assisting ally, must use an Action to attempt to cut the chains. This requires a Might Check. You lose 1 Heart every time this is attempted, successfully or not.**\n\nYou cannot summon Justiniaus again until you are freed.\n\nGain 1 Dark Allegiance Point.",
+    "modType": "strength",
+    "fieldName": "prince-justiniaus",
+    "subtext": "",
+    "shortName": "Prince Justiniaus ",
+    "displayName": "Prince Justiniaus "
+  },
+  {
+    "fieldName": "imperatrix-delilah",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "Imperatrix Delilah ",
+    "displayName": "Imperatrix Delilah ",
+    "notes": "*Delilah, Who Rules Absolutely, is the light. She floods the senses with hope to bring the peace of dominion to all who would receive her.*\n\nCall out her name and Delilah shines forth, taking control of a mind that means you harm.\n- Summoning requires 1 Action.\n\n**Requires a Contest**\n- Your Grit vs. your targets Aura.\n- **Success:** Delilah forms around your target like a halo.\n  - You can target a foe up to 1 Battlefield Area away from you.\n  - You can control your target for the next Turn. For example, you can make them speak, drop a powerful item, or attack an ally.\n  - Delilah vanishes after your target performs the controlled action.\n- **Failure:** Delilah (played by your GM) decides your next Turn, then vanishes with a lingering laugh.\n\nDelilah would never cause you to directly harm yourself, though she might have you throw an important item aside or shout at enemies you're hiding from.\n\nGain 1 Bright Allegiance Point."
+  },
+  {
+    "notes": "*Collette, Our Maiden of Toxicity, is haggard and pale. Her mouth, full of rotted teeth, spews poisonous breath.*\n\nThe Dowager is called upon by covering your mouth in mock revulsion. She spasms into existence to belch toxic gas.\n- Summoning requires 1 Action.\n- **Success:** The Dowager appears above a Battlefield Area of your choice. She cackles before spewing out a poisonous mist over the Area below making it Harmful until the end of the Fight.\n- **Failure:** You begin to choke and cough on noxious fumes. This prevents you from speaking, and therefore calling other Sealed Names, until the end of your next Turn.\n\nGain 1 Dark Allegiance Point.",
+    "displayName": "Dowager Collette ",
+    "shortName": "Dowager Collette ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "dowager-collette"
+  },
+  {
+    "shortName": "Servant Pazuu ",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "servant-pazuu",
+    "displayName": "Servant Pazuu ",
+    "notes": "*Pazuu, Of Many Wings, is able to carry even the largest of the Chosen into the air despite his withered form.*\n\nRelax your limbs and whisper his name and Pazuu arrives to lift you into the air.\n- Summoning requires 1 Turn.\n- **Success:** Pazuu will immediately fly you to a spot of your choosing, no greater than 1 mile away.\n- **Failure:** Your squirming annoys Pazuu, who drops you 20 ft above your chosen spot. You suffer the effects of the Impact Table.\n\nGain 1 Dark Allegiance Point."
+  },
+  {
+    "notes": "*Draconis, The Silhouette Wyrm, is the creature of legend who broke the Sun Machine and battled with Emperor Regulus. He is now but a shadow, though his flames still burn real enough.*\n\n- **Success:** Draconis breathes dark flames on to the Battlefield Area you occupy, then vanishes. The flames do not harm you, but everyone else takes 3 Hearts of Flame Damage.\n  - Draconis flames will also Sunder combustible objects.\n  - If the Battlefield Area contains flammable structures or surfaces your GM can choose to set them alight, adding the Harmful Condition to the Area (p250).\n- **Failure:** The effects are identical to Success, except you are also harmed by Draconis dark flames.\n\nOnce attempted, you cannot use this Ability again for 24 hours.\n\nGain 1 Dark Allegiance Point.",
+    "displayName": "Umbra Draconis ",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "umbra-draconis",
+    "shortName": "Umbra Draconis "
+  },
+  {
+    "notes": "*Egomet, Who Never Came To Be, is the embodiment of lost potential. He sees the other paths you could have taken and allows you to follow them, albeit temporarily.*\n\n- Speak your name backwards before sleeping and awake as your Other Self.\n- Summoning requires 1 full nights sleep.\n- Your Other Self lets you become another Calling until you sleep again, or until you decide to revert back to your true self.\n- After summoning Egomet, you may not call on him again until you've had the opportunity for Downtime (p272).\n- Your Other Self retains your Species, Traits, and Quirks.\n- Your Other Self can be a Calling of your choice but is 2 Ranks lower than your current Rank.\n- In addition to the Callings Starting Abilities, you can choose any Elective Abilities available to your Other Self's Rank.\n- You can only have one Other Self.\n- Gain 1 Dark Allegiance Point.",
+    "fieldName": "egomet",
+    "subtext": "",
+    "modType": "strength",
+    "shortName": "Egomet ",
+    "displayName": "Egomet "
+  },
+  {
+    "notes": "*Queen Amhika, Dweller in Our Hearts, is pleasant and obliging. Her soothing voice and kind embrace will transport you to a place of safety.*\n\n- With an earnest desire Queen Amhika will appear ready to remove you from harms way.\n- Summoning is instantaneous.\n- Queen Amhika will envelop you, and up to 5 allies, in her enormous cape. You drift off into a peaceful sleep. When you awake you are in the place where you always felt most safe.\n- You should choose your safe place before play and inform your GM. This could be your waterfall retreat, a relaxing meadow, or your childhood home.\n- Once Amhika has deposited you safely she cannot be summoned again until you have spent one day actually relaxing.\n- Gain 1 Bright Allegiance Point.",
+    "shortName": "Queen Amhika ",
+    "subtext": "",
+    "fieldName": "queen-amhika",
+    "modType": "strength",
+    "displayName": "Queen Amhika "
+  },
+  {
+    "notes": "*You define yourself through your craft, and seek to master your Calling as quickly as you can.*\n\nYou start play with an additional Elective Ability chosen from your Calling’s Standard Ability list.",
+    "group": "Innate Abilities",
+    "displayName": "Prodigy",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "prodigy"
+  },
+  {
+    "displayName": "Unyielding",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "unyielding",
+    "notes": "*Even the immortal and cosmically mighty will buckle in the face of your resolve.*\n\nYou are gifted with Supernatural Will.",
+    "group": "Maturative Ability"
+  },
+  {
+    "fieldName": "leisurely-focus",
+    "modType": "strength",
+    "subtext": "",
+    "shortName": "",
+    "displayName": "Leisurely Focus",
+    "group": "Innate Abilities",
+    "notes": "*Back in Other World, time was abundant. You could spend your evenings and lunch breaks doing whatever you pleased: working out, studying, or socializing.*\n\n- You have a +1 bonus to an Aptitude of your choice.\n- The bonus can only be applied to an Aptitude that has not been modified by your Traits You won’t know this until you get to Step 4 of Character Creation."
+  },
+  {
+    "displayName": "Obstinate",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "obstinate-",
+    "shortName": "",
+    "notes": "*You can be very rude! You won’t show the proper respect to the divine, refuse to obey magical commands, and even insist that fate is silly.*\n\nYou are gifted with Supernatural Will.",
+    "group": "Maturative Ability"
+  },
+  {
+    "group": "Innate Abilities",
+    "notes": "*Small and innocuous, you often go unnoticed.*\n\nA would-be observer is required to make an Insight Check to notice you, unless you are making a conscious effort to be seen.",
+    "subtext": "",
+    "fieldName": "easily-overlooked",
+    "modType": "strength",
+    "displayName": "Easily Overlooked"
+  },
+  {
+    "modType": "strength",
+    "fieldName": "always-bet-on-the-little-one",
+    "subtext": "",
+    "displayName": "Always bet on the little one",
+    "group": "Maturative Ability",
+    "notes": "*While it seems like the world is out to get you wee ones, fortune often favors you.*\n\n- Your wondrous luck allows you to add a Special Bonus (+6) to the result of one of your die rolls.\n- You can choose to add this bonus after you roll, enabling you to turn failure into success. When this happens, the previous outcome comedically unravels by some absurd fortune.\n- This bonus can be stacked on top of other bonuses, and is exempt from the 1 bonus per roll restriction.  This Ability cannot be used again until you have been able to engage in a Downtime Activity."
+  },
+  {
+    "notes": "*You are marked by darkness from birth.*\n\n- You begin play with 1 Dark Allegiance Point\n- You also begin with one Dark Gift and must choose or roll on the Dark Gifts Table.",
+    "group": "Innate Abilities",
+    "displayName": "Night Born",
+    "fieldName": "night-born",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "notes": "*The shadows hold no secrets from you.*\n\n- You can see in the dark, and do not need to rely on a Torch.\n- You are immune to the Obscured Battlefield Condition if caused by darkness. Unlike Underdwellers, you don’t suffer a penalty in daylight.",
+    "group": "Innate Abilities",
+    "displayName": "Shadow Sight",
+    "modType": "strength",
+    "fieldName": "shadow-sight",
+    "subtext": ""
+  },
+  {
+    "group": "Maturative Ability",
+    "notes": "*You are able to exert your will on others by reaching into your blood and claiming an authority long forgotten.*\n\n- You can attempt to command a creature that has at least 1 Dark Allegiance Point.\n\n**During a Fight, issuing a command requires the use of your Action.  vs Requires a Contest Your Aura versus the target’s Grit. Success: Your command is obeyed.**\n- Your command must be something the target can easily perform in the next minute, or 1 Turn during a Fight. For example ‘Drop your sword’, ‘Attack the person next to you’, or ‘Kneel before me’.\n- The target must obey to the best of their ability, albeit reluctantly.\n- Once the command is obeyed, the target regains self-control, unless re-targeted on the next Turn.  Failure: Your target is forever immune to your commands.",
+    "modType": "strength",
+    "fieldName": "monarch-homunculi",
+    "subtext": "",
+    "displayName": "Monarch Homunculi"
+  },
+  {
+    "notes": "*Unlike most folk living on the Outer World, Rai-Neko are educated from a young age in advanced technology.*\n\nYou get a bonus Purview: Obsessing over gadgets, magitech, and other curious technology.",
+    "group": "Innate Abilities",
+    "displayName": "Oldtech Proficiency",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "oldtech-proficiency"
+  },
+  {
+    "notes": "*While civilized now, your kind were once feral predators. Your heightened senses hark back to that more primal time.*\n\nYou get an Edge on all Insight rolls related to the five physical senses: sight, sound, touch, taste, smell.",
+    "group": "Innate Abilities",
+    "displayName": "Hunter's Blood",
+    "fieldName": "hunters-blood",
+    "modType": "strength",
+    "subtext": ""
+  },
+  {
+    "group": "Innate Abilities",
+    "notes": "*An odd truth is revealed about your origins when you recover from grievous injury or trauma.*\n\n- You can grow back limbs that have been severed in battle, or otherwise lost or removed.\n- To regenerate a limb, you must use a session of Downtime to Heal an Injury.\n- Regenerated body parts look reptilian. The new skin is scaled and brightly colored.",
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "cryptic-heritage",
+    "displayName": "Cryptic Heritage"
+  },
+  {
+    "displayName": "Born of the Sun",
+    "subtext": "",
+    "fieldName": "born-of-the-sun",
+    "modType": "strength",
+    "notes": "*You take the title ‘Chosen of the Sun’ very seriously, embracing The Bright without question or pause.*\n\nYou begin play with 1 Bright Allegiance Point.",
+    "group": "Innate Abilities"
+  },
+  {
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "sol-invictus",
+    "displayName": "Sol Invictus",
+    "group": "Maturative Ability",
+    "notes": "*Thanks to intense training and dedication, your strength is unparalleled.*\n\nYou have attained Supernatural Might."
+  },
+  {
+    "displayName": "As Tough As You Look",
+    "fieldName": "as-tough-as-you-look",
+    "subtext": "",
+    "modType": "strength",
+    "notes": "*You were created to endure physical hardship and easily shrug off trauma that would leave others broken.*\n\nYou always have 1 Heart more than the Hearts Total stated for your Calling and Rank.",
+    "group": "Innate Abilities"
+  },
+  {
+    "modType": "strength",
+    "fieldName": "chain-breaker",
+    "subtext": "",
+    "displayName": "Chain Breaker",
+    "group": "Maturative Ability",
+    "notes": "*It is said that the first Gruun were so strong that they could shatter bindings with their bare hands.*\n\nYou have attained Supernatural Might."
+  },
+  {
+    "group": "Innate Abilities",
+    "notes": "*You thrive in the dark, but struggle to cope with the sunlight.*\n\n- You can see in the dark, and do not need to rely on a Torch.\n- You are immune to the Obscured Battlefield Condition if caused by darkness.\n- You have a Snag while doing anything in bright light, unless your eyes are shaded in some way.",
+    "modType": "strength",
+    "fieldName": "under-dweller",
+    "subtext": "",
+    "displayName": "Under Dweller"
+  },
+  {
+    "notes": "*You tell people you are a master inventor with a deep understanding of ancient technology. This is a lie. You are able to invent and hastily make tools and machines that only sound plausible to another goblin. For example, a grappling hook utilizing a monster’s sticky tongue or glue made from jam and spit.*\n\n- Your Gobbo Werks are:\n  - Limited to mechanical devices that move, propel or contain.\n  - Made from scraps scavenged from the immediate surroundings.\n  - Assembled in under an hour without need for specialist tools.\n  - Can produce fire, or even explosions, if a suitable fuel or combustible is available.\n\nUgly and noisy.\n\n**Requires an Aura Check**\n- **Success:** Imagination and will has triumphed over physics.\n- The exact time taken to construct your Werk is decided by your GM.\n- Your creation will work as intended save for one critical flaw… it falls apart as soon as you start paying attention to anything else. Your neglect allows reality to re-establish its uncaring hold.\n- A Werk cannot be repaired. If you later learn a ‘proper’ Crafting Discipline, you cannot combine it with your Goblin know-how. They are two separate arts.",
+    "group": "Innate Abilities",
+    "displayName": "Gobbo Werks",
+    "fieldName": "gobbo-werks",
+    "subtext": "",
+    "modType": "strength"
+  },
+  {
+    "subtext": "",
+    "modType": "strength",
+    "fieldName": "spore",
+    "displayName": "Spore",
+    "group": "Maturative Ability",
+    "notes": "*At some unpredictable moment during your life, you will sprout another Goblin.*\n\n- You release a spore which rapidly evolves into a new Goblin in under an hour.\n- The new Goblin has no memories, and is your Follower.\n- They function like a Goblin Scamp.  This Goblin does not count towards the two Companions per PC restriction."
+  },
+  {
+    "notes": "*A strong back makes you a strong worker.*\n\n- You gain 2 Base Inventory Slots.\n- You are immune to the Overburdened Ailment",
+    "group": "Innate Abilities",
+    "displayName": "Sturdy",
+    "subtext": "",
+    "fieldName": "sturdy",
+    "modType": "strength"
+  },
+  {
+    "modType": "strength",
+    "fieldName": "stone-song",
+    "subtext": "",
+    "displayName": "Stone Song",
+    "group": "Maturative Ability",
+    "notes": "*Humming a fragment of the Creator’s tune transforms the ground beneath you.*\n\n- From a distance of 20 ft, you can command unworked stone or clay- like earth to form simple structures such as ramps, walls, or bridges.\n- You must be able to touch the material you are commanding with your hand and be able to sing.\n- During a Fight, or other time- sensitive situation, the Ability requires the use of your Action and has a range of 1 Battlefield Area. Stone Song can only be used once every 24 hours."
+  },
+  {
+    "modType": "strength",
+    "fieldName": "ageless",
+    "subtext": "",
+    "displayName": "Ageless",
+    "group": "Innate Abilities",
+    "notes": "*While no longer truly immortal, you are not subject to the ravages of time.*\n\nYou never age beyond your physical prime, and are immune to effects that force aging."
+  },
+  {
+    "group": "Innate Abilities",
+    "notes": "*While your dreams can no longer affect the reality of others, your disillusions can prevent certain physical or psychological conditions from affecting you, simply because you don’t think they should*\n\nYou are immune to an Ailment of your choice, with the exception of Overburdened.",
+    "fieldName": "immortal-ego",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Immortal Ego"
+  },
+  {
+    "group": "Maturative Ability",
+    "notes": "*Those elves that recall being Unshaped are able to restore a small part of the lost balance between the Invincible Bright and Profound Darkness.*\n\n- You can shift your Allegiance Points between Bright and Dark at will, which affects how creatures and relics interact with you.\n- During a Fight, you need to use your Action to use this Ability.  Gifts) are awarded based on your underlying Allegiance, accrued through Ability selection, not by any shifts of Allegiance.",
+    "modType": "strength",
+    "subtext": "",
+    "fieldName": "twilight-flux",
+    "displayName": "Twilight Flux"
+  },
+  {
+    "displayName": "Not of Flesh and Blood",
+    "modType": "strength",
+    "fieldName": "not-of-flesh-and-blood",
+    "subtext": "",
+    "notes": "*You have a synthetic body. You do not eat or breathe and need maintenance rather than rest to heal.*\n\n- You can suffer different effects when you roll on the Injury Table, and must be healed with Bio-Mechanical Treatment.\n- For better or worse, you are immune to things that target organic life. For example, neither healing potions or poisons affect you.\n- You do not need to eat, and are immune to Starvation.\n- You must go offline periodically to recharge. This is the mechanical equivalent of sleep. If missed or skipped you suffer Fatigue.",
+    "group": "Innate Abilities"
+  },
+  {
+    "modType": "strength",
+    "fieldName": "personal-analytics",
+    "subtext": "",
+    "displayName": "Personal Analytics",
+    "group": "Innate Abilities",
+    "notes": "*Your heads-up display affords a greater perceptive range than organic beings.*\n\n- If you focus, you can detect the general distance and direction of:\n  - Any living creatures.\n  - Sources of great energy, such as imbued items, powerful undead, or other mechanoids.\n  - Your scan has a 50ft range.\n  - During a Fight, this Ability requires the use of your Action."
+  },
+  {
+    "displayName": "Bit Stream",
+    "fieldName": "bit-stream",
+    "subtext": "",
+    "modType": "strength",
+    "notes": "*You are able to communicate with other machines. You emit quick, variable tones that are unintelligible to everyone save the other machines in the area.*\n\n- You can talk to any Techno-Relic, Magitech Item, Other World Device, or other simple machine within earshot.\n- You can issue simple commands to objects or drones. For example ‘Deactivate’ or ‘Detonate’.\n\n**If there is someone already operating the device, executing the command requires an Aura Contest with the operator.**\n- Your command must be something the device can immediately carry out and complete in 2 Turns.\n- A machine cannot be asked to perform a task that requires the skill of an operator. For example, a magi-rifle can be asked to open fire, but cannot aim at a target without additional assistance.\n- This Ability grants no special control over other self-aware machines, such as an advanced Artificial Intelligence, Drones, or other Bio-Mechanoids.\n- Bit Stream communication is unintelligible to organic folk.",
+    "group": "Maturative Ability"
+  },
+  {
+    "fieldName": "small-species",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Small Species",
+    "group": "Species Abilities",
+    "notes": "*Small Species are between 2-4 feet tall.*\n\n**Aptitude & Defense Modifiers**\n- +1 Deftness, because of your low center of gravity.\n- -1 Might, because you have less mass to throw around.\n- +1 Defense Rating, because you are a small target.\n\n**Base Inventory Slots**\n- You have 8 Inventory Slots.\n- When carried, you take up 6 Inventory Slots plus any Inventory Slots you have filled with gear.\n\n**Combat Gear Allowance**\n- Mighty and Arc Melee Weapons are restricted.\n- Heavy, and Superheavy Armor are restricted.\n- Large Shields are restricted.\n\n**Other Factors**\n- You gain an Edge on rolls that involve hiding or remaining unseen, for example Stealth rolls.\n- You can squeeze into spaces larger species cannot.\n- You can ride larger Pets."
+  },
+  {
+    "group": "Special Abilities",
+    "notes": "*Medium Species are between 4-7 feet tall. Most of Outer World’s folk are Medium.*\n\n**Base Inventory**\n- You have 10 Inventory Slots.\n- When carried, you take up 8 Inventory Slots plus any Inventory Slots you have filled with gear.  ◆ Combat Gear Allowance\n\n**Combat Gear Allowance**\n- You have no restrictions.",
+    "fieldName": "medium-species",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Medium Species"
+  },
+  {
+    "notes": "*Large Species are between 7-10 feet tall or are extraordinarily bulky.*\n\n**Aptitudes & Defense Modifiers**\n- +1 Might, because of your extended leverage and musculature.\n- -1 Defense Rating, because you are a large target.  ◆ Base Inventory Slots\n\n**Base Inventory**\n- You have 12 Inventory Slots.\n- When carried, you take up 10 Inventory Slots plus any Inventory Slots you have filled with gear.\n\n**Combat Gear Allowance**\n- You can use Mighty and Arc Weapons in a single hand without penalty, so you can use a shield too!\n- Concealed and Small Mechanical Missile Weapons are restricted.  ◆ Other Factors\n- Armor and Outfits cost 50% more than the value displayed on the Gear List.\n- You can reach higher than most other species.",
+    "group": "Species Abilities",
+    "displayName": "Large Species",
+    "fieldName": "large-species",
+    "subtext": "",
+    "modType": "strength"
+  },
+  {
+    "fieldName": "supernatural-leaping",
+    "modType": "strength",
+    "subtext": "",
+    "displayName": "Supernatural Leaping",
+    "group": "Supernatural Abilities",
+    "notes": "*You are able to clear great distances in a single bound.*\n\n- During a Fight, you can leap up to 2 Battlefield Areas away and still take your Action.\n- Leaping allows you to reach elevated locations beyond normal reach. For example, jumping up to strike an airborne foe or to gain access to a distant ledge. Your GM will decide what’s possible.\n- If you can control your descent, you avoid Falling Injury when landing from great heights."
+  },
+  {
+    "modType": "strength",
+    "fieldName": "supernatural-might",
+    "subtext": "",
+    "displayName": "Supernatural Might",
+    "group": "Supernatural Abilities",
+    "notes": "*You are able to perform incredible feats of strength and can match the power of creatures much larger than yourself.*\n\n- You have an Edge on all rolls involving your Might Aptitude, or your GM may decide you automatically succeed in certain situations.\n- Your strength allows you to attempt feats not possible by weaker folk, such as holding up the roof of a collapsing structure. Your GM will decide what’s possible.\n- You can enter into Might Contests with Massive Species.\n- During a Fight, you can throw other PCs up to 1 Battlefield Area away, or hurl heavy objects as Thrown Weapons that do 2 Hearts of Damage instead of the usual 1."
+  },
+  {
+    "group": "Supernatural Abilities",
+    "notes": "*Your spirit is unbreakable.*\n\n- You are immune to the Dispirited and Terrified Ailments.\n- You can never be made to act against your will. You are immune to any Ability or other influencing power that attempts to do so.",
+    "fieldName": "supernatural-will",
+    "subtext": "",
+    "modType": "strength",
+    "displayName": "Supernatural Will"
+  }
+]
