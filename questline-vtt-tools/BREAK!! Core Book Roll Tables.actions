@@ -1,0 +1,888 @@
+[
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "unit": "%",
+              "height": 100,
+              "y": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "**Description**\nA chronic mystical illness caused by exposure to excessive, uncontrolled, or otherwise dangerous magical energies, Arcane Contamination Syndrome is an annoying but non-fatal magical disease as classified by the Helical Archive. Usually referred to as “Odditis” by laymen, a few historical texts note that this strange malady has been vexing folk potentially as far back as the 2nd Aeon.\n\n**Contraction**\nArcane Contamination Syndrome is usually contracted when consuming items that have been tainted by magical pollution or exposure to bursts of unrefined mana. Certain creatures and Abilities may also infect individuals.\n\nWhenever you are exposed to Arcane Contamination due to staying in a place with excessive magical pollution, consuming tainted food or drink, or are the target of an ability or other source noted to cause Odditis, make a Grit Check.\n\nOn a success, you are free of Arcane Contamination Syndrome and are immune to contracting it for 24 hours. On a failure, you are afflicted with Arcane Contamination Syndrome\n\n**Stages of Infection**\nThere is only one stage of infection of Arcane Contamination Syndrome. It is a persistent and annoying malady, rather than one that progresses in a potentially lethal way. \n\nOnce you have contracted Odditis, roll on the symptom table and apply the result immediately. This effect ends after 24 hours, after which you should roll again for a new symptom, and repeat.\n\n**Treatment and Cure**\n- Not ingesting any contaminated or imbued consumables and avoiding being the direct target of any magical abilities for at least a week will cure you of Arcane Contamination Syndrome.\n- Having the effects dispelled by the Sage’s Demystify or a similar Ability will also free you of this magical disease."
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "table": {
+            "rows": [
+              {
+                "range": {
+                  "end": 2,
+                  "start": 1
+                },
+                "description": "Anytime you try to speak, nothing but bubbles come out. This prevents you from verbal communication or using any Abilities that require speech. Sounds emerge if the bubbles burst, but anything longer than a short phrase is so jumbled it’s unintelligible.",
+                "showDescription": false,
+                "result": "Word Bubbles"
+              },
+              {
+                "description": "Your head is spinning and nothing makes sense! You are afflicted with the Disoriented Ailment for the duration of this symptom",
+                "showDescription": false,
+                "result": "Dizzy Distress",
+                "range": {
+                  "end": 4,
+                  "start": 3
+                }
+              },
+              {
+                "range": {
+                  "end": 6,
+                  "start": 5
+                },
+                "showDescription": false,
+                "result": "Grossly Incandescent ",
+                "description": "Your body glows brightly, making it hard to look at you directly. You do provide illumination like a torch, but you stick out like a sore thumb in the shadows and darkness, making stealth almost impossible unless you cover yourself up  completely."
+              },
+              {
+                "result": "Stony Feet",
+                "description": "Your lower half turns to stone! You remain on the first stage of the Petrification Ailment for the duration of this symptom.",
+                "showDescription": false,
+                "range": {
+                  "end": 8,
+                  "start": 7
+                }
+              },
+              {
+                "description": "You won’t be reaching the top shelf for a bit. You are afflicted with the Chibbed Ailment for the duration of this symptom.",
+                "showDescription": false,
+                "result": "Hex Shrunk",
+                "range": {
+                  "start": 9,
+                  "end": 10
+                }
+              },
+              {
+                "range": {
+                  "start": 11,
+                  "end": 12
+                },
+                "showDescription": false,
+                "description": "Your hands grow to twice their size, less than optimal for delicate tasks. You have a Snag on all Deftness Checks and Contests requiring fine motor skills involving your massive mitts, and cannot properly use small tools and weapons (such as Concealed Melee and Small Mechanical Missile Weapons).",
+                "result": "Hammed Hands"
+              },
+              {
+                "showDescription": false,
+                "description": "You’re suddenly much taller. This growth isn’t proportional though, and you’ve grown gangly and awkward. For the duration of this symptom you have a Snag on all Deftness Checks and are probably hitting your head on the top of doorways a lot.",
+                "result": "Stretch Sickness",
+                "range": {
+                  "start": 13,
+                  "end": 14
+                }
+              },
+              {
+                "range": {
+                  "start": 15,
+                  "end": 16
+                },
+                "description": "You just don’t feel quite right. Your positive traits invert into negative versions of themselves, subtracting from your aptitudes instead of adding to them for the duration of this symptom.",
+                "result": "The Jumbles",
+                "showDescription": false
+              },
+              {
+                "range": {
+                  "end": 18,
+                  "start": 17
+                },
+                "description": "You’re covered in odd colored spots! Unfortunately these act as mana magnets of sorts - for the duration of this symptom you have a Snag when trying to roll to resist or avoid a magical effect or Ability.",
+                "result": "Spell Spots",
+                "showDescription": false
+              },
+              {
+                "showDescription": true,
+                "result": "The Wobblies",
+                "description": "You’ve become downright gelatinous. For the duration of this symptom you’re afflicted with the Jellified Ailment.",
+                "range": {
+                  "end": 20,
+                  "start": 19
+                }
+              }
+            ],
+            "baseRoll": "1d20",
+            "name": "Syndrome"
+          }
+        },
+        "type": "table"
+      }
+    ],
+    "version": 2,
+    "effects": [
+      {
+        "bonus": 0,
+        "quantity": 1,
+        "damageType": "none",
+        "useLowest": false,
+        "tableBaseRoll": "1d20",
+        "targetNumber": null,
+        "challengeDice": false,
+        "hide": false,
+        "name": "",
+        "selectedDie": "d20",
+        "successTarget": false,
+        "options": [],
+        "challengeRoll": null,
+        "rollDirection": "high",
+        "tableName": "Syndrome",
+        "difficulty": 0,
+        "baseRoll": "1d20",
+        "encounterRoll": false,
+        "successMultiplier": 1,
+        "bonusSymbols": [],
+        "advantageType": "none",
+        "exploding": false,
+        "baseValue": 0,
+        "type": "table"
+      }
+    ],
+    "displayName": "Arcane Contamination Syndrome",
+    "type": "Roll Tables",
+    "id": "GfmrRTfv5JayW4gP2KS4"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "resultsOnly",
+        "type": "table",
+        "value": {
+          "table": {
+            "baseRoll": "1d20",
+            "name": "Injury Table",
+            "rows": [
+              {
+                "showDescription": true,
+                "result": "Shocked/Stalled",
+                "description": "- Miss your next Combat Turn.",
+                "range": {
+                  "start": 1,
+                  "end": 5
+                }
+              },
+              {
+                "showDescription": true,
+                "result": "Armor Crash",
+                "description": "- Your armor’s Defense Bonus is reduced by 2. This penalty lasts until your armor is repaired. \n- When your Armor Bonus is reduced to 0, your armor is destroyed. \n- If you are not wearing armor, count this Injury as Wounded.",
+                "range": {
+                  "end": 10,
+                  "start": 6
+                }
+              },
+              {
+                "description": "- Your maximum Hearts Total is reduced by 1 until you receive Treatment for this Injury.\n- If this Injury reduces your Hearts Total to 0, count this Injury as Quiet Death.",
+                "showDescription": true,
+                "result": "Wounded",
+                "range": {
+                  "start": 11,
+                  "end": 14
+                }
+              },
+              {
+                "result": "Broken Arm",
+                "showDescription": true,
+                "description": "- Roll to see which arm is broken (1-10 right arm, 11-20 left arm).\n- Your Might Aptitude is halved when making Checks or Contests requiring the use of your arms until you receive Treatment for this Injury.\n- If this Injury occurs on the same limb a second time, count this Injury as Severed.",
+                "range": {
+                  "end": 16,
+                  "start": 15
+                }
+              },
+              {
+                "result": "Broken Leg",
+                "showDescription": true,
+                "description": "- Roll to see which leg is broken (1-10 right leg, 11-20 left leg).\n- Your Speed Rating is reduced by a single step.\n- You suffer a Snag on all Might and Deftness Aptitude Checks and Contests requiring the use of your legs until you receive Treatment for this Injury.\n- If this injury occurs on the same limb a second time, count this Injury as Severed.",
+                "range": {
+                  "start": 17,
+                  "end": 18
+                }
+              },
+              {
+                "range": {
+                  "start": 19,
+                  "end": 20
+                },
+                "showDescription": true,
+                "description": "- You fall to the ground and can no longer participate in the Fight. You will regain consciousness once the Fight is over and suffer no lasting damage.\n- An enemy can slay you immediately if they are unhindered and use their Turn to do so. \n- If you receive First Aid you will be revived but cannot use any Combat Actions for the remainder of the Fight.",
+                "result": "Out Cold"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "width": 100,
+              "aspect": 1,
+              "x": 0,
+              "height": 100,
+              "unit": "%"
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5"
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "version": 2,
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "unit": "%",
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "width": 100
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FR63C00NUgwM5aWxFDbQg.png?alt=media&token=c5326c3b-ecaa-47fe-9cd5-29af8924f5db"
+    },
+    "effects": [
+      {
+        "rollDirection": "high",
+        "options": [],
+        "challengeRoll": null,
+        "successTarget": false,
+        "selectedDie": "d20",
+        "hide": false,
+        "name": "",
+        "challengeDice": false,
+        "targetNumber": null,
+        "tableBaseRoll": "1d20",
+        "useLowest": false,
+        "damageType": "none",
+        "quantity": 1,
+        "bonus": 0,
+        "type": "table",
+        "baseValue": 0,
+        "exploding": false,
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "bonusSymbols": [],
+        "encounterRoll": false,
+        "baseRoll": "1d20",
+        "difficulty": 0,
+        "tableName": "Injury Table"
+      }
+    ],
+    "displayName": "Injury Table - (1) Light ",
+    "type": "Roll Tables",
+    "id": "qFDPbSelh608wgW8K4Nd"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 2,
+    "details": [
+      {
+        "visibility": "resultsOnly",
+        "type": "table",
+        "value": {
+          "table": {
+            "rows": [
+              {
+                "range": {
+                  "start": 1,
+                  "end": 3
+                },
+                "result": "Shocked/Stalled",
+                "showDescription": true,
+                "description": "- Miss your next Combat Turn."
+              },
+              {
+                "description": "- Your armor’s Defense Bonus is reduced by 2. This penalty lasts until your armor is repaired. \n- When your Armor Bonus is reduced to 0, your armor is destroyed. \n- If you are not wearing armor, count this Injury as Wounded.",
+                "showDescription": true,
+                "result": "Armor Crash",
+                "range": {
+                  "start": 4,
+                  "end": 6
+                }
+              },
+              {
+                "range": {
+                  "end": 9,
+                  "start": 7
+                },
+                "showDescription": true,
+                "description": "- Your maximum Hearts Total is reduced by 1 until you receive Treatment for this Injury.\n- If this Injury reduces your Hearts Total to 0, count this Injury as Quiet Death.",
+                "result": "Wounded"
+              },
+              {
+                "range": {
+                  "end": 11,
+                  "start": 10
+                },
+                "showDescription": true,
+                "description": "- Roll to see which arm is broken (1-10 right arm, 11-20 left arm).\n- Your Might Aptitude is halved when making Checks or Contests requiring the use of your arms until you receive Treatment for this Injury.\n- If this Injury occurs on the same limb a second time, count this Injury as Severed.",
+                "result": "Broken Arm"
+              },
+              {
+                "range": {
+                  "start": 12,
+                  "end": 13
+                },
+                "description": "- Roll to see which leg is broken (1-10 right leg, 11-20 left leg).\n- Your Speed Rating is reduced by a single step.\n- You suffer a Snag on all Might and Deftness Aptitude Checks and Contests requiring the use of your legs until you receive Treatment for this Injury.\n- If this injury occurs on the same limb a second time, count this Injury as Severed.",
+                "result": "Broken Leg",
+                "showDescription": true
+              },
+              {
+                "range": {
+                  "start": 14,
+                  "end": 15
+                },
+                "result": "Out Cold",
+                "description": "- You fall to the ground and can no longer participate in the Fight. You will regain consciousness once the Fight is over and suffer no lasting damage.\n- An enemy can slay you immediately if they are unhindered and use their Turn to do so. \n- If you receive First Aid you will be revived but cannot use any Combat Actions for the remainder of the Fight.",
+                "showDescription": true
+              },
+              {
+                "result": "Near Death",
+                "description": "- You’ll die within 2 Turns if help doesn’t arrive.\n- First Aid reduces this Injury to Wounded.",
+                "showDescription": true,
+                "range": {
+                  "end": 17,
+                  "start": 16
+                }
+              },
+              {
+                "range": {
+                  "end": 18,
+                  "start": 18
+                },
+                "description": "- Roll to see which limb is severed (1-5 right arm, 6-10 left arm, 11-15 right leg, 16-20 left leg)\n- You’ll need Magical Treatment or a Prosthetic Replacement to regain the limb’s function.\n- Until replaced, consider a severed arm as the Broken Arm Injury, and a severed leg as the Broken Leg Injury, except you obviously cannot use your severed limb at all.\n- Re-roll if the limb has already been severed and not been replaced. If you have no limbs left, you’ve been decapitated and are dead.",
+                "showDescription": true,
+                "result": "Severed"
+              },
+              {
+                "showDescription": true,
+                "description": "- You’ll die within 2 Turns if help doesn’t arrive.\n- First Aid will prevent your death but... you suffer a -1 penalty to an Aptitude of your choice which is related to the wound. For example, -1 Insight for a head blow.\n- Bio-Mechanoid? You lose your Robotic Quirk. The second time your receive this Injury, suffer the Aptitude penalty above. \n- Magical/Advanced Treatment is required to remove the lasting effect of the Injury.",
+                "result": "Mutilated",
+                "range": {
+                  "start": 19,
+                  "end": 19
+                }
+              },
+              {
+                "range": {
+                  "end": 20,
+                  "start": 20
+                },
+                "result": "Mortal wound",
+                "showDescription": true,
+                "description": "- You have received a fatal blow and will die, no Treatment can save you.\n- You may take one last Action on your next Turn before expiring. Make it count!\n- Your body is recoverable, so perhaps there is a chance at \nsome unnatural resurrection...\n- Bio-Mechanoid? You lie not dead, but offline. You have one chance at being rebooted but the Advanced Treatment will suffer a Snag. Failing this, maybe your core could be transferred to an alternative shell."
+              }
+            ],
+            "name": "Injury Table",
+            "baseRoll": "1d20"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "x": 0,
+              "aspect": 1,
+              "width": 100,
+              "unit": "%",
+              "height": 100,
+              "y": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5"
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "effects": [
+      {
+        "tableName": "Injury Table",
+        "encounterRoll": false,
+        "successMultiplier": 1,
+        "type": "table",
+        "quantity": 1,
+        "damageType": "none",
+        "useLowest": false,
+        "challengeDice": false,
+        "targetNumber": null,
+        "hide": false,
+        "successTarget": false,
+        "rollDirection": "high",
+        "challengeRoll": null,
+        "options": [],
+        "difficulty": 0,
+        "baseRoll": "1d20",
+        "exploding": false,
+        "advantageType": "none",
+        "bonusSymbols": [],
+        "baseValue": 0,
+        "bonus": 0,
+        "tableBaseRoll": "1d20",
+        "secondaryDice": false,
+        "name": "",
+        "selectedDie": "d20"
+      }
+    ],
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FR63C00NUgwM5aWxFDbQg.png?alt=media&token=c5326c3b-ecaa-47fe-9cd5-29af8924f5db",
+      "tokenCrop": {
+        "y": 0,
+        "aspect": 1,
+        "x": 0,
+        "width": 100,
+        "unit": "%",
+        "height": 100
+      }
+    },
+    "type": "Roll Tables",
+    "subtype": "",
+    "displayName": "Injury Table - (2) Severe",
+    "id": "zk9WOeEQQw8Yevvwl520"
+  },
+  {
+    "subtype": "",
+    "id": "nuBPwNhUEGb63NcvIx8F",
+    "displayName": "Injury Table - (3) Critical",
+    "type": "Roll Tables",
+    "effects": [
+      {
+        "tableName": "Injury Table",
+        "encounterRoll": false,
+        "successMultiplier": 1,
+        "type": "table",
+        "quantity": 1,
+        "damageType": "none",
+        "useLowest": false,
+        "challengeDice": false,
+        "targetNumber": null,
+        "hide": false,
+        "successTarget": false,
+        "rollDirection": "high",
+        "options": [],
+        "challengeRoll": null,
+        "difficulty": 0,
+        "baseRoll": "1d20",
+        "exploding": false,
+        "bonusSymbols": [],
+        "advantageType": "none",
+        "baseValue": 0,
+        "bonus": 0,
+        "tableBaseRoll": "1d20",
+        "secondaryDice": false,
+        "name": "",
+        "selectedDie": "d20"
+      }
+    ],
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "width": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FR63C00NUgwM5aWxFDbQg.png?alt=media&token=c5326c3b-ecaa-47fe-9cd5-29af8924f5db"
+    },
+    "version": 2,
+    "details": [
+      {
+        "visibility": "resultsOnly",
+        "value": {
+          "table": {
+            "name": "Injury Table",
+            "baseRoll": "1d20",
+            "rows": [
+              {
+                "range": {
+                  "start": 1,
+                  "end": 2
+                },
+                "description": "- Miss your next Combat Turn.",
+                "showDescription": true,
+                "result": "Shocked/Stalled"
+              },
+              {
+                "range": {
+                  "start": 3,
+                  "end": 4
+                },
+                "showDescription": true,
+                "description": "- Your armor’s Defense Bonus is reduced by 2. This penalty lasts until your armor is repaired. \n- When your Armor Bonus is reduced to 0, your armor is destroyed. \n- If you are not wearing armor, count this Injury as Wounded.",
+                "result": "Armor Crash"
+              },
+              {
+                "description": "- Your maximum Hearts Total is reduced by 1 until you receive Treatment for this Injury.\n- If this Injury reduces your Hearts Total to 0, count this Injury as Quiet Death.",
+                "result": "Wounded",
+                "showDescription": true,
+                "range": {
+                  "end": 6,
+                  "start": 5
+                }
+              },
+              {
+                "range": {
+                  "start": 7,
+                  "end": 8
+                },
+                "description": "- Roll to see which arm is broken (1-10 right arm, 11-20 left arm).\n- Your Might Aptitude is halved when making Checks or Contests requiring the use of your arms until you receive Treatment for this Injury.\n- If this Injury occurs on the same limb a second time, count this Injury as Severed.",
+                "showDescription": true,
+                "result": "Broken Arm"
+              },
+              {
+                "showDescription": true,
+                "result": "Broken Leg",
+                "description": "- Roll to see which leg is broken (1-10 right leg, 11-20 left leg).\n- Your Speed Rating is reduced by a single step.\n- You suffer a Snag on all Might and Deftness Aptitude Checks and Contests requiring the use of your legs until you receive Treatment for this Injury.\n- If this injury occurs on the same limb a second time, count this Injury as Severed.",
+                "range": {
+                  "start": 9,
+                  "end": 10
+                }
+              },
+              {
+                "range": {
+                  "end": 12,
+                  "start": 11
+                },
+                "showDescription": true,
+                "description": "- You fall to the ground and can no longer participate in the Fight. You will regain consciousness once the Fight is over and suffer no lasting damage.\n- An enemy can slay you immediately if they are unhindered and use their Turn to do so. \n- If you receive First Aid you will be revived but cannot use any Combat Actions for the remainder of the Fight.",
+                "result": "Out Cold"
+              },
+              {
+                "range": {
+                  "end": 14,
+                  "start": 13
+                },
+                "result": "Near Death",
+                "description": "- You’ll die within 2 Turns if help doesn’t arrive.\n- First Aid reduces this Injury to Wounded.",
+                "showDescription": true
+              },
+              {
+                "range": {
+                  "end": 16,
+                  "start": 15
+                },
+                "showDescription": true,
+                "description": "- Roll to see which limb is severed (1-5 right arm, 6-10 left arm, 11-15 right leg, 16-20 left leg)\n- You’ll need Magical Treatment or a Prosthetic Replacement to regain the limb’s function.\n- Until replaced, consider a severed arm as the Broken Arm Injury, and a severed leg as the Broken Leg Injury, except you obviously cannot use your severed limb at all.\n- Re-roll if the limb has already been severed and not been replaced. If you have no limbs left, you’ve been decapitated and are dead.",
+                "result": "Severed"
+              },
+              {
+                "range": {
+                  "end": 17,
+                  "start": 17
+                },
+                "showDescription": true,
+                "result": "Mutilated",
+                "description": "- You’ll die within 2 Turns if help doesn’t arrive.\n- First Aid will prevent your death but... you suffer a -1 penalty to an Aptitude of your choice which is related to the wound. For example, -1 Insight for a head blow.\n- Bio-Mechanoid? You lose your Robotic Quirk. The second time your receive this Injury, suffer the Aptitude penalty above. \n- Magical/Advanced Treatment is required to remove the lasting effect of the Injury."
+              },
+              {
+                "showDescription": true,
+                "result": "Mortal Wound",
+                "description": "- You have received a fatal blow and will die, no Treatment can save you.\n- You may take one last Action on your next Turn before expiring. Make it count!\n- Your body is recoverable, so perhaps there is a chance at \nsome unnatural resurrection...\n- Bio-Mechanoid? You lie not dead, but offline. You have one chance at being rebooted but the Advanced Treatment will suffer a Snag. Failing this, maybe your core could be transferred to an alternative shell.",
+                "range": {
+                  "start": 18,
+                  "end": 18
+                }
+              },
+              {
+                "range": {
+                  "end": 19,
+                  "start": 19
+                },
+                "showDescription": true,
+                "result": "Quiet Death",
+                "description": "You are dead. Your body is recoverable, so perhaps there is a chance at some unnatural resurrection..."
+              },
+              {
+                "showDescription": true,
+                "result": "Messy Affair",
+                "description": "- You are dead. The fatal blow leaves little that is recognizable.\n- Bio-mechanoid? Make a Grit Check. Failure results in an explosion doing 2 Hearts of Damage to anyone in the same Area as you. If you succeed, you fall to pieces on the spot.",
+                "range": {
+                  "start": 20,
+                  "end": 20
+                }
+              }
+            ]
+          }
+        },
+        "type": "table"
+      },
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5"
+          }
+        },
+        "type": "image",
+        "visibility": "full"
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FR63C00NUgwM5aWxFDbQg.png?alt=media&token=c5326c3b-ecaa-47fe-9cd5-29af8924f5db",
+      "tokenCrop": {
+        "y": 0,
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "unit": "%",
+        "height": 100
+      }
+    },
+    "effects": [
+      {
+        "encounterRoll": false,
+        "baseRoll": "1d20",
+        "tableName": "Burn Table",
+        "difficulty": 0,
+        "type": "table",
+        "baseValue": 0,
+        "advantageType": "none",
+        "successMultiplier": 1,
+        "bonusSymbols": [],
+        "exploding": false,
+        "useLowest": false,
+        "tableBaseRoll": "1d20",
+        "damageType": "none",
+        "quantity": 1,
+        "bonus": 0,
+        "options": [],
+        "challengeRoll": null,
+        "rollDirection": "high",
+        "selectedDie": "d20",
+        "successTarget": false,
+        "name": "",
+        "hide": false,
+        "targetNumber": null,
+        "challengeDice": false
+      }
+    ],
+    "type": "roll tables",
+    "id": "d3ZeIpyqXa0Z11VO2pPh",
+    "displayName": "Injury Table - Caustic/Burning",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 2,
+    "details": [
+      {
+        "value": {
+          "table": {
+            "name": "Burn Table",
+            "baseRoll": "1d20",
+            "rows": [
+              {
+                "range": {
+                  "end": 5,
+                  "start": 1
+                },
+                "result": "Shock",
+                "showDescription": true,
+                "description": "- Your next Action is lost while you regain your composure."
+              },
+              {
+                "result": "Superficial burn",
+                "description": "- You suffer a -1 Penalty to all rolls until the Injury receives Treatment.\n- If you are already suffering from this Injury, and receive it a second time, treat it as a Serious Burn.",
+                "showDescription": true,
+                "range": {
+                  "end": 15,
+                  "start": 6
+                }
+              },
+              {
+                "showDescription": true,
+                "description": "- You suffer a -1 Penalty to all rolls until the Injury receives Treatment.\n- You suffer a -1 to your Hearts Total until the Injury receives Treatment.\n- If you are already suffering from this Injury, and receive it a subsequent time, your Hearts Total is further reduced by -1.\n- You die when reduced to 0 Hearts.",
+                "result": "Serious Burn",
+                "range": {
+                  "start": 16,
+                  "end": 20
+                }
+              }
+            ]
+          }
+        },
+        "type": "table",
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5"
+          }
+        },
+        "type": "image",
+        "visibility": "full"
+      }
+    ]
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FR63C00NUgwM5aWxFDbQg.png?alt=media&token=c5326c3b-ecaa-47fe-9cd5-29af8924f5db",
+      "tokenCrop": {
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "unit": "%",
+        "height": 100,
+        "y": 0
+      }
+    },
+    "effects": [
+      {
+        "quantity": 1,
+        "damageType": "none",
+        "useLowest": false,
+        "tableBaseRoll": "1d20",
+        "bonus": 0,
+        "selectedDie": "d20",
+        "successTarget": false,
+        "challengeRoll": null,
+        "options": [],
+        "rollDirection": "high",
+        "targetNumber": null,
+        "challengeDice": false,
+        "hide": false,
+        "name": "",
+        "encounterRoll": false,
+        "tableName": "Lost Table",
+        "difficulty": 0,
+        "baseRoll": "1d20",
+        "baseValue": 0,
+        "type": "table",
+        "successMultiplier": 1,
+        "bonusSymbols": [],
+        "advantageType": "none",
+        "exploding": false
+      }
+    ],
+    "displayName": "Lost Table",
+    "type": "roll tables",
+    "id": "6rCCqLrimEjeSHCn5mH9",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "type": "table",
+        "value": {
+          "table": {
+            "rows": [
+              {
+                "result": "A Few Missteps",
+                "showDescription": true,
+                "description": "You travelled half the distance planned along your Route.",
+                "range": {
+                  "end": 12,
+                  "start": 1
+                }
+              },
+              {
+                "description": "- You’ve travelled as far as intended, but in the wrong direction. Your GM will choose, and mark, your current location on your Map!\n- Encounters and Terrain will be based on the actual Route taken.",
+                "result": "Wrong Turn",
+                "showDescription": true,
+                "range": {
+                  "end": 16,
+                  "start": 13
+                }
+              },
+              {
+                "range": {
+                  "end": 20,
+                  "start": 17
+                },
+                "showDescription": true,
+                "result": "Full Circle",
+                "description": "You made no progress on the Map."
+              }
+            ],
+            "name": "Lost Table",
+            "baseRoll": "1d20"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fp3WpQZzLg6350gWPUEM2.png?alt=media&token=09807aae-0b9c-4360-8d22-93bb12c2fbb5",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "version": 2
+  }
+]

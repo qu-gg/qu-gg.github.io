@@ -1,0 +1,4292 @@
+[
+  {
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "4s8A1u8CUBnQDTG7SM3m",
+    "description": "Large, rugged bags that provide you with much needed extra storage.\n- A Backpack increases your Inventory capacity by 5 Slots.\n- Retrieving an object from a Pack takes 2 Actions (so 2 Turns).\n- You cannot wear a Backpack and a Travelers Bag at the same time.",
+    "data": {
+      "subtype": "accessories",
+      "type": "Gear",
+      "encumbrance": 0
+    },
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "height": 100,
+        "width": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FGd2rdme9jguQzpKcbPoK.png?alt=media&token=cfdfa356-3d51-4074-94c4-61deb2933cec"
+    },
+    "version": 1,
+    "name": "Bag - Backpack"
+  },
+  {
+    "type": "none",
+    "creator": "",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "SCFhXtxo67yGr3iuTz4n",
+    "actions": [],
+    "description": "Coins take up 1 Slot per 100 Coins.",
+    "data": {
+      "cost": {
+        "coins": 0
+      },
+      "subtype": "Accessories",
+      "type": "Gear",
+      "encumbrance": 0
+    },
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FGd2rdme9jguQzpKcbPoK.png?alt=media&token=cfdfa356-3d51-4074-94c4-61deb2933cec"
+    },
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "name": "Bag - Coin Pouch",
+    "version": 1
+  },
+  {
+    "description": "Shoulder bags that provide easy access to their contents.\n\n- A Traveler’s Bag increases your Inventory capacity by 3 Slots.\n- Retrieving an object from a Bag requires an Action.\n- You cannot wear a Traveler’s Bag and a Backpack at the same time.",
+    "data": {
+      "subtype": "Accessories",
+      "cost": {
+        "coins": 3
+      },
+      "encumbrance": 1,
+      "type": "gear"
+    },
+    "type": "none",
+    "creator": "",
+    "id": "IQsrRwCFW7EoZy1Tvw0l",
+    "actions": [],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "name": "Bag - Travellers",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 0,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FGd2rdme9jguQzpKcbPoK.png?alt=media&token=cfdfa356-3d51-4074-94c4-61deb2933cec"
+    },
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ]
+  },
+  {
+    "version": 1,
+    "name": "Blackout Goggles",
+    "image": {
+      "tokenCrop": {
+        "y": 17.99999999999998,
+        "width": 65.27777777777779,
+        "height": 62.66666666666667,
+        "aspect": 1,
+        "x": 12.847222222222198,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FI2xJ0BGP3XtaOBnH7HM4.png?alt=media&token=8c547c1e-6807-48c8-88f0-87e79fe64fd7"
+    },
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "cost": {
+        "coins": 2
+      },
+      "subtype": "accessories"
+    },
+    "description": "Goggles that block out the light.\n- Blackout Goggles cancel the negative effects of the Species Ability Under Dweller.\n- They negate the Battlefield Condition Obscured if caused by blinding light.",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "EXTwSOdongeXTkyc8Tr1",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "RPaGTDAg6Q3b8HCtrJ1D",
+    "description": "These masks protect your lungs from water, gas, and other inhaled substances.\n- Wearing a Rebreather makes you immune to Suffocation.",
+    "data": {
+      "cost": {
+        "coins": 15
+      },
+      "subtype": "accessories",
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F8yX1CoOvmDkZytxGCec7.png?alt=media&token=e24b26e2-a8bd-4d86-8807-ed5607ac0060",
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 20.73578595317726,
+        "height": 53.66666666666667,
+        "width": 53.846153846153854,
+        "y": 17.66666666666664
+      }
+    },
+    "name": "Rebreather",
+    "version": 1
+  },
+  {
+    "description": "Thick, durable armor that provides strong protection for most of your body, at the expense of combat mobility.\n\n**Defense Bonus:** +6\n\n**Max. Speed:** Average",
+    "data": {
+      "subtype": "armor",
+      "cost": {
+        "coins": 120
+      },
+      "type": "gear",
+      "encumbrance": 4
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "id": "NjQpRq2S5kUk9KGGoWy0",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 1,
+    "name": "Armor - Heavy",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F6fEeQinGf4rF7PVRXdNO.png?alt=media&token=17c2d773-06ec-404c-a22b-e255d3480f7e",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 9.333333333333243,
+        "width": 100,
+        "height": 81.33333333333333
+      }
+    }
+  },
+  {
+    "data": {
+      "subtype": "armor",
+      "cost": {
+        "coins": 30
+      },
+      "type": "Gear",
+      "encumbrance": 2
+    },
+    "description": "Armor that prioritizes speed over defensive performance, and covers only the most vital points on your body.\n\n**Defense Bonus:** +2\n\n**Max. Speed:** Very Fast",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "id": "uOxQI8eatnq0AtpJe1t3",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Armor - Light",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 75.66666666666667,
+        "y": 11.666666666666744
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FbJDqCdH8wqPeTUnBn7gA.png?alt=media&token=1aaf2bf7-f84c-47f6-afef-a1512d53d565"
+    }
+  },
+  {
+    "description": "Robust armor that provides good protection without heavily compromising your freedom of movement.\n\n**Defense Bonus:** +4\n\n**Max. Speed:** Fast",
+    "data": {
+      "encumbrance": 3,
+      "type": "gear",
+      "subtype": "armor",
+      "cost": {
+        "coins": 60
+      }
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "k1Jkmup1CR1ZRrgpgUl9",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "name": "Armor - Medium",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FPmcgTmbcZhMLJIpzn8ZQ.png?alt=media&token=19ab54ba-0e3d-4138-b969-f28a3a9d4db6",
+      "tokenCrop": {
+        "y": 6.999999999999969,
+        "width": 100,
+        "height": 82.66666666666667,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      }
+    }
+  },
+  {
+    "id": "0Rr9YH3BiRYvuUfUisqU",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "description": "If you are un-armored, either nude or wearing regular clothes, you are considered naked in combat.\n\n**Defense Bonus**:  +0\n\n**Max. Speed**: Very Fast",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FKpTXtD5ZH3XH900ZSvvO.png?alt=media&token=6a8f1bc0-4031-4b30-a30b-95a4649d0a9c",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 9.66666666666669,
+        "width": 99.99999999999997,
+        "height": 77.66666666666664
+      }
+    },
+    "version": 1,
+    "name": "Armor - Naked"
+  },
+  {
+    "version": 1,
+    "name": "Armor - Superheavy",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F35BQGRmQd6EjhlBAE0QF.png?alt=media&token=0392b684-1ecc-4a90-aed7-b883373511bc",
+      "tokenCrop": {
+        "y": 7.333333333333333,
+        "height": 81,
+        "width": 99.99999999999999,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      }
+    },
+    "description": "A weighty protective shell that encases your entire body, but considerably restricts your maximum speed.\n\n**Defense Bonus:** +8\n\n**Max. Speed:** Slow",
+    "data": {
+      "type": "gear",
+      "encumbrance": 5,
+      "subtype": "armor",
+      "cost": {
+        "coins": 600,
+        "gems": 0
+      }
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "id": "aQSmrCxE9KodXNOoaGEq",
+    "actions": [],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "id": "WKHqRfKKgJEbxgFD2xJt",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "description": "This armor protects you from harmful gasses, magical radiation, or extreme environments. These suits are also hermetically sealed with systems that purify the air and regulate temperature. \n\n- You are immune to the Harmful Battlefield Condition and any other dangerous environmental effects. \n- Also functions as Extreme Weather Clothing, protecting you from both heat and cold.\n\n**Coins** = Armor Price + 100",
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "name": "Armor Ability - Anti-Hazard",
+    "version": 1
+  },
+  {
+    "description": "Fitted with inflatable air bags, this armor prevents you from sinking in water. \n- You are exempt from any Checks or Contests your GM might require you to make attempting to stay afloat when wearing the armor. \n- Deliberately trying to submerge in the armor is problematic and requires a Might Check.\n\n**Coins** = Armor Price +50",
+    "data": {
+      "type": "Gear",
+      "subtype": "armor"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "MhApZXf9hcD7IxTAaltz",
+    "name": "Armor Ability - Buoyant",
+    "version": 1
+  },
+  {
+    "name": "Armor Ability - Cargo",
+    "version": 1,
+    "data": {
+      "type": "Gear",
+      "subtype": "armor"
+    },
+    "description": "This armor has a built in storage space in a chest or back cavity to protect valuable, or easily damaged, items. \n\n- The armor provides you with an additional 3 Inventory Slots. \n- Any stowed items are protected from water, fire, and other physical trauma. \n- If the armor is destroyed, whatever is stored inside will fall out.\n\n**Coins** = Armor Price + 15",
+    "id": "12w5KJdIjAEyFd93oOio",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "name": "Armor Ability - Integrated",
+    "version": 1,
+    "data": {
+      "type": "Gear",
+      "subtype": "armor"
+    },
+    "description": "This armor has a weapon or tool built into one of the arms. A weapon or tool can be fitted to the armors right or left arm.\n- Integrated items are limited to those that you could use with one hand.\n- For example, you cannot install a Large Mechanical Missile Weapon as it requires two hands to operate.\n- Integrated weapons do not have to be drawn, they are always ready to use.\n- Using an integrated item does not require your hand to use, enabling you to carry an additional item.\n- For example, an integrated lantern will allow you to still carry a shield and a sword.\n- An integrated item does not grant you an additional Action and you must choose to use the integrated item, if it normally requires an Action to use, or the item you are holding in your hand.\n\n**Coins** = Armor Price + Integrated Item Price +50",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "id": "iLentErwT8bwYM2snPW8",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "description": "This armor is a work of art, either gilded, covered in gems, or sculpted like a fearsome beast. \n\n- This armor comes with a closed helmet that gives you an Aura of 12, or 14 for more expensive versions. \n- You can use your armors Aura in place of your own for Checks and Contests where an impressive physical appearance is a factor. \n\nMagnificent (Aura 12) **Coins** = Armor Price +25\n\nResplendent (Aura 14)\n**Coins** = Armor Price +50",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "id": "lex2nxvNsfpsghy20IBi",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Armor Ability - Magnificent"
+  },
+  {
+    "version": 1,
+    "name": "Armor Ability - Mechanical Motion",
+    "description": "A system of levers, pistons, gears, and chains allow this armor to move under its own power. Warriors pilot these oversized suits rather than wear them. Only available for Heavy and Superheavy Armor. Despite the usual size restriction, Small Species can use Heavy and Superheavy Armor without penalty if fitted with Mechanical Motion. It takes an hour to adjust the armor to a pilots measurements. It will need to be adjusted again if a different pilot wants to use it. Mechanical Motion provides:\n  - +2 to your Might Aptitude.\n  - Supernatural Might.\n  - +1 to your Heart Total.\n  - The ability to use combat gear as if a Large Species.\n\nThis armor requires routine maintenance or it will lock up:\n- Your GM will determine when maintenance is required, usually after five or so Fights or a long, arduous Journey. \n- Maintenance requires an evening and a single use of a Gadgeteer Kit by someone with the Gadgeteering Crafting Discipline. \n- Failure to do so will result in a Snag on all actions attempted while wearing the armor.\n\n**Coins** = Armor Price x10",
+    "data": {
+      "type": "Gear",
+      "subtype": "armor"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "id": "EN99AfZSK0eRh14Cp2A3"
+  },
+  {
+    "name": "Armor Ability - Shadowed",
+    "version": 1,
+    "description": "This armor is engineered to avoid noisy movement, and colored to help it blend into the shadows. Heavy duty protection need not come at the expense of stealth. \n- This armor provides a Minor Bonus (+2) when you are: Making rolls to hide in shadow or attempting Stealthy Movement.\n\n**Coins** = Armor Price + 15",
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "sKWUmdtpqow7XuwHaYjM",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "description": "The ostentatious spikes that cover this Armor are more than decoration. The wearer is harder to grab or swallow, endearing it to titan hunters all over the Outer World. \n\n- Any creature attempting to grab, squeeze, swallow or otherwise smash against you takes 1 Heart of Damage while doing so. \n- Your Unarmed attacks now strike like a Standard Weapon.\n\n**Coins** = Armor Price +75",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "BxYQUI6AH1jepipsEx0j",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Armor Ability - Spiked"
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "height": 90.33333333333331,
+        "width": 97.13261648745518,
+        "y": 4.234374999999999,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FfE8OvYyxFgG66fo3cudp.png?alt=media&token=d2038cce-d195-4535-bc9a-2323b7d3251f"
+    },
+    "name": "Shield - Large",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "id": "QV6k4HUEq7zRIZqeAj1w",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "description": "Enormous bulwarks that are large enough to obscure their bearer completely. Effective, but large and difficult to carry.\n\n- You can Parry 1 Melee or Missile Attack per Fight. This includes spells or any special attacks that require an Attack roll.\n- Large Shields require one hand to use, so they affect your ability to use two-handed weapons.\n- Your Speed Rating is reduced by one step during a Fight.\n\n**Defense Bonus**: +2",
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "cost": {
+        "coins": 35
+      },
+      "subtype": "armor"
+    }
+  },
+  {
+    "description": "Favored by fighters who want to use both hands, Small Shields are worn on your arm rather than held.\n\n- You can Parry 1 Melee Attack per Fight.\n- You may still use both hands when equipped with a Small Shield.\n\n**Defense Bonus**: 0",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "cost": {
+        "coins": 15
+      },
+      "subtype": "armor"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "lBPDKydsOFNDdPQhnYwI",
+    "actions": [],
+    "name": "Shield - Small",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 1.8450184501845017,
+        "unit": "%",
+        "y": 6.333333333333334,
+        "height": 82.66666666666667,
+        "width": 91.5129151291513
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FqNSsU2S2G01krmLQ6LQi.png?alt=media&token=dad2a9d3-5d8a-4f79-8175-1d0eb64a152f"
+    }
+  },
+  {
+    "description": "The most common shields are sturdy pieces of wood or metal that are held in place by a grip or strap along their back side.\n\n- You can Parry 1 Melee or Missile Attack per Fight. This includes spells or any special attacks that require an Attack roll.\n- Standard Shields require one hand to use, so they affect your ability to use two-handed weapons.\n\n**Defense Bonus**: +1",
+    "data": {
+      "cost": {
+        "coins": 25
+      },
+      "subtype": "armor",
+      "encumbrance": 1,
+      "type": "Gear"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "id": "llNHxU9vej8jkBJWnKPU",
+    "version": 1,
+    "name": "Shield - Standard",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FyvmYZo3yuhCtGZxXlvmL.png?alt=media&token=dc1a547e-0cf7-48fe-93c8-604ed19ad2e1",
+      "tokenCrop": {
+        "height": 87.33333333333327,
+        "width": 94.92753623188399,
+        "y": 5,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      }
+    }
+  },
+  {
+    "name": "Shield Ability - Assault",
+    "version": 1,
+    "data": {
+      "subtype": "armor",
+      "type": "Gear"
+    },
+    "description": "These shields are spiked, have a sharp edge, or are otherwise weaponized. Only available for Standard Shields. During a Fight, at the beginning of your Turn, you can choose to wield this shield as a Standard Weapon. Doing SO means:\n  - You will not benefit from the Shields Defense Bonus on your opponents next Turn.\n  - You can still use it to Parry.\n  - If you miss, you can Attack with another held weapon as if Dual Wielding.\n\n**Coins** = Shield Price + 20",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "nUVciHEVopCI27RePOJ5",
+    "uses": {
+      "max": 0
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "name": "Shield Ability - Barricade",
+    "version": 1,
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "id": "AmRvPPu4EqGfRVQ8sn1A",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "type": "Gear",
+      "subtype": "armor"
+    },
+    "description": "Immense bulwarks that can be propped up and used as cover. Popular with wielders of ranged weapons with slow reload times.\n\n- Only available for Large Shields.\n- Thanks to a kickstand, or other stabilizing device, this Shield can stand on its own. You can set it down and take cover behind it.\n\nWhile behind cover:\n- The Shield will automatically Parry all Missile attacks directed at you.\n- You can make Missile attacks from behind the Shield and still benefit from its Defense Bonus.\n- You cannot Parry Melee attacks.\n- You do not receive the Shields Defense Bonus for Melee Attacks.\n- Setting down or picking up the Shield does not require an Action, allowing you to Move and take Actions normally on your Turn.\n\n**Coins** = Shield Price x20"
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fw31tQ3sxsI8wCnkOEyUg.png?alt=media&token=e2891830-a6c5-4009-a34f-45573e8fe878",
+      "tokenCrop": {
+        "x": 0,
+        "aspect": 1,
+        "unit": "%",
+        "y": 0,
+        "height": 100,
+        "width": 100
+      }
+    },
+    "version": 1,
+    "name": "Grenade",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "uses": {
+      "max": 1
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "id": "pbxa1fTcPVJuMhDnGghK",
+    "description": "Alchemists make these thrown explosives, effective for taking out small groups.\n\n- A Grenade can be thrown up to 1 Battlefield Area away.\n- Anyone in the Battlefield Area where the Grenade detonates is a target.\n\n**Targets make a Deftness Check:**\n- **Failure:** They are Toppled and take 1 Heart of Damage.\n- **Success:** They avoid any ill effect.",
+    "data": {
+      "encumbrance": 1,
+      "type": "gear",
+      "cost": {
+        "coins": 20
+      },
+      "subtype": "combustibles & chemicals"
+    }
+  },
+  {
+    "version": 1,
+    "name": "Bomb",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fw31tQ3sxsI8wCnkOEyUg.png?alt=media&token=e2891830-a6c5-4009-a34f-45573e8fe878",
+      "tokenCrop": {
+        "width": 100,
+        "height": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      }
+    },
+    "data": {
+      "subtype": "combustibles & chemicals",
+      "cost": {
+        "coins": 45
+      },
+      "type": "Gear",
+      "encumbrance": 3
+    },
+    "description": "Slow to set off and indiscriminate, these powerful explosives are best kept for strategic demolitions rather than used during combat.\n\nIn a Fight, Bombs take an Action to set, and will detonate at the end of the next Round. Bombs affect everything, structures and individuals, up to 1 Battlefield Area (or 20 ft) away from the point of detonation.\n\nBombs do 8 Hearts of Damage to any objects classified as less than Very Hard. This is roughly equivalent to blowing a man-sized chunk out of a wall.\n\n**Targets make a Deftness Check:**\n- **Failure:** They are Toppled and take 8 Hearts of Damage.\n- **Success:** They are only Toppled.\n- Objects made from Magical Materials are immune to Damage inflicted by Bombs.",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "uses": {
+      "max": 1
+    },
+    "id": "okdPP4GwveqnNgyluXEI",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "name": "Oil/Fuel",
+    "version": 1,
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "cost": {
+        "coins": 10
+      },
+      "subtype": "combustibles & chemicals"
+    },
+    "description": "Combustible fluids used to power simple machines or feed fires. Some Gear requires Oil/Fuel to function.\n\nIn a Fight, dousing something with Oil/Fuel and igniting will cause 1 Heart of Damage per Round.\n\n**Effects:**\n- When a foe reaches 0 Hearts they must roll on the Caustic/ Burning Injury Table.\n- When a combustible object reaches 0 Hearts, it is Sundered.\n- Your GM may add the Harmful Battlefield Area Condition to an Area set ablaze with Oil/Fuel.\n- Magical Materials are immune to mundane fire damage.",
+    "id": "6nQXjGnWD312CnpySUYI",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FaX3dwpx9XMlnKp0sdxm6.png?alt=media&token=a0268fc6-6d7f-4911-a4bb-d88096f18760",
+      "tokenCrop": {
+        "width": 69.33333333333331,
+        "height": 69.33333333333331,
+        "y": 30.666666666666682,
+        "unit": "%",
+        "x": 0,
+        "aspect": 1
+      }
+    },
+    "version": 1,
+    "name": "Solvent",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "Ihvlyra7OiyvE6TjNVJz",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "description": "Acids and other caustic liquids. 1 Unit of Solvent will do 2 Hearts of Damage to any objects classified as less than Very Hard. This is roughly equivalent to burning a hole through floorboards. \n\n- In a Fight, you can splash Solvent on an enemy with a successful Attack roll. 1 Unit will cause a Caustic/Burning Injury.",
+    "data": {
+      "encumbrance": 1,
+      "type": "Gear",
+      "cost": {
+        "coins": 20
+      },
+      "subtype": "combustibles & chemicals"
+    }
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FJtlTJzGZLGYHa8WH5eUL.png?alt=media&token=0eca19db-d4e5-4dcb-9a1b-2de387bb8bde",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 17.408906882591094,
+        "height": 82.5910931174089,
+        "width": 100
+      }
+    },
+    "name": "Booster Cakes",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 0
+    },
+    "id": "hnau3iwPN1Co6a95uCjQ",
+    "actions": [],
+    "description": "Magical pastries that enhance one of your Aptitudes for a limited time... but beware the hangover.\n\n- You gain a +2 bonus to an Aptitude, depending on the type of cake, for the first 24 hours.\n- You suffer a -2 Penalty on the same Aptitude for the following 24 hours.\n- Cakes offered in Negotiation can provide a Major Bonus (+4).\n- 1 Cake provides 1 days nutrition.",
+    "data": {
+      "cost": {
+        "stones": 0,
+        "coins": 15
+      },
+      "subtype": "Consumables",
+      "encumbrance": 0.1,
+      "type": "Gear"
+    }
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 1,
+    "name": "Hardy Rations",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FoQB55G0nExqH6oCoEkUC.png?alt=media&token=63abdf85-9cad-4c67-8c25-98bd2e821727",
+      "tokenCrop": {
+        "width": 76.33587786259542,
+        "aspect": 1,
+        "x": 16.793893129770993,
+        "height": 100,
+        "unit": "%",
+        "y": 0
+      }
+    },
+    "data": {
+      "subtype": "consumables",
+      "type": "gear",
+      "encumbrance": 0.1,
+      "cost": {
+        "stones": 3
+      }
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "sZ1FOGSDT3GA6dIFpWHk",
+    "description": "Simple foodstuffs intended for animal companions, but edible if desperate.\n\n- 1 Hardy Ration provides 1 day’s nutrition for your Mount, or Pack Beast.\n- 1 Hardy Ration can provide you with 1 day’s nutrition, but yuck!"
+  },
+  {
+    "version": 1,
+    "name": "Potion - Vitality Fizz",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "uses": {
+      "max": 0
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FUdeCTUUqeSndj0M6doCd.png?alt=media&token=ea74c7bb-7ac0-403d-b4e8-93e2a0f33002",
+      "tokenCrop": {
+        "height": 86.66666666666667,
+        "unit": "%",
+        "width": 86.66666666666667,
+        "aspect": 1,
+        "x": 2.960594732333751e-16,
+        "y": 11
+      }
+    },
+    "data": {
+      "encumbrance": 1,
+      "type": "gear",
+      "subtype": "Consumables",
+      "cost": {
+        "coins": 10
+      }
+    },
+    "creator": "",
+    "actions": [],
+    "description": "These elixirs provide a lift for those with flagging spirits.\n- If imbibed during Combat, the potion restores 1 Heart.\n- 1 Potion provides 1 day’s nutrition.",
+    "id": "Am6ccDjhJWiRgcB6V6tX"
+  },
+  {
+    "version": 1,
+    "name": "Treat",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "type": "none",
+    "data": {
+      "subtype": "consumables",
+      "encumbrance": 0.1,
+      "type": "gear",
+      "cost": {
+        "stones": 3
+      }
+    },
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "height": 50.33333333333332,
+        "aspect": 1,
+        "x": 0,
+        "width": 98.69281045751634,
+        "y": 17.333333333333297
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fzcz6ZiEgqr3qjiTbzFrU.png?alt=media&token=c751d775-cc16-4e5c-8dad-07c4e1e3baec"
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "description": "Calorie-dense fruits and candies, helpful in negotiations with the ravenous.\n\n- Treats offered in Negotiations can provide a Minor Bonus (+2).\n- 1 Treat provides 1 day’s nutrition.",
+    "id": "v5cckqi6dI3mc43x7Jrm"
+  },
+  {
+    "version": 1,
+    "name": "Rations",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "uses": {
+      "max": 0
+    },
+    "type": "none",
+    "data": {
+      "cost": {
+        "stones": 3
+      },
+      "subtype": "Consumables",
+      "encumbrance": 0.1,
+      "type": "Gear"
+    },
+    "image": {
+      "tokenCrop": {
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "height": 100,
+        "unit": "%",
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FE11f0SKEPu2cAkXN46nv.png?alt=media&token=fa42bbc1-ba22-4443-aa9a-b1775dd6e9bf"
+    },
+    "creator": "",
+    "actions": [],
+    "id": "y0puzFLSmQqBjOJzXez9",
+    "description": "These traveler’s provisions vary from region to region. In the Blazing Garden they’ll include monster jerky but in the Twilight Meridian it’ll be dried seaweeds.\n- 1 Ration provides 1 day’s nutrition."
+  },
+  {
+    "version": 1,
+    "name": "Holy Icon",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "4jUbCzSGG4BUuKg8xMy4",
+    "description": "Holy Icons are objects that allow mortals to focus their faith to briefly repel unearthly creatures. These can be holy symbols, but also items loaded with sentiment or meaning. For example, sacred prayer chains or a childhood toy.\n\nYou can use your Action to boldly present your Holy Icon in an attempt to ward off Asura, Devas, Undead, Unshaped, or any creature with 4 or more Bright or Dark Allegiance Points.\n\n**Requires an Aura Contest**\n- **Success:** The unearthly one cannot direct an Attack at you as long as you continue presenting your Icon.\n- **Failure:** They laugh at your pathetic gesture. You cannot attempt to repel them again for 24 hours.\n- Your GM may render an Icon ineffective when held by someone who does not believe strongly in what the Icon represents.",
+    "data": {
+      "cost": {
+        "coins": 75
+      },
+      "subtype": "curiosities, artifacts, & gadgets",
+      "encumbrance": 1,
+      "type": "Gear"
+    }
+  },
+  {
+    "description": "This gadget allows you to perform crude manual manipulation from a safe distance. The Grabber is composed of a telescoping pole with a mechanical gauntlet affixed to one end and controls at the other.\n\n- The Grabber enables you to grasp, poke, or push an object up to 10 ft away, or 1 Battlefield Area.\n- The shaft of the Grabber can be extended and retracted rapidly, allowing you to yoink an object. During a Fight, this requires the use of your Action.\n- Precise tasks requiring fine motor skills are not possible. However, your GM may allow you to perform more difficult manoeuvres with a Deftness Check.",
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "cost": {
+        "coins": 45
+      },
+      "subtype": "curiosities, artifacts, & gadgets"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "sGbm8jPMlnVMt1jdfF6P",
+    "version": 1,
+    "name": "Long Grabber"
+  },
+  {
+    "data": {
+      "type": "gear",
+      "encumbrance": 1,
+      "subtype": "curiosities, artifacts, & gadgets",
+      "cost": {
+        "gems": 1
+      }
+    },
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "height": 100,
+        "aspect": 1,
+        "x": 10.796915167095115,
+        "width": 77.12082262210797,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2Fvvi0uVqts8D4FidqAvft.png?alt=media&token=6ab6f49a-f162-4e61-8c82-a8342ef44afc"
+    },
+    "type": "none",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 1,
+    "name": "Scanner",
+    "description": "These technical wonders are salvaged and repaired by collectors and researchers. They are small boxes featuring a crystal display screen and are powered by ambient mana, allowing for continual use.\n\n- When activated, this Techno-Relic enables you to discern the presence and general location of any living creatures and sources of great energy (such as magic items, powerful undead, or synthetic life) within 50 ft.\n- During a Fight, operating and reading the Scanner requires the use of your Action.\n- Scanners make a loud, distinctive beeping noise when in use; this prevents Stealthy Movement while Exploring.",
+    "id": "0wX0piN6TBQg8ABdOqwy",
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "description": "These smooth, tear-shaped stones are believed to be fossilized blood droplets from the Dark Dragon of the 3rd Cataclysm. Those who carry these profane relics are mistrusted.\n\n- When exposed, the Stone casts darkness up to 20 ft from the source. A Battlefield Area the stone is in becomes Obscured.\n- The Stone pushes actual sunlight away and provides shelter to those who cannot endure the daylight.\n- While a Stone touches your skin you temporarily gain + Dark Allegiance Point.",
+    "data": {
+      "encumbrance": 0.1,
+      "type": "Gear",
+      "cost": {
+        "gems": 5
+      },
+      "subtype": "curiosities, artifacts, & gadgets"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "id": "tcYq6hQnDuqyhwzRyvsZ",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "name": "Shadow Stone",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FXd2LJHvfaV4Q6ALawe1f.png?alt=media&token=5a36bc1e-1f47-43bf-b316-9e82a71245b0"
+    }
+  },
+  {
+    "name": "Spell Engine",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "ukdVffUKHmYFrNSguMVQ",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "description": "Spell Engines are a kind of magical battery used to power large or powerful Magitech devices. Spell Engines are constructed from Magical Materials.\n\n**Charges:** Spell Engines contain Charges that are expended when operating powerful Magitech devices. The number of Charges required will depend on the individual device.\n\n**Charging a Spell Engine:** If you have a Magical Ability, you can redirect the mana you normally use to create the effect to charge the Spell Engine:\n- Put your hands on the Engine and expend your Magical Ability.\n- The expended Ability has no effect other than to charge the Spell Engine.\n- Expending 1 Standard Magical Ability creates 1 Charge.\n- Expending 1 Advanced Magical Ability creates 2 Charges.\n- The expended Ability cannot be used again for 24 hours.\n- Small Spell Engines hold 1 Charge. - Large Spell Engines hold 2 Charges.",
+    "data": {
+      "cost": {
+        "gems": 2
+      },
+      "subtype": "curiosities, artifacts, & gadgets",
+      "type": "Gear",
+      "encumbrance": 1
+    }
+  },
+  {
+    "name": "Star Gem",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FBQlsCf5WYA9w49pKa52s.png?alt=media&token=e0706799-0f30-4968-9866-8038c0ad7444",
+      "tokenCrop": {
+        "height": 53,
+        "width": 53,
+        "y": 18.00000000000001,
+        "unit": "%",
+        "x": 23.333333333333346,
+        "aspect": 1
+      }
+    },
+    "data": {
+      "type": "Gear",
+      "encumbrance": 0.1,
+      "cost": {
+        "gems": 3
+      },
+      "subtype": "curiosities, artifacts, & gadgets"
+    },
+    "description": "Fragments of the famed Star Shards, these gems produce a soothing amber glow. Considered a holy item in the Kingdom of Shard, they are often seen embedded in the jewellery and weaponry of the wealthy and powerful.\n\n- A Gem functions like other items listed in Illumination Gear, except it does not require Fuel and cannot be extinguished.\n- A Gem radiates actual sunlight and is therefore able to drive away creatures susceptible to daylight or bright light.\n- A Gem can be used to charge solar powered Techno-Relics and Magitech devices.\n- While a Gem touches your skin you temporarily gain +1 Bright Allegiance Point.",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "KfOW7jkwYQXCVyHrKU4c",
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "version": 1,
+    "name": "Lantern",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "subtype": "Illumination",
+      "cost": {
+        "coins": 5
+      }
+    },
+    "description": "These hand-held devices burn oil and other fuel for light. Common among the peasantry of the Wistful Dark.\n- Lanterns burn for 4 hours on 1 Unit of Oil, but can be snuffed and relit to conserve fuel.\n- It takes an Action to light or extinguish a Lantern.  .",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "id": "juBE7UJiW9u2hFm8K8L8",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "name": "Lumi-Slime Latern",
+    "version": 1,
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "type": "none",
+    "data": {
+      "cost": {
+        "coins": 20
+      },
+      "subtype": "Illumination",
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FLD3P3BtTba2MbQb4C5hd.png?alt=media&token=c80dafc8-f820-40f4-8cbd-0eafbd78ff56",
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "height": 100,
+        "unit": "%"
+      }
+    },
+    "actions": [],
+    "creator": "",
+    "description": "A portable container for one of the small, glowing oozes that populate the Buried Kingdom. These Lanterns are valued for their simple maintenance and dependability. Available in a variety of colors, some even change hues.\n\n- A quick tap of the container will rouse the Slime and, once agitated, it will change from a dull glow to a bright light in seconds.\n- Lumi-Slimes must eat 1 Unit of Rations a week or they’ll die. A regular handful of small bugs or similarly sized chunks of monster flesh will also work.\n- Over time, slimes can erode most materials and must be kept in their resistant container.\n- If your Lumi-Slime escapes, or is set free, over time they will grow into a Goop.",
+    "id": "zksi64UHZrZ4XAFNGmwG"
+  },
+  {
+    "name": "Torch",
+    "version": 1,
+    "id": "PUuzomjprXEiKZ7wmaFy",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "subtype": "Illumination",
+      "cost": {
+        "stones": 4
+      },
+      "encumbrance": 1,
+      "type": "Gear"
+    },
+    "description": "These cheap and disposable light sources come in many varieties. Torches burn continuously for 1 hour once lit. After this they are expended. It takes an Action to light a Torch."
+  },
+  {
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "uses": {
+      "max": 0
+    },
+    "id": "OP0mkh1DUX2YekQPUoGN",
+    "actions": [],
+    "description": "These are tools intended for use in dangerous situations and are unlikely to be purchased by ordinary folk. As a result, they are expensive and will attract attention if carried around openly. Examples: Crowbar, grappling hook, pitons, ten foot pole. \n\n1-2 Slots (varies with item)",
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "subtype": "miscellaneous",
+      "cost": {
+        "coins": 8
+      }
+    },
+    "image": {
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 0,
+        "width": 100,
+        "height": 100
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F13Jc7MDwGJn78NjhJHsB.png?alt=media&token=e1454553-7580-47c0-860c-02cf09b480f9"
+    },
+    "version": 1,
+    "name": "Adventuring Gear"
+  },
+  {
+    "version": 1,
+    "name": "Common Rural Goods",
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 8.64197530864194,
+        "width": 91.35802469135803,
+        "height": 74,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F13Jc7MDwGJn78NjhJHsB.png?alt=media&token=e1454553-7580-47c0-860c-02cf09b480f9"
+    },
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "subtype": "miscellaneous",
+      "cost": {
+        "stones": 8
+      }
+    },
+    "description": "Practical items for those that live a simple life. These can be easily obtained in small settlements and remote locales.\n\nExamples: Shovel , 30 ft of hemp rope, 10 Units of lard, bricks. \n\n1-2 Slots (varies with item)",
+    "id": "E2J5Sjf2pIVncjNV6HkQ",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "version": 1,
+    "name": "Common Urban Goods",
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "height": 71.66666666666667,
+        "width": 88.47736625514403,
+        "aspect": 1,
+        "x": 11.522633744855948,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F13Jc7MDwGJn78NjhJHsB.png?alt=media&token=e1454553-7580-47c0-860c-02cf09b480f9"
+    },
+    "data": {
+      "cost": {
+        "stones": 12
+      },
+      "subtype": "miscellaneous",
+      "type": "Gear"
+    },
+    "description": "Useful tools and items required by those who live in more populated areas. Can be found in large settlements and ports.\n\nExamples: Umbrella, hammer, writing implements and paper products.",
+    "id": "sxeQ1v8P0L3fcUlLIuqK",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "ifKrIoA1O1X0upJjWJpy",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "subtype": "miscellaneous",
+      "cost": {
+        "coins": 16
+      }
+    },
+    "description": "Strange items that tend to serve either a very specific purpose or none at all! You wont find these items for sale outside of a wealthy center of commerce.\n\nExamples: Spyglass, pocket watch, decorative pottery",
+    "name": "Oddities & Luxury Items",
+    "version": 1
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FRcHZiQI42FMgjT8N8Dsu.png?alt=media&token=ae34dd40-eaa1-4b7f-ac68-d7b022f22176",
+      "tokenCrop": {
+        "y": 31.666666666666686,
+        "width": 62.20735785953176,
+        "height": 61.999999999999986,
+        "x": 6.688963210702341,
+        "aspect": 1,
+        "unit": "%"
+      }
+    },
+    "name": "Tome - Beginners (Insight 12)",
+    "version": 1,
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "xvJR2nT1S2rAL7iKN3ky",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "encumbrance": 1,
+      "type": "Gear",
+      "subtype": "miscellaneous",
+      "cost": {
+        "coins": 6
+      }
+    },
+    "description": "Large reference books and other bulky collections of knowledge.\n- Tomes contain knowledge of a single subject area. For example, The Colossal Creature Catalog or Understanding Akenian Architecture.\n- Your GM will answer any question covered by the Tomes subject area on a successful Check against the Tomes Insight score.\n\nInsight 12 to glean knowledge from the Tome about its Topic."
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 6.688963210702341,
+        "height": 61.999999999999986,
+        "width": 62.20735785953176,
+        "y": 31.666666666666686
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FRcHZiQI42FMgjT8N8Dsu.png?alt=media&token=ae34dd40-eaa1-4b7f-ac68-d7b022f22176"
+    },
+    "version": 1,
+    "name": "Tome - Forgotten Lore (Insight 18)",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "xvJR6nT1S2rAL7iKN3ky",
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "cost": {
+        "coins": 24
+      },
+      "subtype": "miscellaneous"
+    },
+    "description": "Large reference books and other bulky collections of knowledge.\n- Tomes contain knowledge of a single subject area. For example, The Colossal Creature Catalog or Understanding Akenian Architecture.\n- Your GM will answer any question covered by the Tomes subject area on a successful Check against the Tomes Insight score.\n\nInsight 18 to glean knowledge from the Tome about its Topic."
+  },
+  {
+    "description": "Large reference books and other bulky collections of knowledge.\n- Tomes contain knowledge of a single subject area. For example, The Colossal Creature Catalog or Understanding Akenian Architecture.\n- Your GM will answer any question covered by the Tomes subject area on a successful Check against the Tomes Insight score.\n\nInsight 14 to glean knowledge from the Tome about its Topic.",
+    "data": {
+      "type": "gear",
+      "encumbrance": 1,
+      "cost": {
+        "coins": 12
+      },
+      "subtype": "miscellaneous"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "id": "SWeJXekLvhhXALN6iGXd",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "version": 1,
+    "name": "Tome - Journeymans (Insight 14)",
+    "image": {
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 5.016722408026756,
+        "unit": "%",
+        "y": 31.33333333333322,
+        "width": 65.21739130434794,
+        "height": 65.00000000000011
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FRcHZiQI42FMgjT8N8Dsu.png?alt=media&token=ae34dd40-eaa1-4b7f-ac68-d7b022f22176"
+    }
+  },
+  {
+    "actions": [],
+    "id": "xvJR4nT1S2rAL7iKN3ky",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "cost": {
+        "coins": 18
+      },
+      "subtype": "miscellaneous"
+    },
+    "description": "Large reference books and other bulky collections of knowledge.\n- Tomes contain knowledge of a single subject area. For example, The Colossal Creature Catalog or Understanding Akenian Architecture.\n- Your GM will answer any question covered by the Tomes subject area on a successful Check against the Tomes Insight score.\n\nInsight 16 to glean knowledge from the Tome about its Topic.",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FRcHZiQI42FMgjT8N8Dsu.png?alt=media&token=ae34dd40-eaa1-4b7f-ac68-d7b022f22176",
+      "tokenCrop": {
+        "x": 6.688963210702341,
+        "aspect": 1,
+        "unit": "%",
+        "y": 31.666666666666686,
+        "height": 61.999999999999986,
+        "width": 62.20735785953176
+      }
+    },
+    "name": "Tome - Masters (Insight 16)",
+    "version": 1
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F1RcfAL1ADMcpmArt2FxU.png?alt=media&token=f8d68f69-b7b1-4ced-a104-0ea33b6e2b67",
+      "tokenCrop": {
+        "width": 100,
+        "height": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      }
+    },
+    "name": "Trade Goods",
+    "version": 1,
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "2ctGWlaXCRkPQvwfFOSb",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "subtype": "miscellaneous",
+      "cost": {
+        "coins": 75
+      },
+      "type": "Gear",
+      "encumbrance": 3
+    },
+    "description": "Barrels, sacks or crates of desirable goods bundled up for bulk sale. Adventurers can take advantage of their migratory nature and make a tidy profit transporting these goods from one region to another.\n\nExamples: A bushel of star plums (Wistful Dark), a barrel of moss whiskey (Buried Kingdom), a bolt of fine silk (Twilight Meridian), a box of Sol tobacco (Blazing Garden).\n\n- Unlike other items you carry, you will always find a buyer for your Trade Goods at full price in any place that can afford them.\n- A Trade Goods value increases to  when sold outside its Home Region. - For example, you may purchase a bushel of Star Plums in the Wistful Dark for 25 Coins, and sell it for  in the Blazing Garden."
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FRcHZiQI42FMgjT8N8Dsu.png?alt=media&token=ae34dd40-eaa1-4b7f-ac68-d7b022f22176",
+      "tokenCrop": {
+        "unit": "%",
+        "x": 7.023411371237458,
+        "aspect": 1,
+        "height": 57.666666666666664,
+        "width": 57.859531772575245,
+        "y": 33.333333333333286
+      }
+    },
+    "version": 1,
+    "name": "Translation Journal",
+    "id": "5tPaHBx8SBAasgEZWBCy",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "data": {
+      "encumbrance": 1,
+      "type": "Gear",
+      "subtype": "Miscellaneous",
+      "cost": {
+        "coins": 20
+      }
+    },
+    "description": "While everyone understands Low Speech, much is spoken in native tongues.\n\n- You can attempt to communicate in the Journals featured language with a successful Insight Check."
+  },
+  {
+    "name": "Other World Pocket Device",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FaSDthEoMRhXZ4JIsx3WM.png?alt=media&token=008815e6-848c-4d2d-8148-5ec36e9c2935",
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      }
+    },
+    "description": "The Game Gal Advance, Peach Pod, and Wildberry Tablet are popular Other World devices intended for entertainment and communication. While you would assume these gadgets would cease to function across dimensions, this is not the case.\n\n- Strangely, in Outer World these devices work indefinitely without the need to charge.\n- These Devices can all snap photos, record audio, and make odd sounds or tunes on demand.\n- All Pocket Devices include a version of the Akenia Adventure!! videogame. The featured game worlds similarities to Outer World is uncanny, meaning it can be referred to as a Beginners Tome for queries regarding the ancient ruins and creatures of Outer World.",
+    "data": {
+      "subtype": "other world items",
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 0
+    },
+    "id": "yKmeFRuKSmvfbVqMicDb",
+    "actions": []
+  },
+  {
+    "id": "2nI4ZoEWQvw6PilyzVjn",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "subtype": "other world items",
+      "encumbrance": 1,
+      "type": "Gear"
+    },
+    "description": "These pointy-harm-sticks are not dissimilar to the pistols already in use in Outer World, though these can fire shots in rapid succession. These pistols function as Small Mechanical Missile Weapons, with the following differences\n\n**Weapon Ability**, Ammo Magazine:\n\n- This firearm holds 10 bullets that can be discharged at a rate of one per Turn, before requiring 1 Action to Reload.\n- Other World Sidearms begin with 10 Other World Bullets. These cannot be bought, but must be manufactured by a Gadgeteer able to craft Advanced Items.",
+    "name": "Other World Sidearm",
+    "version": 1
+  },
+  {
+    "name": "Outfit - Artisans",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119"
+    },
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "cost": {
+        "coins": 8
+      },
+      "subtype": "outfits"
+    },
+    "description": "These outfits incorporate easy-access utility pockets or pouches. This Outfit has pockets designed to carry the contents of a Specialists Kit. The pockets allow you immediate access to the Kit. Kits still need replenishing after use. \n\n**Outfit Only:** 8C\n\n**Outfit + Specialist Kit of buyers choice:**   50C",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "JdbLHEfTsIE1UYdfa2D3",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "description": "These clothes make you look cute, elegant, or sexy. \n\n- You gain a Minor Bonus (+2) on rolls to charm or convince someone. \n- You suffer a Minor Penalty (-2) on rolls to intimidate someone.",
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "cost": {
+        "stones": 20
+      },
+      "subtype": "outfits"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "0IiACn9B21R1h8x6XIz3",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "version": 1,
+    "name": "Outfit - Appealing",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 0,
+        "height": 100,
+        "width": 100
+      }
+    }
+  },
+  {
+    "name": "Outfit - Authoritative",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    "description": "A regal, or imposing, uniform that marks you as someone of great standing. \n\n- You gain a Minor Bonus (+2) on rolls to intimidate or command others. \n- You suffer a Minor Penalty (-2) on rolls to charm or comfort someone.",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "cost": {
+        "stones": 20
+      },
+      "subtype": "outfits"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "Tag7w3pPefbZsaN60USo",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    }
+  },
+  {
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "subtype": "outfits",
+      "cost": {
+        "stones": 15
+      }
+    },
+    "description": "While they wont hold up under scrutiny, Costumes allow you to imitate a member of a specific social class or profession. \n\n- You gain a Minor Bonus (+2) on rolls to keep from being recognized at a glance or within a crowded area. \n- A Costume can be worn over a Functional Outfit and torn away with an Action, destroying it.",
+    "id": "4nb89r6mkH31d4EG5PBK",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Outfit - Costume",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "y": 0,
+        "height": 100,
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      }
+    }
+  },
+  {
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "id": "B29eKKo7VmIvXgykC6ya",
+    "description": "Clothes that protect you from Outer World’s harshest environments, like the frozen wastes of the Shadowed Lands.\n\n- This Outfit negates the effects of\nHarmful Areas or Terrain that relate to either a cold environment.",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "name": "Outfit - Extreme Cold Outfit",
+    "version": 1,
+    "data": {
+      "cost": {
+        "coins": 12
+      },
+      "type": "gear",
+      "encumbrance": 2,
+      "subtype": "outfits"
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "height": 100,
+        "unit": "%",
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "type": "none"
+  },
+  {
+    "type": "none",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "width": 100,
+        "x": 0,
+        "aspect": 1,
+        "height": 100,
+        "unit": "%",
+        "y": 0
+      }
+    },
+    "data": {
+      "type": "gear",
+      "encumbrance": 2,
+      "subtype": "outfits",
+      "cost": {
+        "coins": 8
+      }
+    },
+    "version": 1,
+    "name": "Outfit - Extreme Hot Outfit",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "description": "Clothes that protect you from Outer World’s harshest environments, like the hot wastes of the Blazing Gardens.\n\n- This Outfit negates the effects of\nHarmful Areas or Terrain that relate to either a hot environment.",
+    "id": "bx7pJOmxLrqZgot5t6as",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": []
+  },
+  {
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "VJ0D0feJ2FeQonXhedUo",
+    "description": "These outfits are plain and practical. This Outfit does not provide any bonuses or penalties when worn.",
+    "data": {
+      "subtype": "outfits",
+      "cost": {
+        "stones": 5
+      },
+      "encumbrance": 2,
+      "type": "Gear"
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119",
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      }
+    },
+    "name": "Outfit - Functional",
+    "version": 1
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "x": 0,
+        "aspect": 1,
+        "unit": "%",
+        "y": 0,
+        "height": 100,
+        "width": 100
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FG2bQHqoKHQbNrA1QbleA.png?alt=media&token=16270549-a56d-4493-809f-0159aca04119"
+    },
+    "name": "Outfit - Tattered",
+    "version": 1,
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "AdAj4vb6EgLT9eNeidCA",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "subtype": "outfits"
+    },
+    "description": "These clothes are worn and scruffy, making you look irrelevant or desperate. You cant buy a Tattered Outfit but can make one from salvaged scraps or rags.\n- You gain a Minor Bonus (+2) on rolls attempting to blend into a crowd, or when trying to convince someone you are not worth their time.\n- You suffer a Major Penalty (-4) on rolls to convince someone to take you seriously, and can attract negative attention in affluent areas."
+  },
+  {
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "description": "Small, single-room homes found in rural settlements or as standalone shelters in the wilderness. Built with local techniques and materials, they range from the eggshaped pods of Shard to the floating lodges of the Galvanus Archipelago.\n\n- A Hut can comfortably house 2 people and their possessions, 4 in cramped conditions.",
+    "id": "Wk1rQr327yuBMjlgpRZV",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "name": "Property - Hut",
+    "version": 1,
+    "data": {
+      "type": "gear",
+      "subtype": "property",
+      "cost": {
+        "coins": 80
+      }
+    },
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FFDlraxIFXY0zajpzYrE4.png?alt=media&token=f99bc977-bac9-4c4c-bf45-270c4af98bae",
+      "tokenCrop": {
+        "y": 0,
+        "aspect": 1,
+        "x": 11.528150134048081,
+        "width": 76.13941018766755,
+        "unit": "%",
+        "height": 100
+      }
+    },
+    "type": "none"
+  },
+  {
+    "type": "none",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FcEa0gIM2HjGGEkGcVWuS.png?alt=media&token=7cc04843-f688-4454-8744-0441e3634005",
+      "tokenCrop": {
+        "height": 84.66666666666667,
+        "unit": "%",
+        "width": 100,
+        "x": 0,
+        "aspect": 1,
+        "y": 15.333333333333298
+      }
+    },
+    "data": {
+      "type": "gear",
+      "subtype": "property",
+      "cost": {
+        "gems": 6
+      }
+    },
+    "version": 1,
+    "name": "Property - Townhouse",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "W7fL0VIrkAzxErCAbCdn",
+    "description": "Boasting 4-6 rooms, and occasionally a basement or second floor, townhouses are often occupied by wealthier families. Less characterful than improvised huts, but more solidly constructed.\n\n- A Town House can comfortably house 4 people and their possessions, 8 in cramped conditions.",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": []
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FWHFsfZ4dVekDqSkZP5s2.png?alt=media&token=2954089a-8cfe-4ee1-8e47-6dcc79ee70c8",
+      "tokenCrop": {
+        "unit": "%",
+        "height": 71,
+        "aspect": 1,
+        "x": 10.431654676258985,
+        "width": 76.61870503597122,
+        "y": 16.333333333333293
+      }
+    },
+    "data": {
+      "cost": {
+        "coins": 0,
+        "gems": 3
+      },
+      "type": "gear",
+      "subtype": "property"
+    },
+    "uses": {
+      "max": 10
+    },
+    "type": "none",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "name": "Property - Workshop",
+    "version": 1,
+    "description": "Crafters need access to a Workshop to create their complicated constructions.\n\n- Workshops are big enough to accommodate 2 workers at once, and stocked with tools and materials for crafting.\n- Workshops are specific to one Crafting Discipline, and include tools and enough supplies for 10 crafting sessions.\n\n**To Restock**: 30 Coins",
+    "id": "z1ZwwNfZjHPzxICCWmAS",
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "name": "Service - Crafting",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FvswEvl9xAv6wlsNGxNHI.png?alt=media&token=a0a97c01-66b0-4656-8149-1759bde7d7c2",
+      "tokenCrop": {
+        "width": 100,
+        "height": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      }
+    },
+    "data": {
+      "type": "gear",
+      "subtype": "services"
+    },
+    "description": "If you want a bespoke weapon or potion created, or need your favorite suit of armor patched up, then commission a Crafter.\n\n- **Fixing Standard Gear:** Costs 50% of the list price of the chosen item (rounded up).\n- **Commissioning Customized Gear:** Costs 50% more than the calculated list price (rounded up).\n- **Crafting Imbued Gear:** Refer to the costs of Crafting Imbued Gear, then add an extra 50% (rounded up).\n - Note that not all Crafters are able to work with, or have access to, the Magic Materials and Additives required to make Imbued Gear.",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "66IoFFbM65thC61tKsdi",
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "id": "x1lCxWahHRzrWwD5oujX",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "data": {
+      "type": "gear",
+      "subtype": "services"
+    },
+    "description": "Without access to an air or seagoing\nvessel, intercontinental travel is\nimpossible. Fortunately, merchants and\nsailors with large enough ships will offer\npassage, for a price.\n\n- When on an intercontinental\nvoyage you can participate in 1\nDowntime Activity, limited to what\nis available to you on the vessel.\n- Pets travel free, but a seat must be\npaid for Mounts & Pack Beasts.\n- You can choose to assist the crew\non the voyage. This halves your\nfare, but forfeits any chance of\nindulging in a Downtime Activity.\n- You can try to convince the captain\nof the vessel to take you into\nuncharted territory, but this will\ncost you double.\n\n**Maritime Vessel (Food & passage)**: 8 Coins per seat\n\n**Sky Ship (Food & passage)**: 16 Coins per seat\n\n**Other considerations**:\n- Trailblazing = Cost x2\n- Working = Cost ÷2",
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 0,
+        "height": 100,
+        "width": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fl7Kl7p0i94vvkuKazk5q.png?alt=media&token=d1a98f47-4f11-4484-a723-ca42d0875757"
+    },
+    "version": 1,
+    "name": "Service - Intercontinental Travel"
+  },
+  {
+    "data": {
+      "subtype": "services",
+      "type": "gear"
+    },
+    "description": "While there are many local runners, they aren’t much help when it comes to sending messages or items to another continent. Fortunately, the Paw Post provides adventurers with a reliable postal service. Paw Post Stations appear in many surprisingly remote places.\n\n- Paw Post Stations will deliver\nmessages and items to any other\nPaw Post Station, via their network\nof relay teams.\n- Deliveries are guaranteed to arrive\nwithin 2 months.\n- Deliveries are insured. In the event\nof loss/damage a full refund\nis offered.\n\n**Membership**: Allows 1 free delivery a month.\nFurther services must be paid\nfor normally.\n\n**Deliver Message (any distance)**: 1 Coin\n\n**Deliver Item in the same Region**: 50 Coins per Item (3 Slot Max.)\n\n**Deliver Item to another  Region**: 1 Gem per Item (3 Slot Max.)\n\n**Membership Card**: 5 Gems a year",
+    "id": "g33g3dkIyGTN3X431UJn",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Service - Paw Post",
+    "image": {
+      "tokenCrop": {
+        "width": 59.42622950819676,
+        "height": 48.333333333333336,
+        "y": 3.333333333333334,
+        "unit": "%",
+        "aspect": 1,
+        "x": 2.04918032786885
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FmlOLAdfxMiG4pfhZZDRP.png?alt=media&token=661f4696-090a-4ff6-823e-ad6ee2492ca9"
+    }
+  },
+  {
+    "data": {
+      "subtype": "services",
+      "cost": {
+        "coins": 5
+      },
+      "type": "gear"
+    },
+    "description": "Opera houses, underground spas, and locations that focus on personal enjoyment are a rare treat in Outer World.\n\nThere are two kinds of Recreational Attraction, each with a perk:\n- **Relaxing:** Allows you to perform both the Socializing and Heal an Injury Downtime Activities simultaneously.\n- **Entertaining:** Gives you an Edge\non your Socializing rolls\nduring Downtime.",
+    "id": "SpMkeellImQAfsXRYcBU",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Service - Recreational Attractions",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "height": 100,
+        "width": 100,
+        "y": 0,
+        "unit": "%",
+        "x": 0,
+        "aspect": 1
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FyeakdlyGX99u79fI5STC.png?alt=media&token=2a721c3b-9525-4326-946d-474abddbb08c"
+    }
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "height": 100,
+        "width": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FvJJUIWmQitWmlBD88XVl.png?alt=media&token=f9cbfba6-b909-4af7-adcf-891c8ef4d27a"
+    },
+    "name": "Service - Room & Board",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "id": "sOfqE5hqhVsrL18w4Tl7",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "description": "The road is long and unforgiving. A bed and a well cooked meal is a simple, well-deserved luxury.\n\n- Room & Board will provide you with adequate food and sleep to avoid the effects of Starvation and Fatigue for a day.\n- More expensive establishments may include extra perks:\n - **Hearty Meal:** A big breakfast served alongside a fine beverage starts your day well. Gain an Edge on your first Insight roll of the day.\n - **Excellent Service:** Dedicated and friendly staff leave you feeling peppy. Gain an Edge on your first Aura roll of the day.\n\n**Basic**: 10 Stones a night.\n**Pleasant & Hearty**: 20 Stones a night.\n**Luxurious, Hearty, Excellent**: 10 Coins a night.",
+    "data": {
+      "type": "gear",
+      "cost": {
+        "gems": 10
+      },
+      "subtype": "services"
+    }
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fj33goFK3VIyK2otTFpqU.png?alt=media&token=ca8adcdd-4415-4e2f-8cad-d42a5e2fe88b",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    "name": "Service - Treatment",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "UJY3LkHo1f6I949gx9w1",
+    "description": "You’ve been wounded and your priority on entering town is to find the local physician (or mechanic!) to patch you up.\n\n- During Downtime you can pay a\nphysician, or Gadgeteer if you are a Bio-Mechanoid, to remove an Injury of your choice.\n - This paid treatment can work in\nconjunction with Heal an Injury, enabling you to heal 2 Injuries during Downtime.\n\n- Severed or Mutilated limbs can be replaced with Prosthetics. Not all treatment centers will have\naccess to prosthetics, or be able to conduct this type of surgery.\n\n**Remove Injury**: 5 Coins\n\n**Prosthetic Graft**: 5 Gems",
+    "data": {
+      "cost": {
+        "coins": 5
+      },
+      "subtype": "services",
+      "type": "gear"
+    }
+  },
+  {
+    "name": "Service - Workshop Rental",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FWHFsfZ4dVekDqSkZP5s2.png?alt=media&token=2954089a-8cfe-4ee1-8e47-6dcc79ee70c8",
+      "tokenCrop": {
+        "y": 10.635416666666666,
+        "width": 82.73381294964028,
+        "height": 76.66666666666667,
+        "x": 7.655125899280573,
+        "aspect": 1,
+        "unit": "%"
+      }
+    },
+    "description": "Crafters need an appropriate space to practice their art. Fortunately, the required Workshops can be rented from trade organizations, universities, local governments, or willing individuals.\n\n- Workshops can be rented for a Downtime Crafting session or a single Repair.\n- Materials are not included in the price and must be provided by the craftsman.\n- Some Workshops will have basic Materials and Additives for sale, but exotic items will be scarce.\n- Using a High-end Workshop grants you a Minor Bonus (+2) on your Crafting roll.\n\n**Basic**: 3 Coins per Downtime Session.\n\n**High-end**: 20 Coins per Downtime Session.",
+    "data": {
+      "cost": {
+        "gems": 20
+      },
+      "subtype": "services",
+      "type": "gear"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "FJ4mjtvhFl1UAZYYRQZj",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    }
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "height": 100,
+        "width": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FntfIdCZ0Lc1GeVkCcWJ5.png?alt=media&token=ce3d4b50-fed6-4db0-b463-b56f01b046e5"
+    },
+    "version": 1,
+    "name": "Kit - Alchemists",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "id": "oD0Bp392gHvHH0tNYNur",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "uses": {
+      "max": 10
+    },
+    "actions": [],
+    "description": "For making simple concoctions on the go.\n\n- Some Abilities require the use of a\nKit to be performed successfully.\n-  single use of a Kit is expended\neach time an Ability is attempted.\n- Kits can be used 10 times before\nthey need replenishment.\n- A Specialist Kit can only perform\nthe function it was intended for.",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "cost": {
+        "coins": 50
+      },
+      "subtype": "specialists kit"
+    }
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "aspect": 1,
+        "x": 0,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FntfIdCZ0Lc1GeVkCcWJ5.png?alt=media&token=ce3d4b50-fed6-4db0-b463-b56f01b046e5"
+    },
+    "name": "Kit - Dungeoneers",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "OlhQNLpgpicuL4z5GqZH",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 10
+    },
+    "description": "For disabling traps and picking locks.\n\n- Some Abilities require the use of a\nKit to be performed successfully.\n-  single use of a Kit is expended\neach time an Ability is attempted.\n- Kits can be used 10 times before\nthey need replenishment.\n- A Specialist Kit can only perform\nthe function it was intended for.",
+    "data": {
+      "encumbrance": 2,
+      "type": "Gear",
+      "subtype": "specialists kit",
+      "cost": {
+        "coins": 50
+      }
+    }
+  },
+  {
+    "version": 1,
+    "name": "Kit - Gadgeteers",
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FntfIdCZ0Lc1GeVkCcWJ5.png?alt=media&token=ce3d4b50-fed6-4db0-b463-b56f01b046e5"
+    },
+    "description": "For repairing and maintaining gadgets and other technology.\n\n- Some Abilities require the use of a\nKit to be performed successfully.\n-  single use of a Kit is expended\neach time an Ability is attempted.\n- Kits can be used 10 times before\nthey need replenishment.\n- A Specialist Kit can only perform\nthe function it was intended for.",
+    "data": {
+      "subtype": "specialists kit",
+      "cost": {
+        "coins": 50
+      },
+      "type": "Gear",
+      "encumbrance": 2
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "uses": {
+      "max": 10
+    },
+    "id": "pEISkIu8e9sXkw6GyLaY"
+  },
+  {
+    "name": "Kit - Menders",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "x": 0,
+        "aspect": 1,
+        "unit": "%",
+        "y": 0,
+        "width": 100,
+        "height": 100
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FntfIdCZ0Lc1GeVkCcWJ5.png?alt=media&token=ce3d4b50-fed6-4db0-b463-b56f01b046e5"
+    },
+    "description": "For basic repairs and alterations to armor and clothing.\n\n- Some Abilities require the use of a\nKit to be performed successfully.\n-  single use of a Kit is expended\neach time an Ability is attempted.\n- Kits can be used 10 times before\nthey need replenishment.\n- A Specialist Kit can only perform\nthe function it was intended for.",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 3,
+      "subtype": "specialists kit",
+      "cost": {
+        "coins": 50
+      }
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "UgTla3trgLzCFb27hrM2",
+    "actions": [],
+    "uses": {
+      "max": 10
+    }
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 1,
+    "name": "Kit - Physicians",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FntfIdCZ0Lc1GeVkCcWJ5.png?alt=media&token=ce3d4b50-fed6-4db0-b463-b56f01b046e5",
+      "tokenCrop": {
+        "height": 100,
+        "unit": "%",
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "data": {
+      "cost": {
+        "coins": 50
+      },
+      "encumbrance": 2,
+      "type": "gear",
+      "subtype": "specialists kit"
+    },
+    "uses": {
+      "max": 10
+    },
+    "type": "none",
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "id": "SlA4Mflbh26uQsLEn9nf",
+    "description": "For assisting the Injured.\n\n- Some Abilities require the use of a\nKit to be performed successfully.\n-  single use of a Kit is expended\neach time an Ability is attempted.\n- Kits can be used 10 times before\nthey need replenishment.\n- A Specialist Kit can only perform\nthe function it was intended for."
+  },
+  {
+    "data": {
+      "subtype": "vehicle",
+      "cost": {
+        "gems": 3
+      },
+      "type": "gear",
+      "encumbrance": 2
+    },
+    "description": "These difficult to master gliders are rare treasures coveted by adventurers and collectors alike. Their Sky Steel frames make them super light, and while they are too cumbersome to carry, they can be pulled along like a kite with a little effort.\n\n**Vehicle Use**\n- Crewing: 1 pilot.\n- Fuel: Thermal Winds\n- Traversable Terrain: Any Terrain\n- Take-off requires a running start\n\n**Manoeuvring**\n- Landing requires a Deftness Check.\n- Making a difficult manoeuvre, such as flying through a crowded space, or stabilizing the Breeze Rider after being hit, requires the driver to make a Deftness Check.\n- Failing a Deftness roll to land or manoeuvre results in a crash and the rider suffers a Falling/Impact Injury.\n\n**Inventory Slots**:\n- Breeze Riders can carry a Small, Medium, or Large pilot as long as they are not Overburdened.\n- An additional passenger can hang onto the glider, but piloting rolls suffer a Snag.\n- Pets can ride along without inflicting this penalty on the pilot.",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "vjnHrgx3gRF88ya8i9gd",
+    "actions": [],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Vehicle - Breeze Rider",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FVERfDfZzaRASJpxwDmVO.png?alt=media&token=5624bc31-0475-48d3-8a47-1b1a60849373",
+      "tokenCrop": {
+        "x": 2.38095238095238,
+        "aspect": 1,
+        "unit": "%",
+        "y": 0,
+        "height": 100,
+        "width": 75.39682539682539
+      }
+    }
+  },
+  {
+    "name": "Vehicle - Cart",
+    "version": 1,
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "type": "none",
+    "data": {
+      "subtype": "vehicle",
+      "type": "gear",
+      "cost": {
+        "gems": 1
+      }
+    },
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 79.36507936507937,
+        "x": 7.1428571428571415,
+        "aspect": 1,
+        "height": 100,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fx3SG9w9N2OWbQphPnEe7.png?alt=media&token=21a877f2-e6a0-46b5-b255-b6f517f585ea"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "id": "9HaCfbHYexmKyTHqB4e6",
+    "description": "A small, typically one-beast, cart employed by merchants, farmers and nomads.\n\n**Vehicle Use**\n- Crewing: 1 driver.\n- Fuel: A Cart needs to be tethered\nto a Pack Beast, Mount, or a PC\nwith Supernatural Might!\n- Carts can be chained together in a train but require one beast per cart.\n- Traversable Terrain: If Trailblazing you are slowed to foot speed.\n- Journey Time: If pulled by a PC the distance covered in one day is the same as if travelling by foot.\n\n**Inventory Slots**: 80 Slots"
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 8.767772511848342,
+        "aspect": 1,
+        "height": 100,
+        "width": 61.84834123222749,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FnpFHcUd46TMshuInVtH6.png?alt=media&token=30fb697a-1f47-4ec2-81ca-d23517cdbf50"
+    },
+    "name": "Vehicle - Cloud Breaker",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "satPXjcNe9rbqTlMet9i",
+    "actions": [],
+    "description": "These small sky ships are used by\nthe wealthy for island hopping in the Galvanus Archipelago. The vessel’s hull is constructed from Sky Steel or Floatstone, which keeps the craft perpetually aloft as well as magically resistant to wear and tear. Cloud Breakers come with exquisitely decorated anchors which bear the mark of their constructor’s yard. For locomotion, sky sailors harness the winds in the same way as their marine cousins.\n\n**Vehicle Use**\n- Crewing: 1 pilot and 1 assistant.\n- Fuel: Sails harness the wind.\n- Traversable Terrain: Any.\n\n**Inventory Slots**: 50 Slots",
+    "data": {
+      "subtype": "vehicle",
+      "cost": {
+        "gems": 12
+      },
+      "type": "gear"
+    }
+  },
+  {
+    "name": "Vehicle - Coracle",
+    "version": 1,
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Frjg4GMpYBaRrKMRxcj3i.png?alt=media&token=978bfb56-9101-4903-b2e7-8c551fed84d0",
+      "tokenCrop": {
+        "y": 5.681818181818164,
+        "height": 89.20454545454545,
+        "unit": "%",
+        "width": 91.81286549707602,
+        "x": 2.9239766081871332,
+        "aspect": 1
+      }
+    },
+    "data": {
+      "cost": {
+        "stones": 80
+      },
+      "type": "gear",
+      "encumbrance": 2,
+      "subtype": "vehicle"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "description": "Single person boats used for fishing. Easily carried, but not for open waters.\n\n**Vehicle Use**\n- Crewing: 1 pilot.\n- Fuel: PC-powered\n- Traversable Terrain: Waterways and other calm waters, such as lakes, rivers, or stretches of coastline.\n\n**Inventory Slots**: 10 Slots",
+    "id": "QJKMySD71LTpCLSGEbRA"
+  },
+  {
+    "data": {
+      "type": "gear",
+      "subtype": "vehicle",
+      "cost": {
+        "gems": 6
+      }
+    },
+    "description": "This small sailing vessel, employed around the Twilight Meridian, has become popular among adventurers as it only requires a relatively small crew.\n\n**Vehicle Use**\n- Crewing: 1 pilot and 2 assistants.\n- Fuel: Sails harness the wind, but\nemergency oars require PC-power.\n- Traversable Terrain: Open seas.\n\n**Inventory Slots**: 80 Slots",
+    "actions": [],
+    "id": "U1IdNe9rC4vEggvUrBmT",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Vehicle - Felucca",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "height": 100,
+        "width": 70.8530805687204,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FBmpXjQva9UMjmiNRkwVO.png?alt=media&token=2b739179-39e4-40c1-985f-469fc0d13d34"
+    }
+  },
+  {
+    "description": "These versatile craft float just above the ground, making travel across challenging terrain much faster.\n\n**Vehicle Use**\n- Crewing: 1 pilot.\n- Fuel: Skimmers include a Large\nSpell Engine. 1 Charge powers the vessel for three days.\n- Traversable Terrain: They glide\nacross land and sea, and are not\nslowed by Difficult Terrain.\n\n**Inventory Slots**: 35 Slots",
+    "data": {
+      "type": "gear",
+      "cost": {
+        "gems": 8
+      },
+      "subtype": "vehicle"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "id": "5enHR9FByQsV9JLDNaBs",
+    "name": "Vehicle - Skimmer",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FjzymmUd2MdDAflFRlVWV.png?alt=media&token=34b8a378-ed2f-4e8f-8370-66195f75571c",
+      "tokenCrop": {
+        "width": 65.16587677725119,
+        "height": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 2.3696682464454977
+      }
+    }
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "version": 1,
+    "name": "Vehicle - Velocipede",
+    "data": {
+      "subtype": "vehicle",
+      "type": "gear",
+      "encumbrance": 3,
+      "cost": {
+        "coins": 45
+      }
+    },
+    "image": {
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 1.2295081967213115,
+        "width": 95.08196721311475,
+        "unit": "%",
+        "height": 77.33333333333333,
+        "y": 22.666666666666664
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FmlOLAdfxMiG4pfhZZDRP.png?alt=media&token=661f4696-090a-4ff6-823e-ad6ee2492ca9"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [],
+    "description": "Single person, pedal-powered machines used for speedily getting around urban areas. Popular with Paw Post couriers.\n\n**Vehicle Use**\n- Crewing: 1 pilot.\n- Fuel: PC-powered\n- Traversable Terrain: Designed to travel along Roads, you are slowed to foot speed on other types of land Routes.\n\n**Inventory Slots**: 10 Slots",
+    "id": "6NGZxCBfFNSFJskPHrvh"
+  },
+  {
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "EQS0ZdXWveDf9Ip8TESn",
+    "actions": [],
+    "description": "The first walkers were created by Goblin engineers who wanted a means of tirelessly traversing the undulating tunnels of the Buried Kingdom. The pilot, and any passengers, sit inside a metal cockpit which controls its multiple mechanical limbs. Walkers are not nimble, but their long strides allow them to easily move over terrain that would normally slow you down, like a swamp or rocky landscape.\n\n**Vehicle Use**\n- Crewing: 1 pilot.\n- Fuel: Walkers include a Large\nSpell Engine. 1 Charge powers the machine for one day.\n- Traversable Terrain: Any\noverland terrain. Walkers are not slowed by Difficult Terrain, as their long legs negate uneven surfaces.\n\n**Inventory Slots**: 25 Slots",
+    "data": {
+      "subtype": "vehicle",
+      "cost": {
+        "gems": 6
+      },
+      "type": "gear"
+    },
+    "image": {
+      "tokenCrop": {
+        "y": 5.999999999999999,
+        "width": 98.95833333333334,
+        "height": 63.33333333333333,
+        "aspect": 1,
+        "x": 0.5208333333333333,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F3RgfPqLPuWpYsEIXvctW.png?alt=media&token=57837049-4251-4bc3-921e-da4f262d0c98"
+    },
+    "version": 1,
+    "name": "Vehicle - Walker"
+  },
+  {
+    "name": "Map - Kingdom",
+    "version": 1,
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "type": "none",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FSPnACf4mhYxw2DYpwl7D.png?alt=media&token=8dd87b39-4f0c-410d-9454-fe3fab102a5b",
+      "tokenCrop": {
+        "y": 0,
+        "unit": "%",
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "width": 100
+      }
+    },
+    "data": {
+      "cost": {
+        "coins": 2
+      },
+      "subtype": "Wayfinding",
+      "type": "Gear",
+      "encumbrance": 0.1
+    },
+    "actions": [],
+    "creator": "",
+    "description": "A detailed guide to a large area containing several settlements, and other important geographic details.",
+    "id": "26NheeL9YYNtAI52S5ct"
+  },
+  {
+    "version": 1,
+    "name": "Compass",
+    "owners": [
+      "HwYLq98tYuY9lEEODMru3sEGeTM2"
+    ],
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FSPnACf4mhYxw2DYpwl7D.png?alt=media&token=8dd87b39-4f0c-410d-9454-fe3fab102a5b",
+      "tokenCrop": {
+        "height": 46.666666666666664,
+        "width": 46.666666666666664,
+        "y": 22.99999999999999,
+        "unit": "%",
+        "x": 24.666666666666654,
+        "aspect": 1
+      }
+    },
+    "data": {
+      "encumbrance": 1,
+      "type": "Gear",
+      "cost": {
+        "coins": 20
+      },
+      "subtype": "Wayfinding"
+    },
+    "description": "Simple devices that point towards the Sun Machine. While anyone can tell you which way is Dawnwards, this instrument gives you the precision required for navigation.\nNeeded to get any use out of a map!",
+    "actions": [],
+    "id": "XDqEvz6mBH22VVIM9C5L",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "creator": "",
+    "type": "none"
+  },
+  {
+    "data": {
+      "subtype": "wayfinding",
+      "cost": {
+        "stones": 5
+      },
+      "encumbrance": 0.1,
+      "type": "gear"
+    },
+    "description": "A map focused on a particular settlement, or adventure site, along with some of its surrounding area. These maps often include detail larger maps cannot",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "id": "THy0fT0y6RDscDrFuowy",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Map - Local",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FSPnACf4mhYxw2DYpwl7D.png?alt=media&token=8dd87b39-4f0c-410d-9454-fe3fab102a5b"
+    }
+  },
+  {
+    "name": "Map - Regional",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FSPnACf4mhYxw2DYpwl7D.png?alt=media&token=8dd87b39-4f0c-410d-9454-fe3fab102a5b",
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      }
+    },
+    "data": {
+      "cost": {
+        "coins": 20
+      },
+      "subtype": "wayfinding",
+      "encumbrance": 1,
+      "type": "gear"
+    },
+    "description": "Commissioned by Guild Masters and Merchant Scions, these maps show the safest paths through one of the four great regions: Wistful Dark, Twilight Meridian, Blazing Garden & Buried Kingdom.",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "gTskkOgs7Bx9E1PgZwMm",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "height": 100,
+        "width": 100,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FSPnACf4mhYxw2DYpwl7D.png?alt=media&token=8dd87b39-4f0c-410d-9454-fe3fab102a5b"
+    },
+    "name": "Map - World",
+    "version": 1,
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "id": "SpF0Ky2QgB8IK3x4fjMb",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "description": "These massive maps are the pet projects of old adventurers or great sages, and are genuine works of art, featuring the whole of the Outer World in loving detail.",
+    "data": {
+      "cost": {
+        "gems": 2
+      },
+      "subtype": "wayfinding",
+      "encumbrance": 2,
+      "type": "Gear"
+    }
+  },
+  {
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "version": 2,
+        "details": [
+          {
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: 20\n\nWhen wielding one-handed you suffer a Minor Penalty (-2) on Attack rolls, Attack Stunts, & Combat Tricks.\n\n**Weapon Ability, Deadly Sweep:**\n- You can hit two enemies in the same Battlefield Area with one Attack.\n- Make a single Attack roll, and apply the result to both enemies."
+            },
+            "visibility": "full",
+            "type": "description"
+          },
+          {
+            "type": "image",
+            "visibility": "full",
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "y": 0,
+                  "height": 100,
+                  "width": 100,
+                  "x": 0,
+                  "aspect": 1,
+                  "unit": "%"
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FYGzX3Z50C9Nv2iAiIJhG.png?alt=media&token=a28e6cc0-8e5b-4ae5-9995-858a91373b6f"
+              }
+            }
+          }
+        ],
+        "type": "",
+        "effects": [
+          {
+            "baseValue": 0,
+            "secondaryDice": false,
+            "bonus": 0,
+            "successTarget": false,
+            "challengeRoll": null,
+            "rollDirection": "high",
+            "name": "",
+            "type": "roll",
+            "encounterRoll": false,
+            "bonusRoll": "",
+            "useLowest": false,
+            "difficulty": 0,
+            "quantity": 1,
+            "exploding": false,
+            "hide": false,
+            "challengeDice": false,
+            "damageType": "none",
+            "selectedDie": "d20",
+            "bonusSymbols": [],
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ],
+            "useModifiers": true,
+            "baseRoll": "1d20",
+            "advantageType": "",
+            "options": [],
+            "successMultiplier": 1,
+            "targetNumber": null
+          }
+        ],
+        "displayName": "Arc Weapon ",
+        "id": "YgIKGJBZDoGr8NwFwlhn",
+        "subtype": "",
+        "privacy": {
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ],
+          "level": "private"
+        }
+      }
+    ],
+    "id": "Erprx4yNnQL0zxHsLQ69",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "description": "Long weapons that allow their wielders to make wide, dangerous strokes that hit several enemies at once. When wielding one-handed you suffer a Minor Penalty (-2) on Attack rolls, Attack Stunts, & Combat Tricks.\n\n**Weapon Ability — Deadly Sweep:** You can hit two enemies in the same Battlefield Area with one Attack. Make a single Attack roll, and apply the result to both enemies.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 20 and above.",
+    "data": {
+      "cost": {
+        "coins": 25
+      },
+      "subtype": "weapons",
+      "type": "Gear",
+      "encumbrance": 3
+    },
+    "image": {
+      "tokenCrop": {
+        "height": 100,
+        "width": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FOEk4f4SbNZ8WCTHpqAkz.png?alt=media&token=a08aa381-89b7-4571-8f98-189f8f63a702"
+    },
+    "name": "Weapon - Arc",
+    "version": 1
+  },
+  {
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FEkRRq6GtE7kQ2gKKxVS1.png?alt=media&token=00fcff49-fafb-45bf-b6e4-93e8d7373d37"
+    },
+    "name": "Weapon - Concealed",
+    "version": 1,
+    "id": "gjFRJcMAOG1ijKKtP1GI",
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "version": 2,
+        "details": [
+          {
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: 22\n\nDrawing and striking with a Concealed Weapon is one Action.\n\n**Weapon Ability, Sneaky Swipe:**\nIf your target isn’t aware of your Concealed Weapon you may attempt to Ambush them, even when you are in plain sight.\n- Your Target must be in the same Battlefield Area as you, but otherwise this attack works like a normal Ambush.\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+            },
+            "visibility": "full",
+            "type": "description"
+          },
+          {
+            "type": "image",
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "x": 0,
+                  "aspect": 1,
+                  "unit": "%",
+                  "y": 0,
+                  "width": 100,
+                  "height": 100
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FEkRRq6GtE7kQ2gKKxVS1.png?alt=media&token=00fcff49-fafb-45bf-b6e4-93e8d7373d37"
+              }
+            },
+            "visibility": "full"
+          }
+        ],
+        "type": "",
+        "effects": [
+          {
+            "name": "",
+            "hide": false,
+            "quantity": 1,
+            "bonus": 0,
+            "useModifiers": true,
+            "encounterRoll": false,
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ],
+            "type": "roll",
+            "selectedDie": "d20",
+            "baseRoll": "1d20",
+            "advantageType": "none",
+            "bonusRoll": ""
+          }
+        ],
+        "id": "3J4FZFUDSBFAasDVlaGL",
+        "privacy": {
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ],
+          "level": "private"
+        },
+        "subtype": "",
+        "displayName": "Concealed Weapon"
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "type": "Gear",
+      "encumbrance": 1,
+      "cost": {
+        "coins": 5
+      },
+      "subtype": "weapons"
+    },
+    "description": "Concealed Weapons are usually small SO that they can be hidden about your person with ease. Unlike other arms, Concealed Weapons are not immediately visible. \n\nDuring a Fight, drawing and striking with a Concealed Weapon can be performed in one Action.\n\n**Weapon Ability — Sneaky Swipe:** If your target isnt aware of your Concealed Weapon you may attempt to Ambush them, even when you are in plain sight. \n- Your Target must be in the same Battlefield Area as you, but otherwise this attack works like a normal Ambush. \n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 22 and above."
+  },
+  {
+    "name": "Weapon - Drawn",
+    "version": 1,
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2Fa4I6FXp3kicuH706muTR.png?alt=media&token=e636a32e-608e-4f8a-b980-202020292686",
+      "tokenCrop": {
+        "aspect": 1,
+        "x": 0,
+        "unit": "%",
+        "y": 0,
+        "height": 100,
+        "width": 100
+      }
+    },
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "subtype": "weapons",
+      "cost": {
+        "coins": 10
+      }
+    },
+    "description": "Drawn Weapons include slingshots, bows, and other projectiles that require you to manually maintain tension.\n\n**Range**: 2 Battlefield Areas away.\n\n**Loading Time**: These can be both loaded and fired in 1 Action. You must use two hands while wielding a Drawn Missile Weapon.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 20 and above.",
+    "id": "ZiPeseihssXUTIBkMsj1",
+    "actions": [
+      {
+        "version": 2,
+        "effects": [
+          {
+            "bonusRoll": "",
+            "baseRoll": "1d20",
+            "advantageType": "none",
+            "selectedDie": "d20",
+            "type": "roll",
+            "useModifiers": true,
+            "modifiers": [
+              {
+                "operator": "add",
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+              }
+            ],
+            "encounterRoll": false,
+            "bonus": 0,
+            "quantity": 1,
+            "name": "",
+            "hide": false
+          }
+        ],
+        "displayName": "Drawn Weapon",
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "id": "V2T5UXQe48NwjCj2LNIA",
+        "subtype": "",
+        "details": [
+          {
+            "visibility": "full",
+            "value": {
+              "description": "Range: 2 Areas\nDamage: 1\nThreshold: 20\nLoading Time: Same Action\n\nYou must use two hands while wielding a Drawn Missile Weapon.\n\nAmmo: x5 per 0.5 Slots"
+            },
+            "type": "description"
+          },
+          {
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "unit": "%",
+                  "x": 0,
+                  "aspect": 1,
+                  "height": 100,
+                  "width": 100,
+                  "y": 0
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2Fa4I6FXp3kicuH706muTR.png?alt=media&token=e636a32e-608e-4f8a-b980-202020292686"
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "type": ""
+      }
+    ],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2"
+  },
+  {
+    "name": "Weapon - Lash",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "aspect": 1,
+        "x": 0,
+        "unit": "%"
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FyiyBT1rWIG1sjDd0Xh7T.png?alt=media&token=7f344de5-f99c-4a20-884e-b25e1d21b03a"
+    },
+    "description": "Weapons that incorporate a chain or cord, capable of reaching foes a considerable distance away.\n\n**Weapon Ability — Crack!:** You can Attack an enemy up to 1 Battlefield Area away.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 22 and above.",
+    "data": {
+      "subtype": "weapons",
+      "cost": {
+        "coins": 30
+      },
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "version": 2,
+        "details": [
+          {
+            "type": "description",
+            "visibility": "full",
+            "value": {
+              "description": "Range: 1 Area\nDamage: 1\nThreshold: 22\n\n**Weapon Ability, Crack!**\nYou can Attack an enemy up to 1 Battlefield Area away."
+            }
+          },
+          {
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "width": 100,
+                  "height": 100,
+                  "y": 0,
+                  "unit": "%",
+                  "aspect": 1,
+                  "x": 0
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FyiyBT1rWIG1sjDd0Xh7T.png?alt=media&token=7f344de5-f99c-4a20-884e-b25e1d21b03a"
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "type": "",
+        "effects": [
+          {
+            "quantity": 1,
+            "hide": false,
+            "name": "",
+            "bonus": 0,
+            "advantageType": "none",
+            "baseRoll": "1d20",
+            "bonusRoll": "",
+            "selectedDie": "d20",
+            "type": "roll",
+            "encounterRoll": false,
+            "useModifiers": true,
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ]
+          }
+        ],
+        "displayName": "Lash Weapon",
+        "subtype": "",
+        "id": "zfxSXCRju8bSCAnzg0IR",
+        "privacy": {
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ],
+          "level": "private"
+        }
+      }
+    ],
+    "id": "YeWJPLKu5W2AeeeafrbH",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "description": "These finely crafted weapons are often difficult to use and rather expensive. As such, they are favored by the warrior elite.\n\n**Weapon Ability — Perfect Strike:** You gain a +1 to your Attack rolls when using a Master Weapon.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 18 and above.",
+    "data": {
+      "cost": {
+        "coins": 30
+      },
+      "subtype": "weapons",
+      "type": "Gear",
+      "encumbrance": 2
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "actions": [
+      {
+        "version": 2,
+        "details": [
+          {
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: 18\n\n**Weapon Ability, Perfect Strike:**\nYou gain a +1 to your Attack rolls when using a Master Weapon."
+            },
+            "visibility": "full",
+            "type": "description"
+          },
+          {
+            "value": {
+              "image": {
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjjIydecqyLWSP5GO1CIF.png?alt=media&token=4c84bdb4-bf09-436f-b8ad-402b9758f1a1",
+                "tokenCrop": {
+                  "unit": "%",
+                  "x": 0,
+                  "aspect": 1,
+                  "height": 100,
+                  "width": 100,
+                  "y": 0
+                }
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "type": "",
+        "effects": [
+          {
+            "quantity": 1,
+            "name": "",
+            "hide": false,
+            "bonus": 1,
+            "advantageType": "none",
+            "baseRoll": "1d20",
+            "bonusRoll": "",
+            "selectedDie": "d20",
+            "encounterRoll": false,
+            "useModifiers": true,
+            "modifiers": [
+              {
+                "operator": "add",
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+              }
+            ],
+            "type": "roll"
+          }
+        ],
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "displayName": "Master Weapon",
+        "subtype": "",
+        "id": "9t0EnV4P1h2gSGk7az1Z"
+      }
+    ],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "oluj2jFsI2Q9t3ZSNwhT",
+    "name": "Weapon - Master",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "x": 0,
+        "aspect": 1,
+        "unit": "%",
+        "y": 0,
+        "width": 100,
+        "height": 100
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjjIydecqyLWSP5GO1CIF.png?alt=media&token=4c84bdb4-bf09-436f-b8ad-402b9758f1a1"
+    }
+  },
+  {
+    "data": {
+      "type": "Gear",
+      "encumbrance": 2,
+      "subtype": "weapons",
+      "cost": {
+        "coins": 20
+      }
+    },
+    "description": "These heavy weapons require both hands to use. Enjoyed by warriors who wish to quickly dispatch their enemies. When wielding one-handed you suffer a Minor Penalty (-2) on Attack rolls, Attack Stunts, & Combat Tricks.\n\n**Weapon Ability — Crushing Blow:** You do 2 Hearts of damage, instead of 1, on a successful Attack.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 20 and above.  10",
+    "id": "DEL6CaYARToIUQBme0AJ",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "displayName": "Mighty Weapon",
+        "id": "n5crCxtvD566bR87fR1G",
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "subtype": "",
+        "effects": [
+          {
+            "quantity": 1,
+            "name": "",
+            "hide": false,
+            "bonus": 0,
+            "advantageType": "none",
+            "bonusRoll": "",
+            "baseRoll": "1d20",
+            "selectedDie": "d20",
+            "type": "roll",
+            "modifiers": [
+              {
+                "operator": "add",
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+              }
+            ],
+            "encounterRoll": false,
+            "useModifiers": true
+          }
+        ],
+        "type": "",
+        "details": [
+          {
+            "visibility": "full",
+            "value": {
+              "description": "2-Handed\n\nRange: Melee\nDamage: 2\nThreshold: 20"
+            },
+            "type": "description"
+          },
+          {
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "x": 0,
+                  "aspect": 1,
+                  "unit": "%",
+                  "y": 0,
+                  "width": 100,
+                  "height": 100
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FuZWHNgJD2i3Ex1Pdrxx3.png?alt=media&token=d8456f86-ad09-485a-b6b4-05373a128b9c"
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "version": 2
+      }
+    ],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Weapon - Mighty",
+    "image": {
+      "tokenCrop": {
+        "height": 100,
+        "width": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FuZWHNgJD2i3Ex1Pdrxx3.png?alt=media&token=d8456f86-ad09-485a-b6b4-05373a128b9c"
+    }
+  },
+  {
+    "data": {
+      "subtype": "weapons",
+      "cost": {
+        "coins": 25
+      },
+      "type": "Gear",
+      "encumbrance": 2
+    },
+    "description": "While more accurate than their smaller cousins, these bombastic weapons are more cumbersome to operate.\n\n**Range**: 2 Battlefield Areas away.\n\n**Loading Time**: 1 Action. You must use two hands to load and fire these Weapons.\n\n**Weapon Ability — Thunderous Shot:** You gain a +2 to your Attack roll.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 18 and above. slingshots, bows, and other projectiles that require you to",
+    "actions": [
+      {
+        "version": 2,
+        "effects": [
+          {
+            "hide": false,
+            "name": "",
+            "quantity": 1,
+            "type": "roll",
+            "encounterRoll": false,
+            "selectedDie": "d20",
+            "advantageType": "none",
+            "baseRoll": "1d20",
+            "bonus": 0
+          }
+        ],
+        "id": "N3jG7hatAiczMlaetUgA",
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "subtype": "",
+        "displayName": "Large Mechanical Weapon",
+        "details": [
+          {
+            "visibility": "full",
+            "value": {
+              "description": "Range: 2 Areas\nDamage: 1\nThreshold: 18\nLoading Time: 1 Action\n\nYou must use two hands to load and fire these Weapons.\n\n**Weapon Ability, Thunderous Shot:**\nYou gain a +2 to your Attack roll.\n\nAmmo: 3x per 1/10 Slots."
+            },
+            "type": "description"
+          },
+          {
+            "type": "image",
+            "visibility": "full",
+            "value": {
+              "image": {
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FTeCy47JkVNGVonfYmjlW.png?alt=media&token=3320519f-ca8b-47b0-9c6f-5abbfe64f27e",
+                "tokenCrop": {
+                  "y": 0,
+                  "width": 100,
+                  "height": 100,
+                  "aspect": 1,
+                  "x": 0,
+                  "unit": "%"
+                }
+              }
+            }
+          }
+        ],
+        "type": ""
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "jL79SpKYvq07KDjyI4zI",
+    "uses": {
+      "max": 0
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "version": 1,
+    "name": "Weapon - Mechanical (Large)",
+    "image": {
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "height": 100,
+        "width": 100,
+        "y": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FTeCy47JkVNGVonfYmjlW.png?alt=media&token=3320519f-ca8b-47b0-9c6f-5abbfe64f27e"
+    }
+  },
+  {
+    "description": "These compact marvels of engineering let you take a shot while keeping a hand free for other things.\n\n**Range**: 1 Battlefield Area away.\n\n**Loading Time**: 1 Action. You can fire these Weapons with one hand, but must load with two.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 18 and above.",
+    "data": {
+      "cost": {
+        "coins": 15
+      },
+      "subtype": "weapons",
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "JQUNMynZHuqd1XDpDQHQ",
+    "actions": [
+      {
+        "type": "",
+        "details": [
+          {
+            "type": "description",
+            "visibility": "full",
+            "value": {
+              "description": "1-Hand to Fire, 2-Hands to Load\n\nRange: 1 Area\nDamage: 1\nThreshold: 18\nLoading Time: 1 Action\n\nAmmo: 3x per 1/10 Slots"
+            }
+          },
+          {
+            "type": "image",
+            "value": {
+              "image": {
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FSlumNJzk7nY9el6qU7jZ.png?alt=media&token=a2cdd187-fad3-4fe9-9c31-68bfd813e407",
+                "tokenCrop": {
+                  "height": 100,
+                  "width": 100,
+                  "y": 0,
+                  "unit": "%",
+                  "aspect": 1,
+                  "x": 0
+                }
+              }
+            },
+            "visibility": "full"
+          }
+        ],
+        "subtype": "",
+        "id": "PODW0JeeygDLZ380hPvh",
+        "privacy": {
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ],
+          "level": "private"
+        },
+        "displayName": "Small Mechanical Weapon",
+        "effects": [
+          {
+            "bonus": 0,
+            "useModifiers": true,
+            "modifiers": [
+              {
+                "operator": "add",
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+              }
+            ],
+            "type": "roll",
+            "encounterRoll": false,
+            "selectedDie": "d20",
+            "baseRoll": "1d20",
+            "advantageType": "none",
+            "bonusRoll": "",
+            "name": "",
+            "hide": false,
+            "quantity": 1
+          }
+        ],
+        "version": 2
+      }
+    ],
+    "version": 1,
+    "name": "Weapon - Mechanical (Small)",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FSlumNJzk7nY9el6qU7jZ.png?alt=media&token=a2cdd187-fad3-4fe9-9c31-68bfd813e407",
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      }
+    }
+  },
+  {
+    "version": 1,
+    "name": "Weapon - Quick",
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FmH4xR0mvLOFXabOaDFFw.png?alt=media&token=416262cb-30fa-4841-92e7-3bd42b233484",
+      "tokenCrop": {
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "x": 0,
+        "aspect": 1,
+        "unit": "%"
+      }
+    },
+    "data": {
+      "encumbrance": 1,
+      "type": "Gear",
+      "cost": {
+        "coins": 15
+      },
+      "subtype": "weapons"
+    },
+    "description": "Quick Weapons are lighter arms that emphasize speed over power, prized by those who prefer evasive fighting.\n\n**Weapon Ability — Darting Style:** You gain a +1 to your Defense Rating when using a Quick Weapon.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 22 and above.",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "joLvUnWpNiCZbMFdP7KG",
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "version": 2,
+        "effects": [
+          {
+            "bonus": 0,
+            "selectedDie": "d20",
+            "type": "roll",
+            "encounterRoll": false,
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ],
+            "useModifiers": true,
+            "bonusRoll": "",
+            "advantageType": "none",
+            "baseRoll": "1d20",
+            "quantity": 1,
+            "name": "",
+            "hide": false
+          }
+        ],
+        "displayName": "Quick Weapon",
+        "id": "tDYKEq1TgiccvamCOO56",
+        "subtype": "",
+        "privacy": {
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ],
+          "level": "private"
+        },
+        "details": [
+          {
+            "type": "description",
+            "visibility": "full",
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: 22\n\n**Weapon Ability, Darting Style:**\nYou gain a +1 to your Defense Rating when using a Quick Weapon."
+            }
+          },
+          {
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "height": 100,
+                  "width": 100,
+                  "y": 0,
+                  "unit": "%",
+                  "aspect": 1,
+                  "x": 0
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FmH4xR0mvLOFXabOaDFFw.png?alt=media&token=416262cb-30fa-4841-92e7-3bd42b233484"
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "type": ""
+      }
+    ],
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FYm5Yte0sUUWUo8Yy32du.png?alt=media&token=8db28edf-a753-49db-9212-35430deb5e87",
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "height": 100,
+        "width": 100,
+        "y": 0
+      }
+    },
+    "name": "Weapon - Standard",
+    "version": 1,
+    "id": "SCKPtR628KVFdYl9I5sF",
+    "uses": {
+      "max": 0
+    },
+    "actions": [
+      {
+        "type": "",
+        "details": [
+          {
+            "type": "description",
+            "visibility": "full",
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: 20"
+            }
+          },
+          {
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "aspect": 1,
+                  "x": 0,
+                  "unit": "%",
+                  "y": 0,
+                  "height": 100,
+                  "width": 100
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FYm5Yte0sUUWUo8Yy32du.png?alt=media&token=8db28edf-a753-49db-9212-35430deb5e87"
+              }
+            },
+            "visibility": "full",
+            "type": "image"
+          }
+        ],
+        "id": "NB2lbo34stpl4I8oFlHp",
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "subtype": "",
+        "displayName": "Standard Weapon",
+        "effects": [
+          {
+            "name": "",
+            "hide": false,
+            "quantity": 1,
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ],
+            "type": "roll",
+            "encounterRoll": false,
+            "useModifiers": true,
+            "selectedDie": "d20",
+            "baseRoll": "1d20",
+            "bonusRoll": "",
+            "advantageType": "none",
+            "bonus": 0
+          }
+        ],
+        "version": 2
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "cost": {
+        "coins": 10
+      },
+      "subtype": "weapons",
+      "encumbrance": 1,
+      "type": "Gear"
+    },
+    "description": "Standard Weapons are simple yet practical death dealing implements with no added frills. Any Calling or Species can use a Standard Weapon.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 20 and above."
+  },
+  {
+    "image": {
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FQDpIWCak2RhwohCi3Si1.png?alt=media&token=96b4cd4b-4fe2-44cf-b0b8-36df39a01ff2",
+      "tokenCrop": {
+        "unit": "%",
+        "x": 0,
+        "aspect": 1,
+        "width": 100,
+        "height": 100,
+        "y": 0
+      }
+    },
+    "name": "Weapon - Unarmed",
+    "version": 1,
+    "actions": [
+      {
+        "version": 2,
+        "type": "",
+        "details": [
+          {
+            "value": {
+              "description": "Range: Melee\nDamage: 1\nThreshold: None\n\nUnarmed strikes suffer a Snag on their Attack roll when directed at armed or armored enemies."
+            },
+            "visibility": "full",
+            "type": "description"
+          },
+          {
+            "type": "image",
+            "visibility": "full",
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "y": 0,
+                  "width": 100,
+                  "height": 100,
+                  "x": 0,
+                  "aspect": 1,
+                  "unit": "%"
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FQDpIWCak2RhwohCi3Si1.png?alt=media&token=96b4cd4b-4fe2-44cf-b0b8-36df39a01ff2"
+              }
+            }
+          }
+        ],
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "displayName": "Unarmed Weapon",
+        "id": "suPABaWJ1T2Hhrqj3HvR",
+        "subtype": "",
+        "effects": [
+          {
+            "name": "",
+            "hide": false,
+            "quantity": 1,
+            "bonus": 0,
+            "encounterRoll": false,
+            "type": "roll",
+            "modifiers": [
+              {
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+                "operator": "add"
+              }
+            ],
+            "useModifiers": true,
+            "selectedDie": "d20",
+            "baseRoll": "1d20",
+            "bonusRoll": "",
+            "advantageType": "none"
+          }
+        ]
+      }
+    ],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "7HRvTN1AyRKDm8IxSH9W",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "description": "Desperate situations sometimes call for adventurers to strike out with their bare hands. \n- Unarmed strikes suffer a Snag on their Attack roll when directed at armed or armored enemies.\n\n**Extra Damage**: None."
+  },
+  {
+    "data": {
+      "subtype": "weapons",
+      "cost": {
+        "coins": 2
+      },
+      "type": "Gear",
+      "encumbrance": 1
+    },
+    "description": "These small, hand-held weapons are shaped and balanced specifically for throwing. Sneaks love them.\n\n**Range**: 1 Battlefield Area away.\n\n**Loading Time**: None, but the weapon must be retrieved before reuse.\n\n**Weapon Ability — Hidden Fangs:** If your target isnt aware of your Thrown Weapon, you may attempt to Ambush them, even when you are in plain sight. \n- Targets must be in Range, but otherwise this attack works like a normal Ambush. \n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush.\n\n**Extra Damage**: +1 Heart for Attack roll totals of 22 and above.",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [
+      {
+        "version": 2,
+        "type": "",
+        "details": [
+          {
+            "visibility": "full",
+            "value": {
+              "description": "Range: 1 Area\nDamage: 1\nThreshold: 22\nLoading Time: None\n\n**Weapon Ability, Hidden Fangs:** \nIf your target isn’t aware of your Thrown Weapon, you may attempt to Ambush them, even when you are in plain sight.\n- Targets must be in Range, but otherwise this attack works like a normal Ambush (􀂴 p252).\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+            },
+            "type": "description"
+          },
+          {
+            "visibility": "full",
+            "value": {
+              "image": {
+                "tokenCrop": {
+                  "unit": "%",
+                  "aspect": 1,
+                  "x": 0,
+                  "width": 100,
+                  "height": 100,
+                  "y": 0
+                },
+                "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjcX8hWpYRqsh3bSK9hoy.png?alt=media&token=0483b302-58fd-411f-beb3-d458c61527e2"
+              }
+            },
+            "type": "image"
+          }
+        ],
+        "subtype": "",
+        "privacy": {
+          "level": "private",
+          "users": [
+            "HwYLq98tYuY9lEEODMru3sEGeTM2"
+          ]
+        },
+        "id": "VjffZTPWgaL4Yhj3vqWt",
+        "displayName": "Thrown Weapon",
+        "effects": [
+          {
+            "name": "",
+            "hide": false,
+            "quantity": 1,
+            "bonus": 0,
+            "advantageType": "none",
+            "bonusRoll": "",
+            "baseRoll": "1d20",
+            "type": "roll",
+            "encounterRoll": false,
+            "modifiers": [
+              {
+                "operator": "add",
+                "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+              }
+            ],
+            "useModifiers": true,
+            "selectedDie": "d20"
+          }
+        ]
+      }
+    ],
+    "uses": {
+      "max": 0
+    },
+    "id": "yNzdaFJ4YJWW0U75bHki",
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "name": "Weapon - Thrown",
+    "version": 1,
+    "image": {
+      "tokenCrop": {
+        "width": 100,
+        "height": 100,
+        "y": 0,
+        "unit": "%",
+        "aspect": 1,
+        "x": 0
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjcX8hWpYRqsh3bSK9hoy.png?alt=media&token=0483b302-58fd-411f-beb3-d458c61527e2"
+    }
+  },
+  {
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "id": "XE4FWvCEGWdRgyp8Jdn6",
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "description": "Combination merges the benefits of two Weapon Types, making them difficult and expensive to forge. Combination Weapons inherit the properties of their two constituent weapons in the following way:\n  - The Weapon Abilities of both.\n  - The usage restrictions of both.\n  - Take up the Inventory Slots from the largest of the two weapons.\n  - The Extra Damage of the most effective weapon.\n\nFor example, a Master-Arc Combination Weapon would gain a +1 to Attack rolls (Master), be able to target two foes in the same area (Arc), require both hands to use without penalty (Arc), and take up 3 Inventory Slots (Arc).\n\n- If any Missile and Melee Weapon Types are combined, you must choose which mode of attack you are using for your Action (i.e Melee or Missile).\n- These weapons only benefit from Missile Weapon Abilities when making Missile attacks.\n- These weapons only benefit from Melee Weapon Abilities when making Melee attacks.\n- The Extra Damage value used is taken from the base weapon appropriate to your chosen mode of attack.\n- Concealed and Thrown Weapons can only be combined with each other, due to their small size.\n- Combining two weapons that each have an inherent **Weapon Ability** will take you to the 3 Ability limit. Your GM may deem some combinations impossible. Common sense should be the guide.\n\n**Coins** = (Price of Weapon Type 1 + Weapon Type 2) x2",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "version": 1,
+    "name": "Weapon Ability - Combination"
+  },
+  {
+    "description": "While all weapons are inherently harmful, these weapons are made to inflict maximum damage at the expense of the wielders safety. \n- Available for Melee Weapons only. \n-  This weapons threshold to deal Extra Damage is lowered by 2. \n- You take 1 Heart of Damage whenever you get an unmodified 1 or 2 on your Attack roll.\n\n**Coins** = Weapon Price + -10",
+    "data": {
+      "type": "Gear",
+      "subtype": "weapons"
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "id": "hVlU17YlkhlpHLZT6fIW",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "version": 1,
+    "name": "Weapon Ability - Dangerous"
+  },
+  {
+    "version": 1,
+    "name": "Weapon Ability - Disguised",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "description": "The weapon appears like a walking stick, jewelry, or other harmless item until carefully inspected or used. \n\n- Discerning this weapons real function requires a mistrustful person to make a successful Insight Check.\n\n**Coins** = Weapon Price +5",
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "218ooDjHOuIEaFJC1NZN",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "version": 1,
+    "name": "Weapon Ability - Rapid Fire",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "description": "Reloading Mechanical Missile weapons in the middle of combat is an onerous task. This technological advancement reduces the need to do it quite SO often. \n\n- Only available for Large and Small Mechanical Missile Weapons. \n- Rapid Fire weapons may be fired 3 times before they need to be reloaded, which still takes 1 Action.\n\n**Coins** = Weapon Price x10",
+    "uses": {
+      "max": 0
+    },
+    "id": "ScqeA41KcVHTARA3yVBq",
+    "actions": [],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "version": 1,
+    "name": "Weapon Ability - Secret Compartment",
+    "data": {
+      "type": "Gear",
+      "subtype": "weapons"
+    },
+    "description": "A small gadget, or hidden cavity, can be incorporated into the pommel, grip or guard of a weapon.\n\n- A Secret Compartment allows you to stow small items like one dose of a consumable, a gem, or a folded treasure map.\n- If you opt to add a gadget, it must be small enough to be incorporated into the weapon, for example a compass on the pommel of a cutlass.\n\n**Coins** = Weapon Price + 5",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    },
+    "id": "VK6hUq11qlhA0zyXGVU6",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none"
+  },
+  {
+    "name": "Weapon Ability - Shoddy",
+    "version": 1,
+    "description": "Hastily and carelessly made, these weapons are easy on the purse but unreliable in battle. \n\n- These weapons are Sundered when you get an unmodified 1 or 2 on your Attack roll.\n\n**Coins** = (Weapon Price + Custom Ability Costs, if any) 2 (rounded up)",
+    "data": {
+      "type": "Gear",
+      "subtype": "weapons"
+    },
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "id": "1upwWZYhW7u9MnYRI6Ef",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "actions": [],
+    "uses": {
+      "max": 0
+    }
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "id": "TXuMXlNnQDDg97hfiSic",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "type": "none",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "description": "Special Ammunition provides ranged weapons with more tactical options. It enables you to create distractions, signal for help, or simply do more harm. \n\n- Available for Missile Weapons only.\n- **Fireberry Shot:** These do Flame Damage instead of Mundane Damage. Your GM may also allow other types of Special Damage .\n- **Flare:** Ammunition that creates a lingering and visually impressive effect, such as bright light, when shot. Ineffective as a weapon but a good signal.\n- **Heavy:** A large, clumsy shot that incurs a Major Penalty (-4) on your Attack roll when used, but does +1 Heart of Damage on a successful hit.\n- **Whistling:** Ammunition that makes an ear-splitting scream when fired. Anyone in earshot must make a successful Insight Check or be Deafened  on their next Turn. Just like regular ammunition, these variants are expended after use.\n\n**Coins** = Ammo Price x2",
+    "version": 1,
+    "name": "Weapon Ability - Special Ammunition"
+  },
+  {
+    "name": "Weapon Ability - Utility",
+    "version": 1,
+    "id": "dtwF5RfUbFzctrHAHAEG",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "uses": {
+      "max": 0
+    },
+    "actions": [],
+    "type": "none",
+    "creator": "HwYLq98tYuY9lEEODMru3sEGeTM2",
+    "data": {
+      "subtype": "weapons",
+      "type": "Gear"
+    },
+    "description": "This allows a weapon to also function as a simple tool. For example, a Fishing Rod Spear or a Shovel Sword. \n\n- You can combine a weapon with a tool that falls under Adventuring Gear, Common Rural Goods, Common Urban Goods, or Oddities & Luxury Items. \n- Utility weapons take up as many Inventory Slots as the largest of their two components. \n- Your GM may deem some combinations impossible. Common sense should be the guide.\n\n**Coins** = Weapon Price + Tool Price +5"
+  }
+]
