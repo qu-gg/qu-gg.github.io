@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T00:07:04.544106Z",
+  "lastUpdated": "2026-02-27T12:04:46.507713Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,11 +52,40 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:c45er5gruigwp3yqcptz6hv4/app.bsky.feed.post/3mfs7tlssds2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "idlecartulary.itch.io",
+        "displayName": "Idle Cartulary",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i@jpeg"
+      },
+      "record": {
+        "text": "Continuing my little series on basic dice math, I talk about advantage and its variations: idlecartulary.com/2026/02/27/t...",
+        "createdAt": "2026-02-26T22:14:52.274Z"
+      },
+      "indexedAt": "2026-02-26T22:14:58.055Z",
+      "replyCount": 0,
+      "repostCount": 9,
+      "likeCount": 26,
+      "embed": {
+        "type": "external",
+        "uri": "https://idlecartulary.com/2026/02/27/taking-the-highest-die-make-dice-work-for-you-4/",
+        "title": "Taking the Highest Die (Make Dice Work For You #4)",
+        "description": "Make Dice Work For You is a series where I\u2019ll regularly talk through a new way to use dice in your game. It came out of conversation surrounding What to randomise when you\u2019re randomising, and what \u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreih6v4ikakte6qz3uagfebjrrsyytkualwhsuirjfvrfbfbqiodnli@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mfs272v26c2j",
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
+        "displayName": "Weird Place \u27a1\ufe0f GAMA",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-02-26T20:33:57.854Z",
       "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 13,
+      "repostCount": 9,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -89,6 +118,38 @@
       }
     },
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mfrnks4pyc26",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
+      },
+      "record": {
+        "text": "At Pax this past year, I played a goblin named Parliamentary Candidate. My slogan was \"VOTE FOR PARLIAMENTARY CANDIDATE!!!!\" \n\nThis is relevant because today is the last day of voting for the Bloggies. VOTE FOR DESIGNING DUNGEONS COURSE!!!! for Best Series!\n\nVOTE HERE!!! forms.gle/d6YbnUqiuypv...",
+        "createdAt": "2026-02-26T16:47:49.549Z"
+      },
+      "indexedAt": "2026-02-26T16:47:53.651Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 31,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreid4t5ot2woues2cdqq2f5pi4vtlgsmbb2tjzdveqab4znyzulhp4a@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreid4t5ot2woues2cdqq2f5pi4vtlgsmbb2tjzdveqab4znyzulhp4a@jpeg",
+            "alt": "A goblin with a pompadour yelling \"Vote for Parliamentary Candidate!\""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mfrdikwvls2k",
       "source": "bluesky",
       "author": {
@@ -101,9 +162,9 @@
         "createdAt": "2026-02-26T13:47:37.491Z"
       },
       "indexedAt": "2026-02-26T13:47:52.751Z",
-      "replyCount": 4,
-      "repostCount": 78,
-      "likeCount": 132,
+      "replyCount": 6,
+      "repostCount": 90,
+      "likeCount": 161,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
@@ -131,8 +192,8 @@
       },
       "indexedAt": "2026-02-26T09:30:45.651Z",
       "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 51,
+      "repostCount": 31,
+      "likeCount": 54,
       "embed": {
         "type": "external",
         "uri": "https://bloggies.org/",
@@ -151,7 +212,7 @@
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
+        "displayName": "Weird Place \u27a1\ufe0f GAMA",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -160,8 +221,8 @@
       },
       "indexedAt": "2026-02-25T17:35:20.655Z",
       "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 19,
+      "repostCount": 11,
+      "likeCount": 20,
       "embed": {
         "type": "images",
         "images": [
@@ -203,7 +264,7 @@
       "indexedAt": "2026-02-25T17:16:52.364Z",
       "replyCount": 2,
       "repostCount": 12,
-      "likeCount": 39,
+      "likeCount": 40,
       "embed": {
         "type": "images",
         "images": [
@@ -234,8 +295,8 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 166,
-      "likeCount": 206,
+      "repostCount": 168,
+      "likeCount": 209,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
@@ -318,7 +379,7 @@
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
+        "displayName": "Weird Place \u27a1\ufe0f GAMA",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -694,8 +755,8 @@
       },
       "indexedAt": "2026-02-22T23:01:24.651Z",
       "replyCount": 26,
-      "repostCount": 726,
-      "likeCount": 3000,
+      "repostCount": 729,
+      "likeCount": 3010,
       "embed": {
         "type": "images",
         "images": [
@@ -749,7 +810,7 @@
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
+        "displayName": "Weird Place \u27a1\ufe0f GAMA",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -788,7 +849,7 @@
       "indexedAt": "2026-02-21T20:14:56.853Z",
       "replyCount": 1,
       "repostCount": 32,
-      "likeCount": 150,
+      "likeCount": 151,
       "embed": {
         "type": "images",
         "images": [
@@ -1702,7 +1763,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1193,
-      "likeCount": 6312,
+      "likeCount": 6311,
       "embed": {
         "type": "images",
         "images": [
@@ -3163,7 +3224,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2622,
-      "likeCount": 15412,
+      "likeCount": 15411,
       "embed": {
         "type": "images",
         "images": [
