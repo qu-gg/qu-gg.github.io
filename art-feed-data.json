@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28T00:04:29.667199Z",
+  "lastUpdated": "2026-02-28T12:02:00.264288Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,66 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mfw4gozcak24",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-02-28T11:24:37.149Z"
+      },
+      "indexedAt": "2026-02-28T11:24:41.252Z",
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mfv3bsqj222z",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
+      },
+      "record": {
+        "text": "I'm Heralding @gavinstoutheart.bsky.social @kestrelw.bsky.social @caepeony.vtubers.social @vice-kappatain.vtubers.social through the group demo for Legends of Akeroth tonight!! twitch.tv/himeutsugi #vtubers #vsky #ttrpg",
+        "createdAt": "2026-02-28T01:31:19.804Z"
+      },
+      "indexedAt": "2026-02-28T01:31:25.656Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
+            "alt": "Hime going live on Twitch!"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mfuimz7mus2n",
       "source": "bluesky",
       "author": {
@@ -65,8 +125,8 @@
       },
       "indexedAt": "2026-02-27T19:57:38.663Z",
       "replyCount": 0,
-      "repostCount": 0,
-      "likeCount": 11,
+      "repostCount": 2,
+      "likeCount": 17,
       "embed": {
         "type": "images",
         "images": [
@@ -93,8 +153,8 @@
       },
       "indexedAt": "2026-02-27T17:49:17.153Z",
       "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 31,
+      "repostCount": 12,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -126,7 +186,7 @@
       "indexedAt": "2026-02-27T16:00:13.551Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 27,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
@@ -154,7 +214,7 @@
       "indexedAt": "2026-02-27T14:06:29.552Z",
       "replyCount": 1,
       "repostCount": 18,
-      "likeCount": 43,
+      "likeCount": 47,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/bloggies-2026/",
@@ -181,9 +241,9 @@
         "createdAt": "2026-02-27T13:56:46.594Z"
       },
       "indexedAt": "2026-02-27T13:56:48.663Z",
-      "replyCount": 4,
-      "repostCount": 34,
-      "likeCount": 84,
+      "replyCount": 5,
+      "repostCount": 39,
+      "likeCount": 114,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/pokmon-is-osr",
@@ -211,8 +271,8 @@
       },
       "indexedAt": "2026-02-27T13:38:25.153Z",
       "replyCount": 3,
-      "repostCount": 12,
-      "likeCount": 73,
+      "repostCount": 13,
+      "likeCount": 79,
       "embed": {
         "type": "images",
         "images": [
@@ -356,8 +416,8 @@
       },
       "indexedAt": "2026-02-26T13:47:52.751Z",
       "replyCount": 8,
-      "repostCount": 100,
-      "likeCount": 185,
+      "repostCount": 102,
+      "likeCount": 188,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
@@ -414,8 +474,8 @@
       },
       "indexedAt": "2026-02-25T17:35:20.655Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 20,
+      "repostCount": 12,
+      "likeCount": 21,
       "embed": {
         "type": "images",
         "images": [
@@ -488,8 +548,8 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 172,
-      "likeCount": 210,
+      "repostCount": 173,
+      "likeCount": 212,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
@@ -947,9 +1007,9 @@
         "createdAt": "2026-02-22T23:01:15.998Z"
       },
       "indexedAt": "2026-02-22T23:01:24.651Z",
-      "replyCount": 26,
-      "repostCount": 728,
-      "likeCount": 3011,
+      "replyCount": 27,
+      "repostCount": 743,
+      "likeCount": 3050,
       "embed": {
         "type": "images",
         "images": [
@@ -989,67 +1049,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigz4jqsbdut3rejklou7kffjshfjl2ch5yi2zd2uyuhx7uqmenwgq@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreigz4jqsbdut3rejklou7kffjshfjl2ch5yi2zd2uyuhx7uqmenwgq@jpeg",
             "alt": "Adaah sitting on a shallow windowsill reading a tome. They have large tusks and horns and floppy ears with piercings. They are wearing a blue jumpsuit topped with black overalls and a burgandy cloak. They also have a large pointy with hat, the underside of which is filled with roses.\n\nthe lighting is warm, flooding in from the window, it's sunset."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mfhcc5tcwk22",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f GAMA",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
-      },
-      "record": {
-        "text": "Hello! Thanks for the space. We\u2019re launching our game on the 25th and showcasing zines live too on our yt channel. Come hang with us, y\u2019all!\n\nwww.kickstarter.com/projects/wei...",
-        "createdAt": "2026-02-22T13:59:31.289Z"
-      },
-      "indexedAt": "2026-02-22T13:59:33.952Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 3,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/weirdplace/residue-rpg",
-        "title": "Coming soon: Residue: a solo-survival RPG",
-        "description": "A solo survival sci-fi horror TTRPG set in a non-Euclidean world, where resource management intertwines with the mystery of The Hum.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreifctbusgumxjz5rxz34aet2ceazev2nqb5kqjf77unozcnknw4gwa@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mffgsh4m5c2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy is excited about Garycon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e@jpeg"
-      },
-      "record": {
-        "text": "It's the 40th anniversary of #zelda so here's an old image I did of Link refusing to give up even though the low heart sound is really annoying.",
-        "createdAt": "2026-02-21T20:14:53.369Z"
-      },
-      "indexedAt": "2026-02-21T20:14:56.853Z",
-      "replyCount": 1,
-      "repostCount": 32,
-      "likeCount": 151,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreib2aoq7rox3qsv25ysrux6h36nub6i4n7jia2utsklnje3pxmmsyu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreib2aoq7rox3qsv25ysrux6h36nub6i4n7jia2utsklnje3pxmmsyu@jpeg",
-            "alt": ""
           }
         ]
       },
@@ -3185,7 +3184,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1871,
-      "likeCount": 8946,
+      "likeCount": 8945,
       "embed": {
         "type": "images",
         "images": [
@@ -3240,8 +3239,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2622,
-      "likeCount": 15411,
+      "repostCount": 2621,
+      "likeCount": 15410,
       "embed": {
         "type": "images",
         "images": [
