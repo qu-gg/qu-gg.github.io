@@ -6,6 +6,23 @@
     <title>Stiltkin - BREAK!! Homebrew Species</title>
     <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <style>
+        /* ===== SELF-HOSTED FONTS ===== */
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('../fonts/LiberationSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Liberation Sans';
+            src: url('../fonts/LiberationSans-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
         /* ===== CSS RESET & BASE ===== */
         *, *::before, *::after {
             box-sizing: border-box;
@@ -14,31 +31,32 @@
         }
 
         :root {
-            /* BREAK!!-inspired Color Palette */
-            --break-purple: #6b3fa0;
-            --break-purple-dark: #4a2d70;
-            --break-purple-light: #9b6fd0;
-            --break-gold: #d4a04a;
-            --break-gold-light: #f0c878;
-            --twilight-blue: #4a6fa0;
-            --twilight-teal: #3d8a8a;
+            /* Misty Wetlands — Murk Heron Palette */
+            --color-deep: #1a2e24;
+            --color-mid: #3d5a4a;
+            --color-accent: #5a8a6e;
+            --color-light: #8ab8a0;
+            --color-highlight: #c4894a;
+            --color-background: #f2f4f0;
+            --color-secondary: #4a6880;
             --pearl-white: #fefefe;
-            --cream-light: #f8f4eb;
             --ink-dark: #1a1a2e;
             --ink-medium: #2d2d44;
-            
+
             /* Typography */
-            --font-display: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
-            --font-heading: 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
-            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-display: 'Liberation Sans', 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+            --font-heading: 'Liberation Sans', 'Trebuchet MS', 'Arial Black', Verdana, sans-serif;
+            --font-body: 'Liberation Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        @page { size: letter; margin: 0; }
 
         html, body {
             font-family: var(--font-body);
             font-size: 11pt;
             line-height: 1.4;
             color: var(--ink-dark);
-            background: var(--cream-light);
+            background: var(--color-background);
         }
 
         /* ===== PAGE STRUCTURE ===== */
@@ -46,7 +64,7 @@
             width: 8.5in;
             min-height: 11in;
             padding: 0.4in 0.5in;
-            background: var(--cream-light);
+            background: var(--color-background);
             margin: 0 auto 20px auto;
             box-shadow: 0 2px 10px rgba(0,0,0,0.15);
             position: relative;
@@ -55,21 +73,30 @@
         .page::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--break-purple), var(--break-gold), var(--twilight-teal), var(--break-gold), var(--break-purple));
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-mid), var(--color-highlight), var(--color-mid), var(--color-accent));
         }
 
         /* ===== TITLE BANNER ===== */
         .species-title {
-            background: linear-gradient(135deg, var(--break-purple-dark) 0%, var(--break-purple) 50%, var(--twilight-blue) 100%);
+            background: linear-gradient(135deg, var(--color-deep) 0%, var(--color-mid) 50%, var(--color-accent) 100%);
             border-radius: 6px;
             padding: 12px 24px;
             margin-bottom: 12px;
-            border: 3px solid var(--break-gold);
+            border: 2px solid var(--color-highlight);
             position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        .species-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px; left: 50%;
+            transform: translateX(-50%);
+            width: 60%; height: 3px;
+            background: var(--color-highlight);
+            border-radius: 2px;
         }
 
         .species-title h1 {
@@ -80,52 +107,40 @@
             letter-spacing: 4px;
             text-align: center;
             margin: 0;
-            text-shadow: 
-                3px 3px 0 var(--break-purple-dark),
-                -1px -1px 0 var(--ink-dark);
+            text-shadow: 3px 3px 0 var(--color-deep), -1px -1px 0 var(--ink-dark);
         }
 
         .species-subtitle {
             font-family: var(--font-body);
             font-size: 11pt;
-            color: var(--break-gold-light);
+            color: var(--color-highlight);
             text-align: center;
             margin-top: 4px;
             font-style: italic;
-        }
-
-        /* ===== INTRO TEXT ===== */
-        .intro-text {
-            font-size: 10.5pt;
-            line-height: 1.45;
-            color: var(--ink-dark);
-            margin-bottom: 12px;
-            padding: 0 8px;
-            text-align: justify;
         }
 
         /* ===== THREE COLUMN LAYOUT ===== */
         .main-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 12px;
+            gap: 8px;
         }
 
         .column {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 6px;
         }
 
         .column-span-2 {
             grid-column: span 2;
         }
 
-        /* ===== CONTENT BOXES ===== */
+        /* ===== BASE CONTENT BOX (Overview — neutral) ===== */
         .content-box {
-            background: var(--pearl-white);
-            border: 1px solid var(--break-purple);
-            border-left: 4px solid var(--break-purple);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 138, 110, 0.08) 100%);
+            border: 1px solid var(--color-accent);
+            border-left: 4px solid var(--color-accent);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -134,7 +149,7 @@
             font-family: var(--font-heading);
             font-size: 12pt;
             color: var(--pearl-white);
-            background: var(--break-purple);
+            background: var(--color-mid);
             padding: 5px 10px;
             margin: 0;
             text-transform: uppercase;
@@ -149,15 +164,13 @@
         .content-box h3 {
             font-family: var(--font-heading);
             font-size: 10pt;
-            color: var(--break-purple);
+            color: var(--color-mid);
             margin-top: 6px;
             margin-bottom: 3px;
             text-transform: uppercase;
         }
 
-        .content-box h3:first-child {
-            margin-top: 0;
-        }
+        .content-box h3:first-child { margin-top: 0; }
 
         .content-box p {
             margin-bottom: 5px;
@@ -166,8 +179,70 @@
             line-height: 1.35;
         }
 
-        .content-box p:last-child {
-            margin-bottom: 0;
+        .content-box p:last-child { margin-bottom: 0; }
+
+        /* ===== HISTORY BOX (deep/authoritative — like quest-resolution) ===== */
+        .history-box {
+            border-color: var(--color-deep);
+            border-left-color: var(--color-deep);
+        }
+
+        .history-box h2 {
+            background: var(--color-deep);
+        }
+
+        /* ===== OUTLOOK BOX (dark inverted — like story-steps) ===== */
+        .outlook-box {
+            background: var(--color-deep);
+            border-color: var(--color-deep);
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .outlook-box h2 {
+            background: var(--color-accent);
+        }
+
+        .outlook-box .content-box-inner {
+            color: var(--pearl-white);
+        }
+
+        .outlook-box .content-box-inner p {
+            color: var(--pearl-white);
+        }
+
+        .outlook-box .content-box-inner em {
+            color: var(--color-light);
+        }
+
+        .outlook-box .beliefs-list li {
+            color: rgba(254, 254, 254, 0.85);
+        }
+
+        /* ===== ADVENTURERS BOX (pop/highlight — like secrets-box) ===== */
+        .adventurers-box {
+            border-color: var(--color-highlight);
+            border-left-color: var(--color-highlight);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 137, 74, 0.08) 100%);
+        }
+
+        .adventurers-box h2 {
+            background: var(--color-highlight);
+        }
+
+        /* ===== NAMES BOX (secondary accent — supplementary) ===== */
+        .names-box {
+            border-color: var(--color-secondary);
+            border-left-color: var(--color-secondary);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(74, 104, 128, 0.08) 100%);
+        }
+
+        .names-box h2 {
+            background: var(--color-secondary);
+        }
+
+        .names-examples {
+            font-style: italic;
+            color: var(--color-secondary);
         }
 
         /* ===== BELIEFS LIST ===== */
@@ -187,19 +262,21 @@
         }
 
         .beliefs-list li::before {
-            content: '◆';
+            content: '\25C6';
             position: absolute;
             left: 0;
-            color: var(--break-gold);
+            color: var(--color-highlight);
             font-size: 7pt;
         }
 
         /* ===== IMAGE BOX ===== */
         .image-box {
-            border: 3px solid var(--break-purple);
+            border: 3px solid var(--color-mid);
             border-radius: 6px;
             overflow: hidden;
-            background: var(--ink-medium);
+            background: var(--color-deep);
+            display: flex;
+            flex-direction: column;
         }
 
         .image-box img {
@@ -207,71 +284,78 @@
             height: auto;
             display: block;
             object-fit: cover;
+            flex: 1;
         }
 
-        /* ===== NAMES BOX ===== */
-        .names-box {
-            border-color: var(--twilight-teal);
-            border-left-color: var(--twilight-teal);
+        .image-box .image-caption {
+            width: 100%;
+            padding: 4px 8px;
+            font-size: 9pt;
+            color: var(--pearl-white);
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            flex-shrink: 0;
         }
 
-        .names-box h2 {
-            background: var(--twilight-teal);
+        .image-box .image-caption a {
+            color: var(--color-light);
+            text-decoration: none;
         }
 
-        .names-examples {
-            font-style: italic;
-            color: var(--twilight-teal);
+        .image-box .image-caption a:hover {
+            text-decoration: underline;
         }
 
         /* ===== ABILITIES SECTION ===== */
         .abilities-section {
-            margin-top: 12px;
+            margin-top: 8px;
         }
 
         .abilities-section > h2 {
             font-family: var(--font-heading);
             font-size: 13pt;
             color: var(--pearl-white);
-            background: linear-gradient(135deg, var(--break-purple-dark) 0%, var(--break-purple) 100%);
+            background: var(--color-deep);
             padding: 6px 14px;
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-align: center;
             border-radius: 4px;
-            border: 2px solid var(--break-gold);
+            border: 2px solid var(--color-highlight);
         }
 
         .abilities-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
+            gap: 8px;
         }
 
         .ability-box {
-            background: var(--pearl-white);
-            border: 1px solid var(--twilight-teal);
-            border-left: 4px solid var(--twilight-teal);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(90, 138, 110, 0.06) 100%);
+            border: 1px solid var(--color-accent);
+            border-left: 4px solid var(--color-accent);
             border-radius: 4px;
             overflow: hidden;
         }
 
         .ability-box.innate {
-            border-color: var(--break-purple);
-            border-left-color: var(--break-purple);
+            border-color: var(--color-mid);
+            border-left-color: var(--color-mid);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(61, 90, 74, 0.06) 100%);
         }
 
         .ability-box.maturative {
-            border-color: var(--break-gold);
-            border-left-color: var(--break-gold);
+            border-color: var(--color-highlight);
+            border-left-color: var(--color-highlight);
+            background: linear-gradient(180deg, var(--pearl-white) 0%, rgba(196, 137, 74, 0.06) 100%);
         }
 
         .ability-box h3 {
             font-family: var(--font-heading);
             font-size: 9pt;
             color: var(--pearl-white);
-            background: var(--twilight-teal);
+            background: var(--color-accent);
             padding: 3px 8px;
             margin: 0;
             text-transform: uppercase;
@@ -280,11 +364,11 @@
         }
 
         .ability-box.innate h3 {
-            background: var(--break-purple);
+            background: var(--color-mid);
         }
 
         .ability-box.maturative h3 {
-            background: var(--break-gold);
+            background: var(--color-highlight);
             color: var(--ink-dark);
         }
 
@@ -318,42 +402,34 @@
         }
 
         .ability-box li::before {
-            content: '•';
+            content: '\2022';
             position: absolute;
             left: 0;
-            color: var(--break-purple);
+            color: var(--color-mid);
             font-weight: bold;
         }
 
         .ability-box.maturative li::before {
-            color: var(--break-gold);
+            color: var(--color-highlight);
         }
 
         /* ===== PAGE CREDIT ===== */
         .page-credit {
             position: absolute;
-            bottom: 0.25in;
-            right: 0.5in;
+            bottom: 0.25in; right: 0.5in;
             font-size: 8pt;
             font-style: italic;
             color: var(--ink-medium);
         }
 
-        .page-credit a {
-            color: var(--break-purple);
-            text-decoration: none;
-        }
-
-        .page-credit a:hover {
-            text-decoration: underline;
-        }
+        .page-credit a { color: var(--color-mid); text-decoration: none; }
+        .page-credit a:hover { text-decoration: underline; }
 
         /* ===== HOMEBREW BADGE ===== */
         .homebrew-badge {
             position: absolute;
-            top: 0.4in;
-            right: 0.5in;
-            background: var(--break-gold);
+            top: 0.4in; right: 0.5in;
+            background: var(--color-highlight);
             color: var(--ink-dark);
             font-family: var(--font-heading);
             font-size: 8pt;
@@ -363,28 +439,10 @@
             letter-spacing: 1px;
         }
 
-        /* ===== INSPIRATION NOTE ===== */
-        .inspiration-note {
-            font-size: 8pt;
-            color: var(--ink-medium);
-            font-style: italic;
-            margin-top: 4px;
-        }
-
-        .inspiration-note a {
-            color: var(--break-purple);
-        }
-
         /* ===== PRINT STYLES ===== */
         @media print {
-            body {
-                background: white;
-            }
-            .page {
-                box-shadow: none;
-                margin: 0;
-                page-break-after: always;
-            }
+            body { background: white; }
+            .page { box-shadow: none; margin: 0; page-break-after: always; }
         }
     </style>
 </head>
@@ -393,11 +451,10 @@
         <!-- Title Banner -->
         <div class="species-title">
             <h1>Stiltkin</h1>
-            <p class="species-subtitle">Contemplative Fishers of the Murk</p>
         </div>
 
         <!-- Wide Landscape Image spanning all 3 columns -->
-        <div class="image-box" style="margin-bottom: 12px;">
+        <div class="image-box" style="margin-bottom: 8px;">
             <img src="stiltkin-1.png" alt="Stiltkin village scene" style="width: 100%; height: 200px; object-fit: cover;">
         </div>
 
@@ -410,34 +467,24 @@
                     <div class="content-box-inner">
                         <h3>Physiology</h3>
                         <p>
-                            Stiltkin often come in flavors of dull grays to shimmering blues and sport 
-                            fine, hair-like feathers that cover their bodies. Despite the avian appearance 
-                            and longer feathers along their forearms, they do not have wings. Their tail 
-                            feathers are often long enough to resemble the back of an elaborate tunic.
+                            Stiltkin range from dull grays to shimmering blues, their bodies covered in fine, hair-like feathers. Despite the avian look and longer feathers along their forearms, they have no wings. Their tail feathers often hang long enough to resemble the back of an elaborate tunic.
                         </p>
 
                         <h3>Demeanor</h3>
                         <p>
-                            Outsiders often remark the Stiltkin for their reserved and contemplative nature, 
-                            noting how they prefer to observe rather than speak. Once a Stiltkin discerns the 
-                            perspective of the stranger and accepts them into their community, they show a 
-                            remarkable attitude of acceptance towards all backgrounds.
+                            Outsiders often remark the Stiltkin for their reserved and contemplative nature, noting how they prefer to observe rather than speak. Once they've taken the measure of a stranger and welcomed them in, Stiltkin are remarkably accepting of all backgrounds.
                         </p>
                     </div>
                 </div>
 
-                <div class="content-box">
+                <div class="content-box history-box">
                     <h2>History</h2>
                     <div class="content-box-inner">
                         <p>
-                            The Stiltkin have always lived in the Murk. They are primarily a spear- and 
-                            bow-fishing community, surviving off of the flesh-eating fish that inhabit 
-                            the rivers. Much of their culture stems from the still practice of fishing 
-                            with meditative arts of basket-weaving and glassblowing being dominant.
+                            The Stiltkin have always lived in the Murk. They are primarily a spear- and bow-fishing community, surviving off the flesh-eating fish that inhabit the rivers. The stillness their trade demands carries into the rest of their culture, with meditative arts like basket-weaving and glassblowing being most prominent.
                         </p>
                         <p>
-                            A relatively recent contract with the Shard Cities for their coveted mana-infused 
-                            spirit has opened up some of their members to the idea of adventuring.
+                            A recent trade contract with the Shard Cities for their coveted mana-infused spirit has drawn some Stiltkin out into the wider world.
                         </p>
                     </div>
                 </div>
@@ -445,31 +492,27 @@
 
             <!-- Middle Column: Outlook + Adventurers + Names -->
             <div class="column" style="grid-row: span 2;">
-                <div class="content-box">
+                <div class="content-box outlook-box">
                     <h2>Outlook</h2>
                     <div class="content-box-inner">
                         <p>
-                            The Stiltkin lead simple and harmonious lives; their philosophies reflective 
-                            of the patient rhythm of the seasons in the wetlands:
+                            The Stiltkin lead simple and harmonious lives, their philosophies reflecting the patient rhythm of the wetland seasons:
                         </p>
                         <ul class="beliefs-list">
                             <li>Still waters become clear.</li>
                             <li>A straight line is often slower.</li>
                             <li>Unity in diversity, strength in conviction.</li>
-                            <li>Respect whispers louder than Dissent shouts.</li>
+                            <li>Respect whispers louder than dissenting shouts.</li>
                             <li>Viewpoints are lenses to understand the world. See through many.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="content-box">
+                <div class="content-box adventurers-box">
                     <h2>Adventurers</h2>
                     <div class="content-box-inner">
                         <p>
-                            Young Stiltkin often get inspired to set out into the wider world when hearing 
-                            tales from the older monks that trade mana-spirit to the Shard Cities. Their 
-                            mastery of stillness and silence makes them excellent observers, especially 
-                            in dense locales.
+                            Young Stiltkin are often inspired to venture out after hearing tales from the elder monks who trade mana-spirit to the Shard Cities. Their mastery of stillness and silence makes them excellent observers, especially in crowded places.
                         </p>
                     </div>
                 </div>
@@ -478,9 +521,7 @@
                     <h2>Typical Names</h2>
                     <div class="content-box-inner">
                         <p>
-                            Stiltkin see names as the encapsulation of the very essence of an individual. 
-                            Their naming convention often follows an <strong>Adjective Noun</strong> structure, 
-                            with nouns rooted in natural or spiritual meanings.
+                            To a Stiltkin, a name captures the essence of the individual. Names typically follow an <strong>Adjective Noun</strong> structure, with nouns rooted in natural or spiritual meaning.
                         </p>
                         <p class="names-examples">
                             Examples: Grim Sorrow, Angry River, Wise Warble, Calm Calling
@@ -489,15 +530,15 @@
                 </div>
             </div>
 
-            <!-- Right Column: Portrait Image spanning 2 rows -->
+            <!-- Right Column: Portrait Image with caption -->
             <div class="column" style="grid-row: span 2;">
                 <div class="image-box" style="flex: 1;">
                     <img src="stiltkin-2.png" alt="Stiltkin" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                    <div class="image-caption">
+                        Art/Inspiration: Adapted from Worldbuilder Matt's Heran Folk species. 
+                        <a href="https://www.youtube.com/watch?v=FXsSVPDDxmc" target="_blank">Watch video &#x2192;</a>
+                    </div>
                 </div>
-                <p class="inspiration-note">
-                    Art/Inspiration: Adapted from Worldbuilder Matt's Heran Folk species. 
-                    <a href="https://www.youtube.com/watch?v=FXsSVPDDxmc" target="_blank">Watch video →</a>
-                </p>
             </div>
         </div>
 
@@ -519,7 +560,7 @@
                 <div class="ability-box innate">
                     <h3>Innate Ability</h3>
                     <h4>Never Without</h4>
-                    <p class="ability-flavor">You have an almost innate knack for basket-weaving and are never caught without your trusty hip basket.</p>
+                    <p class="ability-flavor">Basket-weaving comes naturally to your kind, and you are never caught without your trusty hip basket.</p>
                     <ul>
                         <li>You start with a special Traveler's Bag which wraps around your waist. It only takes one Action to grab and use an Item from it.</li>
                         <li>This basket does not count towards the normal 1 Bag limit.</li>
@@ -531,7 +572,7 @@
                 <div class="ability-box innate">
                     <h3>Innate Ability</h3>
                     <h4>Monastery's Wisdom</h4>
-                    <p class="ability-flavor">You deeply understand the teachings of the Roost's monastery, able to see your gift through all lenses.</p>
+                    <p class="ability-flavor">The Roost's monastery honed more than patience in you - its teachings let you see the world through many lenses.</p>
                     <ul>
                         <li>You get a bonus Purview related to a honed skill of your (and/or your GM's) choice.</li>
                         <li>You have an Edge whenever you roll for a Check or Contest covered by this Purview.</li>
