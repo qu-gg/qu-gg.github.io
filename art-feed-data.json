@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T12:04:23.513589Z",
+  "lastUpdated": "2026-03-03T00:06:24.098463Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,134 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mg4elmsfq22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-03-02T23:06:30.964Z"
+      },
+      "indexedAt": "2026-03-02T23:06:36.364Z",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:v7mokpd3vbnm2fu52ormbdeh/app.bsky.feed.post/3mg2s523b4k2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "serket08.bsky.social",
+        "displayName": "Serket :3c",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:v7mokpd3vbnm2fu52ormbdeh/bafkreiahwzmz3j4jndzo2lb3ivrahbyl75froe4orpptrvgn6fyt2w65wi@jpeg"
+      },
+      "record": {
+        "text": "I played Final Fantasy Tactics and it was a game of all time.  Delita Heiral lives rent free in my head now, so I decided to unpack the ways in which this game has influenced my ttrpg design.\n\nwww.fluoriteguillotine.com/blog/2026/03...",
+        "createdAt": "2026-03-02T08:03:34.483Z"
+      },
+      "indexedAt": "2026-03-02T08:03:38.956Z",
+      "replyCount": 4,
+      "repostCount": 15,
+      "likeCount": 48,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.fluoriteguillotine.com/blog/2026/03/02/final-fantasy-tactics-could-have-been-a-ttrpg/",
+        "title": "final fantasy tactics could have been a ttrpg",
+        "description": "I need to be less of a tourist when it comes to Japanese roleplaying games. I exist downstream from decades of culture and art that exists in conversation with itself, and I thoroughly enjoy the bypro...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:v7mokpd3vbnm2fu52ormbdeh/bafkreicckqaextb7mx2qcltmjd7w3qwtjhgfatriczzlc6elc6rvu7fule@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/8BKWOn",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Gravity Mage\n\nMASS//ALCHEMY//GENESIS\n\nWanted to design another wizard of some kind,\nwill post some lore at a later date.\n\nThanks to Jeff Simpson for his feedback on this during his underpaint academy class",
+        "createdAt": "2026-03-02T07:14:16-06:00"
+      },
+      "indexedAt": "2026-03-02T07:14:16-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/835/323/large/nick-bray-techwitch10.jpg?1772456814",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/835/323/large/nick-bray-techwitch10.jpg?1772456814",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/835/287/large/nick-bray-techwitch10-process.jpg?1772456561",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/835/287/large/nick-bray-techwitch10-process.jpg?1772456561",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/835/456/large/nick-bray-techwitch10-refs.jpg?1772457129",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/835/456/large/nick-bray-techwitch10-refs.jpg?1772457129",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/8BKWOn"
+    },
+    {
+      "uri": "at://did:plc:rwzfl24tupml5kamt7gw672x/app.bsky.feed.post/3mfyxm2xwak2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "ehronlime.bsky.social",
+        "displayName": "Aaron Lim \u6797\u5bb6\u4e30",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreihuwabu4w42rxmmj3ja6lbxnttdbmg7x5axec2sqrmluvjpkasy5m@jpeg"
+      },
+      "record": {
+        "text": "They announced my stretch goal for Blades '68! Let's get to $390,000 so I can write about The Inaugural Crowfoot Wargaming Convention of '68 (which split of from the Charterhall Conference On Historical and Strategic Wargames that started two years before). www.backerkit.com/c/projects/e...",
+        "createdAt": "2026-03-01T14:36:07.964Z"
+      },
+      "indexedAt": "2026-03-01T14:36:12.158Z",
+      "replyCount": 6,
+      "repostCount": 55,
+      "likeCount": 149,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq@jpeg",
+            "alt": "Graphic from the Blades '68 BackerKit crowdfunding campaign, showing stretch goal contributors Avalyn Ramsay writing \"Psychic Commie Rats\" and Aaron Lim writing \"Report on the Inaugural Crowfoot Wargaming Convention of '68\"."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:zi663gwmsutcebrdnxvxey62/app.bsky.feed.post/3mfwugabdwc2r",
       "source": "bluesky",
       "author": {
@@ -74,6 +202,43 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi663gwmsutcebrdnxvxey62/bafkreiggfu3ivn75kblpbddh2s26bc5rwwaa4c6hvf63r744o4yirjd65m@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zi663gwmsutcebrdnxvxey62/bafkreiggfu3ivn75kblpbddh2s26bc5rwwaa4c6hvf63r744o4yirjd65m@jpeg",
             "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mfwbprw5w225",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e@jpeg"
+      },
+      "record": {
+        "text": "A stretch goal has been added to THE CASTLE AUTOMATIC, the new dungeon for HIS MAJESTY THE WORM. \n\nIf we get 999 early worms, we'll add an option for discounted Divination Boards! \n\nA Divination Board is like a GM screen that reveals, not obscures, information. Put your tarot cards on them!",
+        "createdAt": "2026-02-28T12:59:10.895Z"
+      },
+      "indexedAt": "2026-02-28T12:59:16.960Z",
+      "replyCount": 1,
+      "repostCount": 17,
+      "likeCount": 60,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibakckmpdmptpsbqwu4zhjvxfjs6cn2lel3evzoba3to43i2gz6xm@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibakckmpdmptpsbqwu4zhjvxfjs6cn2lel3evzoba3to43i2gz6xm@jpeg",
+            "alt": "A fold out game board with panels of information. The cover has the four tarot suits."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreib2bkpqopqdxtwttibce2k6uqwqyw5n555d35ohg3ruys7gba7zp4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreib2bkpqopqdxtwttibce2k6uqwqyw5n555d35ohg3ruys7gba7zp4@jpeg",
+            "alt": "A fold out game board with panels of information. The cover has the His Majesty the Worm logo."
           }
         ]
       },
@@ -125,8 +290,8 @@
       },
       "indexedAt": "2026-02-28T10:29:19.955Z",
       "replyCount": 2,
-      "repostCount": 34,
-      "likeCount": 42,
+      "repostCount": 42,
+      "likeCount": 48,
       "embed": {
         "type": "external",
         "uri": "https://pennyblake.itch.io/curiomancers",
@@ -478,7 +643,7 @@
       "indexedAt": "2026-02-26T13:47:52.751Z",
       "replyCount": 9,
       "repostCount": 105,
-      "likeCount": 198,
+      "likeCount": 200,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
@@ -609,8 +774,8 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 196,
-      "likeCount": 248,
+      "repostCount": 200,
+      "likeCount": 256,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
@@ -702,8 +867,8 @@
       },
       "indexedAt": "2026-02-24T17:26:27.163Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 17,
+      "repostCount": 6,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/XFVeQBrMruc",
@@ -955,131 +1120,6 @@
         "title": "NULL_SPACE by Binary Star Games",
         "description": "Freelancing in the solar system of the 24th century",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiczkt7fpsert7ukcxvbnvf2x5kswymthdg7l2r6sorap24x35ifxi@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:l7lkkvtf5ts6fji46y5yiwky/app.bsky.feed.post/3mfjni4b6462x",
-      "source": "bluesky",
-      "author": {
-        "handle": "crossedpaths.co.uk",
-        "displayName": "Crossed Paths",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreidndpc5gj4kqr44rssmzp3hkwubexhpdpjawxphhnlncxvnxtooli@jpeg"
-      },
-      "record": {
-        "text": "Can you hear boss music playing?! \ud83d\udc80\u2694\ufe0f It's time to draw your sword and take on your next challenge with Legends of Akeroth! \n\nJump into the adventure today and check out the project below! \nwww.backerkit.com/c/project...\n\n #ttrpg #solottrpg #fantasy #tabletop ",
-        "createdAt": "2026-02-23T12:25:01.563Z"
-      },
-      "indexedAt": "2026-02-23T12:25:06.051Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 11,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreig4fjkgy2igvmwv25zrvjcr5t3pqu52q4k22hg4sgovr2ndn2puaa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreig4fjkgy2igvmwv25zrvjcr5t3pqu52q4k22hg4sgovr2ndn2puaa@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mfjkov6wb22g",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq@jpeg"
-      },
-      "record": {
-        "text": "Cool jam going on\n\nitch.io/jam/the-old-...",
-        "createdAt": "2026-02-23T11:35:07.851Z"
-      },
-      "indexedAt": "2026-02-23T11:35:07.953Z",
-      "replyCount": 0,
-      "repostCount": 21,
-      "likeCount": 47,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/jam/the-old-school-rules-jam/entries",
-        "title": "Submissions to The Old School Rules Jam",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreicqejkrjry3tqmxj4viixjlsz7wxnbipmdnu74xj2mxfmt2unwgoq@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mfioerskuk2g",
-      "source": "bluesky",
-      "author": {
-        "handle": "hime.vtubers.social",
-        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
-      },
-      "record": {
-        "text": "Sorry for the wait! I'm returning to the land of Song for more Midnight Muscadines by @pandiongames.com !! Come hang out~ twitch.tv/himeutsugi #vtubers #vsky #solottrpg #ttrpg",
-        "createdAt": "2026-02-23T03:08:23.984Z"
-      },
-      "indexedAt": "2026-02-23T03:08:27.657Z",
-      "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
-            "alt": "Hime going live on Twitch"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:4kf5yyonhbxgv7yawa5yfnn5/app.bsky.feed.post/3mfiakurku223",
-      "source": "bluesky",
-      "author": {
-        "handle": "splendid.land",
-        "displayName": "splendidland\ud83c\udf31",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreiae3wtj6ls6ijnqbqmoajyygunxnkva3m7y4yefexoqtqkzomzd2q@jpeg"
-      },
-      "record": {
-        "text": "i've made a new comic called \"TOY STORY II: a sequel to Toy Story\".",
-        "createdAt": "2026-02-22T23:01:15.998Z"
-      },
-      "indexedAt": "2026-02-22T23:01:24.651Z",
-      "replyCount": 27,
-      "repostCount": 771,
-      "likeCount": 3189,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreigxiy2xv2v3w2j4qn2zfdg6u3r7hqfl4kgv336kxrno3qncp2hoci@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4kf5yyonhbxgv7yawa5yfnn5/bafkreigxiy2xv2v3w2j4qn2zfdg6u3r7hqfl4kgv336kxrno3qncp2hoci@jpeg",
-            "alt": "\"TOY STORY II: a sequel to Toy Story\" by splendidland.\ntwo bell shaped clay figures of warriors are standing."
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1981,34 +2021,6 @@
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiceez5akxznaxrbj6bl74onnmkzuxwftzx5ryixjmrfdtjr5q62q4@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiceez5akxznaxrbj6bl74onnmkzuxwftzx5ryixjmrfdtjr5q62q4@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3maeesi74js2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      },
-      "record": {
-        "text": "While it looks like nothing has happening for BREAK!! things are quietly moving.\n\nBOOK 1: START (Coming soon on KS)\nBOOK 2: GENUS (Drafted)\nBOOK 3: BIOMES (Development)\n\nPic: BIOMES (Bumpo/Mokko-do variants)",
-        "createdAt": "2025-12-19T19:00:29.158Z"
-      },
-      "indexedAt": "2025-12-19T19:00:32.731Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 33,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidk4cbu6pys5fwrienrlgb62opi2lgeyq4nen6zrqmiolsgan3vpu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidk4cbu6pys5fwrienrlgb62opi2lgeyq4nen6zrqmiolsgan3vpu@jpeg",
             "alt": ""
           }
         ]
@@ -3236,8 +3248,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2620,
-      "likeCount": 15407,
+      "repostCount": 2619,
+      "likeCount": 15406,
       "embed": {
         "type": "images",
         "images": [
