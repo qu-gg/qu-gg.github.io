@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T00:05:36.419883Z",
+  "lastUpdated": "2026-03-04T12:04:25.835802Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mga4orxpls26",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae@jpeg"
+      },
+      "record": {
+        "text": "Playing Mythic Bastionland with a big group?\n\nwww.bastionland.com/2026/03/big-...",
+        "createdAt": "2026-03-04T10:55:46.067Z"
+      },
+      "indexedAt": "2026-03-04T10:55:44.453Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 11,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.bastionland.com/2026/03/big-companies.html",
+        "title": "Big Companies",
+        "description": "I've had a few people ask about playing Mythic Bastionland  with larger groups of players. I've found the game flows at its best with 2-4 pl...",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mg6ereqlfs2j",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-03-03T18:15:10.353Z",
       "replyCount": 3,
-      "repostCount": 13,
-      "likeCount": 50,
+      "repostCount": 15,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +123,7 @@
       "indexedAt": "2026-03-03T17:30:51.854Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "images",
         "images": [
@@ -186,8 +215,8 @@
       },
       "indexedAt": "2026-03-02T23:06:36.364Z",
       "replyCount": 0,
-      "repostCount": 0,
-      "likeCount": 8,
+      "repostCount": 2,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -215,7 +244,7 @@
       "indexedAt": "2026-03-02T08:03:38.956Z",
       "replyCount": 5,
       "repostCount": 15,
-      "likeCount": 52,
+      "likeCount": 53,
       "embed": {
         "type": "external",
         "uri": "https://www.fluoriteguillotine.com/blog/2026/03/02/final-fantasy-tactics-could-have-been-a-ttrpg/",
@@ -473,7 +502,7 @@
       "indexedAt": "2026-02-27T19:57:38.663Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 25,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -500,8 +529,8 @@
       },
       "indexedAt": "2026-02-27T17:49:17.153Z",
       "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 39,
+      "repostCount": 13,
+      "likeCount": 40,
       "embed": {
         "type": "images",
         "images": [
@@ -895,7 +924,7 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 201,
+      "repostCount": 200,
       "likeCount": 257,
       "embed": {
         "type": "external",
@@ -1055,75 +1084,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihnkw75dcv77fvn5hbdz3bexpkdey2hbhln7cj5p7pquvvodp6b4y@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihnkw75dcv77fvn5hbdz3bexpkdey2hbhln7cj5p7pquvvodp6b4y@jpeg",
             "alt": "TTRPGkids\nDev Log #18:\nCadence changes, project statuses, SXSW EDU"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:evur5dfsnxksnvpel3e7ynrz/app.bsky.feed.post/3mflbv723ck2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "andrewmisisco.bsky.social",
-        "displayName": "Andrew Misisco",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreifqmmalyqjdr45pg2xhmejtxlfme7rkqeggiefw667ut7ftc5cub4@jpeg"
-      },
-      "record": {
-        "text": "Felice is one of my precious daughters from my current (and first) play through of Final Fantasy Tactics the ivalice chronicles. I didn\u2019t expect to get so attached to these characters, but man, am I! Expect more of Felice and her twin brother, Conphas.",
-        "createdAt": "2026-02-24T04:02:55.295Z"
-      },
-      "indexedAt": "2026-02-24T04:02:59.753Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 4,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreiandeyt4onfetfjlzsvb7mmvmlecclwrkzcvobcr6v3k2xbrocqni@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:evur5dfsnxksnvpel3e7ynrz/bafkreiandeyt4onfetfjlzsvb7mmvmlecclwrkzcvobcr6v3k2xbrocqni@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:l273ogahvzmitwvo27kej3v3/app.bsky.feed.post/3mfkbqsqojs2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "farmergadda.bsky.social",
-        "displayName": "Farmer Gadda",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreifiy4vpktlkorlkjn5yybes23za5e5hfjezlrdc7nqc3q7aqggeju@jpeg"
-      },
-      "record": {
-        "text": "OK now im reading Break!!. Yeah the crafting procedure is great.",
-        "createdAt": "2026-02-23T18:27:48.437Z"
-      },
-      "indexedAt": "2026-02-23T18:27:58.261Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 16,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7iwsw33qwybf5n4zeom26hurotdd66corgohsuyn2rjksbpt7ei@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7iwsw33qwybf5n4zeom26hurotdd66corgohsuyn2rjksbpt7ei@jpeg",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreialmqlzhtm63anld4s5q4kbrklizozchhk2mvevtyeyuhkav3ms4e@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreialmqlzhtm63anld4s5q4kbrklizozchhk2mvevtyeyuhkav3ms4e@jpeg",
-            "alt": ""
           }
         ]
       },
