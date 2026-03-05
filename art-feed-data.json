@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T12:04:25.835802Z",
+  "lastUpdated": "2026-03-05T00:06:15.855447Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:tq5dvd5b6unuvvfr55l5p6io/app.bsky.feed.post/3mgamdcyi7k26",
+      "source": "bluesky",
+      "author": {
+        "handle": "drawsalexander.bsky.social",
+        "displayName": "Ben Alexander",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreicjxczghpqsihrybw63x7bqjf6iu4xebapppr5w66ardxazxz772i@jpeg"
+      },
+      "record": {
+        "text": "New game, new colour scheme! Some Mech combat for ION Heart Multiplayer",
+        "createdAt": "2026-03-04T15:35:41.133Z"
+      },
+      "indexedAt": "2026-03-04T15:35:44.961Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreiftnzyjuo3e2b5gqjumvrccu5ne7hxza3iwee747qna3ihvx3wnuu@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreiftnzyjuo3e2b5gqjumvrccu5ne7hxza3iwee747qna3ihvx3wnuu@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mga4orxpls26",
       "source": "bluesky",
       "author": {
@@ -64,9 +96,9 @@
         "createdAt": "2026-03-04T10:55:46.067Z"
       },
       "indexedAt": "2026-03-04T10:55:44.453Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 11,
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/03/big-companies.html",
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-03-03T18:15:10.353Z",
       "replyCount": 3,
-      "repostCount": 15,
-      "likeCount": 59,
+      "repostCount": 16,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -194,6 +226,35 @@
         "title": "Gallows Corner - A Peasants' Revolt RPG",
         "description": "Rise up, ye pitiful commons! Throw off your shackles and take up the call: there is a brighter future beyond the noose!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zam5idrbj7th6lc6g5jlkzkv/bafkreido7kfh5wknijms7rz2b2vcrjoj6u5r6fyz5mz7ytvq34moj7eyxu@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:hrbhyfjkfzlifttbmop4it3q/app.bsky.feed.post/3mg5g6ng37s2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "dorkland.itch.io",
+        "displayName": "Christopher Helton",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiekekxl42yhg4zwp4tn567pajrvcn32zzvdxxfntgkcfcneg7oeii@jpeg"
+      },
+      "record": {
+        "text": "The PDFs of my core books, the Action-Heroes #RPG and Adventures In The Unknown #TTRPG are currently on sale at DriveThruRPG as part of the GM's Day Sale, so it is a great time to pick them up! The updated POD edition looks like it is being processed, so Action-Heroes will be in print again soon!",
+        "createdAt": "2026-03-03T09:07:42.625Z"
+      },
+      "indexedAt": "2026-03-03T09:07:41.954Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com/en/publisher/30979/dorkland-press",
+        "title": "DriveThruRPG - The Largest RPG Download Store!",
+        "description": "Your one-stop online shop for new and vintage RPG products from the top publishers, delivered fresh to your desktop in electronic format.",
+        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -648,7 +709,7 @@
       "indexedAt": "2026-02-27T13:38:25.153Z",
       "replyCount": 3,
       "repostCount": 13,
-      "likeCount": 81,
+      "likeCount": 82,
       "embed": {
         "type": "images",
         "images": [
@@ -791,9 +852,9 @@
         "createdAt": "2026-02-26T13:47:37.491Z"
       },
       "indexedAt": "2026-02-26T13:47:52.751Z",
-      "replyCount": 9,
-      "repostCount": 105,
-      "likeCount": 200,
+      "replyCount": 10,
+      "repostCount": 107,
+      "likeCount": 202,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
@@ -924,8 +985,8 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 200,
-      "likeCount": 257,
+      "repostCount": 205,
+      "likeCount": 259,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
@@ -962,38 +1023,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
             "alt": "Hime live on Twitch!"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mfn45xdokn2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq@jpeg"
-      },
-      "record": {
-        "text": "Posting Skies Above until I find my audience. SNES era JRPG magic at your tabletop. Vibrant post apocalyptic world. d8 dice pool system. Ashcan available now. Kickstarter June 2025. The nostalgia crowd exists. Help me find them. losthavenart.com #ttrpg #SkiesAbove",
-        "createdAt": "2026-02-24T21:25:45.000Z"
-      },
-      "indexedAt": "2026-02-24T21:25:46.453Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 8,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreif6mx4qzo55xinshhlm7xlegky45jcs44it2ufb7il6w3ew44nulu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreif6mx4qzo55xinshhlm7xlegky45jcs44it2ufb7il6w3ew44nulu@jpeg",
-            "alt": ""
           }
         ]
       },
@@ -1054,38 +1083,6 @@
         "title": "NULL_SPACE by Binary Star Games",
         "description": "Freelancing in the solar system of the 24th century",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiczkt7fpsert7ukcxvbnvf2x5kswymthdg7l2r6sorap24x35ifxi@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mfmeprscnv2u",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq@jpeg"
-      },
-      "record": {
-        "text": "I dive into schedule changes/working around life events, share new cover images for StoryGuider, prep for the Mystery Snacks guest writer kick off, and get excited about SXSW EDU in the latest TTRPGkids dev log!\n\nCheck it out here for a behind the scenes on TTRPGkids:\nhttps://loom.ly/7Pm6SqY\n\n",
-        "createdAt": "2026-02-24T06:26:14-08:00"
-      },
-      "indexedAt": "2026-02-24T14:26:15.160Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihnkw75dcv77fvn5hbdz3bexpkdey2hbhln7cj5p7pquvvodp6b4y@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihnkw75dcv77fvn5hbdz3bexpkdey2hbhln7cj5p7pquvvodp6b4y@jpeg",
-            "alt": "TTRPGkids\nDev Log #18:\nCadence changes, project statuses, SXSW EDU"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1347,6 +1344,38 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:uxdwb43zmpejz2kysehemf5t/app.bsky.feed.post/3mdfq3uyods2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "yashiro-manabu.bsky.social",
+        "displayName": "\u3084\u3057\u308d\u5b66/Manabu YASHIRO",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicrlpjfflhs4hjyf2hlq2wcwlgk7lzio4l6jr6zcnfdwmb7cf3k5u@jpeg"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-01-27T12:10:50.305Z"
+      },
+      "indexedAt": "2026-01-27T12:11:00.249Z",
+      "replyCount": 0,
+      "repostCount": 99,
+      "likeCount": 351,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicldkmixfmalvbwuuyqwdkc45ctmccw66zwfajyl64k5znxinneye@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicldkmixfmalvbwuuyqwdkc45ctmccw66zwfajyl64k5znxinneye@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
       }
     },
     {
@@ -3243,7 +3272,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2619,
-      "likeCount": 15406,
+      "likeCount": 15405,
       "embed": {
         "type": "images",
         "images": [
