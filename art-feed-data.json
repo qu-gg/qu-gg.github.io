@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T00:11:15.794828Z",
+  "lastUpdated": "2026-03-06T12:03:46.871383Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-03-05T13:41:15.755Z",
       "replyCount": 11,
-      "repostCount": 26,
-      "likeCount": 83,
+      "repostCount": 31,
+      "likeCount": 103,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/rating-every-room-in-white-plume-mountain",
@@ -95,7 +95,7 @@
       "indexedAt": "2026-03-05T01:52:50.450Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 20,
+      "likeCount": 21,
       "embed": {
         "type": "images",
         "images": [
@@ -188,7 +188,7 @@
       "indexedAt": "2026-03-03T18:15:10.353Z",
       "replyCount": 3,
       "repostCount": 16,
-      "likeCount": 70,
+      "likeCount": 71,
       "embed": {
         "type": "images",
         "images": [
@@ -652,7 +652,7 @@
       "indexedAt": "2026-02-27T17:49:17.153Z",
       "replyCount": 1,
       "repostCount": 13,
-      "likeCount": 40,
+      "likeCount": 41,
       "embed": {
         "type": "images",
         "images": [
@@ -836,7 +836,7 @@
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f GAMA",
+        "displayName": "Weird Place \u27a1\ufe0f BreakOut Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -963,7 +963,7 @@
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f GAMA",
+        "displayName": "Weird Place \u27a1\ufe0f BreakOut Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -1033,40 +1033,11 @@
       }
     },
     {
-      "uri": "at://did:plc:ryzsihmqyivrfc6rnfks43ro/app.bsky.feed.post/3mfnwfduy7k2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "lorenzohall.com",
-        "displayName": "Lorenzo Hall \ud83c\udf49",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreihoej52pq7ofigcmyltxfrup2jk34l6rqu3d6qvhwmouwybrx6hui@jpeg"
-      },
-      "record": {
-        "text": "ARISAN KICKSTARTER IS NOW LIVE!\n\nMotion Comic Teaser Trailer here!\n\nPlease support and share the campaign: www.kickstarter.com/projects/526...",
-        "createdAt": "2026-02-25T05:15:11.566Z"
-      },
-      "indexedAt": "2026-02-25T05:15:13.850Z",
-      "replyCount": 10,
-      "repostCount": 211,
-      "likeCount": 268,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
-        "title": "Arisan: Kickstarter Campaign Trailer",
-        "description": "YouTube video by Lorenzo Hall",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreiaee76zr35wtccksigcggriioaj26dty2xwqjpwnmdpegqvwshn6i@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mfmorwmqes2q",
       "source": "bluesky",
       "author": {
         "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f GAMA",
+        "displayName": "Weird Place \u27a1\ufe0f BreakOut Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
       },
       "record": {
@@ -1896,8 +1867,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1193,
-      "likeCount": 6311,
+      "repostCount": 1194,
+      "likeCount": 6312,
       "embed": {
         "type": "images",
         "images": [
@@ -2052,6 +2023,35 @@
       "repostBy": null
     },
     {
+      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3m7pwykcows2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdwonder.bsky.social",
+        "displayName": "Amanda P. \u27a1\ufe0f GaryCon",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky@jpeg"
+      },
+      "record": {
+        "text": "One of my favorite artists and people, Skullboy, is making an illustrated book of Demons as part of OSE Month. Follow it on Backerkit!\nwww.backerkit.com/call_to_acti...",
+        "createdAt": "2025-12-11T16:00:05.551Z"
+      },
+      "indexedAt": "2025-12-11T16:00:07.439Z",
+      "replyCount": 1,
+      "repostCount": 12,
+      "likeCount": 43,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/call_to_action/31b74af1-fbf8-447e-94f1-f1cfed1934b3/landing?preview_mode=true",
+        "title": "Get Ready for Skullboy's Illustrated Guide to Demons",
+        "description": "From Better Legends - Get Ready for Skullboy's Illustrated Guide to Demons",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreif7wggmezznyhkoky2tk4plj7vfrg37iizhwf3rk6jvqjge56rtqy@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
       "uri": "https://www.artstation.com/artwork/Ov9d2K",
       "source": "artstation",
       "author": {
@@ -2178,7 +2178,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 616,
-      "likeCount": 2719,
+      "likeCount": 2720,
       "embed": {
         "type": "images",
         "images": [
