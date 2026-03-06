@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T12:05:12.843250Z",
+  "lastUpdated": "2026-03-06T00:11:15.794828Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mgcwflnjm22y",
+      "source": "bluesky",
+      "author": {
+        "handle": "prismaticwasteland.com",
+        "displayName": "Prismatic Wasteland",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu@jpeg"
+      },
+      "record": {
+        "text": "I rate every room in White Plume Mountain (X out of 5 Stars) and explain why each room does, or does not, work and how you can take these lessons into designing your own dungeons, be they of the funhouse variety or not\n#osr #ttrpg",
+        "createdAt": "2026-03-05T13:41:14.216Z"
+      },
+      "indexedAt": "2026-03-05T13:41:15.755Z",
+      "replyCount": 11,
+      "repostCount": 26,
+      "likeCount": 83,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.prismaticwasteland.com/blog/rating-every-room-in-white-plume-mountain",
+        "title": "Rating Every Room in White Plume Mountain \u2014 Prismatic Wasteland",
+        "description": "I review every single room (and some non-rooms) in the original funhouse dungeon and describe what makes them work or not work and what is worth stealing for your dungeons and what you should avoid, a...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaavoqjrv3ipxu5immof2d6g34y5xefzb3mbih36vkjnlt5fyayd4@jpeg"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+      }
+    },
+    {
+      "uri": "at://did:plc:cyxgpxyjx73ayx5hxttz2tcw/app.bsky.feed.post/3mgbosvv4ec2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "basileuscomic.bsky.social",
+        "displayName": "Basileus Comic - (Currently on Kickstarter come take a peeeek)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cyxgpxyjx73ayx5hxttz2tcw/bafkreibttqgble45efxgpnlzmsoya2rft7jlegj7mq576ay34g2h5d4ty4@jpeg"
+      },
+      "record": {
+        "text": "Pictured: You, after reading the second or third greatest fantasy comic you got off KICKSTARTER (www.kickstarter.com/projects/bas...)",
+        "createdAt": "2026-03-05T01:52:51.485Z"
+      },
+      "indexedAt": "2026-03-05T01:52:50.450Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cyxgpxyjx73ayx5hxttz2tcw/bafkreietufx2pt3jcplk57zkfvbtmw2uvqmccdlbl6necerynzvqom67i4@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cyxgpxyjx73ayx5hxttz2tcw/bafkreietufx2pt3jcplk57zkfvbtmw2uvqmccdlbl6necerynzvqom67i4@jpeg",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+      }
+    },
+    {
       "uri": "at://did:plc:tq5dvd5b6unuvvfr55l5p6io/app.bsky.feed.post/3mgamdcyi7k26",
       "source": "bluesky",
       "author": {
@@ -66,7 +127,7 @@
       "indexedAt": "2026-03-04T15:35:44.961Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 11,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -127,7 +188,7 @@
       "indexedAt": "2026-03-03T18:15:10.353Z",
       "replyCount": 3,
       "repostCount": 16,
-      "likeCount": 69,
+      "likeCount": 70,
       "embed": {
         "type": "images",
         "images": [
@@ -187,7 +248,7 @@
       "indexedAt": "2026-03-03T14:50:43.059Z",
       "replyCount": 2,
       "repostCount": 13,
-      "likeCount": 24,
+      "likeCount": 25,
       "embed": {
         "type": "images",
         "images": [
@@ -854,7 +915,7 @@
       "indexedAt": "2026-02-26T13:47:52.751Z",
       "replyCount": 10,
       "repostCount": 107,
-      "likeCount": 203,
+      "likeCount": 204,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
@@ -985,46 +1046,14 @@
       },
       "indexedAt": "2026-02-25T05:15:13.850Z",
       "replyCount": 10,
-      "repostCount": 205,
-      "likeCount": 260,
+      "repostCount": 211,
+      "likeCount": 268,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=UTZOt4-Vwm4",
         "title": "Arisan: Kickstarter Campaign Trailer",
         "description": "YouTube video by Lorenzo Hall",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreiaee76zr35wtccksigcggriioaj26dty2xwqjpwnmdpegqvwshn6i@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mfnk43627k2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "hime.vtubers.social",
-        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreigqztf4ec2aevm5lc7rc542ssvv4c4skxd2xqhmnsjlpfsoykdo6m@jpeg"
-      },
-      "record": {
-        "text": "Let's talk about Legends of Akeroth!!!! twitch.tv/himeutsugi #vtubers #vsky #ttrpg #solottrpg",
-        "createdAt": "2026-02-25T01:35:15.530Z"
-      },
-      "indexedAt": "2026-02-25T01:35:20.351Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 12,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm@jpeg",
-            "alt": "Hime live on Twitch!"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2023,34 +2052,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3maef5xi57k2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      },
-      "record": {
-        "text": "START for BREAK!! RPG\nComing soon\n\nwww.kickstarter.com/projects/bre...",
-        "createdAt": "2025-12-19T19:06:54.264Z"
-      },
-      "indexedAt": "2025-12-19T19:06:58.333Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 31,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiceez5akxznaxrbj6bl74onnmkzuxwftzx5ryixjmrfdtjr5q62q4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiceez5akxznaxrbj6bl74onnmkzuxwftzx5ryixjmrfdtjr5q62q4@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/Ov9d2K",
       "source": "artstation",
       "author": {
@@ -2491,8 +2492,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1937,
-      "likeCount": 8373,
+      "repostCount": 1936,
+      "likeCount": 8372,
       "embed": {
         "type": "images",
         "images": [
@@ -3216,7 +3217,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1871,
-      "likeCount": 8943,
+      "likeCount": 8942,
       "embed": {
         "type": "images",
         "images": [
@@ -3284,35 +3285,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3lazlfsuqmd2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "hodagrpg.bsky.social",
-        "displayName": "HODAG RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreibexamxohopdtig66gpjhxep3hkrp4grvkrspdy3bhiznc4e344ce@jpeg"
-      },
-      "record": {
-        "text": "Wanna dungeoncrawl on your Lunchbreak? \n*Beneath The Dungeonfloor!* has you covered! A simple 1d6 resolution system with loads of dungeon exploration and world building tools in a compact, 3 page pamphlet!\n\nDiscover the JOY of solo roleplay for the low price of PWYW!\nhodagrpg.itch.io/dungeonfloor",
-        "createdAt": "2024-11-15T23:58:22.652Z"
-      },
-      "indexedAt": "2024-11-15T23:58:23.001Z",
-      "replyCount": 2,
-      "repostCount": 17,
-      "likeCount": 59,
-      "embed": {
-        "type": "external",
-        "uri": "https://hodagrpg.itch.io/dungeonfloor",
-        "title": "Beneath! The Dungeonfloor! by HodagRPG",
-        "description": "A LUNCH'N'CRAWL ADVENTURE BY HODAG RPG",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreiarghj5ajqs6aeqv4blf2tf2ywgntnca3t6dubqkxrk2gdsgzrspa@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/y4Qg6K",
