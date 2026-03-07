@@ -1,22 +1,22 @@
 {
-  "lastUpdated": "2026-03-06T12:03:46.871383Z",
+  "lastUpdated": "2026-03-07T00:05:38.990719Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
       "displayName": "Reynaldo",
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg",
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa",
       "source": "bluesky"
     },
     "bluesky:greywizard.bsky.social": {
       "handle": "greywizard.bsky.social",
       "displayName": "Grey Wizard",
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg",
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha",
       "source": "bluesky"
     },
     "bluesky:underpalewater.bsky.social": {
       "handle": "underpalewater.bsky.social",
       "displayName": "Underpalewater",
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg",
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu",
       "source": "bluesky"
     },
     "artstation:nickbray": {
@@ -52,32 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:biffqf73z7fhkfydwbtaddqd/app.bsky.feed.post/3mgfsl23mqk2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "shawntomkin.bsky.social",
+        "displayName": "Shawn Tomkin",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreiarfi5ckxuvwq3hycpigtqotle2ujflrlwvy7scf5r6ls6426m2tu"
+      },
+      "record": {
+        "text": "Everything is awful, but this very kind Ironsworn comment over at EN World sure did put some wind in my sails.",
+        "createdAt": "2026-03-06T17:10:41.378Z"
+      },
+      "indexedAt": "2026-03-06T17:10:43.458Z",
+      "replyCount": 1,
+      "repostCount": 8,
+      "likeCount": 76,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreie7sclgytw573i2ougyxruujahefpb5oxn22nvgc3md7zuvuv6aam",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreie7sclgytw573i2ougyxruujahefpb5oxn22nvgc3md7zuvuv6aam",
+            "alt": "A screencap of a forum post. It reads:\n\nThis is my fourth run with Ironsworn since discovering the system in 2021.\n\nOne game solo.\nOne GM-led game with me as GM + 4 players playing bog-standard Ironsworn classic.\nOne co-op game with me + 1 playing Ironsworn: Starforged.\nJust started co-op game with me + 1, with another + 1 friend to be joining, playing Ironsworn classic with a setting shift to ancient Greece.\n\nEvery single time I have turned to this system to run a game, as long as I follow its core premises, procedures, and ethos, it has delivered beyond my expectations each time. It's fun, it's engaging, it produces compelling gameplay and narratives.\n\nIt's almost . . . eerie, in a sense. Like, there's a secretly a part of me that keeps thinking, \"Surely this game can't be this good. Surely it's going to be a let down at some point, or not deliver the goods.\"\n\nBut that secret fear continues to be smashed every time I use Ironsworn in play.\n\nIt's a wholly unique experience of its own that is unlike anything else I have played. It delivers a level of energy and engagement that is unique, and frankly rare relative to other roleplaying experiences I've had. Maybe 1-in-3 or 1-in-4 sessions of other games I've played consistently reach that same level of engagement I've seen in nearly every session of Ironsworn I've ever held."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mgcwflnjm22y",
       "source": "bluesky",
       "author": {
         "handle": "prismaticwasteland.com",
         "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
       },
       "record": {
         "text": "I rate every room in White Plume Mountain (X out of 5 Stars) and explain why each room does, or does not, work and how you can take these lessons into designing your own dungeons, be they of the funhouse variety or not\n#osr #ttrpg",
         "createdAt": "2026-03-05T13:41:14.216Z"
       },
       "indexedAt": "2026-03-05T13:41:15.755Z",
-      "replyCount": 11,
-      "repostCount": 31,
-      "likeCount": 103,
+      "replyCount": 13,
+      "repostCount": 32,
+      "likeCount": 112,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/rating-every-room-in-white-plume-mountain",
         "title": "Rating Every Room in White Plume Mountain \u2014 Prismatic Wasteland",
         "description": "I review every single room (and some non-rooms) in the original funhouse dungeon and describe what makes them work or not work and what is worth stealing for your dungeons and what you should avoid, a...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaavoqjrv3ipxu5immof2d6g34y5xefzb3mbih36vkjnlt5fyayd4@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaavoqjrv3ipxu5immof2d6g34y5xefzb3mbih36vkjnlt5fyayd4"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-03-05T01:52:50.450Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 21,
+      "repostCount": 8,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -109,7 +141,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -141,7 +173,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -150,7 +182,7 @@
       "author": {
         "handle": "bastionland.bsky.social",
         "displayName": "Bastionland Press",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
       },
       "record": {
         "text": "Playing Mythic Bastionland with a big group?\n\nwww.bastionland.com/2026/03/big-...",
@@ -170,7 +202,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -179,7 +211,7 @@
       "author": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       },
       "record": {
         "text": "A thread of non-obvious things that either influenced BREAK!! and/or make for good BREAK!! inspiration in my opinion. I am going to add to this as I think of new ones (or maybe even find them)",
@@ -193,8 +225,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigxsouygrowub4i7y7nkvwqto4xyvibjvetwp6l3twp4frwfoofgm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigxsouygrowub4i7y7nkvwqto4xyvibjvetwp6l3twp4frwfoofgm@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigxsouygrowub4i7y7nkvwqto4xyvibjvetwp6l3twp4frwfoofgm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigxsouygrowub4i7y7nkvwqto4xyvibjvetwp6l3twp4frwfoofgm",
             "alt": "A hooded woman looking through various tomes with a glowing crystal providing her light. She's tired. We all are."
           }
         ]
@@ -207,7 +239,7 @@
       "author": {
         "handle": "losthavenart.bsky.social",
         "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
       },
       "record": {
         "text": "So Lost Haven Studios is the name now. Better fit for game publishing and art commissions. Celebrating with up to 50% off the whole shop through March 31. losthavenart.com #indierpg",
@@ -221,8 +253,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreieopk5ahxd62nkdvjf4cwf4m5d6pwlwl6lehstkhohoxwt45225mm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreieopk5ahxd62nkdvjf4cwf4m5d6pwlwl6lehstkhohoxwt45225mm@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreieopk5ahxd62nkdvjf4cwf4m5d6pwlwl6lehstkhohoxwt45225mm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreieopk5ahxd62nkdvjf4cwf4m5d6pwlwl6lehstkhohoxwt45225mm",
             "alt": ""
           }
         ]
@@ -230,7 +262,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -239,7 +271,7 @@
       "author": {
         "handle": "sandroad.moe",
         "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am"
       },
       "record": {
         "text": "BLOG POST TODAY \n\nThis one's short and sweet and asks the age old question; Is the juice worth the squeeze?\n\nwww.failforward.moe/2026/03/is-j...",
@@ -253,8 +285,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifrakm2py22zrsasw534ua6jiyczujqzgppnu3qnbbwi3tshdtbk4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifrakm2py22zrsasw534ua6jiyczujqzgppnu3qnbbwi3tshdtbk4@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifrakm2py22zrsasw534ua6jiyczujqzgppnu3qnbbwi3tshdtbk4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifrakm2py22zrsasw534ua6jiyczujqzgppnu3qnbbwi3tshdtbk4",
             "alt": "Title card for \"Is the juice worth the squeeze\" with royalty free juice being squeezed and doro in the background "
           }
         ]
@@ -262,7 +294,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -271,7 +303,7 @@
       "author": {
         "handle": "threesailsstudios.bsky.social",
         "displayName": "Three Sails Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zam5idrbj7th6lc6g5jlkzkv/bafkreieduy66p7b5zqxi5bglxvjevn5ptqyqll4hxivzavg47gsmgw24gy@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zam5idrbj7th6lc6g5jlkzkv/bafkreieduy66p7b5zqxi5bglxvjevn5ptqyqll4hxivzavg47gsmgw24gy"
       },
       "record": {
         "text": "We're in the final eight hours for GALLOWS CORNER!\n\nOur print files are being finalised tomorrow and delivered on Thursday, so backers will have copies in hand by the summer.\n\nMake sure you get your copy by backing today! www.kickstarter.com/projects/thr...",
@@ -286,12 +318,12 @@
         "uri": "https://www.kickstarter.com/projects/threesailsstudios/gallows-corner-a-peasants-revolt-rpg?ref=2t6oyt",
         "title": "Gallows Corner - A Peasants' Revolt RPG",
         "description": "Rise up, ye pitiful commons! Throw off your shackles and take up the call: there is a brighter future beyond the noose!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zam5idrbj7th6lc6g5jlkzkv/bafkreido7kfh5wknijms7rz2b2vcrjoj6u5r6fyz5mz7ytvq34moj7eyxu@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zam5idrbj7th6lc6g5jlkzkv/bafkreido7kfh5wknijms7rz2b2vcrjoj6u5r6fyz5mz7ytvq34moj7eyxu"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -300,7 +332,7 @@
       "author": {
         "handle": "dorkland.itch.io",
         "displayName": "Christopher Helton",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiekekxl42yhg4zwp4tn567pajrvcn32zzvdxxfntgkcfcneg7oeii@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiekekxl42yhg4zwp4tn567pajrvcn32zzvdxxfntgkcfcneg7oeii"
       },
       "record": {
         "text": "The PDFs of my core books, the Action-Heroes #RPG and Adventures In The Unknown #TTRPG are currently on sale at DriveThruRPG as part of the GM's Day Sale, so it is a great time to pick them up! The updated POD edition looks like it is being processed, so Action-Heroes will be in print again soon!",
@@ -320,7 +352,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -329,7 +361,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "",
@@ -343,8 +375,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaaupftwka4ljtk7w7tbsofndpnag5eardpprzrh3efiowhph7xzi",
             "alt": ""
           }
         ]
@@ -377,7 +409,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -425,7 +457,7 @@
       "author": {
         "handle": "ehronlime.bsky.social",
         "displayName": "Aaron Lim \u6797\u5bb6\u4e30",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreihuwabu4w42rxmmj3ja6lbxnttdbmg7x5axec2sqrmluvjpkasy5m@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreihuwabu4w42rxmmj3ja6lbxnttdbmg7x5axec2sqrmluvjpkasy5m"
       },
       "record": {
         "text": "They announced my stretch goal for Blades '68! Let's get to $390,000 so I can write about The Inaugural Crowfoot Wargaming Convention of '68 (which split of from the Charterhall Conference On Historical and Strategic Wargames that started two years before). www.backerkit.com/c/projects/e...",
@@ -439,8 +471,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq",
             "alt": "Graphic from the Blades '68 BackerKit crowdfunding campaign, showing stretch goal contributors Avalyn Ramsay writing \"Psychic Commie Rats\" and Aaron Lim writing \"Report on the Inaugural Crowfoot Wargaming Convention of '68\"."
           }
         ]
@@ -448,7 +480,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -480,7 +512,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -517,7 +549,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -526,7 +558,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "",
@@ -540,8 +572,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifn42ca6r6iiu7od5vq4crzczgaeaox3jgjgmg6f6week7ov2hljq",
             "alt": ""
           }
         ]
@@ -554,7 +586,7 @@
       "author": {
         "handle": "pennyblake.bsky.social",
         "displayName": "Penny Blake is waiting for blood",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4"
       },
       "record": {
         "text": "I put years of work into this game and it has beautiful artwork by amazing artists. I think it's worth $10 BUT this weekend it's PWYW because I REALLY need some money to cover food and bills rn\ud83d\ude05Anything wd help and you get a (probably my best) game t'boot\ud83e\udd2d pennyblake.itch.io/curiomancers",
@@ -569,12 +601,12 @@
         "uri": "https://pennyblake.itch.io/curiomancers",
         "title": "CURIOMANCERS by PennyBlake",
         "description": "A MULTIPLAYER RPG",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreiho4sxmrjdmisqlh5uyskmckptznvghz3x6yqovyjjbwdca6p4nuy@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreiho4sxmrjdmisqlh5uyskmckptznvghz3x6yqovyjjbwdca6p4nuy"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -606,7 +638,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -615,7 +647,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "",
@@ -629,8 +661,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiafecvw5epao6qgpt2wucihobuwuekpaeynx4iz3cugdyqkmpooze@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiafecvw5epao6qgpt2wucihobuwuekpaeynx4iz3cugdyqkmpooze@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiafecvw5epao6qgpt2wucihobuwuekpaeynx4iz3cugdyqkmpooze",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiafecvw5epao6qgpt2wucihobuwuekpaeynx4iz3cugdyqkmpooze",
             "alt": ""
           }
         ]
@@ -666,7 +698,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -675,7 +707,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "",
@@ -689,8 +721,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicxdspvlxclwfqrkxbkjkmriwvmjjeezn3obrbrquuxldar2u3mwa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicxdspvlxclwfqrkxbkjkmriwvmjjeezn3obrbrquuxldar2u3mwa@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicxdspvlxclwfqrkxbkjkmriwvmjjeezn3obrbrquuxldar2u3mwa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicxdspvlxclwfqrkxbkjkmriwvmjjeezn3obrbrquuxldar2u3mwa",
             "alt": ""
           }
         ]
@@ -723,7 +755,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -732,7 +764,7 @@
       "author": {
         "handle": "prismaticwasteland.com",
         "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
       },
       "record": {
         "text": "Pok\u00e9mon Is OSR. Yes, seriously \n#osr #ttrpg #pokemon",
@@ -747,12 +779,12 @@
         "uri": "https://www.prismaticwasteland.com/blog/pokmon-is-osr",
         "title": "Pok\u00e9mon Is OSR \u2014 Prismatic Wasteland",
         "description": "I elucidate the ways that the Pok\u00e9mon games embody several principles of the OSR playstyle, which is maybe unsurprising when you consider the history of JRPGs.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreidg55bs5thaql6z7573hr62xrojotstujgnjkxeqlpoteedlc7cmu@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreidg55bs5thaql6z7573hr62xrojotstujgnjkxeqlpoteedlc7cmu"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -799,7 +831,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -808,7 +840,7 @@
       "author": {
         "handle": "idlecartulary.itch.io",
         "displayName": "Idle Cartulary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreigzxrqnbvhsgx7hovfepuitdaj2kqu4nnigg3vxvul7yx6unemp5i"
       },
       "record": {
         "text": "Continuing my little series on basic dice math, I talk about advantage and its variations: idlecartulary.com/2026/02/27/t...",
@@ -823,12 +855,12 @@
         "uri": "https://idlecartulary.com/2026/02/27/taking-the-highest-die-make-dice-work-for-you-4/",
         "title": "Taking the Highest Die (Make Dice Work For You #4)",
         "description": "Make Dice Work For You is a series where I\u2019ll regularly talk through a new way to use dice in your game. It came out of conversation surrounding What to randomise when you\u2019re randomising, and what \u2026",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreih6v4ikakte6qz3uagfebjrrsyytkualwhsuirjfvrfbfbqiodnli@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:c45er5gruigwp3yqcptz6hv4/bafkreih6v4ikakte6qz3uagfebjrrsyytkualwhsuirjfvrfbfbqiodnli"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -865,7 +897,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -897,7 +929,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -906,7 +938,7 @@
       "author": {
         "handle": "prismaticwasteland.com",
         "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
       },
       "record": {
         "text": "Catch \u2018Em All while you can! In commemoration of the 30th anniversary, I\u2019m heistfunding a Pok\u00e9pocalyptic game based on Into the Odd. I call it INTO THE ODDISH! \nYou can pre-order it now (until ???)\n#ttrpg #pokemon #osr",
@@ -915,18 +947,18 @@
       "indexedAt": "2026-02-26T13:47:52.751Z",
       "replyCount": 10,
       "repostCount": 107,
-      "likeCount": 204,
+      "likeCount": 205,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
         "title": "Into the Oddish is Heistfunding Now \u2014 Prismatic Wasteland",
         "description": "Pre-Order a Pok\u00e9mon tabletop roleplaying game parody of Into the Odd with Vileplume Mountain, a funhouse dungeon adventure.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreibim3xchjfyitwxbqebngppwvlbz4xpxju5wttpqqljcjhapwpsdm@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreibim3xchjfyitwxbqebngppwvlbz4xpxju5wttpqqljcjhapwpsdm"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -955,7 +987,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -973,7 +1005,7 @@
       "indexedAt": "2026-02-25T17:35:20.655Z",
       "replyCount": 1,
       "repostCount": 12,
-      "likeCount": 23,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -997,97 +1029,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mfp6pqc3x22a",
-      "source": "bluesky",
-      "author": {
-        "handle": "voxparlour.bsky.social",
-        "displayName": "Scott M \ud83c\udf44",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreibddcsdlhk2csmkkyg6pzxubptl7kqwrgzop7zjhjvxnlznjnrg4i@jpeg"
-      },
-      "record": {
-        "text": "I want to run through the main rules for Tunnels & Trolls: A New Age. Get your d6s ready for a thready \ud83e\uddf5",
-        "createdAt": "2026-02-25T17:16:49.786Z"
-      },
-      "indexedAt": "2026-02-25T17:16:52.364Z",
-      "replyCount": 2,
-      "repostCount": 12,
-      "likeCount": 40,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreicxteb25svrqt2vdxeds67mwbvg4frpg7gd26o5gatxihiwsnoycu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreicxteb25svrqt2vdxeds67mwbvg4frpg7gd26o5gatxihiwsnoycu@jpeg",
-            "alt": "A huge rocky troll holding an adventurer with a sword"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mfmorwmqes2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f BreakOut Con",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu@jpeg"
-      },
-      "record": {
-        "text": "A preview of @crossedpaths.co.uk new JRPG, Legends of Akeroth! It's crunchy, cozy, and cute!",
-        "createdAt": "2026-02-24T17:26:24.199Z"
-      },
-      "indexedAt": "2026-02-24T17:26:27.163Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 19,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/XFVeQBrMruc",
-        "title": "Legends of Akeroth - The TTJRPG for Solo AND Party Play",
-        "description": "YouTube video by Weird Place",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreiftokxvnozk5fpxz52hfriuvthtn4fudwjpiqh4jxmzwafmgfpnni@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
-      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mfmk53phrc2g",
-      "source": "bluesky",
-      "author": {
-        "handle": "binarystar.games",
-        "displayName": "Binary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim@jpeg"
-      },
-      "record": {
-        "text": "The final pamphlet job for NULL_SPACE is up! (This is the last week of itchfunding. Get in while you can.)\n\nbinary-star-games.itch.io/null-space",
-        "createdAt": "2026-02-24T16:03:09.921Z"
-      },
-      "indexedAt": "2026-02-24T16:03:11.766Z",
-      "replyCount": 1,
-      "repostCount": 27,
-      "likeCount": 29,
-      "embed": {
-        "type": "external",
-        "uri": "https://binary-star-games.itch.io/null-space",
-        "title": "NULL_SPACE by Binary Star Games",
-        "description": "Freelancing in the solar system of the 24th century",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiczkt7fpsert7ukcxvbnvf2x5kswymthdg7l2r6sorap24x35ifxi@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1096,7 +1038,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "Missed Zelda Day, but here's an easter egg in BREAK!!\n\nWho's this cat doing the laundry for?",
@@ -1110,8 +1052,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreig4t7d6pssgvqxuh2oujve4rkawh7dch7qfpvyawm7toozikrfasm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreig4t7d6pssgvqxuh2oujve4rkawh7dch7qfpvyawm7toozikrfasm@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreig4t7d6pssgvqxuh2oujve4rkawh7dch7qfpvyawm7toozikrfasm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreig4t7d6pssgvqxuh2oujve4rkawh7dch7qfpvyawm7toozikrfasm",
             "alt": ""
           }
         ]
@@ -1124,7 +1066,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "In START (for BREAK!!) adventure locations will have 'architectural' drawings to help GMs/Players visualise the space (complementing conventional maps and illustrations)\n\nFollow here...\nwww.kickstarter.com/projects/gre...",
@@ -1138,13 +1080,13 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3toluh2wkgi4tvfsodrwp2t3567vss72vqjxqwdigc5pjsyyxeq",
             "alt": ""
           },
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreid4gke2l3ee6jcxwee5n4cv3vh7r2ytraxxbdp3ss6od55trg6hii",
             "alt": ""
           }
         ]
@@ -1152,41 +1094,12 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:qemwd4cvtncqxlqiyr43lntj/app.bsky.feed.post/3meoehcrvz52a",
-      "source": "bluesky",
-      "author": {
-        "handle": "pacogmsmagazine.bsky.social",
-        "displayName": "Paco GMS Magazine",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qemwd4cvtncqxlqiyr43lntj/bafkreiccfrpyo545w74xekn5fl466l4paqtgemuvpz732bxaueceg6s5dm@jpeg"
-      },
-      "record": {
-        "text": "BREAK!!! is a super cute #TTJRPG with a anime/Zelda type aesthetic that didn't leave me indiferent. Here is my first impressions video. I think you will be impressed with this little gem. youtu.be/gvwMX9bVJgU",
-        "createdAt": "2026-02-12T16:01:24.609Z"
-      },
-      "indexedAt": "2026-02-12T16:01:38.856Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 9,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/gvwMX9bVJgU",
-        "title": "Break!!! a first look at his gorgeous TTRPG",
-        "description": "BREAK!! is an easy-to-play tabletop RPG of exploration & teamwork, its gameplay and aesthetics are inspired by classic anime and SNES era videogames, along with wistful fantasy novels and\u2026",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qemwd4cvtncqxlqiyr43lntj/bafkreigqku726dyvbtzt6rtxcqlhh24sbz2afkzlya5u57rl5zgyn5yxfa@jpeg"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
-      }
-    },
-    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mel4ce5ltc2x",
       "source": "bluesky",
       "author": {
         "handle": "bastionland.bsky.social",
         "displayName": "Bastionland Press",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
       },
       "record": {
         "text": "It's been exciting and terrifying reading all the questions, hopes, and fears about Intergalactic Bastionland.\n\nI'll shed some light during tonight's stream, reading through the playtest doc and talking about my goals for the game.\n\nJoin me in 12 hours at 9pm GMT.\n\nwww.youtube.com/live/xloSEPJ...",
@@ -1201,12 +1114,12 @@
         "uri": "https://www.youtube.com/live/xloSEPJV18M",
         "title": "Intergalactic Bastionland Playtest Chat",
         "description": "YouTube video by Bastionland",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreihkz632gnnohc42hvm5hirnltnlev4gd5u2dswnzrw7xshkyhk5ti@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreihkz632gnnohc42hvm5hirnltnlev4gd5u2dswnzrw7xshkyhk5ti"
       },
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1343,7 +1256,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1375,7 +1288,7 @@
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -1486,7 +1399,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1495,7 +1408,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "Who better to prepare wannabe adventurers for the Shadowed lands than the legendary Kuro's",
@@ -1509,8 +1422,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta",
             "alt": ""
           }
         ]
@@ -1546,7 +1459,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1555,7 +1468,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "I day dream of a future where I've actually finished more than one project. Doing mock ups helps me manifest. \ud83e\uddd8\ud83d\udcaa\ud83d\udd7a",
@@ -1569,13 +1482,13 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigskgvdapqszvjyxyktydeqqlqio3eym73sdz3xpz4oxfw5ikcsmm",
             "alt": ""
           },
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreieppcmg3tqcavn2fwi3cq7ailk5zjo5tk5eidk5jwt7uqox646bmi",
             "alt": ""
           }
         ]
@@ -1611,7 +1524,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1658,7 +1571,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1736,7 +1649,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "START - Tutorial adventure site for BREAK!! RPG\nwww.kickstarter.com/projects/bre...",
@@ -1750,13 +1663,13 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3qolvvxmlajk33iwacb4qx4lmmkyw3w77drxwokx3mjcez57ega@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3qolvvxmlajk33iwacb4qx4lmmkyw3w77drxwokx3mjcez57ega@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3qolvvxmlajk33iwacb4qx4lmmkyw3w77drxwokx3mjcez57ega",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreif3qolvvxmlajk33iwacb4qx4lmmkyw3w77drxwokx3mjcez57ega",
             "alt": ""
           },
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibjsxwirrcxksmjth7uxeqtb42it4yhabzzv76mlu3xdhebciktdq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibjsxwirrcxksmjth7uxeqtb42it4yhabzzv76mlu3xdhebciktdq@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibjsxwirrcxksmjth7uxeqtb42it4yhabzzv76mlu3xdhebciktdq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibjsxwirrcxksmjth7uxeqtb42it4yhabzzv76mlu3xdhebciktdq",
             "alt": ""
           }
         ]
@@ -1769,7 +1682,7 @@
       "author": {
         "handle": "save.vs.totalpartykill.ca",
         "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve"
       },
       "record": {
         "text": "Everyone is sharing these end of year best of posts, but I post about the best books of 2025 during the summer of 2026, like god intended. So until then you can re-enjoy my favourite books of 2024 instead. They are great.\n\nsave.vs.totalpartykill.ca/blog/awards-...",
@@ -1784,12 +1697,12 @@
         "uri": "https://save.vs.totalpartykill.ca/blog/awards-2024/",
         "title": "Save vs. Total Party Kill - Ramanan Sivaranjan Awards for Excellence in Gaming 2025",
         "description": "My friend Warren messaged me a few days ago. \u201cRam,\u201d he said, \u201creminder to write the Rammies, Ennies are in 2 days.\u201dWait, what? The year zooms by and I\u2019m always caught on the back foot. Even with the w...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreihagkyk7scov34bz345ih3uikd33r4wr3pnwug6455jvyed7s7tzm@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreihagkyk7scov34bz345ih3uikd33r4wr3pnwug6455jvyed7s7tzm"
       },
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1818,7 +1731,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1850,7 +1763,7 @@
       "repostBy": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1859,7 +1772,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -1873,8 +1786,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiendtbh5cmmgkgvbofguiapqt4yk3hczdty3vtsekkgxw3e7hgdwi@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiendtbh5cmmgkgvbofguiapqt4yk3hczdty3vtsekkgxw3e7hgdwi@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiendtbh5cmmgkgvbofguiapqt4yk3hczdty3vtsekkgxw3e7hgdwi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiendtbh5cmmgkgvbofguiapqt4yk3hczdty3vtsekkgxw3e7hgdwi",
             "alt": ""
           }
         ]
@@ -1916,7 +1829,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "Paladins in hell",
@@ -1930,8 +1843,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiezkdk5wosv6jxrnwrk3uot6cea4m4pxjc5iz5cy3aocmra5npqlu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiezkdk5wosv6jxrnwrk3uot6cea4m4pxjc5iz5cy3aocmra5npqlu@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiezkdk5wosv6jxrnwrk3uot6cea4m4pxjc5iz5cy3aocmra5npqlu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiezkdk5wosv6jxrnwrk3uot6cea4m4pxjc5iz5cy3aocmra5npqlu",
             "alt": ""
           }
         ]
@@ -1944,7 +1857,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "A ttrpg about elderly nosferatu?",
@@ -1958,8 +1871,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihrqv6asnr6purym673q4pj5eudtzjuuuvt443x3bhpnycsansmr4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihrqv6asnr6purym673q4pj5eudtzjuuuvt443x3bhpnycsansmr4@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihrqv6asnr6purym673q4pj5eudtzjuuuvt443x3bhpnycsansmr4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihrqv6asnr6purym673q4pj5eudtzjuuuvt443x3bhpnycsansmr4",
             "alt": ""
           }
         ]
@@ -1972,7 +1885,7 @@
       "author": {
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       },
       "record": {
         "text": "You're a mischief of rats, cursed with sentience. In deep forgotten places you now follow adventurers around dungeons, biting their heals, stealing their gems, and eating their rations.\n#OSR #TinyRPG",
@@ -1986,36 +1899,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiamtlcc3uuu7pyal4bpun2iyna6hkyjxbylcbqit4hvprkypvjeim@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiamtlcc3uuu7pyal4bpun2iyna6hkyjxbylcbqit4hvprkypvjeim@jpeg",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3maefbiykjc2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha@jpeg"
-      },
-      "record": {
-        "text": "START for BREAK!! RPG\nEncounter table art\n\nwww.kickstarter.com/projects/bre...",
-        "createdAt": "2025-12-19T19:08:53.275Z"
-      },
-      "indexedAt": "2025-12-19T19:08:58.727Z",
-      "replyCount": 2,
-      "repostCount": 7,
-      "likeCount": 56,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihq4b3y57s3ecdo6mh3bspuuir6tzzmd3ly3jdvkhafekeh7ufexq@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihq4b3y57s3ecdo6mh3bspuuir6tzzmd3ly3jdvkhafekeh7ufexq@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiamtlcc3uuu7pyal4bpun2iyna6hkyjxbylcbqit4hvprkypvjeim",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiamtlcc3uuu7pyal4bpun2iyna6hkyjxbylcbqit4hvprkypvjeim",
             "alt": ""
           }
         ]
@@ -2028,7 +1913,7 @@
       "author": {
         "handle": "weirdwonder.bsky.social",
         "displayName": "Amanda P. \u27a1\ufe0f GaryCon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky"
       },
       "record": {
         "text": "One of my favorite artists and people, Skullboy, is making an illustrated book of Demons as part of OSE Month. Follow it on Backerkit!\nwww.backerkit.com/call_to_acti...",
@@ -2036,19 +1921,19 @@
       },
       "indexedAt": "2025-12-11T16:00:07.439Z",
       "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 43,
+      "repostCount": 14,
+      "likeCount": 45,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/call_to_action/31b74af1-fbf8-447e-94f1-f1cfed1934b3/landing?preview_mode=true",
         "title": "Get Ready for Skullboy's Illustrated Guide to Demons",
         "description": "From Better Legends - Get Ready for Skullboy's Illustrated Guide to Demons",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreif7wggmezznyhkoky2tk4plj7vfrg37iizhwf3rk6jvqjge56rtqy@jpeg"
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreif7wggmezznyhkoky2tk4plj7vfrg37iizhwf3rk6jvqjge56rtqy"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -2169,7 +2054,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -2183,8 +2068,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreib5eserxwx2khky6o7yrfs6mdqchxcbqiazqlm7rwrhwry5c6dux4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreib5eserxwx2khky6o7yrfs6mdqchxcbqiazqlm7rwrhwry5c6dux4@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreib5eserxwx2khky6o7yrfs6mdqchxcbqiazqlm7rwrhwry5c6dux4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreib5eserxwx2khky6o7yrfs6mdqchxcbqiazqlm7rwrhwry5c6dux4",
             "alt": ""
           }
         ]
@@ -2339,7 +2224,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -2353,8 +2238,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreigya47wy6hv4v6s2y6cobae45tsg74pkpgpkurln4o365esb7pima@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreigya47wy6hv4v6s2y6cobae45tsg74pkpgpkurln4o365esb7pima@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreigya47wy6hv4v6s2y6cobae45tsg74pkpgpkurln4o365esb7pima",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreigya47wy6hv4v6s2y6cobae45tsg74pkpgpkurln4o365esb7pima",
             "alt": ""
           }
         ]
@@ -2484,7 +2369,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -2492,14 +2377,14 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1936,
-      "likeCount": 8372,
+      "repostCount": 1937,
+      "likeCount": 8374,
       "embed": {
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreid54ebrfbzc5ppvtmw7hy3oi5nidy7da7wpvv5gksuz7iuk4ez64e@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreid54ebrfbzc5ppvtmw7hy3oi5nidy7da7wpvv5gksuz7iuk4ez64e@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreid54ebrfbzc5ppvtmw7hy3oi5nidy7da7wpvv5gksuz7iuk4ez64e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreid54ebrfbzc5ppvtmw7hy3oi5nidy7da7wpvv5gksuz7iuk4ez64e",
             "alt": ""
           }
         ]
@@ -2855,7 +2740,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -2869,8 +2754,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreidco2s4a25trnl642ck3znk5qhuucdaeakkorwgohs3rgmotpt5l4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreidco2s4a25trnl642ck3znk5qhuucdaeakkorwgohs3rgmotpt5l4@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreidco2s4a25trnl642ck3znk5qhuucdaeakkorwgohs3rgmotpt5l4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreidco2s4a25trnl642ck3znk5qhuucdaeakkorwgohs3rgmotpt5l4",
             "alt": ""
           }
         ]
@@ -2912,7 +2797,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -2926,8 +2811,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifgcfzwtrw6wtwrxvlwajseqb4joh36ejotqretxjyyba4ja62jva@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifgcfzwtrw6wtwrxvlwajseqb4joh36ejotqretxjyyba4ja62jva@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifgcfzwtrw6wtwrxvlwajseqb4joh36ejotqretxjyyba4ja62jva",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifgcfzwtrw6wtwrxvlwajseqb4joh36ejotqretxjyyba4ja62jva",
             "alt": ""
           }
         ]
@@ -3013,7 +2898,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3027,8 +2912,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihu323erw7up42f46a56qbgml7wgaandbprwxag2uy3emi7ltipkm@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihu323erw7up42f46a56qbgml7wgaandbprwxag2uy3emi7ltipkm@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihu323erw7up42f46a56qbgml7wgaandbprwxag2uy3emi7ltipkm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihu323erw7up42f46a56qbgml7wgaandbprwxag2uy3emi7ltipkm",
             "alt": ""
           }
         ]
@@ -3041,7 +2926,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3055,8 +2940,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyqj4nci53f6zfrschlty4hgwiiqhj7mqu36r2ydmcfu5n3zpmny@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyqj4nci53f6zfrschlty4hgwiiqhj7mqu36r2ydmcfu5n3zpmny@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyqj4nci53f6zfrschlty4hgwiiqhj7mqu36r2ydmcfu5n3zpmny",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyqj4nci53f6zfrschlty4hgwiiqhj7mqu36r2ydmcfu5n3zpmny",
             "alt": ""
           }
         ]
@@ -3069,7 +2954,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3083,8 +2968,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiam4uwznuuhbafw747eggitx77ffz5yfaj65kpztxkxe5zebnzsxa@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiam4uwznuuhbafw747eggitx77ffz5yfaj65kpztxkxe5zebnzsxa@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiam4uwznuuhbafw747eggitx77ffz5yfaj65kpztxkxe5zebnzsxa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiam4uwznuuhbafw747eggitx77ffz5yfaj65kpztxkxe5zebnzsxa",
             "alt": ""
           }
         ]
@@ -3097,7 +2982,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3106,13 +2991,13 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 453,
-      "likeCount": 2410,
+      "likeCount": 2409,
       "embed": {
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreia54ybfjvn2ltvthnmveew5f2urjy46l5q27kl2zpcwnlzup4a3l4@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreia54ybfjvn2ltvthnmveew5f2urjy46l5q27kl2zpcwnlzup4a3l4@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreia54ybfjvn2ltvthnmveew5f2urjy46l5q27kl2zpcwnlzup4a3l4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreia54ybfjvn2ltvthnmveew5f2urjy46l5q27kl2zpcwnlzup4a3l4",
             "alt": ""
           }
         ]
@@ -3208,7 +3093,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3222,8 +3107,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifa7y7evrdrsqhs6eb65j62m7dpd6ofuawpqugglid54rsbdx656i@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifa7y7evrdrsqhs6eb65j62m7dpd6ofuawpqugglid54rsbdx656i@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifa7y7evrdrsqhs6eb65j62m7dpd6ofuawpqugglid54rsbdx656i",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreifa7y7evrdrsqhs6eb65j62m7dpd6ofuawpqugglid54rsbdx656i",
             "alt": ""
           }
         ]
@@ -3236,7 +3121,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3250,8 +3135,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiceavnfoykso2xb3emprwn5jv64gporvv265kv45lb2kx3rjmm5pu@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiceavnfoykso2xb3emprwn5jv64gporvv265kv45lb2kx3rjmm5pu@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiceavnfoykso2xb3emprwn5jv64gporvv265kv45lb2kx3rjmm5pu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiceavnfoykso2xb3emprwn5jv64gporvv265kv45lb2kx3rjmm5pu",
             "alt": "Illustration of girl sitting on a kitchen counter, looking at her robot"
           }
         ]
@@ -3264,7 +3149,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3278,8 +3163,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihtws7qbwyklputldbg2c623h4zghcmgttpb2t2bu7r7d6sbvahea@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihtws7qbwyklputldbg2c623h4zghcmgttpb2t2bu7r7d6sbvahea@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihtws7qbwyklputldbg2c623h4zghcmgttpb2t2bu7r7d6sbvahea",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihtws7qbwyklputldbg2c623h4zghcmgttpb2t2bu7r7d6sbvahea",
             "alt": ""
           }
         ]
@@ -3331,7 +3216,7 @@
       "author": {
         "handle": "underpalewater.bsky.social",
         "displayName": "Underpalewater",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu@jpeg"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
       },
       "record": {
         "text": "",
@@ -3345,8 +3230,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreieawci4hqaeegcymv4wezawaoqtfyy4bprhonypjl4jl6xm7dot5a@jpeg",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreieawci4hqaeegcymv4wezawaoqtfyy4bprhonypjl4jl6xm7dot5a@jpeg",
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreieawci4hqaeegcymv4wezawaoqtfyy4bprhonypjl4jl6xm7dot5a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreieawci4hqaeegcymv4wezawaoqtfyy4bprhonypjl4jl6xm7dot5a",
             "alt": ""
           }
         ]
