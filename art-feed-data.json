@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T00:04:36.758644Z",
+  "lastUpdated": "2026-03-08T12:02:33.244113Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mgjbpgtdgk2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "evlynmoreau.bsky.social",
+        "displayName": "Evlyn Moreau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihh2og4d4gul63hyeic3fdjc63h6i5xle4qhqp7nc227cv4qta62u@jpeg"
+      },
+      "record": {
+        "text": "Posted a weird guy on my patreon, support me so that I can be less discouraged by my art career or something.",
+        "createdAt": "2026-03-08T02:19:34.292Z"
+      },
+      "indexedAt": "2026-03-08T02:19:45.250Z",
+      "replyCount": 5,
+      "repostCount": 61,
+      "likeCount": 195,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihvzyib57baum75pnon33z7asap3ov42mohknkxme47afhhsaesrq@jpeg",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihvzyib57baum75pnon33z7asap3ov42mohknkxme47afhhsaesrq@jpeg",
+            "alt": "a weird guy"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:biffqf73z7fhkfydwbtaddqd/app.bsky.feed.post/3mgfsl23mqk2q",
       "source": "bluesky",
       "author": {
@@ -98,7 +130,7 @@
       "indexedAt": "2026-03-05T13:41:15.755Z",
       "replyCount": 13,
       "repostCount": 32,
-      "likeCount": 114,
+      "likeCount": 115,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/rating-every-room-in-white-plume-mountain",
@@ -466,7 +498,7 @@
       "indexedAt": "2026-03-01T14:36:12.158Z",
       "replyCount": 6,
       "repostCount": 57,
-      "likeCount": 152,
+      "likeCount": 153,
       "embed": {
         "type": "images",
         "images": [
@@ -946,7 +978,7 @@
       },
       "indexedAt": "2026-02-26T13:47:52.751Z",
       "replyCount": 10,
-      "repostCount": 107,
+      "repostCount": 108,
       "likeCount": 205,
       "embed": {
         "type": "external",
@@ -954,35 +986,6 @@
         "title": "Into the Oddish is Heistfunding Now \u2014 Prismatic Wasteland",
         "description": "Pre-Order a Pok\u00e9mon tabletop roleplaying game parody of Into the Odd with Vileplume Mountain, a funhouse dungeon adventure.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreibim3xchjfyitwxbqebngppwvlbz4xpxju5wttpqqljcjhapwpsdm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mfqv5a73wc2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "elmc.at",
-        "displayName": "elmcat",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi@jpeg"
-      },
-      "record": {
-        "text": "I know, I know, I keep talking about the Bloggies.\n\nBut I built an archive of all the past Bloggies Awards. If that's your kind of thing, take a look!\n\nYou can also grab yearly OPML files of all nominees for your RSS reader.\n\nbloggies.org",
-        "createdAt": "2026-02-26T09:30:44.739Z"
-      },
-      "indexedAt": "2026-02-26T09:30:45.651Z",
-      "replyCount": 1,
-      "repostCount": 33,
-      "likeCount": 57,
-      "embed": {
-        "type": "external",
-        "uri": "https://bloggies.org/",
-        "title": "BLOGGIES ARCHIVE",
-        "description": "Nominees, brackets, winners by year.",
-        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1781,7 +1784,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1194,
-      "likeCount": 6312,
+      "likeCount": 6311,
       "embed": {
         "type": "images",
         "images": [
@@ -2377,8 +2380,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1937,
-      "likeCount": 8374,
+      "repostCount": 1936,
+      "likeCount": 8373,
       "embed": {
         "type": "images",
         "images": [
@@ -2749,7 +2752,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2333,
-      "likeCount": 11806,
+      "likeCount": 11805,
       "embed": {
         "type": "images",
         "images": [
@@ -2806,7 +2809,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 721,
-      "likeCount": 3300,
+      "likeCount": 3299,
       "embed": {
         "type": "images",
         "images": [
@@ -2906,8 +2909,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
-      "repostCount": 543,
-      "likeCount": 3006,
+      "repostCount": 542,
+      "likeCount": 3004,
       "embed": {
         "type": "images",
         "images": [
@@ -2935,7 +2938,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 169,
-      "likeCount": 1236,
+      "likeCount": 1235,
       "embed": {
         "type": "images",
         "images": [
@@ -2963,7 +2966,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 245,
-      "likeCount": 1477,
+      "likeCount": 1476,
       "embed": {
         "type": "images",
         "images": [
@@ -2991,7 +2994,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 453,
-      "likeCount": 2409,
+      "likeCount": 2408,
       "embed": {
         "type": "images",
         "images": [
@@ -3101,8 +3104,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1871,
-      "likeCount": 8942,
+      "repostCount": 1870,
+      "likeCount": 8941,
       "embed": {
         "type": "images",
         "images": [
@@ -3130,7 +3133,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 399,
-      "likeCount": 2323,
+      "likeCount": 2322,
       "embed": {
         "type": "images",
         "images": [
@@ -3158,7 +3161,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2619,
-      "likeCount": 15404,
+      "likeCount": 15402,
       "embed": {
         "type": "images",
         "images": [
@@ -3225,7 +3228,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 448,
-      "likeCount": 2389,
+      "likeCount": 2388,
       "embed": {
         "type": "images",
         "images": [
