@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T12:02:33.244113Z",
+  "lastUpdated": "2026-03-09T00:04:58.308140Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-03-08T02:19:45.250Z",
       "replyCount": 5,
-      "repostCount": 61,
-      "likeCount": 195,
+      "repostCount": 83,
+      "likeCount": 262,
       "embed": {
         "type": "images",
         "images": [
@@ -74,6 +74,38 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihvzyib57baum75pnon33z7asap3ov42mohknkxme47afhhsaesrq@jpeg",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihvzyib57baum75pnon33z7asap3ov42mohknkxme47afhhsaesrq@jpeg",
             "alt": "a weird guy"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:karqah6zkfiark2ttjpnlvft/app.bsky.feed.post/3mgi3qs37ro2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "fiadh.bsky.social",
+        "displayName": "\u2694\ufe0f\ud83c\udf80 \ud835\udd09\ud835\udd26\ud835\udd1e\ud835\udd21\ud835\udd25 \ud83c\udf80\u2694\ufe0f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:karqah6zkfiark2ttjpnlvft/bafkreifz7uooc6urwyzqncoun5yu27k4ncpxml2ldnospmsh3t5jfmgmaa"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-03-07T15:00:17.000Z"
+      },
+      "indexedAt": "2026-03-07T15:00:18.059Z",
+      "replyCount": 0,
+      "repostCount": 240,
+      "likeCount": 612,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:karqah6zkfiark2ttjpnlvft/bafkreie6eb6gu5u43m4m32yviqt762yldllhjbnnb2pcwxrjb5moiym3y4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:karqah6zkfiark2ttjpnlvft/bafkreie6eb6gu5u43m4m32yviqt762yldllhjbnnb2pcwxrjb5moiym3y4",
+            "alt": "no amount of propaganda should convince you that some children don\u2019t deserve to grow up "
           }
         ]
       },
@@ -129,8 +161,8 @@
       },
       "indexedAt": "2026-03-05T13:41:15.755Z",
       "replyCount": 13,
-      "repostCount": 32,
-      "likeCount": 115,
+      "repostCount": 33,
+      "likeCount": 116,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/rating-every-room-in-white-plume-mountain",
@@ -159,7 +191,7 @@
       "indexedAt": "2026-03-05T01:52:50.450Z",
       "replyCount": 0,
       "repostCount": 8,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -311,8 +343,8 @@
       },
       "indexedAt": "2026-03-03T14:50:43.059Z",
       "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 25,
+      "repostCount": 14,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -429,8 +461,8 @@
       },
       "indexedAt": "2026-03-02T08:03:38.956Z",
       "replyCount": 5,
-      "repostCount": 15,
-      "likeCount": 53,
+      "repostCount": 16,
+      "likeCount": 54,
       "embed": {
         "type": "external",
         "uri": "https://www.fluoriteguillotine.com/blog/2026/03/02/final-fantasy-tactics-could-have-been-a-ttrpg/",
@@ -775,8 +807,8 @@
       },
       "indexedAt": "2026-02-27T14:06:29.552Z",
       "replyCount": 1,
-      "repostCount": 18,
-      "likeCount": 48,
+      "repostCount": 19,
+      "likeCount": 49,
       "embed": {
         "type": "external",
         "uri": "https://www.explorersdesign.com/bloggies-2026/",
@@ -804,8 +836,8 @@
       },
       "indexedAt": "2026-02-27T13:56:48.663Z",
       "replyCount": 5,
-      "repostCount": 41,
-      "likeCount": 125,
+      "repostCount": 42,
+      "likeCount": 126,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/pokmon-is-osr",
@@ -880,8 +912,8 @@
       },
       "indexedAt": "2026-02-26T22:14:58.055Z",
       "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 30,
+      "repostCount": 11,
+      "likeCount": 31,
       "embed": {
         "type": "external",
         "uri": "https://idlecartulary.com/2026/02/27/taking-the-highest-die-make-dice-work-for-you-4/",
@@ -957,35 +989,6 @@
             "alt": "A goblin with a pompadour yelling \"Vote for Parliamentary Candidate!\""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mfrdikwvls2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "Catch \u2018Em All while you can! In commemoration of the 30th anniversary, I\u2019m heistfunding a Pok\u00e9pocalyptic game based on Into the Odd. I call it INTO THE ODDISH! \nYou can pre-order it now (until ???)\n#ttrpg #pokemon #osr",
-        "createdAt": "2026-02-26T13:47:37.491Z"
-      },
-      "indexedAt": "2026-02-26T13:47:52.751Z",
-      "replyCount": 10,
-      "repostCount": 108,
-      "likeCount": 205,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.prismaticwasteland.com/blog/oddish-preorders",
-        "title": "Into the Oddish is Heistfunding Now \u2014 Prismatic Wasteland",
-        "description": "Pre-Order a Pok\u00e9mon tabletop roleplaying game parody of Into the Odd with Vileplume Mountain, a funhouse dungeon adventure.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreibim3xchjfyitwxbqebngppwvlbz4xpxju5wttpqqljcjhapwpsdm"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2066,7 +2069,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 616,
-      "likeCount": 2720,
+      "likeCount": 2721,
       "embed": {
         "type": "images",
         "images": [
