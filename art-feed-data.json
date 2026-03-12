@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T12:05:05.075043Z",
+  "lastUpdated": "2026-03-12T00:05:48.052656Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mgshci6wcs2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "oneshotrpg.bsky.social",
+        "displayName": "James D'Amato",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
+      },
+      "record": {
+        "text": "Reminder that @valiantdorian.bsky.social and @pmakesthings.bsky.social are about to launch a campaign for a bold new project in game design and actual play.\n\nIt's really cool and they will need your support!\n\nwww.kickstarter.com/projects/one...",
+        "createdAt": "2026-03-11T17:53:39.615Z"
+      },
+      "indexedAt": "2026-03-11T17:53:41.370Z",
+      "replyCount": 0,
+      "repostCount": 15,
+      "likeCount": 34,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/oneshotpodcast/a-whole-new-world-0",
+        "title": "Coming soon: A Whole New World",
+        "description": "A TTRPG webseries capturing the chaos of game design from concept to gameplay.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreif7wb3dsdib43v6iqrga4azkoh2e34c4kxr64rpuatzysihu5oa7m"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mgrygtg6zk2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "oneshotrpg.bsky.social",
+        "displayName": "James D'Amato",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
+      },
+      "record": {
+        "text": "Hey heroes!\n\n@superdillin.bsky.social and I have a new book out. I'm very proud of it and I want it to do well.\n\nYou can help by buying a copy, but you can help even more by leaving a review! Yes, on Amazon. Evening you didn't buy it there.\n\na.co/d/01iPHFPs",
+        "createdAt": "2026-03-11T13:27:39.478Z"
+      },
+      "indexedAt": "2026-03-11T13:27:41.160Z",
+      "replyCount": 3,
+      "repostCount": 39,
+      "likeCount": 60,
+      "embed": {
+        "type": "external",
+        "uri": "https://a.co/d/01iPHFPs",
+        "title": "The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series)",
+        "description": "Amazon.com: The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series): 9781507225301: D\u2019Amato, James, Apelyan, Dillin: Books",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreicvz3xzcl7aiya5zcnwjzpkhcdj4oweu77dgkhbfk2xk26br2dsga"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3mgqg6n66cc27",
+      "source": "bluesky",
+      "author": {
+        "handle": "hodagrpg.bsky.social",
+        "displayName": "HODAG RPG",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreibexamxohopdtig66gpjhxep3hkrp4grvkrspdy3bhiznc4e344ce"
+      },
+      "record": {
+        "text": "LOOKING FOR RPG ILLUSTRATIONS?\nYOU'VE COME TO THE RIGHT PLACE!\n\nCOMMS OPEN! ADD A PROVEN *WINNER TO YOUR TEAM!\n\n*big nerd",
+        "createdAt": "2026-03-10T22:28:17.391Z"
+      },
+      "indexedAt": "2026-03-10T22:28:19.554Z",
+      "replyCount": 3,
+      "repostCount": 45,
+      "likeCount": 90,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreihq36xmirexbuxigj3fbxwqlhty2uokzzsnp3ke53d3cdendkl7yi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreihq36xmirexbuxigj3fbxwqlhty2uokzzsnp3ke53d3cdendkl7yi",
+            "alt": "Hodag rpg 4x award winning artist will a list of game including Yazeba's bed and breakfast, white box cyclopedia, his majesty the worm, into the oddish, errant, flames of Orion, heavy metal and space truckers for Traveller, advanced fantasy dungeons, death game, barkeep on the borderlands and lots more"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:yiudyecbo4kqdboj6tufqiyl/app.bsky.feed.post/3mgpm2bwmlk2h",
       "source": "bluesky",
       "author": {
@@ -65,8 +155,8 @@
       },
       "indexedAt": "2026-03-10T14:40:35.362Z",
       "replyCount": 6,
-      "repostCount": 6,
-      "likeCount": 14,
+      "repostCount": 7,
+      "likeCount": 15,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/drinkingquest/dazzling-dungeon-decks?ref=9v1zff",
@@ -122,9 +212,9 @@
         "createdAt": "2026-03-10T01:58:37.022Z"
       },
       "indexedAt": "2026-03-10T01:58:38.258Z",
-      "replyCount": 0,
+      "replyCount": 2,
       "repostCount": 15,
-      "likeCount": 44,
+      "likeCount": 45,
       "embed": {
         "type": "images",
         "images": [
@@ -184,8 +274,8 @@
       },
       "indexedAt": "2026-03-09T12:15:16.258Z",
       "replyCount": 3,
-      "repostCount": 9,
-      "likeCount": 88,
+      "repostCount": 13,
+      "likeCount": 95,
       "embed": {
         "type": "images",
         "images": [
@@ -217,7 +307,7 @@
       "indexedAt": "2026-03-09T10:31:49.451Z",
       "replyCount": 0,
       "repostCount": 8,
-      "likeCount": 32,
+      "likeCount": 33,
       "embed": {
         "type": "external",
         "uri": "http://idlecartulary.com/2026/03/09/bathtub-review-roach-motel/",
@@ -278,7 +368,7 @@
       "indexedAt": "2026-03-09T00:01:24.450Z",
       "replyCount": 4,
       "repostCount": 11,
-      "likeCount": 49,
+      "likeCount": 51,
       "embed": {
         "type": "external",
         "uri": "https://doomslakers.blogspot.com/2024/03/artists-i-like-evlyn-moreau.html",
@@ -306,8 +396,8 @@
       },
       "indexedAt": "2026-03-07T15:00:18.059Z",
       "replyCount": 0,
-      "repostCount": 307,
-      "likeCount": 782,
+      "repostCount": 308,
+      "likeCount": 783,
       "embed": {
         "type": "images",
         "images": [
@@ -432,7 +522,7 @@
       "indexedAt": "2026-03-04T15:35:44.961Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -657,35 +747,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:v7mokpd3vbnm2fu52ormbdeh/app.bsky.feed.post/3mg2s523b4k2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "serket08.bsky.social",
-        "displayName": "Serket :3c",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:v7mokpd3vbnm2fu52ormbdeh/bafkreiahwzmz3j4jndzo2lb3ivrahbyl75froe4orpptrvgn6fyt2w65wi"
-      },
-      "record": {
-        "text": "I played Final Fantasy Tactics and it was a game of all time.  Delita Heiral lives rent free in my head now, so I decided to unpack the ways in which this game has influenced my ttrpg design.\n\nwww.fluoriteguillotine.com/blog/2026/03...",
-        "createdAt": "2026-03-02T08:03:34.483Z"
-      },
-      "indexedAt": "2026-03-02T08:03:38.956Z",
-      "replyCount": 5,
-      "repostCount": 16,
-      "likeCount": 54,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.fluoriteguillotine.com/blog/2026/03/02/final-fantasy-tactics-could-have-been-a-ttrpg/",
-        "title": "final fantasy tactics could have been a ttrpg",
-        "description": "I need to be less of a tourist when it comes to Japanese roleplaying games. I exist downstream from decades of culture and art that exists in conversation with itself, and I thoroughly enjoy the bypro...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:v7mokpd3vbnm2fu52ormbdeh/bafkreicckqaextb7mx2qcltmjd7w3qwtjhgfatriczzlc6elc6rvu7fule"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/8BKWOn",
       "source": "artstation",
       "author": {
@@ -725,38 +786,6 @@
       "link": "https://www.artstation.com/artwork/8BKWOn"
     },
     {
-      "uri": "at://did:plc:rwzfl24tupml5kamt7gw672x/app.bsky.feed.post/3mfyxm2xwak2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "ehronlime.bsky.social",
-        "displayName": "Aaron Lim \u6797\u5bb6\u4e30",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreihuwabu4w42rxmmj3ja6lbxnttdbmg7x5axec2sqrmluvjpkasy5m"
-      },
-      "record": {
-        "text": "They announced my stretch goal for Blades '68! Let's get to $390,000 so I can write about The Inaugural Crowfoot Wargaming Convention of '68 (which split of from the Charterhall Conference On Historical and Strategic Wargames that started two years before). www.backerkit.com/c/projects/e...",
-        "createdAt": "2026-03-01T14:36:07.964Z"
-      },
-      "indexedAt": "2026-03-01T14:36:12.158Z",
-      "replyCount": 6,
-      "repostCount": 57,
-      "likeCount": 154,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreidg7r46mnwealokvuzbjrrj4muz43z3ypx3h4bvub7vlb3onys4bq",
-            "alt": "Graphic from the Blades '68 BackerKit crowdfunding campaign, showing stretch goal contributors Avalyn Ramsay writing \"Psychic Commie Rats\" and Aaron Lim writing \"Report on the Inaugural Crowfoot Wargaming Convention of '68\"."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:zi663gwmsutcebrdnxvxey62/app.bsky.feed.post/3mfwugabdwc2r",
       "source": "bluesky",
       "author": {
@@ -786,43 +815,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mfwbprw5w225",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "A stretch goal has been added to THE CASTLE AUTOMATIC, the new dungeon for HIS MAJESTY THE WORM. \n\nIf we get 999 early worms, we'll add an option for discounted Divination Boards! \n\nA Divination Board is like a GM screen that reveals, not obscures, information. Put your tarot cards on them!",
-        "createdAt": "2026-02-28T12:59:10.895Z"
-      },
-      "indexedAt": "2026-02-28T12:59:16.960Z",
-      "replyCount": 1,
-      "repostCount": 17,
-      "likeCount": 60,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibakckmpdmptpsbqwu4zhjvxfjs6cn2lel3evzoba3to43i2gz6xm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibakckmpdmptpsbqwu4zhjvxfjs6cn2lel3evzoba3to43i2gz6xm",
-            "alt": "A fold out game board with panels of information. The cover has the four tarot suits."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreib2bkpqopqdxtwttibce2k6uqwqyw5n555d35ohg3ruys7gba7zp4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreib2bkpqopqdxtwttibce2k6uqwqyw5n555d35ohg3ruys7gba7zp4",
-            "alt": "A fold out game board with panels of information. The cover has the His Majesty the Worm logo."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
