@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T12:10:05.799251Z",
+  "lastUpdated": "2026-03-17T00:06:53.929799Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mh6szrrzzs2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "zakbfree.bsky.social",
+        "displayName": "Zak Barouh | LEAF & LANCE",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreiarqdabuy2cxgtdg4lkpayai3jxfb35neipmjq3yy3ck7xgbn36mm"
+      },
+      "record": {
+        "text": "I'm delighted to introduce \ud83c\udf43Leaf & Lance, a new home for the joint creative works of myself and @detheria.bsky.social!\n\nTo me, Leaf & Lance means nature, fairytales, and adventure. Stories, and growth. Wonder and peril. My inspirations!\n\nOf course, Leafpig and Lancelotl had a part to play as well \ud83d\udc9a",
+        "createdAt": "2026-03-16T15:55:29.451Z"
+      },
+      "indexedAt": "2026-03-16T15:55:38.555Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibmyasqb3qg22zdu6s4zkqeaondxfhjtdrb5wvztuhjpxrvql5i3i",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibmyasqb3qg22zdu6s4zkqeaondxfhjtdrb5wvztuhjpxrvql5i3i",
+            "alt": "A logo reading 'Leaf & Lance', with a weathered, natural look, against a green forest background."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mgxf2vempk2b",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-03-13T16:57:08.859Z",
       "replyCount": 9,
-      "repostCount": 50,
-      "likeCount": 101,
+      "repostCount": 51,
+      "likeCount": 102,
       "embed": {
         "type": "images",
         "images": [
@@ -132,7 +164,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ajeffschiller.bsky.social",
-        "displayName": "THE ELF is 66% funded! Back TODAY!",
+        "displayName": "4 Days Left to Fund THE ELF WITH NO NAME!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreigh3vsk6nsebuw3xnpkigdgwsgofsm6bhxvd4cfocrzcz5tf6i7xq"
       },
       "record": {
@@ -173,8 +205,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 737,
-      "likeCount": 3696,
+      "repostCount": 738,
+      "likeCount": 3702,
       "embed": {
         "type": "images",
         "images": [
@@ -348,9 +380,9 @@
         "createdAt": "2026-03-10T14:40:34.110Z"
       },
       "indexedAt": "2026-03-10T14:40:35.362Z",
-      "replyCount": 11,
-      "repostCount": 8,
-      "likeCount": 18,
+      "replyCount": 12,
+      "repostCount": 9,
+      "likeCount": 20,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/drinkingquest/dazzling-dungeon-decks?ref=9v1zff",
@@ -430,7 +462,7 @@
       "source": "bluesky",
       "author": {
         "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler \u25b6\ufe0f Unpub",
+        "displayName": "Sticky Doodler \u25c0\ufe0f Unpub",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
       },
       "record": {
@@ -654,8 +686,8 @@
       },
       "indexedAt": "2026-03-06T17:10:43.458Z",
       "replyCount": 2,
-      "repostCount": 12,
-      "likeCount": 99,
+      "repostCount": 13,
+      "likeCount": 100,
       "embed": {
         "type": "images",
         "images": [
@@ -731,67 +763,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:tq5dvd5b6unuvvfr55l5p6io/app.bsky.feed.post/3mgamdcyi7k26",
-      "source": "bluesky",
-      "author": {
-        "handle": "drawsalexander.bsky.social",
-        "displayName": "Ben Alexander",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreicjxczghpqsihrybw63x7bqjf6iu4xebapppr5w66ardxazxz772i"
-      },
-      "record": {
-        "text": "New game, new colour scheme! Some Mech combat for ION Heart Multiplayer",
-        "createdAt": "2026-03-04T15:35:41.133Z"
-      },
-      "indexedAt": "2026-03-04T15:35:44.961Z",
-      "replyCount": 1,
-      "repostCount": 2,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreiftnzyjuo3e2b5gqjumvrccu5ne7hxza3iwee747qna3ihvx3wnuu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tq5dvd5b6unuvvfr55l5p6io/bafkreiftnzyjuo3e2b5gqjumvrccu5ne7hxza3iwee747qna3ihvx3wnuu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mga4orxpls26",
-      "source": "bluesky",
-      "author": {
-        "handle": "bastionland.bsky.social",
-        "displayName": "Bastionland Press",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
-      },
-      "record": {
-        "text": "Playing Mythic Bastionland with a big group?\n\nwww.bastionland.com/2026/03/big-...",
-        "createdAt": "2026-03-04T10:55:46.067Z"
-      },
-      "indexedAt": "2026-03-04T10:55:44.453Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 28,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.bastionland.com/2026/03/big-companies.html",
-        "title": "Big Companies",
-        "description": "I've had a few people ask about playing Mythic Bastionland  with larger groups of players. I've found the game flows at its best with 2-4 pl...",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -1273,38 +1244,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:uxdwb43zmpejz2kysehemf5t/app.bsky.feed.post/3mdfq3uyods2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "yashiro-manabu.bsky.social",
-        "displayName": "\u3084\u3057\u308d\u5b66/Manabu YASHIRO",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicrlpjfflhs4hjyf2hlq2wcwlgk7lzio4l6jr6zcnfdwmb7cf3k5u"
-      },
-      "record": {
-        "text": "",
-        "createdAt": "2026-01-27T12:10:50.305Z"
-      },
-      "indexedAt": "2026-01-27T12:11:00.249Z",
-      "replyCount": 0,
-      "repostCount": 100,
-      "likeCount": 354,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicldkmixfmalvbwuuyqwdkc45ctmccw66zwfajyl64k5znxinneye",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:uxdwb43zmpejz2kysehemf5t/bafkreicldkmixfmalvbwuuyqwdkc45ctmccw66zwfajyl64k5znxinneye",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -2394,7 +2333,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1947,
-      "likeCount": 8418,
+      "likeCount": 8417,
       "embed": {
         "type": "images",
         "images": [
