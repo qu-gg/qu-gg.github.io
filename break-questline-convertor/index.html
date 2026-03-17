@@ -957,16 +957,11 @@
             if (source.speed?.mods && source.speed.mods.trim()) {
                 modParts.push(`**Speed Mods:** ${source.speed.mods.trim()}`);
             }
-            const modBlock = modParts.join('\n\n');
-            
-            // Combine: mods at top, actual description at bottom
-            const descriptionText = id.description || '';
-            let appearance = '';
-            if (modBlock && descriptionText) {
-                appearance = modBlock + '\n\n---\n\n' + descriptionText;
-            } else {
-                appearance = modBlock || descriptionText;
+            // Mods at top, description text at bottom
+            if (id.description && id.description.trim()) {
+                modParts.push(id.description.trim());
             }
+            const background = modParts.join('\n\n');
             
             // Calculate defense rating (base + armor mods)
             let defenseTotal = parseInt(source.defense?.base) || 10;
@@ -1138,7 +1133,7 @@
                         }
                     },
                     bio: {
-                        appearance: appearance,
+                        appearance: id.description || '',
                         characteristics: {
                             skin: '',
                             hair: '',
@@ -1157,7 +1152,7 @@
                         languages: cleanName(id.languages) || '',
                         purviews: purviewsFormatted,
                         details: id.history || '',
-                        background: ''
+                        background: background
                     },
                     allegiance: {
                         attributes: {
