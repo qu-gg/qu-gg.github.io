@@ -442,6 +442,45 @@
             return id;
         }
 
+        // ===== Deterministic ID Generation (seeded by character name) =====
+        function generateDeterministicId(name) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            const seed = name || 'Unknown';
+            // Use multiple rounds of a simple hash to produce 20 pseudo-random indices
+            // Based on cyrb128 seed + sfc32 PRNG for good distribution
+            let h1 = 1779033703, h2 = 3144134277, h3 = 1013904242, h4 = 2773480762;
+            for (let i = 0; i < seed.length; i++) {
+                const k = seed.charCodeAt(i);
+                h1 = h2 ^ Math.imul(h1 ^ k, 597399067);
+                h2 = h3 ^ Math.imul(h2 ^ k, 2869860233);
+                h3 = h4 ^ Math.imul(h3 ^ k, 951274213);
+                h4 = h1 ^ Math.imul(h4 ^ k, 2716044179);
+            }
+            h1 = Math.imul(h3 ^ (h1 >>> 18), 597399067);
+            h2 = Math.imul(h4 ^ (h2 >>> 22), 2869860233);
+            h3 = Math.imul(h1 ^ (h3 >>> 17), 951274213);
+            h4 = Math.imul(h2 ^ (h4 >>> 19), 2716044179);
+            h1 ^= (h2 ^ h3 ^ h4); h2 ^= h1; h3 ^= h1; h4 ^= h1;
+            // sfc32 PRNG seeded with the hash
+            let a = h1 >>> 0, b = h2 >>> 0, c = h3 >>> 0, d = h4 >>> 0;
+            function next() {
+                a >>>= 0; b >>>= 0; c >>>= 0; d >>>= 0;
+                let t = (a + b) | 0;
+                a = b ^ (b >>> 9);
+                b = (c + (c << 3)) | 0;
+                c = (c << 21) | (c >>> 11);
+                d = (d + 1) | 0;
+                t = (t + d) | 0;
+                c = (c + t) | 0;
+                return (t >>> 0) / 4294967296;
+            }
+            let id = '';
+            for (let i = 0; i < 20; i++) {
+                id += chars.charAt(Math.floor(next() * chars.length));
+            }
+            return id;
+        }
+
         // ===== Speed Rating Conversion =====
         function convertSpeedRating(speed) {
             const speedMap = {
@@ -468,38 +507,47 @@
             }
             
             aptitudesArray.forEach(apt => {
-                // Calculate total: base + sum of mods
+                // Calculate total: base + trait + sum of mods
                 let total = parseInt(apt.base) || 7;
+                const traitVal = parseInt(apt.trait) || 0;
+                total += traitVal;
                 if (apt.mods && Array.isArray(apt.mods)) {
                     apt.mods.forEach(mod => {
                         total += parseInt(mod.value) || 0;
                     });
                 }
                 
-                // Build bonusValue from ALL mods and bonusText from non-Trait mod names
+                // Build bonusValue from trait + ALL mods, and bonusText from labels
                 let bonusValue = null;
                 let bonusText = null;
-                if (apt.mods && Array.isArray(apt.mods) && apt.mods.length > 0) {
-                    // bonusValue: include all mod values
-                    if (apt.mods.length === 1) {
-                        // Single mod: just the value (e.g., "1" or "-1")
-                        const val = parseInt(apt.mods[0].value) || 0;
-                        bonusValue = String(val);
+                
+                // Collect all bonus parts (trait + mods)
+                const bonusParts = [];
+                const textParts = [];
+                
+                if (traitVal !== 0) {
+                    bonusParts.push(traitVal);
+                    textParts.push('Trait');
+                }
+                
+                if (apt.mods && Array.isArray(apt.mods)) {
+                    apt.mods.forEach(mod => {
+                        const val = parseInt(mod.value) || 0;
+                        bonusParts.push(val);
+                        if (mod.name && mod.name.trim()) {
+                            textParts.push(mod.name.trim());
+                        }
+                    });
+                }
+                
+                if (bonusParts.length > 0) {
+                    if (bonusParts.length === 1) {
+                        bonusValue = String(bonusParts[0]);
                     } else {
-                        // Multiple mods: format as "+1/-1" style
-                        const parts = apt.mods.map(mod => {
-                            const val = parseInt(mod.value) || 0;
-                            return val >= 0 ? `+${val}` : String(val);
-                        });
-                        bonusValue = parts.join('/');
+                        bonusValue = bonusParts.map(v => v >= 0 ? `+${v}` : String(v)).join('/');
                     }
-                    
-                    // bonusText: collect non-Trait mod names
-                    const nonTraitMods = apt.mods.filter(mod => 
-                        mod.name && mod.name.toLowerCase().trim() !== 'trait'
-                    );
-                    if (nonTraitMods.length > 0) {
-                        bonusText = nonTraitMods.map(mod => mod.name.trim()).join(', ');
+                    if (textParts.length > 0) {
+                        bonusText = textParts.join(', ');
                     }
                 }
                 
@@ -871,7 +919,7 @@
         // ===== Convert Single Character =====
         function convertCharacter(source) {
             const id = source.identity || {};
-            const characterId = generateFirebaseId();
+            const characterId = generateDeterministicId(id.name || 'Unknown');
             // Use the BREAK!! Player sheet ID for proper rendering in Questline
             const sheetId = 'JhUsxZOelsROtFyksRAP';
             
@@ -881,10 +929,44 @@
             // Format purviews text
             const purviewsFormatted = id.purviews ? formatAbilityText(id.purviews) : '';
             
-            // Build background from size (the only field without a direct mapping)
-            let backgroundParts = [];
-            if (id.size) backgroundParts.push(`**Size:** ${id.size}`);
-            const background = backgroundParts.join('\n\n');
+            // Build mod annotations block (shown at top of appearance/description)
+            let modParts = [];
+            if (id.size) modParts.push(`**Size:** ${id.size}`);
+            if (source.hearts?.mods && Array.isArray(source.hearts.mods) && source.hearts.mods.length > 0) {
+                const heartModTexts = source.hearts.mods.map(mod => {
+                    const val = parseInt(mod.value) || 0;
+                    const sign = val >= 0 ? '+' : '';
+                    return `${mod.name || 'Mod'} (${sign}${val})`;
+                });
+                modParts.push(`**Heart Mods:** ${heartModTexts.join(', ')}`);
+            }
+            if (source.defense?.mods && Array.isArray(source.defense.mods) && source.defense.mods.length > 0) {
+                const defModTexts = source.defense.mods.map(mod => {
+                    const val = parseInt(mod.value) || 0;
+                    const sign = val >= 0 ? '+' : '';
+                    return `${mod.name || 'Mod'} (${sign}${val})`;
+                });
+                modParts.push(`**Defense Mods:** ${defModTexts.join(', ')}`);
+            }
+            if (source.hearts?.injuries && source.hearts.injuries.trim()) {
+                modParts.push(`**Injuries:** ${source.hearts.injuries.trim()}`);
+            }
+            if (source.defense?.notes && source.defense.notes.trim()) {
+                modParts.push(`**Defense Notes:** ${source.defense.notes.trim()}`);
+            }
+            if (source.speed?.mods && source.speed.mods.trim()) {
+                modParts.push(`**Speed Mods:** ${source.speed.mods.trim()}`);
+            }
+            const modBlock = modParts.join('\n\n');
+            
+            // Combine: mods at top, actual description at bottom
+            const descriptionText = id.description || '';
+            let appearance = '';
+            if (modBlock && descriptionText) {
+                appearance = modBlock + '\n\n---\n\n' + descriptionText;
+            } else {
+                appearance = modBlock || descriptionText;
+            }
             
             // Calculate defense rating (base + armor mods)
             let defenseTotal = parseInt(source.defense?.base) || 10;
@@ -1006,8 +1088,13 @@
             // Build gifts
             const gifts = parseGifts(source.allegiance?.gifts, source.bonds);
             
-            // Get hearts value
-            const heartsValue = parseInt(source.hearts?.base) || 2;
+            // Get hearts value (base + mods)
+            let heartsValue = parseInt(source.hearts?.base) || 2;
+            if (source.hearts?.mods && Array.isArray(source.hearts.mods)) {
+                source.hearts.mods.forEach(mod => {
+                    heartsValue += parseInt(mod.value) || 0;
+                });
+            }
             
             // Convert aptitudes
             const aptitudes = convertAptitudes(source.aptitudes);
@@ -1051,7 +1138,7 @@
                         }
                     },
                     bio: {
-                        appearance: id.description || '',
+                        appearance: appearance,
                         characteristics: {
                             skin: '',
                             hair: '',
@@ -1070,7 +1157,7 @@
                         languages: cleanName(id.languages) || '',
                         purviews: purviewsFormatted,
                         details: id.history || '',
-                        background: background
+                        background: ''
                     },
                     allegiance: {
                         attributes: {
@@ -1116,7 +1203,15 @@
                             gems: parseInt(source.wealth?.gems) || 0
                         },
                         items: inventoryItems,
-                        maxEncumbrance: parseInt(source.inventory?.base) || 10
+                        maxEncumbrance: (() => {
+                            let enc = parseInt(source.inventory?.base) || 10;
+                            if (source.inventory?.mods && Array.isArray(source.inventory.mods)) {
+                                source.inventory.mods.forEach(mod => {
+                                    enc += parseInt(mod.value) || 0;
+                                });
+                            }
+                            return enc;
+                        })()
                     },
                     'speed-rating': {
                         attributes: {
