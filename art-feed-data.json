@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T12:09:40.126993Z",
+  "lastUpdated": "2026-03-18T00:07:55.864347Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:5znvwcngxw4byieen2biqmrv/app.bsky.feed.post/3mhbmla2onk2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "naeolin.bsky.social",
+        "displayName": "WiddershinsWanderings",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreibc7prmep376lkq7wbhqoquihapufrvafxbqmfste3mdthvwico3y"
+      },
+      "record": {
+        "text": "I wrote about my experiences teaching Cairn to middle school kids, but my advice works just as well for adults as it does for adolescents.\n\nwiddershinswanderings.bearblog.dev/teaching-cai...",
+        "createdAt": "2026-03-17T18:37:57.863Z"
+      },
+      "indexedAt": "2026-03-17T18:37:59.857Z",
+      "replyCount": 2,
+      "repostCount": 10,
+      "likeCount": 28,
+      "embed": {
+        "type": "external",
+        "uri": "https://widdershinswanderings.bearblog.dev/teaching-cairn-to-kids/",
+        "title": "Teaching Cairn to Kids",
+        "description": "Lessons learned about teaching the OSR play style to middle schoolers using Cairn Second Edition.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreidtfuh4vvqyzp77vaz2f7glzlfbqnoljox7sotpqav2yej6g2bs7q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mh6szrrzzs2q",
       "source": "bluesky",
@@ -164,7 +193,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ajeffschiller.bsky.social",
-        "displayName": "3 Days Left to Fund THE ELF WITH NO NAME!",
+        "displayName": "71hrs to go! THE ELF WITH NO NAME needs YOU!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreigh3vsk6nsebuw3xnpkigdgwsgofsm6bhxvd4cfocrzcz5tf6i7xq"
       },
       "record": {
@@ -205,8 +234,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 739,
-      "likeCount": 3703,
+      "repostCount": 743,
+      "likeCount": 3707,
       "embed": {
         "type": "images",
         "images": [
@@ -380,9 +409,9 @@
         "createdAt": "2026-03-10T14:40:34.110Z"
       },
       "indexedAt": "2026-03-10T14:40:35.362Z",
-      "replyCount": 13,
-      "repostCount": 9,
-      "likeCount": 21,
+      "replyCount": 15,
+      "repostCount": 12,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/drinkingquest/dazzling-dungeon-decks?ref=9v1zff",
@@ -623,7 +652,7 @@
       "indexedAt": "2026-03-08T02:19:45.250Z",
       "replyCount": 5,
       "repostCount": 86,
-      "likeCount": 271,
+      "likeCount": 272,
       "embed": {
         "type": "images",
         "images": [
@@ -763,35 +792,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:hrbhyfjkfzlifttbmop4it3q/app.bsky.feed.post/3mg5g6ng37s2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "dorkland.itch.io",
-        "displayName": "Christopher Helton",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiekekxl42yhg4zwp4tn567pajrvcn32zzvdxxfntgkcfcneg7oeii"
-      },
-      "record": {
-        "text": "The PDFs of my core books, the Action-Heroes #RPG and Adventures In The Unknown #TTRPG are currently on sale at DriveThruRPG as part of the GM's Day Sale, so it is a great time to pick them up! The updated POD edition looks like it is being processed, so Action-Heroes will be in print again soon!",
-        "createdAt": "2026-03-03T09:07:42.625Z"
-      },
-      "indexedAt": "2026-03-03T09:07:41.954Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.drivethrurpg.com/en/publisher/30979/dorkland-press",
-        "title": "DriveThruRPG - The Largest RPG Download Store!",
-        "description": "Your one-stop online shop for new and vintage RPG products from the top publishers, delivered fresh to your desktop in electronic format.",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -948,6 +948,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mfud3dqquc2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "I've released the text of the Cairn Press Creator Agreement as CC-BY-SA 4.0. Obviously you should do what I did and pay a lawyer before using it! But I hope it helps others.\n\nFind it here:\ncairnpress.ink#terms",
+        "createdAt": "2026-02-27T18:18:12.957Z"
+      },
+      "indexedAt": "2026-02-27T18:18:13.952Z",
+      "replyCount": 4,
+      "repostCount": 20,
+      "likeCount": 58,
+      "embed": {
+        "type": "external",
+        "uri": "https://cairnpress.ink/#terms",
+        "title": "Cairn Press",
+        "description": "The official website for the Cairn Press imprint.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreih6pfkniq67emz4rolakerkizwvwptk5yj5kglheh6qpn5e4haata"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mfu3e5ca6c2j",
@@ -1736,7 +1765,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1204,
-      "likeCount": 6365,
+      "likeCount": 6366,
       "embed": {
         "type": "images",
         "images": [
@@ -2018,7 +2047,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 625,
-      "likeCount": 2785,
+      "likeCount": 2786,
       "embed": {
         "type": "images",
         "images": [
@@ -3057,7 +3086,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1872,
-      "likeCount": 8951,
+      "likeCount": 8950,
       "embed": {
         "type": "images",
         "images": [
@@ -3112,8 +3141,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2629,
-      "likeCount": 15464,
+      "repostCount": 2632,
+      "likeCount": 15471,
       "embed": {
         "type": "images",
         "images": [
