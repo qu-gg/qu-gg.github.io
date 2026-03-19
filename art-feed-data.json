@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T00:06:57.465218Z",
+  "lastUpdated": "2026-03-19T12:05:53.672451Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mhez3xwiox2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "metalweavegames.com",
+        "displayName": "Metal Weave Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreigv6ydvv6fm5dqjjbano3z26ag2y2oyk7f7wyqufzd3fyuzq4t6li"
+      },
+      "record": {
+        "text": "Animon Story is a family friendly tabletop role-playing game inspired by anime and video games such as Digimon and Pok\u00e9mon.\n\nIn the game, take on the role of Kids who team up with their very own monster buddies called Animon, & go on adventures, solve problems, grow as friends, & even save the world",
+        "createdAt": "2026-03-19T03:00:03.807Z"
+      },
+      "indexedAt": "2026-03-19T03:00:05.653Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreid6ninyu3co6i5pg45o3hggepva3jvzgkn2xcm5v5ydofnlwcuuz4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreid6ninyu3co6i5pg45o3hggepva3jvzgkn2xcm5v5ydofnlwcuuz4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:nh7sxhwpsfmh53rzhlcud6tk/app.bsky.feed.post/3mhexccls3c2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "hessan-yongdi.itch.io",
+        "displayName": "Hessan Yongdi",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreierjtouydh4y7wrkinajyptzsxmjhfjyihcehj65aotkuj7gltmme"
+      },
+      "record": {
+        "text": "This is an awesome PbtA #TTRPG about Vampires bound by a code of ethics and created by fellow DMV designer @highlevelgames.bsky.social \n\nIt on sale at for only 12 more hours on DriveThruRPG!\n\nwww.drivethrurpg.com/en/product/5...",
+        "createdAt": "2026-03-19T02:27:48.905Z"
+      },
+      "indexedAt": "2026-03-19T02:27:50.554Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com/en/product/539125/may-i-enter-a-vampire-game?src=DotDem&affiliate_id=342793",
+        "title": "May I Enter: A Vampire Game - High Level Games | DriveThruRPG",
+        "description": "Eons ago, vampires ruled a vast world spanning civilization.\nThen they fell and became monstrous.\nTo reign in their excess, Helen of Troy joined forces with other ancient vampires to cast The Binding....",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nh7sxhwpsfmh53rzhlcud6tk/bafkreib54hrypyc6z6wch3hkimykujqtxanhoqjqzumc3rfpgouxlg342y"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mhevj4wluc2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "elmc.at",
+        "displayName": "elmcat",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi"
+      },
+      "record": {
+        "text": "Have been working on a new project for blog discovery. It's now live!\n\nCheck out rootr.ing! A new small hub and webring for ttrpg blogs. Read about here:\n\nelmc.at/rootring-is-...",
+        "createdAt": "2026-03-19T01:55:50.365Z"
+      },
+      "indexedAt": "2026-03-19T01:55:54.253Z",
+      "replyCount": 5,
+      "repostCount": 62,
+      "likeCount": 94,
+      "embed": {
+        "type": "external",
+        "uri": "https://elmc.at/rootring-is-live/",
+        "title": "rootring is live!",
+        "description": "rootring is a curated webring for TTRPG blogs: a place to wander from site to site, discover new writing, and follow the blogosphere.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreigvq5ivu4er2lpsnleqhpn3hvzd7wprwfasiiw2ebluiuqjnrtlpa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mhe6qkwht22y",
       "source": "bluesky",
       "author": {
@@ -93,7 +183,7 @@
         "createdAt": "2026-03-18T09:13:44.439Z"
       },
       "indexedAt": "2026-03-18T09:13:49.949Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 7,
       "likeCount": 31,
       "embed": {
@@ -124,7 +214,7 @@
       "indexedAt": "2026-03-17T18:37:59.857Z",
       "replyCount": 3,
       "repostCount": 18,
-      "likeCount": 48,
+      "likeCount": 49,
       "embed": {
         "type": "external",
         "uri": "https://widdershinswanderings.bearblog.dev/teaching-cairn-to-kids/",
@@ -185,7 +275,7 @@
       "indexedAt": "2026-03-13T16:57:08.859Z",
       "replyCount": 9,
       "repostCount": 55,
-      "likeCount": 110,
+      "likeCount": 111,
       "embed": {
         "type": "images",
         "images": [
@@ -251,7 +341,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ajeffschiller.bsky.social",
-        "displayName": "48hrs to go! Back THE ELF WITH NO NAME",
+        "displayName": "102% funded! Last day to back THE ELF WITH NO NAME!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3hqkeaob75zmzrimwngpv7tm/bafkreigh3vsk6nsebuw3xnpkigdgwsgofsm6bhxvd4cfocrzcz5tf6i7xq"
       },
       "record": {
@@ -292,8 +382,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 745,
-      "likeCount": 3712,
+      "repostCount": 746,
+      "likeCount": 3713,
       "embed": {
         "type": "images",
         "images": [
@@ -467,9 +557,9 @@
         "createdAt": "2026-03-10T14:40:34.110Z"
       },
       "indexedAt": "2026-03-10T14:40:35.362Z",
-      "replyCount": 16,
+      "replyCount": 18,
       "repostCount": 12,
-      "likeCount": 30,
+      "likeCount": 32,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/drinkingquest/dazzling-dungeon-decks?ref=9v1zff",
@@ -710,7 +800,7 @@
       "indexedAt": "2026-03-08T02:19:45.250Z",
       "replyCount": 5,
       "repostCount": 86,
-      "likeCount": 272,
+      "likeCount": 273,
       "embed": {
         "type": "images",
         "images": [
@@ -750,38 +840,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:karqah6zkfiark2ttjpnlvft/bafkreie6eb6gu5u43m4m32yviqt762yldllhjbnnb2pcwxrjb5moiym3y4",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:karqah6zkfiark2ttjpnlvft/bafkreie6eb6gu5u43m4m32yviqt762yldllhjbnnb2pcwxrjb5moiym3y4",
             "alt": "no amount of propaganda should convince you that some children don\u2019t deserve to grow up "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:biffqf73z7fhkfydwbtaddqd/app.bsky.feed.post/3mgfsl23mqk2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "shawntomkin.bsky.social",
-        "displayName": "Shawn Tomkin",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreiarfi5ckxuvwq3hycpigtqotle2ujflrlwvy7scf5r6ls6426m2tu"
-      },
-      "record": {
-        "text": "Everything is awful, but this very kind Ironsworn comment over at EN World sure did put some wind in my sails.",
-        "createdAt": "2026-03-06T17:10:41.378Z"
-      },
-      "indexedAt": "2026-03-06T17:10:43.458Z",
-      "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 100,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreie7sclgytw573i2ougyxruujahefpb5oxn22nvgc3md7zuvuv6aam",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:biffqf73z7fhkfydwbtaddqd/bafkreie7sclgytw573i2ougyxruujahefpb5oxn22nvgc3md7zuvuv6aam",
-            "alt": "A screencap of a forum post. It reads:\n\nThis is my fourth run with Ironsworn since discovering the system in 2021.\n\nOne game solo.\nOne GM-led game with me as GM + 4 players playing bog-standard Ironsworn classic.\nOne co-op game with me + 1 playing Ironsworn: Starforged.\nJust started co-op game with me + 1, with another + 1 friend to be joining, playing Ironsworn classic with a setting shift to ancient Greece.\n\nEvery single time I have turned to this system to run a game, as long as I follow its core premises, procedures, and ethos, it has delivered beyond my expectations each time. It's fun, it's engaging, it produces compelling gameplay and narratives.\n\nIt's almost . . . eerie, in a sense. Like, there's a secretly a part of me that keeps thinking, \"Surely this game can't be this good. Surely it's going to be a let down at some point, or not deliver the goods.\"\n\nBut that secret fear continues to be smashed every time I use Ironsworn in play.\n\nIt's a wholly unique experience of its own that is unlike anything else I have played. It delivers a level of energy and engagement that is unique, and frankly rare relative to other roleplaying experiences I've had. Maybe 1-in-3 or 1-in-4 sessions of other games I've played consistently reach that same level of engagement I've seen in nearly every session of Ironsworn I've ever held."
           }
         ]
       },
@@ -1921,35 +1979,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3m7pwykcows2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdwonder.bsky.social",
-        "displayName": "Amanda P. \u27a1\ufe0f GaryCon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib6yfc2flbuxhykgjazvnwwp7xw2ydhje3ivbmsk7us7i7ptwisky"
-      },
-      "record": {
-        "text": "One of my favorite artists and people, Skullboy, is making an illustrated book of Demons as part of OSE Month. Follow it on Backerkit!\nwww.backerkit.com/call_to_acti...",
-        "createdAt": "2025-12-11T16:00:05.551Z"
-      },
-      "indexedAt": "2025-12-11T16:00:07.439Z",
-      "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 45,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/call_to_action/31b74af1-fbf8-447e-94f1-f1cfed1934b3/landing?preview_mode=true",
-        "title": "Get Ready for Skullboy's Illustrated Guide to Demons",
-        "description": "From Better Legends - Get Ready for Skullboy's Illustrated Guide to Demons",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreif7wggmezznyhkoky2tk4plj7vfrg37iizhwf3rk6jvqjge56rtqy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/Ov9d2K",
       "source": "artstation",
       "author": {
@@ -2075,7 +2104,7 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 625,
+      "repostCount": 626,
       "likeCount": 2787,
       "embed": {
         "type": "images",
@@ -2245,8 +2274,8 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 419,
-      "likeCount": 1741,
+      "repostCount": 420,
+      "likeCount": 1742,
       "embed": {
         "type": "images",
         "images": [
@@ -2390,8 +2419,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1946,
-      "likeCount": 8418,
+      "repostCount": 1947,
+      "likeCount": 8419,
       "embed": {
         "type": "images",
         "images": [
@@ -3003,8 +3032,8 @@
       },
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
-      "repostCount": 453,
-      "likeCount": 2418,
+      "repostCount": 454,
+      "likeCount": 2419,
       "embed": {
         "type": "images",
         "images": [
@@ -3142,7 +3171,7 @@
       },
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
-      "repostCount": 402,
+      "repostCount": 403,
       "likeCount": 2334,
       "embed": {
         "type": "images",
@@ -3171,7 +3200,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2633,
-      "likeCount": 15475,
+      "likeCount": 15474,
       "embed": {
         "type": "images",
         "images": [
@@ -5662,33 +5691,33 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/455/large/ru-666.jpg?1772366871",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/455/large/ru-666.jpg?1772366871",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/455/large/ru-666.webp?1772366871",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/455/large/ru-666.webp?1772366871",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/453/large/ru-555.jpg?1772366866",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/453/large/ru-555.jpg?1772366866",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/453/large/ru-555.webp?1772366866",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/453/large/ru-555.webp?1772366866",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/452/large/ru-444.jpg?1772366860",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/452/large/ru-444.jpg?1772366860",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/452/large/ru-444.webp?1772366860",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/452/large/ru-444.webp?1772366860",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/450/large/ru-333.jpg?1772366854",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/450/large/ru-333.jpg?1772366854",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/450/large/ru-333.webp?1772366854",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/450/large/ru-333.webp?1772366854",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/447/large/ru-222.jpg?1772366847",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/447/large/ru-222.jpg?1772366847",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/801/447/large/ru-222.webp?1772366847",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/801/447/large/ru-222.webp?1772366847",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/444/large/ru-111.jpg?1772366841",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/444/large/ru-111.jpg?1772366841",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/801/444/large/ru-111.webp?1772366841",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/801/444/large/ru-111.webp?1772366841",
             "alt": ""
           }
         ]
