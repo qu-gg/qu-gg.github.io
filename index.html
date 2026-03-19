@@ -187,6 +187,46 @@
             padding: 0.5rem;
         }
         .bsky-lightbox-close:hover { opacity: 1; }
+
+        /* Blog feed cards (differentiated color - teal) */
+        .blog-feed-item {
+            display: block;
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .blog-feed-item:hover {
+            border-color: #00b894;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        .blog-feed-item .feed-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.4rem;
+        }
+        .blog-feed-item .blog-feed-date {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        .blog-feed-item .blog-feed-title {
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+            line-height: 1.3;
+        }
+        .blog-feed-item:hover .blog-feed-title {
+            color: #00b894;
+        }
+        .blog-feed-item .blog-feed-summary {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -208,8 +248,21 @@
         </div>
     </nav>
 
+    <!-- Floating Table of Contents -->
+    <nav class="toc-nav">
+        <div class="toc-title">Contents</div>
+        <ul class="toc-list">
+            <li><a href="#banner">Banner</a></li>
+            <li><a href="#whats-here">What's Here</a></li>
+            <li><a href="#blog">Blog Posts</a></li>
+            <li><a href="#blogroll">Blogroll</a></li>
+            <li><a href="#social">Social Feed</a></li>
+            <li><a href="#webring">Rootring</a></li>
+        </ul>
+    </nav>
+
     <!-- Hero Section -->
-    <header class="hero">
+    <header id="banner" class="hero">
         <div class="hero-content">
             <img src="douevencoffee.jpg" alt="Quagg" class="profile-pic">
             <div class="hero-text">
@@ -226,7 +279,7 @@
     <main class="main-content">
         
         <!-- Site Overview -->
-        <section class="timeline-section">
+        <section id="whats-here" class="timeline-section">
             <h2 class="section-title">What's Here</h2>
             
             <div class="project-list">
@@ -276,9 +329,21 @@
             </div>
         </section>
 
+        <!-- Blog Section -->
+        <section id="blog" class="timeline-section rss-section">
+            <h2 class="section-title">Blog</h2>
+            <p class="section-subtitle">My personal musings</p>
+            
+            <div class="feed-list" id="blog-list">
+                <p class="feed-loading">Loading posts...</p>
+            </div>
+            
+            <a href="blog/index.html" class="view-all-link">View All Posts →</a>
+        </section>
+
         <!-- RSS Feed Section -->
-        <section class="timeline-section rss-section">
-            <h2 class="section-title">Blog Feed</h2>
+        <section id="blogroll" class="timeline-section rss-section">
+            <h2 class="section-title">Blogroll Feed</h2>
             <p class="section-subtitle">Latest posts from blogs I follow</p>
             
             <div class="feed-controls">
@@ -296,9 +361,9 @@
         </section>
 
         <!-- Art Inspiration Feed Section -->
-        <section class="timeline-section rss-section">
-            <h2 class="section-title">Art Inspiration Feed</h2>
-            <p class="section-subtitle">Latest posts from artists I follow</p>
+        <section id="social" class="timeline-section rss-section">
+            <h2 class="section-title">Social Feed</h2>
+            <p class="section-subtitle">Latest posts from people/artists I follow across Bluesky/Artstation</p>
             
             <div class="feed-controls">
                 <select id="bsky-author-filter" class="author-filter">
@@ -323,11 +388,39 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="webring" class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
         <p>© 2025 Studio Quagg</p>
     </footer>
 
     <script>
+        // Position TOC: starts below the hero, rises as you scroll, locks under the navbar
+        (function() {
+            const toc = document.querySelector('.toc-nav');
+            const hero = document.querySelector('.hero');
+            if (toc && hero) {
+                const navHeight = 60;
+                const minTop = navHeight + 32; // nav + 2rem
+                const heroGap = 85; // extra space below the hero
+                function positionToc() {
+                    const heroBottom = hero.getBoundingClientRect().bottom + heroGap;
+                    toc.style.top = Math.max(heroBottom, minTop) + 'px';
+                }
+                window.addEventListener('scroll', positionToc, { passive: true });
+                positionToc();
+            }
+        })();
+
         document.querySelector('.nav-toggle').addEventListener('click', function() {
             this.classList.toggle('active');
             document.querySelector('.nav-links').classList.toggle('active');
@@ -425,6 +518,42 @@
         }
         
         loadFeed();
+
+        // ===== BLOG FEED (loads from blog-data.json) =====
+        async function loadBlogFeed() {
+            try {
+                const response = await fetch('blog-data.json');
+                const data = await response.json();
+                const list = document.getElementById('blog-list');
+                const posts = data.posts || [];
+
+                if (posts.length === 0) {
+                    list.innerHTML = '<p class="feed-empty">No posts yet</p>';
+                    return;
+                }
+
+                list.innerHTML = posts.slice(0, 5).map(post => {
+                    const date = new Date(post.date + 'T00:00:00');
+                    const dateStr = date.toLocaleDateString('en-US', {
+                        month: 'short', day: 'numeric', year: 'numeric'
+                    });
+                    return `
+                        <a href="blog/posts-html/${post.slug}.html" class="blog-feed-item">
+                            <div class="feed-item-header">
+                                <span class="blog-feed-date">${dateStr}</span>
+                            </div>
+                            <h4 class="blog-feed-title">${post.title}</h4>
+                            <p class="blog-feed-summary">${post.summary}</p>
+                        </a>
+                    `;
+                }).join('');
+            } catch (error) {
+                document.getElementById('blog-list').innerHTML =
+                    '<p class="feed-error">Unable to load blog</p>';
+            }
+        }
+
+        loadBlogFeed();
 
         // ===== ART INSPIRATION FEED (loads from static JSON) =====
         const BSKY_MAX_POSTS = 5;

@@ -749,6 +749,103 @@ body {
     font-size: 0.9rem;
 }
 
+.webring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.webring a,
+.webring a:link,
+.webring a:visited,
+.webring a:active {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.webring a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.webring-label {
+    font-weight: 600;
+}
+
+.webring-sep {
+    color: var(--text-secondary);
+    opacity: 0.5;
+    user-select: none;
+}
+
+/* ===== FLOATING TABLE OF CONTENTS ===== */
+.toc-nav {
+    position: fixed;
+    right: calc(50% + 470px);
+    top: calc(var(--nav-height, 60px) + 2rem);
+    max-width: 160px;
+    max-height: calc(100vh - var(--nav-height, 60px) - 4rem);
+    overflow-y: auto;
+    z-index: 99;
+}
+
+/* Offset anchor jumps for fixed navbar */
+[id] {
+    scroll-margin-top: calc(var(--nav-height, 60px) + 1rem);
+}
+
+.toc-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.35rem;
+}
+
+.toc-list li:last-child {
+    margin-bottom: 0;
+}
+
+.toc-list a,
+.toc-list a:link,
+.toc-list a:visited {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.2s;
+    display: block;
+    padding: 0.15rem 0;
+    opacity: 0.8;
+}
+
+.toc-list a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .toc-nav {
+        display: none;
+    }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hero {

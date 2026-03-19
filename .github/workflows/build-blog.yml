@@ -1,0 +1,35 @@
+name: Build Blog
+
+on:
+  push:
+    paths:
+      - 'blog/posts/**'
+      - 'blog/post-template.html'
+  workflow_dispatch:  # Allow manual triggers
+
+jobs:
+  build-blog:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install markdown pyyaml
+      
+      - name: Build blog
+        run: python scripts/build-blog.py
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add blog-data.json blog/feed.xml blog/posts-html/*.html
+          git diff --staged --quiet || git commit -m "Build blog [skip ci]"
+          git push
