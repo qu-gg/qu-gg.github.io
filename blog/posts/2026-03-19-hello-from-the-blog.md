@@ -1,6 +1,7 @@
 ---
 title: Hi there!
 date: 2026-03-19
+time: 10:30
 tags: introduction
 ---
 

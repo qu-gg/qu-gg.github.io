@@ -9,8 +9,8 @@ Each post is a .md file with YAML front matter:
     ---
     title: My Post Title
     date: 2026-03-19
+    time: 14:30           (optional, defaults to 00:00)
     tags: break, adventure-design
-    summary: A short one-liner for the listing page.
     ---
 
     Post body in Markdown here...
@@ -27,7 +27,7 @@ import re
 import os
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import html as html_lib
@@ -43,6 +43,7 @@ HTML_OUT_DIR = BLOG_DIR / "posts-html"
 OUTPUT_JSON = BLOG_DIR.parent / "blog-data.json"
 OUTPUT_FEED = BLOG_DIR / "feed.xml"
 BASE_URL = "https://its.quagg.studio"
+ET_UTC_OFFSET_HOURS = 4  # ET (EDT) is UTC-4; add 4 hours to convert to UTC
 
 # Markdown extensions for nice rendering
 MD_EXTENSIONS = ["extra", "codehilite", "smarty", "toc", "nl2br"]
@@ -83,13 +84,25 @@ def slugify(title: str, date_str: str) -> str:
     return f"{date_str}-{slug}"
 
 
+def et_to_utc(date_str: str, time_str: str) -> datetime:
+    """Convert an ET date + time to a UTC datetime."""
+    dt = datetime.strptime(date_str, "%Y-%m-%d")
+    if ":" in time_str:
+        hour, minute = (int(x) for x in time_str.split(":"))
+    else:
+        t = int(time_str)
+        hour, minute = t // 60, t % 60
+    dt = dt.replace(hour=hour, minute=minute)
+    return dt + timedelta(hours=ET_UTC_OFFSET_HOURS)
+
+
 def build_post_html(meta: dict, body_html: str, prev_post=None, next_post=None) -> str:
     """Render a full post page from the template."""
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
 
-    # Format date for display
-    date_obj = datetime.strptime(str(meta["date"]), "%Y-%m-%d")
-    date_display = date_obj.strftime("%B %d, %Y")
+    # Format date for display (UTC)
+    utc_dt = et_to_utc(str(meta["date"]), meta.get("time", "00:00"))
+    date_display = utc_dt.strftime("%B %d, %Y")
 
     # Build tag pills
     tags_html = ""
@@ -156,9 +169,10 @@ def generate_rss(posts: list[dict]) -> str:
 
         ET.SubElement(item, "description").text = post.get("summary", "")
 
-        date_obj = datetime.strptime(str(post["date"]), "%Y-%m-%d")
+        # utc_datetime is already in UTC
+        date_obj = datetime.strptime(post["utc_datetime"], "%Y-%m-%dT%H:%M:%S")
         ET.SubElement(item, "pubDate").text = date_obj.strftime(
-            "%a, %d %b %Y 00:00:00 +0000"
+            "%a, %d %b %Y %H:%M:%S +0000"
         )
 
         guid = ET.SubElement(item, "guid")
@@ -210,10 +224,27 @@ def main():
             plain_text = clean_html(body_html)
             summary = truncate(plain_text, 200)
 
+            # Parse optional time field (HH:MM), default to 00:00
+            # YAML may parse HH:MM as sexagesimal int, so handle both
+            raw_time = meta.get("time", "00:00")
+            if isinstance(raw_time, int):
+                # Convert sexagesimal back: e.g. 870 → "14:30"
+                time_val = f"{raw_time // 60}:{raw_time % 60:02d}"
+            else:
+                time_val = str(raw_time)
+
+            # Compute UTC datetime for display, sorting, and RSS
+            utc_dt = et_to_utc(str(meta["date"]), time_val)
+            utc_date = utc_dt.strftime("%Y-%m-%d")
+            utc_datetime_iso = utc_dt.strftime("%Y-%m-%dT%H:%M:%S")
+
             posts.append(
                 {
                     "title": meta["title"],
                     "date": str(meta["date"]),
+                    "utc_date": utc_date,
+                    "utc_datetime": utc_datetime_iso,
+                    "time": time_val,
                     "tags": tag_list,
                     "summary": summary,
                     "slug": slug,
@@ -221,8 +252,8 @@ def main():
                 }
             )
 
-    # Sort newest first
-    posts.sort(key=lambda p: p["date"], reverse=True)
+    # Sort newest first (date + time)
+    posts.sort(key=lambda p: f"{p['date']}T{p.get('time', '00:00')}", reverse=True)
     print(f"\nFound {len(posts)} valid post(s).")
 
     # ── Generate individual post pages ─────────────────────────────
@@ -241,7 +272,8 @@ def main():
     json_posts = [
         {
             "title": p["title"],
-            "date": p["date"],
+            "date": p["utc_date"],
+            "utc_datetime": p["utc_datetime"],
             "tags": p["tags"],
             "summary": p["summary"],
             "slug": p["slug"],
