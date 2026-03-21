@@ -2,7 +2,7 @@
 title: Session Report 38 (BREAK!!) - Fight against Urarani
 date: 2026-03-19
 time: 22:04
-tags: session-report
+tags: Session Report
 ---
 
 Kicking off session reports without any campaign context, nearly 40 sessions in, seems like poor storytelling but, ah, maybe I'll explain in time. Regardless, here is a session report for our 38th episode of **BREAK!!: The Wandering Trio**.

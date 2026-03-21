@@ -59,6 +59,75 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     return meta, body
 
 
+# ── Card block preprocessor ───────────────────────────────────────
+def expand_card_blocks(md_text: str) -> str:
+    """Replace :::item and :::ability fenced blocks with .item-block HTML."""
+
+    def _parse_block(block_type: str, content: str) -> str:
+        lines = content.strip().split("\n")
+        name = ""
+        item_type = ""
+        desc = ""
+        effect = ""
+        bullets = []
+        stats = ""
+
+        for line in lines:
+            stripped = line.strip()
+            if stripped.lower().startswith("name:"):
+                name = stripped[5:].strip()
+            elif stripped.lower().startswith("type:"):
+                item_type = stripped[5:].strip()
+            elif stripped.lower().startswith("desc:"):
+                desc = stripped[5:].strip()
+            elif stripped.lower().startswith("effect:"):
+                effect = stripped[7:].strip()
+            elif stripped.lower().startswith("stats:"):
+                stats = stripped[6:].strip()
+            elif stripped.startswith("- "):
+                bullets.append(stripped[2:])
+
+        # Build HTML
+        parts = ['<div class="item-block">']
+
+        # Header: name + optional type
+        header = f'<span class="item-name">{name}</span>'
+        if item_type:
+            header += f' <span class="item-type">[{item_type}]</span>'
+        parts.append(f"    <div>{header}</div>")
+
+        if desc:
+            desc = desc.replace("\\n", "<br>")
+            parts.append(f'    <div class="item-desc">{desc}</div>')
+
+        if effect:
+            effect = effect.replace("\\n", "<br>")
+            parts.append(f'    <div class="item-effect">{effect}</div>')
+
+        if bullets:
+            parts.append("    <ul>")
+            for b in bullets:
+                b = b.replace("\\n", "<br>")
+                parts.append(f"        <li>{b}</li>")
+            parts.append("    </ul>")
+
+        if stats:
+            stats = stats.replace(" . ", " · ")
+            parts.append(f'    <div class="item-stats">{stats}</div>')
+
+        parts.append("</div>")
+        return "\n".join(parts)
+
+    def _replacer(match):
+        block_type = match.group(1)  # "item" or "ability"
+        content = match.group(2)
+        return _parse_block(block_type, content)
+
+    # Match :::item or :::ability blocks (non-greedy)
+    pattern = r":::(item|ability)\s*\n(.*?)\n:::"
+    return re.sub(pattern, _replacer, md_text, flags=re.DOTALL)
+
+
 def clean_html(raw_html: str) -> str:
     """Strip HTML tags and normalize whitespace."""
     if not raw_html:
@@ -96,7 +165,7 @@ def et_to_utc(date_str: str, time_str: str) -> datetime:
     return dt + timedelta(hours=ET_UTC_OFFSET_HOURS)
 
 
-def build_post_html(meta: dict, body_html: str, prev_post=None, next_post=None) -> str:
+def build_post_html(meta: dict, body_html: str, summary: str = "", prev_post=None, next_post=None) -> str:
     """Render a full post page from the template."""
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
 
@@ -127,9 +196,13 @@ def build_post_html(meta: dict, body_html: str, prev_post=None, next_post=None) 
     nav_html += '</div>'
 
     # Replace placeholders
+    slug = meta.get("slug", "")
+    post_url = f"{BASE_URL}/blog/posts-html/{slug}.html"
     html = template.replace("{{TITLE}}", meta["title"])
     html = html.replace("{{DATE}}", date_display)
     html = html.replace("{{TAGS}}", tags_html)
+    html = html.replace("{{SUMMARY}}", summary)
+    html = html.replace("{{URL}}", post_url)
     # Fix image paths: posts reference images/ relative to blog/, but HTML
     # lives in blog/posts-html/, so rewrite to ../images/
     body_html = re.sub(r'src="images/', 'src="../images/', body_html)
@@ -211,6 +284,8 @@ def main():
                 break
         else:
             slug = slugify(meta["title"], str(meta["date"]))
+            # Expand :::item and :::ability blocks before Markdown conversion
+            body = expand_card_blocks(body)
             body_html = md.convert(body)
             md.reset()
 
@@ -263,7 +338,7 @@ def main():
         prev_post = posts[i - 1] if i > 0 else None
         next_post = posts[i + 1] if i < len(posts) - 1 else None
 
-        html = build_post_html(post, post["body_html"], prev_post, next_post)
+        html = build_post_html(post, post["body_html"], post["summary"], prev_post, next_post)
         out_path = HTML_OUT_DIR / f"{post['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
         print(f"  → posts-html/{out_path.name}")

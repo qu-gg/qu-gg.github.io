@@ -227,6 +227,19 @@
             line-height: 1.5;
             margin: 0;
         }
+        .blog-feed-item .blog-feed-tags {
+            display: flex;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+        }
+        .blog-feed-item .blog-feed-tag {
+            font-size: 0.65rem;
+            font-weight: 500;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            background: rgba(0, 184, 148, 0.1);
+            color: #00b894;
+        }
     </style>
 </head>
 <body>
@@ -541,6 +554,7 @@
                         <a href="blog/posts-html/${post.slug}.html" class="blog-feed-item">
                             <div class="feed-item-header">
                                 <span class="blog-feed-date">${dateStr}</span>
+                                <span class="blog-feed-tags">${(post.tags || []).map(t => `<span class="blog-feed-tag">${t}</span>`).join('')}</span>
                             </div>
                             <h4 class="blog-feed-title">${post.title}</h4>
                             <p class="blog-feed-summary">${post.summary}</p>
