@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T00:06:05.587543Z",
+  "lastUpdated": "2026-03-22T12:02:32.653430Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -31,6 +31,12 @@
       "avatar": null,
       "source": "artstation"
     },
+    "artstation:underpalewater": {
+      "handle": "underpalewater",
+      "displayName": "Fjell",
+      "avatar": null,
+      "source": "artstation"
+    },
     "artstation:mashalapsha": {
       "handle": "mashalapsha",
       "displayName": "Maria Sadre",
@@ -45,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:w4uphegozmuvgh3h5i2nmaro/app.bsky.feed.post/3mhmozti4nc2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "ettin.itch.io",
+        "displayName": "Ettin",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:w4uphegozmuvgh3h5i2nmaro/bafkreif266cw74hkeomdkuizpyykhymbsug2oywnpijpbumyruakhizuxe"
+      },
+      "record": {
+        "text": "It's the last day of the Second Gig KS and we've funded the print edition! The next stretch goal is a pack of free assets to go with the upcoming third-party license:",
+        "createdAt": "2026-03-22T04:21:12.594Z"
+      },
+      "indexedAt": "2026-03-22T04:21:18.355Z",
+      "replyCount": 0,
+      "repostCount": 17,
+      "likeCount": 26,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/ettin/hard-wired-island-second-gig",
+        "title": "Hard Wired Island: Second Gig",
+        "description": "A full-length sourcebook for the Hard Wired Island tabletop RPG.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w4uphegozmuvgh3h5i2nmaro/bafkreicl4wvxdmr2gzhk73oakl2tgmivijsdkusf5cxfwz6exntdqoh2fu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mhiqnshoks2u",
       "source": "bluesky",
@@ -70,6 +105,35 @@
             "alt": "SPACE MARINES!\n\nThe Angels of Death, They Who Know No Fear, the Emperor\u2019s Own. The ASTARTES.\n\nYou are no Astartes.\n\nBut you are close\u2014you are a VILLEIN, part of an Astartes Chapter's fief. This alone, the catechisms teach, puts you above the common throng of humanity.\n\nTo SERVE is your blessing and life\u2019s duty.\n"
           }
         ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:gtigy5ta2m3yswmqg6eemngs/app.bsky.feed.post/3mhi5y6edkk24",
+      "source": "bluesky",
+      "author": {
+        "handle": "catshavenolord.itch.io",
+        "displayName": "Cats Have No Lord",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gtigy5ta2m3yswmqg6eemngs/bafkreiawnvmiyd6jixwimg5l4f5innjxup3jkg4bvxyh2vqr3defs7q7hu"
+      },
+      "record": {
+        "text": "Choose-Your-Own-Adventure time!\n\nVIPERBLOOD is the first full adventure for Death & Treasure, my WIP B/X-based solo/CYOA game inspired by the BSOLO and XSOLO adventures from TSR. \n\nStill working on the game, but this dungeon is a way to help work it out. \n\n#TTRPG\n\ncatshavenolord.itch.io/viperblood",
+        "createdAt": "2026-03-20T09:05:24.328Z"
+      },
+      "indexedAt": "2026-03-20T09:05:28.251Z",
+      "replyCount": 2,
+      "repostCount": 11,
+      "likeCount": 27,
+      "embed": {
+        "type": "external",
+        "uri": "https://catshavenolord.itch.io/viperblood",
+        "title": "VIPERBLOOD by Cats Have No Lord",
+        "description": "A Choose-Your-Own-Adventure Dungeon",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gtigy5ta2m3yswmqg6eemngs/bafkreiho4jwh4zxesoub6vwwiigrqvq7nanfey2wutfw5peb576jnhjbqu"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -152,8 +216,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
-      "repostCount": 575,
-      "likeCount": 2674,
+      "repostCount": 576,
+      "likeCount": 2678,
       "embed": {
         "type": "images",
         "images": [
@@ -165,6 +229,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/4NKV9Y",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Winter Winds\n\nLimited edition metal prints are available here: https://gallery.gaaat.com/en/collections/fjell\nRegular prints are available on my InPrnt as always!\n\nhttps://underpalewater.carrd.co/\nhttps://www.instagram.com/underpalewater/\nhttps://x.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2026-03-19T09:53:27-05:00"
+      },
+      "indexedAt": "2026-03-19T09:53:27-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/094/048/747/large/fjell-twoonhorsev4small.webp?1764287678",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/094/048/747/large/fjell-twoonhorsev4small.webp?1764287678",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/4NKV9Y"
     },
     {
       "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mhez3xwiox2g",
@@ -409,7 +502,7 @@
       "source": "bluesky",
       "author": {
         "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters",
+        "displayName": "Afraid of Encounters (He/Him)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
       },
       "record": {
@@ -527,7 +620,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 753,
-      "likeCount": 3768,
+      "likeCount": 3769,
       "embed": {
         "type": "images",
         "images": [
@@ -568,6 +661,35 @@
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/Ov5N3b",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Centipede\n\nLimited edition metal prints are available here: https://gallery.gaaat.com/en/collections/fjell\nRegular prints are available on my InPrnt as always!\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2026-03-12T09:58:00-05:00"
+      },
+      "indexedAt": "2026-03-12T09:58:00-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/094/049/241/large/fjell-centipedecerisev11fin.jpg?1773056647",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/094/049/241/large/fjell-centipedecerisev11fin.jpg?1773056647",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Ov5N3b"
     },
     {
       "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mgshci6wcs2x",
@@ -740,67 +862,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreifzn5wvileyjrexyy4wohzpyjxqqsroa3ue6qryod62ofrkuobm4u",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreifzn5wvileyjrexyy4wohzpyjxqqsroa3ue6qryod62ofrkuobm4u",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mgmvvaffg22n",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler \u25c0\ufe0f Unpub",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
-      },
-      "record": {
-        "text": "I was pretty surprised that The Bonsai Diary was actually nominated for an Origins Award, so I shot a video about how cool it is for GAMA to recognize solo and small press designers:\n\nyoutube.com/shorts/hwXWd...",
-        "createdAt": "2026-03-09T12:58:42.927Z"
-      },
-      "indexedAt": "2026-03-09T12:58:43.657Z",
-      "replyCount": 2,
-      "repostCount": 10,
-      "likeCount": 28,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtube.com/shorts/hwXWdAM7L0M?feature=share",
-        "title": "The Bonsai Diary is a FINALIST for the 2026 Origins Awards!",
-        "description": "YouTube video by StickyDoodler",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigskjnfal34eas6cmnkd5k54jtuhjv32tiet3ittd63tlcmlrqpmm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mgmthgtmq226",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "",
-        "createdAt": "2026-03-09T12:15:12.438Z"
-      },
-      "indexedAt": "2026-03-09T12:15:16.258Z",
-      "replyCount": 3,
-      "repostCount": 13,
-      "likeCount": 97,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicif4eofjtd7ewydb542rcvlq6pbj55jcbtzc22earawzzz5obc3m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicif4eofjtd7ewydb542rcvlq6pbj55jcbtzc22earawzzz5obc3m",
-            "alt": "A still of Gandalf from the animated Lord of the Rings films reading a book, which is saying: henlo RPG writer, hello you STUPID RPG writer, go make a game for no one, ugly"
           }
         ]
       },
@@ -1841,7 +1902,7 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1231,
+      "repostCount": 1230,
       "likeCount": 6482,
       "embed": {
         "type": "images",
@@ -1854,6 +1915,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/V2n898",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Icy Waters\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2025-12-26T05:34:52-06:00"
+      },
+      "indexedAt": "2025-12-26T05:34:52-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/094/865/056/large/fjell-icywatersfintree.jpg?1766755859",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/094/865/056/large/fjell-icywatersfintree.jpg?1766755859",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/V2n898"
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3maoqjtcxks2w",
@@ -1910,6 +2000,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/Ov9d2K",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Gazing | Commission\n\nAlbum cover commission for PolygonSound.\n-\nhttps://underpalewater.carrd.co/\nhttps://www.instagram.com/underpalewater/\nhttps://x.com/underpalewater",
+        "createdAt": "2025-11-27T14:04:47-06:00"
+      },
+      "indexedAt": "2025-11-27T14:04:47-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/460/163/large/fjell-albumcover-fin.webp?1762595826",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/460/163/large/fjell-albumcover-fin.webp?1762595826",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Ov9d2K"
     },
     {
       "uri": "https://www.artstation.com/artwork/ZlvodX",
@@ -2008,8 +2127,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 648,
-      "likeCount": 2866,
+      "repostCount": 649,
+      "likeCount": 2867,
       "embed": {
         "type": "images",
         "images": [
@@ -2021,6 +2140,40 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/5WD8NA",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Amelia, An Epic Short Story | Commission\n\nConcept art for Amelia, an Epic Short Story that I did a couple of years ago. \nThe project is finally on Kickstarter!\nhttps://www.kickstarter.com/projects/ameliashortfilm/amelia-an-epic-short-story?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+        "createdAt": "2025-11-19T04:15:43-06:00"
+      },
+      "indexedAt": "2025-11-19T04:15:43-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/790/087/large/fjell-dungeon-illustration-updated.webp?1763546724",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/790/087/large/fjell-dungeon-illustration-updated.webp?1763546724",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/790/209/large/fjell-campfire-illustration-updated.webp?1763547003",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/790/209/large/fjell-campfire-illustration-updated.webp?1763547003",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/5WD8NA"
     },
     {
       "uri": "https://www.artstation.com/artwork/XJoee0",
@@ -2077,6 +2230,60 @@
       "link": "https://www.artstation.com/artwork/XJoee0"
     },
     {
+      "uri": "https://www.artstation.com/artwork/K3WvRB",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Many Worlds Tavern - Treetop Village\n\nI made an illustration, some character designs and items for Many Worlds Tavern!\n\nhttps://manyworldstavern.com/\n\u00a92025 Many Worlds Tavern",
+        "createdAt": "2025-11-01T09:07:19-05:00"
+      },
+      "indexedAt": "2025-11-01T09:07:19-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/092/929/102/large/fjell-treehousetown-illustration-small.webp?1761071029",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/092/929/102/large/fjell-treehousetown-illustration-small.webp?1761071029",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/092/929/560/large/fjell-chars-artstation.webp?1761068010",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/092/929/560/large/fjell-chars-artstation.webp?1761068010",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/249/157/large/fjell-items-artstation-thelaw.webp?1762005916",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/249/157/large/fjell-items-artstation-thelaw.webp?1762005916",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/249/158/large/fjell-items-artstation-thetrinketpeddler.webp?1762005920",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/249/158/large/fjell-items-artstation-thetrinketpeddler.webp?1762005920",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/249/155/large/fjell-items-artstation-baker.webp?1762005908",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/249/155/large/fjell-items-artstation-baker.webp?1762005908",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/249/156/large/fjell-items-artstation-farmer.webp?1762005912",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/249/156/large/fjell-items-artstation-farmer.webp?1762005912",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/K3WvRB"
+    },
+    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3m4dzpa4wc222",
       "source": "bluesky",
       "author": {
@@ -2103,6 +2310,69 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/eRNndP",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Until The Rain Ends\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2025-10-29T12:40:18-05:00"
+      },
+      "indexedAt": "2025-10-29T12:40:18-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/169/740/large/fjell-untiltherainends2v2.webp?1761769995",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/169/740/large/fjell-untiltherainends2v2.webp?1761769995",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/eRNndP"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/ZlQPnG",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Workshop\n\nAn illustration to celebrate the release of Little Rocket Lab, a game I did a lot of work on in the past three years!\n\nhttps://store.steampowered.com/app/2451100/Little_Rocket_Lab/\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2025-10-07T01:19:58-05:00"
+      },
+      "indexedAt": "2025-10-07T01:19:58-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/092/340/524/large/fjell-morgan-workshop-animated.jpg?1759354404",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/092/340/524/large/fjell-morgan-workshop-animated.jpg?1759354404",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/092/340/545/large/fjell-morgan-workshopv2-small.webp?1759354421",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/092/340/545/large/fjell-morgan-workshopv2-small.webp?1759354421",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/ZlQPnG"
     },
     {
       "uri": "https://www.artstation.com/artwork/zxwnyq",
@@ -2173,7 +2443,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1953,
-      "likeCount": 8458,
+      "likeCount": 8457,
       "embed": {
         "type": "images",
         "images": [
@@ -2185,6 +2455,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/XJvKaL",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Wind Calling\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2025-08-06T01:19:56-05:00"
+      },
+      "indexedAt": "2025-08-06T01:19:56-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/091/777/633/large/fjell-windcalling-v13-small.webp?1757767257",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/091/777/633/large/fjell-windcalling-v13-small.webp?1757767257",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/XJvKaL"
     },
     {
       "uri": "https://www.artstation.com/artwork/XJvNQR",
@@ -2527,6 +2826,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/y46WnQ",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Old Water Temple\n\nhttps://www.instagram.com/underpalewater/ \u2028https://twitter.com/underpalewater \u2028https://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2025-02-21T20:57:27-06:00"
+      },
+      "indexedAt": "2025-02-21T20:57:27-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/085/305/363/large/fjell-asset.jpg?1740482877",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/085/305/363/large/fjell-asset.jpg?1740482877",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/y46WnQ"
     },
     {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3li3pfxvecc2x",
@@ -3119,6 +3447,35 @@
       "link": "https://www.artstation.com/artwork/eRlNvZ"
     },
     {
+      "uri": "https://www.artstation.com/artwork/y4DgZ8",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Among The Waves\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-09-30T02:15:55-05:00"
+      },
+      "indexedAt": "2024-09-30T02:15:55-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/731/896/large/fjell-amongthewaves-darkerlines-small.jpg?1728378899",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/731/896/large/fjell-amongthewaves-darkerlines-small.jpg?1728378899",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/y4DgZ8"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/g0Q6WP",
       "source": "artstation",
       "author": {
@@ -3286,6 +3643,35 @@
       "link": "https://www.artstation.com/artwork/4N8XO8"
     },
     {
+      "uri": "https://www.artstation.com/artwork/8BeWa6",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Morning\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-08-19T06:27:33-05:00"
+      },
+      "indexedAt": "2024-08-19T06:27:33-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/126/405/large/fjell-bathroom-fin.jpg?1724066693",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/126/405/large/fjell-bathroom-fin.jpg?1724066693",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/8BeWa6"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/LRDLYA",
       "source": "artstation",
       "author": {
@@ -3392,6 +3778,35 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/EvlJXn"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/29DwZA",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Mage\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-07-08T21:56:44-05:00"
+      },
+      "indexedAt": "2024-07-08T21:56:44-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/962/699/large/fjell-rays-updated-finfinfin.jpg?1720799575",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/962/699/large/fjell-rays-updated-finfinfin.jpg?1720799575",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/29DwZA"
     },
     {
       "uri": "https://www.artstation.com/artwork/AlAe2o",
@@ -3564,6 +3979,64 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/xDPZW1"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/BXdNJ6",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Autumn\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-04-23T07:36:47-05:00"
+      },
+      "indexedAt": "2024-04-23T07:36:47-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/075/143/018/large/calcium-mouse-magician-autumn.jpg?1713862970",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/075/143/018/large/calcium-mouse-magician-autumn.jpg?1713862970",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/BXdNJ6"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/dKdVWX",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Reverie\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-04-07T08:33:51-05:00"
+      },
+      "indexedAt": "2024-04-07T08:33:51-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/074/604/017/large/calcium-miel-inthewell-v3-finforever.jpg?1712550576",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/074/604/017/large/calcium-miel-inthewell-v3-finforever.jpg?1712550576",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/dKdVWX"
     },
     {
       "uri": "https://www.artstation.com/artwork/vDGJRD",
@@ -3871,6 +4344,35 @@
       "link": "https://www.artstation.com/artwork/BXRDK8"
     },
     {
+      "uri": "https://www.artstation.com/artwork/EvGed0",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Haunted\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2024-01-05T19:00:42-06:00"
+      },
+      "indexedAt": "2024-01-05T19:00:42-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/071/130/873/large/calcium-graveyard-bun-tombstones-fin.jpg?1704579640",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/071/130/873/large/calcium-graveyard-bun-tombstones-fin.jpg?1704579640",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/EvGed0"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/Evdy2A",
       "source": "artstation",
       "author": {
@@ -3972,6 +4474,40 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/WB0NWD"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/n0eV6X",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Alley Hunter\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2023-11-12T01:26:28-06:00"
+      },
+      "indexedAt": "2023-11-12T01:26:28-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/304/036/large/calcium-cat-alley-fin.jpg?1699828663",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/304/036/large/calcium-cat-alley-fin.jpg?1699828663",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/288/842/large/calcium-cat-alley-v5.jpg?1699795054",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/288/842/large/calcium-cat-alley-v5.jpg?1699795054",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/n0eV6X"
     },
     {
       "uri": "https://www.artstation.com/artwork/RyVDYX",
@@ -4460,6 +4996,35 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/YB8OQX"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/ob0o3q",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Return\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2023-04-19T05:34:43-05:00"
+      },
+      "indexedAt": "2023-04-19T05:34:43-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/905/354/large/calcium-miel-fox-autumn-shrine-v3.jpg?1681901290",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/905/354/large/calcium-miel-fox-autumn-shrine-v3.jpg?1681901290",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/ob0o3q"
     },
     {
       "uri": "https://www.artstation.com/artwork/6NvN0N",
@@ -5808,6 +6373,35 @@
       "link": "https://www.artstation.com/artwork/9NwyKR"
     },
     {
+      "uri": "https://www.artstation.com/artwork/qQnD0a",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Hollow Mouse\n\nA little illustration inspired by Hollow Knight\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-07-22T15:58:47-05:00"
+      },
+      "indexedAt": "2022-07-22T15:58:47-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/051/935/250/large/calcium-hollow-mouse-fin-smaller.jpg?1726761230",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/051/935/250/large/calcium-hollow-mouse-fin-smaller.jpg?1726761230",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/qQnD0a"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/o2odQ4",
       "source": "artstation",
       "author": {
@@ -5852,6 +6446,69 @@
       "link": "https://www.artstation.com/artwork/o2odQ4"
     },
     {
+      "uri": "https://www.artstation.com/artwork/LewJxv",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Summer\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-07-18T08:17:58-05:00"
+      },
+      "indexedAt": "2022-07-18T08:17:58-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/051/773/081/large/calcium-brie-vending-machine-darker-saturated-background-smaller.jpg?1726761271",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/051/773/081/large/calcium-brie-vending-machine-darker-saturated-background-smaller.jpg?1726761271",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/051/772/703/large/calcium-381c89700096a40077d7640c6964109b.jpg?1658150167",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/051/772/703/large/calcium-381c89700096a40077d7640c6964109b.jpg?1658150167",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/LewJxv"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/KOQvgr",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Fishing\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-06-15T06:40:48-05:00"
+      },
+      "indexedAt": "2022-06-15T06:40:48-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/050/625/052/large/calcium-fisher-mouse-png-lightish.jpg?1655293048",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/050/625/052/large/calcium-fisher-mouse-png-lightish.jpg?1655293048",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/KOQvgr"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/X1zgqR",
       "source": "artstation",
       "author": {
@@ -5884,6 +6541,64 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/X1zgqR"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/WmYO3E",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Spring\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-04-17T10:04:57-05:00"
+      },
+      "indexedAt": "2022-04-17T10:04:57-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/048/523/722/large/calcium-girl-with-fox-beige-bg1000px.jpg?1656416447",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/048/523/722/large/calcium-girl-with-fox-beige-bg1000px.jpg?1656416447",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/WmYO3E"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/zDWyz6",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Dungeon spirits\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-04-06T10:12:44-05:00"
+      },
+      "indexedAt": "2022-04-06T10:12:44-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/048/123/161/large/calcium-dungeon-mouse-high-contrast-small.jpg?1657017186",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/048/123/161/large/calcium-dungeon-mouse-high-contrast-small.jpg?1657017186",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/zDWyz6"
     },
     {
       "uri": "https://www.artstation.com/artwork/Omx6By",
@@ -6000,6 +6715,35 @@
       "link": "https://www.artstation.com/artwork/Omx6By"
     },
     {
+      "uri": "https://www.artstation.com/artwork/Qnag9d",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Forest elf | commission\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2022-01-20T08:30:17-06:00"
+      },
+      "indexedAt": "2022-01-20T08:30:17-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/045/426/209/large/calcium-forest-elf-some.jpg?1642709513",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/045/426/209/large/calcium-forest-elf-some.jpg?1642709513",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Qnag9d"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/DAL8eo",
       "source": "artstation",
       "author": {
@@ -6032,6 +6776,35 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/DAL8eo"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/d0yGbx",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Winter forest\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-12-30T10:03:46-06:00"
+      },
+      "indexedAt": "2021-12-30T10:03:46-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/044/700/403/large/calcium-pony-forest-desat-small.jpg?1656416834",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/044/700/403/large/calcium-pony-forest-desat-small.jpg?1656416834",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/d0yGbx"
     },
     {
       "uri": "https://www.artstation.com/artwork/3qEqBg",
@@ -6078,6 +6851,137 @@
       "link": "https://www.artstation.com/artwork/3qEqBg"
     },
     {
+      "uri": "https://www.artstation.com/artwork/aGooLX",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Frozen Graveyard\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-12-14T11:25:01-06:00"
+      },
+      "indexedAt": "2021-12-14T11:25:01-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/044/255/223/large/calcium-winter-bunny.jpg?1639502446",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/044/255/223/large/calcium-winter-bunny.jpg?1639502446",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/aGooLX"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/vJJJa3",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Mountain Pass\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-12-02T16:56:16-06:00"
+      },
+      "indexedAt": "2021-12-02T16:56:16-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/043/878/009/large/calcium-snowy-ruins-2k.jpg?1638486098",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/043/878/009/large/calcium-snowy-ruins-2k.jpg?1638486098",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/vJJJa3"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/o2A9qJ",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Graveyard Spirits\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-11-22T08:59:46-06:00"
+      },
+      "indexedAt": "2021-11-22T08:59:46-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/043/545/393/large/calcium-graveyard-bunny7.jpg?1639502740",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/043/545/393/large/calcium-graveyard-bunny7.jpg?1639502740",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/043/545/352/large/calcium-graveyard-bunny-black.jpg?1637593140",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/043/545/352/large/calcium-graveyard-bunny-black.jpg?1637593140",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/043/545/423/large/calcium-graveyard-bunny-flats.jpg?1637593116",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/043/545/423/large/calcium-graveyard-bunny-flats.jpg?1637593116",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/043/545/431/large/calcium-graveyard-bunny-lines.jpg?1637593128",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/043/545/431/large/calcium-graveyard-bunny-lines.jpg?1637593128",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/o2A9qJ"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/B1xEN6",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Lilypads\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-10-26T15:41:07-05:00"
+      },
+      "indexedAt": "2021-10-26T15:41:07-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/726/455/large/calcium-lilypx-borderless.jpg?1635280721",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/726/455/large/calcium-lilypx-borderless.jpg?1635280721",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/B1xEN6"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/nYoJ0K",
       "source": "artstation",
       "author": {
@@ -6122,6 +7026,55 @@
       "link": "https://www.artstation.com/artwork/nYoJ0K"
     },
     {
+      "uri": "https://www.artstation.com/artwork/KrNagy",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Mouse designs\n\nJust some ideas. New illustration soon! \nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-10-17T09:47:19-05:00"
+      },
+      "indexedAt": "2021-10-17T09:47:19-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/420/876/large/calcium-43087bdf096b9141b90e573584597229.jpg?1634481526",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/420/876/large/calcium-43087bdf096b9141b90e573584597229.jpg?1634481526",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/420/843/large/calcium-b50750ff2c66ec911fa380097044204b.jpg?1634481478",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/420/843/large/calcium-b50750ff2c66ec911fa380097044204b.jpg?1634481478",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/421/057/large/calcium-f59bf0e329d11d8ec688b62fd58d704e.jpg?1634481855",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/421/057/large/calcium-f59bf0e329d11d8ec688b62fd58d704e.jpg?1634481855",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/421/060/large/calcium-7b116665fedaac31e582b4c44103fd22.jpg?1634481858",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/421/060/large/calcium-7b116665fedaac31e582b4c44103fd22.jpg?1634481858",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/420/979/large/calcium-d795a1bb901f7b13f3a807ecd642289b.jpg?1634481714",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/420/979/large/calcium-d795a1bb901f7b13f3a807ecd642289b.jpg?1634481714",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/KrNagy"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/Qrd9gl",
       "source": "artstation",
       "author": {
@@ -6149,6 +7102,108 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/Qrd9gl"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/8e2reO",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Pilgrim\n\nAnother one for the mouse series. Hope you like it!\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-10-07T12:20:12-05:00"
+      },
+      "indexedAt": "2021-10-07T12:20:12-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/123/108/large/calcium-mouse-ruind-detailed-version.jpg?1633626394",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/123/108/large/calcium-mouse-ruind-detailed-version.jpg?1633626394",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/123/088/large/calcium-mouse-ruin-flats.jpg?1633626351",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/123/088/large/calcium-mouse-ruin-flats.jpg?1633626351",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/123/096/large/calcium-mouse-ruin-lines.jpg?1633626360",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/123/096/large/calcium-mouse-ruin-lines.jpg?1633626360",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/8e2reO"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/Po8eG3",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Shadows\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-10-06T09:44:50-05:00"
+      },
+      "indexedAt": "2021-10-06T09:44:50-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/122/023/large/calcium-log-enemy-encounter-small.jpg?1633625094",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/122/023/large/calcium-log-enemy-encounter-small.jpg?1633625094",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Po8eG3"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/AqAN3W",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Character Design: Brie\n\nPlanning an illustration series featuring her!\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-10-01T01:44:27-05:00"
+      },
+      "indexedAt": "2021-10-01T01:44:27-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/041/922/280/large/calcium-20f153867a619fabbf4b972beff26c19-1.jpg?1633071078",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/041/922/280/large/calcium-20f153867a619fabbf4b972beff26c19-1.jpg?1633071078",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/041/922/285/large/calcium-e-xsho9x0aarpmt.jpg?1633071058",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/041/922/285/large/calcium-e-xsho9x0aarpmt.jpg?1633071058",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/AqAN3W"
     },
     {
       "uri": "https://www.artstation.com/artwork/0n0QnK",
@@ -6223,6 +7278,35 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/0n0QnK"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/18m2A3",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "The old tree\n\nhttps://www.instagram.com/underpalewater/\nhttps://twitter.com/underpalewater",
+        "createdAt": "2021-09-20T10:15:24-05:00"
+      },
+      "indexedAt": "2021-09-20T10:15:24-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/041/592/979/large/calcium-mouse-tree-rescue-mission-2021-edit2.jpg?1632150873",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/041/592/979/large/calcium-mouse-tree-rescue-mission-2021-edit2.jpg?1632150873",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/18m2A3"
     },
     {
       "uri": "https://www.artstation.com/artwork/oAEaOB",
