@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T00:06:00.754608Z",
+  "lastUpdated": "2026-03-24T12:09:55.290742Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mhqoa3mnd22j",
+      "source": "bluesky",
+      "author": {
+        "handle": "oneshotrpg.bsky.social",
+        "displayName": "James D'Amato",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
+      },
+      "record": {
+        "text": "Hey everyone!\n\n@superdillin.bsky.social and I could use your help. We're trying to get 25 reviews. \n\nThis is important for the Amazon algorithm and our publisher when evaluating our success.\n\nIt takes a few minutes and you don't need to have purchased on Amazon to review there.\n\na.co/d/05f7o2W7",
+        "createdAt": "2026-03-23T18:17:27.667Z"
+      },
+      "indexedAt": "2026-03-23T18:17:28.562Z",
+      "replyCount": 1,
+      "repostCount": 26,
+      "likeCount": 32,
+      "embed": {
+        "type": "external",
+        "uri": "https://a.co/d/05f7o2W7",
+        "title": "The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series)",
+        "description": "Amazon.com: The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series): 9781507225301: D\u2019Amato, James, Apelyan, Dillin: Books",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreicvz3xzcl7aiya5zcnwjzpkhcdj4oweu77dgkhbfk2xk26br2dsga"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mhq6ctr5ec2q",
       "source": "bluesky",
       "author": {
@@ -64,9 +93,9 @@
         "createdAt": "2026-03-23T13:32:40.222Z"
       },
       "indexedAt": "2026-03-23T13:32:45.868Z",
-      "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 27,
+      "replyCount": 2,
+      "repostCount": 10,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=3V8FlKdf5LM",
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-03-22T10:23:19.753Z",
       "replyCount": 15,
-      "repostCount": 194,
-      "likeCount": 1007,
+      "repostCount": 195,
+      "likeCount": 1012,
       "embed": {
         "type": "images",
         "images": [
@@ -156,7 +185,7 @@
       "indexedAt": "2026-03-20T14:39:40.957Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 25,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -278,7 +307,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 583,
-      "likeCount": 2692,
+      "likeCount": 2693,
       "embed": {
         "type": "images",
         "images": [
@@ -433,7 +462,7 @@
       "indexedAt": "2026-03-19T01:55:54.253Z",
       "replyCount": 7,
       "repostCount": 78,
-      "likeCount": 129,
+      "likeCount": 130,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/rootring-is-live/",
@@ -717,8 +746,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 754,
-      "likeCount": 3771,
+      "repostCount": 755,
+      "likeCount": 3772,
       "embed": {
         "type": "images",
         "images": [
