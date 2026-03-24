@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T12:09:14.286580Z",
+  "lastUpdated": "2026-03-24T00:06:00.754608Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mhq6ctr5ec2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "manysidedmedia.bsky.social",
+        "displayName": "Many Sided Media",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu"
+      },
+      "record": {
+        "text": "We just released our first VIDEO EPISODE of Talk of the Table!!\n\nCheck out our conversation with @stellaluna.tv about the secrets of good overlay design, producing streamed actual play, and how to be an effective producer for sponsored actual play.\n\nwww.youtube.com/watch?v=3V8F...",
+        "createdAt": "2026-03-23T13:32:40.222Z"
+      },
+      "indexedAt": "2026-03-23T13:32:45.868Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 27,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.youtube.com/watch?v=3V8FlKdf5LM",
+        "title": "The Secrets of Overlay Design (w/ Stellaluna)",
+        "description": "YouTube video by Many Sided Media",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreifpjtsvxbpbw2oz6u35pa2fxicsrzd7zjazhiiq4vekjxipjjeo2i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:w6k5ff2uuowtlofdmmjwujcr/app.bsky.feed.post/3mhndbbsttk2z",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-03-22T10:23:19.753Z",
       "replyCount": 15,
-      "repostCount": 184,
-      "likeCount": 946,
+      "repostCount": 194,
+      "likeCount": 1007,
       "embed": {
         "type": "images",
         "images": [
@@ -217,7 +246,7 @@
       "indexedAt": "2026-03-19T16:38:46.752Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 15,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -248,8 +277,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
-      "repostCount": 582,
-      "likeCount": 2690,
+      "repostCount": 583,
+      "likeCount": 2692,
       "embed": {
         "type": "images",
         "images": [
@@ -374,8 +403,8 @@
       },
       "indexedAt": "2026-03-19T02:27:50.554Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 10,
+      "repostCount": 7,
+      "likeCount": 11,
       "embed": {
         "type": "external",
         "uri": "https://www.drivethrurpg.com/en/product/539125/may-i-enter-a-vampire-game?src=DotDem&affiliate_id=342793",
@@ -403,8 +432,8 @@
       },
       "indexedAt": "2026-03-19T01:55:54.253Z",
       "replyCount": 7,
-      "repostCount": 77,
-      "likeCount": 126,
+      "repostCount": 78,
+      "likeCount": 129,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/rootring-is-live/",
@@ -580,8 +609,8 @@
       },
       "indexedAt": "2026-03-13T16:57:08.859Z",
       "replyCount": 9,
-      "repostCount": 57,
-      "likeCount": 116,
+      "repostCount": 58,
+      "likeCount": 117,
       "embed": {
         "type": "images",
         "images": [
@@ -618,7 +647,7 @@
       "source": "bluesky",
       "author": {
         "handle": "voxparlour.bsky.social",
-        "displayName": "Scott M \u27a1\ufe0f T&T: ANA live on Kickstarter now!",
+        "displayName": "Scott M \u27a1\ufe0f T&T: A New Age live on Kickstarter now!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreibddcsdlhk2csmkkyg6pzxubptl7kqwrgzop7zjhjvxnlznjnrg4i"
       },
       "record": {
@@ -804,7 +833,7 @@
       "indexedAt": "2026-03-11T13:27:41.160Z",
       "replyCount": 3,
       "repostCount": 39,
-      "likeCount": 62,
+      "likeCount": 63,
       "embed": {
         "type": "external",
         "uri": "https://a.co/d/01iPHFPs",
@@ -843,64 +872,6 @@
             "alt": "Hodag rpg 4x award winning artist will a list of game including Yazeba's bed and breakfast, white box cyclopedia, his majesty the worm, into the oddish, errant, flames of Orion, heavy metal and space truckers for Traveller, advanced fantasy dungeons, death game, barkeep on the borderlands and lots more"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:yiudyecbo4kqdboj6tufqiyl/app.bsky.feed.post/3mgpm2bwmlk2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "jasonanarchy.bsky.social",
-        "displayName": "Jason Anarchy \ud83d\udd1c PAX East",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreicrmg6bh4mqxamtyfrqe42qwkjq2skcgjezrnpdo4gc2vh2bvjque"
-      },
-      "record": {
-        "text": "Blue Sky friends, we put a ton of work into this and now it's live on Kickstarter!\n\nwww.kickstarter.com/projects/dri...\n\nI teamed up with the very talented and funny \n@checrawford.bsky.social @swordscomic.bsky.social\nand @mydadisdracula.bsky.social in a huge project!\n\n#DungeonsandDragons #TTRPG #Dnd",
-        "createdAt": "2026-03-10T14:40:34.110Z"
-      },
-      "indexedAt": "2026-03-10T14:40:35.362Z",
-      "replyCount": 20,
-      "repostCount": 14,
-      "likeCount": 35,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/drinkingquest/dazzling-dungeon-decks?ref=9v1zff",
-        "title": "Dazzling Dungeon Decks",
-        "description": "3 Decks of 101 Cards Each for your Game Master to Spice up your Adventure!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreihpwonmbrlvhss54fxboj5rdsvtogbvvawp6wojxd6yrdr2vusdai"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mgpklf62hc2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "oneshotrpg.bsky.social",
-        "displayName": "James D'Amato",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
-      },
-      "record": {
-        "text": "My friends, today is the day my new book with @superdillin.bsky.social is out!\n\nAvailable everywhere books are sold, the Ultimate RPG Villains Backstory Guide is your companion for making the the best of the worst!\n\nbookshop.org/p/books/the-...",
-        "createdAt": "2026-03-10T14:14:20.438Z"
-      },
-      "indexedAt": "2026-03-10T14:14:23.059Z",
-      "replyCount": 1,
-      "repostCount": 25,
-      "likeCount": 57,
-      "embed": {
-        "type": "external",
-        "uri": "https://bookshop.org/p/books/the-ultimate-rpg-villain-backstory-guide-prompts-and-activities-to-create-compelling-antiheroes-enemies-and-bad-guys-dillin-apelyan/9ac7f1d33d9809cd?ean=9781507225301&next=t&next=t&affiliate=1688",
-        "title": "The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys",
-        "description": "Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreihwiec56dwrohvpmits3youv2mkzo2em4kje4zsbwomdrdo2qa44a"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1565,7 +1536,7 @@
       "source": "bluesky",
       "author": {
         "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy is excited about Garycon",
+        "displayName": "Skullboy",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
       },
       "record": {
@@ -1630,7 +1601,7 @@
       "source": "bluesky",
       "author": {
         "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy is excited about Garycon",
+        "displayName": "Skullboy",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
       },
       "record": {
@@ -2395,7 +2366,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1952,
-      "likeCount": 8455,
+      "likeCount": 8453,
       "embed": {
         "type": "images",
         "images": [
@@ -3008,7 +2979,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 455,
-      "likeCount": 2427,
+      "likeCount": 2426,
       "embed": {
         "type": "images",
         "images": [
@@ -3175,7 +3146,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2636,
-      "likeCount": 15525,
+      "likeCount": 15524,
       "embed": {
         "type": "images",
         "images": [
