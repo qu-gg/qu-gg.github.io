@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T00:08:24.675990Z",
+  "lastUpdated": "2026-03-27T12:09:34.951694Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,68 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mhztufegs22l",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
+      },
+      "record": {
+        "text": "!!!NEW INDONESIAN TABLETOP RPG ADVENTURE ALERT!!!\n\nWicak, a friend of mine, has just released his first OSR adventure module for @melsonian-arts-council.itch.io's Troika! and @lukegearing.bsky.social's Acid Death Fantasy!\n\nCheck it out! \ud83c\udfce\ufe0f\ud83c\udfdc\ufe0f\n\nwicakhidayat.itch.io/race-your-pa...",
+        "createdAt": "2026-03-27T09:52:15.327Z"
+      },
+      "indexedAt": "2026-03-27T09:52:19.352Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://wicakhidayat.itch.io/race-your-pardon",
+        "title": "Race Your Pardon by overeasy",
+        "description": "An adventure module for  Troika RPG's Acid Death Fantasy setting. Inspired by a movie in the 80s.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreic76xqnpcyldvhw5wlqgf634an5fzttarvenptnhzy2ee5y5zovwu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mhyxvpfksk2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "This came up elsewhere, so i wanted to share one of my favorite examples of \"Placeholder versus Final Art\" from BREAK!!",
+        "createdAt": "2026-03-27T01:31:54.632Z"
+      },
+      "indexedAt": "2026-03-27T01:31:55.649Z",
+      "replyCount": 3,
+      "repostCount": 10,
+      "likeCount": 42,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidesvfsiabzqg5y65tndquurzj7mpw7ztm2xlwvr5df354hzul67a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidesvfsiabzqg5y65tndquurzj7mpw7ztm2xlwvr5df354hzul67a",
+            "alt": "A placeholder for BREAK!!'s speed rating image. A little bean person is moving at Slow, Normal, Fast, and Very Fast speeds. It is an quick doodle by the game's writer. "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiacyfuosipafgi5gwwdpf5pvuberpan5j6pfxwhp2nrpdfvtgz4mm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiacyfuosipafgi5gwwdpf5pvuberpan5j6pfxwhp2nrpdfvtgz4mm",
+            "alt": "The finished version of BREAK!!'s speed example, a stylistic and well rendered version of the game's mascot, Mariah Doeheart, moves at Slow, Average, Fast and Very Fast speeds. It's done by the game's artist and layout person, so it actually looks good."
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mhxnlruzpc25",
       "source": "bluesky",
       "author": {
@@ -66,7 +128,7 @@
       "indexedAt": "2026-03-26T12:54:49.454Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 5,
+      "likeCount": 6,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +160,7 @@
       "indexedAt": "2026-03-25T18:29:17.558Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 42,
+      "likeCount": 47,
       "embed": {
         "type": "images",
         "images": [
@@ -126,7 +188,7 @@
       "indexedAt": "2026-03-25T17:27:49.558Z",
       "replyCount": 0,
       "repostCount": 9,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/rb5uWdNHsAM",
@@ -155,7 +217,7 @@
       "indexedAt": "2026-03-25T15:18:20.851Z",
       "replyCount": 1,
       "repostCount": 59,
-      "likeCount": 85,
+      "likeCount": 86,
       "embed": {
         "type": "images",
         "images": [
@@ -776,38 +838,6 @@
         "title": "Teaching Cairn to Kids",
         "description": "Lessons learned about teaching the OSR play style to middle schoolers using Cairn Second Edition.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreidtfuh4vvqyzp77vaz2f7glzlfbqnoljox7sotpqav2yej6g2bs7q"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mh6szrrzzs2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "zakbfree.bsky.social",
-        "displayName": "Zak Barouh | LEAF & LANCE",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreiarqdabuy2cxgtdg4lkpayai3jxfb35neipmjq3yy3ck7xgbn36mm"
-      },
-      "record": {
-        "text": "I'm delighted to introduce \ud83c\udf43Leaf & Lance, a new home for the joint creative works of myself and @detheria.bsky.social!\n\nTo me, Leaf & Lance means nature, fairytales, and adventure. Stories, and growth. Wonder and peril. My inspirations!\n\nOf course, Leafpig and Lancelotl had a part to play as well \ud83d\udc9a",
-        "createdAt": "2026-03-16T15:55:29.451Z"
-      },
-      "indexedAt": "2026-03-16T15:55:38.555Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 19,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibmyasqb3qg22zdu6s4zkqeaondxfhjtdrb5wvztuhjpxrvql5i3i",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibmyasqb3qg22zdu6s4zkqeaondxfhjtdrb5wvztuhjpxrvql5i3i",
-            "alt": "A logo reading 'Leaf & Lance', with a weathered, natural look, against a green forest background."
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1814,7 +1844,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1230,
-      "likeCount": 6481,
+      "likeCount": 6483,
       "embed": {
         "type": "images",
         "images": [
