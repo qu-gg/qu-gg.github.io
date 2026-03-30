@@ -128,6 +128,21 @@ def expand_card_blocks(md_text: str) -> str:
     return re.sub(pattern, _replacer, md_text, flags=re.DOTALL)
 
 
+def wrap_captioned_images(html_text: str) -> str:
+    """Wrap <img> tags that have a title attribute in <figure>/<figcaption>."""
+    def _replacer(match):
+        full_tag = match.group(0)
+        title = match.group(1)
+        # Remove the title attribute from the img tag
+        img_tag = re.sub(r'\s*title="[^"]*"', '', full_tag)
+        return (
+            f'<figure>{img_tag}'
+            f'<figcaption>{title}</figcaption></figure>'
+        )
+
+    return re.sub(r'<img\b[^>]*\btitle="([^"]+)"[^>]*/>', _replacer, html_text)
+
+
 def clean_html(raw_html: str) -> str:
     """Strip HTML tags and normalize whitespace."""
     if not raw_html:
@@ -206,6 +221,8 @@ def build_post_html(meta: dict, body_html: str, summary: str = "", prev_post=Non
     # Fix image paths: posts reference images/ relative to blog/, but HTML
     # lives in blog/posts-html/, so rewrite to ../images/
     body_html = re.sub(r'src="images/', 'src="../images/', body_html)
+    # Wrap images with title attributes in <figure>/<figcaption>
+    body_html = wrap_captioned_images(body_html)
     html = html.replace("{{CONTENT}}", body_html)
     html = html.replace("{{POST_NAV}}", nav_html)
 
