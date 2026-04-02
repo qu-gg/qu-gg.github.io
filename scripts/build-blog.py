@@ -128,6 +128,15 @@ def expand_card_blocks(md_text: str) -> str:
     return re.sub(pattern, _replacer, md_text, flags=re.DOTALL)
 
 
+def expand_spoiler_text(md_text: str) -> str:
+    """Replace ||spoiler text|| with <span class="spoiler"> markup."""
+    return re.sub(
+        r'\|\|(.+?)\|\|',
+        r'<span class="spoiler" tabindex="0">\1</span>',
+        md_text,
+    )
+
+
 def wrap_captioned_images(html_text: str) -> str:
     """Wrap <img> tags that have a title attribute in <figure>/<figcaption>."""
     def _replacer(match):
@@ -303,6 +312,8 @@ def main():
             slug = slugify(meta["title"], str(meta["date"]))
             # Expand :::item and :::ability blocks before Markdown conversion
             body = expand_card_blocks(body)
+            # Expand ||spoiler|| syntax before Markdown conversion
+            body = expand_spoiler_text(body)
             body_html = md.convert(body)
             md.reset()
 
