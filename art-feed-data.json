@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T00:09:10.380673Z",
+  "lastUpdated": "2026-04-03T12:07:03.477485Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,82 @@
     }
   },
   "posts": [
+    {
+      "uri": "https://www.artstation.com/artwork/V2ePvb",
+      "source": "artstation",
+      "author": {
+        "handle": "mashalapsha",
+        "displayName": "Maria Sadre",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Little Wizard and the Temple of the Water nymph\n\nWhen I do my work in this style, I often wonder why I'm drawn to such subjects.  I really want something calm and peaceful, but where is the space for research, new knowledge and irrepressible curiosity",
+        "createdAt": "2026-04-03T05:05:55-05:00"
+      },
+      "indexedAt": "2026-04-03T05:05:55-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.jpg?1775210852",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.jpg?1775210852",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.jpg?1775210507",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.jpg?1775210507",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.jpg?1775210375",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.jpg?1775210375",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/V2ePvb"
+    },
+    {
+      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mikflyazn22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "sandroad.moe",
+        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am"
+      },
+      "record": {
+        "text": "I'm making an informational pamphlet for my local librarian who wanted to know more about TTRPGs and what they are! This is meant as a trifold so the first page is out of order - Very open to any feedback/thoughts (Wish I coulda shout-outted like 50 other rpgs but this felt like a passable survey)",
+        "createdAt": "2026-04-02T23:52:16.310Z"
+      },
+      "indexedAt": "2026-04-02T23:52:32.650Z",
+      "replyCount": 6,
+      "repostCount": 18,
+      "likeCount": 67,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieysxp7sa73h2u7jg746jargfuuiktnmj4dstanvn2so3xwpv5ivy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieysxp7sa73h2u7jg746jargfuuiktnmj4dstanvn2so3xwpv5ivy",
+            "alt": "Page 1 of the Trifold, the cover goes over the broad scope of what a TTRPG is - The back covers topics like APs and VTTs and the side column for the opening flap covers D&D and its history"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifureavyvgpayqnqkkgsspe747ysg2tbzoa5hsiojjeicfayjncky",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifureavyvgpayqnqkkgsspe747ysg2tbzoa5hsiojjeicfayjncky",
+            "alt": "The inner pages of the trifold - The first segment talks about dice and common rpg terms/ideas - The next two cover some of the bigger names of TTRPGs past and present and give a small shotgun blast of some systems to check out"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:bktssur4phxokmndtgekh3eo/app.bsky.feed.post/3mibv6jrkdc2s",
       "source": "bluesky",
@@ -538,7 +614,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 589,
-      "likeCount": 2711,
+      "likeCount": 2712,
       "embed": {
         "type": "images",
         "images": [
@@ -2734,8 +2810,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2635,
-      "likeCount": 15518,
+      "repostCount": 2636,
+      "likeCount": 15520,
       "embed": {
         "type": "images",
         "images": [
