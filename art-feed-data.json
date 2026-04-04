@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T12:07:03.477485Z",
+  "lastUpdated": "2026-04-04T00:08:05.443875Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,67 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3milvnie33s2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "theuglygoblin.bsky.social",
+        "displayName": "The Ugly Goblin",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreifqmibd5puqj7lwqf32uz2rjqx4sxqqnxma5kqkkcrvla4kym3eaq"
+      },
+      "record": {
+        "text": "Here\u2019s a Big deep dive into my new TTRPG Goblinz and its Classless Skill Trees\n\nyoutu.be/SwIKhnoxKT4?...",
+        "createdAt": "2026-04-03T14:12:06.355Z"
+      },
+      "indexedAt": "2026-04-03T14:12:08.754Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/SwIKhnoxKT4?is=t_cgfUz3FLC3IFi1",
+        "title": "So, I accidentally made a TTRPG!",
+        "description": "YouTube video by The Ugly Goblin",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreif2d755yr5uryvlb6cgxfi4xhx64dlszcqugajpvnhml3hdh4y6w4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:hrbxh6dwofaaqsthcfmmflnu/app.bsky.feed.post/3milpid54gc2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "emielboven.itch.io",
+        "displayName": "Emiel Boven",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiax3t7z6wiwtzl4gbw3aldh6wp6pleofdcrjignrwvr46cqj3txae"
+      },
+      "record": {
+        "text": "goblins",
+        "createdAt": "2026-04-03T12:21:50.657Z"
+      },
+      "indexedAt": "2026-04-03T12:21:54.850Z",
+      "replyCount": 1,
+      "repostCount": 17,
+      "likeCount": 153,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiaonrjerqtypbxuadsx3ery5oayvjly7y34m7gb77mfm3gg463sii",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiaonrjerqtypbxuadsx3ery5oayvjly7y34m7gb77mfm3gg463sii",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "https://www.artstation.com/artwork/V2ePvb",
       "source": "artstation",
@@ -105,7 +166,7 @@
       "indexedAt": "2026-04-02T23:52:32.650Z",
       "replyCount": 6,
       "repostCount": 18,
-      "likeCount": 67,
+      "likeCount": 70,
       "embed": {
         "type": "images",
         "images": [
@@ -534,64 +595,6 @@
             "alt": "Screenshot of my website's updated home page, which now includes illustrated navigation buttons, a new banner logo and buttons leading to a list of recommended links and my new forum."
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mhqoa3mnd22j",
-      "source": "bluesky",
-      "author": {
-        "handle": "oneshotrpg.bsky.social",
-        "displayName": "James D'Amato",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
-      },
-      "record": {
-        "text": "Hey everyone!\n\n@superdillin.bsky.social and I could use your help. We're trying to get 25 reviews. \n\nThis is important for the Amazon algorithm and our publisher when evaluating our success.\n\nIt takes a few minutes and you don't need to have purchased on Amazon to review there.\n\na.co/d/05f7o2W7",
-        "createdAt": "2026-03-23T18:17:27.667Z"
-      },
-      "indexedAt": "2026-03-23T18:17:28.562Z",
-      "replyCount": 3,
-      "repostCount": 32,
-      "likeCount": 38,
-      "embed": {
-        "type": "external",
-        "uri": "https://a.co/d/05f7o2W7",
-        "title": "The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series)",
-        "description": "Amazon.com: The Ultimate RPG Villain Backstory Guide: Prompts and Activities to Create Compelling Antiheroes, Enemies, and Bad Guys (Ultimate Role Playing Game Series): 9781507225301: D\u2019Amato, James, Apelyan, Dillin: Books",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreicvz3xzcl7aiya5zcnwjzpkhcdj4oweu77dgkhbfk2xk26br2dsga"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mhq6ctr5ec2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "manysidedmedia.bsky.social",
-        "displayName": "Many Sided Media",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu"
-      },
-      "record": {
-        "text": "We just released our first VIDEO EPISODE of Talk of the Table!!\n\nCheck out our conversation with @stellaluna.tv about the secrets of good overlay design, producing streamed actual play, and how to be an effective producer for sponsored actual play.\n\nwww.youtube.com/watch?v=3V8F...",
-        "createdAt": "2026-03-23T13:32:40.222Z"
-      },
-      "indexedAt": "2026-03-23T13:32:45.868Z",
-      "replyCount": 2,
-      "repostCount": 10,
-      "likeCount": 29,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.youtube.com/watch?v=3V8FlKdf5LM",
-        "title": "The Secrets of Overlay Design (w/ Stellaluna)",
-        "description": "YouTube video by Many Sided Media",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreifpjtsvxbpbw2oz6u35pa2fxicsrzd7zjazhiiq4vekjxipjjeo2i"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2031,7 +2034,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1952,
-      "likeCount": 8449,
+      "likeCount": 8448,
       "embed": {
         "type": "images",
         "images": [
@@ -2811,7 +2814,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2636,
-      "likeCount": 15520,
+      "likeCount": 15519,
       "embed": {
         "type": "images",
         "images": [
