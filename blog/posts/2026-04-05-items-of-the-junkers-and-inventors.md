@@ -98,3 +98,23 @@ effect:
   - **Success:** Wiping away a teary eye, they avoid any ill effect.
 stats: 1 Slot . 20 Coins
 :::
+
+### Throw-a-Wall
+Ok, this one is a little more cooked than the others but I wanted to work it out and see what resulted. Originally I was going to go with a deployable Barricaded Large Shield item but that felt a little muted and stepped on existing gear. Thus came about the Throw-a-Wall.
+:::item
+name: Throw-a-Wall
+type: Gadget
+desc: A recent explosion in Cog's Pop-Up House industry has led to an arms race in speed-building technology. \nThe Throw-a-Wall is one such...advancement.
+effect: 
+- This heavy suitcase, when thrown onto the ground, violently expands into a full-sized steel wall.
+- During a Fight, the wall may be placed on a connection between 2 adjacent Battlefield Areas. These Areas become sectioned off from each other, blocking travel and attacks between them.
+- If placed in a location with no/high ceilings (e.g., an outdoor field)... 
+  - A Might or Deftness Check is required to climb over the wall. 
+  - Supernatural Leaping (Source, pg. 107) bypasses this Check.
+  - Failure means you waste a Turn making little or no progress.
+- The wall has 8 Hearts, a Defense Rating of 18, and follows Sundering rules. A Bomb instantly destroys the wall.
+- The engineers of this device did not concern themselves with reuse. Once deployed, it remains a wall.
+stats: 2 Slots . 125 Coins
+:::
+
+![Throw-a-Wall Inspiration](https://static0.srcdn.com/wordpress/wp-content/uploads/2021/09/SpongeBob-and-Squidward-lying-on-the-ground-with-a-brick-wall-in-Dying-For-Pie-of-SpongeBob-SquarePants.jpg?q=50&fit=crop&w=825&dpr=1.5){: width="65%"}
