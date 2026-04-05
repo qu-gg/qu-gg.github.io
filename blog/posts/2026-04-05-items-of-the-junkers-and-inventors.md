@@ -26,7 +26,7 @@ stats: 1 Slot . 1 Gem
 ![Coat of Arms Inspiration](images/Coat of Arms Inspiration.webp "[Munchkins](https://en.wikipedia.org/wiki/Munchkin_(card_game) Game Card"){: width="25%"}
 
 ### Drone Discombobulator
-As of writing this post, one of the most slept-on categories of Abilities/Items/etc within BREAK!! (official or homebrew) are things that interact with the Journey and Explore mechanics. By that I mean Adversaries with Abilities that directly affect Location Actions, the Random Encounter Table, Guardian Encounters, what-have-you. I think there is a ton of creative space here to spark interesting interactions. The best example I've seen so far is the Corrupted Muk from GoblinJunkyard on the BREAK!! Discord, where the Adventure Site is altered as a result of the Adversary's demise.
+As of writing this post, one of the most slept-on categories of Abilities/Items/etc within BREAK!! (at least, homebrew-wise) are things that interact with the Journey and Explore mechanics. By that I mean Adversaries with Abilities that directly affect Location Actions, the Random Encounter Table, Guardian Encounters, what-have-you. I think there is a ton of creative space here to spark unique interactions. The best example I've seen so far is the Corrupted Muk from GoblinJunkyard on the BREAK!! Discord, where the Adventure Site is altered as a result of the Adversary's demise.
 :::item
 name: Drone Discombobulator
 type: Techno-Relic
