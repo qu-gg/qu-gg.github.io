@@ -100,7 +100,7 @@ stats: 1 Slot . 20 Coins
 :::
 
 ### Throw-a-Wall
-Ok, this one is a little more cooked than the others but I wanted to work it out and see what resulted. Originally I was going to go with a deployable Barricaded Large Shield item but that felt a little muted and stepped on existing gear. Thus came about the Throw-a-Wall.
+Ok, this one is a little more cooked than the others but I wanted to work it out and see what resulted. Originally I was going to go with a deployable Barricaded Large Shield item but that felt a little muted and stepped on existing gear. Thus came about the Throw-a-Wall. Note that there is no specific dimensions stated here to keep it general, so agree on a best situation judgement if needed.
 :::item
 name: Throw-a-Wall
 type: Gadget
