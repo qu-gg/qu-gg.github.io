@@ -46,6 +46,35 @@ effect: Anyone who takes this gift will unfortunately realize the bag is extreme
 stats: 3 Slots . ???
 :::
 
+### Feather Stones
+Player of mine (Abra's player) came up with this one, perhaps in response to how "fun" the Bag o' Feathers has been for the party in their travels. I really like it as a contrast to how an interaction/conversation with a faerie can end.
+:::item
+name: Feather Stones
+type: Ammunition
+desc: It is often questioned by scholars how tiny faeries can throw pebbles larger than themselves \nwith such grace and force. Those sharing a kindred mischievous spirit to the fey know the truth of it.
+effect: Anyone who takes what is very much a dense bag of mundane pebbles will be surprised at how light-as-a-feather it feels.
+- A Bag of Feather Stones contains 10 Stones, which can be used as currency in a pinch.
+- Each Stone is imbued with a fey's touch, and are extremely light. 
+- They function as Thrown Weapons with a Range of 2 Battlefield Areas.
+- Once a Stone is thrown, the magic fades and it becomes a normally-weighted, mundane Stone.
+stats: Stone x10 . 0.5 Slots . 30 Coins
+:::
+
+### Feather-Touched Pouch
+Ok, so the whole feather motif is probably overdone at this point but I suck at names so I'm going with it. Regardless, I do like the utility of this item and implications it has for Inventory management. Something obscenely heavy? Find a way to put it in the pouch but you'd better hope you don't need it in a pinch. There's no rulebook based Bag of Holding (nor do I think it would work without restriction in BREAK!!) but I think this emulates it fine enough in the vibe.
+
+I do think there is room for a Discworld-esque Luggage Companion in BREAK!!, but another time another place.
+:::item
+name: Feather-Touched Pouch
+type: Artifact
+desc: It is said that one Fey Queen "The Duchess in Pale" got so tired of her servants' inability to move her \nheavier belongings that she commissioned hundreds of these Elsewhere-shifting storage devices.
+effect:
+- The Pouch is able to store one Item at a given time, no matter its size or weight.
+- Any Item placed within the Pouch weighs half its required Slot amount while inside the Pouch.
+- Due to the...frustrating nature of handling the bag, however, it takes 3 Turns to remove the Item from it.
+stats: 0 Slots . 1 Gem
+:::
+
 ### Grass Sword
 Straight outta Adventure Time on this one and a fairly by-the-book weapon, just with the addition of the Edge on the Ambush and it being weightless. Despite the Jealous Curse, this one is pretty good! It even has an open Weapon Ability slot to add some extra juice to it.
 

@@ -59,6 +59,23 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     return meta, body
 
 
+def _inline_md(text: str) -> str:
+    """Convert inline Markdown (bold, italic, links, code) to HTML."""
+    # Bold: **text** or __text__
+    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
+    text = re.sub(r'__(.+?)__', r'<strong>\1</strong>', text)
+    # Italic: *text* or _text_
+    text = re.sub(r'\*(.+?)\*', r'<em>\1</em>', text)
+    text = re.sub(r'(?<!\w)_(.+?)_(?!\w)', r'<em>\1</em>', text)
+    # Strikethrough: ~~text~~
+    text = re.sub(r'~~(.+?)~~', r'<del>\1</del>', text)
+    # Links: [text](url)
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
+    # Inline code: `code`
+    text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    return text
+
+
 # ── Card block preprocessor ───────────────────────────────────────
 def expand_card_blocks(md_text: str) -> str:
     """Replace :::item and :::ability fenced blocks with .item-block HTML."""
@@ -85,7 +102,8 @@ def expand_card_blocks(md_text: str) -> str:
             elif stripped.lower().startswith("stats:"):
                 stats = stripped[6:].strip()
             elif stripped.startswith("- "):
-                bullets.append(stripped[2:])
+                indent = len(line) - len(line.lstrip())
+                bullets.append((indent, stripped[2:]))
 
         # Build HTML
         parts = ['<div class="item-block">']
@@ -98,17 +116,33 @@ def expand_card_blocks(md_text: str) -> str:
 
         if desc:
             desc = desc.replace("\\n", "<br>")
+            desc = _inline_md(desc)
             parts.append(f'    <div class="item-desc">{desc}</div>')
 
         if effect:
             effect = effect.replace("\\n", "<br>")
+            effect = _inline_md(effect)
             parts.append(f'    <div class="item-effect">{effect}</div>')
 
         if bullets:
+            base_indent = bullets[0][0]
             parts.append("    <ul>")
-            for b in bullets:
+            in_nested = False
+            for indent, b in bullets:
                 b = b.replace("\\n", "<br>")
-                parts.append(f"        <li>{b}</li>")
+                b = _inline_md(b)
+                if indent > base_indent:
+                    if not in_nested:
+                        parts.append("        <ul>")
+                        in_nested = True
+                    parts.append(f"            <li>{b}</li>")
+                else:
+                    if in_nested:
+                        parts.append("        </ul>")
+                        in_nested = False
+                    parts.append(f"        <li>{b}</li>")
+            if in_nested:
+                parts.append("        </ul>")
             parts.append("    </ul>")
 
         if stats:
@@ -128,11 +162,39 @@ def expand_card_blocks(md_text: str) -> str:
     return re.sub(pattern, _replacer, md_text, flags=re.DOTALL)
 
 
+def expand_strikethrough(md_text: str) -> str:
+    """Replace ~~strikethrough~~ with <del> tags."""
+    return re.sub(r'~~(.+?)~~', r'<del>\1</del>', md_text)
+
+
 def expand_spoiler_text(md_text: str) -> str:
     """Replace ||spoiler text|| with <span class="spoiler"> markup."""
     return re.sub(
         r'\|\|(.+?)\|\|',
         r'<span class="spoiler" tabindex="0">\1</span>',
+        md_text,
+    )
+
+
+def preserve_caption_links(md_text: str) -> str:
+    """Convert markdown links inside image titles to placeholders that survive
+    the Markdown parser, which otherwise strips link syntax from titles."""
+    def _replacer(match):
+        before = match.group(1)  # ![alt](url "...before...
+        title_content = match.group(2)  # the title text
+        after = match.group(3)  # ...after...")
+        # Replace [text](url) inside the title with a placeholder
+        title_content = re.sub(
+            r'\[([^\]]+)\]\(([^)]+)\)',
+            r'{{CAPTIONLINK:\1||\2}}',
+            title_content,
+        )
+        return f'{before}{title_content}{after}'
+
+    # Match markdown images with titles: ![alt](src "title")
+    return re.sub(
+        r'(!\[[^\]]*\]\([^"]*")([^"]+)("[^)]*\))',
+        _replacer,
         md_text,
     )
 
@@ -144,12 +206,65 @@ def wrap_captioned_images(html_text: str) -> str:
         title = match.group(1)
         # Remove the title attribute from the img tag
         img_tag = re.sub(r'\s*title="[^"]*"', '', full_tag)
+        # Expand {{CAPTIONLINK:text||url}} placeholders into HTML anchors
+        caption = re.sub(
+            r'\{\{CAPTIONLINK:(.+?)\|\|(.+?)\}\}',
+            r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>',
+            title,
+        )
         return (
             f'<figure>{img_tag}'
-            f'<figcaption>{title}</figcaption></figure>'
+            f'<figcaption>{caption}</figcaption></figure>'
         )
 
     return re.sub(r'<img\b[^>]*\btitle="([^"]+)"[^>]*/>', _replacer, html_text)
+
+
+def link_images_to_source(html_text: str) -> str:
+    """Wrap <img> tags in <a> tags that open the image source in a new tab."""
+    def _replacer(match):
+        img_tag = match.group(0)
+        src_match = re.search(r'src="([^"]+)"', img_tag)
+        if not src_match:
+            return img_tag
+        src = src_match.group(1)
+        return f'<a href="{src}" target="_blank" rel="noopener noreferrer">{img_tag}</a>'
+    return re.sub(r'<img\b[^>]*/?>',  _replacer, html_text)
+
+
+def group_image_rows(html_text: str) -> str:
+    """Wrap consecutive <figure> or <a><img></a> elements inside a <p> into
+    a flex-row <div>, removing <br> separators so they sit side-by-side."""
+    def _promote_width(fig_html):
+        """Move width from <img> to the enclosing <figure> so percentages
+        resolve against the flex container, not the figure itself."""
+        w = re.search(r'<img\b[^>]*\bwidth="([^"]+)"', fig_html)
+        if not w:
+            return fig_html
+        width_val = w.group(1)
+        # Remove width from img
+        fig_html = re.sub(r'\s*width="[^"]+"', '', fig_html, count=1)
+        # Add style to figure
+        fig_html = fig_html.replace('<figure>', f'<figure style="flex-basis:{width_val}">', 1)
+        return fig_html
+
+    def _replacer(match):
+        inner = match.group(1)
+        # Count top-level image containers
+        figure_count = len(re.findall(r'<figure\b', inner))
+        stripped = re.sub(r'<figure\b.*?</figure>', '', inner, flags=re.DOTALL)
+        standalone_count = len(re.findall(r'<a\b[^>]*>\s*<img', stripped))
+        if figure_count + standalone_count < 2:
+            return match.group(0)
+        # Strip <br> / <br /> between the image elements
+        inner = re.sub(r'\s*<br\s*/?\s*>\s*', '\n', inner)
+        # Move width from imgs to their parent figures
+        inner = re.sub(r'<figure\b.*?</figure>',
+                       lambda m: _promote_width(m.group(0)), inner, flags=re.DOTALL)
+        return f'<div class="image-row">{inner}</div>'
+
+    return re.sub(r'<p>((?:\s*(?:<figure\b.*?</figure>|<a\b[^>]*>\s*<img[^>]*/?\s*>\s*</a>)\s*(?:<br\s*/?>)?\s*)+)</p>',
+                  _replacer, html_text, flags=re.DOTALL)
 
 
 def clean_html(raw_html: str) -> str:
@@ -232,6 +347,10 @@ def build_post_html(meta: dict, body_html: str, summary: str = "", prev_post=Non
     body_html = re.sub(r'src="images/', 'src="../images/', body_html)
     # Wrap images with title attributes in <figure>/<figcaption>
     body_html = wrap_captioned_images(body_html)
+    # Make images clickable to open their source in a new tab
+    body_html = link_images_to_source(body_html)
+    # Group consecutive images into flex rows for side-by-side display
+    body_html = group_image_rows(body_html)
     html = html.replace("{{CONTENT}}", body_html)
     html = html.replace("{{POST_NAV}}", nav_html)
 
@@ -312,8 +431,12 @@ def main():
             slug = slugify(meta["title"], str(meta["date"]))
             # Expand :::item and :::ability blocks before Markdown conversion
             body = expand_card_blocks(body)
+            # Expand ~~strikethrough~~ syntax before Markdown conversion
+            body = expand_strikethrough(body)
             # Expand ||spoiler|| syntax before Markdown conversion
             body = expand_spoiler_text(body)
+            # Preserve markdown links in image captions before MD conversion
+            body = preserve_caption_links(body)
             body_html = md.convert(body)
             md.reset()
 
