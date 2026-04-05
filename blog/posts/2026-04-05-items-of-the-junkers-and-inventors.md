@@ -49,6 +49,7 @@ type: Techno-Relic
 desc: An incredibly efficient design that recharges off ambient Mana, this watch-sized device \nis able to shoot out a sticky tether line and propel the user forward.
 effect: 
 - Once per Day, you can activate this watch to give yourself Supernatural Leaping (Source, pg. 107) for a Turn.
+- You can activate this Item in addition to any other Actions permitted on your Turn.
 stats: 0.1 Slot . 45 Coins
 :::
 
