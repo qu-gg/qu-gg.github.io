@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T00:09:02.690356Z",
+  "lastUpdated": "2026-04-06T12:10:58.625229Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mirxdgfjls2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "sinland.gay",
+        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
+      },
+      "record": {
+        "text": "By popular demand, I am a ttrpg blogger now! Check out this post I just shared on tumblr about my approach to designing classes in DOWAGER: THE SACRED & STRANGE, my sci-fantasy game for tactics sickos. #ttrpg #dowagerrpg\n\nsinabsentia.blog/post/8131007...",
+        "createdAt": "2026-04-05T23:58:14.676Z"
+      },
+      "indexedAt": "2026-04-05T23:58:15.958Z",
+      "replyCount": 3,
+      "repostCount": 12,
+      "likeCount": 15,
+      "embed": {
+        "type": "external",
+        "uri": "https://sinabsentia.blog/post/813100751964569600/class-design-in-dowager",
+        "title": "",
+        "description": "",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3miqvkhlbls2m",
       "source": "bluesky",
       "author": {
@@ -64,9 +93,9 @@
         "createdAt": "2026-04-05T13:53:43.571Z"
       },
       "indexedAt": "2026-04-05T13:53:44.060Z",
-      "replyCount": 1,
+      "replyCount": 2,
       "repostCount": 3,
-      "likeCount": 20,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -152,7 +181,7 @@
       "indexedAt": "2026-04-03T12:21:54.850Z",
       "replyCount": 4,
       "repostCount": 42,
-      "likeCount": 265,
+      "likeCount": 266,
       "embed": {
         "type": "images",
         "images": [
@@ -223,7 +252,7 @@
       "indexedAt": "2026-04-02T23:52:32.650Z",
       "replyCount": 6,
       "repostCount": 18,
-      "likeCount": 72,
+      "likeCount": 73,
       "embed": {
         "type": "images",
         "images": [
