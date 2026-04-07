@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T12:10:58.625229Z",
+  "lastUpdated": "2026-04-07T00:09:32.129912Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mitlc56nnc25",
+      "source": "bluesky",
+      "author": {
+        "handle": "zakbfree.bsky.social",
+        "displayName": "Zak Barouh | LEAF & LANCE",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreiarqdabuy2cxgtdg4lkpayai3jxfb35neipmjq3yy3ck7xgbn36mm"
+      },
+      "record": {
+        "text": "Find lost animon and build a community where they can thrive in \ud83c\udfd8\ufe0fFoundtown, the latest Animon Story release for Ko-fi Members!\n\nThis is a bumper-sized release featuring Digimon World-inspired town building optional rules, and fits right into the Outer Bounds - a setting being developed across 2026!",
+        "createdAt": "2026-04-06T15:28:06.029Z"
+      },
+      "indexedAt": "2026-04-06T15:28:18.751Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibx4cbbtpzj26lcrnzrmvzi4pyf3zktcthhcunegdk4hdgqbqcu3a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreibx4cbbtpzj26lcrnzrmvzi4pyf3zktcthhcunegdk4hdgqbqcu3a",
+            "alt": "The cover of Animon Story: Foundtown, featuring a quaint town street with a cafe in the background. In the foreground is the animon Robotanist, a machine holding a watering can with a terrarium in his body."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mirxdgfjls2e",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-04-05T23:58:15.958Z",
       "replyCount": 3,
-      "repostCount": 12,
-      "likeCount": 15,
+      "repostCount": 16,
+      "likeCount": 22,
       "embed": {
         "type": "external",
         "uri": "https://sinabsentia.blog/post/813100751964569600/class-design-in-dowager",
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-04-05T13:53:44.060Z",
       "replyCount": 2,
-      "repostCount": 3,
-      "likeCount": 22,
+      "repostCount": 4,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -671,7 +703,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 590,
-      "likeCount": 2714,
+      "likeCount": 2716,
       "embed": {
         "type": "images",
         "images": [
@@ -1657,7 +1689,7 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1231,
+      "repostCount": 1230,
       "likeCount": 6484,
       "embed": {
         "type": "images",
@@ -1826,8 +1858,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 650,
-      "likeCount": 2868,
+      "repostCount": 651,
+      "likeCount": 2869,
       "embed": {
         "type": "images",
         "images": [
@@ -2515,8 +2547,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 726,
-      "likeCount": 3331,
+      "repostCount": 727,
+      "likeCount": 3332,
       "embed": {
         "type": "images",
         "images": [
@@ -2644,8 +2676,8 @@
       },
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
-      "repostCount": 174,
-      "likeCount": 1267,
+      "repostCount": 175,
+      "likeCount": 1268,
       "embed": {
         "type": "images",
         "images": [
