@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T12:12:11.625725Z",
+  "lastUpdated": "2026-04-08T00:10:56.836783Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,100 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3miw443ius22p",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "For our imminent new kickstarter, working on a new adventure team for the special edition.\n\nwww.kickstarter.com/projects/gre...",
+        "createdAt": "2026-04-07T15:34:16.014Z"
+      },
+      "indexedAt": "2026-04-07T15:34:26.655Z",
+      "replyCount": 2,
+      "repostCount": 11,
+      "likeCount": 35,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidhvilusgr5ojrnmidbys3hf5dnuj2lzhrv2n4tlv6xntd4yza3ba",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidhvilusgr5ojrnmidbys3hf5dnuj2lzhrv2n4tlv6xntd4yza3ba",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mivyjmwl5s2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "sandroad.moe",
+        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am"
+      },
+      "record": {
+        "text": "The final version of my \"What the Heck is a TTRPG?\" trifold is available completely free on my itchio! Perfect for those looking to get a basic understanding of the hobby or branch out into new games ~ (((Thank you to everyone who gave feedback!))\n\nsandroad.itch.io/what-the-hec...",
+        "createdAt": "2026-04-07T14:30:15.544Z"
+      },
+      "indexedAt": "2026-04-07T14:30:25.669Z",
+      "replyCount": 2,
+      "repostCount": 28,
+      "likeCount": 53,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieshonzdyv73irtgxvr5srmhh2kyfrrjo76fhvndwxlfqcvo4mele",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieshonzdyv73irtgxvr5srmhh2kyfrrjo76fhvndwxlfqcvo4mele",
+            "alt": "Front page of the trifold going over the basics, D&D, APs and VTTs"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreid4i2ylagv7qvctypgp4fwhjmu52cb56anlhemm6gqdesqsvnazs4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreid4i2ylagv7qvctypgp4fwhjmu52cb56anlhemm6gqdesqsvnazs4",
+            "alt": "Back page of the pamphlet going over dice and some other game recommendations"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mivqkhptes2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "oneshotrpg.bsky.social",
+        "displayName": "James D'Amato",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
+      },
+      "record": {
+        "text": "A Whole New World is live on Kickstarter! Please support this exciting expreiment in game desine and actual play by @valiantdorian.bsky.social and @pmakesthings.bsky.social \n\nwww.kickstarter.com/projects/one...",
+        "createdAt": "2026-04-07T12:07:33.704Z"
+      },
+      "indexedAt": "2026-04-07T12:07:34.752Z",
+      "replyCount": 0,
+      "repostCount": 30,
+      "likeCount": 37,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/oneshotpodcast/a-whole-new-world-0?ref=project_build",
+        "title": "A Whole New World",
+        "description": "A TTRPG webseries capturing the chaos of game design from concept to gameplay.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreif7wb3dsdib43v6iqrga4azkoh2e34c4kxr64rpuatzysihu5oa7m"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mitlc56nnc25",
       "source": "bluesky",
       "author": {
@@ -97,8 +191,8 @@
       },
       "indexedAt": "2026-04-05T23:58:15.958Z",
       "replyCount": 3,
-      "repostCount": 16,
-      "likeCount": 22,
+      "repostCount": 17,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://sinabsentia.blog/post/813100751964569600/class-design-in-dowager",
@@ -213,7 +307,7 @@
       "indexedAt": "2026-04-03T12:21:54.850Z",
       "replyCount": 4,
       "repostCount": 42,
-      "likeCount": 266,
+      "likeCount": 267,
       "embed": {
         "type": "images",
         "images": [
@@ -611,38 +705,6 @@
         "title": "Designing Puzzles for Adventure Games at Gary Con 2026",
         "description": "YouTube video by Direct Sun",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:wx4wbjfz54gblm4t2xckirie/bafkreihimilbt7payxjuuatzyznjtusomjcqorao7b4ay5jjd56aibycsa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mhvexeejtc2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - pretty cool guy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "LAST 48 HOURS OF THE FUND!!!\n\nDollhouse is at $17K, it makes us $3K away from solo rules and $8K away from me being able to work on this full-time! If you're at all interested in supporting my work, or want to try new ttrpgs, please consider checking out the page!\nwww.kickstarter.com/projects/125...",
-        "createdAt": "2026-03-25T15:14:49.766Z"
-      },
-      "indexedAt": "2026-03-25T15:18:20.851Z",
-      "replyCount": 1,
-      "repostCount": 60,
-      "likeCount": 89,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibthoc7mtmo7doapzkyhwejbb2i3zviiufvwrdis3z7kkittpfynm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibthoc7mtmo7doapzkyhwejbb2i3zviiufvwrdis3z7kkittpfynm",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1690,7 +1752,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1230,
-      "likeCount": 6484,
+      "likeCount": 6483,
       "embed": {
         "type": "images",
         "images": [
@@ -1859,7 +1921,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 651,
-      "likeCount": 2869,
+      "likeCount": 2868,
       "embed": {
         "type": "images",
         "images": [
@@ -2119,8 +2181,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1952,
-      "likeCount": 8447,
+      "repostCount": 1951,
+      "likeCount": 8445,
       "embed": {
         "type": "images",
         "images": [
@@ -2490,8 +2552,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2339,
-      "likeCount": 11843,
+      "repostCount": 2338,
+      "likeCount": 11842,
       "embed": {
         "type": "images",
         "images": [
@@ -2548,7 +2610,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 727,
-      "likeCount": 3332,
+      "likeCount": 3331,
       "embed": {
         "type": "images",
         "images": [
@@ -2649,7 +2711,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 548,
-      "likeCount": 3032,
+      "likeCount": 3031,
       "embed": {
         "type": "images",
         "images": [
@@ -2677,7 +2739,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 175,
-      "likeCount": 1268,
+      "likeCount": 1267,
       "embed": {
         "type": "images",
         "images": [
@@ -2705,7 +2767,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 247,
-      "likeCount": 1494,
+      "likeCount": 1493,
       "embed": {
         "type": "images",
         "images": [
@@ -2733,7 +2795,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 455,
-      "likeCount": 2425,
+      "likeCount": 2424,
       "embed": {
         "type": "images",
         "images": [
@@ -2844,7 +2906,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 62,
       "repostCount": 1879,
-      "likeCount": 8968,
+      "likeCount": 8967,
       "embed": {
         "type": "images",
         "images": [
@@ -2872,7 +2934,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 404,
-      "likeCount": 2347,
+      "likeCount": 2346,
       "embed": {
         "type": "images",
         "images": [
@@ -2900,7 +2962,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2636,
-      "likeCount": 15516,
+      "likeCount": 15515,
       "embed": {
         "type": "images",
         "images": [
@@ -2972,7 +3034,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 453,
-      "likeCount": 2419,
+      "likeCount": 2418,
       "embed": {
         "type": "images",
         "images": [
