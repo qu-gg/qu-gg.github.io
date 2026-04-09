@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T00:07:54.720092Z",
+  "lastUpdated": "2026-04-09T12:13:12.244235Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3yggal4oooau2uk5ty52j2c7/app.bsky.feed.post/3mj2njmkins2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "thegamingtable.bsky.social",
+        "displayName": "thegamingtable.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreihikxy7ssotykk2wzcdlvhdqijqtfduvp72mk6lct5meipwtnezgm"
+      },
+      "record": {
+        "text": "New #ttrpg #review dropped. We're checking out Riverbank from KoboldPress. You can check out the video here: youtu.be/VMVt_zYXpuU?si\u2026 If you have any thoughts please share them.\n#TabletopRPG #RPGCommunity #IndieRPG #TTRPGCommunity #TabletopGaming #IndieTTRPG\n#TTRPGDesign",
+        "createdAt": "2026-04-09T10:56:42.680Z"
+      },
+      "indexedAt": "2026-04-09T10:56:41.853Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 2,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/VMVt_zYXpuU?si\u2026",
+        "title": "RiverBank RPG revie",
+        "description": "YouTube video by The Gaming Table",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreidnwqnq5nttxl2hbk5tqwm7tgufu3le4jxnm76xrdgviebtuxrmvq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:ryzsihmqyivrfc6rnfks43ro/app.bsky.feed.post/3miys22kk3k2c",
       "source": "bluesky",
       "author": {
@@ -96,9 +125,9 @@
         "createdAt": "2026-04-08T07:02:02.935Z"
       },
       "indexedAt": "2026-04-08T07:02:07.172Z",
-      "replyCount": 3,
-      "repostCount": 29,
-      "likeCount": 73,
+      "replyCount": 4,
+      "repostCount": 30,
+      "likeCount": 78,
       "embed": {
         "type": "images",
         "images": [
@@ -126,7 +155,7 @@
       "indexedAt": "2026-04-08T07:00:07.853Z",
       "replyCount": 3,
       "repostCount": 6,
-      "likeCount": 35,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -153,8 +182,8 @@
       },
       "indexedAt": "2026-04-07T16:06:00.571Z",
       "replyCount": 0,
-      "repostCount": 26,
-      "likeCount": 32,
+      "repostCount": 28,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
@@ -309,7 +338,7 @@
       "indexedAt": "2026-04-05T23:58:15.958Z",
       "replyCount": 3,
       "repostCount": 18,
-      "likeCount": 24,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://sinabsentia.blog/post/813100751964569600/class-design-in-dowager",
@@ -706,39 +735,6 @@
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mhyxvpfksk2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "This came up elsewhere, so i wanted to share one of my favorite examples of \"Placeholder versus Final Art\" from BREAK!!",
-        "createdAt": "2026-03-27T01:31:54.632Z"
-      },
-      "indexedAt": "2026-03-27T01:31:55.649Z",
-      "replyCount": 5,
-      "repostCount": 17,
-      "likeCount": 69,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidesvfsiabzqg5y65tndquurzj7mpw7ztm2xlwvr5df354hzul67a",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidesvfsiabzqg5y65tndquurzj7mpw7ztm2xlwvr5df354hzul67a",
-            "alt": "A placeholder for BREAK!!'s speed rating image. A little bean person is moving at Slow, Normal, Fast, and Very Fast speeds. It is an quick doodle by the game's writer. "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiacyfuosipafgi5gwwdpf5pvuberpan5j6pfxwhp2nrpdfvtgz4mm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiacyfuosipafgi5gwwdpf5pvuberpan5j6pfxwhp2nrpdfvtgz4mm",
-            "alt": "The finished version of BREAK!!'s speed example, a stylistic and well rendered version of the game's mascot, Mariah Doeheart, moves at Slow, Average, Fast and Very Fast speeds. It's done by the game's artist and layout person, so it actually looks good."
-          }
-        ]
-      },
-      "repostBy": null
     },
     {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mhxnlruzpc25",
@@ -2534,7 +2530,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2338,
-      "likeCount": 11842,
+      "likeCount": 11841,
       "embed": {
         "type": "images",
         "images": [
