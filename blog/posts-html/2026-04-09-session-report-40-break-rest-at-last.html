@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Report 40 (BREAK!!) - Rest, At Last - Studio Quagg</title>
+    <meta name="description" content="Welcome back to another episode - number 40 - of BREAK!!: The Wandering Trio! We left off having just arrived in the sanctuary of Evergrove. Here sits the home of Elix the Druid, member of the...">
+    <meta property="og:title" content="Session Report 40 (BREAK!!) - Rest, At Last">
+    <meta property="og:description" content="Welcome back to another episode - number 40 - of BREAK!!: The Wandering Trio! We left off having just arrived in the sanctuary of Evergrove. Here sits the home of Elix the Druid, member of the...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-04-09-session-report-40-break-rest-at-last.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Session Report 40 (BREAK!!) - Rest, At Last">
+    <meta name="twitter:description" content="Welcome back to another episode - number 40 - of BREAK!!: The Wandering Trio! We left off having just arrived in the sanctuary of Evergrove. Here sits the home of Elix the Druid, member of the...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Session Report 40 (BREAK!!) - Rest, At Last</h1>
+                <div class="post-meta">
+                    <span class="post-date">April 09, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">Session Report</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>Welcome back to another episode - number 40 - of <strong>BREAK!!: The Wandering Trio!</strong> We left off having just arrived in the sanctuary of Evergrove. Here sits the home of Elix the Druid, member of the original adventuring party who defeated the Idea of Thorns many years prior, and who the party has been searching for at the behest of the now-possessed Taam.</p>
+<p><figure><a href="../images/SkyrayIsleMap.webp" target="_blank" rel="noopener noreferrer"><img alt="Skyray Isle Map" src="../images/SkyrayIsleMap.webp" /></a><figcaption>Map of Skyray Isle</figcaption></figure></p>
+<p>To bring the vibes back from the previous report, here is art of the Evergrove - towering old ruins of a forgotten past now repurposed as the spiritual heart of the jungle. It is here where Elix has begun her transition into a font of power.</p>
+<p><figure><a href="../images/Evergrove.webp" target="_blank" rel="noopener noreferrer"><img alt="Evergrove" src="../images/Evergrove.webp" /></a><figcaption>The Evergrove. Art by: <a href="https://www.artstation.com/artwork/KezJ89" target="_blank" rel="noopener noreferrer">Aobo Wang</a></figcaption></figure></p>
+<p>As anticipated, a whole buncha talking to Elix in this one. This has been a long sought-after GMC for getting some clarification and directions on how to maybe stop the Idea for good. Instead of doing a one-for-one conversation transcription, I&rsquo;ll give some highlights of secrets/clues discovered and a fun bit of worldbuilding all coming to a head. </p>
+<p><strong>Secrets/Clues:</strong><br />
+- They discovered the Idea&rsquo;s Body is not a physical thing in the Outer World but rather its Mana was infused upon defeat into each of the original adventuring party. <br />
+- The Idea needs to possess (not kill) all of the original adventuring Party in order to reconstitute fully.<br />
+- Elix has sustained so far against the corruption due to the barrier. This is taking its toll, however, and will fall soon.<br />
+- As it stands, the Idea is immortal in its Concept Form and would just reform in the Garden if defeated here. <br />
+- The party requires some method of making the Idea tangible in this plane.<br />
+- &hellip;and Gack fawned over Elix being the &ldquo;woman of his (literal) dreams&rdquo;&hellip;to which he got a confused response back.</p>
+<h3 id="the-den-of-the-half-knowing-ones">The Den of the Half-Knowing Ones</h3>
+<p>With the party and Elix recognizing their current lack of strong allies, Lookus half-asked if there were any living with knowledge on the Idea and how to defeat it - things like eldritch spells, grand tomes of arcana, a big gun maybe, etc. Elix sighed at this and conceded that the druidic goblins from the Den of the Half-Knowing Ones might have some answers&hellip;if the party can drag it out of them. </p>
+<p>The Den of the Half-Knowing Ones are an ancient circle of swampy druids that have been in the Grove long before it got shunted to Skyray Isle (more on that another session report). They have only passed down their esoteric knowledge via oral traditions that most normal folk cannot make sense of. As such, it is often impossible to glean any useful information from an interaction with them. Everyone immediately thought Abra should have no problem with this discussion. </p>
+<p>It was also mentioned a few sessions prior that this Den might know the location of the study of Calian High Fleshwarper who researched &ldquo;teleportation&rdquo; via long-distance flesh manipulation. No normal means of teleportation exist in BREAK!! (which I quite prefer) but I figured it&rsquo;s time for some form of faster travel and this is sufficiently weird.</p>
+<p><figure><a href="https://cdna.artstation.com/p/assets/images/images/028/874/982/large/marcel-hampel-16-hat-meets-swamp-creatures.jpg?1595791317" target="_blank" rel="noopener noreferrer"><img alt="Half-Knowing Goblins" src="https://cdna.artstation.com/p/assets/images/images/028/874/982/large/marcel-hampel-16-hat-meets-swamp-creatures.jpg?1595791317" width="65%" /></a><figcaption>Have a teaser of the Swamp Goblins. Art by: <a href="https://marcelhampel.artstation.com/albums/2474449" target="_blank" rel="noopener noreferrer">Marcel Hampel</a></figcaption></figure></p>
+<h3 id="the-ecological-research-facility">The Ecological Research Facility</h3>
+<p>The driving bit of information gleaned this session actually stemmed from an idea given by one player - Abra - when I did my collaborative worldbuilding. The player described a fuzzy memory where Taam gave Elix a wrapped parcel years ago, having mentioned it, frustratingly, related <em>somehow</em> to the Idea, but Abra didn&rsquo;t think much of it at the time. </p>
+<p>Elix unwrapped the parcel with them and discovered it to be a half-mask made of fine marble. Lookus picked up its connection with a seemingly mundane item they got off an NPC many, many sessions ago in Season 1 - a simple but finely carved wooden mask. The circumstance of receiving this mask was always peculiar to them. A Chosen One kid was wandering up the same remote snowy mountainside they were on, within the Celestial Heights. They claimed to be on their way to kill the Grim Wing at its peak where an old Gleysian Observatory rests. They offered this mask in a trade - to which the party agreed - but no information was offered about it. Lookus&rsquo;s player has always been suspicious of it. </p>
+<p><span class="spoiler" tabindex="0">Honestly, and funnily, this connection wasn&rsquo;t planned and I had forgotten about the wooden mask. Glad to see it was deeply ingrained (for months now) in the mind of my player given his visceral reaction to me revealing the half-mask.</span></p>
+<p>Indeed, overlaying the half-mask onto the wooden mask revealed that they fit layered onto each other quite well. Abra with his Grimoire identified that the material of the wooden mask was actually vine from the Garden of Ynn itself (the Idea&rsquo;s Elsewhere). This led to Lookus spiraling in confused anger with theories and questions on the connection between everything: was the child Skippi the Asura in disguise? somehow a surviving agent from the Calian Empire? another pawn trying to open their own Ynn portal at the Observatory? </p>
+<p>With enough neurons firing and deductions, I gave Lookus an Insight Check to work out information they got in Roost with this new information. On a Critical Success, Lookus realized the half-mask&rsquo;s materials might plausibly stem from a derelict research facility in the Grove. This facility was, in the 3rd Aeon, a joint venture between the empires of Gley and Calian researching who-knows-what. Recently, however, it has reactivated, spewing toxic sludge into the Grove&rsquo;s rivers.</p>
+<h3 id="a-much-needed-rest">A Much Needed Rest</h3>
+<p>To finish out the session, with the information that Elix is holding out and those already possessed are not under the immediate threat of death, the party was able to collapse from their travel fatigue to truly rest. Elix pointed out the natural mineral hot springs within the Evergrove that have regenerative properties to them. I wanted to reward this milestone so I essentially expanded this zone to have a complimentary &ldquo;Heal an Injury&rdquo; Downtime action alongside their normal one. After all this trek and danger, I felt it thematic to wash away the tension and prepare for their next leg of the journey. And to Gack&rsquo;s long-awaited vindication, his severed leg regrew and he was able to prove that Prometheans have this ability.</p>
+<p>For the start of the next episode, I think I&rsquo;m going to find some serene music (ATLA OST or some such) and try to evoke that surreal feeling of relaxing on some high up rooftop/structure, overlooking a scene from a beautiful new perspective alongside a quiet moment of beauty. Here is one such image which evokes that:</p>
+<p><figure><a href="https://external-preview.redd.it/the-station-by-%E6%B5%81%E6%B5%AA%E6%B1%89lzy-digital-2015-v0-KPHxoxe9yBrCi1tBDg4WJ01RBls1X63nkmqzumh5jLE.jpg?auto=webp&amp;s=5e9eb79cf9636b098f2b824dcddc5ea6e389594f" target="_blank" rel="noopener noreferrer"><img alt="Arcane Lookover" src="https://external-preview.redd.it/the-station-by-%E6%B5%81%E6%B5%AA%E6%B1%89lzy-digital-2015-v0-KPHxoxe9yBrCi1tBDg4WJ01RBls1X63nkmqzumh5jLE.jpg?auto=webp&amp;s=5e9eb79cf9636b098f2b824dcddc5ea6e389594f" /></a><figcaption>&quot;The Station&quot; by 流浪汉LZY</figcaption></figure></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Overall, I&rsquo;m ok with how the session went. I feel like I introduced and played Elix fairly well, keeping a consistent tone/source of knowledge. It was, however, a bit of a lore dump session in the conversation and I think I could&rsquo;ve done a better job at showcasing some of these secrets more naturally in play while they traveled to the Evergrove. It was functional, at least, and had no stumbling blocks. I really enjoyed seeing Lookus&rsquo;s player go on a frantic note/lore hunt to piece together what the hell is going on, and bring old off-hand NPC interactions back to the forefront. </p>
+<p>The party has two directions ahead of them and are taking the week to decide what they want to do - investigate the Research Facility for insights on the mask or deal with the swamp goblins and find out more information on the Idea&rsquo;s Ascension Ritual. Thankfully, I&rsquo;m mostly set here with preparation either way. Excited to share more in later reports!</p>
+<p>As always, thanks for reading!</p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-04-05-items-of-the-junkers-and-tinkerers-gear.html" class="post-nav-link next">Items of the Junkers and Tinkerers (Gear) →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
