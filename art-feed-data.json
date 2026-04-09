@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T12:12:13.725806Z",
+  "lastUpdated": "2026-04-09T00:07:54.720092Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ryzsihmqyivrfc6rnfks43ro/app.bsky.feed.post/3miys22kk3k2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "lorenzohall.com",
+        "displayName": "Lorenzo Hall \ud83c\udf49",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreihoej52pq7ofigcmyltxfrup2jk34l6rqu3d6qvhwmouwybrx6hui"
+      },
+      "record": {
+        "text": "Can we finish it by 200 backers?\n\nLink:\nwww.kickstarter.com/projects/526...",
+        "createdAt": "2026-04-08T17:12:09.725Z"
+      },
+      "indexedAt": "2026-04-08T17:12:11.759Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreiaagxaoyl4c3ihktcasq6yrt2kj7wxtom42hofzxscdkx7qww2fj4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ryzsihmqyivrfc6rnfks43ro/bafkreiaagxaoyl4c3ihktcasq6yrt2kj7wxtom42hofzxscdkx7qww2fj4",
+            "alt": "https://www.kickstarter.com/projects/526077631/arisan/"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mixpx3mbik2s",
       "source": "bluesky",
       "author": {
@@ -64,9 +96,9 @@
         "createdAt": "2026-04-08T07:02:02.935Z"
       },
       "indexedAt": "2026-04-08T07:02:07.172Z",
-      "replyCount": 0,
-      "repostCount": 17,
-      "likeCount": 45,
+      "replyCount": 3,
+      "repostCount": 29,
+      "likeCount": 73,
       "embed": {
         "type": "images",
         "images": [
@@ -92,9 +124,9 @@
         "createdAt": "2026-04-08T07:00:05.123Z"
       },
       "indexedAt": "2026-04-08T07:00:07.853Z",
-      "replyCount": 2,
-      "repostCount": 4,
-      "likeCount": 23,
+      "replyCount": 3,
+      "repostCount": 6,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -106,6 +138,35 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:k5ufhsh5vidwzllq77xjmijz/app.bsky.feed.post/3miw5uroimc2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "rolistespod.itch.io",
+        "displayName": "Kalum \ud83d\udd1c Kickstarter Magic of Inventorying",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k5ufhsh5vidwzllq77xjmijz/bafkreiftn52f54cmlz574ak7bs3rhzcyy4xca6bexkplhta3flj4j5gnii"
+      },
+      "record": {
+        "text": "WE ARE LIVE!\nTime to declutter your loot!\n\nPlease pledge and share far and wide.\nwww.kickstarter.com/projects/rol... #TTRPG #MagicOfInventorying #Kickstarter",
+        "createdAt": "2026-04-07T16:05:58.334Z"
+      },
+      "indexedAt": "2026-04-07T16:06:00.571Z",
+      "replyCount": 0,
+      "repostCount": 26,
+      "likeCount": 32,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
+        "title": "Magic of Inventorying",
+        "description": "A roleplaying game to declutter your loot and banish encumbrance forever!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k5ufhsh5vidwzllq77xjmijz/bafkreichy7q7zfuofxga6lwl5ot7vzyf5mojixtcta7x6b5fa5itoklfs4"
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3miw443ius22p",
@@ -148,9 +209,9 @@
         "createdAt": "2026-04-07T14:30:15.544Z"
       },
       "indexedAt": "2026-04-07T14:30:25.669Z",
-      "replyCount": 3,
-      "repostCount": 34,
-      "likeCount": 67,
+      "replyCount": 4,
+      "repostCount": 36,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -186,8 +247,8 @@
       },
       "indexedAt": "2026-04-07T12:07:34.752Z",
       "replyCount": 0,
-      "repostCount": 31,
-      "likeCount": 39,
+      "repostCount": 34,
+      "likeCount": 46,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/oneshotpodcast/a-whole-new-world-0?ref=project_build",
@@ -247,8 +308,8 @@
       },
       "indexedAt": "2026-04-05T23:58:15.958Z",
       "replyCount": 3,
-      "repostCount": 17,
-      "likeCount": 23,
+      "repostCount": 18,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://sinabsentia.blog/post/813100751964569600/class-design-in-dowager",
@@ -333,8 +394,8 @@
       },
       "indexedAt": "2026-04-03T14:12:08.754Z",
       "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 3,
+      "repostCount": 2,
+      "likeCount": 4,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/SwIKhnoxKT4?is=t_cgfUz3FLC3IFi1",
@@ -763,7 +824,7 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
-      "repostCount": 590,
+      "repostCount": 589,
       "likeCount": 2716,
       "embed": {
         "type": "images",
@@ -1587,85 +1648,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mcare5uavc2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
-      },
-      "record": {
-        "text": "Green Dragon",
-        "createdAt": "2026-01-12T19:24:51.499Z"
-      },
-      "indexedAt": "2026-01-12T19:25:03.428Z",
-      "replyCount": 6,
-      "repostCount": 15,
-      "likeCount": 107,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreifn3egbaalhuqf2kjqppv7oonkeixaeqgqo2giqw2k6pnearw3hgm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreifn3egbaalhuqf2kjqppv7oonkeixaeqgqo2giqw2k6pnearw3hgm",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mcafhghusk2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "dgchapman.bsky.social",
-        "displayName": "D G Chapman",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreihqugoeyufcsebs6rvpcmchq6cacd63mknoy3yj56zvcz7enroese"
-      },
-      "record": {
-        "text": "I am currently looking for work! Writing, design, editing and proofreading for tabletop games and just about anything else besides.\n\nI've worked with indie giants and first-time self-publishers and  I always smash it. Some examples below.\n\nEmail in bio, get in touch, let's make stuff x",
-        "createdAt": "2026-01-12T15:51:56.287Z"
-      },
-      "indexedAt": "2026-01-12T15:52:09.736Z",
-      "replyCount": 3,
-      "repostCount": 34,
-      "likeCount": 79,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi",
-            "alt": "Another Bug Hunt"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce",
-            "alt": "The Haunting of Ypsilon 14"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiagutjpebvvwzh3twxbw5g2t2ftunishuv3ep6dgpi7stxv54l5gm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiagutjpebvvwzh3twxbw5g2t2ftunishuv3ep6dgpi7stxv54l5gm",
-            "alt": "The Horror on Tau Sigma 7"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiao6ud777ujgi45j64wbtevccnmpnlnkeb2eujmgn3y4qyc63zwv4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiao6ud777ujgi45j64wbtevccnmpnlnkeb2eujmgn3y4qyc63zwv4",
-            "alt": "GoGoGolf!"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/2BoGkY",
