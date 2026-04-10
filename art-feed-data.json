@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T12:13:12.244235Z",
+  "lastUpdated": "2026-04-10T00:10:44.452461Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,96 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mj3smvdzc623",
+      "source": "bluesky",
+      "author": {
+        "handle": "setincement.bsky.social",
+        "displayName": "Chazz Runs A Comic Book Club!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihnvgt7b3mes63gjcw2hlpv4amxtexu6zlnrbq4nrchbwbob26jbe"
+      },
+      "record": {
+        "text": "New week, New Wheel! This time on Wheel of Webcomics we're reading Gingerberry by \nArtavenue!\n \n\nCheck it out here: https://gingerberry.thecomicseries.com/\n\nAnd join our Online Book Club on Discord here!: discord.gg/ksM6sJFGBR",
+        "createdAt": "2026-04-09T22:00:39.444Z"
+      },
+      "indexedAt": "2026-04-09T22:00:41.654Z",
+      "replyCount": 0,
+      "repostCount": 8,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreibktc3ykziva5wecbrtukykfoof2jmkyec5feifmyb5bftqu6djjy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreibktc3ykziva5wecbrtukykfoof2jmkyec5feifmyb5bftqu6djjy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/QKl1RE",
+      "source": "artstation",
+      "author": {
+        "handle": "underpalewater",
+        "displayName": "Fjell",
+        "avatar": null
+      },
+      "record": {
+        "text": "Poulettes\n\nhttps://underpalewater.carrd.co/\nhttps://www.instagram.com/underpalewater/\nhttps://x.com/underpalewater\nhttps://www.inprnt.com/gallery/underpalewater/",
+        "createdAt": "2026-04-09T16:24:26-05:00"
+      },
+      "indexedAt": "2026-04-09T16:24:26-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/097/982/663/large/fjell-chickensv2coolsmall.jpg?1775768853",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/097/982/663/large/fjell-chickensv2coolsmall.jpg?1775768853",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/QKl1RE"
+    },
+    {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mj2z3ygtpk2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "Do you know about my webstore? I sell zines, comics & prints there. Stuff like this- one of the stranger books I've made. It's just a bunch of jokes and sketches about G1 Against the Giants. Someday I might even make the sequel but for now just go buy this one.",
+        "createdAt": "2026-04-09T14:23:50.287Z"
+      },
+      "indexedAt": "2026-04-09T14:23:53.151Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 20,
+      "embed": {
+        "type": "external",
+        "uri": "https://betterlegends.com/webstore/g1-against-the-giants-sketchbook-fanzine-physical-copy",
+        "title": "G1 Against the Giants Sketchbook Fanzine (PRINT COPY) \u2014 Better Legends",
+        "description": "A rough and tumble 16 page B&W&nbsp;sketchbook created while reading Module G1 for the podcast Between Two Cairns. I&nbsp;like sketching while I read and this is the byproduct of that. I&nbsp;do plan on putting my sketches for G2 and G3 together for sketchbook zines as well,&",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreif3pabcst4hmrrs46cu5lo55wvcx3o4hpt4s4yk56ve6phiegpztm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:3yggal4oooau2uk5ty52j2c7/app.bsky.feed.post/3mj2njmkins2d",
       "source": "bluesky",
@@ -126,8 +216,8 @@
       },
       "indexedAt": "2026-04-08T07:02:07.172Z",
       "replyCount": 4,
-      "repostCount": 30,
-      "likeCount": 78,
+      "repostCount": 31,
+      "likeCount": 77,
       "embed": {
         "type": "images",
         "images": [
@@ -154,8 +244,8 @@
       },
       "indexedAt": "2026-04-08T07:00:07.853Z",
       "replyCount": 3,
-      "repostCount": 6,
-      "likeCount": 36,
+      "repostCount": 7,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -183,7 +273,7 @@
       "indexedAt": "2026-04-07T16:06:00.571Z",
       "replyCount": 0,
       "repostCount": 28,
-      "likeCount": 35,
+      "likeCount": 36,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
@@ -276,8 +366,8 @@
       },
       "indexedAt": "2026-04-07T12:07:34.752Z",
       "replyCount": 0,
-      "repostCount": 34,
-      "likeCount": 46,
+      "repostCount": 35,
+      "likeCount": 49,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/oneshotpodcast/a-whole-new-world-0?ref=project_build",
@@ -708,35 +798,6 @@
       }
     },
     {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mhztufegs22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
-      },
-      "record": {
-        "text": "!!!NEW INDONESIAN TABLETOP RPG ADVENTURE ALERT!!!\n\nWicak, a friend of mine, has just released his first OSR adventure module for @melsonian-arts-council.itch.io's Troika! and @lukegearing.bsky.social's Acid Death Fantasy!\n\nCheck it out! \ud83c\udfce\ufe0f\ud83c\udfdc\ufe0f\n\nwicakhidayat.itch.io/race-your-pa...",
-        "createdAt": "2026-03-27T09:52:15.327Z"
-      },
-      "indexedAt": "2026-03-27T09:52:19.352Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 21,
-      "embed": {
-        "type": "external",
-        "uri": "https://wicakhidayat.itch.io/race-your-pardon",
-        "title": "Race Your Pardon by overeasy",
-        "description": "An adventure module for  Troika RPG's Acid Death Fantasy setting. Inspired by a movie in the 80s.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreic76xqnpcyldvhw5wlqgf634an5fzttarvenptnhzy2ee5y5zovwu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mhxnlruzpc25",
       "source": "bluesky",
       "author": {
@@ -821,7 +882,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 589,
-      "likeCount": 2716,
+      "likeCount": 2717,
       "embed": {
         "type": "images",
         "images": [
@@ -2159,7 +2220,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1951,
-      "likeCount": 8445,
+      "likeCount": 8444,
       "embed": {
         "type": "images",
         "images": [
@@ -2530,7 +2591,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2338,
-      "likeCount": 11841,
+      "likeCount": 11840,
       "embed": {
         "type": "images",
         "images": [
