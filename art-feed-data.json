@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T00:10:44.452461Z",
+  "lastUpdated": "2026-04-10T12:11:30.053226Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,49 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mj4mokz2kk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "Some TUNNELS & TROLLS fan art (hat tip to Danforth)\n\nT&T had similar design goals to BREAK!! reduce unnecessary complexity and don't take yourself too seriously.\n\nThey have a new edition on KS\nwww.kickstarter.com/projects/reb...",
+        "createdAt": "2026-04-10T05:46:54.483Z"
+      },
+      "indexedAt": "2026-04-10T05:47:21.150Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 24,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifg4hu2532lygnhdjubqznnovo47wttduhpmqcoawoezbnomozrma",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifg4hu2532lygnhdjubqznnovo47wttduhpmqcoawoezbnomozrma",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibmly55zwchb4xrhyvk5djbprm7cdln43buq3slyq7kqyzltwjx5q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibmly55zwchb4xrhyvk5djbprm7cdln43buq3slyq7kqyzltwjx5q",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreift4kodv3uzqajbgcq2z3f42ozqr24nmjv24rons356zb4ajwij3e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreift4kodv3uzqajbgcq2z3f42ozqr24nmjv24rons356zb4ajwij3e",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiayc2slip2utyy3daitarxqzqawcoewy3aah4ggay7uag3t4javnu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiayc2slip2utyy3daitarxqzqawcoewy3aah4ggay7uag3t4javnu",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mj3smvdzc623",
       "source": "bluesky",
       "author": {
@@ -65,8 +108,8 @@
       },
       "indexedAt": "2026-04-09T22:00:41.654Z",
       "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 10,
+      "repostCount": 10,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -127,7 +170,7 @@
       "indexedAt": "2026-04-09T14:23:53.151Z",
       "replyCount": 1,
       "repostCount": 7,
-      "likeCount": 20,
+      "likeCount": 21,
       "embed": {
         "type": "external",
         "uri": "https://betterlegends.com/webstore/g1-against-the-giants-sketchbook-fanzine-physical-copy",
@@ -271,9 +314,9 @@
         "createdAt": "2026-04-07T16:05:58.334Z"
       },
       "indexedAt": "2026-04-07T16:06:00.571Z",
-      "replyCount": 0,
-      "repostCount": 28,
-      "likeCount": 36,
+      "replyCount": 1,
+      "repostCount": 30,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
@@ -882,7 +925,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 589,
-      "likeCount": 2717,
+      "likeCount": 2718,
       "embed": {
         "type": "images",
         "images": [
@@ -2647,8 +2690,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 727,
-      "likeCount": 3331,
+      "repostCount": 726,
+      "likeCount": 3330,
       "embed": {
         "type": "images",
         "images": [
