@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T00:09:28.376430Z",
+  "lastUpdated": "2026-04-12T12:05:58.795662Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mjbaouvarc2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
+      },
+      "record": {
+        "text": "BASTION ELYSIUM\n\nAn Electric Bastionland apartment crawl adventure for 3\u20135 players. What if Disco Elysium were set entirely in an apartment building?\n\nComing soon!\n\nCover art by Citaaticat\n\n#osr #ttrpg",
+        "createdAt": "2026-04-12T01:55:38.720Z"
+      },
+      "indexedAt": "2026-04-12T01:55:48.551Z",
+      "replyCount": 2,
+      "repostCount": 16,
+      "likeCount": 61,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiewazeqkdbdusyg4gum72lo3bq5vpasnzbz4k6qasfopbxtb7j5my",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiewazeqkdbdusyg4gum72lo3bq5vpasnzbz4k6qasfopbxtb7j5my",
+            "alt": "Cover of Bastion Elysium. An Electric Bastionland adventure for 3\u20135 players. The cover shows an apartment building with several silhouettes and a burning corpse."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjaqgq5yl223",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-04-11T21:04:53.660Z",
       "replyCount": 1,
-      "repostCount": 0,
-      "likeCount": 21,
+      "repostCount": 1,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +126,7 @@
       "indexedAt": "2026-04-11T21:03:05.755Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 18,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -122,7 +154,7 @@
       "indexedAt": "2026-04-11T21:01:20.250Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 19,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -150,7 +182,7 @@
       "indexedAt": "2026-04-11T15:00:46.156Z",
       "replyCount": 1,
       "repostCount": 14,
-      "likeCount": 22,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -285,8 +317,8 @@
       },
       "indexedAt": "2026-04-09T14:23:53.151Z",
       "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 21,
+      "repostCount": 9,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://betterlegends.com/webstore/g1-against-the-giants-sketchbook-fanzine-physical-copy",
@@ -375,8 +407,8 @@
       },
       "indexedAt": "2026-04-08T07:02:07.172Z",
       "replyCount": 4,
-      "repostCount": 31,
-      "likeCount": 77,
+      "repostCount": 32,
+      "likeCount": 79,
       "embed": {
         "type": "images",
         "images": [
@@ -825,67 +857,6 @@
       }
     },
     {
-      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mi5tb3yb2s2j",
-      "source": "bluesky",
-      "author": {
-        "handle": "elmc.at",
-        "displayName": "elmcat",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi"
-      },
-      "record": {
-        "text": "I updated rootring again\n\nOn the rootr.ing/latest page posts now show when they:\n\n- are linked by another blog on the ring\n- link to another post from a blog on the ring",
-        "createdAt": "2026-03-28T23:52:06.909Z"
-      },
-      "indexedAt": "2026-03-28T23:52:12.360Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 24,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiddcn23woazq65tw5xs25vyq4nwsa3wk2smd6ivk6v3lldgaq5hwi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiddcn23woazq65tw5xs25vyq4nwsa3wk2smd6ivk6v3lldgaq5hwi",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mi4gnb6gds27",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "Presenting our live recording of Between Two Cairns at Gary Con XVIII!\n\n@bradkerr.net, @betterlegends.bsky.social and I review D3: Vault of the Drow by Gary Gygax in another Gamer Blast from the Past! \n\nyoutu.be/I_zrshbGR34?...\n\nPatrons received this video early.",
-        "createdAt": "2026-03-28T10:33:36.622Z"
-      },
-      "indexedAt": "2026-03-28T10:33:35.456Z",
-      "replyCount": 2,
-      "repostCount": 11,
-      "likeCount": 53,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/I_zrshbGR34?si=HxsuorJLeK67xFyH",
-        "title": "Live at Gary Con XVIII: Vault of the Drow",
-        "description": "YouTube video by Between Two Cairns",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreig4v3ccr6hurh4jb7dgage3bxims3pxoywjnjrihynt6uedezac34"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mhxnlruzpc25",
       "source": "bluesky",
       "author": {
@@ -970,7 +941,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 13,
       "repostCount": 591,
-      "likeCount": 2722,
+      "likeCount": 2724,
       "embed": {
         "type": "images",
         "images": [
@@ -1670,66 +1641,6 @@
       "link": "https://www.artstation.com/artwork/L4g8D0"
     },
     {
-      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mckidn2klc2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "ipr.bsky.social",
-        "displayName": "Indie Press Revolution",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
-      },
-      "record": {
-        "text": "Down to our last 6 copies of the 4th printing of Ryuutama! Another printing is in the works but may take a couple months.\n\nwww.indiepressrevolution.com/xcart/Ryuuta...",
-        "createdAt": "2026-01-16T16:10:07.593Z"
-      },
-      "indexedAt": "2026-01-16T16:10:10.431Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 28,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiezgslyxcxrnqyo5fvdgytkslgwd2be7jxzudo5flwifbgvmqoepe",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiezgslyxcxrnqyo5fvdgytkslgwd2be7jxzudo5flwifbgvmqoepe",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mcjttvcyus2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Who better to prepare wannabe adventurers for the Shadowed lands than the legendary Kuro's",
-        "createdAt": "2026-01-16T10:03:24.516Z"
-      },
-      "indexedAt": "2026-01-16T10:03:32.028Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreideyfgpcxdeeq7rqj5wb3mche2t724q3dttpfao4l6fksir3fcuta",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/2BoGkY",
       "source": "artstation",
       "author": {
@@ -1813,7 +1724,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1230,
-      "likeCount": 6483,
+      "likeCount": 6484,
       "embed": {
         "type": "images",
         "images": [
@@ -1982,7 +1893,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 651,
-      "likeCount": 2869,
+      "likeCount": 2870,
       "embed": {
         "type": "images",
         "images": [
@@ -2671,7 +2582,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 726,
-      "likeCount": 3330,
+      "likeCount": 3329,
       "embed": {
         "type": "images",
         "images": [
@@ -2772,7 +2683,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 548,
-      "likeCount": 3031,
+      "likeCount": 3030,
       "embed": {
         "type": "images",
         "images": [
@@ -2856,7 +2767,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 455,
-      "likeCount": 2424,
+      "likeCount": 2425,
       "embed": {
         "type": "images",
         "images": [
@@ -2967,7 +2878,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 62,
       "repostCount": 1879,
-      "likeCount": 8967,
+      "likeCount": 8968,
       "embed": {
         "type": "images",
         "images": [
