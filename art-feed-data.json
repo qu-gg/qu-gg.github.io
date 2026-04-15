@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T12:14:21.478533Z",
+  "lastUpdated": "2026-04-15T00:14:35.903845Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,63 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mjho23alwc2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "voxparlour.bsky.social",
+        "displayName": "Scott M \u27a1\ufe0f T&T: A New Age live on Kickstarter now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreif6auuttuftpxhyhjzdkd3lyp5nf6jqc6af2bsokzdmgvfor63pne"
+      },
+      "record": {
+        "text": "44 mins to go!! www.kickstarter.com/projects/reb...",
+        "createdAt": "2026-04-14T15:10:31.556Z"
+      },
+      "indexedAt": "2026-04-14T15:10:39.949Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 11,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/rebellionunplugged/tunnels-and-trolls-a-new-age/posts",
+        "title": "Tunnels & Trolls: A New Age",
+        "description": "Roll dice. Ask questions later.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreib3dumvtg3zg7gvcujhisgsll6prz6jmtfxdgzbhrcybg3g5zu55q"
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
+      "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mjhjhjld4s2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "underpalewater.bsky.social",
+        "displayName": "Underpalewater",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-04-14T13:48:34.053Z"
+      },
+      "indexedAt": "2026-04-14T13:48:42.858Z",
+      "replyCount": 23,
+      "repostCount": 1166,
+      "likeCount": 5069,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihk7j3nujc7va4h73jeqp3n7negexe3r5fzbioixd7pckokaexoue",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihk7j3nujc7va4h73jeqp3n7negexe3r5fzbioixd7pckokaexoue",
+            "alt": "illustration of a girl with red hair chasing chickens in an abandoned villages"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjhbfrzwqs2f",
       "source": "bluesky",
       "author": {
@@ -65,8 +122,8 @@
       },
       "indexedAt": "2026-04-14T11:24:32.952Z",
       "replyCount": 3,
-      "repostCount": 2,
-      "likeCount": 11,
+      "repostCount": 7,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -92,9 +149,9 @@
         "createdAt": "2026-04-14T11:19:13.064Z"
       },
       "indexedAt": "2026-04-14T11:19:19.251Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 9,
+      "replyCount": 3,
+      "repostCount": 5,
+      "likeCount": 29,
       "embed": {
         "type": "images",
         "images": [
@@ -121,8 +178,8 @@
       },
       "indexedAt": "2026-04-14T10:58:13.353Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 9,
+      "repostCount": 5,
+      "likeCount": 22,
       "embed": {
         "type": "external",
         "uri": "https://alldeadgenerations.blogspot.com/2026/04/every-angel-is-terrifying.html#more",
@@ -149,9 +206,9 @@
         "createdAt": "2026-04-14T09:46:51.265Z"
       },
       "indexedAt": "2026-04-14T09:46:58.056Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 1,
-      "likeCount": 18,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -177,9 +234,9 @@
         "createdAt": "2026-04-14T08:30:29.866Z"
       },
       "indexedAt": "2026-04-14T08:30:35.154Z",
-      "replyCount": 2,
-      "repostCount": 4,
-      "likeCount": 21,
+      "replyCount": 3,
+      "repostCount": 8,
+      "likeCount": 33,
       "embed": {
         "type": "images",
         "images": [
@@ -240,7 +297,7 @@
       "indexedAt": "2026-04-13T21:46:23.355Z",
       "replyCount": 3,
       "repostCount": 3,
-      "likeCount": 53,
+      "likeCount": 58,
       "embed": {
         "type": "images",
         "images": [
@@ -297,7 +354,7 @@
       "indexedAt": "2026-04-13T17:56:29.151Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 4,
+      "likeCount": 3,
       "embed": {
         "type": "images",
         "images": [
@@ -372,8 +429,8 @@
       },
       "indexedAt": "2026-04-12T01:55:48.551Z",
       "replyCount": 3,
-      "repostCount": 23,
-      "likeCount": 87,
+      "repostCount": 22,
+      "likeCount": 88,
       "embed": {
         "type": "images",
         "images": [
@@ -827,7 +884,7 @@
       },
       "indexedAt": "2026-04-07T14:30:25.669Z",
       "replyCount": 4,
-      "repostCount": 37,
+      "repostCount": 36,
       "likeCount": 70,
       "embed": {
         "type": "images",
@@ -1027,38 +1084,6 @@
       }
     },
     {
-      "uri": "at://did:plc:hrbxh6dwofaaqsthcfmmflnu/app.bsky.feed.post/3milpid54gc2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "emielboven.itch.io",
-        "displayName": "Emiel Boven",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiax3t7z6wiwtzl4gbw3aldh6wp6pleofdcrjignrwvr46cqj3txae"
-      },
-      "record": {
-        "text": "goblins",
-        "createdAt": "2026-04-03T12:21:50.657Z"
-      },
-      "indexedAt": "2026-04-03T12:21:54.850Z",
-      "replyCount": 4,
-      "repostCount": 42,
-      "likeCount": 269,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiaonrjerqtypbxuadsx3ery5oayvjly7y34m7gb77mfm3gg463sii",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiaonrjerqtypbxuadsx3ery5oayvjly7y34m7gb77mfm3gg463sii",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/V2ePvb",
       "source": "artstation",
       "author": {
@@ -1096,72 +1121,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/V2ePvb"
-    },
-    {
-      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mikflyazn22f",
-      "source": "bluesky",
-      "author": {
-        "handle": "sandroad.moe",
-        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiflnglqolpmqi4e2iwbuvxwl3kt3kkfzystvqv4lsnihfxiwjb5am"
-      },
-      "record": {
-        "text": "I'm making an informational pamphlet for my local librarian who wanted to know more about TTRPGs and what they are! This is meant as a trifold so the first page is out of order - Very open to any feedback/thoughts (Wish I coulda shout-outted like 50 other rpgs but this felt like a passable survey)",
-        "createdAt": "2026-04-02T23:52:16.310Z"
-      },
-      "indexedAt": "2026-04-02T23:52:32.650Z",
-      "replyCount": 6,
-      "repostCount": 18,
-      "likeCount": 73,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieysxp7sa73h2u7jg746jargfuuiktnmj4dstanvn2so3xwpv5ivy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreieysxp7sa73h2u7jg746jargfuuiktnmj4dstanvn2so3xwpv5ivy",
-            "alt": "Page 1 of the Trifold, the cover goes over the broad scope of what a TTRPG is - The back covers topics like APs and VTTs and the side column for the opening flap covers D&D and its history"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifureavyvgpayqnqkkgsspe747ysg2tbzoa5hsiojjeicfayjncky",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreifureavyvgpayqnqkkgsspe747ysg2tbzoa5hsiojjeicfayjncky",
-            "alt": "The inner pages of the trifold - The first segment talks about dice and common rpg terms/ideas - The next two cover some of the bigger names of TTRPGs past and present and give a small shotgun blast of some systems to check out"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:bktssur4phxokmndtgekh3eo/app.bsky.feed.post/3mibv6jrkdc2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "mindstorm.bsky.social",
-        "displayName": "Ty",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreieudskyzwgnyjhbwinw4ruymod2swea42h3tmf3q5gibke53pxkqy"
-      },
-      "record": {
-        "text": "Great post from Studio Quagg about bringing the Spell FRIEND and enter idea I blogged about to BREAK!! \n\nits.quagg.studio/blog/posts-h...",
-        "createdAt": "2026-03-30T14:37:07.145Z"
-      },
-      "indexedAt": "2026-03-30T14:37:05.899Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 5,
-      "embed": {
-        "type": "external",
-        "uri": "https://its.quagg.studio/blog/posts-html/2026-03-29-spell-break-and-enter.html",
-        "title": "Spell BREAK!! and Enter",
-        "description": "I\u2019ve circled back to this lovely scrabble idea - Spell FRIEND and Enter - from mindstorm again and again, and have finally sat down to sketch what a potential campaign in BREAK!!\u2019s Outer World could.....",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mhxnlruzpc25",
@@ -1246,9 +1205,9 @@
         "createdAt": "2026-03-19T14:50:30.405Z"
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
-      "replyCount": 13,
-      "repostCount": 591,
-      "likeCount": 2723,
+      "replyCount": 14,
+      "repostCount": 605,
+      "likeCount": 2817,
       "embed": {
         "type": "images",
         "images": [
@@ -1341,8 +1300,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 755,
-      "likeCount": 3782,
+      "repostCount": 758,
+      "likeCount": 3841,
       "embed": {
         "type": "images",
         "images": [
@@ -1972,8 +1931,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1230,
-      "likeCount": 6484,
+      "repostCount": 1239,
+      "likeCount": 6529,
       "embed": {
         "type": "images",
         "images": [
@@ -2141,8 +2100,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 651,
-      "likeCount": 2870,
+      "repostCount": 661,
+      "likeCount": 2914,
       "embed": {
         "type": "images",
         "images": [
@@ -2311,8 +2270,8 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 432,
-      "likeCount": 1803,
+      "repostCount": 442,
+      "likeCount": 1853,
       "embed": {
         "type": "images",
         "images": [
@@ -2402,8 +2361,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1951,
-      "likeCount": 8445,
+      "repostCount": 1952,
+      "likeCount": 8480,
       "embed": {
         "type": "images",
         "images": [
@@ -2773,8 +2732,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2339,
-      "likeCount": 11840,
+      "repostCount": 2342,
+      "likeCount": 11866,
       "embed": {
         "type": "images",
         "images": [
@@ -2830,8 +2789,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 726,
-      "likeCount": 3329,
+      "repostCount": 727,
+      "likeCount": 3349,
       "embed": {
         "type": "images",
         "images": [
@@ -2932,7 +2891,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 548,
-      "likeCount": 3029,
+      "likeCount": 3042,
       "embed": {
         "type": "images",
         "images": [
@@ -2960,7 +2919,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 175,
-      "likeCount": 1267,
+      "likeCount": 1279,
       "embed": {
         "type": "images",
         "images": [
@@ -2987,8 +2946,8 @@
       },
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
-      "repostCount": 247,
-      "likeCount": 1493,
+      "repostCount": 248,
+      "likeCount": 1503,
       "embed": {
         "type": "images",
         "images": [
@@ -3016,7 +2975,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 455,
-      "likeCount": 2425,
+      "likeCount": 2436,
       "embed": {
         "type": "images",
         "images": [
@@ -3126,8 +3085,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 62,
-      "repostCount": 1880,
-      "likeCount": 8966,
+      "repostCount": 1884,
+      "likeCount": 8983,
       "embed": {
         "type": "images",
         "images": [
@@ -3155,7 +3114,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 404,
-      "likeCount": 2346,
+      "likeCount": 2364,
       "embed": {
         "type": "images",
         "images": [
@@ -3182,8 +3141,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2636,
-      "likeCount": 15516,
+      "repostCount": 2646,
+      "likeCount": 15591,
       "embed": {
         "type": "images",
         "images": [
@@ -3255,7 +3214,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 452,
-      "likeCount": 2417,
+      "likeCount": 2432,
       "embed": {
         "type": "images",
         "images": [
