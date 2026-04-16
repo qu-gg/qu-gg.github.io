@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Report 41 (BREAK!!) - Not More Plants! - Studio Quagg</title>
+    <meta name="description" content="Why hello there, on this episode of BREAK!!: The Wandering Trio! we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time…after...">
+    <meta property="og:title" content="Session Report 41 (BREAK!!) - Not More Plants!">
+    <meta property="og:description" content="Why hello there, on this episode of BREAK!!: The Wandering Trio! we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time…after...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-04-15-session-report-41-break-not-more-plants.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Session Report 41 (BREAK!!) - Not More Plants!">
+    <meta name="twitter:description" content="Why hello there, on this episode of BREAK!!: The Wandering Trio! we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time…after...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Session Report 41 (BREAK!!) - Not More Plants!</h1>
+                <div class="post-meta">
+                    <span class="post-date">April 16, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">Session Report</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>Why hello there, on this episode of <strong>BREAK!!: The Wandering Trio!</strong> we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time&hellip;after 3 years of playing it.</p>
+<p>First prep notes (warning: ramble-y), then session report.</p>
+<h3 id="prepping-adventure-sites-is-scary-to-me">Prepping Adventure Sites is Scary (to me)</h3>
+<p>I like to use a lot of artwork and visual maps in my sessions - from world maps down to a vibeboard describing a place - and thus I&rsquo;ve always had some friction with the amount of prep it would take for my brain to be satisfied in building out what would essentially be a &ldquo;throwaway&rdquo; Adventure Site. By throwaway I don&rsquo;t mean a fully improvised site where I just wing it and it has no campaign impact; I mean ones that the party will visit one single time and never again (regardless of how impactful it is). So, given this, I&rsquo;ve always leaned towards more theatre-of-the-mind style scenarios/&rdquo;Sites&rdquo; leading into one singular impressive final room map (alongside some vibe art). However, this comes a bit at odds with the great pointcrawl-like Exploration mechanics that BREAK!! offers, and especially so given that many Callings have built-in Abilities to interact with them (which I, so far, have had no Players take. Chicken vs. egg? Maybe).</p>
+<p>So when the campaign naturally leant towards exploring a derelict Gleysian Research Facility that was dumping mana waste into the Spirits&rsquo; Grove, it was time to finally face the fear - building out a proper site with multiple layers (exterior courtyard, interior underground facility, so forth) that could be mechanically explored. I knew I wanted to try out <a href="https://dysonlogos.blog/maps/">Dyson Logos</a> maps since I&rsquo;ve seen their work for years and have always been a big fan seeing it with other systems like Shadowdark. I found one that fit well and imported into Questline.</p>
+<p>Immediately, and I mean <em>immediately</em>, my brain fell into itself and decided it wasn&rsquo;t satisfied with &ldquo;just&rdquo; the black-and-white map. How would I do satisfying zones for combat? Would my descriptions be sufficient? Circles and circles of questions. I got to this point below with attempting to piece together maps:</p>
+<p><figure><a href="../images/FirstAdventureSite.webp" target="_blank" rel="noopener noreferrer"><img alt="First Adventure Site Attempt" src="../images/FirstAdventureSite.webp" /></a><figcaption>Maps by 2minutetabletop and DysonLogos</figcaption></figure></p>
+<p>I really was trying to slam in a map for every singular room and make it a whole thing rather than just rely on the map itself. I have to say the cohesion in the room-to-map layouts was pretty good, so props for that. However, in practice, running this would mean statting out damn near everything for the individual rooms and it makes descriptions much harder if I&rsquo;d be constantly contradicting the room reference map. So, I came to sense and did a round 2 from a new <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/">map</a> with the goals: trust the map more, room key it, and use vibe art or auxiliary maps sparsely. I ended up with this:</p>
+<p><figure><a href="../images/SecondAdventureSite.webp" target="_blank" rel="noopener noreferrer"><img alt="Second Adventure Site Attempt" src="../images/SecondAdventureSite.webp" /></a><figcaption>Maps by Czepeku (left), DysonLogos (middle), BREAK!! Blog (right)</figcaption></figure></p>
+<p>I get my final room grand visual battlemap while leaning in on the base map and a room key for the exploration. Wow, how novel and crazy - almost like nearly every theory blogpost I&rsquo;ve read can boil down to that in some form. But, genuinely, this led to a much better prep process for keying the rooms and meaningfully fleshing out the structure. I could go room-to-room, figure out how they relate and what weird BREAK!! things I could slap in each, and then step back and correlate it to the overarching story. Pretty cozy and now I feel set to run at least 2 sessions here.</p>
+<p>In the next session report, after polish, I&rsquo;ll give the room key breakdown in case anyone finds use out of it.</p>
+<h3 id="actually-running-an-adventure-site">Actually Running an Adventure Site</h3>
+<p>Of the estimated 2 sessions, I have run one so far. How did it go? Scary of course. I&rsquo;m just a scared little guy.</p>
+<p>In earnest, though, it ran smoothly despite being a moderate shift in my narrative style and how I interact with my players. It (perhaps obviously) was much more mechanical in stating marching order, movement style, etc. of the Explore Rules compared to my normal theatre-y progression, and was fairly slower. Running this was funnily reminiscent of early GM&rsquo;ing days - awkwardly figuring it out live. I think it is a symptom of having not explored a diverse set of systems/styles, as it is probably just a trainable skill to switch between styles. Regardless, the players enjoyed it and we all agreed there&rsquo;s a path to comfort here.</p>
+<p>I do think I could have described the exterior of the Adventure Site better and maybe shown the vertical slice map explicitly to showcase how the Site was split into 2 domes/2 tiers. I didn&rsquo;t give enough context and did a bit of the infamous &ldquo;what do you do&rdquo; trap, but ah, we got there.</p>
+<p><figure><a href="../images/AdventureSiteSlice.webp" target="_blank" rel="noopener noreferrer"><img alt="Adventure Site Slice" src="../images/AdventureSiteSlice.webp" width="50%" /></a><figcaption>Map (slice) by DysonLogos</figcaption></figure></p>
+<p>Technology-wise it was smooth (mostly)! I run my games on <a href="https://questlinevtt.com/">QuestlineVTT</a> (an amazing, versatile VTT I recommend checking out) and got to finally test out its dynamic fog-of-war and wall features. This was all very slick and led to cool interactions, e.g. the party got genuinely lost from each other at one point and it felt like a more tactile interaction with the environment.</p>
+<p>There is a bit of a learning curve for pacing and movement freedom between me and the players but these are just first attempt stumbles. I used QVTT&rsquo;s new Zones feature to put in a cheeky trap in the corridor as a teaching moment not to run ahead against pacing - a classic setup which I was glad to witness in my own game. As well, shoutout to VictorSeven&rsquo;s CLICK!! Trap system for BREAK!!. It fits incredibly well.</p>
+<p><figure><a href="../images/AdventureSiteFoW.png" target="_blank" rel="noopener noreferrer"><img alt="Adventure Site FoW" src="../images/AdventureSiteFoW.png" /></a><figcaption>Fog-of-War with a CLICK!! Trap</figcaption></figure></p>
+<p>Overall, these mechanics are cool and I need to, and will, learn them. It&rsquo;ll take some adjustment in our style but it&rsquo;s worth it to <a href="https://www.dungeonmerl.in/blog/on-meeting-a-game-where-its-at">meet the game where it&rsquo;s at</a> - in <strong>all</strong> its forms. I am very excited for BREAK!!&rsquo;s first supplement <a href="https://www.kickstarter.com/projects/greywizard/start-a-break-rpg-zine-01">START</a> which will detail system onboarding. The Adventure Site visuals shown thus far look to showcase these systems very well!</p>
+<p><strong>Note:</strong> Some of the artwork shown in screenshots above stem from a BREAK!! Blogpost detailing an <a href="https://breakrpg.blogspot.com/2017/06/magitech-facility-demo-adventure-site.html">Adventure Site</a> which I took inspiration from (and one which I suspect is being realized fully for inclusion in START). The blog is a goldmine of ideas and art, and has given me so many ideas just browsing it over the years!</p>
+<p>Phew, that was rambling, huh? Session notes to palate cleanse.</p>
+<h3 id="session-report">Session Report</h3>
+<p>This session had it all gang - Downtime, Crafting, Negotiation, Journey, Explore, Combat - packed into a mere 2-hour session. Our party is of course within the Evergrove, as yet standing heart of the now corrupted Spirits&rsquo; Grove. After last session&rsquo;s setting-heavy conversation, we looked towards kicking back into the jungle to handle some business: 1) investigating the recently reactivated Gleysian Research Facility to see why it is spewing sludge into the rivers and 2) head to a den of druid goblins that are frustrating to converse with but likely to have some information on the party&rsquo;s adversary the Idea of Thorns. The party decided that the Research Facility was a good starter &ldquo;side quest&rdquo; to tackle before the &ldquo;main plot&rdquo; goblins - little do they know.</p>
+<p>Regardless, we started with a round of 2 Downtimes each - one a freebie Injury heal and the other their choice:</p>
+<ul>
+<li>Abra decided to bend the rules of Identifying a Relic to mean foraging through Elix&rsquo;s hoard of trinkets for &ldquo;something useful&rdquo;. A successful luck check later and Abra is the proud owner of a <a href="https://its.quagg.studio/blog/posts-html/2026-03-21-items-of-the-druids-and-faeries-gear.html">Feather-Touched Pouch</a> now. Elix did clock this happening but (somewhat) sees Abra as an adopted child so let it go. There was the funny thought to put the <a href="https://its.quagg.studio/blog/posts-html/2026-03-21-items-of-the-druids-and-faeries-gear.html">Bag o&rsquo; Feathers</a> in it until they can pawn it off on some sorry sucker.</li>
+<li>Lookus wanted to take the Paladin&rsquo;s Tear they found on Urarani&rsquo;s body and imbue an Artisan&rsquo;s Outfit with it for their resident healer Gack. Technically there was no Advanced Workshop here but they already had a base outfit made of magical material (a <a href="https://breakrpg.blogspot.com/2025/03/whats-being-sold-at-radiket-freebie-gear.html">Starlight Ball Dress</a>) so I allowed altering (and imbueing) it with the risk that the materials were lost on a failed roll entirely. He rolled a 19 so R.I.P. the gorgeous dress of an Aeon past.</li>
+<li>Gack decided to Socialize with Elix and learn more about the &ldquo;woman of his (literal) dreams&rdquo;. He critically succeeded on the Contest and his Player decided it would be fun if the crit resulted in Gack finding a genuine connection with her without any of his usual &ldquo;cool guy&rdquo; protective facade. It turned into essentially a therapy session where Gack was able to trauma dump his self-expectation pressures onto Elix before melting in the hot springs after. They developed a Social Bond simply called &ldquo;Mom&rdquo;.</li>
+</ul>
+<p>They spent a day or two recuperating in the springs before packing up to head out again. They nearly forgot about the ancient goblin Guide that helped them to the Evergrove, almost setting out to get lost immediately by themselves. They&rsquo;re convinced this goober goblin is some ancient powerful being so I&rsquo;ve leaned into it - none of his party know his name, he spouts random cryptic things about Aeons past, and has a genuine Insight of 16. Gack inquired about contracting out his services for the next week of travel within the jungle while the Mokko-Do Herders rest up in Evergrove. Yet another Critical Success on this Negotiation, Guide was convinced to tag along at no cost. Given how old this goblin is, I do roll a d20 for every day of Travel to check on his continued survival (RIP on 20).</p>
+<p>And off they set once again. The Research Facility is a mere 3 hexes away, meaning only 1 Camp is needed. Both Trailblazing Checks went by flawlessly by the Guide, which I RP&rsquo;d as the Guide just walking in a direction with no map or compass (they do have them mechanically) and always ending up where he wanted to go. During Camp, Lookus used their camping activity to investigate the polluted riverway and try to deduce its sludgy source. A success identified it as Mana Waste, a common byproduct of unmaintained Gleysian Facilities, and got some lore about the empire through it.</p>
+<p>They assigned no Scouts for camping, of course, but got lucky with no encounter. The next day they arrive at the facility to see it in its glory - a two-tiered structure comprised of two greenhouse-esque domes surrounded by a rusting alloy wall. We assigned PC Positions for the first time and they sent Dirt (their talking Very Fast Skree) to Scout the perimeter. This was functionally really cool because Gack&rsquo;s player could see through his companion&rsquo;s eyes so only he got the map layout and had to describe it to them. They found some breaches in the wall and decided to go through them first.</p>
+<p><figure><a href="https://dysonlogos.blog/wp-content/uploads/2023/05/domes-nogrid.png" target="_blank" rel="noopener noreferrer"><img alt="Research Facility Map" src="https://dysonlogos.blog/wp-content/uploads/2023/05/domes-nogrid.png" width="50%" /></a><figcaption>Map of the Gleysian Ecological Research Facility. Map by: <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/" target="_blank" rel="noopener noreferrer">DysonLogos</a></figcaption></figure></p>
+<p>My players love reckless activities going against their well-being and it has always worked out so far for them. They opted to always go with Cautious Movement which they flavored as &ldquo;boisterous, uncaring movement&rdquo; through the Adventure Site. They explored the lower courtyard and the small building - which was an incredibly overgrown hydroponics greenhouse meant to be &ldquo;by-the-books&rdquo; for external visitors in the day. Inside, they were Ambushed by 3 Carnivorous Plants (reflavored <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Horfhogs</a>), however succeeded all their saves and dealt 3 Hearts of Damage each in their first Turn. The player made the connection about the plant motif to the Garden and all groaned in anticipated pain. Hence the episode title :) Inside they found an ancient skeleton of a researcher in a punctured Anti-Hazard Suit who had a keycard stating &ldquo;Tier Level 1 Access&rdquo; in Gleysian Code.</p>
+<p>They then split up exploring the courtyard and got literally lost from each other with the fog, stumbling around loudly shouting for each other. They got lucky, as they always do, and I rolled no wandering encounter. They eventually found a crumbled wall leading into the lower dome wherein I described it in utter disarray - aggressive scorch marks burned into the walls and floor, the roof of the dome exploded outwards as if something broke out, and ruined tech. This was a visitor&rsquo;s center to the facility in its day and at one point the very same Grimwing they fought many sessions ago had once escaped from this facility, bursting through the roof. They were spooked by a repeating mechanical whirr sound just to realize it was blast doors leading underground that were jammed open, continually trying to shut. Abra identified traces of Ennui Sludge on the mechanical components and that its magic was still relatively fresh, meaning others are likely to be within.</p>
+<p>They delved into the tunnels and Lookus got map exploration fever, immediately rushing down the corridor into the aforementioned CLICK!! Trap. This set off a toxic spore trap in the hallway. Lookus and Abra went prone (and got an Edge on their save) while Gack jumped straight into the cloud, failing his save. He rolled and got Putrefication to which everyone panicked that they had <em>only</em> bought Petrification antidotes in Roost. After 10 minutes of bargaining what they could do, Gack realized he is Always Prepared and pulled out an Antidote to save himself.</p>
+<p>And we ended there, delving farther into the facility on the next episode. It was a very fun session with a lot of new experiments going on, ones which I am eager to continue exploring. If you made it through this all, I appreciate you!</p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-04-09-session-report-40-break-rest-at-last.html" class="post-nav-link next">Session Report 40 (BREAK!!) - Rest, At Last →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>

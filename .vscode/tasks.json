@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "MarkItDown: URL to Markdown",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/markitdown",
+            "args": ["${input:markitdownUrl}"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "MarkItDown: URL to File",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/markitdown \"${input:markitdownUrl}\" > \"${input:markitdownOutput}\"",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "markitdownUrl",
+            "description": "URL to convert to Markdown",
+            "type": "promptString"
+        },
+        {
+            "id": "markitdownOutput",
+            "description": "Output filename (e.g. my-article.md)",
+            "type": "promptString",
+            "default": "output.md"
+        }
+    ]
+}
