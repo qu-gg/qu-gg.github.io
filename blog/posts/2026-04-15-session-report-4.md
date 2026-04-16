@@ -1,11 +1,11 @@
 ---
 title: Session Report 41 (BREAK!!) - Not More Plants!
-date: 2026-04-15
-time:  23:17
+date: 2026-04-16
+time:  17:12
 tags: Session Report
 ---
 
-Why hello there, on this episode of **BREAK!!: The Wandering Trio!** we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time...after 3 years of playing it.
+Why hello there. On this episode of **BREAK!!: The Wandering Trio!**, we discuss how prepping Adventure Sites is scary (to me) and try out the Exploration Rules within the system for the first time...after 3 years of playing it.
 
 First prep notes (warning: ramble-y), then session report.
 
