@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T00:13:44.016652Z",
+  "lastUpdated": "2026-04-21T12:15:12.022011Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,53 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mjyqj3zigc25",
+      "source": "bluesky",
+      "author": {
+        "handle": "sinland.gay",
+        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
+      },
+      "record": {
+        "text": "Sketched out some full pagers for #dowagerrpg to hopefully be done in May. Which illustration should I work on first tomorrow?",
+        "createdAt": "2026-04-21T10:09:58.523Z"
+      },
+      "indexedAt": "2026-04-21T10:10:12.451Z",
+      "replyCount": 2,
+      "repostCount": 1,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreidhya5cbfhfm5cclxme6it3zbd2mqe4ijkhqp7zg62sccw342lwue",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreidhya5cbfhfm5cclxme6it3zbd2mqe4ijkhqp7zg62sccw342lwue",
+            "alt": "The Dollmaker and the Diabolist are looking through magic books in a library. The Dollmaker has a hardcover book wide open and looks surprised at something about to pop out of it while the Diabolist stares at her from behind with concern and disapproval as she pulls another book from a shelf. There are spooky gaseous spirits around both of them."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreiad6fvuujb52jwloxzi7fddoylblrwtwp6oodhwmcre6vrpwo3cnq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreiad6fvuujb52jwloxzi7fddoylblrwtwp6oodhwmcre6vrpwo3cnq",
+            "alt": "A wide landscape shot of a party gathered before a traveling merchant's hover van. Tall trees and rustic windmills surround the clearing they're gathered in, at the edge of a cliff further back. In the distance is a towering cityscape that rises above the clouds."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreidtg7nwoi3b653isfgqkczb764z4fxuaqs56f633d6k3t6cc4reqi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreidtg7nwoi3b653isfgqkczb764z4fxuaqs56f633d6k3t6cc4reqi",
+            "alt": "A small food truck is parked at the edge of an abandoned rail station with a sprawling cityscape in the distance. A cloaked trader steps out of the food cart holding a meal on a plate while the Reaper offers her a flower. In the foreground, the Ronin is seated at a table and enjoying a bowl of food by herself."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifg5i6sqldnthoe7tu4dsroh6of33s3hgjstctj3rxsvjbyzhqszi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifg5i6sqldnthoe7tu4dsroh6of33s3hgjstctj3rxsvjbyzhqszi",
+            "alt": "The Star Mariner and the Esper stand defiantly on a crumbling road before a trio of otherworldly monsters of varying sizes. In the distance are layers of tall cityscape buildings and the underside of higher tiers of the urban megastructure."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjx5cpxfkk2h",
       "source": "bluesky",
       "author": {
@@ -65,8 +112,8 @@
       },
       "indexedAt": "2026-04-20T18:53:53.052Z",
       "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 76,
+      "repostCount": 15,
+      "likeCount": 85,
       "embed": {
         "type": "images",
         "images": [
@@ -92,9 +139,9 @@
         "createdAt": "2026-04-20T12:01:09.944Z"
       },
       "indexedAt": "2026-04-20T12:01:12.750Z",
-      "replyCount": 5,
-      "repostCount": 50,
-      "likeCount": 179,
+      "replyCount": 6,
+      "repostCount": 61,
+      "likeCount": 204,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/04/lore-lord-of-rings-adventure-game.html",
@@ -122,8 +169,8 @@
       },
       "indexedAt": "2026-04-20T09:44:05.446Z",
       "replyCount": 2,
-      "repostCount": 24,
-      "likeCount": 64,
+      "repostCount": 27,
+      "likeCount": 69,
       "embed": {
         "type": "images",
         "images": [
@@ -198,7 +245,7 @@
       "indexedAt": "2026-04-19T16:39:29.648Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 17,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -285,8 +332,8 @@
       },
       "indexedAt": "2026-04-17T16:13:15.149Z",
       "replyCount": 19,
-      "repostCount": 457,
-      "likeCount": 1574,
+      "repostCount": 458,
+      "likeCount": 1580,
       "embed": {
         "type": "images",
         "images": [
@@ -349,8 +396,8 @@
       },
       "indexedAt": "2026-04-17T11:07:44.848Z",
       "replyCount": 7,
-      "repostCount": 9,
-      "likeCount": 36,
+      "repostCount": 10,
+      "likeCount": 37,
       "embed": {
         "type": "images",
         "images": [
@@ -466,9 +513,9 @@
         "createdAt": "2026-04-14T13:48:34.053Z"
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
-      "replyCount": 26,
-      "repostCount": 1399,
-      "likeCount": 6173,
+      "replyCount": 27,
+      "repostCount": 1402,
+      "likeCount": 6178,
       "embed": {
         "type": "images",
         "images": [
@@ -787,38 +834,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/0lyr1Y"
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mjbaouvarc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
-      },
-      "record": {
-        "text": "BASTION ELYSIUM\n\nAn Electric Bastionland apartment crawl adventure for 3\u20135 players. What if Disco Elysium were set entirely in an apartment building?\n\nComing soon!\n\nCover art by Citaaticat\n\n#osr #ttrpg",
-        "createdAt": "2026-04-12T01:55:38.720Z"
-      },
-      "indexedAt": "2026-04-12T01:55:48.551Z",
-      "replyCount": 3,
-      "repostCount": 23,
-      "likeCount": 92,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiewazeqkdbdusyg4gum72lo3bq5vpasnzbz4k6qasfopbxtb7j5my",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiewazeqkdbdusyg4gum72lo3bq5vpasnzbz4k6qasfopbxtb7j5my",
-            "alt": "Cover of Bastion Elysium. An Electric Bastionland adventure for 3\u20135 players. The cover shows an apartment building with several silhouettes and a burning corpse."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjaqgq5yl223",
@@ -1271,7 +1286,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 609,
-      "likeCount": 2842,
+      "likeCount": 2843,
       "embed": {
         "type": "images",
         "images": [
@@ -1411,7 +1426,7 @@
       "uri": "at://did:plc:cyxgpxyjx73ayx5hxttz2tcw/app.bsky.feed.post/3mgbosvv4ec2m",
       "source": "bluesky",
       "author": {
-        "handle": "handle.invalid",
+        "handle": "basileuscomic.bsky.social",
         "displayName": "Basileus Comic - (Currently on Kickstarter come take a peeeek)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cyxgpxyjx73ayx5hxttz2tcw/bafkreibttqgble45efxgpnlzmsoya2rft7jlegj7mq576ay34g2h5d4ty4"
       },
@@ -2266,8 +2281,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1954,
-      "likeCount": 8489,
+      "repostCount": 1955,
+      "likeCount": 8490,
       "embed": {
         "type": "images",
         "images": [
@@ -2520,7 +2535,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2344,
-      "likeCount": 11866,
+      "likeCount": 11867,
       "embed": {
         "type": "images",
         "images": [
@@ -2678,7 +2693,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 549,
-      "likeCount": 3050,
+      "likeCount": 3051,
       "embed": {
         "type": "images",
         "images": [
@@ -2929,7 +2944,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2649,
-      "likeCount": 15620,
+      "likeCount": 15622,
       "embed": {
         "type": "images",
         "images": [
