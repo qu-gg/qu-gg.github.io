@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T12:14:45.618098Z",
+  "lastUpdated": "2026-04-23T00:15:51.414118Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -18,6 +18,12 @@
       "displayName": "Underpalewater",
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu",
       "source": "bluesky"
+    },
+    "artstation:nickbray": {
+      "handle": "nickbray",
+      "displayName": "Nick Bray",
+      "avatar": null,
+      "source": "artstation"
     },
     "artstation:chenxiangru": {
       "handle": "chenxiangru",
@@ -60,7 +66,7 @@
       "indexedAt": "2026-04-22T04:16:25.345Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 16,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -161,9 +167,9 @@
         "createdAt": "2026-04-20T12:01:09.944Z"
       },
       "indexedAt": "2026-04-20T12:01:12.750Z",
-      "replyCount": 6,
+      "replyCount": 7,
       "repostCount": 63,
-      "likeCount": 212,
+      "likeCount": 213,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/04/lore-lord-of-rings-adventure-game.html",
@@ -355,7 +361,7 @@
       "indexedAt": "2026-04-17T16:13:15.149Z",
       "replyCount": 19,
       "repostCount": 458,
-      "likeCount": 1590,
+      "likeCount": 1592,
       "embed": {
         "type": "images",
         "images": [
@@ -536,8 +542,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
-      "repostCount": 1407,
-      "likeCount": 6192,
+      "repostCount": 1408,
+      "likeCount": 6199,
       "embed": {
         "type": "images",
         "images": [
@@ -812,6 +818,50 @@
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/0lyr1Y",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Lykoi\n\nbig axe, big swings, small merc\n\nanother character i worked on as part of Jeff Simpson's class, thanks to everyone who provided feedback.",
+        "createdAt": "2026-04-13T10:12:45-05:00"
+      },
+      "indexedAt": "2026-04-13T10:12:45-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.jpg?1776093127",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.jpg?1776093127",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.jpg?1776091617",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.jpg?1776091617",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.jpg?1776092657",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.jpg?1776092657",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.jpg?1776093116",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.jpg?1776093116",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/0lyr1Y"
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjaqgq5yl223",
@@ -1264,7 +1314,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 609,
-      "likeCount": 2842,
+      "likeCount": 2841,
       "embed": {
         "type": "images",
         "images": [
@@ -1461,6 +1511,45 @@
       "repostBy": null
     },
     {
+      "uri": "https://www.artstation.com/artwork/8BKWOn",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Gravity Mage\n\nMASS//ALCHEMY//GENESIS\n\nWanted to design another wizard of some kind,\nwill post some lore at a later date.\n\nThanks to Jeff Simpson for his feedback on this during his underpaint academy class",
+        "createdAt": "2026-03-02T07:14:16-06:00"
+      },
+      "indexedAt": "2026-03-02T07:14:16-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/835/323/large/nick-bray-techwitch10.webp?1772456814",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/835/323/large/nick-bray-techwitch10.webp?1772456814",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/096/835/287/large/nick-bray-techwitch10-process.webp?1772456561",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/096/835/287/large/nick-bray-techwitch10-process.webp?1772456561",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/096/835/456/large/nick-bray-techwitch10-refs.webp?1772457129",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/096/835/456/large/nick-bray-techwitch10-refs.webp?1772457129",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/8BKWOn"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/nJmRwr",
       "source": "artstation",
       "author": {
@@ -1648,6 +1737,75 @@
       "link": "https://www.artstation.com/artwork/L4g8D0"
     },
     {
+      "uri": "https://www.artstation.com/artwork/2BoGkY",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Outer rim rascals\n\nHappy new year!\n\nOn a star wars kick, taking a shot at doing my own designs in that setting.",
+        "createdAt": "2026-01-05T10:29:32-06:00"
+      },
+      "indexedAt": "2026-01-05T10:29:32-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/097/440/large/nick-bray-outerrimrascals3.webp?1767624812",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/097/440/large/nick-bray-outerrimrascals3.webp?1767624812",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/095/562/large/nick-bray-outerrimrascals2-gadgets.webp?1767621330",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/095/562/large/nick-bray-outerrimrascals2-gadgets.webp?1767621330",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/095/097/061/large/nick-bray-droidblurb.webp?1767624209",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/095/097/061/large/nick-bray-droidblurb.webp?1767624209",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/097/446/large/nick-bray-smugglerblurb.webp?1767624824",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/097/446/large/nick-bray-smugglerblurb.webp?1767624824",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/099/130/large/nick-bray-charcallouts.webp?1767627880",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/099/130/large/nick-bray-charcallouts.webp?1767627880",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/100/438/large/nick-bray-droiditerations.webp?1767630119",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/100/438/large/nick-bray-droiditerations.webp?1767630119",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/100/446/large/nick-bray-smuggiterations.webp?1767630129",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/100/446/large/nick-bray-smuggiterations.webp?1767630129",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/095/100/553/large/nick-bray-blasteriterations.webp?1767630316",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/095/100/553/large/nick-bray-blasteriterations.webp?1767630316",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/095/097/528/large/nick-bray-refs.webp?1767624946",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/095/097/528/large/nick-bray-refs.webp?1767624946",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/2BoGkY"
+    },
+    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mavakefy2s25",
       "source": "bluesky",
       "author": {
@@ -1732,6 +1890,40 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/Ov9d2K"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/ZlvodX",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Orefish - Tools\n\nSome quick prop/tool designs as a palette cleanser\nmore stuff soon",
+        "createdAt": "2025-11-24T10:14:00-06:00"
+      },
+      "indexedAt": "2025-11-24T10:14:00-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/942/419/large/nick-bray-metalfishprops1.webp?1764000689",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/942/419/large/nick-bray-metalfishprops1.webp?1764000689",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/942/434/large/nick-bray-metalfishprops2.webp?1764000712",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/942/434/large/nick-bray-metalfishprops2.webp?1764000712",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/ZlvodX"
     },
     {
       "uri": "https://www.artstation.com/artwork/8BlzQq",
@@ -1843,6 +2035,60 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/5WD8NA"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/XJoee0",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Orefish - Blacksmith\n\nAn enviro piece for my small side project, more soon!\n\ntrying to push my environmental painting skills and understanding of colour.\nThanks to Louis Stillace for providing feedback",
+        "createdAt": "2025-11-04T01:58:51-06:00"
+      },
+      "indexedAt": "2025-11-04T01:58:51-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/346/050/large/nick-bray-blacksmith4.webp?1762282966",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/346/050/large/nick-bray-blacksmith4.webp?1762282966",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/346/062/large/nick-bray-blacksmith4blank.webp?1762282985",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/346/062/large/nick-bray-blacksmith4blank.webp?1762282985",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/301/300/large/nick-bray-sketchpass1.webp?1762181341",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/301/300/large/nick-bray-sketchpass1.webp?1762181341",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/301/336/large/nick-bray-sketchpass2.webp?1762181378",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/301/336/large/nick-bray-sketchpass2.webp?1762181378",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/093/301/349/large/nick-bray-sketchpass3.webp?1762181388",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/093/301/349/large/nick-bray-sketchpass3.webp?1762181388",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/093/300/700/large/nick-bray-blacksmith4blank.webp?1762180299",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/093/300/700/large/nick-bray-blacksmith4blank.webp?1762180299",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/XJoee0"
     },
     {
       "uri": "https://www.artstation.com/artwork/K3WvRB",
@@ -2004,7 +2250,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1955,
-      "likeCount": 8490,
+      "likeCount": 8489,
       "embed": {
         "type": "images",
         "images": [
@@ -2045,6 +2291,50 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/XJvKaL"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/XJvNQR",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Scamp\n\n\"you'd catch me if you wanted to.\"\n\ntrying to get back into the swing of regular posting\ni'm also looking for work! by the way",
+        "createdAt": "2025-07-28T10:42:07-05:00"
+      },
+      "indexedAt": "2025-07-28T10:42:07-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/090/354/966/large/nick-bray-scampbig.jpg?1766742499",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/090/354/966/large/nick-bray-scampbig.jpg?1766742499",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/090/354/957/large/nick-bray-breakdowns1.jpg?1753700378",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/090/354/957/large/nick-bray-breakdowns1.jpg?1753700378",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/090/354/961/large/nick-bray-refs.jpg?1753700386",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/090/354/961/large/nick-bray-refs.jpg?1753700386",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/090/355/082/large/nick-bray-photoshop-xlovh0jgrl.jpg?1753700622",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/090/355/082/large/nick-bray-photoshop-xlovh0jgrl.jpg?1753700622",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/XJvNQR"
     },
     {
       "uri": "https://www.artstation.com/artwork/zxBwQD",
@@ -2213,7 +2503,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2344,
-      "likeCount": 11867,
+      "likeCount": 11866,
       "embed": {
         "type": "images",
         "images": [
@@ -2708,6 +2998,149 @@
       "repostBy": null
     },
     {
+      "uri": "https://www.artstation.com/artwork/8BBKDE",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Satyr\n\nbig stepper",
+        "createdAt": "2024-10-15T08:10:35-05:00"
+      },
+      "indexedAt": "2024-10-15T08:10:35-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/946/938/large/nick-bray-satyr.jpg?1728989281",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/946/938/large/nick-bray-satyr.jpg?1728989281",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/947/584/large/nick-bray-blurb.jpg?1728984091",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/947/584/large/nick-bray-blurb.jpg?1728984091",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/946/942/large/nick-bray-satyrbreakdown.jpg?1728982563",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/946/942/large/nick-bray-satyrbreakdown.jpg?1728982563",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/948/739/large/nick-bray-iterations.jpg?1728987057",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/948/739/large/nick-bray-iterations.jpg?1728987057",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/948/753/large/nick-bray-cleaveriterations.jpg?1728987075",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/948/753/large/nick-bray-cleaveriterations.jpg?1728987075",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/949/734/large/nick-bray-refs.jpg?1728989251",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/949/734/large/nick-bray-refs.jpg?1728989251",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/946/934/large/nick-bray-image.jpg?1728982542",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/946/934/large/nick-bray-image.jpg?1728982542",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/8BBKDE"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/eRlNvZ",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Echolocation\n\nwarlock and load",
+        "createdAt": "2024-09-30T09:57:02-05:00"
+      },
+      "indexedAt": "2024-09-30T09:57:02-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/082/355/252/large/nick-bray-trickster18.jpg?1732744366",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/082/355/252/large/nick-bray-trickster18.jpg?1732744366",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/470/528/large/nick-bray-breakdowns2.jpg?1727685177",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/470/528/large/nick-bray-breakdowns2.jpg?1727685177",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/476/205/large/nick-bray-breakdowns6.jpg?1727696758",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/476/205/large/nick-bray-breakdowns6.jpg?1727696758",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/476/199/large/nick-bray-breakdowns1.jpg?1727696750",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/476/199/large/nick-bray-breakdowns1.jpg?1727696750",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/461/739/large/nick-bray-breakdowns5.jpg?1727654669",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/461/739/large/nick-bray-breakdowns5.jpg?1727654669",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/477/879/large/nick-bray-breakdowns3.jpg?1727699886",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/477/879/large/nick-bray-breakdowns3.jpg?1727699886",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/461/732/large/nick-bray-breakdowns2.jpg?1727654649",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/461/732/large/nick-bray-breakdowns2.jpg?1727654649",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/464/697/large/nick-bray-chariterations.jpg?1727665125",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/464/697/large/nick-bray-chariterations.jpg?1727665125",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/464/733/large/nick-bray-gun1.jpg?1727665280",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/464/733/large/nick-bray-gun1.jpg?1727665280",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/464/734/large/nick-bray-gun2.jpg?1727665288",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/464/734/large/nick-bray-gun2.jpg?1727665288",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/080/464/738/large/nick-bray-gun3.jpg?1727665295",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/080/464/738/large/nick-bray-gun3.jpg?1727665295",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/080/439/631/large/nick-bray-refs1.jpg?1727594066",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/080/439/631/large/nick-bray-refs1.jpg?1727594066",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/eRlNvZ"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/y4DgZ8",
       "source": "artstation",
       "author": {
@@ -2779,6 +3212,129 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/g0Q6WP"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/bgKexE",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Hakuul-Rider\n\nwanted to try out some new strategies, techniques and dip my toes into creature design. Learned a lot and it was very fun to work on.\n\nIf you want further details on the costume design for the rider, please look at my Hikkari post from last year for references and breakdowns;l  its mostly based on that with some slight revisions: https://www.artstation.com/artwork/w0nok6",
+        "createdAt": "2024-08-29T09:55:02-05:00"
+      },
+      "indexedAt": "2024-08-29T09:55:02-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/446/200/large/nick-bray-dawg2.jpg?1724936913",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/446/200/large/nick-bray-dawg2.jpg?1724936913",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/446/206/large/nick-bray-dawg3.jpg?1724935458",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/446/206/large/nick-bray-dawg3.jpg?1724935458",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/447/249/large/nick-bray-dawgprocess.jpg?1724937832",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/447/249/large/nick-bray-dawgprocess.jpg?1724937832",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/474/052/large/nick-bray-image-9.jpg?1725005769",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/474/052/large/nick-bray-image-9.jpg?1725005769",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/447/254/large/nick-bray-references.jpg?1724937842",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/447/254/large/nick-bray-references.jpg?1724937842",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/bgKexE"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/4N8XO8",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Stacks (Redux)\n\nReworked my architecture project from 2022 since i feel like I could do a much better job now and i wanted to conquer my fear of painting environments.\n\nThanks to everyone (too many to list) who gave me assistance and feedback with any part of this",
+        "createdAt": "2024-08-20T09:19:34-05:00"
+      },
+      "indexedAt": "2024-08-20T09:19:34-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/165/338/large/nick-bray-streetscene6-crop.jpg?1724162291",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/165/338/large/nick-bray-streetscene6-crop.jpg?1724162291",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/165/831/large/nick-bray-intermission.jpg?1724163121",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/165/831/large/nick-bray-intermission.jpg?1724163121",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/165/423/large/nick-bray-process1.jpg?1724162487",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/165/423/large/nick-bray-process1.jpg?1724162487",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/165/433/large/nick-bray-process2.jpg?1724162499",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/165/433/large/nick-bray-process2.jpg?1724162499",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/165/440/large/nick-bray-process3.jpg?1724162519",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/165/440/large/nick-bray-process3.jpg?1724162519",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/165/606/large/nick-bray-photoshop-pv3sw0dioz.jpg?1724162743",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/165/606/large/nick-bray-photoshop-pv3sw0dioz.jpg?1724162743",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/165/608/large/nick-bray-photoshop-vewrgsqqi4.jpg?1724162751",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/165/608/large/nick-bray-photoshop-vewrgsqqi4.jpg?1724162751",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/166/044/large/nick-bray-newrefs.jpg?1724163480",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/166/044/large/nick-bray-newrefs.jpg?1724163480",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/079/165/756/large/nick-bray-nick-bray-research.jpg?1724162976",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/079/165/756/large/nick-bray-nick-bray-research.jpg?1724162976",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/079/165/623/large/nick-bray-nick-bray-buildings-sketch6.jpg?1724162772",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/079/165/623/large/nick-bray-nick-bray-buildings-sketch6.jpg?1724162772",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/4N8XO8"
     },
     {
       "uri": "https://www.artstation.com/artwork/8BeWa6",
@@ -2859,6 +3415,65 @@
       "link": "https://www.artstation.com/artwork/LRDLYA"
     },
     {
+      "uri": "https://www.artstation.com/artwork/EvlJXn",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "War-Witch\n\npins and needles\n\nanother character for my personal IP",
+        "createdAt": "2024-07-15T09:09:16-05:00"
+      },
+      "indexedAt": "2024-07-15T09:09:16-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "fullsize": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/078/039/380/large/nick-bray-battlewitchsmall.jpg?1721045921",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/078/039/380/large/nick-bray-battlewitchsmall.jpg?1721045921",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/078/039/431/large/nick-bray-blurb1.jpg?1721045713",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/078/039/431/large/nick-bray-blurb1.jpg?1721045713",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/078/039/374/large/nick-bray-blurb2.jpg?1721045497",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/078/039/374/large/nick-bray-blurb2.jpg?1721045497",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/078/041/072/large/nick-bray-scepter.jpg?1721049175",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/078/041/072/large/nick-bray-scepter.jpg?1721049175",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/078/041/058/large/nick-bray-process1.jpg?1721049154",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/078/041/058/large/nick-bray-process1.jpg?1721049154",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/078/041/066/large/nick-bray-refs.jpg?1721049163",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/078/041/066/large/nick-bray-refs.jpg?1721049163",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/EvlJXn"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/29DwZA",
       "source": "artstation",
       "author": {
@@ -2886,6 +3501,95 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/29DwZA"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/AlAe2o",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "QASABA\n\nQasaba - Arabic cyberpunk megacorp/PMC \n\nThanks to everyone who helped with advice and feedback",
+        "createdAt": "2024-06-24T09:12:02-05:00"
+      },
+      "indexedAt": "2024-06-24T09:12:02-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "fullsize": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/332/250/large/nick-bray-qasabaduosmall.jpg?1719207810",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/332/250/large/nick-bray-qasabaduosmall.jpg?1719207810",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/332/240/large/nick-bray-qasabaghulsmall.jpg?1719207719",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/332/240/large/nick-bray-qasabaghulsmall.jpg?1719207719",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/332/242/large/nick-bray-qasabaheavysmall.jpg?1719207728",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/332/242/large/nick-bray-qasabaheavysmall.jpg?1719207728",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/332/243/large/nick-bray-qasabaweapons.jpg?1719207736",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/332/243/large/nick-bray-qasabaweapons.jpg?1719207736",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/336/395/large/nick-bray-logodev1.jpg?1719218335",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/336/395/large/nick-bray-logodev1.jpg?1719218335",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/335/155/large/nick-bray-iterations-1.jpg?1719215712",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/335/155/large/nick-bray-iterations-1.jpg?1719215712",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/335/158/large/nick-bray-iterations-2.jpg?1719215719",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/335/158/large/nick-bray-iterations-2.jpg?1719215719",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/335/161/large/nick-bray-iterations-4.jpg?1719215733",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/335/161/large/nick-bray-iterations-4.jpg?1719215733",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/077/335/159/large/nick-bray-iterations-3.jpg?1719215725",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/077/335/159/large/nick-bray-iterations-3.jpg?1719215725",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/335/168/large/nick-bray-iterations-5.jpg?1719215746",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/335/168/large/nick-bray-iterations-5.jpg?1719215746",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/336/300/large/nick-bray-hmg1.jpg?1719218181",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/336/300/large/nick-bray-hmg1.jpg?1719218181",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/077/336/310/large/nick-bray-pdw1.jpg?1719218189",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/077/336/310/large/nick-bray-pdw1.jpg?1719218189",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/AlAe2o"
     },
     {
       "uri": "https://www.artstation.com/artwork/kQYgOA",
@@ -3027,6 +3731,194 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/dKdVWX"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/vDGJRD",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Lamia\n\nlearned to squeeze but never learned to let go\n------\nnew character for my personal IP",
+        "createdAt": "2024-04-01T07:11:02-05:00"
+      },
+      "indexedAt": "2024-04-01T07:11:02-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "fullsize": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/074/385/256/large/nick-bray-lamia26.jpg?1711965792",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/074/385/256/large/nick-bray-lamia26.jpg?1711965792",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/074/385/250/large/nick-bray-blurb.jpg?1711965663",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/074/385/250/large/nick-bray-blurb.jpg?1711965663",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/074/382/397/large/nick-bray-callout1.jpg?1711957000",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/074/382/397/large/nick-bray-callout1.jpg?1711957000",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/074/385/836/large/nick-bray-callouts2.jpg?1711967329",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/074/385/836/large/nick-bray-callouts2.jpg?1711967329",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/074/383/190/large/nick-bray-process.jpg?1711959624",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/074/383/190/large/nick-bray-process.jpg?1711959624",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/074/382/823/large/nick-bray-pureref.jpg?1711958336",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/074/382/823/large/nick-bray-pureref.jpg?1711958336",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/vDGJRD"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/m8eWv1",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Bards\n\nWanted to do a more in depth design exercise and also take a break from doing armor and weapons\n\nThanks to everyone who helped with design feedback and advice, including (but not limited to) Claudiu Tanasie, Ben Kiefaber, and my 3DFT friends.",
+        "createdAt": "2024-02-26T08:24:44-06:00"
+      },
+      "indexedAt": "2024-02-26T08:24:44-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/113/261/large/nick-bray-lineup1small.jpg?1708955410",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/113/261/large/nick-bray-lineup1small.jpg?1708955410",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/102/788/large/nick-bray-lineup2big.jpg?1708934648",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/102/788/large/nick-bray-lineup2big.jpg?1708934648",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/103/018/large/nick-bray-lineup3.jpg?1708935175",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/103/018/large/nick-bray-lineup3.jpg?1708935175",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/102/998/large/nick-bray-guitaristsmall.jpg?1708935099",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/102/998/large/nick-bray-guitaristsmall.jpg?1708935099",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/102/994/large/nick-bray-cellistsmall.jpg?1708935084",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/102/994/large/nick-bray-cellistsmall.jpg?1708935084",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/109/331/large/nick-bray-drummersmall.jpg?1708948789",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/109/331/large/nick-bray-drummersmall.jpg?1708948789",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/113/278/large/nick-bray-saxaphonistsmall.jpg?1708955426",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/113/278/large/nick-bray-saxaphonistsmall.jpg?1708955426",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/109/279/large/nick-bray-intermission.jpg?1708948702",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/109/279/large/nick-bray-intermission.jpg?1708948702",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/103/290/large/nick-bray-guitarssmallnotes.jpg?1708936093",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/103/290/large/nick-bray-guitarssmallnotes.jpg?1708936093",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/108/534/large/nick-bray-guitariterationssmall.jpg?1708947415",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/108/534/large/nick-bray-guitariterationssmall.jpg?1708947415",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/108/528/large/nick-bray-ampbig.jpg?1708947398",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/108/528/large/nick-bray-ampbig.jpg?1708947398",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/111/487/large/nick-bray-cellosmall.jpg?1708952468",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/111/487/large/nick-bray-cellosmall.jpg?1708952468",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/111/490/large/nick-bray-drums.jpg?1708952476",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/111/490/large/nick-bray-drums.jpg?1708952476",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/111/496/large/nick-bray-sax.jpg?1708952484",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/111/496/large/nick-bray-sax.jpg?1708952484",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/113/835/large/nick-bray-matcallouts.jpg?1708956198",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/113/835/large/nick-bray-matcallouts.jpg?1708956198",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/113/842/large/nick-bray-callouts2.jpg?1708956206",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/113/842/large/nick-bray-callouts2.jpg?1708956206",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/073/111/481/large/nick-bray-beforeafter.jpg?1708952456",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/073/111/481/large/nick-bray-beforeafter.jpg?1708952456",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/114/606/large/nick-bray-guitarist.jpg?1708957393",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/114/606/large/nick-bray-guitarist.jpg?1708957393",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/114/596/large/nick-bray-bassist.jpg?1708957381",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/114/596/large/nick-bray-bassist.jpg?1708957381",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/114/602/large/nick-bray-drummer.jpg?1708957387",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/114/602/large/nick-bray-drummer.jpg?1708957387",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/073/111/638/large/nick-bray-20240104141250-1.jpg?1708952782",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/073/111/638/large/nick-bray-20240104141250-1.jpg?1708952782",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/m8eWv1"
     },
     {
       "uri": "https://www.artstation.com/artwork/RyGdkE",
@@ -3219,6 +4111,65 @@
       "link": "https://www.artstation.com/artwork/Evdy2A"
     },
     {
+      "uri": "https://www.artstation.com/artwork/WB0NWD",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Oracle\n\nneed the crack of a whip\nneed some blood in the cut",
+        "createdAt": "2023-11-27T07:22:37-06:00"
+      },
+      "indexedAt": "2023-11-27T07:22:37-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/806/621/large/nick-bray-maskguy5.jpg?1701091153",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/806/621/large/nick-bray-maskguy5.jpg?1701091153",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/806/614/large/nick-bray-backview.jpg?1701073295",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/806/614/large/nick-bray-backview.jpg?1701073295",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/813/236/large/nick-bray-blurb.jpg?1701088056",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/813/236/large/nick-bray-blurb.jpg?1701088056",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/813/540/large/nick-bray-annotations.jpg?1701088650",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/813/540/large/nick-bray-annotations.jpg?1701088650",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/810/333/large/nick-bray-process1.jpg?1701082335",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/810/333/large/nick-bray-process1.jpg?1701082335",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/810/352/large/nick-bray-process2.jpg?1701082359",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/810/352/large/nick-bray-process2.jpg?1701082359",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/810/359/large/nick-bray-process3.jpg?1701082386",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/810/359/large/nick-bray-process3.jpg?1701082386",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/WB0NWD"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/n0eV6X",
       "source": "artstation",
       "author": {
@@ -3251,6 +4202,169 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/n0eV6X"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/RyVDYX",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Beetles of Braigh\n\nestoc is bestoc\n\nthanks to everyone who gave suggestions and feedback",
+        "createdAt": "2023-11-06T07:12:00-06:00"
+      },
+      "indexedAt": "2023-11-06T07:12:00-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "fullsize": "https://cdn.artstation.com/mailer/emoji/smiley.png",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/057/339/large/nick-bray-beetlestocsmallish.jpg?1699267222",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/057/339/large/nick-bray-beetlestocsmallish.jpg?1699267222",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/057/367/large/nick-bray-backview.jpg?1699267108",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/057/367/large/nick-bray-backview.jpg?1699267108",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/061/205/large/nick-bray-blurb.jpg?1699273841",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/061/205/large/nick-bray-blurb.jpg?1699273841",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/054/714/large/nick-bray-callouts.jpg?1699262302",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/054/714/large/nick-bray-callouts.jpg?1699262302",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/054/692/large/nick-bray-armorbreakdown.jpg?1699262255",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/054/692/large/nick-bray-armorbreakdown.jpg?1699262255",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/054/406/large/nick-bray-iterations1.jpg?1699261866",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/054/406/large/nick-bray-iterations1.jpg?1699261866",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/054/432/large/nick-bray-iterations2.jpg?1699261894",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/054/432/large/nick-bray-iterations2.jpg?1699261894",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/069/054/451/large/nick-bray-iterations3.jpg?1699261918",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/069/054/451/large/nick-bray-iterations3.jpg?1699261918",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/069/054/728/large/nick-bray-iterations4.jpg?1699262342",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/069/054/728/large/nick-bray-iterations4.jpg?1699262342",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/RyVDYX"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/w0nok6",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Hikkari\n\n\"Don't call them Goblins. They really don't like that.\"",
+        "createdAt": "2023-10-20T08:31:54-05:00"
+      },
+      "indexedAt": "2023-10-20T08:31:54-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/425/526/large/nick-bray-goblins1.jpg?1703663409",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/425/526/large/nick-bray-goblins1.jpg?1703663409",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/425/511/large/nick-bray-hornblin.jpg?1697759990",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/425/511/large/nick-bray-hornblin.jpg?1697759990",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/425/514/large/nick-bray-maceblin.jpg?1697760002",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/425/514/large/nick-bray-maceblin.jpg?1697760002",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/425/507/large/nick-bray-blurb.jpg?1697759979",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/425/507/large/nick-bray-blurb.jpg?1697759979",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/438/249/large/nick-bray-refs.jpg?1697801984",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/438/249/large/nick-bray-refs.jpg?1697801984",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/431/085/large/nick-bray-weapons.jpg?1697780833",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/431/085/large/nick-bray-weapons.jpg?1697780833",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/437/972/large/nick-bray-materialcallouts2.jpg?1697801199",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/437/972/large/nick-bray-materialcallouts2.jpg?1697801199",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/437/806/large/nick-bray-materialcallouts1.jpg?1697800793",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/437/806/large/nick-bray-materialcallouts1.jpg?1697800793",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/427/311/large/nick-bray-maceblinbreakdown.jpg?1697766395",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/427/311/large/nick-bray-maceblinbreakdown.jpg?1697766395",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/431/454/large/nick-bray-hornblinbreakdown.jpg?1697782303",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/431/454/large/nick-bray-hornblinbreakdown.jpg?1697782303",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/435/849/large/nick-bray-rearview1.jpg?1697796592",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/435/849/large/nick-bray-rearview1.jpg?1697796592",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/068/438/208/large/nick-bray-rearview2.jpg?1697801879",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/068/438/208/large/nick-bray-rearview2.jpg?1697801879",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/068/438/651/large/nick-bray-purerf.jpg?1697802853",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/068/438/651/large/nick-bray-purerf.jpg?1697802853",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/w0nok6"
     },
     {
       "uri": "https://www.artstation.com/artwork/xDrQLE",
@@ -3337,6 +4451,198 @@
       "link": "https://www.artstation.com/artwork/xDrQLE"
     },
     {
+      "uri": "https://www.artstation.com/artwork/Al4oge",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Esoterica\n\nwhat doesnt kill you makes you paranoid",
+        "createdAt": "2023-09-18T08:53:05-05:00"
+      },
+      "indexedAt": "2023-09-18T08:53:05-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/067/292/339/large/nick-bray-esoterica2.jpg?1695045157",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/067/292/339/large/nick-bray-esoterica2.jpg?1695045157",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/067/292/345/large/nick-bray-esotericabio.jpg?1695039515",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/067/292/345/large/nick-bray-esotericabio.jpg?1695039515",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/281/670/large/nick-bray-wights2.jpg?1695013737",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/281/670/large/nick-bray-wights2.jpg?1695013737",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/292/350/large/nick-bray-esotericarear.jpg?1695039522",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/292/350/large/nick-bray-esotericarear.jpg?1695039522",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/292/328/large/nick-bray-esodetail1.jpg?1695039460",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/292/328/large/nick-bray-esodetail1.jpg?1695039460",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/293/222/large/nick-bray-esomaterialcallouts.jpg?1695040841",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/293/222/large/nick-bray-esomaterialcallouts.jpg?1695040841",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/288/454/large/nick-bray-process.jpg?1695031970",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/288/454/large/nick-bray-process.jpg?1695031970",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/288/586/large/nick-bray-process2.jpg?1695032251",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/288/586/large/nick-bray-process2.jpg?1695032251",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/288/090/large/nick-bray-esotericasketches1.jpg?1695031194",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/288/090/large/nick-bray-esotericasketches1.jpg?1695031194",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/067/288/093/large/nick-bray-esotericasketches2.jpg?1695031202",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/067/288/093/large/nick-bray-esotericasketches2.jpg?1695031202",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/288/098/large/nick-bray-esotericasketches3.jpg?1695031214",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/288/098/large/nick-bray-esotericasketches3.jpg?1695031214",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/067/288/652/large/nick-bray-refs.jpg?1695032397",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/067/288/652/large/nick-bray-refs.jpg?1695032397",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Al4oge"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/49z8R2",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Leviathan\n\nA blind shot from nothingness to nothingness,\nprecious and meaningless all at once",
+        "createdAt": "2023-08-23T09:15:28-05:00"
+      },
+      "indexedAt": "2023-08-23T09:15:28-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/066/388/887/large/nick-bray-redwizard5.jpg?1693105315",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/066/388/887/large/nick-bray-redwizard5.jpg?1693105315",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/066/425/418/large/nick-bray-redwizardblurb.jpg?1692866690",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/066/425/418/large/nick-bray-redwizardblurb.jpg?1692866690",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/066/389/580/large/nick-bray-redwizardmaterialcallouts.jpg?1692786942",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/066/389/580/large/nick-bray-redwizardmaterialcallouts.jpg?1692786942",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/066/390/678/large/nick-bray-notes.jpg?1692789528",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/066/390/678/large/nick-bray-notes.jpg?1692789528",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/066/389/576/large/nick-bray-redwizardlayers.jpg?1692786924",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/066/389/576/large/nick-bray-redwizardlayers.jpg?1692786924",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/066/391/482/large/nick-bray-refs.jpg?1692791338",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/066/391/482/large/nick-bray-refs.jpg?1692791338",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/49z8R2"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/04Lz98",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Mediator\n\nthreats that sound like lullabies",
+        "createdAt": "2023-08-02T07:38:45-05:00"
+      },
+      "indexedAt": "2023-08-02T07:38:45-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/065/690/488/large/nick-bray-tattoo6.jpg?1690983849",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/065/690/488/large/nick-bray-tattoo6.jpg?1690983849",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/065/684/488/large/nick-bray-tattoorearview.jpg?1690972312",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/065/684/488/large/nick-bray-tattoorearview.jpg?1690972312",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/065/684/481/large/nick-bray-gunortho.jpg?1690972287",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/065/684/481/large/nick-bray-gunortho.jpg?1690972287",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/065/684/493/large/nick-bray-tattoowidesmall.jpg?1690972320",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/065/684/493/large/nick-bray-tattoowidesmall.jpg?1690972320",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/065/684/477/large/nick-bray-facedetail.jpg?1690972272",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/065/684/477/large/nick-bray-facedetail.jpg?1690972272",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/065/600/576/large/nick-bray-refs.jpg?1690794117",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/065/600/576/large/nick-bray-refs.jpg?1690794117",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/04Lz98"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/YB8OQX",
       "source": "artstation",
       "author": {
@@ -3413,6 +4719,60 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/ob0o3q"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/6NvN0N",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "sage\n\nIt conjures thoughts of rusty knives with gilded handles - those men who can make rooms fall silent without even a gesture, simply because of what they know.",
+        "createdAt": "2023-04-14T08:09:30-05:00"
+      },
+      "indexedAt": "2023-04-14T08:09:30-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/722/971/large/nick-bray-bigwizardfinal.jpg?1681473527",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/722/971/large/nick-bray-bigwizardfinal.jpg?1681473527",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/722/978/large/nick-bray-bigwizardfinalnosnake.jpg?1681473535",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/722/978/large/nick-bray-bigwizardfinalnosnake.jpg?1681473535",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/722/984/large/nick-bray-screenshot-2.jpg?1681473549",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/722/984/large/nick-bray-screenshot-2.jpg?1681473549",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/722/988/large/nick-bray-screenshot-3.jpg?1681473562",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/722/988/large/nick-bray-screenshot-3.jpg?1681473562",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/708/171/large/nick-bray-bigwizardref.jpg?1681433840",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/708/171/large/nick-bray-bigwizardref.jpg?1681433840",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/723/713/large/nick-bray-screenshot-4.jpg?1681474931",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/723/713/large/nick-bray-screenshot-4.jpg?1681474931",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/6NvN0N"
     },
     {
       "uri": "https://www.artstation.com/artwork/Zagrrx",
@@ -3599,6 +4959,80 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/yDD1Qx"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/BXXzem",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Blackcaps\n\n\"Blackcaps, some might say they're the type to take heads for the highest bidder;\n\nBut the Hadisa Voumet were not about to debase themselves with salesmanship - If you needed them, they already knew.\"",
+        "createdAt": "2023-03-27T10:15:47-05:00"
+      },
+      "indexedAt": "2023-03-27T10:15:47-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/004/496/large/nick-bray-blackcapslineupfinal2.jpg?1679809286",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/004/496/large/nick-bray-blackcapslineupfinal2.jpg?1679809286",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/041/789/large/nick-bray-small.jpg?1679904520",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/041/789/large/nick-bray-small.jpg?1679904520",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/041/791/large/nick-bray-tall.jpg?1679904527",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/041/791/large/nick-bray-tall.jpg?1679904527",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/041/795/large/nick-bray-wide.jpg?1679904533",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/041/795/large/nick-bray-wide.jpg?1679904533",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/051/796/large/nick-bray-talllayers.jpg?1679922751",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/051/796/large/nick-bray-talllayers.jpg?1679922751",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/057/846/large/nick-bray-callouts-back.jpg?1679930030",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/057/846/large/nick-bray-callouts-back.jpg?1679930030",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/046/289/large/nick-bray-blackcapspistol.jpg?1679913457",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/046/289/large/nick-bray-blackcapspistol.jpg?1679913457",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/000/249/large/nick-bray-blackcapsrifle.jpg?1679790071",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/000/249/large/nick-bray-blackcapsrifle.jpg?1679790071",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/061/038/676/large/nick-bray-blackcapsshotgun.jpg?1679895220",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/061/038/676/large/nick-bray-blackcapsshotgun.jpg?1679895220",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/061/057/669/large/nick-bray-callouts.jpg?1679929750",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/061/057/669/large/nick-bray-callouts.jpg?1679929750",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/BXXzem"
     },
     {
       "uri": "https://www.artstation.com/artwork/zD8XKQ",
@@ -4530,6 +5964,65 @@
       "link": "https://www.artstation.com/artwork/Ar9N4V"
     },
     {
+      "uri": "https://www.artstation.com/artwork/Qnqy5d",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "iapetus arms - WASP\n\nPresenting the IA WASP - the PDW voted \"Most Likely to Throw Away Rather than Reload\" at the 2256 Independent Munitions awards.\ngreat looking - but it's clunky, outdated, bizarrely designed and way too loud.\n\nOf the patented, reciprocating, finger-pull cocking handle, one customer said;\n\" I once watched a guy throw a burrito down the barrel of a live AA cannon just to see what noise it'd make. That decision made more sense  to me than this.\"\n\n--------\n--------\n\nI was going to do a real serious gun description but i think marketing it as a terrible gun is way funnier.\n\nnot game ready, just a concept model for fun\n-\ni dont make guns very often so thanks to everyone in 3DFT who helped me with the modelling and design.",
+        "createdAt": "2022-08-29T11:20:40-05:00"
+      },
+      "indexedAt": "2022-08-29T11:20:40-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/053/210/480/large/nick-bray-13.jpg?1661695339",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/053/210/480/large/nick-bray-13.jpg?1661695339",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/053/179/875/large/nick-bray-5.jpg?1661608979",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/053/179/875/large/nick-bray-5.jpg?1661608979",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/053/245/978/large/nick-bray-14-3.jpg?1661779813",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/053/245/978/large/nick-bray-14-3.jpg?1661779813",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/053/245/967/large/nick-bray-14-2.jpg?1661779799",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/053/245/967/large/nick-bray-14-2.jpg?1661779799",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/053/176/728/large/nick-bray-2.jpg?1661601531",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/053/176/728/large/nick-bray-2.jpg?1661601531",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/053/200/923/large/nick-bray-9-3.jpg?1661670631",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/053/200/923/large/nick-bray-9-3.jpg?1661670631",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/053/180/174/large/nick-bray-iapetus-waspv02.jpg?1661609791",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/053/180/174/large/nick-bray-iapetus-waspv02.jpg?1661609791",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Qnqy5d"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/aGmma8",
       "source": "artstation",
       "author": {
@@ -4642,6 +6135,50 @@
       "link": "https://www.artstation.com/artwork/qQnD0a"
     },
     {
+      "uri": "https://www.artstation.com/artwork/o2odQ4",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "mechanical assistance\n\nlittle fun scifi character \n\nthe gun had its own design process which i'll be posting very soon\n\nThx to everyone who helped with feedback",
+        "createdAt": "2022-07-18T11:10:58-05:00"
+      },
+      "indexedAt": "2022-07-18T11:10:58-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/051/773/403/large/nick-bray-i-see-yousmall2.jpg?1658157685",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/051/773/403/large/nick-bray-i-see-yousmall2.jpg?1658157685",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/051/769/638/large/nick-bray-i-see-you-backpack-detailed-view.jpg?1658144268",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/051/769/638/large/nick-bray-i-see-you-backpack-detailed-view.jpg?1658144268",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/051/773/389/large/nick-bray-i-see-you-mat-callouts2.jpg?1658151285",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/051/773/389/large/nick-bray-i-see-you-mat-callouts2.jpg?1658151285",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/051/763/761/large/nick-bray-old.jpg?1658132955",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/051/763/761/large/nick-bray-old.jpg?1658132955",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/o2odQ4"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/LewJxv",
       "source": "artstation",
       "author": {
@@ -4705,6 +6242,40 @@
       "link": "https://www.artstation.com/artwork/KOQvgr"
     },
     {
+      "uri": "https://www.artstation.com/artwork/X1zgqR",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "golem\n\n\"come on, everyone knows Golems are just a myth. \nNobody would join the academies if they knew that could happen to them\"",
+        "createdAt": "2022-04-20T10:41:38-05:00"
+      },
+      "indexedAt": "2022-04-20T10:41:38-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/048/606/490/large/nick-bray-golemsmall2.jpg?1650468712",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/048/606/490/large/nick-bray-golemsmall2.jpg?1650468712",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/048/606/944/large/nick-bray-golemlayers.jpg?1650469270",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/048/606/944/large/nick-bray-golemlayers.jpg?1650469270",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/X1zgqR"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/WmYO3E",
       "source": "artstation",
       "author": {
@@ -4763,6 +6334,120 @@
       "link": "https://www.artstation.com/artwork/zDWyz6"
     },
     {
+      "uri": "https://www.artstation.com/artwork/Omx6By",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Stacks of Cath Fir - Concept and Process\n\ni havent designed architecture before so this was fun\nFirst post in a personal worldbuilding project, exploring the residential architecture of one of the cities\n\nThanks to everyone who gave feedback and advice",
+        "createdAt": "2022-03-17T08:28:12-05:00"
+      },
+      "indexedAt": "2022-03-17T08:28:12-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/544/large/nick-bray-buildings-sketch6.jpg?1647523119",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/544/large/nick-bray-buildings-sketch6.jpg?1647523119",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/562/large/nick-bray-buildings-sketch8.jpg?1647522789",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/562/large/nick-bray-buildings-sketch8.jpg?1647522789",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/552/large/nick-bray-buildings-sketch7.jpg?1647511648",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/552/large/nick-bray-buildings-sketch7.jpg?1647511648",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/361/598/large/nick-bray-process2.jpg?1647413633",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/361/598/large/nick-bray-process2.jpg?1647413633",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/404/673/large/nick-bray-writing.jpg?1647511930",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/404/673/large/nick-bray-writing.jpg?1647511930",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/570/large/nick-bray-citysketch.jpg?1647511699",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/570/large/nick-bray-citysketch.jpg?1647511699",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/586/large/nick-bray-citysketch2.jpg?1647511718",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/586/large/nick-bray-citysketch2.jpg?1647511718",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/592/large/nick-bray-citysketch3.jpg?1647511748",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/592/large/nick-bray-citysketch3.jpg?1647511748",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/405/041/large/nick-bray-citysketch4.jpg?1647512810",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/405/041/large/nick-bray-citysketch4.jpg?1647512810",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/405/029/large/nick-bray-citysketch5.jpg?1647512778",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/405/029/large/nick-bray-citysketch5.jpg?1647512778",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/624/large/nick-bray-citysketch6.jpg?1647511789",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/624/large/nick-bray-citysketch6.jpg?1647511789",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/630/large/nick-bray-citysketch7.jpg?1647511809",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/630/large/nick-bray-citysketch7.jpg?1647511809",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/404/637/large/nick-bray-citysketch8.jpg?1647511825",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/404/637/large/nick-bray-citysketch8.jpg?1647511825",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/642/large/nick-bray-citysketch9.jpg?1647511835",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/642/large/nick-bray-citysketch9.jpg?1647511835",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/404/647/large/nick-bray-citysketch10.jpg?1647511849",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/404/647/large/nick-bray-citysketch10.jpg?1647511849",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/404/653/large/nick-bray-citysketch11.jpg?1647511867",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/404/653/large/nick-bray-citysketch11.jpg?1647511867",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/047/404/668/large/nick-bray-research.jpg?1647511918",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/047/404/668/large/nick-bray-research.jpg?1647511918",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/047/404/661/large/nick-bray-ref2.jpg?1647511896",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/047/404/661/large/nick-bray-ref2.jpg?1647511896",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Omx6By"
+    },
+    {
       "uri": "https://www.artstation.com/artwork/Qnag9d",
       "source": "artstation",
       "author": {
@@ -4790,6 +6475,40 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/Qnag9d"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/DAL8eo",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "The Poets\n\n\"None could doubt the piety of The Poets  - clad in their scarlet plates and brass verses; enforcing the edicts of a god everyone else knew was long dead.\"",
+        "createdAt": "2022-01-03T06:08:40-06:00"
+      },
+      "indexedAt": "2022-01-03T06:08:40-06:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/044/796/421/large/nick-bray-thepoets-small.jpg?1641194336",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/044/796/421/large/nick-bray-thepoets-small.jpg?1641194336",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/044/796/424/large/nick-bray-thepoets2-small.jpg?1641194345",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/044/796/424/large/nick-bray-thepoets2-small.jpg?1641194345",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/DAL8eo"
     },
     {
       "uri": "https://www.artstation.com/artwork/d0yGbx",
@@ -4994,6 +6713,50 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/B1xEN6"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/nYoJ0K",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "knife\n\nslipping on blood in the half-light",
+        "createdAt": "2021-10-18T09:10:51-05:00"
+      },
+      "indexedAt": "2021-10-18T09:10:51-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/451/124/large/nick-bray-knife4-small.jpg?1634566229",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/451/124/large/nick-bray-knife4-small.jpg?1634566229",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/451/007/large/nick-bray-knife2-small.jpg?1634565397",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/451/007/large/nick-bray-knife2-small.jpg?1634565397",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/042/451/109/large/nick-bray-knife3-small.jpg?1634565585",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/042/451/109/large/nick-bray-knife3-small.jpg?1634565585",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/042/451/138/large/nick-bray-knife5-small.jpg?1634565641",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/042/451/138/large/nick-bray-knife5-small.jpg?1634565641",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/nYoJ0K"
     },
     {
       "uri": "https://www.artstation.com/artwork/KrNagy",
@@ -5316,6 +7079,40 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/oAEaOB"
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/aYnaL9",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "Goblins\n\ntrying a new format",
+        "createdAt": "2021-07-29T06:58:58-05:00"
+      },
+      "indexedAt": "2021-07-29T06:58:58-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/040/000/212/large/nick-bray-feedback-2-small.jpg?1627559829",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/040/000/212/large/nick-bray-feedback-2-small.jpg?1627559829",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/040/000/203/large/nick-bray-feedback-2-alt-small.jpg?1627559756",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/040/000/203/large/nick-bray-feedback-2-alt-small.jpg?1627559756",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/aYnaL9"
     },
     {
       "uri": "https://www.artstation.com/artwork/48O2r4",
