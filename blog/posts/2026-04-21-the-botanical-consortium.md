@@ -94,7 +94,7 @@ Seated at a lovely picnic spread just in front of the portal is a lavender-haire
 - **Party Picnics:** She'll have a quite candid conversation with the Party, offering information on the Facility and the Elsewhere Ynn as belonging to a Divine Ruler trying to cross into the Outer World. She's a manufactured servitor of the Ruler who has to follow-out orders but is a bit *"over it with all the bossiness"*. The picnic food is, of course, poisoned. 5 minutes after consuming, make a Grit Check or become Putrefied. The Party may try to Socialize with Skippi over any topic. On Success, she will point out the poison and give Antidotes with a chuckling "oopsies".
 - **Recommended Map:** I used this amazingly fitting Czepeku map ["Painted Portal"](https://www.czepeku.com/fantasy/maps/dragons-memorial/painted-portal) for atmosphere/Combat.
 
-![Skippi the Asura](../images/SkippiTheAsura.png "Asura of Ynn, Skippi. Art by [LeviLagoon](https://levilagann.itch.io/break-rpg-portraits)."){: width="35%"}
+![Skippi the Asura](../images/SkippiTheAsura.png "Asura of Ynn, Skippi. Art by [LeviLagann](https://levilagann.itch.io/break-rpg-portraits)."){: width="35%"}
 
 Closing the portal requires untethering the half-mask. Direct contact with the mask triggers a hex that lets off a harmful pulse, requiring a roll on the Injury Table. A successful Might Check (Snag while hex is active) pries it from its position.
 
