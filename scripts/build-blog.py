@@ -413,7 +413,7 @@ def main():
         print(f"No posts directory at {POSTS_DIR}")
         return
 
-    md = markdown.Markdown(extensions=MD_EXTENSIONS)
+    md = markdown.Markdown(extensions=MD_EXTENSIONS, tab_length=2)
 
     # ── Collect and parse all posts ────────────────────────────────
     posts = []

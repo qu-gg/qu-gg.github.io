@@ -105,6 +105,11 @@
             margin-bottom: 1.25rem;
         }
 
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
         .post-content a {
             color: var(--accent);
             text-decoration: underline;
@@ -202,6 +207,16 @@
         .post-content ul,
         .post-content ol {
             margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
         }
 
         .post-content li {

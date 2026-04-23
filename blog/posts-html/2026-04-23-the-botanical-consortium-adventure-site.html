@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Botanical Consortium (Adventure Site) - Studio Quagg</title>
+    <meta name="description" content="Here is my attempt/write-up for an Adventure Site I recently ran as part of my ongoing BREAK!! campaign. Given this is more a “throwaway” site of my campaign than a presentable module or anything, it...">
+    <meta property="og:title" content="The Botanical Consortium (Adventure Site)">
+    <meta property="og:description" content="Here is my attempt/write-up for an Adventure Site I recently ran as part of my ongoing BREAK!! campaign. Given this is more a “throwaway” site of my campaign than a presentable module or anything, it...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-04-23-the-botanical-consortium-adventure-site.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Botanical Consortium (Adventure Site)">
+    <meta name="twitter:description" content="Here is my attempt/write-up for an Adventure Site I recently ran as part of my ongoing BREAK!! campaign. Given this is more a “throwaway” site of my campaign than a presentable module or anything, it...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>The Botanical Consortium (Adventure Site)</h1>
+                <div class="post-meta">
+                    <span class="post-date">April 23, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">BREAK!! Homebrew</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>Here is my attempt/write-up for an Adventure Site I recently ran as part of my ongoing BREAK!! campaign. Given this is more a &ldquo;throwaway&rdquo; site of my campaign than a presentable module or anything, it is fairly rough around the edges without full completeness. It was quite inspired by the <a href="https://breakrpg.blogspot.com/2017/06/magitech-facility-demo-adventure-site.html">Magitech Facility</a> BREAK!! demo adventure site - credit where it is due. Other credits include Elsewhere inspiration from the <a href="https://soulmuppetpublishing.itch.io/the-gardens-of-ynn">Gardens of Ynn</a> and map usage from <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/">DysonLogos</a>.</p>
+<p>I hope you find some use of it!</p>
+<p><strong>Site&rsquo;s History:</strong> What started in the early 3rd Aeon as a well-intentioned joint venture in botany between the budding empires of Gley and Calian quickly devolved into their usual hijinks of manipulating the laws of the world around them. Their founding mantra was &ldquo;to understand the life around us is to understand ourselves&rdquo;. While some might argue they kept to that mantra, the meaning of it changed drastically when they found the means of opening a portal to an Elsewhere of twisted gardens called <a href="https://soulmuppetpublishing.itch.io/the-gardens-of-ynn">Ynn</a>. It was discovered by the Head Calian Researcher Norin Rex that root snippings from the plants of this Elsewhere could alter the flesh of mortal creatures; creatures which would survive the transformation. Thus, the seeds of Fleshwarping were sown and experiments were attempted in secret behind Gley&rsquo;s oversight. It is claimed by some that the eventual fall and abandonment of this Facility came as the result of the secret literally bursting forth&hellip;in the form of a Grimwing breaching containment and razing the place to the ground.</p>
+<p><strong>The Site Now:</strong> Most folks living in the area have long considered the Facility just another relic of history in the local jungle, and one best left alone. Only occasionally would a Goop be seen roaming around it and even scarcer yet would one wander far enough to be a threat to anyone. Recently, however, it has seemingly kicked to life again and has begun poisoning the local riverways with a junky sludge causing folks to become Jellyfied if consumed directly. With the rivers being their primary water source, concern is rising amongst those nearby that they will have to uproot. </p>
+<p><strong>Hooks (why would players want/need to go there?):</strong> Besides the obvious one above, I&rsquo;ll give my specific example. The characters are currently facing the incursion of a Divine Ruler originating from the Elsewhere Ynn. However, they are finding it and its subjects intangible while in the Outer World, reappearing upon defeat. They suspect this facility has some clues on Ynn and ways to solidify the Ruler into a permanent state (think Bellzuub&rsquo;s Ritual from the Source Book).</p>
+<p><strong>Ecology/Atmosphere:</strong> A fun one to include at the suggestion of the Source Book. I&rsquo;ve placed this Site deep within a normally spiritually alive jungle that&rsquo;s now corrupted and dying (in part courtesy of this Facility). From afar it appears just like any other Gleysian Ruins, structurally sound yet rusty against the overgrowth.</p>
+<p>An uneasy blanket of Dark (or Flesh)-based Mana permeates the area as you close in on it and one with astute hearing could swear they hear the ambient sounds of a soft <a href="https://www.youtube.com/watch?v=qUMcdDOAMu4">garden waltz</a> filtering through the ground. Multiple large pipes jut out of the cliffside&rsquo;s base where an obvious sludgey pour of waste spews forth into the rivers cutting through the Site.</p>
+<p><strong>Wandering Encounters:</strong> Very dependent on the Rank of your Party of course but some considerations below.</p>
+<ul>
+<li>1x Mushroom + 6x Funguys rather upset at recent sludgey developments (<a href="https://breakrpg.blogspot.com/2023/09/freebie-funguy-and-mushdoom-adversaries.html">BREAK!! Blog</a>)</li>
+<li>3x Goops Ambush!</li>
+<li>4x Carnivorous Plants awkwardly hiding amongst the flora (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Horfhog</a> Reskin)</li>
+<li>6x Skelemen Archers fire off the Cliffside</li>
+</ul>
+<p><strong>Layout:</strong> Aside from just the top-down map here, I believe it is rather important to specify the verticality of the Adventure Site, i.e. having the lower, accessible dome and having the higher, closed-off dome atop the cliffside. While the upper dome is fully inaccessible by the outside, reward players that can scale the cliff with some kinda reward/friendly encounter.</p>
+<p>I&rsquo;d personally recommend showcasing the vertical slice of the map with the lower components blocked out:</p>
+<p><figure><a href="../images/BotanicalConsortiumAdventureSlice.png" target="_blank" rel="noopener noreferrer"><img alt="The Botanical Consortium Adventure Slice" src="../images/BotanicalConsortiumAdventureSlice.png" width="65%" /></a><figcaption>Vertical slice of The Botanical Consortium. Map by <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/0" target="_blank" rel="noopener noreferrer">DysonLogos</a> [Modified]</figcaption></figure></p>
+<h3 id="site-keys">Site Keys</h3>
+<p><figure><a href="../images/BotanicalConsortiumMap.png" target="_blank" rel="noopener noreferrer"><img alt="The Botanical Consortium Adventure Map" src="../images/BotanicalConsortiumMap.png" width="65%" /></a><figcaption>Map of The Botanical Consortium. Map by <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/" target="_blank" rel="noopener noreferrer">DysonLogos</a>.</figcaption></figure></p>
+<p><strong>1. Ajar Gates [Access Point]:</strong> The large front gates are unpowered and can no longer fully close itself, leaving a gap which Small Species may squeeze through. The door may be opened via manual strength but its creaking metal telegraphs your approach to the Guardian Encounter in <strong>Room 3</strong>, who will have 1 Turn to prepare.</p>
+<p><strong>2. Crumbled Wall [Access Point]:</strong> Along the rusting Gleysian Alloy security wall lies faded iconography of the empires. Down the stretch, two obvious sections of the wall are breached and crumbled, large enough for all to fit through. A gang of 6 Wood Lalkas sit atop the walls, eagerly waiting to push debris on the heads of those walking in (Falling Debris <a href="https://its.quagg.studio/the-helical-expeditions/reference-pages.html">CLICK!! Trap</a>).</p>
+<p>Successful <strong>Stealthy Movement</strong> gets by them unseen. <strong>Cautious Movement</strong> points them out though some manner of stopping them is required - they are terribly bored without masters and in need of simple entertainment [Negotiation].</p>
+<p><strong>3. Exterior Greenhouse [Guardian Encounter/Harmful Terrain]:</strong> Outside the dome and clearly once a showpiece building for those touring the Facility, this greenhouse is now massively overgrown with flora both local, foreign, and of other times altogether. 3x Carnivorous Plants (<a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Horfhog</a> Reskin) lie within the foliage, waiting to Ambush. Brash movements cause poisonous bulbs to unfurl, causing all Areas inside to become Harmful unless wearing proper protection like a Rebreather.</p>
+<p>The notable backroom (closed by a rusted metal door) is the office and resting place of an ancient Gleyian Researcher&rsquo;s skeleton - fully skeletized within a punctured Anti-Hazard Outfit. On their person is a keycard with writing in Gleysian Code: &ldquo;Designation: Lou Waters. <strong>Security Clearance: Tier 1</strong>.&rdquo;, usable for terminals within the Facility.</p>
+<p><strong>4. Fallen Welcome Center:</strong> Once a cheery welcome center for the botanical advancements of the Empires, this metallic dome structure is in tatters and barely standing. Its alloy support beams are all that&rsquo;s left of the dome and even those are bent outwards as if having exploded from within. Deep scorch lines scar everywhere within, floors to walls. Busted Gley terminals and scraps of visitor information pamphlets are all that remains. Blast doors covering a staircase down attempt to close repeatedly but are jammed by recently-applied Ennui Sludge (Source, pg. 292).</p>
+<p><strong>5. Entrance Hall [Trap]:</strong> A plain, functional entrance hallway. Across the staircase has some simple shelves (Insight Check to notice it hiding <strong>Room 7</strong>&rsquo;s door) while the corner has a cracked, though functional, Gleysian terminal in an outcrop and the closed door to <strong>Room 6</strong>. The Gleysian Terminal requires a Tier 1 Keycard but is vulnerable to hacking. One failed attempt is safe, further failed attempts invokes a Dark Apparition <a href="https://its.quagg.studio/the-helical-expeditions/reference-pages.html">CLICK!! Trap</a> by means of an angry semi-sentient AI trapped in the Terminal.</p>
+<p>Without proper authentication, a Poison <a href="https://its.quagg.studio/the-helical-expeditions/reference-pages.html">CLICK!! Trap</a> is present halfway down the stretch - activating it releases noxious spores to flood the entire hallway. Proper protection bypasses the Check.</p>
+<p>The entrance to <strong>Room 7</strong> may be opened via this Terminal by means of hacking</p>
+<p><strong>6. Break Room [Loot]:</strong> A locker/work prep station, additionally appointed as a break and nap room. A variety of crew items are left undisturbed within - notes, photos, trinkets - as if abandoned in a hurry. Inside can be found: 3x Gley Rebreathers, 6x Anti-Hazard Outfits with the Facility&rsquo;s half-Calian/half-Gley logo, a &ldquo;Local&rdquo; Map of a far different time [20C], and 6x still-edible MREs [Ration].</p>
+<p>Inspecting the room reveals a hidden to-do note by the Head Researcher Norin Rex complaining about troubles finding: <em>&ldquo;a new discrete location for the ever-expanding substance within the Dissolution Chamber.&rdquo;</em></p>
+<p><strong>7. Detoxification Antechamber [Secret Room]:</strong> Unlike the rest of the Facility exposed to the elements, this sector is perfectly clean and preserved. Norin&rsquo;s desk within contains research notes on attempting to <em>&ldquo;implant the stabilized Anchor Roots into living specimens as a means of making the living form &lsquo;more malleable&rsquo;.</em> Simple warning signs in Dark Tongue point out the need for Anti-Hazard Protection in the next chamber.</p>
+<ul>
+<li>
+<p><strong>Means of Accessing:</strong></p>
+<ul>
+<li>The Terminal in <strong>Room 5</strong> may be hacked to open the sealed doors.</li>
+<li>A Bomb might blow the sealed doors open.</li>
+<li>A Tier 2 keycard might be found in <strong>Room 11</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Site Secret:</strong> The Calian Empire, early on in the 3rd Aeon, learned a lot on the art of Fleshwarping from Ynn itself. Early attempts to use material from Ynn failed, however, as the unstable roots would dissolve the host bodies. Norin decided that this semi-sentient substance may be of use later so all dissolved material was thrown into <strong>Room 8</strong>.</p>
+</li>
+</ul>
+<p><strong>8. Dissolution Chamber [Secret Room] [Guardian Encounter]:</strong> Entering this chamber requires going through a detox airlock that douses the room in solvent as a means of killing any errant goop exiting the chamber. Direct skin contact results in a Burning Injury. Any not under Anti-Hazard Protection when entering the chamber must make a Grit Check or become Jellyfied from exposure to the substance within.</p>
+<p>This is a smooth-walled metal chamber where, from the door, a grated platform juts out over a massive bubbling pool of Mana Waste. This pool itself is a <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Supergoop</a> fused from the dissolved material of many, many test subjects. Seemingly still composed of some sentience, it will pathetically try and raise pods onto the platform towards living creatures. It makes soft noises eerily reminiscent of human pain and longing.</p>
+<p>While no actual Combat or Encounter is intended here, feel free to up the stakes with the platform being corroded enough to be faulty and collapse, or let the Supergoop reach the platform and attack directly.</p>
+<p><strong>9. Shared Laboratory [Loot]:</strong> The shared research and experimentation space of the Empires here within the Facility. Numerous lab benches contain the dead, or otherwise overgrown, remnants of relatively beneficial studies - hardening plant strains against disease, identifying those strains under extinction threat, etc. One experiment stands out, however, given it contains a yet living flower. A single beautiful opalescent flower gives off a dull glow, suspended in a viscous hydroponic solution. 1 Unit of Aken&rsquo;s Succor (Source, pg. 291).</p>
+<p>Note excerpts read:</p>
+<blockquote>
+<p>&ldquo;We&rsquo;ve made significant effort here to re-root the Anchor Tree better by expanding its total bore holes to 3 individual ones and infusing the roots with Bright Water to temper its Mana Alignment. These results in substantial progress with corporeally stabilizing the Rift but as yet we are limited to harvesting material on this plane. Insofar attempts at traversing into the portal have resulted in inconsistent results - early attempts were entirely fatal while more recent ones could endure the shift but reported the inability to interact with anything, i.e. &ldquo;a feeling of incorporeality&rdquo;. At this point, the only thing to do is wait on Gley accomplices to deliver the other half of the stabilization instrument.&rdquo;</p>
+</blockquote>
+<p><strong>10. Anchor Root Chambers [Loot]:</strong> Three identical chambers sit behind heavy doors with circular viewing windows. Inside each is a singular large glass tube going ceiling-to-floor where massive tree roots sprawl down out of sight. These tubes are filled entirely by Mana Waste yet the roots live. On each is an access hatch that can be opened to reach the roots (normally submerged in Bright Water) though drain button mechanisms no longer work as intended.</p>
+<p>Opening the hatch begins flooding the room in Mana Waste, which becomes Harmful Terrain to non-Jellyfied creatures. Unprotected exposure requires a Grit Check or become Jellyfied. Root clippings may be harvested to obtain 2 Units of Warp Root (Source, pg. 289).</p>
+<p><strong>11. The Anchor Tree [Guardian Encounter]:</strong> The inside of the upper dome has been entirely overtaken by the twisted vines and flora of Ynn itself. In the center courtyard of the dome lies a massive, knotted tree encompassing the roof of the dome entirely. Its center is rent asunder, where a flickering portal to the Elsewhere hums. From the portal to the dome crawls three twisting root clusters, burrowing into the ground below. Each has a sickly ooze pulsing through its veins. Beyond the portal is a gothic cathedral flush with beautiful sunlight and horticulture.</p>
+<p>A porcelain half-mask connects to the portal via tethers of Mana, resting on the face of an eerily humanoid-like vine sculpture - kneeling with arms outstretched wearing a pained expression.</p>
+<ul>
+<li><strong>Secret:</strong> Hidden in the brambles of the vine sculpture is a Tier 2 Access Keycard belonging to Norin Rex herself.</li>
+</ul>
+<p>Seated at a lovely picnic spread just in front of the portal is a lavender-haired Chib named Skippi, boredly twirling a flower in her hands. Non-threatening if she is alerted to the party, she simply invites them to join claiming <em>&ldquo;she&rsquo;s naught to do but relax while stuck on babysitting duty&rdquo;</em>.</p>
+<ul>
+<li><strong>Party Fights:</strong> She&rsquo;ll simply sigh with a <em>&ldquo;tsk tsk read the room&rdquo;</em> and engage. She is a <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Betrayal Demon</a> and calls for 4x <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing">Rose Lalkas</a>, who have been waltzing in the courtyard nearby, to come help.</li>
+<li><strong>Party Picnics:</strong> She&rsquo;ll have a quite candid conversation with the Party, offering information on the Facility and the Elsewhere Ynn as belonging to a Divine Ruler trying to cross into the Outer World. She&rsquo;s a manufactured servitor of the Ruler who has to follow-out orders but is a bit <em>&ldquo;over it with all the bossiness&rdquo;</em>. The picnic food is, of course, poisoned. 5 minutes after consuming, make a Grit Check or become Putrefied. The Party may try to Socialize with Skippi over any topic. On Success, she will point out the poison and give Antidotes with a chuckling &ldquo;oopsies&rdquo;.</li>
+<li><strong>Recommended Map:</strong> I used this amazingly fitting Czepeku map <a href="https://www.czepeku.com/fantasy/maps/dragons-memorial/painted-portal">&ldquo;Painted Portal&rdquo;</a> for atmosphere/Combat.</li>
+</ul>
+<p><figure><a href="../images/SkippiTheAsura.png" target="_blank" rel="noopener noreferrer"><img alt="Skippi the Asura" src="../images/SkippiTheAsura.png" width="35%" /></a><figcaption>Asura of Ynn, Skippi. Art by <a href="https://levilagann.itch.io/break-rpg-portraits" target="_blank" rel="noopener noreferrer">LeviLagoon</a>.</figcaption></figure></p>
+<p>Closing the portal requires untethering the half-mask. Direct contact with the mask triggers a hex that lets off a harmful pulse, requiring a roll on the Injury Table. A successful Might Check (Snag while hex is active) pries it from its position.</p>
+<ul>
+<li>If on amicable terms, the Party may try to Negotiate with Skippi to avoid fighting and just take the mask. Success makes Skippi shrug, sarcastically touting <em>&ldquo;damn what strong adventurers they were huh?&rdquo;</em>, and dropping the hex.</li>
+<li>Adversarially, Skippi will keep reconstituting after reaching 0 Hearts, stepping out of the Portal the following Turn. The hex is disrupted while Skippi is in the Portal - reconstituting or if pushed inside.</li>
+</ul>
+<p><strong>Conclusion:</strong> Upon closing the portal, the oozy roots shrivel up with a shriek and perish. The purification of the river is not instant and will take time, however healing can begin in earnest now. The half-mask itself is a Magical Item:</p>
+<div class="item-block">
+    <div><span class="item-name">Half-Mask of Tangibility</span> <span class="item-type">[Wearable Accessories]</span></div>
+    <div class="item-desc">A beautifully angular half-mask made of porcelain, it wears a drastic weeping expression and obfuscates the wearer's <br>eye entirely. Gleysian records confirm that the other half was made, though its location has been lost to time.</div>
+    <ul>
+        <li>While wearing this Mask, you may focus your attention on a Target.</li>
+        <li><strong>Requires an Aura Check:</strong></li>
+        <ul>
+            <li><strong>Success</strong>: The Target maintains their intangibility and is immune to this effect for a Day.</li>
+            <li><strong>Failure</strong>: This Target becomes more corporeal, losing any protection against Non-Magical Weapons and Abilities.</li>
+        </ul>
+        <li>Only one Target may be affected by this Ability at a time.</li>
+    </ul>
+    <div class="item-stats">0.5 Slot · 1 Gem</div>
+</div>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-04-16-session-report-41-break-not-more-plants.html" class="post-nav-link next">Session Report 41 (BREAK!!) - Not More Plants! →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
