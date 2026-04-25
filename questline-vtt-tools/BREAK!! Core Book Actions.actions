@@ -1,0 +1,4302 @@
+[
+  {
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FC6TPTU5MUTYVZdkrSrfL.png?alt=media&token=f7d96ff4-4a7a-49de-9502-e10d77389cbd",
+            "tokenCrop": {
+              "y": 6.333333333333334,
+              "unit": "%",
+              "height": 86,
+              "aspect": 1,
+              "x": 9.333333333333336,
+              "width": 86
+            }
+          }
+        }
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Delilah, Who Rules Absolutely, is the light. She floods the senses with hope to bring the peace of dominion to all who would receive her.*\n\nCall out her name and Delilah shines forth, taking control of a mind that means you harm. Summoning requires 1 Action.\n\n**Requires a Contest**\nYour Grit vs. your target’s Aura.\n- **Success:** Delilah forms around your target like a halo.\n - You can target a foe up to 1 Battlefield Area away from you. \n - You can control your target for the next Turn. For example, you can make them speak, drop a powerful item, or attack an ally.\n - Delilah vanishes after your target performs the controlled action.\n- **Failure:** Delilah (played by your GM) decides your next Turn, then vanishes with a lingering laugh.\n - Delilah would never cause you to directly harm yourself, though she might have you throw an important item aside or shout at enemies you’re hiding from."
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "range",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "[A][M] Imperatrix Delilah",
+    "subtype": "heretic",
+    "version": 2,
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "00gDkrkbeJh0JCFU1cIR"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167"
+          }
+        }
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*You are a master of cutting a destructive path through a swarm of enemies.*\n\nIf you land a finishing blow against an opponent in Melee, you gain a Chain Attack against another foe in the same Area.\n- **Rank 1**: You have one Chain Attack per Round which…\n  - Has a Minor Bonus (+2) on the Attack roll.\n  - Does an extra Heart of Damage if you land a successful strike.\n- **Rank 5**: You gain a second Chain Attack, if the previous one also finishes its opponent."
+        },
+        "visibility": "full"
+      }
+    ],
+    "version": 2,
+    "subtype": "champion",
+    "displayName": "[S] Combat Momentum",
+    "id": "1Quaho411oA37aFiShy8"
+  },
+  {
+    "type": "weapon",
+    "effects": [
+      {
+        "useModifiers": true,
+        "name": "",
+        "encounterRoll": false,
+        "advantageType": "none",
+        "bonus": 1,
+        "type": "roll",
+        "bonusRoll": "",
+        "hide": false,
+        "baseRoll": "1d20",
+        "selectedDie": "d20",
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "quantity": 1
+      }
+    ],
+    "version": 2,
+    "displayName": "Master Weapon",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: 18\n\n**Weapon Ability, Perfect Strike:**\nYou gain a +1 to your Attack rolls when using a Master Weapon."
+        },
+        "type": "description"
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjjIydecqyLWSP5GO1CIF.png?alt=media&token=4c84bdb4-bf09-436f-b8ad-402b9758f1a1"
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "id": "3O2a25ZPtaKTx6o2a5Wy",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Sometimes you just need to punch someone, really hard.*\n\nYou strike as if wielding a Standard Weapon when fighting Unarmed.\nIf using both hands, treat Attacks as if Dual Wielding."
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "[S] Brawler",
+    "subtype": "champion",
+    "version": 2,
+    "type": "abilities",
+    "effects": [
+      {
+        "options": [],
+        "baseValue": 0,
+        "quantity": 1,
+        "type": "roll",
+        "baseRoll": "1d20",
+        "useModifiers": true,
+        "encounterRoll": false,
+        "challengeDice": false,
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "exploding": false,
+        "useLowest": false,
+        "difficulty": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "successMultiplier": 1,
+        "secondaryDice": false,
+        "advantageType": "none",
+        "hide": false,
+        "selectedDie": "d20",
+        "successTarget": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "bonus": 0,
+        "name": "Main Hand Attack",
+        "damageType": "none"
+      },
+      {
+        "damageType": "none",
+        "name": "Off-Hand Attack",
+        "useLowest": false,
+        "exploding": false,
+        "bonus": -2,
+        "bonusSymbols": [],
+        "rollDirection": "high",
+        "targetNumber": null,
+        "challengeDice": false,
+        "encounterRoll": false,
+        "successTarget": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "hide": false,
+        "secondaryDice": false,
+        "type": "roll",
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "quantity": 1,
+        "challengeRoll": null,
+        "baseValue": 0,
+        "options": [],
+        "difficulty": 0
+      },
+      {
+        "difficulty": 0,
+        "options": [
+          "requirement"
+        ],
+        "requirement": "20",
+        "quantity": 1,
+        "baseValue": 1,
+        "challengeRoll": null,
+        "baseRoll": "1d20",
+        "hide": false,
+        "selectedDie": "d20",
+        "advantageType": "none",
+        "type": "value",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "encounterRoll": false,
+        "successTarget": false,
+        "challengeDice": false,
+        "rollDirection": "high",
+        "targetNumber": null,
+        "exploding": false,
+        "bonusSymbols": [],
+        "bonus": 0,
+        "useLowest": false,
+        "name": "Damage",
+        "damageType": "none"
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "4agF3zANTpZ6fdGM9NDZ"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "type": "abilities",
+    "effects": [
+      {
+        "rollDirection": "high",
+        "targetNumber": null,
+        "damageType": "none",
+        "name": "Roll",
+        "bonus": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "difficulty": 0,
+        "successTarget": false,
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "selectedDie": "d20",
+        "hide": false,
+        "challengeDice": false,
+        "useLowest": false,
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "exploding": false,
+        "baseValue": 0,
+        "quantity": 1,
+        "options": [],
+        "useModifiers": true,
+        "encounterRoll": false,
+        "type": "roll",
+        "baseRoll": "1d20"
+      },
+      {
+        "useLowest": false,
+        "name": "Damage",
+        "damageType": "none",
+        "exploding": false,
+        "bonusSymbols": [],
+        "bonus": 0,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "challengeDice": false,
+        "encounterRoll": false,
+        "successTarget": false,
+        "baseRoll": "1d20",
+        "hide": false,
+        "selectedDie": "d20",
+        "advantageType": "none",
+        "successMultiplier": 1,
+        "secondaryDice": false,
+        "type": "value",
+        "quantity": 1,
+        "baseValue": "2",
+        "challengeRoll": null,
+        "difficulty": 0,
+        "options": []
+      }
+    ],
+    "subtype": "murder princess",
+    "version": 2,
+    "displayName": "[A][M] Sword Storm",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FtqQjcOy1DKSSu8hQYjDc.png?alt=media&token=33da645c-3a60-43ee-9e77-d7d047f3d138"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*With a cry of defiance you can summon a blizzard of magical blades that tear through anyone nearby.*\n\nOn your Turn you can summon clones of your Wrath’s Blade (or ammunition if it’s a Missile Weapon) to appear over the Battlefield, that rain down upon anyone surrounding you:\n- You make a single Attack roll.\n- The result of the roll is used as an Attack roll against everyone in the same Battlefield Area as you.\n- A hit does 2 Hearts of Damage.\n- Characters who have a Social Bond with you are exempt from the Attack.\n- After the Storm, the summoned weapons disintegrate.\n\nYou can use Sword Storm once every 24 hours without penalty. Using a Sword Storm in excess of this means you have to roll on the Injury Table after use."
+        },
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        }
+      }
+    ],
+    "id": "5EudpQP7IHO49NWINAc6"
+  },
+  {
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc",
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            }
+          }
+        }
+      },
+      {
+        "value": {
+          "description": "*Tacticians live in the moment. Strategists live two steps ahead. Your foes will learn the difference once it’s too late!*\n\nYou can take a single Action during an enemy’s Turn to perform a countermeasure to their intended Action.\n\nIf your intervention renders the foe’s declared Action impossible, they are forced to choose a new course of action or lose their Turn.\n\nUsing this Ability means that you cannot act on your next Turn."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "displayName": "[A] Uncanny Strategist",
+    "version": 2,
+    "subtype": "champion",
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "7OE4yUz02hvsZUvTTQiM"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F9BIKNraPfZbfvtH475gv.png?alt=media&token=546ef8d2-a644-45ca-8e94-797143250a6c"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Your strikes can create opportunities for your comrades-at-arms to exploit.*\n\nIf one of your Attacks is successful, it also counts as an Attack Assist for the next ally attacking the same opponent."
+        }
+      }
+    ],
+    "displayName": "[A] At Your Side",
+    "subtype": "battle princess",
+    "version": 2,
+    "id": "7yyQMAErO7aWJ14juubh"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "subtype": "heretic",
+    "version": 2,
+    "displayName": "[A][M] Altgrave Ultima",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FechDriyMq4j6jiFMTe8A.png?alt=media&token=1cb9a3bf-ea22-47af-a25d-84559d910919",
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Ultima, Whose Fist is Just, is a massive warrior in ultra-heavy armor who is keen to mete out justice on your behalf.*\n\nThrow your arms wide open, shout his name dramatically, and Ultima appears to smite a foe. Summoning requires 1 Action.\n\n**Requires a Grit Check**\n- **Success:** Ultima thunders towards a target of your choice. He shouts their greatest sin aloud (For example: Pride!, Indolence!, or Chicanery!) and hammers them with his enormous righteous fist.\n - You can target any foe up to 1 Battlefield Area away from you.\n - The target takes 1 Heart of Damage and must make a Might Check:\n   - Success: They partially deflect the blow and avoid further damage.\n   - Failure: They have been smashed to the ground, taking an additional Heart of Damage and are now Toppled. \n- **Failure:** Ultima appears behind you and swats you to the ground before vanishing. You are Toppled."
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "id": "Ag8QI1J4RORWJdDr37yF"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F7pDM7eJPlZdoLHLYA2bN.png?alt=media&token=8ae317bc-67ce-4e58-be6a-fbf1836eae4d",
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You have a distaste for direct combat and your mind is often looking for a way to help without going toe to toe.*\n\nDuring a Fight, your opponents will not target you for Attack in any Turn where you are not intending to perform an offensive Action, or doing something that will obviously cause them harm or spoil their plans. For example, healing a friend would go unchecked but setting up a bomb would not."
+        }
+      }
+    ],
+    "subtype": "factotum",
+    "version": 2,
+    "displayName": "[S] Don't Mind Me",
+    "type": "abilities",
+    "effects": [],
+    "id": "Am7AdPhMiQqqvHv7pg5A"
+  },
+  {
+    "version": 2,
+    "displayName": "Quick Weapon",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: 22\n\n**Weapon Ability, Darting Style:**\nYou gain a +1 to your Defense Rating when using a Quick Weapon."
+        },
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FmH4xR0mvLOFXabOaDFFw.png?alt=media&token=416262cb-30fa-4841-92e7-3bd42b233484",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "id": "C74b3vtYJi6nNtlQIDEw",
+    "effects": [
+      {
+        "quantity": 1,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "baseRoll": "1d20",
+        "selectedDie": "d20",
+        "hide": false,
+        "advantageType": "none",
+        "type": "roll",
+        "bonus": 0,
+        "encounterRoll": false,
+        "useModifiers": true,
+        "name": ""
+      }
+    ],
+    "type": "weapon",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "subtype": "raider",
+    "version": 2,
+    "displayName": "[A] Spell Cutter",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F8FwX0SvsvpwYnYfrTNTO.png?alt=media&token=9f94a9a7-a02d-4f3c-be8c-f1e26d3cea59"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*While imperceptible to regular folk, your eyes can distinguish the tiny distortions in the air created by coalescing mana. A well placed swipe can sometimes disrupt a spell’s formation.*\n\nYou can attempt to nullify a Magic Ability that has targeted you, or an ally in the same Battlefield Area.\n\n**Requires a Contest**\nYour Deftness vs. the Aptitude related to the magical Ability’s use. \nIf no Aptitude is specified, then use the caster’s Aura.\n**Success**: The spell is shattered and does not affect its intended targets.\n\nSuccessful or not, you cannot act during your next Turn."
+        }
+      }
+    ],
+    "type": "abilities",
+    "effects": [],
+    "id": "CCzU1KnFmPgHUopqBTHa"
+  },
+  {
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FM02Ld8frSC65OKtQJh8S.png?alt=media&token=c36d64d3-1c4a-43ae-8a79-c4d2567f0f4c"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*A few extra spikes here, a metal plate or two there, and your bulky Factotum’s Pack is now combat ready! Cower behind it or swing it at your foes.*\n\nOn your combat Turn, you can use your Pack as either:\n- A Mighty Weapon, or…\n- A Large Shield.\n\nGear Allowance Restrictions don’t apply when using your Pack as a piece of Combat Gear."
+        },
+        "type": "description"
+      }
+    ],
+    "version": 2,
+    "displayName": "[A] Pack Tactics",
+    "subtype": "factotum",
+    "type": "abilities",
+    "effects": [
+      {
+        "bonus": 0,
+        "name": "Mighty Weapon",
+        "damageType": "none",
+        "targetNumber": null,
+        "rollDirection": "high",
+        "hide": false,
+        "selectedDie": "d20",
+        "advantageType": "none",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "successTarget": false,
+        "difficulty": 0,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "challengeRoll": null,
+        "exploding": false,
+        "bonusSymbols": [],
+        "bonusRoll": "",
+        "useLowest": false,
+        "challengeDice": false,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "encounterRoll": false,
+        "useModifiers": true,
+        "options": [],
+        "quantity": 1,
+        "baseValue": 0
+      },
+      {
+        "type": "value",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "hide": false,
+        "baseRoll": "1d20",
+        "selectedDie": "d20",
+        "successTarget": false,
+        "encounterRoll": false,
+        "options": [
+          "requirement"
+        ],
+        "requirement": "20",
+        "difficulty": 0,
+        "challengeRoll": null,
+        "baseValue": "2",
+        "quantity": 1,
+        "bonus": 0,
+        "bonusSymbols": [],
+        "exploding": false,
+        "name": "Damage",
+        "damageType": "none",
+        "useLowest": false,
+        "challengeDice": false,
+        "rollDirection": "high",
+        "targetNumber": null
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "ChUum2kxPiB1lYSTZWg7"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "weapon",
+    "effects": [
+      {
+        "bonus": 2,
+        "damageType": "none",
+        "name": "",
+        "rollDirection": "high",
+        "targetNumber": null,
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "hide": false,
+        "selectedDie": "d20",
+        "successTarget": false,
+        "difficulty": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "exploding": false,
+        "useLowest": false,
+        "challengeDice": false,
+        "delayedBonusAmount": 0,
+        "delayedBonus": false,
+        "type": "roll",
+        "baseRoll": "1d20",
+        "encounterRoll": false,
+        "options": [],
+        "baseValue": 0,
+        "quantity": 1
+      }
+    ],
+    "displayName": "Large Mechanical Weapon",
+    "subtype": "",
+    "version": 2,
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "description": "Range: 2 Areas\nDamage: 1\nThreshold: 18\nLoading Time: 1 Action\n\nYou must use two hands to load and fire these Weapons.\n\n**Weapon Ability, Thunderous Shot:**\nYou gain a +2 to your Attack roll.\n\nAmmo: 3x per 1/10 Slots."
+        },
+        "type": "description"
+      },
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FTeCy47JkVNGVonfYmjlW.png?alt=media&token=3320519f-ca8b-47b0-9c6f-5abbfe64f27e",
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      }
+    ],
+    "id": "EdRAUP0UW3eMDvCnB38u"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FdJwCtjP4Bb4a3f2suTeg.png?alt=media&token=dba082a5-e19f-476c-98b2-c06c0e19baff"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "description": "*When surrounded by lesser warriors you enter Counter Fang stance. From this meditative state you visualise the flow of the fight and then, when engaged by predictable foes, you lay waste to them with choreographed efficiency.*\n\nDuring a Fight you can choose to enter the Counter Fang stance instead of making an Attack or taking another Action.\n\nWhile in the Counter Fang stance, any opponent that fails their Attack roll on you is subject to a retaliatory Attack, Attack Stunt, or Combat Trick.\n\nThe benefit of this Ability lasts until the start of your next Turn, when you can move and re-enter the Counter Fang stance if desired."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "displayName": "[A] Counter Fang",
+    "version": 2,
+    "subtype": "raider",
+    "effects": [],
+    "type": "abilities",
+    "id": "FQFbwuBKlglWr2qJdC3s"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "subtype": "murder princess",
+    "version": 2,
+    "displayName": "[A][M] Blade of Darkness",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FtqQjcOy1DKSSu8hQYjDc.png?alt=media&token=33da645c-3a60-43ee-9e77-d7d047f3d138"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*You can summon a Wrath’s Blade composed of pure dark energy, capable of wounding the soul.*\n\nYou can activate this Ability at will upon summoning your Wrath’s Blade.\n\n**Dark Strike**: Your Wrath’s Blade is a cosmic void that now drains an additional Heart of Dark Damage in addition to the weapon’s Mundane Damage.\n\n**Wrapped in Darkness**: After a strike with the Wrath’s Blade, the energy can be discharged to engulf your target and cause an additional Heart of Dark Damage; which dispels the Ability.\n\nUsing Wrapped in Darkness prevents you from using this Ability again for another 24 hours."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "FulXd0AuEyNB8KuQfQr3"
+  },
+  {
+    "effects": [
+      {
+        "exploding": false,
+        "bonusSymbols": [],
+        "bonusRoll": "",
+        "useLowest": false,
+        "challengeDice": false,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "encounterRoll": false,
+        "useModifiers": true,
+        "options": [],
+        "quantity": 1,
+        "baseValue": 0,
+        "bonus": 0,
+        "damageType": "none",
+        "name": "",
+        "targetNumber": null,
+        "rollDirection": "high",
+        "selectedDie": "d20",
+        "hide": false,
+        "advantageType": "none",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "successTarget": false,
+        "difficulty": 0,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "challengeRoll": null
+      },
+      {
+        "challengeDice": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "bonusSymbols": [],
+        "bonus": 0,
+        "exploding": false,
+        "useLowest": false,
+        "name": "Damage",
+        "damageType": "none",
+        "difficulty": 0,
+        "options": [
+          "requirement"
+        ],
+        "requirement": "22",
+        "baseValue": "1",
+        "challengeRoll": null,
+        "quantity": 1,
+        "advantageType": "none",
+        "successMultiplier": 1,
+        "type": "value",
+        "secondaryDice": false,
+        "selectedDie": "d20",
+        "hide": false,
+        "baseRoll": "1d20",
+        "successTarget": false,
+        "encounterRoll": false
+      }
+    ],
+    "type": "Abilities",
+    "version": 2,
+    "subtype": "Murder Princess",
+    "displayName": "[S][M] Wrath Bolt",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F2TmcUnDWj1QjKNrHMm85.png?alt=media&token=55af5c92-e577-40db-87ee-f9dd8a900a34",
+            "tokenCrop": {
+              "y": 8.999999999999963,
+              "unit": "%",
+              "height": 89,
+              "aspect": 1,
+              "x": 0,
+              "width": 89.29765886287625
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You are able to fill your hand with dark, crackling energy. This charged mana can be hurled at your enemies or used to envelop your Wrath’s Blade.*\n\n**Wrath Blade**: If you envelop your Wrath’s Blade with this Ability it now deals Dark Damage instead of Mundane Damage.\n\n**Wrath Bolts**: You are able to fire Wrath Bolts at enemies up to one Battlefield Area away. Bolts strike as Thrown Missile Weapons. Bolts do 1 Heart of Dark Damage on a successful Attack.\n\n**Weapon Ability, Hidden Fangs:** \nIf your target isn’t aware of your Thrown Weapon, you may attempt to Ambush them, even when you are in plain sight.\n- Targets must be in Range, but otherwise this attack works like a normal Ambush (􀂴 p252).\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+        }
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "H7Zh8hNCTjMczUPbCdtq"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsrddYwcCABukR8Iygury.png?alt=media&token=14afeba2-45a1-450e-b436-48d76a78292d",
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            }
+          }
+        }
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Those touched by your kindness often come to help you in your darkest hour.*\n\nIf you’re in mortal peril, maybe alone and outnumbered or stranded without hope, you can use this Ability to summon help.\n\nOnce activated, your GM will choose a character with whom you have a Social Bond to come to your assistance. This could even be a spared foe with whom you’ve formed a Battle Bond.\n\nThe chosen character will miraculously appear just in time to offer you required assistance. For example, they might arrive with reinforcements or a convenient escape craft.\n\nThis Ability cannot be used again until you have had the time to participate in a Downtime Activity."
+        },
+        "visibility": "full"
+      }
+    ],
+    "version": 2,
+    "displayName": "[A] Never Stand Alone",
+    "subtype": "battle princess",
+    "type": "abilities",
+    "effects": [],
+    "id": "I1e2S8ksDacI9lqud8L2"
+  },
+  {
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FHD69QVckjlg6IO1bXkGN.png?alt=media&token=41db7df7-2e0e-4033-82aa-348bc69b5add"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Sometimes even the patience of the wise can be tested. By clenching your fist you can solidify the mana emanating from your target and use it to crush like a vise.*\n\nYou can target an opponent up to 15 ft, or 1 Battlefield Area, away. During a Fight, Mana Crush requires the use of your Action to cast.\n\n**Requires a Contest**\nYour Insight vs. your target’s Deftness.\n- **Success:** The target is crushed within a cocoon of mana, taking 3 Hearts of Damage.\n- **Failure:** The Target avoids the brunt of the assault and only takes 1 Heart of Damage.\n\nThis spell is physically taxing to cast and may only safely be used once per Fight. Attempting the spell in the same Fight, or within a few minutes of the last attempt, means you must roll on the Injury Table after the Contest."
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "range",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "[A][M] Mana Crush",
+    "version": 2,
+    "subtype": "sage",
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "Ic9uiRLWCrjz9YkaDFAy"
+  },
+  {
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FAxWu1TnZS0a3KMzGzWhv.png?alt=media&token=d1b94ead-63d8-4257-a9ae-c701676f8b3e",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You are a master of a swift and fluid martial art, able to protect yourself and strike fatal blows even without a weapon.*\n\nYou make Unarmed attacks as if wielding a Quick Weapon.\n\n**Weapon Ability, Darting Style:**\nYou gain a +1 to your Defense Rating when using a Quick Weapon."
+        }
+      }
+    ],
+    "displayName": "[S] Rushing Fist Style",
+    "subtype": "raider",
+    "version": 2,
+    "type": "abilities",
+    "effects": [
+      {
+        "challengeDice": false,
+        "useLowest": false,
+        "exploding": false,
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "quantity": 1,
+        "baseValue": 0,
+        "options": [],
+        "encounterRoll": false,
+        "useModifiers": true,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "rollDirection": "high",
+        "targetNumber": null,
+        "name": "Quick Weapon",
+        "damageType": "none",
+        "bonus": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "difficulty": 0,
+        "successTarget": false,
+        "hide": false,
+        "selectedDie": "d20",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "advantageType": "none"
+      },
+      {
+        "challengeDice": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "exploding": false,
+        "bonus": 0,
+        "bonusSymbols": [],
+        "damageType": "none",
+        "name": "Damage",
+        "useLowest": false,
+        "requirement": "22",
+        "options": [
+          "requirement"
+        ],
+        "difficulty": 0,
+        "quantity": 1,
+        "challengeRoll": null,
+        "baseValue": "1",
+        "hide": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "secondaryDice": false,
+        "type": "value",
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "encounterRoll": false,
+        "successTarget": false
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "JSfS9eplkouapBcPLRyg"
+  },
+  {
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FFnNmCnKgCxoqK6uJPBIT.png?alt=media&token=46aae07c-327a-4427-b8ea-77b3b8b19490",
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            }
+          }
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*While a one-on-one fight is not an attractive proposition to you, ganging up on someone certainly is.*\n\nDuring a Fight, you gain a Minor Bonus (+2) on your Attack rolls against opponents who are being attacked by another character in the same Turn."
+        },
+        "type": "description"
+      }
+    ],
+    "subtype": "sneak",
+    "version": 2,
+    "displayName": "[S] Flanker",
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "LC5p5gISQVkRVfMObbQc"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "displayName": "[A][M] Umbra Draconis",
+    "version": 2,
+    "subtype": "heretic",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Ff4gSdD0EELvXhXj2UzUu.png?alt=media&token=90790cf2-9181-48eb-ba1c-ed03833d4094",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Draconis, The Silhouette Wyrm, is the creature of legend who broke the Sun Machine and battled with Emperor Regulus. He is now but a shadow, though his flames still burn real enough.*\n\nTo call Umbra Draconis you must fall to your knees and shout his name at the top of your lungs. The great dragon emerges, ready to scorch your enemies. Summoning requires 1 Turn.\n\n**Requires a Grit Check**\n- **Success:** Draconis breathes dark flames on to the Battlefield Area you occupy, then vanishes. \n - The flames do not harm you, but everyone else takes 3 Hearts of Flame Damage.\n - Draconis’ flames will also Sunder combustible objects.\n - If the Battlefield Area contains flammable structures or surfaces your GM can choose to set them alight, adding the Harmful Condition to the Area (􀂴 p250).\n- **Failure:** The effects are identical to Success, except you are also harmed by Draconis’ dark flames.\n\nOnce attempted, you cannot use this Ability again for 24 hours."
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "LPI246LfxS6Wt3eW7YMg"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "displayName": "[A][M] Prince Justiniaus",
+    "subtype": "heretic",
+    "version": 2,
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 86,
+              "x": 6.999999999999964,
+              "unit": "%",
+              "y": 7.3333333333332975,
+              "height": 86
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FqJwJwonmD97yHyEjTlYn.png?alt=media&token=2270bec6-acac-44f7-b4ae-23d1a79e135a"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "description": "*Justiniaus, The Prince in Chains, is bound to his throne with barbed shackles. A wicked grin graces his torn face when he inflicts suffering upon others.*\n\nKneel and whisper his name and Justiniaus will appear to ensnare your enemies. Summoning requires 1 Action.\n\n**Requires a Grit Check**\n- **Success:** Barbed chains erupt around your chosen target. \n - You can target a foe up to 2 Battlefield Areas away from you.\n - All your target’s limbs are Restrained as the chains circle and constrict around them.\n - The target can be freed if anyone spends a Turn to break the chains.\n - This requires a Might Check. The target loses 1 Heart every time this is attempted, successfully or not.\n - The chains will vanish in an hour, or when you attempt to summon Justiniaus again.\n- **Failure:** A single chain, accompanied by a sinister cackle, erupts from the ground and binds your dominant arm to your body.\n - Your arm is Restrained.\n - You, or an assisting ally, must use an Action to attempt to cut the chains. This requires a Might Check. You lose 1 Heart every time this is attempted, successfully or not.\n\nYou cannot summon Justiniaus again until you are freed."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        }
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "LZ7O4zXc5xhgEVz6t9QA"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "NfkKIgzezMoUxkVNLNJF",
+    "details": [
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: 20"
+        }
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FYm5Yte0sUUWUo8Yy32du.png?alt=media&token=8db28edf-a753-49db-9212-35430deb5e87",
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "Standard Weapon",
+    "version": 2,
+    "type": "weapon",
+    "effects": [
+      {
+        "encounterRoll": false,
+        "useModifiers": true,
+        "name": "",
+        "hide": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "advantageType": "none",
+        "bonusRoll": "",
+        "bonus": 0,
+        "type": "roll",
+        "quantity": 1,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "type": "abilities",
+    "effects": [],
+    "displayName": "[A][M] Queen Amhika",
+    "version": 2,
+    "subtype": "heretic",
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "x": 8.66666666666666,
+              "width": 86.33333333333333,
+              "aspect": 1,
+              "height": 86.33333333333333,
+              "y": 5.999999999999993,
+              "unit": "%"
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FmIBenivvWYRYFGVuIG3c.png?alt=media&token=de37f9d5-cea0-458c-89da-4ac990a843a9"
+          }
+        }
+      },
+      {
+        "value": {
+          "description": "*Queen Amhika, Dweller in Our Hearts, is pleasant and obliging. Her soothing voice and kind embrace will transport you to a place of safety.*\n\nWith an earnest desire Queen Amhika will appear ready to remove you from harms way. Summoning is instantaneous.\n- Queen Amhika will envelop you, and up to 5 allies, in her enormous cape. \n- You drift off into a peaceful sleep. When you awake you are in the place where you always felt most safe.\n- You should choose your safe place before play and inform your GM. This could be your waterfall retreat, a relaxing meadow, or your childhood home.\n\nOnce Amhika has deposited you safely she cannot be summoned again until you have spent one day actually relaxing."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        }
+      }
+    ],
+    "id": "O0PumD0h3g7xTzaSLOZa"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "details": [
+      {
+        "type": "description",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: None\n\nUnarmed strikes suffer a Snag on their Attack roll when directed at armed or armored enemies."
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FQDpIWCak2RhwohCi3Si1.png?alt=media&token=96b4cd4b-4fe2-44cf-b0b8-36df39a01ff2"
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "id": "O1X5ZfG9II4kLTMD9r86",
+    "version": 2,
+    "displayName": "Unarmed Weapon",
+    "effects": [
+      {
+        "advantageType": "none",
+        "bonus": 0,
+        "type": "roll",
+        "hide": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "useModifiers": true,
+        "name": "",
+        "encounterRoll": false,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "quantity": 1
+      }
+    ],
+    "type": "weapon"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F2TmcUnDWj1QjKNrHMm85.png?alt=media&token=55af5c92-e577-40db-87ee-f9dd8a900a34"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Your unabated fury manifests itself as large spikes or thorns that project from your Wrath’s Blade, making its wounds even more grievous. However, the toll on your spirit is great.*\n\nYou can choose to inflict an extra Heart of Damage on a successful Attack, but lose 2 of your own.\n\nIf you drop below 0 Hearts when using this Ability, you must roll on the Injury Table after each successful Attack."
+        }
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "subtype": "murder princess",
+    "displayName": "[S][M] Barbed Justice",
+    "version": 2,
+    "type": "abilities",
+    "effects": [],
+    "id": "O2YSDBg0a9qeTtdhM29v"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FPda65pjoFORTYxbp3qpz.png?alt=media&token=cb65716e-e066-4a3f-95cb-94692e701dc0",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*You’ve heard the old tales that say even the scariest monsters can be subdued with a pinch of spice or deterred by a drop of moon-plum juice. Is there something to them, or are they just stories?*\n\nYou may choose a consumable material (such as lantern oil or a treat) to act as a deterrent to an Unearthly Adversary. Unearthly Adversaries include: Asura, Devas, Demons, Undead, Unshaped, or any creature with 4 or more Allegiance points.\n\n**Requires a Contest**\nYour Insight vs. the Adversary’s Aura. In addition:\n- You must expend 1 Unit of the chosen consumable material.\n- If a rare or appropriate consumable is selected, your GM may offer you a Minor Bonus (+2). For example, Bright Water against a Dark Aligned enemy.\n\n**Success**: You can choose between one of two outcomes:\n- **Ability loss**: The Adversary loses the use of an Ability of your choice.\n- **Protective circle**: The Adversary cannot enter a circle made from the protective consumable. 1 Unit can create a circle for a single PC, more Units can be used to create larger circles on this basis.\n- The effect lasts for 24 hours.\n\n**Failure**: You’ve wasted your consumable and look rather silly!\n\nUse of this Ability is subject to the rule of Diminishing Returns."
+        },
+        "visibility": "full"
+      }
+    ],
+    "subtype": "factotum",
+    "version": 2,
+    "displayName": "[S] Folklorist",
+    "effects": [],
+    "type": "abilities",
+    "id": "OHJFk940ZihaMg9wVx19"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "subtype": "heretic",
+    "version": 2,
+    "displayName": "[S][M] Deacon Galrave",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 7.916666666666666,
+              "unit": "%",
+              "height": 80.66666666666666,
+              "aspect": 1,
+              "x": 8.999999999999913,
+              "width": 80.66666666666666
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FAo4PXp6Cpw4JXT14oqgv.png?alt=media&token=bb4882cc-6b07-4f99-a4f6-b64d604a27c8"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*Galrave, Cloaked in Fear, is a broad and imposing figure. His terrible smile is frightening enough, but his laugh is blood-curdling.*\n\nThrow your hands in the air and shout his full name and Galrave, a fearsome spirit, swirls into being. Summoning requires 1 Action. \n\n**Requires a Grit Check**\n- **Success:** Galrave’s laugh echoes loudly, instilling doubt and panic in anyone you consider an enemy.\n - Hostiles within 1 Battlefield Area of you must make a successful Grit Check or be Terrified of you for 24 Hours.\n- **Failure:** Galrave honors you with his grim regard then vanishes. You shudder for a moment, and miss your next Turn."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "PJNFzlbk5rXVEBcrpZlT"
+  },
+  {
+    "effects": [],
+    "type": "Armor",
+    "details": [
+      {
+        "value": {
+          "description": "You can Parry 1 Melee Attack per Fight."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FFkpgjjFMVC1mGs2yIMTa.png?alt=media&token=e2316abf-d7c6-4aae-a36c-f36c00dc575b"
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "id": "PQehoZyY1PkdmxCVIHr7",
+    "version": 2,
+    "displayName": "Parry (Small)",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "version": 2,
+    "displayName": "[S] Kawarimi",
+    "subtype": "sneak",
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FFnNmCnKgCxoqK6uJPBIT.png?alt=media&token=46aae07c-327a-4427-b8ea-77b3b8b19490"
+          }
+        }
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*This technique allows you to nullify an attack via a misdirection. Your opponent strikes, convinced their blow has reached its target… only to discover they’ve hit a log wearing your hat!*\n\nIf you’ve been hit by an Attack, you can attempt to avoid taking any Damage with Kawarimi.\n\n**Requires a Deftness Check**\n**Success**: You manage to completely dodge the blow by slipping out of something you were wearing. For example, a cloak, a hat, or even by tearing off a sleeve.\n- Normal Outfits used with this Ability are only partially removed, becoming a Tattered Outfit.\n- Already Tattered Outfits are simply destroyed. Embarrassing!\n- Armor or Outfits of Magical Materials are discarded but otherwise undamaged.\n\n**Failure**: You take the Damage.\n\nThis Ability will not work if you have nothing left to slip out of! \nThis Ability may only be used once per Fight."
+        }
+      }
+    ],
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "PvnurO9ZYMcCfF9ggvEO"
+  },
+  {
+    "type": "weapon",
+    "effects": [
+      {
+        "exploding": false,
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "useLowest": false,
+        "challengeDice": false,
+        "delayedBonusAmount": 0,
+        "delayedBonus": false,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "encounterRoll": false,
+        "useModifiers": true,
+        "options": [],
+        "quantity": 1,
+        "baseValue": 0,
+        "bonus": 0,
+        "name": "",
+        "damageType": "none",
+        "rollDirection": "high",
+        "targetNumber": null,
+        "selectedDie": "d20",
+        "hide": false,
+        "successMultiplier": 1,
+        "secondaryDice": false,
+        "advantageType": "none",
+        "successTarget": false,
+        "difficulty": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ]
+      }
+    ],
+    "version": 2,
+    "subtype": "",
+    "displayName": "Concealed Weapon",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: 22\n\nDrawing and striking with a Concealed Weapon is one Action.\n\n**Weapon Ability, Sneaky Swipe:**\nIf your target isn’t aware of your Concealed Weapon you may attempt to Ambush them, even when you are in plain sight.\n- Your Target must be in the same Battlefield Area as you, but otherwise this attack works like a normal Ambush.\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+        },
+        "type": "description"
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FEkRRq6GtE7kQ2gKKxVS1.png?alt=media&token=00fcff49-fafb-45bf-b6e4-93e8d7373d37"
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "id": "RJ1qIIM6693N0eEfvVLi",
+    "privacy": {
+      "users": [],
+      "level": "public"
+    }
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "displayName": "[S][M] Bushi Miyabi",
+    "subtype": "heretic",
+    "version": 2,
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 70.66666666666666,
+              "y": 12.666666666666679,
+              "unit": "%",
+              "x": 15.000000000000021,
+              "width": 70.66666666666666,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F1MQxDKdSLW9eS8AhgShQ.png?alt=media&token=001d4178-5230-40fd-9b2c-73dda5e1ac8f"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Miyabi, Apparition of Borrowed Wrath, is a raging spirit contained within elaborate armor. Her hand grasps a broken blade, which she swings with vengeful fury.*\n\nPoint at an enemy, yell her name, and Miyabi will materialize next to your chosen foe. Summoning requires 1 Action.\n\n**Requires a Grit Check**\n- **Success:** Miyabi manifests next to your chosen target and engages them in combat.\n - You can set Miyabi on a foe up to 2 Battlefield Areas away from you.\n - She strikes with a Standard Weapon.\n - Her Attack Bonus is always the same as her target’s.\n - She has Defense Rating 12. \n - Her Speed Rating is Fast.\n - She evaporates if struck or when her target has been killed, but once summoned she cannot be called off or dismissed.\n- **Failure:** Miyabi manifests to take a single swipe at you for your impertinence, then vanishes.\n - When striking you, her Attack Bonus is +2 and does 1 Heart of Damage."
+        },
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "RdudiuJEkSk6OLz1hFaz"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "displayName": "[A][M] Dowager Collette",
+    "subtype": "heretic",
+    "version": 2,
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 9.666666666666632,
+              "unit": "%",
+              "height": 82,
+              "aspect": 1,
+              "x": 12.666666666666632,
+              "width": 82
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FZTJ1aeqmLrzSyxBojbUP.png?alt=media&token=75be19d8-ef2d-44fe-8590-70f74d032352"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*Collette, Our Maiden of Toxicity, is haggard and pale. Her mouth, full of rotted teeth, spews poisonous breath.*\n\nThe Dowager is called upon by covering your mouth in mock revulsion. She spasms into existence to belch toxic gas. Summoning requires 1 Action.\n\n**Requires a Grit Check**\n- **Success:** The Dowager appears above a Battlefield Area of your choice. She cackles before spewing out a poisonous mist over the Area below making it Harmful until the end of the Fight.\n- **Failure:** You begin to choke and cough on noxious fumes. This prevents you from speaking, and therefore calling other Sealed Names, until the end of your next Turn."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "RhjgIyfA3PVrUBEr1lCi"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "effects": [],
+    "type": "abilities",
+    "version": 2,
+    "subtype": "murder princess",
+    "displayName": "[A][M] Red Petal Revenge",
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FtqQjcOy1DKSSu8hQYjDc.png?alt=media&token=33da645c-3a60-43ee-9e77-d7d047f3d138"
+          }
+        }
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Picking a rose in haste can prick your fingers, and so those who wish to do you harm will suffer the consequences.*\n\nIf you are hit in a Fight, or suffer an Ailment caused by an enemy’s Ability, you can attempt to get revenge on your aggressor.\n\n**Requires a Contest**\nYour Grit vs. the attacker’s Grit.\n**Success**: Your attacker suffers the same Damage, or Ailment, that they inflicted on you.\n- If an Ailment can not be applied to your attacker, they take a Heart of Damage instead.\n\nRed Petal Revenge may only be used once every 24 hours."
+        }
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "id": "RvhLBonT21DTKUdvWv68"
+  },
+  {
+    "displayName": "[A][M] Demystify",
+    "subtype": "sage",
+    "version": 2,
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fx1T10D5jxvmFPgF3BUnD.png?alt=media&token=6164c2e3-fbaf-44da-8691-a8eaeeac0ecc"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Just as you can weave a web of mana, so too can you unravel it. Deep knowledge of mana manipulation allows you to undo others’ spells. The performance of this counter-magic is usually accompanied by a rude or condescending gesture toward the opposing spell caster.*\n\nYou can attempt to end a single persistent magical effect. This might be a curse, arcane barrier, or the enchantments on an Artifact or Imbued Item. In a Fight, Demystify requires the use of your Action to cast.\n\n**Requires a Contest**\nYour Insight vs. the Aptitude required to cast the opposing Magical Ability. If no Aptitude is specified, then use Aura.\n- **Success:** The spell is unravelled.\n- **Failure:** You cannot dispel the effect, and cannot try to dispel the effect again for 24 hours.\n\nThis Ability only causes Artifacts or Imbued items to lose their enchantment for 24 hours."
+        },
+        "type": "description"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "S3oGrV3vXSfOxEcPziuP"
+  },
+  {
+    "effects": [],
+    "type": "Abilities",
+    "displayName": "[S] Dreadful",
+    "subtype": "Heretic",
+    "version": 2,
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FIIOHfkRN0ndYxmRJmnAh.png?alt=media&token=f824b45a-d9dc-4c70-bb6a-22213d0d928e",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Extended contact with the Sealed Names has altered your appearance and mannerisms, making you deeply unsettling to be around. You have also developed a twisted empathy that enables you to sense the fears and weaknesses of others.*\n\nYou have an Edge on rolls that involve intimidating, frightening or repulsing someone.\n\nAfter a short period of observation, or 1 Turn during a Fight, you can attempt to detect what someone fears the most.\n\n**Requires an Aura Check**\n**Success:** You learn one thing that upsets, scares or disgusts your target. The weakness revealed could be emotional or physical."
+        },
+        "visibility": "full"
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "S6zbsGl7BcDgNwctuKrL"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FA2G3qoknLOSR6Xh55mic.png?alt=media&token=e55c8547-ed08-4cec-a821-4231ff6ff231",
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Like a rat, you are most deadly when cornered. When you find yourself encircled by the town guard or an angry mob, you have a few manoeuvres to tip the balance back in your favor.*\n\nYou can attempt to redirect a failed Attack roll against you onto another target, if they are in the offending weapon’s Range.\n\n**Requires a Deftness Check**\n**Success**: You redirect the attack towards your chosen target.\n- If the original Attack roll exceeds your chosen target’s Defense Rating, they suffer the consequences."
+        },
+        "type": "description"
+      }
+    ],
+    "subtype": "sneak",
+    "version": 2,
+    "displayName": "[A] Borrowed Blade",
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "id": "T822ZU0htYTxnpmDDa2S"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "version": 2,
+    "subtype": "raider",
+    "displayName": "[A] Sure Kill Strike",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FdJwCtjP4Bb4a3f2suTeg.png?alt=media&token=dba082a5-e19f-476c-98b2-c06c0e19baff",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*To you, execution is an art form.*\n\nTo attempt a Sure Kill Strike you must first declare a target at the beginning of your Turn. Next, you must make an Attack roll against your chosen target.\n\nIf successful…\n**Make an Execution roll**\n- If your initial Attack roll was over the Extra Damage threshold, then + 2 to the result.\n- Next, Divide the end result by 2 (rounding up).\n- To succeed, the result must be higher than your target’s remaining Hearts.\n - **Success**: Your target loses all their remaining Hearts and dies. If it’s a PC, they are forced to roll on the Injury Table.\n - **Failure**: Your hit is resolved like a standard Attack.\n\nSure Kill can only be attempted once every 24 hours."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "TJlQSTTYm49RFh8fVEJT"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 6.666666666666655,
+              "width": 88.00000000000003,
+              "y": 2.999999999999989,
+              "unit": "%",
+              "height": 88.00000000000003
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F5Y7JLTt7inJvO3yqC9Rn.png?alt=media&token=1667a673-d992-483d-a506-1b5cb151735a"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*The Count, With Heart Most Cold, is a loveless and noble figure. His joyless gaze petrifies those who lock eyes with him.*\n\nTurn dispassionately towards a target, up to 2 Battlefield Areas away, and Paris will materialise by your side to stare them down. Summoning requires 1 Action.\n\n**Requires a Contest**\nYour Grit vs. the target’s Deftness.\n- Success: Paris levels his icy glare at your enemy:\n - Your target is encased in ice and is Petrified (􀂴 p270).\n - The target can be freed if anyone spends a Turn to break the ice. This requires a successful Might Check.\n- Failure: Paris scoffs then freezes your legs and vanishes. You cannot move from your current position.\n  - Paris won’t return unless you are freed from the ice. This requires you, or an assisting ally, to use an Action and make a Might Check."
+        },
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        }
+      }
+    ],
+    "displayName": "[S][M] Count Paris",
+    "subtype": "heretic",
+    "version": 2,
+    "effects": [],
+    "type": "abilities",
+    "id": "TYunPpi3eWYqKkIaf3Hr"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "subtype": "champion",
+    "version": 2,
+    "displayName": "[A] Sentinel",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Being the toughest among your companions means you’re happy to soak up hits for them when you can.*\n\nYou can redirect any successful physical Attack on an ally occupying the same Battlefield Area as you onto yourself. The original Attack roll must now beat your Defense Rating to do you harm.\n\nThis ability can’t be used against area effects like harmful smoke."
+        },
+        "type": "description"
+      }
+    ],
+    "type": "abilities",
+    "effects": [],
+    "id": "Ul8Zo4RtnxtSDTl4LvM9"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FR0pDDsAUAWtQ84I2eDpZ.png?alt=media&token=2a17aa7a-e006-47c2-a823-730088b848d2",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        }
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*One of the earliest tricks you learned was how to animate objects using the mana left behind by another living creature’s touch. With this you can breathe wondrous life into simple tools and children’s toys.*\n\nWith some singing, or gentle coaxing, you can attempt to make a single object spring to life and perform the function it was originally designed for.\n\nAn object needs to have been used within the last 3 months to retain the residual mana required for the spell.\n\n**Requires an Insight Check**\n**Success:** Your chosen object begins to move. \n- A door knob will rotate and the door click open, a toy soldier will march, and a Physician’s Kit will perform surgery.\n- The object will perform long enough to complete a single task, then the mana is expended.\n- If a Check or Contest is required, your Insight is used.\n- A Melee Weapon may be animated for a single Attack. The strike uses your Attack Bonus.\n- A Shield can float and Parry a single Attack on you, or a nearby ally, before falling to the ground.\n- A Missile Weapon can fire a single shot, if ammunition is available.\n\nSuccessful or not, once an object has been targeted by Prestidigitonium the ambient mana is disrupted and the Ability won’t work on it again unless…\n- The object is used again, although it takes 24 hours for the required mana to settle."
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "[S][M] Prestidigitonium",
+    "subtype": "sage",
+    "version": 2,
+    "id": "VgbfAASnQsmItMMiLhqn"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "weapon",
+    "effects": [
+      {
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "quantity": 1,
+        "type": "roll",
+        "bonus": 0,
+        "advantageType": "none",
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "hide": false,
+        "name": "",
+        "useModifiers": true,
+        "encounterRoll": false
+      }
+    ],
+    "displayName": "Mighty Weapon",
+    "version": 2,
+    "id": "ViI3ot1iSuBVSdRlUcQn",
+    "details": [
+      {
+        "type": "description",
+        "value": {
+          "description": "2-Handed\n\nRange: Melee\nDamage: 2\nThreshold: 20"
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FuZWHNgJD2i3Ex1Pdrxx3.png?alt=media&token=d8456f86-ad09-485a-b6b4-05373a128b9c"
+          }
+        },
+        "visibility": "full"
+      }
+    ]
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FHDCuUM2uHxtfMKVGyjj0.png?alt=media&token=89214011-da5c-4309-8ebe-5e13191e1a26"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Your patience with hostile magic is thin, and your mere annoyance can unravel even the most carefully crafted spell.*\n\nYou can attempt to nullify a single persistent magical effect that is irritating you, or any of your allies that are located in the same Battlefield Area as you. For example, you can try to dispel a magically inflicted Ailment or a sorcerous barrier.\n\n**Requires a Grit Check **\n**Success**: The magic will be suppressed so long as you are in the same Battlefield Area and still subject to the annoying effect. For example, the caster would regain the use of their suppressed Ability or the sorcerous barrier would return once you have passed or been pacified.\n- Vexed Dispel can be triggered the instant you are annoyed, and does not require an Action to cast.\n- You cannot Dispel magic that is instant, such as a damaging magical blast.\n\nYou cannot use this Ability again for 24 Hours after it has been successfully used."
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "displayName": "[A][M] Vexed Dispel",
+    "subtype": "murder princess",
+    "version": 2,
+    "effects": [],
+    "type": "abilities",
+    "id": "Vnbsw1K2Ng5602wkZLrH"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F2TmcUnDWj1QjKNrHMm85.png?alt=media&token=55af5c92-e577-40db-87ee-f9dd8a900a34",
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Your frightful countenance shakes the resolve of even the strongest foes. *\n\nAt the start of a Fight you can Glare at a single enemy at the start of your Turn.\n\n- **Rank 1**: The target of your Glare loses a single Heart.\n- **Rank 5**: Your target must now also participate in a Contest with you, their Grit vs. your Aura.\n  - **Success**: Your enemy is unnerved and incurs a Snag on all Attack rolls against you.\n\nIf this Ability reduces an adversary to 0 Hearts, or lower, they flee from the battle or surrender on the spot.\n\nA target may only be affected by one Glare per Fight."
+        }
+      }
+    ],
+    "version": 2,
+    "subtype": "murder princess",
+    "displayName": "[S] Withering Glare",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "WTiafB1qxuJTw3FvB0cW"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "type": "abilities",
+    "effects": [
+      {
+        "options": [],
+        "baseValue": 0,
+        "quantity": 1,
+        "type": "roll",
+        "baseRoll": "1d20",
+        "useModifiers": true,
+        "encounterRoll": false,
+        "challengeDice": false,
+        "bonusSymbols": [],
+        "bonusRoll": "",
+        "exploding": false,
+        "useLowest": false,
+        "difficulty": 0,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "challengeRoll": null,
+        "advantageType": "none",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "selectedDie": "d20",
+        "hide": false,
+        "successTarget": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "bonus": 0,
+        "name": "Unarmed Attack",
+        "damageType": "none"
+      },
+      {
+        "useLowest": false,
+        "name": "Damage",
+        "damageType": "none",
+        "bonusSymbols": [],
+        "bonus": 0,
+        "exploding": false,
+        "rollDirection": "high",
+        "targetNumber": null,
+        "challengeDice": false,
+        "successTarget": false,
+        "encounterRoll": false,
+        "advantageType": "none",
+        "successMultiplier": 1,
+        "type": "value",
+        "secondaryDice": false,
+        "hide": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "baseValue": "1",
+        "challengeRoll": null,
+        "quantity": 1,
+        "difficulty": 0,
+        "options": []
+      }
+    ],
+    "subtype": "sage",
+    "displayName": "[S][M] Sage's Staff - Spell Push",
+    "version": 2,
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F0CkM6Tmwtfj0qVvjTkIX.png?alt=media&token=3ce12dbe-657d-499c-baf1-950965091e5d",
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Staves are an iconic part of any Sage’s inventory. Your elegant wand, or gnarled walking stick, carries your personal sigil and is the primary conduit for your magic.*\n\n**Spell Push**: With a dramatic gesture and a shout, you can use your staff to magically shove things about.\n- The Push can affect things up to 15 ft away.\n- The Push exerts the same amount of force as an adult human.\n- The Push is always executed with full power and can not be used with any delicacy.\n\nIf the Push is used in a Check or Contest, the spell’s Might is the same as your Insight. This might include attempting to shove against a monster, or moving a heavy stone.\n\nIf the Push is used as an Attack, it is treated as an Unarmed strike, and can strike at a target up to 1 Battlefield Area away.\n-  Unarmed strikes suffer a Snag on their Attack roll when directed at armed or armored enemies."
+        },
+        "type": "description"
+      }
+    ],
+    "id": "X2ZYz8N1lkooZeOiR8tA"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F9BIKNraPfZbfvtH475gv.png?alt=media&token=546ef8d2-a644-45ca-8e94-797143250a6c"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "description": "*Your soul burns so brightly that your Heart’s Blade transcends its material form to become a shard of devastating light.*\n\nYou can activate this Ability at will upon summoning your Heart’s Blade.\n\n**Slice of Light**: Your Heart’s Blade is now a glowing shaft of light that does an extra Heart of Bright Damage  in addition to the weapon’s Mundane Damage.\n\n**Purifying Flare**: After a successful strike with the Heart’s Blade, the light can be discharged to irradiate your target, causing an additional Heart of Bright Damage which dispels the Ability.\n\nThis Ability can be used once per Session and lasts for the duration of the Fight. If Purifying Flare is used, the Ability is exhausted immediately."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "version": 2,
+    "subtype": "battle princess",
+    "displayName": "[A][M] Radiant Blade",
+    "id": "Z5BqmUhPiJwE9DHdmOBD"
+  },
+  {
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Your mere presence is overwhelming. A shout, smirk, or simple glare can unsettle even a worthy opponent.*\n\nDuring a Fight, you can use your Action to attempt to intimidate an opponent up to 2 Battlefield Areas away.\n\n**Requires a Contest**\nYour Aura vs. the target’s Grit.\n**Success**: You lock eyes. Your target is rendered temporarily inactive, missing their next Turn.\n\nThis ability will only work once on the same target every 24 hours.\n\nCreatures that are incapable of fear (such as unthinking machines, mindless undead, or colossi) are immune to such intimidation."
+        },
+        "type": "description"
+      }
+    ],
+    "version": 2,
+    "displayName": "[A] Overbearing Antagonist",
+    "subtype": "champion",
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "ZC9RKg33TgUFnkMSg4kT"
+  },
+  {
+    "type": "abilities",
+    "effects": [
+      {
+        "targetNumber": null,
+        "rollDirection": "high",
+        "damageType": "none",
+        "name": "Concealed Weapon",
+        "bonus": 0,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "challengeRoll": null,
+        "difficulty": 0,
+        "successTarget": false,
+        "advantageType": "none",
+        "successMultiplier": 1,
+        "secondaryDice": false,
+        "selectedDie": "d20",
+        "hide": false,
+        "challengeDice": false,
+        "useLowest": false,
+        "bonusSymbols": [],
+        "bonusRoll": "",
+        "exploding": false,
+        "baseValue": 0,
+        "quantity": 1,
+        "options": [],
+        "useModifiers": true,
+        "encounterRoll": false,
+        "type": "roll",
+        "baseRoll": "1d20"
+      },
+      {
+        "difficulty": 0,
+        "options": [
+          "requirement"
+        ],
+        "requirement": "22",
+        "baseValue": "1",
+        "challengeRoll": null,
+        "quantity": 1,
+        "advantageType": "none",
+        "secondaryDice": false,
+        "type": "value",
+        "successMultiplier": 1,
+        "hide": false,
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "successTarget": false,
+        "encounterRoll": false,
+        "challengeDice": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "bonusSymbols": [],
+        "bonus": 0,
+        "exploding": false,
+        "useLowest": false,
+        "name": "Damage",
+        "damageType": "none"
+      }
+    ],
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FFnNmCnKgCxoqK6uJPBIT.png?alt=media&token=46aae07c-327a-4427-b8ea-77b3b8b19490",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Thanks to some lessons from a choice tutor, the Ninja of the Seven Holy Isles or your sucker punching sibling, you have become pretty good at catching others off guard with your fists.*\n\nYou are able to make Unarmed Attacks as if wielding a Concealed Weapon. Drawing and striking with a Concealed Weapon is one Action.\n\n**Weapon Ability, Sneaky Swipe:**\nIf your target isn’t aware of your Concealed Weapon you may attempt to Ambush them, even when you are in plain sight.\n- Your Target must be in the same Battlefield Area as you, but otherwise this attack works like a normal Ambush.\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+        }
+      }
+    ],
+    "version": 2,
+    "subtype": "sneak",
+    "displayName": "[S] Sudden Strikes",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "ZVp3u8ajAZH8xa7hYaRv"
+  },
+  {
+    "version": 2,
+    "displayName": "Drawn Weapon",
+    "details": [
+      {
+        "value": {
+          "description": "Range: 2 Areas\nDamage: 1\nThreshold: 20\nLoading Time: Same Action\n\nYou must use two hands while wielding a Drawn Missile Weapon.\n\nAmmo: x5 per 0.5 Slots"
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2Fa4I6FXp3kicuH706muTR.png?alt=media&token=e636a32e-608e-4f8a-b980-202020292686"
+          }
+        }
+      }
+    ],
+    "id": "Zg3W6ujVATRZkZJNz27H",
+    "effects": [
+      {
+        "quantity": 1,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "selectedDie": "d20",
+        "hide": false,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "bonus": 0,
+        "advantageType": "none",
+        "encounterRoll": false,
+        "name": "",
+        "useModifiers": true
+      }
+    ],
+    "type": "weapon",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "version": 2,
+    "displayName": "[S] Cutting Wit",
+    "subtype": "factotum",
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FPda65pjoFORTYxbp3qpz.png?alt=media&token=cb65716e-e066-4a3f-95cb-94692e701dc0"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Words may not break their bones, but they can still cut deep.*\n\nIn a Fight, you can attempt to unsettle an enemy by directing inflammatory words at them.\n\n**Requires a Contest**\nYour Aura vs. your target’s Grit.\n**Success**: Your target must either: \n- Immediately attempt to Attack you on their next Turn, or…\n- Lose 1 Heart.\n\nIf they have no Hearts left, they must try and Attack you."
+        }
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "ZiMTtHeM3TolFwyhX1v0"
+  },
+  {
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*Even when calm and still, your soul crackles with a terrifying energy. A mere look can spread this force outwards, sapping the fighting spirit and bloodlust from lesser warriors in your presence. *\n\nYou can attempt to subdue opponents of lower Rank with a menacing glower.\n\n**Requires an Aura Check**\n**Success**: All adversaries within shouting distance step back and won’t engage you, or your allies, unless you strike first.\n\nThis ability has no effect on adversaries with a Rank equal to or higher than yours.\n\nThis Ability may only be used once in a game Session."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "subtype": "champion",
+    "displayName": "[A] Roaring Spirit",
+    "version": 2,
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "ZvNrFD62IMA141wXvzyi"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "displayName": "Lash Weapon",
+    "version": 2,
+    "id": "a4NcPAFr4GFuYMm5W5sk",
+    "details": [
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "Range: 1 Area\nDamage: 1\nThreshold: 22\n\n**Weapon Ability, Crack!**\nYou can Attack an enemy up to 1 Battlefield Area away."
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FyiyBT1rWIG1sjDd0Xh7T.png?alt=media&token=7f344de5-f99c-4a20-884e-b25e1d21b03a"
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "type": "Weapon",
+    "effects": [
+      {
+        "quantity": 1,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "selectedDie": "d20",
+        "hide": false,
+        "baseRoll": "1d20",
+        "bonus": 0,
+        "type": "roll",
+        "advantageType": "none",
+        "encounterRoll": false,
+        "name": "",
+        "useModifiers": true
+      }
+    ]
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FYw1If1R71OaS0llkinZn.png?alt=media&token=dacdb246-44fa-425a-a00b-cb8a211da116"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "description": "*Nothing clears a room like a mana kaboom! You make magical explosives.*\n\n**Rank 1**\nOnce per Fight, you can conjure a Mana Grenade, a non-lethal weapon designed to subdue. \n- Mana Grenades work like regular Grenades, except…\n- They do Twilight Magic Damage.\n- Targets reduced to 0 Hearts, or less, are knocked unconscious (or fall inert if they are Mechanoids or Undead) for an hour.\n\n**Rank 5:**\nOnce every 24 hours, you can conjure a Mana Bomb, a more violent and deadly variant of the Mana Grenade. \n- Mana Bombs work like standard Bombs, except…\n- They do Twilight Magic Damage."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "displayName": "[S][M] Eldritch Explosives",
+    "version": 2,
+    "subtype": "sage",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "aGPy1RXasYkjX3U13v6w"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "displayName": "[S] Giant Killer",
+    "version": 2,
+    "subtype": "champion",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167",
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*The bigger they are, the harder you hit.*\n\nYou do an additional Heart of Damage on a successful Attack against Massive or Colossal Creatures.\n\nYou get an Edge on any rolls needed to move between, scale, or remain on a Colossal Creature’s Strike Points."
+        }
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "bMluNJm9Q89SNa1oIy8Z"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "subtype": "heretic",
+    "version": 2,
+    "displayName": "[S][M] Squire Marlow",
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FbMM0NhPbQC9QBWfGhkLq.png?alt=media&token=37501511-d613-4d19-b9b2-b9762322f13c",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Marlow, Whom All Chosen Know, is there to make sure all your needs are attended to. This genteel and unfailingly polite figure is a great deal more forgiving than the other Sealed Names.*\n\nSpeak his name calmly and Marlow, a servant-like spirit, emerges from the shadow to do your bidding. Summoning takes 1 Action.\n\n**Requires a Grit Check**\n- **Success:** Marlow will appear and carry out a single task you give him.\n - The task must be something that Marlow can complete in a few minutes. He will attempt to accomplish his task with competence and endeavour.\n - In a Fight, Marlow performs as a Custrel (􀂴 p186) equipped with a Quick Weapon.\n - Marlow vanishes upon the completion of his task, or if reduced to 0 Hearts.\n - He must be summoned again if you wish to make further use of his services.\n- **Failure:** Marlow gently refuses your request, and promptly vanishes. \n\nAfter a failed summoning, Marlow can’t be called again for 24 hours."
+        },
+        "visibility": "full"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "bx17owLSbs2fRF5JAfl5"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "effects": [],
+    "type": "abilities",
+    "version": 2,
+    "displayName": "[S] Into the Fray",
+    "subtype": "champion",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*You are able to vary your fighting style to suit the battle, applying caution, flair or precision when and where it is required.*\n\nEach Round during a Fight, you can choose between the following:\n- **Daring**: Perform an Attack Stunt without making a wager.\n- **Tooth and Nail**: Use a mundane (non-magical) Attack to harm a creature that is normally immune to them.\n- **Whirlwind Defense**: Temporarily increase your Defense Rating:\n  - **Rank 1**: +1 to Defense Rating.\n  - **Rank 5**: +2 to Defense Rating.\n\nAll bonuses last until the start of your next Turn."
+        },
+        "type": "description"
+      }
+    ],
+    "id": "bzbQHBIadb6joxrgXpGJ"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F7pDM7eJPlZdoLHLYA2bN.png?alt=media&token=8ae317bc-67ce-4e58-be6a-fbf1836eae4d"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*You’re better at outsmarting your foe than you are at going toe to toe.*\n\nYou receive a Minor Bonus (+2) when attempting a Combat Trick."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "displayName": "[A] Tricky Combatant",
+    "version": 2,
+    "subtype": "factotum",
+    "effects": [],
+    "type": "abilities",
+    "id": "cfeIbXD48DfWUE4tENyS"
+  },
+  {
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2Fx1T10D5jxvmFPgF3BUnD.png?alt=media&token=6164c2e3-fbaf-44da-8691-a8eaeeac0ecc",
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*You politely request cooperation from ambient mana. With some clear spoken instructions and a bow, or curtsy, you can re-arrange a cluttered room, or quickly assemble a barricade in front of an approaching enemy.*\n\nYou can attempt to persuade local mana to manipulate objects in your immediate surroundings.\n\n**Requires an Insight Check**\n**Success:** The local mana swirls and twists to do your bidding. \n- You can perform a simple task that would normally require several creatures acting together to accomplish.\n- For example: Smashing all the breakable pots in a shed at once, alphabetizing a room full of books, or stacking loose stones into a makeshift set of stairs.\n- The area of effect should be no larger than a small house.\n\nDuring a Fight, you can manipulate a single Battlefield Area to:\n- Add the Precarious or Sheltered Condition to a Battlefield Area, providing there are enough suitable objects scattered around. \n- Remove an existing Condition from a Battlefield Area, if you can agree with your GM on how this Ability could do it. For example, pushing away a choking mist.\n\nSuccessful or not, any objects moved or disrupted by this spell have their ambient mana burnt away and cannot be affected by this Ability or Prestidigitonium for another 24 hours."
+        },
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        }
+      }
+    ],
+    "displayName": "[A][M] Harmonious Geomancy",
+    "subtype": "sage",
+    "version": 2,
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "conwzNnsKMZRHeOZhfBi"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F9BIKNraPfZbfvtH475gv.png?alt=media&token=546ef8d2-a644-45ca-8e94-797143250a6c"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*When you so desire, a brilliant flame flickers around your Heart’s Blade, making it all the more deadly.*\n\n**Blazing Desire**: Your Heart’s Blade is ablaze and now does Flame Damage instead of Mundane Damage.\n\n**Yearning Embrace**: After a successful Attack, the fire can be discharged to engulf your target and cause an additional Heart of Damage. This exhausts the Ability.\n\nPassion’s Fire can only be used once per Fight."
+        },
+        "type": "description"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "version": 2,
+    "subtype": "battle princess",
+    "displayName": "[S][M] Passion's Fire",
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "cpdYj8HYM47rmcChixiw"
+  },
+  {
+    "subtype": "sneak",
+    "version": 2,
+    "displayName": "[S] Sticky Fingers",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FFnNmCnKgCxoqK6uJPBIT.png?alt=media&token=46aae07c-327a-4427-b8ea-77b3b8b19490",
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*While you would prefer the term ‘Treasure Hunter’ to ‘Thief’, you’re skilled in relieving others of their possessions — even in the midst of battle.*\n\nYou can attempt to take an item from an individual in the same Battlefield Area as you after you perform a successful Attack, Attack Stunt, or Combat Trick on them.\n\nThe item you can acquire is limited by the following:\n- It cannot be armor, an outfit or something currently being held by the target.\n- It must be something within your reach. A worn locket or ring would count, something sealed away in a backpack would not. \n- It cannot occupy more than 2 Inventory Slots.\n\n**Requires a Deftness Check**\n**Success**: You snatched it."
+        },
+        "visibility": "full"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "dEw9vMr4lDC3AWL38bru"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F8FwX0SvsvpwYnYfrTNTO.png?alt=media&token=9f94a9a7-a02d-4f3c-be8c-f1e26d3cea59"
+          }
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Diligent training and discipline allow you to pacify your enemy with a flurry of blows.*\n\nOnce per Turn you can take a follow-up Action after a successful Attack roll.\n- The follow-up Action must be an Attack, Attack Stunt, Attack Assist, or Combat Trick.\n- Making this follow-up Action is physically demanding, and you lose a Heart after performing the technique.\n- If you’ve run out of Hearts you will roll on the Injury Table."
+        },
+        "type": "description"
+      }
+    ],
+    "displayName": "[A] Lightning and Thunder",
+    "version": 2,
+    "subtype": "raider",
+    "type": "abilities",
+    "effects": [],
+    "id": "dNFZAQeHMxx5lk26Qpz4"
+  },
+  {
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FwX87fAYjqIHi8IRvr2Nx.png?alt=media&token=22b1044e-888f-4725-b0a1-04512dcc9473"
+          }
+        }
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Powerful Bright Magic lies within you. It can wash away all falsehoods and leave nothing but the naked truth, including both honest wishes and dark secrets.*\n\nYou can activate this Ability whenever you are speaking to another individual, or at the start of a Negotiation.\n\n**Requires a Contest**\nYour Aura vs. the Grit of anyone in earshot.\n- Anyone who loses the Contest is unable to lie, deceive, or mislead you for a 24 hour period, although they can still refuse to answer your questions.\n- Unfortunately, you are also subject to the effects of this Ability for the same 24 hour period."
+        }
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "subtype": "battle princess",
+    "version": 2,
+    "displayName": "[A][M] Opened Hearts",
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "dmgO0tLBVR04JcNanQy7"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FA2G3qoknLOSR6Xh55mic.png?alt=media&token=e55c8547-ed08-4cec-a821-4231ff6ff231",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You aren’t the best shot or the biggest hitter — but sometimes it’s all about timing.*\n\nYou have an Edge on all Attack rolls made when you’ve chosen to React."
+        }
+      }
+    ],
+    "subtype": "sneak",
+    "displayName": "[A] Combat Opportunist",
+    "version": 2,
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "id": "duMKQBi5MXT5QBHDmFVV"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "displayName": "[A][M] Momentary Fortress",
+    "version": 2,
+    "subtype": "sage",
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FXXQh3ed90t3lzn025wCz.png?alt=media&token=aa168f21-60b4-4b62-98d9-68d7d172e508",
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*You can create a protective pyramid, sphere, or cube of light around you that is able to repel physical and magical attacks.*\n\nDuring a Fight, you can use the Fortress to attempt to block one inbound physical or magical Attack against you each Turn.\n- If the Attack targets a Battlefield Area (like a magic blast) then everyone in the same Area as you benefits from the Fortress… including foes!\n\nIf cast outside of combat, the Fortress can be used to block harmful environmental effects. For example, Impact Damage from falling rocks or Burn Damage from caustic gas.\n\nThe Fortress is only visible when struck or resisting a harmful effect. The Fortress can be erected during your enemy’s Turn, but this means you cannot take an Action on your next Turn.\n\n**Requires a Contest**\nYour Insight vs. the Aptitude related to the type of Attack (see below).\n- **Magic Attacks:** The opposing Aptitude used should be the one required to cast the offensive spell.\n - If none is specified, use the caster’s Grit for directed attacks or Aura for harmful radiating attacks (or anything else!).\n- **Strength Attacks:** The opposing Aptitude for Melee Weapons, and other brute force attacks, should be the Attacker’s Might.\n- **Skill Attacks:** The opposing Aptitude for Missile Weapons, and other attacks that utilise finesse, should be the Attacker’s Deftness.\n- **Success:** The Attack is blocked, or dissipated, by a wall of impenetrable light. If successful, the Fortress remains intact and you benefit from its protection in the next Turn.\n- **Failure: **The panel of light shatters like glass, and the Fortress cannot be used again for 24 hours."
+        },
+        "visibility": "full"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Bright Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "type": "abilities",
+    "effects": [],
+    "id": "f8KLPzlq0tu0pcA5mcjn"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FdJwCtjP4Bb4a3f2suTeg.png?alt=media&token=dba082a5-e19f-476c-98b2-c06c0e19baff",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You’re a true hunter, able to find a path through any built-up defense.*\n\nYou can attempt to find a weak spot on an opponent that is the target of your Hunter’s Focus.\n\n**Requires an Insight Check**\n**Success**: You can ignore any Defense Bonus the Target has from Armor and Speed Rating."
+        }
+      }
+    ],
+    "subtype": "raider",
+    "displayName": "[A] Wind Wears Away Stone",
+    "version": 2,
+    "type": "abilities",
+    "effects": [],
+    "id": "fkRfxGfRWGZ0DG1q4x3q"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc",
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            }
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*When the heat of the battle is upon you, the red mist descends and your rage takes control. This is very bad news for your foes... but your allies should be careful too.*\n\nYou can enter Berserk Mode while fighting or participating in a Check or Contest that calls for brute force.\n\nWhile Berserk, the following applies:\n- +2 on Attack rolls.\n- -1 to Defense Rating.\n- +2 Might and Grit.\n- You are unable to communicate or participate in any coordinated actions or team efforts. \n\nAfter you’ve dispatched a foe, or completed the objective of your Check or Contest you will:\n- Attack the closest individual in the same Battlefield Area as you, whether it’s friend or foe. \n- Continue to find and Attack targets until none are left.\nYou can attempt to exit Berserk Mode at the end of your Turn.\n\n**Ending Berserk Mode requires an Aura Check**\n- **Success**: You regain control.\n- **Failure**: You must wait until the end of the next Round before you can make another attempt to exit Berserk Mode."
+        }
+      }
+    ],
+    "displayName": "[A] Berserker",
+    "version": 2,
+    "subtype": "champion",
+    "id": "h6kKR8KeG7jwWy1bOXSl"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F2TmcUnDWj1QjKNrHMm85.png?alt=media&token=55af5c92-e577-40db-87ee-f9dd8a900a34",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*When physical force fails, you resort to psychological assault. By ridiculing your opponent’s deeply held beliefs, or competence, you can send your foe into an unbalancing rage.*\n\nOnce per Fight, you can attempt to enrage your opponent with a disparaging or spiteful truth. Targets for this Ability must:\n- Be engaged in a Fight with you for a Turn or more.\n- Be able to understand you.\n- Be capable of feeling emotions.\n\n**Requires a Contest**\nYour Grit vs. your opponent’s Aura.\n**Success**: Your comment unsettles your opponent: \n- Their rage now provides them with an Edge on all Attack rolls and Abilities aimed at you, but… \n- This leaves them open to attack. All Attack rolls made against the enraged foe benefit from an Edge. \n- Their rage ends if you die, are no longer visible, or when the current Fight ends.\n\nThis Ability may only be used on one opponent per Fight, whether it is successful or not."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "displayName": "[S][M] Caustic Truth",
+    "version": 2,
+    "subtype": "murder princess",
+    "id": "iGh5HnIVgUAX86wyHrVC"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FwX87fAYjqIHi8IRvr2Nx.png?alt=media&token=22b1044e-888f-4725-b0a1-04512dcc9473"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*Your compassion can manifest itself as a protective force for your allies. This might take the form of an iridescent aura or a heart-shaped crystal shield.*\n\nOnce per Fight you can bestow an ally within your sight a force field that can absorb 1 Heart of Damage, after which it disappears. You can perform this Ability in addition to any other Actions permitted on your Turn.\n- **Rank 1**: You can Shield 1 person.\n- **Rank 4**: You can Shield 2 people.\n- **Rank 8**: You can Shield 3 people.\n\nIf you can protect more than one person, you can allocate your Shields in one go, or as required."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "displayName": "[S][M] Shield of Love",
+    "version": 2,
+    "subtype": "battle princess",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "iqSwLs327a5eGhYdCvnc"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "displayName": "[S][M] The Widow Prisma",
+    "subtype": "heretic",
+    "version": 2,
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FnnQmtyusTbZHfvbCzAt2.png?alt=media&token=97807d51-a4d8-4c1a-8941-3e87513336ce"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Prisma, The Crystal Martyr suffers for the chosen, although her curious moans while doing so suggest she receives some strange pleasure from her sacrifice.*\n\nUpon a cry for help, The Widow Prisma will immediately crystalize in front of you and absorb any inbound Attack.\n- Summoning is instantaneous.\n- Prisma suffers any Damage, Ailment, or detrimental effect directed at you… then dies.\n- Her dramatic death throes last a Turn, until she shatters into fragments and disappears.\n\nPrisma can only be summoned once every 24 hours."
+        }
+      },
+      {
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full",
+        "type": "range"
+      }
+    ],
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "jpxVnQw7O4ojTCwqrCmd"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "type": "abilities",
+    "effects": [],
+    "version": 2,
+    "subtype": "raider",
+    "displayName": "[S] Hunter's Focus",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FAxWu1TnZS0a3KMzGzWhv.png?alt=media&token=d1b94ead-63d8-4257-a9ae-c701676f8b3e"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*The chaos and clamor of battle do not muddy your predatory instinct. Once your gaze has singled out a target, all distraction melts away and only your prey remains.*\n\nOnce per Fight you can choose a target for your Hunter’s Focus. You can do this at any time during the Fight.\n- Your Focus can be an opponent, but could also be an object you wish to destroy.\n- You cannot switch your Focus, even after your original target has been defeated or pacified.\n- You gain an Edge on all Attack rolls made against your Focus.\n\nYour GM can grant you an Edge on Checks and Contests that get you closer to dispatching your Focus.\n- For example, leaping over a chasm to get within striking distance."
+        },
+        "type": "description"
+      }
+    ],
+    "id": "kRAGxPxR3qbkIHUz602c"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "version": 2,
+    "displayName": "[S] Compassion Cure",
+    "subtype": "battle princess",
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FwX87fAYjqIHi8IRvr2Nx.png?alt=media&token=22b1044e-888f-4725-b0a1-04512dcc9473",
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Your kind attention is so sincere that it can dispel ill effects. Your hug can lift a dispirited companion, your tears can thaw a petrified ally.*\n\nWith a touch, you can attempt to remove a psychological, physical, or magical Ailment from someone you care about.\n- Attempting this Ability during a Fight requires you to spend your Action.\n- This Ability cannot be used for situational Ailments: Toppled, Restrained, and Overburdened.\n\n**Requires an Aura Check**\n**Success**: The Ailment is removed.\n**Failure**: The Ailment remains, you cannot make any further attempts to cure it."
+        },
+        "visibility": "full"
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "md0Yz9eJfOrbkKbBVWHQ"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FOugkCJGuUh33HfAWIh9N.png?alt=media&token=64780a26-dc17-4ad3-b44b-b63a659e340f"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*You can seize another’s shadow and, by proxy, their physical agency. While you make menacing gestures, resembling those of a puppeteer, your victim dances to your desire.*\n\nYou can use this Ability on any creature that casts a shadow and is roughly 10 feet, or 1 Battlefield Area, away.\n\n**Requires a Contest**\nYour Insight vs. your target’s Aura.\n- **Success:** You can control your target for the next 10 seconds, or their Turn during a Fight. For example, you can make them speak, shout, or even attack themselves (which still requires an Attack roll!).\n - You must repeat, and win, the Contest each Turn to retain control of your target.\n - You can only control one Puppet at a time.\n- **Failure:** The target breaks free of your mana strings and you cannot target them with this Ability again for 24 hours."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "type": "range"
+      }
+    ],
+    "subtype": "sage",
+    "version": 2,
+    "displayName": "[A][M] Shadow Puppet",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "nBerIuKppCyFRNEKeJH5"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FukhKIK3VNzRXZgaDGk21.png?alt=media&token=db4cbd3e-4fc4-43a9-a745-ccad1148cc8b",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*You can use malicious mana to infect your foes with a debilitating disease. Symptoms include purple spots, mana vulnerability and utter exhaustion.*\n\nYou can attempt to infect someone up to 15 ft, or 1 Battlefield Area, away with Hocus Pox.\n\n**Requires a Contest**\nYour Insight vs. your target’s Grit.\n**Success:** Your target contracts Hocus Pox and they break out in purple spots.\n- Victims have a Snag when making rolls to resist other Magical Abilities.\n- Victims are afflicted with the Putrefied Ailment.\n- When a victim is reduced to 0 Hearts by this Ailment, they collapse and are helplessly exhausted. This will pass with a week’s worth of rest, but the purple spots remain for another week. \n\nOnce a chosen target has fallen foul of this Ability, you cannot use it again for another 24 hours."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        }
+      }
+    ],
+    "subtype": "sage",
+    "version": 2,
+    "displayName": "[S][M] Hocus Pox",
+    "id": "nVxYj3xO7sqfezh1nRee"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "displayName": "[S] Brute",
+    "version": 2,
+    "subtype": "champion",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "y": 0,
+              "unit": "%",
+              "height": 100,
+              "aspect": 1,
+              "x": 0,
+              "width": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*The quickest path between two places is often right through whatever is in the way.*\n\nYou get an Edge on any Attack rolls dedicated to Sundering something. \n\nAny non-magical shield used to Parry your physical Attacks is immediately Sundered, due to the crushing power of your blows.\n\nThis Ability can not be used in conjunction with an Attack Stunt."
+        }
+      }
+    ],
+    "effects": [],
+    "type": "abilities",
+    "id": "ngGuxE5WbSQjWl7s3TwD"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FPda65pjoFORTYxbp3qpz.png?alt=media&token=cb65716e-e066-4a3f-95cb-94692e701dc0",
+            "tokenCrop": {
+              "height": 100,
+              "unit": "%",
+              "y": 0,
+              "width": 100,
+              "x": 0,
+              "aspect": 1
+            }
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*You can organize a team offensive.*\n\nWhen you perform an Attack Assist, you target an enemy instead of an ally.\n- **Rank 1**: Any Attack rolls made on the chosen enemy during that Turn receive a Minor Bonus (+2).\n- **Rank 5**: Any Attack rolls on your target now receive an Edge, instead of the Minor Bonus."
+        },
+        "type": "description"
+      }
+    ],
+    "subtype": "factotum",
+    "displayName": "[S] Combat Coordinated",
+    "version": 2,
+    "effects": [],
+    "type": "abilities",
+    "id": "ngzqgqiK0edlHt9ZKJV6"
+  },
+  {
+    "version": 2,
+    "displayName": "Parry",
+    "details": [
+      {
+        "value": {
+          "description": "You can Parry 1 Melee or Missile Attack per Fight. This includes spells or any special attacks that require an Attack roll."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FFkpgjjFMVC1mGs2yIMTa.png?alt=media&token=e2316abf-d7c6-4aae-a36c-f36c00dc575b",
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            }
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "id": "pnbYeptv82w6yQewhQya",
+    "effects": [],
+    "type": "Armor",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ]
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "x": 0,
+              "width": 100,
+              "y": 0,
+              "unit": "%",
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FsJwaUoYzPzD5HEpsMMmR.png?alt=media&token=8cce06f3-d719-4bf7-ba1f-7618e3972167"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "value": {
+          "description": "*A working knowledge of combined warfare, and the ability to organize the troops, is all you need to turn the tide of a battle.*\n\nIf you have a Social Bond with an ally, you can grant them an additional Action on their Turn during a Fight. This Ability can be used in addition to any other Actions you’re allowed to perform on your Turn.\n\nThis can be used once per Fight."
+        },
+        "visibility": "full",
+        "type": "description"
+      }
+    ],
+    "version": 2,
+    "displayName": "[S] Master Tactician",
+    "subtype": "champion",
+    "type": "abilities",
+    "effects": [],
+    "id": "s72XTs26sYJ5Azovh2tH"
+  },
+  {
+    "effects": [],
+    "type": "abilities",
+    "details": [
+      {
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FJYQwbRP4kXJBdpb1Gn0d.png?alt=media&token=56e1580b-7b9a-49e4-90dd-8e6c05fe72da"
+          }
+        },
+        "visibility": "full",
+        "type": "image"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*Your animated and tuneful battle commands grant those listening a coordinated, rhythmic, combat flair.*\n\nYou can attempt to coordinate your allies during a Fight, granting all participants a Minor Bonus (+2) to a single roll on their Turn.\n\nThis Ability can be used in conjunction with your other permitted Actions, but you must declare the use of this Ability at the beginning of your Turn.\n\n**Requires an Aura Check**\n**Success**: 3 – 2 – 1 – Go! Your Battle Dance begins…\n- You can apply a Minor Bonus (+2) to a single roll made on your Turn.\n- Once you have started a Dance, allies in the same Battlefield Area can choose to join in. To do so they must make an Aura Check at the start of your team’s Turn.\n  - **Ally success**: Your ally jumps into the groove gaining a Minor Bonus (+2) for a roll made on their Turn.\n  - **Ally failure**: Your ally makes a misstep, disrupting the Dance. All Dancers lose their bonus this Turn. An ally can attempt to re-join the dance on the next Turn.\n- Each Turn Dancers must make a successful Aura Check for the Dance to continue.\n\n**Failure**: You stumble or stutter, and must apply a Minor Penalty (-2) to a roll of your choice made this Turn.\n\nAfter starting a Dance, you can not use this Ability again for 24 hours. With your GM’s approval, you can use this Ability in Linked Contests, like a chase sequence."
+        },
+        "type": "description"
+      }
+    ],
+    "displayName": "[S] Battle Dance",
+    "version": 2,
+    "subtype": "battle princess",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "sCKh7NaVhZ5DFG6eV3Vu"
+  },
+  {
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2F2TmcUnDWj1QjKNrHMm85.png?alt=media&token=55af5c92-e577-40db-87ee-f9dd8a900a34",
+            "tokenCrop": {
+              "unit": "%",
+              "y": 0,
+              "height": 100,
+              "aspect": 1,
+              "width": 100,
+              "x": 0
+            }
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*Your Wrath’s Blade does not always burn with rage, sometimes it is chillingly dispassionate.*\n\n**Frost Damage**: Your Wrath’s Blade has iced over and now does Frost Damage.\n\n**Freezing Blow**: After a successful Attack, the ice can be discharged to freeze one of your opponent’s limbs. The chosen limb is Restrained until your opponent, or someone trying to assist them, makes a successful Might Check to break free. This exhausts the Ability. \n\nFrost Blade can only be used once per Fight.\n"
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "range",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        },
+        "visibility": "full"
+      }
+    ],
+    "version": 2,
+    "displayName": "[S][M] Frost Blade",
+    "subtype": "murder princess",
+    "effects": [],
+    "type": "abilities",
+    "id": "sbdsVQUj5Euwrhsm1bv8"
+  },
+  {
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    },
+    "type": "weapon",
+    "effects": [
+      {
+        "type": "roll",
+        "bonus": 0,
+        "advantageType": "none",
+        "baseRoll": "1d20",
+        "hide": false,
+        "selectedDie": "d20",
+        "name": "",
+        "useModifiers": true,
+        "encounterRoll": false,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "quantity": 1
+      }
+    ],
+    "id": "tAEGMOQN3NctCu6auiK5",
+    "details": [
+      {
+        "value": {
+          "description": "Range: 1 Area\nDamage: 1\nThreshold: 22\nLoading Time: None\n\n**Weapon Ability, Hidden Fangs:** \nIf your target isn’t aware of your Thrown Weapon, you may attempt to Ambush them, even when you are in plain sight.\n- Targets must be in Range, but otherwise this attack works like a normal Ambush (􀂴 p252).\n- If your Ambush is successful, others using Concealed or Thrown weapons can join in the Ambush."
+        },
+        "visibility": "full",
+        "type": "description"
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FjcX8hWpYRqsh3bSK9hoy.png?alt=media&token=0483b302-58fd-411f-beb3-d458c61527e2",
+            "tokenCrop": {
+              "width": 100,
+              "x": 0,
+              "aspect": 1,
+              "height": 100,
+              "unit": "%",
+              "y": 0
+            }
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "displayName": "Thrown Weapon",
+    "version": 2
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FLwU17ukUY218hdZ5r4j8.png?alt=media&token=5d7bcc84-df61-4234-916d-e1957d8859df",
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            }
+          }
+        }
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*You can agitate the ambient mana inside another creature, causing it to swell and expand. Performing the spell requires you to make an exaggerated gesture; exhaling a deep breath into your own thumb. Huuffff!*\n\nYou can attempt to inflate a single enemy from up to 1 Battlefield Area away.\n\n**Requires a Contest**\nYour Insight vs. your target’s Grit. \n**Success:** Your target begins to bloat. By the start of their next Turn they will be afflicted by the Ballooned Ailment.\n\nOnly one creature may be affected by this Ability at any time. If you target another individual, the previous target will return to normal size. Otherwise, the affliction wears off after an hour or if you will it away."
+        }
+      },
+      {
+        "type": "range",
+        "visibility": "full",
+        "value": {
+          "range": "Gain 1 Dark Allegiance Point."
+        }
+      }
+    ],
+    "version": 2,
+    "subtype": "sage",
+    "displayName": "[S][M] Mortifying Bloat",
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "tLR70eh2JZTl1ESjP1tm"
+  },
+  {
+    "type": "abilities",
+    "effects": [],
+    "details": [
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FU5vD1BJuto1FFJpws6wQ.png?alt=media&token=36a9ca31-c50a-4234-8b2a-5046d44229bc",
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            }
+          }
+        }
+      },
+      {
+        "type": "description",
+        "value": {
+          "description": "*You refuse to be broken.*\n\nWhen reduced to 0 Hearts or below, you can attempt to find some extra vitality.\n\n**Requires a Grit Check**\n**Success**: You recover half your maximum Hearts Total, rounded up.\n\nThis ability does not remove any Injuries incurred."
+        },
+        "visibility": "full"
+      }
+    ],
+    "subtype": "champion",
+    "displayName": "[A] Indomitable",
+    "version": 2,
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "id": "uoQfwMdhyuAAMaE0gCTS"
+  },
+  {
+    "details": [
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FflqYVIb2ogI1lHC5lczu.png?alt=media&token=373ea591-58b1-4e60-bb1a-27c2db64ccef"
+          }
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "description": "*You levelled up your Sidestep. Now, as your enemies find themselves striking thin air, you take up a more advantageous position.*\n\nYou can now move to an adjacent Battlefield Area, or a more strategic place in the same Area, whenever you use your Sidestep.\n- All other Sidestep restrictions apply.\n\nThis Ability does not allow you to move to an Area you could not normally enter."
+        },
+        "type": "description"
+      }
+    ],
+    "version": 2,
+    "displayName": "[A] Flash Step",
+    "subtype": "raider",
+    "type": "abilities",
+    "effects": [],
+    "privacy": {
+      "users": [],
+      "level": "private"
+    },
+    "id": "wD9dJ7tyNmXsFX40iDuh"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "version": 2,
+    "displayName": "[S] Sidestep",
+    "subtype": "raider",
+    "details": [
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "aspect": 1,
+              "width": 100,
+              "x": 0,
+              "unit": "%",
+              "y": 0,
+              "height": 100
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FTnWfUdS0ukIfYnKe9FIv.png?alt=media&token=c6ef8d3b-aa79-463c-8066-d0da837b5788"
+          }
+        },
+        "type": "image"
+      },
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "*Anyone trying to strike you finds it trickier than it ought to be. You are an elusive opponent, able to twist away from a devastating strike at the very last moment.*\n\nOnce per Fight you can Sidestep an Attack or Ability that would normally have hit you.\n- You can Sidestep any Attack that could be feasibly avoided with a last second manoeuver.\n  - For example, avoiding a sword thrust with a nonchalant turn of your head or shielding your eyes from a mesmerising gaze.\n- The Sidestep prevents an Attack from connecting with or affecting you. \n\nYou’ll need freedom to move and adequate space to execute your Sidestep."
+        }
+      }
+    ],
+    "type": "abilities",
+    "effects": [],
+    "id": "xYhDmJaoydIDJf185Si8"
+  },
+  {
+    "privacy": {
+      "level": "private",
+      "users": []
+    },
+    "isInactive": true,
+    "effects": [
+      {
+        "options": [],
+        "quantity": 1,
+        "baseValue": 0,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "encounterRoll": false,
+        "useModifiers": true,
+        "challengeDice": false,
+        "exploding": false,
+        "bonusRoll": "",
+        "bonusSymbols": [],
+        "useLowest": false,
+        "difficulty": 0,
+        "challengeRoll": null,
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "hide": false,
+        "selectedDie": "d20",
+        "successMultiplier": 1,
+        "advantageType": "none",
+        "successTarget": false,
+        "targetNumber": null,
+        "rollDirection": "high",
+        "bonus": 0,
+        "damageType": "none",
+        "name": ""
+      }
+    ],
+    "version": 2,
+    "displayName": "Mighty Chomp",
+    "details": [
+      {
+        "type": "description",
+        "visibility": "full",
+        "value": {
+          "description": "2-Handed\n\nRange: Melee\nDamage: 2\nThreshold: 20"
+        }
+      },
+      {
+        "type": "image",
+        "visibility": "full",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FuZWHNgJD2i3Ex1Pdrxx3.png?alt=media&token=d8456f86-ad09-485a-b6b4-05373a128b9c",
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            }
+          }
+        }
+      }
+    ],
+    "id": "xrLziDFZOIjxdUD3elQE"
+  },
+  {
+    "type": "weapon",
+    "effects": [
+      {
+        "modifiers": [
+          {
+            "operator": "add",
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value"
+          }
+        ],
+        "challengeRoll": null,
+        "difficulty": 0,
+        "successTarget": false,
+        "selectedDie": "d20",
+        "hide": false,
+        "advantageType": "none",
+        "secondaryDice": false,
+        "successMultiplier": 1,
+        "rollDirection": "high",
+        "targetNumber": null,
+        "damageType": "none",
+        "name": "",
+        "bonus": 0,
+        "quantity": 1,
+        "baseValue": 0,
+        "options": [],
+        "encounterRoll": false,
+        "useModifiers": true,
+        "baseRoll": "1d20",
+        "type": "roll",
+        "delayedBonus": false,
+        "delayedBonusAmount": 0,
+        "challengeDice": false,
+        "useLowest": false,
+        "exploding": false,
+        "bonusSymbols": [],
+        "bonusRoll": ""
+      }
+    ],
+    "displayName": "Arc Weapon ",
+    "subtype": "",
+    "version": 2,
+    "id": "yhe4UfQAly7AYx7tWEy3",
+    "details": [
+      {
+        "type": "description",
+        "value": {
+          "description": "Range: Melee\nDamage: 1\nThreshold: 20\n\nWhen wielding one-handed you suffer a Minor Penalty (-2) on Attack rolls, Attack Stunts, & Combat Tricks.\n\n**Weapon Ability, Deadly Sweep:**\n- You can hit two enemies in the same Battlefield Area with one Attack.\n- Make a single Attack roll, and apply the result to both enemies."
+        },
+        "visibility": "full"
+      },
+      {
+        "type": "image",
+        "value": {
+          "image": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2F1WLk8WgaysyvKtNs5P0a%2Fimages%2FYGzX3Z50C9Nv2iAiIJhG.png?alt=media&token=a28e6cc0-8e5b-4ae5-9995-858a91373b6f",
+            "tokenCrop": {
+              "x": 0,
+              "width": 100,
+              "aspect": 1,
+              "height": 100,
+              "y": 0,
+              "unit": "%"
+            }
+          }
+        },
+        "visibility": "full"
+      }
+    ],
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  },
+  {
+    "type": "weapon",
+    "effects": [
+      {
+        "useModifiers": true,
+        "name": "",
+        "encounterRoll": false,
+        "advantageType": "none",
+        "bonus": 0,
+        "type": "roll",
+        "selectedDie": "d20",
+        "baseRoll": "1d20",
+        "hide": false,
+        "modifiers": [
+          {
+            "linkedValue": "attack-bonus.attributes.attack-bonus.value.value",
+            "operator": "add"
+          }
+        ],
+        "quantity": 1
+      }
+    ],
+    "displayName": "Small Mechanical Weapon",
+    "version": 2,
+    "details": [
+      {
+        "type": "description",
+        "value": {
+          "description": "1-Hand to Fire, 2-Hands to Load\n\nRange: 1 Area\nDamage: 1\nThreshold: 18\nLoading Time: 1 Action\n\nAmmo: 3x per 1/10 Slots"
+        },
+        "visibility": "full"
+      },
+      {
+        "visibility": "full",
+        "value": {
+          "image": {
+            "tokenCrop": {
+              "height": 100,
+              "y": 0,
+              "unit": "%",
+              "x": 0,
+              "width": 100,
+              "aspect": 1
+            },
+            "url": "https://firebasestorage.googleapis.com/v0/b/rpg-pbp.appspot.com/o/games%2Fn9qXCE2Ylwj8dBmy4lpo%2Fimages%2FSlumNJzk7nY9el6qU7jZ.png?alt=media&token=a2cdd187-fad3-4fe9-9c31-68bfd813e407"
+          }
+        },
+        "type": "image"
+      }
+    ],
+    "id": "zjUWcenp5yWXLhUpbg5g",
+    "privacy": {
+      "users": [
+        "HwYLq98tYuY9lEEODMru3sEGeTM2"
+      ],
+      "level": "private"
+    }
+  }
+]

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Report 42 (BREAK!!) - We're Sturdy Enough - Studio Quagg</title>
+    <meta name="description" content="Welcome to Episode 42 of BREAK!!: The Wandering Trio, alternatively titled “why don’t my players care about their lives”? Less prep yap this week, more just actionable reporting and explaining the...">
+    <meta property="og:title" content="Session Report 42 (BREAK!!) - We're Sturdy Enough">
+    <meta property="og:description" content="Welcome to Episode 42 of BREAK!!: The Wandering Trio, alternatively titled “why don’t my players care about their lives”? Less prep yap this week, more just actionable reporting and explaining the...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-04-25-session-report-42-break-we-re-sturdy-enough.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Session Report 42 (BREAK!!) - We're Sturdy Enough">
+    <meta name="twitter:description" content="Welcome to Episode 42 of BREAK!!: The Wandering Trio, alternatively titled “why don’t my players care about their lives”? Less prep yap this week, more just actionable reporting and explaining the...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Session Report 42 (BREAK!!) - We're Sturdy Enough</h1>
+                <div class="post-meta">
+                    <span class="post-date">April 25, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">Session Report</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>Welcome to Episode 42 of <strong>BREAK!!: The Wandering Trio</strong>, alternatively titled &ldquo;why don&rsquo;t my players care about their lives&rdquo;? Less prep yap this week, more just actionable reporting and explaining the little Chib terror known as Skippi. </p>
+<p>Note that I won&rsquo;t be explaining the Adventure Site and its lore in vivid detail here as I heavily dove into that in the previous <a href="https://its.quagg.studio/blog/posts-html/2026-04-16-session-report-41-break-not-more-plants.html">post</a> alongside a dedicated full site <a href="https://its.quagg.studio/blog/posts-html/2026-04-23-the-botanical-consortium-adventure-site.html">write-up</a>. It is dense but I believe there are some fun tidbits in there!</p>
+<p>Map Reference, as always:</p>
+<p><figure><a href="../images/SkyrayIsleMap.webp" target="_blank" rel="noopener noreferrer"><img alt="Skyray Isle Map" src="../images/SkyrayIsleMap.webp" /></a><figcaption>Map of Skyray Isle</figcaption></figure></p>
+<h3 id="skippi-the-asura-of-ynn">Skippi, the Asura of Ynn</h3>
+<p>For my players, Skippi means a headache. Skippi means anxiety. But for me, Skippi means that over the next scene I get to enjoy RP&rsquo;ing a little terror. So, then, who is this &lsquo;lil shit? Welcome to what we call <span class="spoiler" tabindex="0">emergent, escalating development of a throwaway character turned Big Bad</span>.</p>
+<p>The players first met Skippi in the cozy small fishing port village of Seneda on the northern half of Skyray Isle, very early on into the campaign (Episode 2, if memory serves). To understand the players&rsquo; perceptions coming into this setting, some context is needed. Historically, Seneda had always been a small village no one paid any mind to throughout the greater Meridian. And so it was they enjoyed the quiet life&hellip;until the ruins of a sprawling Gleysian complex was found in the cliff&rsquo;s base to the south. Being the closest sea-capable &ldquo;port&rdquo; on top of having a road already built, Seneda quickly became the primary export hub for this tech rush, expanding rapidly. Dozens moved in, business sprang, and so on.</p>
+<p>However, when the Water Spirits started suddenly sinking all ships near the island, trade routes dried up, leaving Seneda in a position with no real foundation to support the newly come population. People scattered - some inwards, some daring the sea - and only the stalwart families remained as they always have. Which, honestly, they preferred as it meant they could get back to a simple, cozy life.</p>
+<p><figure><a href="https://cdnb.artstation.com/p/assets/images/images/071/572/501/large/marby-kwong-marby-q4tckdlk3daursq8aueh-palaluma.jpg?1705476298" target="_blank" rel="noopener noreferrer"><img alt="Art of Seneda" src="https://cdnb.artstation.com/p/assets/images/images/071/572/501/large/marby-kwong-marby-q4tckdlk3daursq8aueh-palaluma.jpg?1705476298" width="75%" /></a><figcaption>Seneda before the Rush. Art by: <a href="https://www.artstation.com/artwork/nYyJLe" target="_blank" rel="noopener noreferrer">Marby Kwong</a>.</figcaption></figure></p>
+<p>Given the economic stupor the players found their own hometown in - the southern Celestial Bazaar near the ruins - their expectations going in were low, and that Seneda had to be in an even worse condition. Abandoned market stalls, an empty tavern with a stressed proprietor, and hastily-built houses now crumbling all supported this conception. So when a short, lavender-haired Scamp in beat-up clothes came running up to the party and tried to sell Gack his own watch back, they innately assumed &ldquo;oh, a competent street orphan&rdquo;. Her signature phrase was &ldquo;Hiya, misters!&rdquo;</p>
+<p>Here&rsquo;s her portrait, drawn by the great LeviLagann:</p>
+<p><figure><a href="../images/SkippiTheAsura.png" target="_blank" rel="noopener noreferrer"><img alt="Skippi the Asura" src="../images/SkippiTheAsura.png" width="35%" /></a><figcaption>Asura of Ynn, Skippi. Art by <a href="https://levilagann.itch.io/break-rpg-portraits" target="_blank" rel="noopener noreferrer">LeviLagann</a>.</figcaption></figure></p>
+<p>They liked the cut of her jib after the showcase of her legerdemain and offered to take her with them as they went to check on things in a nearby goblin-run workshop. No questions about her home, guardians, nada, off they went into the desert with Skippi. Along the route, she discussed various tactics to extort or scam people but, when nearly at the goblin junkyard, she casually quipped &ldquo;one extortion I&rsquo;ve always wanted to <em>try</em> is to threaten I&rsquo;ve been kidnapped to my mom! That one sounds <em>effective</em>, no?&rdquo; To this, the players all, in a horrified tone, blurted a unified: &ldquo;wait&hellip;what?&rdquo;</p>
+<p>Over the entire next Adventure Site she&rsquo;d give off vague threats, disappear without supervision to rob the goblin tinkerers, and perform reckless acts in the hostile scrapyard - all to my players&rsquo; collective stress. But she lived and they all made it back to Seneda where a teary-eyed mother rushed up to Skippi and picked her up. With a knowing grin over her mother&rsquo;s shoulder, Skippi said the group &ldquo;saved her bravely from some bandits!&rdquo; and pinned the kidnapping on a local fishmonger (a competitor to Skippi&rsquo;s stew stall). The mother joyfully thanked the party and invited them over to dinner so they could discuss the events.</p>
+<p>Players navigated the social situation well and didn&rsquo;t let the secret slip despite Skippi giving off concerning, vague recounts of the trip. All&rsquo;s well that ended well but damn did it sure scar my players. She didn&rsquo;t reappear for another 25 episodes but at many random times would they state something like &ldquo;remember that devil Skippi?&rdquo;. Their paranoia was quite rightly placed, it turns out.</p>
+<p><span class="spoiler" tabindex="0">Skippi was fully meant to be a short bit but, after the players kept bringing her back up and one even saying &ldquo;I bet she&rsquo;s the big bad just you wait&rdquo;, I decided to take that into serious consideration. I knew fairly early on that I wanted the Idea of Thorns from Ynn to be the end goal since I received the gorgeous, printed book. However, the Idea needed eyes in Outer World since its body is sundered. I thought it funny if Skippi was not a child at all but an Asura who could change appearance, and her mother was just another spawn of Ynn. They were scoping out the party as potential candidates to complete the bridge between Outer World/Ynn, so she wanted to tag along and monitor them. The players getting to know her personality quite deeply and traveling with her for many sessions was great for villain building.</span></p>
+<p>Well, I say she didn&rsquo;t reappear for all that time but in actuality she appeared 3 total times under differing facades but with some shade of purple-y hair. One time she was a background member of a merchant gathering discussing economic issues, another time she was a tour guide called Molly they interacted with heavily, and the last was a short bio-mechanoid named SL1P on a floating raft village. They got a little suspicious of SL1P but overall didn&rsquo;t make concrete connections. I even used some variation of &ldquo;Hiya&rdquo; every time - to which one player said &ldquo;man I thought that was just a bit for those character types&rdquo;.</p>
+<p>Her long-awaited reveal as one of the Big Bads was amazing - she was the catalyst for the Idea&rsquo;s appearance in Outer World again by way of possessing Abra&rsquo;s father figure Taam, a powerful Sage that once sealed the Idea away. Sat on the Bazaar&rsquo;s central fountain with Taam bound by Mana, a simple &ldquo;Hiya, misters!&rdquo; was let off before I showed her token. It blindsided the players in the moment, with one shouting a hearty &ldquo;I KNEW IT&rdquo;.</p>
+<p>They have a very strong association to the name, the phrase, and this specific <a href="https://www.youtube.com/watch?v=qUMcdDOAMu4">music track</a> now over the course of this campaign as all things to be stressed over. I don&rsquo;t overuse them so when I <em>do</em> it&rsquo;s all the better, like in today&rsquo;s session :)</p>
+<p>Case in point:</p>
+<p><a href="../images/LookusTrauma.png" target="_blank" rel="noopener noreferrer"><img alt="Lookus Trauma" src="../images/LookusTrauma.png" /></a></p>
+<p>Onto the session report.</p>
+<h3 id="a-tale-of-abandoning-caution">A Tale of Abandoning Caution</h3>
+<p>One would imagine that after haphazardly setting off a trap that nearly offed Gack the party would care about their well-being more. To be fair to them, they did, but only for about 10 minutes of the session. I suppose it&rsquo;s improvement.</p>
+<p>Here is the Facility layout just for reference, with the party starting back in Room 5:</p>
+<p><figure><a href="../images/BotanicalConsortiumMap.png" target="_blank" rel="noopener noreferrer"><img alt="The Botanical Consortium Adventure Map" src="../images/BotanicalConsortiumMap.png" width="65%" /></a><figcaption>Map of The Botanical Consortium. Map by <a href="https://dysonlogos.blog/2023/05/16/bore-facility-p44/" target="_blank" rel="noopener noreferrer">DysonLogos</a>.</figcaption></figure></p>
+<p>Post-trap, they all froze as I finally described the hallway and the very obvious Gleysian Terminal on the wall. They all paused and let Abra (who can read Gley Code) tinker away at it. All of them are day-time wizard hackers, thus tried pulling some fast ones on me with how to bypass this or that and get into the terminal. After a few failures, I reminded them of the keycard they received off the dead researcher top-side. This terminal opened up the Locker/Break room and disabled the trap, so they got on exploring.</p>
+<p>They saw the break room abandoned hurriedly - with lockers open and personal effects all about. Using Cautious (Reckless) Movement only and always, they received all the information from this room - including a note about a Restricted Research Sector somewhere within. Lookus smartly activated his Scanner and got a heavy ping behind a seemingly &ldquo;plain wall&rdquo;, which Gack confirmed as having traces of Flesh Mana near it. For context, one of the mutations Gack got while in Ynn was the ability to smell Mana which has been fun to play with in scene setting.</p>
+<p>Rightly assuming nefarious hidden doors, they got trying to further bypass attmempts on the Terminal now that they had initial keycard access. I was real generous and gave them 3 attempts, noting that the final failure would come at a CLICK!! Trap being set off. They took the bet&hellip;and failed (Insight 14 btw). I improv&rsquo;d the trap as the grumpy Gleysian equivalent of Clippy upset to be left and trapped here. Frayed wires came snaking out of the Terminal and shot towards Lookus and Abra&rsquo;s temples but they were both lucky and dodged appropriately.</p>
+<p>Not ready to admit defeat (or just explore more, the keycard was later on in), Gack, rock laborer of New Ore, asked if he could take his rock mallet and hit the 3ft thick metal blast door open. I fucked up and said &ldquo;uh no, but yeah sure, if you crit&rdquo;. And crit he did. Out of this malarkey, I at least gave a pretty slick description illustrating it like Last Airbender&rsquo;s Toph sensing the impurities of the metal and finding the perfect strike zone to crumble the door.</p>
+<p>Onwards they went into the staging chamber that precedes the supergoop storage vessel beyond. I made it rather abundantly clear there were all manner of Anti-Hazard Outfits hung on the wall. Abra and Gack simply retorted that they were &ldquo;sturdy enough to handle anything&rdquo;. Lookus had actually wanted to but was too embarassed to be seen in that &ldquo;drab trash&rdquo; on account of his Stylish Quirk. Thus, after being seared by chemicals in the purification airlock, I naturally had them all roll against Jellyfication from direct exposure to the supergoop. Gack failed and so we have our first Jellyfication of the campaign! They all got a kick out of the visual description of his entire silhouette being goopy (Factotum pack included). Gack&rsquo;s player proceeded to do an oozy voice, which was suprisingly good.</p>
+<p>In the storage vessel, they got the Calian head researcher&rsquo;s notes about these failed experiment subjects (read the blog post it&rsquo;s evil stuff) and frustration with the Anchor Tree&rsquo;s instability. Notably, Abra deciphered that an antidote for the condition can be constructed out of clippings from the tree itself. Satisfied with the information and concerned with Gack gooping through the metal grated floor, they headed back out to explore deeper.</p>
+<p>I had previously described the walls as being cracked and Gack took the Jellyfied condition to heart, immediately squeezing into the walls and exploring. It turned out to be pretty advantageous for them in exploring the Facility - Gack could peer an eye out of the next room steathily, get into ooze-filled chambers safely, and access the Anchor Tree&rsquo;s roots directly as they were suspended fully in ooze. In the experimentation room outside the root chambers, they found an Aken&rsquo;s Succor flower,  learned more about their half-mask, and about the Anchor Tree in the dome above them.</p>
+<p>With nowhere to go but into the upper dome, they ascended the stairs to find a massively overgrown dome with vines and trees, alongside a feeling of sun-like warmth and gentle sound of music&hellip;that dreaded <a href="https://www.youtube.com/watch?v=qUMcdDOAMu4">waltz</a>. Playing the music put them immediately on high alert and we ended the session with a classic &ldquo;Hiya, misters!&rdquo;</p>
+<p><figure><a href="../images/SkippisPicnic.png" target="_blank" rel="noopener noreferrer"><img alt="Skippi having a lovely picnic" src="../images/SkippisPicnic.png" width="75%" /></a><figcaption>Skippi enjoying a lovely picnic in front of a portal to Ynn. Map by <a href="https://www.czepeku.com/fantasy/maps/dragons-memorial/painted-portal" target="_blank" rel="noopener noreferrer">Czepeku</a>.</figcaption></figure></p>
+<p>And that&rsquo;s all for this episode of BREAK!!. I hope you enjoyed!</p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-04-23-the-botanical-consortium-adventure-site.html" class="post-nav-link next">The Botanical Consortium (Adventure Site) →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
