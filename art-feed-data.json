@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T12:07:36.146810Z",
+  "lastUpdated": "2026-04-26T00:12:12.029318Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,38 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mkde33j4us2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "tabletopbookshelf.com",
+        "displayName": "Tabletop Bookshelf",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
+      },
+      "record": {
+        "text": "Happy Indie Bookstore Day!\n\nStop in and get a free Tabletop Bookshelf tote with any book purchase today, 10am to 8pm\n\nAnd stop by at 2 pm for signings and demos with @oneshotrpg.bsky.social",
+        "createdAt": "2026-04-25T15:26:40.630Z"
+      },
+      "indexedAt": "2026-04-25T15:26:46.454Z",
+      "replyCount": 0,
+      "repostCount": 13,
+      "likeCount": 37,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidomfsgerueuzitjjk6vup4yswapyqngyuab22se7cueeccjjk7iy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidomfsgerueuzitjjk6vup4yswapyqngyuab22se7cueeccjjk7iy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
@@ -213,8 +245,8 @@
       },
       "indexedAt": "2026-04-20T18:53:53.052Z",
       "replyCount": 0,
-      "repostCount": 15,
-      "likeCount": 92,
+      "repostCount": 20,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -434,7 +466,7 @@
       "indexedAt": "2026-04-17T16:13:15.149Z",
       "replyCount": 19,
       "repostCount": 465,
-      "likeCount": 1611,
+      "likeCount": 1614,
       "embed": {
         "type": "images",
         "images": [
@@ -615,8 +647,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
-      "repostCount": 1409,
-      "likeCount": 6199,
+      "repostCount": 1410,
+      "likeCount": 6202,
       "embed": {
         "type": "images",
         "images": [
@@ -728,8 +760,8 @@
       },
       "indexedAt": "2026-04-14T09:46:58.056Z",
       "replyCount": 4,
-      "repostCount": 1,
-      "likeCount": 33,
+      "repostCount": 2,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -775,35 +807,6 @@
       }
     },
     {
-      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mjfujn6lxz2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "kywardkyoti.bsky.social",
-        "displayName": "Kyward ~ Insomniac Coyote",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreifbaswqkurdbjzlezm6i5rponq3wdguoso25bh3qmb4oj6nawbzyy"
-      },
-      "record": {
-        "text": "\ud83d\udd34LIVE\ud83d\udd34w/ Session #0 for my solo play of the Ennie Award Winning Game BREAK!! Going to be making the character with chat, and go over some of the stuff i want to do with this series!\nwww.twitch.tv/kyward_kyoti",
-        "createdAt": "2026-04-13T22:01:12.556Z"
-      },
-      "indexedAt": "2026-04-13T22:01:16.857Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.twitch.tv/kyward_kyoti",
-        "title": "Kyward_Kyoti - Twitch",
-        "description": "Variety streaming insomniac coyote from Stray City, a modern city isekai'd into another world. Into TTRPGs, indie games, and being a goober with my friends!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreibl6urcjyf3zzga3w6timdztqpg23lcfrkksqxvsfllizjozn2fvi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjftor5gns2t",
       "source": "bluesky",
       "author": {
@@ -818,7 +821,7 @@
       "indexedAt": "2026-04-13T21:46:23.355Z",
       "replyCount": 3,
       "repostCount": 3,
-      "likeCount": 60,
+      "likeCount": 61,
       "embed": {
         "type": "images",
         "images": [
@@ -830,35 +833,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:iwtf3chvshetroq4u6sd5da3/app.bsky.feed.post/3mjftb2vf4s2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "alphabetsauce.bsky.social",
-        "displayName": "Daemon Soup",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreidrq6lcm4byqj7xkadcngg3h3u3jnabwhq2aye64saoxf22gpqkum"
-      },
-      "record": {
-        "text": "Well, no better time than today for this! I've been working on and off on a Homestuck inspired TTRPG for the past few months called \"OtherBound.~ATH\". It uses the Harmony Drive SRD by @catlinggun.bsky.social and is currently pay what you want while in development!\n\ndaemonsoup.itch.io/otherbound",
-        "createdAt": "2026-04-13T21:38:35.303Z"
-      },
-      "indexedAt": "2026-04-13T21:38:42.258Z",
-      "replyCount": 4,
-      "repostCount": 7,
-      "likeCount": 7,
-      "embed": {
-        "type": "external",
-        "uri": "https://daemonsoup.itch.io/otherbound",
-        "title": "OtherBound.~ATH by Daemon Soup",
-        "description": "Control the 12 elements and save your doomed world in this Homestuck inspired TTRPG",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iwtf3chvshetroq4u6sd5da3/bafkreibem3nhfhiiowc5zxowzcmzw2rtpnz23wov4p5ekhynjdfvn3aip4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/0lyr1Y",
@@ -1003,7 +977,7 @@
       "indexedAt": "2026-04-10T05:47:21.150Z",
       "replyCount": 1,
       "repostCount": 12,
-      "likeCount": 43,
+      "likeCount": 44,
       "embed": {
         "type": "images",
         "images": [
@@ -1383,7 +1357,7 @@
       "indexedAt": "2026-03-19T12:09:52.455Z",
       "replyCount": 3,
       "repostCount": 13,
-      "likeCount": 65,
+      "likeCount": 64,
       "embed": {
         "type": "images",
         "images": [
@@ -2862,7 +2836,7 @@
         "createdAt": "2024-12-18T23:58:46.274Z"
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
-      "replyCount": 62,
+      "replyCount": 61,
       "repostCount": 1883,
       "likeCount": 8990,
       "embed": {
