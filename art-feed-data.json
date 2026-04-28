@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T12:24:58.477360Z",
+  "lastUpdated": "2026-04-28T00:16:47.768065Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,125 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:axjo3qxdo5lz57fb7djzfwsu/app.bsky.feed.post/3mkiym2tfvc2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "oneshotrpg.bsky.social",
+        "displayName": "James D'Amato",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreifj5buy6wftpyh6riivueligd6s6aevysuy3hctjvwsd3ziiqmmju"
+      },
+      "record": {
+        "text": "There are 18 hours left to back this project and it looks so genuinely fun!\nwww.kickstarter.com/projects/rol...",
+        "createdAt": "2026-04-27T21:17:23.889Z"
+      },
+      "indexedAt": "2026-04-27T21:17:25.346Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
+        "title": "Magic of Inventorying",
+        "description": "A roleplaying game to declutter your loot and banish encumbrance forever!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:axjo3qxdo5lz57fb7djzfwsu/bafkreiaetbjgfdz3i2rek5q2x4u6hgwj2b5rbgrp3ejum3h3vh56osmypi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mkiyggztn22m",
+      "source": "bluesky",
+      "author": {
+        "handle": "kywardkyoti.bsky.social",
+        "displayName": "Kyward ~ Insomniac Coyote",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreifbaswqkurdbjzlezm6i5rponq3wdguoso25bh3qmb4oj6nawbzyy"
+      },
+      "record": {
+        "text": "I totally forgot to post my schedule! better late that never lol WE got a lot this week! First session of solo BREAK!!, collabing with @venomoussquishy.bsky.social and cheese friend OSO, continuing KH in Hollowed Bastion, and finishing out the week with Slay the Princess for the first time!",
+        "createdAt": "2026-04-27T21:14:15.354Z"
+      },
+      "indexedAt": "2026-04-27T21:14:24.247Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 6,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreicrgjk2kniweirjyht5fk7bualhvxfhyracs7io5vepimfqvhohim",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreicrgjk2kniweirjyht5fk7bualhvxfhyracs7io5vepimfqvhohim",
+            "alt": "stream schedule for kyward kyoti! featuring art by emokoala! \n\nMonday we have first session of solo BREAK!! at 6pm edt\nTuesday we have Elden Ring: Nightreign with friends at 4pm edt\nWednesday we got more Kingdom Hearts at 6pm edt\nand last for the week on Friday we have our new game for the slot, Slay the Princess at 6pm edt."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:vqgnbpzx3aqnkvt6xfdf47nz/app.bsky.feed.post/3mkieqwr3cn26",
+      "source": "bluesky",
+      "author": {
+        "handle": "uwotc-official.bsky.social",
+        "displayName": "United Wizards of the Coast - CWA",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vqgnbpzx3aqnkvt6xfdf47nz/bafkreicumtqj6r4fckme6acislamkrtj7la3c3yti25idtdl756org57vm"
+      },
+      "record": {
+        "text": "Hello World, we\u2019d like to introduce ourselves. We the workers of the Magic: The Gathering Arena team have come together to unionize as United Wizards of the Coast - CWA! \ud83e\uddf5\nunitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa",
+        "createdAt": "2026-04-27T15:22:12.555Z"
+      },
+      "indexedAt": "2026-04-27T15:22:13.650Z",
+      "replyCount": 65,
+      "repostCount": 1478,
+      "likeCount": 3612,
+      "embed": {
+        "type": "external",
+        "uri": "https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa",
+        "title": "Announcing United Wizards of the Coast - CWA!",
+        "description": "MTG Arena workers announce unionization as United Wizards of the Coast-CWA, calling on WOTC to voluntarily recognize their union and begin collective bargaining.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vqgnbpzx3aqnkvt6xfdf47nz/bafkreig6ose2vgfwi64blbut77ecmwhc7x42nzyyrtkwh55xpl5tqaqw2a"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3mki3hvtuzs2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "manysidedmedia.bsky.social",
+        "displayName": "Many Sided Media",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreihkx5xrtrxpogrui2xeelt7iaqwvhpme42nows4ywu3zk2bqxaywu"
+      },
+      "record": {
+        "text": "This week we're re-releasing our interview with @austinwalker.bsky.social and @possibleworlds.bsky.social about Realis\n\nRealis is a game\u2014one of diceless storytelling, where characters deploy powerful Sentences, which are rewritten over the course of their saga.\n\nwww.kickstarter.com/projects/cru...",
+        "createdAt": "2026-04-27T12:36:05.931Z"
+      },
+      "indexedAt": "2026-04-27T12:36:10.753Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 17,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/crum/realis",
+        "title": "Realis",
+        "description": "A new tabletop roleplaying game by Austin Walker",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreicwnjmryhwcqgp6eqgtmigwogu43tmqizl4axogttov5dh43zcjjm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mkflm2ve7k2f",
       "source": "bluesky",
       "author": {
@@ -64,9 +183,9 @@
         "createdAt": "2026-04-26T12:46:46.022Z"
       },
       "indexedAt": "2026-04-26T12:46:58.151Z",
-      "replyCount": 4,
-      "repostCount": 36,
-      "likeCount": 101,
+      "replyCount": 5,
+      "repostCount": 41,
+      "likeCount": 112,
       "embed": {
         "type": "images",
         "images": [
@@ -92,9 +211,9 @@
         "createdAt": "2026-04-26T12:12:54.644Z"
       },
       "indexedAt": "2026-04-26T12:12:59.348Z",
-      "replyCount": 5,
-      "repostCount": 35,
-      "likeCount": 80,
+      "replyCount": 6,
+      "repostCount": 39,
+      "likeCount": 89,
       "embed": {
         "type": "images",
         "images": [
@@ -391,7 +510,7 @@
       "indexedAt": "2026-04-19T16:41:25.160Z",
       "replyCount": 5,
       "repostCount": 6,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -616,7 +735,7 @@
         "createdAt": "2026-04-16T12:25:38.079Z"
       },
       "indexedAt": "2026-04-16T12:25:43.436Z",
-      "replyCount": 1,
+      "replyCount": 2,
       "repostCount": 13,
       "likeCount": 48,
       "embed": {
@@ -703,7 +822,7 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
-      "repostCount": 1416,
+      "repostCount": 1417,
       "likeCount": 6215,
       "embed": {
         "type": "images",
@@ -1151,7 +1270,7 @@
       "source": "bluesky",
       "author": {
         "handle": "rolistespod.itch.io",
-        "displayName": "Kalum \ud83d\udd1c Kickstarter Magic of Inventorying",
+        "displayName": "Kalum \ud83d\udd1c Magic of Inventorying Kickstarter 18 HOURS LEFT",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k5ufhsh5vidwzllq77xjmijz/bafkreiftn52f54cmlz574ak7bs3rhzcyy4xca6bexkplhta3flj4j5gnii"
       },
       "record": {
@@ -1802,7 +1921,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1244,
-      "likeCount": 6546,
+      "likeCount": 6545,
       "embed": {
         "type": "images",
         "images": [
