@@ -1,0 +1,37 @@
+name: Refresh BREAK!! blog index
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Scrape blog
+        run: python scrape_blog.py
+        working-directory: break-blog-index
+      - name: Build glossary
+        run: python build_glossary.py
+        working-directory: break-blog-index
+      - name: Build search index
+        run: python build_search_index.py
+        working-directory: break-blog-index
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add break-blog-index/posts break-blog-index/glossary-data.json break-blog-index/search-index.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore(blog-index): refresh BREAK!! blog scrape"
+            git push
+          fi

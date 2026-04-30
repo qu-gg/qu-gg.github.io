@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAK!! Glossary &amp; Search</title>
+    <link rel="stylesheet" href="../style.css">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .page-wrap { max-width: var(--max-width); margin: 2rem auto; padding: 0 1.5rem; }
+        .page-head h1 { font-family: var(--font-display); font-size: 2.25rem; margin-bottom: .25rem; }
+        .page-head p { color: var(--text-secondary); margin-bottom: 1rem; }
+        .meta-row { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: center;
+                    color: var(--text-secondary); font-size: .9rem; margin-bottom: 1.25rem; }
+        .meta-row a { color: var(--accent); }
+
+        .controls { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center;
+                    padding: .85rem 1rem; background: var(--bg-secondary);
+                    border: 1px solid var(--border); border-radius: 8px;
+                    box-shadow: 0 2px 8px var(--shadow); margin-bottom: 1.25rem; }
+        .controls input[type="search"] { flex: 1 1 240px; min-width: 0;
+                    padding: .5rem .75rem; font-size: .95rem;
+                    border: 1px solid var(--border); border-radius: 6px; font-family: inherit;
+                    background: var(--bg-primary); color: var(--text-primary); }
+        .controls input[type="search"]:focus { outline: none; border-color: var(--accent);
+                    box-shadow: 0 0 0 2px rgba(108,92,231,.18); }
+        .alpha-bar { display: flex; flex-wrap: wrap; gap: .15rem; }
+        .alpha-bar a { display: inline-block; min-width: 1.6em; padding: .25rem .35rem;
+                       text-align: center; text-decoration: none; color: var(--text-secondary);
+                       border-radius: 4px; font-weight: 600; font-size: .85rem;
+                       transition: all .15s; }
+        .alpha-bar a:hover { background: var(--accent); color: #fff; }
+        .alpha-bar a.empty { color: var(--border); pointer-events: none; }
+
+        .hint { color: var(--text-secondary); font-size: .82rem; margin: 0 0 1.25rem;
+                line-height: 1.5; }
+        .hint[hidden] { display: none; }
+
+        /* Inline help tip ("?" with hover/focus popover) */
+        .help-tip { position: relative; display: inline-flex; align-items: center;
+                    justify-content: center; width: 1.05em; height: 1.05em;
+                    margin-left: .3rem; padding: 0; border-radius: 50%;
+                    background: transparent; border: 1px solid var(--border);
+                    color: var(--text-secondary); font: 600 .72rem/1 var(--font-body, inherit);
+                    cursor: help; vertical-align: middle; user-select: none; }
+        .help-tip:hover, .help-tip:focus-visible {
+            background: var(--accent); border-color: var(--accent); color: #fff; outline: none; }
+        .help-tip .help-pop {
+            position: absolute; left: 50%; top: calc(100% + .55rem); transform: translateX(-50%);
+            min-width: 220px; max-width: 320px; padding: .6rem .75rem;
+            background: var(--bg-primary); color: var(--text-primary);
+            border: 1px solid var(--border); border-radius: 8px;
+            box-shadow: 0 6px 18px var(--shadow);
+            font: 400 .82rem/1.45 var(--font-body, inherit);
+            text-align: left; cursor: default;
+            opacity: 0; pointer-events: none; transition: opacity .15s; z-index: 60; }
+        .help-tip .help-pop::after {
+            content: ''; position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+            border: 6px solid transparent; border-bottom-color: var(--border); }
+        .help-tip:hover .help-pop, .help-tip:focus-visible .help-pop,
+        .help-tip .help-pop:hover { opacity: 1; pointer-events: auto; }
+        @media (max-width: 600px) {
+            .help-tip .help-pop { left: auto; right: 0; transform: none; }
+            .help-tip .help-pop::after { left: auto; right: .55rem; transform: none; }
+        }
+
+        /* Category filter row */
+        .filter-row { display: flex; flex-wrap: wrap; gap: .5rem .65rem; align-items: center;
+                      margin: -.5rem 0 1.25rem; }
+        .filter-label { color: var(--text-secondary); font-size: .82rem; font-weight: 600;
+                        text-transform: uppercase; letter-spacing: .04em; }
+        .cat-select { padding: .35rem .6rem; font-size: .85rem; font-family: inherit;
+                      border: 1px solid var(--border); border-radius: 6px;
+                      background: var(--bg-secondary); color: var(--text-primary);
+                      cursor: pointer; }
+        .cat-select:focus { outline: none; border-color: var(--accent);
+                            box-shadow: 0 0 0 2px rgba(108,92,231,.18); }
+        .active-filters { display: flex; flex-wrap: wrap; gap: .35rem; }
+        .filter-chip { display: inline-flex; align-items: center; gap: .35rem;
+                       padding: .2rem .55rem; background: rgba(108,92,231,.12);
+                       border: 1px solid rgba(108,92,231,.35); color: var(--text-primary);
+                       border-radius: 999px; font-size: .8rem; line-height: 1.4;
+                       font-family: inherit; }
+        .filter-chip button { background: transparent; border: 0; padding: 0;
+                              color: var(--text-secondary); cursor: pointer;
+                              font-size: .9rem; line-height: 1; font-family: inherit;
+                              border-radius: 50%; width: 1.1em; height: 1.1em;
+                              display: inline-flex; align-items: center; justify-content: center; }
+        .filter-chip button:hover { background: var(--accent); color: #fff; }
+
+        /* Inline category tag inside an entry card */
+        .entry-cat { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em;
+                     color: var(--text-secondary); padding: .1rem .45rem;
+                     border: 1px solid var(--border); border-radius: 999px;
+                     background: var(--bg-primary); cursor: pointer; user-select: none;
+                     transition: border-color .15s, color .15s, background .15s; }
+        .entry-cat:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* Differentiated section headers */
+        .section { margin-bottom: 1.75rem; }
+        .section[hidden] { display: none; }
+        .section-head { display: flex; align-items: baseline; gap: .65rem; flex-wrap: wrap;
+                        margin-bottom: .75rem; padding-bottom: .4rem;
+                        border-bottom: 1px solid var(--border); }
+        .section-head h2 { font-family: var(--font-display); font-size: 1.25rem;
+                            color: var(--text-primary); margin: 0; font-weight: 600;
+                            display: flex; align-items: baseline; gap: .45rem; }
+        .section-head h2 .swatch { display: inline-block; width: .6rem; height: .6rem;
+                                   border-radius: 2px; transform: translateY(-1px); }
+        .section-head .sub { color: var(--text-secondary); font-size: .85rem; }
+        .section-head .count { margin-left: auto; color: var(--text-secondary);
+                               font-size: .82rem; font-variant-numeric: tabular-nums; }
+        #curated-section .swatch { background: var(--accent); }
+        #fulltext-section .swatch { background: #2980b9; }
+
+        /* Browse-mode letter buckets */
+        .letter-section { margin-bottom: 1.75rem; }
+        .letter-head { font-family: var(--font-display); font-size: 1.75rem;
+                       color: var(--text-primary); border-bottom: 1px solid var(--border);
+                       padding-bottom: .25rem; margin-bottom: .75rem;
+                       scroll-margin-top: 80px; }
+        .letter-section[hidden] { display: none; }
+
+        .glossary-list { display: grid; gap: .4rem; }
+
+        /* Glossary entry card — purple left rail (curated) */
+        .entry { padding: .55rem .85rem; background: var(--bg-secondary);
+                 border: 1px solid var(--border); border-left: 3px solid var(--accent);
+                 border-radius: 6px;
+                 transition: border-color .15s, box-shadow .15s; }
+        .entry:hover { border-color: var(--accent); }
+        .entry[hidden] { display: none; }
+        .entry-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem .9rem; }
+        .entry-term { font-family: var(--font-display); font-size: 1.1rem;
+                      font-weight: 600; color: var(--text-primary); }
+        .entry-stats { color: var(--text-secondary); font-size: .82rem;
+                       font-variant-numeric: tabular-nums; }
+        .entry-toggle { margin-left: auto; background: transparent; border: 1px solid var(--border);
+                        border-radius: 6px; padding: .2rem .6rem; font-size: .78rem; cursor: pointer;
+                        color: var(--text-secondary); font-family: inherit;
+                        transition: all .15s; }
+        .entry-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+        .post-refs { margin-top: .55rem; padding-top: .5rem; border-top: 1px dashed var(--border);
+                     display: none; }
+        .entry.expanded { box-shadow: 0 2px 8px var(--shadow); border-color: var(--accent); }
+        .entry.expanded .post-refs { display: block; }
+        .post-ref { display: flex; flex-wrap: wrap; gap: .25rem .65rem; padding: .35rem 0;
+                    font-size: .85rem; }
+        .post-ref + .post-ref { border-top: 1px dotted var(--border); }
+        .post-ref a { color: var(--accent); text-decoration: none; flex: 1 1 60%; }
+        .post-ref a:hover { text-decoration: underline; }
+        .post-ref .ref-meta { color: var(--text-secondary); font-size: .78rem;
+                              font-variant-numeric: tabular-nums; }
+        .post-ref .ref-snippet { flex: 1 1 100%; color: var(--text-secondary);
+                                  font-size: .82rem; line-height: 1.5; }
+
+        mark { background: rgba(108,92,231,.18); color: inherit;
+               padding: 0 2px; border-radius: 3px; }
+        .result mark { background: rgba(41,128,185,.18); }
+
+        /* Full-text result card — blue left rail */
+        .result { padding: .65rem .9rem; background: var(--bg-secondary);
+                  border: 1px solid var(--border); border-left: 3px solid #2980b9;
+                  border-radius: 6px; transition: border-color .15s; }
+        .result + .result { margin-top: .5rem; }
+        .result:hover { border-color: #2980b9; }
+        .result-title { font-family: var(--font-display); font-size: 1.05rem;
+                        font-weight: 600; margin-bottom: .15rem; }
+        .result-title a { color: var(--text-primary); text-decoration: none; }
+        .result-title a:hover { color: #2980b9; }
+        .result-blurb { color: var(--text-secondary); font-size: .9rem;
+                        line-height: 1.45; margin: .35rem 0 .15rem; }
+        .result-meta { color: var(--text-secondary); font-size: .8rem;
+                       font-variant-numeric: tabular-nums; }
+
+        .empty { padding: 1.1rem; text-align: center; color: var(--text-secondary);
+                 background: var(--bg-secondary); border: 1px dashed var(--border);
+                 border-radius: 6px; font-size: .9rem; }
+
+        .show-more { display: block; margin: .75rem auto 0; padding: .4rem 1rem;
+                     background: transparent; border: 1px solid var(--border);
+                     border-radius: 6px; cursor: pointer; color: var(--text-secondary);
+                     font-family: inherit; font-size: .82rem;
+                     transition: all .15s; }
+        .show-more:hover { border-color: #2980b9; color: #2980b9; }
+
+        .back-to-top { position: fixed; left: 1.25rem; bottom: 1.25rem; z-index: 50;
+                       width: 44px; height: 44px; border-radius: 50%;
+                       background: var(--bg-secondary); color: var(--text-secondary);
+                       border: 1px solid var(--border); box-shadow: 0 2px 8px var(--shadow);
+                       cursor: pointer; font-size: 1.2rem; line-height: 1; display: flex;
+                       align-items: center; justify-content: center;
+                       opacity: 0; pointer-events: none; transform: translateY(8px);
+                       transition: opacity .2s, transform .2s, color .15s, border-color .15s; }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; transform: none; }
+        .back-to-top:hover { color: var(--accent); border-color: var(--accent); }
+
+        @media (max-width: 600px) {
+            .page-head h1 { font-size: 1.6rem; }
+            .letter-head { font-size: 1.35rem; }
+            .entry-term { font-size: 1.02rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../break.html" class="active">BREAK!! Homebrew</a></li>
+                <li><a href="../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../bnb-loot-generator.html">B&amp;B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-wrap">
+        <header class="page-head">
+            <h1>BREAK!! Glossary/Index</h1>
+            <p>Curated index of recurring terms plus full-text search across every post on the
+               <a href="https://breakrpg.blogspot.com/" target="_blank" rel="noopener">official BREAK!! blog</a>.</p>
+            <div class="meta-row">
+                <span id="meta-counts">Loading…</span>
+            </div>
+        </header>
+
+        <section class="controls" aria-label="Search and filters">
+            <input type="search" id="search" placeholder="Search… (e.g. Old Iron, Balladeer, kickstarter)" autocomplete="off">
+            <nav class="alpha-bar" id="alpha-bar" aria-label="Jump to letter"></nav>
+        </section>
+        <div class="filter-row" aria-label="Filter by category">
+            <label class="filter-label" for="cat-filter">Filter by category</label>
+            <select id="cat-filter" class="cat-select">
+                <option value="">Add a category…</option>
+            </select>
+            <div id="active-filters" class="active-filters" aria-live="polite"></div>
+        </div>
+        <p class="hint" id="mode-hint" hidden></p>
+
+        <!-- BROWSE MODE: alphabetical glossary -->
+        <div id="browse-view"></div>
+
+        <!-- SEARCH MODE: two clearly-labeled result blocks -->
+        <div id="search-view" hidden>
+            <section class="section" id="curated-section">
+                <div class="section-head">
+                    <h2><span class="swatch" aria-hidden="true"></span>Curated terms</h2>
+                    <span class="sub">from the glossary</span>
+                    <span class="count" id="curated-count"></span>
+                </div>
+                <div class="glossary-list" id="curated-results"></div>
+                <p class="empty" id="curated-empty" hidden>No glossary entries match.</p>
+            </section>
+
+            <section class="section" id="fulltext-section">
+                <div class="section-head">
+                    <h2><span class="swatch" aria-hidden="true"></span>Full-text matches</h2>
+                    <span class="sub">across all blog posts</span>
+                    <span class="count" id="fulltext-count"></span>
+                </div>
+                <div id="fulltext-results"></div>
+                <p class="empty" id="fulltext-empty" hidden></p>
+            </section>
+        </div>
+    </main>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+    <script>
+    (function(){
+        const ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+        const TOK_RE = /[a-z][a-z0-9'\-]{1,}/g;
+        const FULLTEXT_INITIAL = 25;
+        const FULLTEXT_PAGE = 25;
+        const FULLTEXT_CAP = 200;
+
+        const state = { search: "", fullTextLimit: FULLTEXT_INITIAL, cats: new Set() };
+        let GLOSS = null;
+        let SEARCH = null;
+        const cardCache = new Map(); // entry.term -> rendered card (reused across modes)
+
+        Promise.all([
+            fetch('glossary-data.json').then(r => r.json()),
+            fetch('search-index.json').then(r => r.json()),
+        ]).then(([g, s]) => {
+            GLOSS = g;
+            SEARCH = s;
+            SEARCH._stop = new Set(s.stopwords);
+            init();
+        }).catch(err => {
+            document.getElementById('browse-view').innerHTML =
+                '<p class="empty">Could not load index data: ' + err + '</p>';
+        });
+
+        function init(){
+            renderAlphaBar();
+            renderCategoryFilter();
+            renderBrowseView();
+            wireControls();
+            updateMeta();
+
+            const q = new URLSearchParams(location.search).get('q');
+            if (q){
+                document.getElementById('search').value = q;
+                state.search = q.trim();
+            }
+            applyMode();
+        }
+
+        function letterOf(term){
+            const c = term.trim().charAt(0).toUpperCase();
+            return /[A-Z]/.test(c) ? c : '#';
+        }
+
+        // Entries with at least one matching post (always hidden when empty).
+        // Empty entries stay in GLOSS.entries so they appear automatically
+        // once future blog posts mention them (after the next index rebuild).
+        function liveEntries(){
+            return GLOSS.entries.filter(e => e.post_count > 0);
+        }
+        // Live entries with active category filters applied.
+        function visibleEntries(){
+            const live = liveEntries();
+            if (!state.cats.size) return live;
+            return live.filter(e => state.cats.has(e.category));
+        }
+        function categoryTitle(id){
+            const c = (GLOSS.categories || []).find(c => c.id === id);
+            return c ? c.title : id;
+        }
+
+        function updateMeta(){
+            const used = liveEntries().length;
+            const tokens = Object.keys(SEARCH.tokens).length.toLocaleString();
+            const help =
+                '<span class="help-tip" tabindex="0" role="button" aria-label="What does this search?">?' +
+                    '<span class="help-pop" role="tooltip">' +
+                        'Typing in the search box looks beyond the curated glossary above and runs ' +
+                        'a full-text search across every indexed blog post. ' +
+                        '<strong>' + tokens + '</strong> distinct words are indexed; tokens of ' +
+                        '3+ characters auto-match by prefix (so <em>bal</em> finds <em>Balladeer</em>).' +
+                    '</span>' +
+                '</span>';
+            document.getElementById('meta-counts').innerHTML =
+                used + ' glossary terms · ' +
+                SEARCH.posts.length + ' posts indexed · ' +
+                tokens + ' searchable words' + help;
+        }
+
+        function renderCategoryFilter(){
+            const sel = document.getElementById('cat-filter');
+            // Remove existing options other than the placeholder.
+            while (sel.options.length > 1) sel.remove(1);
+            const live = liveEntries();
+            const haveCats = new Set(live.map(e => e.category));
+            for (const c of (GLOSS.categories || [])){
+                if (!haveCats.has(c.id)) continue;
+                if (state.cats.has(c.id)) continue;
+                const opt = document.createElement('option');
+                opt.value = c.id;
+                opt.textContent = c.title;
+                sel.appendChild(opt);
+            }
+            renderActiveFilters();
+        }
+
+        function renderActiveFilters(){
+            const wrap = document.getElementById('active-filters');
+            wrap.innerHTML = '';
+            for (const id of state.cats){
+                const chip = document.createElement('span');
+                chip.className = 'filter-chip';
+                chip.innerHTML = escapeHtml(categoryTitle(id)) +
+                    '<button type="button" aria-label="Remove filter">\u00d7</button>';
+                chip.querySelector('button').addEventListener('click',
+                    () => removeCategoryFilter(id));
+                wrap.appendChild(chip);
+            }
+        }
+
+        function addCategoryFilter(id){
+            if (state.cats.has(id)) return;
+            state.cats.add(id);
+            onFiltersChanged();
+        }
+        function removeCategoryFilter(id){
+            if (!state.cats.delete(id)) return;
+            onFiltersChanged();
+        }
+        function onFiltersChanged(){
+            renderCategoryFilter();
+            renderAlphaBar();
+            updateMeta();
+            applyMode();
+        }
+
+        function renderAlphaBar(){
+            const bar = document.getElementById('alpha-bar');
+            bar.innerHTML = '';
+            const have = new Set(visibleEntries().map(e => letterOf(e.term)));
+            for (const ch of ['#', ...ALPHA]){
+                const a = document.createElement('a');
+                a.href = '#letter-' + (ch === '#' ? 'num' : ch);
+                a.textContent = ch;
+                if (!have.has(ch)) a.classList.add('empty');
+                bar.appendChild(a);
+            }
+        }
+
+        function renderBrowseView(){
+            const root = document.getElementById('browse-view');
+            root.innerHTML = '';
+            const buckets = new Map();
+            for (const e of visibleEntries()){
+                const k = letterOf(e.term);
+                if (!buckets.has(k)) buckets.set(k, []);
+                buckets.get(k).push(e);
+            }
+            const order = ['#', ...ALPHA].filter(k => buckets.has(k));
+            for (const k of order){
+                const section = document.createElement('section');
+                section.className = 'letter-section';
+                section.dataset.letter = k;
+                section.innerHTML = '<h2 class="letter-head" id="letter-' +
+                    (k === '#' ? 'num' : k) + '">' + k + '</h2>';
+                const list = document.createElement('div');
+                list.className = 'glossary-list';
+                for (const entry of buckets.get(k)) list.appendChild(getCard(entry));
+                section.appendChild(list);
+                root.appendChild(section);
+            }
+        }
+
+        function getCard(e){
+            // Cards are reused between browse mode and curated search results
+            // (we move the same DOM node around so expanded state survives).
+            if (cardCache.has(e.term)) return cardCache.get(e.term);
+
+            const card = document.createElement('article');
+            card.className = 'entry';
+            card.dataset.cat = e.category;
+            card.id = 'term-' + e.term.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+            const stats = e.post_count
+                ? '<span class="entry-stats">' + e.post_count + ' post' +
+                  (e.post_count===1?'':'s') + ' · ' + e.occurrences + ' mention' +
+                  (e.occurrences===1?'':'s') + '</span>'
+                : '<span class="entry-stats">no matches yet</span>';
+            const toggle = e.post_count
+                ? '<button type="button" class="entry-toggle">Show posts</button>'
+                : '';
+
+            const catTag = '<span class="entry-cat" data-cat="' + escapeHtml(e.category) +
+                '" title="Filter by ' + escapeHtml(categoryTitle(e.category)) + '">' +
+                escapeHtml(categoryTitle(e.category)) + '</span>';
+            card.innerHTML =
+                '<div class="entry-head">' +
+                    '<span class="entry-term">' + escapeHtml(e.term) + '</span>' +
+                    catTag + stats + toggle +
+                '</div>' +
+                '<div class="post-refs"></div>';
+            const tag = card.querySelector('.entry-cat');
+            tag.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                addCategoryFilter(e.category);
+            });
+
+            const btn = card.querySelector('.entry-toggle');
+            if (btn){
+                btn.addEventListener('click', () => {
+                    const expanded = card.classList.toggle('expanded');
+                    btn.textContent = expanded ? 'Hide posts' : 'Show posts';
+                    if (expanded && !card.querySelector('.post-refs').children.length){
+                        const refs = card.querySelector('.post-refs');
+                        for (const p of e.posts){
+                            const row = document.createElement('div');
+                            row.className = 'post-ref';
+                            row.innerHTML =
+                                '<a href="' + p.url + '" target="_blank" rel="noopener">' +
+                                    escapeHtml(p.title) + '</a>' +
+                                '<span class="ref-meta">' + (p.published||'').slice(0,10) +
+                                    ' · ' + p.hits + '×</span>' +
+                                '<span class="ref-snippet">' +
+                                    highlightTerms(p.snippet, [e.term, ...(e.aliases||[])]) + '</span>';
+                            refs.appendChild(row);
+                        }
+                    }
+                });
+            }
+            cardCache.set(e.term, card);
+            return card;
+        }
+
+        function wireControls(){
+            const input = document.getElementById('search');
+            let debounceId = null;
+            input.addEventListener('input', () => {
+                clearTimeout(debounceId);
+                debounceId = setTimeout(() => {
+                    state.search = input.value.trim();
+                    state.fullTextLimit = FULLTEXT_INITIAL;
+                    applyMode();
+                    const url = new URL(location.href);
+                    if (state.search) url.searchParams.set('q', state.search);
+                    else url.searchParams.delete('q');
+                    history.replaceState(null, '', url);
+                }, 120);
+            });
+
+            const backBtn = document.getElementById('back-to-top');
+            backBtn.addEventListener('click', () =>
+                window.scrollTo({top: 0, behavior: 'smooth'}));
+            window.addEventListener('scroll', () => {
+                backBtn.classList.toggle('visible', window.scrollY > 400);
+            }, {passive: true});
+
+            const sel = document.getElementById('cat-filter');
+            sel.addEventListener('change', () => {
+                const v = sel.value;
+                sel.value = '';
+                if (v) addCategoryFilter(v);
+            });
+        }
+
+        function applyMode(){
+            const browse = document.getElementById('browse-view');
+            const search = document.getElementById('search-view');
+            const hint   = document.getElementById('mode-hint');
+            const alpha  = document.getElementById('alpha-bar');
+
+            if (!state.search){
+                // Re-build the browse view so any cards that were moved into the
+                // curated-results container get re-attached to their letter buckets.
+                // getCard() returns cached nodes, so expanded state is preserved.
+                renderBrowseView();
+                browse.hidden = false;
+                search.hidden = true;
+                alpha.style.opacity = '';
+                alpha.style.pointerEvents = '';
+                hint.hidden = true;
+                hint.innerHTML = '';
+                return;
+            }
+
+            browse.hidden = true;
+            search.hidden = false;
+            alpha.style.opacity = '.35';
+            alpha.style.pointerEvents = 'none';
+            hint.hidden = false;
+            hint.innerHTML = 'Showing matches for <strong>' + escapeHtml(state.search) +
+                             '</strong>. Clear the box to return to A–Z browsing.';
+
+            renderCurated(state.search);
+            renderFullText(state.search);
+        }
+
+        // ---- Curated (glossary) search -----------------------------------
+
+        function renderCurated(q){
+            const ql = q.toLowerCase();
+            const matches = visibleEntries().filter(e =>
+                e.term.toLowerCase().includes(ql) ||
+                (e.aliases||[]).some(a => a.toLowerCase().includes(ql)));
+
+            const list = document.getElementById('curated-results');
+            list.innerHTML = '';
+            for (const e of matches) list.appendChild(getCard(e));
+
+            document.getElementById('curated-count').textContent =
+                matches.length + ' match' + (matches.length === 1 ? '' : 'es');
+            document.getElementById('curated-empty').hidden = matches.length > 0;
+        }
+
+        // ---- Full-text search over blog body index ------------------------
+
+        function tokenize(q){
+            const out = [];
+            for (const m of q.toLowerCase().matchAll(TOK_RE)){
+                const tok = m[0];
+                if (tok.length < 2) continue;
+                if (SEARCH._stop.has(tok)) continue;
+                out.push(tok);
+            }
+            return out;
+        }
+
+        function postingsFor(tok){
+            // Always do exact + prefix match. Sub-3-char tokens stay exact
+            // to avoid runaway expansion.
+            const out = new Map();
+            const exact = SEARCH.tokens[tok];
+            if (exact) for (const [idx, f] of exact) out.set(idx, f);
+            if (tok.length < 3) return out;
+            for (const k in SEARCH.tokens){
+                if (k.length > tok.length && k.startsWith(tok)){
+                    for (const [idx, f] of SEARCH.tokens[k]){
+                        out.set(idx, (out.get(idx) || 0) + f);
+                    }
+                }
+            }
+            return out;
+        }
+
+        function fullTextSearch(query){
+            const tokens = tokenize(query);
+            if (!tokens.length) return { tokens: [], ranked: [] };
+            const lists = tokens.map(postingsFor);
+            const [first, ...rest] = lists;
+            const matched = new Map();
+            for (const [idx, freq] of first){
+                let total = freq;
+                let allHit = true;
+                for (const other of rest){
+                    const f = other.get(idx);
+                    if (f === undefined){ allHit = false; break; }
+                    total += f;
+                }
+                if (allHit) matched.set(idx, total);
+            }
+            const ranked = [...matched.entries()].sort((a, b) => {
+                if (b[1] !== a[1]) return b[1] - a[1];
+                return a[0] - b[0];
+            });
+            return { tokens, ranked };
+        }
+
+        function renderFullText(query){
+            const root = document.getElementById('fulltext-results');
+            const countEl = document.getElementById('fulltext-count');
+            const emptyEl = document.getElementById('fulltext-empty');
+
+            const { tokens, ranked } = fullTextSearch(query);
+            root.innerHTML = '';
+
+            if (!tokens.length){
+                countEl.textContent = '';
+                emptyEl.hidden = false;
+                emptyEl.textContent = 'Type a content word — short words like “the” are ignored.';
+                return;
+            }
+
+            countEl.textContent = ranked.length + ' post' + (ranked.length === 1 ? '' : 's');
+            if (!ranked.length){
+                emptyEl.hidden = false;
+                emptyEl.textContent = 'No posts mention every word.';
+                return;
+            }
+            emptyEl.hidden = true;
+
+            const hlRe = buildHighlightRegex(tokens);
+            const cap = Math.min(ranked.length, state.fullTextLimit, FULLTEXT_CAP);
+            const frag = document.createDocumentFragment();
+            for (let i = 0; i < cap; i++){
+                const [idx] = ranked[i];
+                const p = SEARCH.posts[idx];   // [id, title, url, date, blurb]
+                const div = document.createElement('article');
+                div.className = 'result';
+                div.innerHTML =
+                    '<div class="result-title">' +
+                        '<a href="' + p[2] + '" target="_blank" rel="noopener">' +
+                            highlight(p[1], hlRe) + '</a>' +
+                    '</div>' +
+                    (p[4]
+                        ? '<p class="result-blurb">' + highlight(p[4], hlRe) + '</p>'
+                        : '') +
+                    '<div class="result-meta">' + p[3] + '</div>';
+                frag.appendChild(div);
+            }
+            root.appendChild(frag);
+
+            const remaining = Math.min(ranked.length, FULLTEXT_CAP) - cap;
+            if (remaining > 0){
+                const more = document.createElement('button');
+                more.type = 'button';
+                more.className = 'show-more';
+                const next = Math.min(FULLTEXT_PAGE, remaining);
+                more.textContent = 'Show ' + next + ' more (' + remaining + ' remaining)';
+                more.addEventListener('click', () => {
+                    state.fullTextLimit += FULLTEXT_PAGE;
+                    renderFullText(query);
+                });
+                root.appendChild(more);
+            } else if (ranked.length > FULLTEXT_CAP){
+                const note = document.createElement('p');
+                note.className = 'empty';
+                note.textContent = '… and ' + (ranked.length - FULLTEXT_CAP) +
+                    ' more (refine your query to narrow).';
+                root.appendChild(note);
+            }
+        }
+
+        // ---- Highlighting helpers ----------------------------------------
+
+        function buildHighlightRegex(tokens){
+            if (!tokens.length) return null;
+            const parts = tokens.map(t => {
+                const esc = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                return t.length >= 3 ? esc + '[a-z0-9\'-]*' : esc;
+            });
+            return new RegExp('\\b(' + parts.join('|') + ')', 'gi');
+        }
+
+        function highlight(text, re){
+            const safe = escapeHtml(text);
+            if (!re) return safe;
+            return safe.replace(re, '<mark>$1</mark>');
+        }
+
+        function highlightTerms(text, terms){
+            if (!text) return '';
+            const safe = escapeHtml(text);
+            const parts = terms.filter(Boolean)
+                .map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+            if (!parts.length) return safe;
+            const re = new RegExp('(' + parts.join('|') + ')', 'gi');
+            return safe.replace(re, '<mark>$1</mark>');
+        }
+
+        function escapeHtml(s){
+            return (s || '').replace(/[&<>"']/g, c =>
+                ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+        }
+    })();
+    </script>
+
+    <script>
+        // Mobile nav toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
