@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T00:17:49.673233Z",
+  "lastUpdated": "2026-05-01T12:14:09.321789Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,94 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkrvjuq5uk24",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-05-01T10:16:26.781Z"
+      },
+      "indexedAt": "2026-05-01T10:16:35.766Z",
+      "replyCount": 2,
+      "repostCount": 0,
+      "likeCount": 9,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifba2bpd7enfbr23dj6gtqgwh3zxgespbuidg7p2cp6426izfalsm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifba2bpd7enfbr23dj6gtqgwh3zxgespbuidg7p2cp6426izfalsm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkrru6hgrs2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "Look what arrived from the number one website on the internet...\n\nbetterlegends.com/webstore",
+        "createdAt": "2026-05-01T09:10:37.568Z"
+      },
+      "indexedAt": "2026-05-01T09:10:47.167Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihtpnxyyqvinicbw74hdqqn57p65mnyeepupnjhuz4pzf4j4qtqq4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihtpnxyyqvinicbw74hdqqn57p65mnyeepupnjhuz4pzf4j4qtqq4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:27lljh7tebd7z7h5cc3jmwr2/app.bsky.feed.post/3mkrqvoppm22w",
+      "source": "bluesky",
+      "author": {
+        "handle": "wizardthieffighter.bsky.social",
+        "displayName": "Wizard Thief Fighter",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreifwpifvvyyboo36jfrrpgenzzwj4bdblxryeogspbqoawfzhciqvu"
+      },
+      "record": {
+        "text": "It now being the May Day aforementioned: a sale! an offing! 26% down! Seismic stuff!\n\nitch.io/s/185255/may...",
+        "createdAt": "2026-05-01T08:53:34.427Z"
+      },
+      "indexedAt": "2026-05-01T08:53:43.169Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 15,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreidl57a66xavkxbtutqblebqc2dfws2sv5b44y23mzc7rpwwztokqa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreidl57a66xavkxbtutqblebqc2dfws2sv5b44y23mzc7rpwwztokqa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
       "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mkqmcdikcs2q",
       "source": "bluesky",
       "author": {
@@ -93,9 +181,9 @@
         "createdAt": "2026-04-30T19:21:48.092Z"
       },
       "indexedAt": "2026-04-30T19:22:06.288Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 12,
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -122,8 +210,8 @@
       },
       "indexedAt": "2026-04-30T14:05:09.470Z",
       "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 5,
+      "repostCount": 9,
+      "likeCount": 6,
       "embed": {
         "type": "images",
         "images": [
@@ -244,7 +332,7 @@
       "indexedAt": "2026-04-29T00:46:08.465Z",
       "replyCount": 2,
       "repostCount": 8,
-      "likeCount": 95,
+      "likeCount": 96,
       "embed": {
         "type": "images",
         "images": [
@@ -473,7 +561,7 @@
       "indexedAt": "2026-04-27T21:17:25.346Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
@@ -533,8 +621,8 @@
       },
       "indexedAt": "2026-04-27T15:22:13.650Z",
       "replyCount": 79,
-      "repostCount": 2018,
-      "likeCount": 5235,
+      "repostCount": 2021,
+      "likeCount": 5243,
       "embed": {
         "type": "external",
         "uri": "https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa",
@@ -965,7 +1053,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
       "repostCount": 1420,
-      "likeCount": 6217,
+      "likeCount": 6220,
       "embed": {
         "type": "images",
         "images": [
@@ -1350,119 +1438,6 @@
         "displayName": "Grey Wizard - KICKSTARTING NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mixpx3mbik2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Follow on Kickstarter\n\nwww.kickstarter.com/projects/bre...",
-        "createdAt": "2026-04-08T07:02:02.935Z"
-      },
-      "indexedAt": "2026-04-08T07:02:07.172Z",
-      "replyCount": 4,
-      "repostCount": 33,
-      "likeCount": 80,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihelunspa677peezka4epsamavhug3j2q42cfqnvpz4777pjxx2pu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreihelunspa677peezka4epsamavhug3j2q42cfqnvpz4777pjxx2pu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mixptlaxos2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Follow on Kickstarter\n\nwww.kickstarter.com/projects/bre...",
-        "createdAt": "2026-04-08T07:00:05.123Z"
-      },
-      "indexedAt": "2026-04-08T07:00:07.853Z",
-      "replyCount": 3,
-      "repostCount": 7,
-      "likeCount": 36,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidcjaqd7z5bhvloo53rwnmclnu5yukhufbcw6gdlrjl3jky3hgaua",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidcjaqd7z5bhvloo53rwnmclnu5yukhufbcw6gdlrjl3jky3hgaua",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:k5ufhsh5vidwzllq77xjmijz/app.bsky.feed.post/3miw5uroimc2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "rolistespod.itch.io",
-        "displayName": "Kalum \ud83d\udd1c PLAY Bologna",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k5ufhsh5vidwzllq77xjmijz/bafkreiftn52f54cmlz574ak7bs3rhzcyy4xca6bexkplhta3flj4j5gnii"
-      },
-      "record": {
-        "text": "WE ARE LIVE!\nTime to declutter your loot!\n\nPlease pledge and share far and wide.\nwww.kickstarter.com/projects/rol... #TTRPG #MagicOfInventorying #Kickstarter",
-        "createdAt": "2026-04-07T16:05:58.334Z"
-      },
-      "indexedAt": "2026-04-07T16:06:00.571Z",
-      "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 41,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/rolistespod/paris-gondo",
-        "title": "Magic of Inventorying",
-        "description": "A roleplaying game to declutter your loot and banish encumbrance forever!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k5ufhsh5vidwzllq77xjmijz/bafkreichy7q7zfuofxga6lwl5ot7vzyf5mojixtcta7x6b5fa5itoklfs4"
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3miw443ius22p",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "For our imminent new kickstarter, working on a new adventure team for the special edition.\n\nwww.kickstarter.com/projects/gre...",
-        "createdAt": "2026-04-07T15:34:16.014Z"
-      },
-      "indexedAt": "2026-04-07T15:34:26.655Z",
-      "replyCount": 2,
-      "repostCount": 11,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidhvilusgr5ojrnmidbys3hf5dnuj2lzhrv2n4tlv6xntd4yza3ba",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidhvilusgr5ojrnmidbys3hf5dnuj2lzhrv2n4tlv6xntd4yza3ba",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
     },
     {
       "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3milvnie33s2r",
