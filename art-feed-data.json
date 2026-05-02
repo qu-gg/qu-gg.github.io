@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T12:14:09.321789Z",
+  "lastUpdated": "2026-05-02T00:17:20.947833Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:x4nyticnv2hnk3vq5z2qssra/app.bsky.feed.post/3mksjvbqdys22",
+      "source": "bluesky",
+      "author": {
+        "handle": "zakbfree.bsky.social",
+        "displayName": "Zak Barouh | LEAF & LANCE",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreiarqdabuy2cxgtdg4lkpayai3jxfb35neipmjq3yy3ck7xgbn36mm"
+      },
+      "record": {
+        "text": "\ud83c\udf33A new Members release is available on my Ko-fi!\n\nContinuing to explore the Digimon World-inspired setting called The Outer Bounds, this time we're headed into the Verdant Labyrinth, a green land dominated by thick, tangled forest, and a mysterious meadowland beyond.\n\nCheck it out by joining today!",
+        "createdAt": "2026-05-01T16:20:44.376Z"
+      },
+      "indexedAt": "2026-05-01T16:20:47.961Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://ko-fi.com/zakbfree/tiers",
+        "title": "Join Zak Barouh | LEAF & LANCE's Membership",
+        "description": "Hi, I'm Zak Barouh. I'm a writer and Tabletop RPG designer. My latest big release is Animon Story, and TTRPG about Kids & their Monster friends!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreia234sbqbxla5f7i2eomexu4fridjqty5ys6awli3fc2pwriy5xgi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mks6a2w6os2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "My band's new album is out! AND its Bandcamp friday so that means we get all the profits from sales! we're also selling a physical CD since it is of course the year 1997.\n\nteencat.bandcamp.com/album/up-all...",
+        "createdAt": "2026-05-01T12:52:01.393Z"
+      },
+      "indexedAt": "2026-05-01T12:52:02.962Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 37,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiao7p3lb3melbonltdxyabya6v6ncnnivh6xmiljvprdriytolx2q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiao7p3lb3melbonltdxyabya6v6ncnnivh6xmiljvprdriytolx2q",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkrvjuq5uk24",
       "source": "bluesky",
       "author": {
@@ -65,8 +126,8 @@
       },
       "indexedAt": "2026-05-01T10:16:35.766Z",
       "replyCount": 2,
-      "repostCount": 0,
-      "likeCount": 9,
+      "repostCount": 4,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +155,7 @@
       "indexedAt": "2026-05-01T09:10:47.167Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 11,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -106,38 +167,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:27lljh7tebd7z7h5cc3jmwr2/app.bsky.feed.post/3mkrqvoppm22w",
-      "source": "bluesky",
-      "author": {
-        "handle": "wizardthieffighter.bsky.social",
-        "displayName": "Wizard Thief Fighter",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreifwpifvvyyboo36jfrrpgenzzwj4bdblxryeogspbqoawfzhciqvu"
-      },
-      "record": {
-        "text": "It now being the May Day aforementioned: a sale! an offing! 26% down! Seismic stuff!\n\nitch.io/s/185255/may...",
-        "createdAt": "2026-05-01T08:53:34.427Z"
-      },
-      "indexedAt": "2026-05-01T08:53:43.169Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreidl57a66xavkxbtutqblebqc2dfws2sv5b44y23mzc7rpwwztokqa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:27lljh7tebd7z7h5cc3jmwr2/bafkreidl57a66xavkxbtutqblebqc2dfws2sv5b44y23mzc7rpwwztokqa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
     },
     {
       "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mkqmcdikcs2q",
@@ -153,8 +182,8 @@
       },
       "indexedAt": "2026-04-30T21:58:31.871Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 3,
+      "repostCount": 3,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://dmv-designed-games.beehiiv.com/",
@@ -243,7 +272,7 @@
       "indexedAt": "2026-04-29T16:25:16.166Z",
       "replyCount": 3,
       "repostCount": 9,
-      "likeCount": 41,
+      "likeCount": 42,
       "embed": {
         "type": "images",
         "images": [
@@ -503,8 +532,8 @@
       },
       "indexedAt": "2026-04-28T13:59:53.966Z",
       "replyCount": 3,
-      "repostCount": 59,
-      "likeCount": 108,
+      "repostCount": 60,
+      "likeCount": 110,
       "embed": {
         "type": "images",
         "images": [
@@ -621,8 +650,8 @@
       },
       "indexedAt": "2026-04-27T15:22:13.650Z",
       "replyCount": 79,
-      "repostCount": 2021,
-      "likeCount": 5243,
+      "repostCount": 2041,
+      "likeCount": 5287,
       "embed": {
         "type": "external",
         "uri": "https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa",
@@ -666,34 +695,6 @@
       }
     },
     {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mkflm2ve7k2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "4/28 everyone! Be there (or not, I am not your boss)!!",
-        "createdAt": "2026-04-26T12:46:46.022Z"
-      },
-      "indexedAt": "2026-04-26T12:46:58.151Z",
-      "replyCount": 5,
-      "repostCount": 43,
-      "likeCount": 120,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiawhb2c2jmruboulstarfoyozlmcbtws53y4kg35gdsvqyrzk2zqa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiawhb2c2jmruboulstarfoyozlmcbtws53y4kg35gdsvqyrzk2zqa",
-            "alt": "Two books, one the BREAK!! Core rules and the other, the upcoming START, which is going live on Kickstarter on 4/28"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkfjpjkr2s2u",
       "source": "bluesky",
       "author": {
@@ -720,38 +721,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mkde33j4us2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "tabletopbookshelf.com",
-        "displayName": "Tabletop Bookshelf",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
-      },
-      "record": {
-        "text": "Happy Indie Bookstore Day!\n\nStop in and get a free Tabletop Bookshelf tote with any book purchase today, 10am to 8pm\n\nAnd stop by at 2 pm for signings and demos with @oneshotrpg.bsky.social",
-        "createdAt": "2026-04-25T15:26:40.630Z"
-      },
-      "indexedAt": "2026-04-25T15:26:46.454Z",
-      "replyCount": 0,
-      "repostCount": 13,
-      "likeCount": 38,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidomfsgerueuzitjjk6vup4yswapyqngyuab22se7cueeccjjk7iy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidomfsgerueuzitjjk6vup4yswapyqngyuab22se7cueeccjjk7iy",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
@@ -2356,7 +2325,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1956,
-      "likeCount": 8488,
+      "likeCount": 8487,
       "embed": {
         "type": "images",
         "images": [
