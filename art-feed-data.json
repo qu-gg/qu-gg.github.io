@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T12:18:29.107593Z",
+  "lastUpdated": "2026-05-06T00:17:11.533746Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,70 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:l273ogahvzmitwvo27kej3v3/app.bsky.feed.post/3ml4mpkt54k2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "farmergadda.bsky.social",
+        "displayName": "Farmer Gadda",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreifiy4vpktlkorlkjn5yybes23za5e5hfjezlrdc7nqc3q7aqggeju"
+      },
+      "record": {
+        "text": "it's break.\n\nyou gotta back break.",
+        "createdAt": "2026-05-05T16:37:51.185Z"
+      },
+      "indexedAt": "2026-05-05T16:37:52.861Z",
+      "replyCount": 1,
+      "repostCount": 1,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7cjzh4bag3d6kmx7nnoh2sgzwekgok6rm6p45lyxheyfbiixrpi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7cjzh4bag3d6kmx7nnoh2sgzwekgok6rm6p45lyxheyfbiixrpi",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3ml4aag73722x",
+      "source": "bluesky",
+      "author": {
+        "handle": "evlynmoreau.bsky.social",
+        "displayName": "Evlyn Moreau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifzpirz3vukddnmepgnfrcaq2sqjhuxe7mx3douxi3g4ylxonkeyy"
+      },
+      "record": {
+        "text": "Started working on my scrappy \u201cdo in one week\u201d zine for #CY_BORG",
+        "createdAt": "2026-05-05T12:54:38.102Z"
+      },
+      "indexedAt": "2026-05-05T12:54:44.573Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 46,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreicvkhdiqrf52yxo74eukzo7hixdm54kx7g2de5tb6v3dws556d3vy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreicvkhdiqrf52yxo74eukzo7hixdm54kx7g2de5tb6v3dws556d3vy",
+            "alt": "Title Don\u2019t feed the nano cryptids issue 1\nPurple background with a weird cyber deer"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3ml2fm2v4mc2x",
       "source": "bluesky",
       "author": {
@@ -66,7 +130,7 @@
       "indexedAt": "2026-05-04T19:25:19.261Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 26,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -162,6 +226,48 @@
         "title": "Join Zak Barouh | LEAF & LANCE's Membership",
         "description": "Hi, I'm Zak Barouh. I'm a writer and Tabletop RPG designer. My latest big release is Animon Story, and TTRPG about Kids & their Monster friends!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreia234sbqbxla5f7i2eomexu4fridjqty5ys6awli3fc2pwriy5xgi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mksc43cojk25",
+      "source": "bluesky",
+      "author": {
+        "handle": "dgchapman.bsky.social",
+        "displayName": "D G Chapman",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreihqugoeyufcsebs6rvpcmchq6cacd63mknoy3yj56zvcz7enroese"
+      },
+      "record": {
+        "text": "\ud83c\udf89 I'M OPEN FOR WORK! \ud83c\udf89\n\nWriting, designing and dev/copy editing for tabletop games.\n\nHere are some I made earlier. Email in bio x",
+        "createdAt": "2026-05-01T14:01:22.572Z"
+      },
+      "indexedAt": "2026-05-01T14:01:36.864Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 25,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreia2ftzzmqchphvzle26riimxnt6iadmzzlrumgzqmf2qbl3nnxsce",
+            "alt": "The Haunting of Ypsilon 14"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreifvzhunizdztbg75vrrlzeeni3vmb7j2az4luikcynmg3e3e7bhzi",
+            "alt": "Another Bug Hunt"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreic2fvocm3bx344ksuunhnpnvglugj3zqoir5o5lc3staf5qbvh76a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreic2fvocm3bx344ksuunhnpnvglugj3zqoir5o5lc3staf5qbvh76a",
+            "alt": "GoGoGolf!"
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -436,34 +542,6 @@
       }
     },
     {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mkluputduc2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "Sometimes in the middle of a crowdfunding campaign you take the carefully crafted ads your co-creator made and crop them so that they look like an old school anime eye-catch screen.",
-        "createdAt": "2026-04-29T00:45:56.052Z"
-      },
-      "indexedAt": "2026-04-29T00:46:08.465Z",
-      "replyCount": 2,
-      "repostCount": 8,
-      "likeCount": 99,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreia5ned3p2nwlrihdujyaqlrbzxdqkuosbgjo5wnq3jyx5kutykaqu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreia5ned3p2nwlrihdujyaqlrbzxdqkuosbgjo5wnq3jyx5kutykaqu",
-            "alt": "Two figures, Droog the champion and Mariah Doeheart the Battle Princess look at the camera. Droog is a really big green guy and Mariah is a more average sized blue lady. They both have swords. A BREAK!! logo in the bottom left lets you know they are from the BREAK!! tabletop RPG game."
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mklfh4c4q22y",
       "source": "bluesky",
       "author": {
@@ -490,35 +568,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:lybjwdckg3buhndwoduy7fva/app.bsky.feed.post/3mkkrsf6rtk2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "talmonis.bsky.social",
-        "displayName": "Talmonis",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lybjwdckg3buhndwoduy7fva/bafkreighcjh62f4xw33egw2bdjfl67ib7uuggxsfd3fqdxwgmjw3aknrgu"
-      },
-      "record": {
-        "text": "Back this! Break! is a fun ttrpg that my group has had a blast with. @Kickstarter www.kickstarter.com/projects/gre...",
-        "createdAt": "2026-04-28T14:20:59.358Z"
-      },
-      "indexedAt": "2026-04-28T14:21:01.662Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 3,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/greywizard/start-a-break-rpg-zine-01?ref=android_thanks_share",
-        "title": "START: A companion book for BREAK!! RPG",
-        "description": "A 'quick start' adventure for the ENNIE award-winning BREAK!! RPG. There's never been a better time to get into the game.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lybjwdckg3buhndwoduy7fva/bafkreihwc6vjwiej7bzpdczcfe5jw4np47nnsgduulbqnk5pu7p6qrvlg4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkkqmfoysc2l",
@@ -704,6 +753,38 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mjusu2ha3s2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "Delvers",
+        "createdAt": "2026-04-19T20:41:14.703Z"
+      },
+      "indexedAt": "2026-04-19T20:41:21.653Z",
+      "replyCount": 2,
+      "repostCount": 34,
+      "likeCount": 226,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihxpetbsnud3k2aqs2wst2fsgmdef5zl5zhc4efhpgv3e6yhnqpgi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihxpetbsnud3k2aqs2wst2fsgmdef5zl5zhc4efhpgv3e6yhnqpgi",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjufguuufs2h",
@@ -1134,77 +1215,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjaqaf3s6s23",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "",
-        "createdAt": "2026-04-11T21:01:12.470Z"
-      },
-      "indexedAt": "2026-04-11T21:01:20.250Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 29,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigjd6z3uffpma4xtjgrbn5x4t6me27uk2cr7gewxjdrh7rvpwhrkq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigjd6z3uffpma4xtjgrbn5x4t6me27uk2cr7gewxjdrh7rvpwhrkq",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mj4mokz2kk2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Some TUNNELS & TROLLS fan art (hat tip to Danforth)\n\nT&T had similar design goals to BREAK!! reduce unnecessary complexity and don't take yourself too seriously.\n\nThey have a new edition on KS\nwww.kickstarter.com/projects/reb...",
-        "createdAt": "2026-04-10T05:46:54.483Z"
-      },
-      "indexedAt": "2026-04-10T05:47:21.150Z",
-      "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 45,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifg4hu2532lygnhdjubqznnovo47wttduhpmqcoawoezbnomozrma",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifg4hu2532lygnhdjubqznnovo47wttduhpmqcoawoezbnomozrma",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibmly55zwchb4xrhyvk5djbprm7cdln43buq3slyq7kqyzltwjx5q",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibmly55zwchb4xrhyvk5djbprm7cdln43buq3slyq7kqyzltwjx5q",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreift4kodv3uzqajbgcq2z3f42ozqr24nmjv24rons356zb4ajwij3e",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreift4kodv3uzqajbgcq2z3f42ozqr24nmjv24rons356zb4ajwij3e",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiayc2slip2utyy3daitarxqzqawcoewy3aah4ggay7uag3t4javnu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiayc2slip2utyy3daitarxqzqawcoewy3aah4ggay7uag3t4javnu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/QKl1RE",
       "source": "artstation",
       "author": {
@@ -1316,7 +1326,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 608,
-      "likeCount": 2843,
+      "likeCount": 2844,
       "embed": {
         "type": "images",
         "images": [
@@ -1373,7 +1383,7 @@
       "indexedAt": "2026-03-13T20:24:41.150Z",
       "replyCount": 1,
       "repostCount": 20,
-      "likeCount": 24,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/call_to_action/c1feabef-c7a5-4ec2-aa3e-052371c4aaf6/landing",
@@ -2841,7 +2851,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2649,
-      "likeCount": 15626,
+      "likeCount": 15627,
       "embed": {
         "type": "images",
         "images": [
