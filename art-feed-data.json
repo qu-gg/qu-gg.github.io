@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08T12:21:36.013563Z",
+  "lastUpdated": "2026-05-09T00:18:55.960800Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,111 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:hrbhyfjkfzlifttbmop4it3q/app.bsky.feed.post/3mlecyosko22s",
+      "source": "bluesky",
+      "author": {
+        "handle": "dorkland.itch.io",
+        "displayName": "Christopher Helton",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiekekxl42yhg4zwp4tn567pajrvcn32zzvdxxfntgkcfcneg7oeii"
+      },
+      "record": {
+        "text": "Hey, everyone! I have great news, because My Action-Heroes #TTRPG is back in print at @drivethrurpg.com and fully updated! You can get it in print or as a PDF at the site now! Pick up my game today! If you have any questions, please don't hesitate to ask!",
+        "createdAt": "2026-05-08T18:05:17.841Z"
+      },
+      "indexedAt": "2026-05-08T18:05:21.665Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com//product/433788/action-heroes-adventure-role-playing?affiliate_id=2118176",
+        "title": "Action-Heroes: Adventure Role-Playing - Dorkland Press | DriveThruRPG",
+        "description": "I am in the process of updaring the POD version, so please be patient.\nAction-Heroes\u00a0is a collaborative tabletop role-playing game where you play super-heroes, action heroes and other larger than life...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiflq7x3rbtd23mft7qwnr4ben6kwjy3oi5i5cyblcwwuwb232qfry"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:w6hbprybav5u4rn4hes5oaxn/app.bsky.feed.post/3mle6xq3f222b",
+      "source": "bluesky",
+      "author": {
+        "handle": "dungeonsandpossums.com",
+        "displayName": "Dungeons & Possums",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreibjj3jytkwguowjkpzktc4wqgsfg44n7a6y7wuseq3my22in3pvli"
+      },
+      "record": {
+        "text": "Hello nerds!\n\nGo to my blog.\n\ndungeonsandpossums.com/2026/05/a-z-...\nRead some thoughts on the beginnings of weird fiction and its impact on D&D. \n\ndungeonsandpossums.com/2026/05/foll...\nRead about the value of commenting on blogs, then download a free pamphlet dungeon adventure for B/X #dnd clones.",
+        "createdAt": "2026-05-08T16:53:10.655Z"
+      },
+      "indexedAt": "2026-05-08T16:53:17.364Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreiawg3jjy65fv2catih2q5zyanfystqnt62prijlhonkytdtsn4aam",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreiawg3jjy65fv2catih2q5zyanfystqnt62prijlhonkytdtsn4aam",
+            "alt": "The cover for THE ALCHEMIST'S OUBLIETTE, a dungeon adventure. It depicts a wizard and a warrior with an axe facing off against a melting monster man in a dark hallway. "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreifqjnstijmea6ns3yt6g7xbxqxrvxiwoqqozxzggtdjp7nzu3wsom",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreifqjnstijmea6ns3yt6g7xbxqxrvxiwoqqozxzggtdjp7nzu3wsom",
+            "alt": "A screenshot of a partial map from THE ALCHEMIST'S OUBLIETTE "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreihssdp24ljlqv42gse72k4bc5mn4phlutuvkfqgqdtvqm32q2tola",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreihssdp24ljlqv42gse72k4bc5mn4phlutuvkfqgqdtvqm32q2tola",
+            "alt": "A screenshot from THE ALCHEMIST'S OUBLIETTE showing a Slob (melting lady monster) and a stone axe"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreib35zjn3pbf52bqrmp2ykrpdnmglatxxirxem7jatqgetq7h4h2uu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:w6hbprybav5u4rn4hes5oaxn/bafkreib35zjn3pbf52bqrmp2ykrpdnmglatxxirxem7jatqgetq7h4h2uu",
+            "alt": "Screenshot from the bestiary of THE ALCHEMIST'S OUBLIETTE showing Akul, a centipede man"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:qtu5u37sum46z6z47m4kwmdg/app.bsky.feed.post/3mldvzqqei22e",
+      "source": "bluesky",
+      "author": {
+        "handle": "cozyrpgreviews.bsky.social",
+        "displayName": "Robin J \ud83d\udd1c UKGE",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreidotxzvrsio6z2blecacavg4uvurzvqo23p37a33mqvl2jf23gysi"
+      },
+      "record": {
+        "text": "@bobworldbuilder.bsky.social is running a large-scale, single question poll, just for curiosity: which is your favourite TTRPG?\n\nI wanted to do my part to share it around non-D&D-exclusive spaces.\n\nSo pick (or write-in) your favourite here :)\n\nforms.gle/A8TBNsCWq9Xe...",
+        "createdAt": "2026-05-08T14:13:14.776Z"
+      },
+      "indexedAt": "2026-05-08T14:13:17.766Z",
+      "replyCount": 2,
+      "repostCount": 31,
+      "likeCount": 43,
+      "embed": {
+        "type": "external",
+        "uri": "https://forms.gle/A8TBNsCWq9XeQ6KB7",
+        "title": "Poll: What Is Your Favorite TTRPG? (2026)",
+        "description": "This is a simple poll with a lofty goal! With your help, we can reach across the entire tabletop roleplaying game community, both online and offline, to learn which TTRPGs are the most popular in 2026...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreicv3lbmbyrp3ivxayiclmdpbcalh4uowskx6lqvlrdpjszvco5xga"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mldpdnwgyc26",
       "source": "bluesky",
       "author": {
@@ -64,9 +169,9 @@
         "createdAt": "2026-05-08T12:13:31.109Z"
       },
       "indexedAt": "2026-05-08T12:13:39.666Z",
-      "replyCount": 0,
-      "repostCount": 0,
-      "likeCount": 3,
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -78,6 +183,53 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mldm2furak2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "losthavenart.bsky.social",
+        "displayName": "Lost Haven Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
+      },
+      "record": {
+        "text": "Today is my birthday. I've had 37 of them in a row. Some love is always appreciated, and I feel like nudging folks towards my Ko-Fi seems reasonable for the occasion. There are goodies over there.\n\nko-fi.com/losthavenstu...",
+        "createdAt": "2026-05-08T11:14:39.488Z"
+      },
+      "indexedAt": "2026-05-08T11:14:45.460Z",
+      "replyCount": 8,
+      "repostCount": 14,
+      "likeCount": 32,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiaw3ftwsw3wcr5dolmcnjslk7aivdhcirrosertyw5wpomm62ixly",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiaw3ftwsw3wcr5dolmcnjslk7aivdhcirrosertyw5wpomm62ixly",
+            "alt": "Promo graphic for Skies Above giving a very brief overview that it's a hrog inspired game with crafting, crafting and a world floating in the sky"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreidpfi7gmgnxrvoic6l2kzffgd5etroon26lgff3wwaq7v7jtwvyua",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreidpfi7gmgnxrvoic6l2kzffgd5etroon26lgff3wwaq7v7jtwvyua",
+            "alt": "Promo graphic for Abbadon putting that it's a Diablo inspired ttrpg uses a deck of playing cards, customisable archetypes and monsters"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreicplbjw37wg3vi2dsexef5kapspa3blue3bcfjotoyvumh7pkprya",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreicplbjw37wg3vi2dsexef5kapspa3blue3bcfjotoyvumh7pkprya",
+            "alt": "Promo graphic for Stone highlighting its a solo game, is uses runes and d6s and that you play as a dwarf"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreihpegtmlgwbpk6flectcd47k7aqahkkzyvdz5kwmrxqazlfs6htnm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreihpegtmlgwbpk6flectcd47k7aqahkkzyvdz5kwmrxqazlfs6htnm",
+            "alt": "Promo graphic for Ko-Fi letting viewers know my games, prints and other stuff are available there."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mldlidwazk26",
@@ -93,8 +245,8 @@
       },
       "indexedAt": "2026-05-08T11:04:35.359Z",
       "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 13,
+      "repostCount": 2,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -121,8 +273,8 @@
       },
       "indexedAt": "2026-05-07T17:57:11.367Z",
       "replyCount": 3,
-      "repostCount": 20,
-      "likeCount": 130,
+      "repostCount": 25,
+      "likeCount": 148,
       "embed": {
         "type": "images",
         "images": [
@@ -279,7 +431,7 @@
       "indexedAt": "2026-05-06T14:03:25.068Z",
       "replyCount": 3,
       "repostCount": 25,
-      "likeCount": 68,
+      "likeCount": 69,
       "embed": {
         "type": "images",
         "images": [
@@ -553,38 +705,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mks6a2w6os2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
-      },
-      "record": {
-        "text": "My band's new album is out! AND its Bandcamp friday so that means we get all the profits from sales! we're also selling a physical CD since it is of course the year 1997.\n\nteencat.bandcamp.com/album/up-all...",
-        "createdAt": "2026-05-01T12:52:01.393Z"
-      },
-      "indexedAt": "2026-05-01T12:52:02.962Z",
-      "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 40,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiao7p3lb3melbonltdxyabya6v6ncnnivh6xmiljvprdriytolx2q",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiao7p3lb3melbonltdxyabya6v6ncnnivh6xmiljvprdriytolx2q",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkrvjuq5uk24",
       "source": "bluesky",
       "author": {
@@ -639,35 +759,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mkqmcdikcs2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
-      },
-      "record": {
-        "text": "Designed in the DMV is a collective of tabletop game designers across DC, Maryland, and Virginia (not just the DC metro area). We promote events where analog gaming enthusiasts can meet designers and play our games.\n\nInterested? Sign up for our newsletter!\ndmv-designed-games.beehiiv.com",
-        "createdAt": "2026-04-30T21:58:30.431Z"
-      },
-      "indexedAt": "2026-04-30T21:58:31.871Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 10,
-      "embed": {
-        "type": "external",
-        "uri": "https://dmv-designed-games.beehiiv.com/",
-        "title": "Home | Tabletop Games Designed in the DMV",
-        "description": "Play analog games by creators local to DC-MD-VA",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreiggzc2bpdsyvaoaotosmkqsc4tyxcpkei7jd3fl5vukpy4zipas54"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkqdk4sfqc2k",
@@ -1239,66 +1330,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:j2xg7klhbmawzlk6uqa7huhg/app.bsky.feed.post/3mjgxorheek2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "jezgordon.bsky.social",
-        "displayName": "Jez Gordon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j2xg7klhbmawzlk6uqa7huhg/bafkreifpo75bfs5ptxv4o2tb3pixcssnp4zccrg4lbmjalz6p6kdas66py"
-      },
-      "record": {
-        "text": "Hey #PortfolioDay!\n\nI\u2019m an Australian freelance TTRPG illustrator looking for single and small order full page bw commissions. \n\nIf you like what you see lemme know! \n\nMore pics in comments and gallery over here: jezgordon.myportfolio.com",
-        "createdAt": "2026-04-14T08:30:29.866Z"
-      },
-      "indexedAt": "2026-04-14T08:30:35.154Z",
-      "replyCount": 3,
-      "repostCount": 12,
-      "likeCount": 43,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:j2xg7klhbmawzlk6uqa7huhg/bafkreiew2jflnu25ujy7ve6kfbyxdqycdcoj3schdh7zpscd3jkrt32ema",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:j2xg7klhbmawzlk6uqa7huhg/bafkreiew2jflnu25ujy7ve6kfbyxdqycdcoj3schdh7zpscd3jkrt32ema",
-            "alt": "Black and white digital illustration by a Jez a Gordon of an adventuring party about to meet a bitter end at the huge clawed hands of a crowned lichmech."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjftor5gns2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "THE OSR NEEDS ANOTHER HACK",
-        "createdAt": "2026-04-13T21:46:14.798Z"
-      },
-      "indexedAt": "2026-04-13T21:46:23.355Z",
-      "replyCount": 3,
-      "repostCount": 3,
-      "likeCount": 61,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifr7uaim33eo5ugqs2t7tp7ideaigwolpch6wv6yhkuclwtr4thqi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifr7uaim33eo5ugqs2t7tp7ideaigwolpch6wv6yhkuclwtr4thqi",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/0lyr1Y",
       "source": "artstation",
       "author": {
@@ -1863,7 +1894,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1243,
-      "likeCount": 6546,
+      "likeCount": 6545,
       "embed": {
         "type": "images",
         "images": [
@@ -2197,7 +2228,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 444,
-      "likeCount": 1866,
+      "likeCount": 1865,
       "embed": {
         "type": "images",
         "images": [
@@ -2782,7 +2813,7 @@
       },
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
-      "repostCount": 456,
+      "repostCount": 457,
       "likeCount": 2441,
       "embed": {
         "type": "images",
@@ -2950,7 +2981,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2648,
-      "likeCount": 15627,
+      "likeCount": 15626,
       "embed": {
         "type": "images",
         "images": [
