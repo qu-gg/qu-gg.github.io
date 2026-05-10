@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T00:17:20.139309Z",
+  "lastUpdated": "2026-05-10T12:12:23.897303Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,63 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mlij4f6rvc2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
+      },
+      "record": {
+        "text": "New TTRPG adventure from an Indonesian creator!\n\nMy friend, Kerisian Kult, has just released his first OSR adventure, Ascension! It is compatible with M\u00d6RK BORG!\n\nCheck it out!\n\nkerisiankult.itch.io/ascension-zine\n\n#ttrpg #osr",
+        "createdAt": "2026-05-10T10:05:23.377Z"
+      },
+      "indexedAt": "2026-05-10T10:05:32.263Z",
+      "replyCount": 0,
+      "repostCount": 9,
+      "likeCount": 13,
+      "embed": {
+        "type": "external",
+        "uri": "https://kerisiankult.itch.io/ascension-zine",
+        "title": "Ascension | M\u00d6RK BORG - Oneshot Dungeon Crawl by Kerisian Kult",
+        "description": "",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiclervyxsjjuk4hfwwtroyomajosfdul5kyyo7zqp5gnvamdh22v4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mlhjshibd22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I've been aggressively sharing START stuff and that can be annoying (sorry for that) - but this is part of the reason. We want to make a lot of books! These will all exist in some form or another no matter what, but I'd love to be able to justify being able to go all out on all of them.",
+        "createdAt": "2026-05-10T00:45:04.241Z"
+      },
+      "indexedAt": "2026-05-10T00:45:06.570Z",
+      "replyCount": 7,
+      "repostCount": 10,
+      "likeCount": 49,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehp5c7rl5vq7soyt7dvo76jim6sv2q2sgi2o4upuaeaiwg77oyjm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehp5c7rl5vq7soyt7dvo76jim6sv2q2sgi2o4upuaeaiwg77oyjm",
+            "alt": "The covers for BREAK!! and its first supplement, START, in a lineup with planned future titles like GENUS, BIOMES, and RUINS"
+          }
+        ]
+      },
+      "repostBy": null
+    },
     {
       "uri": "at://did:plc:evywifculz2z2fzmuas7kgiy/app.bsky.feed.post/3mlganaunhl2q",
       "source": "bluesky",
@@ -153,7 +210,7 @@
       "indexedAt": "2026-05-08T16:53:17.364Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 2,
+      "likeCount": 3,
       "embed": {
         "type": "images",
         "images": [
@@ -200,7 +257,7 @@
       "indexedAt": "2026-05-08T14:13:17.766Z",
       "replyCount": 2,
       "repostCount": 38,
-      "likeCount": 52,
+      "likeCount": 53,
       "embed": {
         "type": "external",
         "uri": "https://forms.gle/A8TBNsCWq9XeQ6KB7",
@@ -229,7 +286,7 @@
       "indexedAt": "2026-05-08T12:13:39.666Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 42,
+      "likeCount": 43,
       "embed": {
         "type": "images",
         "images": [
@@ -257,7 +314,7 @@
       "indexedAt": "2026-05-08T11:14:45.460Z",
       "replyCount": 8,
       "repostCount": 14,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -746,9 +803,9 @@
         "createdAt": "2026-05-01T10:16:26.781Z"
       },
       "indexedAt": "2026-05-01T10:16:35.766Z",
-      "replyCount": 2,
+      "replyCount": 3,
       "repostCount": 4,
-      "likeCount": 42,
+      "likeCount": 43,
       "embed": {
         "type": "images",
         "images": [
@@ -1261,7 +1318,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
       "repostCount": 1421,
-      "likeCount": 6231,
+      "likeCount": 6230,
       "embed": {
         "type": "images",
         "images": [
@@ -2601,7 +2658,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2359,
-      "likeCount": 11900,
+      "likeCount": 11899,
       "embed": {
         "type": "images",
         "images": [
