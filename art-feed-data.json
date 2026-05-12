@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T00:19:46.274466Z",
+  "lastUpdated": "2026-05-12T12:32:38.172176Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,100 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mlnrlehrnk2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "HIS MAJESTY THE WORM emulates Dungeon Meshi with its exchange of beats between exploring and resting.\n\nPart of the challenge in The Castle Automatic is finding safe spaces to rest. Will these guys make it out safe?",
+        "createdAt": "2026-05-12T12:20:14.566Z"
+      },
+      "indexedAt": "2026-05-12T12:20:18.765Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiguu73jgchuwuzfzfw5pxohjrmfhf4gnbvedhvcacii326sqvnlca",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiguu73jgchuwuzfzfw5pxohjrmfhf4gnbvedhvcacii326sqvnlca",
+            "alt": "An RPG page with a half page illustration of an adventuring party tending to their wounds. Art by Felipe Faria."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mlnbpk6dvc23",
+      "source": "bluesky",
+      "author": {
+        "handle": "underpalewater.bsky.social",
+        "displayName": "Underpalewater",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-05-12T07:36:14.848Z"
+      },
+      "indexedAt": "2026-05-12T07:36:22.665Z",
+      "replyCount": 4,
+      "repostCount": 249,
+      "likeCount": 1260,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihbx3gfpscomudz5w3xswizih635mhtwgxxvvogu3wx3wg5vpq6wm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihbx3gfpscomudz5w3xswizih635mhtwgxxvvogu3wx3wg5vpq6wm",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyv2bepi77rskixyrbcixphzistvlmx4ueztwgziwn7n4vljerre",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreihyv2bepi77rskixyrbcixphzistvlmx4ueztwgziwn7n4vljerre",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:lglyzxbrd5vgmuqg24jo2yi7/app.bsky.feed.post/3mlmqftridk2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "percypropa.bsky.social",
+        "displayName": "Kyle Tam is Climbing Mt Moriah",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreihae7ew3pmb4lgxswmgv562xn7lgycaxn3c6jpbfsyh5qi6frfb2m"
+      },
+      "record": {
+        "text": "MORIAH: The Final Cut is COMING! With a stretch goal for (gasp) FICTION???\n\nMore to look out for!!\n\nwww.backerkit.com/call_to_acti...",
+        "createdAt": "2026-05-12T02:26:35.806Z"
+      },
+      "indexedAt": "2026-05-12T02:26:41.768Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/call_to_action/0488fd17-ae4a-4347-b55e-b8e2047fa4f1/landing",
+        "title": "Get Ready for MORIAH: Final Cut",
+        "description": "From Plus One Exp & Friends - Get Ready for MORIAH: Final Cut",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreibogn7rve43wsytcf3noov6hdh3zk52xvp6emfzvfsgcmqseh5r64"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3mlli57yum22a",
       "source": "bluesky",
       "author": {
@@ -64,9 +158,9 @@
         "createdAt": "2026-05-11T14:25:56.957Z"
       },
       "indexedAt": "2026-05-11T14:26:04.774Z",
-      "replyCount": 4,
-      "repostCount": 18,
-      "likeCount": 48,
+      "replyCount": 5,
+      "repostCount": 24,
+      "likeCount": 62,
       "embed": {
         "type": "images",
         "images": [
@@ -257,7 +351,7 @@
       "indexedAt": "2026-05-10T12:24:14.462Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 19,
+      "likeCount": 21,
       "embed": {
         "type": "external",
         "uri": "https://traversefantasy.blogspot.com/2026/05/cinco-may-2026.html?m=1",
@@ -581,7 +675,7 @@
       "indexedAt": "2026-05-08T11:04:35.359Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -766,7 +860,7 @@
       "indexedAt": "2026-05-06T14:03:25.068Z",
       "replyCount": 3,
       "repostCount": 25,
-      "likeCount": 70,
+      "likeCount": 71,
       "embed": {
         "type": "images",
         "images": [
@@ -838,38 +932,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7cjzh4bag3d6kmx7nnoh2sgzwekgok6rm6p45lyxheyfbiixrpi",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreic7cjzh4bag3d6kmx7nnoh2sgzwekgok6rm6p45lyxheyfbiixrpi",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3ml4aag73722x",
-      "source": "bluesky",
-      "author": {
-        "handle": "evlynmoreau.bsky.social",
-        "displayName": "Evlyn Moreau",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreifzpirz3vukddnmepgnfrcaq2sqjhuxe7mx3douxi3g4ylxonkeyy"
-      },
-      "record": {
-        "text": "Started working on my scrappy \u201cdo in one week\u201d zine for #CY_BORG",
-        "createdAt": "2026-05-05T12:54:38.102Z"
-      },
-      "indexedAt": "2026-05-05T12:54:44.573Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 49,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreicvkhdiqrf52yxo74eukzo7hixdm54kx7g2de5tb6v3dws556d3vy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreicvkhdiqrf52yxo74eukzo7hixdm54kx7g2de5tb6v3dws556d3vy",
-            "alt": "Title Don\u2019t feed the nano cryptids issue 1\nPurple background with a weird cyber deer"
           }
         ]
       },
@@ -1261,7 +1323,7 @@
       "indexedAt": "2026-04-19T20:41:21.653Z",
       "replyCount": 2,
       "repostCount": 39,
-      "likeCount": 251,
+      "likeCount": 252,
       "embed": {
         "type": "images",
         "images": [
@@ -1293,7 +1355,7 @@
       "indexedAt": "2026-04-19T16:41:25.160Z",
       "replyCount": 5,
       "repostCount": 6,
-      "likeCount": 42,
+      "likeCount": 43,
       "embed": {
         "type": "images",
         "images": [
@@ -1448,8 +1510,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
-      "repostCount": 1421,
-      "likeCount": 6231,
+      "repostCount": 1424,
+      "likeCount": 6254,
       "embed": {
         "type": "images",
         "images": [
@@ -1588,8 +1650,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 609,
-      "likeCount": 2844,
+      "repostCount": 612,
+      "likeCount": 2860,
       "embed": {
         "type": "images",
         "images": [
@@ -1632,35 +1694,6 @@
       "link": "https://www.artstation.com/artwork/4NKV9Y"
     },
     {
-      "uri": "at://did:plc:xn6s62p5a2fvfez4f2ihzbag/app.bsky.feed.post/3mgxqodm2o22s",
-      "source": "bluesky",
-      "author": {
-        "handle": "toastyseahorse.bsky.social",
-        "displayName": "Toasty Seahorse Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreie55x2nfghlf4hkbniqgheircopnrwqqdmhmjljv64w22o2up2wry"
-      },
-      "record": {
-        "text": "The Old The Cold The Bold: 2nd Edition goes live on May 4th www.backerkit.com/call_to_acti... a 1-3 players + GM #TTRPG about vigilantism, the criminal gig economy, and inspired by the mechanics of Lady Blackbird.",
-        "createdAt": "2026-03-13T20:24:39.824Z"
-      },
-      "indexedAt": "2026-03-13T20:24:41.150Z",
-      "replyCount": 0,
-      "repostCount": 25,
-      "likeCount": 30,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/call_to_action/c1feabef-c7a5-4ec2-aa3e-052371c4aaf6/landing",
-        "title": "The Old The Cold The Bold: 2nd Edition",
-        "description": "From Toasty Seahorse Studio - The Old The Cold The Bold: 2nd Edition",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreieru4t5fn4bbcoplxl4huetkwnrqivcrls7iu64aflpfhc2nxyhie"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mgunyfvsc223",
       "source": "bluesky",
       "author": {
@@ -1674,8 +1707,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 762,
-      "likeCount": 3865,
+      "repostCount": 763,
+      "likeCount": 3877,
       "embed": {
         "type": "images",
         "images": [
@@ -2026,8 +2059,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1244,
-      "likeCount": 6551,
+      "repostCount": 1248,
+      "likeCount": 6563,
       "embed": {
         "type": "images",
         "images": [
@@ -2190,8 +2223,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 663,
-      "likeCount": 2931,
+      "repostCount": 668,
+      "likeCount": 2944,
       "embed": {
         "type": "images",
         "images": [
@@ -2360,8 +2393,8 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 443,
-      "likeCount": 1866,
+      "repostCount": 445,
+      "likeCount": 1872,
       "embed": {
         "type": "images",
         "images": [
@@ -2451,8 +2484,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
-      "repostCount": 1956,
-      "likeCount": 8486,
+      "repostCount": 1957,
+      "likeCount": 8490,
       "embed": {
         "type": "images",
         "images": [
@@ -2704,8 +2737,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2358,
-      "likeCount": 11898,
+      "repostCount": 2360,
+      "likeCount": 11904,
       "embed": {
         "type": "images",
         "images": [
@@ -2761,8 +2794,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 728,
-      "likeCount": 3356,
+      "repostCount": 730,
+      "likeCount": 3361,
       "embed": {
         "type": "images",
         "images": [
@@ -2863,7 +2896,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 13,
       "repostCount": 549,
-      "likeCount": 3048,
+      "likeCount": 3050,
       "embed": {
         "type": "images",
         "images": [
@@ -2891,7 +2924,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 176,
-      "likeCount": 1289,
+      "likeCount": 1291,
       "embed": {
         "type": "images",
         "images": [
@@ -2919,7 +2952,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1512,
+      "likeCount": 1515,
       "embed": {
         "type": "images",
         "images": [
@@ -2947,7 +2980,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 457,
-      "likeCount": 2442,
+      "likeCount": 2445,
       "embed": {
         "type": "images",
         "images": [
@@ -3086,7 +3119,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 407,
-      "likeCount": 2370,
+      "likeCount": 2373,
       "embed": {
         "type": "images",
         "images": [
@@ -3113,8 +3146,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2648,
-      "likeCount": 15628,
+      "repostCount": 2650,
+      "likeCount": 15641,
       "embed": {
         "type": "images",
         "images": [
@@ -3186,7 +3219,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 455,
-      "likeCount": 2441,
+      "likeCount": 2443,
       "embed": {
         "type": "images",
         "images": [
