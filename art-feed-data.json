@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T00:22:40.780119Z",
+  "lastUpdated": "2026-05-14T12:29:23.632290Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mls7ongg7c2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "theuglygoblin.bsky.social",
+        "displayName": "The Ugly Goblin",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreifqmibd5puqj7lwqf32uz2rjqx4sxqqnxma5kqkkcrvla4kym3eaq"
+      },
+      "record": {
+        "text": "Wooohh my TTRPG, GOBLINZ is now on DriveThruRPG!\n\nwww.drivethrurpg.com/en/product/5...",
+        "createdAt": "2026-05-14T06:43:15.961Z"
+      },
+      "indexedAt": "2026-05-14T06:43:19.160Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com/en/product/567486/goblinz-the-classless-ttrpg-demo",
+        "title": "GOBLINZ: The Classless TTRPG (DEMO) - Gabriel Galway | DriveThruRPG",
+        "description": "GOBLINZ (DEMO)\nThe Classless TTRPG\n\nIn Goblinz, you play as an Adventurer who fights monsters and slowly becomes a lil freak\u2122.\nAs you level up, you draw power from the forces of reality that steadily ...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreibrjbhr4ddfgxomajbtehbnaccnbiye6s7zmgnxpunkxpgypckxia"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:mcapipeayog4aynz6apm2qih/app.bsky.feed.post/3mlqwu5st3k2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "thecastlebuilder.bsky.social",
+        "displayName": "paul",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mcapipeayog4aynz6apm2qih/bafkreigaepwynk5ewvwin6g5mdmzz76i2qgmxsqs6umgbxbmelugzysfoe"
+      },
+      "record": {
+        "text": "Ridge City Riders is now live on itch!\n\nRidge City Riders is a GM-less storytelling #TTRPG that uses a unique dice-exchanging system. Rip through Ridge City on customized hoverbikes, use spare parts to give your fellow riders an edge, and dream of a brighter future. I hope you check it out!",
+        "createdAt": "2026-05-13T18:32:37.500Z"
+      },
+      "indexedAt": "2026-05-13T18:32:40.273Z",
+      "replyCount": 1,
+      "repostCount": 18,
+      "likeCount": 39,
+      "embed": {
+        "type": "external",
+        "uri": "https://thecastlebuilder.itch.io/ridge-city-riders",
+        "title": "Ridge City Riders by paul doyle",
+        "description": "",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mcapipeayog4aynz6apm2qih/bafkreidy43cgfdd3mhazj36fjq3w5ryho6n74tqltmsz4dwnyqrpuphetq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:nklihk5cftitsywyqbzzrugw/app.bsky.feed.post/3mlqobzblyc2m",
       "source": "bluesky",
       "author": {
@@ -65,8 +123,8 @@
       },
       "indexedAt": "2026-05-13T15:59:19.864Z",
       "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 33,
+      "repostCount": 19,
+      "likeCount": 47,
       "embed": {
         "type": "external",
         "uri": "https://bakenshake09.itch.io/prosperos-trust",
@@ -95,7 +153,7 @@
       "indexedAt": "2026-05-13T14:11:59.568Z",
       "replyCount": 1,
       "repostCount": 0,
-      "likeCount": 21,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -121,9 +179,9 @@
         "createdAt": "2026-05-13T14:01:32.764Z"
       },
       "indexedAt": "2026-05-13T14:01:44.371Z",
-      "replyCount": 2,
-      "repostCount": 11,
-      "likeCount": 65,
+      "replyCount": 6,
+      "repostCount": 17,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -170,6 +228,35 @@
       }
     },
     {
+      "uri": "at://did:plc:eeyzv4thx5r4oeqizxc63tev/app.bsky.feed.post/3mloke4x2vf2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "geeknative.bsky.social",
+        "displayName": "Geek Native",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eeyzv4thx5r4oeqizxc63tev/bafkreiejspf4trx5c46mpgakbsqzk3bcvorc5mhron7zi4eqfts5skntzy"
+      },
+      "record": {
+        "text": "Reynaldo and Grey Wizard have returned with START, a companion for the BREAK!! roleplaying game. This new hardcover book offers a tutorial adventure and sandbox region set within the sunless Shadowed Lands.",
+        "createdAt": "2026-05-12T19:43:34.000Z"
+      },
+      "indexedAt": "2026-05-12T19:43:35.868Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.geeknative.com/234665/break-start-expanding-the-ennie-winning-anime-ttrpg/?utm_source=bluesky&utm_medium=social&utm_campaign=fedica-GNBlogWave1",
+        "title": "BREAK!! START: Expanding the ENNIE-winning anime TTRPG",
+        "description": "Discover BREAK!! START, the new companion book for the gold ENNIE-winning anime roleplaying game. Explore the Shadowed Lands with this 200-page hardcover expansion.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eeyzv4thx5r4oeqizxc63tev/bafkreidds3s7rtmstbbj3vytiw37oe6ffftikytj5tdjl34nldolal7vpe"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:2klas4fif3tt2h2yth33spm6/app.bsky.feed.post/3mlocqltiad2y",
       "source": "bluesky",
       "author": {
@@ -184,7 +271,7 @@
       "indexedAt": "2026-05-12T17:27:24.461Z",
       "replyCount": 0,
       "repostCount": 9,
-      "likeCount": 26,
+      "likeCount": 27,
       "embed": {
         "type": "external",
         "uri": "https://www.gamesradar.com/tabletop-gaming/this-award-winning-rpg-combines-d-and-d-and-zelda-into-something-bigger-and-more-evocative-for-its-first-campaign/",
@@ -332,7 +419,7 @@
       "indexedAt": "2026-05-12T12:20:18.765Z",
       "replyCount": 1,
       "repostCount": 4,
-      "likeCount": 48,
+      "likeCount": 49,
       "embed": {
         "type": "images",
         "images": [
@@ -363,8 +450,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 476,
-      "likeCount": 2533,
+      "repostCount": 478,
+      "likeCount": 2544,
       "embed": {
         "type": "images",
         "images": [
@@ -397,7 +484,7 @@
       "indexedAt": "2026-05-12T03:29:11.666Z",
       "replyCount": 6,
       "repostCount": 145,
-      "likeCount": 1235,
+      "likeCount": 1236,
       "embed": {
         "type": "images",
         "images": [
@@ -457,8 +544,8 @@
       },
       "indexedAt": "2026-05-11T19:21:12.566Z",
       "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 8,
+      "repostCount": 2,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "http://dlvr.it/TSTwM9",
@@ -1062,7 +1149,7 @@
       "indexedAt": "2026-05-07T17:57:11.367Z",
       "replyCount": 3,
       "repostCount": 25,
-      "likeCount": 152,
+      "likeCount": 153,
       "embed": {
         "type": "images",
         "images": [
@@ -1074,35 +1161,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mlaahhom722n",
-      "source": "bluesky",
-      "author": {
-        "handle": "luckynewtgames.bsky.social",
-        "displayName": "Mama Newt \ud83e\udd8e\ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreib56zsektiqx2pxthdkzk7kj7egxiwddov7leaqo64ozo7ng3xyjm"
-      },
-      "record": {
-        "text": "On that note, only 4 days left for the Out In Public Tabletop Game Jam! \n\nitch.io/jam/out-in-p...",
-        "createdAt": "2026-05-07T03:09:13.508Z"
-      },
-      "indexedAt": "2026-05-07T03:09:18.665Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 4,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/jam/out-in-public-tabletop-game-jam",
-        "title": "Out In Public Tabletop Game Jam",
-        "description": "A game jam from 2026-04-17 to 2026-05-11 hosted by Lucky Newt Games. Please Note This game jam is for analogue games only. Tabletop roleplaying games, card games, print-n-plays, one shots - they're al...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreico3ja63now4sumnmxjsgwwyu53sud6osgagr4ow2k75lhgsba6ny"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3ml73clgvhk2c",
@@ -1361,8 +1419,8 @@
       },
       "indexedAt": "2026-04-28T13:59:53.966Z",
       "replyCount": 4,
-      "repostCount": 64,
-      "likeCount": 119,
+      "repostCount": 65,
+      "likeCount": 123,
       "embed": {
         "type": "images",
         "images": [
@@ -1505,34 +1563,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mjx5cpxfkk2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "GREY HACK OSR",
-        "createdAt": "2026-04-20T18:53:43.873Z"
-      },
-      "indexedAt": "2026-04-20T18:53:53.052Z",
-      "replyCount": 0,
-      "repostCount": 23,
-      "likeCount": 148,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaceimj4exu6ged73lba5oiosohmhytpkigqrslati6nhsjpigxs4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaceimj4exu6ged73lba5oiosohmhytpkigqrslati6nhsjpigxs4",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mjhjhjld4s2a",
       "source": "bluesky",
       "author": {
@@ -1547,7 +1577,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 27,
       "repostCount": 1433,
-      "likeCount": 6285,
+      "likeCount": 6287,
       "embed": {
         "type": "images",
         "images": [
@@ -1687,7 +1717,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 618,
-      "likeCount": 2883,
+      "likeCount": 2884,
       "embed": {
         "type": "images",
         "images": [
@@ -1744,7 +1774,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 765,
-      "likeCount": 3891,
+      "likeCount": 3892,
       "embed": {
         "type": "images",
         "images": [
@@ -2521,7 +2551,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 55,
       "repostCount": 1959,
-      "likeCount": 8495,
+      "likeCount": 8497,
       "embed": {
         "type": "images",
         "images": [
@@ -2988,7 +3018,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 250,
-      "likeCount": 1516,
+      "likeCount": 1515,
       "embed": {
         "type": "images",
         "images": [
@@ -3183,7 +3213,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2651,
-      "likeCount": 15655,
+      "likeCount": 15654,
       "embed": {
         "type": "images",
         "images": [
