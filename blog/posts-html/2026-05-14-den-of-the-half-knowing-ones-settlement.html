@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den of the Half-Knowing Ones (Settlement) - Studio Quagg</title>
+    <meta name="description" content="As prep for the weekly BREAK!! campaign, we are looking to build out a goofy lil’ Goblin druidic settlement that has existed within the Spirits’ Grove since the start of the 4th Aeon. The party has...">
+    <meta property="og:title" content="Den of the Half-Knowing Ones (Settlement)">
+    <meta property="og:description" content="As prep for the weekly BREAK!! campaign, we are looking to build out a goofy lil’ Goblin druidic settlement that has existed within the Spirits’ Grove since the start of the 4th Aeon. The party has...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-05-14-den-of-the-half-knowing-ones-settlement.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Den of the Half-Knowing Ones (Settlement)">
+    <meta name="twitter:description" content="As prep for the weekly BREAK!! campaign, we are looking to build out a goofy lil’ Goblin druidic settlement that has existed within the Spirits’ Grove since the start of the 4th Aeon. The party has...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Den of the Half-Knowing Ones (Settlement)</h1>
+                <div class="post-meta">
+                    <span class="post-date">May 14, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">BREAK!! Homebrew</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>As prep for the weekly BREAK!! campaign, we are looking to build out a goofy lil&rsquo; Goblin druidic settlement that has existed within the Spirits&rsquo; Grove since the start of the 4th Aeon. The party has wrapped up shenanigans in the <a href="https://its.quagg.studio/blog/posts-html/2026-04-23-the-botanical-consortium-adventure-site.html">Botanical Consortium</a> (<a href="https://its.quagg.studio/blog/posts-html/2026-05-07-session-report-43-break-a-picnic-and-a-portal.html">Session Report</a> on this) and is moving onwards to seek the wisdom of the swamp druids.</p>
+<p>I have high hopes for running this settlement in a memorable fashion! Pulling from some fun sources here (Discworld, Hitchhiker&rsquo;s Guide, <a href="https://marcelhampel.artstation.com/albums/2474449">Marcel Hampel</a>) and it represents a great contrast to the party&rsquo;s interactions with goblinfolk thus far (Buried Kingdom and&hellip;whatever Abra is). I&rsquo;ve yet to figure out a succinct-yet-flavorful template for settlement building (read as: the least prep w/ most improv-ability), but, ah, call this an ongoing attempt.</p>
+<h3 id="den-of-the-knowing-ones">Den of the Knowing Ones</h3>
+<p>Buried deep within the prickly brambles and murmuring mud pools of the Murk slumbers an old, <em>old</em> village of Goblins. Set within this last bastion of <em>The Dreaming</em>, over the Aeons, these Goblins have had their forms shaped to be a reflection of Murk itself; themselves resembling the very wicked vines and plants that choke their home. Despite evolutionary divergence from their cousins in the Buried Kingdom, they yet retain their knack for Gobbowerks&hellip;albeit in a flavor associated with stones, weird bugs, and sticks. So isolated and changed are these folk that even those native to the Murk may mistake a roaming band of them as some odd sort of eldritch horror.</p>
+<p><figure><a href="https://cdna.artstation.com/p/assets/images/images/028/874/982/large/marcel-hampel-16-hat-meets-swamp-creatures.jpg?1595791317" target="_blank" rel="noopener noreferrer"><img alt="The Knowing Ones" src="https://cdna.artstation.com/p/assets/images/images/028/874/982/large/marcel-hampel-16-hat-meets-swamp-creatures.jpg?1595791317" width="75%" /></a><figcaption>Swamp Goblins from the Den of the Knowing Ones. Art by: <a href="https://marcelhampel.artstation.com/albums/2474449" target="_blank" rel="noopener noreferrer">Marcel Hampel</a></figcaption></figure></p>
+<p>The other species of Outer World often quip that Goblins, left to their own devices, cannot sustain a coherent and long-lasting mythos due to their affinity for lives that burn fast and die young. Generally debated, the Knowing Ones serve as prime evidence to the contrary. So deep are their stories and esoteric knowledge scholarly rumors claim that an Ancient Goblin who, preceding the Awakening, stared down the Unshaped themselves &ldquo;technically yet lives&rdquo; within that village.</p>
+<p>Most unique among their knowledge base is a profound understanding of the Unshaped - trickled down via oral tradition over the Aeons. Countless firsthand encounters with the Council of the Formless - those Unshaped still <em>unshaped</em> - have imparted much wisdom upon these Goblins, which includes many potent binding rituals like the <a href="https://breakrpg.blogspot.com/2021/03/bellzuub.html">Verminous Incantation</a>.</p>
+<p>Naturally, then, this simple swamp village is an incredible threat to the Council. The Unshaped, much to their dismay, simply have to stomach the existence of this village. For whatever reason - call it the spiteful will of the Ancient, a flaw in the Awakening, or perhaps just an arcane coincidence - the Den is entirely immune to their presence and manipulation.</p>
+<p>What the Unshaped <em>can</em> control, however, are the winding paths of the Murk that lead to the village. Given their intervention, reaching the Den is a feat in and of itself. The last reported contact with the Den dates to nearly 2 Aeons ago when oppressed mortals, at wit&rsquo;s end, sought wisdom, which led to the greatest magical achievement of any age.</p>
+<blockquote>
+<p>&ldquo;Well cool, that was a ton of lore but nothing really actionable for a session, no?&rdquo;</p>
+</blockquote>
+<p>True, but that&rsquo;s because this post is not about this Den. Rather, it is about its sibling - the Den of the <em>Half-</em>Knowing Ones.</p>
+<h3 id="den-of-the-half-knowing-ones">Den of the Half-Knowing Ones</h3>
+<p>At the end of the 3rd Aeon once that damned Sun Machine was sundered, a whole circus of arcane misfires went off at once. The sudden shift in the flow of Mana was enough to destabilze many engineering assumptions of the Three Empires - notably that of the &ldquo;well-known and rigid celestial movements&rdquo;. One such misfire impacted the Den of the Knowing Ones directly, in which Calian experiments on the Murk&rsquo;s forest gateways catastrophically failed and shunted half of the Den across the world into the region now known as the Twilight Meridian.</p>
+<p>With the loss of access to their Ancient Elder, who kept the many tales of the Den alive, the Half-Knowing Ones gained their title slowly as they began forgetting many a thing of their history. That is until one brave Goblin, while exploring their new jungle home, discovered a vein of bismuth-like stone known as Vain Stone, naturally infused with Lightning Mana.</p>
+<p>On that day, it was decided that the village shall band together and build a computing machine capable of replacing their Elder, capable of answering any and all questions they have or ever would have. So it was that they set to their great work, carving out computational runes and sticking chunks of earth together with prolonged rituals of Gobbowerks.</p>
+<p>It was simplistic at first - their Great Computer could solve rudimentary puzzles and answer the simplest of gobbo-questions. It wasn&rsquo;t long &lsquo;til its functionality expanded well beyond its material&rsquo;s capacity, becoming a machine capable of answering the most daring of gobbo-questions - even so far as serving as their very governance.</p>
+<p>To contend with the sheer amount of contiguous material required for the machine, the Half-Knowing Ones decided early on that they would construct the very village itself out of the stone. As such, nowadays, the sprawling complex is one massive worked slab of Vain Stone where houses rise up like upside-down pyramids in a dizzying labyrinth of fractals. At the center of town rests the central obelisk, the terminal from which the gobbos pose their many gobbo-questions to the Computer.</p>
+<p>They&rsquo;ve lived merry lives for the 4th Aeon, as-yet isolated from the world, and content that all their questions now and always will have a satisfying - and <em>correct</em> - answer. That is, of course, until the day it did <em>not</em> give the <em>correct</em> answer.</p>
+<p><figure><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOGAKHyyun-OzIETA7I8bjdbP0yhwuzZ8IIg_qw2xXKL2P1Zwep6VUp4Im58th0k7ArkwQnMeSPpvSbwTjGeSyNtXoV4laYf2iOsBIeNyfH0qmi0alDXQzNY28tC0J3WbiDhV5HM0aZaa/s1600/bismuth.final.1.jpg" target="_blank" rel="noopener noreferrer"><img alt="Art of The Half-Knowing Den" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOGAKHyyun-OzIETA7I8bjdbP0yhwuzZ8IIg_qw2xXKL2P1Zwep6VUp4Im58th0k7ArkwQnMeSPpvSbwTjGeSyNtXoV4laYf2iOsBIeNyfH0qmi0alDXQzNY28tC0J3WbiDhV5HM0aZaa/s1600/bismuth.final.1.jpg" width="50%" /></a><figcaption>The Half-Knowing Den. Art by: <a href="https://artbykaz.blogspot.com/" target="_blank" rel="noopener noreferrer">Kazunori Aruga</a></figcaption></figure></p>
+<p><strong>Settlement &amp; Function:</strong> Hamlet, Population ~100.</p>
+<p><strong>Governance:</strong> All matters of dispute are handled by asking the Computer for the answer to the issue. Unwavering deference is given to its decree and no further questions are ever asked following its decision.</p>
+<p><strong>Notable Residents:</strong></p>
+<ul>
+<li><strong>Herald Thwip [Goblin]:</strong> Ancient, papery, ornate.<ul>
+<li>One Goblin has the honor of imparting <em>new</em> knowledge unto the Computer: the Herald.</li>
+<li>Permanently cranially affixed to the Obelisk, a la Ghost in the Shell.</li>
+<li>Devoid of emotion, as if a machine themself.</li>
+</ul>
+</li>
+<li><strong>Sprick [Goblin]</strong>: Harumphy, slow-speaker, wickedly-crooked back.<ul>
+<li>Vice Lead Architect of the Computer for decades now.</li>
+<li>Envious of Sprack, the Lead Architect, for their charisma and status.</li>
+</ul>
+</li>
+<li><strong>Loti [Fairy]</strong>: Jack-o-lantern smile, quippy, literally glowing.<ul>
+<li>Only non-Goblin resident, provides a guiding light back home.</li>
+<li>Asks newcomers: <em>&ldquo;Can I have your attention, please?&rdquo;</em></li>
+<li>On acknowledgement, inflicts the Disoriented Condition.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Services:</strong></p>
+<ul>
+<li><strong>Sprick&rsquo;s Werks and Wares</strong><ul>
+<li><em>Listen, the Vice Lead position sure ain&rsquo;t paying enough.</em></li>
+<li>High-end Workshop, Artificing.</li>
+<li>For sale: Element Gem [Lightning], Vain Stone [Magical Stone]</li>
+</ul>
+</li>
+<li><strong>The Computer</strong><ul>
+<li>A successful Negotiation, or simply being a Goblin, allows one Party Member to use the Obelisk&rsquo;s Terminal.</li>
+<li>During Downtime, allows you to perform the &ldquo;Research Your Next Adventure&rdquo; Activity alongside another Activity.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Troubles:</strong><br />
+They have been in a tizzy of late, as their beloved Computer has been giving out &ldquo;incorrect&rdquo; answers to their standardized set of gobbo-questions. They&rsquo;ve triple checked every computational rune and are 100% sure it is built right.</p>
+<p>After the depletion of their Vain Stone deposits, various mining expeditions have gone out in search of new veins. All but one have reported back - successful or not. A scout has just returned from the expedition&rsquo;s intended dig site, nothing that the mine&rsquo;s entrance has been collapsed onto itself, seemingly by explosion. Becomes a modification of this <a href="https://its.quagg.studio/the-helical-expeditions/15-they-dug-too-deep.html">adventure</a>.</p>
+<p>The Vice Lead Architect <strong>Sprick</strong> is missing their beloved Star Gem right before an important public ceremony! In hushed tones, they accuse <strong>Sprack</strong> of stealing it to humiliate them and will pay anything (or, at least, a Lightning Element Gem) for proof of the crime. This is their chance to oust Sprack as the damned thief they are and become the <em>Lead Architect</em>.</p>
+<p><figure><a href="https://cdna.artstation.com/p/assets/images/images/038/831/824/large/marcel-hampel-swamp-peeps1.jpg?1624204634" target="_blank" rel="noopener noreferrer"><img alt="Loti surrounded by Druids" src="https://cdna.artstation.com/p/assets/images/images/038/831/824/large/marcel-hampel-swamp-peeps1.jpg?1624204634" width="65%" /></a><figcaption>Loti being discovered by the Swamp Druids. Art by: <a href="https://marcelhampel.artstation.com/albums/2474449" target="_blank" rel="noopener noreferrer">Marcel Hampel</a>)</figcaption></figure></p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-05-07-session-report-43-break-a-picnic-and-a-portal.html" class="post-nav-link next">Session Report 43 (BREAK!!) - A Picnic and a Portal →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
