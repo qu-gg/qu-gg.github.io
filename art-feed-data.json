@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T12:30:49.625506Z",
+  "lastUpdated": "2026-05-16T00:17:52.288046Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,157 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:swuapggv22vw4ldlmlry2xrb/app.bsky.feed.post/3mlwk7p7id22e",
+      "source": "bluesky",
+      "author": {
+        "handle": "crimsbacon.bsky.social",
+        "displayName": "CrimsBacon",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:swuapggv22vw4ldlmlry2xrb/bafkreiduukyt2jgx2rx6zalhhvwiwuoyqo6fodeosvr5zdomqt4kcw4mj4"
+      },
+      "record": {
+        "text": "Will the party fell the monstrous GRIM WING this episode? Come and Find Out!\nwww.twitch.tv/wouldbeheroes",
+        "createdAt": "2026-05-16T00:02:24.629Z"
+      },
+      "indexedAt": "2026-05-16T00:02:26.563Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 1,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.twitch.tv/wouldbeheroes",
+        "title": "WouldBeHeroes - Twitch",
+        "description": "WBH (BREAK!!): The Twilight Labyrinth Episode 13: Grim Wings Flap",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:swuapggv22vw4ldlmlry2xrb/bafkreidlj5ojudmtxulofmyz2ee4gpsri5u7ievdqbwlkkwuopzpejx6yi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mlviw76vas24",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - pretty cool guy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
+      },
+      "record": {
+        "text": "Another reminder that I'm working towards my $200/month goal for Patreon! You can check it out for free downloads on all my games, monthly supplemental content, and dev logs for the games I've been making since it was up!\nwww.patreon.com/c/joelvreugd...",
+        "createdAt": "2026-05-15T14:06:32.317Z"
+      },
+      "indexedAt": "2026-05-15T14:06:32.867Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 9,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibassu37s4dzyim727ybaanp52b4ambqt2rmljdjo7xejmml6beny",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibassu37s4dzyim727ybaanp52b4ambqt2rmljdjo7xejmml6beny",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mlvhh5tqjc24",
+      "source": "bluesky",
+      "author": {
+        "handle": "amandalee.bsky.social",
+        "displayName": "The Amanda Lee Mystery House",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
+      },
+      "record": {
+        "text": "The Doom of the dark is FUNDED! \n\nwww.kickstarter.com/projects/gaw...\n\nthanks everyone I was so nervous!",
+        "createdAt": "2026-05-15T13:40:13.828Z"
+      },
+      "indexedAt": "2026-05-15T13:40:22.773Z",
+      "replyCount": 2,
+      "repostCount": 9,
+      "likeCount": 29,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreibsbvqcn22h2yx6prxfdssl5pku5wodcfr2btwzjzr52nsmmupxnq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreibsbvqcn22h2yx6prxfdssl5pku5wodcfr2btwzjzr52nsmmupxnq",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mlvh6jvccc2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "save.vs.totalpartykill.ca",
+        "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve"
+      },
+      "record": {
+        "text": "Get hyped. You can back this beautiful looking zine from Amanda and Patric. :o",
+        "createdAt": "2026-05-15T13:35:24.534Z"
+      },
+      "indexedAt": "2026-05-15T13:35:26.659Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 10,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/gawain/the-doom-of-the-dark?ref=thanks-tweet",
+        "title": "The Doom of the Dark",
+        "description": "A Zine containing an original adventure for Tunnels and Trolls, written by Patrick Stuart, with art by Amanda Lee Franck",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreihzapjtwp5skaa76wqh5fbdepukrwyxftzp4ewjtg2igfcaxbikaq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mlvbelsgp22q",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreicw6dhzikkxvyazrpxqprb3solfljvd44lslsos672pkhkcxccxke"
+      },
+      "record": {
+        "text": "Run, don\u2019t walk\u2014 Astroprisma, the sci-fi solo TTRPG of your dreams, is finally for sale for people who didn\u2019t back the KS! astroprismastore.com",
+        "createdAt": "2026-05-15T11:51:25.413Z"
+      },
+      "indexedAt": "2026-05-15T11:51:27.959Z",
+      "replyCount": 5,
+      "repostCount": 22,
+      "likeCount": 55,
+      "embed": {
+        "type": "external",
+        "uri": "https://astroprismastore.com/",
+        "title": "Astroprisma Store",
+        "description": "Astroprisma Store",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreiehup5ecxsdiz7fw6ieumbyuzu5yjzlu7enawhcfbeqcxoh2xxloy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:wgrgkhar4aw243i3nhlvn2vh/app.bsky.feed.post/3mlsvzzmbvs2g",
       "source": "bluesky",
@@ -169,7 +320,7 @@
       "indexedAt": "2026-05-13T18:32:40.273Z",
       "replyCount": 1,
       "repostCount": 30,
-      "likeCount": 54,
+      "likeCount": 56,
       "embed": {
         "type": "external",
         "uri": "https://thecastlebuilder.itch.io/ridge-city-riders",
@@ -254,8 +405,8 @@
       },
       "indexedAt": "2026-05-13T14:01:44.371Z",
       "replyCount": 7,
-      "repostCount": 21,
-      "likeCount": 139,
+      "repostCount": 22,
+      "likeCount": 144,
       "embed": {
         "type": "images",
         "images": [
@@ -524,8 +675,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 482,
-      "likeCount": 2555,
+      "repostCount": 483,
+      "likeCount": 2561,
       "embed": {
         "type": "images",
         "images": [
@@ -556,9 +707,9 @@
         "createdAt": "2026-05-12T03:29:07.590Z"
       },
       "indexedAt": "2026-05-12T03:29:11.666Z",
-      "replyCount": 6,
+      "replyCount": 7,
       "repostCount": 145,
-      "likeCount": 1238,
+      "likeCount": 1240,
       "embed": {
         "type": "images",
         "images": [
@@ -915,121 +1066,6 @@
       }
     },
     {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mlij4f6rvc2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigknsavlkfw63o2u3rbqbcnbjvryk6t26ysfgxssyojmrv6ka5lpm"
-      },
-      "record": {
-        "text": "New TTRPG adventure from an Indonesian creator!\n\nMy friend, Kerisian Kult, has just released his first OSR adventure, Ascension! It is compatible with M\u00d6RK BORG!\n\nCheck it out!\n\nkerisiankult.itch.io/ascension-zine\n\n#ttrpg #osr",
-        "createdAt": "2026-05-10T10:05:23.377Z"
-      },
-      "indexedAt": "2026-05-10T10:05:32.263Z",
-      "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 27,
-      "embed": {
-        "type": "external",
-        "uri": "https://kerisiankult.itch.io/ascension-zine",
-        "title": "Ascension | M\u00d6RK BORG - Oneshot Dungeon Crawl by Kerisian Kult",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiclervyxsjjuk4hfwwtroyomajosfdul5kyyo7zqp5gnvamdh22v4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mlhjshibd22f",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I've been aggressively sharing START stuff and that can be annoying (sorry for that) - but this is part of the reason. We want to make a lot of books! These will all exist in some form or another no matter what, but I'd love to be able to justify being able to go all out on all of them.",
-        "createdAt": "2026-05-10T00:45:04.241Z"
-      },
-      "indexedAt": "2026-05-10T00:45:06.570Z",
-      "replyCount": 10,
-      "repostCount": 18,
-      "likeCount": 76,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehp5c7rl5vq7soyt7dvo76jim6sv2q2sgi2o4upuaeaiwg77oyjm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehp5c7rl5vq7soyt7dvo76jim6sv2q2sgi2o4upuaeaiwg77oyjm",
-            "alt": "The covers for BREAK!! and its first supplement, START, in a lineup with planned future titles like GENUS, BIOMES, and RUINS"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:evywifculz2z2fzmuas7kgiy/app.bsky.feed.post/3mlganaunhl2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "monkeyblood.bsky.social",
-        "displayName": "MonkeyBlood Design",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:evywifculz2z2fzmuas7kgiy/bafkreibyclr3tpltlpniyjo4lmjuzm6efngv46cnggc3ucmuifbhu5cuxy"
-      },
-      "record": {
-        "text": "Jewel-Delvers: Playtest Versions Now Live! & Play Example\u00a0Videos\n\nYou can now grab the Jewel-Delvers of Nagor Kadir 128-page Playtest version over on DriveThruRPG. It's in two formats: PWYW Digital PDF and Premium Colour Hardcover. Get it NOW at DTRPG! We've got a couple of videos up on YouTube\u2026",
-        "createdAt": "2026-05-09T12:28:25Z"
-      },
-      "indexedAt": "2026-05-09T12:28:27.467Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 2,
-      "embed": {
-        "type": "external",
-        "uri": "https://monkeyblooddesign.co.uk/2026/05/09/jewel-delvers-playtest-versions-now-live-play-example-videos/?utm_source=bluesky&utm_medium=jetpack_social",
-        "title": "Jewel-Delvers: Playtest Versions Now Live! & Play Example\u00a0Videos",
-        "description": "You can now grab the Jewel-Delvers of Nagor Kadir 128-page Playtest version over on DriveThruRPG. It's in two formats: PWYW Digital PDF and Premium Colour Hardcover. Get it NOW at DTRPG! We've got a couple of videos up on YouTube that will help explain the game and some play exmaples: Get it NOW at DTRPG!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:evywifculz2z2fzmuas7kgiy/bafkreibh3c3dyjyzo6dbablcnd3te24dmqm3auns5eqj2c43r2hheefyha"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:db2xbmjjvoup6sols2ons4h5/app.bsky.feed.post/3mlg2ntdoss2j",
-      "source": "bluesky",
-      "author": {
-        "handle": "wendigoworkshop.bsky.social",
-        "displayName": "\ud83c\udf41 Wendigo Workshop \ud83c\udf41",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreibh7nskgnilb2vrg3lbkjuzoswnhzd2ngqmm43vgoy3ew2a5z5dam"
-      },
-      "record": {
-        "text": "It\u2019s #selfpromosaturday and we\u2019re self-promoting our live Backerkit campaign!\n\nCheck it out or share it around, and don\u2019t forget to share your own TTRPGs, miniatures, actual play, or anything creative you might be doing in the replies! We\u2019ll make sure to repost them and check them out!",
-        "createdAt": "2026-05-09T10:41:23.039Z"
-      },
-      "indexedAt": "2026-05-09T10:41:24.261Z",
-      "replyCount": 12,
-      "repostCount": 29,
-      "likeCount": 43,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/wendigo-workshop/last-hope-a-dark-magical-girls-ttrpg-built-on-caltrop-core?ref=bk-discover-recently-visited&utm_campaign=bk-discover-recently-visited&utm_medium=discover&utm_source=backerkit",
-        "title": "Last Hope - a Dark Magical Girls TTRPG",
-        "description": "Last Hope is a dark Magical Girls game within which you play as teenage or young adult characters chosen to fight corruption in a dream-like version of the world, while also balancing their mundane li...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreiaqqwjukwrwkkd7d4cy6dwcirqys2tnwjql6gbqja62itizvgullq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mldpdnwgyc26",
       "source": "bluesky",
       "author": {
@@ -1128,7 +1164,7 @@
       "indexedAt": "2026-05-06T20:35:18.560Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 11,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://www.enworld.org/threads/rpg-crowdfunding-news-%E2%80%93-break-nordic-monsters-citadel-of-the-sun-kings-and-more.719019/",
@@ -1399,7 +1435,7 @@
       },
       "indexedAt": "2026-04-28T13:59:53.966Z",
       "replyCount": 4,
-      "repostCount": 65,
+      "repostCount": 66,
       "likeCount": 123,
       "embed": {
         "type": "images",
@@ -1407,34 +1443,6 @@
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifma3aoznk6npz5kuljxbakuqiez3tfesecnnkuwahfp2zemdrjoa",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifma3aoznk6npz5kuljxbakuqiez3tfesecnnkuwahfp2zemdrjoa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkfjpjkr2s2u",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "New BREAK!! TTRPG\nkickstarter live on the 28th of April (10:00 am ET) \n\n\ud83d\udc49 An adventure playset \n\ud83d\udc49 New special edition \n\ud83d\udc49 GM sceen \n\nkickstarter.com/projects/gre...",
-        "createdAt": "2026-04-26T12:12:54.644Z"
-      },
-      "indexedAt": "2026-04-26T12:12:59.348Z",
-      "replyCount": 6,
-      "repostCount": 42,
-      "likeCount": 98,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih5yr76b6j54csrkwuvjzv7gafsjzz3cxpbioyz6xeiawro6hduti",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih5yr76b6j54csrkwuvjzv7gafsjzz3cxpbioyz6xeiawro6hduti",
             "alt": ""
           }
         ]
@@ -2756,7 +2764,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2361,
-      "likeCount": 11906,
+      "likeCount": 11905,
       "embed": {
         "type": "images",
         "images": [
@@ -3109,7 +3117,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1882,
-      "likeCount": 8994,
+      "likeCount": 8993,
       "embed": {
         "type": "images",
         "images": [
