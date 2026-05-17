@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T00:18:31.946746Z",
+  "lastUpdated": "2026-05-17T12:13:49.728840Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,92 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:yuf5zehn2z6x47y6em5uhtpn/app.bsky.feed.post/3mlzaobvadk23",
+      "source": "bluesky",
+      "author": {
+        "handle": "hjaywatson.bsky.social",
+        "displayName": "H. Jay Watson",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yuf5zehn2z6x47y6em5uhtpn/bafkreiglza4v4m7zndfxqvaz5ntypvpze3bzi3inqrehugzy3v5g43n5bq"
+      },
+      "record": {
+        "text": "just got my mitts on the early release of The Castle Automatic (the new His Majesty the Worm joint)\n\nas I rip through it, I can say: @riseupcomus.bsky.social is in his Adventure of the Year era\n\nstill time for preorders through @exaltedfuneral.bsky.social, so check it for yourself out *right now*\n\n\ud83d\udc47",
+        "createdAt": "2026-05-17T01:49:35.771Z"
+      },
+      "indexedAt": "2026-05-17T01:49:38.271Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 24,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.exaltedfuneral.com/pages/the-castle-automatic-preorder",
+        "title": "The Castle Automatic Preorder",
+        "description": "Publisher and web store for Indie Role Playing games, Role Playing game supplements, weird art, doom, horror, and all that sort of thing.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yuf5zehn2z6x47y6em5uhtpn/bafkreiekmqj3yjcjvidahzbvho42ychl5f4v4nd4kroyvjd4odjhqx5fqy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mlz6ffhutc2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "Just double checking a few things and I'm reminded that one of the bests thing about creating your own setting for your own game is you can just name things whatever and no one can stop you",
+        "createdAt": "2026-05-17T01:08:50.057Z"
+      },
+      "indexedAt": "2026-05-17T01:08:49.667Z",
+      "replyCount": 1,
+      "repostCount": 0,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreieali3irlc5sp7us554l62mhga3hfylvhscwgixlgc4daljpt34tu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreieali3irlc5sp7us554l62mhga3hfylvhscwgixlgc4daljpt34tu",
+            "alt": "Text that says: Drexa's Quests: Food for Grumby\nThere is also a sentence about rewards cut off by the way the screenshot is cropped"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mlz4mnmaik2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "tabletopbookshelf.com",
+        "displayName": "Tabletop Bookshelf",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
+      },
+      "record": {
+        "text": "Our Games Library Menu is live\u26a1\n\nReserve a table and get free access to over 75 roleplaying, board, and cards games from our curated collection!\ntabletopbookshelf.com/pages/our-ga...",
+        "createdAt": "2026-05-17T00:37:05.982Z"
+      },
+      "indexedAt": "2026-05-17T00:37:08.772Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 14,
+      "embed": {
+        "type": "external",
+        "uri": "https://tabletopbookshelf.com/pages/our-games-library",
+        "title": "Our Games Library",
+        "description": "Tabletop Bookshelf Game Library Menu Over 75 board, card, and roleplaying games free to play when you reserve a table \u2014 ask staff for recommendations! Board &amp; Card Games 11 titles Parks &amp; Poti...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreif6rhpzbcwdyik27rhgf5hdhxq4fqivhbhde4a2rqd3yp5zik36oa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mlykswppus27",
       "source": "bluesky",
       "author": {
@@ -65,8 +151,8 @@
       },
       "indexedAt": "2026-05-16T19:18:30.362Z",
       "replyCount": 3,
-      "repostCount": 9,
-      "likeCount": 39,
+      "repostCount": 10,
+      "likeCount": 42,
       "embed": {
         "type": "images",
         "images": [
@@ -154,7 +240,7 @@
       },
       "indexedAt": "2026-05-15T14:06:32.867Z",
       "replyCount": 0,
-      "repostCount": 3,
+      "repostCount": 4,
       "likeCount": 10,
       "embed": {
         "type": "images",
@@ -248,7 +334,7 @@
       "indexedAt": "2026-05-15T11:51:27.959Z",
       "replyCount": 5,
       "repostCount": 23,
-      "likeCount": 59,
+      "likeCount": 61,
       "embed": {
         "type": "external",
         "uri": "https://astroprismastore.com/",
@@ -409,7 +495,7 @@
       "indexedAt": "2026-05-13T15:59:19.864Z",
       "replyCount": 2,
       "repostCount": 21,
-      "likeCount": 56,
+      "likeCount": 57,
       "embed": {
         "type": "external",
         "uri": "https://bakenshake09.itch.io/prosperos-trust",
@@ -735,8 +821,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 489,
-      "likeCount": 2574,
+      "repostCount": 490,
+      "likeCount": 2580,
       "embed": {
         "type": "images",
         "images": [
@@ -769,7 +855,7 @@
       "indexedAt": "2026-05-12T03:29:11.666Z",
       "replyCount": 7,
       "repostCount": 147,
-      "likeCount": 1246,
+      "likeCount": 1245,
       "embed": {
         "type": "images",
         "images": [
@@ -877,82 +963,6 @@
       }
     },
     {
-      "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3mlli57yum22a",
-      "source": "bluesky",
-      "author": {
-        "handle": "letitmelo.bsky.social",
-        "displayName": "Melo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreihg6bsstf46gjxierqvfg2ph43zt6y45f4qavct5dwk446rzqkuzu"
-      },
-      "record": {
-        "text": "It's #webcomicday and I think you ought to read Monsters & Mysteries, a fantasy horror comedy based on a tired viral D&D game one time years ago.\n\nLast Friday, the 4th chapter wrapped up. It's got a dungeon! It's got a dragon! It's got original characters DO NOT STEAL \ud83e\udef5 \n\nMnmcomic.com",
-        "createdAt": "2026-05-11T14:25:56.957Z"
-      },
-      "indexedAt": "2026-05-11T14:26:04.774Z",
-      "replyCount": 5,
-      "repostCount": 24,
-      "likeCount": 65,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreifue5ibuwcyly7rvdo3jkmjlvlne4bfygucus64onqcb62jnqq644",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreifue5ibuwcyly7rvdo3jkmjlvlne4bfygucus64onqcb62jnqq644",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreia6w7ctjpdsfqesrysxlopfoquqevp3gpdndknx4bal5iifdf2xse",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreia6w7ctjpdsfqesrysxlopfoquqevp3gpdndknx4bal5iifdf2xse",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreieca5q2rrq3wptp3yfl7dzp74cg2myqxgs7ydpuqxa5mk4fdv7nxe",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreieca5q2rrq3wptp3yfl7dzp74cg2myqxgs7ydpuqxa5mk4fdv7nxe",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreicvozm2uoviy2f3q6rrk2qrywfrfctpdybfnnfvcr4sj52caua6ua",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreicvozm2uoviy2f3q6rrk2qrywfrfctpdybfnnfvcr4sj52caua6ua",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mllffrthkp2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - pretty cool guy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "With all my work in play-testing  Dollhouse I've almost forgotten to keep people updated with the rest of my work! If you've got $5 on hand take a look at the Nostalgic TTRPG Bundle, where you can pick up DAWN along with 10 other games!\nitch.io/b/3643/nosta...",
-        "createdAt": "2026-05-11T13:37:01.864Z"
-      },
-      "indexedAt": "2026-05-11T13:37:05.775Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 10,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/b/3643/nostalgic-retro-ttrpg-bundle",
-        "title": "Nostalgic Retro TTRPG Bundle by kumada1 and 10 others",
-        "description": "Nostalgic Retro TTRPG Bundle: 11 items for $5.00",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreidrs7csh7blfsluwc742emnlhi25cpvy6drtteityl5rchm4pnniu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/1NAy1q",
       "source": "artstation",
       "author": {
@@ -1034,38 +1044,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/6L98xW"
-    },
-    {
-      "uri": "at://did:plc:zaltv7bv7mimxzli6nntycju/app.bsky.feed.post/3mlkyt4w4522z",
-      "source": "bluesky",
-      "author": {
-        "handle": "ultimatehypergames.bsky.social",
-        "displayName": "Ultimate Hyper Games",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zaltv7bv7mimxzli6nntycju/bafkreihegpxzzqkuvxotrz5o4s6xsfunvk3htpfcgmoba7s2idd6d7ud2e"
-      },
-      "record": {
-        "text": "I\u2019m really happy with how this came out. \n\nThere\u2019s so much work in going from something purely digital to something physical, but when you do it, it does feel really special.",
-        "createdAt": "2026-05-11T09:51:52.040Z"
-      },
-      "indexedAt": "2026-05-11T09:52:11.663Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zaltv7bv7mimxzli6nntycju/bafkreifdd5zh4nglh4qujhc52lprkelvqckjckpdfdh6xgtjxhegdc44pi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zaltv7bv7mimxzli6nntycju/bafkreifdd5zh4nglh4qujhc52lprkelvqckjckpdfdh6xgtjxhegdc44pi",
-            "alt": "A photo of playing cards on a wooden table. There are several cards arranged to show the various artwork of the cards. The artwork comes from Heckin\u2019 Space Troopers. Each card also has an enemy from that game depicted as well as that enemy\u2019s stats. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:b7wbfw6z23wijbnbjsv5wyu7/app.bsky.feed.post/3mljds57yyx2h",
@@ -1568,7 +1546,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6323,
+      "likeCount": 6325,
       "embed": {
         "type": "images",
         "images": [
@@ -3204,7 +3182,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2661,
-      "likeCount": 15685,
+      "likeCount": 15688,
       "embed": {
         "type": "images",
         "images": [
