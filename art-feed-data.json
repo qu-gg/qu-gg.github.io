@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T12:14:43.670158Z",
+  "lastUpdated": "2026-05-17T00:18:31.946746Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,66 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mlykswppus27",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I'm really sorry this has been me the entire month - but In my defense it is a great way to grab the BREAK!! core rules and a GM screen alongside a hefty new companion book and adventure combo-\n\nwww.kickstarter.com/projects/gre...",
+        "createdAt": "2026-05-16T19:18:29.502Z"
+      },
+      "indexedAt": "2026-05-16T19:18:30.362Z",
+      "replyCount": 3,
+      "repostCount": 9,
+      "likeCount": 39,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigz6cqlheofu34awnijdbwmwfncqq5erpjd4mne77zzysftz2lbqe",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigz6cqlheofu34awnijdbwmwfncqq5erpjd4mne77zzysftz2lbqe",
+            "alt": "A merchant selling stuff outside of a wagon in a fantasy setting. Some truly dodgy photo editing has been done to make it look like he's selling a copy of START, the new companion book and adventure for the BREAK!! tabletop rpg, kickstarting now"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mlxw4hkw5w2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "The StoryGuider series covers several different genres, including space adventures!  \n\nCheck out the Alpha Centauri Party story for a TTRPG-like tale that helps kids ages 2-7 with practicing: \n\ud83e\udd1dmeeting new people\n\ud83c\udfaftrying new ways to play\n\ud83d\ude0btrying new foods\n\nFind it here: https://loom.ly/p5ohrp8\n",
+        "createdAt": "2026-05-16T06:08:00-07:00"
+      },
+      "indexedAt": "2026-05-16T13:08:01.063Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 3,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreif3mro4xxcuybbenniscpszetxhlejluxvaibfi2brvd7fwsl2ba4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreif3mro4xxcuybbenniscpszetxhlejluxvaibfi2brvd7fwsl2ba4",
+            "alt": "Major Update!\n\nStoryGuider\nAlpha Centauri Party\nAstronaut book 2\n\n\nVisit ttrpgkids.itch.io"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:swuapggv22vw4ldlmlry2xrb/app.bsky.feed.post/3mlwk7p7id22e",
       "source": "bluesky",
       "author": {
@@ -95,7 +155,7 @@
       "indexedAt": "2026-05-15T14:06:32.867Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 9,
+      "likeCount": 10,
       "embed": {
         "type": "images",
         "images": [
@@ -159,7 +219,7 @@
       "indexedAt": "2026-05-15T13:35:26.659Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/gawain/the-doom-of-the-dark?ref=thanks-tweet",
@@ -187,8 +247,8 @@
       },
       "indexedAt": "2026-05-15T11:51:27.959Z",
       "replyCount": 5,
-      "repostCount": 22,
-      "likeCount": 58,
+      "repostCount": 23,
+      "likeCount": 59,
       "embed": {
         "type": "external",
         "uri": "https://astroprismastore.com/",
@@ -319,7 +379,7 @@
       },
       "indexedAt": "2026-05-13T18:32:40.273Z",
       "replyCount": 1,
-      "repostCount": 31,
+      "repostCount": 32,
       "likeCount": 56,
       "embed": {
         "type": "external",
@@ -406,7 +466,7 @@
       "indexedAt": "2026-05-13T14:01:44.371Z",
       "replyCount": 7,
       "repostCount": 22,
-      "likeCount": 144,
+      "likeCount": 145,
       "embed": {
         "type": "images",
         "images": [
@@ -675,8 +735,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 483,
-      "likeCount": 2563,
+      "repostCount": 489,
+      "likeCount": 2574,
       "embed": {
         "type": "images",
         "images": [
@@ -708,8 +768,8 @@
       },
       "indexedAt": "2026-05-12T03:29:11.666Z",
       "replyCount": 7,
-      "repostCount": 146,
-      "likeCount": 1242,
+      "repostCount": 147,
+      "likeCount": 1246,
       "embed": {
         "type": "images",
         "images": [
@@ -1029,35 +1089,6 @@
         "title": "BREAK!! RPG Adds 200-Page START Companion on Kickstarter",
         "description": "Grey Wizard's Ennie-winning JRPG-inspired tabletop RPG returns with START, a 200-page tutorial companion. Kickstarter closes 28 May 2026.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:b7wbfw6z23wijbnbjsv5wyu7/bafkreieifkbz6mifmzryu4gjgc4ancbr6z2xivznw5jcrw4w4uxfp7cvi4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:degzgkbpiitz45k3dbcrw66l/app.bsky.feed.post/3mliqun3btk2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "traversefantasy.itch.io",
-        "displayName": "Marcia B.",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:degzgkbpiitz45k3dbcrw66l/bafkreigdogasa2tisuhomw26h54ootkmwdvrkmvepupfe5sk4rm3oddo2e"
-      },
-      "record": {
-        "text": "finally uploaded the most up to date version of my home game #cinco!\n\nblog: traversefantasy.blogspot.com/2026/05/cinc...\n\nitch: traversefantasy.itch.io/cinco\n\ni\u2019m deciding to accept it being a living document with holes and all",
-        "createdAt": "2026-05-10T12:24:13.150Z"
-      },
-      "indexedAt": "2026-05-10T12:24:14.462Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 21,
-      "embed": {
-        "type": "external",
-        "uri": "https://traversefantasy.blogspot.com/2026/05/cinco-may-2026.html?m=1",
-        "title": "Cinco: May 2026",
-        "description": "I've finally posted an updated version of my homebrew heartbreaker\u00a0 Cinco! \u00a0having accepted that it is a living document and that there will...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:degzgkbpiitz45k3dbcrw66l/bafkreiexol32qzu5bwhxuveyu27bh7yh57rorcuodkdsoaqvqpq2guoawm"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1535,9 +1566,9 @@
         "createdAt": "2026-04-14T13:48:34.053Z"
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
-      "replyCount": 27,
-      "repostCount": 1434,
-      "likeCount": 6292,
+      "replyCount": 28,
+      "repostCount": 1452,
+      "likeCount": 6323,
       "embed": {
         "type": "images",
         "images": [
@@ -1676,8 +1707,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 618,
-      "likeCount": 2883,
+      "repostCount": 620,
+      "likeCount": 2891,
       "embed": {
         "type": "images",
         "images": [
@@ -3116,7 +3147,7 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1882,
+      "repostCount": 1881,
       "likeCount": 8993,
       "embed": {
         "type": "images",
@@ -3172,8 +3203,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2650,
-      "likeCount": 15650,
+      "repostCount": 2661,
+      "likeCount": 15685,
       "embed": {
         "type": "images",
         "images": [
