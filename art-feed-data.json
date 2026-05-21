@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T12:44:00.493331Z",
+  "lastUpdated": "2026-05-21T00:24:05.221364Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,130 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:if25nxd4lm3lmfxb2cidvvjz/app.bsky.feed.post/3mmccpx2qmk2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "ferdon10.bsky.social",
+        "displayName": "Fernando Cruz (Is making One Time Taxes COMIC)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:if25nxd4lm3lmfxb2cidvvjz/bafkreifgxx2ktvi5zhruj5gndfdytejgyucmrszewm32wwoqwmmqcxafhq"
+      },
+      "record": {
+        "text": "youtu.be/jKqHlWXjA38 Finally get to share the conclusion to Pale Promonitions!  It's been an honor working to help my buddy @lorenzohall.com with the editing -u-\n#Arisan",
+        "createdAt": "2026-05-20T16:20:16.659Z"
+      },
+      "indexedAt": "2026-05-20T16:20:18.365Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/jKqHlWXjA38",
+        "title": "Arisan: Pale Premonitions - 5",
+        "description": "YouTube video by Austin Lee Matthews (Maus)",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:if25nxd4lm3lmfxb2cidvvjz/bafkreici5qxwudphps3bylmm2sz5yrvbtpwtdmf4lwctljazbzczsgoq3e"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmcbesun6s22",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "\ud83d\udd25@gage_lindsten",
+        "createdAt": "2026-05-20T15:56:09.361Z"
+      },
+      "indexedAt": "2026-05-20T15:56:14.469Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 24,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih4eh3v5dvmu6ytoyppvr3kurgaye7uxwcdqzrsz4qboapc6p7pq4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih4eh3v5dvmu6ytoyppvr3kurgaye7uxwcdqzrsz4qboapc6p7pq4",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicipcdkxafdjgc7xrrku5vh726nuvnjajonx2uitea5qirwf3tuoy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicipcdkxafdjgc7xrrku5vh726nuvnjajonx2uitea5qirwf3tuoy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmcapy6xhc2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "@teeketch.art \n\ud83d\ude17\ud83d\udc4c",
+        "createdAt": "2026-05-20T15:44:30.266Z"
+      },
+      "indexedAt": "2026-05-20T15:44:40.368Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidosewoqjvwpi7szfgxyx7fpqroilofg7lgre6mltxn6b6m6enmde",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidosewoqjvwpi7szfgxyx7fpqroilofg7lgre6mltxn6b6m6enmde",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreie5z45a6ukrtdq25vzrdlw3v63ry4fr54b3ddnyd5ggj5eh4sesom",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreie5z45a6ukrtdq25vzrdlw3v63ry4fr54b3ddnyd5ggj5eh4sesom",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:jgve2fbql4q5cfn2tlluvpx2/app.bsky.feed.post/3mmby6bj4tc2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "bexrollsdice.bsky.social",
+        "displayName": "Bex Rolls Dice",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jgve2fbql4q5cfn2tlluvpx2/bafkreiboxab7zdhj4c3dztyu6ilnzo65iazig2xriae34dkf2xag6zlana"
+      },
+      "record": {
+        "text": "\u2753\ufe0fDo you like a bit of chaos? \n\u2753\ufe0fDo you enjoy the occasional shenanigan?\n\u2753\ufe0fDo you have a great poker face? \n\u2753\ufe0fDo you like being every bit as devious as your characters? \n\nIf so, then grab yourself a copy of my #ttrpg from @ospreygames.bsky.social !\n\nwww.ospreypublishing.com/uk/two-sides...",
+        "createdAt": "2026-05-20T13:11:26.216Z"
+      },
+      "indexedAt": "2026-05-20T13:11:27.861Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.ospreypublishing.com/uk/two-sides-to-the-coin-9781472869623/",
+        "title": "Two Sides to the Coin",
+        "description": "A roleplaying game of teamwork and treachery where the need to cooperate is second only to achieving your own ulterior motives.Think you know roleplaying? Think\u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jgve2fbql4q5cfn2tlluvpx2/bafkreiemzjuwazy4bsopvyejn5v67n7dgmxq4522pmjusttwfrkwhrcrsi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mm7lwciygs2k",
       "source": "bluesky",
       "author": {
@@ -66,7 +190,7 @@
       "indexedAt": "2026-05-19T14:27:01.367Z",
       "replyCount": 2,
       "repostCount": 2,
-      "likeCount": 26,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -103,8 +227,8 @@
       },
       "indexedAt": "2026-05-19T12:11:59.461Z",
       "replyCount": 1,
-      "repostCount": 21,
-      "likeCount": 36,
+      "repostCount": 23,
+      "likeCount": 40,
       "embed": {
         "type": "external",
         "uri": "https://binarystar.games/posts/original-1778621782-violence-without-combat/",
@@ -554,64 +678,6 @@
       }
     },
     {
-      "uri": "at://did:plc:t7xhyuymmtffkse56if2c77q/app.bsky.feed.post/3mls7ongg7c2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "theuglygoblin.bsky.social",
-        "displayName": "The Ugly Goblin",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreifqmibd5puqj7lwqf32uz2rjqx4sxqqnxma5kqkkcrvla4kym3eaq"
-      },
-      "record": {
-        "text": "Wooohh my TTRPG, GOBLINZ is now on DriveThruRPG!\n\nwww.drivethrurpg.com/en/product/5...",
-        "createdAt": "2026-05-14T06:43:15.961Z"
-      },
-      "indexedAt": "2026-05-14T06:43:19.160Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.drivethrurpg.com/en/product/567486/goblinz-the-classless-ttrpg-demo",
-        "title": "GOBLINZ: The Classless TTRPG (DEMO) - Gabriel Galway | DriveThruRPG",
-        "description": "GOBLINZ (DEMO)\nThe Classless TTRPG\n\nIn Goblinz, you play as an Adventurer who fights monsters and slowly becomes a lil freak\u2122.\nAs you level up, you draw power from the forces of reality that steadily ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:t7xhyuymmtffkse56if2c77q/bafkreibrjbhr4ddfgxomajbtehbnaccnbiye6s7zmgnxpunkxpgypckxia"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:mcapipeayog4aynz6apm2qih/app.bsky.feed.post/3mlqwu5st3k2j",
-      "source": "bluesky",
-      "author": {
-        "handle": "thecastlebuilder.bsky.social",
-        "displayName": "paul",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mcapipeayog4aynz6apm2qih/bafkreigaepwynk5ewvwin6g5mdmzz76i2qgmxsqs6umgbxbmelugzysfoe"
-      },
-      "record": {
-        "text": "Ridge City Riders is now live on itch!\n\nRidge City Riders is a GM-less storytelling #TTRPG that uses a unique dice-exchanging system. Rip through Ridge City on customized hoverbikes, use spare parts to give your fellow riders an edge, and dream of a brighter future. I hope you check it out!",
-        "createdAt": "2026-05-13T18:32:37.500Z"
-      },
-      "indexedAt": "2026-05-13T18:32:40.273Z",
-      "replyCount": 1,
-      "repostCount": 32,
-      "likeCount": 56,
-      "embed": {
-        "type": "external",
-        "uri": "https://thecastlebuilder.itch.io/ridge-city-riders",
-        "title": "Ridge City Riders by paul doyle",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mcapipeayog4aynz6apm2qih/bafkreidy43cgfdd3mhazj36fjq3w5ryho6n74tqltmsz4dwnyqrpuphetq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mlqibwihfc2e",
       "source": "bluesky",
       "author": {
@@ -653,8 +719,8 @@
       },
       "indexedAt": "2026-05-13T14:01:44.371Z",
       "replyCount": 7,
-      "repostCount": 22,
-      "likeCount": 149,
+      "repostCount": 25,
+      "likeCount": 154,
       "embed": {
         "type": "images",
         "images": [
@@ -724,9 +790,9 @@
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2klas4fif3tt2h2yth33spm6/bafkreibratohayrcwq3dfikl2y4l72tr6ywo2ilvevp2ym7gh6zeo7nwua"
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -776,7 +842,7 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 493,
+      "repostCount": 494,
       "likeCount": 2591,
       "embed": {
         "type": "images",
@@ -825,35 +891,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard - KICKSTARTING NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:i6pf5kdady54hqmw3lklaonc/app.bsky.feed.post/3mllyn6idru2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "techraptor.net",
-        "displayName": "TechRaptor",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:i6pf5kdady54hqmw3lklaonc/bafkreiarmfa6eluwnrjoioi3ik7fwhbpgy7sffntwmwzsnyd6qiypzkhhi"
-      },
-      "record": {
-        "text": "The award-winning TTRPG Break!! is returning to Kickstarter. The latest campaign includes a new starter supplement, aptly called Start.",
-        "createdAt": "2026-05-11T19:21:11Z"
-      },
-      "indexedAt": "2026-05-11T19:21:12.566Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 14,
-      "embed": {
-        "type": "external",
-        "uri": "http://dlvr.it/TSTwM9",
-        "title": "The award-winning TTRPG Break!! is returning to Kickstarter. The latest campaign includes a new starter supplement, aptly called Start.",
-        "description": "Grey Wizard has launched a new Kickstarter campaign for the retro-inspired TTRPG Break!!, which includes a new starter supplement.\n\nRead this article on TechRaptor",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:i6pf5kdady54hqmw3lklaonc/bafkreievkos7tfw2pvssqyzcibqxkmmknvvcvq6kgfheq6h6nj5xl5jnaq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -1071,7 +1108,7 @@
       "indexedAt": "2026-05-07T17:57:11.367Z",
       "replyCount": 3,
       "repostCount": 25,
-      "likeCount": 153,
+      "likeCount": 154,
       "embed": {
         "type": "images",
         "images": [
@@ -1357,34 +1394,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkkqmfoysc2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "START for BREAK!! RPG\n\nThe new adventure for the award-winning, anime inspired TTRPG is live on Kickstarter.\n\n\ud83d\udc4d Back \n\ud83d\ude4f Share \n\ud83c\udf89 Rejoice\n\nwww.kickstarter.com/projects/gre...",
-        "createdAt": "2026-04-28T13:59:44.821Z"
-      },
-      "indexedAt": "2026-04-28T13:59:53.966Z",
-      "replyCount": 5,
-      "repostCount": 67,
-      "likeCount": 128,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifma3aoznk6npz5kuljxbakuqiez3tfesecnnkuwahfp2zemdrjoa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifma3aoznk6npz5kuljxbakuqiez3tfesecnnkuwahfp2zemdrjoa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
       "author": {
@@ -1612,7 +1621,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 620,
-      "likeCount": 2895,
+      "likeCount": 2896,
       "embed": {
         "type": "images",
         "images": [
@@ -2699,7 +2708,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2361,
-      "likeCount": 11906,
+      "likeCount": 11905,
       "embed": {
         "type": "images",
         "images": [
