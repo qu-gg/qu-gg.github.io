@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T00:21:37.489028Z",
+  "lastUpdated": "2026-05-23T12:13:58.704646Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -66,7 +66,7 @@
       "indexedAt": "2026-05-22T22:52:34.462Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 2,
+      "likeCount": 4,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3700/wheel-of-webcomics-zine-bundle-2",
@@ -94,8 +94,8 @@
       },
       "indexedAt": "2026-05-22T22:32:00.262Z",
       "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 19,
+      "repostCount": 17,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -108,6 +108,38 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreier4xyt2644vx24tmvhhbqj4vvyulnqqv7g6bfg3j5xcshcb7epry",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreier4xyt2644vx24tmvhhbqj4vvyulnqqv7g6bfg3j5xcshcb7epry",
             "alt": "Graphic for The Wheel of Webcomics Zine that reads\n\"About the zines\"\n\"An Explanation!\"\n\n\"Put simply, it's indie shonen-jump. These are webcomic samplers designed to be easily consumable and show off cool work. They're covered in links to people's individual comics/socials.\nThe hope is people buy them to support what we do here and keep the space growing and running, but also serve as a platform for original work that can elevate people over the scrolling feed sites.\nWe would like to host returning comics within the zine but for now we are placing One Time Taxes inside to give people a continuing narrative to return to each issue.\nEvery zine launches with a co-op bundle on itch.io and after each release the previous issue becomes pay what you want.\nAnybody can submit -- just please be easy to contact!\"\n\n\"What's inside?\"\n- Comic samples from 5 different comics\n\n- Book club reviews of one comic pulled from the wheel of webcomics\n\n- artist features\n- full issues of one time taxes & other continuing narratives from community members"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3mmhcxknx2s2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "bradkerr.net",
+        "displayName": "Brad Kerr",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
+      },
+      "record": {
+        "text": "I wrote a tournament module for BETWEEN TWO CONS called \"Weird Little Freaks\" with art by @betterlegends.bsky.social. I think we have 9 sessions scheduled. This adventure is dumb as hell (nonderogatory). Zines for sale at the convention and afterwards.",
+        "createdAt": "2026-05-22T16:07:50.781Z"
+      },
+      "indexedAt": "2026-05-22T16:07:53.569Z",
+      "replyCount": 3,
+      "repostCount": 31,
+      "likeCount": 129,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibrurlyzihwglzjfidyibxhfpmi6bxk76yhstdtdhhh6smygrbrfy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibrurlyzihwglzjfidyibxhfpmi6bxk76yhstdtdhhh6smygrbrfy",
+            "alt": "WEIRD LITTLE FREAKS cover. A duck person holds a sword."
           }
         ]
       },
@@ -131,8 +163,8 @@
       },
       "indexedAt": "2026-05-22T15:46:41.662Z",
       "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 3,
+      "repostCount": 3,
+      "likeCount": 9,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/greywizard/start-a-break-rpg-zine-01",
@@ -190,7 +222,7 @@
       "indexedAt": "2026-05-21T19:45:44.969Z",
       "replyCount": 11,
       "repostCount": 127,
-      "likeCount": 222,
+      "likeCount": 223,
       "embed": {
         "type": "external",
         "uri": "https://wendigoworkshop.itch.io/art-resources-for-broke-creators",
@@ -274,7 +306,7 @@
         "createdAt": "2026-05-21T10:00:42.000Z"
       },
       "indexedAt": "2026-05-21T10:00:43.264Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 10,
       "likeCount": 15,
       "embed": {
@@ -724,70 +756,6 @@
       }
     },
     {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mlviw76vas24",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - pretty cool guy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "Another reminder that I'm working towards my $200/month goal for Patreon! You can check it out for free downloads on all my games, monthly supplemental content, and dev logs for the games I've been making since it was up!\nwww.patreon.com/c/joelvreugd...",
-        "createdAt": "2026-05-15T14:06:32.317Z"
-      },
-      "indexedAt": "2026-05-15T14:06:32.867Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 10,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibassu37s4dzyim727ybaanp52b4ambqt2rmljdjo7xejmml6beny",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibassu37s4dzyim727ybaanp52b4ambqt2rmljdjo7xejmml6beny",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mlvhh5tqjc24",
-      "source": "bluesky",
-      "author": {
-        "handle": "amandalee.bsky.social",
-        "displayName": "The Amanda Lee Mystery House",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
-      },
-      "record": {
-        "text": "The Doom of the dark is FUNDED! \n\nwww.kickstarter.com/projects/gaw...\n\nthanks everyone I was so nervous!",
-        "createdAt": "2026-05-15T13:40:13.828Z"
-      },
-      "indexedAt": "2026-05-15T13:40:22.773Z",
-      "replyCount": 2,
-      "repostCount": 9,
-      "likeCount": 31,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreibsbvqcn22h2yx6prxfdssl5pku5wodcfr2btwzjzr52nsmmupxnq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreibsbvqcn22h2yx6prxfdssl5pku5wodcfr2btwzjzr52nsmmupxnq",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mlvbelsgp22q",
       "source": "bluesky",
       "author": {
@@ -802,7 +770,7 @@
       "indexedAt": "2026-05-15T11:51:27.959Z",
       "replyCount": 5,
       "repostCount": 23,
-      "likeCount": 62,
+      "likeCount": 63,
       "embed": {
         "type": "external",
         "uri": "https://astroprismastore.com/",
@@ -859,7 +827,7 @@
       "indexedAt": "2026-05-13T14:01:44.371Z",
       "replyCount": 7,
       "repostCount": 25,
-      "likeCount": 154,
+      "likeCount": 157,
       "embed": {
         "type": "images",
         "images": [
@@ -1669,18 +1637,18 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.jpg?1775210852",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.jpg?1775210852",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.webp?1775210852",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/596/large/maria-sadre-final-fairy-pond.webp?1775210852",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.jpg?1775210507",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.jpg?1775210507",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.webp?1775210507",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/097/794/603/large/maria-sadre-steps-eng-version.webp?1775210507",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.jpg?1775210375",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.jpg?1775210375",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.webp?1775210375",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/097/794/560/large/maria-sadre-eng-ver2.webp?1775210375",
             "alt": ""
           }
         ]
@@ -2111,8 +2079,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1250,
-      "likeCount": 6573,
+      "repostCount": 1249,
+      "likeCount": 6572,
       "embed": {
         "type": "images",
         "images": [
@@ -3199,7 +3167,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2664,
-      "likeCount": 15697,
+      "likeCount": 15696,
       "embed": {
         "type": "images",
         "images": [
