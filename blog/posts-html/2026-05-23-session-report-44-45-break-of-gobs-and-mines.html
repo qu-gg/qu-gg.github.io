@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Report 44/45 (BREAK!!) - Of Gobs and Mines - Studio Quagg</title>
+    <meta name="description" content="Been a bit, a whole whopping 2 weeks. Most of my creative writing energy last week was consumed by describing the Den of the Half-Knowing Ones, which I’m very happy with, and the session followed the...">
+    <meta property="og:title" content="Session Report 44/45 (BREAK!!) - Of Gobs and Mines">
+    <meta property="og:description" content="Been a bit, a whole whopping 2 weeks. Most of my creative writing energy last week was consumed by describing the Den of the Half-Knowing Ones, which I’m very happy with, and the session followed the...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-05-23-session-report-44-45-break-of-gobs-and-mines.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Session Report 44/45 (BREAK!!) - Of Gobs and Mines">
+    <meta name="twitter:description" content="Been a bit, a whole whopping 2 weeks. Most of my creative writing energy last week was consumed by describing the Den of the Half-Knowing Ones, which I’m very happy with, and the session followed the...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Session Report 44/45 (BREAK!!) - Of Gobs and Mines</h1>
+                <div class="post-meta">
+                    <span class="post-date">May 23, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">Session Report</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>Been a bit, a whole whopping 2 weeks. Most of my creative writing energy last week was consumed by describing the <a href="https://its.quagg.studio/blog/posts-html/2026-05-14-den-of-the-half-knowing-ones-settlement.html">Den of the Half-Knowing Ones</a>, which I&rsquo;m very happy with, and the session followed the beats closely enough that I&rsquo;ve decided to combine today&rsquo;s session report with last week&rsquo;s. There are no rules here!</p>
+<p>So without further ado, here&rsquo;s yapping on Episode 44 then 45 with some Adventure Site Exploration rule updates.</p>
+<h3 id="episode-44-how-not-to-drown">Episode 44 - <a href="https://www.youtube.com/watch?v=7U_LhzgwJ4U">How Not to Drown</a></h3>
+<p>We ended last session with the gang en route to the Den of the Half-Knowing Ones, a group of swampy goblins who might hold some information on their strange Gleysian-Ynn combo mask - key to making the Idea defeatable in the Outer World. The very last bit, however, was their ego-dead scout Dirt stepping out of the woods with:</p>
+<blockquote>
+<p>&ldquo;Dirt tiredly walks out of the jungle towards you all, sighing with: &lsquo;Hey guys, not that it really matters given nothing does, but I did alert a bunch of those scary Rosehound things. They&rsquo;re, ah, right behind me about to pounce.&rsquo;&rdquo;</p>
+</blockquote>
+<p>As the party managed to only blurt out <em>&ldquo;Wait Dirt, what the fu-&ldquo;</em>, combat began! Here I&rsquo;d like to say <em>&ldquo;and pounce the Rosehounds did&rdquo;</em> however, despite throwing 7x Rank 6 Bosses at the party, they wiped the jungle floor with them. Shadow Puppets, Mana Crushes, and Arc Weapon x Spirited Slaughter made light work of them.</p>
+<p><figure><a href="../images/GangInTheWater.webp" target="_blank" rel="noopener noreferrer"><img alt="Rosehound Ambush" src="../images/GangInTheWater.webp" width="65%" /></a><figcaption>Pictured: Gack and Lookus drowning in a (very deep) pond. Map by <a href="https://www.czepeku.com/fantasy/maps/overgrown-magic-forest/deep-pond-camp-day" target="_blank" rel="noopener noreferrer">Czepeku</a>.</figcaption></figure></p>
+<p>The one thing the enemies managed to do was once again break Lookus&rsquo;s leg (counter says 8th time) and throw him over a pool of water&hellip;a pond that endlessly pulls you under. This mechanic was a spontaneous one given I grabbed a random Czepeku map with the feature but it became a rather core one to the fight. They had noted the weirdness of the water leading into the fight and saw firsthand one of the Rosehounds get sucked under so the party went on high-ass alert when Lookus failed his Might Check and got pulled under. Gack dove straight in without consulting Abra and started drowning as well.</p>
+<p>I had no real intentions of making it a lethal trap&hellip;until they were in there, panicking about it. To rectify this, Abra has a legendary artifact (read below) from the Water Spirit of Season 1 which allowed him to pull Lookus out of the water easily. Lookus then, after 35 sessions of having this item, finally realized that he had it equipped. They are gloves from a creepy mime they fought way back when and allows one to make an imaginary lasso or, in this case, an imaginary fishing rod. So despite their insane rolls, it was still an engaging fun fight on the water alone.</p>
+<div class="item-block">
+    <div><span class="item-name">Naryu's Sapphire</span> <span class="item-type">[Artifact]</span></div>
+    <div class="item-desc">An stunning ever-shimmering sapphire-like ring that appears to ripple like the waves itself. It is said to be a tear cast off the Divine Beast Naryu, a great spirit of nature who works quiet and contentedly on the great seas, as they always have.</div>
+    <div class="item-effect">Imbued with immense amounts of Twilight Mana, this artifact seemingly charges itself passively simply by collecting the moisture in the air around it. This Artifact contains 3 Abilities, which recharges at varying intervals.</div>
+    <ul>
+        <li><strong>Naryu's Love:</strong> Once per Fight, as an Action, you may become water itself. Any Attacks or Abilities that target you are negated until the beginning of your next Turn. Does not negate Battlefield Area Conditions.</li>
+        <li><strong>Naryu's Embrace:</strong> Once per Day, as an Action, you may surround a Creature other than yourself with a tempest of water that negates all Damage, and pulls them to your Battlefield Area. This may be used on another Creature's Turn before their Action resolves.</li>
+        <li>Credit to VictorSeven, adapted from his LoZ BREAK!! Homebrew.</li>
+    </ul>
+    <div class="item-stats">.1 Slot · ???</div>
+</div>
+
+<div class="item-block">
+    <div><span class="item-name">Mime's White Gloves</span> <span class="item-type">[Magical Gloves]</span></div>
+    <div class="item-desc">Though a mime's movements are exaggerated and make-believe, the effects of their tricks are very much real.</div>
+    <ul>
+        <li>Once per Day, the one wearing these gloves can use the <strong>Imaginary Lasso</strong> Ability on a successful Aura Check.</li>
+        <ul>
+            <li>On a Failure, they couldn't mime well enough to invoke the magic.</li>
+        </ul>
+        <li><strong>Ability - Imaginary Lasso:</strong></li>
+        <ul>
+            <li>As an Action, the User can pretend to throw a lasso around a Target up to 2 Areas away.</li>
+            <li>Requires a Might Check or the Target is Restrained and dragged to the same Area as the User.</li>
+        </ul>
+    </ul>
+    <div class="item-stats">1 Slot (carried) · 150 Coins</div>
+</div>
+
+<p>One Healing Hands later from Gack and the gang was back on their feet, literally. The rest of the travel to the Den was simple, on account of me not bothering to roll anything more. I won&rsquo;t go into much detail on the Den itself or what its business is (given I did so at length here) but I wanted to talk player reaction to it.</p>
+<p>Nothing butters my yam more than hearing the awestruck reaction of players when I describe a fantastical scene and put up artwork to accompany it, especially when you hear their brain cogs churning at what connections there are to existing threads. Something about BREAK!!&rsquo;s working kitchensink of themes and ideas makes it so even if you&rsquo;re constantly putting novel things in front of them, it all feels like it makes sense within the world. It feels like you have to do less boilerplate, contrastive work (i.e., mundane life vs. wacky external thing) to invoke that deep sense of &ldquo;exploration awe&rdquo; when everyone&rsquo;s just living their best lives in a wacky sundered world.</p>
+<p>On the brain cogs churning, Lookus immediately noted the fractal patterns of the stone and how everything connects together, asking Abra if this is some &ldquo;gobbowerks bullshit.&rdquo; Abra got defensive, as is his natural inclination, but took a proper look and confirmed that this was the single greatest work of gobbowerks he&rsquo;s ever seen. Both of them started spitballing lore theories, and it was great to see.</p>
+<p><figure><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOGAKHyyun-OzIETA7I8bjdbP0yhwuzZ8IIg_qw2xXKL2P1Zwep6VUp4Im58th0k7ArkwQnMeSPpvSbwTjGeSyNtXoV4laYf2iOsBIeNyfH0qmi0alDXQzNY28tC0J3WbiDhV5HM0aZaa/s1600/bismuth.final.1.jpg" target="_blank" rel="noopener noreferrer"><img alt="Art of The Half-Knowing Den" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmOGAKHyyun-OzIETA7I8bjdbP0yhwuzZ8IIg_qw2xXKL2P1Zwep6VUp4Im58th0k7ArkwQnMeSPpvSbwTjGeSyNtXoV4laYf2iOsBIeNyfH0qmi0alDXQzNY28tC0J3WbiDhV5HM0aZaa/s1600/bismuth.final.1.jpg" width="50%" /></a><figcaption>The Half-Knowing Den. Art by: <a href="https://artbykaz.blogspot.com/" target="_blank" rel="noopener noreferrer">Kazunori Aruga</a></figcaption></figure></p>
+<p>Regardless, they followed the Den&rsquo;s storybeats pretty on-point, interacting with the Great Computer&rsquo;s vice lead architect Sprick and exploring their conundrum of the Computer giving the &ldquo;wrong outputs&rdquo;. It kept saying that no one should bother doing anything, not even itself, given it was the &ldquo;end of all times&rdquo;. The Party, knowing the world&rsquo;s situation, was able to confirm that this was actually the <em>right</em> answer, and that their great work was correct. Satisfied, all of the Den&rsquo;s goblins immediately gave up work to start planning an &ldquo;End Of Times Festival&rdquo; to go out with a bang.</p>
+<p>The gang did get some information on the Mask, however:</p>
+<ul>
+<li>It was indeed of Gleysian make, and made out of a similar-yet-better material to the Great Computer - that of Refined Vain Stone. This Lightning-Mana infused stone can carry computational runes to enable computing devices.</li>
+<li>The reason it does nothing when placed on its wooden counterpart is simply due to it being markedly out of power. Sprick suggested that they find some pure, untampered Gleysian power source to recharge it&hellip;wherever one is.</li>
+<li>Its computational runes seem to contain the &ldquo;anti-thesis of an Idea&rdquo; by recursively computing Thoughts on the Idea until it finds the Idea&rsquo;s most natural Ending. All that pretty prose to say: &ldquo;it&rsquo;ll work to bind the Idea in physical form.&rdquo;</li>
+</ul>
+<div class="item-block">
+    <div><span class="item-name">Vain Stone</span> <span class="item-type">[Magic Stone]</span></div>
+    <div class="item-desc">Stone so vain that geologists swear different deposits fight to be the most presentable.</div>
+    <ul>
+        <li>A form of stone which repels all other types of stone or metals from itself.</li>
+        <li>Naturally lightning-aspected, it is immensely useful to all manner of Gadgeteering work.</li>
+        <li>Concept [modified] by: Ekulio</li>
+    </ul>
+    <div class="item-stats">1 Slot · 150 Coins</div>
+</div>
+
+<p>To end the session, Sprick, the vice lead architect, approached and asked the Party if they could investigate their missing mining expedition at the base of the Celestial Heights cliff up north a bit. They had run their current Vain Stone deposit dry and are in search of a new one. This specific expedition contained the Lead Architect Spruck but they never returned back, so everyone presumed it a &ldquo;doomed&rdquo; expedition. Sprick doesn&rsquo;t care about the state of Spruck but is missing his Star Gem and suspects that Spruck stole it from him. It&rsquo;d give Sprick no greater joy to oust Spruck of their &ldquo;true nature&rdquo; and take their place as Lead Architect himself.</p>
+<p>The party said hell yeah to the drama of ruining someone&rsquo;s reputation and figured that, if it is indeed a Vain Stone deposit, they might find some useful leads on the source of the mask&rsquo;s construction or ancient material refineries.</p>
+<h3 id="episode-45-gobbos-yearn-for-the-mines">Episode 45 - Gobbos Yearn for the Mines</h3>
+<p>Coming back to the session, they were made aware that they arrived at the village at the end of their day&rsquo;s travel and thus must rest (or rush against Fatigue) and rest they did. In this lovely high-techy yet druidy village, they asked Sprick if they could kick it here for the night. It being the absolute end of times, Sprick said that while there were no public lodgings in the village, they could rest in his house while preparatory work on the festival begins.</p>
+<p>The unnamed Goblin Guide claimed to know which one was Sprick&rsquo;s house so they could just follow him <span class="spoiler" tabindex="0">(more &lsquo;who knows if it&rsquo;s true&rsquo; backstory to keep &lsquo;em on their toes)</span>. Regardless of whether the house the Guide arrived at was truly Sprick&rsquo;s, he had a key to it and let them all in. Unlike the relatively ok-technology of the other villages on the isle, which are normally just scraps of whatever Gleysian tech they could salvage, the houses here were <em>well-appointed</em> in comparison. Everything made of Vain Stone and the computational runes, maybe-Sprick&rsquo;s house contained a working fridge, Lightning-Mana stove, you name it. In true hero fashion, the party raided the fridge, ate everything, and chilled for the night.</p>
+<p>Gack&rsquo;s camping activity was spent trying to sell complimentary limb replacement surgery to Gobbos passing by on the street. (Sidebar: there have been a surprising number of Drone arm replacements for NPCs in the campaign thus far, all benevolent, but it is nuts because they only fought Drones once in Episode 4.) Gack succeeded in getting the attention of one person walking by, a runecarver who has lost their mind after weeks of the failing Computer. Putting pressure on Gack is fun and thus I had this Goblin ask very leading questions about the extent of the surgery, i.e. &ldquo;if I cut off my head, could you replace that?&rdquo;, in an increasingly aggressive fashion. And said Goblin did just that when Gack eventually cracked and gave the slightest uncertain hint that it could be possible.</p>
+<p>Thus far in the campaign Gack has been an absolutely stellar healer and surgeon, operating in rather stressful situations. However, on this occasion, he absolutely biffed it with a Critical Failure on the roll. The normally unwavering, confident, bullshitting personality of Gack froze in that moment and he did nothing but sputter out a pathetic eulogy on the spot rather than attempt the surgery. The village tabloids when they awoke later warned of a &ldquo;Limb Replacement Grifter&rdquo; going through town and as such, Gack gained a Negative Reputation in the village.</p>
+<p>They then waltzed out into the jungle once more in search of the mining expedition, seeing the festival&rsquo;s banners strung up high and impromptu stages being gobbowerksed up on their way out. The journey to it was very peaceful. The Guide actually managed to fail a Trailblazing roll despite an Insight of 18 but, with only A Few Missteps, all was fine.</p>
+<p><figure><a href="../images/JourneyToMiningExpedition.webp" target="_blank" rel="noopener noreferrer"><img alt="Journey to the Mining Expedition" src="../images/JourneyToMiningExpedition.webp" width="50%" /></a><figcaption>Journey to the mining expedition, few hexes away.</figcaption></figure></p>
+<p>I won&rsquo;t go into crazy detail about the lore of the mine and its whole schtick just yet as I am essentially playtesting the &ldquo;They Dug Too Deep&rdquo; adventure adaptation from my <a href="https://its.quagg.studio/the-helical-expeditions/helical-expeditions-book.html">book of one-shots</a>, originally from <a href="https://moira-games.itch.io/they-dug-too-deep">Moira Games</a>. It&rsquo;s amazing — go check their stuff out. The plan is for the mine to have stumbled across the old hidden laboratory of a High Calian Fleshwarper&hellip;who messed up their very final experiment. The lab will contain the Rings of Fleshwarping Teleportation they&rsquo;re on the lookout for. It is time they got a faster mode of transportation than boats and walking!</p>
+<p>To condense, here are a few highlights of the few rooms they got through thus far:</p>
+<ul>
+<li>Gack baited Abra to use his once-per-day Mana Bomb as the means to open up the collapsed mine entrance, by means of &ldquo;yeah well I doubt your bomb could handle <em>that</em>&rdquo;.</li>
+<li>They immediately found the body of Spruck within, having been the one to seal the entrance. No Star Gem on the body but tropey notes about &ldquo;finding a breakthrough&rdquo;.</li>
+<li>Despite numerous warnings that the mine elevator was rusty/creaky, they all crammed into it and snapped the tether. Falling Injuries ensued but they all got lucky.</li>
+<li>Gack tried giving a peace prayer to the deceased miners within the first chamber but took a wicked claw to the face as their Blighted Demon forms rose up and attacked!</li>
+<li>Cautious Movement made their day as they discovered the secret door hiding treasures of <em>ancient</em> beer bottles.</li>
+</ul>
+<p>Here is the Adventure Site map and where they got to:</p>
+<p><figure><a href="../images/MiningSiteAdventureMap.webp" target="_blank" rel="noopener noreferrer"><img alt="Mining Site Adventure Map" src="../images/MiningSiteAdventureMap.webp" /></a><figcaption>Adventure Site of the doomed mining expedition. Art by: <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank" rel="noopener noreferrer">Moira Games</a>.</figcaption></figure></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>I mentioned a few <a href="https://its.quagg.studio/blog/posts-html/2026-04-16-session-report-41-break-not-more-plants.html">posts</a> back that the Exploration rules have always scared me to run and I wasn&rsquo;t sure how it all fits narratively/with my GM style. Some stuff has definitely started to click for me and the group on this second go, I&rsquo;m happy to say! Markedly, I discovered the rule that the party all gets &ldquo;1 Turn&rsquo;s worth of Actions&rdquo; before Location Actions kick in. How I missed this having read the section many times is a mystery, but ah, here we are finally.</p>
+<p>Regardless, this was the component that made it all click more. I had been trying to reconcile how Cautious Movement slots in against Inspect/Linger actions. Since Cautious Movement discovers everything automatically (at face value), Inspect becomes obsolete for this movement type, and thus you&rsquo;d <em>have</em> to always Linger to interact with a room at all and be harried by 2 Wandering Encounter Rolls. It seemed like an unnecessary halt to narrative/forward momentum to step back into mechanic-world right after combat to declare Location Action/make encounter rolls.</p>
+<p>But that Turn&rsquo;s worth of Actions buffers a ton here and opens up a much more natural flow in players interacting with the space. And specifically, for Cautious Movement, <em>now</em> you can sweep up all the easy, already discovered interactions and simply Move on without a Wandering Encounter, only having to Linger if there is a longer interaction to deal with.</p>
+<p>All-in-all, it is funny to me that <a href="https://www.kickstarter.com/projects/greywizard/start-a-break-rpg-zine-01">START</a> (kickstarting now!) will be such a useful tool in helping me solidify the Exploration rules at a game flow level despite 45 sessions of this campaign, a previous 10-session campaign, numerous one-shots, and variety of homebrew :^) Have I got the right of it yet? Don&rsquo;t think so but vibes are good and the game is going well.</p>
+<p>As always, thank you for reading the ramblings!</p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-05-14-den-of-the-half-knowing-ones-settlement.html" class="post-nav-link next">Den of the Half-Knowing Ones (Settlement) →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
