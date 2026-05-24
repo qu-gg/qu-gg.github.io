@@ -8,7 +8,7 @@
     <!-- Open Graph / Link Embed -->
     <meta property="og:title" content="Unofficial BREAK!! Homebrew Adversary Database">
     <meta property="og:description" content="A community-driven spreadsheet of homebrew adversaries for BREAK!! TTRPG.">
-    <meta property="og:url" content="https://qu-gg.github.io/adversary-database.html">
+    <meta property="og:url" content="https://qu-gg.github.io/break-homebrew-adversary-compendium.html">
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="style.css">
@@ -439,7 +439,7 @@
         let sortDir = 'asc';
 
         // Fetch and render
-        fetch('adversary-database.json')
+        fetch('break-homebrew-adversary-compendium.json')
             .then(r => r.json())
             .then(data => {
                 allData = data.adversaries;

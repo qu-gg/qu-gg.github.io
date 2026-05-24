@@ -7,7 +7,7 @@ Usage:
     python scripts/build_adversary_database.py <path_to_xlsx>
 
 Output:
-    adversary-database.json in the repo root
+    break-homebrew-adversary-compendium.json in the repo root
 """
 import json
 import re
@@ -209,7 +209,7 @@ def main():
         "adversaries": adversaries,
     }
 
-    out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "adversary-database.json")
+    out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "break-homebrew-adversary-compendium.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
