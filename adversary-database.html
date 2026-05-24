@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebrew Adversary Database | Studio Quagg</title>
+
+    <!-- Open Graph / Link Embed -->
+    <meta property="og:title" content="Unofficial BREAK!! Homebrew Adversary Database">
+    <meta property="og:description" content="A community-driven spreadsheet of homebrew adversaries for BREAK!! TTRPG.">
+    <meta property="og:url" content="https://qu-gg.github.io/adversary-database.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="break-style.css">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    <style>
+        /* ===== Adversary Database Spreadsheet Styles ===== */
+        .db-page {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        .db-header {
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .db-header h1 {
+            font-size: 2rem;
+            margin: 0 0 0.25rem;
+            color: var(--accent);
+        }
+
+        .db-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .db-meta span {
+            margin-right: 0;
+        }
+
+        .db-meta-sep {
+            color: var(--text-secondary);
+        }
+
+        .db-link-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.25rem 0.65rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent);
+            border: 1.5px solid var(--accent);
+            border-radius: 999px;
+            text-decoration: none;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .db-link-pill:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Toolbar: search + filters */
+        .db-toolbar {
+            max-width: 900px;
+            margin: 0 auto 1rem;
+            padding-left: 1.85rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .db-search {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+        }
+
+        .db-search:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.15);
+        }
+
+        .db-filter {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            cursor: pointer;
+        }
+
+        .db-filter:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .db-count {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-left: auto;
+        }
+
+        /* Spreadsheet container — fills remaining viewport height */
+        .db-table-wrapper {
+            overflow: auto;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--bg-secondary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            max-width: 100%;
+            height: calc(100dvh - 20rem);
+            min-height: 300px;
+        }
+
+        .db-table {
+            width: max-content;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.82rem;
+            line-height: 1.4;
+            table-layout: auto;
+        }
+
+        /* Header row */
+        .db-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--accent);
+            color: #fff;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            padding: 0.6rem 0.75rem;
+            text-align: left;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 2px solid rgba(0,0,0,0.15);
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .db-table thead th:last-child {
+            border-right: none;
+        }
+
+        .db-table thead th:hover {
+            background: var(--accent-hover);
+        }
+
+        .db-table thead th .sort-indicator {
+            margin-left: 0.3em;
+            opacity: 0.5;
+            font-size: 0.7em;
+        }
+
+        .db-table thead th.sort-asc .sort-indicator,
+        .db-table thead th.sort-desc .sort-indicator {
+            opacity: 1;
+        }
+
+        /* Frozen first column */
+        .db-table th.col-frozen,
+        .db-table td.col-frozen {
+            position: sticky;
+            left: 0;
+            z-index: 20;
+            min-width: 140px;
+        }
+
+        .db-table thead th.col-frozen {
+            z-index: 25;
+            background: var(--accent);
+        }
+
+        .db-table td.col-frozen {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-primary);
+            border-right: 2px solid var(--border);
+            box-shadow: 2px 0 4px rgba(0,0,0,0.06);
+        }
+
+        /* Body cells */
+        .db-table tbody td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 2px solid var(--border);
+            border-right: 1px solid #edf0f2;
+            color: var(--text-primary);
+            vertical-align: top;
+            max-width: 300px;
+        }
+
+        .db-table tbody td:last-child {
+            border-right: none;
+        }
+
+        /* Numeric stat columns get tighter widths */
+        .db-table .col-stat {
+            text-align: center;
+            max-width: 60px;
+            white-space: nowrap;
+        }
+
+        /* Compact centered columns (Rank, SPD, Size, Allegiance) */
+        .db-table .col-compact {
+            text-align: center;
+            white-space: pre-line;
+            min-width: 80px;
+            max-width: 120px;
+        }
+
+        /* Long text columns are capped and expandable */
+        .db-table .col-text {
+            min-width: 200px;
+            max-width: 350px;
+        }
+
+        .db-table .col-text .cell-content {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .db-table tr.row-expanded .col-text .cell-content {
+            -webkit-line-clamp: unset;
+            display: block;
+        }
+
+        /* Alternating rows */
+        .db-table tbody tr:nth-child(even) td {
+            background: var(--bg-primary);
+        }
+
+        .db-table tbody tr:nth-child(even) td.col-frozen {
+            background: var(--bg-primary);
+            box-shadow: 2px 0 4px rgba(0,0,0,0.06);
+        }
+
+        /* Row hover - frozen col needs opaque bg so other cells don't show through */
+        .db-table tbody tr:hover td {
+            background: #edeafc;
+        }
+
+        .db-table tbody tr:hover td.col-frozen {
+            background: #e0dcf7;
+            box-shadow: 2px 0 4px rgba(0,0,0,0.06);
+        }
+
+        /* Expanded row highlight */
+        .db-table tbody tr.row-expanded td {
+            background: #f5f3ff;
+        }
+
+        .db-table tbody tr.row-expanded td.col-frozen {
+            background: #edeafc;
+        }
+
+        /* Type badges */
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-mook {
+            background: #dfe6e9;
+            color: #2d3436;
+        }
+
+        .badge-boss {
+            background: #ffeaa7;
+            color: #6c5800;
+        }
+
+        .badge-mega-boss {
+            background: #fab1a0;
+            color: #6b2c1a;
+        }
+
+        .badge-colossus {
+            background: #a29bfe;
+            color: #2d1b69;
+        }
+
+        /* Empty state */
+        .db-empty {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .db-page {
+                padding: 1rem 0.5rem;
+            }
+
+            .db-header, .db-toolbar {
+                padding: 0 0.5rem;
+            }
+
+            .db-table {
+                font-size: 0.75rem;
+            }
+
+            .db-table thead th,
+            .db-table tbody td {
+                padding: 0.4rem 0.5rem;
+            }
+
+            .db-table .col-text {
+                min-width: 150px;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="break.html">BREAK!! Homebrew</a></li>
+                <li><a href="imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="db-page">
+        <div class="db-header">
+            <h1>Unofficial BREAK!! Homebrew Adversary Compendium</h1>
+            <div class="db-meta">
+                <span id="db-updated"></span>
+                <span class="db-meta-sep">·</span>
+                <span id="db-count-meta"></span>
+                <span class="db-meta-sep">·</span>
+                <a href="https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing" target="_blank" rel="noopener" class="db-link-pill">Original Google Sheet</a>
+                <a href="https://forms.gle/vkjy4xm5aZh1uWEN6" target="_blank" rel="noopener" class="db-link-pill">Submit your own homebrew!</a>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">
+                Community-sourced adversaries for the <a href="https://www.breakrpg.com/" target="_blank" rel="noopener" style="color: var(--accent);">BREAK!!</a> TTRPG system.
+                Click a row to expand its text!
+            </p>
+        </div>
+
+        <div class="db-toolbar">
+            <input type="text" class="db-search" id="db-search" placeholder="Search adversaries...">
+            <select class="db-filter" id="filter-type">
+                <option value="">All Types</option>
+            </select>
+            <select class="db-filter" id="filter-rank">
+                <option value="">All Ranks</option>
+            </select>
+            <select class="db-filter" id="filter-credit">
+                <option value="">All Contributors</option>
+            </select>
+            <span class="db-count" id="db-visible-count"></span>
+        </div>
+
+        <div class="db-table-wrapper" id="db-table-wrapper">
+            <table class="db-table" id="db-table">
+                <thead><tr id="db-thead-row"></tr></thead>
+                <tbody id="db-tbody"></tbody>
+            </table>
+            <div class="db-empty" id="db-empty" style="display:none;">No adversaries match your filters.</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg · BREAK!! is © Reynaldo Madriñan & Grey Wizard</p>
+    </footer>
+
+    <script>
+    (function() {
+        // Column classification
+        const STAT_COLS = new Set(['ATK', 'DEF', 'HP', 'M', 'D', 'G', 'I', 'A']);
+        const COMPACT_COLS = new Set(['Type', 'Rank', 'SPD', 'Size', 'Allegiance']);
+        const TEXT_COLS = new Set([
+            'Flavor Text', 'Ability 1', 'Ability 2', 'Ability 3', 'Ability 4',
+            'Ability 5', 'Ability 6', 'Ability 7', 'Yield 1', 'Yield 2',
+            'Tactics', 'Combat Gear', 'Habitat', 'Communication',
+            'Indicators', 'Role Playing Notes', 'Customization'
+        ]);
+
+        let allData = [];
+        let headers = [];
+        let sortCol = null;
+        let sortDir = 'asc';
+
+        // Fetch and render
+        fetch('adversary-database.json')
+            .then(r => r.json())
+            .then(data => {
+                allData = data.adversaries;
+                headers = data.headers;
+
+                document.getElementById('db-updated').textContent = 'Last Updated: ' + (data.lastUpdated || 'Unknown');
+                document.getElementById('db-count-meta').textContent = data.count + ' adversaries';
+
+                populateFilters();
+                buildHeader();
+                renderTable();
+            });
+
+        function populateFilters() {
+            // Type filter
+            const types = [...new Set(allData.map(a => a['Type']).filter(Boolean))].sort();
+            const typeSelect = document.getElementById('filter-type');
+            types.forEach(t => {
+                const opt = document.createElement('option');
+                opt.value = t;
+                opt.textContent = t;
+                typeSelect.appendChild(opt);
+            });
+
+            // Rank filter
+            const ranks = [...new Set(allData.map(a => a['Rank']).filter(v => v !== ''))].sort((a, b) => a - b);
+            const rankSelect = document.getElementById('filter-rank');
+            ranks.forEach(r => {
+                const opt = document.createElement('option');
+                opt.value = r;
+                opt.textContent = 'Rank ' + r;
+                rankSelect.appendChild(opt);
+            });
+
+            // Credit filter
+            const credits = [...new Set(allData.map(a => a['Credit']).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+            const creditSelect = document.getElementById('filter-credit');
+            credits.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                creditSelect.appendChild(opt);
+            });
+
+            // Event listeners
+            document.getElementById('db-search').addEventListener('input', renderTable);
+            typeSelect.addEventListener('change', renderTable);
+            rankSelect.addEventListener('change', renderTable);
+            creditSelect.addEventListener('change', renderTable);
+        }
+
+        function buildHeader() {
+            const row = document.getElementById('db-thead-row');
+            headers.forEach((h, i) => {
+                const th = document.createElement('th');
+                th.textContent = h;
+                th.dataset.col = h;
+
+                const indicator = document.createElement('span');
+                indicator.className = 'sort-indicator';
+                indicator.textContent = '⇅';
+                th.appendChild(indicator);
+
+                if (i === 0) th.classList.add('col-frozen');
+                if (STAT_COLS.has(h)) th.classList.add('col-stat');
+                if (COMPACT_COLS.has(h)) th.classList.add('col-compact');
+
+                th.addEventListener('click', () => {
+                    if (sortCol === h) {
+                        sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        sortCol = h;
+                        sortDir = 'asc';
+                    }
+                    // Update header classes
+                    row.querySelectorAll('th').forEach(el => {
+                        el.classList.remove('sort-asc', 'sort-desc');
+                        el.querySelector('.sort-indicator').textContent = '⇅';
+                    });
+                    th.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
+                    indicator.textContent = sortDir === 'asc' ? '↑' : '↓';
+                    renderTable();
+                });
+
+                row.appendChild(th);
+            });
+        }
+
+        function getFilteredData() {
+            const search = document.getElementById('db-search').value.toLowerCase().trim();
+            const typeFilter = document.getElementById('filter-type').value;
+            const rankFilter = document.getElementById('filter-rank').value;
+            const creditFilter = document.getElementById('filter-credit').value;
+
+            let filtered = allData;
+
+            if (search) {
+                filtered = filtered.filter(a =>
+                    headers.some(h => String(a[h]).toLowerCase().includes(search))
+                );
+            }
+            if (typeFilter) {
+                filtered = filtered.filter(a => a['Type'] === typeFilter);
+            }
+            if (rankFilter) {
+                filtered = filtered.filter(a => String(a['Rank']) === rankFilter);
+            }
+            if (creditFilter) {
+                filtered = filtered.filter(a => a['Credit'] === creditFilter);
+            }
+
+            // Sort
+            if (sortCol) {
+                filtered = [...filtered].sort((a, b) => {
+                    let va = a[sortCol], vb = b[sortCol];
+                    // Numeric comparison if both are numbers
+                    if (typeof va === 'number' && typeof vb === 'number') {
+                        return sortDir === 'asc' ? va - vb : vb - va;
+                    }
+                    // Empty values sort to end
+                    if (va === '' || va === null || va === undefined) return 1;
+                    if (vb === '' || vb === null || vb === undefined) return -1;
+                    va = String(va).toLowerCase();
+                    vb = String(vb).toLowerCase();
+                    const cmp = va.localeCompare(vb, undefined, { numeric: true });
+                    return sortDir === 'asc' ? cmp : -cmp;
+                });
+            }
+
+            return filtered;
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function typeBadge(type) {
+            const cls = {
+                'Mook': 'badge-mook',
+                'Boss': 'badge-boss',
+                'Mega-Boss': 'badge-mega-boss',
+                'Colossus': 'badge-colossus'
+            }[type] || 'badge-mook';
+            return '<span class="badge ' + cls + '">' + escapeHtml(type) + '</span>';
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('db-tbody');
+            const emptyEl = document.getElementById('db-empty');
+            const filtered = getFilteredData();
+
+            document.getElementById('db-visible-count').textContent =
+                filtered.length + ' of ' + allData.length + ' shown';
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = '';
+                emptyEl.style.display = 'block';
+                return;
+            }
+
+            emptyEl.style.display = 'none';
+
+            const fragment = document.createDocumentFragment();
+            filtered.forEach(adv => {
+                const tr = document.createElement('tr');
+
+                // Click the name cell or any text cell to toggle full-row expand
+                tr.addEventListener('click', (e) => {
+                    // Don't toggle if user is selecting text
+                    if (window.getSelection().toString()) return;
+                    tr.classList.toggle('row-expanded');
+                });
+
+                headers.forEach((h, i) => {
+                    const td = document.createElement('td');
+                    const val = adv[h];
+                    const str = val === '' || val === null || val === undefined ? '' : String(val);
+
+                    if (i === 0) {
+                        td.classList.add('col-frozen');
+                        td.textContent = str;
+                        td.style.cursor = 'pointer';
+                    } else if (h === 'Type') {
+                        td.classList.add('col-compact');
+                        td.innerHTML = str ? typeBadge(str) : '';
+                    } else if (STAT_COLS.has(h)) {
+                        td.classList.add('col-stat');
+                        td.textContent = str;
+                    } else if (COMPACT_COLS.has(h)) {
+                        td.classList.add('col-compact');
+                        td.textContent = str;
+                    } else if (TEXT_COLS.has(h) && str.length > 0) {
+                        td.classList.add('col-text');
+                        const content = document.createElement('div');
+                        content.className = 'cell-content';
+                        content.innerHTML = str;
+                        td.appendChild(content);
+                    } else {
+                        td.textContent = str;
+                    }
+
+                    tr.appendChild(td);
+                });
+                fragment.appendChild(tr);
+            });
+
+            tbody.innerHTML = '';
+            tbody.appendChild(fragment);
+        }
+
+        // Mobile nav toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    })();
+    </script>
+</body>
+</html>
