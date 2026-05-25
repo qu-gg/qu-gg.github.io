@@ -122,6 +122,12 @@ def clean_entry(entry):
     if credit in CREDIT_FIXES:
         entry['Credit'] = CREDIT_FIXES[credit]
 
+    # Compact ability slots: shift non-empty abilities left to fill gaps
+    ability_keys = [f'Ability {i}' for i in range(1, 8)]
+    filled = [entry[k] for k in ability_keys if entry.get(k, '').strip()]
+    for i, key in enumerate(ability_keys):
+        entry[key] = filled[i] if i < len(filled) else ''
+
     return entry
 
 
