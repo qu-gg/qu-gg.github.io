@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T12:51:01.060256Z",
+  "lastUpdated": "2026-05-27T00:23:30.140731Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6gbricujupbk2veztj36cdit/app.bsky.feed.post/3mmrpbzsg422p",
+      "source": "bluesky",
+      "author": {
+        "handle": "socksandpuppets.com",
+        "displayName": "ahdok",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreie6c4o3ri5k5zwk3owweeqch7ixzl3ndlk6v3g2gp5bxnk4psujcu"
+      },
+      "record": {
+        "text": "Alright, pursuant to my big thread about my thoughts on tabletop games right now, I'd like to share some fanart of Mariah Doeheart, the mascot character for the Break!! RPG. She's a fun design.",
+        "createdAt": "2026-05-26T19:15:04.459Z"
+      },
+      "indexedAt": "2026-05-26T19:15:14.363Z",
+      "replyCount": 2,
+      "repostCount": 3,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreigizogm5lpciruspalallbkijejth4ii6sc5a7wfrvhckn3zh2uj4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreigizogm5lpciruspalallbkijejth4ii6sc5a7wfrvhckn3zh2uj4",
+            "alt": "A fantasy drawing of a blue woman with pink hair, wielding a sword and a metal shield. She looks extremely happy to be doing this."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jnq3arn4s46wlxmzurhgrzmh/app.bsky.feed.post/3mmre267yv22y",
+      "source": "bluesky",
+      "author": {
+        "handle": "gandergaming.bsky.social",
+        "displayName": "Gander Gaming",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreig4eymt3zrbh2msulawpet22nbnrs422myhhyln5liunaul4uxz2a"
+      },
+      "record": {
+        "text": "Grok?! 2e Kickstarter is LIVE!\n\nIf you're looking for a [human made] gonzo science-fantasy game with minimal prep and maximum weird.. this is it?!\n\nwww.kickstarter.com/projects/gan...",
+        "createdAt": "2026-05-26T15:53:49.533Z"
+      },
+      "indexedAt": "2026-05-26T15:53:50.362Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 13,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/gandergaming/grok-2nd-edition",
+        "title": "GROK?! 2e: A Gonzo Science Fantasy RPG",
+        "description": "Grok?! is a [human made] rules-light science fantasy RPG in a post-apocalyptic world of advanced technomancy and boundless plausibility",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreiglwj3xtjdkdrln27vc4zrgukkr5hc2phwswocngknn3udhlxtdie"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:lglyzxbrd5vgmuqg24jo2yi7/app.bsky.feed.post/3mmpt4srv5c2c",
       "source": "bluesky",
       "author": {
@@ -65,8 +126,8 @@
       },
       "indexedAt": "2026-05-26T01:18:31.569Z",
       "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 17,
+      "repostCount": 11,
+      "likeCount": 21,
       "embed": {
         "type": "external",
         "uri": "https://ttrpg.link/radiant",
@@ -123,8 +184,8 @@
       },
       "indexedAt": "2026-05-25T19:09:14.271Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 19,
+      "repostCount": 12,
+      "likeCount": 20,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/wendigo-workshop/last-hope-a-dark-magical-girls-ttrpg-built-on-caltrop-core?ref=bk-discover-user-profile&utm_campaign=bk-discover-user-profile&utm_medium=discover&utm_source=backerkit",
@@ -153,7 +214,7 @@
       "indexedAt": "2026-05-25T16:23:23.559Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -180,8 +241,8 @@
       },
       "indexedAt": "2026-05-25T13:55:39.764Z",
       "replyCount": 2,
-      "repostCount": 18,
-      "likeCount": 91,
+      "repostCount": 20,
+      "likeCount": 98,
       "embed": {
         "type": "images",
         "images": [
@@ -196,6 +257,38 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard - KICKSTARTING NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
+      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mmo6d74l422u",
+      "source": "bluesky",
+      "author": {
+        "handle": "sinland.gay",
+        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
+      },
+      "record": {
+        "text": "Late nite update: I have a new blog post up about #dowagerrpg on tumblr, going into what I've been working on and what's coming in the next update. Version v0.06 will drop on June 9th and contain GM materials, if that's the main thing you care about. Cheers!\n\nsinabsentia.blog/post/8175746...",
+        "createdAt": "2026-05-25T09:33:30.779Z"
+      },
+      "indexedAt": "2026-05-25T09:33:35.765Z",
+      "replyCount": 1,
+      "repostCount": 13,
+      "likeCount": 19,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreicj4e6b4shxtxman7me5ckfafq23g6c74qg3esptqyvsixhhw4mmi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreicj4e6b4shxtxman7me5ckfafq23g6c74qg3esptqyvsixhhw4mmi",
+            "alt": "What can I say? Tumblr embeds look awful on this shitass website.\n\nClick the link to read my blog post about\n\nDOWAGER: THE SACRED & STRANGE\nA Tactical RPG of SEMI-AUTOMATIC SORCERY and PSIONIC TURMOIL across the GOLDEN COSMOS\n\nand maybe buy it on patreon or something"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -245,9 +338,9 @@
         "createdAt": "2026-05-25T04:24:44.753Z"
       },
       "indexedAt": "2026-05-25T04:24:49.065Z",
-      "replyCount": 3,
-      "repostCount": 27,
-      "likeCount": 49,
+      "replyCount": 4,
+      "repostCount": 29,
+      "likeCount": 56,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/",
@@ -322,6 +415,43 @@
       }
     },
     {
+      "uri": "at://did:plc:ijyn4mmi2wh5ar2gisfwdhd2/app.bsky.feed.post/3mmm2hhndw22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "neonrot.bsky.social",
+        "displayName": "NeonRot",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreif3bc45yuosg5rvgfxime6gviizkbuwu74ukibdznhxzqk36hppp4"
+      },
+      "record": {
+        "text": "Oppai Sluggerz is now also up on my KOFI to be pre-ordered! Get your tools to fight as magical girls during the martian/zombie apocalypse now! ko-fi.com/s/ab6ad8627f",
+        "createdAt": "2026-05-24T13:18:59.134Z"
+      },
+      "indexedAt": "2026-05-24T13:19:30.169Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaffm65qwrklux2fl5nr25dhnjse7xnqi5h5hgm55upjktopmma6e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaffm65qwrklux2fl5nr25dhnjse7xnqi5h5hgm55upjktopmma6e",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaeffm2uhstnl6cmhllkhfns3cyijnfowyyxushpueqozwb4p7ffu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaeffm2uhstnl6cmhllkhfns3cyijnfowyyxushpueqozwb4p7ffu",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:if25nxd4lm3lmfxb2cidvvjz/app.bsky.feed.post/3mmhzlbcm6s2l",
       "source": "bluesky",
       "author": {
@@ -364,8 +494,8 @@
       },
       "indexedAt": "2026-05-22T22:32:00.262Z",
       "replyCount": 1,
-      "repostCount": 28,
-      "likeCount": 41,
+      "repostCount": 30,
+      "likeCount": 42,
       "embed": {
         "type": "images",
         "images": [
@@ -400,9 +530,9 @@
         "createdAt": "2026-05-22T16:07:50.781Z"
       },
       "indexedAt": "2026-05-22T16:07:53.569Z",
-      "replyCount": 5,
+      "replyCount": 6,
       "repostCount": 36,
-      "likeCount": 166,
+      "likeCount": 170,
       "embed": {
         "type": "images",
         "images": [
@@ -727,99 +857,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mm7eexx6y22t",
-      "source": "bluesky",
-      "author": {
-        "handle": "binarystar.games",
-        "displayName": "Binary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim"
-      },
-      "record": {
-        "text": "Bluesky's back? Wonderful!\n\nDid you all know I released a supplement to NULL_SPACE? \n\nWhat's that, you didn't because I suck at marketing and barely posted about it? \n\nWell, NULL_SPACE Supplement #1: Violence is here. I wrote a piece about it: binarystar.games/posts/origin...",
-        "createdAt": "2026-05-19T12:11:56.760Z"
-      },
-      "indexedAt": "2026-05-19T12:11:59.461Z",
-      "replyCount": 1,
-      "repostCount": 23,
-      "likeCount": 41,
-      "embed": {
-        "type": "external",
-        "uri": "https://binarystar.games/posts/original-1778621782-violence-without-combat/",
-        "title": "Violence Without* Combat",
-        "description": "Hi there! Did you know that not only is NULL_SPACE out, not only is it out in physical form, and not only does it have a printed job packet\u2026it has its first official supplement, called Supplement #1: ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreidb53fzcjydgpjqjcemcjmhtv4evjr5pdzgacb6yjbef5v7adqz6i"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xn6s62p5a2fvfez4f2ihzbag/app.bsky.feed.post/3mm67vxnnhc2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "toastyseahorse.bsky.social",
-        "displayName": "Toasty Seahorse Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreie55x2nfghlf4hkbniqgheircopnrwqqdmhmjljv64w22o2up2wry"
-      },
-      "record": {
-        "text": "Colds in crime dramas have the most skills in reading a situation, but they often get the conch yanked away from them by the hothead. Colds in the game come equipped with money, confidence, and/or privilege, so hotheads can't speak over them.\n\nJules (Pulp Fiction) is a game-accurate Cold.\n\n1/3",
-        "createdAt": "2026-05-19T01:19:18.424Z"
-      },
-      "indexedAt": "2026-05-19T01:19:19.677Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreiatxqei2pz3pbta727y7n6ka6iqzc4gycy7vi7rzdt77h3aumktri",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreiatxqei2pz3pbta727y7n6ka6iqzc4gycy7vi7rzdt77h3aumktri",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mm4yx45a472k",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
-      },
-      "record": {
-        "text": "In Solar Mech Squad, you and your friends travel to other planets, use real research to help make them habitable, and get to do it all with some awesome giant mech suits!\n\nCheck this TTRPG out here, and I hope you have fun!\n\nhttps://ttrpgkids.itch.io/solar-mech-squad-a-solarpunk-ttrpg\n\n",
-        "createdAt": "2026-05-18T06:42:00-07:00"
-      },
-      "indexedAt": "2026-05-18T13:42:01.274Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreigdd76xyet56h7hdrbbyex3vz77aozhatvstsjvvbpcaw25abqwai",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreigdd76xyet56h7hdrbbyex3vz77aozhatvstsjvvbpcaw25abqwai",
-            "alt": "Solar Mech Squad\nAn intersteller solarpunk TTRPG\n\nVisit ttrpgkids.itch.io or ko-fi.com/ttrpgkids/shop\n"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:afor67p53v3dk2dn3yfhs2ul/app.bsky.feed.post/3mm3cpozcvk2r",
@@ -1454,34 +1491,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mkqdk4sfqc2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Keep off the grass! Groundskeeper drones are programmed to trim back unsightly overgrowth. Twigs, branches, arms, legs!\n\n\ud83d\udc49 What other marvels from the past will you encounter?\n\nSTART - A BREAK!! RPG Adventure\nwww.kickstarter.com/projects/gre...",
-        "createdAt": "2026-04-30T19:21:48.092Z"
-      },
-      "indexedAt": "2026-04-30T19:22:06.288Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigwiajaj4kyew5lsp2vqb7vedlv3ytzrlp4imbng5gthhoy3jyq2u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreigwiajaj4kyew5lsp2vqb7vedlv3ytzrlp4imbng5gthhoy3jyq2u",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
       "author": {
@@ -1569,7 +1578,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6328,
+      "likeCount": 6329,
       "embed": {
         "type": "images",
         "images": [
@@ -1709,7 +1718,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 620,
-      "likeCount": 2898,
+      "likeCount": 2900,
       "embed": {
         "type": "images",
         "images": [
@@ -1766,7 +1775,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 766,
-      "likeCount": 3897,
+      "likeCount": 3898,
       "embed": {
         "type": "images",
         "images": [
@@ -2118,7 +2127,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1249,
-      "likeCount": 6571,
+      "likeCount": 6572,
       "embed": {
         "type": "images",
         "images": [
@@ -2282,7 +2291,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 670,
-      "likeCount": 2960,
+      "likeCount": 2961,
       "embed": {
         "type": "images",
         "images": [
@@ -3179,7 +3188,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2665,
-      "likeCount": 15694,
+      "likeCount": 15695,
       "embed": {
         "type": "images",
         "images": [
