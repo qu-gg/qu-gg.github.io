@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T12:58:30.889058Z",
+  "lastUpdated": "2026-05-28T00:21:42.174618Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,85 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mmummc4fuk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "hime.vtubers.social",
+        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreicw6dhzikkxvyazrpxqprb3solfljvd44lslsos672pkhkcxccxke"
+      },
+      "record": {
+        "text": "Today I'm working on and talking about Ballads of Dawn, my own solo TTRPG I've been writing and working on and checking out this idle desktop game called Kernelbay~ Come hang out! twitch.tv/himeutsugi #vtubers #vsky #solottrpg",
+        "createdAt": "2026-05-27T23:05:06.735Z"
+      },
+      "indexedAt": "2026-05-27T23:05:09.661Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm",
+            "alt": "Hime going live!"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mmu5auac2s2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "amandalee.bsky.social",
+        "displayName": "The Amanda Lee Mystery House",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
+      },
+      "record": {
+        "text": "The Doom of the Dark Kickstarter is headed into the last stretch! www.kickstarter.com/projects/gaw...\na one-shot adventure zine by @falsemachine.bsky.social with brave mouse knights and really dumb goblins and terrible sorcery (and all these drawings)\n#ttrpg #osr",
+        "createdAt": "2026-05-27T18:30:16.905Z"
+      },
+      "indexedAt": "2026-05-27T18:30:25.572Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifzd7aiqtwdzrnsc47c2k7k3vlrkrom2exjeiyh33i32h5kkcikky",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifzd7aiqtwdzrnsc47c2k7k3vlrkrom2exjeiyh33i32h5kkcikky",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifsj7g75idbuwd6a6vzzk62mu4byz67csssqrjx7ii4tfsxmgsztm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifsj7g75idbuwd6a6vzzk62mu4byz67csssqrjx7ii4tfsxmgsztm",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifq54iglo72splz63rh7op5bcdosrrf3e73t4porn6ehqglsilylu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreifq54iglo72splz63rh7op5bcdosrrf3e73t4porn6ehqglsilylu",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia7toek7d6g6pzdgaoge7bs4ponuiatukeu7kcsbdaiea3wmow2rm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia7toek7d6g6pzdgaoge7bs4ponuiatukeu7kcsbdaiea3wmow2rm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmtjafsxtk2i",
       "source": "bluesky",
       "author": {
@@ -64,9 +143,9 @@
         "createdAt": "2026-05-27T12:32:07.000Z"
       },
       "indexedAt": "2026-05-27T12:32:14.673Z",
-      "replyCount": 1,
-      "repostCount": 0,
-      "likeCount": 5,
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +173,7 @@
       "indexedAt": "2026-05-27T10:33:38.567Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 8,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -122,7 +201,7 @@
       "indexedAt": "2026-05-27T08:31:33.766Z",
       "replyCount": 0,
       "repostCount": 6,
-      "likeCount": 18,
+      "likeCount": 25,
       "embed": {
         "type": "images",
         "images": [
@@ -153,8 +232,8 @@
       },
       "indexedAt": "2026-05-26T19:15:14.363Z",
       "replyCount": 2,
-      "repostCount": 3,
-      "likeCount": 21,
+      "repostCount": 4,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -186,7 +265,7 @@
       "indexedAt": "2026-05-26T15:53:50.362Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 16,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/gandergaming/grok-2nd-edition",
@@ -427,8 +506,8 @@
       },
       "indexedAt": "2026-05-25T04:24:49.065Z",
       "replyCount": 6,
-      "repostCount": 34,
-      "likeCount": 70,
+      "repostCount": 45,
+      "likeCount": 93,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/",
@@ -457,7 +536,7 @@
       "indexedAt": "2026-05-24T21:24:28.362Z",
       "replyCount": 3,
       "repostCount": 3,
-      "likeCount": 61,
+      "likeCount": 64,
       "embed": {
         "type": "images",
         "images": [
@@ -659,153 +738,6 @@
         "title": "BREAK!! the anime inspired tabletop RPG is back!",
         "description": "Another chance to get the award-winning game, now with new adventure... START!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:luifhoeunqel6cl7ucu3oica/bafkreiautrbrei5ikopzevn6x57zhxog36cu3bpxiarebcqcfswehnkywm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:db2xbmjjvoup6sols2ons4h5/app.bsky.feed.post/3mmf6oacfmc2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "wendigoworkshop.bsky.social",
-        "displayName": "\ud83c\udf41 Wendigo Workshop \ud83c\udf41",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreibh7nskgnilb2vrg3lbkjuzoswnhzd2ngqmm43vgoy3ew2a5z5dam"
-      },
-      "record": {
-        "text": "In honor of the person who told us that using stock images makes your game \"look cheap\" because you \"already saw these images before\", we're sharing our doc again!\n\nIt doesn't make you cheap or \"less than\". Use the resources that fit your budget and have FUN!\n\nwendigoworkshop.itch.io/art-resource...",
-        "createdAt": "2026-05-21T19:45:43.485Z"
-      },
-      "indexedAt": "2026-05-21T19:45:44.969Z",
-      "replyCount": 11,
-      "repostCount": 127,
-      "likeCount": 225,
-      "embed": {
-        "type": "external",
-        "uri": "https://wendigoworkshop.itch.io/art-resources-for-broke-creators",
-        "title": "Art Resources for Broke TTRPG Creators! by WendigoWorkshop",
-        "description": "A small document with a bunch of resources for TTRPG creators on a budget",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreicgmbhc7qhh5o6vx7yjplfggiyb3cysxqqaedl6yf5fmrr4efwd5a"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mmei7jwim22w",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "There are 7 days left for START's kickstarter! This is the first official published adventure for BREAK!! and also a companion book containing new rules and detailed setting information. There are lots of places to explore and interesting folk to meet!\n\nwww.kickstarter.com/projects/gre...",
-        "createdAt": "2026-05-21T13:03:47.919Z"
-      },
-      "indexedAt": "2026-05-21T13:03:49.662Z",
-      "replyCount": 2,
-      "repostCount": 20,
-      "likeCount": 53,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiexoslzagau7om5rqzcjkjwgflvfuvd6lboxuqtbqosld5mnzw33y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiexoslzagau7om5rqzcjkjwgflvfuvd6lboxuqtbqosld5mnzw33y",
-            "alt": "A series of pictures of various Game Master Characters featured in START, a companion book for the BREAK!! tabletop rpg."
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:xn6s62p5a2fvfez4f2ihzbag/app.bsky.feed.post/3mmehobliyk2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "toastyseahorse.bsky.social",
-        "displayName": "Toasty Seahorse Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreie55x2nfghlf4hkbniqgheircopnrwqqdmhmjljv64w22o2up2wry"
-      },
-      "record": {
-        "text": "Two weeks left to back The Old The Cold The Bold: 2nd Edition on @backerkit.com! A criminal gig economy tabletop roleplaying game!\n\n#OCB2nd is perfect for folks who like #Leverage (heists that screw over the rich and powerful ice cream with a found family swirl)!\n\nLet's get that stretch goal funded!",
-        "createdAt": "2026-05-21T12:54:08.769Z"
-      },
-      "indexedAt": "2026-05-21T12:54:11.064Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 7,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/toasty-seahorse-studio/the-old-the-cold-the-bold-2nd-edition",
-        "title": "The Old The Cold The Bold: 2nd Edition",
-        "description": "A TTRPG about regulated crime, vigilantism, and chosen family. Inspired by the mechanics of Lady Blackbird by John Harper.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreigxwnnqooddlqzdgwtsubfpix7xidnkuayxhawwv2dfl5mhru5jcy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mme5y5zk7b23",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
-      },
-      "record": {
-        "text": "Posting Skies Above until I find my audience. SNES era JRPG magic at your tabletop. Vibrant post apocalyptic world. d8 dice pool system. Ashcan available now. Kickstarter June 2025. The nostalgia crowd exists. Help me find them. losthavenart.com #ttrpg #SkiesAbove",
-        "createdAt": "2026-05-21T10:00:42.000Z"
-      },
-      "indexedAt": "2026-05-21T10:00:43.264Z",
-      "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 16,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreicgdxkipvffpmlufsw3faxgco7bkao7ef5wayl3iqbxz4gtbsn42m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreicgdxkipvffpmlufsw3faxgco7bkao7ef5wayl3iqbxz4gtbsn42m",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:if25nxd4lm3lmfxb2cidvvjz/app.bsky.feed.post/3mmccpx2qmk2j",
-      "source": "bluesky",
-      "author": {
-        "handle": "ferdon10.bsky.social",
-        "displayName": "Fernando Cruz (Is making One Time Taxes COMIC)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:if25nxd4lm3lmfxb2cidvvjz/bafkreifgxx2ktvi5zhruj5gndfdytejgyucmrszewm32wwoqwmmqcxafhq"
-      },
-      "record": {
-        "text": "youtu.be/jKqHlWXjA38 Finally get to share the conclusion to Pale Promonitions!  It's been an honor working to help my buddy @lorenzohall.com with the editing -u-\n#Arisan",
-        "createdAt": "2026-05-20T16:20:16.659Z"
-      },
-      "indexedAt": "2026-05-20T16:20:18.365Z",
-      "replyCount": 2,
-      "repostCount": 10,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/jKqHlWXjA38",
-        "title": "Arisan: Pale Premonitions - 5",
-        "description": "YouTube video by Austin Lee Matthews (Maus)",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:if25nxd4lm3lmfxb2cidvvjz/bafkreici5qxwudphps3bylmm2sz5yrvbtpwtdmf4lwctljazbzczsgoq3e"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1557,8 +1489,8 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/088/393/large/ines-rotzinger-card.jpg?1776100054",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/088/393/large/ines-rotzinger-card.jpg?1776100054",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/088/393/large/ines-rotzinger-card.webp?1776100054",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/088/393/large/ines-rotzinger-card.webp?1776100054",
             "alt": ""
           }
         ]
@@ -1614,23 +1546,23 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.jpg?1776093127",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.jpg?1776093127",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.webp?1776093127",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/092/large/nick-bray-lykoi1.webp?1776093127",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.jpg?1776091617",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.jpg?1776091617",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.webp?1776091617",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/084/187/large/nick-bray-lykoiportrait1.webp?1776091617",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.jpg?1776092657",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.jpg?1776092657",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.webp?1776092657",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/762/large/nick-bray-lykoiprocess1.webp?1776092657",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.jpg?1776093116",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.jpg?1776093116",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.webp?1776093116",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/084/998/large/nick-bray-lykoirefs.webp?1776093116",
             "alt": ""
           }
         ]
