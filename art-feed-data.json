@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T13:02:43.635387Z",
+  "lastUpdated": "2026-05-29T00:25:10.523578Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,207 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:kki26xzogawuzfr6j4tliypn/app.bsky.feed.post/3mmwy66vn7s2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "fantomcomics.bsky.social",
+        "displayName": "Fantom Comics",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kki26xzogawuzfr6j4tliypn/bafkreieb4hufiwrnsrm22apgskuaaxwrniq7tojwyvzk54ywwylfel2az4"
+      },
+      "record": {
+        "text": "our next free indie tabletop RPG night with Designed in the DMV is June 22 \ud83c\udfb2",
+        "createdAt": "2026-05-28T21:37:17.985Z"
+      },
+      "indexedAt": "2026-05-28T21:37:19.662Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kki26xzogawuzfr6j4tliypn/bafkreiaoj7z34gqgmrvpop2oizsvln5iyuxgqclh3mq2o4bikfs7ypnnzm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kki26xzogawuzfr6j4tliypn/bafkreiaoj7z34gqgmrvpop2oizsvln5iyuxgqclh3mq2o4bikfs7ypnnzm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xn6s62p5a2fvfez4f2ihzbag/app.bsky.feed.post/3mmwsqww7522r",
+      "source": "bluesky",
+      "author": {
+        "handle": "toastyseahorse.bsky.social",
+        "displayName": "Toasty Seahorse Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreie55x2nfghlf4hkbniqgheircopnrwqqdmhmjljv64w22o2up2wry"
+      },
+      "record": {
+        "text": "One week left to back The Old The Cold The Bold: 2nd Edition! Stick it to the man with your found family in a criminal gig economy TTRPG.\n\nwww.backerkit.com/c/projects/t...",
+        "createdAt": "2026-05-28T20:00:24.700Z"
+      },
+      "indexedAt": "2026-05-28T20:00:25.566Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/c/projects/toasty-seahorse-studio/the-old-the-cold-the-bold-2nd-edition",
+        "title": "The Old The Cold The Bold: 2nd Edition",
+        "description": "A TTRPG about regulated crime, vigilantism, and chosen family. Inspired by the mechanics of Lady Blackbird by John Harper.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xn6s62p5a2fvfez4f2ihzbag/bafkreigxwnnqooddlqzdgwtsubfpix7xidnkuayxhawwv2dfl5mhru5jcy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:zi663gwmsutcebrdnxvxey62/app.bsky.feed.post/3mmwol7wrfk2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "falsemachine.bsky.social",
+        "displayName": "False Machine",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zi663gwmsutcebrdnxvxey62/bafkreiexiupdsgezvashbthzyuzl6u3ipvx2w6c4fmwd6njnfrneokvnta"
+      },
+      "record": {
+        "text": "The final hours of Doom of the Dark approach! More interviews! A final livestream! Three days remain! \n\npjamesstuart.substack.com/p/the-final-...",
+        "createdAt": "2026-05-28T18:45:37.862Z"
+      },
+      "indexedAt": "2026-05-28T18:45:41.370Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://pjamesstuart.substack.com/p/the-final-hours-the-count-down-begins",
+        "title": "THE FINAL HOURS! THE COUNT-DOWN BEGINS!",
+        "description": "MORE INTERVIEWS!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi663gwmsutcebrdnxvxey62/bafkreigyye2shbru7z3x4kk23ipaf2py224f67fcq26i6t6t5dtxzhdgzq"
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmw63s5gys2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "All done! Thank you \u2764\ufe0f\ud83d\ude4f\nNow to work \ud83d\udcaa\ud83d\udd28\n\n(Late pledges)\n \ud83d\udc49 www.kickstarter.com/projects/gre...",
+        "createdAt": "2026-05-28T13:50:40.195Z"
+      },
+      "indexedAt": "2026-05-28T13:50:44.864Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 21,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreia5q6zdujv2g63i6cvj63tad6flrpgcyxohlxklot253f3uojds3q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreia5q6zdujv2g63i6cvj63tad6flrpgcyxohlxklot253f3uojds3q",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:lglyzxbrd5vgmuqg24jo2yi7/app.bsky.feed.post/3mmw56gyvec2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "percypropa.bsky.social",
+        "displayName": "Kyle Tam is Climbing Mt Moriah",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreihae7ew3pmb4lgxswmgv562xn7lgycaxn3c6jpbfsyh5qi6frfb2m"
+      },
+      "record": {
+        "text": "Hey hey! Have you checked out the Soothwardens campaign? You should! And not just because it has award-winning author ME writing a stretch goal!\n\nwww.backerkit.com/c/projects/p...",
+        "createdAt": "2026-05-28T13:34:15.452Z"
+      },
+      "indexedAt": "2026-05-28T13:34:27.475Z",
+      "replyCount": 0,
+      "repostCount": 15,
+      "likeCount": 18,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/c/projects/plus-one-exp/soothwardens-by-navaar-seik-jackson",
+        "title": "Soothwardens By Navaar Seik-Jackson",
+        "description": "A game about the power of connection & threats from beyond. There is no luck here. Just heart, stamina, and those who fight beside you.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreihdubjparsr6asnwnd6lytrhjmsbnx3ctgygejrhrt7rhamrrvimy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/Ov2qWy",
+      "source": "artstation",
+      "author": {
+        "handle": "mashalapsha",
+        "displayName": "Maria Sadre",
+        "avatar": null
+      },
+      "record": {
+        "text": "Vampire Legacy Background Art and Illustration ",
+        "createdAt": "2026-05-28T13:21:25-05:00"
+      },
+      "indexedAt": "2026-05-28T13:21:25-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/456/666/large/maria-sadre-animal-cards2.jpg?1779992356",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/456/666/large/maria-sadre-animal-cards2.jpg?1779992356",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/455/971/large/maria-sadre-animal-cards1.jpg?1779989153",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/455/971/large/maria-sadre-animal-cards1.jpg?1779989153",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/456/423/large/maria-sadre-funny-things.jpg?1779990056",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/456/423/large/maria-sadre-funny-things.jpg?1779990056",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/455/871/large/maria-sadre-art-for-the-event-s-launch-screen.jpg?1779988981",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/455/871/large/maria-sadre-art-for-the-event-s-launch-screen.jpg?1779988981",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/456/671/large/maria-sadre-gameplay-back.jpg?1779990701",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/456/671/large/maria-sadre-gameplay-back.jpg?1779990701",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/455/962/large/maria-sadre-pop-up-arena.jpg?1779989142",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/455/962/large/maria-sadre-pop-up-arena.jpg?1779989142",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/Ov2qWy"
+    },
+    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mmvza4cplk2y",
       "source": "bluesky",
       "author": {
@@ -64,9 +265,9 @@
         "createdAt": "2026-05-28T12:23:36.372Z"
       },
       "indexedAt": "2026-05-28T12:23:48.271Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 5,
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -112,8 +313,8 @@
       },
       "indexedAt": "2026-05-28T09:27:27.360Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 15,
+      "repostCount": 6,
+      "likeCount": 20,
       "embed": {
         "type": "images",
         "images": [
@@ -149,9 +350,9 @@
         "createdAt": "2026-05-28T04:00:37.102Z"
       },
       "indexedAt": "2026-05-28T04:00:41.060Z",
-      "replyCount": 10,
-      "repostCount": 29,
-      "likeCount": 80,
+      "replyCount": 18,
+      "repostCount": 55,
+      "likeCount": 166,
       "embed": {
         "type": "external",
         "uri": "https://support.rpg-trader.com/t/ai-content-policy/298",
@@ -171,7 +372,7 @@
       "author": {
         "handle": "hime.vtubers.social",
         "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreicw6dhzikkxvyazrpxqprb3solfljvd44lslsos672pkhkcxccxke"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreie3wjfrm73jj4g3r6thx3bxm2ptgh6qvi7uyneai33oq4ovr7dt2u"
       },
       "record": {
         "text": "Today I'm working on and talking about Ballads of Dawn, my own solo TTRPG I've been writing and working on and checking out this idle desktop game called Kernelbay~ Come hang out! twitch.tv/himeutsugi #vtubers #vsky #solottrpg",
@@ -180,7 +381,7 @@
       "indexedAt": "2026-05-27T23:05:09.661Z",
       "replyCount": 1,
       "repostCount": 6,
-      "likeCount": 19,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -211,8 +412,8 @@
       },
       "indexedAt": "2026-05-27T18:30:25.572Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 22,
+      "repostCount": 7,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -287,7 +488,7 @@
       "indexedAt": "2026-05-27T10:33:38.567Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 15,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -541,6 +742,65 @@
       }
     },
     {
+      "uri": "https://www.artstation.com/artwork/eRE8EP",
+      "source": "artstation",
+      "author": {
+        "handle": "mashalapsha",
+        "displayName": "Maria Sadre",
+        "avatar": null
+      },
+      "record": {
+        "text": "Vampire Legacy Isometric art and Icons\n\nHi! I've decided to share some of my work from the unfortunately-closed Vampire Legacy project. Here are some concepts, isometric renders, and icons.\nI made many pieces of art together with my team - 2D and 3D artists",
+        "createdAt": "2026-05-25T13:51:53-05:00"
+      },
+      "indexedAt": "2026-05-25T13:51:53-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/362/090/large/maria-sadre-copy.jpg?1779735093",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/362/090/large/maria-sadre-copy.jpg?1779735093",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/363/213/large/maria-sadre-lvl1-souvenirshop-anim-2-1-copy.jpg?1779736747",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/363/213/large/maria-sadre-lvl1-souvenirshop-anim-2-1-copy.jpg?1779736747",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/363/385/large/maria-sadre-skin-dlya-ratushi-copy.jpg?1779737077",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/363/385/large/maria-sadre-skin-dlya-ratushi-copy.jpg?1779737077",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/362/169/large/maria-sadre-kraken-copy.jpg?1779734574",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/362/169/large/maria-sadre-kraken-copy.jpg?1779734574",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/362/654/large/maria-sadre-10-copy-copy.jpg?1779735590",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/362/654/large/maria-sadre-10-copy-copy.jpg?1779735590",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/363/033/large/maria-sadre-horses-copy-2.jpg?1779736447",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/363/033/large/maria-sadre-horses-copy-2.jpg?1779736447",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/447/199/large/maria-sadre-icons-copy-2.jpg?1779971660",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/447/199/large/maria-sadre-icons-copy-2.jpg?1779971660",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/eRE8EP"
+    },
+    {
       "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mmo6d74l422u",
       "source": "bluesky",
       "author": {
@@ -619,9 +879,9 @@
         "createdAt": "2026-05-25T04:24:44.753Z"
       },
       "indexedAt": "2026-05-25T04:24:49.065Z",
-      "replyCount": 6,
+      "replyCount": 7,
       "repostCount": 46,
-      "likeCount": 104,
+      "likeCount": 108,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/",
@@ -723,104 +983,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaeffm2uhstnl6cmhllkhfns3cyijnfowyyxushpueqozwb4p7ffu",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ijyn4mmi2wh5ar2gisfwdhd2/bafkreiaeffm2uhstnl6cmhllkhfns3cyijnfowyyxushpueqozwb4p7ffu",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:if25nxd4lm3lmfxb2cidvvjz/app.bsky.feed.post/3mmhzlbcm6s2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "ferdon10.bsky.social",
-        "displayName": "Fernando Cruz (Is making One Time Taxes COMIC)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:if25nxd4lm3lmfxb2cidvvjz/bafkreifgxx2ktvi5zhruj5gndfdytejgyucmrszewm32wwoqwmmqcxafhq"
-      },
-      "record": {
-        "text": "VOLUME TWO IS OUT AND DAMN IS IT CLEAN!\nitch.io/b/3700/wheel... \n#wheelofwebcomics",
-        "createdAt": "2026-05-22T22:52:34.383Z"
-      },
-      "indexedAt": "2026-05-22T22:52:34.462Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 5,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/b/3700/wheel-of-webcomics-zine-bundle-2",
-        "title": "Wheel of Webcomics Zine Bundle #2 by Drowzs and 6 others",
-        "description": "Wheel of Webcomics Zine Bundle #2: 6 items for $10.00",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mmhyg4nhpk2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "setincement.bsky.social",
-        "displayName": "Chazz (WHEEL OF WEBCOMICS ZINE #2 OUT NOW!)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihnvgt7b3mes63gjcw2hlpv4amxtexu6zlnrbq4nrchbwbob26jbe"
-      },
-      "record": {
-        "text": "And we're back! #wheelofwebcomics\nWheel of Webcomics: The Zine #2! \nFive different comic creators in one place - it's like Shonen Jump for #webcomics!\nLaunching with a co-op bundle! (And every previous issue is free!) (1/2) \nitch.io/b/3700/wheel...",
-        "createdAt": "2026-05-22T22:31:47.979Z"
-      },
-      "indexedAt": "2026-05-22T22:32:00.262Z",
-      "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 44,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreigo7zgbhaqzryf7bklco55qky34jrqfjysfyxsa5fup54mttnxfki",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreigo7zgbhaqzryf7bklco55qky34jrqfjysfyxsa5fup54mttnxfki",
-            "alt": "Promotion for The Wheel of Webcomics Zine's Second Volume alerting people to it's release on Itch.io!"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreier4xyt2644vx24tmvhhbqj4vvyulnqqv7g6bfg3j5xcshcb7epry",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreier4xyt2644vx24tmvhhbqj4vvyulnqqv7g6bfg3j5xcshcb7epry",
-            "alt": "Graphic for The Wheel of Webcomics Zine that reads\n\"About the zines\"\n\"An Explanation!\"\n\n\"Put simply, it's indie shonen-jump. These are webcomic samplers designed to be easily consumable and show off cool work. They're covered in links to people's individual comics/socials.\nThe hope is people buy them to support what we do here and keep the space growing and running, but also serve as a platform for original work that can elevate people over the scrolling feed sites.\nWe would like to host returning comics within the zine but for now we are placing One Time Taxes inside to give people a continuing narrative to return to each issue.\nEvery zine launches with a co-op bundle on itch.io and after each release the previous issue becomes pay what you want.\nAnybody can submit -- just please be easy to contact!\"\n\n\"What's inside?\"\n- Comic samples from 5 different comics\n\n- Book club reviews of one comic pulled from the wheel of webcomics\n\n- artist features\n- full issues of one time taxes & other continuing narratives from community members"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3mmhcxknx2s2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "bradkerr.net",
-        "displayName": "Brad Kerr",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
-      },
-      "record": {
-        "text": "I wrote a tournament module for BETWEEN TWO CONS called \"Weird Little Freaks\" with art by @betterlegends.bsky.social. I think we have 9 sessions scheduled. This adventure is dumb as hell (nonderogatory). Zines for sale at the convention and afterwards.",
-        "createdAt": "2026-05-22T16:07:50.781Z"
-      },
-      "indexedAt": "2026-05-22T16:07:53.569Z",
-      "replyCount": 6,
-      "repostCount": 36,
-      "likeCount": 171,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibrurlyzihwglzjfidyibxhfpmi6bxk76yhstdtdhhh6smygrbrfy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibrurlyzihwglzjfidyibxhfpmi6bxk76yhstdtdhhh6smygrbrfy",
-            "alt": "WEIRD LITTLE FREAKS cover. A duck person holds a sword."
           }
         ]
       },
@@ -1468,38 +1630,6 @@
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicei7difooiypplc73mxtgofpqvye76hpd3vewtbviwi7jdeoklne",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicei7difooiypplc73mxtgofpqvye76hpd3vewtbviwi7jdeoklne",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3ml6rcakzuc2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "mythworks.bsky.social",
-        "displayName": "Mythworks is Making New Stuff!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiaep2xkqejvvc3ra2sy73p2lot43nfz6espzjlx3j5egkdwt3k3ym"
-      },
-      "record": {
-        "text": "We\u2019re still kind of in disbelief. This exists because people showed up and believed in it.\nFINAL 24 HOURS.\nIf you\u2019ve been watching Breathlessly, this is the moment to jump in and be part of it with us.\nwww.kickstarter.com/projects/myt...",
-        "createdAt": "2026-05-06T13:05:12.412Z"
-      },
-      "indexedAt": "2026-05-06T13:05:17.570Z",
-      "replyCount": 0,
-      "repostCount": 13,
-      "likeCount": 28,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreicqni42aw37bzcg5tvdavrwkicjmneocj7crkdibpsw4ko7pdnrma",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreicqni42aw37bzcg5tvdavrwkicjmneocj7crkdibpsw4ko7pdnrma",
             "alt": ""
           }
         ]
