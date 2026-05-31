@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Screen | Studio Quagg</title>
+
+    <meta property="og:title" content="GM Screen — Stolen Scraps & Roll Tables">
+    <meta property="og:description" content="A personal GM reference screen consolidating TTRPG roll tables, encounter scraps, and inspiration from across the web.">
+    <meta property="og:url" content="https://qu-gg.github.io/gm-screen.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    <style>
+        html {
+            scrollbar-gutter: stable;
+        }
+        /* ===== GM Screen Styles ===== */
+        .gm-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            width: 100%;
+        }
+
+        .gm-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .gm-header h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .gm-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* ---- Controls ---- */
+        .gm-controls {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .gm-search {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--bg-secondary);
+        }
+
+        .gm-search:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .gm-category-filter {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--bg-secondary);
+            cursor: pointer;
+        }
+
+        .gm-category-filter:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* ---- Category Pills ---- */
+        .gm-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .gm-pill {
+            padding: 0.3rem 0.7rem;
+            border: 1.5px solid var(--border);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .gm-pill:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .gm-pill.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        /* ---- Meta bar ---- */
+        .gm-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* ---- Entry Cards ---- */
+        .gm-entries {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            min-width: 0;
+        }
+
+        .gm-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            transition: box-shadow 0.15s;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        .gm-card.expanded {
+            padding: 1.5rem;
+        }
+
+        .gm-card:hover {
+            box-shadow: 0 2px 12px var(--shadow);
+        }
+
+        .gm-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .gm-card.expanded .gm-card-header {
+            margin-bottom: 0.75rem;
+        }
+
+        .gm-card-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .gm-card-title::before {
+            content: '\25B6';
+            font-size: 0.6rem;
+            transition: transform 0.15s;
+            flex-shrink: 0;
+            color: var(--text-secondary);
+        }
+
+        .gm-card.expanded .gm-card-title::before {
+            transform: rotate(90deg);
+        }
+
+        .gm-card-header:hover .gm-card-title {
+            color: var(--accent);
+        }
+
+        .gm-card-badges {
+            display: flex;
+            gap: 0.3rem;
+            flex-shrink: 0;
+        }
+
+        .gm-badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .gm-badge-table {
+            background: #dfe6fd;
+            color: #4a3fcf;
+        }
+
+        .gm-badge-prose {
+            background: #fde8d0;
+            color: #b35c1e;
+        }
+
+        .gm-badge-image {
+            background: #d0f0e0;
+            color: #1e8a50;
+        }
+
+        .gm-badge-snippet {
+            background: #f0d0f0;
+            color: #8a1e8a;
+        }
+
+        .gm-card-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        /* ---- Card collapse ---- */
+        .gm-card-body,
+        .gm-card-desc,
+        .gm-card > .gm-source {
+            display: none;
+        }
+
+        .gm-card.expanded .gm-card-body,
+        .gm-card.expanded .gm-card-desc,
+        .gm-card.expanded > .gm-source {
+            display: block;
+        }
+
+        .gm-card-body {
+            overflow: hidden;
+            min-width: 0;
+            word-break: break-word;
+        }
+
+        /* ---- Roll Table Rendering ---- */
+        .gm-table-group {
+            margin-bottom: 1rem;
+        }
+
+        .gm-table-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            user-select: none;
+        }
+
+        .gm-table-name:hover {
+            color: var(--accent);
+        }
+
+        .gm-table-name::before {
+            content: '\25B6';
+            font-size: 0.65rem;
+            transition: transform 0.15s;
+            flex-shrink: 0;
+        }
+
+        .gm-table-group.expanded .gm-table-name::before {
+            transform: rotate(90deg);
+        }
+
+        .gm-table-list {
+            display: none;
+        }
+
+        .gm-table-group.expanded .gm-table-list {
+            display: block;
+        }
+
+        ol.gm-table-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.5rem 0;
+            counter-reset: table-counter;
+        }
+
+        .gm-table-list li {
+            counter-increment: table-counter;
+            padding: 0.25rem 0.4rem;
+            font-size: 0.88rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .gm-table-list li:last-child {
+            border-bottom: none;
+        }
+
+        .gm-table-list li::before {
+            content: counter(table-counter);
+            flex-shrink: 0;
+            width: 1.6rem;
+            text-align: right;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .gm-table-list li.highlighted {
+            background: #f0edff;
+            border-radius: 4px;
+        }
+
+        .gm-roll-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .gm-roll-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.35rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border: 1.5px solid var(--accent);
+            border-radius: 6px;
+            background: transparent;
+            color: var(--accent);
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .gm-roll-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .gm-roll-btn:active {
+            transform: scale(0.96);
+        }
+
+        .gm-roll-result {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            min-height: 1.4em;
+        }
+
+        .gm-roll-all-row {
+            margin-top: 0.5rem;
+            padding-top: 0.75rem;
+            border-top: 1px dashed var(--border);
+        }
+
+        .gm-roll-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.45rem 1rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            background: var(--accent);
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .gm-roll-all-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .gm-roll-all-btn:active {
+            transform: scale(0.96);
+        }
+
+        /* ---- Prose Rendering ---- */
+        .gm-prose {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .gm-prose p {
+            margin-bottom: 0.6rem;
+        }
+
+        .gm-prose ul, .gm-prose ol {
+            margin: 0.5rem 0 0.5rem 1.25rem;
+        }
+
+        .gm-prose li {
+            margin-bottom: 0.25rem;
+        }
+
+        .gm-prose em {
+            color: var(--text-secondary);
+        }
+
+        .gm-statblock {
+            display: inline-block;
+            margin-top: 0.75rem;
+            padding: 0.4rem 0.75rem;
+            background: #f4f3f9;
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.82rem;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+        }
+
+        .gm-card-image {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 6px;
+            margin-top: 0.75rem;
+            object-fit: cover;
+        }
+
+        /* ---- Source Attribution ---- */
+        .gm-source {
+            margin-top: 1rem;
+            padding-top: 0.6rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+        }
+
+        .gm-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .gm-source a:hover {
+            text-decoration: underline;
+        }
+
+        .gm-source-sep {
+            color: var(--border);
+        }
+
+        /* ---- Tags ---- */
+        .gm-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .gm-tag {
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        /* ---- Collapsible ---- */
+        .gm-card-body {
+            overflow: hidden;
+        }
+
+        .gm-card.collapsed .gm-card-body {
+            max-height: 200px;
+            position: relative;
+        }
+
+        .gm-card.collapsed .gm-card-body::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(transparent, var(--bg-secondary));
+            pointer-events: none;
+        }
+
+        .gm-expand-btn {
+            display: none;
+            margin-top: 0.5rem;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .gm-card.collapsed .gm-expand-btn {
+            display: inline-block;
+        }
+
+        .gm-expand-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ---- No results ---- */
+        .gm-no-results {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 600px) {
+            .gm-page {
+                padding: 1rem;
+            }
+
+            .gm-card {
+                padding: 1rem;
+            }
+
+            .gm-card-header {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+
+            .gm-table-list li {
+                font-size: 0.84rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="break.html">BREAK!! Homebrew</a></li>
+                <li><a href="imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="gm-page">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="gm-header">
+            <h1>GM Screen</h1>
+            <p>Stolen scraps, roll tables, and encounter notes from across the TTRPG web. All content is attributed to its original authors.</p>
+        </div>
+
+        <div class="gm-controls">
+            <input type="text" id="gm-search" class="gm-search" placeholder="Search entries, tags, sources...">
+            <select id="gm-type-filter" class="gm-category-filter">
+                <option value="all">All Types</option>
+                <option value="table">Roll Tables</option>
+                <option value="prose">Prose / Encounters</option>
+                <option value="image">Images</option>
+                <option value="snippet">Snippets</option>
+            </select>
+        </div>
+
+        <div class="gm-pills" id="gm-pills">
+            <!-- populated by JS -->
+        </div>
+
+        <div class="gm-meta">
+            <span id="gm-count">Loading...</span>
+        </div>
+
+        <div class="gm-entries" id="gm-entries">
+            <p class="gm-no-results">Loading entries...</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        // ===== GM Screen Logic =====
+        let allEntries = [];
+        let activeCategory = 'all';
+
+        async function loadData() {
+            try {
+                const resp = await fetch('gm-screen-data.json');
+                const data = await resp.json();
+                allEntries = data.entries;
+                buildCategoryPills();
+                renderEntries();
+            } catch (e) {
+                document.getElementById('gm-entries').innerHTML =
+                    '<p class="gm-no-results">Failed to load data.</p>';
+            }
+        }
+
+        // ---- Category pills ----
+        function buildCategoryPills() {
+            const cats = new Set();
+            allEntries.forEach(e => cats.add(e.category));
+            const container = document.getElementById('gm-pills');
+            container.innerHTML = '';
+
+            const allBtn = makePill('all', 'All');
+            allBtn.classList.add('active');
+            container.appendChild(allBtn);
+
+            const labels = {
+                npcs: 'NPCs', encounters: 'Encounters', locations: 'Locations',
+                items: 'Items', tables: 'Tables', rules: 'Rules', inspiration: 'Inspiration'
+            };
+
+            [...cats].sort().forEach(cat => {
+                container.appendChild(makePill(cat, labels[cat] || cat));
+            });
+        }
+
+        function makePill(value, label) {
+            const btn = document.createElement('button');
+            btn.className = 'gm-pill';
+            btn.textContent = label;
+            btn.dataset.cat = value;
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.gm-pill').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                activeCategory = value;
+                renderEntries();
+            });
+            return btn;
+        }
+
+        // ---- Filtering ----
+        function getFilteredEntries() {
+            const query = document.getElementById('gm-search').value.toLowerCase().trim();
+            const typeFilter = document.getElementById('gm-type-filter').value;
+
+            return allEntries.filter(entry => {
+                if (activeCategory !== 'all' && entry.category !== activeCategory) return false;
+                if (typeFilter !== 'all' && entry.type !== typeFilter) return false;
+                if (query) {
+                    const haystack = [
+                        entry.title,
+                        entry.description || '',
+                        (entry.tags || []).join(' '),
+                        entry.source?.author || '',
+                        entry.source?.title || '',
+                        entry.content?.html || '',
+                        entry.content?.statblock || '',
+                        ...(entry.content?.tables || []).flatMap(t => [t.name, ...t.items])
+                    ].join(' ').toLowerCase();
+                    if (!haystack.includes(query)) return false;
+                }
+                return true;
+            });
+        }
+
+        // ---- Rendering ----
+        function renderEntries() {
+            const filtered = getFilteredEntries();
+            const container = document.getElementById('gm-entries');
+            document.getElementById('gm-count').textContent =
+                `${filtered.length} entr${filtered.length === 1 ? 'y' : 'ies'}`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p class="gm-no-results">No entries match your filters.</p>';
+                return;
+            }
+
+            container.innerHTML = '';
+            filtered.forEach(entry => container.appendChild(buildCard(entry)));
+        }
+
+        function buildCard(entry) {
+            const card = document.createElement('div');
+            card.className = 'gm-card';
+            card.dataset.id = entry.id;
+
+            // Header
+            const header = document.createElement('div');
+            header.className = 'gm-card-header';
+
+            const title = document.createElement('h2');
+            title.className = 'gm-card-title';
+            title.textContent = entry.title;
+            header.appendChild(title);
+
+            const badges = document.createElement('div');
+            badges.className = 'gm-card-badges';
+            const badge = document.createElement('span');
+            badge.className = `gm-badge gm-badge-${entry.type}`;
+            badge.textContent = entry.type;
+            badges.appendChild(badge);
+            header.appendChild(badges);
+
+            header.addEventListener('click', () => {
+                card.classList.toggle('expanded');
+            });
+            card.appendChild(header);
+
+            // Description
+            if (entry.description) {
+                const desc = document.createElement('p');
+                desc.className = 'gm-card-desc';
+                desc.textContent = entry.description;
+                card.appendChild(desc);
+            }
+
+            // Body
+            const body = document.createElement('div');
+            body.className = 'gm-card-body';
+
+            if (entry.type === 'table') {
+                body.appendChild(buildTableContent(entry));
+            } else if (entry.type === 'prose') {
+                body.appendChild(buildProseContent(entry));
+            } else if (entry.type === 'image') {
+                body.appendChild(buildImageContent(entry));
+            } else if (entry.type === 'snippet') {
+                body.appendChild(buildSnippetContent(entry));
+            }
+
+            card.appendChild(body);
+
+            // Source attribution
+            card.appendChild(buildSource(entry.source));
+
+            return card;
+        }
+
+        // ---- Table type ----
+        function buildTableContent(entry) {
+            const frag = document.createDocumentFragment();
+            const tables = entry.content.tables || [];
+
+            tables.forEach((table, tIdx) => {
+                const group = document.createElement('div');
+                group.className = 'gm-table-group';
+
+                const name = document.createElement('div');
+                name.className = 'gm-table-name';
+                name.textContent = table.name;
+                name.addEventListener('click', () => {
+                    group.classList.toggle('expanded');
+                });
+                group.appendChild(name);
+
+                const list = document.createElement('ol');
+                list.className = 'gm-table-list';
+                table.items.forEach((item, i) => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    li.dataset.index = i;
+                    list.appendChild(li);
+                });
+                group.appendChild(list);
+
+                // Roll button row
+                const rollRow = document.createElement('div');
+                rollRow.className = 'gm-roll-row';
+
+                const btn = document.createElement('button');
+                btn.className = 'gm-roll-btn';
+                btn.textContent = 'Roll';
+                const result = document.createElement('span');
+                result.className = 'gm-roll-result';
+
+                btn.addEventListener('click', () => {
+                    const idx = Math.floor(Math.random() * table.items.length);
+                    result.textContent = `[${idx + 1}] ${table.items[idx]}`;
+                    // Highlight the rolled item
+                    list.querySelectorAll('li').forEach(li => li.classList.remove('highlighted'));
+                    list.children[idx].classList.add('highlighted');
+                    list.children[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                });
+
+                rollRow.appendChild(btn);
+                rollRow.appendChild(result);
+                group.appendChild(rollRow);
+                frag.appendChild(group);
+            });
+
+            // Roll All button
+            if (entry.content.rollAll && tables.length > 1) {
+                const allRow = document.createElement('div');
+                allRow.className = 'gm-roll-all-row';
+
+                const allBtn = document.createElement('button');
+                allBtn.className = 'gm-roll-all-btn';
+                allBtn.textContent = 'Roll All Tables';
+
+                const allResult = document.createElement('div');
+                allResult.className = 'gm-roll-result';
+                allResult.style.marginTop = '0.5rem';
+
+                allBtn.addEventListener('click', () => {
+                    const results = [];
+                    tables.forEach((table, tIdx) => {
+                        const idx = Math.floor(Math.random() * table.items.length);
+                        results.push(`<strong>${table.name}:</strong> [${idx + 1}] ${table.items[idx]}`);
+                        // Highlight in each list
+                        const card = allBtn.closest('.gm-card');
+                        const lists = card.querySelectorAll('.gm-table-list');
+                        if (lists[tIdx]) {
+                            lists[tIdx].querySelectorAll('li').forEach(li => li.classList.remove('highlighted'));
+                            lists[tIdx].children[idx].classList.add('highlighted');
+                        }
+                        // Also update individual roll results
+                        const rollResults = card.querySelectorAll('.gm-roll-row .gm-roll-result');
+                        if (rollResults[tIdx]) {
+                            rollResults[tIdx].textContent = `[${idx + 1}] ${table.items[idx]}`;
+                        }
+                    });
+                    allResult.innerHTML = results.join('<br>');
+                });
+
+                allRow.appendChild(allBtn);
+                allRow.appendChild(allResult);
+                frag.appendChild(allRow);
+            }
+
+            return frag;
+        }
+
+        // ---- Prose type ----
+        function buildProseContent(entry) {
+            const frag = document.createDocumentFragment();
+
+            if (entry.content.html) {
+                const prose = document.createElement('div');
+                prose.className = 'gm-prose';
+                prose.innerHTML = entry.content.html;
+                frag.appendChild(prose);
+            }
+
+            if (entry.content.statblock) {
+                const stat = document.createElement('div');
+                stat.className = 'gm-statblock';
+                stat.textContent = entry.content.statblock;
+                frag.appendChild(stat);
+            }
+
+            if (entry.content.image) {
+                const img = document.createElement('img');
+                img.className = 'gm-card-image';
+                img.src = entry.content.image;
+                img.alt = entry.title;
+                img.loading = 'lazy';
+                frag.appendChild(img);
+            }
+
+            return frag;
+        }
+
+        // ---- Image type ----
+        function buildImageContent(entry) {
+            const frag = document.createDocumentFragment();
+            const img = document.createElement('img');
+            img.className = 'gm-card-image';
+            img.src = entry.content.url;
+            img.alt = entry.content.caption || entry.title;
+            img.loading = 'lazy';
+            frag.appendChild(img);
+
+            if (entry.content.caption) {
+                const cap = document.createElement('p');
+                cap.style.fontSize = '0.85rem';
+                cap.style.color = 'var(--text-secondary)';
+                cap.style.marginTop = '0.5rem';
+                cap.textContent = entry.content.caption;
+                frag.appendChild(cap);
+            }
+            return frag;
+        }
+
+        // ---- Snippet type ----
+        function buildSnippetContent(entry) {
+            const bq = document.createElement('blockquote');
+            bq.style.borderLeft = '3px solid var(--accent)';
+            bq.style.paddingLeft = '1rem';
+            bq.style.margin = '0';
+            bq.style.fontStyle = 'italic';
+            bq.style.color = 'var(--text-primary)';
+            bq.style.fontSize = '0.92rem';
+            bq.innerHTML = entry.content.html || entry.content.text || '';
+            return bq;
+        }
+
+        // ---- Source attribution ----
+        function buildSource(source) {
+            const div = document.createElement('div');
+            div.className = 'gm-source';
+            if (!source) return div;
+
+            const parts = [];
+            if (source.author) parts.push(source.author);
+            if (source.title && source.url) {
+                parts.push(`<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a>`);
+            } else if (source.title) {
+                parts.push(escapeHtml(source.title));
+            }
+            if (source.date) parts.push(source.date);
+            if (source.note) parts.push(`<em>${escapeHtml(source.note)}</em>`);
+
+            div.innerHTML = parts.join(' <span class="gm-source-sep">·</span> ');
+            return div;
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // ---- Events ----
+        document.getElementById('gm-search').addEventListener('input', renderEntries);
+        document.getElementById('gm-type-filter').addEventListener('change', renderEntries);
+
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // ---- Init ----
+        loadData();
+    </script>
+</body>
+</html>

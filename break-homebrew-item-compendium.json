@@ -1,0 +1,204 @@
+{
+  "lastUpdated": "04/26/2026",
+  "count": 22,
+  "items": [
+    {
+      "Item": "Aetheric Monocle",
+      "Credit": "Quagg [Discord]",
+      "Type": "Artifact",
+      "Flavor Text": "Even the most basic of Sages know that Mana can reside on objects for some time after its use and leveraged in simple ways. What most don&#x27;t know, however, is that the residual left from great workings of Mana leaves a nearly perfect replica for but the briefest of moments. The Gruun Sage Taam discovered this and devised an Artifact to see - and manipulate - these traces.<br>",
+      "Description": "The Wearer of this Artifact may see the residual traces of all used Magical Abilities within 2 Areas, which last for the Turn after its use. As an Action, the Wearer may re-activate the trace and use the Magical Ability themself, consuming the trace.<br><br><b>Charges</b>: The Aetheric Lens contains Charges that are expended when invoking its Ability. To invoke its Ability, sufficient Charges must be stored into it before use. <br> • Basic Magical Abilities require 1 Charge.<br> • Advanced Magical Abilities require 2 Charges.<br> • Legendary Magical Abilities cannot be re-activated.<br><br><b>Charging</b>: To charge the Aetheric Lens requires redirecting the Mana of a Magic Ability into it. <br> • The expended Ability cannot be used again for 24 hours.<br> • Expending 1 Standard Magic Ability generates 1 Charge.<br> • Expending 1 Advanced Magic Ability generates 2 Charges.<br><br>The Aetheric Lens can hold up to 2 Charges.<br>",
+      "Slots": 1,
+      "Cost": "4 Gems"
+    },
+    {
+      "Item": "Bloodstone Staff",
+      "Credit": "Quagg [Discord]",
+      "Type": "Artifact",
+      "Flavor Text": "A gothic, wicked looking Staff made of Shade Iron that bears deep grooves throughout. Upon invoking its latent Mana, the illusion that blood pours down the grooves can be seen.<br><br>A popular choice among would-be villainous Sages...or a misunderstood decorative prop during Regent&#x27;s Day.",
+      "Description": "In addition to the standard functionality of Sage&#x27;s Staff, when a Sage wields the Bloodstone Staff, it grants the following Ability: <b>Crimson Rite.<br><br>Crimson Rite:<br></b>As an Action, you can expend 1 Heart during Combat to summon a Crimson Demon. This Crimson Demon takes the stats of a <b>Custrel</b> (pg. 186) with the notable exception of Dual-Wielding Standard Weapons.<br><br>The Crimson Demon lasts the duration of the Fight or until it reaches 0 Hearts.<br><br>You may only use this once every 24 Hours.",
+      "Slots": 1,
+      "Cost": "1 Gem"
+    },
+    {
+      "Item": "The Prohibited Punch Card",
+      "Credit": "ichiCharmed [Discord]",
+      "Type": "Artifact",
+      "Flavor Text": "A punch card book seemingly made of skin that seems to draw on the power of Heretics every time one uses their summoning abilities...and fails, marking a spot on one of its cards.",
+      "Description": "Every time a Heretic fails a Grit Check to summon a Sealed Name, a spot gets punched. <br><br>Get 10 Punches, the Heretic wins a free Elective Sealed Name summon. <br><br>Get 20, they get a free Advanced Sealed Name summon. ",
+      "Slots": "",
+      "Cost": ""
+    },
+    {
+      "Item": "Bag o' Feathers",
+      "Credit": "Quagg [Discord]",
+      "Type": "Artifact [Cursed]",
+      "Flavor Text": "Any faerie that believes itself disrespected (and often it will believe this, seemingly over nothing) will offer a Bag of Feathers as a &quot;boon&quot;, claiming it enables one to fly.",
+      "Description": "Anyone who takes this gift will unfortunately realize the bag is extremely burdensome, and certainly the heaviest feathers in the world.<br><br>It can only be removed from one&#x27;s Inventory if they can pass it off to a willing creature.<br><br>Immediately takes up 3 Inventory Slots.",
+      "Slots": 3,
+      "Cost": "N/A"
+    },
+    {
+      "Item": "Fellowmark Charms",
+      "Credit": "Quagg [Discord]",
+      "Type": "Artifact",
+      "Flavor Text": "They say giving a piece of yourself to another lets them understand you better. For Druids, this is a quite literal saying.",
+      "Description": "Once per Day, the Charm may bestow the Wearer the Beast Tongue Quirk (Source, pg. 141) for an Hour.<br><br>The trinket&#x27;s material specifies which creature category it enables speech with (e.g., a feather for birds, a tooth for mammals, etc.)<br><br>Breaking the Quirk destroys the item and invokes a roll on the Severe Injury Table, as a powerful promise was broken.",
+      "Slots": "0.5",
+      "Cost": "50 Coins"
+    },
+    {
+      "Item": "Everbark Figurine",
+      "Credit": "Quagg [Discord]",
+      "Type": "Artifact",
+      "Flavor Text": "When, at journey&#x27;s end, Ever-Walking Elix bid farewell to her best friend, she carved fond memories into wood until her body simply said &#x27;I think we&#x27;ve gone far enough.&#x27;",
+      "Description": "Once per Journey, during Camping, this little figurine can warp itself into a Growl made of Warp Root.<br><br>This Growl functions as a Scout, and has an Edge on the associated Deftness Check.",
+      "Slots": "0.1",
+      "Cost": "50 Coins"
+    },
+    {
+      "Item": "Dr. Phoenix",
+      "Credit": "Neitherkracken [Discord]",
+      "Type": "Consumable",
+      "Flavor Text": "A fizzy drink that pops like a tiny fire bird in your mouth. While it won&#x27;t bring you back from the dead, it sure will patch you up nicely. This tasty beverage ridiculously speeds up and enhances your body&#x27;s natural healing.<br><br>Now available in Raspberry or Orange flavour.<br>Sold at any good Healer.<br><br>Some side effects may include fatigue, drowsiness or spontaneous passing out.<br>",
+      "Description": "Upon drinking, the User heals 1 Injury. If the User has more than 1 Injury, the least severe one heals first. Afterwards, the User gain 2 points of Fatigue.<br><br>If the User has passed out from Fatigue, another Dr. Phoenix cannot be used or administered till the Fatigue has been removed.<br><br>Can not be used to treat: <br>Mortal Wound, Quiet Death, Messy Affair",
+      "Slots": 1,
+      "Cost": "3 Gems"
+    },
+    {
+      "Item": "Junk Trophy System",
+      "Credit": "Quagg [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "This bandolier made of a weird leather hosts a cumbersome shoulder-mounted, pressurized scrap cannon. When unloaded, it can either be defensively used against incoming projectiles or offensively used as a one-use scrap shotgun. It takes a decent amount of time to restuff the cannon, making it infeasible to reload mid-combat.",
+      "Description": "Once per Fight, the User can unload the Trophy System, doing one of the following:<br> • Attack everything in the same Area, dealing 1 Damage on failed Deftness Checks.<br> • Parry 1 Missile Attack per Fight. This includes spells or any special attacks that require an Attack roll.<br><br>If a Small Species uses this, they must make a Deftness or be thrown an Area away and be Toppled.",
+      "Slots": 2,
+      "Cost": "50 Coins"
+    },
+    {
+      "Item": "White Gloves",
+      "Credit": "Quagg [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "At first glance, they just seem like a nice pair of white gloves. With a little imagination, however, they world is in your hands.",
+      "Description": "Magical Item, made of Pilose Bumpo Fleece.<br><br>Once per Day, as an Action, the User can invoke either the <b>Imaginary Lasso</b> or <b>Stuck in a Box</b> ability on a successful Aura Check.<br><br>On a Failure, they couldn&#x27;t mime well enough to invoke the magic.<br><br><b>Imaginary Lasso:<br></b>The User can pretend to throw a lasso around a Target up to 2 Areas away. Requires a Might Check or the Target is Restrained and dragged to the same Area as the Mime.<br><br><b>Stuck in a Box:</b> <br>The User can rapidly mime being stuck in a box around itself and a Target in the same Area. The Area becomes walled off by an imaginary-but-real Box which cannot be traversed between nor will any magic or projectiles penetrate. The Box has a Defense Rating of 16 and 2 Hearts.",
+      "Slots": 1,
+      "Cost": "2 Gems"
+    },
+    {
+      "Item": "Roger's Pipe",
+      "Credit": "GameOtaku [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "A tobacco pipe of the infamous Pirate King, Roger the Bold.",
+      "Description": "It needs tobacco to work<br><br>You look smarter and wiser, makes it easier to convince people that you know what you are doing.  It gives you a purview <b>&quot;Like I Know What I&#x27;m Doing&quot;.</b><br><br>The use of this pipe is bad for your lungs. When you are Suffocated, your ability to hold your breath is reduced by 1 Turn. This effect last for a Day when you used the pipe. It does not stack.<br><br>You can inhale deeply and release big cloud of smoke. You can cause the Area you occupy to become Obscured. When you use the pipe this way, you reduce your Grit Aptitude by 1. This effect last for a Day when you used the pipe. It does not stack.",
+      "Slots": "1 (when carried)",
+      "Cost": ""
+    },
+    {
+      "Item": "Glockto-Glasses",
+      "Credit": "Quagg [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "Inspired by the (thankfully) rarely-seen Glocktopus, a bored senior inventor at Magia University&#x27;s Portia Branch decided to outfit some fashionable shades with literal firearms on each side. Unfortunately for the law enforcement of Portia, these glasses have been picked up as &quot;trendy&quot; by some local adventurers.",
+      "Description": "At rest, it functions as Blackout Goggles.<br><br>During Combat, it may be used as a Small Mechanical Missile Weapon, not requiring hands and useable by any Calling. When used, it requires a successful Grit Check or the User becomes Disoriented.<br><br>It may be fired twice before requiring a Reload, which reloads both Weapons at once.<br><br>If the first Attack Action of a Reload with this Item misses, the Wielder may invoke the second shot immediately at a Minor Penalty and become Toppled.",
+      "Slots": "1.5",
+      "Cost": "75 Coins"
+    },
+    {
+      "Item": "Present Bomb",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "This festive device can deliver a nasty shock or a nice surprise to those that open it. As a bonus for those with nefarious intent, the wrapping is designed to slough off on impact. Buyer beware though: not every present is as advertised<br>",
+      "Description": "May choose a single Target within one Area who may choose to make a Deftness Check to avoid it. You may choose between a Naughty or Nice present before throwing, roll 1d20, and then consult the below chart if either the Target chooses not to make the Deftness Check or if they fail it.<br><br>Naughty Present:<br>1-5 - 3 Flame Damage<br>6-10 - 2 Flame Damage<br>11-15 - 1 Flame Damage<br>16-20 - Restore 1 Heart<br><br>Nice Present:<br>1-5 - Restore 2 Hearts and remove one Ailment of the Target&#x27;s choice<br>6-10 - Restore 2 Hearts<br>11-15 - Restore 1 Heart<br>16-20 - 1 Flame Damage<br>",
+      "Slots": 1,
+      "Cost": "30 Coins"
+    },
+    {
+      "Item": "Comically Slippery Peel",
+      "Credit": "Quagg [Discord]",
+      "Type": "Equipment",
+      "Flavor Text": "During time of particular drought, the majestic little creature known as a Bananasaurus will shed its peel to cool off. Something about its physiology causes these peels to be cosmically prone to being slipped on.",
+      "Description": "The Peel may be thrown up to 1 Battlefield Area away.<br><br>The Area it lands in becomes entirely Precarious as someone will slip on it.<br><br>After a Creature trips (comically) as a result of this Condition, the Area lose this Condition.",
+      "Slots": "0.5",
+      "Cost": "15 Coins"
+    },
+    {
+      "Item": "Gobbie Scrap Bracer",
+      "Credit": "Quagg [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "What just looks like a weird wrought-iron bracer turns out to actually be one nasty weapon in disguise. A sharp rotation of the wrist while throwing an arm activates this bracer, exposing a set of three hooked blades.",
+      "Description": "Functionally, it acts as a Concealed Weapon.<br><br>During a Fight, you can choose one of the following:<br> • Use the Ambush Feature of the Concealed Weapon.<br> • Use it as a Small Shield.<br><br>It cannot be Disarmed.",
+      "Slots": 1,
+      "Cost": "35 Coins"
+    },
+    {
+      "Item": "Grass Sword",
+      "Credit": "Quagg [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "Often sold by Hedge Mages, these blades are surprisingly deft and precise despite their flimsy appearance. Good luck breaking up with it, though.",
+      "Description": "The sword is a Concealed/Master Weapon made out of Warp Root.<br><br><br>It is Cursed: Jealous (Source, pg. 295).<br> • However, it grants the Wielder an Edge on their Ambush Contest for Concealed Weapons&#x27; Sneaky Swipe.<br> • As it is made of grass and wraps the Wielder&#x27;s arm, it takes up no Inventory Slots.",
+      "Slots": 0,
+      "Cost": "1 Gem"
+    },
+    {
+      "Item": "Twingun",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "This magic weapon is actually a pair of guns designed to be used together. Individually, they&#x27;re not too remarkable, but paired they can be deadly. They come in three designs. These designs are magically bonded and you cannot mix and match without a powerful magic ritual.",
+      "Description": "All are Rapid-Fire Small Mechanical Missile Weapons that deal Special Damage and can both be reloaded with a single Action, even with no free hands. <br><br>Additionally, if Dual-Wielding and you miss with the First Attack but Hit with the Second, you deal an additional Heart of whichever Damage type the one you missed with deals.<br><br><b>Designs:</b><br>Oak (Twilight) | Brass (Flame)<br>Teak (Frost) | Chrome (Lightning)<br>Ebony (Dark) |  Ivory (Bright)<br>",
+      "Slots": 2,
+      "Cost": "700 Coins"
+    },
+    {
+      "Item": "Triton's Lance",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "This harpoon is made from Deep Coral, a magical stone that resembles coral that can be worked like metal. They&#x27;re uncommonly used by high-ranking Neridian Soldiers. These weapons are as dangerous at a distance as they are up close.",
+      "Description": "An Arc Weapon that can be Thrown at a single Target up to 1 Battlefield Area away without needing to make an Attack Stunt, which returns to the wielder&#x27;s hand afterwards. On a successful ranged Hit, the wielder may force the Target to make a Might Check to resist being dragged with the weapon into the wielder&#x27;s Battlefield Area.<br><br>Completely unhindered by water in any way. If a technique could be used on land, it may be used in the water just as easily. The reverse isn&#x27;t true though if the wielder is able to figure out a technique that is especially good for underwater combat.<br><br>May also be used as a tool for Fishing.",
+      "Slots": 3,
+      "Cost": "600 Coins"
+    },
+    {
+      "Item": "Meteor Hammer",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "Not to be confused with a mundane weapon also called a meteor hammer (scholars have proposed renaming the magic weapon to Asteroid Hammer to avoid the confusion, with little success), this is an enormous warhammer made from the core of a meteorite. The exact magic material it&#x27;s made from varies depending on the meteorite used. These devastating weapons are ideal for smashing objects.<br>",
+      "Description": "A Mighty Weapon that deals either Flame or Mundane Damage, which the wielder decides at the start of their Turn. Its decisive blows are especially deadly, dealing an additional Damage when dealing Extra Damage. <br><br>Once per Combat, the wielder may spend an Action to strike the floor, causing all others in the same Battlefield Area to make a Deftness Check to avoid taking 1 Flame Damage and being Toppled. This also automatically attempts to Sunder the floor. If the floor is Sundered either it makes a hole to the floor below, or makes the Battlefield Area Precarious if the floor is too thick to realistically make such a hole from a single impact.<br><br>Has an Edge on Sunder attempts and also deals double Damage to the Sundered object.",
+      "Slots": 2,
+      "Cost": "800 Coins"
+    },
+    {
+      "Item": "Pinchsting Lasher",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "Resembling the tail of a giant, clawed, tailed arachnid, the Pinchsting Lasher is a frightening weapon. Like its namesake, it can strike quickly and poison its foes.",
+      "Description": "Quick/Lash Weapon. <br><br>On a successful Hit, the Target must make a Grit Check to avoid being Disoriented. Alternatively, the User may expend the venom for the rest of the Combat to instead cause the Target to start the process of being Petrified as the poison slowly paralyses their body.<br><br>If the Target fails their Grit Check against Petrified, they have no further chances to resist the effect. Once fully Petrified, the Target remains so for 1 Hour or until they receive some sort of antidote or other means of removing the poison. <br><br>After making a Grit Check against either effect, the Target is immune to the Pinchsting Lasher&#x27;s venom for 24 hours.",
+      "Slots": 1,
+      "Cost": "300 Coins"
+    },
+    {
+      "Item": "Brash Boomerang",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "This small, simple-looking weapon is made from Warp Wood and, when used properly, can return to the wielder&#x27;s hand after throwing. The truly skilled can hit an unsuspecting opponent on the back of their head after they think they&#x27;ve dodged it. In a pinch, the wielder may transform it into a more useful form temporarily.",
+      "Description": "A Thrown Weapon that returns to the Wielder&#x27;s hand after use. If the Wielder misses with it, they may make another Attack with it against the Target as though they were Dual-Wielding.<br><br>Once per Combat, the Wielder may spend an Action to will the Warp Wood the Weapon is made from to change shape. They may select from any non-Combination Melee Weapon the Wielder has proficiency with. The Weapon remains in this form until the end of Combat. Other than being made from Magic Materials, there is nothing special about this temporary form and it functions exactly as any other basic weapon of its type.",
+      "Slots": 1,
+      "Cost": "200 Coins"
+    },
+    {
+      "Item": "Steve",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "A magical slingshot with a mysterious past. While indeed a useful weapon, the most curious quality of Steve is his ability to talk! And talk! And talk. And talk...",
+      "Description": "Counts as a Small Mechanical Missile Weapon made of Magical Materials that doesn&#x27;t need reloading.<br><br>Steve knows everything there is to know about monsters. Once per Turn you may make an Aura Check without needing to spend an Action. On success, Steve will tell you one fact about an Adversary you&#x27;re facing. On failure, as he&#x27;s never wrong about anything, he&#x27;ll tell you something factual but incredibly obvious.<br><br>As he never stops talking, unless you find some way of muffling him, the wielder suffers a Minor Penalty on any roll to do with stealth.<br><br>Through a long and convoluted process, Steve can be upgraded to Super Steve. This makes him deal +1 Heart of Damage, increases his Range by one Battlefield Area, gives him a snazzy new paint job, AND makes him even more annoying! The GM determines the specifics of the process, but it should ideally be as annoying as he is.",
+      "Slots": 1,
+      "Cost": ""
+    },
+    {
+      "Item": "Reaper",
+      "Credit": "GameOtaku [Discord]",
+      "Type": "Weapon [Cursed]",
+      "Flavor Text": "",
+      "Description": "At the start of their Turn, the Wielder may choose whether to wield this weapon as a Master Weapon or as dual-wielded Standard Weapons.<br><br><b>Ability:<br></b>Each time the Wielder deals Damage to a Target, they heal Hearts an amount equal to the Damage dealt.<br><br><b>Drawback:<br></b>However, the Wielder never knows their current Hearts, and they are never told how much Damage they receive from Enemy Attacks (the GM always rolls attack against them in secret). Narratively, this weapon cause its Wielder to ignore their own well-being, driving them to keep fighting without awareness of how close they are to collapse",
+      "Slots": "",
+      "Cost": ""
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-name: Refresh Adversary Compendium
+name: Refresh Homebrew Compendiums
 
 on:
   schedule:
@@ -26,16 +26,18 @@ jobs:
             "https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/export?format=xlsx"
 
       - name: Build compendium JSON
-        run: python scripts/build_adversary_database.py /tmp/adversary-sheet.xlsx
+        run: |
+          python scripts/build_adversary_database.py /tmp/adversary-sheet.xlsx
+          python scripts/build_item_compendium.py /tmp/adversary-sheet.xlsx
 
       - name: Commit & push if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add break-homebrew-adversary-compendium.json
+          git add break-homebrew-adversary-compendium.json break-homebrew-item-compendium.json
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "chore(compendium): refresh adversary data"
+            git commit -m "chore(compendium): refresh homebrew data"
             git push
           fi

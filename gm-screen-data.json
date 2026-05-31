@@ -1,0 +1,180 @@
+{
+  "entries": [
+    {
+      "id": "zelda-npc-personalities",
+      "type": "table",
+      "category": "npcs",
+      "title": "Zelda-Style NPC Personalities",
+      "description": "",
+      "content": {
+        "tables": [
+          {
+            "name": "One Line NPC Hyperfixations",
+            "die": "d20",
+            "items": [
+              "Collects something rare but not necessarily valuable",
+              "A magic item in their possession",
+              "A magic item not in their possession",
+              "A legendary monster or hero",
+              "Craving a specific kind of food",
+              "Heard an extremely inaccurate rumour",
+              "A dangerous location or local landmark",
+              "A location no one else knows about",
+              "A portent or omen",
+              "A household malfunction happening right in front of you",
+              "A pet or species of animal",
+              "A special trinket or gadget",
+              "A weird feature of the landscape",
+              "A local game or custom",
+              "The latest fad",
+              "Another NPC's activities",
+              "Something belonging to one of the PCs",
+              "A missing belonging",
+              "Arguing with another NPC about (roll again)",
+              "Eagerly gossiping with another NPC about (roll again), do not wish to be disturbed"
+            ]
+          },
+          {
+            "name": "Pull: Motivation",
+            "die": "d12",
+            "items": [
+              "To impress their crush",
+              "To impress their crush (you)",
+              "To become rich",
+              "To prove someone wrong",
+              "To get revenge on someone",
+              "To be left alone",
+              "To rescue someone or something dear to them",
+              "Sheer curiosity",
+              "To expose their rival",
+              "To clear their name",
+              "To topple some local authority",
+              "They have been misinformed and believe that it will help them (roll again)…"
+            ]
+          },
+          {
+            "name": "Attitude towards PCs",
+            "die": "d12",
+            "items": [
+              "Lackadaisical",
+              "Baffled",
+              "Furious",
+              "Scamming",
+              "Obsequious",
+              "Skeptical",
+              "Desperate",
+              "Fawning",
+              "Envious",
+              "Amused",
+              "Doesn't seem to notice them",
+              "Mistakes them for someone else with whom they are (roll again)"
+            ]
+          }
+        ],
+        "rollAll": true
+      },
+      "tags": [
+        "npc",
+        "generator",
+        "zelda"
+      ],
+      "source": {
+        "author": "To Distant Lands",
+        "title": "Zelda-Style NPC Personalities",
+        "url": "https://todistantlands.github.io/2023/06/13/zelda-npcs.html",
+        "date": "2023-06-13"
+      },
+      "added": "2026-05-28"
+    },
+    {
+      "id": "cannibal-coast-sunfish",
+      "type": "prose",
+      "category": "encounters",
+      "title": "Sunfish",
+      "content": {
+        "html": "<p>A strange grey-and-yellow disk floats in the sky, drifting around lazily as if a boat on the waves. From a distance it sure as fuck looks like a flying-saucer UFO. Luckily, this is just the Sunfish. It sweeps through the air like an eerily slow frisbee. It looks very meaty and heavy: this is just because it is full of helium sacs. It is 40' wide and has pallid grey skin with amber-yellow zebra-stripes. It blankly stares down at you with a big round eye.</p><p>If you talk to yourself while in the shadow of the Sunfish it plants thoughts in your head as if \"filling in\" the other side of the conversation. It is placid and helpful and has seen everything on the coast from a bird's eye view.</p><p>The sunfish's flesh bears alchemical properties of buoyancy and omniscience.</p>",
+        "statblock": "AC 8, HD 10, hp 40, #AT 0, D 0, ML 5"
+      },
+      "tags": [
+        "monster",
+        "encounter",
+        "cannibal-coast",
+        "antarctic-adventure-jam"
+      ],
+      "source": {
+        "author": "Hags",
+        "title": "The Cannibal Coast: Part 3",
+        "url": "https://hags.bearblog.dev/cannibal-coast-3/",
+        "date": "2026-05-25"
+      },
+      "added": "2026-05-28"
+    },
+    {
+      "id": "cannibal-coast-ivory-asp",
+      "type": "prose",
+      "category": "encounters",
+      "title": "The Ivory Asp",
+      "content": {
+        "html": "<p>This reach of the Pine Barrens is inhabited by a Beast Most Dire.</p><p>A hooded serpent slithers along, but six feet in length and no fatter than a child's wrist. It is clad with milky albino scales. It is beautiful. It is the Ivory Asp. Princes hunt for it. Mothers scare their children with it. Poets sing of it. It is an ordinary cobra.</p><p>If one has heard the tales of the Ivory Asp, of the serpent's unmistakeable grace and glamour, of the lethal venom that drips from the White Devil's fangs, then they are in much danger. The Ivory Asp's toxin poses a threat only to those who believe in it. If one has, and they are bitten, then the poor victim is overcome with a terrible sense of impending doom for one minute, begins violently coughing up blood for another, then drops dead.</p><p>d6 doses can be extracted from the Asp's fangs each month if kept alive. 2d6 doses can be extracted at once if it's slain.</p>",
+        "statblock": "AC 3, HD 1, hp 3, #AT 1, D 0 + memeto-venom, ML 6"
+      },
+      "tags": [
+        "monster",
+        "encounter",
+        "cannibal-coast",
+        "antarctic-adventure-jam"
+      ],
+      "source": {
+        "author": "Hags",
+        "title": "The Cannibal Coast: Part 3",
+        "url": "https://hags.bearblog.dev/cannibal-coast-3/",
+        "date": "2026-05-25"
+      },
+      "added": "2026-05-28"
+    },
+    {
+      "id": "cannibal-coast-mistress-of-hills",
+      "type": "prose",
+      "category": "encounters",
+      "title": "Mistress of the Hills",
+      "content": {
+        "html": "<p>From a high and rocky promontory a huge eagle watches. Or is it a lion? It's difficult to tell from here. Don't worry: she soon swoops down to introduce herself.</p><p>The Mistress of the Hills is brown in tone, with the elegant dappled-tan plumage of an eagle. She has beautiful stripes of deep azure on her lion-foot-talons and bushy tail. Her face is covered by a featureless mask of pearl decorated with rings of azure. She tilts her head as she speaks in a strangely high and gentle voice.</p><p>She tries to be friendly. She asks the group to introduce themselves. She asks who the Strongest is. She asks who the Quickest is. She asks who the Wisest is. She proposes a game to the Wisest: she will try to guess their intentions and give them a treasure of their choice if they succeed.</p><p>The Mistress explains the game as she produces a jewelled bottle of shimmering blue poison. The player is to drink the poison the next day at the sun's highest point. The Sphinx will return beforehand, at daybreak, to give the player their prize if they truly intend to drink it. The Sphinx will not return if the player doesn't plan to drink it.</p><p><em>GMs, this is a really fun way to throw your players for a mind-melter. You have to be the judge of their characters' intentions. She will almost always return. She only snubs the players if they try and get really tricky. This isn't the tricky part. The brain-destroyer is when she gives you the three options for a prize.</em></p><p>The Mistress's offerings, only revealed if she does return, are as thus:</p><ul><li>A Verdigris Bracer of Strength (+1 to-hit and damage)</li><li>A Pink-Green-Chequered Pair of Boots of Running (can click your heels to double your speed for a short time; the boots become worn out if continuously used, fraying and sweating and panting)</li><li>A filigree pearl box of chalky orange pills (the antidotes to the poison).</li></ul>",
+        "statblock": null,
+        "image": "https://cards.scryfall.io/art_crop/front/f/9/f9a4d7ac-082b-4f66-9b7f-4d1d0fda78c7.jpg?1562586157"
+      },
+      "tags": [
+        "npc",
+        "encounter",
+        "cannibal-coast",
+        "sphinx",
+        "puzzle",
+        "antarctic-adventure-jam"
+      ],
+      "source": {
+        "author": "Hags",
+        "title": "The Cannibal Coast: Part 3",
+        "url": "https://hags.bearblog.dev/cannibal-coast-3/",
+        "date": "2026-05-25"
+      },
+      "added": "2026-05-28"
+    },
+    {
+      "id": "vrogbert-the-forgetful-mage",
+      "type": "prose",
+      "category": "encounters",
+      "title": "Vrögbert the Forgetful Mage",
+      "content": {
+        "html": "<p><strong>Vrögbert Leopold Croakness</strong> will forget his own name if he doesn’t say it for a while. He might be a powerful mage, but <strong>no one is quite sure</strong> whether he actually is or not. He forgets where he puts his spells, how they work, or even how to read them, so his power <strong>doesn’t really manifest all that often</strong>.</p><p>He wasn’t always this way - by all accounts, his forgetfulness started <strong>sometime during his sixth winter</strong>, but he doesn’t really remember. It may have just been his age, a knock to the head, or even the result of a rival mage’s curse - Vrögbert has <strong>no way of knowing</strong>.</p>",
+        "image": "https://tinytails.community/uploads/default/optimized/1X/277edcb049770ba8916c8c4ec6e070d1e394785c_2_576x500.jpeg"
+      },
+      "tags": [],
+      "source": {
+        "author": "hugh",
+        "title": "Vrögbert the Forgetful Mage",
+        "url": "https://tinytails.community/t/role-call-10-vrogbert-the-forgetful-mage/740",
+        "date": "2026-02-13"
+      },
+      "added": "2026-05-31"
+    }
+  ]
+}
