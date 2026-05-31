@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="break-style.css">
     <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <style>
         /* ===== Item Compendium Styles ===== */
@@ -312,7 +313,8 @@
         /* ===== Item Card ===== */
         .item-card-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             padding: 2rem 1rem;
         }
 
@@ -412,6 +414,33 @@
             font-size: 0.95rem;
         }
 
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
+            padding: 0.4rem 0.85rem;
+            font-size: 0.82rem;
+            font-family: var(--font-body);
+            color: var(--accent);
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--accent);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .copy-btn.copied {
+            background: #00b894;
+            border-color: #00b894;
+            color: #fff;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .db-page {
@@ -496,6 +525,9 @@
             </table>
             <div class="db-empty" id="db-empty" style="display:none;">No items match your filters.</div>
         </div>
+
+        <!-- Hidden staging area for html2canvas -->
+        <div id="item-card-stage" style="position:absolute;left:-9999px;top:0;"></div>
 
         <!-- Item Card Display -->
         <div class="item-card-container" id="item-card-container">
@@ -671,7 +703,7 @@
             if (cost) footerParts.push(escapeHtml(cost));
             const footerContent = footerParts.join(' · ');
 
-            container.innerHTML = '<div class="item-card">' +
+            container.innerHTML = '<div class="item-card" id="item-card-live">' +
                 '<div class="item-card-title">' +
                     '<span class="item-card-name">' + escapeHtml(item['Item']) + '</span>' +
                     (type ? '<span class="item-card-type-label">' + escapeHtml(type) + '</span>' : '') +
@@ -687,6 +719,38 @@
                         '<span class="item-card-credit">Credit: ' + escapeHtml(item['Credit'] || '') + '</span>' +
                     '</div>' : '') +
             '</div>';
+
+            // Convert to image for right-click save/copy
+            const cardEl = document.getElementById('item-card-live');
+            if (cardEl && typeof html2canvas !== 'undefined') {
+                html2canvas(cardEl, { scale: 2, useCORS: true, backgroundColor: null }).then(canvas => {
+                    const img = document.createElement('img');
+                    img.src = canvas.toDataURL('image/png');
+                    img.alt = item['Item'] + ' — Item Card';
+                    img.style.width = '450px';
+                    img.style.maxWidth = '100%';
+                    img.style.borderRadius = '12px';
+                    container.innerHTML = '';
+                    container.appendChild(img);
+                    const btn = document.createElement('button');
+                    btn.className = 'copy-btn';
+                    btn.textContent = 'Copy Image to Clipboard';
+                    btn.addEventListener('click', () => {
+                        canvas.toBlob(blob => {
+                            navigator.clipboard.write([
+                                new ClipboardItem({ 'image/png': blob })
+                            ]).then(() => {
+                                btn.textContent = 'Copied!';
+                                btn.classList.add('copied');
+                                setTimeout(() => {
+                                    btn.textContent = 'Copy Image to Clipboard';
+                                    btn.classList.remove('copied');
+                                }, 2000);
+                            });
+                        }, 'image/png');
+                    });
+                    container.appendChild(btn);                });
+            }
         }
 
         function renderTable() {
