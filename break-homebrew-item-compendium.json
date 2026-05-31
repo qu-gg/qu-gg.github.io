@@ -1,6 +1,6 @@
 {
   "lastUpdated": "04/26/2026",
-  "count": 22,
+  "count": 25,
   "items": [
     {
       "Item": "Aetheric Monocle",
@@ -190,6 +190,33 @@
       "Description": "Counts as a Small Mechanical Missile Weapon made of Magical Materials that doesn&#x27;t need reloading.<br><br>Steve knows everything there is to know about monsters. Once per Turn you may make an Aura Check without needing to spend an Action. On success, Steve will tell you one fact about an Adversary you&#x27;re facing. On failure, as he&#x27;s never wrong about anything, he&#x27;ll tell you something factual but incredibly obvious.<br><br>As he never stops talking, unless you find some way of muffling him, the wielder suffers a Minor Penalty on any roll to do with stealth.<br><br>Through a long and convoluted process, Steve can be upgraded to Super Steve. This makes him deal +1 Heart of Damage, increases his Range by one Battlefield Area, gives him a snazzy new paint job, AND makes him even more annoying! The GM determines the specifics of the process, but it should ideally be as annoying as he is.",
       "Slots": 1,
       "Cost": ""
+    },
+    {
+      "Item": "Bright Blade",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "This sword, at first glance, appears to be made of pure light. Its powerful allegiance to Bright mana makes it incredibly easy to wield by those it deems worthy.",
+      "Description": "This Combination Master/Mighty weapon made of Sun Gold can be wielded by anyone Bright-Aligned with three or more Bright Allegiance Points even if their Calling would restrict them from using it. Their Size may still restrict them though.<br><br>It deals Bright Damage instead of mundane damage, and may shed light as though it was a Star Gem. The wielder may spend an Action to activate or deactivate this light.<br><br>Once per day, on a successful hit, the wielder may choose to force the target to make a Might Check. On failure, the target is pushed one Battlefield Area away in a direction of the wielder&#x27;s choice and is Toppled.",
+      "Slots": 2,
+      "Cost": "6 Gems"
+    },
+    {
+      "Item": "Dark Sabre",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "This sword seems to pull light in, almost like a black hole. It&#x27;s extremely difficult to see until it&#x27;s too late. There are whispers that it was forged directly by the Profound Darkness itself. Whether this is true or not, it seems to want to be wielded by those with an affinity with Dark Mana.",
+      "Description": "This Combination Master/Concealed weapon made of Shade Iron can be wielded by anyone Dark-Aligned with three or more Dark Allegiance Points even if their Calling would restrict them from using it. Their Size may still restrict them though. It breaks the usual rule that Concealed weapons can only be Combined with Thrown weapons due to the fact it is incredibly difficult to spot because of its light-drawing ability.<br><br>It deals Dark damage instead of mundane damage, and may create an area of darkness as though it was a Shadow Stone. The wielder may spend an Action to activate or deactivate this darkness.<br><br>Once per day, on a successful hit, the wielder may force the target to make a Deftness Check. On failure, all of the targets limbs are restrained as shadowy tendrils wrap around them. They or an ally may spend an Action to attempt a Might or Deftness Check to break free.",
+      "Slots": 2,
+      "Cost": "6 Gems"
+    },
+    {
+      "Item": "Twilight Sword",
+      "Credit": "KeJoRo [Discord]",
+      "Type": "Weapon",
+      "Flavor Text": "The origins of this blade are a mystery. Some say it formed as a result of a clash between the Invincible Bright and the Profound Darkness. Some say it is the physical remains of a powerful Unshaped that was the manifestation of chaos. One thing is clear, which is that those who choose to balance Bright and Dark — or those whose bodies are a battleground for the forces of Bright and Dark — are able to wield it far easier than they should be able to.",
+      "Description": "This Combination Master/Quick weapon made of a Magical Material of indeterminate composition can be wielded by anyone Twilight-Aligned with three or more Allegiance Points of any kind even if their Calling would restrict them from using it.<br><br>It deals Twilight damage instead of mundane damage, and may add a random Area Condition to the Battlefield Area the wielder is in, which the wielder has no special immunity to. This takes the form of pure mana altering the air or surface of the Area in an appropriate way. The wielder may spend an Action to activate or deactivate this Area Condition.<br><br>Once per day, on a successful hit, the wielder may force the target to make a Grit Check. On Failure, the target is inflicted with a random Ailment. The wielder may choose to take a Light Injury to inflict another random Ailment.<br>",
+      "Slots": 2,
+      "Cost": "6 Gems"
     },
     {
       "Item": "Reaper",
