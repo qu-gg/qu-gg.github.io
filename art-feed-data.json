@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T00:22:51.924647Z",
+  "lastUpdated": "2026-06-01T13:50:13.176280Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-05-31T20:29:20.173Z",
       "replyCount": 7,
-      "repostCount": 1,
-      "likeCount": 13,
+      "repostCount": 3,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -76,6 +76,35 @@
             "alt": ""
           }
         ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:6rvvqfuinw3oqza2okp3akxt/app.bsky.feed.post/3mn5xiqz44k2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "outridercreative.bsky.social",
+        "displayName": "Ryan Lynch",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreihuco23wvsl275fvnoofa2sgnt724betl6mjhpgideipwwsjowlj4"
+      },
+      "record": {
+        "text": "FINE I'LL START BLOGGING! For your convenience and for easy reference, I've taken the massive bluesky thread of crowdfunding advice I posted a while ago, and edited and organized it in blog form.",
+        "createdAt": "2026-05-31T16:13:56.947Z"
+      },
+      "indexedAt": "2026-05-31T16:13:59.875Z",
+      "replyCount": 4,
+      "repostCount": 44,
+      "likeCount": 117,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.outridercreative.com/blog/no-nonsensecrowdfunding",
+        "title": "No-Nonsense Crowdfunding.  \u2014 Outrider Creative",
+        "description": "Crowdfunding can be an extremely useful tool. It not only can fund your indie TTRPG project, but also generate sustainable marketing buzz while uniting your community. Unfortunately, crowdfunding can ...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreidm7ogtghy5nyr7wsufsihrmh4pvq3ipntvmykfnmtjrc4qaqklmm"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -98,7 +127,7 @@
       "indexedAt": "2026-05-31T14:29:04.708Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 12,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -188,7 +217,7 @@
       "indexedAt": "2026-05-30T00:25:56.763Z",
       "replyCount": 0,
       "repostCount": 11,
-      "likeCount": 28,
+      "likeCount": 29,
       "embed": {
         "type": "images",
         "images": [
@@ -887,8 +916,8 @@
       },
       "indexedAt": "2026-05-25T13:55:39.764Z",
       "replyCount": 2,
-      "repostCount": 20,
-      "likeCount": 99,
+      "repostCount": 21,
+      "likeCount": 110,
       "embed": {
         "type": "images",
         "images": [
@@ -1307,7 +1336,7 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 497,
+      "repostCount": 496,
       "likeCount": 2605,
       "embed": {
         "type": "images",
@@ -1664,8 +1693,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/396/645/large/maria-sadre-mirror-and-snake.jpg?1776942015",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/396/645/large/maria-sadre-mirror-and-snake.jpg?1776942015",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/396/645/large/maria-sadre-mirror-and-snake.webp?1776942015",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/396/645/large/maria-sadre-mirror-and-snake.webp?1776942015",
             "alt": ""
           }
         ]
@@ -1732,7 +1761,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1453,
-      "likeCount": 6330,
+      "likeCount": 6329,
       "embed": {
         "type": "images",
         "images": [
@@ -1961,7 +1990,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 766,
-      "likeCount": 3898,
+      "likeCount": 3897,
       "embed": {
         "type": "images",
         "images": [
@@ -2313,7 +2342,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1249,
-      "likeCount": 6572,
+      "likeCount": 6570,
       "embed": {
         "type": "images",
         "images": [
@@ -2690,53 +2719,6 @@
       "link": "https://www.artstation.com/artwork/eRNndP"
     },
     {
-      "uri": "at://did:plc:dt52f6x7bl45ioq2mdsoijtp/app.bsky.feed.post/3m33ptoxf522w",
-      "source": "bluesky",
-      "author": {
-        "handle": "demydot.bsky.social",
-        "displayName": "Demydot",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreibkbifvcsx7tdeule53cts7n54cgan2i3n6mocy5dh3mgqjvqbrla"
-      },
-      "record": {
-        "text": "Figured I should make a new pinned post for my webcomic, Myriad Voyages!\n\nIt's about two girls trying to become mercenaries as an interdimensional conspiracy slowly threatens them and everyone they care about!\n\nYou can read it in Globalcomix, Webtoon, and Tapas. I'm planning on adding more soon!",
-        "createdAt": "2025-10-13T17:18:05.103Z"
-      },
-      "indexedAt": "2025-10-13T17:18:12.881Z",
-      "replyCount": 1,
-      "repostCount": 25,
-      "likeCount": 51,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreibtwzwudak4rpvb3kyv4vkmz6rggkqcodqakkoh6fxq7v36lldge4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreibtwzwudak4rpvb3kyv4vkmz6rggkqcodqakkoh6fxq7v36lldge4",
-            "alt": "The new cover art for Myriad Voyages. In it, Mara and Jade are shown front and center after the logo while the other members of the main cast blend in with the stars. Ari, Kris, and Aken are shown in the first row and Esther, Kitsu, and Quirrel are shown in the back row. Kitsu and Quirrel are both shown to be emerging from a portal the former made."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreidhqrjusojbrvpajuxfotb7xb2wef4irq7i5x4z5b5pyhgo5rpucm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreidhqrjusojbrvpajuxfotb7xb2wef4irq7i5x4z5b5pyhgo5rpucm",
-            "alt": "Esther is shown with her star sabre drawn as Mara stretches above her with her own sabre drawn from her bracelet. They are both in a desert in a starry background, only illuminated by their weapons and the two moons."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreigmiat2g32cf5jfkmkn32zbs2jojxrjmcgj7aoh7u3ranjpfvenmu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreigmiat2g32cf5jfkmkn32zbs2jojxrjmcgj7aoh7u3ranjpfvenmu",
-            "alt": "Jade is shown protecting Mara from blaster fire by making a green void shield around them both."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreigvnxripvqlac7zefsbuajtuldtrgsys6cdwxl2psowflaoviz72i",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dt52f6x7bl45ioq2mdsoijtp/bafkreigvnxripvqlac7zefsbuajtuldtrgsys6cdwxl2psowflaoviz72i",
-            "alt": "Jade is shown charging up void energy in her fist in a green background as she rushes towards her opponent. Her fist is shown to be winding back."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/ZlQPnG",
       "source": "artstation",
       "author": {
@@ -3038,7 +3020,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2361,
-      "likeCount": 11897,
+      "likeCount": 11896,
       "embed": {
         "type": "images",
         "images": [
@@ -6150,13 +6132,13 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/836/large/ines-rotzinger-amberisle-conceptart-07.jpg?1776948380",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/836/large/ines-rotzinger-amberisle-conceptart-07.jpg?1776948380",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/836/large/ines-rotzinger-amberisle-conceptart-07.webp?1776948380",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/836/large/ines-rotzinger-amberisle-conceptart-07.webp?1776948380",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/838/large/ines-rotzinger-amberisle-conceptart-08.jpg?1776948383",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/838/large/ines-rotzinger-amberisle-conceptart-08.jpg?1776948383",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/838/large/ines-rotzinger-amberisle-conceptart-08.webp?1776948383",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/838/large/ines-rotzinger-amberisle-conceptart-08.webp?1776948383",
             "alt": ""
           },
           {
@@ -6170,8 +6152,8 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/830/large/ines-rotzinger-amberisle-conceptart-05.jpg?1776948373",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/830/large/ines-rotzinger-amberisle-conceptart-05.jpg?1776948373",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/399/830/large/ines-rotzinger-amberisle-conceptart-05.webp?1776948373",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/399/830/large/ines-rotzinger-amberisle-conceptart-05.webp?1776948373",
             "alt": ""
           },
           {
