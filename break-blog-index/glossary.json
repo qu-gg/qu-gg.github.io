@@ -239,6 +239,7 @@
     {"term": "Imbued Gear",            "category": "item",      "aliases": ["Imbued Weapon", "Imbued Armor", "Imbued Shield", "Imbued Outfit"]},
     {"term": "Permanent Artifacts",    "category": "item",      "aliases": ["Permanent Artifact"]},
     {"term": "Temporary Artifacts",    "category": "item",      "aliases": ["Temporary Artifact"]},
+    {"term": "Blasphemous Script",     "category": "item",      "aliases": []},
 
     {"term": "Bright Damage",          "category": "damage",    "aliases": []},
     {"term": "Dark Damage",            "category": "damage",    "aliases": []},
