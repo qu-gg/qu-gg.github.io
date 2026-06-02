@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T13:50:13.176280Z",
+  "lastUpdated": "2026-06-02T00:28:19.387758Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mnauxthmpc2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdwonder.bsky.social",
+        "displayName": "Amanda P.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreib7xr6hfummtzyvuqqtstx2cdclsgwtd6ljqxr7d6zjwu4fruqype"
+      },
+      "record": {
+        "text": "Big News: Pilgrimage of the Sun Guard is officially back in print thanks to a publishing partnership with @plusoneexp.bsky.social! Cover art by @tonytranrpg.bsky.social \n\nplusoneexp.com/collections/...",
+        "createdAt": "2026-06-01T20:06:40.820Z"
+      },
+      "indexedAt": "2026-06-01T20:06:42.564Z",
+      "replyCount": 2,
+      "repostCount": 26,
+      "likeCount": 42,
+      "embed": {
+        "type": "external",
+        "uri": "https://plusoneexp.com/collections/lgbtq-creators/products/pilgrimage-of-the-sun-guard",
+        "title": "Pilgrimage of the Sun Guard",
+        "description": "Quests in King Arthur stories are about ideals, conflict and temptation.\u00a0 Pilgrimage of the Sun Guard\u00a0is a solo prompt-based journaling\u00a0game where you create a Sun Guard and travel alone on a quest, a...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreic42vx3g5ei6igme46l6v3nthcx3dcmmbci4bthabjcca4hcmu3km"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:laiha6g7jnflmhopfzthhi4e/app.bsky.feed.post/3mnadysvigp2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "gentrigger.com",
+        "displayName": "Gen",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreiahrbi7uoskrpl6b7n5xyein2bzsmg5gn5rlh66so7zzwg5nhiluy"
+      },
+      "record": {
+        "text": "!NEW COMIC!\n\nA Songs we Sing comic about a girl and a deity\n\nArt by @calpidrink.bsky.social and writing/cover by myself!\n\nYou can download it now on itch.io!\n\ngentrigger.itch.io/lost-lamb",
+        "createdAt": "2026-06-01T15:03:00.686Z"
+      },
+      "indexedAt": "2026-06-01T15:03:00.762Z",
+      "replyCount": 10,
+      "repostCount": 53,
+      "likeCount": 124,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
+            "alt": "Cover page for Lost Lamb - Songs we Sing\n\nA girl stands in front of a dark foreboding figure who is adorned in metal horns. They are wrapped in whisps of mist."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:beg4tjsj2dqwjlxqhrnbavg7/app.bsky.feed.post/3mn6fr3shv22m",
       "source": "bluesky",
       "author": {
@@ -66,7 +127,7 @@
       "indexedAt": "2026-05-31T20:29:20.173Z",
       "replyCount": 7,
       "repostCount": 3,
-      "likeCount": 23,
+      "likeCount": 25,
       "embed": {
         "type": "images",
         "images": [
@@ -96,9 +157,9 @@
         "createdAt": "2026-05-31T16:13:56.947Z"
       },
       "indexedAt": "2026-05-31T16:13:59.875Z",
-      "replyCount": 4,
-      "repostCount": 44,
-      "likeCount": 117,
+      "replyCount": 7,
+      "repostCount": 63,
+      "likeCount": 159,
       "embed": {
         "type": "external",
         "uri": "https://www.outridercreative.com/blog/no-nonsensecrowdfunding",
@@ -126,8 +187,8 @@
       },
       "indexedAt": "2026-05-31T14:29:04.708Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 14,
+      "repostCount": 6,
+      "likeCount": 17,
       "embed": {
         "type": "images",
         "images": [
@@ -159,7 +220,7 @@
       "indexedAt": "2026-05-31T01:39:34.667Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 13,
+      "likeCount": 14,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/xnoo1/xnoo-1",
@@ -436,7 +497,7 @@
       "indexedAt": "2026-05-28T13:50:44.864Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 22,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -838,35 +899,6 @@
             "alt": "A fantasy drawing of a blue woman with pink hair, wielding a sword and a metal shield. She looks extremely happy to be doing this."
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jnq3arn4s46wlxmzurhgrzmh/app.bsky.feed.post/3mmre267yv22y",
-      "source": "bluesky",
-      "author": {
-        "handle": "gandergaming.bsky.social",
-        "displayName": "Gander Gaming",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreig4eymt3zrbh2msulawpet22nbnrs422myhhyln5liunaul4uxz2a"
-      },
-      "record": {
-        "text": "Grok?! 2e Kickstarter is LIVE!\n\nIf you're looking for a [human made] gonzo science-fantasy game with minimal prep and maximum weird.. this is it?!\n\nwww.kickstarter.com/projects/gan...",
-        "createdAt": "2026-05-26T15:53:49.533Z"
-      },
-      "indexedAt": "2026-05-26T15:53:50.362Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 20,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/gandergaming/grok-2nd-edition",
-        "title": "GROK?! 2e: A Gonzo Science Fantasy RPG",
-        "description": "Grok?! is a [human made] rules-light science fantasy RPG in a post-apocalyptic world of advanced technomancy and boundless plausibility",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreiglwj3xtjdkdrln27vc4zrgukkr5hc2phwswocngknn3udhlxtdie"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1337,7 +1369,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2605,
+      "likeCount": 2606,
       "embed": {
         "type": "images",
         "images": [
@@ -1370,7 +1402,7 @@
       "indexedAt": "2026-05-12T03:29:11.666Z",
       "replyCount": 7,
       "repostCount": 148,
-      "likeCount": 1245,
+      "likeCount": 1244,
       "embed": {
         "type": "images",
         "images": [
@@ -1761,7 +1793,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1453,
-      "likeCount": 6329,
+      "likeCount": 6330,
       "embed": {
         "type": "images",
         "images": [
@@ -1990,7 +2022,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 766,
-      "likeCount": 3897,
+      "likeCount": 3898,
       "embed": {
         "type": "images",
         "images": [
@@ -2342,7 +2374,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1249,
-      "likeCount": 6570,
+      "likeCount": 6571,
       "embed": {
         "type": "images",
         "images": [
@@ -3103,9 +3135,9 @@
         "createdAt": "2025-02-06T23:54:20.365Z"
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
-      "replyCount": 13,
+      "replyCount": 12,
       "repostCount": 548,
-      "likeCount": 3047,
+      "likeCount": 3045,
       "embed": {
         "type": "images",
         "images": [
@@ -3356,7 +3388,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2665,
-      "likeCount": 15692,
+      "likeCount": 15691,
       "embed": {
         "type": "images",
         "images": [
