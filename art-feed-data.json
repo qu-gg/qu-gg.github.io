@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T00:25:17.762484Z",
+  "lastUpdated": "2026-06-05T12:52:22.588093Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mnk5f2rlis2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "elmc.at",
+        "displayName": "elmcat",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi"
+      },
+      "record": {
+        "text": "random blogwagon contribution. what can you do when you roll to write \"one beautiful sentence\"?\n\nelmc.at/a-world-that...",
+        "createdAt": "2026-06-05T12:31:12.278Z"
+      },
+      "indexedAt": "2026-06-05T12:31:15.561Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://elmc.at/a-world-that-answers/",
+        "title": "A World That Answers",
+        "description": "A poem after reading The Retired Adventurer.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreifdxk4sgjfyrfnusbdxuhajrzkru3yplaznv3r3dd3f2p6l3a5ntq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mnhx6mhxac2w",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-06-04T15:34:58.668Z",
       "replyCount": 1,
       "repostCount": 4,
-      "likeCount": 5,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://ko-fi.com/s/8f96c226b6",
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-06-04T14:23:05.891Z",
       "replyCount": 1,
-      "repostCount": 26,
-      "likeCount": 54,
+      "repostCount": 29,
+      "likeCount": 62,
       "embed": {
         "type": "images",
         "images": [
@@ -835,7 +864,7 @@
       "indexedAt": "2026-05-28T09:27:27.360Z",
       "replyCount": 0,
       "repostCount": 6,
-      "likeCount": 21,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -880,38 +909,6 @@
         "title": "AI content policy",
         "description": "RPG Trader is a creator-focused marketplace exclusively for handcrafted TTRPG content. This AI content policy reflects that focus.  Last updated: 28 May 2026   No AI-generated content allowed Content ...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:i6vjqgzvwjnvwypedlphccb5/bafkreiejirdyzdlcmowtr6ig2f66jgounql5aaqho4pva3ie3hgbrzaq3y"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:nvyye2fqjrf2yebq7h7d2bpq/app.bsky.feed.post/3mmummc4fuk2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "hime.vtubers.social",
-        "displayName": "Himeutsugi \u2766 \ud83e\udd9c\ud83e\uddee dice roller vtuber",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreie3wjfrm73jj4g3r6thx3bxm2ptgh6qvi7uyneai33oq4ovr7dt2u"
-      },
-      "record": {
-        "text": "Today I'm working on and talking about Ballads of Dawn, my own solo TTRPG I've been writing and working on and checking out this idle desktop game called Kernelbay~ Come hang out! twitch.tv/himeutsugi #vtubers #vsky #solottrpg",
-        "createdAt": "2026-05-27T23:05:06.735Z"
-      },
-      "indexedAt": "2026-05-27T23:05:09.661Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 22,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nvyye2fqjrf2yebq7h7d2bpq/bafkreif2ogutjg2xge2mxcaepnso6kzuhelazjebbx5zk6va4udv4tq7mm",
-            "alt": "Hime going live!"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2570,7 +2567,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 670,
-      "likeCount": 2959,
+      "likeCount": 2958,
       "embed": {
         "type": "images",
         "images": [
@@ -2831,7 +2828,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1958,
-      "likeCount": 8493,
+      "likeCount": 8494,
       "embed": {
         "type": "images",
         "images": [
