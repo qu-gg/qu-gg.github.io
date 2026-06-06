@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T12:52:22.588093Z",
+  "lastUpdated": "2026-06-06T00:24:18.500628Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,14 +65,43 @@
       },
       "indexedAt": "2026-06-05T12:31:15.561Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 4,
+      "repostCount": 3,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/a-world-that-answers/",
         "title": "A World That Answers",
         "description": "A poem after reading The Retired Adventurer.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreifdxk4sgjfyrfnusbdxuhajrzkru3yplaznv3r3dd3f2p6l3a5ntq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mnjwgsza5c2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "losthavenart.bsky.social",
+        "displayName": "Lost Haven Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
+      },
+      "record": {
+        "text": "I've made the hardback copies of my JRPG inspired TTRPG Skies Above Available on my Ko-Fi shop! If you've seen me or others post about it and want to pick up a copy head on over!\n\nko-fi.com/s/5a25d8f243",
+        "createdAt": "2026-06-05T10:26:55.057Z"
+      },
+      "indexedAt": "2026-06-05T10:26:58.362Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 16,
+      "embed": {
+        "type": "external",
+        "uri": "https://ko-fi.com/s/5a25d8f243",
+        "title": "Skies Above - Lost Haven Studios's Ko-fi Shop",
+        "description": "This is a hardback copy of Skies Above, the d8 powered JRPG inspired TTRPG from Lost Haven Studio. \n\nThis hardback book is  210x285mm and 240 pages. I...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreigzprbw2a5ffsrcpu2fmgv7fqw7djxqenehjqstezifcwsqqsjsci"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -123,8 +152,8 @@
       },
       "indexedAt": "2026-06-04T14:23:05.891Z",
       "replyCount": 1,
-      "repostCount": 29,
-      "likeCount": 62,
+      "repostCount": 30,
+      "likeCount": 64,
       "embed": {
         "type": "images",
         "images": [
@@ -303,7 +332,7 @@
       },
       "indexedAt": "2026-06-01T15:03:00.762Z",
       "replyCount": 11,
-      "repostCount": 72,
+      "repostCount": 73,
       "likeCount": 178,
       "embed": {
         "type": "images",
@@ -368,7 +397,7 @@
       "indexedAt": "2026-05-31T16:13:59.875Z",
       "replyCount": 7,
       "repostCount": 72,
-      "likeCount": 172,
+      "likeCount": 173,
       "embed": {
         "type": "external",
         "uri": "https://www.outridercreative.com/blog/no-nonsensecrowdfunding",
@@ -886,35 +915,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:i6vjqgzvwjnvwypedlphccb5/app.bsky.feed.post/3mmv54p45ic2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "rpg-trader.bsky.social",
-        "displayName": "RPG Trader",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:i6vjqgzvwjnvwypedlphccb5/bafkreifhepsp5ym6jjrq4qejncelsboq2tf4kuvtbk2c6s5rymqegbzwpu"
-      },
-      "record": {
-        "text": "A fresh update for our AI content policy: support.rpg-trader.com/t/ai-content...\n\nThank you to everyone in the community who has engaged thoughtfully over this topic - we're looking forward to being a home base for the many TTRPG designers who value human creativity and effort.",
-        "createdAt": "2026-05-28T04:00:37.102Z"
-      },
-      "indexedAt": "2026-05-28T04:00:41.060Z",
-      "replyCount": 18,
-      "repostCount": 59,
-      "likeCount": 178,
-      "embed": {
-        "type": "external",
-        "uri": "https://support.rpg-trader.com/t/ai-content-policy/298",
-        "title": "AI content policy",
-        "description": "RPG Trader is a creator-focused marketplace exclusively for handcrafted TTRPG content. This AI content policy reflects that focus.  Last updated: 28 May 2026   No AI-generated content allowed Content ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:i6vjqgzvwjnvwypedlphccb5/bafkreiejirdyzdlcmowtr6ig2f66jgounql5aaqho4pva3ie3hgbrzaq3y"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmtjafsxtk2i",
@@ -1822,7 +1822,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6328,
+      "likeCount": 6327,
       "embed": {
         "type": "images",
         "images": [
@@ -3081,7 +3081,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2360,
-      "likeCount": 11894,
+      "likeCount": 11895,
       "embed": {
         "type": "images",
         "images": [
@@ -3417,7 +3417,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2665,
-      "likeCount": 15691,
+      "likeCount": 15690,
       "embed": {
         "type": "images",
         "images": [
