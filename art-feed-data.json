@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T00:24:18.500628Z",
+  "lastUpdated": "2026-06-06T12:20:55.274453Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -66,7 +66,7 @@
       "indexedAt": "2026-06-05T12:31:15.561Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 10,
+      "likeCount": 11,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/a-world-that-answers/",
@@ -185,7 +185,7 @@
       "indexedAt": "2026-06-03T20:20:38.962Z",
       "replyCount": 2,
       "repostCount": 8,
-      "likeCount": 17,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/DKOdRVnKjUY",
@@ -258,6 +258,38 @@
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:ye4htupvnfjdvehquglifx45/app.bsky.feed.post/3mnfkf5e2cc2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "garretthanna.bsky.social",
+        "displayName": "Garrett",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreif5ewotzvgiyu64kah5kji4k6tij6ii75k27oyidvxqoj37tjbufe"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-06-03T16:40:34.931Z"
+      },
+      "indexedAt": "2026-06-03T16:40:25.969Z",
+      "replyCount": 2,
+      "repostCount": 76,
+      "likeCount": 508,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreihdb2qwcjfkqeyuxjrhg2ax4tj4vk6bgy7mupyuigeqxir6wehreq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreihdb2qwcjfkqeyuxjrhg2ax4tj4vk6bgy7mupyuigeqxir6wehreq",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1706,35 +1738,6 @@
       }
     },
     {
-      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3ml73clgvhk2c",
-      "source": "bluesky",
-      "author": {
-        "handle": "bradkerr.net",
-        "displayName": "Brad Kerr",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
-      },
-      "record": {
-        "text": "I co-wrote this demon book. It's really brutal and funny and cool and gross. It's live now on Backerkit. www.backerkit.com/c/projects/e...",
-        "createdAt": "2026-05-06T16:04:21.231Z"
-      },
-      "indexedAt": "2026-05-06T16:04:23.776Z",
-      "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 74,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/exalted-funeral/old-school-essentials-demonic-grimoire",
-        "title": "Old-School Essentials Demonic Grimoire",
-        "description": "An official OSE supplement of demons, cults, and dark magic.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreibkqwuwjpitmhq3vrn7zabos6osl3rbp4wdyl3nxt3ij2i4e2rilm"
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
       "author": {
@@ -1822,7 +1825,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6327,
+      "likeCount": 6328,
       "embed": {
         "type": "images",
         "images": [
@@ -2051,7 +2054,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 766,
-      "likeCount": 3899,
+      "likeCount": 3898,
       "embed": {
         "type": "images",
         "images": [
