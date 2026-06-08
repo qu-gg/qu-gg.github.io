@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T12:26:46.946447Z",
+  "lastUpdated": "2026-06-08T00:26:07.483192Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,63 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mnprz6oasc2w",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I have seen a couple posts on trpgs to play that aren't D&D (for obvious reasons) and I'm always hesitant to chime in. There is always the chance something you liked in your favorite game isn't the same in ours, for example.\n\nBut hey, if you want to give BREAK!! a look I'd be happy for that!",
+        "createdAt": "2026-06-07T18:23:40.982Z"
+      },
+      "indexedAt": "2026-06-07T18:23:43.268Z",
+      "replyCount": 1,
+      "repostCount": 19,
+      "likeCount": 61,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreig2jheqtk2yhbfz3gtxe4nwz4ycz6hs4iuu2s52hstkuc3g55il3a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreig2jheqtk2yhbfz3gtxe4nwz4ycz6hs4iuu2s52hstkuc3g55il3a",
+            "alt": "4 adventurers from the BREAK!! RPG and a feline companion walk around a scenic path! They are definitely going somewhere."
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mnppzrmksc2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "luckynewtgames.bsky.social",
+        "displayName": "Mama Newt \ud83e\udd8e\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreib56zsektiqx2pxthdkzk7kj7egxiwddov7leaqo64ozo7ng3xyjm"
+      },
+      "record": {
+        "text": "Did you know there's a $10 tier for the Power of Pride Bundle?\n\nEven if you don't have the funds for any AAA games, you can still help support LGBTQ+ creators <3\n\nThe first link is the $10 tier and the second link is the $60 tier. \n\nitch.io/b/3684/the-p...\n\nitch.io/b/3682/the-p...",
+        "createdAt": "2026-06-07T17:48:13.358Z"
+      },
+      "indexedAt": "2026-06-07T17:48:16.773Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/b/3684/the-power-of-pride-bundle-2026-10-pwyc-edition",
+        "title": "The Power of Pride Bundle 2026 \u2014 $10 PWYC Edition by The Power of Pride Bundle and 284 others",
+        "description": "The Power of Pride Bundle 2026 \u2014 $10 PWYC Edition: 395 items for $10.00",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreigadutlwbjbgwmrjzcgdukecqjg56j2rlpfch76rrze5p6rem6wcu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:nguxwehtqhvkfkwfwf7ixugn/app.bsky.feed.post/3mno4zh3qis2i",
       "source": "bluesky",
       "author": {
@@ -65,8 +122,8 @@
       },
       "indexedAt": "2026-06-07T02:35:32.868Z",
       "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 18,
+      "repostCount": 7,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -158,8 +215,8 @@
       },
       "indexedAt": "2026-06-06T13:30:11.071Z",
       "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 25,
+      "repostCount": 17,
+      "likeCount": 27,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/creator/46/fabian-blake",
@@ -397,7 +454,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 77,
-      "likeCount": 512,
+      "likeCount": 513,
       "embed": {
         "type": "images",
         "images": [
@@ -458,7 +515,7 @@
       "indexedAt": "2026-06-01T16:47:55.277Z",
       "replyCount": 0,
       "repostCount": 9,
-      "likeCount": 11,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://stickyhunter.itch.io/wizards-rave",
@@ -485,9 +542,9 @@
         "createdAt": "2026-06-01T15:03:00.686Z"
       },
       "indexedAt": "2026-06-01T15:03:00.762Z",
-      "replyCount": 12,
-      "repostCount": 76,
-      "likeCount": 183,
+      "replyCount": 13,
+      "repostCount": 77,
+      "likeCount": 185,
       "embed": {
         "type": "images",
         "images": [
@@ -519,7 +576,7 @@
       "indexedAt": "2026-05-31T20:29:20.173Z",
       "replyCount": 8,
       "repostCount": 3,
-      "likeCount": 29,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
@@ -580,7 +637,7 @@
       "indexedAt": "2026-05-31T14:29:04.708Z",
       "replyCount": 0,
       "repostCount": 6,
-      "likeCount": 18,
+      "likeCount": 19,
       "embed": {
         "type": "images",
         "images": [
@@ -648,103 +705,6 @@
         "title": "Get Ready for MORIAH: Final Cut",
         "description": "From Plus One Exp & Friends - Get Ready for MORIAH: Final Cut",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreibogn7rve43wsytcf3noov6hdh3zk52xvp6emfzvfsgcmqseh5r64"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mmzs2a6djs2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "\ud83d\udea8 New Indonesian-made TTRPG adventure! \ud83d\udea8\n\nMy friend, Eatmaja, has just released a system neutral pamphlet adventure for any OSR D&D systems!\n\n\"Siblings of the Sweet\" is inspired by the German fairy tale, Hansel & Gretel.\n\nIt is free/PWYW!\n\n#ttrpg #osr #dnd\n\neatmaja.itch.io/siblings-of-...",
-        "createdAt": "2026-05-30T00:25:41.844Z"
-      },
-      "indexedAt": "2026-05-30T00:25:56.763Z",
-      "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 30,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiczqwaczlvay2f35b2snesy2yjkymywpbzlw2mje4m6wd6p6tje3m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiczqwaczlvay2f35b2snesy2yjkymywpbzlw2mje4m6wd6p6tje3m",
-            "alt": "The pamphlet for the adventure, Siblings of the Sweet. The cover is a two children (a boy and a girl) standing in front of a gingerbread house, with a loominng evil face on the sky looking down on them."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mmyy2fmafk25",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I am pretty excited to read this one as someone who learned about the concept of war crimes from playing Final Fantasy IV at the tender age of nine years old.",
-        "createdAt": "2026-05-29T16:40:30.188Z"
-      },
-      "indexedAt": "2026-05-29T16:40:54.751Z",
-      "replyCount": 3,
-      "repostCount": 0,
-      "likeCount": 30,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiae3i3ujjycwklx52jc3cku26qndxgft7sqa6w4hwf54zm6ft3rpu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiae3i3ujjycwklx52jc3cku26qndxgft7sqa6w4hwf54zm6ft3rpu",
-            "alt": "A picture of from \"Pixels to Prose\" by Nadia Oxford"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:ymmxvxa2etxmgcfq3m3vvibd/app.bsky.feed.post/3mmyvwkqcrc2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "carlydraws.bsky.social",
-        "displayName": "carlydraws",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreidf7iqzbfmx5plmdpwbbzfy6hhnkv7m7lcgnk7qn5pygkgotc46zy"
-      },
-      "record": {
-        "text": "Inprnt are doing a flash sale on posters, so if you've ever thought \"ooo if only I could put a colourful rocket on that wall or WHERE is my star summoner poster to enrich my enclosure?\" or other strange thoughts, here's my posters, & thanks for every order! :-)\n\nwww.inprnt.com/posters/carl...\n\n#art",
-        "createdAt": "2026-05-29T16:02:33.884Z"
-      },
-      "indexedAt": "2026-05-29T16:02:34.277Z",
-      "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 23,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreif2fjamj57ogic7qtlovogf262mcys2fqyez2bilv43uzglltwfay",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreif2fjamj57ogic7qtlovogf262mcys2fqyez2bilv43uzglltwfay",
-            "alt": "a colourful rocket blasting off"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihtua2rgvkhwdhntuq6mvjulr6nxl5245xke27w7xdx2dpvn7hdxm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihtua2rgvkhwdhntuq6mvjulr6nxl5245xke27w7xdx2dpvn7hdxm",
-            "alt": "star summoner "
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2752,7 +2712,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1958,
-      "likeCount": 8493,
+      "likeCount": 8492,
       "embed": {
         "type": "images",
         "images": [
@@ -3341,7 +3301,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2665,
-      "likeCount": 15690,
+      "likeCount": 15689,
       "embed": {
         "type": "images",
         "images": [
