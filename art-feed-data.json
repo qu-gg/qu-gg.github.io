@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T13:19:50.410517Z",
+  "lastUpdated": "2026-06-09T00:21:27.427941Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,160 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4bkwq2lfv2wzxlyh2fpwy5ji/app.bsky.feed.post/3mnsrq4p7yc2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "chrisgwilliams.bsky.social",
+        "displayName": "Chris Makes Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4bkwq2lfv2wzxlyh2fpwy5ji/bafkreigfhajtd5oldg33nkfjyxourj7nacraskmf6kgwpfskgwe2gfs5iy"
+      },
+      "record": {
+        "text": "We could use a little nudge... the backer train has hit a speed bump.",
+        "createdAt": "2026-06-08T22:56:36.141Z"
+      },
+      "indexedAt": "2026-06-08T22:56:39.172Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 2,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/c/projects/explore-dungeons/apocalyptic-adventure-1-the-eye-of-god",
+        "title": "Apocalyptic Adventure! #1 - The Eye of God",
+        "description": "The Eye of God is the first adventure in the new Apocalyptic Adventure! product line for MCC RPG (from Explore Dungeons). Designed to easily transition your players from Dungeon Crawl Classics (DCC) R...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4bkwq2lfv2wzxlyh2fpwy5ji/bafkreidfdrpbnjvb5fyvuis4icruu4xmdiwjhr753uwisbi4v6nbq7dpxm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mnsl7pdenp2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "metalweavegames.com",
+        "displayName": "Metal Weave Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreigv6ydvv6fm5dqjjbano3z26ag2y2oyk7f7wyqufzd3fyuzq4t6li"
+      },
+      "record": {
+        "text": "Hey, we heard you like whimsy? Get your whimsy right here with Tales from Myriad.\n\n#TalesFromMyriad #TTRPG #TabletopGaming",
+        "createdAt": "2026-06-08T21:00:02.745Z"
+      },
+      "indexedAt": "2026-06-08T21:00:05.579Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreiez2kyfuzy5dd4eupzd7kf7d3m6cdc6j535bx3lvqqjpfpk4epwcy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreiez2kyfuzy5dd4eupzd7kf7d3m6cdc6j535bx3lvqqjpfpk4epwcy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:qtu5u37sum46z6z47m4kwmdg/app.bsky.feed.post/3mns7utgenc2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "cozyrpgreviews.bsky.social",
+        "displayName": "Robin J",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreidotxzvrsio6z2blecacavg4uvurzvqo23p37a33mqvl2jf23gysi"
+      },
+      "record": {
+        "text": "Some folks on here might spot themselves in this video :)\n\nA little tour around the weirder side ok #UKGE, showing some of stalls I visited and games I picked up in increasing order of obscurity.\n\nyoutu.be/M4A3VAu4-UA",
+        "createdAt": "2026-06-08T17:37:06.834Z"
+      },
+      "indexedAt": "2026-06-08T17:37:09.171Z",
+      "replyCount": 5,
+      "repostCount": 15,
+      "likeCount": 34,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/M4A3VAu4-UA",
+        "title": "The Hidden Gem TTRPGs of UKGE (But They Get Increasingly More Obscure)",
+        "description": "YouTube video by Cozy RPG Reviews",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreieurf7m24c2kihnbcunlctocdx6tb3lfbyqj2p6hubbvbzthnecme"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "https://www.artstation.com/artwork/BkxK1D",
+      "source": "artstation",
+      "author": {
+        "handle": "nickbray",
+        "displayName": "Nick Bray",
+        "avatar": null
+      },
+      "record": {
+        "text": "A pirate named Worthy\n\nAnother star wars fan design,\nA bounty hunter named Worthy.\n\nhe doesnt take his job very seriously.",
+        "createdAt": "2026-06-08T10:52:25-05:00"
+      },
+      "indexedAt": "2026-06-08T10:52:25-05:00",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/766/072/large/nick-bray-bountyhunterportrait.jpg?1780933933",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/766/072/large/nick-bray-bountyhunterportrait.jpg?1780933933",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/766/053/large/nick-bray-bountyhunterfull.jpg?1780929251",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/766/053/large/nick-bray-bountyhunterfull.jpg?1780929251",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/766/063/large/nick-bray-bountyhunterorthos.jpg?1780929262",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/766/063/large/nick-bray-bountyhunterorthos.jpg?1780929262",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/766/822/large/nick-bray-bountyiterations1.jpg?1780930558",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/766/822/large/nick-bray-bountyiterations1.jpg?1780930558",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/766/829/large/nick-bray-bountyiterations2.jpg?1780930568",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/766/829/large/nick-bray-bountyiterations2.jpg?1780930568",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/766/077/large/nick-bray-refs1.jpg?1780929282",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/766/077/large/nick-bray-refs1.jpg?1780929282",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/099/766/080/large/nick-bray-refs2.jpg?1780929291",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/099/766/080/large/nick-bray-refs2.jpg?1780929291",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/099/766/085/large/nick-bray-refs3.jpg?1780929296",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/099/766/085/large/nick-bray-refs3.jpg?1780929296",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null,
+      "link": "https://www.artstation.com/artwork/BkxK1D"
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mnprz6oasc2w",
       "source": "bluesky",
       "author": {
@@ -65,8 +219,8 @@
       },
       "indexedAt": "2026-06-07T18:23:43.268Z",
       "replyCount": 3,
-      "repostCount": 25,
-      "likeCount": 84,
+      "repostCount": 30,
+      "likeCount": 112,
       "embed": {
         "type": "images",
         "images": [
@@ -331,8 +485,8 @@
       },
       "indexedAt": "2026-06-04T14:23:05.891Z",
       "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 64,
+      "repostCount": 31,
+      "likeCount": 65,
       "embed": {
         "type": "images",
         "images": [
@@ -363,7 +517,7 @@
       },
       "indexedAt": "2026-06-03T20:20:38.962Z",
       "replyCount": 2,
-      "repostCount": 9,
+      "repostCount": 10,
       "likeCount": 19,
       "embed": {
         "type": "external",
@@ -543,8 +697,8 @@
       },
       "indexedAt": "2026-06-01T15:03:00.762Z",
       "replyCount": 13,
-      "repostCount": 82,
-      "likeCount": 202,
+      "repostCount": 83,
+      "likeCount": 204,
       "embed": {
         "type": "images",
         "images": [
@@ -552,99 +706,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
             "alt": "Cover page for Lost Lamb - Songs we Sing\n\nA girl stands in front of a dark foreboding figure who is adorned in metal horns. They are wrapped in whisps of mist."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:beg4tjsj2dqwjlxqhrnbavg7/app.bsky.feed.post/3mn6fr3shv22m",
-      "source": "bluesky",
-      "author": {
-        "handle": "ilgingell.bsky.social",
-        "displayName": "Imogen Gingell",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:beg4tjsj2dqwjlxqhrnbavg7/bafkreicd4s7tknrwkl5frhaqiqvlsea4hwwv5dcgi75w2mudrwhrd54wdy"
-      },
-      "record": {
-        "text": "Combined #UKGE con haul between me and @severalseals.bsky.social! Amazing weekend for games AND friends. I'm exhausted having just been hall crawling, so everyone who exhibited this year deserves a long, long rest...",
-        "createdAt": "2026-05-31T20:29:09.064Z"
-      },
-      "indexedAt": "2026-05-31T20:29:20.173Z",
-      "replyCount": 8,
-      "repostCount": 3,
-      "likeCount": 30,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:beg4tjsj2dqwjlxqhrnbavg7/bafkreig5m4el3qh4ap6yhhw4k52pbo6awh6rsg34oukreukslgchdntnuy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:beg4tjsj2dqwjlxqhrnbavg7/bafkreig5m4el3qh4ap6yhhw4k52pbo6awh6rsg34oukreukslgchdntnuy",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:6rvvqfuinw3oqza2okp3akxt/app.bsky.feed.post/3mn5xiqz44k2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "outridercreative.bsky.social",
-        "displayName": "Ryan Lynch",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreihuco23wvsl275fvnoofa2sgnt724betl6mjhpgideipwwsjowlj4"
-      },
-      "record": {
-        "text": "FINE I'LL START BLOGGING! For your convenience and for easy reference, I've taken the massive bluesky thread of crowdfunding advice I posted a while ago, and edited and organized it in blog form.",
-        "createdAt": "2026-05-31T16:13:56.947Z"
-      },
-      "indexedAt": "2026-05-31T16:13:59.875Z",
-      "replyCount": 7,
-      "repostCount": 72,
-      "likeCount": 174,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.outridercreative.com/blog/no-nonsensecrowdfunding",
-        "title": "No-Nonsense Crowdfunding.  \u2014 Outrider Creative",
-        "description": "Crowdfunding can be an extremely useful tool. It not only can fund your indie TTRPG project, but also generate sustainable marketing buzz while uniting your community. Unfortunately, crowdfunding can ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreidm7ogtghy5nyr7wsufsihrmh4pvq3ipntvmykfnmtjrc4qaqklmm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mn5rn4zpft2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - pretty cool guy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "Still a day or two before it's done, but the next Patreon pack is well on its way! It's time to bear your evil twisted swords!!!",
-        "createdAt": "2026-05-31T14:29:01.293Z"
-      },
-      "indexedAt": "2026-05-31T14:29:04.708Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 19,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibk3g6nmg4i3pltlrtkm3jxuov5lan4l2cy34symleqye5ykx3qqi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreibk3g6nmg4i3pltlrtkm3jxuov5lan4l2cy34symleqye5ykx3qqi",
-            "alt": ""
           }
         ]
       },
@@ -697,14 +758,46 @@
       },
       "indexedAt": "2026-05-30T03:52:43.866Z",
       "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 21,
+      "repostCount": 10,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://last-hope-a-dark-magical-girls-ttrpg.backerkit.com/hosted_preorders#",
         "title": "Pre-order Last Hope - a Dark Magical Girls TTRPG on BackerKit",
         "description": "Last Hope is a dark Magical Girls game within which you play as teenage or young adult characters chosen to fight corruption in a dream-like version of the world, while also balancing their mundane li...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreiekg7azm4k4mtoajrgdspcd7eejrsqct5jgztsycshsqgom4obsgm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:z64wbxko3astr7bu3rlytkk2/app.bsky.feed.post/3mmzmvs3qgs2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "brightbard.bsky.social",
+        "displayName": "Bright Bard Games - LGBT 2E June 2nd",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreigtonjwthnxxzkzlmp7reabthcxupccclcivjw6wymb64xdbxx6ru"
+      },
+      "record": {
+        "text": "\u2728 Calling all Magical Girl and Goblin enthusiasts! \u2728\n\nWe have a treat for you all before the weekend begins; Blight at the Blossom Festival, our free Trash to Treasure Spring Adventure, is live!! \n\nGo and download the expansion on both our itch page and website and explore the new \"Cover\" mechanic!",
+        "createdAt": "2026-05-29T22:53:44.175Z"
+      },
+      "indexedAt": "2026-05-29T22:53:46.559Z",
+      "replyCount": 1,
+      "repostCount": 13,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreiagpoz6xudjgmzdlyj4vryuvbtn7bmyohfj4mb7q7bzzi6c2mfok4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreiagpoz6xudjgmzdlyj4vryuvbtn7bmyohfj4mb7q7bzzi6c2mfok4",
+            "alt": "Worm, Burnie, Haze, Sludge and Treasure all eating snacks and enjoying the spring air on a hill wih a lovely cherry blossom tree. "
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1343,7 +1436,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2607,
+      "likeCount": 2608,
       "embed": {
         "type": "images",
         "images": [
@@ -1737,7 +1830,7 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1452,
+      "repostCount": 1453,
       "likeCount": 6329,
       "embed": {
         "type": "images",
@@ -4038,8 +4131,8 @@
       },
       "indexedAt": "2024-05-08T13:08:16.902Z",
       "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 28,
+      "repostCount": 14,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
