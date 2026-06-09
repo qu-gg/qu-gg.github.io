@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T00:21:27.427941Z",
+  "lastUpdated": "2026-06-09T12:52:01.265752Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,128 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ib7naxquxssnwmkbh7zvcauk/app.bsky.feed.post/3mnu2mi2os225",
+      "source": "bluesky",
+      "author": {
+        "handle": "cairnrpg.com",
+        "displayName": "warden",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreih7bke2lpqb6f6ehlckjmrcta4sta2yariry4sdjoxcbnnwlz5vvi"
+      },
+      "record": {
+        "text": "Cairn Press is on @rpg-trader.bsky.social! Grab PDFs or print versions (including coilbound and hardback for some).\n\nrpg-trader.com/creator/11/c...",
+        "createdAt": "2026-06-09T11:08:17.245Z"
+      },
+      "indexedAt": "2026-06-09T11:08:16.967Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 13,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/creator/11/cairn-press",
+        "title": "Cairn Press on RPG Trader",
+        "description": "Cairn Press is a small publishing imprint focused on creating high quality supplements for the Cairn adventure game.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreiaspq2zvs67qrmzlhw6ltn6rhyo64onj6kehhhp5q7rbrju4g2paa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:qeoty6zjf7prs56xxnkwyxax/app.bsky.feed.post/3mnu236qn2223",
+      "source": "bluesky",
+      "author": {
+        "handle": "hairic.bsky.social",
+        "displayName": "Hairic Lilred",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qeoty6zjf7prs56xxnkwyxax/bafkreiemcfndbexqc6zmbip3uviytsrugkizq57ray5iryliyngdz6gvpy"
+      },
+      "record": {
+        "text": "Sghorbi PLUS is available over @rpg-trader.bsky.social !\nrpg-trader.com/products/355...",
+        "createdAt": "2026-06-09T10:58:37.056Z"
+      },
+      "indexedAt": "2026-06-09T10:58:41.371Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/products/3554/sghorbi-plus",
+        "title": "Sghorbi PLUS on RPG Trader",
+        "description": "A minimalist fantasy RPG, where you are a ugly grave robber",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qeoty6zjf7prs56xxnkwyxax/bafkreievgbgbsxykyvnrslyodisollx3xnaob4fc6on5htnaqnhzoq5pr4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:l7lkkvtf5ts6fji46y5yiwky/app.bsky.feed.post/3mntzeob5zz2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "crossedpaths.co.uk",
+        "displayName": "Crossed Paths",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreih5vsevkjspukmqkv6ad37npdpiwgigsy42ftvlzmrrkfhuqh3rvy"
+      },
+      "record": {
+        "text": "A new TTRPG is ready to land at your TTRPG table! \n\nLegends of Akeroth is your gateway into unforgettable adventures and the joy of gathering with friends to tell legendary stories together!\n\nJump in and explore here:\nwww.backerkit.com/c/project...",
+        "createdAt": "2026-06-09T10:46:01.532Z"
+      },
+      "indexedAt": "2026-06-09T10:46:05.873Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreiaduzqcjd6ch7snbw3nevsy43zybinveg544vdyrb4b6wyhrga7bu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:l7lkkvtf5ts6fji46y5yiwky/bafkreiaduzqcjd6ch7snbw3nevsy43zybinveg544vdyrb4b6wyhrga7bu",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mnt3hi4h5c2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "luckynewtgames.bsky.social",
+        "displayName": "Mama Newt \ud83e\udd8e\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreib56zsektiqx2pxthdkzk7kj7egxiwddov7leaqo64ozo7ng3xyjm"
+      },
+      "record": {
+        "text": "I claimed my own little corner on @rpg-trader.bsky.social! I don't have anything up for sale yet, but feel free to follow me on there and I'll let you know as I upload on there!\n\nrpg-trader.com/creator/586/...",
+        "createdAt": "2026-06-09T01:50:43.454Z"
+      },
+      "indexedAt": "2026-06-09T01:50:47.261Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreihmee5l3jfvmjlb4jzez7nwolobluag7igbtl3j4xt7uh4tunw2oq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreihmee5l3jfvmjlb4jzez7nwolobluag7igbtl3j4xt7uh4tunw2oq",
+            "alt": "Lucky Newt Games, 0 Products, Creating on RPG Trader."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4bkwq2lfv2wzxlyh2fpwy5ji/app.bsky.feed.post/3mnsrq4p7yc2o",
       "source": "bluesky",
       "author": {
@@ -65,8 +187,8 @@
       },
       "indexedAt": "2026-06-08T22:56:39.172Z",
       "replyCount": 1,
-      "repostCount": 2,
-      "likeCount": 2,
+      "repostCount": 3,
+      "likeCount": 3,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/explore-dungeons/apocalyptic-adventure-1-the-eye-of-god",
@@ -94,7 +216,7 @@
       },
       "indexedAt": "2026-06-08T21:00:05.579Z",
       "replyCount": 0,
-      "repostCount": 2,
+      "repostCount": 3,
       "likeCount": 2,
       "embed": {
         "type": "images",
@@ -125,9 +247,9 @@
         "createdAt": "2026-06-08T17:37:06.834Z"
       },
       "indexedAt": "2026-06-08T17:37:09.171Z",
-      "replyCount": 5,
-      "repostCount": 15,
-      "likeCount": 34,
+      "replyCount": 7,
+      "repostCount": 18,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/M4A3VAu4-UA",
@@ -219,8 +341,8 @@
       },
       "indexedAt": "2026-06-07T18:23:43.268Z",
       "replyCount": 3,
-      "repostCount": 30,
-      "likeCount": 112,
+      "repostCount": 31,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -485,8 +607,8 @@
       },
       "indexedAt": "2026-06-04T14:23:05.891Z",
       "replyCount": 1,
-      "repostCount": 31,
-      "likeCount": 65,
+      "repostCount": 32,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -626,35 +748,6 @@
       }
     },
     {
-      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mnauxthmpc2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdwonder.bsky.social",
-        "displayName": "Amanda P.",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreiai63puhd2f3kb2i7ivrmotsspxwgz2xvbq6lv4novksqh4ohqfx4"
-      },
-      "record": {
-        "text": "Big News: Pilgrimage of the Sun Guard is officially back in print thanks to a publishing partnership with @plusoneexp.bsky.social! Cover art by @tonytranrpg.bsky.social \n\nplusoneexp.com/collections/...",
-        "createdAt": "2026-06-01T20:06:40.820Z"
-      },
-      "indexedAt": "2026-06-01T20:06:42.564Z",
-      "replyCount": 2,
-      "repostCount": 36,
-      "likeCount": 73,
-      "embed": {
-        "type": "external",
-        "uri": "https://plusoneexp.com/collections/lgbtq-creators/products/pilgrimage-of-the-sun-guard",
-        "title": "Pilgrimage of the Sun Guard",
-        "description": "Quests in King Arthur stories are about ideals, conflict and temptation.\u00a0 Pilgrimage of the Sun Guard\u00a0is a solo prompt-based journaling\u00a0game where you create a Sun Guard and travel alone on a quest, a...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreic42vx3g5ei6igme46l6v3nthcx3dcmmbci4bthabjcca4hcmu3km"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:fp7z6py7lxiujwngnn7dmjpj/app.bsky.feed.post/3mnajuiadyc26",
       "source": "bluesky",
       "author": {
@@ -676,38 +769,6 @@
         "title": "The Wizards Rave by Steph \"StickyHunter\" Farrow",
         "description": "You must drop your sickest beats at The Wizards Rave",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreibynazlxotyodtmrvodjqjt7cqmplfzqzejxlebd7km2zotqmbms4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:laiha6g7jnflmhopfzthhi4e/app.bsky.feed.post/3mnadysvigp2p",
-      "source": "bluesky",
-      "author": {
-        "handle": "gentrigger.com",
-        "displayName": "Gen",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreiahrbi7uoskrpl6b7n5xyein2bzsmg5gn5rlh66so7zzwg5nhiluy"
-      },
-      "record": {
-        "text": "!NEW COMIC!\n\nA Songs we Sing comic about a girl and a deity\n\nArt by @calpidrink.bsky.social and writing/cover by myself!\n\nYou can download it now on itch.io!\n\ngentrigger.itch.io/lost-lamb",
-        "createdAt": "2026-06-01T15:03:00.686Z"
-      },
-      "indexedAt": "2026-06-01T15:03:00.762Z",
-      "replyCount": 13,
-      "repostCount": 83,
-      "likeCount": 204,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:laiha6g7jnflmhopfzthhi4e/bafkreih3dvnvnjtxo7wvwghu72shjtclg764d57oygadsvr6es4l4awxt4",
-            "alt": "Cover page for Lost Lamb - Songs we Sing\n\nA girl stands in front of a dark foreboding figure who is adorned in metal horns. They are wrapped in whisps of mist."
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -759,7 +820,7 @@
       "indexedAt": "2026-05-30T03:52:43.866Z",
       "replyCount": 0,
       "repostCount": 10,
-      "likeCount": 24,
+      "likeCount": 26,
       "embed": {
         "type": "external",
         "uri": "https://last-hope-a-dark-magical-girls-ttrpg.backerkit.com/hosted_preorders#",
@@ -1333,7 +1394,7 @@
       "author": {
         "handle": "izzypetersart.bsky.social",
         "displayName": "Izzy.PNG | comms open",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreibldpdnrnd43kd55jgtrdn2d6fj3t5ndmyzzzbqbucpxhn6fsifjm"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreibpshb23kd6t5pu5hzrp5q577pwxvvgc657xwehxryesmx75jfsp4"
       },
       "record": {
         "text": "new character for His Majesty the Worm (earthblood orc, path of pentacles). more rogues should have axes.",
@@ -1538,8 +1599,8 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/938/462/large/fjell-thetreev3-squarerain3-small.jpg?1778509486",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/938/462/large/fjell-thetreev3-squarerain3-small.jpg?1778509486",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/938/462/large/fjell-thetreev3-squarerain3-small.webp?1778509486",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/938/462/large/fjell-thetreev3-squarerain3-small.webp?1778509486",
             "alt": ""
           },
           {
@@ -1582,8 +1643,8 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/937/552/large/nick-bray-breakdownsfull.jpg?1778507760",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/937/552/large/nick-bray-breakdownsfull.jpg?1778507760",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/098/937/552/large/nick-bray-breakdownsfull.webp?1778507760",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/098/937/552/large/nick-bray-breakdownsfull.webp?1778507760",
             "alt": ""
           },
           {
@@ -1592,8 +1653,8 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/937/557/large/nick-bray-references.jpg?1778507771",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/937/557/large/nick-bray-references.jpg?1778507771",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/098/937/557/large/nick-bray-references.webp?1778507771",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/098/937/557/large/nick-bray-references.webp?1778507771",
             "alt": ""
           }
         ]
@@ -1831,7 +1892,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1453,
-      "likeCount": 6329,
+      "likeCount": 6328,
       "embed": {
         "type": "images",
         "images": [
@@ -4132,7 +4193,7 @@
       "indexedAt": "2024-05-08T13:08:16.902Z",
       "replyCount": 0,
       "repostCount": 14,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
