@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T00:29:40.146276Z",
+  "lastUpdated": "2026-06-11T13:08:29.548305Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,63 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mnzb5wznss25",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "@rpg-trader.bsky.social's launch sale is still going!  Get games/books from TTRPGkids (including a new addition since launch) at 20% off!\n\nAlso, if you've tried one of my games before, please consider recommending it with a thumbs up on RPG Trader!\n\nFind it here: \nrpg-trader.com/creator/69/t...",
+        "createdAt": "2026-06-11T12:48:44.510Z"
+      },
+      "indexedAt": "2026-06-11T12:48:45.573Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/creator/69/ttrpgkids",
+        "title": "TTRPGkids on RPG Trader",
+        "description": "TTRPGkids is an ENnie awarded website resource and self-publisher focused on all-ages gaming! There's how-to guide books, educational games, new systems, for-fun all-ages adventures, and journaling ga...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifznxwvxc7l2inaxgdhegygltpcmcqlellrpsoviw4nabi2zk4vfe"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mnxy2mtr6k2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I was thinking that if I ever wanted to do a \"Megadungeon\" style thing, it would likely be a series of connected Adventure Sites that the players could venture through to eventually get to some important, load-bearing place and realized that I was just thinking of Super Mario World maps again",
+        "createdAt": "2026-06-11T00:33:09.753Z"
+      },
+      "indexedAt": "2026-06-11T00:33:11.368Z",
+      "replyCount": 8,
+      "repostCount": 5,
+      "likeCount": 96,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigczw4r3uef5hxc2haqhv7q35ppq377weq4vmdknpqrkmyiurhupu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigczw4r3uef5hxc2haqhv7q35ppq377weq4vmdknpqrkmyiurhupu",
+            "alt": "The map of the valley of bowser from the SNES game, Super Mario World"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mnxrpwwiz22v",
       "source": "bluesky",
       "author": {
@@ -64,9 +121,9 @@
         "createdAt": "2026-06-10T22:39:48.780Z"
       },
       "indexedAt": "2026-06-10T22:39:51.971Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 3,
-      "likeCount": 4,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3707/review-something-ttrpg-bundle",
@@ -95,7 +152,7 @@
       "indexedAt": "2026-06-10T15:31:24.072Z",
       "replyCount": 0,
       "repostCount": 15,
-      "likeCount": 23,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://www.dinoberrypress.com/shop/p/dragon-reactor",
@@ -200,6 +257,35 @@
       }
     },
     {
+      "uri": "at://did:plc:lglyzxbrd5vgmuqg24jo2yi7/app.bsky.feed.post/3mntsbwqges2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "percypropa.bsky.social",
+        "displayName": "Kyle Tam is Climbing Mt Moriah",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreihae7ew3pmb4lgxswmgv562xn7lgycaxn3c6jpbfsyh5qi6frfb2m"
+      },
+      "record": {
+        "text": "Heyooo Soothwardens has THREE DAYS TO FUND, and if we hit the big 10K I will be writing cool stuff for it a star studded team! @navaarsnp.bsky.social  is a cool dude and PlusOneEXP helps bring bops to life!\n\nwww.backerkit.com/c/projects/p...",
+        "createdAt": "2026-06-09T08:39:13.606Z"
+      },
+      "indexedAt": "2026-06-09T08:39:17.661Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 11,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/c/projects/plus-one-exp/soothwardens-by-navaar-seik-jackson",
+        "title": "Soothwardens By Navaar Seik-Jackson",
+        "description": "A game about the power of connection & threats from beyond. There is no luck here. Just heart, stamina, and those who fight beside you.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreiepvrwcf37plmdif3ghevjwjuxdjkta3m2mbyugymygsyhfglfjmi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mnt3hi4h5c2z",
       "source": "bluesky",
       "author": {
@@ -214,7 +300,7 @@
       "indexedAt": "2026-06-09T01:50:47.261Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 10,
+      "likeCount": 11,
       "embed": {
         "type": "images",
         "images": [
@@ -670,67 +756,6 @@
       }
     },
     {
-      "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mnhx6mhxac2w",
-      "source": "bluesky",
-      "author": {
-        "handle": "dgchapman.bsky.social",
-        "displayName": "D G Chapman",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreihqugoeyufcsebs6rvpcmchq6cacd63mknoy3yj56zvcz7enroese"
-      },
-      "record": {
-        "text": "I'm happy to announce that my roadtrip rpg Journeylands is finally available for purchase again! \ud83d\udefb\ud83c\udf1e\ud83d\udc1f",
-        "createdAt": "2026-06-04T15:34:54.029Z"
-      },
-      "indexedAt": "2026-06-04T15:34:58.668Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://ko-fi.com/s/8f96c226b6",
-        "title": "Journeylands - D G Chapman's Ko-fi Shop",
-        "description": "ttrpg e-zine \u2600\ufe0f roadtripping beneath a psychic sky \u2600\ufe0f solo or group play\n\nCustomise a vehicle from scrap and salvage, and embark on journeys across a ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiahod6my3to435okh35lh7d65uzrgkjer7lmfqo7rwuhaj74kjnni"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mnht5v7ees2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "binarystar.games",
-        "displayName": "Binary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim"
-      },
-      "record": {
-        "text": "Trespasser's remake is OUT! A revamp of the 2022 original from the original Breathless Jam, revised following the kickstarter.",
-        "createdAt": "2026-06-04T14:22:54.661Z"
-      },
-      "indexedAt": "2026-06-04T14:23:05.891Z",
-      "replyCount": 1,
-      "repostCount": 33,
-      "likeCount": 69,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreifj54mb7tbl3de4o43dpqb3iifx7cynhfuvcj7izepgiv3dcjayfq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreifj54mb7tbl3de4o43dpqb3iifx7cynhfuvcj7izepgiv3dcjayfq",
-            "alt": "Trespasser cover"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:ye4htupvnfjdvehquglifx45/app.bsky.feed.post/3mnfkf5e2cc2z",
       "source": "bluesky",
       "author": {
@@ -805,8 +830,8 @@
       },
       "indexedAt": "2026-05-30T03:52:43.866Z",
       "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 28,
+      "repostCount": 13,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://last-hope-a-dark-magical-girls-ttrpg.backerkit.com/hosted_preorders#",
