@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T00:29:16.076257Z",
+  "lastUpdated": "2026-06-13T12:29:21.665537Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mo442uiozv2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - pretty cool guy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
+      },
+      "record": {
+        "text": "Very excited to say that as of now, the lionwing release for DAWN actually has bookmarks! Thanks to some help from a member of the discord.\njoel-happyhil.itch.io/dawn/devlog/...",
+        "createdAt": "2026-06-12T15:55:31.148Z"
+      },
+      "indexedAt": "2026-06-12T15:55:32.468Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 24,
+      "embed": {
+        "type": "external",
+        "uri": "https://joel-happyhil.itch.io/dawn/devlog/1551759/bookmarks",
+        "title": "Bookmarks!",
+        "description": "Hello! I've stated previously that the lionwing release of DAWN dosen't have any bookmarks due to the fact that I had to convert to a different layout software to make more printer friendly changes,\u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreihymifzmu3a5s526apjs7x2jqyewlhyo4qdgllbcs7e3tolcse3za"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mo3ucrnbnk2o",
       "source": "bluesky",
@@ -122,9 +151,9 @@
         "createdAt": "2026-06-11T00:33:09.753Z"
       },
       "indexedAt": "2026-06-11T00:33:11.368Z",
-      "replyCount": 11,
-      "repostCount": 12,
-      "likeCount": 147,
+      "replyCount": 12,
+      "repostCount": 13,
+      "likeCount": 151,
       "embed": {
         "type": "images",
         "images": [
@@ -727,35 +756,6 @@
       }
     },
     {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mnjwgsza5c2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
-      },
-      "record": {
-        "text": "I've made the hardback copies of my JRPG inspired TTRPG Skies Above Available on my Ko-Fi shop! If you've seen me or others post about it and want to pick up a copy head on over!\n\nko-fi.com/s/5a25d8f243",
-        "createdAt": "2026-06-05T10:26:55.057Z"
-      },
-      "indexedAt": "2026-06-05T10:26:58.362Z",
-      "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 16,
-      "embed": {
-        "type": "external",
-        "uri": "https://ko-fi.com/s/5a25d8f243",
-        "title": "Skies Above - Lost Haven Studios's Ko-fi Shop",
-        "description": "This is a hardback copy of Skies Above, the d8 powered JRPG inspired TTRPG from Lost Haven Studio. \n\nThis hardback book is  210x285mm and 240 pages. I...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreigzprbw2a5ffsrcpu2fmgv7fqw7djxqenehjqstezifcwsqqsjsci"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:ye4htupvnfjdvehquglifx45/app.bsky.feed.post/3mnfkf5e2cc2z",
       "source": "bluesky",
       "author": {
@@ -770,7 +770,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 76,
-      "likeCount": 514,
+      "likeCount": 513,
       "embed": {
         "type": "images",
         "images": [
@@ -1508,7 +1508,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2610,
+      "likeCount": 2611,
       "embed": {
         "type": "images",
         "images": [
@@ -2452,7 +2452,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1249,
-      "likeCount": 6564,
+      "likeCount": 6563,
       "embed": {
         "type": "images",
         "images": [
@@ -3129,8 +3129,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2357,
-      "likeCount": 11889,
+      "repostCount": 2356,
+      "likeCount": 11888,
       "embed": {
         "type": "images",
         "images": [
@@ -3465,8 +3465,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2665,
-      "likeCount": 15683,
+      "repostCount": 2664,
+      "likeCount": 15682,
       "embed": {
         "type": "images",
         "images": [
