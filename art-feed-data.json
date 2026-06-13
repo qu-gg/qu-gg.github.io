@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T12:59:18.328146Z",
+  "lastUpdated": "2026-06-13T00:29:16.076257Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mo3ucrnbnk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "losthavenart.bsky.social",
+        "displayName": "Lost Haven Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
+      },
+      "record": {
+        "text": "Fiannly got around to setting this all up! All of my games are now available digitally through @rpg-trader.bsky.social! Got to say the website is nicely laid out and the process was really straight forward! I've got one more thing to add but I need to finish it first \n\nrpg-trader.com/creator/742/...",
+        "createdAt": "2026-06-12T13:36:47.207Z"
+      },
+      "indexedAt": "2026-06-12T13:36:48.872Z",
+      "replyCount": 1,
+      "repostCount": 8,
+      "likeCount": 16,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/creator/742/losthaven",
+        "title": "LostHaven on RPG Trader",
+        "description": "Independent TTRPG creator on RPG Trader.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreih3dt7cowahvoaxe6pqm7igyonztghbkkh7utw6iuvj37upzgvjhu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mnzb5wznss25",
       "source": "bluesky",
       "author": {
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-06-11T00:33:11.368Z",
       "replyCount": 11,
-      "repostCount": 9,
-      "likeCount": 130,
+      "repostCount": 12,
+      "likeCount": 147,
       "embed": {
         "type": "images",
         "images": [
@@ -122,8 +151,8 @@
       },
       "indexedAt": "2026-06-10T22:39:51.971Z",
       "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 8,
+      "repostCount": 4,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3707/review-something-ttrpg-bundle",
@@ -152,7 +181,7 @@
       "indexedAt": "2026-06-10T15:31:24.072Z",
       "replyCount": 0,
       "repostCount": 15,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://www.dinoberrypress.com/shop/p/dragon-reactor",
@@ -698,35 +727,6 @@
       }
     },
     {
-      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mnk5f2rlis2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "elmc.at",
-        "displayName": "elmcat",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi"
-      },
-      "record": {
-        "text": "random blogwagon contribution. what can you do when you roll to write \"one beautiful sentence\"?\n\nelmc.at/a-world-that...",
-        "createdAt": "2026-06-05T12:31:12.278Z"
-      },
-      "indexedAt": "2026-06-05T12:31:15.561Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 11,
-      "embed": {
-        "type": "external",
-        "uri": "https://elmc.at/a-world-that-answers/",
-        "title": "A World That Answers",
-        "description": "A poem after reading The Retired Adventurer.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreifdxk4sgjfyrfnusbdxuhajrzkru3yplaznv3r3dd3f2p6l3a5ntq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mnjwgsza5c2v",
       "source": "bluesky",
       "author": {
@@ -831,7 +831,7 @@
       "indexedAt": "2026-05-30T03:52:43.866Z",
       "replyCount": 0,
       "repostCount": 14,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "external",
         "uri": "https://last-hope-a-dark-magical-girls-ttrpg.backerkit.com/hosted_preorders#",
@@ -1903,7 +1903,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6327,
+      "likeCount": 6328,
       "embed": {
         "type": "images",
         "images": [
