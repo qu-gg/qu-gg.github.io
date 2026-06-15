@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T12:32:24.868659Z",
+  "lastUpdated": "2026-06-15T00:26:48.622769Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3moaq2yn5ms2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "A new dungeon for HIS MAJESTY THE WORM has emerged from the Underworld: the Garden of Glass Hours by Julian Phantasm! \n\nIt contains:\nA day/night cycle that changes many points and NPC behaviors\nCrystal imps!\nNew magic items\nA new realm of magic called the Wink\n\nIt's totally free. Here's the link!",
+        "createdAt": "2026-06-14T12:04:09.832Z"
+      },
+      "indexedAt": "2026-06-14T12:04:10.769Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 59,
+      "embed": {
+        "type": "external",
+        "uri": "https://drive.google.com/drive/folders/1uzm7yRtb6at9uo5h06Bx3O-SCVBIEqZ0",
+        "title": "Garden of Glass Hours - Google Drive",
+        "description": "",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3moapzi3xi225",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place \u27a1\ufe0f Origins Booth #1609",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
+      },
+      "record": {
+        "text": "If you are in the World Cup spirit but don\u2019t want to give money to FIFA, pick up one of these amazing indie sports TTRPGs instead! \n\nYou probably can pick up all of them for the price of one ticket!",
+        "createdAt": "2026-06-14T12:03:18.936Z"
+      },
+      "indexedAt": "2026-06-14T12:03:20.770Z",
+      "replyCount": 0,
+      "repostCount": 15,
+      "likeCount": 29,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/qJsFQDrYDOo",
+        "title": "Fantastic Sports (TTRPGs) and Where to Find Them",
+        "description": "YouTube video by Weird Place",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreigdustef6kldjejre5oycwxi3muqip4qvi6j2vepihfyqqhn6dy74"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:2dfc43erbzqbgtxf6ypwjuit/app.bsky.feed.post/3moaokepk2c2o",
       "source": "bluesky",
       "author": {
@@ -65,8 +123,8 @@
       },
       "indexedAt": "2026-06-14T11:37:04.876Z",
       "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 20,
+      "repostCount": 22,
+      "likeCount": 72,
       "embed": {
         "type": "images",
         "images": [
@@ -102,8 +160,8 @@
       },
       "indexedAt": "2026-06-14T11:11:20.661Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 9,
+      "repostCount": 8,
+      "likeCount": 15,
       "embed": {
         "type": "images",
         "images": [
@@ -810,7 +868,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 76,
-      "likeCount": 517,
+      "likeCount": 518,
       "embed": {
         "type": "images",
         "images": [
@@ -3310,8 +3368,8 @@
       },
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
-      "repostCount": 250,
-      "likeCount": 1514,
+      "repostCount": 249,
+      "likeCount": 1513,
       "embed": {
         "type": "images",
         "images": [
@@ -3505,8 +3563,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2664,
-      "likeCount": 15680,
+      "repostCount": 2663,
+      "likeCount": 15679,
       "embed": {
         "type": "images",
         "images": [
