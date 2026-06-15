@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Report 46 (BREAK!!) - I Am No Biologist - Studio Quagg</title>
+    <meta name="description" content="We’re back with Episode 46 of BREAK!!: The Wandering Trio. A light one in terms of lore and content but boy-o was it a fun Adventure Site crawling one, capstoned by high-level magic users vs. some...">
+    <meta property="og:title" content="Session Report 46 (BREAK!!) - I Am No Biologist">
+    <meta property="og:description" content="We’re back with Episode 46 of BREAK!!: The Wandering Trio. A light one in terms of lore and content but boy-o was it a fun Adventure Site crawling one, capstoned by high-level magic users vs. some...">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://its.quagg.studio/blog/posts-html/2026-06-15-session-report-46-break-i-am-no-biologist.html">
+    <meta property="og:site_name" content="Studio Quagg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Session Report 46 (BREAK!!) - I Am No Biologist">
+    <meta name="twitter:description" content="We’re back with Episode 46 of BREAK!!: The Wandering Trio. A light one in terms of lore and content but boy-o was it a fun Adventure Site crawling one, capstoned by high-level magic users vs. some...">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" type="application/rss+xml" title="Studio Quagg Blog Feed" href="../feed.xml">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .blog-post-page {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Post header ───────────────────────────────────── */
+        .post-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-date {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--accent);
+        }
+
+        /* ── Post body typography ──────────────────────────── */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-primary);
+        }
+
+        .post-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content p + ul,
+        .post-content p + ol {
+            margin-top: -0.6rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            color: var(--accent-hover);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .post-content figure {
+            margin: 1.5rem auto;
+            text-align: center;
+        }
+
+        .post-content figure img {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content figcaption {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .post-content .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .post-content .image-row figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .post-content .image-row figure img {
+            display: block;
+            width: 100%;
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-radius: 0 6px 6px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .post-content code {
+            font-size: 0.88em;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+        }
+
+        .post-content li > ul,
+        .post-content li > ol {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .post-content li > p {
+            margin-bottom: 0.3rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        /* ── Post navigation ───────────────────────────────── */
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            max-width: 45%;
+        }
+
+        .post-nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-nav-link.next {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        @media (max-width: 600px) {
+            .post-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-nav {
+                flex-direction: column;
+            }
+
+            .post-nav-link {
+                max-width: 100%;
+            }
+
+            .post-nav-link.next {
+                text-align: left;
+            }
+        }
+
+        /* ── Item / Ability card blocks ────────────────────────── */
+        .item-block {
+            background: var(--bg-secondary);
+            border: 2px dotted var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .item-block .item-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .item-block .item-type {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .item-block .item-desc {
+            margin: 0.4rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .item-block .item-effect {
+            margin: 0.4rem 0;
+        }
+
+        .item-block .item-stats {
+            color: #00b894;
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .item-block ul {
+            margin: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .item-block li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Spoiler text ──────────────────────────────────── */
+        .spoiler {
+            background: var(--text-primary);
+            color: transparent;
+            border-radius: 3px;
+            padding: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .spoiler a {
+            color: inherit;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .spoiler:hover,
+        .spoiler:focus,
+        .spoiler.revealed {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .spoiler:hover a,
+        .spoiler:focus a,
+        .spoiler.revealed a {
+            color: var(--accent);
+            text-decoration: underline;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../break.html">BREAK!! Homebrew</a></li>
+                <li><a href="../../imperium-shipyard.html">Imperium-Shipyard [MgT1E]</a></li>
+                <li><a href="../../bnb-loot-generator.html">B&B Loot Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post-page">
+        <a href="../" class="back-link">← Back to Blog</a>
+
+        <article>
+            <header class="post-header">
+                <h1>Session Report 46 (BREAK!!) - I Am No Biologist</h1>
+                <div class="post-meta">
+                    <span class="post-date">June 15, 2026</span>
+                    <div class="post-tags"><span class="blog-tag">Session Report</span></div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p>We&rsquo;re back with Episode 46 of <strong>BREAK!!: The Wandering Trio</strong>. A light one in terms of lore and content but boy-o was it a fun Adventure Site crawling one, capstoned by high-level magic users vs. some &lsquo;lil bugs. First a recap of where we are and then into it. Previous report <a href="https://its.quagg.studio/blog/posts-html/2026-05-23-session-report-44-45-break-of-gobs-and-mines.html">here</a>.</p>
+<h3 id="the-mines">The Mines</h3>
+<p>The party has traveled to the mining site of the hastily proclaimed &ldquo;doomed expedition&rdquo; by the other Gobbos in the Den of the Half-Knowing Ones. They are on the lookout for two particular things - 1) some Rings of Fleshwarp that enable quickly traveling to other Calian Sigil sites throughout the isle (insofar - one within the Cage of Valigarmanda and one in an old dead Bio-Titan underneath their home village, The Celestial Bazaar) and 2) a Star Gem that was claimed to have been stolen from Sprick, the Vice Lead Architect, by Spruck, the Lead Architect.</p>
+<p>Here was the last explored state of the map, and where we pick up from today:</p>
+<p><figure><a href="../images/MiningSiteAdventureMap.webp" target="_blank" rel="noopener noreferrer"><img alt="Mining Site Adventure Map" src="../images/MiningSiteAdventureMap.webp" /></a><figcaption>Adventure Site of the doomed mining expedition. Map art by: <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank" rel="noopener noreferrer">Moira Games</a>.</figcaption></figure></p>
+<h3 id="bugsll-getcha">Bugs&rsquo;ll Getcha</h3>
+<p>Their immediate next move was loudly busting down the boards to Room 08 where they noted some Shade Iron ore veins and dozens and dozens of small tunnels burrowed into the walls. They didn&rsquo;t have much time to contemplate that note, however, as the Bizzer Swarms lying in wait Ambushed them. Bizzer Swarms are only a Rank 2 Boss but I have been excited to throw them at the party for quite some time now.</p>
+<p><figure><a href="../images/BizzerAttack.webp" target="_blank" rel="noopener noreferrer"><img alt="Bizzer Attack" src="../images/BizzerAttack.webp" width="55%" /></a><figcaption>Abra and Lookus getting Bizzer swarmed. Map art by: <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank" rel="noopener noreferrer">Moira Games</a>.</figcaption></figure></p>
+<p>Abra and Lookus are quite heavily reliant on their magical abilities and so being able to mess with that directly gave me great joy. To beef up the encounter more, I made it so the Bizzers would automatically deal 1 Damage at the start of their Turn, adding time pressure beyond just some irritating mana-disabling bugs. What I did not expect, however, was it to be just so effective on them.</p>
+<p>Some highlights:</p>
+<ul>
+<li>The magical party members, immediately swarmed, descended into panic as Lookus couldn&rsquo;t summon his beloved Wrath&rsquo;s Blade and Abra&rsquo;s whole kit gone.</li>
+<li>In the panic, Abra unleashed his Junk Trophy System into the area with everyone in it. Lookus and Gack both failed, getting blown to the ground by a torrent of scrap.</li>
+<li>It was a good lesson in the brutal trappings of the Inventory System, taking multiple Actions-worth to pull out old, never-used-before back-up weapons from Backpacks.</li>
+<li>Gack, using Always Prepared, pulled out a can of highly-toxic Bug Repellent (reflavored Solvent) and was able to help with the swarms.</li>
+</ul>
+<div class="item-block">
+    <div><span class="item-name">Junk Trophy System</span> <span class="item-type">[Gadget]</span></div>
+    <div class="item-desc">This bandolier made of a weird leather hoists a cumbersome shoulder-mounted, pressurized scrap cannon. <br>Junkyard goblins have found a means of recreation with these gadgets in a game they call "Rocket Jump".</div>
+    <ul>
+        <li>Once per Fight, you can unload the Trophy System, doing one of the following:</li>
+        <ul>
+            <li>Attack all Creatures in the same Area as you, dealing 1 Heart of Damage on a failed Deftness Check.</li>
+            <li>Parry 1 Missile Attack. This includes Spells or any special Attacks that require an Attack roll.</li>
+        </ul>
+        <li>If a Small Species uses this, they must make a Deftness Check or be thrown an Area away and be Toppled.</li>
+    </ul>
+    <div class="item-stats">2 Slots · 50 Coins</div>
+</div>
+
+<p>It was all a big kerfuffle of dealing with inventory, ineffectually swatting at the swarm, and ticking down Hearts. After dozens of sessions, Abra finally took a second Injury in the campaign! An Armor Crash meant that his precious Shadowed Light Armor was destroyed&hellip;its very essence consumed by the Bizzers. He&rsquo;s got an Anti-Hazard backup though so he&rsquo;s fine.</p>
+<p>Of the many far worse threats I&rsquo;ve thrown at them (big boss fights notwithstanding), this one really got &lsquo;em spooked and gave me much joy. They spent a minute in this room noting it was peculiar that Shade Iron was here when it was supposed to be a Vain Stone mine. The title of the episode comes from Lookus staring at the caved in passage of the room and confidently stating &ldquo;I am no biologist but that looks like a natural cave-in.&rdquo; To which the others retorted a confused &ldquo;&hellip;huh?&rdquo;</p>
+<p>Moving on, they took the left fork into Room 12 and, with Cautious Movement, dodged the sound-triggered ceiling collapse (Falling Debris CLICK! trap). Not much in this room itself but I was quite enthused by my description of the ancient Dwarven corpses in the room. As Dwarves as carved from stone itself in BREAK!! and crack and crumble as they age, I thought it fun that these Dwarves prematurely life-drained by the Demon within kept their forms in tact over the Aeon since and have simply eroded away into smooth stones. They&rsquo;d be easy to miss as just another rock if not for their differing composition and tools nearby.</p>
+<p>To clarify, the mine here has had two independent expeditions - one Dwarven-based one within the early 4th Aeon after the fall of Calian and the more recent one from the Den. Admittedly, I have done no backstory prep on what this original expedition was or their whole vibe but no questions asked so far, no harm done. If they probe, I&rsquo;ll just make something up and go with it.</p>
+<h3 id="arrival-of-the-creature">Arrival of the Creature</h3>
+<p>Of course within Room 12 is the very obvious &ldquo;breakthrough&rdquo; Spruck&rsquo;s journal remarked. Via Cautious Movement, the dim light of Lookus&rsquo; Lumi-Slime Lantern let them sneak a peek that the floor material beyond its precipice was of a markedly different material than the natural mine - smooth marble. Deciding to tackle that immediately instead of explore the right-hand side, they walked through and came upon the reverence hall of the High Calian Fleshwarper, depicting several amethyst statues of themself donning different mantles within the Empire. The players distinctly noted the tattered Calian Empire flag on the wall&hellip;</p>
+<p>&hellip;and became entranced by my throwaway description of the magically lit sconce on the wall glowing a villainous crimson red. So entrenched were they in this conversation amongst themselves that it gave me ample opportunity to really nail my best monster reveal yet!</p>
+<p>For context, throughout sessions, I often have relevant soundtrack playing as I&rsquo;ve noted with the Ynn Garden <a href="https://www.youtube.com/watch?v=qUMcdDOAMu4">waltz</a>. For the main hubs of the island, I have their own theme songs to associate the vibes there and it has been really sick to have everyone&rsquo;s appreciation of it as the campaign continues and we go back to previous locations. So for this session I had some mildly eerie music playing - Hollow Knight&rsquo;s Resting Grounds with a cave waterdrop sfx - since nothing was truly horror yet. As their conversation about the stupid sconce continued, however, I slowly increased the layered volume of some <a href="https://www.youtube.com/watch?v=EKjYnJ6s9GQ">horror child whispering sfx</a> behind it without saying anything.</p>
+<p>This culminated into a brilliant scene when Abra&rsquo;s player (who is always baked in our sessions so the horror tropes get him good) stopped talking and said &ldquo;hold on, do you guys fucking hear that, what is thAT?&rdquo;. Immediately after I described the dripping sensation as no longer just water drops nearby but rather crawling up Abra&rsquo;s neck, as he looked up and saw the demonic fleshwarped horror stuck on the ceiling above them - the ichor-y silhouette of a whispering young child standing next to it.</p>
+<p><figure><a href="../images/TheCreatureAppears.png" target="_blank" rel="noopener noreferrer"><img alt="The Creature Appears" src="../images/TheCreatureAppears.png" width="80%" /></a><figcaption>The Creature Appears! Map art by: <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank" rel="noopener noreferrer">Moira Games</a>.</figcaption></figure></p>
+<p>We ended there a bit early given it&rsquo;ll be a longer fight and I wanted to let them stew on that for the week. To my amusement, all the players noted how well that sfx trick worked for the horror vibes and were impressed with the &ldquo;immersion&rdquo; of the background sounds being used to key that something was wrong in the game itself.</p>
+<p><figure><a href="../images/MiningSiteAdventureMapPt2.webp" target="_blank" rel="noopener noreferrer"><img alt="Mining Site Adventure Map" src="../images/MiningSiteAdventureMapPt2.webp" /></a><figcaption>Progress crawling through the Adventure Site. Map art by: <a href="https://moira-games.itch.io/they-dug-too-deep" target="_blank" rel="noopener noreferrer">Moira Games</a>.</figcaption></figure></p>
+<p>Just wait &lsquo;til they find out the damn thing respawns, huh? Thanks for reading!</p>
+            </div>
+
+            <div class="post-nav"><span></span><a href="2026-05-23-session-report-44-45-break-of-gobs-and-mines.html" class="post-nav-link next">Session Report 44/45 (BREAK!!) - Of Gobs and Mines →</a></div>
+        </article>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="qu-gg/qu-gg.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxNTg3NDE5NjY="
+                data-category="Blog Comments"
+                data-category-id="DIC_kwDOCXY1zs4C4zuu"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="0"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg</p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Spoiler text: toggle on click/tap for mobile support
+        document.querySelectorAll('.spoiler').forEach(function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
+        });
+    </script>
+</body>
+</html>
