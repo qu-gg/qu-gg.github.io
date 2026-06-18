@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T13:06:02.982376Z",
+  "lastUpdated": "2026-06-18T00:29:45.280564Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,67 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3moimps3rpc24",
+      "source": "bluesky",
+      "author": {
+        "handle": "penflower-ink.bsky.social",
+        "displayName": "Penflower Ink",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic6je44q4aaogk7ic5urcpntratsg5pom4o5zs4pp5odiv6kcovlq"
+      },
+      "record": {
+        "text": "Just published the print version of my latest system-neutral / ALBO system setting: A Fruit-Moon For Bugworld.",
+        "createdAt": "2026-06-17T15:25:30.552Z"
+      },
+      "indexedAt": "2026-06-17T15:25:38.165Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreidnpm2n42dehc7zf2tr3yong43o6mnvtfn3zdmy6y7i7se6vzvcoa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreidnpm2n42dehc7zf2tr3yong43o6mnvtfn3zdmy6y7i7se6vzvcoa",
+            "alt": "Photo of the print version of a Fruit-Moon For Bugworld, on a wooden surface, surrounded by colourful d10s. An insectoid astronaut plants the flag of Bugworld on the surface of a pink and purple berry-shaped moon."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3moikbl2nck22",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
+      },
+      "record": {
+        "text": "You didn't name the game that just for a dumb joke, did you?\n\nMe: youtu.be/XOQBu7GN7sU",
+        "createdAt": "2026-06-17T14:41:45.930Z"
+      },
+      "indexedAt": "2026-06-17T14:41:46.271Z",
+      "replyCount": 17,
+      "repostCount": 79,
+      "likeCount": 242,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/XOQBu7GN7sU",
+        "title": "Intergalactic Bastionland Teaser",
+        "description": "YouTube video by Bastionland",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreicl7ljmkhxjp4bwtflao626cnhyle3yyockw66yvskpbj3ly2yygi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:k47vy74cguxh3uxwg2phz7ni/app.bsky.feed.post/3moe2mkhrp22k",
       "source": "bluesky",
@@ -153,7 +214,7 @@
       "indexedAt": "2026-06-15T10:04:17.167Z",
       "replyCount": 5,
       "repostCount": 13,
-      "likeCount": 51,
+      "likeCount": 53,
       "embed": {
         "type": "external",
         "uri": "http://idlecartulary.com/2026/06/15/i-read-heroes-of-the-borderlands/",
@@ -680,35 +741,6 @@
       }
     },
     {
-      "uri": "at://did:plc:qtu5u37sum46z6z47m4kwmdg/app.bsky.feed.post/3mns7utgenc2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "cozyrpgreviews.bsky.social",
-        "displayName": "Robin J",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreidotxzvrsio6z2blecacavg4uvurzvqo23p37a33mqvl2jf23gysi"
-      },
-      "record": {
-        "text": "Some folks on here might spot themselves in this video :)\n\nA little tour around the weirder side ok #UKGE, showing some of stalls I visited and games I picked up in increasing order of obscurity.\n\nyoutu.be/M4A3VAu4-UA",
-        "createdAt": "2026-06-08T17:37:06.834Z"
-      },
-      "indexedAt": "2026-06-08T17:37:09.171Z",
-      "replyCount": 7,
-      "repostCount": 19,
-      "likeCount": 43,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/M4A3VAu4-UA",
-        "title": "The Hidden Gem TTRPGs of UKGE (But They Get Increasingly More Obscure)",
-        "description": "YouTube video by Cozy RPG Reviews",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreieurf7m24c2kihnbcunlctocdx6tb3lfbyqj2p6hubbvbzthnecme"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mnrmkesd3c2x",
       "source": "bluesky",
       "author": {
@@ -878,67 +910,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard - KICKSTARTING NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:db2xbmjjvoup6sols2ons4h5/app.bsky.feed.post/3mn25mfnaek22",
-      "source": "bluesky",
-      "author": {
-        "handle": "wendigoworkshop.bsky.social",
-        "displayName": "\ud83c\udf41 Wendigo Workshop \ud83c\udf41",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreibh7nskgnilb2vrg3lbkjuzoswnhzd2ngqmm43vgoy3ew2a5z5dam"
-      },
-      "record": {
-        "text": "The pre-order store is open!\n\nIf you missed the campaign, you can still pick up the game and a couple of bonuses! \u2728\ud83d\udcab",
-        "createdAt": "2026-05-30T03:52:42.737Z"
-      },
-      "indexedAt": "2026-05-30T03:52:43.866Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 33,
-      "embed": {
-        "type": "external",
-        "uri": "https://last-hope-a-dark-magical-girls-ttrpg.backerkit.com/hosted_preorders#",
-        "title": "Pre-order Last Hope - a Dark Magical Girls TTRPG on BackerKit",
-        "description": "Last Hope is a dark Magical Girls game within which you play as teenage or young adult characters chosen to fight corruption in a dream-like version of the world, while also balancing their mundane li...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:db2xbmjjvoup6sols2ons4h5/bafkreiekg7azm4k4mtoajrgdspcd7eejrsqct5jgztsycshsqgom4obsgm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:z64wbxko3astr7bu3rlytkk2/app.bsky.feed.post/3mmzmvs3qgs2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "brightbard.bsky.social",
-        "displayName": "Bright Bard Games - LGBT 2E June 2nd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreigtonjwthnxxzkzlmp7reabthcxupccclcivjw6wymb64xdbxx6ru"
-      },
-      "record": {
-        "text": "\u2728 Calling all Magical Girl and Goblin enthusiasts! \u2728\n\nWe have a treat for you all before the weekend begins; Blight at the Blossom Festival, our free Trash to Treasure Spring Adventure, is live!! \n\nGo and download the expansion on both our itch page and website and explore the new \"Cover\" mechanic!",
-        "createdAt": "2026-05-29T22:53:44.175Z"
-      },
-      "indexedAt": "2026-05-29T22:53:46.559Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 20,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreiagpoz6xudjgmzdlyj4vryuvbtn7bmyohfj4mb7q7bzzi6c2mfok4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:z64wbxko3astr7bu3rlytkk2/bafkreiagpoz6xudjgmzdlyj4vryuvbtn7bmyohfj4mb7q7bzzi6c2mfok4",
-            "alt": "Worm, Burnie, Haze, Sludge and Treasure all eating snacks and enjoying the spring air on a hill wih a lovely cherry blossom tree. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -3530,7 +3501,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2662,
-      "likeCount": 15677,
+      "likeCount": 15676,
       "embed": {
         "type": "images",
         "images": [
