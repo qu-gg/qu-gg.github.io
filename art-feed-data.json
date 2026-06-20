@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T00:24:52.348481Z",
+  "lastUpdated": "2026-06-20T12:29:27.711780Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ahn2bovimazbtd4mddkn6aqv/app.bsky.feed.post/3moof4jnf522e",
+      "source": "bluesky",
+      "author": {
+        "handle": "starhatstudio.bsky.social",
+        "displayName": "StarHatSage",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ahn2bovimazbtd4mddkn6aqv/bafkreibgcvtlc3wtnwyh5qnf4frrvcagurvgvmzgh3eozdp3cdc4vjhwza"
+      },
+      "record": {
+        "text": "rpg-trader.com/products/559...",
+        "createdAt": "2026-06-19T22:25:26.396Z"
+      },
+      "indexedAt": "2026-06-19T22:25:30.463Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/products/5593/zeleryn-ezd6-playtest-demo",
+        "title": "Zeleryn EZD6 Playtest Demo on RPG Trader",
+        "description": "5 Pre-Gen Characters and new Mech mechanics",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ahn2bovimazbtd4mddkn6aqv/bafkreige2koi4tvkj3u6uj3km77yyzaltjburlcyhlciuwmthrj2ugrchq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3moo2yyvrz22c",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-06-19T19:24:30.469Z",
       "replyCount": 0,
       "repostCount": 0,
-      "likeCount": 16,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +123,7 @@
       "indexedAt": "2026-06-18T22:10:21.371Z",
       "replyCount": 6,
       "repostCount": 17,
-      "likeCount": 66,
+      "likeCount": 67,
       "embed": {
         "type": "images",
         "images": [
@@ -170,7 +199,7 @@
       "indexedAt": "2026-06-18T12:05:32.366Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 27,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/06/writing-in-canon-settings-microblog.html",
@@ -231,7 +260,7 @@
       "indexedAt": "2026-06-17T14:41:46.271Z",
       "replyCount": 19,
       "repostCount": 88,
-      "likeCount": 276,
+      "likeCount": 277,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/XOQBu7GN7sU",
@@ -683,53 +712,6 @@
         "title": "Soothwardens By Navaar Seik-Jackson",
         "description": "A game about the power of connection & threats from beyond. There is no luck here. Just heart, stamina, and those who fight beside you.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lglyzxbrd5vgmuqg24jo2yi7/bafkreiepvrwcf37plmdif3ghevjwjuxdjkta3m2mbyugymygsyhfglfjmi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mnrmkesd3c2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler \ud83d\udd1b Origins booth 1502",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
-      },
-      "record": {
-        "text": "At Origins I'll be using my booth to promote the journaling games movement. AFAIK, The Bonsai Diary is the first journaling game to be nominated for an Origins Award. So it's a great opportunity to introduce journaling games to new players - not just mine, but also ...",
-        "createdAt": "2026-06-08T11:51:14.848Z"
-      },
-      "indexedAt": "2026-06-08T11:51:28.760Z",
-      "replyCount": 4,
-      "repostCount": 21,
-      "likeCount": 73,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreiewxrgzyt63keuq6stp5a33rlxefpnvwquvo5eya7zovycagxuwkq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreiewxrgzyt63keuq6stp5a33rlxefpnvwquvo5eya7zovycagxuwkq",
-            "alt": "Why are journaling games on FIRE?"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreibg5fjy7naclbcskmis6koxy5wzykaq66nqw3egan7quzsddie7i4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreibg5fjy7naclbcskmis6koxy5wzykaq66nqw3egan7quzsddie7i4",
-            "alt": "What are journaling games? Journaling games invite you to write your own story through provocative prompts. Prompts can be fixed or random, and often result from your choices. They're part creative writing, part analog game, part personal reflection."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreihbr2tbtrbk433nwutj66d56qsbsqyklz4mhbmr2iigzbh2n6yace",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreihbr2tbtrbk433nwutj66d56qsbsqyklz4mhbmr2iigzbh2n6yace",
-            "alt": "Who are journaling games for? The creative writer who wants to unlock the blank page. The journaler who needs to do more than write into the void. The forever GM who just wants to play."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreidval6zlubo6xb6t443u3xmdai4pkaxonfkkvhurn3g5fnzeyn7ou",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreidval6zlubo6xb6t443u3xmdai4pkaxonfkkvhurn3g5fnzeyn7ou",
-            "alt": "How do I get started? Get a pen/pencil and a blank journal. Pick a game that feels intriguing. Just play - you don't need to assemble your party! Write to find out. Activate your imagination. Unlock your subconscious."
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1888,7 +1870,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1452,
-      "likeCount": 6331,
+      "likeCount": 6332,
       "embed": {
         "type": "images",
         "images": [
@@ -2028,7 +2010,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 620,
-      "likeCount": 2904,
+      "likeCount": 2905,
       "embed": {
         "type": "images",
         "images": [
@@ -2085,7 +2067,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 764,
-      "likeCount": 3897,
+      "likeCount": 3898,
       "embed": {
         "type": "images",
         "images": [
@@ -3200,7 +3182,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 546,
-      "likeCount": 3041,
+      "likeCount": 3040,
       "embed": {
         "type": "images",
         "images": [
@@ -3451,7 +3433,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2661,
-      "likeCount": 15673,
+      "likeCount": 15674,
       "embed": {
         "type": "images",
         "images": [
