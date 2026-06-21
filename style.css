@@ -840,6 +840,25 @@ body {
     opacity: 1;
 }
 
+.toc-list li.toc-group {
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    margin-bottom: 0.3rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--border);
+}
+
+.toc-list li.toc-group:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
 @media (max-width: 1200px) {
     .toc-nav {
         display: none;
