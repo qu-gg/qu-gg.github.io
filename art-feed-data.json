@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T12:33:26.059288Z",
+  "lastUpdated": "2026-06-22T00:26:33.403480Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,77 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:sy5uusg54udytd64rmcrgy5s/app.bsky.feed.post/3mosxcuvrsz2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "knaveofcups.com",
+        "displayName": "Knave of Cups",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreiawj6ho5vsqkmyodibfb72qri35lkr3k6724jrcjclv2hr5ryip3q"
+      },
+      "record": {
+        "text": "ARRIVING FRI from @binarystar.games \n\nAPOCALYPSE FRAME, badass mech battles\n\nValiant Horizon, channel a hero's soul to fight monsters\n\nCorpslayers, a cyberpunk homage to Gila RPGs' fantasy mercenary game Slayers",
+        "createdAt": "2026-06-21T18:01:45.801Z"
+      },
+      "indexedAt": "2026-06-21T18:01:46.373Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreifrtp4hu5jmg7wmntuibhypu4mgdca6jh225ri6dugebedruxwrna",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreifrtp4hu5jmg7wmntuibhypu4mgdca6jh225ri6dugebedruxwrna",
+            "alt": "The cover of APOCALYPSE FRAME by BINARY STAR GAMES. Image is a graphic novel-style black and white mech wielding a giant-ass gun"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreicqjyh7bbkxb5vyort3aiwpofsb4snb4ffh6yuj27g3tqlq7fdtkm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreicqjyh7bbkxb5vyort3aiwpofsb4snb4ffh6yuj27g3tqlq7fdtkm",
+            "alt": "The cover of Valiant Horizon by Binary Star Games. Minimalist. The title appears underlined in all caps through the center of the plain white page. A gleaming stylized golden sun shines behind the \"o\" in \"horizon\""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreif7xvucibxus3u2qjc7c2txorh6cxjiq3dxusjt2zs5wfzsi4gtcm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreif7xvucibxus3u2qjc7c2txorh6cxjiq3dxusjt2zs5wfzsi4gtcm",
+            "alt": "The cover of Corpslayers by Binary Star Games. Minimalist. Plain white background with the title printed in a san serif, computer-like font on the upper 2/3 of the page. The letters are large and are divided into three lines: Corp (black ink), slay (red ink), ers. (red ink)"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mosr62q3i22s",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "I've written about my inspirations for my 100+ room, Metroidvania dungeon, The Castle Automatic",
+        "createdAt": "2026-06-21T16:11:41.720Z"
+      },
+      "indexedAt": "2026-06-21T16:11:43.960Z",
+      "replyCount": 0,
+      "repostCount": 17,
+      "likeCount": 48,
+      "embed": {
+        "type": "external",
+        "uri": "https://riseupcomus.blogspot.com/2026/06/the-secret-history-of-castle-automatic.html",
+        "title": "The Secret History of The Castle Automatic",
+        "description": "When Sean McCoy proposed the Dungeon23 project , I couldn't help but join in. I wrote two dungeons--one for  His Majesty the Worm  and one f...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifk24guhh5xqjvxzvosfw4eaajkswcbedm3eavgeysldwemzx47su"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:ahn2bovimazbtd4mddkn6aqv/app.bsky.feed.post/3moof4jnf522e",
       "source": "bluesky",
@@ -346,7 +417,7 @@
       },
       "indexedAt": "2026-06-15T15:05:40.660Z",
       "replyCount": 2,
-      "repostCount": 142,
+      "repostCount": 143,
       "likeCount": 190,
       "embed": {
         "type": "external",
@@ -603,34 +674,6 @@
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mnxy2mtr6k2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I was thinking that if I ever wanted to do a \"Megadungeon\" style thing, it would likely be a series of connected Adventure Sites that the players could venture through to eventually get to some important, load-bearing place and realized that I was just thinking of Super Mario World maps again",
-        "createdAt": "2026-06-11T00:33:09.753Z"
-      },
-      "indexedAt": "2026-06-11T00:33:11.368Z",
-      "replyCount": 12,
-      "repostCount": 13,
-      "likeCount": 153,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigczw4r3uef5hxc2haqhv7q35ppq377weq4vmdknpqrkmyiurhupu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigczw4r3uef5hxc2haqhv7q35ppq377weq4vmdknpqrkmyiurhupu",
-            "alt": "The map of the valley of bowser from the SNES game, Super Mario World"
-          }
-        ]
-      },
-      "repostBy": null
     },
     {
       "uri": "at://did:plc:lglyzxbrd5vgmuqg24jo2yi7/app.bsky.feed.post/3mntsbwqges2i",
@@ -1417,7 +1460,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2616,
+      "likeCount": 2615,
       "embed": {
         "type": "images",
         "images": [
@@ -1812,7 +1855,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1451,
-      "likeCount": 6331,
+      "likeCount": 6332,
       "embed": {
         "type": "images",
         "images": [
@@ -2361,7 +2404,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1249,
-      "likeCount": 6563,
+      "likeCount": 6562,
       "embed": {
         "type": "images",
         "images": [
