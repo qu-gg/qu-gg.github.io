@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T12:38:15.574649Z",
+  "lastUpdated": "2026-06-25T00:25:18.886658Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mozvtfpbss24",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "In July, Exalted Funeral is doing a Backerkit campaign for their games that won ENNIES last year--that includes HIS MAJESTY THE WORM. \n\nIf you've missed out on one of these games, make sure this is on your radar!",
+        "createdAt": "2026-06-24T12:23:51.007Z"
+      },
+      "indexedAt": "2026-06-24T12:23:53.368Z",
+      "replyCount": 1,
+      "repostCount": 13,
+      "likeCount": 41,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.backerkit.com/call_to_action/09f86217-a189-4886-815e-959d46a91134/landing?ref=bk-discover-homepage",
+        "title": "Exalted Funeral ENnies 2025 Titles",
+        "description": "From Exalted Funeral - Exalted Funeral ENnies 2025 Titles",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreie7whxol47326gjuvkdwi3gttf26mxqrbfd7pumgqc7mzjkbtf2ou"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3moyp6p7kwc2x",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-06-24T00:52:15.776Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 10,
+      "likeCount": 11,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=vVuuweYgN78",
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-06-23T23:31:46.967Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 51,
+      "repostCount": 12,
+      "likeCount": 61,
       "embed": {
         "type": "external",
         "uri": "https://tabletop.events/conventions/between-two-cairns",
@@ -123,7 +152,7 @@
       },
       "indexedAt": "2026-06-23T15:00:39.161Z",
       "replyCount": 0,
-      "repostCount": 26,
+      "repostCount": 27,
       "likeCount": 49,
       "embed": {
         "type": "external",
@@ -227,7 +256,7 @@
       "indexedAt": "2026-06-21T16:11:43.960Z",
       "replyCount": 2,
       "repostCount": 21,
-      "likeCount": 61,
+      "likeCount": 62,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/06/the-secret-history-of-castle-automatic.html",
@@ -537,7 +566,7 @@
       "indexedAt": "2026-06-15T15:05:40.660Z",
       "replyCount": 2,
       "repostCount": 146,
-      "likeCount": 192,
+      "likeCount": 193,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/2018387307/cyberrats-in-space",
@@ -573,133 +602,6 @@
         "title": "I Read Heroes of the Borderlands",
         "description": "I Read Games reviews are me reading games when I have nothing better to do, like read a module or write or play a game. I don\u2019t seriously believe that I can judge a game without playing it, usually\u2026",
         "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3moaq2yn5ms2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "A new dungeon for HIS MAJESTY THE WORM has emerged from the Underworld: the Garden of Glass Hours by Julian Phantasm! \n\nIt contains:\nA day/night cycle that changes many points and NPC behaviors\nCrystal imps!\nNew magic items\nA new realm of magic called the Wink\n\nIt's totally free. Here's the link!",
-        "createdAt": "2026-06-14T12:04:09.832Z"
-      },
-      "indexedAt": "2026-06-14T12:04:10.769Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 67,
-      "embed": {
-        "type": "external",
-        "uri": "https://drive.google.com/drive/folders/1uzm7yRtb6at9uo5h06Bx3O-SCVBIEqZ0",
-        "title": "Garden of Glass Hours - Google Drive",
-        "description": "",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3moapzi3xi225",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \u27a1\ufe0f Origins #1609",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
-      },
-      "record": {
-        "text": "If you are in the World Cup spirit but don\u2019t want to give money to FIFA, pick up one of these amazing indie sports TTRPGs instead! \n\nYou probably can pick up all of them for the price of one ticket!",
-        "createdAt": "2026-06-14T12:03:18.936Z"
-      },
-      "indexedAt": "2026-06-14T12:03:20.770Z",
-      "replyCount": 0,
-      "repostCount": 16,
-      "likeCount": 32,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/qJsFQDrYDOo",
-        "title": "Fantastic Sports (TTRPGs) and Where to Find Them",
-        "description": "YouTube video by Weird Place",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreigdustef6kldjejre5oycwxi3muqip4qvi6j2vepihfyqqhn6dy74"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:2dfc43erbzqbgtxf6ypwjuit/app.bsky.feed.post/3moaokepk2c2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "loremistress93.bsky.social",
-        "displayName": "Kat the Lore Mistress \ud83d\udd1c UKGE",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2dfc43erbzqbgtxf6ypwjuit/bafkreicbccj2nwmiy7t65oxdakqpfquxzejcpfcwwlie5dq7ckrgxc746a"
-      },
-      "record": {
-        "text": "Updating my pinned post. \n\nI'm Kat - UK based, queer, and I'm looking for freelance projects in 2026!\n\n\ud83c\udfb2 Creative Lead at Hatchlings Games\n\ud83e\udeb6 Writer & TTRPG designer\n\ud83e\uddcc Horror, Folklore, & Mythology NERD\n\ud83d\udcda Avid reader\n\nDrop me an email, let's chat \ud83d\udc9b\n\n\u2709\ufe0f loremistress93@gmail.com",
-        "createdAt": "2026-06-14T11:36:58.323Z"
-      },
-      "indexedAt": "2026-06-14T11:37:04.876Z",
-      "replyCount": 0,
-      "repostCount": 29,
-      "likeCount": 87,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2dfc43erbzqbgtxf6ypwjuit/bafkreifdgam3rhjo6aavtmf2lbqy4y47srm5zu5yrq3mxhsncyiw5yk6xu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2dfc43erbzqbgtxf6ypwjuit/bafkreifdgam3rhjo6aavtmf2lbqy4y47srm5zu5yrq3mxhsncyiw5yk6xu",
-            "alt": "An illustrated portrait of me, a white woman with red hair, big glasses, and a yellow shirt with books patterned on it."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2dfc43erbzqbgtxf6ypwjuit/bafkreibih4p4bgdjs6mnsukmbxjh3h3sbjmszfgykgyp57kx3tlzqyutqi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2dfc43erbzqbgtxf6ypwjuit/bafkreibih4p4bgdjs6mnsukmbxjh3h3sbjmszfgykgyp57kx3tlzqyutqi",
-            "alt": "A photo of me, a white woman with shoulder length red hair, big glasses, and wearing a green jacket."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fp7z6py7lxiujwngnn7dmjpj/app.bsky.feed.post/3moan4ioqac2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickyhunter.bsky.social",
-        "displayName": "Steph \"StickyHunter\" Farrow",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreihtvsioftcui63j7u36gxo7dqjt22n7qy54oyei26qae3z5uruztm"
-      },
-      "record": {
-        "text": "You can now also find my games over on @rpg-trader.bsky.social !\n\nrpg-trader.com/creator/914/...\n\n#TTRPG #IndieDev #RPGTrader",
-        "createdAt": "2026-06-14T11:11:18.985Z"
-      },
-      "indexedAt": "2026-06-14T11:11:20.661Z",
-      "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 26,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreig4qpsj5iidlg7l66ey6zhzzkkjj6mnsosm5om4kezqk2tsge6hum",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fp7z6py7lxiujwngnn7dmjpj/bafkreig4qpsj5iidlg7l66ey6zhzzkkjj6mnsosm5om4kezqk2tsge6hum",
-            "alt": "An image of myself with light pink undercutted hair, round glasses, and gothic clothing. To the left is text that reads: Steph \"StickyHunter\" Farrow. 5 products. Find my games on RPG-TRADER"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1858,7 +1760,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1451,
-      "likeCount": 6333,
+      "likeCount": 6332,
       "embed": {
         "type": "images",
         "images": [
@@ -2741,7 +2643,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 448,
-      "likeCount": 1880,
+      "likeCount": 1881,
       "embed": {
         "type": "images",
         "images": [
