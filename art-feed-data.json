@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T12:40:43.184183Z",
+  "lastUpdated": "2026-06-26T00:26:31.714223Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-06-25T10:26:00.670Z",
       "replyCount": 1,
-      "repostCount": 8,
-      "likeCount": 17,
+      "repostCount": 9,
+      "likeCount": 25,
       "embed": {
         "type": "images",
         "images": [
@@ -86,6 +86,38 @@
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:52zzdjbqfm7w4r42wctzwrvy/app.bsky.feed.post/3mp3d3ejick2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "puppiesandanime.bsky.social",
+        "displayName": "Shawn\ud83d\udc36",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreihkgjnx2eud7vvrfdaqcaelvvjwqfbepbhjoq6qdpxfi7upnv3s7a"
+      },
+      "record": {
+        "text": "Druaga sprites",
+        "createdAt": "2026-06-25T01:53:36.586Z"
+      },
+      "indexedAt": "2026-06-25T01:53:39.070Z",
+      "replyCount": 7,
+      "repostCount": 183,
+      "likeCount": 894,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreig5sa4acwm4ne5c43okjdkq4ddgiukagfj3ycaraacuy7qcix7lxy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreig5sa4acwm4ne5c43okjdkq4ddgiukagfj3ycaraacuy7qcix7lxy",
+            "alt": "Pixel art character sprites of Gil and Ki from Tower of Druaga, facing to the left. Gil is holding a sword in front of him, while Ki is holding the blue rod to her chest. They are on a grey background. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -132,7 +164,7 @@
       "indexedAt": "2026-06-24T12:23:53.368Z",
       "replyCount": 1,
       "repostCount": 13,
-      "likeCount": 45,
+      "likeCount": 46,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/call_to_action/09f86217-a189-4886-815e-959d46a91134/landing?ref=bk-discover-homepage",
@@ -574,42 +606,13 @@
       "indexedAt": "2026-06-15T19:50:58.466Z",
       "replyCount": 2,
       "repostCount": 14,
-      "likeCount": 53,
+      "likeCount": 54,
       "embed": {
         "type": "external",
         "uri": "https://batfeula.neocities.org/stuff/famicase/",
         "title": "BATFEULA",
         "description": "",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k47vy74cguxh3uxwg2phz7ni/bafkreihpubyetat6sfhndagnh6mwl25u2fpoolcfsamciiklo5ydt25ifm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jnq3arn4s46wlxmzurhgrzmh/app.bsky.feed.post/3modlu7526k2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "gandergaming.bsky.social",
-        "displayName": "Gander Gaming",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreig4eymt3zrbh2msulawpet22nbnrs422myhhyln5liunaul4uxz2a"
-      },
-      "record": {
-        "text": "Grok?! 2e is SO CLOSE to reaching 4x its funding goal.\n\nPlease share to help reach this milestone!\n\nwww.kickstarter.com/projects/gan...",
-        "createdAt": "2026-06-15T15:26:46.010Z"
-      },
-      "indexedAt": "2026-06-15T15:26:48.369Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 4,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/gandergaming/grok-2nd-edition",
-        "title": "GROK?! 2e: A Gonzo Science Fantasy RPG",
-        "description": "Grok?! is a [human made] rules-light science fantasy RPG in a post-apocalyptic world of advanced technomancy and boundless plausibility",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreihn7p3lirtspazr4kfn5hgnrcfsqw54s74eywxan5262cioe77d34"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3359,7 +3362,7 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2661,
+      "repostCount": 2660,
       "likeCount": 15671,
       "embed": {
         "type": "images",
