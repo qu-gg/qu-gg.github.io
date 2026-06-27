@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T12:36:02.698949Z",
+  "lastUpdated": "2026-06-27T00:24:31.421907Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:rzjgafeykxv4du7aw6nftltp/app.bsky.feed.post/3mp75jksakc2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "jdragsky.bsky.social",
+        "displayName": "jay Dragon \ud83d\udd1c Seven Part Pact",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreidhidim5eizmkmi36fer2tgyytizdpqmoid2khfcb7m77g3b5i4oq"
+      },
+      "record": {
+        "text": "Seven Part Pact is coming to kickstarter July 2026 ! it's a massive ambitious TTRPG about magic, masculinity, and power. here's what brennan lee mulligan has to say about it",
+        "createdAt": "2026-06-26T14:24:49.415Z"
+      },
+      "indexedAt": "2026-06-26T14:24:51.771Z",
+      "replyCount": 8,
+      "repostCount": 74,
+      "likeCount": 215,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreibvkp4hgzg5x4vx5gweaxb7onmqxr62oi2f46idas2pa7yc6cbzfq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreibvkp4hgzg5x4vx5gweaxb7onmqxr62oi2f46idas2pa7yc6cbzfq",
+            "alt": "\u201cIf you\u2019re a sucker for hoary tomes and dread grimoires, if your heart cries out for wicked homunculi and crafty familiars, if at the end of the day you\u2019re out here just trying to ponder some goddamn orbs, then Jay has crafted the perfect game for you. Seven Part Pact is a vast, robust, visceral game about the powers and limitations of magic, the invisibility and essentiality of the work it takes to change/save/destroy the world, and an epic saga sung to the part of our soul that wishes to stroke our beard and sunder our staff upon the very mountainside. Take heed, o master of these most potent arts - the legend of your wizardry awaits within this very book!\u201d\n\u2014 Brennan Lee Mulligan, Dimension 20\n"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:jzrivje4jpom2zofkug2r62f/app.bsky.feed.post/3mp47pgkrhc2u",
       "source": "bluesky",
       "author": {
@@ -102,8 +134,8 @@
       },
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 7,
-      "repostCount": 186,
-      "likeCount": 916,
+      "repostCount": 189,
+      "likeCount": 930,
       "embed": {
         "type": "images",
         "images": [
@@ -221,8 +253,8 @@
       },
       "indexedAt": "2026-06-23T23:31:46.967Z",
       "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 61,
+      "repostCount": 14,
+      "likeCount": 64,
       "embed": {
         "type": "external",
         "uri": "https://tabletop.events/conventions/between-two-cairns",
@@ -354,7 +386,7 @@
       "indexedAt": "2026-06-21T16:11:43.960Z",
       "replyCount": 2,
       "repostCount": 21,
-      "likeCount": 63,
+      "likeCount": 62,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/06/the-secret-history-of-castle-automatic.html",
@@ -523,125 +555,6 @@
         "title": "Writing in Canon Settings (microblog)",
         "description": "Working on the Middle-earth Hexcrawl Project  has made me want to articulate some brief thoughts I've had on writing material for canon sett...",
         "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3moimps3rpc24",
-      "source": "bluesky",
-      "author": {
-        "handle": "penflower-ink.bsky.social",
-        "displayName": "Penflower Ink",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic6je44q4aaogk7ic5urcpntratsg5pom4o5zs4pp5odiv6kcovlq"
-      },
-      "record": {
-        "text": "Just published the print version of my latest system-neutral / ALBO system setting: A Fruit-Moon For Bugworld.",
-        "createdAt": "2026-06-17T15:25:30.552Z"
-      },
-      "indexedAt": "2026-06-17T15:25:38.165Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 2,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreidnpm2n42dehc7zf2tr3yong43o6mnvtfn3zdmy6y7i7se6vzvcoa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreidnpm2n42dehc7zf2tr3yong43o6mnvtfn3zdmy6y7i7se6vzvcoa",
-            "alt": "Photo of the print version of a Fruit-Moon For Bugworld, on a wooden surface, surrounded by colourful d10s. An insectoid astronaut plants the flag of Bugworld on the surface of a pink and purple berry-shaped moon."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3moikbl2nck22",
-      "source": "bluesky",
-      "author": {
-        "handle": "bastionland.bsky.social",
-        "displayName": "Bastionland Press",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
-      },
-      "record": {
-        "text": "You didn't name the game that just for a dumb joke, did you?\n\nMe: youtu.be/XOQBu7GN7sU",
-        "createdAt": "2026-06-17T14:41:45.930Z"
-      },
-      "indexedAt": "2026-06-17T14:41:46.271Z",
-      "replyCount": 19,
-      "repostCount": 87,
-      "likeCount": 289,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/XOQBu7GN7sU",
-        "title": "Intergalactic Bastionland Teaser",
-        "description": "YouTube video by Bastionland",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreicl7ljmkhxjp4bwtflao626cnhyle3yyockw66yvskpbj3ly2yygi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:k47vy74cguxh3uxwg2phz7ni/app.bsky.feed.post/3moe2mkhrp22k",
-      "source": "bluesky",
-      "author": {
-        "handle": "batfeula.bsky.social",
-        "displayName": "Batfeula",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k47vy74cguxh3uxwg2phz7ni/bafkreidpwdlqnayi5f4fgtcmt7lh4safvzu7gknfxt4z2oautblacnys44"
-      },
-      "record": {
-        "text": "A couple of weeks ago I've made a page on my website about my relationship with the MyFamicaseExhibition, detailing the various entries that made it and even those that were rejected.\nIf you're interested, it's just a two-minute read :)\n\nbatfeula.neocities.org/stuff/famica...",
-        "createdAt": "2026-06-15T19:50:55.588Z"
-      },
-      "indexedAt": "2026-06-15T19:50:58.466Z",
-      "replyCount": 2,
-      "repostCount": 14,
-      "likeCount": 54,
-      "embed": {
-        "type": "external",
-        "uri": "https://batfeula.neocities.org/stuff/famicase/",
-        "title": "BATFEULA",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k47vy74cguxh3uxwg2phz7ni/bafkreihpubyetat6sfhndagnh6mwl25u2fpoolcfsamciiklo5ydt25ifm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:nlrc4om4jnummdbhkbi45skc/app.bsky.feed.post/3modkoftdz225",
-      "source": "bluesky",
-      "author": {
-        "handle": "alexrineh.art",
-        "displayName": "Alex: CYBERRATS kickstarting IN SPACE",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nlrc4om4jnummdbhkbi45skc/bafkreihw3b453pf4wke2etouo33s4qji3susdilu2g6k6shjv2dfcpb5ai"
-      },
-      "record": {
-        "text": "Cyberrats in Space is LIVE ON KICKSTARTER!\n\nGet this game of fast, tactical combat, revenge in space, and giant rats in giant mechs!\n\nwww.kickstarter.com/projects/201...",
-        "createdAt": "2026-06-15T15:05:37.965Z"
-      },
-      "indexedAt": "2026-06-15T15:05:40.660Z",
-      "replyCount": 2,
-      "repostCount": 146,
-      "likeCount": 193,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/2018387307/cyberrats-in-space",
-        "title": "Cyberrats in Space",
-        "description": "Rats. Mechs. Revenge.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nlrc4om4jnummdbhkbi45skc/bafkreia6ovl27hwflze6iaa5qycsty5tta7xgcuvcrfru5ssmnoirchwre"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
