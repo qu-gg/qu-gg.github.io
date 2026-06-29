@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T00:24:25.343919Z",
+  "lastUpdated": "2026-06-29T13:19:30.423947Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,53 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mpear6de4s2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "Terminal State is open for late backers! \n\nTerminal State is our cyberpunk TTRPG powered by the Year Zero Engine from Free League - used in games like Alien, Forbidden Lands, Coriolis, Vaesen, and Invincible.\n\nMore info at link in bio (and on Kickstarter, below):\n\nwww.kickstarter.com/projects/cve...",
+        "createdAt": "2026-06-28T15:06:04.710Z"
+      },
+      "indexedAt": "2026-06-28T15:06:08.167Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 6,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreie4jpujy22slkghjl4yhmwiumqipsv7acjluzfhtgel2xouikpvuy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreie4jpujy22slkghjl4yhmwiumqipsv7acjluzfhtgel2xouikpvuy",
+            "alt": "Front and back cover images for Terminal State, a cyberpunk tabletop roleplaying game powered by the Year Zero Engine, now available on Kickstarter for late backers."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiexq3rrp3gqqj7doiy6d43ghwd5q66tnalcvzhxz4ziw3pi4oqff4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiexq3rrp3gqqj7doiy6d43ghwd5q66tnalcvzhxz4ziw3pi4oqff4",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigandlnetsiyj2g654t2wvrhu3fyqj7rql4vrorh33mwxxqghweru",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigandlnetsiyj2g654t2wvrhu3fyqj7rql4vrorh33mwxxqghweru",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigpgvufp5lovwak54iygh3ftrqckdp6wluzupbkopmkdqewqlvfoe",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigpgvufp5lovwak54iygh3ftrqckdp6wluzupbkopmkdqewqlvfoe",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mpe7kgm2ok2s",
       "source": "bluesky",
       "author": {
@@ -64,9 +111,9 @@
         "createdAt": "2026-06-28T14:44:24.762Z"
       },
       "indexedAt": "2026-06-28T14:44:36.565Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 44,
+      "replyCount": 2,
+      "repostCount": 19,
+      "likeCount": 58,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +144,8 @@
       },
       "indexedAt": "2026-06-27T21:20:07.575Z",
       "replyCount": 2,
-      "repostCount": 25,
-      "likeCount": 22,
+      "repostCount": 26,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -129,8 +176,8 @@
       },
       "indexedAt": "2026-06-27T03:49:10.263Z",
       "replyCount": 0,
-      "repostCount": 31,
-      "likeCount": 37,
+      "repostCount": 40,
+      "likeCount": 46,
       "embed": {
         "type": "external",
         "uri": "https://vgen.co/Devaunbeats",
@@ -159,7 +206,7 @@
       "indexedAt": "2026-06-26T23:32:14.069Z",
       "replyCount": 3,
       "repostCount": 18,
-      "likeCount": 67,
+      "likeCount": 68,
       "embed": {
         "type": "images",
         "images": [
@@ -190,8 +237,8 @@
       },
       "indexedAt": "2026-06-26T14:24:51.771Z",
       "replyCount": 10,
-      "repostCount": 80,
-      "likeCount": 238,
+      "repostCount": 93,
+      "likeCount": 277,
       "embed": {
         "type": "images",
         "images": [
@@ -630,35 +677,6 @@
       }
     },
     {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mokusx5czc2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "I wrote this back in January when I read some grousing against random results in TTRPGs. Then I did what should be standard practice when engaging with online discourse: I waited 5 months (now) to post my very short response. A defense of surprise eggs!\n#ttrpg #osr",
-        "createdAt": "2026-06-18T12:55:45.921Z"
-      },
-      "indexedAt": "2026-06-18T12:55:48.068Z",
-      "replyCount": 7,
-      "repostCount": 15,
-      "likeCount": 58,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.prismaticwasteland.com/blog/so-youre-too-good-for-a-surprise-egg",
-        "title": "So You\u2019re Too Good For A Surprise Egg? \u2014 Prismatic Wasteland",
-        "description": "There is a contrarian hot take chestnut that gets bandied about occasionally against the prevalence of randomness in roleplaying games. I articulate a simple counter-counterargument in favor of the ma...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiba6ifovd347sdxuvm7nqg6jww7lwe25wgrdo33ud67pq4tiytcfq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/BkxK1D",
       "source": "artstation",
       "author": {
@@ -737,7 +755,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 77,
-      "likeCount": 528,
+      "likeCount": 529,
       "embed": {
         "type": "images",
         "images": [
@@ -2329,8 +2347,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1249,
-      "likeCount": 6560,
+      "repostCount": 1248,
+      "likeCount": 6559,
       "embed": {
         "type": "images",
         "images": [
@@ -2754,8 +2772,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
-      "repostCount": 1957,
-      "likeCount": 8490,
+      "repostCount": 1956,
+      "likeCount": 8489,
       "embed": {
         "type": "images",
         "images": [
@@ -3287,8 +3305,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1880,
-      "likeCount": 8986,
+      "repostCount": 1879,
+      "likeCount": 8985,
       "embed": {
         "type": "images",
         "images": [
