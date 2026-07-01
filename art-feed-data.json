@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T12:34:19.760824Z",
+  "lastUpdated": "2026-07-01T00:25:20.854055Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,128 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mpjp5maes225",
+      "source": "bluesky",
+      "author": {
+        "handle": "ipr.bsky.social",
+        "displayName": "Indie Press Revolution",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
+      },
+      "record": {
+        "text": "New at IPR!\n\nBREAK!! Core Rules (Standard Edition)\n\n(We'll also have it in Booth 449 at Gen Con 2026)\n\nwww.indiepressrevolution.com/xcart/",
+        "createdAt": "2026-06-30T19:06:53.006Z"
+      },
+      "indexedAt": "2026-06-30T19:06:56.624Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 26,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiapkll2jfse4ydiyx5fw6rzpef72coqic5p7sdf5l673r3l5ad3iy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiapkll2jfse4ydiyx5fw6rzpef72coqic5p7sdf5l673r3l5ad3iy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:vre5tdog4sb7yvu32eg3t3tu/app.bsky.feed.post/3mpjmq3dfjk2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "junkfoodgames.bsky.social",
+        "displayName": "Chris | Junk Food Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vre5tdog4sb7yvu32eg3t3tu/bafkreihycmrsd6krmtp2axs2lxfvln5sbcqtzneblb6zne7pyaeft5pswu"
+      },
+      "record": {
+        "text": "Hey! Are you a game designer in the DMV area? \n\nWe have a small collective called Designed in the DMV!\n\nCheck it out! Most online discussion we do is on discord \n\nwww.designedinthedmv.org",
+        "createdAt": "2026-06-30T18:23:31.607Z"
+      },
+      "indexedAt": "2026-06-30T18:23:33.529Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.designedinthedmv.org/",
+        "title": "DESIGNED IN THE DMV",
+        "description": "Designed In the DMV is an organization of people who make tabletop (physical) games in the DC-Maryland-Virginia area. We include writers, artists, visual designers, dicemakers, GMs, and anyone else...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vre5tdog4sb7yvu32eg3t3tu/bafkreigybwyktrktdlkyf7rfqxlgdoyyltxv4ry5nujx3nwx6ahq2f2us4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mpjauf3upc2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "sandroad.moe",
+        "displayName": "Sandro AD \ud83c\udfb2\ud83c\udfb2\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreicplybwss5bjwk7vrdmdhkvu23eb2gjy5s2xq25f6jouskda5w4sm"
+      },
+      "record": {
+        "text": "!! BLOG POST TIME !!\n\nCombat can be a central part of a lot of games! Some people prefer the precise and balanced \"Combat as Sport\" where others yearn for the tactical infinity of \"Combat as War.\" For me though? I seek out \"Combat as Art\"...\n\nwww.failforward.moe/2026/06/comb...",
+        "createdAt": "2026-06-30T14:51:11.131Z"
+      },
+      "indexedAt": "2026-06-30T14:51:28.238Z",
+      "replyCount": 3,
+      "repostCount": 17,
+      "likeCount": 42,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreibnjxykvt3mw5s3jp3mrcfpvsdwoxps7cqlciypfm2tui5iuwgafi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreibnjxykvt3mw5s3jp3mrcfpvsdwoxps7cqlciypfm2tui5iuwgafi",
+            "alt": "Cloud Strife fighting the Scorpion Sentinel in FF7 remake (one of my all time favorite boss fights) with the headline \"Combat as Art\""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:usezbb2cohjled4swmcqqcyu/app.bsky.feed.post/3mpj5pxtook25",
+      "source": "bluesky",
+      "author": {
+        "handle": "thebeardedhalfling.bsky.social",
+        "displayName": "The Bearded Halfling",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:usezbb2cohjled4swmcqqcyu/bafkreigbdnerl7xfkj73uk22fnd4ztigc5wuci3tjta7leolhw3qhez6ke"
+      },
+      "record": {
+        "text": "The Shadows of the Labyrinth is now live on Pre-Launch on Kickstarter!\n\nThis 5e/5.5e one-shot is inspired by the myths and history of Classical Greece as you explore the OG Dungeon Crawl.\n\nThe Labyrinth of Minos.\n\nBut what twisted shadows lay at its very heart?\n\nwww.kickstarter.com/projects/170...",
+        "createdAt": "2026-06-30T13:55:01.818Z"
+      },
+      "indexedAt": "2026-06-30T13:55:05.459Z",
+      "replyCount": 2,
+      "repostCount": 13,
+      "likeCount": 21,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/1702185397/the-shadows-of-the-labyrinth",
+        "title": "Coming soon: The Shadows of the Labyrinth",
+        "description": "A 5e one-shot inspired by the myths and history of Classical Greece, with an Eldritch Twist.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:usezbb2cohjled4swmcqqcyu/bafkreibeniyzssfvm6ofyo2f7b3zk65fdev4imaquwmsfgf6qpcag7lt5a"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:c45er5gruigwp3yqcptz6hv4/app.bsky.feed.post/3mphbainnuk2l",
       "source": "bluesky",
       "author": {
@@ -65,8 +187,8 @@
       },
       "indexedAt": "2026-06-29T19:52:43.727Z",
       "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 25,
+      "repostCount": 9,
+      "likeCount": 27,
       "embed": {
         "type": "external",
         "uri": "http://idlecartulary.com/2026/06/29/i-read-full-send-a-game-of-mountaineering/",
@@ -94,8 +216,8 @@
       },
       "indexedAt": "2026-06-29T17:49:51.532Z",
       "replyCount": 2,
-      "repostCount": 7,
-      "likeCount": 26,
+      "repostCount": 8,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -125,9 +247,9 @@
         "createdAt": "2026-06-29T16:43:59.553Z"
       },
       "indexedAt": "2026-06-29T16:44:02.019Z",
-      "replyCount": 1,
-      "repostCount": 28,
-      "likeCount": 116,
+      "replyCount": 2,
+      "repostCount": 29,
+      "likeCount": 120,
       "embed": {
         "type": "images",
         "images": [
@@ -158,8 +280,8 @@
       },
       "indexedAt": "2026-06-29T15:47:08.170Z",
       "replyCount": 5,
-      "repostCount": 34,
-      "likeCount": 113,
+      "repostCount": 35,
+      "likeCount": 117,
       "embed": {
         "type": "images",
         "images": [
@@ -237,7 +359,7 @@
       },
       "indexedAt": "2026-06-28T14:44:36.565Z",
       "replyCount": 2,
-      "repostCount": 23,
+      "repostCount": 25,
       "likeCount": 65,
       "embed": {
         "type": "images",
@@ -330,8 +452,8 @@
       },
       "indexedAt": "2026-06-27T03:49:10.263Z",
       "replyCount": 0,
-      "repostCount": 49,
-      "likeCount": 58,
+      "repostCount": 50,
+      "likeCount": 59,
       "embed": {
         "type": "external",
         "uri": "https://vgen.co/Devaunbeats",
@@ -392,7 +514,7 @@
       "indexedAt": "2026-06-26T14:24:51.771Z",
       "replyCount": 10,
       "repostCount": 97,
-      "likeCount": 297,
+      "likeCount": 298,
       "embed": {
         "type": "images",
         "images": [
@@ -461,7 +583,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 7,
       "repostCount": 191,
-      "likeCount": 939,
+      "likeCount": 940,
       "embed": {
         "type": "images",
         "images": [
@@ -521,8 +643,8 @@
       },
       "indexedAt": "2026-06-24T12:23:53.368Z",
       "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 49,
+      "repostCount": 15,
+      "likeCount": 51,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/call_to_action/09f86217-a189-4886-815e-959d46a91134/landing?ref=bk-discover-homepage",
@@ -624,109 +746,6 @@
       }
     },
     {
-      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mov7qkyiqs2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
-      },
-      "record": {
-        "text": "The wild Axebeak.",
-        "createdAt": "2026-06-22T15:37:54.592Z"
-      },
-      "indexedAt": "2026-06-22T15:38:11.260Z",
-      "replyCount": 10,
-      "repostCount": 36,
-      "likeCount": 168,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihrgij5pcqponswa5admctzh5ixamgkociceilbrudhl2r5vhfiae",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreihrgij5pcqponswa5admctzh5ixamgkociceilbrudhl2r5vhfiae",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:sy5uusg54udytd64rmcrgy5s/app.bsky.feed.post/3mosxcuvrsz2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "knaveofcups.com",
-        "displayName": "Knave of Cups",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreiawj6ho5vsqkmyodibfb72qri35lkr3k6724jrcjclv2hr5ryip3q"
-      },
-      "record": {
-        "text": "ARRIVING FRI from @binarystar.games \n\nAPOCALYPSE FRAME, badass mech battles\n\nValiant Horizon, channel a hero's soul to fight monsters\n\nCorpslayers, a cyberpunk homage to Gila RPGs' fantasy mercenary game Slayers",
-        "createdAt": "2026-06-21T18:01:45.801Z"
-      },
-      "indexedAt": "2026-06-21T18:01:46.373Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreifrtp4hu5jmg7wmntuibhypu4mgdca6jh225ri6dugebedruxwrna",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreifrtp4hu5jmg7wmntuibhypu4mgdca6jh225ri6dugebedruxwrna",
-            "alt": "The cover of APOCALYPSE FRAME by BINARY STAR GAMES. Image is a graphic novel-style black and white mech wielding a giant-ass gun"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreicqjyh7bbkxb5vyort3aiwpofsb4snb4ffh6yuj27g3tqlq7fdtkm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreicqjyh7bbkxb5vyort3aiwpofsb4snb4ffh6yuj27g3tqlq7fdtkm",
-            "alt": "The cover of Valiant Horizon by Binary Star Games. Minimalist. The title appears underlined in all caps through the center of the plain white page. A gleaming stylized golden sun shines behind the \"o\" in \"horizon\""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreif7xvucibxus3u2qjc7c2txorh6cxjiq3dxusjt2zs5wfzsi4gtcm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sy5uusg54udytd64rmcrgy5s/bafkreif7xvucibxus3u2qjc7c2txorh6cxjiq3dxusjt2zs5wfzsi4gtcm",
-            "alt": "The cover of Corpslayers by Binary Star Games. Minimalist. Plain white background with the title printed in a san serif, computer-like font on the upper 2/3 of the page. The letters are large and are divided into three lines: Corp (black ink), slay (red ink), ers. (red ink)"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mosr62q3i22s",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "I've written about my inspirations for my 100+ room, Metroidvania dungeon, The Castle Automatic",
-        "createdAt": "2026-06-21T16:11:41.720Z"
-      },
-      "indexedAt": "2026-06-21T16:11:43.960Z",
-      "replyCount": 2,
-      "repostCount": 21,
-      "likeCount": 62,
-      "embed": {
-        "type": "external",
-        "uri": "https://riseupcomus.blogspot.com/2026/06/the-secret-history-of-castle-automatic.html",
-        "title": "The Secret History of The Castle Automatic",
-        "description": "When Sean McCoy proposed the Dungeon23 project , I couldn't help but join in. I wrote two dungeons--one for  His Majesty the Worm  and one f...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifk24guhh5xqjvxzvosfw4eaajkswcbedm3eavgeysldwemzx47su"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/BkxK1D",
       "source": "artstation",
       "author": {
@@ -805,7 +824,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 77,
-      "likeCount": 531,
+      "likeCount": 532,
       "embed": {
         "type": "images",
         "images": [
@@ -3162,7 +3181,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 545,
-      "likeCount": 3040,
+      "likeCount": 3039,
       "embed": {
         "type": "images",
         "images": [
