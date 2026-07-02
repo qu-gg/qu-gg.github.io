@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T12:50:33.130739Z",
+  "lastUpdated": "2026-07-02T00:24:59.469844Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mpluete5xs23",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Updated HIS MAJESTY THE WORM's website today with links to an updated list of rules references and handouts!",
+        "createdAt": "2026-07-01T15:45:43.555Z"
+      },
+      "indexedAt": "2026-07-01T15:45:45.527Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 39,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.hismajestytheworm.games/#h.pfuql57d5pt9",
+        "title": "His Majesty the Worm",
+        "description": "His Majesty the Worm is a new-school game with old-school sensibilities: the classic megadungeon experience given fresh life through a focus on the mundanities and small moments of daily life inside t...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreienzycr6dy73h7genyadvd35irm3mzkrrw7vmxxdfuuarrbvno6va"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:eet3aptjrngr7dn3qsitafg7/app.bsky.feed.post/3mplpbqnd3c2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "izzypetersart.bsky.social",
+        "displayName": "Izzy.PNG | comms open",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreibpshb23kd6t5pu5hzrp5q577pwxvvgc657xwehxryesmx75jfsp4"
+      },
+      "record": {
+        "text": "It's July 1st and the core rules beta is now available! Please let me know what you think - the game is still malleable, and your thoughts are invaluable as I move into the playtesting phase. Stay safe out there, pilgrims; the collective needs you.\n\nizzypeters.itch.io/pilgrimsmoon",
+        "createdAt": "2026-07-01T14:14:31.337Z"
+      },
+      "indexedAt": "2026-07-01T14:14:32.220Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 19,
+      "embed": {
+        "type": "external",
+        "uri": "https://izzypeters.itch.io/pilgrimsmoon",
+        "title": "Pilgrim's Moon by izzypetersart@gmail.com",
+        "description": "An adventure TTRPG about reclaiming a moon lost to war",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigsenktwvzbhfkt4yrvuuvkpdj6hle4g7rzlc5e7yrwomdczdv5au"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mpjp5maes225",
       "source": "bluesky",
       "author": {
@@ -66,7 +124,7 @@
       "indexedAt": "2026-06-30T19:06:56.624Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 29,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +156,7 @@
       "indexedAt": "2026-06-30T18:23:33.529Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 7,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://www.designedinthedmv.org/",
@@ -158,8 +216,8 @@
       },
       "indexedAt": "2026-06-30T13:55:05.459Z",
       "replyCount": 2,
-      "repostCount": 14,
-      "likeCount": 23,
+      "repostCount": 15,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1702185397/the-shadows-of-the-labyrinth",
@@ -249,7 +307,7 @@
       "indexedAt": "2026-06-29T16:44:02.019Z",
       "replyCount": 2,
       "repostCount": 29,
-      "likeCount": 123,
+      "likeCount": 124,
       "embed": {
         "type": "images",
         "images": [
@@ -280,8 +338,8 @@
       },
       "indexedAt": "2026-06-29T15:47:08.170Z",
       "replyCount": 5,
-      "repostCount": 36,
-      "likeCount": 118,
+      "repostCount": 37,
+      "likeCount": 121,
       "embed": {
         "type": "images",
         "images": [
@@ -358,9 +416,9 @@
         "createdAt": "2026-06-28T14:44:24.762Z"
       },
       "indexedAt": "2026-06-28T14:44:36.565Z",
-      "replyCount": 2,
-      "repostCount": 25,
-      "likeCount": 65,
+      "replyCount": 3,
+      "repostCount": 26,
+      "likeCount": 67,
       "embed": {
         "type": "images",
         "images": [
@@ -420,8 +478,8 @@
       },
       "indexedAt": "2026-06-27T21:20:07.575Z",
       "replyCount": 2,
-      "repostCount": 28,
-      "likeCount": 26,
+      "repostCount": 29,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -583,7 +641,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 7,
       "repostCount": 193,
-      "likeCount": 948,
+      "likeCount": 954,
       "embed": {
         "type": "images",
         "images": [
@@ -606,7 +664,7 @@
       "author": {
         "handle": "gandergaming.bsky.social",
         "displayName": "Gander Gaming",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreig4eymt3zrbh2msulawpet22nbnrs422myhhyln5liunaul4uxz2a"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreib7g3zbtyco4nloiw3wzvlt7uh5p5onzdovs3tpyfalb37wtvjrem"
       },
       "record": {
         "text": "The Kickstarter is almost over?!\n\nIf you haven't checked it out yet, here's a bunch of links to show you what Grok?! 2e is all about.\n\nKickstarter - www.kickstarter.com/projects/gan...\nActual Play - youtu.be/Tu26wmY54kU?...\nRulebook Flip-Thru - youtu.be/zSRaDMY6QMg?...",
@@ -659,35 +717,6 @@
       }
     },
     {
-      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3moyp6p7kwc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "kywardkyoti.vtubers.social",
-        "displayName": "Kyward ~ Trash Dog",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigdmxdzig4clcgtcw37ytmaqezq7nrqlfilrdfkp6lsl2xbypoive"
-      },
-      "record": {
-        "text": "Woah, is that the first session of an Ennie Award Winning Game BREAK!! adventure on YT, yes it is! Im so thankful for my amazing players @claudiariegan.bsky.social @hecatahexer.bsky.social @lizzyluuna.bsky.social and the community crpytid Killarflame! www.youtube.com/watch?v=vVuu...",
-        "createdAt": "2026-06-24T00:52:13.925Z"
-      },
-      "indexedAt": "2026-06-24T00:52:15.776Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.youtube.com/watch?v=vVuuweYgN78",
-        "title": "BREAK!! Adventure: Project ~ False Promise Session 1",
-        "description": "YouTube video by Kyward",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiagtc4bixrwsquodfzejzxpkcjbnpbujlz7on3k2a6lf6p4vmgpjy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3moykoukclk2g",
       "source": "bluesky",
       "author": {
@@ -709,35 +738,6 @@
         "title": "Between Two Cons",
         "description": "",
         "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:6rvvqfuinw3oqza2okp3akxt/app.bsky.feed.post/3moxo4s5bls22",
-      "source": "bluesky",
-      "author": {
-        "handle": "outridercreative.bsky.social",
-        "displayName": "Ryan Lynch",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreihuco23wvsl275fvnoofa2sgnt724betl6mjhpgideipwwsjowlj4"
-      },
-      "record": {
-        "text": "Fresh hot Perils & Princesses community copies posted! When I get a payout, I look at my copies sold and match that amount for the community (plus a few extra). When you pay for a download, you're also buying one for a fellow community member and I think that's neat outrider-creative.itch.io",
-        "createdAt": "2026-06-23T15:00:36.628Z"
-      },
-      "indexedAt": "2026-06-23T15:00:39.161Z",
-      "replyCount": 0,
-      "repostCount": 27,
-      "likeCount": 49,
-      "embed": {
-        "type": "external",
-        "uri": "https://outrider-creative.itch.io/",
-        "title": "Outrider Creative",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6rvvqfuinw3oqza2okp3akxt/bafkreibvpwvm24amkkakprmgib5lelofz6trj5j7dlgiljdakdkbhsh25q"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1534,7 +1534,7 @@
       "indexedAt": "2026-05-12T03:29:11.666Z",
       "replyCount": 7,
       "repostCount": 146,
-      "likeCount": 1242,
+      "likeCount": 1241,
       "embed": {
         "type": "images",
         "images": [
@@ -1869,7 +1869,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1451,
-      "likeCount": 6331,
+      "likeCount": 6330,
       "embed": {
         "type": "images",
         "images": [
@@ -2418,7 +2418,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1248,
-      "likeCount": 6558,
+      "likeCount": 6557,
       "embed": {
         "type": "images",
         "images": [
@@ -2582,7 +2582,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 670,
-      "likeCount": 2958,
+      "likeCount": 2957,
       "embed": {
         "type": "images",
         "images": [
