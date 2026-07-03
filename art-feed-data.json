@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T12:34:09.140359Z",
+  "lastUpdated": "2026-07-03T00:22:15.611564Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,104 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mpocnm5qrc2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "GRIDSHOCK Zero Edition is coming to Gamefound later this year. A new, standalone TTRPG of superpowered resistance on the run, powered by Free League Publishing's acclaimed Year Zero Engine.\n\nFollow our preview page to be alerted when it launches.\ngamefound.com/en/projects/...",
+        "createdAt": "2026-07-02T15:06:29.858Z"
+      },
+      "indexedAt": "2026-07-02T15:06:31.121Z",
+      "replyCount": 2,
+      "repostCount": 7,
+      "likeCount": 10,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
+        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreibkltu2eo2srdfu7d3ao3tfqbwksufi6hprvzxmaurf4g5lskcmi4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:hrbxh6dwofaaqsthcfmmflnu/app.bsky.feed.post/3mpnpt6imkc22",
+      "source": "bluesky",
+      "author": {
+        "handle": "emielboven.itch.io",
+        "displayName": "Emiel Boven",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiax3t7z6wiwtzl4gbw3aldh6wp6pleofdcrjignrwvr46cqj3txae"
+      },
+      "record": {
+        "text": "My weird science-fantasy RPG zines The Electrum Archive are now 40% off on itch! \n\nIt has warlocks huffing magical ink to commune with the spirit realm, ancient crashed space ships, scheming merchant houses, and the apocalyptic threat of a fungal hivemind/plague.\n\nitch.io/s/189575/sum...",
+        "createdAt": "2026-07-02T09:29:35.761Z"
+      },
+      "indexedAt": "2026-07-02T09:29:40.924Z",
+      "replyCount": 6,
+      "repostCount": 79,
+      "likeCount": 311,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiecesmxwmrwspgwc7d2c73zgsr2l2ebnfnn66uewvzp2lv2rvzrym",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreiecesmxwmrwspgwc7d2c73zgsr2l2ebnfnn66uewvzp2lv2rvzrym",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreif2xvc44atz7sdqt7k673ynodxlsqpe3lhvlw5p6fpkchuxxlt4dy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hrbxh6dwofaaqsthcfmmflnu/bafkreif2xvc44atz7sdqt7k673ynodxlsqpe3lhvlw5p6fpkchuxxlt4dy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:modopigzjughcctwk5r5vlwk/app.bsky.feed.post/3mpmyni3djs23",
+      "source": "bluesky",
+      "author": {
+        "handle": "hecticelectron.bsky.social",
+        "displayName": "Hectic Electron is defying gods",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:modopigzjughcctwk5r5vlwk/bafkreiczzcp2adaldmf63ni3fs7djw6a767jm7meyxdk6jqtfeihi4nwqm"
+      },
+      "record": {
+        "text": "Rae Nedjadi is a brilliant designer and a dear friend. Help him recover! Grab this bundle on DriveThru. $25 gives you over $280 worth of games\u2014including Defy the Gods and Raccoon Sky Pirates! www.drivethrurpg.com/en/product/5...",
+        "createdAt": "2026-07-02T02:34:48.427Z"
+      },
+      "indexedAt": "2026-07-02T02:34:51.019Z",
+      "replyCount": 0,
+      "repostCount": 99,
+      "likeCount": 97,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:modopigzjughcctwk5r5vlwk/bafkreigleb53hje2fy4wedmpyrnknd6mj4txakvrsl6awtkbcietdmllue",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:modopigzjughcctwk5r5vlwk/bafkreigleb53hje2fy4wedmpyrnknd6mj4txakvrsl6awtkbcietdmllue",
+            "alt": "Rae Nedjadi recovery bundle, including Apocalypse Keys, Our Haunt, Once More into the Void, and many more titles"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mpluete5xs23",
       "source": "bluesky",
@@ -123,8 +221,8 @@
       },
       "indexedAt": "2026-06-30T19:06:56.624Z",
       "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 32,
+      "repostCount": 8,
+      "likeCount": 33,
       "embed": {
         "type": "images",
         "images": [
@@ -338,8 +436,8 @@
       },
       "indexedAt": "2026-06-29T15:47:08.170Z",
       "replyCount": 5,
-      "repostCount": 42,
-      "likeCount": 136,
+      "repostCount": 44,
+      "likeCount": 153,
       "embed": {
         "type": "images",
         "images": [
@@ -370,7 +468,7 @@
       },
       "indexedAt": "2026-06-28T15:06:08.167Z",
       "replyCount": 1,
-      "repostCount": 5,
+      "repostCount": 4,
       "likeCount": 8,
       "embed": {
         "type": "images",
@@ -641,7 +739,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 7,
       "repostCount": 193,
-      "likeCount": 956,
+      "likeCount": 958,
       "embed": {
         "type": "images",
         "images": [
@@ -680,64 +778,6 @@
         "title": "GROK?! 2e: A Gonzo Science Fantasy RPG",
         "description": "Grok?! is a [human made] rules-light science fantasy RPG in a post-apocalyptic world of advanced technomancy and boundless plausibility",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jnq3arn4s46wlxmzurhgrzmh/bafkreihn7p3lirtspazr4kfn5hgnrcfsqw54s74eywxan5262cioe77d34"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mozvtfpbss24",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "In July, Exalted Funeral is doing a Backerkit campaign for their games that won ENNIES last year--that includes HIS MAJESTY THE WORM. \n\nIf you've missed out on one of these games, make sure this is on your radar!",
-        "createdAt": "2026-06-24T12:23:51.007Z"
-      },
-      "indexedAt": "2026-06-24T12:23:53.368Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 51,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/call_to_action/09f86217-a189-4886-815e-959d46a91134/landing?ref=bk-discover-homepage",
-        "title": "Exalted Funeral ENnies 2025 Titles",
-        "description": "From Exalted Funeral - Exalted Funeral ENnies 2025 Titles",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreie7whxol47326gjuvkdwi3gttf26mxqrbfd7pumgqc7mzjkbtf2ou"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3moykoukclk2g",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "This weekend is Between Two Cons! Badges are sold out but you can still visit the vendor hall!\n\nCairn Press will be there, selling first and third party modules.\n\nIf I seem even more \"extra\" than usual, I apologize in advance. I'll be busy!\n\nSee you in Portland.\n\ntabletop.events/conventions/...",
-        "createdAt": "2026-06-23T23:31:47.900Z"
-      },
-      "indexedAt": "2026-06-23T23:31:46.967Z",
-      "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 66,
-      "embed": {
-        "type": "external",
-        "uri": "https://tabletop.events/conventions/between-two-cairns",
-        "title": "Between Two Cons",
-        "description": "",
-        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
