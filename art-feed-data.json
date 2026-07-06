@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T12:23:56.134794Z",
+  "lastUpdated": "2026-07-06T00:21:54.411516Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mpvsbumhc22l",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus - CASTLE AUTOMATIC Crowdfunding Now!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "This is a FLGS near me. To celebrate their 3 year anniversary, they're having a sale on everything until end of day tomorrow. Use the code \"Birthday\" at checkout for 15% savings. They've got one of the best selections of OSR and indie games on the East Coast. Check 'em out, why not?",
+        "createdAt": "2026-07-05T14:34:54.112Z"
+      },
+      "indexedAt": "2026-07-05T14:34:54.422Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 25,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.sabregamesandcards.com/products",
+        "title": "Products | Third Kingdom Games",
+        "description": "New and used role-playing games by a host of indie and mainstream publishers.",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:olgdygqf4ehy6qb3zpd6nbgs/app.bsky.feed.post/3mprfgkxils2c",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-07-03T20:34:16.326Z",
       "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 37,
+      "repostCount": 14,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +127,7 @@
       "indexedAt": "2026-07-03T17:51:32.421Z",
       "replyCount": 2,
       "repostCount": 9,
-      "likeCount": 49,
+      "likeCount": 50,
       "embed": {
         "type": "external",
         "uri": "https://distropolis.bandcamp.com/album/dream-shrine-the-familiar-house",
@@ -155,8 +184,8 @@
       },
       "indexedAt": "2026-07-02T09:29:40.924Z",
       "replyCount": 6,
-      "repostCount": 97,
-      "likeCount": 417,
+      "repostCount": 102,
+      "likeCount": 439,
       "embed": {
         "type": "images",
         "images": [
@@ -375,8 +404,8 @@
       },
       "indexedAt": "2026-06-30T13:55:05.459Z",
       "replyCount": 2,
-      "repostCount": 15,
-      "likeCount": 24,
+      "repostCount": 16,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/1702185397/the-shadows-of-the-labyrinth",
@@ -496,9 +525,9 @@
         "createdAt": "2026-06-29T15:47:05.195Z"
       },
       "indexedAt": "2026-06-29T15:47:08.170Z",
-      "replyCount": 5,
+      "replyCount": 6,
       "repostCount": 45,
-      "likeCount": 158,
+      "likeCount": 161,
       "embed": {
         "type": "images",
         "images": [
@@ -637,8 +666,8 @@
       },
       "indexedAt": "2026-06-27T21:20:07.575Z",
       "replyCount": 2,
-      "repostCount": 30,
-      "likeCount": 29,
+      "repostCount": 31,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -761,9 +790,9 @@
         "createdAt": "2026-06-25T01:53:36.586Z"
       },
       "indexedAt": "2026-06-25T01:53:39.070Z",
-      "replyCount": 7,
-      "repostCount": 193,
-      "likeCount": 961,
+      "replyCount": 10,
+      "repostCount": 198,
+      "likeCount": 970,
       "embed": {
         "type": "images",
         "images": [
@@ -3103,7 +3132,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2353,
-      "likeCount": 11882,
+      "likeCount": 11881,
       "embed": {
         "type": "images",
         "images": [
@@ -3439,7 +3468,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2660,
-      "likeCount": 15667,
+      "likeCount": 15666,
       "embed": {
         "type": "images",
         "images": [
