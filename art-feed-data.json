@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T00:23:22.614656Z",
+  "lastUpdated": "2026-07-07T12:43:23.930700Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,43 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ymmxvxa2etxmgcfq3m3vvibd/app.bsky.feed.post/3mpykjalbqk2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "carlydraws.bsky.social",
+        "displayName": "carlydraws",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreidf7iqzbfmx5plmdpwbbzfy6hhnkv7m7lcgnk7qn5pygkgotc46zy"
+      },
+      "record": {
+        "text": "COSMIC CORSAIRS \n\nA ttrpg of space battles, empires & rebels by @nerdburgercraig.bsky.social with art by me, out now! \n\nnerdburgergames.com/shop-2\n\nSuch a fun project! Drawing characters, locations, icons, weapons & more! Gave the art a classic painted 'adventure book' feel.\n\n#ttrpg #art",
+        "createdAt": "2026-07-06T16:53:50.796Z"
+      },
+      "indexedAt": "2026-07-06T16:53:50.230Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 12,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreibozhomewmh7vnwpjvrwaatfxqtxkzehdigphamoglnexajddlmj4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreibozhomewmh7vnwpjvrwaatfxqtxkzehdigphamoglnexajddlmj4",
+            "alt": "a character blasting lightning from their hands"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihdnwjmmmjtqjiuusy53daaw4lmdoijldl444tqvryoeudarq4l2e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihdnwjmmmjtqjiuusy53daaw4lmdoijldl444tqvryoeudarq4l2e",
+            "alt": "cosmic corsairs book cover"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mpykbxursl2e",
       "source": "bluesky",
       "author": {
@@ -94,8 +131,8 @@
       },
       "indexedAt": "2026-07-06T16:41:13.432Z",
       "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 31,
+      "repostCount": 10,
+      "likeCount": 39,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/exalted-funeral/exalted-funeral-2025-ennies-awards-winners-and-nominees",
@@ -151,9 +188,9 @@
         "createdAt": "2026-07-06T13:39:50.703Z"
       },
       "indexedAt": "2026-07-06T13:39:52.632Z",
-      "replyCount": 2,
-      "repostCount": 15,
-      "likeCount": 48,
+      "replyCount": 3,
+      "repostCount": 17,
+      "likeCount": 52,
       "embed": {
         "type": "images",
         "images": [
@@ -185,7 +222,7 @@
       "indexedAt": "2026-07-06T12:45:38.932Z",
       "replyCount": 2,
       "repostCount": 11,
-      "likeCount": 43,
+      "likeCount": 44,
       "embed": {
         "type": "images",
         "images": [
@@ -281,7 +318,7 @@
       "indexedAt": "2026-07-05T14:34:54.422Z",
       "replyCount": 1,
       "repostCount": 7,
-      "likeCount": 26,
+      "likeCount": 27,
       "embed": {
         "type": "external",
         "uri": "https://www.sabregamesandcards.com/products",
@@ -309,8 +346,8 @@
       },
       "indexedAt": "2026-07-04T16:00:52.725Z",
       "replyCount": 0,
-      "repostCount": 15,
-      "likeCount": 17,
+      "repostCount": 14,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -430,9 +467,9 @@
         "createdAt": "2026-07-02T09:29:35.761Z"
       },
       "indexedAt": "2026-07-02T09:29:40.924Z",
-      "replyCount": 6,
-      "repostCount": 107,
-      "likeCount": 451,
+      "replyCount": 7,
+      "repostCount": 112,
+      "likeCount": 466,
       "embed": {
         "type": "images",
         "images": [
@@ -773,8 +810,8 @@
       },
       "indexedAt": "2026-06-29T15:47:08.170Z",
       "replyCount": 6,
-      "repostCount": 45,
-      "likeCount": 161,
+      "repostCount": 47,
+      "likeCount": 167,
       "embed": {
         "type": "images",
         "images": [
@@ -983,38 +1020,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreiezk3jtx3yjbvlkb2z7hgr6zf434fnrlksyvptqoyvtgduvb35fkm",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreiezk3jtx3yjbvlkb2z7hgr6zf434fnrlksyvptqoyvtgduvb35fkm",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:rzjgafeykxv4du7aw6nftltp/app.bsky.feed.post/3mp75jksakc2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "jdragsky.bsky.social",
-        "displayName": "jay Dragon \ud83d\udd1c Seven Part Pact",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreidhidim5eizmkmi36fer2tgyytizdpqmoid2khfcb7m77g3b5i4oq"
-      },
-      "record": {
-        "text": "Seven Part Pact is coming to kickstarter July 2026 ! it's a massive ambitious TTRPG about magic, masculinity, and power. here's what brennan lee mulligan has to say about it",
-        "createdAt": "2026-06-26T14:24:49.415Z"
-      },
-      "indexedAt": "2026-06-26T14:24:51.771Z",
-      "replyCount": 10,
-      "repostCount": 97,
-      "likeCount": 301,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreibvkp4hgzg5x4vx5gweaxb7onmqxr62oi2f46idas2pa7yc6cbzfq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreibvkp4hgzg5x4vx5gweaxb7onmqxr62oi2f46idas2pa7yc6cbzfq",
-            "alt": "\u201cIf you\u2019re a sucker for hoary tomes and dread grimoires, if your heart cries out for wicked homunculi and crafty familiars, if at the end of the day you\u2019re out here just trying to ponder some goddamn orbs, then Jay has crafted the perfect game for you. Seven Part Pact is a vast, robust, visceral game about the powers and limitations of magic, the invisibility and essentiality of the work it takes to change/save/destroy the world, and an epic saga sung to the part of our soul that wishes to stroke our beard and sunder our staff upon the very mountainside. Take heed, o master of these most potent arts - the legend of your wizardry awaits within this very book!\u201d\n\u2014 Brennan Lee Mulligan, Dimension 20\n"
           }
         ]
       },
