@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T12:28:31.170092Z",
+  "lastUpdated": "2026-07-09T00:22:43.675893Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mq56m4vmu22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "It's been rewarding to hear from people who liked the GRIDSHOCK 20XX zines and are excited about the upcoming Zero Edition rulebook. \n\nI don't think I've been asked if I'm going to GenCon to run it (or just hang out) before. I'm not, but it's nice to be asked.\n\ngamefound.com/en/projects/...",
+        "createdAt": "2026-07-08T13:04:01.416Z"
+      },
+      "indexedAt": "2026-07-08T13:04:05.939Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
+        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreibkltu2eo2srdfu7d3ao3tfqbwksufi6hprvzxmaurf4g5lskcmi4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mq4zt5lxs22i",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-07-08T11:38:29.828Z",
       "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 9,
+      "repostCount": 11,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +126,8 @@
       },
       "indexedAt": "2026-07-07T15:13:11.131Z",
       "replyCount": 3,
-      "repostCount": 21,
-      "likeCount": 32,
+      "repostCount": 22,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -130,7 +159,7 @@
       "indexedAt": "2026-07-07T13:52:17.922Z",
       "replyCount": 2,
       "repostCount": 9,
-      "likeCount": 41,
+      "likeCount": 48,
       "embed": {
         "type": "images",
         "images": [
@@ -166,8 +195,8 @@
       },
       "indexedAt": "2026-07-06T16:53:50.230Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 12,
+      "repostCount": 7,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -323,7 +352,7 @@
       "indexedAt": "2026-07-06T12:45:38.932Z",
       "replyCount": 2,
       "repostCount": 11,
-      "likeCount": 45,
+      "likeCount": 46,
       "embed": {
         "type": "images",
         "images": [
@@ -349,7 +378,7 @@
         "avatar": null
       },
       "record": {
-        "text": "Kelpies\n\nspecies design \n\nThanks everyone who gave advice and feedback",
+        "text": "Kelpies\n\nspecies design \n\nThanks everyone who gave advice and feedback, special shoutout to Kit (Kitkaloid) for some great back and forth + feedback",
         "createdAt": "2026-07-06T10:58:11-05:00"
       },
       "indexedAt": "2026-07-06T10:58:11-05:00",
@@ -920,53 +949,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreichksvhzhaz63wlw2u2bxp2b2p7f4g7rghmzx777cp3m7cws3nhli",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreichksvhzhaz63wlw2u2bxp2b2p7f4g7rghmzx777cp3m7cws3nhli",
             "alt": "a sleepy maiden with starfish and jellyfishes, holding a sword"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mpear6de4s2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "Terminal State is open for late backers! \n\nTerminal State is our cyberpunk TTRPG powered by the Year Zero Engine from Free League - used in games like Alien, Forbidden Lands, Coriolis, Vaesen, and Invincible.\n\nMore info at link in bio (and on Kickstarter, below):\n\nwww.kickstarter.com/projects/cve...",
-        "createdAt": "2026-06-28T15:06:04.710Z"
-      },
-      "indexedAt": "2026-06-28T15:06:08.167Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 9,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreie4jpujy22slkghjl4yhmwiumqipsv7acjluzfhtgel2xouikpvuy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreie4jpujy22slkghjl4yhmwiumqipsv7acjluzfhtgel2xouikpvuy",
-            "alt": "Front and back cover images for Terminal State, a cyberpunk tabletop roleplaying game powered by the Year Zero Engine, now available on Kickstarter for late backers."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiexq3rrp3gqqj7doiy6d43ghwd5q66tnalcvzhxz4ziw3pi4oqff4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiexq3rrp3gqqj7doiy6d43ghwd5q66tnalcvzhxz4ziw3pi4oqff4",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigandlnetsiyj2g654t2wvrhu3fyqj7rql4vrorh33mwxxqghweru",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigandlnetsiyj2g654t2wvrhu3fyqj7rql4vrorh33mwxxqghweru",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigpgvufp5lovwak54iygh3ftrqckdp6wluzupbkopmkdqewqlvfoe",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreigpgvufp5lovwak54iygh3ftrqckdp6wluzupbkopmkdqewqlvfoe",
-            "alt": ""
           }
         ]
       },
@@ -2017,35 +1999,6 @@
       }
     },
     {
-      "uri": "at://did:plc:cvn5j5b2m67qoghk7ixqkhtj/app.bsky.feed.post/3mkn7a4b5pc2w",
-      "source": "bluesky",
-      "author": {
-        "handle": "dgchapman.bsky.social",
-        "displayName": "D G Chapman",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreihqugoeyufcsebs6rvpcmchq6cacd63mknoy3yj56zvcz7enroese"
-      },
-      "record": {
-        "text": "folks are calling it the Lee Carvallo's Putting Challenge of ttrpgs",
-        "createdAt": "2026-04-29T13:26:37.881Z"
-      },
-      "indexedAt": "2026-04-29T13:26:41.360Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://store.possibleworldsgames.com/product/gogogolf",
-        "title": "GoGoGolf!",
-        "description": "Possible Worlds Games' first publishing partnership is D. G. Chapman's GoGoGolf! Explore, solve problems, and defeat monsters in this rules-lite TTRPG all about golf! Playing as golf-obsessed wizards,...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cvn5j5b2m67qoghk7ixqkhtj/bafkreiatouwmsbhbjuozwdsufonslsowj72vonpqhwxlb2ps2i7botvxpm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
       "author": {
@@ -2133,7 +2086,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1449,
-      "likeCount": 6327,
+      "likeCount": 6326,
       "embed": {
         "type": "images",
         "images": [
