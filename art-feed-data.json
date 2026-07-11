@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T12:41:53.408108Z",
+  "lastUpdated": "2026-07-11T00:17:49.923658Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mqctgmb3u22g",
+      "source": "bluesky",
+      "author": {
+        "handle": "mythworks.bsky.social",
+        "displayName": "Mythworks is making the Myth Work",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiaep2xkqejvvc3ra2sy73p2lot43nfz6espzjlx3j5egkdwt3k3ym"
+      },
+      "record": {
+        "text": "Pico and Crescent 2E have BOTH been nominated for ENNIE Awards in Best Family Game!\n\ud83d\udc1b \ud83c\udf19 \nThe Public Voting for the ENNIES is now LIVE!\nvote.ennie-awards.com/vote/2026\n\nAnyone can vote, so please share the ballot, too!",
+        "createdAt": "2026-07-10T19:00:03.464Z"
+      },
+      "indexedAt": "2026-07-10T19:00:07.670Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 14,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreihtxzfemgqcballsr566zva7xz7s3wjakx23vvlii7ds4zqs3i2b4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreihtxzfemgqcballsr566zva7xz7s3wjakx23vvlii7ds4zqs3i2b4",
+            "alt": "The word \"Pico\" is above a cute cartoon bug and the words \"Crescent 2e feelings-delving role-playing\" above a child riding a cute cartoon dragon. The middle text reads \"Best Family Game!\" and \"ENNIES Tabletop RPG Awards 2026 Nominee\" (Colorful background bubbles for emphasis)"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:qtu5u37sum46z6z47m4kwmdg/app.bsky.feed.post/3mqcqyqewck2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "cozyrpgreviews.bsky.social",
+        "displayName": "Robin J",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qtu5u37sum46z6z47m4kwmdg/bafkreidotxzvrsio6z2blecacavg4uvurzvqo23p37a33mqvl2jf23gysi"
+      },
+      "record": {
+        "text": "Hey, so... ENNIE voting is now live!\n\nSome awesome games, tools & content on the list, and definitely look at the new Best Solo Game category. \n\nUnder that you'll see \"Best Streaming Content\" and maybe bear me in mind while you're there <3\n\nvote.ennie-awards.com/vote/2026/",
+        "createdAt": "2026-07-10T18:16:30.537Z"
+      },
+      "indexedAt": "2026-07-10T18:16:31.469Z",
+      "replyCount": 3,
+      "repostCount": 8,
+      "likeCount": 18,
+      "embed": {
+        "type": "external",
+        "uri": "https://vote.ennie-awards.com/vote/2026/",
+        "title": "",
+        "description": "Before voting, please take the time to familiarize yourself with the products and judges. Clicking on a product's title will take you to its publisher's websites, allowing you to learn more about that product.",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mq7svn3g3k2d",
       "source": "bluesky",
       "author": {
@@ -65,8 +126,8 @@
       },
       "indexedAt": "2026-07-09T14:12:37.723Z",
       "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 11,
+      "repostCount": 10,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/products/7035/skies-above-song-in-the-mist",
@@ -94,8 +155,8 @@
       },
       "indexedAt": "2026-07-09T12:30:07.028Z",
       "replyCount": 3,
-      "repostCount": 28,
-      "likeCount": 67,
+      "repostCount": 30,
+      "likeCount": 71,
       "embed": {
         "type": "images",
         "images": [
@@ -783,125 +844,6 @@
         "title": "His Majesty the Worm",
         "description": "His Majesty the Worm is a new-school game with old-school sensibilities: the classic megadungeon experience given fresh life through a focus on the mundanities and small moments of daily life inside t...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreienzycr6dy73h7genyadvd35irm3mzkrrw7vmxxdfuuarrbvno6va"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:eet3aptjrngr7dn3qsitafg7/app.bsky.feed.post/3mplpbqnd3c2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "izzypetersart.bsky.social",
-        "displayName": "Izzy.PNG | comms open",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreibpshb23kd6t5pu5hzrp5q577pwxvvgc657xwehxryesmx75jfsp4"
-      },
-      "record": {
-        "text": "It's July 1st and the core rules beta is now available! Please let me know what you think - the game is still malleable, and your thoughts are invaluable as I move into the playtesting phase. Stay safe out there, pilgrims; the collective needs you.\n\nizzypeters.itch.io/pilgrimsmoon",
-        "createdAt": "2026-07-01T14:14:31.337Z"
-      },
-      "indexedAt": "2026-07-01T14:14:32.220Z",
-      "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 19,
-      "embed": {
-        "type": "external",
-        "uri": "https://izzypeters.itch.io/pilgrimsmoon",
-        "title": "Pilgrim's Moon by izzypetersart@gmail.com",
-        "description": "An adventure TTRPG about reclaiming a moon lost to war",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigsenktwvzbhfkt4yrvuuvkpdj6hle4g7rzlc5e7yrwomdczdv5au"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mpjp5maes225",
-      "source": "bluesky",
-      "author": {
-        "handle": "ipr.bsky.social",
-        "displayName": "Indie Press Revolution",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
-      },
-      "record": {
-        "text": "New at IPR!\n\nBREAK!! Core Rules (Standard Edition)\n\n(We'll also have it in Booth 449 at Gen Con 2026)\n\nwww.indiepressrevolution.com/xcart/",
-        "createdAt": "2026-06-30T19:06:53.006Z"
-      },
-      "indexedAt": "2026-06-30T19:06:56.624Z",
-      "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 33,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiapkll2jfse4ydiyx5fw6rzpef72coqic5p7sdf5l673r3l5ad3iy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiapkll2jfse4ydiyx5fw6rzpef72coqic5p7sdf5l673r3l5ad3iy",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:vre5tdog4sb7yvu32eg3t3tu/app.bsky.feed.post/3mpjmq3dfjk2c",
-      "source": "bluesky",
-      "author": {
-        "handle": "junkfoodgames.bsky.social",
-        "displayName": "Chris | Junk Food Games",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vre5tdog4sb7yvu32eg3t3tu/bafkreihycmrsd6krmtp2axs2lxfvln5sbcqtzneblb6zne7pyaeft5pswu"
-      },
-      "record": {
-        "text": "Hey! Are you a game designer in the DMV area? \n\nWe have a small collective called Designed in the DMV!\n\nCheck it out! Most online discussion we do is on discord \n\nwww.designedinthedmv.org",
-        "createdAt": "2026-06-30T18:23:31.607Z"
-      },
-      "indexedAt": "2026-06-30T18:23:33.529Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 11,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.designedinthedmv.org/",
-        "title": "DESIGNED IN THE DMV",
-        "description": "Designed In the DMV is an organization of people who make tabletop (physical) games in the DC-Maryland-Virginia area. We include writers, artists, visual designers, dicemakers, GMs, and anyone else...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vre5tdog4sb7yvu32eg3t3tu/bafkreigybwyktrktdlkyf7rfqxlgdoyyltxv4ry5nujx3nwx6ahq2f2us4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:usezbb2cohjled4swmcqqcyu/app.bsky.feed.post/3mpj5pxtook25",
-      "source": "bluesky",
-      "author": {
-        "handle": "thebeardedhalfling.bsky.social",
-        "displayName": "The Bearded Halfling - KS is now Live",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:usezbb2cohjled4swmcqqcyu/bafkreigbdnerl7xfkj73uk22fnd4ztigc5wuci3tjta7leolhw3qhez6ke"
-      },
-      "record": {
-        "text": "The Shadows of the Labyrinth is now live on Pre-Launch on Kickstarter!\n\nThis 5e/5.5e one-shot is inspired by the myths and history of Classical Greece as you explore the OG Dungeon Crawl.\n\nThe Labyrinth of Minos.\n\nBut what twisted shadows lay at its very heart?\n\nwww.kickstarter.com/projects/170...",
-        "createdAt": "2026-06-30T13:55:01.818Z"
-      },
-      "indexedAt": "2026-06-30T13:55:05.459Z",
-      "replyCount": 2,
-      "repostCount": 16,
-      "likeCount": 25,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/1702185397/the-shadows-of-the-labyrinth",
-        "title": "Coming soon: The Shadows of the Labyrinth",
-        "description": "A 5e one-shot inspired by the myths and history of Classical Greece, with an Eldritch Twist.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:usezbb2cohjled4swmcqqcyu/bafkreibeniyzssfvm6ofyo2f7b3zk65fdev4imaquwmsfgf6qpcag7lt5a"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2008,7 +1950,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1448,
-      "likeCount": 6321,
+      "likeCount": 6320,
       "embed": {
         "type": "images",
         "images": [
@@ -2204,7 +2146,7 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 764,
+      "repostCount": 763,
       "likeCount": 3895,
       "embed": {
         "type": "images",
@@ -2557,7 +2499,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1247,
-      "likeCount": 6555,
+      "likeCount": 6554,
       "embed": {
         "type": "images",
         "images": [
@@ -2720,8 +2662,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 670,
-      "likeCount": 2956,
+      "repostCount": 671,
+      "likeCount": 2957,
       "embed": {
         "type": "images",
         "images": [
@@ -3235,7 +3177,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2353,
-      "likeCount": 11879,
+      "likeCount": 11878,
       "embed": {
         "type": "images",
         "images": [
@@ -3515,7 +3457,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1878,
-      "likeCount": 8980,
+      "likeCount": 8978,
       "embed": {
         "type": "images",
         "images": [
@@ -3543,7 +3485,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 407,
-      "likeCount": 2371,
+      "likeCount": 2370,
       "embed": {
         "type": "images",
         "images": [
@@ -3571,7 +3513,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2660,
-      "likeCount": 15660,
+      "likeCount": 15659,
       "embed": {
         "type": "images",
         "images": [
