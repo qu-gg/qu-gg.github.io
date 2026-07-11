@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="break-style.css">
     <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <style>
         /* ===== Adversary Database Spreadsheet Styles ===== */
@@ -321,6 +322,430 @@
             font-size: 1rem;
         }
 
+        /* ===== Adversary Card ===== */
+        .adversary-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .adversary-card {
+            width: 600px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            overflow: hidden;
+            font-family: var(--font-body);
+        }
+
+        .adversary-card-title {
+            background: var(--accent);
+            color: #fff;
+            padding: 0.6rem 1rem;
+            border-bottom: 2px solid rgba(0,0,0,0.15);
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .adversary-card-name {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            flex: 1;
+        }
+
+        .adversary-card-badges {
+            display: flex;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .badge-rank {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+            background: rgba(255,255,255,0.25);
+            color: #fff;
+        }
+
+        .adversary-card-stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            padding: 0.6rem 0.5rem;
+            border-bottom: 2px solid var(--border);
+            background: var(--bg-primary);
+            gap: 0.5rem;
+        }
+
+        .adversary-stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 60px;
+            flex: 1;
+        }
+
+        .adversary-stat-label {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.15rem;
+        }
+
+        .adversary-stat-value {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+            text-align: center;
+            line-height: 1.4;
+            white-space: pre-line;
+        }
+
+        .adversary-stat-emoji {
+            font-size: 1.15rem;
+            margin-right: 0.25rem;
+        }
+
+        .aptitude-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 0.4rem 0.5rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+            gap: 0.3rem;
+        }
+
+        .aptitude-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 50px;
+        }
+
+        .aptitude-label-row {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-bottom: 0.2rem;
+        }
+
+        .aptitude-label {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .aptitude-value-inline {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .aptitude-bar-track {
+            width: 100%;
+            margin-top: 0.15rem;
+        }
+
+        .aptitude-bar-bg {
+            width: 100%;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .aptitude-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.2s;
+        }
+
+        .aptitude-bar-fill.m { background: #e06c75; }
+        .aptitude-bar-fill.d { background: #56b6c2; }
+        .aptitude-bar-fill.g { background: #c678dd; }
+        .aptitude-bar-fill.i { background: #d19a66; }
+        .aptitude-bar-fill.a { background: #98c379; }
+
+        .adversary-card-body {
+            padding: 0.85rem 1rem;
+        }
+
+        /* ===== Multi-Column Flow Layout ===== */
+        .adversary-card.two-column {
+            width: 900px;
+        }
+
+        .adversary-card.three-column {
+            width: 1200px;
+        }
+
+        .adversary-card-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .adversary-card-columns.three-col {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .body-column-left {
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .body-column-mid {
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .body-column-right {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* Padding wrapper for variable body sections inside columns */
+        .adversary-card-body-inner {
+            padding: 0.85rem 1rem;
+            flex: 1;
+        }
+
+        /* In multi-col mode, stats/aptitude bg only covers left col — keep transparent */
+        .adversary-card.two-column .adversary-card-stats,
+        .adversary-card.two-column .aptitude-row,
+        .adversary-card.two-column .adversary-allegiance-row,
+        .adversary-card.three-column .adversary-card-stats,
+        .adversary-card.three-column .aptitude-row,
+        .adversary-card.three-column .adversary-allegiance-row {
+            background: transparent;
+        }
+
+        /* Allegiance (Bright/Dark points) component */
+        .adversary-allegiance-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            padding: 0.4rem 0.5rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+        }
+
+        .alleg-label {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-right: 0.15rem;
+        }
+
+        .alleg-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.12rem 0.55rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .alleg-dark { background: #2d1b4e; color: #d8ccf0; }
+        .alleg-bright { background: #fdf0c8; color: #8a6d1a; }
+        .alleg-unaligned {
+            background: var(--border);
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .adversary-card-flavor {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.82rem;
+            line-height: 1.5;
+            margin: 0.6rem 0.75rem 0.3rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .adversary-card-weapon {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .adversary-card-weapon ul {
+            margin: 0.3rem 0 0 0;
+            padding-left: 1.2rem;
+        }
+
+        .adversary-card-weapon li {
+            margin-bottom: 0.2rem;
+            line-height: 1.4;
+        }
+
+        .adversary-section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin: 0.75rem 0 0.3rem;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .adversary-ability {
+            margin-bottom: 0.5rem;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .adversary-ability-name {
+            display: block;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--accent);
+            padding: 0.28rem 0.65rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .adversary-ability-flavor {
+            display: block;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.78rem;
+            padding: 0.3rem 0.65rem 0;
+            line-height: 1.4;
+        }
+
+        .adversary-ability-effects {
+            display: block;
+            padding: 0.3rem 0.65rem 0.4rem;
+        }
+
+        .adversary-info-grid {
+            column-count: 2;
+            column-gap: 1rem;
+            column-fill: balance;
+            margin-top: 0.5rem;
+        }
+
+        .adversary-info-item {
+            break-inside: avoid;
+            font-size: 0.8rem;
+            line-height: 1.45;
+            color: var(--text-primary);
+            margin-bottom: 0.35rem;
+        }
+
+        .adversary-info-label {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+
+        .adversary-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .adversary-card-footer .footer-label {
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-right: 0.2rem;
+        }
+
+        .adversary-card-credit {
+            margin-left: auto;
+            font-weight: 400;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .adversary-card-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-style: italic;
+            color: var(--text-secondary);
+            opacity: 0.85;
+        }
+
+        .adversary-card-placeholder {
+            width: 600px;
+            border: 2px dashed var(--border);
+            border-radius: 4px;
+            padding: 3rem 1rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
+            padding: 0.4rem 0.85rem;
+            font-size: 0.82rem;
+            font-family: var(--font-body);
+            color: var(--accent);
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--accent);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .copy-btn.copied {
+            background: #00b894;
+            border-color: #00b894;
+            color: #fff;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .db-page {
@@ -403,6 +828,16 @@
                 <tbody id="db-tbody"></tbody>
             </table>
             <div class="db-empty" id="db-empty" style="display:none;">No adversaries match your filters.</div>
+        </div>
+
+        <!-- Hidden staging area for html2canvas -->
+        <div id="adversary-card-stage" style="position:absolute;left:-9999px;top:0;"></div>
+
+        <!-- Adversary Card Display -->
+        <div class="adversary-card-container" id="adversary-card-container">
+            <div class="adversary-card-placeholder" id="adversary-card-placeholder">
+                Click an adversary row to preview its stat card.
+            </div>
         </div>
     </main>
 
@@ -578,6 +1013,12 @@
             return div.innerHTML;
         }
 
+        function decodeHtmlEntities(str) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = str;
+            return textarea.value;
+        }
+
         function typeBadge(type) {
             const cls = {
                 'Mook': 'badge-mook',
@@ -608,11 +1049,19 @@
             filtered.forEach(adv => {
                 const tr = document.createElement('tr');
 
-                // Click the name cell or any text cell to toggle full-row expand
+                // Click to toggle row expand AND select adversary card
                 tr.addEventListener('click', (e) => {
                     // Don't toggle if user is selecting text
                     if (window.getSelection().toString()) return;
-                    tr.classList.toggle('row-expanded');
+                    const wasExpanded = tr.classList.contains('row-expanded');
+                    // Close all other expanded rows
+                    document.querySelectorAll('#db-tbody tr').forEach(otherTr => {
+                        if (otherTr !== tr) {
+                            otherTr.classList.remove('row-expanded');
+                        }
+                    });
+                    tr.classList.toggle('row-expanded', !wasExpanded);
+                    selectAdversary(adv, tr);
                 });
 
                 headers.forEach((h, i) => {
@@ -650,6 +1099,452 @@
 
             tbody.innerHTML = '';
             tbody.appendChild(fragment);
+        }
+
+        // ===== Adversary Card =====
+        let selectedAdversary = null;
+
+        function aptitudeBar(value, colorClass) {
+            const v = parseInt(value, 10);
+            if (isNaN(v)) return '';
+            const pct = Math.min(v, 20) / 20 * 100;
+            return '<div class="aptitude-bar-track">' +
+                '<div class="aptitude-bar-bg"><div class="aptitude-bar-fill ' + colorClass + '" style="width:' + pct + '%"></div></div>' +
+                '</div>';
+        }
+
+        function parseAbilityHTML(ab) {
+            // Extract <b>Name</b> at start, optional <i>flavor</i>, then effects body
+            var nameMatch = ab.match(/^<b>([\s\S]*?)<\/b>/i);
+            if (!nameMatch) {
+                return '<div class="adversary-ability"><div class="adversary-ability-effects">' + ab + '</div></div>';
+            }
+            var name = nameMatch[1];
+            var rest = ab.slice(nameMatch[0].length).replace(/^<br\s*\/?>/i, '').replace(/^\s+/, '');
+            var flavorMatch = rest.match(/^<i>([\s\S]*?)<\/i>/i);
+            var flavor = '';
+            if (flavorMatch) {
+                flavor = flavorMatch[1];
+                rest = rest.slice(flavorMatch[0].length).replace(/^<br\s*\/?>/i, '').replace(/^\s+/, '');
+            }
+            var out = '<div class="adversary-ability">';
+            out += '<div class="adversary-ability-name">' + name + '</div>';
+            if (flavor) out += '<div class="adversary-ability-flavor">' + flavor + '</div>';
+            if (rest.trim()) out += '<div class="adversary-ability-effects">' + rest.trim() + '</div>';
+            out += '</div>';
+            return out;
+        }
+
+        // Parse the messy Allegiance field into Bright/Dark point counts and render a badge row.
+        function buildAllegianceRow(raw) {
+            var s = String(raw || '').trim();
+            var bright = 0, dark = 0;
+            var firstWord = s.split(/[\n\s]/)[0].toLowerCase();
+            var re = /\[(\d+)\s*(bright|dark|points?)\]/gi;
+            var mm;
+            while ((mm = re.exec(s)) !== null) {
+                var num = parseInt(mm[1], 10);
+                var kind = mm[2].toLowerCase();
+                if (kind.indexOf('bright') === 0) bright += num;
+                else if (kind.indexOf('dark') === 0) dark += num;
+                else { // "Points" — attribute to the leading alignment word
+                    if (firstWord.indexOf('dark') === 0) dark += num;
+                    else if (firstWord.indexOf('bright') === 0) bright += num;
+                }
+            }
+            var badges = '';
+            if (dark > 0) badges += '<span class="alleg-badge alleg-dark">◆ ' + dark + ' Dark</span>';
+            if (bright > 0) badges += '<span class="alleg-badge alleg-bright">✦ ' + bright + ' Bright</span>';
+            if (!badges) {
+                // No point data — show a bare alignment label if one is named, else Unaligned
+                if (firstWord.indexOf('dark') === 0) badges = '<span class="alleg-badge alleg-dark">◆ Dark</span>';
+                else if (firstWord.indexOf('bright') === 0) badges = '<span class="alleg-badge alleg-bright">✦ Bright</span>';
+                else badges = '<span class="alleg-badge alleg-unaligned">Unaligned</span>';
+            }
+            return '<div class="adversary-allegiance-row"><span class="alleg-label">Allegiance</span>' + badges + '</div>';
+        }
+
+        function renderAdversaryCard(adv) {
+            const container = document.getElementById('adversary-card-container');
+            const placeholder = document.getElementById('adversary-card-placeholder');
+            if (placeholder) placeholder.style.display = 'none';
+
+            const rank = adv['Rank'] || '';
+            const type = adv['Type'] || '';
+            const name = adv['Adversary'] || '';
+            const flavor = adv['Flavor Text'] ? decodeHtmlEntities(String(adv['Flavor Text'])) : '';
+            const atk = (adv['ATK'] != null && adv['ATK'] !== '') ? adv['ATK'] : '';
+            const def = adv['DEF'] || '';
+            const hp = adv['HP'] || '';
+            const spd = adv['SPD'] || '';
+            const size = adv['Size'] || '';
+            const weapon = adv['Weapon/Shield'] ? decodeHtmlEntities(String(adv['Weapon/Shield'])) : '';
+            const credit = adv['Credit'] || '';
+            const m = adv['M'] || '';
+            const d = adv['D'] || '';
+            const g = adv['G'] || '';
+            const i = adv['I'] || '';
+            const a = adv['A'] || '';
+            var allegianceHTML = buildAllegianceRow(adv['Allegiance'] || '');
+
+            // Abilities (decode HTML entities)
+            const abilities = [];
+            for (let i = 1; i <= 7; i++) {
+                const ab = adv['Ability ' + i];
+                if (ab && String(ab).trim() !== '') {
+                    abilities.push(decodeHtmlEntities(String(ab)));
+                }
+            }
+
+            // Yields (decode HTML entities)
+            const yields = [];
+            for (let i = 1; i <= 2; i++) {
+                const y = adv['Yield ' + i];
+                if (y && String(y).trim() !== '') {
+                    yields.push(decodeHtmlEntities(String(y)));
+                }
+            }
+
+            // Info sections (only non-empty, decode HTML entities)
+            const infoSections = [
+                { label: 'Tactics', key: 'Tactics' },
+                { label: 'Combat Gear', key: 'Combat Gear' },
+                { label: 'Habitat', key: 'Habitat' },
+                { label: 'Communication', key: 'Communication' },
+                { label: 'Indicators', key: 'Indicators' },
+                { label: 'Role Playing', key: 'Role Playing Notes' },
+                { label: 'Customization', key: 'Customization' }
+            ].filter(s => adv[s.key] && String(adv[s.key]).trim() !== '').map(function(s) {
+                return { label: s.label, key: s.key, value: decodeHtmlEntities(String(adv[s.key])) };
+            });
+
+            // SPD formatting - create array of [speed type] groups for multiple rows
+            let spdPairs = [];
+            if (spd && String(spd).trim() !== '') {
+                let spdText = decodeHtmlEntities(String(spd));
+                spdText = spdText.replace(/<br\s*\/?>/gi, '\n');
+                // Split on \n\n (group separator), then \n (within-group speed+type)
+                spdPairs = spdText.split('\n\n')
+                    .map(function(group) {
+                        return group.split('\n')
+                            .map(function(line) { return line.trim(); })
+                            .filter(function(line) { return line.length > 0; })
+                            .join(' ');  // join speed + type: "Slow [Land]"
+                    })
+                    .filter(function(group) { return group.length > 0; });
+            }
+
+            // Join SPD pairs with <br> for multi-line display in a single cell
+            let spdValue = spdPairs.length > 0 ? spdPairs.join('<br>') : String(spd);
+
+            // Build body content separately for measurement & balancing
+            var bodyHTML = '';
+
+            // Weapon/Shield as bullet list (always above columns)
+            var weaponSectionHTML = '';
+            if (weapon && String(weapon).trim() !== '') {
+                var weaponText = decodeHtmlEntities(String(weapon));
+                weaponText = weaponText.replace(/<br\s*\/?>/gi, '\n');
+                var weaponItems = [];
+                weaponText.split('\n\n').forEach(function(group) {
+                    var lines = group.split('\n')
+                        .map(function(line) { return line.trim(); })
+                        .filter(function(line) { return line.length > 0; });
+                    if (lines.length === 0) return;
+                    if (lines.length === 1) {
+                        var single = lines[0];
+                        var bracketCount = (single.match(/\[/g) || []).length;
+                        if (bracketCount > 1) {
+                            var parts = single.split(/] (?=[A-Z])/);
+                            parts.forEach(function(part, idx) {
+                                var cleaned = part.trim();
+                                if (idx > 0) cleaned = cleaned.replace(/^[\[\]]*\s*/, '');
+                                if (idx < parts.length - 1) cleaned += ']';
+                                if (cleaned) weaponItems.push(cleaned);
+                            });
+                            return;
+                        }
+                    }
+                    weaponItems.push(lines[0]);
+                    for (var wi = 1; wi < lines.length; wi++) {
+                        var wline = lines[wi];
+                        var wlastItem = weaponItems[weaponItems.length - 1];
+                        if (wline.startsWith('[') || (wlastItem.indexOf('[') !== -1 && wlastItem.indexOf(']') === -1)) {
+                            weaponItems[weaponItems.length - 1] += ' ' + wline;
+                        } else {
+                            weaponItems.push(wline);
+                        }
+                    }
+                });
+                var weaponHTML = '<div class="adversary-card-weapon"><span class="footer-label">Weapon/Shield:</span><ul>';
+                weaponItems.forEach(function(item) {
+                    weaponHTML += '<li>' + item + '</li>';
+                });
+                weaponHTML += '</ul></div>';
+                weaponSectionHTML = weaponHTML;
+                bodyHTML += weaponSectionHTML;
+            }
+
+            // Flow blocks: individual ability/yield bubbles in fixed reading order.
+            // All abilities first (one "Abilities" header on the first), then all yields
+            // (one "Yields" header on the first). These flow continuously and split across
+            // columns by height so a bubble can end one column and continue in the next.
+            var flowBlocks = [];
+            abilities.forEach(function(ab, idx) {
+                var header = idx === 0 ? '<div class="adversary-section-title">Abilities</div>' : '';
+                flowBlocks.push(header + parseAbilityHTML(ab));
+            });
+            yields.forEach(function(y, idx) {
+                var header = idx === 0 ? '<div class="adversary-section-title">Yields</div>' : '';
+                flowBlocks.push(header + parseAbilityHTML(y));
+            });
+
+            // Build card HTML with body sections in a container for measurement
+            var cardHTML = '<div class="adversary-card" id="adversary-card">';
+            cardHTML += '<div class="adversary-card-title">';
+            cardHTML += '<span class="adversary-card-name">' + escapeHtml(name) + '</span>';
+            cardHTML += '<div class="adversary-card-badges">';
+            if (rank) cardHTML += '<span class="badge-rank">Rank ' + escapeHtml(String(rank)) + '</span>';
+            if (type) cardHTML += '<span class="badge ' + (type === 'Mook' ? 'badge-mook' : type === 'Boss' ? 'badge-boss' : type === 'Mega-Boss' ? 'badge-mega-boss' : type === 'Colossus' ? 'badge-colossus' : 'badge-mook') + '">' + escapeHtml(type) + '</span>';
+            cardHTML += '</div></div>';
+
+            if (flavor && String(flavor).trim() !== '') {
+                cardHTML += '<div class="adversary-card-flavor">' + flavor + '</div>';
+            }
+
+            cardHTML += '<div class="adversary-card-stats">';
+            cardHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">ATK</span><span class="adversary-stat-value">' + (atk !== '' ? '+' + escapeHtml(String(atk)) : '') + '</span></div>';
+            cardHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">DEF</span><span class="adversary-stat-value">' + escapeHtml(String(def)) + '</span></div>';
+            cardHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">HP</span><span class="adversary-stat-value">' + escapeHtml(String(hp)) + '</span></div>';
+            cardHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">SPD</span><span class="adversary-stat-value">' + spdValue + '</span></div>';
+            cardHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">Size</span><span class="adversary-stat-value">' + escapeHtml(String(size)) + '</span></div>';
+            cardHTML += '</div>';
+
+            cardHTML += '<div class="aptitude-row">';
+            cardHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">M</span> <span class="aptitude-value-inline">' + escapeHtml(String(m)) + '</span></div>' + aptitudeBar(m, 'm') + '</div>';
+            cardHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">D</span> <span class="aptitude-value-inline">' + escapeHtml(String(d)) + '</span></div>' + aptitudeBar(d, 'd') + '</div>';
+            cardHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">G</span> <span class="aptitude-value-inline">' + escapeHtml(String(g)) + '</span></div>' + aptitudeBar(g, 'g') + '</div>';
+            cardHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">I</span> <span class="aptitude-value-inline">' + escapeHtml(String(i)) + '</span></div>' + aptitudeBar(i, 'i') + '</div>';
+            cardHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">A</span> <span class="aptitude-value-inline">' + escapeHtml(String(a)) + '</span></div>' + aptitudeBar(a, 'a') + '</div>';
+            cardHTML += '</div>';
+
+            cardHTML += allegianceHTML;
+
+            // Add body sections to cardHTML so measurement and single-column render both work
+            var bodyFullHTML = bodyHTML;
+            flowBlocks.forEach(function(b) { bodyFullHTML += b; });
+            cardHTML += '<div class="adversary-card-body" id="adversary-card-body">' + bodyFullHTML + '</div>';
+
+            cardHTML += '<div class="adversary-card-footer">';
+            cardHTML += '<span class="adversary-card-tag">Unofficial BREAK!! Homebrew Adversary Compendium</span>';
+            if (credit && String(credit).trim() !== '') {
+                cardHTML += '<span class="adversary-card-credit"><span class="footer-label">Adversary Credit:</span>' + escapeHtml(credit) + '</span>';
+            }
+            cardHTML += '</div>';
+            cardHTML += '</div>';
+
+            // Measure section heights in staging area
+            var stage = document.getElementById('adversary-card-stage');
+            stage.innerHTML = cardHTML;
+
+            // Measure fixed content height (flavor + stats + aptitudes + weapon)
+            // This is the left column's base height in 2-col mode
+            var fixedBaseHeight = 0;
+            var stageFlavorEl = stage.querySelector('.adversary-card-flavor');
+            var stageStatsEl = stage.querySelector('.adversary-card-stats');
+            var stageAptEl = stage.querySelector('.aptitude-row');
+            var stageAllegEl = stage.querySelector('.adversary-allegiance-row');
+            var stageWepEl = stage.querySelector('.adversary-card-weapon');
+            if (stageFlavorEl) fixedBaseHeight += stageFlavorEl.offsetHeight;
+            if (stageStatsEl) fixedBaseHeight += stageStatsEl.offsetHeight;
+            if (stageAptEl) fixedBaseHeight += stageAptEl.offsetHeight;
+            if (stageAllegEl) fixedBaseHeight += stageAllegEl.offsetHeight;
+            if (stageWepEl) fixedBaseHeight += stageWepEl.offsetHeight;
+
+            // Measure each flow block's height in an isolated probe at column width.
+            var blockHeights = [];
+            var probe = document.createElement('div');
+            probe.style.cssText = 'width:400px;position:absolute;left:-9999px;top:0;visibility:hidden;font-size:0.82rem;line-height:1.5;';
+            document.body.appendChild(probe);
+            flowBlocks.forEach(function(b) {
+                probe.innerHTML = b;
+                blockHeights.push(probe.offsetHeight);
+            });
+            document.body.removeChild(probe);
+
+            var totalBlocksHeight = blockHeights.reduce(function(s, h) { return s + h; }, 0);
+            var nB = flowBlocks.length;
+
+            // Prefix sums for O(1) contiguous range height queries. rangeH(a,b) = blocks [a, b).
+            var prefix = [0];
+            for (var pi = 0; pi < blockHeights.length; pi++) prefix.push(prefix[pi] + blockHeights[pi]);
+            var rangeH = function(a, b) { return prefix[b] - prefix[a]; };
+
+            // --- Best 2-column split (left column also carries the fixed content) ---
+            var best2Split = nB, best2Max = Infinity;
+            for (var k = 0; k <= nB; k++) {
+                var mx = Math.max(fixedBaseHeight + rangeH(0, k), rangeH(k, nB));
+                if (mx < best2Max) { best2Max = mx; best2Split = k; }
+            }
+
+            // --- Best 3-column split (two contiguous cut points k1 <= k2) ---
+            var best3K1 = 0, best3K2 = nB, best3Max = Infinity;
+            for (var k1 = 0; k1 <= nB; k1++) {
+                for (var k2 = k1; k2 <= nB; k2++) {
+                    var mx3 = Math.max(fixedBaseHeight + rangeH(0, k1), rangeH(k1, k2), rangeH(k2, nB));
+                    if (mx3 < best3Max) { best3Max = mx3; best3K1 = k1; best3K2 = k2; }
+                }
+            }
+
+            var singleColTotal = fixedBaseHeight + totalBlocksHeight;
+            var twoColOverhead = 50;
+            var use2Col = nB >= 2 && best2Split > 0 && best2Split < nB &&
+                (best2Max + twoColOverhead) < singleColTotal * 0.9;
+            // 3-col needs >=3 blocks, all three columns non-empty, and a meaningful gain over 2-col.
+            var use3Col = use2Col && nB >= 3 &&
+                best3K1 > 0 && best3K2 > best3K1 && best3K2 < nB &&
+                (best3Max + 80) < best2Max * 0.85;
+
+            // Shared HTML fragments (title, fixed left content, footer) built once.
+            var titleHTML = '<div class="adversary-card-title">' +
+                '<span class="adversary-card-name">' + escapeHtml(name) + '</span>' +
+                '<div class="adversary-card-badges">' +
+                (rank ? '<span class="badge-rank">Rank ' + escapeHtml(String(rank)) + '</span>' : '') +
+                (type ? '<span class="badge ' + (type === 'Mook' ? 'badge-mook' : type === 'Boss' ? 'badge-boss' : type === 'Mega-Boss' ? 'badge-mega-boss' : type === 'Colossus' ? 'badge-colossus' : 'badge-mook') + '">' + escapeHtml(type) + '</span>' : '') +
+                '</div></div>';
+
+            var fixedHTML = '';
+            if (flavor && String(flavor).trim() !== '') {
+                fixedHTML += '<div class="adversary-card-flavor">' + flavor + '</div>';
+            }
+            fixedHTML += '<div class="adversary-card-stats">';
+            fixedHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">ATK</span><span class="adversary-stat-value">' + (atk !== '' ? '+' + escapeHtml(String(atk)) : '') + '</span></div>';
+            fixedHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">DEF</span><span class="adversary-stat-value">' + escapeHtml(String(def)) + '</span></div>';
+            fixedHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">HP</span><span class="adversary-stat-value">' + escapeHtml(String(hp)) + '</span></div>';
+            fixedHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">SPD</span><span class="adversary-stat-value">' + spdValue + '</span></div>';
+            fixedHTML += '<div class="adversary-stat-item"><span class="adversary-stat-label">Size</span><span class="adversary-stat-value">' + escapeHtml(String(size)) + '</span></div>';
+            fixedHTML += '</div>';
+            fixedHTML += '<div class="aptitude-row">';
+            fixedHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">M</span> <span class="aptitude-value-inline">' + escapeHtml(String(m)) + '</span></div>' + aptitudeBar(m, 'm') + '</div>';
+            fixedHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">D</span> <span class="aptitude-value-inline">' + escapeHtml(String(d)) + '</span></div>' + aptitudeBar(d, 'd') + '</div>';
+            fixedHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">G</span> <span class="aptitude-value-inline">' + escapeHtml(String(g)) + '</span></div>' + aptitudeBar(g, 'g') + '</div>';
+            fixedHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">I</span> <span class="aptitude-value-inline">' + escapeHtml(String(i)) + '</span></div>' + aptitudeBar(i, 'i') + '</div>';
+            fixedHTML += '<div class="aptitude-item"><div class="aptitude-label-row"><span class="aptitude-label">A</span> <span class="aptitude-value-inline">' + escapeHtml(String(a)) + '</span></div>' + aptitudeBar(a, 'a') + '</div>';
+            fixedHTML += '</div>';
+            fixedHTML += allegianceHTML;
+
+            var footerHTML = '<div class="adversary-card-footer">' +
+                '<span class="adversary-card-tag">Unofficial BREAK!! Homebrew Adversary Compendium</span>' +
+                (credit && String(credit).trim() !== '' ? '<span class="adversary-card-credit"><span class="footer-label">Adversary Credit:</span>' + escapeHtml(credit) + '</span>' : '') +
+                '</div>';
+
+            // Render a body-inner wrapper for a set of blocks (optionally prefixed with the weapon list).
+            var colInner = function(blocks, includeWeapon) {
+                var hasWeapon = includeWeapon && weaponSectionHTML;
+                if (!hasWeapon && blocks.length === 0) return '';
+                var h = '<div class="adversary-card-body-inner">';
+                if (hasWeapon) h += weaponSectionHTML;
+                blocks.forEach(function(b) { h += b; });
+                h += '</div>';
+                return h;
+            };
+
+            if (use3Col) {
+                var col1B = flowBlocks.slice(0, best3K1);
+                var col2B = flowBlocks.slice(best3K1, best3K2);
+                var col3B = flowBlocks.slice(best3K2);
+                var finalHTML = '<div class="adversary-card three-column" id="adversary-card">';
+                finalHTML += titleHTML;
+                finalHTML += '<div class="adversary-card-columns three-col">';
+                finalHTML += '<div class="body-column-left">' + fixedHTML + colInner(col1B, true) + '</div>';
+                finalHTML += '<div class="body-column-mid">' + colInner(col2B, false) + '</div>';
+                finalHTML += '<div class="body-column-right">' + colInner(col3B, false) + '</div>';
+                finalHTML += '</div>';
+                finalHTML += footerHTML + '</div>';
+                container.innerHTML = finalHTML;
+            } else if (use2Col) {
+                var leftBlocks = flowBlocks.slice(0, best2Split);
+                var rightBlocks = flowBlocks.slice(best2Split);
+                var finalHTML = '<div class="adversary-card two-column" id="adversary-card">';
+                finalHTML += titleHTML;
+                finalHTML += '<div class="adversary-card-columns">';
+                finalHTML += '<div class="body-column-left">' + fixedHTML + colInner(leftBlocks, true) + '</div>';
+                finalHTML += '<div class="body-column-right">' + colInner(rightBlocks, false) + '</div>';
+                finalHTML += '</div>';
+                finalHTML += footerHTML + '</div>';
+                container.innerHTML = finalHTML;
+            } else {
+                // Stick with single-column layout
+                container.innerHTML = cardHTML;
+            }
+
+            // Add copy button below the card
+            var copyBtn = document.createElement('button');
+            copyBtn.className = 'copy-btn';
+            copyBtn.id = 'copy-adversary-btn';
+            copyBtn.innerHTML = '📋 Copy Card';
+            copyBtn.addEventListener('click', copyAdversaryCard);
+            container.appendChild(copyBtn);
+        }
+
+        function copyAdversaryCard() {
+            const card = document.getElementById('adversary-card');
+            const stage = document.getElementById('adversary-card-stage');
+            const btn = document.getElementById('copy-adversary-btn');
+
+            if (!card) return;
+
+            // Clone card to staging area
+            stage.innerHTML = '';
+            const clone = card.cloneNode(true);
+            stage.appendChild(clone);
+
+            html2canvas(clone, {
+                backgroundColor: null,
+                scale: 2,
+                useCORS: true
+            }).then(canvas => {
+                canvas.toBlob(function(blob) {
+                    if (blob) {
+                        navigator.clipboard.write([
+                            new ClipboardItem({ 'image/png': blob })
+                        ]).then(function() {
+                            btn.innerHTML = '✓ Copied!';
+                            btn.classList.add('copied');
+                            setTimeout(function() {
+                                btn.innerHTML = '📋 Copy Card';
+                                btn.classList.remove('copied');
+                            }, 2000);
+                        }).catch(function() {
+                            btn.innerHTML = '✗ Failed';
+                            setTimeout(function() {
+                                btn.innerHTML = '📋 Copy Card';
+                            }, 2000);
+                        });
+                    }
+                }, 'image/png');
+            }).catch(function() {
+                btn.innerHTML = '✗ Error';
+                setTimeout(function() {
+                    btn.innerHTML = '📋 Copy Card';
+                }, 2000);
+            });
+
+            // Clean up staging area
+            setTimeout(function() {
+                stage.innerHTML = '';
+            }, 1000);
+        }
+
+        function selectAdversary(adv, clickedRow) {
+            selectedAdversary = adv;
+            document.querySelectorAll('#db-tbody tr').forEach(tr => {
+                tr.classList.remove('row-selected');
+            });
+            if (clickedRow) {
+                clickedRow.classList.add('row-selected');
+            }
+            renderAdversaryCard(adv);
         }
 
         // Mobile nav toggle
