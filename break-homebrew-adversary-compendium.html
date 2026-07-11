@@ -492,13 +492,14 @@
             width: 1200px;
         }
 
+        /* Flexbox (not grid) so html2canvas renders the columns correctly on copy */
         .adversary-card-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            align-items: stretch;
         }
 
-        .adversary-card-columns.three-col {
-            grid-template-columns: 1fr 1fr 1fr;
+        .adversary-card-columns > * {
+            flex: 1 1 0;
         }
 
         .body-column-left {
