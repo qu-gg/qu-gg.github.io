@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T12:23:15.112917Z",
+  "lastUpdated": "2026-07-15T00:15:42.199623Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,157 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:lkmcpobigcsyes4ymv6lbf5g/app.bsky.feed.post/3mqnahsfj6k2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "umlauthuth.bsky.social",
+        "displayName": "Chris Huth",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreief2lb5iqu3ng3ioerlna2dy3tekyocqalztgtv37273ckqw3ig6a"
+      },
+      "record": {
+        "text": "I'm Huth. I do horror, fantasy, and science fiction illustration in RPGs, board games, other publications. looking for work now, soon, and for the foreseeable future #portfolioday \nwww.chrishuth.com",
+        "createdAt": "2026-07-14T22:19:59.433Z"
+      },
+      "indexedAt": "2026-07-14T22:20:08.886Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 28,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreig2vozencikoskwsx5bfa6o6oethaeftox3e5j5qzxbpjypqwikp4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreig2vozencikoskwsx5bfa6o6oethaeftox3e5j5qzxbpjypqwikp4",
+            "alt": "illustration of a gargoyle perched on a lectern"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreicmmvisoxn2scjyz6sf4hcch433yfc2grhckicubdptsuorl6bgfq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreicmmvisoxn2scjyz6sf4hcch433yfc2grhckicubdptsuorl6bgfq",
+            "alt": "illustration of three cloaked figures hovering over a tramp under a bridge "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreie46c3h6yiewl6npojgss4mlnyaeo66xxixbv2u2oh5bpdqfu52cm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreie46c3h6yiewl6npojgss4mlnyaeo66xxixbv2u2oh5bpdqfu52cm",
+            "alt": "illustration of a goat-headed man in fine dress"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreihrxugpe7ikdaw5hoxl2qosp3bzfsmxhasjmu3rfttcmeqmcezlra",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreihrxugpe7ikdaw5hoxl2qosp3bzfsmxhasjmu3rfttcmeqmcezlra",
+            "alt": "illustration of a bunch of mutant figures under a huge glowing brain-mushroom"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:rzjgafeykxv4du7aw6nftltp/app.bsky.feed.post/3mqmjsisaek2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "jdragsky.bsky.social",
+        "displayName": "jay Dragon \ud83d\udd1c Seven Part Pact",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreidhidim5eizmkmi36fer2tgyytizdpqmoid2khfcb7m77g3b5i4oq"
+      },
+      "record": {
+        "text": "SEVEN-PART PACT, my fantastical ornate TTRPG about powerful wizards, asymmetrical board games, and the pressures of masculinity is now launching on kickstarter! \nwww.kickstarter.com/projects/sjg...",
+        "createdAt": "2026-07-14T15:34:22.451Z"
+      },
+      "indexedAt": "2026-07-14T15:34:23.267Z",
+      "replyCount": 23,
+      "repostCount": 242,
+      "likeCount": 519,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
+        "title": "Seven-Part Pact",
+        "description": "A fantastical, ornate TTRPG from Possum Creek about the might and folly of powerful wizards bound by a venerable Pact.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreiaprreipfwwhsz4yfayqw32hqlccd4l2f32kpwxtgkcmjtyl2o35q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:oageechq2gcpkkqcduwclsnd/app.bsky.feed.post/3mqmfnriutc2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "avartwork.bsky.social",
+        "displayName": "Vandy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreid5oulqxsczya27bv3vqqagddejjo4dpgnk7fd57o6uqqviceaqoi"
+      },
+      "record": {
+        "text": "It\u2019s #portfolioday it seems\n\nI go by Vandy, I like to draw monsters and girls and stuff. I illustrate a series of children\u2019s books called Adventure Ace which just had its second book come out. Working to get better all the time.\n\nAdventure Ace can be purchased here a.co/d/0iJoJ0Lh",
+        "createdAt": "2026-07-14T14:20:08.832Z"
+      },
+      "indexedAt": "2026-07-14T14:20:36.475Z",
+      "replyCount": 1,
+      "repostCount": 19,
+      "likeCount": 40,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreihf2qeg2bltcbwsxojnsl3t2rbrz2ce4pk5h4kqixi5ga3a7ip2ci",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreihf2qeg2bltcbwsxojnsl3t2rbrz2ce4pk5h4kqixi5ga3a7ip2ci",
+            "alt": "Mothra "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreidhnnu7a5kf2du3tux3ehrz35muof3zjjnptu3s465zylatwwm4x4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreidhnnu7a5kf2du3tux3ehrz35muof3zjjnptu3s465zylatwwm4x4",
+            "alt": "Hedorah"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiegrpzucmaohnh3j7yg7jhbbgmenk47xpbm2nzgsk3nbunmkai74y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiegrpzucmaohnh3j7yg7jhbbgmenk47xpbm2nzgsk3nbunmkai74y",
+            "alt": "Luna & Galaxura "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreifmpwwg45fkl3qq4rsuulvkv65kyzm2odsezswhjv66rsq4p6oadq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreifmpwwg45fkl3qq4rsuulvkv65kyzm2odsezswhjv66rsq4p6oadq",
+            "alt": "Adventure Ace: Deep Sea Danger "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mqmfhmlwx22t",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "In our most recent kickstarter update we featured a little peek at the vedma - wizened but powerful casters that live in secluded areas. They can be helpful (providing guidance, healing, crafting) or troublesome (turning people into poppets, crushing them physically and mentally with magic, etc)",
+        "createdAt": "2026-07-14T14:16:42.370Z"
+      },
+      "indexedAt": "2026-07-14T14:16:42.764Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 26,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidhptyr5fifue5ezlvj232uqssrkn7hqesiqt6e3if43vuumjb4ui",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidhptyr5fifue5ezlvj232uqssrkn7hqesiqt6e3if43vuumjb4ui",
+            "alt": "A crinkly, friendly little old witch mixing something together in her pot. From BREAK!!'s newest supplement START"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:ubufr42zf5q2kqc6jblm76pu/app.bsky.feed.post/3mqklwv3pk22u",
       "source": "bluesky",
       "author": {
@@ -66,7 +217,7 @@
       "indexedAt": "2026-07-13T21:07:18.769Z",
       "replyCount": 3,
       "repostCount": 5,
-      "likeCount": 28,
+      "likeCount": 30,
       "embed": {
         "type": "external",
         "uri": "https://www.sabregamesandcards.com/product-page/break-core-rules-standard-edition",
@@ -93,9 +244,9 @@
         "createdAt": "2026-07-13T19:48:11.758Z"
       },
       "indexedAt": "2026-07-13T19:48:22.270Z",
-      "replyCount": 1,
-      "repostCount": 24,
-      "likeCount": 45,
+      "replyCount": 2,
+      "repostCount": 27,
+      "likeCount": 49,
       "embed": {
         "type": "images",
         "images": [
@@ -126,7 +277,7 @@
       },
       "indexedAt": "2026-07-13T15:41:14.764Z",
       "replyCount": 1,
-      "repostCount": 80,
+      "repostCount": 81,
       "likeCount": 80,
       "embed": {
         "type": "external",
@@ -154,9 +305,9 @@
         "createdAt": "2026-07-13T15:20:30.445Z"
       },
       "indexedAt": "2026-07-13T15:20:31.270Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 3,
-      "likeCount": 4,
+      "likeCount": 5,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/creator/742/losthaven",
@@ -258,8 +409,8 @@
       },
       "indexedAt": "2026-07-10T19:00:07.670Z",
       "replyCount": 1,
-      "repostCount": 17,
-      "likeCount": 55,
+      "repostCount": 18,
+      "likeCount": 56,
       "embed": {
         "type": "images",
         "images": [
@@ -644,7 +795,7 @@
       "author": {
         "handle": "arcanejellycult.itch.io",
         "displayName": "arcane jelly cult \ud83d\udd1c gencon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreicahoto7lscq5tzmdi2dwerfwt2mizdklz2mwlbynph27wuwho6cq"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreiap5zevf4dtizztqp73x5nhsed3aed4kx6hzfmlv3vtoeuprixwvu"
       },
       "record": {
         "text": "My #AppxNJam 2026 entry, \"The Fountain of Weal,\" is completed and submitted!\n\nWhew! A bit of a whirlwind to get it done before going out of town, but I had a lot of fun. Check it out here:\n\narcanejellycult.itch.io/fow\n\nAnd the Jam itself is here:\nitch.io/jam/appx-n-j...",
@@ -796,99 +947,6 @@
       "link": "https://www.artstation.com/artwork/O3yy5e"
     },
     {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mpvsbumhc22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - Vote Designing Dungeons for Best Online Content",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "This is a FLGS near me. To celebrate their 3 year anniversary, they're having a sale on everything until end of day tomorrow. Use the code \"Birthday\" at checkout for 15% savings. They've got one of the best selections of OSR and indie games on the East Coast. Check 'em out, why not?",
-        "createdAt": "2026-07-05T14:34:54.112Z"
-      },
-      "indexedAt": "2026-07-05T14:34:54.422Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 27,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.sabregamesandcards.com/products",
-        "title": "Products | Third Kingdom Games",
-        "description": "New and used role-playing games by a host of indie and mainstream publishers.",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:eosdezxi2mkoqk4mqxxngd46/app.bsky.feed.post/3mptgmoc6w72t",
-      "source": "bluesky",
-      "author": {
-        "handle": "setincement.bsky.social",
-        "displayName": "Chazz",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihnvgt7b3mes63gjcw2hlpv4amxtexu6zlnrbq4nrchbwbob26jbe"
-      },
-      "record": {
-        "text": "Hey y'all!!! #wheelofwebcomics has ONE WEEK LEFT on Wheel of Webcomics #3: Drink Water's co-op bundle!\nPick up the zine itself on itch for $5 or spread the love & and get full issues of the comics featured for $10!\n\nGet it here: https://drowzs.itch.io/wheel-of-webomics-zine-3-drink-water",
-        "createdAt": "2026-07-04T16:00:50.819Z"
-      },
-      "indexedAt": "2026-07-04T16:00:52.725Z",
-      "replyCount": 0,
-      "repostCount": 14,
-      "likeCount": 18,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihkfc7fc43vsj4dtmbeyzjpbq2z3p3nsjkgph6cqiqri5qwdpdrty",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eosdezxi2mkoqk4mqxxngd46/bafkreihkfc7fc43vsj4dtmbeyzjpbq2z3p3nsjkgph6cqiqri5qwdpdrty",
-            "alt": "Five Dollars for \nFive Comics!\nOne Week Left!\nWheel of Webcomics' co-op bundle ends July 11th!"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:olgdygqf4ehy6qb3zpd6nbgs/app.bsky.feed.post/3mprfgkxils2c",
-      "source": "bluesky",
-      "author": {
-        "handle": "chaoclypse.bsky.social",
-        "displayName": "Chaoclypse (Brandon Yu)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:olgdygqf4ehy6qb3zpd6nbgs/bafkreigc2dfpccnp3sdbkg4dh5p4scbltoiqolggeyouc6egdnide2gg5u"
-      },
-      "record": {
-        "text": "PSA: I was informed someone is impersonating me on Discord and has been grifting people for their money. \n\nThey signed up around the time I was undergoing massive health issues and have been using it as an opportunity.\n\nMy Discord username does not have an underscore, it's simply \"Chaoclypse\".",
-        "createdAt": "2026-07-03T20:34:14.163Z"
-      },
-      "indexedAt": "2026-07-03T20:34:16.326Z",
-      "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:olgdygqf4ehy6qb3zpd6nbgs/bafkreihx6rwv6wk5k5h23vi4ozg2fsu7xkwiaxrggrjftfycgqfs5urg4u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:olgdygqf4ehy6qb3zpd6nbgs/bafkreihx6rwv6wk5k5h23vi4ozg2fsu7xkwiaxrggrjftfycgqfs5urg4u",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:52zzdjbqfm7w4r42wctzwrvy/app.bsky.feed.post/3mp3d3ejick2q",
       "source": "bluesky",
       "author": {
@@ -903,7 +961,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 200,
-      "likeCount": 980,
+      "likeCount": 981,
       "embed": {
         "type": "images",
         "images": [
@@ -2961,7 +3019,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1955,
-      "likeCount": 8482,
+      "likeCount": 8481,
       "embed": {
         "type": "images",
         "images": [
@@ -3299,7 +3357,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 545,
-      "likeCount": 3036,
+      "likeCount": 3035,
       "embed": {
         "type": "images",
         "images": [
