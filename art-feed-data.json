@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T00:15:42.199623Z",
+  "lastUpdated": "2026-07-15T12:24:27.752977Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-07-14T22:20:08.886Z",
       "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 28,
+      "repostCount": 15,
+      "likeCount": 44,
       "embed": {
         "type": "images",
         "images": [
@@ -111,9 +111,9 @@
         "createdAt": "2026-07-14T15:34:22.451Z"
       },
       "indexedAt": "2026-07-14T15:34:23.267Z",
-      "replyCount": 23,
-      "repostCount": 242,
-      "likeCount": 519,
+      "replyCount": 27,
+      "repostCount": 278,
+      "likeCount": 608,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
@@ -142,7 +142,7 @@
       "indexedAt": "2026-07-14T14:20:36.475Z",
       "replyCount": 1,
       "repostCount": 19,
-      "likeCount": 40,
+      "likeCount": 41,
       "embed": {
         "type": "images",
         "images": [
@@ -201,6 +201,43 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:fmygsbyrivu6x77lnfaovfft/app.bsky.feed.post/3mqm534h4nc2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "icastlight.bsky.social",
+        "displayName": "\ud835\udd82.\ud835\udd6f.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiattu7vqvagz7hyfy3kubktyyflhadvyzidy2hfc3s6jed2gdkaku"
+      },
+      "record": {
+        "text": "Reading through the old Wizardry manual inspired me to throw together a dungeon based on its 19x19 grid using AD&D Appendix A to match Wizardy's roots. Reflecting on it, the Designing Dungeons course can help its predictable elements be punched up: icastlight.blogspot.com/2026/07/rand...",
+        "createdAt": "2026-07-14T11:46:32.849Z"
+      },
+      "indexedAt": "2026-07-14T11:46:35.268Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 27,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreie57w27ieopt6zuuri23qmdbz7n2ar63dckebdrkyhjkwijflyczi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreie57w27ieopt6zuuri23qmdbz7n2ar63dckebdrkyhjkwijflyczi",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreic3opzhl4s45ew5ceqpeq5fq62vbanjnqxd6pbbekbyu4u7lj737y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreic3opzhl4s45ew5ceqpeq5fq62vbanjnqxd6pbbekbyu4u7lj737y",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
     },
     {
       "uri": "at://did:plc:ubufr42zf5q2kqc6jblm76pu/app.bsky.feed.post/3mqklwv3pk22u",
@@ -410,7 +447,7 @@
       "indexedAt": "2026-07-10T19:00:07.670Z",
       "replyCount": 1,
       "repostCount": 18,
-      "likeCount": 56,
+      "likeCount": 57,
       "embed": {
         "type": "images",
         "images": [
@@ -566,7 +603,7 @@
       "indexedAt": "2026-07-08T11:38:29.828Z",
       "replyCount": 0,
       "repostCount": 11,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -841,38 +878,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibjdmuntgyeil3c5veirg5xtl5rebsr2ri4kmiqvtuwjh27r7us7i",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibjdmuntgyeil3c5veirg5xtl5rebsr2ri4kmiqvtuwjh27r7us7i",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ylzcyi3glonn4teveqvggsdj/app.bsky.feed.post/3mpy4mwodxc2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler \ud83c\udf87 2 ENNIE noms",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
-      },
-      "record": {
-        "text": "I'm still glowing from last week's news that The Bonsai Diary has been nominated for two ENNIES: Best Solo Game and Product of the Year. Amongst the sumptuous feast of other nominees, my game feels like a plain cup of water. I'm proud of it.",
-        "createdAt": "2026-07-06T12:45:22.258Z"
-      },
-      "indexedAt": "2026-07-06T12:45:38.932Z",
-      "replyCount": 2,
-      "repostCount": 12,
-      "likeCount": 50,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreidladc7nhx27ejw6vps7assmrixd6uq3cjpo7cxvpm53f74ujbkm4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreidladc7nhx27ejw6vps7assmrixd6uq3cjpo7cxvpm53f74ujbkm4",
-            "alt": "Poster styled like an ad for an Oscar nomination: \"Thank you,\" image of the Bonsai Diary cover, \"ENNIES 2026 nominee\", laurels reading \"Product of the Year\" and \"Best Solo Game.\" (Author's note: \"Design is my passion\")"
           }
         ]
       },
@@ -2758,7 +2763,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 671,
-      "likeCount": 2958,
+      "likeCount": 2957,
       "embed": {
         "type": "images",
         "images": [
@@ -3019,7 +3024,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1955,
-      "likeCount": 8481,
+      "likeCount": 8480,
       "embed": {
         "type": "images",
         "images": [
@@ -3272,7 +3277,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2353,
-      "likeCount": 11877,
+      "likeCount": 11876,
       "embed": {
         "type": "images",
         "images": [
