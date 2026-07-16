@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T12:24:27.752977Z",
+  "lastUpdated": "2026-07-16T00:17:26.143772Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,34 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mqpa3k2zcc2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I was organizing some of my notes and forgot I did a set of joke alignments for BREAK!! a while back",
+        "createdAt": "2026-07-15T17:18:27.574Z"
+      },
+      "indexedAt": "2026-07-15T17:18:27.379Z",
+      "replyCount": 4,
+      "repostCount": 7,
+      "likeCount": 39,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreic4lvbqwrpp5alfogopti547z75qy7qc3qyh43nk5qxhptbvnerlu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreic4lvbqwrpp5alfogopti547z75qy7qc3qyh43nk5qxhptbvnerlu",
+            "alt": "A chart of joke alignments for the BREAK!! tabletop RPG: Do-Gooder, Do-Gooder Edgelord, Mischievous Do-Gooder, Mischief Maker, Mischief Making Opportunist, Edgelord Opportunist, Edgelord, Do-Gooder Opprtunist, Mischievous Edgelord"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:lkmcpobigcsyes4ymv6lbf5g/app.bsky.feed.post/3mqnahsfj6k2s",
       "source": "bluesky",
       "author": {
@@ -65,8 +93,8 @@
       },
       "indexedAt": "2026-07-14T22:20:08.886Z",
       "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 44,
+      "repostCount": 17,
+      "likeCount": 48,
       "embed": {
         "type": "images",
         "images": [
@@ -111,9 +139,9 @@
         "createdAt": "2026-07-14T15:34:22.451Z"
       },
       "indexedAt": "2026-07-14T15:34:23.267Z",
-      "replyCount": 27,
-      "repostCount": 278,
-      "likeCount": 608,
+      "replyCount": 30,
+      "repostCount": 291,
+      "likeCount": 640,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
@@ -141,8 +169,8 @@
       },
       "indexedAt": "2026-07-14T14:20:36.475Z",
       "replyCount": 1,
-      "repostCount": 19,
-      "likeCount": 41,
+      "repostCount": 20,
+      "likeCount": 43,
       "embed": {
         "type": "images",
         "images": [
@@ -215,9 +243,9 @@
         "createdAt": "2026-07-14T11:46:32.849Z"
       },
       "indexedAt": "2026-07-14T11:46:35.268Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 27,
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 29,
       "embed": {
         "type": "images",
         "images": [
@@ -314,8 +342,8 @@
       },
       "indexedAt": "2026-07-13T15:41:14.764Z",
       "replyCount": 1,
-      "repostCount": 81,
-      "likeCount": 80,
+      "repostCount": 86,
+      "likeCount": 92,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/195913/weird-age-games-half-price-sale",
@@ -373,7 +401,7 @@
       "indexedAt": "2026-07-13T15:11:47.569Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 22,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -405,7 +433,7 @@
       "indexedAt": "2026-07-12T19:59:41.872Z",
       "replyCount": 2,
       "repostCount": 7,
-      "likeCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "images",
         "images": [
@@ -446,7 +474,7 @@
       },
       "indexedAt": "2026-07-10T19:00:07.670Z",
       "replyCount": 1,
-      "repostCount": 18,
+      "repostCount": 19,
       "likeCount": 57,
       "embed": {
         "type": "images",
@@ -676,8 +704,8 @@
       },
       "indexedAt": "2026-07-07T15:13:11.131Z",
       "replyCount": 3,
-      "repostCount": 22,
-      "likeCount": 35,
+      "repostCount": 23,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -759,125 +787,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihdnwjmmmjtqjiuusy53daaw4lmdoijldl444tqvryoeudarq4l2e",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreihdnwjmmmjtqjiuusy53daaw4lmdoijldl444tqvryoeudarq4l2e",
             "alt": "cosmic corsairs book cover"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mpykbxursl2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - pretty cool guy",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "NEW UPDATE!!!!!!!!\n\nThis one is a short changelog but despite that I think it's a pretty significant change to the book overall, each change making a significant difference in presentation. As always let me know what you think! \n\njoel-happyhil.itch.io/dollhouse/de...",
-        "createdAt": "2026-07-06T16:49:45.837Z"
-      },
-      "indexedAt": "2026-07-06T16:49:47.429Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://joel-happyhil.itch.io/dollhouse/devlog/1576531/022-update",
-        "title": "0.22 Update",
-        "description": "NEW UPDATE!!!!!!!! This one is a short changelog but despite that I think it's a pretty significant change to the book overall, each change making a significant difference in presentation. As always\u2026",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreiavnshzo77rpctvxwakp34qik7yhgf5fl3lzoq3rkku2eq6hpswai"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mpyjslwsik25",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus - Vote Designing Dungeons for Best Online Content",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "And we've live! Backerkit is doing an ENNIES RUNBACK, with winners and nominees from the 2025 ENNIES awards. \n\nHIS MAJESTY THE WORM took home two silvers last year: Best Rules and Best Game. If you missed out, you can buy it here at a 20% discount!",
-        "createdAt": "2026-07-06T16:41:10.979Z"
-      },
-      "indexedAt": "2026-07-06T16:41:13.432Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 40,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/exalted-funeral/exalted-funeral-2025-ennies-awards-winners-and-nominees",
-        "title": "Exalted Funeral 2025 ENNIES Awards Winners and Nominees!",
-        "description": "2025 ENNIE Awards nominated titles from Exalted Funeral",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihvqlfejg52xx75lhgz44k47jtj6dimtp4jkjvrrs35ofn27igrxa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:r3hqasi6ieev262wffln35nw/app.bsky.feed.post/3mpyca53ru22m",
-      "source": "bluesky",
-      "author": {
-        "handle": "arcanejellycult.itch.io",
-        "displayName": "arcane jelly cult \ud83d\udd1c gencon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreiap5zevf4dtizztqp73x5nhsed3aed4kx6hzfmlv3vtoeuprixwvu"
-      },
-      "record": {
-        "text": "My #AppxNJam 2026 entry, \"The Fountain of Weal,\" is completed and submitted!\n\nWhew! A bit of a whirlwind to get it done before going out of town, but I had a lot of fun. Check it out here:\n\narcanejellycult.itch.io/fow\n\nAnd the Jam itself is here:\nitch.io/jam/appx-n-j...",
-        "createdAt": "2026-07-06T14:25:35.239Z"
-      },
-      "indexedAt": "2026-07-06T14:25:37.120Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 5,
-      "embed": {
-        "type": "external",
-        "uri": "https://arcanejellycult.itch.io/fow",
-        "title": "The Fountain of Weal by arcane jelly cult",
-        "description": "Pilgrims seek the Fountain of Weal, use your judgement to discern the Worthy from the Unworthy.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreiazl2m54ndmuhzpb44njdpfuxtl6yddhg76hdaee4f5p7wgjkn5iq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mpy7odp7vc2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "The first Cairn Press \"double feature\" ends in three days! We are 200% funded, the zines are complete and ready for print, and we are fulfilling in the US, CA, UK, EU, AUS and NZ!\n\nAlso, if you pledge for both zines you can get them for cheaper than retail!\n\nwww.kickstarter.com/projects/cai...",
-        "createdAt": "2026-07-06T13:39:50.703Z"
-      },
-      "indexedAt": "2026-07-06T13:39:52.632Z",
-      "replyCount": 3,
-      "repostCount": 17,
-      "likeCount": 53,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibjdmuntgyeil3c5veirg5xtl5rebsr2ri4kmiqvtuwjh27r7us7i",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibjdmuntgyeil3c5veirg5xtl5rebsr2ri4kmiqvtuwjh27r7us7i",
-            "alt": ""
           }
         ]
       },
@@ -2050,7 +1959,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1448,
-      "likeCount": 6320,
+      "likeCount": 6319,
       "embed": {
         "type": "images",
         "images": [
@@ -3277,7 +3186,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2353,
-      "likeCount": 11876,
+      "likeCount": 11875,
       "embed": {
         "type": "images",
         "images": [
@@ -3334,7 +3243,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 728,
-      "likeCount": 3352,
+      "likeCount": 3351,
       "embed": {
         "type": "images",
         "images": [
@@ -3362,7 +3271,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 545,
-      "likeCount": 3035,
+      "likeCount": 3034,
       "embed": {
         "type": "images",
         "images": [
@@ -3390,7 +3299,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 176,
-      "likeCount": 1290,
+      "likeCount": 1289,
       "embed": {
         "type": "images",
         "images": [
@@ -3418,7 +3327,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1512,
+      "likeCount": 1511,
       "embed": {
         "type": "images",
         "images": [
@@ -3612,8 +3521,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2660,
-      "likeCount": 15658,
+      "repostCount": 2659,
+      "likeCount": 15656,
       "embed": {
         "type": "images",
         "images": [
