@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T00:18:59.510711Z",
+  "lastUpdated": "2026-07-17T12:21:42.744322Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,82 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3mqthm6ytps2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "penflower-ink.bsky.social",
+        "displayName": "Penflower Ink",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic6je44q4aaogk7ic5urcpntratsg5pom4o5zs4pp5odiv6kcovlq"
+      },
+      "record": {
+        "text": "I'm excited and proud of my latest TTRPG system, ALBO.\nI'd love for it reach more players, GMs and designers out there. To that effect, I just published a pocket-sized printable zine version of the rules. \npenflower-ink.com/product/albo/",
+        "createdAt": "2026-07-17T09:43:41.530Z"
+      },
+      "indexedAt": "2026-07-17T09:44:06.474Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreibhcd4mfifkklsvmhxvkbndphzyhtagthvc55tnex5i76w2k7o24m",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreibhcd4mfifkklsvmhxvkbndphzyhtagthvc55tnex5i76w2k7o24m",
+            "alt": "Photo of the printed and assembled Albo Pocket Version booklet, cover, featuring the game logo. Surrounded by colourful d10."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreia3z7g4kuz7f6w36encifcurhwh7lrflrlsfgfeewzxyattcny2eu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreia3z7g4kuz7f6w36encifcurhwh7lrflrlsfgfeewzxyattcny2eu",
+            "alt": "Photo of the printed and assembled Albo Pocket Version booklet, interior pages, black and white. Surrounded by colourful d10."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreifo2b5c45jugvxkio5udi367rgqsopk5dvalvmxl7rmox5nbqufyi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreifo2b5c45jugvxkio5udi367rgqsopk5dvalvmxl7rmox5nbqufyi",
+            "alt": "Photo of the printed and assembled Albo Pocket Version booklet, interior pages. Surrounded by colourful d10."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreifsvgdfsifzvyk4jyljjspexyeectvzhxxschvhuykhe2yw76zgjq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreifsvgdfsifzvyk4jyljjspexyeectvzhxxschvhuykhe2yw76zgjq",
+            "alt": "Photo of the printed and assembled Albo Pocket Version booklet, interior pages. Surrounded by colourful d10."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mqtbkwf4ts2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "glitzydemon.itch.io",
+        "displayName": "Fabian Blake (he/him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4"
+      },
+      "record": {
+        "text": "Just added some more community copies of Curiomancers.  Play as a coven of curiomancers working together with your personal spirit guides to help restore balance and harmony to places of generational and cultural importance. Inspired by multimarginalised experience\n\nglitzydemon.itch.io/curiomancers",
+        "createdAt": "2026-07-17T07:55:36.500Z"
+      },
+      "indexedAt": "2026-07-17T07:55:39.171Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 12,
+      "embed": {
+        "type": "external",
+        "uri": "https://glitzydemon.itch.io/curiomancers",
+        "title": "CURIOMANCERS by Fabian Blake",
+        "description": "A MULTIPLAYER RPG",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreiaz6jkckl2scyvfevnwk7utfr3lifdd5x7jisqcjcgp5f3qgd2kfq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mqrm3k72l224",
       "source": "bluesky",
@@ -201,8 +277,8 @@
       },
       "indexedAt": "2026-07-14T15:34:23.267Z",
       "replyCount": 30,
-      "repostCount": 294,
-      "likeCount": 658,
+      "repostCount": 295,
+      "likeCount": 662,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
@@ -371,8 +447,8 @@
       },
       "indexedAt": "2026-07-13T19:48:22.270Z",
       "replyCount": 2,
-      "repostCount": 31,
-      "likeCount": 53,
+      "repostCount": 32,
+      "likeCount": 57,
       "embed": {
         "type": "images",
         "images": [
@@ -535,8 +611,8 @@
       },
       "indexedAt": "2026-07-10T19:00:07.670Z",
       "replyCount": 1,
-      "repostCount": 20,
-      "likeCount": 59,
+      "repostCount": 21,
+      "likeCount": 60,
       "embed": {
         "type": "images",
         "images": [
@@ -624,7 +700,7 @@
         "createdAt": "2026-07-09T12:29:35.965Z"
       },
       "indexedAt": "2026-07-09T12:30:07.028Z",
-      "replyCount": 4,
+      "replyCount": 5,
       "repostCount": 32,
       "likeCount": 74,
       "embed": {
@@ -830,7 +906,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 200,
-      "likeCount": 983,
+      "likeCount": 984,
       "embed": {
         "type": "images",
         "images": [
@@ -2463,7 +2539,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1247,
-      "likeCount": 6554,
+      "likeCount": 6553,
       "embed": {
         "type": "images",
         "images": [
@@ -2627,7 +2703,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 671,
-      "likeCount": 2957,
+      "likeCount": 2956,
       "embed": {
         "type": "images",
         "images": [
