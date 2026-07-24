@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T00:17:41.056393Z",
+  "lastUpdated": "2026-07-24T12:25:47.427336Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mref4yenkk2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "The preview page for GRIDSHOCK Zero Edition has been revamped. It looks pretty slick, honestly.\ngamefound.com/en/projects/...",
+        "createdAt": "2026-07-24T03:14:39.338Z"
+      },
+      "indexedAt": "2026-07-24T03:14:41.364Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
+        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiddmzwr7s3v55o4iwsvgqus3ziflwajaamys4aa2tc6uabbrm65za"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mrcsvp5ank2v",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-07-23T12:15:49.970Z",
       "replyCount": 2,
       "repostCount": 20,
-      "likeCount": 69,
+      "likeCount": 73,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +126,8 @@
       },
       "indexedAt": "2026-07-23T07:47:05.666Z",
       "replyCount": 1,
-      "repostCount": 43,
-      "likeCount": 112,
+      "repostCount": 44,
+      "likeCount": 116,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -127,7 +156,7 @@
       "indexedAt": "2026-07-22T19:02:51.667Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 17,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -804,67 +833,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ltajj7uybiryrglmddmw3cpl/bafkreia37aku4ptzllt7f764dhucphop7ihswb5sneuw3nbagpvvkxcfpq",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ltajj7uybiryrglmddmw3cpl/bafkreia37aku4ptzllt7f764dhucphop7ihswb5sneuw3nbagpvvkxcfpq",
             "alt": "Text that reads A LAND ONCE MAGIC with a vibrantly colored illustration of a skeleton knight sitting under a tree with a bottle full of skulls for a head. Below A LAND ONCE MAGIC is a logo for the ENNIES 2026 nominations, \"Best Rules\", and \"Voting open until 7/19!\""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:w4uphegozmuvgh3h5i2nmaro/app.bsky.feed.post/3mqjzprm44c2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "ettin.itch.io",
-        "displayName": "Ettin",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:w4uphegozmuvgh3h5i2nmaro/bafkreif266cw74hkeomdkuizpyykhymbsug2oywnpijpbumyruakhizuxe"
-      },
-      "record": {
-        "text": "Hey folks! To cover some big legal costs related to my mum's passing, I've decided to make all Weird Age's titles 50% off for July only! You can check out a full bundle here:",
-        "createdAt": "2026-07-13T15:41:11.678Z"
-      },
-      "indexedAt": "2026-07-13T15:41:14.764Z",
-      "replyCount": 2,
-      "repostCount": 101,
-      "likeCount": 109,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/s/195913/weird-age-games-half-price-sale",
-        "title": "Weird Age Games Half-Price Sale by Weird Age Games",
-        "description": "A bundle by Weird Age Games, $73.37 for 14 games",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w4uphegozmuvgh3h5i2nmaro/bafkreigv7s273l5ff473u2iarpdhdhy4cukh5lkxba5hxiddsx22za2ppa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ymmxvxa2etxmgcfq3m3vvibd/app.bsky.feed.post/3mqjy33qsn227",
-      "source": "bluesky",
-      "author": {
-        "handle": "carlydraws.bsky.social",
-        "displayName": "carlydraws",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreidf7iqzbfmx5plmdpwbbzfy6hhnkv7m7lcgnk7qn5pygkgotc46zy"
-      },
-      "record": {
-        "text": "something from the vault, my tapestry inspired cover for PREQUEL by @glyphtide.games A very fun project! i mae a bunch of custom brushes to look like threads catching the light \n\n#ttrpg #art",
-        "createdAt": "2026-07-13T15:11:43.913Z"
-      },
-      "indexedAt": "2026-07-13T15:11:47.569Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 23,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreibysuuk3rtboncddz3m7xf5ind7jsaz7nih6zctho6b54u5t35w6u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ymmxvxa2etxmgcfq3m3vvibd/bafkreibysuuk3rtboncddz3m7xf5ind7jsaz7nih6zctho6b54u5t35w6u",
-            "alt": "tapestry style artwork of three heroes"
           }
         ]
       },
@@ -1736,7 +1704,7 @@
       "author": {
         "handle": "izzydotpng.bsky.social",
         "displayName": "Izzy.PNG | comms open",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigqww5ck7i35vkfecihuolqhymatlpjcx3dndtyagwpnvvzgbywwu"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreibvilgiiejxxfkygsye4acpfibfigr4hhksubbxa2al6ercpszr3q"
       },
       "record": {
         "text": "new character for His Majesty the Worm (earthblood orc, path of pentacles). more rogues should have axes.",
@@ -1839,7 +1807,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2624,
+      "likeCount": 2625,
       "embed": {
         "type": "images",
         "images": [
