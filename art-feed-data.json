@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T12:27:42.224298Z",
+  "lastUpdated": "2026-07-24T00:17:41.056393Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:acbvq5dxss7vp4ursexotrtn/app.bsky.feed.post/3mrcsvp5ank2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdwonder.bsky.social",
+        "displayName": "Amanda P.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreiai63puhd2f3kb2i7ivrmotsspxwgz2xvbq6lv4novksqh4ohqfx4"
+      },
+      "record": {
+        "text": "Resonant is a sci-fi horror adventure for MOTHERSHIP, inspired by The Expanse, Havana Syndrome, and industrial negligence. The crew takes a routine job from Rostrum Corp., then receives conflicting distress signals during planetfall. Art by @tonytranrpg.bsky.social spacepenguin.ink/products/res...",
+        "createdAt": "2026-07-23T12:15:47.677Z"
+      },
+      "indexedAt": "2026-07-23T12:15:49.970Z",
+      "replyCount": 2,
+      "repostCount": 20,
+      "likeCount": 69,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreigueanigzdcs74zqhrj2ny7w6hxnbzszjetalsizu7k35spiic4zi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:acbvq5dxss7vp4ursexotrtn/bafkreigueanigzdcs74zqhrj2ny7w6hxnbzszjetalsizu7k35spiic4zi",
+            "alt": "zoom in of resonant zine cover depicting abstractly a colony, a pilot all trapped in a sound wave"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mrcdv5r72k2j",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-07-23T07:47:05.666Z",
       "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 60,
+      "repostCount": 43,
+      "likeCount": 112,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-07-22T19:02:51.667Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 13,
+      "repostCount": 3,
+      "likeCount": 17,
       "embed": {
         "type": "images",
         "images": [
@@ -169,8 +201,8 @@
       },
       "indexedAt": "2026-07-22T13:04:31.267Z",
       "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 52,
+      "repostCount": 16,
+      "likeCount": 54,
       "embed": {
         "type": "images",
         "images": [
@@ -230,8 +262,8 @@
       },
       "indexedAt": "2026-07-21T13:18:10.569Z",
       "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 40,
+      "repostCount": 11,
+      "likeCount": 42,
       "embed": {
         "type": "images",
         "images": [
@@ -623,7 +655,7 @@
       "indexedAt": "2026-07-14T14:20:36.475Z",
       "replyCount": 1,
       "repostCount": 23,
-      "likeCount": 49,
+      "likeCount": 50,
       "embed": {
         "type": "images",
         "images": [
@@ -796,42 +828,13 @@
       "indexedAt": "2026-07-13T15:41:14.764Z",
       "replyCount": 2,
       "repostCount": 101,
-      "likeCount": 108,
+      "likeCount": 109,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/195913/weird-age-games-half-price-sale",
         "title": "Weird Age Games Half-Price Sale by Weird Age Games",
         "description": "A bundle by Weird Age Games, $73.37 for 14 games",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:w4uphegozmuvgh3h5i2nmaro/bafkreigv7s273l5ff473u2iarpdhdhy4cukh5lkxba5hxiddsx22za2ppa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mqjykruoj22f",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
-      },
-      "record": {
-        "text": "All of my games and stuff are available over on RPG Trader! Feel free to go and check them out!\n\nrpg-trader.com/creator/742/...",
-        "createdAt": "2026-07-13T15:20:30.445Z"
-      },
-      "indexedAt": "2026-07-13T15:20:31.270Z",
-      "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 5,
-      "embed": {
-        "type": "external",
-        "uri": "https://rpg-trader.com/creator/742/losthaven",
-        "title": "LostHaven on RPG Trader",
-        "description": "Independent TTRPG creator on RPG Trader.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreib56x46gk6dtn34e62rxtasjrwvndsl6c37xhl62j3w3crystxr4y"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1836,7 +1839,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 496,
-      "likeCount": 2625,
+      "likeCount": 2624,
       "embed": {
         "type": "images",
         "images": [
@@ -2147,7 +2150,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1449,
-      "likeCount": 6322,
+      "likeCount": 6321,
       "embed": {
         "type": "images",
         "images": [
@@ -2286,8 +2289,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 620,
-      "likeCount": 2904,
+      "repostCount": 619,
+      "likeCount": 2903,
       "embed": {
         "type": "images",
         "images": [
@@ -3121,7 +3124,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1955,
-      "likeCount": 8480,
+      "likeCount": 8479,
       "embed": {
         "type": "images",
         "images": [
@@ -3458,8 +3461,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
-      "repostCount": 545,
-      "likeCount": 3033,
+      "repostCount": 544,
+      "likeCount": 3032,
       "embed": {
         "type": "images",
         "images": [
