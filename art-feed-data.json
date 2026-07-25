@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T12:25:47.427336Z",
+  "lastUpdated": "2026-07-25T00:20:28.961015Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mrfmi53ujs2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "amandalee.bsky.social",
+        "displayName": "The Amanda Lee Mystery House",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
+      },
+      "record": {
+        "text": "amandalee.bearblog.dev\n\nok i did this I made a blog\nput me in yr rss readers put me in your webrings",
+        "createdAt": "2026-07-24T14:58:49.322Z"
+      },
+      "indexedAt": "2026-07-24T14:58:51.065Z",
+      "replyCount": 5,
+      "repostCount": 25,
+      "likeCount": 62,
+      "embed": {
+        "type": "external",
+        "uri": "https://amandalee.bearblog.dev/",
+        "title": "A Bestiary and Complete World Atlas",
+        "description": "amanda lee franck\n...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreih66fobcx2fpcjgyba7i6m3rhfopi4lgjhxkixag4pgnrk4whmg6q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7l6hm4lzae3pnwxojo7mm34j/app.bsky.feed.post/3mrfdp3jvck27",
+      "source": "bluesky",
+      "author": {
+        "handle": "zhuindustries.bsky.social",
+        "displayName": "Zhu Industries",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7l6hm4lzae3pnwxojo7mm34j/bafkreie7nlhpoc7npf6chbpvnb2g4kgzsnuncni2qkfvwg74dlyxtztdiu"
+      },
+      "record": {
+        "text": "Something completely different? Messing about with Zone Trooper, a one page solo hex crawl lo-fi 1 bit pixel art boardgame rpg ode to the ZX Spectrum game Rogue Trooper. #onepagerpgjam",
+        "createdAt": "2026-07-24T12:21:38.864Z"
+      },
+      "indexedAt": "2026-07-24T12:21:50.069Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 23,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7l6hm4lzae3pnwxojo7mm34j/bafkreicthygtupc4etovipqob26ebt7nzp34cvgokjnwr2fzi6vkxdtqsa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7l6hm4lzae3pnwxojo7mm34j/bafkreicthygtupc4etovipqob26ebt7nzp34cvgokjnwr2fzi6vkxdtqsa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - KICKSTARTING NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
       "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mref4yenkk2j",
       "source": "bluesky",
       "author": {
@@ -94,8 +155,8 @@
       },
       "indexedAt": "2026-07-23T12:15:49.970Z",
       "replyCount": 2,
-      "repostCount": 20,
-      "likeCount": 73,
+      "repostCount": 25,
+      "likeCount": 87,
       "embed": {
         "type": "images",
         "images": [
@@ -127,7 +188,7 @@
       "indexedAt": "2026-07-23T07:47:05.666Z",
       "replyCount": 1,
       "repostCount": 44,
-      "likeCount": 116,
+      "likeCount": 117,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -186,9 +247,9 @@
         "createdAt": "2026-07-22T18:49:53.686Z"
       },
       "indexedAt": "2026-07-22T18:50:06.766Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 14,
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 20,
       "embed": {
         "type": "images",
         "images": [
@@ -655,7 +716,7 @@
       "indexedAt": "2026-07-14T15:34:23.267Z",
       "replyCount": 31,
       "repostCount": 306,
-      "likeCount": 699,
+      "likeCount": 700,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
@@ -782,35 +843,6 @@
       }
     },
     {
-      "uri": "at://did:plc:ubufr42zf5q2kqc6jblm76pu/app.bsky.feed.post/3mqklwv3pk22u",
-      "source": "bluesky",
-      "author": {
-        "handle": "thirdkingdom.bsky.social",
-        "displayName": "Todd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ubufr42zf5q2kqc6jblm76pu/bafkreiapfvxqudnbsoydp3wa6kirung3eh42davstqv3sy5h5ymzs4qsxu"
-      },
-      "record": {
-        "text": "Sabre just added Break!!, by @naldodrinan.bsky.social , to our inventory. It's an absolutely gorgeous game. www.sabregamesandcards.com/product-page... #ttrpg #osr #dnd",
-        "createdAt": "2026-07-13T21:07:17.568Z"
-      },
-      "indexedAt": "2026-07-13T21:07:18.769Z",
-      "replyCount": 3,
-      "repostCount": 5,
-      "likeCount": 31,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.sabregamesandcards.com/product-page/break-core-rules-standard-edition",
-        "title": "BREAK!!: Core Rules (Standard Edition) | Sabre Games",
-        "description": "BREAK!! is an easy-to-play tabletop RPG of exploration &amp; teamwork, its gameplay and aesthetics are inspired by classic anime and SNES era videogames, along with wistful fantasy novels and movies!F...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ubufr42zf5q2kqc6jblm76pu/bafkreiaenhvelnvxd74ijrz4xbpvkkg3vf6m6ghbuyrktk3wvdb6q2uqnq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:ltajj7uybiryrglmddmw3cpl/app.bsky.feed.post/3mqkhjh56fc2v",
       "source": "bluesky",
       "author": {
@@ -843,48 +875,6 @@
       }
     },
     {
-      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mqhxojy6bc23",
-      "source": "bluesky",
-      "author": {
-        "handle": "friendricestudios.bsky.social",
-        "displayName": "Friend Rice Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi"
-      },
-      "record": {
-        "text": "Thank you everyone who showed up at our table at @twitchvancouver.bsky.social !\n\nReminder that we have just launched the official demo and kickstarter, we just got to $600, lets get to that final goal of $12000!\n\nwww.kickstarter.com/projects/fri...",
-        "createdAt": "2026-07-12T19:59:23.130Z"
-      },
-      "indexedAt": "2026-07-12T19:59:41.872Z",
-      "replyCount": 2,
-      "repostCount": 8,
-      "likeCount": 9,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreif5ywidpq6urn4zizbfaxpfmvjthhz43ejjumjpzwdcxsv7vrwkuq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreif5ywidpq6urn4zizbfaxpfmvjthhz43ejjumjpzwdcxsv7vrwkuq",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreibrvd26gifp4v5qv7wd5p27is7pdkn2cmibsdjqcnw4hqigacqf5u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreibrvd26gifp4v5qv7wd5p27is7pdkn2cmibsdjqcnw4hqigacqf5u",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreihenfnh5ccuzq6gisftusciir6hfe5acnwblf6ruil6niy33dxpo4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreihenfnh5ccuzq6gisftusciir6hfe5acnwblf6ruil6niy33dxpo4",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mqeyr67pes2x",
       "source": "bluesky",
       "author": {
@@ -897,7 +887,7 @@
         "createdAt": "2026-07-11T15:40:46.024Z"
       },
       "indexedAt": "2026-07-11T15:40:50.966Z",
-      "replyCount": 2,
+      "replyCount": 3,
       "repostCount": 20,
       "likeCount": 33,
       "embed": {
@@ -1760,39 +1750,6 @@
       }
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mlnvcd24cs2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "Creative soothsayer? Me?\n\nWell I suppose I did come up with CY-BORG  and orcs in sun hats before they got offical releases.\n\n\ud83e\uddd9\u200d\u2642\ufe0f\ud83c\udfba",
-        "createdAt": "2026-05-12T13:26:46.006Z"
-      },
-      "indexedAt": "2026-05-12T13:26:50.987Z",
-      "replyCount": 2,
-      "repostCount": 5,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaudb7ovb3x56n5xdnobgaffzl7rym4mpzjvch64ygpzcqvotirsa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiaudb7ovb3x56n5xdnobgaffzl7rym4mpzjvch64ygpzcqvotirsa",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreie4yoobfdeb5qaix3nphj4c4cnw7upfmb4obu5zijsqaxeapbe6zu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreie4yoobfdeb5qaix3nphj4c4cnw7upfmb4obu5zijsqaxeapbe6zu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mlnbpk6dvc23",
       "source": "bluesky",
       "author": {
@@ -1824,38 +1781,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:4732wedqtrky6ntca3beq3f4/app.bsky.feed.post/3mlmtvnquus23",
-      "source": "bluesky",
-      "author": {
-        "handle": "trahias.bsky.social",
-        "displayName": "\u039c\u0391\u039d\u039f\u03a3 \u03a4\u03a1\u0391\u03a7\u0399\u0391\u03a3\u2122",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4732wedqtrky6ntca3beq3f4/bafkreidw3qgcsbxao7bi5foh35cg2ivrgxrj3vt2cuc5hh5jmvtblg5iy4"
-      },
-      "record": {
-        "text": "Choy Moo Kheong (Singaporean, born 1950) \n\"Blue Whispering Day\", 2022. \nAcrylic on Canvas, 139.7 \u00d7 114.3 cm.\nPrivate Collection.\n#art #painting #artist #BlueSkyArt",
-        "createdAt": "2026-05-12T03:29:07.590Z"
-      },
-      "indexedAt": "2026-05-12T03:29:11.666Z",
-      "replyCount": 7,
-      "repostCount": 146,
-      "likeCount": 1240,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4732wedqtrky6ntca3beq3f4/bafkreic4jdi2yx3njfwsm6kvfyad46zb2emdxm5tnfda6a3gsh65qrz2gi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4732wedqtrky6ntca3beq3f4/bafkreic4jdi2yx3njfwsm6kvfyad46zb2emdxm5tnfda6a3gsh65qrz2gi",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
     },
     {
       "uri": "at://did:plc:ifcuwsf64evnhiqu5ihy4djf/app.bsky.feed.post/3mllwuolsjk2s",
@@ -3430,7 +3355,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 544,
-      "likeCount": 3032,
+      "likeCount": 3033,
       "embed": {
         "type": "images",
         "images": [
