@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T12:18:58.303818Z",
+  "lastUpdated": "2026-07-27T00:20:00.169479Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mrl7ufxzmk26",
+      "source": "bluesky",
+      "author": {
+        "handle": "amandalee.bsky.social",
+        "displayName": "The Amanda Lee Mystery House",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
+      },
+      "record": {
+        "text": "there are 99 cities\namandalee.bearblog.dev/i-have-been-...",
+        "createdAt": "2026-07-26T20:29:01.073Z"
+      },
+      "indexedAt": "2026-07-26T20:29:05.666Z",
+      "replyCount": 3,
+      "repostCount": 7,
+      "likeCount": 29,
+      "embed": {
+        "type": "external",
+        "uri": "https://amandalee.bearblog.dev/i-have-been-trying-to-write-some-cities/",
+        "title": "i have been trying to write some cities",
+        "description": "IMG_5134\n\n \nthe idea was, there would be 5-10 cities, only a few paragraphs to describe, and then a drawing for each one, and then put them all in a littl...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreih66fobcx2fpcjgyba7i6m3rhfopi4lgjhxkixag4pgnrk4whmg6q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mrfmi53ujs2l",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-07-24T14:58:51.065Z",
       "replyCount": 5,
       "repostCount": 26,
-      "likeCount": 70,
+      "likeCount": 71,
       "embed": {
         "type": "external",
         "uri": "https://amandalee.bearblog.dev/",
@@ -155,8 +184,8 @@
       },
       "indexedAt": "2026-07-23T12:15:49.970Z",
       "replyCount": 2,
-      "repostCount": 25,
-      "likeCount": 88,
+      "repostCount": 26,
+      "likeCount": 91,
       "embed": {
         "type": "images",
         "images": [
@@ -188,7 +217,7 @@
       "indexedAt": "2026-07-23T07:47:05.666Z",
       "replyCount": 1,
       "repostCount": 44,
-      "likeCount": 117,
+      "likeCount": 118,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -207,7 +236,7 @@
       "source": "bluesky",
       "author": {
         "handle": "mythworks.bsky.social",
-        "displayName": "Mythworks is making the Myth Work",
+        "displayName": "Mythworks is Gonna Gen that Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiaep2xkqejvvc3ra2sy73p2lot43nfz6espzjlx3j5egkdwt3k3ym"
       },
       "record": {
@@ -653,82 +682,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:lkmcpobigcsyes4ymv6lbf5g/app.bsky.feed.post/3mqnahsfj6k2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "umlauthuth.bsky.social",
-        "displayName": "Chris Huth",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreief2lb5iqu3ng3ioerlna2dy3tekyocqalztgtv37273ckqw3ig6a"
-      },
-      "record": {
-        "text": "I'm Huth. I do horror, fantasy, and science fiction illustration in RPGs, board games, other publications. looking for work now, soon, and for the foreseeable future #portfolioday \nwww.chrishuth.com",
-        "createdAt": "2026-07-14T22:19:59.433Z"
-      },
-      "indexedAt": "2026-07-14T22:20:08.886Z",
-      "replyCount": 1,
-      "repostCount": 17,
-      "likeCount": 48,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreig2vozencikoskwsx5bfa6o6oethaeftox3e5j5qzxbpjypqwikp4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreig2vozencikoskwsx5bfa6o6oethaeftox3e5j5qzxbpjypqwikp4",
-            "alt": "illustration of a gargoyle perched on a lectern"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreicmmvisoxn2scjyz6sf4hcch433yfc2grhckicubdptsuorl6bgfq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreicmmvisoxn2scjyz6sf4hcch433yfc2grhckicubdptsuorl6bgfq",
-            "alt": "illustration of three cloaked figures hovering over a tramp under a bridge "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreie46c3h6yiewl6npojgss4mlnyaeo66xxixbv2u2oh5bpdqfu52cm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreie46c3h6yiewl6npojgss4mlnyaeo66xxixbv2u2oh5bpdqfu52cm",
-            "alt": "illustration of a goat-headed man in fine dress"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreihrxugpe7ikdaw5hoxl2qosp3bzfsmxhasjmu3rfttcmeqmcezlra",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lkmcpobigcsyes4ymv6lbf5g/bafkreihrxugpe7ikdaw5hoxl2qosp3bzfsmxhasjmu3rfttcmeqmcezlra",
-            "alt": "illustration of a bunch of mutant figures under a huge glowing brain-mushroom"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:rzjgafeykxv4du7aw6nftltp/app.bsky.feed.post/3mqmjsisaek2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "jdragsky.bsky.social",
-        "displayName": "jay Dragon \ud83d\udd1c Seven Part Pact",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreidhidim5eizmkmi36fer2tgyytizdpqmoid2khfcb7m77g3b5i4oq"
-      },
-      "record": {
-        "text": "SEVEN-PART PACT, my fantastical ornate TTRPG about powerful wizards, asymmetrical board games, and the pressures of masculinity is now launching on kickstarter! \nwww.kickstarter.com/projects/sjg...",
-        "createdAt": "2026-07-14T15:34:22.451Z"
-      },
-      "indexedAt": "2026-07-14T15:34:23.267Z",
-      "replyCount": 31,
-      "repostCount": 305,
-      "likeCount": 699,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/sjgames/seven-part-pact",
-        "title": "Seven-Part Pact",
-        "description": "A fantastical, ornate TTRPG from Possum Creek about the might and folly of powerful wizards bound by a venerable Pact.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rzjgafeykxv4du7aw6nftltp/bafkreiaprreipfwwhsz4yfayqw32hqlccd4l2f32kpwxtgkcmjtyl2o35q"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:fmygsbyrivu6x77lnfaovfft/app.bsky.feed.post/3mqm534h4nc2d",
@@ -1936,7 +1889,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1449,
-      "likeCount": 6321,
+      "likeCount": 6320,
       "embed": {
         "type": "images",
         "images": [
