@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T12:58:12.317480Z",
+  "lastUpdated": "2026-07-28T00:17:43.900634Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,107 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mrnauw2c422y",
+      "source": "bluesky",
+      "author": {
+        "handle": "losthavenart.bsky.social",
+        "displayName": "Lost Haven Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
+      },
+      "record": {
+        "text": "The Quickstart for my TTRPG Skies Above is available on itch, drivethru and my favourite rpg-trader! Even if you have Skies Above Song in the Mist has an extra monster in there that you can use in your games! It was also written by @murchieart.bsky.social with art by myself.",
+        "createdAt": "2026-07-27T15:52:31.141Z"
+      },
+      "indexedAt": "2026-07-27T15:52:39.574Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 12,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiars73w5jku57dz3v7ftbv7swo2eqniqjn25zy3jd2u3xdpriujdu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiars73w5jku57dz3v7ftbv7swo2eqniqjn25zy3jd2u3xdpriujdu",
+            "alt": "Cover art for Song in the Mist the Quickstart adventure for Skies Above."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mrn6x4y7hc2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "Last Saturday, my local (Indonesian) TTRPG community had its third convention! \n\n40 Players, 8 Game Masters, and 8 Tables. We also had a consignment table, showcasing 9 community creators!\n\nWe had such diverse participants! This hobby belong to people of different backgrounds and genders!\n\n(1/3)",
+        "createdAt": "2026-07-27T15:17:58.039Z"
+      },
+      "indexedAt": "2026-07-27T15:18:59.068Z",
+      "replyCount": 2,
+      "repostCount": 10,
+      "likeCount": 27,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreidl36brrlsebu7ie6icwp4o662hcwbzomklptw73thcvzlyyltbaq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreidl36brrlsebu7ie6icwp4o662hcwbzomklptw73thcvzlyyltbaq",
+            "alt": "Group photo of our con participants and GMs"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreicjd4fuf4bw7dgmdozvld4ezql6zvj5ckixs7wmojbv37pebq3h6a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreicjd4fuf4bw7dgmdozvld4ezql6zvj5ckixs7wmojbv37pebq3h6a",
+            "alt": "Consignment table showcasing works from nine local creators"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mrmueoiz7c2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "When you buy the Castle Automatic, you also get every piece of art included as a digital asset to show your players. No more hiding parts of the book with your hand to show off the cool monster or trap illustration!\n\nThe final digital version and asset pack is alllllllmost ready.\n\nMap by Guy Pradel",
+        "createdAt": "2026-07-27T12:08:41.441Z"
+      },
+      "indexedAt": "2026-07-27T12:09:19.679Z",
+      "replyCount": 5,
+      "repostCount": 37,
+      "likeCount": 237,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihf2fetzzqkavctmxxhagpgwcaw3nkh3t24m76py2cl6r72ijjbyq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihf2fetzzqkavctmxxhagpgwcaw3nkh3t24m76py2cl6r72ijjbyq",
+            "alt": "Map of the Castle Automatic, showing its five interconnected levels and 100 rooms \n\nArt by Guy Pradel"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mrl7ufxzmk26",
       "source": "bluesky",
       "author": {
@@ -64,9 +165,9 @@
         "createdAt": "2026-07-26T20:29:01.073Z"
       },
       "indexedAt": "2026-07-26T20:29:05.666Z",
-      "replyCount": 3,
-      "repostCount": 9,
-      "likeCount": 42,
+      "replyCount": 4,
+      "repostCount": 14,
+      "likeCount": 53,
       "embed": {
         "type": "external",
         "uri": "https://amandalee.bearblog.dev/i-have-been-trying-to-write-some-cities/",
@@ -382,7 +483,7 @@
       "indexedAt": "2026-07-21T13:18:10.569Z",
       "replyCount": 1,
       "repostCount": 14,
-      "likeCount": 50,
+      "likeCount": 57,
       "embed": {
         "type": "images",
         "images": [
@@ -570,8 +671,8 @@
       "source": "bluesky",
       "author": {
         "handle": "glitzydemon.itch.io",
-        "displayName": "Fabian Blake - SO DONE (not in a fun way)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreifuihifnramiha6hahxwwslqcyu2qwbqdrzucnveur3zntmcrjtw4"
+        "displayName": "Fabian Blake \"Main dikh he na bister\"",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreigbt5eftz7ph3rahklmhjsdkebyd4xl76ejw7jyodrsfnbetx6zx4"
       },
       "record": {
         "text": "Just added some more community copies of Curiomancers.  Play as a coven of curiomancers working together with your personal spirit guides to help restore balance and harmony to places of generational and cultural importance. Inspired by multimarginalised experience\n\nglitzydemon.itch.io/curiomancers",
@@ -656,71 +757,6 @@
       }
     },
     {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mqpa3k2zcc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I was organizing some of my notes and forgot I did a set of joke alignments for BREAK!! a while back",
-        "createdAt": "2026-07-15T17:18:27.574Z"
-      },
-      "indexedAt": "2026-07-15T17:18:27.379Z",
-      "replyCount": 4,
-      "repostCount": 10,
-      "likeCount": 50,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreic4lvbqwrpp5alfogopti547z75qy7qc3qyh43nk5qxhptbvnerlu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreic4lvbqwrpp5alfogopti547z75qy7qc3qyh43nk5qxhptbvnerlu",
-            "alt": "A chart of joke alignments for the BREAK!! tabletop RPG: Do-Gooder, Do-Gooder Edgelord, Mischievous Do-Gooder, Mischief Maker, Mischief Making Opportunist, Edgelord Opportunist, Edgelord, Do-Gooder Opprtunist, Mischievous Edgelord"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:fmygsbyrivu6x77lnfaovfft/app.bsky.feed.post/3mqm534h4nc2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "icastlight.bsky.social",
-        "displayName": "\ud835\udd82.\ud835\udd6f.",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiattu7vqvagz7hyfy3kubktyyflhadvyzidy2hfc3s6jed2gdkaku"
-      },
-      "record": {
-        "text": "Reading through the old Wizardry manual inspired me to throw together a dungeon based on its 19x19 grid using AD&D Appendix A to match Wizardy's roots. Reflecting on it, the Designing Dungeons course can help its predictable elements be punched up: icastlight.blogspot.com/2026/07/rand...",
-        "createdAt": "2026-07-14T11:46:32.849Z"
-      },
-      "indexedAt": "2026-07-14T11:46:35.268Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 30,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreie57w27ieopt6zuuri23qmdbz7n2ar63dckebdrkyhjkwijflyczi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreie57w27ieopt6zuuri23qmdbz7n2ar63dckebdrkyhjkwijflyczi",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreic3opzhl4s45ew5ceqpeq5fq62vbanjnqxd6pbbekbyu4u7lj737y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreic3opzhl4s45ew5ceqpeq5fq62vbanjnqxd6pbbekbyu4u7lj737y",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mqeyr67pes2x",
       "source": "bluesky",
       "author": {
@@ -742,6 +778,38 @@
         "title": "Pirouette Princess| A Magical Bullet-Hell Shooter",
         "description": "Shoot enemies and reflect bullets to save Pitch City from the Muses control!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiblf5gujtepgzsfgbijvmwo7kl3e3bitud7ns4gjmrdvzcowzdu7i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mq7pndh3sk22",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "Terminal State is going to print and is now open for late pledges/preorders.\n\nTerminal State is a cyberpunk TTRPG powered by the Year Zero Engine - used in Free League games like Alien, Coriolis, and Blade Runner. A new vision of the genre rooted in our present, rather than an 80s retro-future.",
+        "createdAt": "2026-07-09T13:14:14.921Z"
+      },
+      "indexedAt": "2026-07-09T13:14:20.737Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 3,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiazanpo35mcy5cxerbmghih3svrjp3eyg334okgsfnug2qsbu7nlq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiazanpo35mcy5cxerbmghih3svrjp3eyg334okgsfnug2qsbu7nlq",
+            "alt": "Promotional image for the Terminal State core edition rulebook, a $55 USD 300+ page hardcover available for late pledges/preorders."
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2863,7 +2931,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1955,
-      "likeCount": 8477,
+      "likeCount": 8476,
       "embed": {
         "type": "images",
         "images": [
@@ -3172,8 +3240,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 728,
-      "likeCount": 3348,
+      "repostCount": 727,
+      "likeCount": 3347,
       "embed": {
         "type": "images",
         "images": [
@@ -3423,8 +3491,8 @@
       },
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
-      "repostCount": 407,
-      "likeCount": 2368,
+      "repostCount": 406,
+      "likeCount": 2367,
       "embed": {
         "type": "images",
         "images": [
@@ -3451,8 +3519,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2656,
-      "likeCount": 15647,
+      "repostCount": 2655,
+      "likeCount": 15646,
       "embed": {
         "type": "images",
         "images": [
