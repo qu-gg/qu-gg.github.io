@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T12:35:04.281817Z",
+  "lastUpdated": "2026-07-30T00:18:21.086410Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,132 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:oageechq2gcpkkqcduwclsnd/app.bsky.feed.post/3mrsn22ofhs2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "avartwork.bsky.social",
+        "displayName": "Vandy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreid5oulqxsczya27bv3vqqagddejjo4dpgnk7fd57o6uqqviceaqoi"
+      },
+      "record": {
+        "text": "If boomers are looking for books for the kids in their life that aren\u2019t AI generated garbage they can always check out Adventure Ace. I\u2019m proud to have work out there that\u2019s meant to encourage imagination in a world that seems to want to stifle it.",
+        "createdAt": "2026-07-29T19:13:27.355Z"
+      },
+      "indexedAt": "2026-07-29T19:13:30.274Z",
+      "replyCount": 1,
+      "repostCount": 16,
+      "likeCount": 28,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiahdqkfnl6uu4wgauxf2hepvbl2mj3g3q6qdxoqyp2npcvjifq37y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiahdqkfnl6uu4wgauxf2hepvbl2mj3g3q6qdxoqyp2npcvjifq37y",
+            "alt": "Adventure Ace: Valley of the Giant Snakes "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiafiikaipt66ryf5fyfoll53dh64ijbg35vzhml5pnzpx7e6kvx3e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiafiikaipt66ryf5fyfoll53dh64ijbg35vzhml5pnzpx7e6kvx3e",
+            "alt": "Adventure Ace: Deep Sea Danger "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3mrsk6cda6k2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "bradkerr.net",
+        "displayName": "Brad Kerr",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
+      },
+      "record": {
+        "text": "Say what you will about the ENNIE awards, you have to admit that I won one last year (\"The Dream Shrine\" with @skullfungus.bsky.social). It's a book, on sale at Drivethru right now and you can even buy physical copies at various places (Plus One EXP, Cairn Store) www.drivethrurpg.com/en/product/4...",
+        "createdAt": "2026-07-29T18:22:08.379Z"
+      },
+      "indexedAt": "2026-07-29T18:22:09.182Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 30,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com/en/product/487721/the-dream-shrine",
+        "title": "DriveThruRPG - The Largest RPG Download Store!",
+        "description": "Your one-stop online shop for new and vintage RPG products from the top publishers, delivered fresh to your desktop in electronic format.",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mrsj5nddz22l",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "People have been talking about advertising your backlog, so while I'm working on START I figured why not talk a bit about BREAK!!'s rulebook in the meantime?\n\nSo here's a thread on BREAK!!'s Callings (Classes, jobs, etc)",
+        "createdAt": "2026-07-29T18:03:52.573Z"
+      },
+      "indexedAt": "2026-07-29T18:03:59.178Z",
+      "replyCount": 1,
+      "repostCount": 22,
+      "likeCount": 66,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicidzl6grnrpwhmemjkpvbm2tvogoxfbgkxvkw5fa6msusewoo6yu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicidzl6grnrpwhmemjkpvbm2tvogoxfbgkxvkw5fa6msusewoo6yu",
+            "alt": "A spread of 4 of BREAK!!'s character Callings: the Factotum, Champion, Sneak, and Raider"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mrrycq46n22f",
+      "source": "bluesky",
+      "author": {
+        "handle": "losthavenart.bsky.social",
+        "displayName": "Lost Haven Studio",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
+      },
+      "record": {
+        "text": "Not sure if it'll encourage folks to by a PDF when the goal is funds for prints of the GM screen and Ability cards but I figured I'd give it a go.",
+        "createdAt": "2026-07-29T13:02:29.692Z"
+      },
+      "indexedAt": "2026-07-29T13:02:32.964Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreigwvsr6offx43kwvfdcbd63xqdlmhyjwsszw2heu7gfrw4dkjis4i",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreigwvsr6offx43kwvfdcbd63xqdlmhyjwsszw2heu7gfrw4dkjis4i",
+            "alt": "Screenshot from RPG-Trader showing Skies Above and a Funding Goal of $200 to do a print run of GM Screens and Ability Cards."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mrrwgklcfk27",
       "source": "bluesky",
       "author": {
@@ -65,8 +191,8 @@
       },
       "indexedAt": "2026-07-29T12:28:54.667Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 4,
+      "repostCount": 6,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +223,8 @@
       },
       "indexedAt": "2026-07-28T19:52:21.285Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 35,
+      "repostCount": 12,
+      "likeCount": 42,
       "embed": {
         "type": "external",
         "uri": "https://orthopraxy.itch.io/giants-in-the-sky",
@@ -126,8 +252,8 @@
       },
       "indexedAt": "2026-07-28T16:26:11.766Z",
       "replyCount": 1,
-      "repostCount": 34,
-      "likeCount": 61,
+      "repostCount": 48,
+      "likeCount": 77,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/mantic-games/the-ghost-in-the-shell-tabletop-roleplaying-game",
@@ -187,8 +313,8 @@
       },
       "indexedAt": "2026-07-28T13:28:41.420Z",
       "replyCount": 3,
-      "repostCount": 8,
-      "likeCount": 20,
+      "repostCount": 10,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://karlyanders.itch.io/stormsong-of-the-crimson-vale",
@@ -216,8 +342,8 @@
       },
       "indexedAt": "2026-07-28T13:00:51.673Z",
       "replyCount": 5,
-      "repostCount": 34,
-      "likeCount": 106,
+      "repostCount": 35,
+      "likeCount": 109,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/into-the-oddish-conversion-calculator",
@@ -278,7 +404,7 @@
       "indexedAt": "2026-07-27T15:18:59.068Z",
       "replyCount": 2,
       "repostCount": 14,
-      "likeCount": 38,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -315,7 +441,7 @@
       "indexedAt": "2026-07-27T12:09:19.679Z",
       "replyCount": 5,
       "repostCount": 38,
-      "likeCount": 250,
+      "likeCount": 253,
       "embed": {
         "type": "images",
         "images": [
@@ -641,96 +767,6 @@
         "title": "Animal Story by Shonte",
         "description": "Play in your browser",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mtefepv7hqdiuqc2judflc3t/bafkreiertdqkiqof63l7wvlqz7wqhunueryci7gspdq5hh4ccoxg63i7y4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mr5vhbetck2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "While I won't be a gencon, BREAK!! will be with a bunch of other great games at @ipr.bsky.social's Booth (449) so you can grab a copy there if you like!\n\nwww.indiepressrevolution.com/xcart/Gen-Co...",
-        "createdAt": "2026-07-21T13:18:05.977Z"
-      },
-      "indexedAt": "2026-07-21T13:18:10.569Z",
-      "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 57,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidmux253vnk6xtkszrx7kjaaud5cadrrida6jzjcu5exekskrxjve",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidmux253vnk6xtkszrx7kjaaud5cadrrida6jzjcu5exekskrxjve",
-            "alt": "A crowd of adventurers from the BREAK!! tabletop rpg letting you know more adventurers are indeed, wanted"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidg76ddmlvsp2dkz3wnoiap3xwbminlh44a7xrihvapyzocmuay6q",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidg76ddmlvsp2dkz3wnoiap3xwbminlh44a7xrihvapyzocmuay6q",
-            "alt": "A picture of the BREAK!! rpg book itself!"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mr3p544y7k23",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I've been filling out bits and bobs for START and one thing I've been refining is a list of the bonus XP you can get for certain things in the book's main scenario. There is already a guide for this in the core rules, but some specific examples can't hurt!\n\n(Slight out of context spoilers I guess)",
-        "createdAt": "2026-07-20T16:19:43.054Z"
-      },
-      "indexedAt": "2026-07-20T16:19:44.876Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 22,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreihxl4c5eqm3qwihcjrfdrknb6qx7fcqz65ejzvkdpttflz72cu6ma",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreihxl4c5eqm3qwihcjrfdrknb6qx7fcqz65ejzvkdpttflz72cu6ma",
-            "alt": "Text that says: \nACHIEVEMENT XP FOR A WILTING WISH\n\nRestoring the Facility for use as a new lantern town or something similar (3 XP)\n\nGetting the Wishflower back to Beacon and saving Lily (2 XP)\n\nFinding and helping Rembrandt (1 XP)\n\nSpending time in Beacon and getting to know the people there (1 XP)\n\nAssisting Valarie Shadowbane and Smarfly so they both return \nunharmed (1 XP)\n\nAssisting and perhaps befriending the Black Rokko-Do (1 XP)\n\nDefeating Helvetica or a significant amount of the Envious Knives (1 \nXP)\n\nDefeating the Crawling Vines (1 XP)\n\nBraving the Fissure to enter the second part of the Facility (1 XP)\n\nDiscovering and investigating the Manarail Map in the Gardens (1 XP)\n\nReading the staff\u2019s notes and piecing together information about the Facility (1 XP)\n\nAssisting with one of the tavern patron\u2019s requests (1 XP)\n\nGM Note: Feel free to grant Achievement XP for other things outside of this list if you feel it fits, or increase the reward if it's called for. For example, if the party manages to defeat the envious knives with a strange but effective plan, you might grant 2 XP for that instead of 1.\n"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mqeyr67pes2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "friendricestudios.bsky.social",
-        "displayName": "Friend Rice Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi"
-      },
-      "record": {
-        "text": "WE ARE OFFICIALLY LIVE\n\nPlay the new official demo, and support the kickstarter!\n\nPirouette Princess is a bullet-hell shooter where you play as a magical girl as she attempts to free Pitch City from the Muses!\n\n#indiedev #gamedev #kickstarter\n\nwww.kickstarter.com/projects/fri...",
-        "createdAt": "2026-07-11T15:40:46.024Z"
-      },
-      "indexedAt": "2026-07-11T15:40:50.966Z",
-      "replyCount": 4,
-      "repostCount": 20,
-      "likeCount": 33,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/friendricestudios/pirouette-princess",
-        "title": "Pirouette Princess| A Magical Bullet-Hell Shooter",
-        "description": "Shoot enemies and reflect bullets to save Pitch City from the Muses control!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiblf5gujtepgzsfgbijvmwo7kl3e3bitud7ns4gjmrdvzcowzdu7i"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2884,7 +2920,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1955,
-      "likeCount": 8475,
+      "likeCount": 8474,
       "embed": {
         "type": "images",
         "images": [
@@ -3194,7 +3230,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 727,
-      "likeCount": 3347,
+      "likeCount": 3348,
       "embed": {
         "type": "images",
         "images": [
