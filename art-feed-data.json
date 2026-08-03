@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T12:18:03.775419Z",
+  "lastUpdated": "2026-08-03T00:20:00.917781Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,72 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3ms3zztlugc2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "I revamped the Resources and Playing Online sections of the Worm website to highlight all the fan-created options to support online play. \n\nIf you're spinning up a game of HIS MAJESTY THE WORM online, check it out:  www.hismajestytheworm.games#h.pfuql57d5pt9",
+        "createdAt": "2026-08-02T12:59:56.230Z"
+      },
+      "indexedAt": "2026-08-02T12:59:57.679Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 28,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.hismajestytheworm.games/#h.pfuql57d5pt9",
+        "title": "His Majesty the Worm",
+        "description": "His Majesty the Worm is a new-school game with old-school sensibilities: the classic megadungeon experience given fresh life through a focus on the mundanities and small moments of daily life inside t...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreienzycr6dy73h7genyadvd35irm3mzkrrw7vmxxdfuuarrbvno6va"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3ms3yp2vxts26",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids \u27a1\ufe0f GenCon",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "Last day to check out IPR booth 449 at Gen Con and pick up some awesome games and books like: \nMaking a TTRPG for YOUR Particular Kid\nRolling With the Youth \nJukebox\nThe Librarian's Apprentice\nBonsai Dairies\nand so many more!!\n",
+        "createdAt": "2026-08-02T12:36:01Z"
+      },
+      "indexedAt": "2026-08-02T12:36:04.972Z",
+      "replyCount": 0,
+      "repostCount": 9,
+      "likeCount": 26,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifebm4oj5qj6xxjmjvdibfgh7j76go6wi4cwesu44qyrtq7b3gqje",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifebm4oj5qj6xxjmjvdibfgh7j76go6wi4cwesu44qyrtq7b3gqje",
+            "alt": "a photo of the IPR booth sign\n"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiaazjeq2ushgxyfvr6yulbojxsxwjcyahe2pzdztp3266j6eh5b4m",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiaazjeq2ushgxyfvr6yulbojxsxwjcyahe2pzdztp3266j6eh5b4m",
+            "alt": "a photo from the IPR booth showing Making a TTRPG for YOUR Particular Kid, Rolling with the Youth, Jukebox, and more!"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3ms3v47fwdc2v",
       "source": "bluesky",
       "author": {
@@ -65,8 +131,8 @@
       },
       "indexedAt": "2026-08-02T11:31:48.566Z",
       "replyCount": 1,
-      "repostCount": 0,
-      "likeCount": 12,
+      "repostCount": 5,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -93,8 +159,8 @@
       },
       "indexedAt": "2026-08-02T03:08:22.071Z",
       "replyCount": 2,
-      "repostCount": 5,
-      "likeCount": 18,
+      "repostCount": 8,
+      "likeCount": 25,
       "embed": {
         "type": "images",
         "images": [
@@ -126,7 +192,7 @@
       "indexedAt": "2026-08-01T21:36:35.564Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 31,
+      "likeCount": 32,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/jam/appx-n-jam-2026/entries",
@@ -153,9 +219,9 @@
         "createdAt": "2026-08-01T21:10:11.130Z"
       },
       "indexedAt": "2026-08-01T21:10:16.364Z",
-      "replyCount": 0,
-      "repostCount": 14,
-      "likeCount": 40,
+      "replyCount": 1,
+      "repostCount": 23,
+      "likeCount": 82,
       "embed": {
         "type": "images",
         "images": [
@@ -186,8 +252,8 @@
       },
       "indexedAt": "2026-08-01T20:11:49.670Z",
       "replyCount": 4,
-      "repostCount": 52,
-      "likeCount": 140,
+      "repostCount": 61,
+      "likeCount": 190,
       "embed": {
         "type": "images",
         "images": [
@@ -217,9 +283,9 @@
         "createdAt": "2026-08-01T13:05:07.074Z"
       },
       "indexedAt": "2026-08-01T13:05:10.464Z",
-      "replyCount": 9,
+      "replyCount": 10,
       "repostCount": 21,
-      "likeCount": 149,
+      "likeCount": 159,
       "embed": {
         "type": "images",
         "images": [
@@ -249,9 +315,9 @@
         "createdAt": "2026-08-01T12:55:03.261Z"
       },
       "indexedAt": "2026-08-01T12:55:09.277Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 40,
+      "replyCount": 3,
+      "repostCount": 19,
+      "likeCount": 50,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/c/7897044/appx-n-jam-2026-indonesian-submissions",
@@ -279,8 +345,8 @@
       },
       "indexedAt": "2026-08-01T10:43:36.066Z",
       "replyCount": 0,
-      "repostCount": 14,
-      "likeCount": 44,
+      "repostCount": 17,
+      "likeCount": 53,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/c/7779132/appx-n-jam-2026-cairn-collection",
@@ -401,8 +467,8 @@
       },
       "indexedAt": "2026-07-31T13:52:19.085Z",
       "replyCount": 6,
-      "repostCount": 32,
-      "likeCount": 105,
+      "repostCount": 34,
+      "likeCount": 107,
       "embed": {
         "type": "images",
         "images": [
@@ -714,7 +780,7 @@
       "indexedAt": "2026-07-28T13:28:41.420Z",
       "replyCount": 3,
       "repostCount": 10,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://karlyanders.itch.io/stormsong-of-the-crimson-vale",
@@ -750,75 +816,6 @@
         "title": "Convert Any Pok\u00e9mon to Into the Oddish Stats \u2014 Prismatic Wasteland",
         "description": "Convert any Pok\u00e9mon into stats for Into the Oddish and any other Oddlike like Carin or Into the Odd. Also 22 enemy Pok\u00e9mon for your games or Into the Oddish adventures.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreig3mljfiyiegt4tysjhigqitqyei7xbxtevfzjyedwf5vrvtucsva"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3mrnauw2c422y",
-      "source": "bluesky",
-      "author": {
-        "handle": "losthavenart.bsky.social",
-        "displayName": "Lost Haven Studio",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreid2uxuow26jqz6dhvfgmjijsvrepswfwv3titdkzpsdnjlxkywfxq"
-      },
-      "record": {
-        "text": "The Quickstart for my TTRPG Skies Above is available on itch, drivethru and my favourite rpg-trader! Even if you have Skies Above Song in the Mist has an extra monster in there that you can use in your games! It was also written by @murchieart.bsky.social with art by myself.",
-        "createdAt": "2026-07-27T15:52:31.141Z"
-      },
-      "indexedAt": "2026-07-27T15:52:39.574Z",
-      "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 13,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiars73w5jku57dz3v7ftbv7swo2eqniqjn25zy3jd2u3xdpriujdu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dfhn37hckm5e7ewcp5vrmscm/bafkreiars73w5jku57dz3v7ftbv7swo2eqniqjn25zy3jd2u3xdpriujdu",
-            "alt": "Cover art for Song in the Mist the Quickstart adventure for Skies Above."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mrn6x4y7hc2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "Last Saturday, my local (Indonesian) TTRPG community had its third convention! \n\n40 Players, 8 Game Masters, and 8 Tables. We also had a consignment table, showcasing 9 community creators!\n\nWe had such diverse participants! This hobby belong to people of different backgrounds and genders!\n\n(1/3)",
-        "createdAt": "2026-07-27T15:17:58.039Z"
-      },
-      "indexedAt": "2026-07-27T15:18:59.068Z",
-      "replyCount": 2,
-      "repostCount": 14,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreidl36brrlsebu7ie6icwp4o662hcwbzomklptw73thcvzlyyltbaq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreidl36brrlsebu7ie6icwp4o662hcwbzomklptw73thcvzlyyltbaq",
-            "alt": "Group photo of our con participants and GMs"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreicjd4fuf4bw7dgmdozvld4ezql6zvj5ckixs7wmojbv37pebq3h6a",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreicjd4fuf4bw7dgmdozvld4ezql6zvj5ckixs7wmojbv37pebq3h6a",
-            "alt": "Consignment table showcasing works from nine local creators"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -900,38 +897,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mq7pndh3sk22",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "Terminal State is going to print and is now open for late pledges/preorders.\n\nTerminal State is a cyberpunk TTRPG powered by the Year Zero Engine - used in Free League games like Alien, Coriolis, and Blade Runner. A new vision of the genre rooted in our present, rather than an 80s retro-future.",
-        "createdAt": "2026-07-09T13:14:14.921Z"
-      },
-      "indexedAt": "2026-07-09T13:14:20.737Z",
-      "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiazanpo35mcy5cxerbmghih3svrjp3eyg334okgsfnug2qsbu7nlq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiazanpo35mcy5cxerbmghih3svrjp3eyg334okgsfnug2qsbu7nlq",
-            "alt": "Promotional image for the Terminal State core edition rulebook, a $55 USD 300+ page hardcover available for late pledges/preorders."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:v26achhdfva62ymp243ldrvf/app.bsky.feed.post/3mq3ycw2yxc2a",
@@ -1053,8 +1018,8 @@
       },
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
-      "repostCount": 202,
-      "likeCount": 994,
+      "repostCount": 203,
+      "likeCount": 995,
       "embed": {
         "type": "images",
         "images": [
@@ -1150,7 +1115,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 77,
-      "likeCount": 535,
+      "likeCount": 536,
       "embed": {
         "type": "images",
         "images": [
@@ -1691,6 +1656,38 @@
       "repostBy": null
     },
     {
+      "uri": "at://did:plc:hzj5tp6zsrbw6khxuz2u244s/app.bsky.feed.post/3mlwjq7irus2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "kaporiknight.bsky.social",
+        "displayName": "Grampa Cheddar",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hzj5tp6zsrbw6khxuz2u244s/bafkreihpsfkmzacmu6notrbimitra5b57yiiswycest3fknlwedpm465pa"
+      },
+      "record": {
+        "text": "Crystallium Warriors \u2694\ufe0f \ud83c\udf8a \ud83d\udc96",
+        "createdAt": "2026-05-15T23:53:44.825Z"
+      },
+      "indexedAt": "2026-05-15T23:53:48.362Z",
+      "replyCount": 1,
+      "repostCount": 14,
+      "likeCount": 53,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hzj5tp6zsrbw6khxuz2u244s/bafkreidumzv6t4tf2xta3tyv2yro4amllw4biz62kkhabl4p2f22hvdrzm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hzj5tp6zsrbw6khxuz2u244s/bafkreidumzv6t4tf2xta3tyv2yro4amllw4biz62kkhabl4p2f22hvdrzm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mlnbpk6dvc23",
       "source": "bluesky",
       "author": {
@@ -1951,8 +1948,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1450,
-      "likeCount": 6325,
+      "repostCount": 1449,
+      "likeCount": 6323,
       "embed": {
         "type": "images",
         "images": [
@@ -2091,8 +2088,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 618,
-      "likeCount": 2905,
+      "repostCount": 616,
+      "likeCount": 2903,
       "embed": {
         "type": "images",
         "images": [
@@ -2664,8 +2661,8 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 671,
-      "likeCount": 2956,
+      "repostCount": 670,
+      "likeCount": 2955,
       "embed": {
         "type": "images",
         "images": [
@@ -2835,7 +2832,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 447,
-      "likeCount": 1882,
+      "likeCount": 1881,
       "embed": {
         "type": "images",
         "images": [
@@ -2925,8 +2922,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
-      "repostCount": 1953,
-      "likeCount": 8472,
+      "repostCount": 1952,
+      "likeCount": 8470,
       "embed": {
         "type": "images",
         "images": [
@@ -3178,8 +3175,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2351,
-      "likeCount": 11864,
+      "repostCount": 2350,
+      "likeCount": 11861,
       "embed": {
         "type": "images",
         "images": [
@@ -3235,8 +3232,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 727,
-      "likeCount": 3348,
+      "repostCount": 726,
+      "likeCount": 3346,
       "embed": {
         "type": "images",
         "images": [
@@ -3514,8 +3511,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2653,
-      "likeCount": 15644,
+      "repostCount": 2652,
+      "likeCount": 15641,
       "embed": {
         "type": "images",
         "images": [
