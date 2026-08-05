@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T00:20:02.168830Z",
+  "lastUpdated": "2026-08-05T12:31:27.384294Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -66,13 +66,42 @@
       "indexedAt": "2026-08-04T18:34:11.068Z",
       "replyCount": 1,
       "repostCount": 7,
-      "likeCount": 14,
+      "likeCount": 15,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/friendricestudios/pirouette-princess",
         "title": "Pirouette Princess| A Magical Bullet-Hell Shooter",
         "description": "Shoot enemies and reflect bullets to save Pitch City from the Muses control!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiblf5gujtepgzsfgbijvmwo7kl3e3bitud7ns4gjmrdvzcowzdu7i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3msbltrwu2k2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "sinland.gay",
+        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
+      },
+      "record": {
+        "text": "Dowager: The Sacred & Strange, my sci-fantasy Tactics RPG about psychic oddballs blowing up datacenters is now up on itch dot io! If you've wondered what I've been posting about for the last few months, you can read up about it here!\nsinabsentia.itch.io/dowager-the-...",
+        "createdAt": "2026-08-04T18:01:59.211Z"
+      },
+      "indexedAt": "2026-08-04T18:02:02.063Z",
+      "replyCount": 2,
+      "repostCount": 21,
+      "likeCount": 27,
+      "embed": {
+        "type": "external",
+        "uri": "https://sinabsentia.itch.io/dowager-the-sacred-strange",
+        "title": "Dowager: The Sacred & Strange (Trashcan) by \ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "description": "A Tactical RPG of Semi-Automatic Sorcery and Psionic Turmoil across the Golden Cosmos",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreihhw54lhym5mqw3hkagyksbzqe6k2edopf6dpe4a7ofvx5qjtgsme"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -122,8 +151,8 @@
       },
       "indexedAt": "2026-08-03T13:24:43.263Z",
       "replyCount": 15,
-      "repostCount": 19,
-      "likeCount": 30,
+      "repostCount": 21,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -405,8 +434,8 @@
       },
       "indexedAt": "2026-08-01T12:55:09.277Z",
       "replyCount": 4,
-      "repostCount": 29,
-      "likeCount": 67,
+      "repostCount": 30,
+      "likeCount": 71,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/c/7897044/appx-n-jam-2026-indonesian-submissions",
@@ -960,7 +989,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 203,
-      "likeCount": 996,
+      "likeCount": 997,
       "embed": {
         "type": "images",
         "images": [
