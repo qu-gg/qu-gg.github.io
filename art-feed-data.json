@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T12:32:47.206559Z",
+  "lastUpdated": "2026-08-07T01:05:57.102818Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,63 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3msgcpuwtnc2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "A bit of trivia time since I just was thinking about it this morning - in BREAK!! I wanted to use the term \"saga\" instead of \"campaign\" because I felt it fit the game better, but also because SaGa is my favorite video game rpg series!",
+        "createdAt": "2026-08-06T15:02:03.152Z"
+      },
+      "indexedAt": "2026-08-06T15:02:05.595Z",
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 39,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidsdzv24p4watwsezrsaf3ougy5yd7xblwrwhrp7rwtqw6de5sbyy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidsdzv24p4watwsezrsaf3ougy5yd7xblwrwhrp7rwtqw6de5sbyy",
+            "alt": "An excerpt from the BREAK!! tabletop rpg concerning sagas - a term the BREAK!! rpg uses for a string of adventurers featuring the same group"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3msfylfc3722a",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "My friend Habeeb talks about how the first TTRPG experience can all lead to a shared communal experience. \n\nHe emphasizes the importance of the human interaction in TTRPG and the importance of having a community.\n\nbeeboobubie.substack.com/p/this-is-a-...",
+        "createdAt": "2026-08-06T12:00:35.108Z"
+      },
+      "indexedAt": "2026-08-06T12:00:37.572Z",
+      "replyCount": 2,
+      "repostCount": 8,
+      "likeCount": 18,
+      "embed": {
+        "type": "external",
+        "uri": "https://beeboobubie.substack.com/p/this-is-a-story-about-borrowed-dice",
+        "title": "this is a story about borrowed dice",
+        "description": "how a handful of plastic became a tradition",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreihakywz4wtmiyjtyua6o34uvdooalu4ydhjkxpba4vj7e5ebbu3ou"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3msdiw6iodc2t",
       "source": "bluesky",
       "author": {
@@ -66,7 +123,7 @@
       "indexedAt": "2026-08-05T12:15:00.170Z",
       "replyCount": 6,
       "repostCount": 22,
-      "likeCount": 77,
+      "likeCount": 78,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.itch.io/under-hill-by-water",
@@ -400,7 +457,7 @@
       "indexedAt": "2026-08-01T20:11:49.670Z",
       "replyCount": 4,
       "repostCount": 64,
-      "likeCount": 202,
+      "likeCount": 203,
       "embed": {
         "type": "images",
         "images": [
@@ -623,38 +680,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiae2ljfszwcapkc4it3llxf2zrqvg66ar4qyyvw72jpquy3el5qgm",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiae2ljfszwcapkc4it3llxf2zrqvg66ar4qyyvw72jpquy3el5qgm",
             "alt": "Three IPR booth 449 staff at Gen Con 2026 stand behind a table stacked with small press roleplaying and storytelling games."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mruytdvj7s2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - post gencon rest",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "My awesome lovely books from lovely lovelies (taken while squatting at the church next to gencon and leeching off of public wifi)",
-        "createdAt": "2026-07-30T17:49:46.528Z"
-      },
-      "indexedAt": "2026-07-30T17:50:00.965Z",
-      "replyCount": 5,
-      "repostCount": 13,
-      "likeCount": 40,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreieufp7c4uqgw3ic6fz5uiehtx55bwaeumxytxvql5pinihcia7y3m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreieufp7c4uqgw3ic6fz5uiehtx55bwaeumxytxvql5pinihcia7y3m",
-            "alt": ""
           }
         ]
       },
@@ -889,7 +914,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 203,
-      "likeCount": 997,
+      "likeCount": 998,
       "embed": {
         "type": "images",
         "images": [
@@ -985,7 +1010,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 77,
-      "likeCount": 537,
+      "likeCount": 539,
       "embed": {
         "type": "images",
         "images": [
@@ -3326,7 +3351,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1876,
-      "likeCount": 8967,
+      "likeCount": 8966,
       "embed": {
         "type": "images",
         "images": [
@@ -3382,7 +3407,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2652,
-      "likeCount": 15640,
+      "likeCount": 15639,
       "embed": {
         "type": "images",
         "images": [
