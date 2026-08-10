@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T12:05:28.553561Z",
+  "lastUpdated": "2026-08-10T00:07:25.522484Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,66 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3msonhpfn6k2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "I wanted to make sure BREAK!! had crafting rules, but since it was something of a solo activity I didn't want it to pull away too much attention from group adventuring that was the game's main focus.\n\nFortunately, making a system for downtime activities solve that issue for me pretty easily (Thread)",
+        "createdAt": "2026-08-09T22:35:37.972Z"
+      },
+      "indexedAt": "2026-08-09T22:35:40.969Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreifu2ss5l2tjd3ug2wne3k25hopmb7ku6n4dhgbflrj2lphlocfrj4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreifu2ss5l2tjd3ug2wne3k25hopmb7ku6n4dhgbflrj2lphlocfrj4",
+            "alt": "A picture of a crafter making shoes for the BREAK!! tabletop rpg. A smiling lumislime lantern is their only company."
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:27cuveizangbypmwn7fkc4dw/app.bsky.feed.post/3msodhuntas22",
+      "source": "bluesky",
+      "author": {
+        "handle": "elchupalabras.itch.io",
+        "displayName": "El Chupalabras \ud83d\udc80 Artistic Spectral Disaster",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreia23wra2ea6cqgpwyoxu7yygyohhsum3benkmgrpdbpcgsdobqmfy"
+      },
+      "record": {
+        "text": "Now this, for real is the ABSOLUTE ULTIMATE LAST FINAL PAGE of #KOKOT\u00d6NA!\n\nSure, I still need to put together the back and front covers (and the spine for the physical release) and the text inside might still need tweaks and such, but it's DONE! IT'S ALL DONE!",
+        "createdAt": "2026-08-09T19:36:46.055Z"
+      },
+      "indexedAt": "2026-08-09T19:36:54.473Z",
+      "replyCount": 2,
+      "repostCount": 6,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreiau4d7j6munbhhorws5dalclkgkzgbwf5paafg2bstjnprgo3jdva",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreiau4d7j6munbhhorws5dalclkgkzgbwf5paafg2bstjnprgo3jdva",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mslmzlnz7c2m",
       "source": "bluesky",
       "author": {
@@ -66,7 +126,7 @@
       "indexedAt": "2026-08-08T17:49:51.970Z",
       "replyCount": 2,
       "repostCount": 1,
-      "likeCount": 16,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -121,8 +181,8 @@
       },
       "indexedAt": "2026-08-06T12:00:37.572Z",
       "replyCount": 2,
-      "repostCount": 10,
-      "likeCount": 20,
+      "repostCount": 11,
+      "likeCount": 21,
       "embed": {
         "type": "external",
         "uri": "https://beeboobubie.substack.com/p/this-is-a-story-about-borrowed-dice",
@@ -238,7 +298,7 @@
       "indexedAt": "2026-08-04T18:02:02.063Z",
       "replyCount": 3,
       "repostCount": 34,
-      "likeCount": 47,
+      "likeCount": 48,
       "embed": {
         "type": "external",
         "uri": "https://sinabsentia.itch.io/dowager-the-sacred-strange",
@@ -293,9 +353,9 @@
         "createdAt": "2026-08-03T13:24:33.504Z"
       },
       "indexedAt": "2026-08-03T13:24:43.263Z",
-      "replyCount": 16,
-      "repostCount": 22,
-      "likeCount": 34,
+      "replyCount": 17,
+      "repostCount": 23,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -411,7 +471,7 @@
       "source": "bluesky",
       "author": {
         "handle": "stickydoodler.bsky.social",
-        "displayName": "Sticky Doodler \ud83d\udd1c vacation",
+        "displayName": "Sticky Doodler @ vacation",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylzcyi3glonn4teveqvggsdj/bafkreigtt3cuhcbkfot2x7nmfx27stgqi4gkud7fed7l2uyxeaovpg2ijq"
       },
       "record": {
@@ -522,38 +582,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:57swggf7z7oiwov7eqcxjak5/bafkreidoau3bik3sgufzkzp3maxv33bgqrf5ovsee6rreyr3yozwfi5zky",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:57swggf7z7oiwov7eqcxjak5/bafkreidoau3bik3sgufzkzp3maxv33bgqrf5ovsee6rreyr3yozwfi5zky",
             "alt": "An illustration of the men from Final Fantasy VII Rebirth, all squeezed in tightly into the Gold Saucer\u2019s gondola ride. Cloud Strife is centred, sitting begrudgingly with his arms crossed being smothered by the rest of the gents. To the left is Cid Highwind is asleep on Cloud\u2019s shoulder, because he\u2019s too old for late nights at his big age of 32. Behind Cid is Barret Wallace, shrieking at the flame from Red XIII\u2019s tail that\u2019s burning his vest. To the right is the Shrina Middle Manager, AKA the Ultimate Party Animal\u2014the only happy person in this gondola, cheering making a victory sign with his one arm, and holding the UPA Trophy in the other. Slightly behind him are Cait Sith\u2019s giant robot moogle crushed into the ceiling, followed by Vincent Valentine to the right, hanging upside down and smirking smugly at Cloud\u2019s discomfort. Below everyone is Cait Sith, hiding behind Cloud\u2019s leg trying to avoid a furious Nanaki stepping over Cid\u2019s legs and looking poised to pounce on the mischievous spy cat. The entire image has a distorted fisheye lens effect, and everyone is washed out by the red and blue glow of fireworks erupting outside. It\u2019s a tribute to the various iconic gold saucer date nights you can experience playing through both the classic FFVII, and FF7Rebirth. This FF7 illustration was made for the Solaris: FF Gents Zine. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mrzju6lgwc2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "I'll reiterate the real honor was just to be nominated, but of course I'm enormously happy to have won. Thanks everyone for all your support.\n\nIf you haven't seen what the fuss is about, check out the course. It's free! dungeons.hismajestytheworm.games",
-        "createdAt": "2026-08-01T13:05:07.074Z"
-      },
-      "indexedAt": "2026-08-01T13:05:10.464Z",
-      "replyCount": 10,
-      "repostCount": 21,
-      "likeCount": 163,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifhlymyguoaajvzodnhreqjq62eoboals6to5uzsc6gnrsewc2nqi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifhlymyguoaajvzodnhreqjq62eoboals6to5uzsc6gnrsewc2nqi",
-            "alt": "Gold Ennie Best Online Content: Designing Dungeons Course"
           }
         ]
       },
@@ -1535,7 +1563,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 500,
-      "likeCount": 2635,
+      "likeCount": 2636,
       "embed": {
         "type": "images",
         "images": [
@@ -1637,35 +1665,6 @@
       "link": "https://www.artstation.com/artwork/6L98xW"
     },
     {
-      "uri": "at://did:plc:zeiudv2rfgiww7jtvgoetmd7/app.bsky.feed.post/3ml7kgysc5224",
-      "source": "bluesky",
-      "author": {
-        "handle": "eggembry.bsky.social",
-        "displayName": "Egg Embry",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zeiudv2rfgiww7jtvgoetmd7/bafkreicgemg4i75ehal6d3pn2yu7sl5iqs3ohmoypqotaldftktypufbey"
-      },
-      "record": {
-        "text": "At EN World, I look at #TTRPG #crowdfunding books for BREAK!!, Legendary Games, sci-fi Daggerheart, Lancer, Old-School Essentials, Shadowdark, Tales of the Valiant, D&D, and more.\nwww.enworld.org/threads/rpg-...",
-        "createdAt": "2026-05-06T20:35:15.581Z"
-      },
-      "indexedAt": "2026-05-06T20:35:18.560Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 12,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.enworld.org/threads/rpg-crowdfunding-news-%E2%80%93-break-nordic-monsters-citadel-of-the-sun-kings-and-more.719019/",
-        "title": "RPG Crowdfunding News \u2013 BREAK!!, Nordic Monsters, Citadel of the Sun Kings, and more",
-        "description": "This week\u2019s crowdfunding sampler looks at campaigns that close between May 21 to June 3 including a new BREAK!! sourcebook, Legendary monsters, and a prose anthology as well as books using Old-School ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zeiudv2rfgiww7jtvgoetmd7/bafkreiae4kvqprfx4xp2nath43fqcjzvltsxdyhxka4sxgu67gxfh5vovm"
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/y4dbeJ",
       "source": "artstation",
       "author": {
@@ -1753,7 +1752,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1448,
-      "likeCount": 6321,
+      "likeCount": 6320,
       "embed": {
         "type": "images",
         "images": [
