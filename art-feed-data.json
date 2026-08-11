@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T12:12:10.382008Z",
+  "lastUpdated": "2026-08-11T00:07:50.426463Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,93 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3msr6okqota2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - post gencon rest",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
+      },
+      "record": {
+        "text": "Hello everyone! I've decided that it's silly that the quickstart for DAWN costs money, originally it was going to be a series of modules in a more complete set, but as of now it is the only way to get started wit the name. Pick it up for free here!",
+        "createdAt": "2026-08-10T22:49:00.503Z"
+      },
+      "indexedAt": "2026-08-10T22:49:05.777Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://joel-happyhil.itch.io/tosas",
+        "title": "DAWN: A tale of Sand and Stars by Joel Happyhil",
+        "description": "A Quick-Start for DAWN",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreihnxco2wqzmwmawpilwrq2m3g3pqlij7bs2szco3cfonentwlwixm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:27cuveizangbypmwn7fkc4dw/app.bsky.feed.post/3msqzbjhrxc2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "elchupalabras.itch.io",
+        "displayName": "El Chupalabras \ud83d\udc80 Artistic Spectral Disaster",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreia23wra2ea6cqgpwyoxu7yygyohhsum3benkmgrpdbpcgsdobqmfy"
+      },
+      "record": {
+        "text": "Work on the corebook version of #KOKOT\u00d6NA is reaching an end!\n\nTo commemorate this, I have uploaded a version of \"The Paths of Flesh\" that is identical in content to the one included inside the pages of the illustrated release of KOKOT\u00d6NA\n\nThanks for your support!\n\n#M\u00d6RKBORG #TTRPPG #RPGLatAm",
+        "createdAt": "2026-08-10T21:12:14.810Z"
+      },
+      "indexedAt": "2026-08-10T21:12:16.369Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 11,
+      "embed": {
+        "type": "external",
+        "uri": "https://elchupalabras.itch.io/kokotona-the-paths-of-flesh",
+        "title": "KOKOT\u00d6NA - The Paths of Flesh by El Chupalabras",
+        "description": "D66 Scars, Blemishes, Tattoos & Other Markings - Compatible with M\u00d6RK BORG",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreibq6lntyalxxb52qchd7yko7tm37ahoef7lptslcfrq7lzc53ruui"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:degzgkbpiitz45k3dbcrw66l/app.bsky.feed.post/3msqacqkg3224",
+      "source": "bluesky",
+      "author": {
+        "handle": "traversefantasy.itch.io",
+        "displayName": "Marcia B.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:degzgkbpiitz45k3dbcrw66l/bafkreigdogasa2tisuhomw26h54ootkmwdvrkmvepupfe5sk4rm3oddo2e"
+      },
+      "record": {
+        "text": "introducing the great leap forward update for #resourciv!\n\n* new economic management and demographic simulation systems\n* refreshed world generation with continent-specific flora and fauna\n* moddability!\n\nblog: traversefantasy.blogspot.com/2026/08/reso...\nitch: traversefantasy.itch.io/resourciv",
+        "createdAt": "2026-08-10T13:45:32.244Z"
+      },
+      "indexedAt": "2026-08-10T13:45:33.770Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 20,
+      "embed": {
+        "type": "external",
+        "uri": "https://traversefantasy.blogspot.com/2026/08/resourciv-v05-great-leap-forward.html?m=1",
+        "title": "Resourciv v0.5: Great Leap Forward",
+        "description": "That's right. Naming this update for the Big Man himself because it's just that big. I almost considered naming it instead for one of my fav...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:degzgkbpiitz45k3dbcrw66l/bafkreic5ie7qmpyif7zfrjkvkonljovitterac7sqgjzqsuzndqxrglpxe"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3msonhpfn6k2b",
       "source": "bluesky",
       "author": {
@@ -65,8 +152,8 @@
       },
       "indexedAt": "2026-08-09T22:35:40.969Z",
       "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 28,
+      "repostCount": 8,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -92,9 +179,9 @@
         "createdAt": "2026-08-09T19:36:46.055Z"
       },
       "indexedAt": "2026-08-09T19:36:54.473Z",
-      "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 22,
+      "replyCount": 3,
+      "repostCount": 7,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -499,99 +586,6 @@
       }
     },
     {
-      "uri": "at://did:plc:755sid4kfpay4675rlhywfkp/app.bsky.feed.post/3ms2ggr37ls2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "jpcoovert.bsky.social",
-        "displayName": "JP Coovert",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:755sid4kfpay4675rlhywfkp/bafkreidvchmwtwuuanbvm6vu6nanvja23uvjbdlzpeqa5qguoioxguw5zu"
-      },
-      "record": {
-        "text": "Holy cow the Appendix N Jam is so cool! There are already 325 entries! That's 325 people figuring out how to design, write, illustrate, layout, and publish an adventure. Go look! itch.io/jam/appx-n-j...",
-        "createdAt": "2026-08-01T21:36:35.220Z"
-      },
-      "indexedAt": "2026-08-01T21:36:35.564Z",
-      "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 38,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/jam/appx-n-jam-2026/entries",
-        "title": "Submissions to Appx. N Jam 2026",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:755sid4kfpay4675rlhywfkp/bafkreie4423rbiyuguhgh6cvef5o534e5aieo7peh2dedqmrqdi4tfjsye"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:wvwija3mtz2q3l3tz5d66xze/app.bsky.feed.post/3ms2exkexh22n",
-      "source": "bluesky",
-      "author": {
-        "handle": "bentobitt.bsky.social",
-        "displayName": "Bone Tower",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreicnqrekwsyimynfdu2oxyeohmd6slw7enqkychfsdtop3o4ucrxje"
-      },
-      "record": {
-        "text": "If you are at #gencon this weekend I am going to need you to go to the Free League table, give them a nice friendly hello and buy my game, \nBlack Powder and Brimstone. \nDo it! \nBuy it with your Yankee Dollars!\nIt\u2019s better than 5E!\nYou can shoot inquisitors as a gun toting witch!",
-        "createdAt": "2026-08-01T21:10:11.130Z"
-      },
-      "indexedAt": "2026-08-01T21:10:16.364Z",
-      "replyCount": 1,
-      "repostCount": 22,
-      "likeCount": 84,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreihowowddxvcznfdrzfhpqie5tj5uqirwd3rururpmwlkpmeg253ge",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreihowowddxvcznfdrzfhpqie5tj5uqirwd3rururpmwlkpmeg253ge",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:57swggf7z7oiwov7eqcxjak5/app.bsky.feed.post/3ms2bp24d7s2c",
-      "source": "bluesky",
-      "author": {
-        "handle": "andreguindi.bsky.social",
-        "displayName": "Andr\u00e9 Guindi \ud83e\udeb7\ud83d\udc79\ud83e\udeb7",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:57swggf7z7oiwov7eqcxjak5/bafkreigwbk72hyx6gd7eay6x45h2eh6lfmirvcjfxy4il2i272r3xspbni"
-      },
-      "record": {
-        "text": "At long last, I can finally share my illustrations for the \u2728glorious\u2728 @ffgentszine.bsky.social zine!\n\nBoys Night is dedicated to all of you who have endured the gruelling horrors of #FF7 Rebirth\u2019s Ultimate Party Animal\u2019s side quest on hard mode for that platinum trophy. We salute you \ud83e\udee1 #FinalFantasy",
-        "createdAt": "2026-08-01T20:11:44.414Z"
-      },
-      "indexedAt": "2026-08-01T20:11:49.670Z",
-      "replyCount": 4,
-      "repostCount": 64,
-      "likeCount": 204,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:57swggf7z7oiwov7eqcxjak5/bafkreidoau3bik3sgufzkzp3maxv33bgqrf5ovsee6rreyr3yozwfi5zky",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:57swggf7z7oiwov7eqcxjak5/bafkreidoau3bik3sgufzkzp3maxv33bgqrf5ovsee6rreyr3yozwfi5zky",
-            "alt": "An illustration of the men from Final Fantasy VII Rebirth, all squeezed in tightly into the Gold Saucer\u2019s gondola ride. Cloud Strife is centred, sitting begrudgingly with his arms crossed being smothered by the rest of the gents. To the left is Cid Highwind is asleep on Cloud\u2019s shoulder, because he\u2019s too old for late nights at his big age of 32. Behind Cid is Barret Wallace, shrieking at the flame from Red XIII\u2019s tail that\u2019s burning his vest. To the right is the Shrina Middle Manager, AKA the Ultimate Party Animal\u2014the only happy person in this gondola, cheering making a victory sign with his one arm, and holding the UPA Trophy in the other. Slightly behind him are Cait Sith\u2019s giant robot moogle crushed into the ceiling, followed by Vincent Valentine to the right, hanging upside down and smirking smugly at Cloud\u2019s discomfort. Below everyone is Cait Sith, hiding behind Cloud\u2019s leg trying to avoid a furious Nanaki stepping over Cid\u2019s legs and looking poised to pounce on the mischievous spy cat. The entire image has a distorted fisheye lens effect, and everyone is washed out by the red and blue glow of fireworks erupting outside. It\u2019s a tribute to the various iconic gold saucer date nights you can experience playing through both the classic FFVII, and FF7Rebirth. This FF7 illustration was made for the Solaris: FF Gents Zine. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mrx3zesxsd2m",
       "source": "bluesky",
       "author": {
@@ -976,7 +970,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 78,
-      "likeCount": 545,
+      "likeCount": 546,
       "embed": {
         "type": "images",
         "images": [
@@ -2682,7 +2676,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1951,
-      "likeCount": 8469,
+      "likeCount": 8468,
       "embed": {
         "type": "images",
         "images": [
@@ -2992,7 +2986,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 726,
-      "likeCount": 3346,
+      "likeCount": 3345,
       "embed": {
         "type": "images",
         "images": [
@@ -3020,7 +3014,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 544,
-      "likeCount": 3033,
+      "likeCount": 3032,
       "embed": {
         "type": "images",
         "images": [
@@ -3076,7 +3070,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1511,
+      "likeCount": 1510,
       "embed": {
         "type": "images",
         "images": [
@@ -3104,7 +3098,7 @@
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
       "repostCount": 456,
-      "likeCount": 2445,
+      "likeCount": 2444,
       "embed": {
         "type": "images",
         "images": [
@@ -3271,7 +3265,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2652,
-      "likeCount": 15638,
+      "likeCount": 15637,
       "embed": {
         "type": "images",
         "images": [
@@ -3343,7 +3337,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 453,
-      "likeCount": 2438,
+      "likeCount": 2437,
       "embed": {
         "type": "images",
         "images": [
