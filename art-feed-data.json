@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T00:11:52.956043Z",
+  "lastUpdated": "2026-08-12T12:13:04.316182Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:lnl5zxxglzzskvbsxt6m3jcn/app.bsky.feed.post/3msu26a5lds2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "ashaence.bsky.social",
+        "displayName": "Asha Ence \ud83d\udd1c Gen Con",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lnl5zxxglzzskvbsxt6m3jcn/bafkreigz5ybnzjwr6yr3xqveam4wksrz6zekolqvqechfdicdg5fg336wq"
+      },
+      "record": {
+        "text": "Khajiit has wares if you have coin. Follow our Kickstarter for an upgraded box for all!\n\nwww.kickstarter.com/projects/ade...",
+        "createdAt": "2026-08-12T02:06:17.327Z"
+      },
+      "indexedAt": "2026-08-12T02:06:20.778Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/adepticarus/arium-evolve-collaborative-tools-for-any-rpg?ref=8vpx6f",
+        "title": "Coming soon: Arium Complete Box Set",
+        "description": "3x Ennie-Nominated Collaborative Tools for Any RPG Group",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lnl5zxxglzzskvbsxt6m3jcn/bafkreie3yorlvg5v3mf4j6qns3jstafx36t7gpv4tynms3dvucnhy2a2oi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3mst64eefqc26",
+      "source": "bluesky",
+      "author": {
+        "handle": "bradkerr.net",
+        "displayName": "Brad Kerr",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
+      },
+      "record": {
+        "text": "I launched a Patreon! I'm building a weird fantasy sandbox OSR campaign setting. Dungeons! Hex crawls! New dungeons every month. It features some original art by @munkao.bsky.social. Please take a look! www.patreon.com/cw/BradKerr",
+        "createdAt": "2026-08-11T17:44:09.809Z"
+      },
+      "indexedAt": "2026-08-11T17:44:14.572Z",
+      "replyCount": 2,
+      "repostCount": 42,
+      "likeCount": 190,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreialncbosgnwfu6i6nqzs4itnfedsg65qc4vogfqgdhk44opbec43q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreialncbosgnwfu6i6nqzs4itnfedsg65qc4vogfqgdhk44opbec43q",
+            "alt": "Heroes point at big bugs and distant mountains."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mssoxwz6wc2l",
       "source": "bluesky",
       "author": {
@@ -66,7 +127,7 @@
       "indexedAt": "2026-08-11T13:13:16.267Z",
       "replyCount": 0,
       "repostCount": 22,
-      "likeCount": 44,
+      "likeCount": 48,
       "embed": {
         "type": "external",
         "uri": "https://binarystar.games/posts/original-1786390406-five-years-in-the-apocalypse/",
@@ -95,7 +156,7 @@
       "indexedAt": "2026-08-11T05:49:01.663Z",
       "replyCount": 1,
       "repostCount": 7,
-      "likeCount": 15,
+      "likeCount": 16,
       "embed": {
         "type": "external",
         "uri": "http://idlecartulary.com/2026/08/10/bathtub-review-the-doom-of-the-dark/",
@@ -180,7 +241,7 @@
         "createdAt": "2026-08-10T13:45:32.244Z"
       },
       "indexedAt": "2026-08-10T13:45:33.770Z",
-      "replyCount": 1,
+      "replyCount": 2,
       "repostCount": 5,
       "likeCount": 24,
       "embed": {
@@ -508,72 +569,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreia6uuc7zsrvobudatst22rju6zzlyqnxjzvka4dkzt7itf4f45p7u",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreia6uuc7zsrvobudatst22rju6zzlyqnxjzvka4dkzt7itf4f45p7u",
             "alt": "An art raffle post, reading as follows:\n\n400 follower art raffle!\n\nPrize:\n1 hand-drawn avatar/token of your OC. (See examples in the replies)\nExtra winner for each 50 new followers (??!)\n\nRules:\nFollow + Reply to enter\nPost reference images of your OC in your reply\nRepost for an extra chance to win\n\nsmall text at bottom: I\u2019ve never done this before. I have no idea what I\u2019m doing. Oh no.\n"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3ms3zztlugc2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "I revamped the Resources and Playing Online sections of the Worm website to highlight all the fan-created options to support online play. \n\nIf you're spinning up a game of HIS MAJESTY THE WORM online, check it out:  www.hismajestytheworm.games#h.pfuql57d5pt9",
-        "createdAt": "2026-08-02T12:59:56.230Z"
-      },
-      "indexedAt": "2026-08-02T12:59:57.679Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 34,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.hismajestytheworm.games/#h.pfuql57d5pt9",
-        "title": "His Majesty the Worm",
-        "description": "His Majesty the Worm is a new-school game with old-school sensibilities: the classic megadungeon experience given fresh life through a focus on the mundanities and small moments of daily life inside t...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreienzycr6dy73h7genyadvd35irm3mzkrrw7vmxxdfuuarrbvno6va"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3ms3yp2vxts26",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f GenCon",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
-      },
-      "record": {
-        "text": "Last day to check out IPR booth 449 at Gen Con and pick up some awesome games and books like: \nMaking a TTRPG for YOUR Particular Kid\nRolling With the Youth \nJukebox\nThe Librarian's Apprentice\nBonsai Dairies\nand so many more!!\n",
-        "createdAt": "2026-08-02T12:36:01Z"
-      },
-      "indexedAt": "2026-08-02T12:36:04.972Z",
-      "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 26,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifebm4oj5qj6xxjmjvdibfgh7j76go6wi4cwesu44qyrtq7b3gqje",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifebm4oj5qj6xxjmjvdibfgh7j76go6wi4cwesu44qyrtq7b3gqje",
-            "alt": "a photo of the IPR booth sign\n"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiaazjeq2ushgxyfvr6yulbojxsxwjcyahe2pzdztp3266j6eh5b4m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiaazjeq2ushgxyfvr6yulbojxsxwjcyahe2pzdztp3266j6eh5b4m",
-            "alt": "a photo from the IPR booth showing Making a TTRPG for YOUR Particular Kid, Rolling with the Youth, Jukebox, and more!"
           }
         ]
       },
@@ -1712,7 +1707,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1448,
-      "likeCount": 6320,
+      "likeCount": 6319,
       "embed": {
         "type": "images",
         "images": [
@@ -3175,7 +3170,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1876,
-      "likeCount": 8965,
+      "likeCount": 8964,
       "embed": {
         "type": "images",
         "images": [
@@ -3231,7 +3226,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2652,
-      "likeCount": 15636,
+      "likeCount": 15635,
       "embed": {
         "type": "images",
         "images": [
