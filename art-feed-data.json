@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T12:12:26.021327Z",
+  "lastUpdated": "2026-08-15T00:03:42.991247Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,82 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:6f7xnqx5tinxjte2xsqezz6c/app.bsky.feed.post/3mt2wf7geuc2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "emberwickart.bsky.social",
+        "displayName": "Emberwick (Play Tales from Myriad!)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreiai4s7di3dkqjtiikz2w2a3uqaozv65svn7ptkwuwjhe5mmh6qdea"
+      },
+      "record": {
+        "text": "I have to move countries, so im going to be selling off some game stuff - DM if interested.\n\nUnfortunately have to part ways with this Warcry Heart of Ghur set, fully painted and assembled!\n\nCurrently selling for 180 eur :)",
+        "createdAt": "2026-08-14T19:47:14.652Z"
+      },
+      "indexedAt": "2026-08-14T19:49:41.575Z",
+      "replyCount": 2,
+      "repostCount": 14,
+      "likeCount": 35,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreidhmkggw2ot2pt7f2a7lcqyk4325g47togoo33wsa36mvavs75x24",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreidhmkggw2ot2pt7f2a7lcqyk4325g47togoo33wsa36mvavs75x24",
+            "alt": "parts to the warhammer game warcry: heart of ghur"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifbc2wbztz3q3atcmstiwsx44gihpq6gtjsczycr6hh3eppjarmhe",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifbc2wbztz3q3atcmstiwsx44gihpq6gtjsczycr6hh3eppjarmhe",
+            "alt": "parts to the warhammer game warcry: heart of ghur"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifa2axwrivlhgzkcopatfasqcgl5y7tl4w7mgmh52ik67x27ldzqq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifa2axwrivlhgzkcopatfasqcgl5y7tl4w7mgmh52ik67x27ldzqq",
+            "alt": "parts to the warhammer game warcry: heart of ghur"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifo7hkqfdw6im7jw4b3iwwrgif6eynwqmle6oawaihm4uqfigg3hy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6f7xnqx5tinxjte2xsqezz6c/bafkreifo7hkqfdw6im7jw4b3iwwrgif6eynwqmle6oawaihm4uqfigg3hy",
+            "alt": "parts to the warhammer game warcry: heart of ghur"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:z6ejmehmqdi7yya47u63n7rm/app.bsky.feed.post/3mt2bcyctrk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "iamatrex.com",
+        "displayName": "Amanda/iamatrex",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:z6ejmehmqdi7yya47u63n7rm/bafkreid6o4niputwzq3r47wa2t6r2ac7n3u5qnj4lvgh6nrnh52yhjdyue"
+      },
+      "record": {
+        "text": "I combined the One Page Jam and the Canadian Jam into a very silly little game. I'm immensely proud of my layout, which will be recognizable to Canadians. \niamatrex.itch.io/sorry",
+        "createdAt": "2026-08-14T13:30:11.511Z"
+      },
+      "indexedAt": "2026-08-14T13:30:13.377Z",
+      "replyCount": 1,
+      "repostCount": 19,
+      "likeCount": 40,
+      "embed": {
+        "type": "external",
+        "uri": "https://iamatrex.itch.io/sorry",
+        "title": "Sorry by Amanda/iamatrex",
+        "description": "A game about Canadians resolving a minor social conflict without ever directly acknowledging it.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:z6ejmehmqdi7yya47u63n7rm/bafkreifiul4cmb63w4nvp3meubwljhjn7eabvcqnoy2nom4txburtvzonu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:ebm4zblojs2vewc5455ntav2/app.bsky.feed.post/3msvqwjbkas2u",
       "source": "bluesky",
@@ -519,64 +595,6 @@
       }
     },
     {
-      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3msbnnc5yq22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "friendricestudios.bsky.social",
-        "displayName": "Friend Rice Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi"
-      },
-      "record": {
-        "text": "Gonna be at the Full Indie Summit tonight with the Pirouette Princess demo!\nIt's got a lot of little updates since the last time we brought it there\n\nand reminder, we got 10 days left on the Kickstarter!\nwww.kickstarter.com/projects/fri...\n\n#indiedev #gamedev",
-        "createdAt": "2026-08-04T18:34:08.824Z"
-      },
-      "indexedAt": "2026-08-04T18:34:11.068Z",
-      "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 22,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/friendricestudios/pirouette-princess",
-        "title": "Pirouette Princess| A Magical Bullet-Hell Shooter",
-        "description": "Shoot enemies and reflect bullets to save Pitch City from the Muses control!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreiblf5gujtepgzsfgbijvmwo7kl3e3bitud7ns4gjmrdvzcowzdu7i"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3msbltrwu2k2p",
-      "source": "bluesky",
-      "author": {
-        "handle": "sinland.gay",
-        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
-      },
-      "record": {
-        "text": "Dowager: The Sacred & Strange, my sci-fantasy Tactics RPG about psychic oddballs blowing up datacenters is now up on itch dot io! If you've wondered what I've been posting about for the last few months, you can read up about it here!\nsinabsentia.itch.io/dowager-the-...",
-        "createdAt": "2026-08-04T18:01:59.211Z"
-      },
-      "indexedAt": "2026-08-04T18:02:02.063Z",
-      "replyCount": 3,
-      "repostCount": 36,
-      "likeCount": 49,
-      "embed": {
-        "type": "external",
-        "uri": "https://sinabsentia.itch.io/dowager-the-sacred-strange",
-        "title": "Dowager: The Sacred & Strange (Trashcan) by \ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
-        "description": "A Tactical RPG of Semi-Automatic Sorcery and Psionic Turmoil across the Golden Cosmos",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreihhw54lhym5mqw3hkagyksbzqe6k2edopf6dpe4a7ofvx5qjtgsme"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mrx3zesxsd2m",
       "source": "bluesky",
       "author": {
@@ -653,7 +671,7 @@
         "createdAt": "2026-07-24T13:08:32.642Z"
       },
       "indexedAt": "2026-07-24T13:08:33.780Z",
-      "replyCount": 2,
+      "replyCount": 3,
       "repostCount": 6,
       "likeCount": 16,
       "embed": {
@@ -894,7 +912,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 203,
-      "likeCount": 999,
+      "likeCount": 1000,
       "embed": {
         "type": "images",
         "images": [
@@ -1792,7 +1810,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 616,
-      "likeCount": 2903,
+      "likeCount": 2904,
       "embed": {
         "type": "images",
         "images": [
