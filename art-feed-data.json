@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15T12:02:17.585931Z",
+  "lastUpdated": "2026-08-16T00:03:09.271605Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:j5nsqrjwfsyba2rj5hpgv7vc/app.bsky.feed.post/3mt57pwncss2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "megaflare0.bsky.social",
+        "displayName": "Mega Flare",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j5nsqrjwfsyba2rj5hpgv7vc/bafkreigq4b7vfxdkd2wbb3x7pw3fzpfhqaowktzfvoze2flfogxxcrsghu"
+      },
+      "record": {
+        "text": "I've done it! here's my entry to the annual  @onepagerpgjam.bsky.social \n\nDire Hit: 1st Havoc is a tactical TTRPG inspired Vampire Savior/Darkstalkers 3! I've also thrown in an original song based on the sounds of the CPS2 arcade era. \n\nmegaflare0.itch.io/dire-hit-1st...\n\n#ttrpgs #fgc",
+        "createdAt": "2026-08-15T17:39:37.695Z"
+      },
+      "indexedAt": "2026-08-15T17:39:39.174Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://megaflare0.itch.io/dire-hit-1st-havoc",
+        "title": "Dire Hit: 1st Havoc by megaflare0",
+        "description": "A Tactical Fighting Game TTRPG",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:j5nsqrjwfsyba2rj5hpgv7vc/bafkreia6ey3r27lvnsdl7ua4lsz32lz4iiqfoekf6ukefi3lrwkakaw5fa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mt55qkxxr22y",
+      "source": "bluesky",
+      "author": {
+        "handle": "friendricestudios.bsky.social",
+        "displayName": "Friend Rice Studios",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi"
+      },
+      "record": {
+        "text": "The Kickstarter has come to an end, and we were unable to reach our funding goal\n\nHOWEVER\n\nWe have set up a Ko-fi! You can leave one time donations, monthly tips, or buy NPC slots in the store!\n\nAs a thank you, use FIRSTBACKERS to get 10% off shop items, this week only!\nko-fi.com/friendricest...",
+        "createdAt": "2026-08-15T17:04:11.533Z"
+      },
+      "indexedAt": "2026-08-15T17:04:15.463Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://ko-fi.com/friendricestudios",
+        "title": "Support Friend Rice Studios",
+        "description": "The Muses of Visionz Entertainment have gone corrupt! Save them as Pirouette Princess, and fight through bullet-hell levels to reach the Muses by shooting, upgrading your gear, and reflecting their at...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreicyworr7v6vxlyr43nfcvw4jjbmdjm4t6ao4fifydp56jteh2s3b4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mt4s5h2s6225",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Folks who preordered The Castle Automatic (100+ room Metroidvania inspired dungeon for HIS MAJESTY THE WORM) should check their downloads at Exalted Funeral - the digital version just dropped, with a digital asset pack that includes all the art from the book!",
+        "createdAt": "2026-08-15T13:36:38.735Z"
+      },
+      "indexedAt": "2026-08-15T13:36:39.876Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 54,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifjealmphwqtujzpsvmuh4pdtivpmvbgmdsr4ui232u5oxjii6vhq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifjealmphwqtujzpsvmuh4pdtivpmvbgmdsr4ui232u5oxjii6vhq",
+            "alt": "A giant skeleton reaches towards adventurers"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:6f7xnqx5tinxjte2xsqezz6c/app.bsky.feed.post/3mt2wf7geuc2g",
       "source": "bluesky",
       "author": {
@@ -66,7 +156,7 @@
       "indexedAt": "2026-08-14T19:49:41.575Z",
       "replyCount": 2,
       "repostCount": 19,
-      "likeCount": 48,
+      "likeCount": 51,
       "embed": {
         "type": "images",
         "images": [
@@ -112,7 +202,7 @@
       },
       "indexedAt": "2026-08-14T13:30:13.377Z",
       "replyCount": 3,
-      "repostCount": 21,
+      "repostCount": 22,
       "likeCount": 51,
       "embed": {
         "type": "external",
@@ -199,8 +289,8 @@
       },
       "indexedAt": "2026-08-12T02:06:20.778Z",
       "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 7,
+      "repostCount": 8,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/adepticarus/arium-evolve-collaborative-tools-for-any-rpg?ref=8vpx6f",
@@ -480,63 +570,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3msgcpuwtnc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "A bit of trivia time since I just was thinking about it this morning - in BREAK!! I wanted to use the term \"saga\" instead of \"campaign\" because I felt it fit the game better, but also because SaGa is my favorite video game rpg series!",
-        "createdAt": "2026-08-06T15:02:03.152Z"
-      },
-      "indexedAt": "2026-08-06T15:02:05.595Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 45,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidsdzv24p4watwsezrsaf3ougy5yd7xblwrwhrp7rwtqw6de5sbyy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreidsdzv24p4watwsezrsaf3ougy5yd7xblwrwhrp7rwtqw6de5sbyy",
-            "alt": "An excerpt from the BREAK!! tabletop rpg concerning sagas - a term the BREAK!! rpg uses for a string of adventurers featuring the same group"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3msfylfc3722a",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "My friend Habeeb talks about how the first TTRPG experience can all lead to a shared communal experience. \n\nHe emphasizes the importance of the human interaction in TTRPG and the importance of having a community.\n\nbeeboobubie.substack.com/p/this-is-a-...",
-        "createdAt": "2026-08-06T12:00:35.108Z"
-      },
-      "indexedAt": "2026-08-06T12:00:37.572Z",
-      "replyCount": 2,
-      "repostCount": 11,
-      "likeCount": 21,
-      "embed": {
-        "type": "external",
-        "uri": "https://beeboobubie.substack.com/p/this-is-a-story-about-borrowed-dice",
-        "title": "this is a story about borrowed dice",
-        "description": "how a handful of plastic became a tradition",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreihakywz4wtmiyjtyua6o34uvdooalu4ydhjkxpba4vj7e5ebbu3ou"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:v2auarhdpe4hxkxtktcxyrbf/app.bsky.feed.post/3mse5wobuzk24",
       "source": "bluesky",
       "author": {
@@ -732,35 +765,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:heuqro46y6ut5qvaj3omkkst/app.bsky.feed.post/3mqpmsi2i2226",
-      "source": "bluesky",
-      "author": {
-        "handle": "friendricestudios.bsky.social",
-        "displayName": "Friend Rice Studios",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreig26vzdhltsoxlr5cjdsmv4v4yb2s33nj3454ntpmpe7vne2qxpzi"
-      },
-      "record": {
-        "text": "Oh hey, our artist made a little let's play video if you want to see what the demo is like before playing it for yourself\n\n#indiedev #gamedev\n\nyoutu.be/c6vgJM92_Bc",
-        "createdAt": "2026-07-15T21:06:02.112Z"
-      },
-      "indexedAt": "2026-07-15T21:06:06.475Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 17,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/c6vgJM92_Bc",
-        "title": "Lets Play Pirouette Princess: I Made This Game",
-        "description": "YouTube video by Animaloftheelements",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:heuqro46y6ut5qvaj3omkkst/bafkreic4brrshfnqjg2uws774yscmt2cmr2b5t3jlipi6l6zfer5y2puai"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:v26achhdfva62ymp243ldrvf/app.bsky.feed.post/3mq3ycw2yxc2a",
@@ -1416,39 +1420,6 @@
       "link": "https://www.artstation.com/artwork/rlx602"
     },
     {
-      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mmcbesun6s22",
-      "source": "bluesky",
-      "author": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - KICKSTARTING NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      },
-      "record": {
-        "text": "\ud83d\udd25@gage_lindsten",
-        "createdAt": "2026-05-20T15:56:09.361Z"
-      },
-      "indexedAt": "2026-05-20T15:56:14.469Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 25,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih4eh3v5dvmu6ytoyppvr3kurgaye7uxwcdqzrsz4qboapc6p7pq4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreih4eh3v5dvmu6ytoyppvr3kurgaye7uxwcdqzrsz4qboapc6p7pq4",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicipcdkxafdjgc7xrrku5vh726nuvnjajonx2uitea5qirwf3tuoy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreicipcdkxafdjgc7xrrku5vh726nuvnjajonx2uitea5qirwf3tuoy",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
       "uri": "at://did:plc:d4sx2d454wf2d57jtwsx3dpf/app.bsky.feed.post/3mlnbpk6dvc23",
       "source": "bluesky",
       "author": {
@@ -1651,8 +1622,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1446,
-      "likeCount": 6318,
+      "repostCount": 1445,
+      "likeCount": 6316,
       "embed": {
         "type": "images",
         "images": [
@@ -2157,7 +2128,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1245,
-      "likeCount": 6549,
+      "likeCount": 6548,
       "embed": {
         "type": "images",
         "images": [
@@ -2321,7 +2292,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 670,
-      "likeCount": 2954,
+      "likeCount": 2953,
       "embed": {
         "type": "images",
         "images": [
@@ -2582,7 +2553,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1951,
-      "likeCount": 8468,
+      "likeCount": 8467,
       "embed": {
         "type": "images",
         "images": [
@@ -2892,7 +2863,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 726,
-      "likeCount": 3345,
+      "likeCount": 3344,
       "embed": {
         "type": "images",
         "images": [
@@ -2920,7 +2891,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 544,
-      "likeCount": 3033,
+      "likeCount": 3032,
       "embed": {
         "type": "images",
         "images": [
@@ -2948,7 +2919,7 @@
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
       "repostCount": 176,
-      "likeCount": 1289,
+      "likeCount": 1288,
       "embed": {
         "type": "images",
         "images": [
@@ -2976,7 +2947,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1510,
+      "likeCount": 1509,
       "embed": {
         "type": "images",
         "images": [
@@ -3115,7 +3086,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1876,
-      "likeCount": 8964,
+      "likeCount": 8963,
       "embed": {
         "type": "images",
         "images": [
@@ -3143,7 +3114,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 406,
-      "likeCount": 2365,
+      "likeCount": 2364,
       "embed": {
         "type": "images",
         "images": [
@@ -3171,7 +3142,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2651,
-      "likeCount": 15635,
+      "likeCount": 15633,
       "embed": {
         "type": "images",
         "images": [
@@ -3243,7 +3214,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 453,
-      "likeCount": 2437,
+      "likeCount": 2436,
       "embed": {
         "type": "images",
         "images": [
