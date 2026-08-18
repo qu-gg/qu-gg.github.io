@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T12:03:27.642299Z",
+  "lastUpdated": "2026-08-18T00:03:53.306121Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mtbrzncerk2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "Nothing boosts your confidence like losing a few followers of your TTRPG project every time you post an update or a social media thing about it.\n\nNote: I know this is just part of the deal, I'm okay, they're okay, we're all following our bliss, etc.\n\nBtw linktr.ee/vx2games for all our socials",
+        "createdAt": "2026-08-17T13:17:49.751Z"
+      },
+      "indexedAt": "2026-08-17T13:17:50.472Z",
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://linktr.ee/vx2games",
+        "title": "vx2games Official: TikTok, Instagram, Twitter | Linktree",
+        "description": "VX2 makes tabletop RPG stuff. Jointly operated by Paul and Chris Vermeren.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreicntzg3gway2lqr2pbfls2d52mp52xdzad2gnckoiwrhgm7hdzvwy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mtasebsd2k2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "17 August 1945 is the Independence Day of Indonesia. I'm not celebrating that. I am celebrating the Indonesian TTRPG scene and any Indonesian TTRPG stuff by calling for an Indonesian TTRPG Blogwagon!\n\nafraidofencounters.bearblog.dev/indonesian-t...",
+        "createdAt": "2026-08-17T03:51:07.051Z"
+      },
+      "indexedAt": "2026-08-17T03:51:11.168Z",
+      "replyCount": 1,
+      "repostCount": 12,
+      "likeCount": 26,
+      "embed": {
+        "type": "external",
+        "uri": "https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/",
+        "title": "Indonesian TTRPG Blogwagon",
+        "description": "A Blogwagon for Indonesian-related TTRPG stuff",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibmcgxll3rui3zp66hos4sgcn4lsf3txz23ukckqxqi77hy5cgla4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mta722kqus2n",
       "source": "bluesky",
       "author": {
@@ -66,7 +124,7 @@
       "indexedAt": "2026-08-16T22:05:24.271Z",
       "replyCount": 0,
       "repostCount": 24,
-      "likeCount": 57,
+      "likeCount": 60,
       "embed": {
         "type": "external",
         "uri": "https://www.patreon.com/sarahdoom/posts/experting-while-165943006",
@@ -182,7 +240,7 @@
       "indexedAt": "2026-08-15T13:36:39.876Z",
       "replyCount": 3,
       "repostCount": 11,
-      "likeCount": 65,
+      "likeCount": 66,
       "embed": {
         "type": "images",
         "images": [
@@ -457,7 +515,7 @@
       "source": "bluesky",
       "author": {
         "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - post gencon rest",
+        "displayName": "Joel Happyhil - read games!!!!!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
       },
       "record": {
@@ -467,7 +525,7 @@
       "indexedAt": "2026-08-10T22:49:05.777Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 13,
+      "likeCount": 14,
       "embed": {
         "type": "external",
         "uri": "https://joel-happyhil.itch.io/tosas",
@@ -3203,7 +3261,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2651,
-      "likeCount": 15632,
+      "likeCount": 15630,
       "embed": {
         "type": "images",
         "images": [
