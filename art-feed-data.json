@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T12:04:44.280123Z",
+  "lastUpdated": "2026-08-25T00:03:53.107232Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,109 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mttv7eoe7f27",
+      "source": "bluesky",
+      "author": {
+        "handle": "mythworks.bsky.social",
+        "displayName": "Mythworks is making the Myth Work",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiaep2xkqejvvc3ra2sy73p2lot43nfz6espzjlx3j5egkdwt3k3ym"
+      },
+      "record": {
+        "text": "The Eternal Ruins is a tabletop roleplaying game about exploring an endless labyrinth of ancient mysteries.\nDownload the latest version!\n\nCheck it out here\ud83d\udc49\nhttps://www.myth.works/pages/eternal-ruins-files",
+        "createdAt": "2026-08-24T18:02:38.313612435Z"
+      },
+      "indexedAt": "2026-08-24T18:02:40.272Z",
+      "replyCount": 2,
+      "repostCount": 9,
+      "likeCount": 33,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreidrt5ptkpwiocnrrylb77pb3ppwbavvllwujrpxndziatehysu53u",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreidrt5ptkpwiocnrrylb77pb3ppwbavvllwujrpxndziatehysu53u",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreifvut5vgdbwhxmakzem7ddnr3pwutl4fwhssrn4osrbdnw7hsu2jy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreifvut5vgdbwhxmakzem7ddnr3pwutl4fwhssrn4osrbdnw7hsu2jy",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiamxejslubg56peyv7qgxqb2rn2eza3b5iqqg7dmv2avak4ttzmji",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiamxejslubg56peyv7qgxqb2rn2eza3b5iqqg7dmv2avak4ttzmji",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mttq4x3c6k2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2: Follow GRIDSHOCK on Gamefound",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "In the latest update for GRIDSHOCK Zero Edition, I talk a little about the game's core mechanic and tease one of the ways it modifies Free League's Year Zero Engine rules.\n\ngamefound.com/en/projects/...",
+        "createdAt": "2026-08-24T16:31:48.474Z"
+      },
+      "indexedAt": "2026-08-24T16:31:50.164Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition/updates/3",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - GRIDSHOCK: Rules, Vectors, and Grid Dice - Gamefound",
+        "description": "What's the core mechanic of this game like? What changes does GRIDSHOCK make to the Year Zero Engine?",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreibswb5yr6nycsy4et42nljjg2t3r3o6rzn7xvv4wrgszr534ioj2i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mttlcexl442y",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids \u27a1\ufe0f Gamehole Con",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "A Construct's Nature is a solo journaling TTRPG full of adventure, calm moments, challenging choices, world lore, and NPCs who grow with your character.\n\nFind links to both physical copy sellers on the TTRPGkids itchio page, and happy gaming!\n\nhttps://ttrpgkids.itch.io/a-constructs-nature\n\n",
+        "createdAt": "2026-08-24T15:05:22Z"
+      },
+      "indexedAt": "2026-08-24T15:05:22.277Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 1,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreidvkzxt7lrnncsmypq4g5xurrdc7zby6dcqymxzhyszbs7gg2ffee",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreidvkzxt7lrnncsmypq4g5xurrdc7zby6dcqymxzhyszbs7gg2ffee",
+            "alt": "Find ACN on Indie Press Revolution, itch.io, and DTRPG!"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mtt3dxspi226",
       "source": "bluesky",
       "author": {
@@ -65,8 +168,8 @@
       },
       "indexedAt": "2026-08-24T10:19:54.873Z",
       "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 2,
+      "repostCount": 3,
+      "likeCount": 5,
       "embed": {
         "type": "external",
         "uri": "https://legacy.drivethrurpg.com/browse/pub/4283/Trollish-Delver-Games",
@@ -94,8 +197,8 @@
       },
       "indexedAt": "2026-08-23T21:02:25.373Z",
       "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 7,
+      "repostCount": 5,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://earthscentedthoughts.bearblog.dev/wizards/",
@@ -151,8 +254,8 @@
       },
       "indexedAt": "2026-08-23T13:28:17.376Z",
       "replyCount": 1,
-      "repostCount": 30,
-      "likeCount": 52,
+      "repostCount": 31,
+      "likeCount": 53,
       "embed": {
         "type": "images",
         "images": [
@@ -174,7 +277,7 @@
       "source": "bluesky",
       "author": {
         "handle": "kywardkyoti.vtubers.social",
-        "displayName": "Kyward",
+        "displayName": "Kyward ~ Trash Dog",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigdmxdzig4clcgtcw37ytmaqezq7nrqlfilrdfkp6lsl2xbypoive"
       },
       "record": {
@@ -398,9 +501,9 @@
         "createdAt": "2026-08-21T01:12:39.967Z"
       },
       "indexedAt": "2026-08-21T01:12:41.369Z",
-      "replyCount": 32,
-      "repostCount": 132,
-      "likeCount": 284,
+      "replyCount": 33,
+      "repostCount": 134,
+      "likeCount": 287,
       "embed": {
         "type": "external",
         "uri": "https://barenuckelavee.bearblog.dev/no-one-can-take-your-game/",
@@ -616,117 +719,27 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mtec3dywgk2d",
+      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3msqn7q2ius24",
       "source": "bluesky",
       "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+        "handle": "manysidedmedia.bsky.social",
+        "displayName": "Many Sided Media",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreigif4akac2jdsexb6jq7zadwe35o4mtseovl5hcf4hzmejygfoxjm"
       },
       "record": {
-        "text": "Today is the LAST CHANCE to preorder The Castle Automatic for HIS MAJESTY THE WORM!\n\nIf you order today, you get:\n- The PDF \n- An asset pack with all art\n- A poster-sized map by Guy Pradel when the book arrives\n\nOffer ends today!\n\nexaltedfuneral.com/products/the...",
-        "createdAt": "2026-08-18T13:10:26.456Z"
+        "text": "NEW EPISODE - Talk of the Table\n\n@brianflaherty.bsky.social & @moreblueberries.bsky.social sit down with @stickydoodler.bsky.social to discuss the ENNIE-award-winning The Bonsai Diary, the rise of solo TTRPGs, and accessibility in game design. \n\nSuch a great conversation for this current moment!",
+        "createdAt": "2026-08-10T17:36:29.703Z"
       },
-      "indexedAt": "2026-08-18T13:10:33.174Z",
-      "replyCount": 1,
-      "repostCount": 27,
-      "likeCount": 84,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicmey6j3uwmldvfxmazura4jc7bckrroqy7ucgxtv24qsbnew3nfq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreicmey6j3uwmldvfxmazura4jc7bckrroqy7ucgxtv24qsbnew3nfq",
-            "alt": "An isometric map of a sprawling castle dungeon environment surrounding a large central tower by Guy Pradel"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mtbrzncerk2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "Nothing boosts your confidence like losing a few followers of your TTRPG project every time you post an update or a social media thing about it.\n\nNote: I know this is just part of the deal, I'm okay, they're okay, we're all following our bliss, etc.\n\nBtw linktr.ee/vx2games for all our socials",
-        "createdAt": "2026-08-17T13:17:49.751Z"
-      },
-      "indexedAt": "2026-08-17T13:17:50.472Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 7,
+      "indexedAt": "2026-08-10T17:36:30.573Z",
+      "replyCount": 3,
+      "repostCount": 21,
+      "likeCount": 42,
       "embed": {
         "type": "external",
-        "uri": "https://linktr.ee/vx2games",
-        "title": "vx2games Official: TikTok, Instagram, Twitter | Linktree",
-        "description": "VX2 makes tabletop RPG stuff. Jointly operated by Paul and Chris Vermeren.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreicntzg3gway2lqr2pbfls2d52mp52xdzad2gnckoiwrhgm7hdzvwy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mtasebsd2k2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "17 August 1945 is the Independence Day of Indonesia. I'm not celebrating that. I am celebrating the Indonesian TTRPG scene and any Indonesian TTRPG stuff by calling for an Indonesian TTRPG Blogwagon!\n\nafraidofencounters.bearblog.dev/indonesian-t...",
-        "createdAt": "2026-08-17T03:51:07.051Z"
-      },
-      "indexedAt": "2026-08-17T03:51:11.168Z",
-      "replyCount": 1,
-      "repostCount": 24,
-      "likeCount": 43,
-      "embed": {
-        "type": "external",
-        "uri": "https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/",
-        "title": "Indonesian TTRPG Blogwagon",
-        "description": "A Blogwagon for Indonesian-related TTRPG stuff",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibmcgxll3rui3zp66hos4sgcn4lsf3txz23ukckqxqi77hy5cgla4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mta722kqus2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "save.vs.totalpartykill.ca",
-        "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve"
-      },
-      "record": {
-        "text": "I enjoyed this post from @scorchadoom.bsky.social on the frustration that comes with being questioned all the time about topics you are an expert in, because you\u2019re a women. Maybe enjoyed isn\u2019t the right word: it\u2019s something people should read anyways.",
-        "createdAt": "2026-08-16T22:05:22.820Z"
-      },
-      "indexedAt": "2026-08-16T22:05:24.271Z",
-      "replyCount": 0,
-      "repostCount": 24,
-      "likeCount": 60,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.patreon.com/sarahdoom/posts/experting-while-165943006",
-        "title": "Experting while female | sarahdoom",
-        "description": "If you don\u2019t know Dr. Em Friedman, take a look here. She is \u201ca tenured professor who studies storytelling outside the rules of mass media. A",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreigstv5ckaoc47ls7tlbt4lb5sistvcir4p2i6e2hjfzqnzoshajta"
+        "uri": "https://open.spotify.com/episode/0xsEvyqNQOsEJ0tTJcppC6?si=e2a7bc1d63dc4e16",
+        "title": "Growing Alongside The Bonsai Diary (w/ Gene Koo)",
+        "description": "Talk of the Table \u00b7 Episode",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreienbl7hxwan5urgwkqdmkzpsu2wwecmfcnk3fuq7n5ya7qoe2yxge"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1021,8 +1034,8 @@
       },
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
-      "repostCount": 215,
-      "likeCount": 1056,
+      "repostCount": 219,
+      "likeCount": 1083,
       "embed": {
         "type": "images",
         "images": [
@@ -1118,7 +1131,7 @@
       "indexedAt": "2026-06-03T16:40:25.969Z",
       "replyCount": 2,
       "repostCount": 78,
-      "likeCount": 549,
+      "likeCount": 550,
       "embed": {
         "type": "images",
         "images": [
@@ -3129,7 +3142,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2651,
-      "likeCount": 15629,
+      "likeCount": 15628,
       "embed": {
         "type": "images",
         "images": [
