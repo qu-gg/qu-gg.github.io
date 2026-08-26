@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T12:05:31.219372Z",
+  "lastUpdated": "2026-08-26T00:04:52.732378Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -15,8 +15,8 @@
     },
     "bluesky:underpalewater.bsky.social": {
       "handle": "underpalewater.bsky.social",
-      "displayName": "Underpalewater",
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d4sx2d454wf2d57jtwsx3dpf/bafkreiatv2dmxpb56fohc4tiixzpmtyram2zcgu6yhvdpdulk3i6aoatqu",
+      "displayName": null,
+      "avatar": null,
       "source": "bluesky"
     },
     "artstation:nickbray": {
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mtv6ybsi2c2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "sinland.gay",
+        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
+      },
+      "record": {
+        "text": "The next #dowagerrpg update is gonna be fun (I'll be releasing whatever I've got finished at the end of this month)",
+        "createdAt": "2026-08-25T06:30:17.809Z"
+      },
+      "indexedAt": "2026-08-25T06:30:20.464Z",
+      "replyCount": 2,
+      "repostCount": 9,
+      "likeCount": 19,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifmzhgpiamdt44qqjj4vnshumyngqltga7p7qpyjsvfm6wsvsjecm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifmzhgpiamdt44qqjj4vnshumyngqltga7p7qpyjsvfm6wsvsjecm",
+            "alt": "A statblock for the White Widow, a powerful boss adversary in Dowager: The Sacred & Strange. Its description reads:\n\nTier 3 Huge Ascendant Chimera. The White Widow is the most blessed and revered of Martyrs, born from the marriage of a devout maiden\u2019s upper body to an armored, bio-mechanical abdomen with six spider-like legs. Unlike most of her peers, the White Widow is free to roam High Calia\u2019s ruin, blindfolded and unspeaking, trusting in her prior faith to guide her through the megastructure to wherever something wicked needs to be eviscerated.\n\nSometimes, the White Widow will dance in the wilds with a cadre of chanters and revelers who may seek to one day follow her example. Though she is silent and docile, they insist they can her her speak. Beyond this frolicking, the Imperial Church only looks for one of its widows to ensure her heavy anti-materiel rifle is still functional."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mttv7eoe7f27",
       "source": "bluesky",
       "author": {
@@ -66,7 +98,7 @@
       "indexedAt": "2026-08-24T18:02:40.272Z",
       "replyCount": 2,
       "repostCount": 11,
-      "likeCount": 37,
+      "likeCount": 41,
       "embed": {
         "type": "images",
         "images": [
@@ -465,8 +497,8 @@
       },
       "indexedAt": "2026-08-21T15:37:08.266Z",
       "replyCount": 3,
-      "repostCount": 18,
-      "likeCount": 55,
+      "repostCount": 19,
+      "likeCount": 57,
       "embed": {
         "type": "images",
         "images": [
@@ -1035,7 +1067,7 @@
       "indexedAt": "2026-06-25T01:53:39.070Z",
       "replyCount": 10,
       "repostCount": 219,
-      "likeCount": 1085,
+      "likeCount": 1088,
       "embed": {
         "type": "images",
         "images": [
@@ -1622,8 +1654,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1444,
-      "likeCount": 6316,
+      "repostCount": 1443,
+      "likeCount": 6314,
       "embed": {
         "type": "images",
         "images": [
@@ -1775,8 +1807,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 762,
-      "likeCount": 3896,
+      "repostCount": 761,
+      "likeCount": 3895,
       "embed": {
         "type": "images",
         "images": [
@@ -2553,7 +2585,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1951,
-      "likeCount": 8464,
+      "likeCount": 8463,
       "embed": {
         "type": "images",
         "images": [
@@ -2947,7 +2979,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1508,
+      "likeCount": 1507,
       "embed": {
         "type": "images",
         "images": [
@@ -3114,7 +3146,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 406,
-      "likeCount": 2363,
+      "likeCount": 2364,
       "embed": {
         "type": "images",
         "images": [
