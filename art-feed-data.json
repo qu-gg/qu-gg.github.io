@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T12:05:16.800099Z",
+  "lastUpdated": "2026-08-27T01:08:57.057783Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:uxdy65vbtrrxcla3c722svhh/app.bsky.feed.post/3mtymitl5lc2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "crucibleofaether.bsky.social",
+        "displayName": "Crucible of Aether \u27a1\ufe0f Live on Itch!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uxdy65vbtrrxcla3c722svhh/bafkreie6l2idhh3rbqcaj5qzcdatop2fxkrnryskg4t6vvktxczvasxiii"
+      },
+      "record": {
+        "text": "We've officially launched Crucible of Aether on itch! Come check out our store page to dive into the Empire of Odayos: living-metal-games.itch.io/crucible-of-...\n\nNews about a physical edition coming soon (Kickstarter backers will be getting theirs first!)",
+        "createdAt": "2026-08-26T15:10:11.177Z"
+      },
+      "indexedAt": "2026-08-26T15:10:12.771Z",
+      "replyCount": 1,
+      "repostCount": 8,
+      "likeCount": 9,
+      "embed": {
+        "type": "external",
+        "uri": "https://living-metal-games.itch.io/crucible-of-aether",
+        "title": "Crucible of Aether by Living Metal Games",
+        "description": "A Mystic-Industrial TTRPG",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uxdy65vbtrrxcla3c722svhh/bafkreidgncnjx2zk6ly6flgvq45xyxvnsxkrakjpbaqtfiu3dokuhk4zmq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mtv6ybsi2c2h",
       "source": "bluesky",
@@ -347,8 +376,8 @@
       },
       "indexedAt": "2026-08-22T17:41:12.875Z",
       "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 47,
+      "repostCount": 8,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -519,63 +548,6 @@
         "displayName": "Reynaldo",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
-    },
-    {
-      "uri": "at://did:plc:rbkudhpvjgstxb7h2zbajcyx/app.bsky.feed.post/3mtklemy7c223",
-      "source": "bluesky",
-      "author": {
-        "handle": "barenuckelavee.bsky.social",
-        "displayName": "barenuckelavee.bsky.social",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbkudhpvjgstxb7h2zbajcyx/bafkreibx66ud6wj5nesgezucxslrly7huxvxg4l2lxq6eyyr2h3qldlkna"
-      },
-      "record": {
-        "text": "I have a blog now and wrote about playing a bastardized version of OD&D in prison and how the DIY spirit of the OSR is most alive when you don't buy anything at all\nbarenuckelavee.bearblog.dev/no-one-can-t...",
-        "createdAt": "2026-08-21T01:12:39.967Z"
-      },
-      "indexedAt": "2026-08-21T01:12:41.369Z",
-      "replyCount": 33,
-      "repostCount": 135,
-      "likeCount": 288,
-      "embed": {
-        "type": "external",
-        "uri": "https://barenuckelavee.bearblog.dev/no-one-can-take-your-game/",
-        "title": "NO ONE CAN TAKE YOUR GAME FROM YOU",
-        "description": "There is a sickness in the modern tabletop hobby, a kind of creeping, insidious consumerism that tries to convince you that you need things to play. We get c...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rbkudhpvjgstxb7h2zbajcyx/bafkreiavmhwjnwtviwfm2pvjqyuphjdyjzznsvijejtrhzgnmg7r6p7zgu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mtj5rn6etk27",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "Today's my birthday - I'll be spending it looking at the current version of START and just being grateful that I get to spend any time at all working on a game that people are (presumably) playing and enjoying elsewhere.\n\nThanks again everyone! I can't wait to release more BREAK!! nonsense.",
-        "createdAt": "2026-08-20T11:36:44.253Z"
-      },
-      "indexedAt": "2026-08-20T11:36:45.570Z",
-      "replyCount": 24,
-      "repostCount": 7,
-      "likeCount": 86,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicflqyhjuoxlgqebbqqeagxffbntnzcizaywak4wfa4ct7fsixtpi",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicflqyhjuoxlgqebbqqeagxffbntnzcizaywak4wfa4ct7fsixtpi",
-            "alt": "Mariah Doeheart of the BREAK!! tabletop rpg extracting a mysterious data cube."
-          }
-        ]
-      },
-      "repostBy": null
     },
     {
       "uri": "at://did:plc:265fq2djza43sogxixiqdmwt/app.bsky.feed.post/3mtf3tpud3k2q",
@@ -1622,8 +1594,8 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1443,
-      "likeCount": 6314,
+      "repostCount": 1442,
+      "likeCount": 6313,
       "embed": {
         "type": "images",
         "images": [
@@ -1776,7 +1748,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 761,
-      "likeCount": 3894,
+      "likeCount": 3893,
       "embed": {
         "type": "images",
         "images": [
@@ -2806,7 +2778,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2349,
-      "likeCount": 11847,
+      "likeCount": 11846,
       "embed": {
         "type": "images",
         "images": [
@@ -2890,8 +2862,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
-      "repostCount": 544,
-      "likeCount": 3031,
+      "repostCount": 543,
+      "likeCount": 3030,
       "embed": {
         "type": "images",
         "images": [
@@ -3086,7 +3058,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1876,
-      "likeCount": 8960,
+      "likeCount": 8959,
       "embed": {
         "type": "images",
         "images": [
