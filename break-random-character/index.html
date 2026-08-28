@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roll random rank 1 BREAK!! characters using the Core Rules tables.">
+    <title>BREAK!! Random Character | Studio Quagg</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script data-goatcounter="https://quagg.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar" aria-label="Primary navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Studio Quagg</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../break.html" class="active">BREAK!! Homebrew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="generator-masthead">
+        <div class="masthead-content">
+            <h1><em>BREAK!!</em> Random Character</h1>
+            <p class="masthead-subtitle">Rule-Based Generator for a Rank 1 BREAK!! Character.</p>
+        </div>
+    </header>
+
+    <main class="generator-main">
+        <section class="roll-workbench" aria-label="Character generator">
+            <div class="workbench-heading">
+                <div class="generator-actions">
+                    <p class="section-kicker"># Characters</p>
+                    <form id="roll-form" class="roll-controls">
+                        <input id="character-count" name="count" type="number" min="1" max="12" value="1" inputmode="numeric" aria-label="Number of characters">
+                        <button id="roll-button" type="submit">Generate</button>
+                    </form>
+                </div>
+                <p class="generator-attribution">
+                    <strong>Independent, non-commercial fan tool.</strong><br>
+                    <em>BREAK!!</em> by Reynaldo Madriñan and Carlo Tartaglia.<br>
+                    Names from the official <a href="https://breakrpg.blogspot.com/2025/04/random-name-tables-setting-freebie.html" target="_blank" rel="noopener">Random Name Tables</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-title">
+            <div class="results-heading">
+                <h2 id="results-title">Rolled Characters</h2>
+                <span id="result-count" class="result-count" role="status" aria-live="polite">0 Results</span>
+            </div>
+            <div id="empty-state" class="empty-state">
+                <span class="empty-die" aria-hidden="true"><span>20</span></span>
+                <p>No characters rolled yet.</p>
+            </div>
+            <div id="results" class="character-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="webring" aria-label="Webring">
+            <a href="https://rootr.ing/" class="webring-label">rootring</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/prev?site=http://its.quagg.studio/">Prev</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/random">Random</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/directory">Directory</a>
+            <span class="webring-sep">·</span>
+            <a href="https://rootr.ing/next?site=http://its.quagg.studio/">Next</a>
+        </nav>
+        <p>© 2025 Studio Quagg · BREAK!! is © Reynaldo Madriñan &amp; Grey Wizard</p>
+    </footer>
+
+    <div id="card-capture-stage" class="card-capture-stage" aria-hidden="true"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="app.mjs"></script>
+</body>
+</html>

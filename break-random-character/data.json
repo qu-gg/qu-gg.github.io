@@ -1,0 +1,5142 @@
+{
+  "schemaVersion": 1,
+  "source": "BREAK!! RPG Core Rules v1",
+  "callings": [
+    {
+      "range": [
+        1,
+        3
+      ],
+      "name": "Factotum",
+      "page": 16,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 9,
+        "grit": 8,
+        "insight": 9,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Lash",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": [
+          "Small"
+        ]
+      },
+      "gearAllowancePage": 20
+    },
+    {
+      "range": [
+        4,
+        6
+      ],
+      "name": "Sneak",
+      "page": 22,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 10,
+        "grit": 7,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 26
+    },
+    {
+      "range": [
+        7,
+        9
+      ],
+      "name": "Champion",
+      "page": 28,
+      "aptitudes": {
+        "might": 10,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 8
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 32
+    },
+    {
+      "range": [
+        10,
+        12
+      ],
+      "name": "Raider",
+      "page": 34,
+      "aptitudes": {
+        "might": 9,
+        "deftness": 9,
+        "grit": 9,
+        "insight": 8,
+        "aura": 7
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Fast",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium"
+        ],
+        "shields": [
+          "Small",
+          "Standard"
+        ]
+      },
+      "gearAllowancePage": 38
+    },
+    {
+      "range": [
+        13,
+        14
+      ],
+      "name": "Battle Princess",
+      "page": 40,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 10
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 48
+    },
+    {
+      "range": [
+        15,
+        16
+      ],
+      "name": "Murder Princess",
+      "page": 50,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 8,
+        "aura": 9
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 56
+    },
+    {
+      "range": [
+        17,
+        18
+      ],
+      "name": "Sage",
+      "page": 58,
+      "aptitudes": {
+        "might": 6,
+        "deftness": 8,
+        "grit": 8,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Thrown",
+          "Small Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 66
+    },
+    {
+      "range": [
+        19,
+        20
+      ],
+      "name": "Heretic",
+      "page": 68,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 7,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Lash",
+          "Thrown"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 78
+    }
+  ],
+  "species": [
+    {
+      "range": [
+        1,
+        4
+      ],
+      "name": "Human, Native",
+      "page": 84,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Native Human"
+    },
+    {
+      "range": [
+        5,
+        5
+      ],
+      "name": "Human, Dimensional Stray",
+      "page": 86,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Native Human"
+    },
+    {
+      "range": [
+        6,
+        7
+      ],
+      "name": "Chib",
+      "page": 88,
+      "size": "Small",
+      "quirkTable": "Inheritor",
+      "nameTable": "Chib"
+    },
+    {
+      "range": [
+        8,
+        10
+      ],
+      "name": "Tenebrate",
+      "page": 90,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Tenebrate"
+    },
+    {
+      "range": [
+        11,
+        13
+      ],
+      "name": "Rai-Neko",
+      "page": 92,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Rai-Neko"
+    },
+    {
+      "range": [
+        14,
+        15
+      ],
+      "name": "Promethean",
+      "page": 94,
+      "size": "Large",
+      "quirkTable": "Inheritor",
+      "nameTable": "Promethean"
+    },
+    {
+      "range": [
+        16,
+        16
+      ],
+      "name": "Gruun",
+      "page": 96,
+      "size": "Large",
+      "quirkTable": "Inheritor",
+      "nameTable": "Gruun"
+    },
+    {
+      "range": [
+        17,
+        17
+      ],
+      "name": "Goblin",
+      "page": 98,
+      "size": "Small",
+      "quirkTable": "Old World",
+      "nameTable": "Goblin"
+    },
+    {
+      "range": [
+        18,
+        18
+      ],
+      "name": "Dwarf",
+      "page": 100,
+      "size": "Medium",
+      "quirkTable": "Old World",
+      "nameTable": "Dwarf",
+      "inventoryBonus": 2
+    },
+    {
+      "range": [
+        19,
+        19
+      ],
+      "name": "Elf",
+      "page": 102,
+      "size": "Medium",
+      "quirkTable": "Old World",
+      "nameTable": "Elf"
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "name": "Bio-Mechanoid",
+      "page": 104,
+      "size": "Medium",
+      "quirkTable": "Bio-Mechanoid",
+      "nameTable": "Bio-Mechanoid"
+    }
+  ],
+  "homelands": [
+    {
+      "range": [
+        1,
+        5
+      ],
+      "name": "Wistful Dark",
+      "page": 110,
+      "languages": [
+        "High Akenian",
+        "Dark Tongue",
+        "Dream Call"
+      ]
+    },
+    {
+      "range": [
+        6,
+        10
+      ],
+      "name": "Twilight Meridian",
+      "page": 114,
+      "languages": [
+        "Dark Tongue",
+        "Fade Song",
+        "Gleysian Code"
+      ]
+    },
+    {
+      "range": [
+        11,
+        15
+      ],
+      "name": "Blazing Garden",
+      "page": 118,
+      "languages": [
+        "Bright Speech",
+        "Hoshi-Ban",
+        "Fade Song"
+      ]
+    },
+    {
+      "range": [
+        16,
+        20
+      ],
+      "name": "Buried Kingdom",
+      "page": 122,
+      "languages": [
+        "High Akenian",
+        "Under Warble",
+        "Creator's Script"
+      ]
+    }
+  ],
+  "histories": {
+    "Wistful Dark": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Forsaken Wanderer",
+        "tier": "Outcasts",
+        "page": 110,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Master Weapon",
+            "nickname": "forgotten sword",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Master"
+          },
+          {
+            "option": 2,
+            "name": "Tattered Outfit",
+            "nickname": "rags",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Compass",
+            "nickname": "cracked but functional",
+            "page": 174
+          },
+          {
+            "option": 4,
+            "name": "Star Gem",
+            "nickname": "hope in the dark",
+            "page": 180
+          }
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Blight Raider",
+        "tier": "Outcasts",
+        "page": 110,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Arc Weapon",
+            "nickname": "bandit spear",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Arc"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "bandit leathers",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Rebreather",
+            "nickname": "raider's maw",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Grenades x2",
+            "nickname": "fireberries",
+            "page": 178
+          }
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Shadow Lands Nomad",
+        "tier": "Outcasts",
+        "page": 110,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Extreme Weather Outfit: Cold",
+            "nickname": "wanderer's cloak",
+            "page": 172
+          },
+          {
+            "option": 2,
+            "name": "Backpack",
+            "nickname": "nomad's pack",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Lantern & Oil Units x2",
+            "nickname": "a guiding light",
+            "page": 175
+          },
+          {
+            "option": 4,
+            "name": "Hardy Rations x5",
+            "nickname": "journey loaf",
+            "page": 177
+          }
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Murk Dweller",
+        "tier": "Outcasts",
+        "page": 111,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Quick Weapon",
+            "nickname": "grass blade",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Quick"
+          },
+          {
+            "option": 2,
+            "name": "Appealing Outfit",
+            "nickname": "petal pixie clothes",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Booster Cakes x2",
+            "nickname": "moon drop candy",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Solvent x2 Units",
+            "nickname": "ash elm sap",
+            "page": 178
+          }
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Nightwall Yeoman",
+        "tier": "Commoners",
+        "page": 111,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Drawn Weapon & 10 Arrows",
+            "nickname": "yeoman's bow",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Drawn"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "cuirass",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Traveler's Bag",
+            "nickname": "sling pack",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Companion: Growl",
+            "nickname": "a trusty friend",
+            "page": 188
+          }
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Starlight Farmer",
+        "tier": "Commoners",
+        "page": 111,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Treat x10",
+            "nickname": "mama's cookies",
+            "page": 177
+          },
+          {
+            "option": 2,
+            "name": "Trade Goods",
+            "nickname": "star plums",
+            "page": 179
+          },
+          {
+            "option": 3,
+            "name": "Rural Goods",
+            "nickname": "your family's best shovel",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Pudge Grub",
+            "nickname": "blue ribbon winner",
+            "page": 189
+          }
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Guild Agent",
+        "tier": "Commoners",
+        "page": 112,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Artisan's Outfit",
+            "nickname": "apron",
+            "page": 172
+          },
+          {
+            "option": 2,
+            "name": "Kingdom Map",
+            "nickname": "Shard trade route guide",
+            "page": 174
+          },
+          {
+            "option": 3,
+            "name": "Packbeast",
+            "nickname": "Shaggy Bumpo, a stubborn thing",
+            "page": 193
+          },
+          {
+            "option": 4,
+            "name": "Follower: Scamp",
+            "nickname": "assistant",
+            "page": 185
+          }
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Town Guard",
+        "tier": "Commoners",
+        "page": 112,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Medium Armor",
+            "nickname": "city guard's uniform",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 2,
+            "name": "Large Shield",
+            "nickname": "riot bulwark",
+            "page": 169,
+            "gearCategory": "shields",
+            "gearType": "Large",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Authoritative Outfit",
+            "nickname": "captain's hat & sash",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Lantern",
+            "nickname": "night watch's companion",
+            "page": 175
+          }
+        ]
+      },
+      {
+        "range": [
+          17,
+          17
+        ],
+        "name": "Celebrated Artist",
+        "tier": "Elite",
+        "page": 112,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Concealed Weapon",
+            "nickname": "ornamental dagger",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 2,
+            "name": "Appealing Outfit",
+            "nickname": "fine robes",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Urban Goods",
+            "nickname": "stylus & parchment",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Luxury Item",
+            "nickname": "starlight lyre",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          18,
+          18
+        ],
+        "name": "Magia University Graduate",
+        "tier": "Elite",
+        "page": 113,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Traveler's Bag",
+            "nickname": "satchel",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Master's Tome",
+            "nickname": "on a subject of your choice!",
+            "page": 176
+          },
+          {
+            "option": 3,
+            "name": "Translation Journal",
+            "nickname": "Bright Speech",
+            "page": 176
+          },
+          {
+            "option": 4,
+            "name": "Booster Cakes x2: Insight",
+            "nickname": "cram cookies",
+            "page": 177
+          }
+        ]
+      },
+      {
+        "range": [
+          19,
+          19
+        ],
+        "name": "Knight Errant",
+        "tier": "Elite",
+        "page": 113,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Medium Armor",
+            "nickname": "questing plate",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 2,
+            "name": "Standard Shield",
+            "nickname": "heraldic heater",
+            "page": 169,
+            "gearCategory": "shields",
+            "gearType": "Standard",
+            "defenseBonus": 1
+          },
+          {
+            "option": 3,
+            "name": "Holy Icon",
+            "nickname": "sacred chain",
+            "page": 180
+          },
+          {
+            "option": 4,
+            "name": "Mount",
+            "nickname": "Mokko-Do",
+            "page": 191
+          }
+        ]
+      },
+      {
+        "range": [
+          20,
+          20
+        ],
+        "name": "Shard State Patrician",
+        "tier": "Elite",
+        "page": 113,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Small Mechanical Weapon & Bolts x10",
+            "nickname": "hand crossbow",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Small Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Medium Armor",
+            "nickname": "traveler's mail",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 3,
+            "name": "Appealing Outfit",
+            "nickname": "fine attire",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Follower: Custrel",
+            "nickname": "dedicated butler or maid",
+            "page": 186
+          }
+        ]
+      }
+    ],
+    "Twilight Meridian": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Disgraced Scion",
+        "tier": "Outcasts",
+        "page": 114,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Concealed Weapon",
+            "nickname": "tarnished knife",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 2,
+            "name": "Tattered Outfit",
+            "nickname": "once-fine coat",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Regional Map",
+            "nickname": "Twilight Meridian",
+            "page": 174
+          },
+          {
+            "option": 4,
+            "name": "Luxury Item",
+            "nickname": "old party mask",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Shadow Sea Pirate",
+        "tier": "Outcasts",
+        "page": 114,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Quick Weapon",
+            "nickname": "cutlass",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Quick"
+          },
+          {
+            "option": 2,
+            "name": "Compass",
+            "nickname": "ship's memento",
+            "page": 174
+          },
+          {
+            "option": 3,
+            "name": "Grenades x2",
+            "nickname": "deck busters",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Rural Goods",
+            "nickname": "rope 30 ft",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Orphaned Shinobi",
+        "tier": "Outcasts",
+        "page": 114,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Thrown Missile Weapon",
+            "nickname": "your last shuriken",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Thrown"
+          },
+          {
+            "option": 2,
+            "name": "Costume",
+            "nickname": "colorful fop",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Dungeoneer's Kit",
+            "nickname": "dragon tooth picks",
+            "page": 176
+          },
+          {
+            "option": 4,
+            "name": "Adventuring Gear",
+            "nickname": "climbing claws",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Oldtech Junker",
+        "tier": "Outcasts",
+        "page": 115,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Small Mechanical Missile Weapon",
+            "nickname": "old machine pistol",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Small Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "padded duster",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Lumi-Slime Lantern",
+            "nickname": "slime included",
+            "page": 175
+          },
+          {
+            "option": 4,
+            "name": "Scanner",
+            "nickname": "Gleysian model",
+            "page": 181
+          }
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Twilight Silk Tailor",
+        "tier": "Commoners",
+        "page": 115,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Concealed Weapon with Utility Ability",
+            "nickname": "scissor knife",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 2,
+            "name": "Trade Goods x2 Units",
+            "nickname": "twilight silk",
+            "page": 179
+          },
+          {
+            "option": 3,
+            "name": "Artisan's Outfit",
+            "nickname": "tailor's apron",
+            "page": 172
+          },
+          {
+            "option": 4,
+            "name": "Urban Goods",
+            "nickname": "silk measuring tape",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Medicine Peddler",
+        "tier": "Commoners",
+        "page": 115,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Appealing Outfit",
+            "nickname": "kimono",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Traveler's Bag",
+            "nickname": "medicine case",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Basic Potion x2",
+            "nickname": "teacher's recipe",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Arcane Powder x2 Units",
+            "nickname": "",
+            "page": 290
+          }
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Shining Sea Fisherman",
+        "tier": "Commoners",
+        "page": 116,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Arc Weapon",
+            "nickname": "trident",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Arc"
+          },
+          {
+            "option": 2,
+            "name": "Hardy Rations x5",
+            "nickname": "bubbler fish jerky",
+            "page": 177
+          },
+          {
+            "option": 3,
+            "name": "Rural Goods",
+            "nickname": "fishing rod",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Coracle",
+            "nickname": "",
+            "page": 197
+          }
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Portian University Graduate",
+        "tier": "Commoners",
+        "page": 116,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Backpack",
+            "nickname": "book bag",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Beginner's Tome: Economics & Trade",
+            "nickname": "classmate's notes",
+            "page": 176
+          },
+          {
+            "option": 3,
+            "name": "Booster Cakes x2: Insight",
+            "nickname": "mental muffins",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Urban Goods",
+            "nickname": "quill & ink",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          17,
+          17
+        ],
+        "name": "Merchant Scion",
+        "tier": "Elite",
+        "page": 116,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Quick Weapon",
+            "nickname": "ornate kalis",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Quick"
+          },
+          {
+            "option": 2,
+            "name": "Appealing Outfit",
+            "nickname": "fashionable baro",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Oddity",
+            "nickname": "oldtech pocket watch",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "50 Coins",
+            "nickname": "family stipend",
+            "page": 151
+          }
+        ]
+      },
+      {
+        "range": [
+          18,
+          18
+        ],
+        "name": "Holy Isle Samurai",
+        "tier": "Elite",
+        "page": 117,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Master Weapon",
+            "nickname": "katana",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Master"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "tatami cuirass",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Authoritative Outfit",
+            "nickname": "dark kamishimo",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Luxury Item",
+            "nickname": "calligraphy set",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          19,
+          19
+        ],
+        "name": "Archive Researcher",
+        "tier": "Elite",
+        "page": 117,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Large Mechanical Missile Weapon & Ammo x5",
+            "nickname": "machine rifle",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Large Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Traveler's Bag",
+            "nickname": "field satchel",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Lantern",
+            "nickname": "Oil/Fuel Units x2, guide light",
+            "page": 175
+          },
+          {
+            "option": 4,
+            "name": "Paw Post Membership",
+            "nickname": "Helical Archive account",
+            "page": 202
+          }
+        ]
+      },
+      {
+        "range": [
+          20,
+          20
+        ],
+        "name": "Black Glove Cavalier",
+        "tier": "Elite",
+        "page": 117,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Lash Weapon",
+            "nickname": "duelist's chain",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Lash"
+          },
+          {
+            "option": 2,
+            "name": "Medium Armor",
+            "nickname": "plated coat",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 3,
+            "name": "Holy Icon",
+            "nickname": "darkfire circlet",
+            "page": 180
+          },
+          {
+            "option": 4,
+            "name": "Shadow Stone",
+            "nickname": "your precious",
+            "page": 180
+          }
+        ]
+      }
+    ],
+    "Blazing Garden": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Kinless Vagrant",
+        "tier": "Outcasts",
+        "page": 118,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Arc Weapon",
+            "nickname": "old spear",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Arc"
+          },
+          {
+            "option": 2,
+            "name": "Extreme Weather Outfit: Hot",
+            "nickname": "prickle poncho",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Oil/Fuel Units x10",
+            "nickname": "iron eater's blood",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Pet: Purr",
+            "nickname": "feral but loyal",
+            "page": 190
+          }
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Monster Slayer",
+        "tier": "Outcasts",
+        "page": 118,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Mighty Weapon",
+            "nickname": "slayer axe",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Mighty"
+          },
+          {
+            "option": 2,
+            "name": "Medium Armor",
+            "nickname": "beast hide",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 3,
+            "name": "Beginner's Tome: Colossal Creatures",
+            "nickname": "Crow's Guide",
+            "page": 176
+          },
+          {
+            "option": 4,
+            "name": "Rural Goods",
+            "nickname": "rope 30 ft",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Street Rat",
+        "tier": "Outcasts",
+        "page": 118,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Gem x1",
+            "nickname": "not exactly yours",
+            "page": 151
+          },
+          {
+            "option": 2,
+            "name": "Concealed Weapon",
+            "nickname": "trusty knife",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 3,
+            "name": "Solvent Units x2",
+            "nickname": "largzard spittle",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Adventuring Gear",
+            "nickname": "grappling hook",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Thunda Clan Barbarian",
+        "tier": "Outcasts",
+        "page": 119,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Master Weapon",
+            "nickname": "your mother's axe",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Master"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "breastplate",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Traveler's Bag",
+            "nickname": "animal skin sack",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Oddity",
+            "nickname": "old telescope",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Beast Handler",
+        "tier": "Commoners",
+        "page": 119,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Hardy Rations x10",
+            "nickname": "monster feed",
+            "page": 177
+          },
+          {
+            "option": 2,
+            "name": "Rural Item",
+            "nickname": "wool shears",
+            "page": 179
+          },
+          {
+            "option": 3,
+            "name": "Rural Item",
+            "nickname": "rancher bell",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Pack Beast: Shaggy Bumpo",
+            "nickname": "sturdy but flatulent",
+            "page": 193
+          }
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Village Runner",
+        "tier": "Commoners",
+        "page": 119,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Thrown Missile Weapon",
+            "nickname": "skipping stone",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Thrown"
+          },
+          {
+            "option": 2,
+            "name": "Backpack",
+            "nickname": "courier's pack",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Basic Potion x2",
+            "nickname": "sunberry mixture",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Rural Goods",
+            "nickname": "gourd canteen",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Jubilant Performer",
+        "tier": "Commoners",
+        "page": 120,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Lash Weapon",
+            "nickname": "ribbon blade",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Lash"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "leathers",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Appealing Outfit",
+            "nickname": "dancer's costume",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Luxury Item",
+            "nickname": "musical instrument",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "City Scrivener",
+        "tier": "Commoners",
+        "page": 120,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Authoritative Outfit",
+            "nickname": "scribe's uniform",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Translation Guide: Fade Song",
+            "nickname": "",
+            "page": 176
+          },
+          {
+            "option": 3,
+            "name": "Urban Goods",
+            "nickname": "pad & pen",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Follower: Scamp",
+            "nickname": "assistant page",
+            "page": 185
+          }
+        ]
+      },
+      {
+        "range": [
+          17,
+          17
+        ],
+        "name": "Emissary of Sol",
+        "tier": "Elite",
+        "page": 120,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Light Armor",
+            "nickname": "plated vestments",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 2,
+            "name": "Holy Icon",
+            "nickname": "sol medallion",
+            "page": 180
+          },
+          {
+            "option": 3,
+            "name": "Follower: Custrel",
+            "nickname": "acolyte attendant",
+            "page": 186
+          },
+          {
+            "option": 4,
+            "name": "Vial of Bright Water x3",
+            "nickname": "",
+            "page": 290
+          }
+        ]
+      },
+      {
+        "range": [
+          18,
+          18
+        ],
+        "name": "Wyrm Blooded",
+        "tier": "Elite",
+        "page": 121,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Gem x1",
+            "nickname": "a parting gift",
+            "page": 151
+          },
+          {
+            "option": 2,
+            "name": "Arc Weapon",
+            "nickname": "wing spear",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Arc"
+          },
+          {
+            "option": 3,
+            "name": "Medium Armor",
+            "nickname": "largzard hide",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 4,
+            "name": "Compass",
+            "nickname": "destiny charm",
+            "page": 174
+          }
+        ]
+      },
+      {
+        "range": [
+          19,
+          19
+        ],
+        "name": "Hinterland Noble",
+        "tier": "Elite",
+        "page": 121,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Drawn Weapon & Arrows x10",
+            "nickname": "hunting bow",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Drawn"
+          },
+          {
+            "option": 2,
+            "name": "Authoritative Outfit",
+            "nickname": "emblematic clothing",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Compass",
+            "nickname": "a keepsake from your tutor",
+            "page": 174
+          },
+          {
+            "option": 4,
+            "name": "Riding Mount: Jumbug",
+            "nickname": "",
+            "page": 191
+          }
+        ]
+      },
+      {
+        "range": [
+          20,
+          20
+        ],
+        "name": "Startech Adept",
+        "tier": "Elite",
+        "page": 121,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Large Mechanical Missile Weapon & Ammo x5",
+            "nickname": "Rai-Neko rifle",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Large Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Artisan's Outfit",
+            "nickname": "adept's coat",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Scanner",
+            "nickname": "startech monitor",
+            "page": 181
+          },
+          {
+            "option": 4,
+            "name": "Small Spell Engine",
+            "nickname": "startech battery",
+            "page": 181
+          }
+        ]
+      }
+    ],
+    "Buried Kingdom": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Tunnel Crawler",
+        "tier": "Outcasts",
+        "page": 122,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Concealed Weapon",
+            "nickname": "improvised shiv",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 2,
+            "name": "Tattered Outfit",
+            "nickname": "dusty rags",
+            "page": 172
+          },
+          {
+            "option": 3,
+            "name": "Bomb x1",
+            "nickname": "unexploded mine",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Star Gem",
+            "nickname": "hope in the dark",
+            "page": 180
+          }
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Ruin Scavenger",
+        "tier": "Outcasts",
+        "page": 122,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Light Armor",
+            "nickname": "crawling pads",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 2,
+            "name": "Standard Shield",
+            "nickname": "old soldier's bulwark",
+            "page": 169,
+            "gearCategory": "shields",
+            "gearType": "Standard",
+            "defenseBonus": 1
+          },
+          {
+            "option": 3,
+            "name": "Traveler's Bag",
+            "nickname": "a big sack",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Lumi-Slime Lantern",
+            "nickname": "you called your slime Hue-bert",
+            "page": 175
+          }
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "War Deserter",
+        "tier": "Outcasts",
+        "page": 122,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Mighty Weapon",
+            "nickname": "rusty war maul",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Mighty"
+          },
+          {
+            "option": 2,
+            "name": "Medium Armor",
+            "nickname": "assault mail",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 3,
+            "name": "Tattered Outfit",
+            "nickname": "old uniform",
+            "page": 172
+          },
+          {
+            "option": 4,
+            "name": "Flame Grenades x2",
+            "nickname": "tunnel clearers",
+            "page": 178
+          }
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Moss Scraper",
+        "tier": "Outcasts",
+        "page": 123,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Extreme Weather Outfit: Cold",
+            "nickname": "worm skin cloak",
+            "page": 172
+          },
+          {
+            "option": 2,
+            "name": "Rebreather Mask",
+            "nickname": "creeper shell mask",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Hardy Rations x10",
+            "nickname": "shrooms",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Oddity",
+            "nickname": "scraping knife",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Underland Soldier",
+        "tier": "Commoners",
+        "page": 123,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Large Mechanical Missile Weapon & Ammo x5",
+            "nickname": "underland rifle",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Large Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "infantry armor",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Authoritative Outfit",
+            "nickname": "Old Iron or New Ore military uniform",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Basic Potion x2",
+            "nickname": "jolt juice",
+            "page": 177
+          }
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Honored Laborer",
+        "tier": "Commoners",
+        "page": 123,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Black-out Goggles",
+            "nickname": "New Ore issue",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Lantern & Oil/Fuel Unit x1",
+            "nickname": "ring-handle lantern",
+            "page": 175
+          },
+          {
+            "option": 3,
+            "name": "Common Rural Item",
+            "nickname": "mattock",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Pet: Skree",
+            "nickname": "leather wing",
+            "page": 190
+          }
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Forge Hand",
+        "tier": "Commoners",
+        "page": 124,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Standard Weapon with Utility Ability",
+            "nickname": "forge hammer",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Standard"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "protective gear",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Standard Shield",
+            "nickname": "your latest project",
+            "page": 169,
+            "gearCategory": "shields",
+            "gearType": "Standard",
+            "defenseBonus": 1
+          },
+          {
+            "option": 4,
+            "name": "Artisan's Outfit",
+            "nickname": "smith's apron",
+            "page": 172
+          }
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Field Sapper",
+        "tier": "Commoners",
+        "page": 124,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Small Mechanical Missile Weapon",
+            "nickname": "crank pistol",
+            "page": 158,
+            "gearCategory": "weapons",
+            "gearType": "Small Mechanical"
+          },
+          {
+            "option": 2,
+            "name": "Backpack",
+            "nickname": "rucksack",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Bomb x1",
+            "nickname": "demolitions kit",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Common Rural Item",
+            "nickname": "spade",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          17,
+          17
+        ],
+        "name": "Record Etcher",
+        "tier": "Elite",
+        "page": 124,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Traveler's Bag",
+            "nickname": "courier bag",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Precise Dabber & Solvent x1 Unit",
+            "nickname": "etching tools",
+            "page": 178
+          },
+          {
+            "option": 3,
+            "name": "Oddity",
+            "nickname": "multi-lens magnification goggles",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Oddity",
+            "nickname": "metal etching sheet",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          18,
+          18
+        ],
+        "name": "Comrade Agitator",
+        "tier": "Elite",
+        "page": 125,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Light Armor",
+            "nickname": "Strategically placed metal plates",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 2,
+            "name": "Appealing Outfit",
+            "nickname": "New Ore counter-fashion",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Basic Potion x2",
+            "nickname": "jolt juice",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Grenades x2",
+            "nickname": "havoc crackers",
+            "page": 178
+          }
+        ]
+      },
+      {
+        "range": [
+          19,
+          19
+        ],
+        "name": "Resolute Overseer",
+        "tier": "Elite",
+        "page": 125,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Lash Weapon",
+            "nickname": "spur cord",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Lash"
+          },
+          {
+            "option": 2,
+            "name": "Medium Armor",
+            "nickname": "big pauldrons",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Medium",
+            "defenseBonus": 4
+          },
+          {
+            "option": 3,
+            "name": "Authoritative Outfit",
+            "nickname": "robes",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Holy Icon",
+            "nickname": "Creator's glyph",
+            "page": 180
+          }
+        ]
+      },
+      {
+        "range": [
+          20,
+          20
+        ],
+        "name": "Apprentice Thinker",
+        "tier": "Elite",
+        "page": 125,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Concealed Weapon",
+            "nickname": "dagger",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Concealed"
+          },
+          {
+            "option": 2,
+            "name": "Blackout Goggles",
+            "nickname": "for research trips to the surface",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Beginner's Tome: Buried Kingdom History",
+            "nickname": "",
+            "page": 176
+          },
+          {
+            "option": 4,
+            "name": "Booster Cakes x2: Insight",
+            "nickname": "clever candies",
+            "page": 177
+          }
+        ]
+      }
+    ],
+    "Other World": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Transient",
+        "tier": "Outcasts",
+        "page": 126,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Tattered Outfit",
+            "nickname": "no shoes and a ripped trench coat",
+            "page": 172
+          },
+          {
+            "option": 2,
+            "name": "Backpack",
+            "nickname": "trusty kit bag",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Treat x5",
+            "nickname": "candy from a child",
+            "page": 177
+          },
+          {
+            "option": 4,
+            "name": "Pet: Growl",
+            "nickname": "brave mongrel",
+            "page": 188
+          }
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "NEET",
+        "tier": "Commoners",
+        "page": 126,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Beginner's Tome: Adventure Sites",
+            "nickname": "Akenia Adventure!! guide",
+            "page": 176
+          },
+          {
+            "option": 2,
+            "name": "Basic Potion x2",
+            "nickname": "energy drinks",
+            "page": 177
+          },
+          {
+            "option": 3,
+            "name": "Holy Icon",
+            "nickname": "collectible plush",
+            "page": 180
+          },
+          {
+            "option": 4,
+            "name": "Other World Pocket Device",
+            "nickname": "Game Gal Advance",
+            "page": 182
+          }
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Retail/Service",
+        "tier": "Commoners",
+        "page": 126,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Artisan's Outfit",
+            "nickname": "sales apron",
+            "page": 172
+          },
+          {
+            "option": 2,
+            "name": "Rations x10",
+            "nickname": "box of nuggets",
+            "page": 177
+          },
+          {
+            "option": 3,
+            "name": "Urban Goods",
+            "nickname": "company branded pad & pen",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Other World Pocket Device",
+            "nickname": "smart phone",
+            "page": 182
+          }
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Blue Collar",
+        "tier": "Commoners",
+        "page": 127,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Mighty Weapon with Utility Ability",
+            "nickname": "sledgehammer",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Mighty"
+          },
+          {
+            "option": 2,
+            "name": "Light Armor",
+            "nickname": "hard hat & protective overalls",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 3,
+            "name": "Traveler's Bag",
+            "nickname": "tool belt",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Basic Potion x2",
+            "nickname": "coffee flask",
+            "page": 177
+          }
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "White Collar",
+        "tier": "Commoners",
+        "page": 127,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Authoritative Outfit",
+            "nickname": "suit & tie",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Treat x2 & Hardy Rations x2",
+            "nickname": "packed lunch",
+            "page": 177
+          },
+          {
+            "option": 3,
+            "name": "Oddity",
+            "nickname": "red stapler",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Other World Pocket Device",
+            "nickname": "synth tablet",
+            "page": 182
+          }
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Domestic",
+        "tier": "Commoners",
+        "page": 127,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Standard Weapon with Utility Ability",
+            "nickname": "iron frying pan",
+            "page": 152,
+            "gearCategory": "weapons",
+            "gearType": "Standard"
+          },
+          {
+            "option": 2,
+            "name": "Traveler's Bag",
+            "nickname": "cute tote",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Beginner's Tome: Outer World Legends",
+            "nickname": "children's book",
+            "page": 176
+          },
+          {
+            "option": 4,
+            "name": "Treats x10",
+            "nickname": "perfect cookies",
+            "page": 177
+          }
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Military/Law Enforcement",
+        "tier": "Commoners",
+        "page": 128,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Light Armor",
+            "nickname": "anti-stab vest",
+            "page": 163,
+            "gearCategory": "armor",
+            "gearType": "Light",
+            "defenseBonus": 2
+          },
+          {
+            "option": 2,
+            "name": "Authoritative Outfit",
+            "nickname": "uniform",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Grenades x2",
+            "nickname": "frags",
+            "page": 178
+          },
+          {
+            "option": 4,
+            "name": "Other World Side Arm & Ammo x10",
+            "nickname": "trusty shooter",
+            "page": 182
+          }
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Education, Faculty",
+        "tier": "Commoners",
+        "page": 128,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Backpack",
+            "nickname": "teacher's satchel",
+            "page": 173
+          },
+          {
+            "option": 2,
+            "name": "Urban Goods",
+            "nickname": "pack of chalk",
+            "page": 179
+          },
+          {
+            "option": 3,
+            "name": "Oddity",
+            "nickname": "hand puppet for educational use",
+            "page": 179
+          },
+          {
+            "option": 4,
+            "name": "Oddity",
+            "nickname": "three-hole puncher",
+            "page": 179
+          }
+        ]
+      },
+      {
+        "range": [
+          17,
+          19
+        ],
+        "name": "Education, Student",
+        "tier": "Commoners",
+        "page": 128,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Master Weapon",
+            "nickname": "aluminium baseball bat",
+            "page": 153,
+            "gearCategory": "weapons",
+            "gearType": "Master"
+          },
+          {
+            "option": 2,
+            "name": "Backpack",
+            "nickname": "book bag",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Appealing Outfit",
+            "nickname": "school uniform",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Other World Pocket Device",
+            "nickname": "smart phone with charm",
+            "page": 182
+          }
+        ]
+      },
+      {
+        "range": [
+          20,
+          20
+        ],
+        "name": "Idle Rich",
+        "tier": "Elite",
+        "page": 129,
+        "gear": [
+          {
+            "option": 1,
+            "name": "Gem x1",
+            "nickname": "assorted bling",
+            "page": 151
+          },
+          {
+            "option": 2,
+            "name": "Appealing Outfit",
+            "nickname": "strong look",
+            "page": 173
+          },
+          {
+            "option": 3,
+            "name": "Blackout Goggles",
+            "nickname": "shades",
+            "page": 173
+          },
+          {
+            "option": 4,
+            "name": "Other World Pocket Device",
+            "nickname": "Pear Pad DX",
+            "page": 182
+          }
+        ]
+      }
+    ]
+  },
+  "quirkCategoryTables": {
+    "Inheritor": [
+      {
+        "range": [
+          1,
+          7
+        ],
+        "name": "Spirit"
+      },
+      {
+        "range": [
+          8,
+          14
+        ],
+        "name": "Physiology"
+      },
+      {
+        "range": [
+          15,
+          20
+        ],
+        "name": "Fate"
+      }
+    ],
+    "Old World": [
+      {
+        "range": [
+          1,
+          7
+        ],
+        "name": "Spirit"
+      },
+      {
+        "range": [
+          8,
+          14
+        ],
+        "name": "Physiology"
+      },
+      {
+        "range": [
+          15,
+          20
+        ],
+        "name": "Eldritch"
+      }
+    ],
+    "Bio-Mechanoid": [
+      {
+        "range": [
+          1,
+          10
+        ],
+        "name": "Spirit"
+      },
+      {
+        "range": [
+          11,
+          20
+        ],
+        "name": "Robotic"
+      }
+    ]
+  },
+  "quirks": {
+    "Spirit": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Unhinged",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Jumpy",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Pedantic",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Clear Intent",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Boring",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Curious",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Always Prepared",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Stylish",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Miser",
+        "pages": [
+          133,
+          135
+        ]
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Soul Link",
+        "pages": [
+          133,
+          135
+        ]
+      }
+    ],
+    "Physiology": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Girthsome",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Nearsighted",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Adorable",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Dark Demeanor",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Angelic Countenance",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Big Eater",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Waifish",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Magitech Graft",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Winged",
+        "pages": [
+          136,
+          138
+        ]
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Grasping Tresses",
+        "pages": [
+          136,
+          138
+        ]
+      }
+    ],
+    "Fate": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Survivor",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Mage Breaker",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Young",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Past Injury",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Weary",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Destined",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Dread Orator",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Beast Tongue",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Guardian",
+        "pages": [
+          139,
+          141
+        ]
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Crowned",
+        "pages": [
+          139,
+          141
+        ]
+      }
+    ],
+    "Eldritch": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Dreamer",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Lyrical",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Infested",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Peculiar Taste",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Kin to Fire",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Fairy Cap",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Sneezles",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Masked",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Ferrous",
+        "pages": [
+          142,
+          144
+        ]
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Figment Follower",
+        "pages": [
+          142,
+          144
+        ]
+      }
+    ],
+    "Robotic": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Industrial Frame",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Utility Servo",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Sproing Sprockets",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Translator Module",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Battle Scanner",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Mascot Chassis",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Buster Arm",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Nanotech Maintenance",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Bioskin",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Nox-Vision",
+        "pages": [
+          145,
+          147
+        ]
+      }
+    ]
+  },
+  "nameSource": "https://breakrpg.blogspot.com/2025/04/random-name-tables-setting-freebie.html",
+  "nameTableChart": [
+    {
+      "range": [
+        1,
+        5
+      ],
+      "name": "Native Human"
+    },
+    {
+      "range": [
+        6,
+        7
+      ],
+      "name": "Chib"
+    },
+    {
+      "range": [
+        8,
+        10
+      ],
+      "name": "Tenebrate"
+    },
+    {
+      "range": [
+        11,
+        13
+      ],
+      "name": "Rai-Neko"
+    },
+    {
+      "range": [
+        14,
+        15
+      ],
+      "name": "Promethean"
+    },
+    {
+      "range": [
+        16,
+        16
+      ],
+      "name": "Gruun"
+    },
+    {
+      "range": [
+        17,
+        17
+      ],
+      "name": "Goblin"
+    },
+    {
+      "range": [
+        18,
+        18
+      ],
+      "name": "Dwarf"
+    },
+    {
+      "range": [
+        19,
+        19
+      ],
+      "name": "Elf"
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "name": "Bio-Mechanoid"
+    }
+  ],
+  "nameTables": {
+    "Native Human": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Jahgi Tailor"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Velna Gleamblade"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Zoppo Flyfisher"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Nishe Smallhat"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Grinbu Runner"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Deldi Bluerod"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Olza Flowerpicker"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Rumi Treasurebox"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Bullza Taster"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Fisho Oldkey"
+      }
+    ],
+    "Chib": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Handy Mann"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Falin Down"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Nebb Ish"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Bilk Tinny"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Penny Pincher"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Leaf Acorn"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Sweetsy Shortcake"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Hammy Glaze"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Glum Plumby"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Naldo Bean"
+      }
+    ],
+    "Tenebrate": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Izaiah Prudence"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Vahln Noblesse"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Micah Gallant"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Rose Justhorn"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Galahad Crown"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Aurora Melody"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Valentine Sapphire"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Peckrah Stalwart"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Lily Gilded"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Rolm Leonhart"
+      }
+    ],
+    "Rai-Neko": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Astute Observation"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Orange Fruit"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Fine Afternoon"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Wrong Idea"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Different Angle"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Pickles Jar"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Snowy Weather"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Clubs Deck"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Goggles Gear"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Dad Joke"
+      }
+    ],
+    "Promethean": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Lotl"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Hiss"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Faang"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Pogonas"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Iguano"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Basilisk"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Krait"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Skinks"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Rattle"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Cobrash"
+      }
+    ],
+    "Gruun": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Shoog Thiill"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Treep Knuuk"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Maash Mook"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Adeed Kroop"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Bluud Greem"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Lookout Beello"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Thuud Chaam"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Phooby Sheenk"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Graash Ruud"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Fruunt Shaak"
+      }
+    ],
+    "Goblin": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Scritch"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Frag"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Plunk"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Bubble"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Thwack"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Clicky"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Snap"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Bung"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Squelch"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Thwip"
+      }
+    ],
+    "Dwarf": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Handleba Tungston"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Gabbro Grim"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Molasses Stubble"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Emeralda Golden"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Balbo Wacke"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Mildred Mudrock"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Coal Mutton"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Quartz Bedrock"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Silva Chalk"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Brass Swindle"
+      }
+    ],
+    "Elf": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "Obsidian Moonsoul"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Dee'do Fii'ren"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "Nanashi"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "Quicksilver Ripple"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Key Fulcrum"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Altair Swiftblade"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Wanderer"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "(Random name from another chart)"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "PhenLeiShun"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Candace"
+      }
+    ],
+    "Bio-Mechanoid": [
+      {
+        "range": [
+          1,
+          2
+        ],
+        "name": "0-Alpha"
+      },
+      {
+        "range": [
+          3,
+          4
+        ],
+        "name": "Solider Seven"
+      },
+      {
+        "range": [
+          5,
+          6
+        ],
+        "name": "4man"
+      },
+      {
+        "range": [
+          7,
+          8
+        ],
+        "name": "AK00lade"
+      },
+      {
+        "range": [
+          9,
+          10
+        ],
+        "name": "Main 10-ance"
+      },
+      {
+        "range": [
+          11,
+          12
+        ],
+        "name": "Second"
+      },
+      {
+        "range": [
+          13,
+          14
+        ],
+        "name": "Gr33ter"
+      },
+      {
+        "range": [
+          15,
+          16
+        ],
+        "name": "Variant"
+      },
+      {
+        "range": [
+          17,
+          18
+        ],
+        "name": "Arc-5er"
+      },
+      {
+        "range": [
+          19,
+          20
+        ],
+        "name": "Factory Setting"
+      }
+    ]
+  },
+  "callingAbilities": {
+    "Factotum": {
+      "starting": [
+        {
+          "name": "Second To None",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Factotum Pack",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Don't Mind Me",
+          "pages": [
+            16,
+            21
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Crafting Prodigy",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Folklorist",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Healer's Hands",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Combat Coordinated",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Silver Tongue",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Social Learner",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Cutting Wit",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Stalwart Navigator",
+          "pages": [
+            16,
+            21
+          ]
+        }
+      ]
+    },
+    "Sneak": {
+      "starting": [
+        {
+          "name": "Light Footed",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Furtive",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Sticky Fingers",
+          "pages": [
+            22,
+            26
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Many Masks",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Kawarimi",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Meticulous Dungeoneer",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Twitchy",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Sudden Strikes",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Able Alchemist",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Legerdemain",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Stowing",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Flanker",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Inner Dramatics",
+          "pages": [
+            22,
+            26
+          ]
+        }
+      ]
+    },
+    "Champion": {
+      "starting": [
+        {
+          "name": "Combat Momentum",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Favored Weapon",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Into the Fray",
+          "pages": [
+            27,
+            32
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Valiant",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Opportunistic Butcher",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Vagrant Blade",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Master Tactician",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Brazen Defense",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Brute",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Brawler",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Giant Killer",
+          "pages": [
+            27,
+            32
+          ]
+        }
+      ]
+    },
+    "Raider": {
+      "starting": [
+        {
+          "name": "Like the Wind",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Hunter's Focus",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Sidestep",
+          "pages": [
+            33,
+            38
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Dashing Attacker",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Silent Strider",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Trusted Comrade",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Free Runner",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Rushing Fist Style",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Ranger",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Faith in the Wind",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Artisan Smithy",
+          "pages": [
+            33,
+            38
+          ]
+        }
+      ]
+    },
+    "Battle Princess": {
+      "starting": [
+        {
+          "name": "Heart's Blade",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Shield of Love",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Soul Companion",
+          "pages": [
+            40,
+            49
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Gemlight",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Glittering Machine",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Love-Love Chef",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Compassion Cure",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Passion's Fire",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Cry of the Heart",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Battle Dance",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Battle Bonds",
+          "pages": [
+            40,
+            49
+          ]
+        }
+      ]
+    },
+    "Murder Princess": {
+      "starting": [
+        {
+          "name": "Wrath's Blade",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Withering Glare",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Tenacity",
+          "pages": [
+            50,
+            57
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Couturier",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Frost Blade",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Wrath Bolt",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Bulwark of Disdain",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "The Hard Way",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Desperate Friendship",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Barbed Justice",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Caustic Truth",
+          "pages": [
+            50,
+            57
+          ]
+        }
+      ]
+    },
+    "Sage": {
+      "starting": [
+        {
+          "name": "Grand Grimoire",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Sage's Staff",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Prestidigitonium",
+          "pages": [
+            58,
+            67
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Everyday Divination",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Mortifying Bloat",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Arcane Artificing",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Glowing Ink",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Hocus Pox",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Murky Mask",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Very Useful Cloud",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Eldritch Explosives",
+          "pages": [
+            58,
+            67
+          ]
+        }
+      ]
+    },
+    "Heretic": {
+      "starting": [
+        {
+          "name": "Fitful Sleep",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Dreadful",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Squire Marlow",
+          "pages": [
+            68,
+            79
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "The Widow Prisma",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Deacon Galrave",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Bushi Miyabi",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Seer Kasnah",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Yogi Tulpa",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Messenger Kaila",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Wretched Jarah",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Count Paris",
+          "pages": [
+            68,
+            79
+          ]
+        }
+      ]
+    }
+  },
+  "speciesAbilities": {
+    "Human, Native": [
+      {
+        "name": "Prodigy",
+        "pages": [
+          84,
+          85
+        ]
+      }
+    ],
+    "Human, Dimensional Stray": [
+      {
+        "name": "Leisurely Focus",
+        "pages": [
+          86,
+          87
+        ]
+      }
+    ],
+    "Chib": [
+      {
+        "name": "Easily Overlooked",
+        "pages": [
+          88,
+          89
+        ]
+      }
+    ],
+    "Tenebrate": [
+      {
+        "name": "Night Born",
+        "pages": [
+          90,
+          91
+        ]
+      },
+      {
+        "name": "Shadow Sight",
+        "pages": [
+          90,
+          91
+        ]
+      }
+    ],
+    "Rai-Neko": [
+      {
+        "name": "Oldtech Proficiency",
+        "pages": [
+          92,
+          93
+        ]
+      },
+      {
+        "name": "Hunter's Blood",
+        "pages": [
+          92,
+          93
+        ]
+      }
+    ],
+    "Promethean": [
+      {
+        "name": "Cryptic Heritage",
+        "pages": [
+          94,
+          95
+        ]
+      },
+      {
+        "name": "Born of the Sun",
+        "pages": [
+          94,
+          95
+        ]
+      }
+    ],
+    "Gruun": [
+      {
+        "name": "As Tough as You Look",
+        "pages": [
+          96,
+          97
+        ]
+      }
+    ],
+    "Goblin": [
+      {
+        "name": "Under Dweller",
+        "pages": [
+          98,
+          99
+        ]
+      },
+      {
+        "name": "Gobbo Werks",
+        "pages": [
+          98,
+          99
+        ]
+      }
+    ],
+    "Dwarf": [
+      {
+        "name": "Under Dweller",
+        "pages": [
+          100,
+          101
+        ]
+      },
+      {
+        "name": "Sturdy",
+        "pages": [
+          100,
+          101
+        ]
+      }
+    ],
+    "Elf": [
+      {
+        "name": "Ageless",
+        "pages": [
+          102,
+          103
+        ]
+      },
+      {
+        "name": "Immortal Ego",
+        "pages": [
+          102,
+          103
+        ]
+      }
+    ],
+    "Bio-Mechanoid": [
+      {
+        "name": "Not of Flesh and Blood",
+        "pages": [
+          104,
+          105
+        ]
+      },
+      {
+        "name": "Personal Analytics",
+        "pages": [
+          104,
+          105
+        ]
+      }
+    ]
+  },
+  "sizeRules": {
+    "Small": {
+      "page": 106,
+      "aptitudes": {
+        "might": -1,
+        "deftness": 1
+      },
+      "defense": 1,
+      "inventory": 8,
+      "restricted": {
+        "weapons": [
+          "Mighty",
+          "Arc"
+        ],
+        "armor": [
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Large"
+        ]
+      }
+    },
+    "Medium": {
+      "page": 106,
+      "aptitudes": {},
+      "defense": 0,
+      "inventory": 10,
+      "restricted": {
+        "weapons": [],
+        "armor": [],
+        "shields": []
+      }
+    },
+    "Large": {
+      "page": 106,
+      "aptitudes": {
+        "might": 1
+      },
+      "defense": -1,
+      "inventory": 12,
+      "restricted": {
+        "weapons": [
+          "Concealed",
+          "Small Mechanical"
+        ],
+        "armor": [],
+        "shields": []
+      }
+    }
+  },
+  "quirkAdjustments": {
+    "Unhinged": {
+      "attack": 2,
+      "defense": -1
+    },
+    "Girthsome": {
+      "aptitudes": {
+        "grit": 1
+      },
+      "hearts": 1,
+      "speed": -1
+    },
+    "Nearsighted": {
+      "aptitudes": {
+        "insight": 1
+      },
+      "extraLanguages": 2
+    },
+    "Waifish": {
+      "aptitudes": {
+        "deftness": 1
+      },
+      "hearts": -1,
+      "speed": 1
+    },
+    "Winged": {
+      "aptitudes": {
+        "grit": -1
+      },
+      "hearts": -1
+    },
+    "Past Injury": {
+      "defense": 1,
+      "randomAptitudePenalty": -1
+    },
+    "Weary": {
+      "aptitudes": {
+        "might": -1,
+        "grit": -1
+      }
+    },
+    "Fairy Cap": {
+      "defense": 1
+    },
+    "Ferrous": {
+      "defenseSet": 14
+    },
+    "Industrial Frame": {
+      "aptitudes": {
+        "might": 1
+      },
+      "hearts": 1,
+      "speed": -1
+    }
+  },
+  "choices": {
+    "weaponTypes": [
+      "Standard",
+      "Concealed",
+      "Quick",
+      "Master",
+      "Mighty",
+      "Arc",
+      "Lash",
+      "Thrown",
+      "Drawn",
+      "Small Mechanical",
+      "Large Mechanical"
+    ],
+    "bladeWeaponTypes": [
+      "Quick",
+      "Master",
+      "Mighty",
+      "Arc",
+      "Lash",
+      "Drawn",
+      "Mechanical Missile"
+    ],
+    "brightBladeMaterials": [
+      "Sun Gold",
+      "Ash Bronze",
+      "Sky Steel"
+    ],
+    "darkBladeMaterials": [
+      "Shade Iron",
+      "Dew Silver",
+      "Warp Root"
+    ],
+    "darkGifts": [
+      "Horns",
+      "Opaque Eyes",
+      "Devil's Tail",
+      "Fangs",
+      "Melodious Voice",
+      "Winter's Embrace",
+      "Bone Spikes",
+      "Bestial Mane",
+      "Raptor's Talons",
+      "Shadow Mark"
+    ],
+    "ailments": [
+      "Ballooned",
+      "Blinded/Deafened",
+      "Chibbed",
+      "Disoriented",
+      "Dispirited",
+      "Fatigued",
+      "Jellyfied",
+      "Petrified",
+      "Putrefied",
+      "Restrained",
+      "Starved",
+      "Suffocated",
+      "Terrified",
+      "Toppled"
+    ],
+    "specialistKits": [
+      "Dungeoneer's Kit",
+      "Gadgeteer's Kit",
+      "Physician's Kit",
+      "Survivalist's Kit",
+      "Thief's Kit"
+    ],
+    "craftingDisciplines": [
+      "Forging",
+      "Gadgeteering",
+      "Tailoring",
+      "Artificing",
+      "Alchemy",
+      "Cooking"
+    ],
+    "petNames": [
+      "Growl",
+      "Buzzer",
+      "Pudge Grub",
+      "Fuzzcoil",
+      "Skree",
+      "Purr"
+    ],
+    "bioskinSpecies": [
+      "Human",
+      "Tenebrate",
+      "Elf"
+    ],
+    "companionTypes": [
+      "Guardian Animal",
+      "Brave Toy"
+    ],
+    "animalCompanionAbilities": [
+      "Mount",
+      "Burrower",
+      "Fighter",
+      "Glider"
+    ],
+    "toyCompanionAbilities": [
+      "Shielder",
+      "Weapon Link",
+      "Booster",
+      "Toter"
+    ],
+    "aptitudes": [
+      "might",
+      "deftness",
+      "grit",
+      "insight",
+      "aura"
+    ]
+  }
+}
