@@ -15,6 +15,178 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path(__file__).with_name("data.json")
+ITEMS_SOURCE = ROOT / "questline-vtt-tools" / "BREAK!! Test OCR Items.items"
+
+SHOP_PAGES = {
+    "Weapons": 152,
+    "Armor": 163,
+    "Shields": 169,
+    "Outfits": 172,
+    "Wearable Accessories": 173,
+    "Wayfinding": 174,
+    "Illumination": 175,
+    "Specialist's Kits": 176,
+    "Books": 176,
+    "Consumables": 177,
+    "Combustibles & Chemicals": 178,
+    "Miscellaneous": 179,
+    "Curiosities, Artifacts & Gadgets": 180,
+}
+
+STARTING_GEAR_SLOT_TENTHS = {
+    "50 Coins": 0,
+    "Arcane Powder x2 Units": 20,
+    "Basic Potion x2": 20,
+    "Backpack": 0,
+    "Black-out Goggles": 10,
+    "Bomb x1": 30,
+    "Booster Cakes x2": 2,
+    "Booster Cakes x2: Insight": 2,
+    "Common Rural Item": 10,
+    "Common Urban Good": 10,
+    "Companion: Growl": 0,
+    "Concealed Weapon with Utility Ability": 10,
+    "Drawn Weapon & 10 Arrows": 30,
+    "Drawn Weapon & Arrows x10": 30,
+    "Extreme Weather Outfit: Cold": 20,
+    "Extreme Weather Outfit: Hot": 20,
+    "Flame Grenades x2": 20,
+    "Follower: Custrel": 0,
+    "Follower: Scamp": 0,
+    "Forgotten Lore Tome": 20,
+    "Gem x1": 0,
+    "Grenades x2": 20,
+    "Hardy Rations x10": 10,
+    "Hardy Rations x5": 5,
+    "Lantern & Oil Units x2": 12,
+    "Lantern & Oil/Fuel Unit x1": 11,
+    "Large Mechanical Missile Weapon & Ammo x5": 25,
+    "Luxury Item": 10,
+    "Mighty Weapon with Utility Ability": 20,
+    "Mount": 0,
+    "Oddity": 10,
+    "Oil/Fuel Units x10": 10,
+    "Other World Side Arm & Ammo x10": 20,
+    "Pack Beast: Shaggy Bumpo": 0,
+    "Packbeast": 0,
+    "Paw Post Membership": 0,
+    "Pet: Growl": 0,
+    "Pet: Purr": 0,
+    "Pet: Skree": 0,
+    "Precise Dabber & Solvent x1 Unit": 20,
+    "Proper Pen": 10,
+    "Pudge Grub": 0,
+    "Rations x10": 10,
+    "Rebreather Mask": 10,
+    "Riding Mount: Jumbug": 0,
+    "Rural Goods": 10,
+    "Rural Item": 10,
+    "Small Mechanical Missile Weapon": 10,
+    "Small Mechanical Weapon & Bolts x10": 20,
+    "Solvent Units x2": 20,
+    "Solvent x2 Units": 20,
+    "Standard Weapon with Utility Ability": 10,
+    "Thrown Missile Weapon": 10,
+    "Toodle Flute": 10,
+    "Trade Goods x2 Units": 60,
+    "Traveler's Bag": 0,
+    "Translation Guide: Fade Song": 10,
+    "Treat x10": 10,
+    "Treat x2 & Hardy Rations x2": 4,
+    "Treat x5": 5,
+    "Treats x10": 10,
+    "Urban Goods": 10,
+    "Vial of Bright Water x3": 30,
+}
+
+STARTING_GEAR_COST_STONES = {
+    "50 Coins": 5_000,
+    "Arcane Powder x2 Units": 10_000,
+    "Artisan's Outfit": 800,
+    "Basic Potion x2": 2_000,
+    "Black-out Goggles": 200,
+    "Bomb x1": 4_500,
+    "Booster Cakes x2": 3_000,
+    "Booster Cakes x2: Insight": 3_000,
+    "Common Rural Item": 8,
+    "Common Urban Good": 12,
+    "Companion: Growl": 7_500,
+    "Concealed Weapon with Utility Ability": 1_012,
+    "Drawn Weapon & 10 Arrows": 1_200,
+    "Drawn Weapon & Arrows x10": 1_200,
+    "Extreme Weather Outfit: Cold": 1_200,
+    "Extreme Weather Outfit: Hot": 800,
+    "Flame Grenades x2": 4_000,
+    "Follower: Custrel": 800,
+    "Follower: Scamp": 10,
+    "Forgotten Lore Tome": 2_400,
+    "Gem x1": 10_000,
+    "Grenades x2": 4_000,
+    "Hardy Rations x10": 30,
+    "Hardy Rations x5": 15,
+    "Lantern & Oil Units x2": 700,
+    "Lantern & Oil/Fuel Unit x1": 600,
+    "Large Mechanical Missile Weapon & Ammo x5": 2_700,
+    "Luxury Item": 1_600,
+    "Mighty Weapon with Utility Ability": 2_508,
+    "Oddity": 1_600,
+    "Oil/Fuel Units x10": 1_000,
+    "Pack Beast: Shaggy Bumpo": 40_000,
+    "Paw Post Membership": 50_000,
+    "Pet: Growl": 7_500,
+    "Pet: Purr": 7_500,
+    "Pet: Skree": 10_000,
+    "Precise Dabber & Solvent x1 Unit": 2_800,
+    "Proper Pen": 12,
+    "Rations x10": 10,
+    "Rebreather Mask": 1_500,
+    "Riding Mount: Jumbug": 20_000,
+    "Rural Goods": 8,
+    "Rural Item": 8,
+    "Small Mechanical Missile Weapon": 1_500,
+    "Small Mechanical Weapon & Bolts x10": 1_900,
+    "Solvent Units x2": 4_000,
+    "Solvent x2 Units": 4_000,
+    "Standard Weapon with Utility Ability": 1_508,
+    "Thrown Missile Weapon": 200,
+    "Toodle Flute": 1_600,
+    "Trade Goods x2 Units": 5_000,
+    "Translation Guide: Fade Song": 2_000,
+    "Treat x10": 30,
+    "Treat x2 & Hardy Rations x2": 12,
+    "Treat x5": 15,
+    "Treats x10": 30,
+    "Urban Goods": 12,
+    "Vial of Bright Water x3": 15_000,
+}
+
+STARTING_GEAR_COST_RATES = {
+    "Follower: Custrel": "per day",
+    "Follower: Scamp": "per day",
+    "Paw Post Membership": "per year",
+}
+
+STARTING_GEAR_CURRENCY_STONES = {
+    "50 Coins": 5_000,
+    "Gem x1": 10_000,
+}
+
+INVENTORY_BONUS_TENTHS = {
+    "Backpack": 50,
+    "Traveler's Bag": 30,
+}
+
+SHOP_STACK_LIMITS = {
+    "Rations": 10,
+    "Hardy Rations": 10,
+    "Treats": 10,
+    "Basic Potion": 3,
+    "Booster Cakes": 3,
+    "Oil/Fuel": 2,
+    "Solvent": 3,
+    "Grenade": 3,
+    "Bomb": 2,
+}
 
 RESKIN_SOURCE = "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
 ALTERNATE_SOURCE = "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html"
@@ -262,6 +434,77 @@ def public_gear_entry(text: str) -> dict:
     return entry
 
 
+def item_cost_stones(cost: dict) -> int:
+    return cost.get("stones", 0) + cost.get("coins", 0) * 100 + cost.get("gems", 0) * 10_000
+
+
+def load_item_catalog() -> list[dict]:
+    return json.loads(ITEMS_SOURCE.read_text())
+
+
+def build_shop_items(items: list[dict]) -> list[dict]:
+    shop_items = []
+    for item in items:
+        details = item.get("data", {})
+        subtype = details.get("subtype")
+        if details.get("type") != "Gear" or subtype not in SHOP_PAGES:
+            continue
+        inventory_bonus = INVENTORY_BONUS_TENTHS.get(item["name"], 0)
+        cost_stones = item_cost_stones(details.get("cost", {}))
+        if cost_stones <= 0 or (not isinstance(details.get("encumbrance"), (int, float)) and not inventory_bonus):
+            continue
+        entry = {
+            "name": item["name"],
+            "page": SHOP_PAGES[subtype],
+            "category": subtype,
+            "costStones": cost_stones,
+            "slotTenths": round(details.get("encumbrance", 0) * 10),
+        }
+        if inventory_bonus:
+            entry["inventoryBonusTenths"] = inventory_bonus
+        if item["name"] in SHOP_STACK_LIMITS:
+            entry["stackLimit"] = SHOP_STACK_LIMITS[item["name"]]
+        entry.update(classify_combat_gear(item["name"]))
+        shop_items.append(entry)
+    return shop_items
+
+
+def starting_gear_slot_tenths(name: str, catalog: dict[str, dict]) -> int:
+    if name in catalog and isinstance(catalog[name].get("data", {}).get("encumbrance"), (int, float)):
+        return round(catalog[name]["data"]["encumbrance"] * 10)
+    if name.startswith("Beginner's Tome:"):
+        return 10
+    if name in STARTING_GEAR_SLOT_TENTHS:
+        return STARTING_GEAR_SLOT_TENTHS[name]
+    raise ValueError(f"Starting gear needs an explicit slot mapping: {name}")
+
+
+def starting_gear_cost_stones(gear: dict, catalog: dict[str, dict]) -> int | None:
+    name = gear["name"]
+    if name.startswith("Beginner's Tome:"):
+        return 600
+    if name == "Lantern" and "Oil/Fuel Units x2" in gear.get("nickname", ""):
+        return 700
+    if name in STARTING_GEAR_COST_STONES:
+        return STARTING_GEAR_COST_STONES[name]
+    cost = catalog.get(name, {}).get("data", {}).get("cost")
+    return item_cost_stones(cost) if cost is not None else None
+
+
+def annotate_history_gear(histories: list[dict], catalog: dict[str, dict]) -> list[dict]:
+    for history in histories:
+        for gear in history["gear"]:
+            gear["slotTenths"] = starting_gear_slot_tenths(gear["name"], catalog)
+            gear["costStones"] = starting_gear_cost_stones(gear, catalog)
+            if gear["name"] in STARTING_GEAR_CURRENCY_STONES:
+                gear["currencyStones"] = STARTING_GEAR_CURRENCY_STONES[gear["name"]]
+            if gear["name"] in STARTING_GEAR_COST_RATES:
+                gear["costRate"] = STARTING_GEAR_COST_RATES[gear["name"]]
+            if gear["name"] in INVENTORY_BONUS_TENTHS:
+                gear["inventoryBonusTenths"] = INVENTORY_BONUS_TENTHS[gear["name"]]
+    return histories
+
+
 def expanded_gear(name: str, nickname: str, source_url: str) -> dict:
     entry = {"name": name, "nickname": nickname, "sourceUrl": source_url}
     entry.update(classify_combat_gear(name))
@@ -279,6 +522,9 @@ def classify_combat_gear(name: str) -> dict:
         weapon_prefixes = [
             ("Small Mechanical", "Small Mechanical"),
             ("Large Mechanical", "Large Mechanical"),
+            ("Mechanical (Small)", "Small Mechanical"),
+            ("Mechanical (Large)", "Large Mechanical"),
+            ("Combination", "Combination"),
             ("Thrown", "Thrown"),
             ("Drawn", "Drawn"),
             ("Concealed", "Concealed"),
@@ -595,7 +841,7 @@ def history_ranges(count: int) -> list[list[int]]:
     return [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14], [15, 16], [17, 17], [18, 18], [19, 19], [20, 20]]
 
 
-def build_histories() -> dict[str, list[dict]]:
+def build_histories(item_catalog: dict[str, dict]) -> dict[str, list[dict]]:
     module = runpy.run_path(ROOT / "questline-vtt-tools" / "build_histories.py")
     homelands = module["HOMELANDS"]
     result = {}
@@ -614,6 +860,7 @@ def build_histories() -> dict[str, list[dict]]:
             }
             for index, history in enumerate(homeland.histories)
         ]
+        annotate_history_gear(result[homeland.subtype], item_catalog)
     return result
 
 
@@ -629,6 +876,8 @@ def build_quirks() -> dict[str, list[dict]]:
 
 
 def main() -> None:
+    items = load_item_catalog()
+    item_catalog = {item["name"]: item for item in items}
     abilities = build_calling_abilities()
     expanded_callings = build_expanded_callings(abilities)
     expanded_species = build_expanded_species(abilities)
@@ -641,9 +890,9 @@ def main() -> None:
         "species": SPECIES,
         "expandedSpecies": expanded_species,
         "homelands": HOMELANDS,
-        "histories": build_histories(),
-        "neridianHistories": build_neridian_histories(),
-        "unterkinHistories": build_unterkin_histories(),
+        "histories": build_histories(item_catalog),
+        "neridianHistories": annotate_history_gear(build_neridian_histories(), item_catalog),
+        "unterkinHistories": annotate_history_gear(build_unterkin_histories(), item_catalog),
         "quirkCategoryTables": QUIRK_CATEGORY_TABLES,
         "quirks": build_quirks(),
         "nameSource": "https://breakrpg.blogspot.com/2025/04/random-name-tables-setting-freebie.html",
@@ -665,6 +914,7 @@ def main() -> None:
         "speciesAbilities": abilities["species"],
         "sizeRules": SIZE_RULES,
         "quirkAdjustments": QUIRK_ADJUSTMENTS,
+        "shopItems": build_shop_items(items),
         "choices": {
             "weaponTypes": WEAPON_TYPES,
             "bladeWeaponTypes": BLADE_WEAPON_TYPES,

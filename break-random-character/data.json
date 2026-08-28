@@ -1396,25 +1396,33 @@
             "nickname": "forgotten sword",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Master"
+            "gearType": "Master",
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
             "name": "Tattered Outfit",
             "nickname": "rags",
-            "page": 172
+            "page": 172,
+            "slotTenths": 10,
+            "costStones": 0
           },
           {
             "option": 3,
             "name": "Compass",
             "nickname": "cracked but functional",
-            "page": 174
+            "page": 174,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Star Gem",
             "nickname": "hope in the dark",
-            "page": 180
+            "page": 180,
+            "slotTenths": 1,
+            "costStones": 30000
           }
         ]
       },
@@ -1433,7 +1441,9 @@
             "nickname": "bandit spear",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Arc"
+            "gearType": "Arc",
+            "slotTenths": 30,
+            "costStones": 2500
           },
           {
             "option": 2,
@@ -1442,19 +1452,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Rebreather",
             "nickname": "raider's maw",
-            "page": 173
+            "page": 173,
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 4,
             "name": "Grenades x2",
             "nickname": "fireberries",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           }
         ]
       },
@@ -1471,25 +1487,34 @@
             "option": 1,
             "name": "Extreme Weather Outfit: Cold",
             "nickname": "wanderer's cloak",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 1200
           },
           {
             "option": 2,
             "name": "Backpack",
             "nickname": "nomad's pack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 3,
             "name": "Lantern & Oil Units x2",
             "nickname": "a guiding light",
-            "page": 175
+            "page": 175,
+            "slotTenths": 12,
+            "costStones": 700
           },
           {
             "option": 4,
             "name": "Hardy Rations x5",
             "nickname": "journey loaf",
-            "page": 177
+            "page": 177,
+            "slotTenths": 5,
+            "costStones": 15
           }
         ]
       },
@@ -1508,25 +1533,33 @@
             "nickname": "grass blade",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Quick"
+            "gearType": "Quick",
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 2,
             "name": "Appealing Outfit",
             "nickname": "petal pixie clothes",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Booster Cakes x2",
             "nickname": "moon drop candy",
-            "page": 177
+            "page": 177,
+            "slotTenths": 2,
+            "costStones": 3000
           },
           {
             "option": 4,
             "name": "Solvent x2 Units",
             "nickname": "ash elm sap",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           }
         ]
       },
@@ -1545,7 +1578,9 @@
             "nickname": "yeoman's bow",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Drawn"
+            "gearType": "Drawn",
+            "slotTenths": 30,
+            "costStones": 1200
           },
           {
             "option": 2,
@@ -1554,19 +1589,26 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Traveler's Bag",
             "nickname": "sling pack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 4,
             "name": "Companion: Growl",
             "nickname": "a trusty friend",
-            "page": 188
+            "page": 188,
+            "slotTenths": 0,
+            "costStones": 7500
           }
         ]
       },
@@ -1583,25 +1625,33 @@
             "option": 1,
             "name": "Treat x10",
             "nickname": "mama's cookies",
-            "page": 177
+            "page": 177,
+            "slotTenths": 10,
+            "costStones": 30
           },
           {
             "option": 2,
             "name": "Trade Goods",
             "nickname": "star plums",
-            "page": 179
+            "page": 179,
+            "slotTenths": 30,
+            "costStones": 2500
           },
           {
             "option": 3,
             "name": "Rural Goods",
             "nickname": "your family's best shovel",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           },
           {
             "option": 4,
             "name": "Pudge Grub",
             "nickname": "blue ribbon winner",
-            "page": 189
+            "page": 189,
+            "slotTenths": 0,
+            "costStones": 2000
           }
         ]
       },
@@ -1618,25 +1668,34 @@
             "option": 1,
             "name": "Artisan's Outfit",
             "nickname": "apron",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           },
           {
             "option": 2,
             "name": "Kingdom Map",
             "nickname": "Shard trade route guide",
-            "page": 174
+            "page": 174,
+            "slotTenths": 1,
+            "costStones": 200
           },
           {
             "option": 3,
             "name": "Packbeast",
             "nickname": "Shaggy Bumpo, a stubborn thing",
-            "page": 193
+            "page": 193,
+            "slotTenths": 0,
+            "costStones": null
           },
           {
             "option": 4,
             "name": "Follower: Scamp",
             "nickname": "assistant",
-            "page": 185
+            "page": 185,
+            "slotTenths": 0,
+            "costStones": 10,
+            "costRate": "per day"
           }
         ]
       },
@@ -1656,7 +1715,9 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 2,
@@ -1665,19 +1726,25 @@
             "page": 169,
             "gearCategory": "shields",
             "gearType": "Large",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3500
           },
           {
             "option": 3,
             "name": "Authoritative Outfit",
             "nickname": "captain's hat & sash",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Lantern",
             "nickname": "night watch's companion",
-            "page": 175
+            "page": 175,
+            "slotTenths": 10,
+            "costStones": 500
           }
         ]
       },
@@ -1696,25 +1763,33 @@
             "nickname": "ornamental dagger",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 500
           },
           {
             "option": 2,
             "name": "Appealing Outfit",
             "nickname": "fine robes",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Urban Goods",
             "nickname": "stylus & parchment",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           },
           {
             "option": 4,
             "name": "Luxury Item",
             "nickname": "starlight lyre",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -1731,25 +1806,34 @@
             "option": 1,
             "name": "Traveler's Bag",
             "nickname": "satchel",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 2,
             "name": "Master's Tome",
             "nickname": "on a subject of your choice!",
-            "page": 176
+            "page": 176,
+            "slotTenths": 20,
+            "costStones": 1800
           },
           {
             "option": 3,
             "name": "Translation Journal",
             "nickname": "Bright Speech",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Booster Cakes x2: Insight",
             "nickname": "cram cookies",
-            "page": 177
+            "page": 177,
+            "slotTenths": 2,
+            "costStones": 3000
           }
         ]
       },
@@ -1769,7 +1853,9 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 2,
@@ -1778,19 +1864,25 @@
             "page": 169,
             "gearCategory": "shields",
             "gearType": "Standard",
-            "defenseBonus": 1
+            "defenseBonus": 1,
+            "slotTenths": 10,
+            "costStones": 2500
           },
           {
             "option": 3,
             "name": "Holy Icon",
             "nickname": "sacred chain",
-            "page": 180
+            "page": 180,
+            "slotTenths": 10,
+            "costStones": 7500
           },
           {
             "option": 4,
             "name": "Mount",
             "nickname": "Mokko-Do",
-            "page": 191
+            "page": 191,
+            "slotTenths": 0,
+            "costStones": null
           }
         ]
       },
@@ -1809,7 +1901,9 @@
             "nickname": "hand crossbow",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Small Mechanical"
+            "gearType": "Small Mechanical",
+            "slotTenths": 20,
+            "costStones": 1900
           },
           {
             "option": 2,
@@ -1818,19 +1912,26 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 3,
             "name": "Appealing Outfit",
             "nickname": "fine attire",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Follower: Custrel",
             "nickname": "dedicated butler or maid",
-            "page": 186
+            "page": 186,
+            "slotTenths": 0,
+            "costStones": 800,
+            "costRate": "per day"
           }
         ]
       }
@@ -1851,25 +1952,33 @@
             "nickname": "tarnished knife",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 500
           },
           {
             "option": 2,
             "name": "Tattered Outfit",
             "nickname": "once-fine coat",
-            "page": 172
+            "page": 172,
+            "slotTenths": 10,
+            "costStones": 0
           },
           {
             "option": 3,
             "name": "Regional Map",
             "nickname": "Twilight Meridian",
-            "page": 174
+            "page": 174,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Luxury Item",
             "nickname": "old party mask",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -1888,25 +1997,33 @@
             "nickname": "cutlass",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Quick"
+            "gearType": "Quick",
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 2,
             "name": "Compass",
             "nickname": "ship's memento",
-            "page": 174
+            "page": 174,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 3,
             "name": "Grenades x2",
             "nickname": "deck busters",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           },
           {
             "option": 4,
             "name": "Rural Goods",
             "nickname": "rope 30 ft",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           }
         ]
       },
@@ -1925,25 +2042,33 @@
             "nickname": "your last shuriken",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Thrown"
+            "gearType": "Thrown",
+            "slotTenths": 10,
+            "costStones": 200
           },
           {
             "option": 2,
             "name": "Costume",
             "nickname": "colorful fop",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 15
           },
           {
             "option": 3,
             "name": "Dungeoneer's Kit",
             "nickname": "dragon tooth picks",
-            "page": 176
+            "page": 176,
+            "slotTenths": 20,
+            "costStones": 5000
           },
           {
             "option": 4,
             "name": "Adventuring Gear",
             "nickname": "climbing claws",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 800
           }
         ]
       },
@@ -1962,7 +2087,9 @@
             "nickname": "old machine pistol",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Small Mechanical"
+            "gearType": "Small Mechanical",
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 2,
@@ -1971,19 +2098,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Lumi-Slime Lantern",
             "nickname": "slime included",
-            "page": 175
+            "page": 175,
+            "slotTenths": 10,
+            "costStones": null
           },
           {
             "option": 4,
             "name": "Scanner",
             "nickname": "Gleysian model",
-            "page": 181
+            "page": 181,
+            "slotTenths": 10,
+            "costStones": 10000
           }
         ]
       },
@@ -2002,25 +2135,33 @@
             "nickname": "scissor knife",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 1012
           },
           {
             "option": 2,
             "name": "Trade Goods x2 Units",
             "nickname": "twilight silk",
-            "page": 179
+            "page": 179,
+            "slotTenths": 60,
+            "costStones": 5000
           },
           {
             "option": 3,
             "name": "Artisan's Outfit",
             "nickname": "tailor's apron",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           },
           {
             "option": 4,
             "name": "Urban Goods",
             "nickname": "silk measuring tape",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           }
         ]
       },
@@ -2037,25 +2178,34 @@
             "option": 1,
             "name": "Appealing Outfit",
             "nickname": "kimono",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 2,
             "name": "Traveler's Bag",
             "nickname": "medicine case",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 3,
             "name": "Basic Potion x2",
             "nickname": "teacher's recipe",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Arcane Powder x2 Units",
             "nickname": "",
-            "page": 290
+            "page": 290,
+            "slotTenths": 20,
+            "costStones": 10000
           }
         ]
       },
@@ -2074,25 +2224,33 @@
             "nickname": "trident",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Arc"
+            "gearType": "Arc",
+            "slotTenths": 30,
+            "costStones": 2500
           },
           {
             "option": 2,
             "name": "Hardy Rations x5",
             "nickname": "bubbler fish jerky",
-            "page": 177
+            "page": 177,
+            "slotTenths": 5,
+            "costStones": 15
           },
           {
             "option": 3,
             "name": "Rural Goods",
             "nickname": "fishing rod",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           },
           {
             "option": 4,
             "name": "Coracle",
             "nickname": "",
-            "page": 197
+            "page": 197,
+            "slotTenths": 20,
+            "costStones": 80
           }
         ]
       },
@@ -2109,25 +2267,34 @@
             "option": 1,
             "name": "Backpack",
             "nickname": "book bag",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 2,
             "name": "Beginner's Tome: Economics & Trade",
             "nickname": "classmate's notes",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 600
           },
           {
             "option": 3,
             "name": "Booster Cakes x2: Insight",
             "nickname": "mental muffins",
-            "page": 177
+            "page": 177,
+            "slotTenths": 2,
+            "costStones": 3000
           },
           {
             "option": 4,
             "name": "Urban Goods",
             "nickname": "quill & ink",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           }
         ]
       },
@@ -2146,25 +2313,34 @@
             "nickname": "ornate kalis",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Quick"
+            "gearType": "Quick",
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 2,
             "name": "Appealing Outfit",
             "nickname": "fashionable baro",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Oddity",
             "nickname": "oldtech pocket watch",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           },
           {
             "option": 4,
             "name": "50 Coins",
             "nickname": "family stipend",
-            "page": 151
+            "page": 151,
+            "slotTenths": 0,
+            "costStones": 5000,
+            "currencyStones": 5000
           }
         ]
       },
@@ -2183,7 +2359,9 @@
             "nickname": "katana",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Master"
+            "gearType": "Master",
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -2192,19 +2370,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Authoritative Outfit",
             "nickname": "dark kamishimo",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Luxury Item",
             "nickname": "calligraphy set",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -2223,25 +2407,35 @@
             "nickname": "machine rifle",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Large Mechanical"
+            "gearType": "Large Mechanical",
+            "slotTenths": 25,
+            "costStones": 2700
           },
           {
             "option": 2,
             "name": "Traveler's Bag",
             "nickname": "field satchel",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 3,
             "name": "Lantern",
             "nickname": "Oil/Fuel Units x2, guide light",
-            "page": 175
+            "page": 175,
+            "slotTenths": 10,
+            "costStones": 700
           },
           {
             "option": 4,
             "name": "Paw Post Membership",
             "nickname": "Helical Archive account",
-            "page": 202
+            "page": 202,
+            "slotTenths": 0,
+            "costStones": 50000,
+            "costRate": "per year"
           }
         ]
       },
@@ -2260,7 +2454,9 @@
             "nickname": "duelist's chain",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Lash"
+            "gearType": "Lash",
+            "slotTenths": 10,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -2269,19 +2465,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 3,
             "name": "Holy Icon",
             "nickname": "darkfire circlet",
-            "page": 180
+            "page": 180,
+            "slotTenths": 10,
+            "costStones": 7500
           },
           {
             "option": 4,
             "name": "Shadow Stone",
             "nickname": "your precious",
-            "page": 180
+            "page": 180,
+            "slotTenths": 1,
+            "costStones": 50000
           }
         ]
       }
@@ -2302,25 +2504,33 @@
             "nickname": "old spear",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Arc"
+            "gearType": "Arc",
+            "slotTenths": 30,
+            "costStones": 2500
           },
           {
             "option": 2,
             "name": "Extreme Weather Outfit: Hot",
             "nickname": "prickle poncho",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           },
           {
             "option": 3,
             "name": "Oil/Fuel Units x10",
             "nickname": "iron eater's blood",
-            "page": 178
+            "page": 178,
+            "slotTenths": 10,
+            "costStones": 1000
           },
           {
             "option": 4,
             "name": "Pet: Purr",
             "nickname": "feral but loyal",
-            "page": 190
+            "page": 190,
+            "slotTenths": 0,
+            "costStones": 7500
           }
         ]
       },
@@ -2339,7 +2549,9 @@
             "nickname": "slayer axe",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Mighty"
+            "gearType": "Mighty",
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 2,
@@ -2348,19 +2560,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 3,
             "name": "Beginner's Tome: Colossal Creatures",
             "nickname": "Crow's Guide",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 600
           },
           {
             "option": 4,
             "name": "Rural Goods",
             "nickname": "rope 30 ft",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           }
         ]
       },
@@ -2377,7 +2595,10 @@
             "option": 1,
             "name": "Gem x1",
             "nickname": "not exactly yours",
-            "page": 151
+            "page": 151,
+            "slotTenths": 0,
+            "costStones": 10000,
+            "currencyStones": 10000
           },
           {
             "option": 2,
@@ -2385,19 +2606,25 @@
             "nickname": "trusty knife",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 500
           },
           {
             "option": 3,
             "name": "Solvent Units x2",
             "nickname": "largzard spittle",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           },
           {
             "option": 4,
             "name": "Adventuring Gear",
             "nickname": "grappling hook",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 800
           }
         ]
       },
@@ -2416,7 +2643,9 @@
             "nickname": "your mother's axe",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Master"
+            "gearType": "Master",
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -2425,19 +2654,26 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Traveler's Bag",
             "nickname": "animal skin sack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 4,
             "name": "Oddity",
             "nickname": "old telescope",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -2454,25 +2690,33 @@
             "option": 1,
             "name": "Hardy Rations x10",
             "nickname": "monster feed",
-            "page": 177
+            "page": 177,
+            "slotTenths": 10,
+            "costStones": 30
           },
           {
             "option": 2,
             "name": "Rural Item",
             "nickname": "wool shears",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           },
           {
             "option": 3,
             "name": "Rural Item",
             "nickname": "rancher bell",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           },
           {
             "option": 4,
             "name": "Pack Beast: Shaggy Bumpo",
             "nickname": "sturdy but flatulent",
-            "page": 193
+            "page": 193,
+            "slotTenths": 0,
+            "costStones": 40000
           }
         ]
       },
@@ -2491,25 +2735,34 @@
             "nickname": "skipping stone",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Thrown"
+            "gearType": "Thrown",
+            "slotTenths": 10,
+            "costStones": 200
           },
           {
             "option": 2,
             "name": "Backpack",
             "nickname": "courier's pack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 3,
             "name": "Basic Potion x2",
             "nickname": "sunberry mixture",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Rural Goods",
             "nickname": "gourd canteen",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           }
         ]
       },
@@ -2528,7 +2781,9 @@
             "nickname": "ribbon blade",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Lash"
+            "gearType": "Lash",
+            "slotTenths": 10,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -2537,19 +2792,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Appealing Outfit",
             "nickname": "dancer's costume",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Luxury Item",
             "nickname": "musical instrument",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -2566,25 +2827,34 @@
             "option": 1,
             "name": "Authoritative Outfit",
             "nickname": "scribe's uniform",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 2,
             "name": "Translation Guide: Fade Song",
             "nickname": "",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 3,
             "name": "Urban Goods",
             "nickname": "pad & pen",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           },
           {
             "option": 4,
             "name": "Follower: Scamp",
             "nickname": "assistant page",
-            "page": 185
+            "page": 185,
+            "slotTenths": 0,
+            "costStones": 10,
+            "costRate": "per day"
           }
         ]
       },
@@ -2604,25 +2874,34 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
             "name": "Holy Icon",
             "nickname": "sol medallion",
-            "page": 180
+            "page": 180,
+            "slotTenths": 10,
+            "costStones": 7500
           },
           {
             "option": 3,
             "name": "Follower: Custrel",
             "nickname": "acolyte attendant",
-            "page": 186
+            "page": 186,
+            "slotTenths": 0,
+            "costStones": 800,
+            "costRate": "per day"
           },
           {
             "option": 4,
             "name": "Vial of Bright Water x3",
             "nickname": "",
-            "page": 290
+            "page": 290,
+            "slotTenths": 30,
+            "costStones": 15000
           }
         ]
       },
@@ -2639,7 +2918,10 @@
             "option": 1,
             "name": "Gem x1",
             "nickname": "a parting gift",
-            "page": 151
+            "page": 151,
+            "slotTenths": 0,
+            "costStones": 10000,
+            "currencyStones": 10000
           },
           {
             "option": 2,
@@ -2647,7 +2929,9 @@
             "nickname": "wing spear",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Arc"
+            "gearType": "Arc",
+            "slotTenths": 30,
+            "costStones": 2500
           },
           {
             "option": 3,
@@ -2656,13 +2940,17 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 4,
             "name": "Compass",
             "nickname": "destiny charm",
-            "page": 174
+            "page": 174,
+            "slotTenths": 10,
+            "costStones": 2000
           }
         ]
       },
@@ -2681,25 +2969,33 @@
             "nickname": "hunting bow",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Drawn"
+            "gearType": "Drawn",
+            "slotTenths": 30,
+            "costStones": 1200
           },
           {
             "option": 2,
             "name": "Authoritative Outfit",
             "nickname": "emblematic clothing",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Compass",
             "nickname": "a keepsake from your tutor",
-            "page": 174
+            "page": 174,
+            "slotTenths": 10,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Riding Mount: Jumbug",
             "nickname": "",
-            "page": 191
+            "page": 191,
+            "slotTenths": 0,
+            "costStones": 20000
           }
         ]
       },
@@ -2718,25 +3014,33 @@
             "nickname": "Rai-Neko rifle",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Large Mechanical"
+            "gearType": "Large Mechanical",
+            "slotTenths": 25,
+            "costStones": 2700
           },
           {
             "option": 2,
             "name": "Artisan's Outfit",
             "nickname": "adept's coat",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           },
           {
             "option": 3,
             "name": "Scanner",
             "nickname": "startech monitor",
-            "page": 181
+            "page": 181,
+            "slotTenths": 10,
+            "costStones": 10000
           },
           {
             "option": 4,
             "name": "Small Spell Engine",
             "nickname": "startech battery",
-            "page": 181
+            "page": 181,
+            "slotTenths": 10,
+            "costStones": 20000
           }
         ]
       }
@@ -2757,25 +3061,33 @@
             "nickname": "improvised shiv",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 500
           },
           {
             "option": 2,
             "name": "Tattered Outfit",
             "nickname": "dusty rags",
-            "page": 172
+            "page": 172,
+            "slotTenths": 10,
+            "costStones": 0
           },
           {
             "option": 3,
             "name": "Bomb x1",
             "nickname": "unexploded mine",
-            "page": 178
+            "page": 178,
+            "slotTenths": 30,
+            "costStones": 4500
           },
           {
             "option": 4,
             "name": "Star Gem",
             "nickname": "hope in the dark",
-            "page": 180
+            "page": 180,
+            "slotTenths": 1,
+            "costStones": 30000
           }
         ]
       },
@@ -2795,7 +3107,9 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -2804,19 +3118,26 @@
             "page": 169,
             "gearCategory": "shields",
             "gearType": "Standard",
-            "defenseBonus": 1
+            "defenseBonus": 1,
+            "slotTenths": 10,
+            "costStones": 2500
           },
           {
             "option": 3,
             "name": "Traveler's Bag",
             "nickname": "a big sack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 4,
             "name": "Lumi-Slime Lantern",
             "nickname": "you called your slime Hue-bert",
-            "page": 175
+            "page": 175,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       },
@@ -2835,7 +3156,9 @@
             "nickname": "rusty war maul",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Mighty"
+            "gearType": "Mighty",
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 2,
@@ -2844,19 +3167,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 3,
             "name": "Tattered Outfit",
             "nickname": "old uniform",
-            "page": 172
+            "page": 172,
+            "slotTenths": 10,
+            "costStones": 0
           },
           {
             "option": 4,
             "name": "Flame Grenades x2",
             "nickname": "tunnel clearers",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           }
         ]
       },
@@ -2873,25 +3202,33 @@
             "option": 1,
             "name": "Extreme Weather Outfit: Cold",
             "nickname": "worm skin cloak",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 1200
           },
           {
             "option": 2,
             "name": "Rebreather Mask",
             "nickname": "creeper shell mask",
-            "page": 173
+            "page": 173,
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 3,
             "name": "Hardy Rations x10",
             "nickname": "shrooms",
-            "page": 177
+            "page": 177,
+            "slotTenths": 10,
+            "costStones": 30
           },
           {
             "option": 4,
             "name": "Oddity",
             "nickname": "scraping knife",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -2910,7 +3247,9 @@
             "nickname": "underland rifle",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Large Mechanical"
+            "gearType": "Large Mechanical",
+            "slotTenths": 25,
+            "costStones": 2700
           },
           {
             "option": 2,
@@ -2919,19 +3258,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Authoritative Outfit",
             "nickname": "Old Iron or New Ore military uniform",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Basic Potion x2",
             "nickname": "jolt juice",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           }
         ]
       },
@@ -2948,25 +3293,33 @@
             "option": 1,
             "name": "Black-out Goggles",
             "nickname": "New Ore issue",
-            "page": 173
+            "page": 173,
+            "slotTenths": 10,
+            "costStones": 200
           },
           {
             "option": 2,
             "name": "Lantern & Oil/Fuel Unit x1",
             "nickname": "ring-handle lantern",
-            "page": 175
+            "page": 175,
+            "slotTenths": 11,
+            "costStones": 600
           },
           {
             "option": 3,
             "name": "Common Rural Item",
             "nickname": "mattock",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           },
           {
             "option": 4,
             "name": "Pet: Skree",
             "nickname": "leather wing",
-            "page": 190
+            "page": 190,
+            "slotTenths": 0,
+            "costStones": 10000
           }
         ]
       },
@@ -2985,7 +3338,9 @@
             "nickname": "forge hammer",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Standard"
+            "gearType": "Standard",
+            "slotTenths": 10,
+            "costStones": 1508
           },
           {
             "option": 2,
@@ -2994,7 +3349,9 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
@@ -3003,13 +3360,17 @@
             "page": 169,
             "gearCategory": "shields",
             "gearType": "Standard",
-            "defenseBonus": 1
+            "defenseBonus": 1,
+            "slotTenths": 10,
+            "costStones": 2500
           },
           {
             "option": 4,
             "name": "Artisan's Outfit",
             "nickname": "smith's apron",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           }
         ]
       },
@@ -3028,25 +3389,34 @@
             "nickname": "crank pistol",
             "page": 158,
             "gearCategory": "weapons",
-            "gearType": "Small Mechanical"
+            "gearType": "Small Mechanical",
+            "slotTenths": 10,
+            "costStones": 1500
           },
           {
             "option": 2,
             "name": "Backpack",
             "nickname": "rucksack",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 3,
             "name": "Bomb x1",
             "nickname": "demolitions kit",
-            "page": 178
+            "page": 178,
+            "slotTenths": 30,
+            "costStones": 4500
           },
           {
             "option": 4,
             "name": "Common Rural Item",
             "nickname": "spade",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 8
           }
         ]
       },
@@ -3063,25 +3433,34 @@
             "option": 1,
             "name": "Traveler's Bag",
             "nickname": "courier bag",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 2,
             "name": "Precise Dabber & Solvent x1 Unit",
             "nickname": "etching tools",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 2800
           },
           {
             "option": 3,
             "name": "Oddity",
             "nickname": "multi-lens magnification goggles",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           },
           {
             "option": 4,
             "name": "Oddity",
             "nickname": "metal etching sheet",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -3101,25 +3480,33 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
             "name": "Appealing Outfit",
             "nickname": "New Ore counter-fashion",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Basic Potion x2",
             "nickname": "jolt juice",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 4,
             "name": "Grenades x2",
             "nickname": "havoc crackers",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           }
         ]
       },
@@ -3138,7 +3525,9 @@
             "nickname": "spur cord",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Lash"
+            "gearType": "Lash",
+            "slotTenths": 10,
+            "costStones": 3000
           },
           {
             "option": 2,
@@ -3147,19 +3536,25 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Medium",
-            "defenseBonus": 4
+            "defenseBonus": 4,
+            "slotTenths": 30,
+            "costStones": 6000
           },
           {
             "option": 3,
             "name": "Authoritative Outfit",
             "nickname": "robes",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Holy Icon",
             "nickname": "Creator's glyph",
-            "page": 180
+            "page": 180,
+            "slotTenths": 10,
+            "costStones": 7500
           }
         ]
       },
@@ -3178,25 +3573,33 @@
             "nickname": "dagger",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Concealed"
+            "gearType": "Concealed",
+            "slotTenths": 10,
+            "costStones": 500
           },
           {
             "option": 2,
             "name": "Blackout Goggles",
             "nickname": "for research trips to the surface",
-            "page": 173
+            "page": 173,
+            "slotTenths": 10,
+            "costStones": 200
           },
           {
             "option": 3,
             "name": "Beginner's Tome: Buried Kingdom History",
             "nickname": "",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 600
           },
           {
             "option": 4,
             "name": "Booster Cakes x2: Insight",
             "nickname": "clever candies",
-            "page": 177
+            "page": 177,
+            "slotTenths": 2,
+            "costStones": 3000
           }
         ]
       }
@@ -3215,25 +3618,34 @@
             "option": 1,
             "name": "Tattered Outfit",
             "nickname": "no shoes and a ripped trench coat",
-            "page": 172
+            "page": 172,
+            "slotTenths": 10,
+            "costStones": 0
           },
           {
             "option": 2,
             "name": "Backpack",
             "nickname": "trusty kit bag",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 3,
             "name": "Treat x5",
             "nickname": "candy from a child",
-            "page": 177
+            "page": 177,
+            "slotTenths": 5,
+            "costStones": 15
           },
           {
             "option": 4,
             "name": "Pet: Growl",
             "nickname": "brave mongrel",
-            "page": 188
+            "page": 188,
+            "slotTenths": 0,
+            "costStones": 7500
           }
         ]
       },
@@ -3250,25 +3662,33 @@
             "option": 1,
             "name": "Beginner's Tome: Adventure Sites",
             "nickname": "Akenia Adventure!! guide",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 600
           },
           {
             "option": 2,
             "name": "Basic Potion x2",
             "nickname": "energy drinks",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           },
           {
             "option": 3,
             "name": "Holy Icon",
             "nickname": "collectible plush",
-            "page": 180
+            "page": 180,
+            "slotTenths": 10,
+            "costStones": 7500
           },
           {
             "option": 4,
             "name": "Other World Pocket Device",
             "nickname": "Game Gal Advance",
-            "page": 182
+            "page": 182,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       },
@@ -3285,25 +3705,33 @@
             "option": 1,
             "name": "Artisan's Outfit",
             "nickname": "sales apron",
-            "page": 172
+            "page": 172,
+            "slotTenths": 20,
+            "costStones": 800
           },
           {
             "option": 2,
             "name": "Rations x10",
             "nickname": "box of nuggets",
-            "page": 177
+            "page": 177,
+            "slotTenths": 10,
+            "costStones": 10
           },
           {
             "option": 3,
             "name": "Urban Goods",
             "nickname": "company branded pad & pen",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           },
           {
             "option": 4,
             "name": "Other World Pocket Device",
             "nickname": "smart phone",
-            "page": 182
+            "page": 182,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       },
@@ -3322,7 +3750,9 @@
             "nickname": "sledgehammer",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Mighty"
+            "gearType": "Mighty",
+            "slotTenths": 20,
+            "costStones": 2508
           },
           {
             "option": 2,
@@ -3331,19 +3761,26 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 3,
             "name": "Traveler's Bag",
             "nickname": "tool belt",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 4,
             "name": "Basic Potion x2",
             "nickname": "coffee flask",
-            "page": 177
+            "page": 177,
+            "slotTenths": 20,
+            "costStones": 2000
           }
         ]
       },
@@ -3360,25 +3797,33 @@
             "option": 1,
             "name": "Authoritative Outfit",
             "nickname": "suit & tie",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 2,
             "name": "Treat x2 & Hardy Rations x2",
             "nickname": "packed lunch",
-            "page": 177
+            "page": 177,
+            "slotTenths": 4,
+            "costStones": 12
           },
           {
             "option": 3,
             "name": "Oddity",
             "nickname": "red stapler",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           },
           {
             "option": 4,
             "name": "Other World Pocket Device",
             "nickname": "synth tablet",
-            "page": 182
+            "page": 182,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       },
@@ -3397,25 +3842,34 @@
             "nickname": "iron frying pan",
             "page": 152,
             "gearCategory": "weapons",
-            "gearType": "Standard"
+            "gearType": "Standard",
+            "slotTenths": 10,
+            "costStones": 1508
           },
           {
             "option": 2,
             "name": "Traveler's Bag",
             "nickname": "cute tote",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 300,
+            "inventoryBonusTenths": 30
           },
           {
             "option": 3,
             "name": "Beginner's Tome: Outer World Legends",
             "nickname": "children's book",
-            "page": 176
+            "page": 176,
+            "slotTenths": 10,
+            "costStones": 600
           },
           {
             "option": 4,
             "name": "Treats x10",
             "nickname": "perfect cookies",
-            "page": 177
+            "page": 177,
+            "slotTenths": 10,
+            "costStones": 30
           }
         ]
       },
@@ -3435,25 +3889,33 @@
             "page": 163,
             "gearCategory": "armor",
             "gearType": "Light",
-            "defenseBonus": 2
+            "defenseBonus": 2,
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
             "name": "Authoritative Outfit",
             "nickname": "uniform",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Grenades x2",
             "nickname": "frags",
-            "page": 178
+            "page": 178,
+            "slotTenths": 20,
+            "costStones": 4000
           },
           {
             "option": 4,
             "name": "Other World Side Arm & Ammo x10",
             "nickname": "trusty shooter",
-            "page": 182
+            "page": 182,
+            "slotTenths": 20,
+            "costStones": null
           }
         ]
       },
@@ -3470,25 +3932,34 @@
             "option": 1,
             "name": "Backpack",
             "nickname": "teacher's satchel",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 2,
             "name": "Urban Goods",
             "nickname": "pack of chalk",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 12
           },
           {
             "option": 3,
             "name": "Oddity",
             "nickname": "hand puppet for educational use",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           },
           {
             "option": 4,
             "name": "Oddity",
             "nickname": "three-hole puncher",
-            "page": 179
+            "page": 179,
+            "slotTenths": 10,
+            "costStones": 1600
           }
         ]
       },
@@ -3507,25 +3978,34 @@
             "nickname": "aluminium baseball bat",
             "page": 153,
             "gearCategory": "weapons",
-            "gearType": "Master"
+            "gearType": "Master",
+            "slotTenths": 20,
+            "costStones": 3000
           },
           {
             "option": 2,
             "name": "Backpack",
             "nickname": "book bag",
-            "page": 173
+            "page": 173,
+            "slotTenths": 0,
+            "costStones": 500,
+            "inventoryBonusTenths": 50
           },
           {
             "option": 3,
             "name": "Appealing Outfit",
             "nickname": "school uniform",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 4,
             "name": "Other World Pocket Device",
             "nickname": "smart phone with charm",
-            "page": 182
+            "page": 182,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       },
@@ -3542,25 +4022,34 @@
             "option": 1,
             "name": "Gem x1",
             "nickname": "assorted bling",
-            "page": 151
+            "page": 151,
+            "slotTenths": 0,
+            "costStones": 10000,
+            "currencyStones": 10000
           },
           {
             "option": 2,
             "name": "Appealing Outfit",
             "nickname": "strong look",
-            "page": 173
+            "page": 173,
+            "slotTenths": 20,
+            "costStones": 20
           },
           {
             "option": 3,
             "name": "Blackout Goggles",
             "nickname": "shades",
-            "page": 173
+            "page": 173,
+            "slotTenths": 10,
+            "costStones": 200
           },
           {
             "option": 4,
             "name": "Other World Pocket Device",
             "nickname": "Pear Pad DX",
-            "page": 182
+            "page": 182,
+            "slotTenths": 10,
+            "costStones": null
           }
         ]
       }
@@ -3582,7 +4071,9 @@
           "nickname": "ritual trident",
           "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
           "gearCategory": "weapons",
-          "gearType": "Arc"
+          "gearType": "Arc",
+          "slotTenths": 30,
+          "costStones": 2500
         },
         {
           "name": "Light Armor",
@@ -3590,17 +4081,23 @@
           "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
           "gearCategory": "armor",
           "gearType": "Light",
-          "defenseBonus": 2
+          "defenseBonus": 2,
+          "slotTenths": 20,
+          "costStones": 3000
         },
         {
           "name": "Lumi-Slime Lantern",
           "nickname": "luminescent orb",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 10,
+          "costStones": null
         },
         {
           "name": "Rations x10",
           "nickname": "sliced midnight seaweed",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 10,
+          "costStones": 10
         }
       ]
     },
@@ -3617,12 +4114,16 @@
         {
           "name": "Scanner",
           "nickname": "beepy-boopy thing you found",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 10,
+          "costStones": 10000
         },
         {
           "name": "Treats x10",
           "nickname": "sealed pack of CaloriePals",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 10,
+          "costStones": 30
         },
         {
           "name": "Standard Shield",
@@ -3630,12 +4131,16 @@
           "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
           "gearCategory": "shields",
           "gearType": "Standard",
-          "defenseBonus": 1
+          "defenseBonus": 1,
+          "slotTenths": 10,
+          "costStones": 2500
         },
         {
           "name": "Luxury Item",
           "nickname": "mistaken eating utensil",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 10,
+          "costStones": 1600
         }
       ]
     },
@@ -3652,24 +4157,33 @@
         {
           "name": "Long Grabber",
           "nickname": "coral picker",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 20,
+          "costStones": 4500
         },
         {
           "name": "Quick Weapon",
           "nickname": "quill sword",
           "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
           "gearCategory": "weapons",
-          "gearType": "Quick"
+          "gearType": "Quick",
+          "slotTenths": 10,
+          "costStones": 1500
         },
         {
           "name": "Traveler's Bag",
           "nickname": "gulper fish pack",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 0,
+          "costStones": 300,
+          "inventoryBonusTenths": 30
         },
         {
           "name": "Trade Goods",
           "nickname": "clamfruit bushel",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "slotTenths": 30,
+          "costStones": 2500
         }
       ]
     }
@@ -3689,7 +4203,9 @@
           "nickname": "bits of a shattered blade",
           "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
           "gearCategory": "weapons",
-          "gearType": "Thrown"
+          "gearType": "Thrown",
+          "slotTenths": 10,
+          "costStones": 200
         },
         {
           "name": "Light Armor",
@@ -3697,17 +4213,23 @@
           "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
           "gearCategory": "armor",
           "gearType": "Light",
-          "defenseBonus": 2
+          "defenseBonus": 2,
+          "slotTenths": 20,
+          "costStones": 3000
         },
         {
           "name": "Lumi-Slime Lantern",
           "nickname": "your last friend from home",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": null
         },
         {
           "name": "Rations x10",
           "nickname": "cured deeproot",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 10
         }
       ]
     },
@@ -3723,22 +4245,30 @@
         {
           "name": "Artisan's Outfit",
           "nickname": "your favorite coat",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 20,
+          "costStones": 800
         },
         {
           "name": "Common Urban Good",
           "nickname": "sturdy old bottle",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 12
         },
         {
           "name": "Basic Potion",
           "nickname": "broot beer",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 1000
         },
         {
           "name": "Grenade",
           "nickname": "over-carbonated broot beer",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 2000
         }
       ]
     },
@@ -3754,22 +4284,30 @@
         {
           "name": "Toodle Flute",
           "nickname": "oddity and luxury instrument",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 1600
         },
         {
           "name": "Proper Pen",
           "nickname": "common urban good",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 12
         },
         {
           "name": "Appealing Outfit",
           "nickname": "multi-colored cloak",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 20,
+          "costStones": 20
         },
         {
           "name": "Treats x10",
           "nickname": "star sweets",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 30
         }
       ]
     },
@@ -3785,22 +4323,30 @@
         {
           "name": "Star Gem",
           "nickname": "memento of their greatest work",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 1,
+          "costStones": 30000
         },
         {
           "name": "Shadow Stone",
           "nickname": "reminder that everything can be broken",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 1,
+          "costStones": 50000
         },
         {
           "name": "Forgotten Lore Tome",
           "nickname": "wonder werk manual",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 20,
+          "costStones": 2400
         },
         {
           "name": "Compass",
           "nickname": "something you always knew you'd need",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "slotTenths": 10,
+          "costStones": 2000
         }
       ]
     }
@@ -7143,6 +7689,524 @@
       "speed": -1
     }
   },
+  "shopItems": [
+    {
+      "name": "Standard Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 1000,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Standard"
+    },
+    {
+      "name": "Concealed Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 500,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Concealed"
+    },
+    {
+      "name": "Quick Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 1500,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Quick"
+    },
+    {
+      "name": "Master Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 3000,
+      "slotTenths": 20,
+      "gearCategory": "weapons",
+      "gearType": "Master"
+    },
+    {
+      "name": "Mighty Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 2000,
+      "slotTenths": 20,
+      "gearCategory": "weapons",
+      "gearType": "Mighty"
+    },
+    {
+      "name": "Arc Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 2500,
+      "slotTenths": 30,
+      "gearCategory": "weapons",
+      "gearType": "Arc"
+    },
+    {
+      "name": "Lash Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 3000,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Lash"
+    },
+    {
+      "name": "Thrown Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 200,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Thrown"
+    },
+    {
+      "name": "Drawn Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 1000,
+      "slotTenths": 20,
+      "gearCategory": "weapons",
+      "gearType": "Drawn"
+    },
+    {
+      "name": "Mechanical (Small) Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 1500,
+      "slotTenths": 10,
+      "gearCategory": "weapons",
+      "gearType": "Small Mechanical"
+    },
+    {
+      "name": "Mechanical (Large) Weapon",
+      "page": 152,
+      "category": "Weapons",
+      "costStones": 2500,
+      "slotTenths": 20,
+      "gearCategory": "weapons",
+      "gearType": "Large Mechanical"
+    },
+    {
+      "name": "Light Armor",
+      "page": 163,
+      "category": "Armor",
+      "costStones": 3000,
+      "slotTenths": 20,
+      "gearCategory": "armor",
+      "gearType": "Light",
+      "defenseBonus": 2
+    },
+    {
+      "name": "Medium Armor",
+      "page": 163,
+      "category": "Armor",
+      "costStones": 6000,
+      "slotTenths": 30,
+      "gearCategory": "armor",
+      "gearType": "Medium",
+      "defenseBonus": 4
+    },
+    {
+      "name": "Heavy Armor",
+      "page": 163,
+      "category": "Armor",
+      "costStones": 12000,
+      "slotTenths": 40,
+      "gearCategory": "armor",
+      "gearType": "Heavy",
+      "defenseBonus": 6
+    },
+    {
+      "name": "Superheavy Armor",
+      "page": 163,
+      "category": "Armor",
+      "costStones": 60000,
+      "slotTenths": 50,
+      "gearCategory": "armor",
+      "gearType": "Superheavy",
+      "defenseBonus": 8
+    },
+    {
+      "name": "Small Shield",
+      "page": 169,
+      "category": "Shields",
+      "costStones": 1500,
+      "slotTenths": 10,
+      "gearCategory": "shields",
+      "gearType": "Small",
+      "defenseBonus": 0
+    },
+    {
+      "name": "Standard Shield",
+      "page": 169,
+      "category": "Shields",
+      "costStones": 2500,
+      "slotTenths": 10,
+      "gearCategory": "shields",
+      "gearType": "Standard",
+      "defenseBonus": 1
+    },
+    {
+      "name": "Large Shield",
+      "page": 169,
+      "category": "Shields",
+      "costStones": 3500,
+      "slotTenths": 20,
+      "gearCategory": "shields",
+      "gearType": "Large",
+      "defenseBonus": 2
+    },
+    {
+      "name": "Functional Outfit",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 5,
+      "slotTenths": 20
+    },
+    {
+      "name": "Costume",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 15,
+      "slotTenths": 20
+    },
+    {
+      "name": "Extreme Heat Outfit",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 800,
+      "slotTenths": 20
+    },
+    {
+      "name": "Extreme Cold Outfit",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 1200,
+      "slotTenths": 20
+    },
+    {
+      "name": "Appealing Outfit",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 20,
+      "slotTenths": 20
+    },
+    {
+      "name": "Authoritative Outfit",
+      "page": 172,
+      "category": "Outfits",
+      "costStones": 20,
+      "slotTenths": 20
+    },
+    {
+      "name": "Rebreather",
+      "page": 173,
+      "category": "Wearable Accessories",
+      "costStones": 1500,
+      "slotTenths": 10
+    },
+    {
+      "name": "Blackout Goggles",
+      "page": 173,
+      "category": "Wearable Accessories",
+      "costStones": 200,
+      "slotTenths": 10
+    },
+    {
+      "name": "Backpack",
+      "page": 173,
+      "category": "Wearable Accessories",
+      "costStones": 500,
+      "slotTenths": 0,
+      "inventoryBonusTenths": 50
+    },
+    {
+      "name": "Traveler's Bag",
+      "page": 173,
+      "category": "Wearable Accessories",
+      "costStones": 300,
+      "slotTenths": 0,
+      "inventoryBonusTenths": 30
+    },
+    {
+      "name": "Local Map",
+      "page": 174,
+      "category": "Wayfinding",
+      "costStones": 5,
+      "slotTenths": 1
+    },
+    {
+      "name": "Kingdom Map",
+      "page": 174,
+      "category": "Wayfinding",
+      "costStones": 200,
+      "slotTenths": 1
+    },
+    {
+      "name": "Regional Map",
+      "page": 174,
+      "category": "Wayfinding",
+      "costStones": 2000,
+      "slotTenths": 10
+    },
+    {
+      "name": "World Map",
+      "page": 174,
+      "category": "Wayfinding",
+      "costStones": 20000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Compass",
+      "page": 174,
+      "category": "Wayfinding",
+      "costStones": 2000,
+      "slotTenths": 10
+    },
+    {
+      "name": "Torch",
+      "page": 175,
+      "category": "Illumination",
+      "costStones": 4,
+      "slotTenths": 10
+    },
+    {
+      "name": "Lantern",
+      "page": 175,
+      "category": "Illumination",
+      "costStones": 500,
+      "slotTenths": 10
+    },
+    {
+      "name": "Physician's Kit",
+      "page": 176,
+      "category": "Specialist's Kits",
+      "costStones": 5000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Dungeoneer's Kit",
+      "page": 176,
+      "category": "Specialist's Kits",
+      "costStones": 5000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Alchemist's Kit",
+      "page": 176,
+      "category": "Specialist's Kits",
+      "costStones": 5000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Mender's Kit",
+      "page": 176,
+      "category": "Specialist's Kits",
+      "costStones": 5000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Gadgeteer's Kit",
+      "page": 176,
+      "category": "Specialist's Kits",
+      "costStones": 5000,
+      "slotTenths": 20
+    },
+    {
+      "name": "Beginner's Tome",
+      "page": 176,
+      "category": "Books",
+      "costStones": 600,
+      "slotTenths": 10
+    },
+    {
+      "name": "Journeyman's Tome",
+      "page": 176,
+      "category": "Books",
+      "costStones": 1200,
+      "slotTenths": 10
+    },
+    {
+      "name": "Master's Tome",
+      "page": 176,
+      "category": "Books",
+      "costStones": 1800,
+      "slotTenths": 20
+    },
+    {
+      "name": "Forgotten Lore",
+      "page": 176,
+      "category": "Books",
+      "costStones": 2400,
+      "slotTenths": 20
+    },
+    {
+      "name": "Translation Journal",
+      "page": 176,
+      "category": "Books",
+      "costStones": 2000,
+      "slotTenths": 10
+    },
+    {
+      "name": "Rations",
+      "page": 177,
+      "category": "Consumables",
+      "costStones": 1,
+      "slotTenths": 1,
+      "stackLimit": 10
+    },
+    {
+      "name": "Hardy Rations",
+      "page": 177,
+      "category": "Consumables",
+      "costStones": 3,
+      "slotTenths": 1,
+      "stackLimit": 10
+    },
+    {
+      "name": "Treats",
+      "page": 177,
+      "category": "Consumables",
+      "costStones": 3,
+      "slotTenths": 1,
+      "stackLimit": 10
+    },
+    {
+      "name": "Basic Potion",
+      "page": 177,
+      "category": "Consumables",
+      "costStones": 1000,
+      "slotTenths": 10,
+      "stackLimit": 3
+    },
+    {
+      "name": "Booster Cakes",
+      "page": 177,
+      "category": "Consumables",
+      "costStones": 1500,
+      "slotTenths": 1,
+      "stackLimit": 3
+    },
+    {
+      "name": "Oil/Fuel",
+      "page": 178,
+      "category": "Combustibles & Chemicals",
+      "costStones": 1000,
+      "slotTenths": 10,
+      "stackLimit": 2
+    },
+    {
+      "name": "Solvent",
+      "page": 178,
+      "category": "Combustibles & Chemicals",
+      "costStones": 2000,
+      "slotTenths": 10,
+      "stackLimit": 3
+    },
+    {
+      "name": "Grenade",
+      "page": 178,
+      "category": "Combustibles & Chemicals",
+      "costStones": 2000,
+      "slotTenths": 10,
+      "stackLimit": 3
+    },
+    {
+      "name": "Bomb",
+      "page": 178,
+      "category": "Combustibles & Chemicals",
+      "costStones": 4500,
+      "slotTenths": 30,
+      "stackLimit": 2
+    },
+    {
+      "name": "Adventuring Gear",
+      "page": 179,
+      "category": "Miscellaneous",
+      "costStones": 800,
+      "slotTenths": 10
+    },
+    {
+      "name": "Common Rural Goods",
+      "page": 179,
+      "category": "Miscellaneous",
+      "costStones": 8,
+      "slotTenths": 10
+    },
+    {
+      "name": "Common Urban Goods",
+      "page": 179,
+      "category": "Miscellaneous",
+      "costStones": 12,
+      "slotTenths": 10
+    },
+    {
+      "name": "Oddities & Luxury Items",
+      "page": 179,
+      "category": "Miscellaneous",
+      "costStones": 1600,
+      "slotTenths": 10
+    },
+    {
+      "name": "Trade Goods",
+      "page": 179,
+      "category": "Miscellaneous",
+      "costStones": 2500,
+      "slotTenths": 30
+    },
+    {
+      "name": "Holy Icon",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 7500,
+      "slotTenths": 10
+    },
+    {
+      "name": "Star Gem",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 30000,
+      "slotTenths": 1
+    },
+    {
+      "name": "Shadow Stone",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 50000,
+      "slotTenths": 1
+    },
+    {
+      "name": "Long Grabber",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 4500,
+      "slotTenths": 20
+    },
+    {
+      "name": "Scanner",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 10000,
+      "slotTenths": 10
+    },
+    {
+      "name": "Small Spell Engine",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 20000,
+      "slotTenths": 10
+    },
+    {
+      "name": "Large Spell Engine",
+      "page": 180,
+      "category": "Curiosities, Artifacts & Gadgets",
+      "costStones": 40000,
+      "slotTenths": 20
+    }
+  ],
   "choices": {
     "weaponTypes": [
       "Standard",

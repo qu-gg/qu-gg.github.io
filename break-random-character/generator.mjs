@@ -1,4 +1,20 @@
 const SPEEDS = ["Slow", "Average", "Fast"];
+const MAX_PURCHASE_LINES = 8;
+const SHOP_CATEGORY_LIMITS = {
+    "Weapons": 2,
+    "Armor": 1,
+    "Shields": 1,
+    "Outfits": 1,
+    "Wearable Accessories": 2,
+    "Wayfinding": 2,
+    "Illumination": 1,
+    "Specialist's Kits": 1,
+    "Books": 2,
+    "Consumables": 3,
+    "Combustibles & Chemicals": 2,
+    "Miscellaneous": 2,
+    "Curiosities, Artifacts & Gadgets": 2,
+};
 const SEED_KEYS = [
     "calling",
     "species",
@@ -12,6 +28,8 @@ const SEED_KEYS = [
     "speciesChoices",
     "quirkChoices",
     "gear",
+    "purchasedGear",
+    "outfit",
     "coins",
 ];
 const REROLL_DEPENDENCIES = {
@@ -25,6 +43,7 @@ const REROLL_DEPENDENCIES = {
     quirk: ["quirk", "quirkChoices"],
     choices: ["callingChoices", "speciesChoices", "quirkChoices"],
     gear: ["gear"],
+    purchasedGear: ["purchasedGear"],
     coins: ["coins"],
 };
 
@@ -116,6 +135,140 @@ function bestDefensiveGear(gear, category) {
     return gear
         .filter((item) => item.gearCategory === category && item.defenseBonus !== undefined)
         .sort((left, right) => right.defenseBonus - left.defenseBonus)[0] || null;
+}
+
+function sumGearValue(gear, key) {
+    return gear.reduce((total, item) => total + (item[key] || 0), 0);
+}
+
+function currencyUnitCount(totalStones) {
+    const gems = Math.floor(totalStones / 10000);
+    const afterGems = totalStones % 10000;
+    const coins = Math.floor(afterGems / 100);
+    const stones = afterGems % 100;
+    return gems + coins + stones;
+}
+
+function currencySummary(startingCoins, remainingStones, gear, currencyWeightEnabled) {
+    const totalStones = startingCoins * 100 + remainingStones + sumGearValue(gear, "currencyStones");
+    const slotHundredths = currencyWeightEnabled ? currencyUnitCount(totalStones) : 0;
+    return { totalStones, slotHundredths };
+}
+
+function isOutfit(gear) {
+    return gear.category === "Outfits" || gear.name === "Costume" || gear.name.includes("Outfit");
+}
+
+function equipOutfit(gear, purchasedGear, outfitRandom) {
+    const allGear = [...gear, ...purchasedGear];
+    const outfitCandidates = allGear.filter(isOutfit);
+    const uniqueOutfitCandidates = outfitCandidates.filter((item) => item.name !== "Functional Outfit");
+    const equippedOutfit = outfitCandidates.length
+        ? choose(uniqueOutfitCandidates.length ? uniqueOutfitCandidates : outfitCandidates, outfitRandom)
+        : null;
+    const markEquipped = (item) => ({ ...item, equipped: item === equippedOutfit });
+    return {
+        gear: gear.map(markEquipped),
+        purchasedGear: purchasedGear.map(markEquipped),
+        equippedOutfit: equippedOutfit?.name || null,
+    };
+}
+
+function rollPurchasedGear(data, budgetCoins, startingGear, calling, sizeRule, baseInventory, startingCoins, currencyWeightEnabled, random) {
+    const safeBudgetCoins = Math.max(0, Math.trunc(Number(budgetCoins)) || 0);
+    const budgetStones = safeBudgetCoins * 100;
+    const startingSlotsTenths = sumGearValue(startingGear, "slotTenths");
+    const fixedCurrencyStones = startingCoins * 100 + sumGearValue(startingGear, "currencyStones");
+    const callingHasPack = calling.inventoryBonusSource === "Factotum Pack";
+    const startingContainer = callingHasPack
+        ? null
+        : startingGear
+            .filter((item) => item.inventoryBonusTenths)
+            .sort((left, right) => right.inventoryBonusTenths - left.inventoryBonusTenths)[0] || null;
+    const startingCapacityBonusTenths = startingContainer?.inventoryBonusTenths || 0;
+    const startingNames = new Set(startingGear.map((item) => item.name));
+    const blockedCategories = new Set();
+    if (startingGear.some((item) => item.gearCategory === "armor")) blockedCategories.add("Armor");
+    if (startingGear.some((item) => item.gearCategory === "shields")) blockedCategories.add("Shields");
+    const candidates = safeBudgetCoins > 0
+        ? data.shopItems
+            .filter((item) => !startingNames.has(item.name) || item.stackLimit)
+            .filter((item) => !blockedCategories.has(item.category))
+            .map((item) => evaluateGear(item, calling, sizeRule))
+            .filter((item) => !item.restricted && (!(callingHasPack || startingContainer) || !item.inventoryBonusTenths))
+        : [];
+    const purchasedGear = [];
+    const categoryCounts = {};
+    let spentStones = 0;
+    let purchasedSlotsTenths = 0;
+    let purchasedCapacityBonusTenths = 0;
+    let categoryQueue = [];
+
+    const itemFits = (item, quantity = 1) => {
+        const hasPurchasedContainer = purchasedGear.some((item) => item.inventoryBonusTenths);
+        if (hasPurchasedContainer && item.inventoryBonusTenths) return false;
+        const projectedCapacity = baseInventory * 10 + startingCapacityBonusTenths
+            + purchasedCapacityBonusTenths + (item.inventoryBonusTenths || 0);
+        const projectedSpentStones = spentStones + item.costStones * quantity;
+        const projectedGearSlotHundredths = (startingSlotsTenths + purchasedSlotsTenths + item.slotTenths * quantity) * 10;
+        const projectedCurrencySlotHundredths = currencyWeightEnabled
+            ? currencyUnitCount(fixedCurrencyStones + budgetStones - projectedSpentStones)
+            : 0;
+        return projectedSpentStones <= budgetStones
+            && projectedGearSlotHundredths + projectedCurrencySlotHundredths <= projectedCapacity * 10;
+    };
+
+    while (candidates.length && purchasedGear.length < MAX_PURCHASE_LINES) {
+        const availableCategories = [...new Set(candidates
+            .filter((item) => itemFits(item))
+            .filter((item) => (categoryCounts[item.category] || 0) < SHOP_CATEGORY_LIMITS[item.category])
+            .map((item) => item.category))];
+        if (!availableCategories.length) break;
+        categoryQueue = categoryQueue.filter((category) => availableCategories.includes(category));
+        if (!categoryQueue.length) {
+            categoryQueue = sample(availableCategories.filter((category) => category !== "Weapons"), availableCategories.length, random);
+            if (availableCategories.includes("Weapons")) {
+                const firstWeaponPosition = Math.floor(random() * Math.min(4, categoryQueue.length + 1));
+                categoryQueue.splice(firstWeaponPosition, 0, "Weapons");
+                categoryQueue.splice(Math.min(categoryQueue.length, 5 + Math.floor(random() * 3)), 0, "Weapons");
+            }
+        }
+        const category = categoryQueue.shift();
+        const eligible = candidates.filter((item) => item.category === category && itemFits(item));
+        if (!eligible.length) continue;
+        const selected = choose(eligible, random);
+        const maxByBudget = Math.floor((budgetStones - spentStones) / selected.costStones);
+        const maxQuantity = Math.max(1, ...Array.from(
+            { length: Math.min(selected.stackLimit || 1, maxByBudget) },
+            (_, quantityIndex) => quantityIndex + 1,
+        ).filter((quantity) => itemFits(selected, quantity)));
+        const quantity = rollDie(maxQuantity, random);
+        candidates.splice(candidates.indexOf(selected), 1);
+        purchasedGear.push({
+            ...selected,
+            quantity,
+            unitCostStones: selected.costStones,
+            unitSlotTenths: selected.slotTenths,
+            costStones: selected.costStones * quantity,
+            slotTenths: selected.slotTenths * quantity,
+        });
+        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+        spentStones += selected.costStones * quantity;
+        purchasedSlotsTenths += selected.slotTenths * quantity;
+        purchasedCapacityBonusTenths += selected.inventoryBonusTenths || 0;
+    }
+
+    return {
+        gear: purchasedGear,
+        budgetCoins: safeBudgetCoins,
+        budgetStones,
+        spentStones,
+        remainingStones: budgetStones - spentStones,
+        startingSlotsTenths,
+        purchasedSlotsTenths,
+        capacityBonusTenths: startingCapacityBonusTenths + purchasedCapacityBonusTenths,
+        containerName: startingContainer?.name || purchasedGear.find((item) => item.inventoryBonusTenths)?.name || null,
+    };
 }
 
 function resolveAllegiance(calling, species, selections) {
@@ -313,7 +466,7 @@ function resolveHomeland(data, species, languageRandom, rolls) {
     return { homeland, language: choose(homeland.languages, languageRandom) };
 }
 
-export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, contentMode = "core") {
+export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false) {
     const seeds = createSeeds(random, suppliedSeeds);
     const streams = Object.fromEntries(SEED_KEYS.map((key) => [key, seededRandom(seeds[key])]));
     const speciesResult = contentMode === "expanded"
@@ -456,8 +609,9 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
             attackBonus += 1;
             addModifier(modifiers, "combat", "attack", quirk.name, 1);
             const trustyWeapon = choose(data.choices.weaponTypes, streams.quirkChoices);
+            const trustyWeaponData = data.shopItems.find((item) => item.gearCategory === "weapons" && item.gearType === trustyWeapon);
             selections.push({ label: "Weary Path", value: `Scarred Soul / ${trustyWeapon} Weapon`, pages: quirk.pages });
-            extraGear.push({ name: `${trustyWeapon} Weapon`, page: 152, gearCategory: "weapons", gearType: trustyWeapon });
+            extraGear.push({ ...trustyWeaponData, name: `${trustyWeapon} Weapon`, page: 152 });
         } else {
             additionalHistory = rollDistinctHistory(data, homeland.name, history, streams.quirkChoices);
             selections.push({ label: "Weary Path", value: `Walker of Two Paths / ${additionalHistory.name}`, page: additionalHistory.page });
@@ -468,9 +622,25 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     const gear = [
         ...sample(history.gear, 2, streams.gear),
         ...extraGear,
-        { name: "Functional Outfit", page: 172 },
-        { name: "Standard Weapon", page: 152, gearCategory: "weapons", gearType: "Standard" },
+        data.shopItems.find((item) => item.name === "Functional Outfit"),
+        data.shopItems.find((item) => item.name === "Standard Weapon"),
     ].map((item) => evaluateGear(item, calling, sizeRule));
+
+    const baseInventory = sizeRule.inventory + (species.inventoryBonus || 0) + (calling.inventoryBonus || 0);
+    const shopping = rollPurchasedGear(data, gearBudgetCoins, gear, calling, sizeRule, baseInventory, rolls.coins, currencyWeightEnabled, streams.purchasedGear);
+    const equippedGear = equipOutfit(gear, shopping.gear, streams.outfit);
+    const equippedOutfit = [...gear, ...shopping.gear].find((item) => item.name === equippedGear.equippedOutfit && isOutfit(item));
+    const finalGear = equippedGear.gear;
+    const purchasedGear = equippedGear.purchasedGear;
+    const allGear = [...finalGear, ...purchasedGear];
+    const equippedOutfitSlotsTenths = equippedOutfit.slotTenths || 0;
+    const startingSlotsTenths = shopping.startingSlotsTenths - (gear.includes(equippedOutfit) ? equippedOutfitSlotsTenths : 0);
+    const purchasedSlotsTenths = shopping.purchasedSlotsTenths - (shopping.gear.includes(equippedOutfit) ? equippedOutfitSlotsTenths : 0);
+    const currency = currencySummary(rolls.coins, shopping.remainingStones, finalGear, currencyWeightEnabled);
+    const gearSlotHundredths = (startingSlotsTenths + purchasedSlotsTenths) * 10;
+    if (shopping.containerName) {
+        addModifier(modifiers, "combat", "inventory", shopping.containerName, shopping.capacityBonusTenths / 10, "gear");
+    }
 
     let defense = calling.defense + sizeRule.defense + (quirkAdjustment.defense || 0);
     if (quirkAdjustment.defense) addModifier(modifiers, "combat", "defense", quirk.name, quirkAdjustment.defense);
@@ -479,8 +649,8 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         modifiers.combat.defense = modifiers.combat.defense.filter((modifier) => modifier.kind !== "species");
         addModifier(modifiers, "combat", "defense", quirk.name, quirkAdjustment.defenseSet, "set");
     }
-    const armor = bestDefensiveGear(gear, "armor");
-    const shield = bestDefensiveGear(gear, "shields");
+    const armor = bestDefensiveGear(allGear, "armor");
+    const shield = bestDefensiveGear(allGear, "shields");
     if (calling.name === "Bruiser") {
         const armorBonus = armor?.defenseBonus || 0;
         if (armorBonus < 4) {
@@ -508,6 +678,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     return {
         seeds,
         contentMode,
+        currencyWeightEnabled: Boolean(currencyWeightEnabled),
         name: rolledName.name,
         nameTable: rolledName.table,
         rank: 1,
@@ -551,7 +722,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
             hearts: calling.hearts + (species.name === "Gruun" ? 1 : 0) + (quirkAdjustment.hearts || 0),
             defense,
             speed,
-            inventory: sizeRule.inventory + (species.inventoryBonus || 0) + (calling.inventoryBonus || 0),
+            inventory: baseInventory + shopping.capacityBonusTenths / 10,
         },
         allegiance: allegiance.label,
         abilities: {
@@ -559,8 +730,112 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
             species: data.speciesAbilities[species.name],
         },
         selections,
-        gear,
+        gear: finalGear,
+        purchasedGear,
+        equippedOutfit: equippedGear.equippedOutfit,
+        shopping: {
+            budgetCoins: shopping.budgetCoins,
+            budgetStones: shopping.budgetStones,
+            spentStones: shopping.spentStones,
+            remainingStones: shopping.remainingStones,
+            totalCurrencyStones: currency.totalStones,
+            currencySlotHundredths: currency.slotHundredths,
+            startingSlotsTenths,
+            purchasedSlotsTenths,
+            gearSlotHundredths,
+            usedSlotHundredths: gearSlotHundredths + currency.slotHundredths,
+            usedSlotsTenths: (gearSlotHundredths + currency.slotHundredths) / 10,
+            capacityTenths: baseInventory * 10 + shopping.capacityBonusTenths,
+        },
         coins: rolls.coins,
+    };
+}
+
+export function removeGearItem(character, section, index) {
+    if (!['gear', 'purchasedGear'].includes(section)) throw new RangeError(`Unknown gear section: ${section}`);
+    if (!Number.isInteger(index) || index < 0 || index >= character[section].length) {
+        throw new RangeError(`No ${section} item at index ${index}`);
+    }
+
+    const gear = section === "gear" ? character.gear.filter((_, itemIndex) => itemIndex !== index) : character.gear;
+    const purchasedGear = section === "purchasedGear"
+        ? character.purchasedGear.filter((_, itemIndex) => itemIndex !== index)
+        : character.purchasedGear;
+    const equippedGear = equipOutfit(gear, purchasedGear, seededRandom(character.seeds.outfit));
+    const allGear = [...equippedGear.gear, ...equippedGear.purchasedGear];
+    const startingSlotsTenths = sumGearValue(equippedGear.gear.filter((item) => !item.equipped), "slotTenths");
+    const purchasedSlotsTenths = sumGearValue(equippedGear.purchasedGear.filter((item) => !item.equipped), "slotTenths");
+    const spentStones = sumGearValue(equippedGear.purchasedGear, "costStones");
+    const remainingStones = character.shopping.budgetStones - spentStones;
+    const currency = currencySummary(character.coins, remainingStones, equippedGear.gear, character.currencyWeightEnabled);
+    const gearSlotHundredths = (startingSlotsTenths + purchasedSlotsTenths) * 10;
+
+    const inventoryModifiers = character.modifiers.combat.inventory.filter((modifier) => modifier.kind !== "gear");
+    const previousContainerBonus = character.modifiers.combat.inventory
+        .filter((modifier) => modifier.kind === "gear")
+        .reduce((total, modifier) => total + modifier.amount, 0);
+    const baseInventory = character.combat.inventory - previousContainerBonus;
+    const factotumPack = inventoryModifiers.some((modifier) => modifier.source === "Factotum Pack");
+    const activeContainer = factotumPack
+        ? null
+        : allGear.filter((item) => item.inventoryBonusTenths)
+            .sort((left, right) => right.inventoryBonusTenths - left.inventoryBonusTenths)[0] || null;
+    if (activeContainer) {
+        inventoryModifiers.push({ source: activeContainer.name, amount: activeContainer.inventoryBonusTenths / 10, kind: "gear" });
+    }
+
+    const oldGearDefense = character.modifiers.combat.defense.filter((modifier) => modifier.kind === "gear");
+    const oldBrazenDefense = character.modifiers.combat.defense.find((modifier) => modifier.source === "Brazen Defense");
+    const defenseModifiers = character.modifiers.combat.defense
+        .filter((modifier) => modifier.kind !== "gear" && modifier.source !== "Brazen Defense");
+    let defense = character.combat.defense
+        - oldGearDefense.reduce((total, modifier) => total + modifier.amount, 0)
+        - (oldBrazenDefense?.amount || 0);
+    const armor = bestDefensiveGear(allGear, "armor");
+    const shield = bestDefensiveGear(allGear, "shields");
+    const usesBrazenDefense = character.calling.name === "Bruiser" && (armor?.defenseBonus || 0) < 4;
+    if (usesBrazenDefense) {
+        defense += 4;
+        defenseModifiers.push({ source: "Brazen Defense", amount: 4, kind: "ability" });
+    }
+    for (const defensiveGear of [armor, shield].filter(Boolean)) {
+        if (defensiveGear === armor && usesBrazenDefense) continue;
+        defense += defensiveGear.defenseBonus;
+        defenseModifiers.push({ source: defensiveGear.name, amount: defensiveGear.defenseBonus, kind: "gear" });
+    }
+
+    const capacityTenths = baseInventory * 10 + (activeContainer?.inventoryBonusTenths || 0);
+    return {
+        ...character,
+        gear: equippedGear.gear,
+        purchasedGear: equippedGear.purchasedGear,
+        equippedOutfit: equippedGear.equippedOutfit,
+        modifiers: {
+            ...character.modifiers,
+            combat: {
+                ...character.modifiers.combat,
+                defense: defenseModifiers,
+                inventory: inventoryModifiers,
+            },
+        },
+        combat: {
+            ...character.combat,
+            defense,
+            inventory: capacityTenths / 10,
+        },
+        shopping: {
+            ...character.shopping,
+            spentStones,
+            remainingStones,
+            totalCurrencyStones: currency.totalStones,
+            currencySlotHundredths: currency.slotHundredths,
+            startingSlotsTenths,
+            purchasedSlotsTenths,
+            gearSlotHundredths,
+            usedSlotHundredths: gearSlotHundredths + currency.slotHundredths,
+            usedSlotsTenths: (gearSlotHundredths + currency.slotHundredths) / 10,
+            capacityTenths,
+        },
     };
 }
 
@@ -576,6 +851,7 @@ function componentSignature(character, target) {
         quirk: character.quirk.name,
         choices: character.selections.map((selection) => `${selection.label}:${selection.value}`).join("|"),
         gear: character.gear.map((item) => `${item.option || 0}:${item.name}`).join("|"),
+        purchasedGear: character.purchasedGear.map((item) => `${item.name}:${item.quantity}`).join("|"),
         coins: character.coins,
     };
     return JSON.stringify(signatures[target]);
@@ -589,13 +865,13 @@ export function rerollCharacter(data, character, target, random = Math.random) {
     for (let attempt = 0; attempt < 20; attempt += 1) {
         const seeds = { ...character.seeds };
         dependencies.forEach((key) => { seeds[key] = createSeed(random); });
-        nextCharacter = rollCharacter(data, random, seeds, character.contentMode);
+        nextCharacter = rollCharacter(data, random, seeds, character.contentMode, character.shopping.budgetCoins, character.currencyWeightEnabled);
         if (componentSignature(nextCharacter, target) !== previousSignature) break;
     }
     return nextCharacter;
 }
 
-export function rollCharacters(data, count, random = Math.random, contentMode = "core") {
+export function rollCharacters(data, count, random = Math.random, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false) {
     const safeCount = Math.max(1, Math.min(12, Math.trunc(Number(count)) || 1));
-    return Array.from({ length: safeCount }, () => rollCharacter(data, random, {}, contentMode));
+    return Array.from({ length: safeCount }, () => rollCharacter(data, random, {}, contentMode, gearBudgetCoins, currencyWeightEnabled));
 }

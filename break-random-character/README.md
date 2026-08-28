@@ -17,6 +17,35 @@ rest of the site until it is ready to be linked publicly.
   evenly weighted. Unterkin use their fixed Homeland, unique Histories, and
   compatible core/variant Calling families.
 - Roll Calling, Species, Homeland, History, Traits, Quirk, and starting Coins.
+- Optionally assign each character a Gear Budget in Coins. Blank or `0` leaves
+  purchasing disabled. Positive budgets buy a legal, category-balanced random
+  selection without spending the character's rolled starting Coins.
+- Constrain purchased gear by both its price and the character's remaining
+  Inventory capacity. A character can wear only one Backpack, Traveler's Bag,
+  or Factotum Pack; Factotums therefore cannot add another container.
+- Limit purchases to eight displayed item types and sample across categories.
+  Purchased Outfits, Armor, and Shields are capped at one type, Weapons at two,
+  and other categories at small category-specific limits. Granted Armor or a
+  Shield blocks purchasing another of that category.
+- Consolidate stackable supplies such as Rations, Treats, Potions, and Grenades
+  into quantities on one line while charging their full combined price and
+  Inventory cost.
+- Display currency and slot costs for Starting and purchased gear. Starting
+  Coins remain in the Starting Gear section; the summary shows only total
+  currency and used versus available Inventory. Values use Gems, Coins, and
+  Stones rather than decimal Coins.
+- Optionally count currency toward Inventory, disabled by default. Total wealth
+  is first expressed in canonical Gems, Coins, and Stones; each displayed unit
+  occupies `0.01 slot`, following the rule that 100 units of any currency fill
+  1 Slot. The currency contribution appears beneath Total Currency and is
+  included in Inventory Used.
+- Treat literal History rewards such as `50 Coins` and `Gem x1` as carried
+  wealth rather than item prices. They contribute to both Total Currency and,
+  when enabled, currency Inventory weight.
+- Randomly equip one Outfit from all granted and purchased Outfits, preferring
+  non-Functional options whenever any are available. The worn Outfit is marked
+  `Eq.` and uses `0 slots`; every other Outfit retains its carried Inventory
+  cost.
 - Add a species-matched name from the official BREAK!! Random Name Tables post.
 - Apply Calling, Species Size, Species, Trait, and Quirk value adjustments.
 - Label Species Size contributions to Aptitudes, Defense, and base Inventory
@@ -61,8 +90,9 @@ the canonical Species labels remain unchanged in the detailed field. The local
 [Levi Lagoon](https://levilagoon.carrd.co/). Expanded table data links to the
 official 2026 Expanded Roll Tables post.
 
-The initial version does not select the physical form of the universal Standard
-Weapon and does not spend Starting Coins. Those belong in a later gear phase.
+The generator does not select the physical form of the universal Standard
+Weapon. Optional gear purchases use their own budget and never spend Starting
+Coins.
 
 Some choices have no finite rules table and depend on the character concept or
 party. These are marked `Player-defined` or `Team-dependent` rather than being
@@ -72,6 +102,11 @@ ward, Peculiar Taste nourishment, and Sneezles allergen.
 ## Card interactions
 
 - Click a rerollable value or its circular-arrow control to replace that result.
+- Hover a Starting or Purchased Gear item to change its diamond bullet into a
+  remove control. Removing Starting Gear releases its carried Inventory Slots
+  without changing currency. Removing Purchased Gear also returns its full
+  cost, including all units in a stacked line, to total currency. Rerolling the
+  corresponding Gear section restores a newly generated list.
 - Calling rerolls rebuild base values, Starting Abilities, Calling-owned
   choices, and gear restrictions while preserving Species choices.
 - Species rerolls also rebuild the name, size, Homeland/History when required,
@@ -85,6 +120,9 @@ ward, Peculiar Taste nourishment, and Sneezles allergen.
   results do not show a reroll control.
 - Trait, Quirk, resolved-choice, gear, and coin controls preserve unrelated
   results while recalculating their dependent values.
+- Purchased gear has its own reroll control. Rerolling starting Coins preserves
+  purchases; Calling, Species, History, Quirk, and starting-gear changes
+  recalculate purchase legality and capacity from the preserved purchase seed.
 - Use `Copy Image` to copy a high-resolution PNG to the system clipboard.
 
 ## Non-commercial license boundary
@@ -97,6 +135,11 @@ result.
 `build_data.py` reads the local transcriptions in `../questline-vtt-tools/` but
 deliberately excludes description, body, flavor, and notes fields from
 `data.json`. Treat a failing public-data validation as a release blocker.
+
+Shop prices are stored as integer Stones (`100 Stones = 1 Coin`) and Inventory
+costs as tenths of a slot. This preserves the book's fractional prices and slot
+costs without floating-point comparisons. Only names, categories, costs, slot
+values, combat classifications, and page references are exported.
 
 ## Files
 

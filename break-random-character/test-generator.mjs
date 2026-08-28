@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { rerollCharacter, rollCharacters } from "./generator.mjs";
+import { removeGearItem, rerollCharacter, rollCharacter, rollCharacters } from "./generator.mjs";
 
 
 const data = JSON.parse(await readFile(new URL("./data.json", import.meta.url), "utf8"));
@@ -9,6 +9,35 @@ assert.ok(hereticAllowance.weapons.includes("Lash"));
 assert.ok(!hereticAllowance.weapons.includes("Master"));
 assert.ok(data.sizeRules.Small.restricted.weapons.includes("Mighty"));
 assert.ok(data.sizeRules.Small.restricted.weapons.includes("Arc"));
+assert.ok(data.shopItems.length > 60);
+const publicShopKeys = new Set(["name", "page", "category", "costStones", "slotTenths", "stackLimit", "inventoryBonusTenths", "gearCategory", "gearType", "defenseBonus"]);
+for (const item of data.shopItems) {
+    assert.ok(Object.keys(item).every((key) => publicShopKeys.has(key)));
+    assert.equal(typeof item.name, "string");
+    assert.ok(Number.isInteger(item.costStones));
+    assert.ok(Number.isInteger(item.slotTenths));
+}
+const allHistories = [...Object.values(data.histories).flat(), ...data.neridianHistories, ...data.unterkinHistories];
+for (const history of allHistories) {
+    assert.ok(history.gear.every((item) => Object.hasOwn(item, "costStones")), `${history.name} should expose every starting cost`);
+}
+const startingItem = (name) => allHistories.flatMap((history) => history.gear).find((item) => item.name === name);
+assert.equal(startingItem("Basic Potion x2").costStones, 2000);
+assert.equal(startingItem("Treats x10").costStones, 30);
+assert.equal(startingItem("Follower: Custrel").costRate, "per day");
+assert.equal(startingItem("Tattered Outfit").costStones, 0);
+assert.equal(startingItem("Other World Pocket Device").costStones, null);
+assert.equal(startingItem("50 Coins").currencyStones, 5000);
+assert.equal(startingItem("Gem x1").currencyStones, 10000);
+
+function currencyUnitCount(totalStones) {
+    const gems = Math.floor(totalStones / 10000);
+    const afterGems = totalStones % 10000;
+    return gems + Math.floor(afterGems / 100) + afterGems % 100;
+}
+assert.equal(currencyUnitCount(10000), 1);
+assert.equal(currencyUnitCount(5000), 50);
+assert.equal(currencyUnitCount(10068), 69);
 
 function seededRandom(seed) {
     let state = seed >>> 0;
@@ -24,6 +53,140 @@ assert.equal(rollCharacters(data, 99, seededRandom(1)).length, 12);
 assert.equal(rollCharacters(data, 0, seededRandom(1)).length, 1);
 
 const baseCharacter = rollCharacters(data, 1, seededRandom(0xC0FFEE))[0];
+assert.deepEqual(baseCharacter.purchasedGear, []);
+assert.equal(baseCharacter.shopping.budgetCoins, 0);
+assert.equal(baseCharacter.shopping.spentStones, 0);
+assert.equal(baseCharacter.currencyWeightEnabled, false);
+assert.equal(baseCharacter.shopping.currencySlotHundredths, 0);
+
+const weightedBaseCharacter = rollCharacter(data, seededRandom(0xC0FFEE), baseCharacter.seeds, baseCharacter.contentMode, 0, true);
+const weightedBaseCurrency = weightedBaseCharacter.coins * 100
+    + weightedBaseCharacter.gear.reduce((total, item) => total + (item.currencyStones || 0), 0);
+assert.equal(weightedBaseCharacter.currencyWeightEnabled, true);
+assert.equal(weightedBaseCharacter.shopping.totalCurrencyStones, weightedBaseCurrency);
+assert.equal(weightedBaseCharacter.shopping.currencySlotHundredths, currencyUnitCount(weightedBaseCurrency));
+assert.equal(weightedBaseCharacter.shopping.usedSlotHundredths,
+    [...weightedBaseCharacter.gear, ...weightedBaseCharacter.purchasedGear]
+        .reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths * 10), 0)
+        + weightedBaseCharacter.shopping.currencySlotHundredths);
+const rerolledWeightedCoins = rerollCharacter(data, weightedBaseCharacter, "coins", seededRandom(0xC01A));
+assert.equal(rerolledWeightedCoins.currencyWeightEnabled, true);
+assert.equal(rerolledWeightedCoins.shopping.currencySlotHundredths, currencyUnitCount(rerolledWeightedCoins.shopping.totalCurrencyStones));
+
+const budgetCharacter = rollCharacter(data, seededRandom(0xB0D6E7), baseCharacter.seeds, baseCharacter.contentMode, 50);
+assert.equal(budgetCharacter.name, baseCharacter.name);
+assert.equal(budgetCharacter.coins, baseCharacter.coins);
+assert.deepEqual(budgetCharacter.gear, baseCharacter.gear);
+assert.equal(budgetCharacter.shopping.budgetCoins, 50);
+assert.ok(budgetCharacter.purchasedGear.length > 0);
+assert.ok(budgetCharacter.shopping.spentStones <= budgetCharacter.shopping.budgetStones);
+assert.equal(budgetCharacter.shopping.remainingStones, budgetCharacter.shopping.budgetStones - budgetCharacter.shopping.spentStones);
+assert.ok(budgetCharacter.shopping.usedSlotsTenths <= budgetCharacter.shopping.capacityTenths);
+assert.equal(new Set(budgetCharacter.purchasedGear.map((item) => item.name)).size, budgetCharacter.purchasedGear.length);
+assert.ok(budgetCharacter.purchasedGear.every((item) => !item.restricted));
+assert.equal(budgetCharacter.shopping.purchasedSlotsTenths, budgetCharacter.purchasedGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+
+const rerolledPurchases = rerollCharacter(data, budgetCharacter, "purchasedGear", seededRandom(0x5A0F));
+assert.notDeepEqual(rerolledPurchases.purchasedGear.map((item) => item.name), budgetCharacter.purchasedGear.map((item) => item.name));
+assert.equal(rerolledPurchases.name, budgetCharacter.name);
+assert.equal(rerolledPurchases.coins, budgetCharacter.coins);
+assert.deepEqual(rerolledPurchases.gear, budgetCharacter.gear);
+assert.equal(rerolledPurchases.shopping.budgetCoins, 50);
+
+const removableStartingIndex = budgetCharacter.gear.findIndex((item) => !item.equipped && !item.inventoryBonusTenths);
+const removedStartingItem = budgetCharacter.gear[removableStartingIndex];
+const withoutStartingItem = removeGearItem(budgetCharacter, "gear", removableStartingIndex);
+assert.equal(withoutStartingItem.gear.length, budgetCharacter.gear.length - 1);
+assert.equal(withoutStartingItem.shopping.remainingStones, budgetCharacter.shopping.remainingStones);
+assert.equal(withoutStartingItem.shopping.usedSlotsTenths, budgetCharacter.shopping.usedSlotsTenths - removedStartingItem.slotTenths);
+assert.equal(withoutStartingItem.coins, budgetCharacter.coins);
+
+const removablePurchasedIndex = budgetCharacter.purchasedGear.findIndex((item) => !item.equipped && !item.inventoryBonusTenths);
+const removedPurchasedItem = budgetCharacter.purchasedGear[removablePurchasedIndex];
+const withoutPurchasedItem = removeGearItem(budgetCharacter, "purchasedGear", removablePurchasedIndex);
+assert.equal(withoutPurchasedItem.purchasedGear.length, budgetCharacter.purchasedGear.length - 1);
+assert.equal(withoutPurchasedItem.shopping.remainingStones, budgetCharacter.shopping.remainingStones + removedPurchasedItem.costStones);
+assert.equal(withoutPurchasedItem.shopping.spentStones, budgetCharacter.shopping.spentStones - removedPurchasedItem.costStones);
+assert.equal(withoutPurchasedItem.shopping.usedSlotsTenths, budgetCharacter.shopping.usedSlotsTenths - removedPurchasedItem.slotTenths);
+
+const equippedSection = budgetCharacter.gear.some((item) => item.equipped) ? "gear" : "purchasedGear";
+const equippedIndex = budgetCharacter[equippedSection].findIndex((item) => item.equipped);
+const withoutEquippedOutfit = removeGearItem(budgetCharacter, equippedSection, equippedIndex);
+const remainingEquipped = [...withoutEquippedOutfit.gear, ...withoutEquippedOutfit.purchasedGear].filter((item) => item.equipped);
+assert.equal(remainingEquipped.length, 1);
+assert.equal(remainingEquipped[0].name, withoutEquippedOutfit.equippedOutfit);
+
+let defensivePurchaseCharacter;
+let containerPurchaseCharacter;
+let stackedPurchaseCharacter;
+for (let seed = 1; seed <= 5000 && (!defensivePurchaseCharacter || !containerPurchaseCharacter || !stackedPurchaseCharacter); seed += 1) {
+    const candidate = rollCharacter(data, seededRandom(seed), {}, "core", 100);
+    defensivePurchaseCharacter ||= candidate.purchasedGear.some((item) => item.gearCategory === "armor" || item.gearCategory === "shields") ? candidate : null;
+    containerPurchaseCharacter ||= candidate.purchasedGear.some((item) => item.inventoryBonusTenths) ? candidate : null;
+    stackedPurchaseCharacter ||= candidate.purchasedGear.some((item) => item.quantity > 1) ? candidate : null;
+}
+assert.ok(defensivePurchaseCharacter && containerPurchaseCharacter && stackedPurchaseCharacter);
+const defensiveIndex = defensivePurchaseCharacter.purchasedGear.findIndex((item) => item.gearCategory === "armor" || item.gearCategory === "shields");
+const defensiveItem = defensivePurchaseCharacter.purchasedGear[defensiveIndex];
+const withoutDefensiveItem = removeGearItem(defensivePurchaseCharacter, "purchasedGear", defensiveIndex);
+assert.equal(withoutDefensiveItem.modifiers.combat.defense.some((modifier) => modifier.kind === "gear" && modifier.source === defensiveItem.name), false);
+const containerIndex = containerPurchaseCharacter.purchasedGear.findIndex((item) => item.inventoryBonusTenths);
+const containerItem = containerPurchaseCharacter.purchasedGear[containerIndex];
+const withoutContainer = removeGearItem(containerPurchaseCharacter, "purchasedGear", containerIndex);
+assert.equal(withoutContainer.combat.inventory, containerPurchaseCharacter.combat.inventory - containerItem.inventoryBonusTenths / 10);
+assert.equal(withoutContainer.modifiers.combat.inventory.some((modifier) => modifier.source === containerItem.name), false);
+const stackedIndex = stackedPurchaseCharacter.purchasedGear.findIndex((item) => item.quantity > 1);
+const stackedItem = stackedPurchaseCharacter.purchasedGear[stackedIndex];
+const withoutStack = removeGearItem(stackedPurchaseCharacter, "purchasedGear", stackedIndex);
+assert.equal(withoutStack.shopping.remainingStones, stackedPurchaseCharacter.shopping.remainingStones + stackedItem.unitCostStones * stackedItem.quantity);
+assert.throws(() => removeGearItem(budgetCharacter, "gear", -1), RangeError);
+assert.throws(() => removeGearItem(budgetCharacter, "unknown", 0), RangeError);
+
+let weightedPurchaseCharacter;
+for (let seed = 1; seed <= 1000 && !weightedPurchaseCharacter; seed += 1) {
+    const candidate = rollCharacter(data, seededRandom(seed), {}, "core", 100, true);
+    if (candidate.purchasedGear.length) weightedPurchaseCharacter = candidate;
+}
+assert.ok(weightedPurchaseCharacter);
+const weightedPurchasedIndex = weightedPurchaseCharacter.purchasedGear.findIndex((item) => !item.inventoryBonusTenths);
+const weightedPurchasedItem = weightedPurchaseCharacter.purchasedGear[weightedPurchasedIndex];
+const weightedAfterRefund = removeGearItem(weightedPurchaseCharacter, "purchasedGear", weightedPurchasedIndex);
+assert.equal(weightedAfterRefund.shopping.totalCurrencyStones,
+    weightedPurchaseCharacter.shopping.totalCurrencyStones + weightedPurchasedItem.costStones);
+assert.equal(weightedAfterRefund.shopping.currencySlotHundredths,
+    currencyUnitCount(weightedAfterRefund.shopping.totalCurrencyStones));
+
+let literalCurrencyCharacter;
+for (let seed = 1; seed <= 5000 && !literalCurrencyCharacter; seed += 1) {
+    const candidate = rollCharacter(data, seededRandom(seed), {}, "core", 0, true);
+    if (candidate.gear.some((item) => item.currencyStones)) literalCurrencyCharacter = candidate;
+}
+assert.ok(literalCurrencyCharacter);
+const literalCurrencyIndex = literalCurrencyCharacter.gear.findIndex((item) => item.currencyStones);
+const literalCurrencyItem = literalCurrencyCharacter.gear[literalCurrencyIndex];
+const withoutLiteralCurrency = removeGearItem(literalCurrencyCharacter, "gear", literalCurrencyIndex);
+assert.equal(withoutLiteralCurrency.shopping.remainingStones, literalCurrencyCharacter.shopping.remainingStones);
+assert.equal(withoutLiteralCurrency.shopping.totalCurrencyStones,
+    literalCurrencyCharacter.shopping.totalCurrencyStones - literalCurrencyItem.currencyStones);
+assert.equal(withoutLiteralCurrency.shopping.currencySlotHundredths,
+    currencyUnitCount(withoutLiteralCurrency.shopping.totalCurrencyStones));
+
+const purchaseCategoryLimits = {
+    "Weapons": 2,
+    "Armor": 1,
+    "Shields": 1,
+    "Outfits": 1,
+    "Wearable Accessories": 2,
+    "Wayfinding": 2,
+    "Illumination": 1,
+    "Specialist's Kits": 1,
+    "Books": 2,
+    "Consumables": 3,
+    "Combustibles & Chemicals": 2,
+    "Miscellaneous": 2,
+    "Curiosities, Artifacts & Gadgets": 2,
+};
+
 const rerollCases = {
     name: ["calling", "species", "homeland", "history", "traits", "quirk", "gear", "coins"],
     calling: ["name", "species", "homeland", "history", "traits", "quirk", "gear", "coins"],
@@ -133,6 +296,7 @@ for (let seed = 1; seed <= 5000; seed += 1) {
     assert.equal(character.traits.length, 3);
     assert.ok(character.modifiers);
     assert.ok(character.gear.length >= 4);
+    assert.ok(character.gear.every((item) => Object.hasOwn(item, "costStones")));
     assert.notEqual(character.gear[0].option, character.gear[1].option);
     assert.equal(new Set(character.languages).size, character.languages.length);
     assert.ok(character.abilities.calling.length >= 3);
@@ -163,7 +327,10 @@ for (let seed = 1; seed <= 5000; seed += 1) {
     if (character.species.name === "Dwarf") {
         assert.ok(character.modifiers.combat.inventory.some((modifier) => modifier.source === "Sturdy" && modifier.amount === 2));
     }
-    assert.equal(character.combat.inventory, data.sizeRules[character.size.name].inventory + (character.species.name === "Dwarf" ? 2 : 0) + expectedCallingInventory);
+    const gearInventoryBonus = expectedCallingInventory
+        ? 0
+        : Math.max(0, ...[...character.gear, ...character.purchasedGear].map((item) => (item.inventoryBonusTenths || 0) / 10));
+    assert.equal(character.combat.inventory, data.sizeRules[character.size.name].inventory + (character.species.name === "Dwarf" ? 2 : 0) + expectedCallingInventory + gearInventoryBonus);
     const speciesDefenseModifier = character.modifiers.combat.defense.find((modifier) => modifier.kind === "species");
     if (data.quirkAdjustments[character.quirk.name]?.defenseSet !== undefined || !data.sizeRules[character.size.name].defense) {
         assert.equal(speciesDefenseModifier, undefined);
@@ -246,6 +413,69 @@ for (let seed = 1; seed <= 5000; seed += 1) {
         data.species.find((entry) => entry.name === character.species.name).quirkTable
     ].map((entry) => entry.name);
     assert.ok(allowedCategories.includes(character.quirk.category));
+}
+
+let sawStackedPurchase = false;
+let sawMultipleWeapons = false;
+let sawPurchasedOutfitEquipped = false;
+let sawStartingOutfitEquipped = false;
+for (let seed = 1; seed <= 1000; seed += 1) {
+    const [character] = rollCharacters(data, 1, seededRandom(seed), seed % 2 ? "core" : "expanded", 75);
+    assert.equal(character.shopping.budgetCoins, 75);
+    assert.ok(character.shopping.spentStones <= 7500);
+    assert.ok(character.shopping.usedSlotsTenths <= character.shopping.capacityTenths);
+    const allGear = [...character.gear, ...character.purchasedGear];
+    const equipped = allGear.filter((item) => item.equipped);
+    assert.equal(equipped.length, 1);
+    assert.equal(equipped[0].name, character.equippedOutfit);
+    assert.ok(equipped[0].category === "Outfits" || equipped[0].name === "Costume" || equipped[0].name.includes("Outfit"));
+    const uniqueOutfits = allGear.filter((item) => item.name !== "Functional Outfit"
+        && (item.category === "Outfits" || item.name === "Costume" || item.name.includes("Outfit")));
+    if (uniqueOutfits.length) assert.notEqual(character.equippedOutfit, "Functional Outfit");
+    assert.equal(character.shopping.usedSlotsTenths, allGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+    assert.equal(character.shopping.startingSlotsTenths, character.gear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+    assert.equal(character.shopping.purchasedSlotsTenths, character.purchasedGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+    sawPurchasedOutfitEquipped ||= character.purchasedGear.some((item) => item.equipped);
+    sawStartingOutfitEquipped ||= character.gear.some((item) => item.equipped);
+    assert.equal(new Set(character.purchasedGear.map((item) => item.name)).size, character.purchasedGear.length);
+    assert.ok(character.purchasedGear.every((item) => !item.restricted));
+    assert.ok(character.purchasedGear.length <= 8);
+    const categoryCounts = character.purchasedGear.reduce((counts, item) => ({
+        ...counts,
+        [item.category]: (counts[item.category] || 0) + 1,
+    }), {});
+    for (const [category, count] of Object.entries(categoryCounts)) {
+        assert.ok(count <= purchaseCategoryLimits[category]);
+    }
+    sawMultipleWeapons ||= (categoryCounts.Weapons || 0) > 1;
+    if (character.gear.some((item) => item.gearCategory === "armor")) {
+        assert.equal(character.purchasedGear.some((item) => item.category === "Armor"), false);
+    }
+    if (character.gear.some((item) => item.gearCategory === "shields")) {
+        assert.equal(character.purchasedGear.some((item) => item.category === "Shields"), false);
+    }
+    for (const item of character.purchasedGear) {
+        assert.ok(item.quantity >= 1 && item.quantity <= (data.shopItems.find((shopItem) => shopItem.name === item.name).stackLimit || 1));
+        assert.equal(item.costStones, item.unitCostStones * item.quantity);
+        assert.equal(item.slotTenths, item.unitSlotTenths * item.quantity);
+        sawStackedPurchase ||= item.quantity > 1;
+    }
+    const carriedContainers = [...character.gear, ...character.purchasedGear].filter((item) => item.inventoryBonusTenths);
+    if (character.calling.name === "Factotum") assert.equal(character.purchasedGear.some((item) => item.inventoryBonusTenths), false);
+    assert.ok(character.calling.name === "Factotum" || carriedContainers.length <= 1);
+}
+assert.equal(sawStackedPurchase, true);
+assert.equal(sawMultipleWeapons, true);
+assert.equal(sawPurchasedOutfitEquipped, true);
+assert.equal(sawStartingOutfitEquipped, true);
+
+for (let seed = 1; seed <= 1000; seed += 1) {
+    const [character] = rollCharacters(data, 1, seededRandom(seed), seed % 2 ? "core" : "expanded", 100, true);
+    const gearSlotHundredths = [...character.gear, ...character.purchasedGear]
+        .reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths * 10), 0);
+    assert.equal(character.shopping.currencySlotHundredths, currencyUnitCount(character.shopping.totalCurrencyStones));
+    assert.equal(character.shopping.usedSlotHundredths, gearSlotHundredths + character.shopping.currencySlotHundredths);
+    assert.ok(character.shopping.usedSlotHundredths <= character.shopping.capacityTenths * 10);
 }
 
 assert.equal(seen.callings.size, data.callings.length);
