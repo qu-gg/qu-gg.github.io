@@ -60,6 +60,15 @@ function chooseByRange(entries, roll) {
     return result;
 }
 
+function rollByRange(entries, random) {
+    for (let attempt = 0; attempt < 100; attempt += 1) {
+        const roll = rollDie(20, random);
+        const entry = entries.find((candidate) => roll >= candidate.range[0] && roll <= candidate.range[1]);
+        if (entry) return { roll, entry };
+    }
+    throw new RangeError("No accepted table result after 100 rolls");
+}
+
 function sample(values, count, random) {
     const remaining = [...values];
     const selected = [];
@@ -91,7 +100,11 @@ function addModifier(modifiers, group, key, source, amount, kind = "delta") {
 function evaluateGear(gear, calling, sizeRule) {
     const restrictions = [];
     if (gear.gearCategory && !calling.gearAllowance[gear.gearCategory].includes(gear.gearType)) {
-        restrictions.push({ source: calling.name, page: calling.gearAllowancePage });
+        restrictions.push({
+            source: calling.name,
+            page: calling.gearAllowancePage,
+            sourceUrl: calling.gearAllowanceSourceUrl || (!calling.gearAllowancePage ? calling.sourceUrl : undefined),
+        });
     }
     if (gear.gearCategory && sizeRule.restricted[gear.gearCategory].includes(gear.gearType)) {
         restrictions.push({ source: `${sizeRule.name} Species`, page: sizeRule.page });
@@ -103,6 +116,20 @@ function bestDefensiveGear(gear, category) {
     return gear
         .filter((item) => item.gearCategory === category && item.defenseBonus !== undefined)
         .sort((left, right) => right.defenseBonus - left.defenseBonus)[0] || null;
+}
+
+function resolveAllegiance(calling, species, selections) {
+    let bright = species.name === "Promethean" ? 1 : 0;
+    let dark = species.name === "Tenebrate" || species.name === "Neridian" ? 1 : 0;
+    const henshinMotif = calling.name === "Henshin Hero"
+        ? selections.find((selection) => selection.label === "Allegiance Motif")?.value
+        : null;
+    if (henshinMotif === "Light") bright += 2;
+    if (henshinMotif === "Dark") dark += 2;
+    const parts = [];
+    if (bright) parts.push(`${bright} Bright`);
+    if (dark) parts.push(`${dark} Dark`);
+    return { bright, dark, label: parts.join(" / ") || "None" };
 }
 
 function traitAptitude(roll) {
@@ -144,6 +171,48 @@ function resolveNestedChoices(data, calling, species, quirk, streams) {
         choices.push({ label: "Favored Weapon", value: choose(data.choices.weaponTypes, streams.callingChoices), page: 29 });
     }
 
+    if (calling.name === "Bright-Heart Paladin") {
+        choices.push({
+            label: "Holy Sword",
+            value: `${choose(data.choices.bladeWeaponTypes, streams.callingChoices)} / ${choose(data.choices.brightBladeMaterials, streams.callingChoices)}`,
+            sourceUrl: calling.sourceUrl,
+        });
+        choices.push({ label: "Bonded Mount", value: "Guardian Animal / Mount", sourceUrl: calling.sourceUrl });
+    }
+
+    if (calling.name === "Haunted Knight") {
+        choices.push({
+            label: "Wrath's Blade",
+            value: `${choose(data.choices.bladeWeaponTypes, streams.callingChoices)} / ${choose(data.choices.darkBladeMaterials, streams.callingChoices)}`,
+            sourceUrl: calling.sourceUrl,
+        });
+    }
+
+    if (calling.name === "Balladeer") {
+        choices.push({ label: "Focus Instrument", value: "Player-defined", sourceUrl: calling.sourceUrl, rerollable: false });
+        choices.push({ label: "Leitmotif", value: "Player-defined", sourceUrl: calling.sourceUrl, rerollable: false });
+    }
+
+    if (calling.name === "Henshin Hero") {
+        const motifCount = rollDie(3, streams.callingChoices);
+        const motifs = sample(data.choices.henshinMotifs, motifCount, streams.callingChoices);
+        const allegianceMotif = choose(data.choices.henshinAllegianceMotifs, streams.callingChoices);
+        const driverBenefits = sample(data.choices.henshinDriverBenefits, 2, streams.callingChoices);
+        choices.push({ label: "Heroic Motifs", value: motifs.join(" / "), sourceUrl: calling.sourceUrl });
+        choices.push({ label: "Allegiance Motif", value: allegianceMotif, sourceUrl: calling.sourceUrl });
+        choices.push({ label: "Driver Benefits", value: driverBenefits.join(" / "), sourceUrl: calling.sourceUrl });
+        if (driverBenefits.includes("Weapon")) {
+            choices.push({ label: "Driver Weapon", value: choose(data.choices.henshinDriverWeapons, streams.callingChoices), sourceUrl: calling.sourceUrl });
+        }
+        choices.push({ label: "Primary Form", value: choose(data.choices.henshinForms, streams.callingChoices), sourceUrl: calling.sourceUrl });
+        choices.push({ label: "Finisher Quality", value: choose(data.choices.henshinFinishers, streams.callingChoices), sourceUrl: calling.sourceUrl });
+        choices.push({ label: "Hero / Form / Finisher Names", value: "Player-defined", sourceUrl: calling.sourceUrl, rerollable: false });
+    }
+
+    if (species.sizeOptions) {
+        choices.push({ label: "Mundymutt Size", value: species.size, page: 403 });
+    }
+
     if (calling.name === "Battle Princess" || calling.name === "Murder Princess") {
         const bright = calling.name === "Battle Princess";
         choices.push({
@@ -163,6 +232,14 @@ function resolveNestedChoices(data, calling, species, quirk, streams) {
 
     if (species.name === "Tenebrate") {
         choices.push({ label: "Dark Gift", value: choose(data.choices.darkGifts, streams.speciesChoices), page: 207 });
+    }
+
+    if (species.fixedGift) {
+        choices.push({ label: "Gift", value: species.fixedGift, page: species.fixedGiftPage, rerollable: false });
+    }
+
+    if (species.name === "Unterkin") {
+        choices.push({ label: "Heart's Craft", value: choose(data.choices.craftingDisciplines, streams.speciesChoices), sourceUrl: species.sourceUrl });
     }
 
     if (species.name === "Elf") {
@@ -228,23 +305,41 @@ function resolveHomeland(data, species, languageRandom, rolls) {
             language: "Other Wording",
         };
     }
+    if (species.fixedHomeland) {
+        const homeland = data.homelands.find((entry) => entry.name === species.fixedHomeland);
+        return { homeland, language: choose(homeland.languages, languageRandom) };
+    }
     const homeland = chooseByRange(data.homelands, rolls.homeland);
     return { homeland, language: choose(homeland.languages, languageRandom) };
 }
 
-export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
+export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, contentMode = "core") {
     const seeds = createSeeds(random, suppliedSeeds);
     const streams = Object.fromEntries(SEED_KEYS.map((key) => [key, seededRandom(seeds[key])]));
+    const speciesResult = contentMode === "expanded"
+        ? rollByRange(data.expandedSpecies, streams.species)
+        : { roll: rollDie(20, streams.species), entry: null };
+    const speciesEntry = speciesResult.entry || chooseByRange(data.species, speciesResult.roll);
+    const callingTable = speciesEntry.compatibleCallings
+        ? data.expandedCallings.filter((calling) => speciesEntry.compatibleCallings.includes(calling.name))
+        : data.expandedCallings;
+    const callingResult = contentMode === "expanded"
+        ? rollByRange(callingTable, streams.calling)
+        : { roll: rollDie(20, streams.calling), entry: null };
     const rolls = {
-        calling: rollDie(20, streams.calling),
-        species: rollDie(20, streams.species),
+        calling: callingResult.roll,
+        species: speciesResult.roll,
     };
-    const calling = chooseByRange(data.callings, rolls.calling);
-    const species = chooseByRange(data.species, rolls.species);
+    const calling = callingResult.entry || chooseByRange(data.callings, rolls.calling);
+    const species = {
+        ...speciesEntry,
+        size: speciesEntry.sizeOptions ? choose(speciesEntry.sizeOptions, streams.speciesChoices) : speciesEntry.size,
+    };
     const rolledName = rollName(data, species, streams.name);
     rolls.name = rolledName.rolls;
     Object.assign(rolls, {
-        homeland: species.name === "Human, Dimensional Stray" ? null : rollDie(20, streams.homeland),
+        homeland: species.name === "Human, Dimensional Stray" || species.fixedHomeland ? null : rollDie(20, streams.homeland),
+        originPath: species.name === "Neridian" ? rollDie(2, streams.history) : null,
         history: rollDie(20, streams.history),
         positiveTraits: [rollDie(20, streams.traits), rollDie(20, streams.traits)],
         negativeTrait: rollDie(20, streams.traits),
@@ -253,17 +348,40 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
         coins: rollDie(20, streams.coins),
     });
 
-    const { homeland, language } = resolveHomeland(data, species, streams.language, rolls);
-    const history = chooseByRange(data.histories[homeland.name], rolls.history);
+    const useNeridianOrigin = species.name === "Neridian" && rolls.originPath === 1;
+    const neridianHistory = useNeridianOrigin ? chooseByRange(data.neridianHistories, rolls.history) : null;
+    const unterkinHistory = species.name === "Unterkin" ? chooseByRange(data.unterkinHistories, rolls.history) : null;
+    const homelandResult = resolveHomeland(data, species, streams.language, rolls);
+    const homeland = neridianHistory
+        ? data.homelands.find((entry) => entry.name === neridianHistory.homeland)
+        : homelandResult.homeland;
+    const language = neridianHistory ? choose(homeland.languages, streams.language) : homelandResult.language;
+    const history = unterkinHistory || neridianHistory || chooseByRange(data.histories[homeland.name], rolls.history);
     const quirkCategory = chooseByRange(data.quirkCategoryTables[species.quirkTable], rolls.quirkCategory);
     const quirk = chooseByRange(data.quirks[quirkCategory.name], rolls.quirk);
     const finalSize = resolveFinalSize(species, quirk);
     const sizeRule = { ...data.sizeRules[finalSize], name: finalSize };
-    const speciesSizeRule = data.sizeRules[species.size];
     const modifiers = {
         aptitudes: Object.fromEntries(data.choices.aptitudes.map((aptitude) => [aptitude, []])),
-        combat: { attack: [], hearts: [], defense: [], speed: [], inventory: [] },
+        combat: { attack: [], hearts: [], defense: [], speed: [], inventory: [], allegiance: [] },
     };
+
+    Object.entries(sizeRule.aptitudes).forEach(([aptitude, amount]) => {
+        addModifier(modifiers, "aptitudes", aptitude, `${finalSize} Species`, amount, "species");
+    });
+    if (sizeRule.defense) {
+        addModifier(modifiers, "combat", "defense", `${finalSize} Species`, sizeRule.defense, "species");
+    }
+    const sizeInventoryDelta = sizeRule.inventory - data.sizeRules.Medium.inventory;
+    if (sizeInventoryDelta) {
+        addModifier(modifiers, "combat", "inventory", `${finalSize} Species`, sizeInventoryDelta, "species");
+    }
+    if (species.inventoryBonus) {
+        addModifier(modifiers, "combat", "inventory", species.inventoryBonusSource || species.name, species.inventoryBonus, "ability");
+    }
+    if (calling.inventoryBonus) {
+        addModifier(modifiers, "combat", "inventory", calling.inventoryBonusSource || calling.name, calling.inventoryBonus, "ability");
+    }
 
     const aptitudes = { ...calling.aptitudes };
     const traitTouched = new Set();
@@ -282,6 +400,16 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
     applyAptitudes(aptitudes, sizeRule.aptitudes);
 
     const selections = resolveNestedChoices(data, calling, species, quirk, streams);
+    const allegiance = resolveAllegiance(calling, species, selections);
+    const allegianceGifts = [];
+    for (let index = 0; index < Math.floor(allegiance.bright / 3); index += 1) {
+        allegianceGifts.push({ label: "Allegiance Gift", value: `Bright: ${choose(data.choices.brightGifts, streams.callingChoices)}`, page: 206 });
+    }
+    for (let index = 0; index < Math.floor(allegiance.dark / 3); index += 1) {
+        allegianceGifts.push({ label: "Allegiance Gift", value: `Dark: ${choose(data.choices.darkGifts, streams.callingChoices)}`, page: 207 });
+    }
+    selections.push(...allegianceGifts);
+    allegianceGifts.forEach(() => addModifier(modifiers, "combat", "allegiance", "+1 Gift", 0, "gift"));
     if (species.name === "Human, Dimensional Stray") {
         const available = data.choices.aptitudes.filter((aptitude) => !traitTouched.has(aptitude));
         const focusedAptitude = choose(available, streams.speciesChoices);
@@ -307,17 +435,6 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
         aptitudes[aptitude] += quirkAdjustment.randomAptitudePenalty;
         addModifier(modifiers, "aptitudes", aptitude, quirk.name, quirkAdjustment.randomAptitudePenalty);
         selections.push({ label: "Past Injury", value: titleCase(aptitude), page: 140 });
-    }
-
-    if (finalSize !== species.size) {
-        data.choices.aptitudes.forEach((aptitude) => {
-            const amount = (sizeRule.aptitudes[aptitude] || 0) - (speciesSizeRule.aptitudes[aptitude] || 0);
-            if (amount) addModifier(modifiers, "aptitudes", aptitude, quirk.name, amount);
-        });
-        const defenseAmount = sizeRule.defense - speciesSizeRule.defense;
-        const inventoryAmount = sizeRule.inventory - speciesSizeRule.inventory;
-        if (defenseAmount) addModifier(modifiers, "combat", "defense", quirk.name, defenseAmount);
-        if (inventoryAmount) addModifier(modifiers, "combat", "inventory", quirk.name, inventoryAmount);
     }
 
     const bonusLanguages = [];
@@ -358,10 +475,22 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
     let defense = calling.defense + sizeRule.defense + (quirkAdjustment.defense || 0);
     if (quirkAdjustment.defense) addModifier(modifiers, "combat", "defense", quirk.name, quirkAdjustment.defense);
     if (quirkAdjustment.defenseSet !== undefined) defense = quirkAdjustment.defenseSet;
-    if (quirkAdjustment.defenseSet !== undefined) addModifier(modifiers, "combat", "defense", quirk.name, quirkAdjustment.defenseSet, "set");
+    if (quirkAdjustment.defenseSet !== undefined) {
+        modifiers.combat.defense = modifiers.combat.defense.filter((modifier) => modifier.kind !== "species");
+        addModifier(modifiers, "combat", "defense", quirk.name, quirkAdjustment.defenseSet, "set");
+    }
     const armor = bestDefensiveGear(gear, "armor");
     const shield = bestDefensiveGear(gear, "shields");
+    if (calling.name === "Bruiser") {
+        const armorBonus = armor?.defenseBonus || 0;
+        if (armorBonus < 4) {
+            defense = calling.defense + sizeRule.defense + 4;
+            modifiers.combat.defense = modifiers.combat.defense.filter((modifier) => modifier.kind !== "gear" && modifier.source !== quirk.name);
+            addModifier(modifiers, "combat", "defense", "Brazen Defense", 4, "ability");
+        }
+    }
     for (const defensiveGear of [armor, shield].filter(Boolean)) {
+        if (defensiveGear === armor && calling.name === "Bruiser" && armor.defenseBonus < 4) continue;
         defense += defensiveGear.defenseBonus;
         addModifier(modifiers, "combat", "defense", defensiveGear.name, defensiveGear.defenseBonus, "gear");
     }
@@ -378,15 +507,33 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
 
     return {
         seeds,
+        contentMode,
         name: rolledName.name,
         nameTable: rolledName.table,
         rank: 1,
         rolls,
-        calling: { name: calling.name, page: calling.page },
-        species: { name: species.name, page: species.page },
+        calling: {
+            name: calling.name,
+            page: calling.page,
+            sourceUrl: calling.sourceUrl,
+            baseCalling: calling.baseCalling,
+            expanded: calling.expanded || false,
+        },
+        species: {
+            name: species.name,
+            page: species.page,
+            sourceUrl: species.sourceUrl,
+            expanded: species.expanded || false,
+        },
         size: { name: finalSize, page: sizeRule.page },
         homeland: { name: homeland.name, page: homeland.page },
-        history: { name: history.name, tier: history.tier, page: history.page },
+        homelandRerollable: species.name !== "Human, Dimensional Stray" && !species.fixedHomeland && !neridianHistory,
+        history: {
+            name: history.name,
+            tier: history.tier,
+            page: history.page,
+            sourceUrl: history.sourceUrl,
+        },
         additionalHistory: additionalHistory && {
             name: additionalHistory.name,
             tier: additionalHistory.tier,
@@ -404,9 +551,9 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}) {
             hearts: calling.hearts + (species.name === "Gruun" ? 1 : 0) + (quirkAdjustment.hearts || 0),
             defense,
             speed,
-            inventory: sizeRule.inventory + (species.inventoryBonus || 0),
+            inventory: sizeRule.inventory + (species.inventoryBonus || 0) + (calling.inventoryBonus || 0),
         },
-        allegiance: species.name === "Tenebrate" ? "1 Dark" : species.name === "Promethean" ? "1 Bright" : "None",
+        allegiance: allegiance.label,
         abilities: {
             calling: data.callingAbilities[calling.name].starting,
             species: data.speciesAbilities[species.name],
@@ -442,13 +589,13 @@ export function rerollCharacter(data, character, target, random = Math.random) {
     for (let attempt = 0; attempt < 20; attempt += 1) {
         const seeds = { ...character.seeds };
         dependencies.forEach((key) => { seeds[key] = createSeed(random); });
-        nextCharacter = rollCharacter(data, random, seeds);
+        nextCharacter = rollCharacter(data, random, seeds, character.contentMode);
         if (componentSignature(nextCharacter, target) !== previousSignature) break;
     }
     return nextCharacter;
 }
 
-export function rollCharacters(data, count, random = Math.random) {
+export function rollCharacters(data, count, random = Math.random, contentMode = "core") {
     const safeCount = Math.max(1, Math.min(12, Math.trunc(Number(count)) || 1));
-    return Array.from({ length: safeCount }, () => rollCharacter(data, random));
+    return Array.from({ length: safeCount }, () => rollCharacter(data, random, {}, contentMode));
 }

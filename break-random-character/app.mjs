@@ -1,9 +1,10 @@
-import { rerollCharacter, rollCharacters } from "./generator.mjs";
+import { rerollCharacter, rollCharacters } from "./generator.mjs?v=6";
 
 
 const form = document.querySelector("#roll-form");
 const countInput = document.querySelector("#character-count");
 const rollButton = document.querySelector("#roll-button");
+const expandedToggle = document.querySelector("#expanded-content");
 const results = document.querySelector("#results");
 const emptyState = document.querySelector("#empty-state");
 const resultCount = document.querySelector("#result-count");
@@ -22,6 +23,7 @@ function escapeHtml(value) {
 }
 
 function pageReference(entry) {
+    if (entry.sourceUrl) return `<a class="source-ref" href="${escapeHtml(entry.sourceUrl)}" target="_blank" rel="noopener">Blog ↗</a>`;
     if (entry.page) return `<span class="page-ref">p. ${entry.page}</span>`;
     if (entry.pages) {
         const [start, end] = entry.pages;
@@ -34,23 +36,32 @@ function rerollIcon(target, label, extraClass = "") {
     return `<button type="button" class="reroll-button ${extraClass}" data-reroll-target="${target}" data-html2canvas-ignore aria-label="Reroll ${escapeHtml(label)}" title="Reroll ${escapeHtml(label)}">↻</button>`;
 }
 
-function referenceItem(label, value, reference, rerollTarget = "") {
+function referenceItem(label, value, reference, rerollTarget = "", suppressBlogLink = false) {
     const control = rerollTarget ? rerollIcon(rerollTarget, label) : "";
     const interaction = rerollTarget ? `data-reroll-target="${rerollTarget}" title="Reroll ${escapeHtml(label)}"` : "";
-    return `<li class="${rerollTarget ? "rerollable-item" : ""}" ${interaction}><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span>${escapeHtml(value)} ${pageReference(reference)}</li>`;
+    const referenceMarkup = suppressBlogLink && reference.sourceUrl ? "" : pageReference(reference);
+    return `<li class="${rerollTarget ? "rerollable-item" : ""}" ${interaction}><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span>${escapeHtml(value)} ${referenceMarkup}</li>`;
 }
 
 function modifierMarkup(modifiers = []) {
     return modifiers.map((modifier) => {
-        const amount = modifier.kind === "set"
+        const amount = modifier.kind === "gift"
+            ? ""
+            : modifier.kind === "set"
             ? `=${modifier.amount}`
             : `${modifier.amount > 0 ? "+" : ""}${modifier.amount}`;
-        return `<span class="source-chip" title="Modifier from ${escapeHtml(modifier.source)}">${escapeHtml(modifier.source)} ${amount}</span>`;
+        return `<span class="source-chip" title="${modifier.kind === "gift" ? "Gift earned from Allegiance" : `Modifier from ${escapeHtml(modifier.source)}`}">${escapeHtml(modifier.source)}${amount ? ` ${amount}` : ""}</span>`;
     }).join("");
 }
 
 function combatValue(character, label, key, value) {
     return `<div><dt>${escapeHtml(label)}</dt><dd><span>${escapeHtml(value)}</span><span class="value-modifiers">${modifierMarkup(character.modifiers.combat[key])}</span></dd></div>`;
+}
+
+function displaySpeciesName(name) {
+    if (name === "Human, Native") return "Native Human";
+    if (name === "Human, Dimensional Stray") return "Dimensional Stray Human";
+    return name;
 }
 
 function renderCharacter(character, index) {
@@ -84,7 +95,7 @@ function renderCharacter(character, index) {
         ? rerollIcon("choices", "resolved choices")
         : "";
     const selectionMarkup = character.selections.length
-        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}" ${choicesControl ? 'data-reroll-target="choices" title="Reroll resolved choices"' : ""}><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection)).join("")}</ul></section>`
+        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}" ${choicesControl ? 'data-reroll-target="choices" title="Reroll resolved choices"' : ""}><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection, "", true)).join("")}</ul></section>`
         : "";
 
     const quirkValue = [character.quirk.name, ...character.additionalQuirks.map((quirk) => quirk.name)].join(" + ");
@@ -94,7 +105,7 @@ function renderCharacter(character, index) {
     const gearItems = character.gear.map((item) => {
         const nickname = item.nickname ? `, <em>${escapeHtml(item.nickname)}</em>` : "";
         const restrictionSources = item.restrictions
-            .map((entry) => `${entry.source} p. ${entry.page}`)
+            .map((entry) => entry.page ? `${entry.source} p. ${entry.page}` : `${entry.source} Blog`)
             .join(" + ");
         const restriction = item.restricted
             ? `<span class="restriction-badge">Restricted: ${escapeHtml(restrictionSources)}</span>`
@@ -111,7 +122,7 @@ function renderCharacter(character, index) {
                     ${rerollIcon("name", "name")}
                     <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="Copy ${escapeHtml(character.name)} as an image" title="Copy card as image">Copy as Image</button>
                 </div>
-                <p class="character-build">${escapeHtml(character.species.name)} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
+                <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
                 <p class="character-origin">${escapeHtml(character.history.name)} [${escapeHtml(character.history.tier)}] · ${escapeHtml(character.homeland.name)}</p>
             </header>
             <div class="character-body">
@@ -121,7 +132,7 @@ function renderCharacter(character, index) {
                             ${referenceItem("Calling", character.calling.name, character.calling, "calling")}
                             ${referenceItem("Species", character.species.name, character.species, "species")}
                             ${referenceItem("Size", character.size.name, character.size)}
-                            ${referenceItem("Homeland", character.homeland.name, character.homeland, character.species.name === "Human, Dimensional Stray" ? "" : "homeland")}
+                            ${referenceItem("Homeland", character.homeland.name, character.homeland, character.homelandRerollable ? "homeland" : "")}
                             ${referenceItem("History", `${character.history.name} [${character.history.tier}]`, character.history, "history")}
                             ${additionalHistoryMarkup}
                             ${referenceItem("Languages", character.languages.join(", "), { page: 109 }, character.languageRerollable ? "language" : "")}
@@ -142,7 +153,7 @@ function renderCharacter(character, index) {
                             ${combatValue(character, "Defense", "defense", character.combat.defense)}
                             ${combatValue(character, "Speed", "speed", character.combat.speed)}
                             ${combatValue(character, "Inventory", "inventory", `${character.combat.inventory} slots`)}
-                            <div><dt>Allegiance</dt><dd><span>${escapeHtml(character.allegiance)}</span></dd></div>
+                            ${combatValue(character, "Allegiance", "allegiance", character.allegiance)}
                         </dl>
                     </section>
                 </div>
@@ -239,7 +250,7 @@ async function copyCardAsImage(card, button) {
 
 async function loadData() {
     try {
-        const response = await fetch("./data.json");
+        const response = await fetch("./data.json", { cache: "no-store" });
         if (!response.ok) throw new Error(`Data request failed (${response.status})`);
         data = await response.json();
         rollButton.disabled = false;
@@ -254,11 +265,12 @@ form.addEventListener("submit", (event) => {
     if (!data) return;
     const count = Math.max(1, Math.min(12, Math.trunc(Number(countInput.value)) || 1));
     countInput.value = count;
-    renderCharacters(rollCharacters(data, count));
+    renderCharacters(rollCharacters(data, count, Math.random, expandedToggle.checked ? "expanded" : "core"));
     results.querySelector(".character-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 results.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
     const copyButton = event.target.closest("[data-copy-image]");
     if (copyButton) {
         copyCardAsImage(copyButton.closest(".character-card"), copyButton);

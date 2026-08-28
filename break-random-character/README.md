@@ -7,9 +7,28 @@ rest of the site until it is ready to be linked publicly.
 ## Current scope
 
 - Roll 1-12 characters and replace the previous results.
+- Optionally use the official 2026 Expanded Content Calling and Species tables.
+  Purr is rerolled; Henshin Hero, Balladeer, and all eight linked Calling
+  variants are supported.
+- Expanded Species include Hoppalong, Gadabovid, Mundymutt, Neridian, and
+  Unterkin. Added Species use the confirmed Inheritor Quirk route except
+  Unterkin, whose source defines its own Physiology/Eldritch route.
+- Neridians use an even standard/undersea origin split. Mundymutt sizes are
+  evenly weighted. Unterkin use their fixed Homeland, unique Histories, and
+  compatible core/variant Calling families.
 - Roll Calling, Species, Homeland, History, Traits, Quirk, and starting Coins.
 - Add a species-matched name from the official BREAK!! Random Name Tables post.
 - Apply Calling, Species Size, Species, Trait, and Quirk value adjustments.
+- Label Species Size contributions to Aptitudes, Defense, and base Inventory
+  Slots alongside other modifier provenance.
+- Display Inventory relative to the Medium Species baseline of 10 Slots:
+  Small Species `-2`, Large Species `+2`. Factotum Pack adds `+8`; Dwarf Sturdy
+  adds `+2`. Scribe does not receive the Pack bonus because Journey Journal
+  replaces Factotum Pack.
+- Roll an appropriate core Gift for each complete 3 Bright or Dark Allegiance
+  Points and mark each earned Gift beneath Allegiance.
+- Neridian's fixed Melodious Voice Gift references the core Dark Gifts table on
+  p. 207 and remains separate from Gifts earned at Allegiance thresholds.
 - Resolve bounded creation choices, including blade forms and materials, Soul
   Companions, Dark Gifts, Prodigy Abilities, and relevant nested Quirk choices.
 - Select two distinct options from each History's Starting Gear.
@@ -19,6 +38,9 @@ rest of the site until it is ready to be linked publicly.
 - Apply the highest selected Armor and Shield Defense bonuses to Defense Rating
   and label each modifier with its gear source.
 - Show only names, generated values, and Core Rules page references.
+- Show Blog links on expanded Calling, Species, History, and Starting Ability
+  records. Resolved choices omit repetitive Blog suffixes while retaining core
+  page references.
 - Reroll individual random components while preserving unrelated results and
   rebuilding dependent values, gear restrictions, and modifiers.
 - Use the `Copy Image` button on a card to copy it to the system clipboard as a
@@ -28,6 +50,16 @@ The official post does not provide a separate Dimensional Stray name table, so
 Dimensional Strays currently use the Native Human table. An Elf result that says
 to use another chart follows the post's weighted Random Name Table and resolves
 to a concrete name.
+
+Expanded Species use the example names published with their posts as equal
+name pools. Mundymutt names are a small project-provided pool pending an
+official random name table.
+
+Card subtitles use `Native Human` and `Dimensional Stray Human` for readability;
+the canonical Species labels remain unchanged in the detailed field. The local
+`BreakBanner.webp` masthead art is credited to
+[Levi Lagoon](https://levilagoon.carrd.co/). Expanded table data links to the
+official 2026 Expanded Roll Tables post.
 
 The initial version does not select the physical form of the universal Standard
 Weapon and does not spend Starting Coins. Those belong in a later gear phase.
@@ -104,6 +136,12 @@ comparison only and should not override the PDF.
 
 - Add explicit lock controls for generating a new card around favored results.
 - Consider editable selectors alongside random rerolls.
+
+### Expanded content
+
+- Consider a transformed-state view for Henshin Hero Form combat values.
+- Revisit Purr only if the generator later supports nonstandard character
+  archetypes; it is intentionally excluded from normal Calling generation.
 
 ### Questline export
 

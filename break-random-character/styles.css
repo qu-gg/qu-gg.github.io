@@ -40,7 +40,7 @@ body {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: #123f59 url("../the-helical-expeditions/outer-world-map.png") center 45% / cover no-repeat;
+    background: #123f59 url("BreakBanner.webp") center center / cover no-repeat;
     border-bottom: 5px solid var(--generator-orange);
 }
 
@@ -154,6 +154,26 @@ body {
 
 .roll-controls {
     gap: 0.65rem;
+}
+
+.expanded-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--generator-muted);
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.roll-controls .expanded-toggle input {
+    width: 16px;
+    height: 16px;
+    min-height: 16px;
+    padding: 0;
+    margin: 0;
+    accent-color: var(--generator-magenta);
 }
 
 .roll-controls label {
@@ -667,6 +687,19 @@ body {
     font-weight: 700;
 }
 
+.source-ref {
+    white-space: nowrap;
+    color: var(--card-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.source-ref:hover,
+.source-ref:focus-visible {
+    text-decoration: underline;
+}
+
 .gear-list {
     column-count: 2;
     column-gap: 1rem;
@@ -794,9 +827,14 @@ body {
         text-align: left;
     }
 
+    .expanded-content-word {
+        display: none;
+    }
+
     .roll-controls {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     .roll-controls button {

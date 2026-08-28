@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "source": "BREAK!! RPG Core Rules v1",
   "callings": [
     {
@@ -20,6 +20,8 @@
       "hearts": 2,
       "defense": 10,
       "speed": "Average",
+      "inventoryBonus": 8,
+      "inventoryBonusSource": "Factotum Pack",
       "gearAllowance": {
         "weapons": [
           "Standard",
@@ -304,6 +306,698 @@
       "gearAllowancePage": 78
     }
   ],
+  "expandedTableSource": "https://breakrpg.blogspot.com/2026/06/blog-bonus-character-creation-tables.html",
+  "expandedCallings": [
+    {
+      "range": [
+        1,
+        2
+      ],
+      "name": "Factotum",
+      "page": 16,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 9,
+        "grit": 8,
+        "insight": 9,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "inventoryBonus": 8,
+      "inventoryBonusSource": "Factotum Pack",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Lash",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": [
+          "Small"
+        ]
+      },
+      "gearAllowancePage": 20
+    },
+    {
+      "range": [
+        3,
+        3
+      ],
+      "name": "Scribe",
+      "page": 16,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 9,
+        "grit": 8,
+        "insight": 9,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Lash",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": [
+          "Small"
+        ]
+      },
+      "gearAllowancePage": 20,
+      "baseCalling": "Factotum",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        5,
+        5
+      ],
+      "name": "Sneak",
+      "page": 22,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 10,
+        "grit": 7,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 26
+    },
+    {
+      "range": [
+        6,
+        6
+      ],
+      "name": "Scoundrel",
+      "page": 22,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 10,
+        "grit": 7,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 26,
+      "baseCalling": "Sneak",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        7,
+        7
+      ],
+      "name": "Champion",
+      "page": 28,
+      "aptitudes": {
+        "might": 10,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 8
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 32
+    },
+    {
+      "range": [
+        8,
+        8
+      ],
+      "name": "Bruiser",
+      "page": 28,
+      "aptitudes": {
+        "might": 10,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 8
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 32,
+      "baseCalling": "Champion",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        9,
+        9
+      ],
+      "name": "Raider",
+      "page": 34,
+      "aptitudes": {
+        "might": 9,
+        "deftness": 9,
+        "grit": 9,
+        "insight": 8,
+        "aura": 7
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Fast",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium"
+        ],
+        "shields": [
+          "Small",
+          "Standard"
+        ]
+      },
+      "gearAllowancePage": 38
+    },
+    {
+      "range": [
+        10,
+        10
+      ],
+      "name": "Bladesmith",
+      "page": 34,
+      "aptitudes": {
+        "might": 9,
+        "deftness": 9,
+        "grit": 9,
+        "insight": 8,
+        "aura": 7
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Fast",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Quick",
+          "Master",
+          "Mighty",
+          "Arc",
+          "Lash",
+          "Combination",
+          "Thrown",
+          "Drawn",
+          "Small Mechanical",
+          "Large Mechanical"
+        ],
+        "armor": [
+          "Light",
+          "Medium"
+        ],
+        "shields": [
+          "Small",
+          "Standard"
+        ]
+      },
+      "gearAllowancePage": 38,
+      "baseCalling": "Raider",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        11,
+        11
+      ],
+      "name": "Battle Princess",
+      "page": 40,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 10
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 48
+    },
+    {
+      "range": [
+        12,
+        12
+      ],
+      "name": "Bright-Heart Paladin",
+      "page": 40,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 8,
+        "grit": 9,
+        "insight": 7,
+        "aura": 10
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 48,
+      "baseCalling": "Battle Princess",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        13,
+        13
+      ],
+      "name": "Murder Princess",
+      "page": 50,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 8,
+        "aura": 9
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 56
+    },
+    {
+      "range": [
+        14,
+        14
+      ],
+      "name": "Haunted Knight",
+      "page": 50,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 8,
+        "aura": 9
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light",
+          "Medium",
+          "Heavy",
+          "Superheavy"
+        ],
+        "shields": [
+          "Small",
+          "Standard",
+          "Large"
+        ]
+      },
+      "gearAllowancePage": 56,
+      "baseCalling": "Murder Princess",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        15,
+        15
+      ],
+      "name": "Henshin Hero",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+      "expanded": true,
+      "aptitudes": {
+        "might": 8,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 7,
+        "aura": 10
+      },
+      "attack": 1,
+      "hearts": 3,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Small Mechanical"
+        ],
+        "armor": [],
+        "shields": []
+      },
+      "gearAllowanceSourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+    },
+    {
+      "range": [
+        16,
+        16
+      ],
+      "name": "Balladeer",
+      "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+      "expanded": true,
+      "aptitudes": {
+        "might": 6,
+        "deftness": 7,
+        "grit": 7,
+        "insight": 10,
+        "aura": 10
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Thrown"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowanceSourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+    },
+    {
+      "range": [
+        17,
+        17
+      ],
+      "name": "Sage",
+      "page": 58,
+      "aptitudes": {
+        "might": 6,
+        "deftness": 8,
+        "grit": 8,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Thrown",
+          "Small Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 66
+    },
+    {
+      "range": [
+        18,
+        18
+      ],
+      "name": "Mountebank",
+      "page": 58,
+      "aptitudes": {
+        "might": 6,
+        "deftness": 8,
+        "grit": 8,
+        "insight": 10,
+        "aura": 8
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Concealed",
+          "Thrown",
+          "Small Mechanical"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 66,
+      "baseCalling": "Sage",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        19,
+        19
+      ],
+      "name": "Heretic",
+      "page": 68,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 7,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Lash",
+          "Thrown"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 78
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "name": "Soothsayer",
+      "page": 68,
+      "aptitudes": {
+        "might": 7,
+        "deftness": 7,
+        "grit": 10,
+        "insight": 7,
+        "aura": 9
+      },
+      "attack": 0,
+      "hearts": 2,
+      "defense": 10,
+      "speed": "Average",
+      "gearAllowance": {
+        "weapons": [
+          "Standard",
+          "Lash",
+          "Thrown"
+        ],
+        "armor": [
+          "Light"
+        ],
+        "shields": []
+      },
+      "gearAllowancePage": 78,
+      "baseCalling": "Heretic",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+      "expanded": true
+    }
+  ],
   "species": [
     {
       "range": [
@@ -403,7 +1097,8 @@
       "size": "Medium",
       "quirkTable": "Old World",
       "nameTable": "Dwarf",
-      "inventoryBonus": 2
+      "inventoryBonus": 2,
+      "inventoryBonusSource": "Sturdy"
     },
     {
       "range": [
@@ -426,6 +1121,208 @@
       "size": "Medium",
       "quirkTable": "Bio-Mechanoid",
       "nameTable": "Bio-Mechanoid"
+    }
+  ],
+  "expandedSpecies": [
+    {
+      "range": [
+        1,
+        3
+      ],
+      "name": "Human, Native",
+      "page": 84,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Native Human"
+    },
+    {
+      "range": [
+        4,
+        4
+      ],
+      "name": "Human, Dimensional Stray",
+      "page": 86,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Native Human"
+    },
+    {
+      "range": [
+        5,
+        6
+      ],
+      "name": "Chib",
+      "page": 88,
+      "size": "Small",
+      "quirkTable": "Inheritor",
+      "nameTable": "Chib"
+    },
+    {
+      "range": [
+        7,
+        8
+      ],
+      "name": "Tenebrate",
+      "page": 90,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Tenebrate"
+    },
+    {
+      "range": [
+        9,
+        9
+      ],
+      "name": "Rai-Neko",
+      "page": 92,
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Rai-Neko"
+    },
+    {
+      "range": [
+        10,
+        10
+      ],
+      "name": "Hoppalong",
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Hoppalong",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/08/option-menu-creating-your-own-species.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        11,
+        11
+      ],
+      "name": "Promethean",
+      "page": 94,
+      "size": "Large",
+      "quirkTable": "Inheritor",
+      "nameTable": "Promethean"
+    },
+    {
+      "range": [
+        12,
+        12
+      ],
+      "name": "Gadabovid",
+      "size": "Large",
+      "quirkTable": "Inheritor",
+      "nameTable": "Gadabovid",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "expanded": true
+    },
+    {
+      "range": [
+        13,
+        13
+      ],
+      "name": "Gruun",
+      "page": 96,
+      "size": "Large",
+      "quirkTable": "Inheritor",
+      "nameTable": "Gruun"
+    },
+    {
+      "range": [
+        14,
+        14
+      ],
+      "name": "Mundymutt",
+      "sizeOptions": [
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "quirkTable": "Inheritor",
+      "nameTable": "Mundymutt",
+      "page": 403,
+      "expanded": true
+    },
+    {
+      "range": [
+        15,
+        15
+      ],
+      "name": "Goblin",
+      "page": 98,
+      "size": "Small",
+      "quirkTable": "Old World",
+      "nameTable": "Goblin"
+    },
+    {
+      "range": [
+        16,
+        16
+      ],
+      "name": "Dwarf",
+      "page": 100,
+      "size": "Medium",
+      "quirkTable": "Old World",
+      "nameTable": "Dwarf",
+      "inventoryBonus": 2,
+      "inventoryBonusSource": "Sturdy"
+    },
+    {
+      "range": [
+        17,
+        17
+      ],
+      "name": "Elf",
+      "page": 102,
+      "size": "Medium",
+      "quirkTable": "Old World",
+      "nameTable": "Elf"
+    },
+    {
+      "range": [
+        18,
+        18
+      ],
+      "name": "Neridian",
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Neridian",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "expanded": true,
+      "startingAllegiance": "1 Dark",
+      "fixedGift": "Melodious Voice",
+      "fixedGiftPage": 207
+    },
+    {
+      "range": [
+        19,
+        19
+      ],
+      "name": "Bio-Mechanoid",
+      "page": 104,
+      "size": "Medium",
+      "quirkTable": "Bio-Mechanoid",
+      "nameTable": "Bio-Mechanoid"
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "name": "Unterkin",
+      "size": "Small",
+      "quirkTable": "Unterkin",
+      "nameTable": "Unterkin",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "expanded": true,
+      "fixedHomeland": "Buried Kingdom",
+      "compatibleCallings": [
+        "Factotum",
+        "Scribe",
+        "Sneak",
+        "Scoundrel",
+        "Sage",
+        "Mountebank",
+        "Balladeer"
+      ]
     }
   ],
   "homelands": [
@@ -2669,6 +3566,245 @@
       }
     ]
   },
+  "neridianHistories": [
+    {
+      "range": [
+        1,
+        7
+      ],
+      "name": "Shadow Sea Recluse",
+      "tier": "Undersea Origin",
+      "homeland": "Wistful Dark",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "gear": [
+        {
+          "name": "Arc Weapon",
+          "nickname": "ritual trident",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "gearCategory": "weapons",
+          "gearType": "Arc"
+        },
+        {
+          "name": "Light Armor",
+          "nickname": "witchguard shell mail",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "gearCategory": "armor",
+          "gearType": "Light",
+          "defenseBonus": 2
+        },
+        {
+          "name": "Lumi-Slime Lantern",
+          "nickname": "luminescent orb",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        },
+        {
+          "name": "Rations x10",
+          "nickname": "sliced midnight seaweed",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        }
+      ]
+    },
+    {
+      "range": [
+        8,
+        14
+      ],
+      "name": "Ruin Dweller",
+      "tier": "Undersea Origin",
+      "homeland": "Twilight Meridian",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "gear": [
+        {
+          "name": "Scanner",
+          "nickname": "beepy-boopy thing you found",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        },
+        {
+          "name": "Treats x10",
+          "nickname": "sealed pack of CaloriePals",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        },
+        {
+          "name": "Standard Shield",
+          "nickname": "pincher shell shield",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "gearCategory": "shields",
+          "gearType": "Standard",
+          "defenseBonus": 1
+        },
+        {
+          "name": "Luxury Item",
+          "nickname": "mistaken eating utensil",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        }
+      ]
+    },
+    {
+      "range": [
+        15,
+        20
+      ],
+      "name": "Coral Farmer",
+      "tier": "Undersea Origin",
+      "homeland": "Blazing Garden",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "gear": [
+        {
+          "name": "Long Grabber",
+          "nickname": "coral picker",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        },
+        {
+          "name": "Quick Weapon",
+          "nickname": "quill sword",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+          "gearCategory": "weapons",
+          "gearType": "Quick"
+        },
+        {
+          "name": "Traveler's Bag",
+          "nickname": "gulper fish pack",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        },
+        {
+          "name": "Trade Goods",
+          "nickname": "clamfruit bushel",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+        }
+      ]
+    }
+  ],
+  "unterkinHistories": [
+    {
+      "range": [
+        1,
+        5
+      ],
+      "name": "Red Hand",
+      "tier": "Unterkin History",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "gear": [
+        {
+          "name": "Thrown Weapon",
+          "nickname": "bits of a shattered blade",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "gearCategory": "weapons",
+          "gearType": "Thrown"
+        },
+        {
+          "name": "Light Armor",
+          "nickname": "patchwork mail",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+          "gearCategory": "armor",
+          "gearType": "Light",
+          "defenseBonus": 2
+        },
+        {
+          "name": "Lumi-Slime Lantern",
+          "nickname": "your last friend from home",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Rations x10",
+          "nickname": "cured deeproot",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        }
+      ]
+    },
+    {
+      "range": [
+        6,
+        10
+      ],
+      "name": "Fizzicist",
+      "tier": "Unterkin History",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "gear": [
+        {
+          "name": "Artisan's Outfit",
+          "nickname": "your favorite coat",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Common Urban Good",
+          "nickname": "sturdy old bottle",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Basic Potion",
+          "nickname": "broot beer",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Grenade",
+          "nickname": "over-carbonated broot beer",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        }
+      ]
+    },
+    {
+      "range": [
+        11,
+        15
+      ],
+      "name": "Storyteller",
+      "tier": "Unterkin History",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "gear": [
+        {
+          "name": "Toodle Flute",
+          "nickname": "oddity and luxury instrument",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Proper Pen",
+          "nickname": "common urban good",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Appealing Outfit",
+          "nickname": "multi-colored cloak",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Treats x10",
+          "nickname": "star sweets",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        }
+      ]
+    },
+    {
+      "range": [
+        16,
+        20
+      ],
+      "name": "Wonder Aspirant",
+      "tier": "Unterkin History",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "gear": [
+        {
+          "name": "Star Gem",
+          "nickname": "memento of their greatest work",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Shadow Stone",
+          "nickname": "reminder that everything can be broken",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Forgotten Lore Tome",
+          "nickname": "wonder werk manual",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        },
+        {
+          "name": "Compass",
+          "nickname": "something you always knew you'd need",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+        }
+      ]
+    }
+  ],
   "quirkCategoryTables": {
     "Inheritor": [
       {
@@ -2730,6 +3866,22 @@
           20
         ],
         "name": "Robotic"
+      }
+    ],
+    "Unterkin": [
+      {
+        "range": [
+          1,
+          10
+        ],
+        "name": "Physiology"
+      },
+      {
+        "range": [
+          11,
+          20
+        ],
+        "name": "Eldritch"
       }
     ]
   },
@@ -4088,6 +5240,170 @@
         ],
         "name": "Factory Setting"
       }
+    ],
+    "Hoppalong": [
+      {
+        "range": [
+          1,
+          5
+        ],
+        "name": "Skippy Floofins"
+      },
+      {
+        "range": [
+          6,
+          10
+        ],
+        "name": "Cotton Highhop"
+      },
+      {
+        "range": [
+          11,
+          15
+        ],
+        "name": "Bouncy Bedding"
+      },
+      {
+        "range": [
+          16,
+          20
+        ],
+        "name": "Nimble Puffins"
+      }
+    ],
+    "Gadabovid": [
+      {
+        "range": [
+          1,
+          5
+        ],
+        "name": "Jesse Littlehouse"
+      },
+      {
+        "range": [
+          6,
+          10
+        ],
+        "name": "Sundance Openrange"
+      },
+      {
+        "range": [
+          11,
+          15
+        ],
+        "name": "Annie Prairiefarm"
+      },
+      {
+        "range": [
+          16,
+          20
+        ],
+        "name": "Etta Stonyranch"
+      }
+    ],
+    "Mundymutt": [
+      {
+        "range": [
+          1,
+          4
+        ],
+        "name": "Ruff Akitaa"
+      },
+      {
+        "range": [
+          5,
+          8
+        ],
+        "name": "Paws Terrerian"
+      },
+      {
+        "range": [
+          9,
+          12
+        ],
+        "name": "Ruh Roh"
+      },
+      {
+        "range": [
+          13,
+          16
+        ],
+        "name": "Bau Bau"
+      },
+      {
+        "range": [
+          17,
+          20
+        ],
+        "name": "Knight Pugwash"
+      }
+    ],
+    "Neridian": [
+      {
+        "range": [
+          1,
+          5
+        ],
+        "name": "Tea Foam"
+      },
+      {
+        "range": [
+          6,
+          10
+        ],
+        "name": "Pearl Current"
+      },
+      {
+        "range": [
+          11,
+          15
+        ],
+        "name": "Melody Coral"
+      },
+      {
+        "range": [
+          16,
+          20
+        ],
+        "name": "Symmetry Wave"
+      }
+    ],
+    "Unterkin": [
+      {
+        "range": [
+          1,
+          4
+        ],
+        "name": "Patasy Potables"
+      },
+      {
+        "range": [
+          5,
+          8
+        ],
+        "name": "Bluesy Hugh"
+      },
+      {
+        "range": [
+          9,
+          12
+        ],
+        "name": "Keepin Chinup"
+      },
+      {
+        "range": [
+          13,
+          16
+        ],
+        "name": "Munamina"
+      },
+      {
+        "range": [
+          17,
+          20
+        ],
+        "name": "Henkly Widget"
+      }
     ]
   },
   "callingAbilities": {
@@ -4768,6 +6084,766 @@
           ]
         }
       ]
+    },
+    "Scribe": {
+      "starting": [
+        {
+          "name": "Journey Journal",
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+        },
+        {
+          "name": "Folklorist",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Don't Mind Me",
+          "pages": [
+            16,
+            21
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Crafting Prodigy",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Healer's Hands",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Combat Coordinated",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Silver Tongue",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Social Learner",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Cutting Wit",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Stalwart Navigator",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "name": "Second To None",
+          "pages": [
+            16,
+            21
+          ]
+        }
+      ]
+    },
+    "Scoundrel": {
+      "starting": [
+        {
+          "name": "Sidestep",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Furtive",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Flanker",
+          "pages": [
+            22,
+            26
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Many Masks",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Kawarimi",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Meticulous Dungeoneer",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Twitchy",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Sudden Strikes",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Able Alchemist",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Legerdemain",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Stowing",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Inner Dramatics",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Sticky Fingers",
+          "pages": [
+            22,
+            26
+          ]
+        }
+      ]
+    },
+    "Bruiser": {
+      "starting": [
+        {
+          "name": "Brawler",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Brazen Defense",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Into the Fray",
+          "pages": [
+            27,
+            32
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Valiant",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Opportunistic Butcher",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Vagrant Blade",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Master Tactician",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Brute",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Giant Killer",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Combat Momentum",
+          "pages": [
+            27,
+            32
+          ]
+        },
+        {
+          "name": "Favored Weapon",
+          "pages": [
+            27,
+            32
+          ]
+        }
+      ]
+    },
+    "Bladesmith": {
+      "starting": [
+        {
+          "name": "Like the Wind",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Ranger",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Artisan Smithy",
+          "pages": [
+            33,
+            38
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Dashing Attacker",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Silent Strider",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Trusted Comrade",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Free Runner",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Rushing Fist Style",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Faith in the Wind",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Sidestep",
+          "pages": [
+            33,
+            38
+          ]
+        },
+        {
+          "name": "Hunter's Focus",
+          "pages": [
+            33,
+            38
+          ]
+        }
+      ]
+    },
+    "Bright-Heart Paladin": {
+      "starting": [
+        {
+          "name": "Holy Sword",
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+        },
+        {
+          "name": "Bonded Mount",
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+        },
+        {
+          "name": "Lay on Hands",
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+        }
+      ],
+      "standard": [
+        {
+          "name": "Gemlight",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Glittering Machine",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Love-Love Chef",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Passion's Fire",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Cry of the Heart",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Battle Dance",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Battle Bonds",
+          "pages": [
+            40,
+            49
+          ]
+        },
+        {
+          "name": "Shield of Love",
+          "pages": [
+            40,
+            49
+          ]
+        }
+      ]
+    },
+    "Haunted Knight": {
+      "starting": [
+        {
+          "name": "Wrath's Blade",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Beloved Wraith",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html"
+        },
+        {
+          "name": "Frost Blade",
+          "pages": [
+            50,
+            57
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Couturier",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Wrath Bolt",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Bulwark of Disdain",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "The Hard Way",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Desperate Friendship",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Barbed Justice",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Caustic Truth",
+          "pages": [
+            50,
+            57
+          ]
+        },
+        {
+          "name": "Tenacity",
+          "pages": [
+            50,
+            57
+          ]
+        }
+      ]
+    },
+    "Mountebank": {
+      "starting": [
+        {
+          "name": "Murky Mask",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Light Footed",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "name": "Prestidigitonium",
+          "pages": [
+            58,
+            67
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "Everyday Divination",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Mortifying Bloat",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Arcane Artificing",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Glowing Ink",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Hocus Pox",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Very Useful Cloud",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Eldritch Explosives",
+          "pages": [
+            58,
+            67
+          ]
+        },
+        {
+          "name": "Grand Grimoire",
+          "pages": [
+            58,
+            67
+          ]
+        }
+      ]
+    },
+    "Soothsayer": {
+      "starting": [
+        {
+          "name": "Fitful Sleep",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Dire Divination",
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html"
+        },
+        {
+          "name": "Seer Kasnah",
+          "pages": [
+            68,
+            79
+          ]
+        }
+      ],
+      "standard": [
+        {
+          "name": "The Widow Prisma",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Deacon Galrave",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Bushi Miyabi",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Yogi Tulpa",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Messenger Kaila",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Wretched Jarah",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Count Paris",
+          "pages": [
+            68,
+            79
+          ]
+        },
+        {
+          "name": "Squire Marlow",
+          "pages": [
+            68,
+            79
+          ]
+        }
+      ]
+    },
+    "Balladeer": {
+      "starting": [
+        {
+          "name": "Leitmotif",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Focus Instrument",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "The Song in Your Heart",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        }
+      ],
+      "standard": [
+        {
+          "name": "Disparaging Ditty",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Guiding Beat",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Beckoning Note",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Glorious Echo",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Harmonious Hearts",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Tranquil Tune",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Beast Song",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        },
+        {
+          "name": "Something to Remember Me By!",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+        }
+      ]
+    },
+    "Henshin Hero": {
+      "starting": [
+        {
+          "name": "Transformation Driver",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Primary Form",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Finisher",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        }
+      ],
+      "standard": [
+        {
+          "name": "Additional Form",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Gacha Weapon",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Justice Visor",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Dynamic Guard",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Inspiring Opponent",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Timely Arrival",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Eye for Trouble",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        },
+        {
+          "name": "Heroic Hobby",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+        }
+      ]
     }
   },
   "speciesAbilities": {
@@ -4917,6 +6993,47 @@
           104,
           105
         ]
+      }
+    ],
+    "Hoppalong": [
+      {
+        "name": "Prey's Instinct",
+        "sourceUrl": "https://breakrpg.blogspot.com/2023/08/option-menu-creating-your-own-species.html"
+      }
+    ],
+    "Gadabovid": [
+      {
+        "name": "Grazer",
+        "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+      }
+    ],
+    "Mundymutt": [
+      {
+        "name": "Doggone Good Sense",
+        "pages": [
+          403,
+          403
+        ]
+      }
+    ],
+    "Neridian": [
+      {
+        "name": "Ocean Farer",
+        "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+      },
+      {
+        "name": "Sea Song",
+        "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
+      }
+    ],
+    "Unterkin": [
+      {
+        "name": "Ageless",
+        "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+      },
+      {
+        "name": "Heart's Craft",
+        "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
       }
     ]
   },
@@ -5071,6 +7188,18 @@
       "Raptor's Talons",
       "Shadow Mark"
     ],
+    "brightGifts": [
+      "Luminescent Tattoos",
+      "Serpent Eyes",
+      "Halo",
+      "Resonant Voice",
+      "Feathers",
+      "Aesthetic Consistency",
+      "Scaled Joints",
+      "Prismatic Hair",
+      "Elongation",
+      "Third Eye Gem"
+    ],
     "ailments": [
       "Ballooned",
       "Blinded/Deafened",
@@ -5137,6 +7266,39 @@
       "grit",
       "insight",
       "aura"
+    ],
+    "henshinMotifs": [
+      "Insects",
+      "Beauty Products",
+      "Games",
+      "Vehicles",
+      "Ancient Warriors",
+      "Foodstuffs"
+    ],
+    "henshinAllegianceMotifs": [
+      "Light",
+      "Dark"
+    ],
+    "henshinDriverBenefits": [
+      "Referencer",
+      "Pocket Device",
+      "Scanner",
+      "Weapon"
+    ],
+    "henshinDriverWeapons": [
+      "Concealed",
+      "Small Mechanical"
+    ],
+    "henshinForms": [
+      "Attacker",
+      "Defender",
+      "Gunner",
+      "Sprinter"
+    ],
+    "henshinFinishers": [
+      "Attack Edge",
+      "Additional Heart",
+      "All Foes in Area"
     ]
   }
 }
