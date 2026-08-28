@@ -4,6 +4,37 @@ import { removeGearItem, rerollCharacter, rollCharacter, rollCharacters } from "
 
 
 const data = JSON.parse(await readFile(new URL("./data.json", import.meta.url), "utf8"));
+assert.equal(data.schemaVersion, 3);
+assert.deepEqual(Object.keys(data.advancementTables).sort(), [
+    "Balladeer", "Battle Princess", "Champion", "Factotum", "Henshin Hero",
+    "Heretic", "Murder Princess", "Raider", "Sage", "Sneak",
+]);
+for (const [callingName, table] of Object.entries(data.advancementTables)) {
+    assert.equal(table.length, 10, `${callingName} should have ten advancement rows`);
+    assert.deepEqual(table.map((row) => row.rank), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    assert.deepEqual(table.map((row) => row.standardAbilities), [0, 1, 1, 2, 2, 2, 2, 2, 2, 2]);
+    assert.deepEqual(table.map((row) => row.flexibleAbilities), [0, 0, 0, 0, 0, 1, 1, 2, 2, 3]);
+}
+assert.equal(data.advancementTables.Champion[9].attack, 10);
+assert.equal(data.advancementTables.Champion[9].hearts, 7);
+assert.deepEqual(data.advancementTables.Champion[9].aptitudes, { might: 14, deftness: 12, grit: 13, insight: 11, aura: 12 });
+assert.deepEqual(data.advancementTables.Balladeer[9].aptitudes, { might: 10, deftness: 11, grit: 11, insight: 14, aura: 14 });
+assert.equal(data.advancementTables["Henshin Hero"][9].attack, 7);
+for (const calling of Object.values(data.callingAbilities)) {
+    assert.ok(calling.starting.length >= 3);
+    assert.ok(calling.standard.length >= 6);
+    assert.ok(calling.advanced.length >= 6);
+}
+const publicAbilityKeys = new Set(["name", "pages", "sourceUrl", "tier", "magical", "allegiance", "repeatable", "effects"]);
+for (const ability of [
+    ...Object.values(data.callingAbilities).flatMap((calling) => [...calling.starting, ...calling.standard, ...calling.advanced]),
+    ...Object.values(data.speciesMaturatives),
+]) {
+    assert.ok(Object.keys(ability).every((key) => publicAbilityKeys.has(key)), `${ability.name} has an unsafe public field`);
+    assert.equal(typeof ability.name, "string");
+}
+assert.equal(data.speciesMaturatives.Gadabovid.name, "Labyrinthian Intuition");
+assert.equal(data.speciesMaturatives.Mundymutt, undefined);
 const hereticAllowance = data.callings.find((calling) => calling.name === "Heretic").gearAllowance;
 assert.ok(hereticAllowance.weapons.includes("Lash"));
 assert.ok(!hereticAllowance.weapons.includes("Master"));
@@ -58,6 +89,142 @@ assert.equal(baseCharacter.shopping.budgetCoins, 0);
 assert.equal(baseCharacter.shopping.spentStones, 0);
 assert.equal(baseCharacter.currencyWeightEnabled, false);
 assert.equal(baseCharacter.shopping.currencySlotHundredths, 0);
+assert.deepEqual(baseCharacter.abilities.elective, []);
+
+const rankTenCharacter = rollCharacter(data, seededRandom(0xC0FFEE), baseCharacter.seeds, baseCharacter.contentMode, 0, false, 10);
+const baseAdvancement = data.advancementTables[baseCharacter.calling.name][0];
+const rankTenAdvancement = data.advancementTables[baseCharacter.calling.name][9];
+assert.equal(rankTenCharacter.rank, 10);
+assert.equal(rankTenCharacter.name, baseCharacter.name);
+assert.equal(rankTenCharacter.calling.name, baseCharacter.calling.name);
+assert.equal(rankTenCharacter.species.name, baseCharacter.species.name);
+assert.equal(rankTenCharacter.history.name, baseCharacter.history.name);
+assert.equal(rankTenCharacter.quirk.name, baseCharacter.quirk.name);
+assert.deepEqual(rankTenCharacter.traits, baseCharacter.traits);
+assert.deepEqual(rankTenCharacter.gear.map((item) => item.name), baseCharacter.gear.map((item) => item.name));
+assert.equal(rankTenCharacter.combat.attack - baseCharacter.combat.attack, rankTenAdvancement.attack - baseAdvancement.attack);
+assert.equal(rankTenCharacter.combat.hearts - baseCharacter.combat.hearts, rankTenAdvancement.hearts - baseAdvancement.hearts);
+for (const aptitude of data.choices.aptitudes) {
+    assert.equal(rankTenCharacter.aptitudes[aptitude] - baseCharacter.aptitudes[aptitude],
+        rankTenAdvancement.aptitudes[aptitude] - baseAdvancement.aptitudes[aptitude]);
+}
+assert.equal(rollCharacter(data, seededRandom(1), {}, "core", 0, false, 99).rank, 10);
+assert.equal(rollCharacter(data, seededRandom(1), {}, "core", 0, false, 0).rank, 1);
+
+const seenRankedCallings = new Set();
+for (let seed = 1; seed <= 20000 && seenRankedCallings.size < data.expandedCallings.length; seed += 1) {
+    const rankOne = rollCharacter(data, seededRandom(seed), {}, "expanded", 0, false, 1);
+    if (seenRankedCallings.has(rankOne.calling.name)) continue;
+    const rankTen = rollCharacter(data, seededRandom(seed + 1), rankOne.seeds, "expanded", 0, false, 10);
+    const progressionName = rankOne.calling.baseCalling || rankOne.calling.name;
+    const firstRow = data.advancementTables[progressionName][0];
+    const lastRow = data.advancementTables[progressionName][9];
+    assert.equal(rankTen.calling.name, rankOne.calling.name);
+    assert.equal(rankTen.combat.attack - rankOne.combat.attack, lastRow.attack - firstRow.attack);
+    assert.equal(rankTen.combat.hearts - rankOne.combat.hearts, lastRow.hearts - firstRow.hearts);
+    for (const aptitude of data.choices.aptitudes) {
+        assert.equal(rankTen.aptitudes[aptitude] - rankOne.aptitudes[aptitude],
+            lastRow.aptitudes[aptitude] - firstRow.aptitudes[aptitude]);
+    }
+    seenRankedCallings.add(rankOne.calling.name);
+}
+assert.equal(seenRankedCallings.size, data.expandedCallings.length);
+
+for (const rank of [1, 2, 4, 6, 8, 10]) {
+    const character = rollCharacter(data, seededRandom(rank * 101), {}, "core", 0, false, rank);
+    const expectedCount = [2, 4, 6, 8, 10].filter((milestone) => milestone <= rank).length;
+    assert.equal(character.abilities.elective.length, expectedCount);
+    assert.deepEqual(character.abilities.elective.map((ability) => ability.acquiredRank),
+        [2, 4, 6, 8, 10].filter((milestone) => milestone <= rank));
+    assert.ok(character.abilities.elective.filter((ability) => ability.acquiredRank < 6)
+        .every((ability) => ability.tier === "Standard"));
+    const nonRepeatable = character.abilities.elective.filter((ability) => !ability.repeatable).map((ability) => ability.name);
+    assert.equal(new Set(nonRepeatable).size, nonRepeatable.length);
+}
+
+let sawStandardFlexible = false;
+let sawAdvancedFlexible = false;
+let sawMaturativeFlexible = false;
+for (let seed = 1; seed <= 1000; seed += 1) {
+    const character = rollCharacter(data, seededRandom(seed), {}, "expanded", 0, false, 10);
+    const flexible = character.abilities.elective.filter((ability) => ability.acquiredRank >= 6);
+    sawStandardFlexible ||= flexible.some((ability) => ability.tier === "Standard");
+    sawAdvancedFlexible ||= flexible.some((ability) => ability.tier === "Advanced");
+    sawMaturativeFlexible ||= flexible.some((ability) => ability.tier === "Maturative");
+    if (character.species.name === "Mundymutt") assert.ok(flexible.every((ability) => ability.tier !== "Maturative"));
+}
+assert.ok(sawStandardFlexible && sawAdvancedFlexible && sawMaturativeFlexible);
+const rankTenAbilityCharacter = rollCharacter(data, seededRandom(0xAB1117), {}, "core", 0, false, 10);
+const rerolledRankTenAbilities = rerollCharacter(data, rankTenAbilityCharacter, "abilities", seededRandom(0xAB1118));
+assert.notDeepEqual(rerolledRankTenAbilities.abilities.elective, rankTenAbilityCharacter.abilities.elective);
+assert.equal(rerolledRankTenAbilities.rank, 10);
+assert.equal(rerolledRankTenAbilities.name, rankTenAbilityCharacter.name);
+assert.deepEqual(rerolledRankTenAbilities.gear, rankTenAbilityCharacter.gear);
+
+let rankTenChampion;
+let rankTenBattlePrincess;
+let rankTenMurderPrincess;
+let rankTenHenshin;
+let rankTenStaticSpeed;
+let rankTenStowing;
+let rankTenBrightHeart;
+let rankTenHauntedKnight;
+for (let seed = 1; seed <= 20000 && (!rankTenChampion || !rankTenBattlePrincess || !rankTenMurderPrincess || !rankTenHenshin || !rankTenStaticSpeed || !rankTenStowing || !rankTenBrightHeart || !rankTenHauntedKnight); seed += 1) {
+    const core = rollCharacter(data, seededRandom(seed), {}, "core", 0, false, 10);
+    if (core.calling.name === "Champion") rankTenChampion ||= core;
+    if (core.calling.name === "Battle Princess") rankTenBattlePrincess ||= core;
+    if (core.calling.name === "Murder Princess") rankTenMurderPrincess ||= core;
+    if (core.abilities.elective.some((ability) => ability.effects?.speed)) rankTenStaticSpeed ||= core;
+    if (core.abilities.elective.some((ability) => ability.name === "Stowing")) rankTenStowing ||= core;
+    const expanded = rollCharacter(data, seededRandom(seed), {}, "expanded", 0, false, 10);
+    if (expanded.calling.name === "Henshin Hero") rankTenHenshin ||= expanded;
+    if (expanded.calling.name === "Bright-Heart Paladin") rankTenBrightHeart ||= expanded;
+    if (expanded.calling.name === "Haunted Knight") rankTenHauntedKnight ||= expanded;
+}
+assert.ok(rankTenChampion && rankTenBattlePrincess && rankTenMurderPrincess && rankTenHenshin && rankTenStaticSpeed && rankTenStowing && rankTenBrightHeart && rankTenHauntedKnight);
+assert.equal(rankTenChampion.selections.find((selection) => selection.label === "Favored Weapon").value.split(" / ").length, 2);
+for (const princess of [rankTenBattlePrincess, rankTenMurderPrincess]) {
+    const bladeLabel = princess.calling.name === "Battle Princess" ? "Heart's Blade" : "Wrath's Blade";
+    assert.ok(princess.selections.find((selection) => selection.label === bladeLabel).value.includes(" + "));
+    assert.ok(princess.selections.some((selection) => selection.label === `${bladeLabel.split(" Blade")[0]} Blade Property`));
+}
+assert.ok(rankTenBattlePrincess.selections.find((selection) => selection.label === "Soul Companion").value.includes("+1 Heart"));
+assert.equal(rankTenBattlePrincess.selections.find((selection) => selection.label === "Shield of Love").value, "3 people");
+assert.equal(rankTenHenshin.selections.find((selection) => selection.label === "Finisher Quality").value.split(" / ").length, 2);
+assert.ok(rankTenBrightHeart.selections.find((selection) => selection.label === "Holy Sword").value.includes(" + "));
+assert.ok(rankTenBrightHeart.selections.some((selection) => selection.label === "Holy Sword Property"));
+assert.ok(rankTenHauntedKnight.selections.find((selection) => selection.label === "Wrath's Blade").value.includes(" + "));
+assert.ok(rankTenHauntedKnight.selections.some((selection) => selection.label === "Wrath's Blade Property"));
+assert.ok(rankTenStaticSpeed.modifiers.combat.speed.some((modifier) => modifier.kind === "ability"));
+const stowedItems = [...rankTenStowing.gear, ...rankTenStowing.purchasedGear].filter((item) => item.stowed);
+assert.equal(stowedItems.length, 1);
+assert.ok(stowedItems[0].slotTenths > 0 && stowedItems[0].slotTenths <= 10);
+assert.equal(stowedItems[0].name, rankTenStowing.stowedItem);
+
+for (let seed = 1; seed <= 1000; seed += 1) {
+    const character = rollCharacter(data, seededRandom(seed), {}, "expanded", 0, false, 10);
+    let bright = character.species.name === "Promethean" ? 1 : 0;
+    let dark = ["Tenebrate", "Neridian"].includes(character.species.name) ? 1 : 0;
+    const henshinMotif = character.selections.find((selection) => selection.label === "Allegiance Motif")?.value;
+    if (henshinMotif === "Light") bright += 2;
+    if (henshinMotif === "Dark") dark += 2;
+    for (const ability of [character.abilities.prodigy, ...character.abilities.elective].filter(Boolean)) {
+        const allegiance = ability.allegiance || (character.calling.name === "Henshin Hero" && ability.magical ? henshinMotif : null);
+        if (["Bright", "Light"].includes(allegiance)) bright += 1;
+        if (allegiance === "Dark") dark += 1;
+    }
+    const expectedAllegiance = [bright ? `${bright} Bright` : "", dark ? `${dark} Dark` : ""].filter(Boolean).join(" / ") || "None";
+    assert.equal(character.allegiance, expectedAllegiance);
+    const allegianceSources = character.modifiers.combat.allegiance.filter((modifier) => modifier.kind === "allegiance");
+    assert.equal(allegianceSources.filter((source) => source.alignment === "Bright").reduce((total, source) => total + source.amount, 0), bright);
+    assert.equal(allegianceSources.filter((source) => source.alignment === "Dark").reduce((total, source) => total + source.amount, 0), dark);
+    for (const ability of [character.abilities.prodigy, ...character.abilities.elective].filter(Boolean)) {
+        const alignment = ability.allegiance || (character.calling.name === "Henshin Hero" && ability.magical ? henshinMotif : null);
+        if (alignment) assert.ok(allegianceSources.some((source) => source.source === ability.name));
+    }
+    assert.equal(character.selections.filter((selection) => selection.value?.startsWith("Bright:")).length, Math.floor(bright / 3));
+    assert.equal(character.selections.filter((selection) => selection.value?.startsWith("Dark:")).length, Math.floor(dark / 3));
+}
 
 const weightedBaseCharacter = rollCharacter(data, seededRandom(0xC0FFEE), baseCharacter.seeds, baseCharacter.contentMode, 0, true);
 const weightedBaseCurrency = weightedBaseCharacter.coins * 100
@@ -67,7 +234,7 @@ assert.equal(weightedBaseCharacter.shopping.totalCurrencyStones, weightedBaseCur
 assert.equal(weightedBaseCharacter.shopping.currencySlotHundredths, currencyUnitCount(weightedBaseCurrency));
 assert.equal(weightedBaseCharacter.shopping.usedSlotHundredths,
     [...weightedBaseCharacter.gear, ...weightedBaseCharacter.purchasedGear]
-        .reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths * 10), 0)
+        .reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths * 10), 0)
         + weightedBaseCharacter.shopping.currencySlotHundredths);
 const rerolledWeightedCoins = rerollCharacter(data, weightedBaseCharacter, "coins", seededRandom(0xC01A));
 assert.equal(rerolledWeightedCoins.currencyWeightEnabled, true);
@@ -84,7 +251,7 @@ assert.equal(budgetCharacter.shopping.remainingStones, budgetCharacter.shopping.
 assert.ok(budgetCharacter.shopping.usedSlotsTenths <= budgetCharacter.shopping.capacityTenths);
 assert.equal(new Set(budgetCharacter.purchasedGear.map((item) => item.name)).size, budgetCharacter.purchasedGear.length);
 assert.ok(budgetCharacter.purchasedGear.every((item) => !item.restricted));
-assert.equal(budgetCharacter.shopping.purchasedSlotsTenths, budgetCharacter.purchasedGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+assert.equal(budgetCharacter.shopping.purchasedSlotsTenths, budgetCharacter.purchasedGear.reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths), 0));
 
 const rerolledPurchases = rerollCharacter(data, budgetCharacter, "purchasedGear", seededRandom(0x5A0F));
 assert.notDeepEqual(rerolledPurchases.purchasedGear.map((item) => item.name), budgetCharacter.purchasedGear.map((item) => item.name));
@@ -260,6 +427,10 @@ assert.equal(rerolledNearsightedLanguage.quirk.name, "Nearsighted");
 
 assert.equal(fixedStrayCharacter.languageRerollable, false);
 assert.deepEqual(fixedStrayCharacter.languages, ["Low Speech", "Other Wording"]);
+const leisurelyFocus = fixedStrayCharacter.selections.find((selection) => selection.label === "Leisurely Focus");
+assert.ok(leisurelyFocus);
+assert.ok(fixedStrayCharacter.modifiers.aptitudes[leisurelyFocus.value.toLowerCase()]
+    .some((modifier) => modifier.source === "Leisurely Focus" && modifier.amount === 1 && modifier.kind === "ability"));
 assert.equal(nearsightedStrayCharacter.languageRerollable, true);
 const rerolledStrayLanguage = rerollCharacter(data, nearsightedStrayCharacter, "language", seededRandom(0x57A4));
 assert.deepEqual(rerolledStrayLanguage.languages.slice(0, 2), ["Low Speech", "Other Wording"]);
@@ -351,8 +522,10 @@ for (let seed = 1; seed <= 5000; seed += 1) {
     }
     const expectedArmorBonus = Math.max(0, ...character.gear.filter((item) => item.gearCategory === "armor").map((item) => item.defenseBonus));
     const expectedShieldBonus = Math.max(0, ...character.gear.filter((item) => item.gearCategory === "shields").map((item) => item.defenseBonus));
+    const usesDefenseAlternative = ["Brazen Defense", "Bulwark of Disdain"].includes(character.abilities.prodigy?.name)
+        && expectedArmorBonus < 4;
     const gearDefenseModifiers = character.modifiers.combat.defense.filter((modifier) => modifier.kind === "gear");
-    assert.equal(gearDefenseModifiers.reduce((total, modifier) => total + modifier.amount, 0), expectedArmorBonus + expectedShieldBonus);
+    assert.equal(gearDefenseModifiers.reduce((total, modifier) => total + modifier.amount, 0), (usesDefenseAlternative ? 0 : expectedArmorBonus) + expectedShieldBonus);
     seen.armorDefense ||= expectedArmorBonus > 0;
     seen.shieldDefense ||= expectedShieldBonus > 0;
 
@@ -367,7 +540,11 @@ for (let seed = 1; seed <= 5000; seed += 1) {
         assert.ok(character.selections.some((selection) => selection.label === "Dark Gift"));
     }
     if (character.species.name === "Promethean") assert.equal(character.allegiance, "1 Bright");
-    if (!["Tenebrate", "Promethean"].includes(character.species.name)) assert.equal(character.allegiance, "None");
+    if (character.species.name === "Human, Native") {
+        assert.equal(character.allegiance, character.abilities.prodigy.allegiance ? `1 ${character.abilities.prodigy.allegiance}` : "None");
+    } else if (!["Tenebrate", "Promethean"].includes(character.species.name)) {
+        assert.equal(character.allegiance, "None");
+    }
     if (character.calling.name === "Battle Princess") {
         assert.ok(character.selections.some((selection) => selection.label === "Soul Companion"));
     }
@@ -392,7 +569,12 @@ for (let seed = 1; seed <= 5000; seed += 1) {
     }
     for (const key of ["attack", "hearts", "defense", "speed"]) {
         if (quirkAdjustment[key]) {
-            assert.ok(character.modifiers.combat[key].some((modifier) => modifier.source === character.quirk.name && modifier.amount === quirkAdjustment[key]));
+            const suppressedByBrazenDefense = key === "defense"
+                && character.abilities.prodigy?.name === "Brazen Defense"
+                && expectedArmorBonus < 4;
+            if (!suppressedByBrazenDefense) {
+                assert.ok(character.modifiers.combat[key].some((modifier) => modifier.source === character.quirk.name && modifier.amount === quirkAdjustment[key]));
+            }
         }
     }
     if (quirkAdjustment.defenseSet !== undefined) {
@@ -432,9 +614,9 @@ for (let seed = 1; seed <= 1000; seed += 1) {
     const uniqueOutfits = allGear.filter((item) => item.name !== "Functional Outfit"
         && (item.category === "Outfits" || item.name === "Costume" || item.name.includes("Outfit")));
     if (uniqueOutfits.length) assert.notEqual(character.equippedOutfit, "Functional Outfit");
-    assert.equal(character.shopping.usedSlotsTenths, allGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
-    assert.equal(character.shopping.startingSlotsTenths, character.gear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
-    assert.equal(character.shopping.purchasedSlotsTenths, character.purchasedGear.reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths), 0));
+    assert.equal(character.shopping.usedSlotsTenths, allGear.reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths), 0));
+    assert.equal(character.shopping.startingSlotsTenths, character.gear.reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths), 0));
+    assert.equal(character.shopping.purchasedSlotsTenths, character.purchasedGear.reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths), 0));
     sawPurchasedOutfitEquipped ||= character.purchasedGear.some((item) => item.equipped);
     sawStartingOutfitEquipped ||= character.gear.some((item) => item.equipped);
     assert.equal(new Set(character.purchasedGear.map((item) => item.name)).size, character.purchasedGear.length);
@@ -472,7 +654,7 @@ assert.equal(sawStartingOutfitEquipped, true);
 for (let seed = 1; seed <= 1000; seed += 1) {
     const [character] = rollCharacters(data, 1, seededRandom(seed), seed % 2 ? "core" : "expanded", 100, true);
     const gearSlotHundredths = [...character.gear, ...character.purchasedGear]
-        .reduce((total, item) => total + (item.equipped ? 0 : item.slotTenths * 10), 0);
+        .reduce((total, item) => total + (item.equipped || item.stowed ? 0 : item.slotTenths * 10), 0);
     assert.equal(character.shopping.currencySlotHundredths, currencyUnitCount(character.shopping.totalCurrencyStones));
     assert.equal(character.shopping.usedSlotHundredths, gearSlotHundredths + character.shopping.currencySlotHundredths);
     assert.ok(character.shopping.usedSlotHundredths <= character.shopping.capacityTenths * 10);
@@ -670,8 +852,9 @@ for (let seed = 1; seed <= 100000 && henshinFixtures.length < 250; seed += 1) {
     henshinWithDriverWeapon ||= Boolean(selections["Driver Weapon"]);
     const speciesBright = character.species.name === "Promethean" ? 1 : 0;
     const speciesDark = ["Tenebrate", "Neridian"].includes(character.species.name) ? 1 : 0;
-    const expectedBright = speciesBright + (selections["Allegiance Motif"] === "Light" ? 2 : 0);
-    const expectedDark = speciesDark + (selections["Allegiance Motif"] === "Dark" ? 2 : 0);
+    const prodigyMotif = character.abilities.prodigy?.magical ? 1 : 0;
+    const expectedBright = speciesBright + (selections["Allegiance Motif"] === "Light" ? 2 + prodigyMotif : 0);
+    const expectedDark = speciesDark + (selections["Allegiance Motif"] === "Dark" ? 2 + prodigyMotif : 0);
     const expectedAllegiance = [expectedBright && `${expectedBright} Bright`, expectedDark && `${expectedDark} Dark`].filter(Boolean).join(" / ") || "None";
     assert.equal(character.allegiance, expectedAllegiance);
     const expectedGiftCount = Math.floor(expectedBright / 3) + Math.floor(expectedDark / 3);

@@ -1,8 +1,9 @@
-import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=14";
+import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=24";
 
 
 const form = document.querySelector("#roll-form");
 const countInput = document.querySelector("#character-count");
+const rankInput = document.querySelector("#character-rank");
 const budgetInput = document.querySelector("#gear-budget");
 const rollButton = document.querySelector("#roll-button");
 const expandedToggle = document.querySelector("#expanded-content");
@@ -38,26 +39,63 @@ function rerollIcon(target, label, extraClass = "") {
     return `<button type="button" class="reroll-button ${extraClass}" data-reroll-target="${target}" data-html2canvas-ignore aria-label="Reroll ${escapeHtml(label)}" title="Reroll ${escapeHtml(label)}">↻</button>`;
 }
 
-function referenceItem(label, value, reference, rerollTarget = "", suppressBlogLink = false) {
+function referenceItem(label, value, reference, rerollTarget = "", suppressBlogLink = false, prefix = "") {
     const control = rerollTarget ? rerollIcon(rerollTarget, label) : "";
     const interaction = rerollTarget ? `data-reroll-target="${rerollTarget}" title="Reroll ${escapeHtml(label)}"` : "";
     const referenceMarkup = suppressBlogLink && reference.sourceUrl ? "" : pageReference(reference);
-    return `<li class="${rerollTarget ? "rerollable-item" : ""}" ${interaction}><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span>${escapeHtml(value)} ${referenceMarkup}</li>`;
+    return `<li class="${rerollTarget ? "rerollable-item" : ""}" ${interaction}><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span><span class="reference-value">${prefix}${escapeHtml(value)}</span> ${referenceMarkup}</li>`;
 }
 
 function modifierMarkup(modifiers = []) {
     return modifiers.map((modifier) => {
         const amount = modifier.kind === "gift"
             ? ""
+            : modifier.kind === "gear" && modifier.amount === 0
+            ? ""
+            : modifier.kind === "allegiance"
+            ? `${modifier.amount > 0 ? "+" : ""}${modifier.amount} ${modifier.alignment}`
             : modifier.kind === "set"
             ? `=${modifier.amount}`
             : `${modifier.amount > 0 ? "+" : ""}${modifier.amount}`;
-        return `<span class="source-chip" title="${modifier.kind === "gift" ? "Gift earned from Allegiance" : `Modifier from ${escapeHtml(modifier.source)}`}">${escapeHtml(modifier.source)}${amount ? ` ${amount}` : ""}</span>`;
+        const title = modifier.kind === "gift"
+            ? "Gift earned from Allegiance"
+            : modifier.kind === "allegiance"
+            ? `${modifier.amount > 0 ? "+" : ""}${modifier.amount} ${modifier.alignment} from ${escapeHtml(modifier.source)}`
+            : `Modifier from ${escapeHtml(modifier.source)}`;
+        const alignmentClass = modifier.kind === "allegiance" ? ` allegiance-chip allegiance-${modifier.alignment.toLowerCase()}` : "";
+        return `<span class="source-chip${alignmentClass}" title="${title}">${escapeHtml(modifier.source)}${amount ? ` ${amount}` : ""}</span>`;
     }).join("");
 }
 
 function combatValue(character, label, key, value) {
-    return `<div><dt>${escapeHtml(label)}</dt><dd><span>${escapeHtml(value)}</span><span class="value-modifiers">${modifierMarkup(character.modifiers.combat[key])}</span></dd></div>`;
+    const modifiers = key === "allegiance"
+        ? character.modifiers.combat[key].filter((modifier) => modifier.kind !== "allegiance")
+        : character.modifiers.combat[key];
+    return `<div><dt>${escapeHtml(label)}</dt><dd><span>${escapeHtml(value)}</span><span class="value-modifiers">${modifierMarkup(modifiers)}</span></dd></div>`;
+}
+
+function allegianceDots(alignment, amount, source) {
+    if (!alignment || !amount) return "";
+    const normalizedAlignment = alignment === "Light" ? "Bright" : alignment;
+    const label = `+${amount} ${normalizedAlignment} Allegiance from ${source}`;
+    const dots = Array.from({ length: amount }, () => `<span class="allegiance-dot allegiance-dot-${normalizedAlignment.toLowerCase()}" aria-hidden="true"></span>`).join("");
+    return `<span class="allegiance-dots" role="img" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}">${dots}</span>`;
+}
+
+function abilityAllegiance(character, ability) {
+    if (ability.allegiance) return ability.allegiance;
+    if (character.calling.name !== "Henshin Hero" || !ability.magical) return "";
+    return character.selections.find((selection) => selection.label === "Allegiance Motif")?.value || "";
+}
+
+function selectionAllegianceDots(character, selection) {
+    if (selection.label === "Prodigy Ability" && character.abilities.prodigy) {
+        return allegianceDots(abilityAllegiance(character, character.abilities.prodigy), 1, character.abilities.prodigy.name);
+    }
+    if (selection.label === "Allegiance Motif") {
+        return allegianceDots(selection.value, 2, "Allegiance Motif");
+    }
+    return "";
 }
 
 function formatCurrency(totalStones) {
@@ -93,12 +131,16 @@ function startingGearCost(item) {
     return `${formatCurrency(item.costStones)}${item.costRate ? ` ${item.costRate}` : ""}`;
 }
 
-function equippedOutfitMarkup(item) {
-    return item.equipped ? `<span class="equipped-badge" aria-label="Equipped" title="Equipped">Eq.</span>` : "";
+function carriedStateMarkup(item) {
+    if (item.equipped) return `<span class="equipped-badge" aria-label="Equipped" title="Equipped">Eq.</span>`;
+    if (item.stowed) return `<span class="equipped-badge stowed-badge">Stowed</span>`;
+    return "";
 }
 
 function displayedGearSlots(item) {
-    return item.equipped ? "0 slots worn" : formatSlots(item.slotTenths || 0);
+    if (item.equipped) return "0 slots worn";
+    if (item.stowed) return "0 slots stowed";
+    return formatSlots(item.slotTenths || 0);
 }
 
 function gearRemoveButton(section, index, item) {
@@ -138,12 +180,21 @@ function renderCharacter(character, index) {
         ...character.abilities.calling.map((ability) => referenceItem("Calling", ability.name, ability)),
         ...character.abilities.species.map((ability) => referenceItem("Species", ability.name, ability)),
     ].join("");
+    const electiveAbilityMarkup = character.abilities.elective.map((ability) =>
+        referenceItem(`${ability.tier} · Rank ${ability.acquiredRank}`, ability.name, ability, "", false, allegianceDots(abilityAllegiance(character, ability), 1, ability.name))
+    ).join("");
+    const electiveSectionMarkup = character.abilities.elective.length
+        ? `<section class="card-section rerollable-section elective-abilities-section" data-reroll-target="abilities" data-balance-section data-balance-order="2" title="Reroll elective abilities">
+            <div class="section-heading"><h4>Elective abilities</h4>${rerollIcon("abilities", "elective abilities")}</div>
+            <ul class="reference-list">${electiveAbilityMarkup}</ul>
+        </section>`
+        : "";
 
     const choicesControl = character.selections.some((selection) => selection.rerollable !== false)
         ? rerollIcon("choices", "resolved choices")
         : "";
     const selectionMarkup = character.selections.length
-        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}" ${choicesControl ? 'data-reroll-target="choices" title="Reroll resolved choices"' : ""}><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection, "", true)).join("")}</ul></section>`
+        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}" ${choicesControl ? 'data-reroll-target="choices" title="Reroll resolved choices"' : ""}><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection, "", true, selectionAllegianceDots(character, selection))).join("")}</ul></section>`
         : "";
 
     const quirkValue = [character.quirk.name, ...character.additionalQuirks.map((quirk) => quirk.name)].join(" + ");
@@ -153,16 +204,16 @@ function renderCharacter(character, index) {
     const gearItems = character.gear.map((item, itemIndex) => {
         const nickname = item.nickname ? `, <em>${escapeHtml(item.nickname)}</em>` : "";
         const restrictionSources = item.restrictions
-            .map((entry) => entry.page ? `${entry.source} p. ${entry.page}` : `${entry.source} Blog`)
+            .map((entry) => entry.source)
             .join(" + ");
         const restriction = item.restricted
             ? `<span class="restriction-badge">Restricted: ${escapeHtml(restrictionSources)}</span>`
             : "";
-        return `<li class="removable-gear-item">${gearRemoveButton("gear", itemIndex, item)}${escapeHtml(item.name)}${nickname} ${pageReference(item)}${equippedOutfitMarkup(item)}${gearMeta(startingGearCost(item), displayedGearSlots(item))}${restriction}</li>`;
+        return `<li class="removable-gear-item">${gearRemoveButton("gear", itemIndex, item)}${escapeHtml(item.name)}${nickname} ${pageReference(item)}${carriedStateMarkup(item)}${gearMeta(startingGearCost(item), displayedGearSlots(item))}${restriction}</li>`;
     });
-    gearItems.push(`<li class="starting-coins-item rerollable-item" data-reroll-target="coins" title="Reroll starting coins"><span class="coin-heading"><strong>Starting Coins: ${formatCurrency(character.coins * 100)}</strong>${rerollIcon("coins", "starting coins")}</span> <span class="page-ref">p. 148</span></li>`);
+    gearItems.push(`<li class="starting-coins-item rerollable-item" data-reroll-target="coins" title="Reroll d20 Coins"><span class="coin-heading"><strong>d20 Coins: ${formatCurrency(character.coins * 100)}</strong>${rerollIcon("coins", "d20 Coins")}</span></li>`);
     const purchasedGearItems = character.purchasedGear.map((item, itemIndex) => `
-        <li class="removable-gear-item">${gearRemoveButton("purchasedGear", itemIndex, item)}${escapeHtml(item.name)}${item.quantity > 1 ? ` ×${item.quantity}` : ""} ${pageReference(item)}${equippedOutfitMarkup(item)}${gearMeta(formatCurrency(item.costStones), displayedGearSlots(item))}</li>
+        <li class="removable-gear-item">${gearRemoveButton("purchasedGear", itemIndex, item)}${escapeHtml(item.name)}${item.quantity > 1 ? ` ×${item.quantity}` : ""} ${pageReference(item)}${carriedStateMarkup(item)}${gearMeta(formatCurrency(item.costStones), displayedGearSlots(item))}</li>
     `).join("");
     const purchasedGearMarkup = character.shopping.budgetCoins > 0
         ? `<section class="card-section rerollable-section purchased-gear-section" data-reroll-target="purchasedGear" title="Reroll purchased gear">
@@ -190,7 +241,7 @@ function renderCharacter(character, index) {
                     <section class="identity-section">
                         <ul class="reference-list identity-list">
                             ${referenceItem("Calling", character.calling.name, character.calling, "calling")}
-                            ${referenceItem("Species", character.species.name, character.species, "species")}
+                            ${referenceItem("Species", character.species.name, character.species, "species", false, allegianceDots(character.species.name === "Promethean" ? "Bright" : ["Tenebrate", "Neridian"].includes(character.species.name) ? "Dark" : "", 1, character.species.name))}
                             ${referenceItem("Size", character.size.name, character.size)}
                             ${referenceItem("Homeland", character.homeland.name, character.homeland, character.homelandRerollable ? "homeland" : "")}
                             ${referenceItem("History", `${character.history.name} [${character.history.tier}]`, character.history, "history")}
@@ -220,10 +271,12 @@ function renderCharacter(character, index) {
                 </div>
 
                 <div class="card-column card-column-secondary">
-                    <section class="card-section abilities-section" data-balance-section>
+                    <section class="card-section abilities-section" data-balance-section data-balance-order="1">
                         <h4>Starting abilities</h4>
                         <ul class="reference-list">${abilityMarkup}</ul>
                     </section>
+
+                    ${electiveSectionMarkup}
 
                     ${selectionMarkup}
 
@@ -250,25 +303,29 @@ function renderCharacter(character, index) {
 function balanceCharacterCard(card) {
     const primary = card.querySelector(".card-column-primary");
     const secondary = card.querySelector(".card-column-secondary");
-    const section = card.querySelector("[data-balance-section]");
-    if (!primary || !secondary || !section) return;
+    const sections = [...card.querySelectorAll("[data-balance-section]")]
+        .sort((left, right) => Number(left.dataset.balanceOrder) - Number(right.dataset.balanceOrder));
+    if (!primary || !secondary || !sections.length) return;
     if (matchMedia("(max-width: 800px)").matches) {
-        primary.append(section);
+        primary.append(...sections);
         return;
     }
 
-    const measure = () => {
+    const placements = [];
+    for (let mask = 0; mask < 2 ** sections.length; mask += 1) {
+        const leftSections = sections.filter((_, index) => mask & (1 << index));
+        const rightSections = sections.filter((_, index) => !(mask & (1 << index)));
+        primary.append(...leftSections);
+        secondary.prepend(...rightSections);
         const left = primary.getBoundingClientRect().height;
         const right = secondary.getBoundingClientRect().height;
-        return { left, right, delta: Math.abs(left - right) };
-    };
-    secondary.prepend(section);
-    const rightPlacement = measure();
-    primary.append(section);
-    const leftPlacement = measure();
-    const nearTie = Math.abs(rightPlacement.delta - leftPlacement.delta) <= 8;
-    const rightWinsTie = nearTie && rightPlacement.right >= rightPlacement.left;
-    if (rightPlacement.delta < leftPlacement.delta || rightWinsTie) secondary.prepend(section);
+        placements.push({ mask, left, right, delta: Math.abs(left - right) });
+    }
+    const smallestDelta = Math.min(...placements.map((placement) => placement.delta));
+    const closePlacements = placements.filter((placement) => placement.delta <= smallestDelta + 8);
+    const placement = closePlacements.find((candidate) => candidate.right >= candidate.left) || closePlacements[0];
+    primary.append(...sections.filter((_, index) => placement.mask & (1 << index)));
+    secondary.prepend(...sections.filter((_, index) => !(placement.mask & (1 << index))));
 }
 
 function balanceCharacterCards() {
@@ -376,10 +433,12 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!data) return;
     const count = Math.max(1, Math.min(12, Math.trunc(Number(countInput.value)) || 1));
+    const rank = Math.max(1, Math.min(10, Math.trunc(Number(rankInput.value)) || 1));
     const gearBudget = Math.max(0, Math.min(10000, Math.trunc(Number(budgetInput.value)) || 0));
     countInput.value = count;
+    rankInput.value = rank;
     budgetInput.value = gearBudget || "";
-    renderCharacters(rollCharacters(data, count, Math.random, expandedToggle.checked ? "expanded" : "core", gearBudget, currencyWeightToggle.checked));
+    renderCharacters(rollCharacters(data, count, Math.random, expandedToggle.checked ? "expanded" : "core", gearBudget, currencyWeightToggle.checked, rank));
     results.querySelector(".character-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 

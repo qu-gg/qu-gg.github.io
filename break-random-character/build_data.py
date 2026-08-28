@@ -367,6 +367,62 @@ SIZE_RULES = {
 ARMOR_DEFENSE = {"Light": 2, "Medium": 4, "Heavy": 6, "Superheavy": 8}
 SHIELD_DEFENSE = {"Small": 0, "Standard": 1, "Large": 2}
 
+RANK_XP = [0, 6, 12, 24, 36, 48, 72, 96, 132, 168]
+RANK_APTITUDE_BONUS = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4]
+RANK_STANDARD_ABILITIES = [0, 1, 1, 2, 2, 2, 2, 2, 2, 2]
+RANK_FLEXIBLE_ABILITIES = [0, 0, 0, 0, 0, 1, 1, 2, 2, 3]
+
+ADVANCEMENT_PROFILES = {
+    "Factotum": {
+        "attack": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5],
+        "hearts": [2, 2, 2, 3, 3, 4, 4, 4, 5, 5],
+    },
+    "Sneak": {
+        "attack": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5],
+        "hearts": [2, 2, 2, 3, 3, 4, 4, 4, 5, 5],
+    },
+    "Champion": {
+        "attack": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "hearts": [3, 3, 4, 4, 5, 5, 6, 6, 7, 7],
+    },
+    "Raider": {
+        "attack": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "hearts": [3, 3, 4, 4, 5, 5, 6, 6, 7, 7],
+    },
+    "Battle Princess": {
+        "attack": [1, 2, 3, 3, 4, 4, 5, 5, 6, 7],
+        "hearts": [3, 3, 4, 4, 5, 5, 6, 6, 7, 7],
+    },
+    "Murder Princess": {
+        "attack": [1, 2, 3, 3, 4, 4, 5, 5, 6, 7],
+        "hearts": [3, 3, 4, 4, 5, 5, 6, 6, 7, 7],
+    },
+    "Sage": {
+        "attack": [0, 0, 1, 1, 2, 2, 3, 3, 4, 4],
+        "hearts": [2, 2, 3, 3, 4, 4, 4, 4, 4, 5],
+    },
+    "Heretic": {
+        "attack": [0, 0, 1, 1, 2, 2, 3, 3, 4, 4],
+        "hearts": [2, 2, 3, 3, 4, 4, 4, 4, 4, 5],
+    },
+    "Balladeer": {
+        "attack": [0, 0, 1, 1, 2, 2, 3, 3, 4, 4],
+        "hearts": [2, 2, 3, 3, 3, 4, 4, 4, 4, 5],
+    },
+    "Henshin Hero": {
+        "attack": [1, 2, 3, 3, 4, 4, 5, 5, 6, 7],
+        "hearts": [3, 3, 4, 4, 5, 5, 6, 6, 7, 7],
+    },
+}
+
+ELECTIVE_EFFECTS = {
+    "The Better Part of Valor": {"speed": 1},
+    "Desperate Scurry": {"speed": 1},
+    "Blistering Pace": {"speed": 1},
+    "Relentless Pursuer": {"speed": 1},
+    "Dancer's Stride": {"speed": 1},
+}
+
 
 QUIRK_ADJUSTMENTS = {
     "Unhinged": {"attack": 2, "defense": -1},
@@ -386,6 +442,29 @@ WEAPON_TYPES = ["Standard", "Concealed", "Quick", "Master", "Mighty", "Arc", "La
 BLADE_WEAPON_TYPES = ["Quick", "Master", "Mighty", "Arc", "Lash", "Drawn", "Mechanical Missile"]
 AILMENTS = ["Ballooned", "Blinded/Deafened", "Chibbed", "Disoriented", "Dispirited", "Fatigued", "Jellyfied", "Petrified", "Putrefied", "Restrained", "Starved", "Suffocated", "Terrified", "Toppled"]
 SPECIALIST_KITS = ["Dungeoneer's Kit", "Gadgeteer's Kit", "Physician's Kit", "Survivalist's Kit", "Thief's Kit"]
+
+
+def build_advancement_tables(callings: list[dict], expanded_callings: list[dict]) -> dict[str, list[dict]]:
+    calling_by_name = {calling["name"]: calling for calling in [*callings, *expanded_callings]}
+    tables = {}
+    for calling_name, profile in ADVANCEMENT_PROFILES.items():
+        calling = calling_by_name[calling_name]
+        tables[calling_name] = [
+            {
+                "rank": rank,
+                "attack": profile["attack"][rank - 1],
+                "hearts": profile["hearts"][rank - 1],
+                "aptitudes": {
+                    aptitude: value + RANK_APTITUDE_BONUS[rank - 1]
+                    for aptitude, value in calling["aptitudes"].items()
+                },
+                "standardAbilities": RANK_STANDARD_ABILITIES[rank - 1],
+                "flexibleAbilities": RANK_FLEXIBLE_ABILITIES[rank - 1],
+                "xp": RANK_XP[rank - 1],
+            }
+            for rank in range(1, 11)
+        ]
+    return tables
 
 
 NAME_TABLES = {
@@ -544,13 +623,30 @@ def classify_combat_gear(name: str) -> dict:
 
 def build_calling_abilities() -> dict[str, dict]:
     module = runpy.run_path(ROOT / "questline-vtt-tools" / "build_calling_abilities.py")
+
+    def public_ability(ability, pages: tuple[int, int]) -> dict:
+        entry = {"name": ability.name, "pages": list(pages), "tier": ability.tier}
+        if ability.magical:
+            entry["magical"] = True
+        if ability.cost:
+            if "Bright" in ability.cost:
+                entry["allegiance"] = "Bright"
+            elif "Dark" in ability.cost:
+                entry["allegiance"] = "Dark"
+        if re.search(r"more than once|multiple times", ability.body, re.IGNORECASE):
+            entry["repeatable"] = True
+        if ability.name in ELECTIVE_EFFECTS:
+            entry["effects"] = ELECTIVE_EFFECTS[ability.name]
+        return entry
+
     result = {}
     for calling in module["CALLINGS"]:
         result[calling.name] = {
-            "starting": [{"name": ability.name, "pages": list(calling.pages)} for ability in calling.abilities if ability.tier == "Starting"],
-            "standard": [{"name": ability.name, "pages": list(calling.pages)} for ability in calling.abilities if ability.tier == "Standard"],
+            tier.lower(): [public_ability(ability, calling.pages) for ability in calling.abilities if ability.tier == tier]
+            for tier in ("Starting", "Standard", "Advanced")
         }
     species_result = {}
+    species_maturatives = {}
     species_aliases = {
         "Human (Native)": "Human, Native",
         "Human (Dimensional Stray)": "Human, Dimensional Stray",
@@ -559,11 +655,14 @@ def build_calling_abilities() -> dict[str, dict]:
         public_name = species_aliases.get(species.name, species.name)
         if public_name in {entry["name"] for entry in SPECIES}:
             species_result[public_name] = [
-                {"name": ability.name, "pages": list(species.pages)}
+                public_ability(ability, species.pages)
                 for ability in species.abilities
                 if ability.tier == "Starting"
             ]
-    return {"callings": result, "species": species_result}
+            maturative = next((ability for ability in species.abilities if ability.tier == "Advanced"), None)
+            if maturative:
+                species_maturatives[public_name] = public_ability(maturative, species.pages)
+    return {"callings": result, "species": species_result, "maturatives": species_maturatives}
 
 
 def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
@@ -572,14 +671,23 @@ def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
 
     def find_ability(name: str) -> dict:
         for calling in abilities.values():
-            for tier in ("starting", "standard"):
+            for tier in ("starting", "standard", "advanced"):
                 for ability in calling[tier]:
                     if ability["name"] == name:
                         return deepcopy(ability)
         raise KeyError(name)
 
-    def blog_ability(name: str, source_url: str) -> dict:
-        return {"name": name, "sourceUrl": source_url}
+    def blog_ability(name: str, source_url: str, tier: str = "Starting", allegiance: str | None = None, repeatable: bool = False, magical: bool = False) -> dict:
+        entry = {"name": name, "sourceUrl": source_url, "tier": tier}
+        if allegiance or magical:
+            entry["magical"] = True
+        if allegiance:
+            entry["allegiance"] = allegiance
+        if repeatable:
+            entry["repeatable"] = True
+        if name in ELECTIVE_EFFECTS:
+            entry["effects"] = ELECTIVE_EFFECTS[name]
+        return entry
 
     variants = [
         {
@@ -648,7 +756,11 @@ def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
             deepcopy(ability) for ability in abilities[variant["base"]]["standard"]
             if ability["name"] not in variant["removeStandard"]
         ] + variant["addStandard"]
-        abilities[variant["name"]] = {"starting": variant["starting"], "standard": standard}
+        abilities[variant["name"]] = {
+            "starting": variant["starting"],
+            "standard": standard,
+            "advanced": deepcopy(abilities[variant["base"]]["advanced"]),
+        }
 
     balladeer = {
         "range": [16, 16],
@@ -665,10 +777,22 @@ def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
     }
     abilities["Balladeer"] = {
         "starting": [blog_ability(name, BALLADEER_SOURCE) for name in ["Leitmotif", "Focus Instrument", "The Song in Your Heart"]],
-        "standard": [blog_ability(name, BALLADEER_SOURCE) for name in [
-            "Disparaging Ditty", "Guiding Beat", "Beckoning Note", "Glorious Echo",
-            "Harmonious Hearts", "Tranquil Tune", "Beast Song", "Something to Remember Me By!",
-        ]],
+        "standard": [
+            blog_ability(name, BALLADEER_SOURCE, "Standard", allegiance)
+            for name, allegiance in [
+                ("Disparaging Ditty", "Dark"), ("Guiding Beat", None), ("Beckoning Note", "Dark"),
+                ("Glorious Echo", "Bright"), ("Harmonious Hearts", "Dark"), ("Tranquil Tune", "Bright"),
+                ("Beast Song", "Bright"), ("Something to Remember Me By!", None),
+            ]
+        ],
+        "advanced": [
+            blog_ability(name, BALLADEER_SOURCE, "Advanced", allegiance)
+            for name, allegiance in [
+                ("Enchanting Performance", "Bright"), ("Dancer's Stride", None), ("Lucid Note", "Dark"),
+                ("Healing Song", "Bright"), ("Auteur's Request", "Dark"), ("Battle Anthem", "Bright"),
+                ("Encore", "Dark"), ("The Universal Language", None),
+            ]
+        ],
     }
     expanded.append(balladeer)
 
@@ -687,10 +811,31 @@ def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
     }
     abilities["Henshin Hero"] = {
         "starting": [blog_ability(name, HENSHIN_SOURCE) for name in ["Transformation Driver", "Primary Form", "Finisher"]],
-        "standard": [blog_ability(name, HENSHIN_SOURCE) for name in [
-            "Additional Form", "Gacha Weapon", "Justice Visor", "Dynamic Guard",
-            "Inspiring Opponent", "Timely Arrival", "Eye for Trouble", "Heroic Hobby",
-        ]],
+        "standard": [
+            blog_ability(
+                name,
+                HENSHIN_SOURCE,
+                "Standard",
+                repeatable=name == "Additional Form",
+                magical=name in {"Additional Form", "Gacha Weapon", "Justice Visor", "Dynamic Guard"},
+            )
+            for name in [
+                "Additional Form", "Gacha Weapon", "Justice Visor", "Dynamic Guard",
+                "Inspiring Opponent", "Timely Arrival", "Eye for Trouble", "Heroic Hobby",
+            ]
+        ],
+        "advanced": [
+            blog_ability(
+                name,
+                HENSHIN_SOURCE,
+                "Advanced",
+                magical=name not in {"Something to Believe In", "Fan Club"},
+            )
+            for name in [
+                "Hyper Finisher", "Battle Vehicle", "Heroic Leap", "Valorous Negation",
+                "Second Wind", "Additional Finisher", "Something to Believe In", "Fan Club",
+            ]
+        ],
     }
     expanded.append(henshin_hero)
 
@@ -881,8 +1026,14 @@ def main() -> None:
     abilities = build_calling_abilities()
     expanded_callings = build_expanded_callings(abilities)
     expanded_species = build_expanded_species(abilities)
+    abilities["maturatives"].update({
+        "Hoppalong": {"name": "Springer", "sourceUrl": HOPPALONG_SOURCE, "tier": "Maturative"},
+        "Gadabovid": {"name": "Labyrinthian Intuition", "sourceUrl": SURF_TURF_SOURCE, "tier": "Maturative"},
+        "Neridian": {"name": "Siren Song", "sourceUrl": SURF_TURF_SOURCE, "tier": "Maturative"},
+        "Unterkin": {"name": "Masterful Mishap", "sourceUrl": UNTERKIN_SOURCE, "tier": "Maturative"},
+    })
     payload = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "source": "BREAK!! RPG Core Rules v1",
         "callings": CALLINGS,
         "expandedTableSource": EXPANDED_TABLE_SOURCE,
@@ -912,6 +1063,8 @@ def main() -> None:
         },
         "callingAbilities": abilities["callings"],
         "speciesAbilities": abilities["species"],
+        "speciesMaturatives": abilities["maturatives"],
+        "advancementTables": build_advancement_tables(CALLINGS, expanded_callings),
         "sizeRules": SIZE_RULES,
         "quirkAdjustments": QUIRK_ADJUSTMENTS,
         "shopItems": build_shop_items(items),

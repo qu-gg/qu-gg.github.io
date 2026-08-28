@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "source": "BREAK!! RPG Core Rules v1",
   "callings": [
     {
@@ -5960,21 +5960,24 @@
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Factotum Pack",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Don't Mind Me",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -5983,56 +5986,134 @@
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard",
+          "repeatable": true
         },
         {
           "name": "Folklorist",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Healer's Hands",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Combat Coordinated",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Silver Tongue",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Social Learner",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Cutting Wit",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Stalwart Navigator",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Boon Companion",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Troubleshooter",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Multi-Tasker",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Pack Tactics",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Master of Spectacle",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "The Better Part of Valor",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Tricky Combatant",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Fortune's Fool",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6043,21 +6124,24 @@
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Furtive",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Sticky Fingers",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6066,70 +6150,133 @@
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Kawarimi",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Meticulous Dungeoneer",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Twitchy",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Sudden Strikes",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Able Alchemist",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Legerdemain",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Stowing",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Flanker",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Inner Dramatics",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Combat Opportunist",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Borrowed Blade",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Charming Grifter",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Hide in Plain Sight",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Cat's Eyes",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Desperate Scurry",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
         }
       ]
     },
@@ -6140,21 +6287,24 @@
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Favored Weapon",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Into the Fray",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6163,56 +6313,130 @@
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Opportunistic Butcher",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Vagrant Blade",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Master Tactician",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Brazen Defense",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Brute",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Brawler",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Giant Killer",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Berserker",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Sentinel",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Galvanizer",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Overbearing Antagonist",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Indomitable",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Uncanny Strategist",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Bounder",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Roaring Spirit",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6223,21 +6447,24 @@
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Hunter's Focus",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Sidestep",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6246,56 +6473,133 @@
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Silent Strider",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Trusted Comrade",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Free Runner",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Rushing Fist Style",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Ranger",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Faith in the Wind",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Artisan Smithy",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Flash Step",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Blistering Pace",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Counter Fang",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Wind Wears Away Stone",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Mindfulness",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Spell Cutter",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Lightning and Thunder",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Sure Kill Strike",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6306,21 +6610,26 @@
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Shield of Love",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Soul Companion",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6329,56 +6638,146 @@
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Glittering Machine",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Love-Love Chef",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Compassion Cure",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Passion's Fire",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Cry of the Heart",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Battle Dance",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Battle Bonds",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "At Your Side",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Spirit Wings",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Shining Resolve",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Opened Hearts",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Radiant Blade",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Legend in Your Own Time",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Never Stand Alone",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Heart's Aegis",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
         }
       ]
     },
@@ -6389,21 +6788,25 @@
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Withering Glare",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Tenacity",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6412,56 +6815,149 @@
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Frost Blade",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Wrath Bolt",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Bulwark of Disdain",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "The Hard Way",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Desperate Friendship",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Barbed Justice",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Caustic Truth",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Sword Storm",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Relentless Pursuer",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Iconoclast",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Overwhelming Might",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Blade of Darkness",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Red Petal Revenge",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Vexed Dispel",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Spirited Slaughter",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6472,21 +6968,27 @@
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Sage's Staff",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Prestidigitonium",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         }
       ],
       "standard": [
@@ -6495,56 +6997,157 @@
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true
         },
         {
           "name": "Mortifying Bloat",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Arcane Artificing",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Glowing Ink",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Hocus Pox",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Murky Mask",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Very Useful Cloud",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Eldritch Explosives",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Cloak of Obscurity",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Demystify",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Mana Crush",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Practical Flight",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Harmonious Geomancy",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Shadow Puppet",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Momentary Fortress",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Soothing Darkness",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
         }
       ]
     },
@@ -6555,21 +7158,25 @@
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Dreadful",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Squire Marlow",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         }
       ],
       "standard": [
@@ -6578,56 +7185,162 @@
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Deacon Galrave",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Bushi Miyabi",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Seer Kasnah",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Yogi Tulpa",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Messenger Kaila",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Wretched Jarah",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Count Paris",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Altgrave Ultima",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Prince Justiniaus",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Imperatrix Delilah",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Dowager Collette",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Servant Pazuu",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Umbra Draconis",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Egomet",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Queen Amhika",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
         }
       ]
     },
@@ -6635,21 +7348,24 @@
       "starting": [
         {
           "name": "Journey Journal",
-          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+          "tier": "Starting"
         },
         {
           "name": "Folklorist",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Don't Mind Me",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6658,56 +7374,134 @@
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard",
+          "repeatable": true
         },
         {
           "name": "Healer's Hands",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Combat Coordinated",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Silver Tongue",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Social Learner",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Cutting Wit",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Stalwart Navigator",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Second To None",
           "pages": [
             16,
             21
-          ]
+          ],
+          "tier": "Starting"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Boon Companion",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Troubleshooter",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Multi-Tasker",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Pack Tactics",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Master of Spectacle",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "The Better Part of Valor",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Tricky Combatant",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Fortune's Fool",
+          "pages": [
+            16,
+            21
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6718,21 +7512,24 @@
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Furtive",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Flanker",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         }
       ],
       "standard": [
@@ -6741,70 +7538,133 @@
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Kawarimi",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Meticulous Dungeoneer",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Twitchy",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Sudden Strikes",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Able Alchemist",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Legerdemain",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Stowing",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Inner Dramatics",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Sticky Fingers",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Combat Opportunist",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Borrowed Blade",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Charming Grifter",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Hide in Plain Sight",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Cat's Eyes",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Desperate Scurry",
+          "pages": [
+            22,
+            26
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
         }
       ]
     },
@@ -6815,21 +7675,24 @@
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Brazen Defense",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Into the Fray",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6838,56 +7701,130 @@
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Opportunistic Butcher",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Vagrant Blade",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Master Tactician",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Brute",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Giant Killer",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Combat Momentum",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Favored Weapon",
           "pages": [
             27,
             32
-          ]
+          ],
+          "tier": "Starting"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Berserker",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Sentinel",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Galvanizer",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Overbearing Antagonist",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Indomitable",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Uncanny Strategist",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Bounder",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Roaring Spirit",
+          "pages": [
+            27,
+            32
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6898,21 +7835,24 @@
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Ranger",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Artisan Smithy",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         }
       ],
       "standard": [
@@ -6921,56 +7861,133 @@
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Silent Strider",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Trusted Comrade",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Free Runner",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Rushing Fist Style",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Faith in the Wind",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Sidestep",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Hunter's Focus",
           "pages": [
             33,
             38
-          ]
+          ],
+          "tier": "Starting"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Flash Step",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Blistering Pace",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Counter Fang",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Wind Wears Away Stone",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Mindfulness",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Spell Cutter",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Lightning and Thunder",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Sure Kill Strike",
+          "pages": [
+            33,
+            38
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -6978,15 +7995,18 @@
       "starting": [
         {
           "name": "Holy Sword",
-          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+          "tier": "Starting"
         },
         {
           "name": "Bonded Mount",
-          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+          "tier": "Starting"
         },
         {
           "name": "Lay on Hands",
-          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2023/07/option-menu-re-skinning-and-modifying.html",
+          "tier": "Starting"
         }
       ],
       "standard": [
@@ -6995,56 +8015,147 @@
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Glittering Machine",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Love-Love Chef",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Passion's Fire",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Cry of the Heart",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Battle Dance",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Battle Bonds",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Shield of Love",
           "pages": [
             40,
             49
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
+        }
+      ],
+      "advanced": [
+        {
+          "name": "At Your Side",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Spirit Wings",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Shining Resolve",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Opened Hearts",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Radiant Blade",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Legend in Your Own Time",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Never Stand Alone",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Heart's Aegis",
+          "pages": [
+            40,
+            49
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
         }
       ]
     },
@@ -7055,18 +8166,24 @@
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         },
         {
           "name": "Beloved Wraith",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+          "tier": "Starting"
         },
         {
           "name": "Frost Blade",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         }
       ],
       "standard": [
@@ -7075,56 +8192,147 @@
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Wrath Bolt",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Bulwark of Disdain",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "The Hard Way",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Desperate Friendship",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Barbed Justice",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Caustic Truth",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Tenacity",
           "pages": [
             50,
             57
-          ]
+          ],
+          "tier": "Starting"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Sword Storm",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Relentless Pursuer",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Iconoclast",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Overwhelming Might",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
+        },
+        {
+          "name": "Blade of Darkness",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Red Petal Revenge",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Vexed Dispel",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Spirited Slaughter",
+          "pages": [
+            50,
+            57
+          ],
+          "tier": "Advanced"
         }
       ]
     },
@@ -7135,21 +8343,27 @@
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Light Footed",
           "pages": [
             22,
             26
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Prestidigitonium",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
         }
       ],
       "standard": [
@@ -7158,56 +8372,156 @@
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true
         },
         {
           "name": "Mortifying Bloat",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Arcane Artificing",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard"
         },
         {
           "name": "Glowing Ink",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Hocus Pox",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Very Useful Cloud",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Eldritch Explosives",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Grand Grimoire",
           "pages": [
             58,
             67
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Cloak of Obscurity",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Demystify",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Mana Crush",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Practical Flight",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Harmonious Geomancy",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Shadow Puppet",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Momentary Fortress",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Soothing Darkness",
+          "pages": [
+            58,
+            67
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
         }
       ]
     },
@@ -7218,18 +8532,23 @@
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Starting"
         },
         {
           "name": "Dire Divination",
-          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2024/05/freebie-some-more-alternate-callings.html",
+          "tier": "Starting"
         },
         {
           "name": "Seer Kasnah",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         }
       ],
       "standard": [
@@ -7238,56 +8557,161 @@
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Deacon Galrave",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Bushi Miyabi",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Yogi Tulpa",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Messenger Kaila",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Wretched Jarah",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Count Paris",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Squire Marlow",
           "pages": [
             68,
             79
-          ]
+          ],
+          "tier": "Starting",
+          "magical": true
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Altgrave Ultima",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Prince Justiniaus",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Imperatrix Delilah",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Dowager Collette",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Servant Pazuu",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Umbra Draconis",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Egomet",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Queen Amhika",
+          "pages": [
+            68,
+            79
+          ],
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
         }
       ]
     },
@@ -7295,49 +8719,129 @@
       "starting": [
         {
           "name": "Leitmotif",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Starting"
         },
         {
           "name": "Focus Instrument",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Starting"
         },
         {
           "name": "The Song in Your Heart",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Starting"
         }
       ],
       "standard": [
         {
           "name": "Disparaging Ditty",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Guiding Beat",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard"
         },
         {
           "name": "Beckoning Note",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Glorious Echo",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Harmonious Hearts",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Dark"
         },
         {
           "name": "Tranquil Tune",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Beast Song",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "allegiance": "Bright"
         },
         {
           "name": "Something to Remember Me By!",
-          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Enchanting Performance",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Dancer's Stride",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "effects": {
+            "speed": 1
+          }
+        },
+        {
+          "name": "Lucid Note",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Healing Song",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Auteur's Request",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "Battle Anthem",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Bright"
+        },
+        {
+          "name": "Encore",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced",
+          "magical": true,
+          "allegiance": "Dark"
+        },
+        {
+          "name": "The Universal Language",
+          "sourceUrl": "https://breakrpg.blogspot.com/2025/04/break-balladeer-freebie-calling.html",
+          "tier": "Advanced"
         }
       ]
     },
@@ -7345,49 +8849,113 @@
       "starting": [
         {
           "name": "Transformation Driver",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Starting"
         },
         {
           "name": "Primary Form",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Starting"
         },
         {
           "name": "Finisher",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Starting"
         }
       ],
       "standard": [
         {
           "name": "Additional Form",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard",
+          "magical": true,
+          "repeatable": true
         },
         {
           "name": "Gacha Weapon",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard",
+          "magical": true
         },
         {
           "name": "Justice Visor",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard",
+          "magical": true
         },
         {
           "name": "Dynamic Guard",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard",
+          "magical": true
         },
         {
           "name": "Inspiring Opponent",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard"
         },
         {
           "name": "Timely Arrival",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard"
         },
         {
           "name": "Eye for Trouble",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard"
         },
         {
           "name": "Heroic Hobby",
-          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html"
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Standard"
+        }
+      ],
+      "advanced": [
+        {
+          "name": "Hyper Finisher",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Battle Vehicle",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Heroic Leap",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Valorous Negation",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Second Wind",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Additional Finisher",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced",
+          "magical": true
+        },
+        {
+          "name": "Something to Believe In",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced"
+        },
+        {
+          "name": "Fan Club",
+          "sourceUrl": "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-calling.html",
+          "tier": "Advanced"
         }
       ]
     }
@@ -7399,7 +8967,8 @@
         "pages": [
           84,
           85
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Human, Dimensional Stray": [
@@ -7408,7 +8977,8 @@
         "pages": [
           86,
           87
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Chib": [
@@ -7417,7 +8987,8 @@
         "pages": [
           88,
           89
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Tenebrate": [
@@ -7426,14 +8997,16 @@
         "pages": [
           90,
           91
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Shadow Sight",
         "pages": [
           90,
           91
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Rai-Neko": [
@@ -7442,14 +9015,16 @@
         "pages": [
           92,
           93
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Hunter's Blood",
         "pages": [
           92,
           93
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Promethean": [
@@ -7458,14 +9033,16 @@
         "pages": [
           94,
           95
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Born of the Sun",
         "pages": [
           94,
           95
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Gruun": [
@@ -7474,7 +9051,8 @@
         "pages": [
           96,
           97
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Goblin": [
@@ -7483,14 +9061,16 @@
         "pages": [
           98,
           99
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Gobbo Werks",
         "pages": [
           98,
           99
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Dwarf": [
@@ -7499,14 +9079,16 @@
         "pages": [
           100,
           101
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Sturdy",
         "pages": [
           100,
           101
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Elf": [
@@ -7515,14 +9097,16 @@
         "pages": [
           102,
           103
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Immortal Ego",
         "pages": [
           102,
           103
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Bio-Mechanoid": [
@@ -7531,14 +9115,16 @@
         "pages": [
           104,
           105
-        ]
+        ],
+        "tier": "Starting"
       },
       {
         "name": "Personal Analytics",
         "pages": [
           104,
           105
-        ]
+        ],
+        "tier": "Starting"
       }
     ],
     "Hoppalong": [
@@ -7580,6 +9166,1640 @@
       {
         "name": "Heart's Craft",
         "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+      }
+    ]
+  },
+  "speciesMaturatives": {
+    "Human, Native": {
+      "name": "Unyielding",
+      "pages": [
+        84,
+        85
+      ],
+      "tier": "Advanced"
+    },
+    "Human, Dimensional Stray": {
+      "name": "Obstinate",
+      "pages": [
+        86,
+        87
+      ],
+      "tier": "Advanced"
+    },
+    "Chib": {
+      "name": "Always Bet on the Little One",
+      "pages": [
+        88,
+        89
+      ],
+      "tier": "Advanced"
+    },
+    "Tenebrate": {
+      "name": "Monarch Homunculi",
+      "pages": [
+        90,
+        91
+      ],
+      "tier": "Advanced",
+      "magical": true
+    },
+    "Rai-Neko": {
+      "name": "Panther Conditioning",
+      "pages": [
+        92,
+        93
+      ],
+      "tier": "Advanced"
+    },
+    "Promethean": {
+      "name": "Sol Invictus",
+      "pages": [
+        94,
+        95
+      ],
+      "tier": "Advanced"
+    },
+    "Gruun": {
+      "name": "Chain Breaker",
+      "pages": [
+        96,
+        97
+      ],
+      "tier": "Advanced"
+    },
+    "Goblin": {
+      "name": "Spore",
+      "pages": [
+        98,
+        99
+      ],
+      "tier": "Advanced"
+    },
+    "Dwarf": {
+      "name": "Stone Song",
+      "pages": [
+        100,
+        101
+      ],
+      "tier": "Advanced",
+      "magical": true
+    },
+    "Elf": {
+      "name": "Twilight Flux",
+      "pages": [
+        102,
+        103
+      ],
+      "tier": "Advanced"
+    },
+    "Bio-Mechanoid": {
+      "name": "Bit Stream",
+      "pages": [
+        104,
+        105
+      ],
+      "tier": "Advanced"
+    },
+    "Hoppalong": {
+      "name": "Springer",
+      "sourceUrl": "https://breakrpg.blogspot.com/2023/08/option-menu-creating-your-own-species.html",
+      "tier": "Maturative"
+    },
+    "Gadabovid": {
+      "name": "Labyrinthian Intuition",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "tier": "Maturative"
+    },
+    "Neridian": {
+      "name": "Siren Song",
+      "sourceUrl": "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html",
+      "tier": "Maturative"
+    },
+    "Unterkin": {
+      "name": "Masterful Mishap",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html",
+      "tier": "Maturative"
+    }
+  },
+  "advancementTables": {
+    "Factotum": [
+      {
+        "rank": 1,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 9,
+          "grit": 8,
+          "insight": 9,
+          "aura": 9
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 1,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 9,
+          "grit": 8,
+          "insight": 9,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 1,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 10,
+          "grit": 9,
+          "insight": 10,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 10,
+          "grit": 9,
+          "insight": 10,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 11,
+          "grit": 10,
+          "insight": 11,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 11,
+          "grit": 10,
+          "insight": 11,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 12,
+          "grit": 11,
+          "insight": 12,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 12,
+          "grit": 11,
+          "insight": 12,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 13,
+          "grit": 12,
+          "insight": 13,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 5,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 13,
+          "grit": 12,
+          "insight": 13,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Sneak": [
+      {
+        "rank": 1,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 10,
+          "grit": 7,
+          "insight": 10,
+          "aura": 8
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 1,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 10,
+          "grit": 7,
+          "insight": 10,
+          "aura": 8
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 1,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 11,
+          "grit": 8,
+          "insight": 11,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 11,
+          "grit": 8,
+          "insight": 11,
+          "aura": 9
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 12,
+          "grit": 9,
+          "insight": 12,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 12,
+          "grit": 9,
+          "insight": 12,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 13,
+          "grit": 10,
+          "insight": 13,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 13,
+          "grit": 10,
+          "insight": 13,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 14,
+          "grit": 11,
+          "insight": 14,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 5,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 14,
+          "grit": 11,
+          "insight": 14,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Champion": [
+      {
+        "rank": 1,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 8,
+          "grit": 9,
+          "insight": 7,
+          "aura": 8
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 8,
+          "grit": 9,
+          "insight": 7,
+          "aura": 8
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 9,
+          "grit": 10,
+          "insight": 8,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 9,
+          "grit": 10,
+          "insight": 8,
+          "aura": 9
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 5,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 10,
+          "grit": 11,
+          "insight": 9,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 6,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 10,
+          "grit": 11,
+          "insight": 9,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 7,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 13,
+          "deftness": 11,
+          "grit": 12,
+          "insight": 10,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 8,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 13,
+          "deftness": 11,
+          "grit": 12,
+          "insight": 10,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 9,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 14,
+          "deftness": 12,
+          "grit": 13,
+          "insight": 11,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 10,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 14,
+          "deftness": 12,
+          "grit": 13,
+          "insight": 11,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Raider": [
+      {
+        "rank": 1,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 8,
+          "aura": 7
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 8,
+          "aura": 7
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 9,
+          "aura": 8
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 9,
+          "aura": 8
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 5,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 10,
+          "aura": 9
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 6,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 10,
+          "aura": 9
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 7,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 12,
+          "grit": 12,
+          "insight": 11,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 8,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 12,
+          "grit": 12,
+          "insight": 11,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 9,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 13,
+          "deftness": 13,
+          "grit": 13,
+          "insight": 12,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 10,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 13,
+          "deftness": 13,
+          "grit": 13,
+          "insight": 12,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Battle Princess": [
+      {
+        "rank": 1,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 8,
+          "grit": 9,
+          "insight": 7,
+          "aura": 10
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 8,
+          "grit": 9,
+          "insight": 7,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 10,
+          "insight": 8,
+          "aura": 11
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 10,
+          "insight": 8,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 11,
+          "insight": 9,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 11,
+          "insight": 9,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 12,
+          "insight": 10,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 12,
+          "insight": 10,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 6,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 12,
+          "grit": 13,
+          "insight": 11,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 7,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 12,
+          "grit": 13,
+          "insight": 11,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Murder Princess": [
+      {
+        "rank": 1,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 8,
+          "aura": 9
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 8,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 9,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 9,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 10,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 10,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 11,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 11,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 6,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 12,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 7,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 12,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Sage": [
+      {
+        "rank": 1,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 6,
+          "deftness": 8,
+          "grit": 8,
+          "insight": 10,
+          "aura": 8
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 6,
+          "deftness": 8,
+          "grit": 8,
+          "insight": 10,
+          "aura": 8
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 11,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 11,
+          "aura": 9
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 2,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 12,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 2,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 12,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 13,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 13,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 12,
+          "grit": 12,
+          "insight": 14,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 12,
+          "grit": 12,
+          "insight": 14,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Heretic": [
+      {
+        "rank": 1,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 7,
+          "aura": 9
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 7,
+          "aura": 9
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 8,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 8,
+          "aura": 10
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 2,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 9,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 2,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 9,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 10,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 10,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 11,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 11,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Balladeer": [
+      {
+        "rank": 1,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 6,
+          "deftness": 7,
+          "grit": 7,
+          "insight": 10,
+          "aura": 10
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 0,
+        "hearts": 2,
+        "aptitudes": {
+          "might": 6,
+          "deftness": 7,
+          "grit": 7,
+          "insight": 10,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 8,
+          "grit": 8,
+          "insight": 11,
+          "aura": 11
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 7,
+          "deftness": 8,
+          "grit": 8,
+          "insight": 11,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 12,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 2,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 9,
+          "grit": 9,
+          "insight": 12,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 13,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 10,
+          "grit": 10,
+          "insight": 13,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 4,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 14,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 11,
+          "grit": 11,
+          "insight": 14,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
+      }
+    ],
+    "Henshin Hero": [
+      {
+        "rank": 1,
+        "attack": 1,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 7,
+          "aura": 10
+        },
+        "standardAbilities": 0,
+        "flexibleAbilities": 0,
+        "xp": 0
+      },
+      {
+        "rank": 2,
+        "attack": 2,
+        "hearts": 3,
+        "aptitudes": {
+          "might": 8,
+          "deftness": 7,
+          "grit": 10,
+          "insight": 7,
+          "aura": 10
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 6
+      },
+      {
+        "rank": 3,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 8,
+          "aura": 11
+        },
+        "standardAbilities": 1,
+        "flexibleAbilities": 0,
+        "xp": 12
+      },
+      {
+        "rank": 4,
+        "attack": 3,
+        "hearts": 4,
+        "aptitudes": {
+          "might": 9,
+          "deftness": 8,
+          "grit": 11,
+          "insight": 8,
+          "aura": 11
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 24
+      },
+      {
+        "rank": 5,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 9,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 0,
+        "xp": 36
+      },
+      {
+        "rank": 6,
+        "attack": 4,
+        "hearts": 5,
+        "aptitudes": {
+          "might": 10,
+          "deftness": 9,
+          "grit": 12,
+          "insight": 9,
+          "aura": 12
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 48
+      },
+      {
+        "rank": 7,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 10,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 1,
+        "xp": 72
+      },
+      {
+        "rank": 8,
+        "attack": 5,
+        "hearts": 6,
+        "aptitudes": {
+          "might": 11,
+          "deftness": 10,
+          "grit": 13,
+          "insight": 10,
+          "aura": 13
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 96
+      },
+      {
+        "rank": 9,
+        "attack": 6,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 11,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 2,
+        "xp": 132
+      },
+      {
+        "rank": 10,
+        "attack": 7,
+        "hearts": 7,
+        "aptitudes": {
+          "might": 12,
+          "deftness": 11,
+          "grit": 14,
+          "insight": 11,
+          "aura": 14
+        },
+        "standardAbilities": 2,
+        "flexibleAbilities": 3,
+        "xp": 168
       }
     ]
   },

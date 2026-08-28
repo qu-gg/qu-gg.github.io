@@ -1,12 +1,33 @@
 # BREAK!! Random Character
 
-A static, browser-only rank 1 character roller for BREAK!! RPG. The tool follows
+A static, browser-only Rank 1-10 character roller for BREAK!! RPG. The tool follows
 the six-step procedure in the Core Rules and is intentionally isolated from the
 rest of the site until it is ready to be linked publicly.
 
 ## Current scope
 
 - Roll 1-12 characters and replace the previous results.
+- Apply one selected Rank from 1-10 to the entire generated batch. Each Calling
+  uses its own Advancement Table for Attack, Hearts, Aptitudes, XP threshold,
+  and elective-ability counts; Calling variants inherit their base table.
+- Select Standard electives at Ranks 2 and 4. At Ranks 6, 8, and 10, first
+  choose uniformly between available Standard, Advanced, and Species
+  Maturative categories, then choose within that category.
+- Prevent duplicate non-repeatable electives and resolve bounded repeatable
+  choices for Crafting Prodigy and Henshin Hero Additional Form.
+- Resolve rank milestones for Favored Weapon, Heart's Blade, Wrath's Blade,
+  Shield of Love, Soul Companion, and Henshin Hero Forms/Finisher, plus finite
+  acquisition choices for supported electives.
+- Recalculate Allegiance and Gifts from magical acquired abilities. Apply only
+  verified unconditional card effects, including permanent Speed increases,
+  naked Defense alternatives, and Stowing; situational effects remain ability
+  names rather than changing base values.
+- Mark each contributing Species, Motif, Prodigy, or elective with compact
+  Bright or Dark point dots beside its name. Hover text and accessible labels
+  identify each contribution; award one Gift per complete 3 points in each
+  alignment.
+- Include core and expanded Species Maturatives where published. Gadabovid uses
+  Labyrinthian Intuition; Mundymutt has no Maturative option.
 - Optionally use the official 2026 Expanded Content Calling and Species tables.
   Purr is rerolled; Henshin Hero, Balladeer, and all eight linked Calling
   variants are supported.
@@ -48,6 +69,8 @@ rest of the site until it is ready to be linked publicly.
   cost.
 - Add a species-matched name from the official BREAK!! Random Name Tables post.
 - Apply Calling, Species Size, Species, Trait, and Quirk value adjustments.
+- Mark Dimensional Stray Leisurely Focus as a `+1` source beneath its randomly
+  selected eligible Aptitude.
 - Label Species Size contributions to Aptitudes, Defense, and base Inventory
   Slots alongside other modifier provenance.
 - Display Inventory relative to the Medium Species baseline of 10 Slots:

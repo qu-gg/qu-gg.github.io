@@ -153,7 +153,41 @@ body {
 }
 
 .roll-controls {
-    gap: 0.65rem;
+    display: grid;
+    grid-template-areas:
+        "fields fields"
+        "options generate";
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.45rem 0.75rem;
+    align-items: end;
+}
+
+.roll-fields,
+.roll-options {
+    display: flex;
+    align-items: flex-end;
+}
+
+.roll-fields {
+    grid-area: fields;
+    gap: 0.55rem;
+}
+
+.roll-options {
+    grid-area: options;
+    min-height: 36px;
+    gap: 0.75rem;
+    padding: 0 0.1rem;
+    border-top: 1px solid var(--generator-line);
+}
+
+.control-field {
+    display: grid;
+    gap: 0.2rem;
+    color: var(--generator-muted);
+    font-size: 0.68rem !important;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .expanded-toggle {
@@ -167,17 +201,12 @@ body {
     white-space: nowrap;
 }
 
-.budget-control {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    color: var(--generator-muted);
-    font-size: 0.75rem !important;
-    white-space: nowrap;
+.roll-controls .budget-field input {
+    width: 72px;
 }
 
-.roll-controls .budget-control input {
-    width: 72px;
+.roll-controls .control-field:not(.budget-field) input {
+    width: 54px;
 }
 
 .roll-controls .expanded-toggle input {
@@ -213,6 +242,8 @@ body {
 }
 
 .roll-controls button {
+    grid-area: generate;
+    align-self: end;
     min-height: 36px;
     padding: 0.55rem 0.9rem;
     border: 0;
@@ -514,7 +545,8 @@ body {
 
 .card-column-secondary > .card-section > h4,
 .card-column-secondary > .card-section > .section-heading,
-.abilities-section > h4 {
+.abilities-section > h4,
+.elective-abilities-section > .section-heading {
     margin: -0.2rem 0 0.75rem;
     padding: 0.38rem 0.5rem;
     border-left: 3px solid var(--card-accent);
@@ -523,7 +555,8 @@ body {
 
 .card-column-secondary > .card-section > h4,
 .card-column-secondary > .card-section > .section-heading h4,
-.abilities-section > h4 {
+.abilities-section > h4,
+.elective-abilities-section > .section-heading h4 {
     color: var(--generator-ink);
     font-size: 0.78rem;
 }
@@ -614,6 +647,30 @@ body {
     line-height: 1.2;
     overflow-wrap: anywhere;
     white-space: normal;
+}
+
+.allegiance-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.12rem;
+    margin-right: 0.28rem;
+    vertical-align: 0.08rem;
+}
+
+.allegiance-dot {
+    width: 0.48rem;
+    height: 0.48rem;
+    display: inline-block;
+    border: 0;
+    border-radius: 50%;
+}
+
+.allegiance-dot-bright {
+    background: #e8b22a;
+}
+
+.allegiance-dot-dark {
+    background: var(--generator-purple);
 }
 
 .combat-grid {
@@ -748,7 +805,7 @@ body {
     display: grid;
     place-items: center;
     position: absolute;
-    top: 0.02rem;
+    top: calc((1.6em - 1rem) / 2);
     left: -0.1rem;
     padding: 0;
     border: 0;
@@ -809,6 +866,11 @@ body {
     font-weight: 700;
     line-height: 1.2;
     vertical-align: 0.08rem;
+}
+
+.stowed-badge {
+    border-color: rgba(103, 52, 133, 0.45);
+    color: var(--generator-purple);
 }
 
 .purchased-gear-section {
@@ -966,25 +1028,26 @@ body {
     }
 
     .roll-controls {
-        display: flex;
         width: 100%;
+        grid-template-areas:
+            "fields"
+            "options"
+            "generate";
+        grid-template-columns: 1fr;
+    }
+
+    .roll-fields {
+        display: grid;
+        grid-template-columns: 54px 54px minmax(0, 1fr);
+    }
+
+    .roll-options {
+        align-items: center;
         flex-wrap: wrap;
     }
 
     .roll-controls button {
-        width: auto;
-    }
-
-    .budget-control {
-        order: 3;
-    }
-
-    .expanded-toggle {
-        order: 4;
-    }
-
-    .currency-toggle {
-        order: 5;
+        width: 100%;
     }
 
     .stat-grid {

@@ -30,6 +30,11 @@ const SEED_KEYS = [
     "gear",
     "purchasedGear",
     "outfit",
+    "ability2",
+    "ability4",
+    "ability6",
+    "ability8",
+    "ability10",
     "coins",
 ];
 const REROLL_DEPENDENCIES = {
@@ -44,6 +49,7 @@ const REROLL_DEPENDENCIES = {
     choices: ["callingChoices", "speciesChoices", "quirkChoices"],
     gear: ["gear"],
     purchasedGear: ["purchasedGear"],
+    abilities: ["ability2", "ability4", "ability6", "ability8", "ability10"],
     coins: ["coins"],
 };
 
@@ -159,18 +165,27 @@ function isOutfit(gear) {
     return gear.category === "Outfits" || gear.name === "Costume" || gear.name.includes("Outfit");
 }
 
-function equipOutfit(gear, purchasedGear, outfitRandom) {
+function equipOutfit(gear, purchasedGear, outfitRandom, hasStowing = false) {
     const allGear = [...gear, ...purchasedGear];
     const outfitCandidates = allGear.filter(isOutfit);
     const uniqueOutfitCandidates = outfitCandidates.filter((item) => item.name !== "Functional Outfit");
     const equippedOutfit = outfitCandidates.length
         ? choose(uniqueOutfitCandidates.length ? uniqueOutfitCandidates : outfitCandidates, outfitRandom)
         : null;
-    const markEquipped = (item) => ({ ...item, equipped: item === equippedOutfit });
+    const markEquipped = (item) => ({ ...item, equipped: item === equippedOutfit, stowed: false });
+    let finalGear = gear.map(markEquipped);
+    let finalPurchasedGear = purchasedGear.map(markEquipped);
+    const stowableItems = [...finalGear, ...finalPurchasedGear]
+        .filter((item) => !item.equipped && item.slotTenths > 0 && item.slotTenths <= 10);
+    const stowedItem = hasStowing && stowableItems.length ? choose(stowableItems, outfitRandom) : null;
+    const markStowed = (item) => ({ ...item, stowed: item === stowedItem });
+    finalGear = finalGear.map(markStowed);
+    finalPurchasedGear = finalPurchasedGear.map(markStowed);
     return {
-        gear: gear.map(markEquipped),
-        purchasedGear: purchasedGear.map(markEquipped),
+        gear: finalGear,
+        purchasedGear: finalPurchasedGear,
         equippedOutfit: equippedOutfit?.name || null,
+        stowedItem: stowedItem?.name || null,
     };
 }
 
@@ -271,18 +286,121 @@ function rollPurchasedGear(data, budgetCoins, startingGear, calling, sizeRule, b
     };
 }
 
-function resolveAllegiance(calling, species, selections) {
+function resolveAllegiance(calling, species, selections, electiveAbilities = []) {
     let bright = species.name === "Promethean" ? 1 : 0;
     let dark = species.name === "Tenebrate" || species.name === "Neridian" ? 1 : 0;
+    const sources = [];
+    if (species.name === "Promethean") sources.push({ source: species.name, amount: 1, alignment: "Bright" });
+    if (species.name === "Tenebrate" || species.name === "Neridian") sources.push({ source: species.name, amount: 1, alignment: "Dark" });
     const henshinMotif = calling.name === "Henshin Hero"
         ? selections.find((selection) => selection.label === "Allegiance Motif")?.value
         : null;
-    if (henshinMotif === "Light") bright += 2;
-    if (henshinMotif === "Dark") dark += 2;
+    if (henshinMotif === "Light") {
+        bright += 2;
+        sources.push({ source: "Allegiance Motif", amount: 2, alignment: "Bright" });
+    }
+    if (henshinMotif === "Dark") {
+        dark += 2;
+        sources.push({ source: "Allegiance Motif", amount: 2, alignment: "Dark" });
+    }
+    electiveAbilities.forEach((ability) => {
+        const allegiance = ability.allegiance || (calling.name === "Henshin Hero" && ability.magical ? henshinMotif : null);
+        if (allegiance === "Bright" || allegiance === "Light") {
+            bright += 1;
+            sources.push({ source: ability.name, amount: 1, alignment: "Bright" });
+        }
+        if (allegiance === "Dark") {
+            dark += 1;
+            sources.push({ source: ability.name, amount: 1, alignment: "Dark" });
+        }
+    });
     const parts = [];
     if (bright) parts.push(`${bright} Bright`);
     if (dark) parts.push(`${dark} Dark`);
-    return { bright, dark, label: parts.join(" / ") || "None" };
+    return { bright, dark, label: parts.join(" / ") || "None", sources };
+}
+
+function resolveAbilityAcquisitionChoice(data, ability, acquiredRank, characterRank, selections, random) {
+    if (ability.name === "Crafting Prodigy") {
+        const used = new Set(selections.filter((selection) => selection.label.includes("Crafting")).map((selection) => selection.value));
+        const disciplines = data.choices.craftingDisciplines.filter((discipline) => !used.has(discipline));
+        if (disciplines.length) selections.push({ label: `Crafting Prodigy · Rank ${acquiredRank}`, value: choose(disciplines, random), page: 17 });
+    }
+    if (ability.name === "Additional Form") {
+        const used = new Set(selections.filter((selection) => selection.label.includes("Form")).flatMap((selection) => selection.value.split(" / ")));
+        const forms = data.choices.henshinForms.filter((form) => !used.has(form));
+        if (forms.length) selections.push({ label: `Additional Form · Rank ${acquiredRank}`, value: choose(forms, random), sourceUrl: ability.sourceUrl });
+    }
+    if (ability.name === "Gacha Weapon") {
+        selections.push({ label: `Gacha Weapon · Rank ${acquiredRank}`, value: choose(["Mighty", "Arc", "Lash"], random), sourceUrl: ability.sourceUrl });
+    }
+    if (ability.name === "Heroic Hobby") {
+        selections.push({ label: `Heroic Hobby · Rank ${acquiredRank}`, value: choose(data.choices.craftingDisciplines, random), sourceUrl: ability.sourceUrl });
+    }
+    if (ability.name === "Beast Song") {
+        selections.push({ label: `Beast Song · Rank ${acquiredRank}`, value: choose(["Bird", "Mammal", "Reptile", "Insect", "Aquatic"], random), sourceUrl: ability.sourceUrl });
+    }
+    if (ability.name === "Favored Weapon") {
+        selections.push({ label: `Favored Weapon · Rank ${acquiredRank}`, value: sample(data.choices.weaponTypes, characterRank >= 5 ? 2 : 1, random).join(" / "), pages: ability.pages });
+    }
+    if (ability.name === "Shield of Love") {
+        selections.push({ label: `Shield of Love · Rank ${acquiredRank}`, value: `${characterRank >= 8 ? 3 : characterRank >= 4 ? 2 : 1} ${characterRank >= 4 ? "people" : "person"}`, pages: ability.pages });
+    }
+    if (ability.name === "Boon Companion") {
+        selections.push({ label: `Boon Companion · Rank ${acquiredRank}`, value: "Player-defined", pages: ability.pages, rerollable: false });
+    }
+    if (ability.name === "Egomet") {
+        selections.push({ label: `Egomet Other Self · Rank ${acquiredRank}`, value: `Player-defined / Rank ${Math.max(1, characterRank - 2)}`, pages: ability.pages, rerollable: false });
+    }
+}
+
+function rollElectiveAbilities(data, calling, species, rank, selections, streams) {
+    const pools = data.callingAbilities[calling.name];
+    const owned = new Set(pools.starting.map((ability) => ability.name));
+    const prodigyAbility = selections.find((selection) => selection.label === "Prodigy Ability")?.value;
+    if (prodigyAbility) owned.add(prodigyAbility);
+    const maturative = data.speciesMaturatives[species.name];
+    const selected = [];
+    const abilityCounts = new Map();
+
+    const repeatLimit = (ability) => {
+        if (ability.name === "Crafting Prodigy") return data.choices.craftingDisciplines.length;
+        if (ability.name === "Additional Form") return Math.max(0, data.choices.henshinForms.length - 1);
+        return ability.repeatable ? Infinity : 1;
+    };
+
+    const available = (abilities) => abilities.filter((ability) =>
+        !owned.has(ability.name) || (ability.repeatable && (abilityCounts.get(ability.name) || 0) < repeatLimit(ability))
+    );
+    const acquire = (ability, tier, acquiredRank, random) => {
+        const result = { ...ability, tier, acquiredRank };
+        selected.push(result);
+        abilityCounts.set(ability.name, (abilityCounts.get(ability.name) || 0) + 1);
+        if (!ability.repeatable || abilityCounts.get(ability.name) >= repeatLimit(ability)) owned.add(ability.name);
+
+        resolveAbilityAcquisitionChoice(data, ability, acquiredRank, rank, selections, random);
+    };
+
+    for (const acquiredRank of [2, 4, 6, 8, 10]) {
+        if (rank < acquiredRank) break;
+        const random = streams[`ability${acquiredRank}`];
+        if (acquiredRank < 6) {
+            const candidates = available(pools.standard);
+            if (candidates.length) acquire(choose(candidates, random), "Standard", acquiredRank, random);
+            continue;
+        }
+
+        const categories = [];
+        const standard = available(pools.standard);
+        const advanced = available(pools.advanced);
+        if (standard.length) categories.push({ tier: "Standard", abilities: standard });
+        if (advanced.length) categories.push({ tier: "Advanced", abilities: advanced });
+        if (maturative && !owned.has(maturative.name)) categories.push({ tier: "Maturative", abilities: [maturative] });
+        if (!categories.length) continue;
+        const category = choose(categories, random);
+        acquire(choose(category.abilities, random), category.tier, acquiredRank, random);
+    }
+    return selected;
 }
 
 function traitAptitude(roll) {
@@ -317,28 +435,33 @@ function rollName(data, species, random) {
     return { name: result.name, table: tableName, rolls };
 }
 
-function resolveNestedChoices(data, calling, species, quirk, streams) {
+function resolveNestedChoices(data, calling, species, quirk, rank, streams) {
     const choices = [];
 
     if (calling.name === "Champion") {
-        choices.push({ label: "Favored Weapon", value: choose(data.choices.weaponTypes, streams.callingChoices), page: 29 });
+        const favoredWeapons = sample(data.choices.weaponTypes, rank >= 5 ? 2 : 1, streams.callingChoices);
+        choices.push({ label: "Favored Weapon", value: favoredWeapons.join(" / "), page: 29 });
     }
 
     if (calling.name === "Bright-Heart Paladin") {
+        const holySwordTypes = sample(data.choices.bladeWeaponTypes, rank >= 6 ? 2 : 1, streams.callingChoices);
         choices.push({
             label: "Holy Sword",
-            value: `${choose(data.choices.bladeWeaponTypes, streams.callingChoices)} / ${choose(data.choices.brightBladeMaterials, streams.callingChoices)}`,
+            value: `${holySwordTypes.join(" + ")} / ${choose(data.choices.brightBladeMaterials, streams.callingChoices)}`,
             sourceUrl: calling.sourceUrl,
         });
+        if (rank >= 3) choices.push({ label: "Holy Sword Property", value: choose(["Glittering", "Righteous", "Sheltering"], streams.callingChoices), sourceUrl: calling.sourceUrl });
         choices.push({ label: "Bonded Mount", value: "Guardian Animal / Mount", sourceUrl: calling.sourceUrl });
     }
 
     if (calling.name === "Haunted Knight") {
+        const wrathBladeTypes = sample(data.choices.bladeWeaponTypes, rank >= 6 ? 2 : 1, streams.callingChoices);
         choices.push({
             label: "Wrath's Blade",
-            value: `${choose(data.choices.bladeWeaponTypes, streams.callingChoices)} / ${choose(data.choices.darkBladeMaterials, streams.callingChoices)}`,
+            value: `${wrathBladeTypes.join(" + ")} / ${choose(data.choices.darkBladeMaterials, streams.callingChoices)}`,
             sourceUrl: calling.sourceUrl,
         });
+        if (rank >= 3) choices.push({ label: "Wrath's Blade Property", value: choose(["Glistening", "Retributive", "Denying"], streams.callingChoices), sourceUrl: calling.sourceUrl });
     }
 
     if (calling.name === "Balladeer") {
@@ -358,7 +481,8 @@ function resolveNestedChoices(data, calling, species, quirk, streams) {
             choices.push({ label: "Driver Weapon", value: choose(data.choices.henshinDriverWeapons, streams.callingChoices), sourceUrl: calling.sourceUrl });
         }
         choices.push({ label: "Primary Form", value: choose(data.choices.henshinForms, streams.callingChoices), sourceUrl: calling.sourceUrl });
-        choices.push({ label: "Finisher Quality", value: choose(data.choices.henshinFinishers, streams.callingChoices), sourceUrl: calling.sourceUrl });
+        const finisherQualities = sample(data.choices.henshinFinishers, rank >= 5 ? 2 : 1, streams.callingChoices);
+        choices.push({ label: "Finisher Quality", value: finisherQualities.join(" / "), sourceUrl: calling.sourceUrl });
         choices.push({ label: "Hero / Form / Finisher Names", value: "Player-defined", sourceUrl: calling.sourceUrl, rerollable: false });
     }
 
@@ -368,11 +492,19 @@ function resolveNestedChoices(data, calling, species, quirk, streams) {
 
     if (calling.name === "Battle Princess" || calling.name === "Murder Princess") {
         const bright = calling.name === "Battle Princess";
+        const bladeTypes = sample(data.choices.bladeWeaponTypes, rank >= 6 ? 2 : 1, streams.callingChoices);
         choices.push({
             label: bright ? "Heart's Blade" : "Wrath's Blade",
-            value: `${choose(data.choices.bladeWeaponTypes, streams.callingChoices)} / ${choose(bright ? data.choices.brightBladeMaterials : data.choices.darkBladeMaterials, streams.callingChoices)}`,
+            value: `${bladeTypes.join(" + ")} / ${choose(bright ? data.choices.brightBladeMaterials : data.choices.darkBladeMaterials, streams.callingChoices)}`,
             page: bright ? 41 : 51,
         });
+        if (rank >= 3) {
+            choices.push({
+                label: `${bright ? "Heart's" : "Wrath's"} Blade Property`,
+                value: choose(bright ? ["Glittering", "Righteous", "Sheltering"] : ["Glistening", "Retributive", "Denying"], streams.callingChoices),
+                page: bright ? 41 : 51,
+            });
+        }
     }
 
     if (calling.name === "Battle Princess") {
@@ -380,7 +512,9 @@ function resolveNestedChoices(data, calling, species, quirk, streams) {
         const companionAbilities = companionType === "Guardian Animal"
             ? data.choices.animalCompanionAbilities
             : data.choices.toyCompanionAbilities;
-        choices.push({ label: "Soul Companion", value: `${companionType} / ${choose(companionAbilities, streams.callingChoices)}`, pages: [47, 48] });
+        const abilities = sample(companionAbilities, rank >= 5 ? 2 : 1, streams.callingChoices);
+        choices.push({ label: "Soul Companion", value: `${companionType} / ${abilities.join(" + ")}${rank >= 5 ? " / +1 Heart" : ""}`, pages: [47, 48] });
+        choices.push({ label: "Shield of Love", value: `${rank >= 8 ? 3 : rank >= 4 ? 2 : 1} ${rank >= 4 ? "people" : "person"}`, page: 41 });
     }
 
     if (species.name === "Tenebrate") {
@@ -466,7 +600,7 @@ function resolveHomeland(data, species, languageRandom, rolls) {
     return { homeland, language: choose(homeland.languages, languageRandom) };
 }
 
-export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false) {
+export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false, rank = 1) {
     const seeds = createSeeds(random, suppliedSeeds);
     const streams = Object.fromEntries(SEED_KEYS.map((key) => [key, seededRandom(seeds[key])]));
     const speciesResult = contentMode === "expanded"
@@ -484,6 +618,9 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         species: speciesResult.roll,
     };
     const calling = callingResult.entry || chooseByRange(data.callings, rolls.calling);
+    const safeRank = Math.max(1, Math.min(10, Math.trunc(Number(rank)) || 1));
+    const progressionName = calling.baseCalling || calling.name;
+    const advancement = data.advancementTables[progressionName][safeRank - 1];
     const species = {
         ...speciesEntry,
         size: speciesEntry.sizeOptions ? choose(speciesEntry.sizeOptions, streams.speciesChoices) : speciesEntry.size,
@@ -536,7 +673,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         addModifier(modifiers, "combat", "inventory", calling.inventoryBonusSource || calling.name, calling.inventoryBonus, "ability");
     }
 
-    const aptitudes = { ...calling.aptitudes };
+    const aptitudes = { ...advancement.aptitudes };
     const traitTouched = new Set();
     const traits = [];
     rolls.positiveTraits.forEach((roll) => {
@@ -552,8 +689,28 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
 
     applyAptitudes(aptitudes, sizeRule.aptitudes);
 
-    const selections = resolveNestedChoices(data, calling, species, quirk, streams);
-    const allegiance = resolveAllegiance(calling, species, selections);
+    const selections = resolveNestedChoices(data, calling, species, quirk, safeRank, streams);
+    if (species.name === "Human, Dimensional Stray") {
+        const available = data.choices.aptitudes.filter((aptitude) => !traitTouched.has(aptitude));
+        const focusedAptitude = choose(available, streams.speciesChoices);
+        aptitudes[focusedAptitude] += 1;
+        addModifier(modifiers, "aptitudes", focusedAptitude, "Leisurely Focus", 1, "ability");
+        selections.push({ label: "Leisurely Focus", value: titleCase(focusedAptitude), page: 87 });
+    }
+
+    let prodigyAbility = null;
+    if (species.name === "Human, Native") {
+        prodigyAbility = { ...choose(data.callingAbilities[calling.name].standard, streams.speciesChoices), tier: "Standard", acquiredRank: 1 };
+        selections.push({ label: "Prodigy Ability", value: prodigyAbility.name, pages: prodigyAbility.pages });
+        resolveAbilityAcquisitionChoice(data, prodigyAbility, 1, safeRank, selections, streams.speciesChoices);
+    }
+
+    const electiveAbilities = rollElectiveAbilities(data, calling, species, safeRank, selections, streams);
+    const acquiredAbilities = [prodigyAbility, ...electiveAbilities].filter(Boolean);
+    const allegiance = resolveAllegiance(calling, species, selections, acquiredAbilities);
+    allegiance.sources.forEach((source) => {
+        modifiers.combat.allegiance.push({ ...source, kind: "allegiance" });
+    });
     const allegianceGifts = [];
     for (let index = 0; index < Math.floor(allegiance.bright / 3); index += 1) {
         allegianceGifts.push({ label: "Allegiance Gift", value: `Bright: ${choose(data.choices.brightGifts, streams.callingChoices)}`, page: 206 });
@@ -563,20 +720,6 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     }
     selections.push(...allegianceGifts);
     allegianceGifts.forEach(() => addModifier(modifiers, "combat", "allegiance", "+1 Gift", 0, "gift"));
-    if (species.name === "Human, Dimensional Stray") {
-        const available = data.choices.aptitudes.filter((aptitude) => !traitTouched.has(aptitude));
-        const focusedAptitude = choose(available, streams.speciesChoices);
-        aptitudes[focusedAptitude] += 1;
-        selections.push({ label: "Leisurely Focus", value: titleCase(focusedAptitude), page: 87 });
-    }
-
-    if (species.name === "Human, Native") {
-        const elective = choose(data.callingAbilities[calling.name].standard, streams.speciesChoices);
-        selections.push({ label: "Prodigy Ability", value: elective.name, pages: elective.pages });
-        if (elective.name === "Crafting Prodigy") {
-            selections.push({ label: "Crafting Discipline", value: choose(data.choices.craftingDisciplines, streams.speciesChoices), page: 17 });
-        }
-    }
 
     const quirkAdjustment = data.quirkAdjustments[quirk.name] || {};
     applyAptitudes(aptitudes, quirkAdjustment.aptitudes);
@@ -600,7 +743,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     }
 
 
-    let attackBonus = calling.attack + (quirkAdjustment.attack || 0);
+    let attackBonus = advancement.attack + (quirkAdjustment.attack || 0);
     if (quirkAdjustment.attack) addModifier(modifiers, "combat", "attack", quirk.name, quirkAdjustment.attack);
     let additionalHistory = null;
     const extraGear = [];
@@ -628,14 +771,13 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
 
     const baseInventory = sizeRule.inventory + (species.inventoryBonus || 0) + (calling.inventoryBonus || 0);
     const shopping = rollPurchasedGear(data, gearBudgetCoins, gear, calling, sizeRule, baseInventory, rolls.coins, currencyWeightEnabled, streams.purchasedGear);
-    const equippedGear = equipOutfit(gear, shopping.gear, streams.outfit);
-    const equippedOutfit = [...gear, ...shopping.gear].find((item) => item.name === equippedGear.equippedOutfit && isOutfit(item));
+    const hasStowing = acquiredAbilities.some((ability) => ability.name === "Stowing");
+    const equippedGear = equipOutfit(gear, shopping.gear, streams.outfit, hasStowing);
     const finalGear = equippedGear.gear;
     const purchasedGear = equippedGear.purchasedGear;
     const allGear = [...finalGear, ...purchasedGear];
-    const equippedOutfitSlotsTenths = equippedOutfit.slotTenths || 0;
-    const startingSlotsTenths = shopping.startingSlotsTenths - (gear.includes(equippedOutfit) ? equippedOutfitSlotsTenths : 0);
-    const purchasedSlotsTenths = shopping.purchasedSlotsTenths - (shopping.gear.includes(equippedOutfit) ? equippedOutfitSlotsTenths : 0);
+    const startingSlotsTenths = sumGearValue(finalGear.filter((item) => !item.equipped && !item.stowed), "slotTenths");
+    const purchasedSlotsTenths = sumGearValue(purchasedGear.filter((item) => !item.equipped && !item.stowed), "slotTenths");
     const currency = currencySummary(rolls.coins, shopping.remainingStones, finalGear, currencyWeightEnabled);
     const gearSlotHundredths = (startingSlotsTenths + purchasedSlotsTenths) * 10;
     if (shopping.containerName) {
@@ -651,7 +793,9 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     }
     const armor = bestDefensiveGear(allGear, "armor");
     const shield = bestDefensiveGear(allGear, "shields");
-    if (calling.name === "Bruiser") {
+    const hasBrazenDefense = calling.name === "Bruiser" || acquiredAbilities.some((ability) => ability.name === "Brazen Defense");
+    const hasBulwarkOfDisdain = acquiredAbilities.some((ability) => ability.name === "Bulwark of Disdain");
+    if (hasBrazenDefense) {
         const armorBonus = armor?.defenseBonus || 0;
         if (armorBonus < 4) {
             defense = calling.defense + sizeRule.defense + 4;
@@ -659,8 +803,12 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
             addModifier(modifiers, "combat", "defense", "Brazen Defense", 4, "ability");
         }
     }
+    if (hasBulwarkOfDisdain && (armor?.defenseBonus || 0) < 4) {
+        defense += 4;
+        addModifier(modifiers, "combat", "defense", "Bulwark of Disdain", 4, "ability");
+    }
     for (const defensiveGear of [armor, shield].filter(Boolean)) {
-        if (defensiveGear === armor && calling.name === "Bruiser" && armor.defenseBonus < 4) continue;
+        if (defensiveGear === armor && (hasBrazenDefense || hasBulwarkOfDisdain) && armor.defenseBonus < 4) continue;
         defense += defensiveGear.defenseBonus;
         addModifier(modifiers, "combat", "defense", defensiveGear.name, defensiveGear.defenseBonus, "gear");
     }
@@ -668,6 +816,12 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     let speed = calling.speed;
     if (quirkAdjustment.speed) speed = shiftSpeed(speed, quirkAdjustment.speed);
     if (quirkAdjustment.speed) addModifier(modifiers, "combat", "speed", quirk.name, quirkAdjustment.speed);
+    acquiredAbilities.forEach((ability) => {
+        if (ability.effects?.speed) {
+            speed = shiftSpeed(speed, ability.effects.speed);
+            addModifier(modifiers, "combat", "speed", ability.name, ability.effects.speed, "ability");
+        }
+    });
     if (quirkAdjustment.hearts) addModifier(modifiers, "combat", "hearts", quirk.name, quirkAdjustment.hearts);
 
     const additionalQuirks = [];
@@ -681,7 +835,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         currencyWeightEnabled: Boolean(currencyWeightEnabled),
         name: rolledName.name,
         nameTable: rolledName.table,
-        rank: 1,
+        rank: safeRank,
         rolls,
         calling: {
             name: calling.name,
@@ -719,7 +873,7 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         modifiers,
         combat: {
             attack: attackBonus,
-            hearts: calling.hearts + (species.name === "Gruun" ? 1 : 0) + (quirkAdjustment.hearts || 0),
+            hearts: advancement.hearts + (species.name === "Gruun" ? 1 : 0) + (quirkAdjustment.hearts || 0),
             defense,
             speed,
             inventory: baseInventory + shopping.capacityBonusTenths / 10,
@@ -728,11 +882,14 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
         abilities: {
             calling: data.callingAbilities[calling.name].starting,
             species: data.speciesAbilities[species.name],
+            prodigy: prodigyAbility,
+            elective: electiveAbilities,
         },
         selections,
         gear: finalGear,
         purchasedGear,
         equippedOutfit: equippedGear.equippedOutfit,
+        stowedItem: equippedGear.stowedItem,
         shopping: {
             budgetCoins: shopping.budgetCoins,
             budgetStones: shopping.budgetStones,
@@ -761,10 +918,12 @@ export function removeGearItem(character, section, index) {
     const purchasedGear = section === "purchasedGear"
         ? character.purchasedGear.filter((_, itemIndex) => itemIndex !== index)
         : character.purchasedGear;
-    const equippedGear = equipOutfit(gear, purchasedGear, seededRandom(character.seeds.outfit));
+    const acquiredAbilities = [character.abilities.prodigy, ...character.abilities.elective].filter(Boolean);
+    const hasStowing = acquiredAbilities.some((ability) => ability.name === "Stowing");
+    const equippedGear = equipOutfit(gear, purchasedGear, seededRandom(character.seeds.outfit), hasStowing);
     const allGear = [...equippedGear.gear, ...equippedGear.purchasedGear];
-    const startingSlotsTenths = sumGearValue(equippedGear.gear.filter((item) => !item.equipped), "slotTenths");
-    const purchasedSlotsTenths = sumGearValue(equippedGear.purchasedGear.filter((item) => !item.equipped), "slotTenths");
+    const startingSlotsTenths = sumGearValue(equippedGear.gear.filter((item) => !item.equipped && !item.stowed), "slotTenths");
+    const purchasedSlotsTenths = sumGearValue(equippedGear.purchasedGear.filter((item) => !item.equipped && !item.stowed), "slotTenths");
     const spentStones = sumGearValue(equippedGear.purchasedGear, "costStones");
     const remainingStones = character.shopping.budgetStones - spentStones;
     const currency = currencySummary(character.coins, remainingStones, equippedGear.gear, character.currencyWeightEnabled);
@@ -785,21 +944,28 @@ export function removeGearItem(character, section, index) {
     }
 
     const oldGearDefense = character.modifiers.combat.defense.filter((modifier) => modifier.kind === "gear");
-    const oldBrazenDefense = character.modifiers.combat.defense.find((modifier) => modifier.source === "Brazen Defense");
+    const oldDefenseAbility = character.modifiers.combat.defense.find((modifier) => ["Brazen Defense", "Bulwark of Disdain"].includes(modifier.source));
     const defenseModifiers = character.modifiers.combat.defense
-        .filter((modifier) => modifier.kind !== "gear" && modifier.source !== "Brazen Defense");
+        .filter((modifier) => modifier.kind !== "gear" && !["Brazen Defense", "Bulwark of Disdain"].includes(modifier.source));
     let defense = character.combat.defense
         - oldGearDefense.reduce((total, modifier) => total + modifier.amount, 0)
-        - (oldBrazenDefense?.amount || 0);
+        - (oldDefenseAbility?.amount || 0);
     const armor = bestDefensiveGear(allGear, "armor");
     const shield = bestDefensiveGear(allGear, "shields");
-    const usesBrazenDefense = character.calling.name === "Bruiser" && (armor?.defenseBonus || 0) < 4;
+    const hasBrazenDefense = character.calling.name === "Bruiser" || acquiredAbilities.some((ability) => ability.name === "Brazen Defense");
+    const hasBulwarkOfDisdain = acquiredAbilities.some((ability) => ability.name === "Bulwark of Disdain");
+    const usesBrazenDefense = hasBrazenDefense && (armor?.defenseBonus || 0) < 4;
+    const usesBulwarkOfDisdain = !usesBrazenDefense && hasBulwarkOfDisdain && (armor?.defenseBonus || 0) < 4;
     if (usesBrazenDefense) {
         defense += 4;
         defenseModifiers.push({ source: "Brazen Defense", amount: 4, kind: "ability" });
     }
+    if (usesBulwarkOfDisdain) {
+        defense += 4;
+        defenseModifiers.push({ source: "Bulwark of Disdain", amount: 4, kind: "ability" });
+    }
     for (const defensiveGear of [armor, shield].filter(Boolean)) {
-        if (defensiveGear === armor && usesBrazenDefense) continue;
+        if (defensiveGear === armor && (usesBrazenDefense || usesBulwarkOfDisdain)) continue;
         defense += defensiveGear.defenseBonus;
         defenseModifiers.push({ source: defensiveGear.name, amount: defensiveGear.defenseBonus, kind: "gear" });
     }
@@ -810,6 +976,7 @@ export function removeGearItem(character, section, index) {
         gear: equippedGear.gear,
         purchasedGear: equippedGear.purchasedGear,
         equippedOutfit: equippedGear.equippedOutfit,
+        stowedItem: equippedGear.stowedItem,
         modifiers: {
             ...character.modifiers,
             combat: {
@@ -852,6 +1019,7 @@ function componentSignature(character, target) {
         choices: character.selections.map((selection) => `${selection.label}:${selection.value}`).join("|"),
         gear: character.gear.map((item) => `${item.option || 0}:${item.name}`).join("|"),
         purchasedGear: character.purchasedGear.map((item) => `${item.name}:${item.quantity}`).join("|"),
+        abilities: character.abilities.elective.map((ability) => `${ability.acquiredRank}:${ability.tier}:${ability.name}`).join("|"),
         coins: character.coins,
     };
     return JSON.stringify(signatures[target]);
@@ -865,13 +1033,13 @@ export function rerollCharacter(data, character, target, random = Math.random) {
     for (let attempt = 0; attempt < 20; attempt += 1) {
         const seeds = { ...character.seeds };
         dependencies.forEach((key) => { seeds[key] = createSeed(random); });
-        nextCharacter = rollCharacter(data, random, seeds, character.contentMode, character.shopping.budgetCoins, character.currencyWeightEnabled);
+        nextCharacter = rollCharacter(data, random, seeds, character.contentMode, character.shopping.budgetCoins, character.currencyWeightEnabled, character.rank);
         if (componentSignature(nextCharacter, target) !== previousSignature) break;
     }
     return nextCharacter;
 }
 
-export function rollCharacters(data, count, random = Math.random, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false) {
+export function rollCharacters(data, count, random = Math.random, contentMode = "core", gearBudgetCoins = 0, currencyWeightEnabled = false, rank = 1) {
     const safeCount = Math.max(1, Math.min(12, Math.trunc(Number(count)) || 1));
-    return Array.from({ length: safeCount }, () => rollCharacter(data, random, {}, contentMode, gearBudgetCoins, currencyWeightEnabled));
+    return Array.from({ length: safeCount }, () => rollCharacter(data, random, {}, contentMode, gearBudgetCoins, currencyWeightEnabled, rank));
 }
