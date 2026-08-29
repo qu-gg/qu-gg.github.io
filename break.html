@@ -51,12 +51,13 @@
             <li><a href="#helical-expeditions">The Helical Expeditions</a></li>
             <li><a href="#flight">FLIGHT!!</a></li>
             <li><a href="#miggins">Mrs. Miggins' Pies</a></li>
-            <li class="toc-group">Homebrew &amp; Rules</li>
+            <li class="toc-group"><a href="#homebrew-rules">Homebrew &amp; Rules</a></li>
             <li><a href="#adversaries">Adversary Compendium</a></li>
             <li><a href="#click-traps">CLICK! Traps</a></li>
             <li><a href="#species">Homebrew Species</a></li>
             <li><a href="#skyship">Skyship Racing</a></li>
-            <li class="toc-group">Tools</li>
+            <li class="toc-group"><a href="#tools">Tools</a></li>
+            <li><a href="#random-character">Character Generator</a></li>
             <li><a href="#blog-index">BREAK!! Blog Index</a></li>
             <li><a href="#converter">QuestlineVTT Converter</a></li>
             <li><a href="#resources">Other Resources</a></li>
@@ -980,6 +981,12 @@
             </div>
         </section>
 
+        <div class="break-section-group break-section-group-homebrew" aria-labelledby="homebrew-rules-title">
+            <header id="homebrew-rules" class="break-group-heading">
+                <h2 id="homebrew-rules-title">Homebrew &amp; Rules</h2>
+                <span aria-hidden="true"></span>
+            </header>
+
         <!-- Homebrew Adversary/Item Compendium Section -->
         <section id="adversaries" class="helical-intro">
             <div class="helical-header">
@@ -1148,6 +1155,43 @@
                 </div>
             </div>
         </section>
+        </div>
+
+        <div class="break-section-group break-section-group-tools" aria-labelledby="tools-title">
+            <header id="tools" class="break-group-heading">
+                <h2 id="tools-title">Tools</h2>
+                <span aria-hidden="true"></span>
+            </header>
+
+        <!-- BREAK!! Random Character Generator Section -->
+        <section id="random-character" class="helical-intro">
+            <div class="helical-header">
+                <div class="helical-title-block">
+                    <h2>BREAK!! Random Character Generator</h2>
+                    <p class="helical-subtitle">Complete Adventurers at Any Rank</p>
+                </div>
+            </div>
+
+            <div class="helical-content-row">
+                <div class="helical-cover-container">
+                    <img src="break-random-character/BREAKRandomCharacter.webp"
+                         alt="BREAK!! Random Character Generator Preview"
+                         class="helical-cover"
+                         onclick="openLightbox(this.src)"
+                         style="cursor: pointer;">
+                </div>
+                <div class="helical-description">
+                    <p>
+                        A rules-following generator for rolling complete <strong><em>BREAK!!</em></strong> characters at any Rank.
+                        Includes official expanded blog Callings and Species (e.g., Hoppalongs), resolves abilities and character choices,
+                        and can automatically spend a Gear Budget while keeping purchases within Inventory limits.
+                    </p>
+                    <a href="break-random-character/index.html" class="break-link" style="margin-top: 1rem; display: inline-block;">
+                        Open Character Generator →
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- BREAK!! Blog Index Section -->
         <section id="blog-index" class="helical-intro">
@@ -1227,6 +1271,7 @@
                 </a>
             </div>
         </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -1287,6 +1332,41 @@
             this.classList.toggle('active');
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        // Highlight the current project and its parent group in the floating contents.
+        const tocLinks = [...document.querySelectorAll('.toc-list a[href^="#"]')];
+        const trackedSections = tocLinks
+            .map(link => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        function updateTocHighlight() {
+            const marker = window.scrollY + Math.min(window.innerHeight * 0.3, 240);
+            let currentSection = trackedSections[0];
+            trackedSections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+                if (sectionTop <= marker) currentSection = section;
+            });
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+                currentSection = trackedSections[trackedSections.length - 1];
+            }
+
+            tocLinks.forEach(link => {
+                const active = link.getAttribute('href') === `#${currentSection?.id}`;
+                link.classList.toggle('toc-active', active);
+                if (active) link.setAttribute('aria-current', 'location');
+                else link.removeAttribute('aria-current');
+            });
+        }
+
+        let tocHighlightFrame;
+        function requestTocHighlight() {
+            cancelAnimationFrame(tocHighlightFrame);
+            tocHighlightFrame = requestAnimationFrame(updateTocHighlight);
+        }
+        window.addEventListener('scroll', requestTocHighlight, { passive: true });
+        window.addEventListener('resize', requestTocHighlight);
+        window.addEventListener('load', updateTocHighlight);
+        updateTocHighlight();
     </script>
 </body>
 </html>
