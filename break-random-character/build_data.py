@@ -196,6 +196,7 @@ HENSHIN_SOURCE = "https://breakrpg.blogspot.com/2026/06/freebie-henshin-hero-cal
 HOPPALONG_SOURCE = "https://breakrpg.blogspot.com/2023/08/option-menu-creating-your-own-species.html"
 SURF_TURF_SOURCE = "https://breakrpg.blogspot.com/2024/09/freebie-surf-and-turf-gaddabovids-and.html"
 UNTERKIN_SOURCE = "https://breakrpg.blogspot.com/2026/04/freebie-architects-of-promise-unterkin.html"
+PORC_SOURCE = "https://breakrpg.blogspot.com/2026/08/high-on-hog-freebie-species.html"
 
 
 CALLINGS = [
@@ -856,7 +857,7 @@ def build_expanded_species(ability_data: dict[str, dict]) -> list[dict]:
     expanded = []
     core_ranges = {
         "Human, Native": [1, 3], "Human, Dimensional Stray": [4, 4], "Chib": [5, 6],
-        "Tenebrate": [7, 8], "Rai-Neko": [9, 9], "Promethean": [11, 11], "Gruun": [13, 13],
+        "Tenebrate": [7, 7], "Rai-Neko": [9, 9], "Promethean": [11, 11], "Gruun": [13, 13],
         "Goblin": [15, 15], "Dwarf": [16, 16], "Elf": [17, 17], "Bio-Mechanoid": [19, 19],
     }
     for name, roll_range in core_ranges.items():
@@ -865,6 +866,11 @@ def build_expanded_species(ability_data: dict[str, dict]) -> list[dict]:
         expanded.append(entry)
 
     new_species = [
+        {
+            "range": [8, 8], "name": "Porc", "size": "Medium", "quirkTable": "Inheritor",
+            "nameTable": "Porc", "sourceUrl": PORC_SOURCE, "expanded": True,
+            "abilities": ["Goodly Gourmand"],
+        },
         {
             "range": [10, 10], "name": "Hoppalong", "size": "Medium", "quirkTable": "Inheritor",
             "nameTable": "Hoppalong", "sourceUrl": HOPPALONG_SOURCE, "expanded": True,
@@ -1027,6 +1033,7 @@ def main() -> None:
     expanded_callings = build_expanded_callings(abilities)
     expanded_species = build_expanded_species(abilities)
     abilities["maturatives"].update({
+        "Porc": {"name": "Boarish Affront", "sourceUrl": PORC_SOURCE, "tier": "Maturative"},
         "Hoppalong": {"name": "Springer", "sourceUrl": HOPPALONG_SOURCE, "tier": "Maturative"},
         "Gadabovid": {"name": "Labyrinthian Intuition", "sourceUrl": SURF_TURF_SOURCE, "tier": "Maturative"},
         "Neridian": {"name": "Siren Song", "sourceUrl": SURF_TURF_SOURCE, "tier": "Maturative"},
@@ -1055,6 +1062,7 @@ def main() -> None:
             ]
             for table_name, names in NAME_TABLES.items()
         } | {
+            "Porc": equal_name_table(["Glorio Banquet", "Huzza Fontaine", "Snorts Sailing", "Missy Finery", "Deary Theater"]),
             "Hoppalong": equal_name_table(["Skippy Floofins", "Cotton Highhop", "Bouncy Bedding", "Nimble Puffins"]),
             "Gadabovid": equal_name_table(["Jesse Littlehouse", "Sundance Openrange", "Annie Prairiefarm", "Etta Stonyranch"]),
             "Mundymutt": equal_name_table(["Ruff Akitaa", "Paws Terrerian", "Ruh Roh", "Bau Bau", "Knight Pugwash"]),

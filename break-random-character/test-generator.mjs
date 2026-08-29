@@ -34,7 +34,22 @@ for (const ability of [
     assert.equal(typeof ability.name, "string");
 }
 assert.equal(data.speciesMaturatives.Gadabovid.name, "Labyrinthian Intuition");
+assert.equal(data.speciesMaturatives.Porc.name, "Boarish Affront");
 assert.equal(data.speciesMaturatives.Mundymutt, undefined);
+const expandedTenebrate = data.expandedSpecies.find((species) => species.name === "Tenebrate");
+const expandedPorc = data.expandedSpecies.find((species) => species.name === "Porc");
+assert.deepEqual(expandedTenebrate.range, [7, 7]);
+assert.deepEqual(expandedPorc.range, [8, 8]);
+for (let roll = 1; roll <= 20; roll += 1) {
+    assert.equal(data.expandedSpecies.filter((species) => roll >= species.range[0] && roll <= species.range[1]).length, 1);
+}
+assert.equal(expandedPorc.size, "Medium");
+assert.equal(expandedPorc.quirkTable, "Inheritor");
+assert.ok(expandedPorc.sourceUrl.endsWith("/high-on-hog-freebie-species.html"));
+assert.deepEqual(data.speciesAbilities.Porc.map((ability) => ability.name), ["Goodly Gourmand"]);
+assert.equal(data.speciesAbilities.Porc[0].sourceUrl, expandedPorc.sourceUrl);
+assert.equal(data.speciesMaturatives.Porc.sourceUrl, expandedPorc.sourceUrl);
+assert.deepEqual(data.nameTables.Porc.map((entry) => entry.name), ["Glorio Banquet", "Huzza Fontaine", "Snorts Sailing", "Missy Finery", "Deary Theater"]);
 const hereticAllowance = data.callings.find((calling) => calling.name === "Heretic").gearAllowance;
 assert.ok(hereticAllowance.weapons.includes("Lash"));
 assert.ok(!hereticAllowance.weapons.includes("Master"));
@@ -730,7 +745,7 @@ for (let seed = 1; seed <= 10000; seed += 1) {
             assert.equal(item.restrictions.some((restriction) => restriction.source === "Henshin Hero"), callingRestricted);
         }
     }
-    if (["Hoppalong", "Gadabovid", "Mundymutt"].includes(character.species.name)) {
+    if (["Porc", "Hoppalong", "Gadabovid", "Mundymutt"].includes(character.species.name)) {
         assert.equal(data.expandedSpecies.find((species) => species.name === character.species.name).quirkTable, "Inheritor");
         assert.ok(data.nameTables[character.nameTable].some((entry) => entry.name === character.name));
         assert.equal(character.species.expanded, true);
@@ -742,6 +757,23 @@ assert.deepEqual(seenMundymuttSizes, new Set(["Small", "Medium", "Large"]));
 assert.ok(!seenExpandedCallings.has("Purr"));
 assert.ok(seenExpandedCallings.has("Henshin Hero"));
 assert.ok(seenExpandedCallings.has("Balladeer"));
+
+const porcNames = new Set();
+let porcMaturative = null;
+for (let seed = 1; seed <= 100000 && (porcNames.size < 5 || !porcMaturative); seed += 1) {
+    const character = rollCharacters(data, 1, seededRandom(seed), "expanded", 0, false, 10)[0];
+    if (character.species.name !== "Porc") continue;
+    porcNames.add(character.name);
+    assert.equal(character.size.name, "Medium");
+    assert.equal(character.species.sourceUrl, expandedPorc.sourceUrl);
+    assert.deepEqual(character.abilities.species.map((ability) => ability.name), ["Goodly Gourmand"]);
+    assert.ok(["Spirit", "Physiology", "Fate"].includes(character.quirk.category));
+    porcMaturative ||= character.abilities.elective.find((ability) => ability.name === "Boarish Affront") || null;
+}
+assert.deepEqual(porcNames, new Set(data.nameTables.Porc.map((entry) => entry.name)));
+assert.ok(porcMaturative);
+assert.equal(porcMaturative.tier, "Maturative");
+assert.equal(porcMaturative.sourceUrl, expandedPorc.sourceUrl);
 
 const neridianOrigins = { standard: 0, undersea: 0 };
 const seenNeridianHistories = new Set();

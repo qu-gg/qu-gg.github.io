@@ -27,13 +27,15 @@ rest of the site until it is ready to be linked publicly.
   identify each contribution; award one Gift per complete 3 points in each
   alignment.
 - Include core and expanded Species Maturatives where published. Gadabovid uses
-  Labyrinthian Intuition; Mundymutt has no Maturative option.
+  Labyrinthian Intuition, Porc uses Boarish Affront, and Mundymutt has no
+  Maturative option.
 - Optionally use the official 2026 Expanded Content Calling and Species tables.
   Purr is rerolled; Henshin Hero, Balladeer, and all eight linked Calling
   variants are supported.
-- Expanded Species include Hoppalong, Gadabovid, Mundymutt, Neridian, and
-  Unterkin. Added Species use the confirmed Inheritor Quirk route except
-  Unterkin, whose source defines its own Physiology/Eldritch route.
+- Expanded Species include Porc, Hoppalong, Gadabovid, Mundymutt, Neridian, and
+  Unterkin. Porc uses roll 8 while Tenebrate uses roll 7 pending an official
+  expanded-table update. Added Species use the confirmed Inheritor Quirk route
+  except Unterkin, whose source defines its own Physiology/Eldritch route.
 - Neridians use an even standard/undersea origin split. Mundymutt sizes are
   evenly weighted. Unterkin use their fixed Homeland, unique Histories, and
   compatible core/variant Calling families.

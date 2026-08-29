@@ -1160,13 +1160,25 @@
     {
       "range": [
         7,
-        8
+        7
       ],
       "name": "Tenebrate",
       "page": 90,
       "size": "Medium",
       "quirkTable": "Inheritor",
       "nameTable": "Tenebrate"
+    },
+    {
+      "range": [
+        8,
+        8
+      ],
+      "name": "Porc",
+      "size": "Medium",
+      "quirkTable": "Inheritor",
+      "nameTable": "Porc",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/08/high-on-hog-freebie-species.html",
+      "expanded": true
     },
     {
       "range": [
@@ -5787,6 +5799,43 @@
         "name": "Factory Setting"
       }
     ],
+    "Porc": [
+      {
+        "range": [
+          1,
+          4
+        ],
+        "name": "Glorio Banquet"
+      },
+      {
+        "range": [
+          5,
+          8
+        ],
+        "name": "Huzza Fontaine"
+      },
+      {
+        "range": [
+          9,
+          12
+        ],
+        "name": "Snorts Sailing"
+      },
+      {
+        "range": [
+          13,
+          16
+        ],
+        "name": "Missy Finery"
+      },
+      {
+        "range": [
+          17,
+          20
+        ],
+        "name": "Deary Theater"
+      }
+    ],
     "Hoppalong": [
       {
         "range": [
@@ -9127,6 +9176,12 @@
         "tier": "Starting"
       }
     ],
+    "Porc": [
+      {
+        "name": "Goodly Gourmand",
+        "sourceUrl": "https://breakrpg.blogspot.com/2026/08/high-on-hog-freebie-species.html"
+      }
+    ],
     "Hoppalong": [
       {
         "name": "Prey's Instinct",
@@ -9259,6 +9314,11 @@
         105
       ],
       "tier": "Advanced"
+    },
+    "Porc": {
+      "name": "Boarish Affront",
+      "sourceUrl": "https://breakrpg.blogspot.com/2026/08/high-on-hog-freebie-species.html",
+      "tier": "Maturative"
     },
     "Hoppalong": {
       "name": "Springer",
