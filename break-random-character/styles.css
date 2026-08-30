@@ -962,7 +962,42 @@ body {
 }
 
 .capture-card {
+    width: 1100px;
+    max-width: none;
     animation: none;
+}
+
+.capture-card .character-body {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.capture-card .card-column-primary {
+    padding-right: 1.25rem;
+}
+
+.capture-card .card-column-secondary {
+    padding-left: 1.25rem;
+    border-top: 0;
+    border-left: 1px solid var(--generator-line);
+}
+
+.capture-card .stat-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    overflow-x: visible;
+}
+
+.capture-card .combat-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.capture-card .reference-list,
+.capture-card .selection-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.capture-card .gear-list,
+.capture-card .identity-list {
+    column-count: 2;
 }
 
 @keyframes card-in {

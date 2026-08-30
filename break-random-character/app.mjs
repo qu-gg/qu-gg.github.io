@@ -14,6 +14,7 @@ const results = document.querySelector("#results");
 const emptyState = document.querySelector("#empty-state");
 const resultCount = document.querySelector("#result-count");
 const captureStage = document.querySelector("#card-capture-stage");
+const COPY_CAPTURE_WIDTH = 1100;
 
 let data;
 let currentCharacters = [];
@@ -303,13 +304,13 @@ function renderCharacter(character, index) {
     `;
 }
 
-function balanceCharacterCard(card) {
+function balanceCharacterCard(card, forceDesktop = false) {
     const primary = card.querySelector(".card-column-primary");
     const secondary = card.querySelector(".card-column-secondary");
     const sections = [...card.querySelectorAll("[data-balance-section]")]
         .sort((left, right) => Number(left.dataset.balanceOrder) - Number(right.dataset.balanceOrder));
     if (!primary || !secondary || !sections.length) return;
-    if (matchMedia("(max-width: 800px)").matches) {
+    if (!forceDesktop && matchMedia("(max-width: 800px)").matches) {
         primary.append(...sections);
         return;
     }
@@ -395,15 +396,15 @@ async function copyCardAsImage(card, button) {
     card.classList.add("copying");
     setCopyButtonState(button, "copying");
     try {
-        const cardWidth = Math.ceil(card.getBoundingClientRect().width);
         captureStage.replaceChildren();
-        captureStage.style.width = `${cardWidth}px`;
+        captureStage.style.width = `${COPY_CAPTURE_WIDTH}px`;
         const clone = card.cloneNode(true);
         clone.classList.remove("copying", "rerolled");
         clone.classList.add("capture-card");
-        clone.style.width = `${cardWidth}px`;
+        clone.style.width = `${COPY_CAPTURE_WIDTH}px`;
         clone.querySelectorAll("[data-html2canvas-ignore]").forEach((element) => element.remove());
         captureStage.appendChild(clone);
+        balanceCharacterCard(clone, true);
         const pngPromise = window.html2canvas(clone, {
             scale: 2,
             useCORS: true,
