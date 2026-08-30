@@ -1,5 +1,7 @@
 import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=24";
+import { downloadFoundryActor } from "./foundry-export.mjs?v=1";
 
+const ENABLE_FOUNDRY_EXPORT = false;
 
 const form = document.querySelector("#roll-form");
 const countInput = document.querySelector("#character-count");
@@ -232,6 +234,7 @@ function renderCharacter(character, index) {
                     <h3 id="character-${index + 1}-title">${escapeHtml(character.name)}</h3>
                     ${rerollIcon("name", "name")}
                     <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="Copy ${escapeHtml(character.name)} as an image" title="Copy card as image">Copy as Image</button>
+                    ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
                 </div>
                 <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
                 <p class="character-origin">${escapeHtml(character.history.name)} [${escapeHtml(character.history.tier)}] · ${escapeHtml(character.homeland.name)}</p>
@@ -366,11 +369,13 @@ function setCopyButtonState(button, state) {
     clearTimeout(button.copyStateTimeout);
     button.dataset.state = state;
     button.disabled = state === "copying";
+    button.textContent = state === "copying" ? "Copying..." : state === "success" ? "Copied" : state === "error" ? "Copy failed" : "Copy as Image";
     button.setAttribute("aria-label", state === "success" ? "Character card copied as an image" : state === "error" ? "Character card image copy failed" : "Copy character card as an image");
     if (state === "success" || state === "error") {
         button.copyStateTimeout = setTimeout(() => {
             button.dataset.state = "";
             button.disabled = false;
+            button.textContent = "Copy as Image";
             button.setAttribute("aria-label", "Copy character card as an image");
         }, 1800);
     }
@@ -399,14 +404,13 @@ async function copyCardAsImage(card, button) {
         clone.style.width = `${cardWidth}px`;
         clone.querySelectorAll("[data-html2canvas-ignore]").forEach((element) => element.remove());
         captureStage.appendChild(clone);
-        const canvas = await window.html2canvas(clone, {
+        const pngPromise = window.html2canvas(clone, {
             scale: 2,
             useCORS: true,
             backgroundColor: "#fffefe",
             logging: false,
-        });
-        const blob = await canvasToBlob(canvas);
-        await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+        }).then(canvasToBlob);
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": pngPromise })]);
         setCopyButtonState(button, "success");
     } catch (error) {
         console.error(error);
@@ -444,6 +448,13 @@ form.addEventListener("submit", (event) => {
 
 results.addEventListener("click", (event) => {
     if (event.target.closest("a")) return;
+    const foundryButton = event.target.closest("[data-export-foundry]");
+    if (foundryButton) {
+        const card = foundryButton.closest(".character-card");
+        const index = [...results.children].indexOf(card);
+        if (currentCharacters[index]) downloadFoundryActor(currentCharacters[index], data);
+        return;
+    }
     const copyButton = event.target.closest("[data-copy-image]");
     if (copyButton) {
         copyCardAsImage(copyButton.closest(".character-card"), copyButton);

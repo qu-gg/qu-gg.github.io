@@ -99,6 +99,12 @@ rest of the site until it is ready to be linked publicly.
   rebuilding dependent values, gear restrictions, and modifiers.
 - Use the `Copy Image` button on a card to copy it to the system clipboard as a
   PNG. Normal browser right-click behavior remains available.
+- Use the `Export to FoundryVTT` button on a card to download one portable
+  Foundry v14 BREAK!! character Actor JSON document. The export includes the
+  selected Calling, Species, identity Items, abilities, Gifts, generated gear,
+  equipment references, rank, traits, currency, resolved choices, and portable
+  numeric effects. It does not include compendium metadata, official
+  descriptions, Actions, or separate Companion Actors.
 
 The official post does not provide a separate Dimensional Stray name table, so
 Dimensional Strays currently use the Native Human table. An Elf result that says
@@ -172,6 +178,8 @@ values, combat classifications, and page references are exported.
 - `styles.css`: Responsive generator-specific presentation.
 - `app.mjs`: Browser rendering and form behavior.
 - `generator.mjs`: Pure random table and dependency-resolution engine.
+- `foundry-export.mjs`: Isolated Foundry Actor document builder and browser
+  download adapter.
 - `data.json`: Generated public, sanitized rules data.
 - `build_data.py`: Local normalization step for the transcribed source data.
 - `test-generator.mjs`: Seeded rules and coverage checks.
@@ -183,6 +191,7 @@ From the repository root:
 ```bash
 python break-random-character/build_data.py
 node break-random-character/test-generator.mjs
+node break-random-character/test-foundry-export.mjs
 python -m http.server 8765
 ```
 
@@ -232,3 +241,25 @@ A future export phase should:
 
 Questline export must remain optional and must not add licensed rule descriptions
 to the generated package.
+
+### FoundryVTT export
+
+Foundry export is implemented as a separate adapter so the generator remains
+browser-only and its public data boundary remains unchanged. The downloaded
+document is a standard `character` Actor for Foundry v14 and the BREAK!! v1.2
+system. It is self-contained: all generated Items are embedded in the Actor,
+and every `system.equipment` reference points to the matching embedded Item
+ID. The page button is currently hidden behind the `ENABLE_FOUNDRY_EXPORT`
+feature flag in `app.mjs` while the export format is developed further.
+
+The adapter exports portable numeric effects for verified unconditional
+adjustments, including applicable aptitude, Attack, Defense, Hearts, Speed,
+Inventory, and Allegiance changes. Foundry still recalculates derived values
+from its Calling, Species, equipment, Active Effects, and world settings. The
+export therefore stores the generator result in a custom flag for comparison
+after import.
+
+The public export deliberately leaves Item descriptions and Actions empty. It
+also represents Followers and Soul Companions as Items or resolved-choice
+notes, not fully populated Companion Actors. Those features can be added later
+without changing the page hook by extending the isolated adapter.

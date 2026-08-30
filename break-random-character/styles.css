@@ -350,6 +350,7 @@ body {
 
 .character-header h3 {
     margin: 0;
+    min-width: 0;
     overflow-wrap: anywhere;
     font-family: var(--font-display);
     font-size: 1.55rem;
@@ -363,6 +364,10 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 0.25rem;
+}
+
+.character-title-row {
+    flex-wrap: wrap;
 }
 
 .section-heading h4 {
@@ -410,7 +415,8 @@ body {
     cursor: pointer;
 }
 
-.copy-image-button {
+.copy-image-button,
+.foundry-export-button {
     min-height: 26px;
     margin-left: auto;
     padding: 0.28rem 0.5rem;
@@ -425,8 +431,14 @@ body {
     line-height: 1;
 }
 
+.foundry-export-button {
+    margin-left: 0;
+}
+
 .copy-image-button:hover,
-.copy-image-button:focus-visible {
+.copy-image-button:focus-visible,
+.foundry-export-button:hover,
+.foundry-export-button:focus-visible {
     border-color: var(--card-accent);
     color: var(--card-accent);
     outline: none;

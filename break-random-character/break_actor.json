@@ -1,0 +1,295 @@
+{
+  "attack": {
+    "value": 2
+  },
+  "defense": {
+    "value": 10
+  },
+  "speed": {
+    "value": 1
+  },
+  "hearts": {
+    "value": 3,
+    "max": 3
+  },
+  "hands": {
+    "value": 2
+  },
+  "slots": {
+    "value": 0
+  },
+  "size": {
+    "value": 2
+  },
+  "aptitudes": {
+    "might": {
+      "value": 8,
+      "trait": 0,
+      "description": "BREAK.APTITUDE.MightDesc",
+      "label": "BREAK.APTITUDE.Might",
+      "color": "rgb(238, 61, 52) !important"
+    },
+    "deftness": {
+      "value": 8,
+      "trait": 0,
+      "description": "BREAK.APTITUDE.DeftnessDesc",
+      "label": "BREAK.APTITUDE.Deftness",
+      "color": "rgb(244, 127, 38) !important;"
+    },
+    "grit": {
+      "value": 9,
+      "trait": 1,
+      "description": "BREAK.APTITUDE.GritDesc",
+      "label": "BREAK.APTITUDE.Grit",
+      "color": "rgb(93, 186, 72) !important"
+    },
+    "insight": {
+      "value": 7,
+      "trait": -1,
+      "description": "BREAK.APTITUDE.InsightDesc",
+      "label": "BREAK.APTITUDE.Insight",
+      "color": "rgb(23, 126, 194) !important"
+    },
+    "aura": {
+      "value": 10,
+      "trait": 1,
+      "description": "BREAK.APTITUDE.AuraDesc",
+      "label": "BREAK.APTITUDE.Aura",
+      "color": "rgb(108, 60, 148) !important"
+    }
+  },
+  "equipment": {
+    "armor": {
+      "effects": {},
+      "_id": "VPhjCa01RKibAw8t",
+      "name": "Traveler's cuirass",
+      "type": "armor",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armor that prioritizes speed over defensive performance, and covers only the most vital points on your body.</p>",
+        "slots": 2,
+        "value": {
+          "gems": 0,
+          "coins": 30,
+          "stones": 0
+        },
+        "quantity": 1,
+        "defenseBonus": 2,
+        "speedLimit": 3,
+        "type": "light",
+        "abilities": [],
+        "actions": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "gAKzHRnsPZektaZN": 3
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "break",
+        "systemVersion": "1.0-beta.1.2",
+        "createdTime": 1777814668266,
+        "modifiedTime": 1777814668266,
+        "lastModifiedBy": "gAKzHRnsPZektaZN",
+        "compendiumSource": "Compendium.break.preview-content.Item.VPhjCa01RKibAw8t",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "equippable": "true"
+    },
+    "outfit": {
+      "effects": {},
+      "_id": "FKsneERWxHw07hOq",
+      "name": "Functional outfit",
+      "type": "outfit",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>These outfits are plain and practical.</p><ul><li><p>This Outfit does not provide any bonuses or penalties when worn.</p></li></ul>",
+        "slots": 2,
+        "value": {
+          "gems": 0,
+          "coins": 0,
+          "stones": 5
+        },
+        "quantity": 1,
+        "actions": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "gAKzHRnsPZektaZN": 3
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "break",
+        "systemVersion": "1.0-beta.1.2",
+        "createdTime": 1777814620350,
+        "modifiedTime": 1777814620350,
+        "lastModifiedBy": "gAKzHRnsPZektaZN",
+        "compendiumSource": "Compendium.break.preview-content.Item.FKsneERWxHw07hOq",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "equippable": "true"
+    },
+    "accessory": [
+      {
+        "effects": {},
+        "_id": "vArvWUZmPqjvcmJf",
+        "name": "Traveler's bag",
+        "type": "accessory",
+        "img": "icons/svg/item-bag.svg",
+        "system": {
+          "description": "<p>Shoulder bags that provide easy access to their contents.</p><ul><li><p>A Traveler’s Bag increases your Inventory capacity by 3 Slots.</p></li><li><p>Retrieving an object from a Bag requires an Action.</p></li><li><p>You cannot wear a Traveler’s Bag and a Backpack at the same time.</p></li></ul>",
+          "slots": 0,
+          "value": {
+            "gems": 0,
+            "coins": 3,
+            "stones": 0
+          },
+          "quantity": 1,
+          "actions": []
+        },
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0,
+          "gAKzHRnsPZektaZN": 3
+        },
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.360",
+          "systemId": "break",
+          "systemVersion": "1.0",
+          "createdTime": 1778427062843,
+          "modifiedTime": 1778427062843,
+          "lastModifiedBy": "gAKzHRnsPZektaZN",
+          "compendiumSource": "Compendium.break.preview-content.Item.vArvWUZmPqjvcmJf",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "_uuid": "Compendium.break.preview-actors.Actor.tWNISWwUh6JZWTjE.Item.vArvWUZmPqjvcmJf",
+        "equippable": "true"
+      }
+    ],
+    "weapon": [
+      {
+        "effects": {},
+        "_id": "1v3w0V55TpIIn3qu",
+        "name": "Heart's blade",
+        "type": "weapon",
+        "img": "icons/svg/item-bag.svg",
+        "system": {
+          "description": "",
+          "slots": 2,
+          "value": {
+            "gems": 0,
+            "coins": 0,
+            "stones": 0
+          },
+          "quantity": 1,
+          "extraDamage": 18,
+          "rangedExtraDamage": 0,
+          "attackBonus": 1,
+          "rangedAttackBonus": 0,
+          "range": 0,
+          "loadingTime": 0,
+          "weaponType1": "master",
+          "weaponType2": "",
+          "abilities": [],
+          "hands": 1,
+          "ranged": false,
+          "melee": true,
+          "actions": []
+        },
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0,
+          "gAKzHRnsPZektaZN": 3
+        },
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.360",
+          "systemId": "break",
+          "systemVersion": "1.0-beta.1.2",
+          "createdTime": 1777815155030,
+          "modifiedTime": 1777815166442,
+          "lastModifiedBy": "gAKzHRnsPZektaZN",
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "_uuid": "Compendium.break.preview-adversaries.Actor.tWNISWwUh6JZWTjE.Item.1v3w0V55TpIIn3qu",
+        "equippable": "true"
+      }
+    ],
+    "shield": {
+      "name": "Standard shield",
+      "type": "shield",
+      "_id": "qs58wyNX6N6UkguF",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>The most common shields are sturdy pieces of wood or metal that are held in place by a grip or strap along their back side.</p><ul><li><p>You can Parry 1 Melee or Missile Attack per Fight. This includes spells or any special attacks that require an Attack roll.</p></li><li><p>Standard Shields require one hand to use, so they affect your ability to use two-handed weapons.</p></li></ul>",
+        "slots": 1,
+        "value": {
+          "gems": 0,
+          "coins": 25,
+          "stones": 0
+        },
+        "quantity": 1,
+        "defenseBonus": 1,
+        "speedPenalty": 0,
+        "type": "light",
+        "abilities": [],
+        "hands": 1,
+        "actions": []
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "break",
+        "systemVersion": "1.0-beta.1.2",
+        "createdTime": 1777814845510,
+        "modifiedTime": 1777814845510,
+        "lastModifiedBy": "gAKzHRnsPZektaZN",
+        "compendiumSource": "Compendium.break.preview-content.Item.qs58wyNX6N6UkguF",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0,
+        "gAKzHRnsPZektaZN": 3
+      },
+      "folder": null,
+      "sort": 0
+    }
+  },
+  "allegiance": {
+    "dark": 1,
+    "bright": 0
+  },
+  "notes": "<p>Mariah wants to see as much of the Outer World as she can and hopes to leave it in a better state than she found it!</p>",
+  "xp": {
+    "rank": 1,
+    "current": 7
+  },
+  "languages": "High Akenian",
+  "description": "",
+  "purviews": [
+    "Sorting the good soil from the bad.",
+    "Persevering when you ought to.",
+    "Empathy for all living creatures"
+  ],
+  "currency": {
+    "gems": 0,
+    "coins": 19,
+    "stones": 0
+  }
+}

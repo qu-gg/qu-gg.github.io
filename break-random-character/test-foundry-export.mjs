@@ -1,0 +1,90 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { rollCharacter } from "./generator.mjs";
+import { buildFoundryActor, currencyFromStones } from "./foundry-export.mjs";
+
+const data = JSON.parse(await readFile(new URL("./data.json", import.meta.url), "utf8"));
+const allowedItemTypes = new Set([
+    "accessory", "ability", "armor", "calling", "gift", "history", "homeland",
+    "item", "outfit", "quirk", "shield", "species", "weapon",
+]);
+
+function seededRandom(seed) {
+    let state = seed >>> 0;
+    return () => {
+        state = (state * 1664525 + 1013904223) >>> 0;
+        return state / 4294967296;
+    };
+}
+
+function equipmentReferences(actor) {
+    return Object.values(actor.system.equipment).flatMap((value) => Array.isArray(value) ? value : value ? [value] : []);
+}
+
+function validateActor(character) {
+    const actor = buildFoundryActor(character, data);
+    const repeated = buildFoundryActor(character, data);
+    const itemIds = new Set(actor.items.map((item) => item._id));
+    const references = equipmentReferences(actor);
+    const advancementName = data.callings.concat(data.expandedCallings ?? [])
+        .find((calling) => calling.name === character.calling.name)?.baseCalling || character.calling.name;
+    const advancement = data.advancementTables[advancementName][character.rank - 1];
+
+    assert.deepEqual(actor, repeated);
+    assert.equal(actor.type, "character");
+    assert.equal(actor._id.length, 16);
+    assert.equal(actor.system.xp.rank, character.rank);
+    assert.equal(actor.system.xp.current, advancement.xp);
+    assert.deepEqual(actor.system.currency, currencyFromStones(character.shopping.totalCurrencyStones));
+    assert.equal(actor.system.languages, character.languages.join(", "));
+    assert.equal(actor.system.size.value, { Tiny: 0, Small: 1, Medium: 2, Large: 3, Massive: 4, Colossal: 5 }[character.size.name]);
+    assert.equal(actor.flags["break-random-character"].generatorSchemaVersion, data.schemaVersion);
+    assert.deepEqual(actor.flags["break-random-character"].seeds, character.seeds);
+    assert.equal(actor.system.description, "");
+    assert.ok(actor.system.notes.includes("Resolved choices"));
+    assert.equal(new Set(actor.items.map((item) => item._id)).size, actor.items.length);
+
+    for (const item of actor.items) {
+        assert.ok(allowedItemTypes.has(item.type), `Unexpected Item type: ${item.type}`);
+        assert.equal(item.system.description, "");
+        if ("actions" in item.system) assert.ok(Array.isArray(item.system.actions));
+        assert.equal(item._stats, undefined);
+        assert.equal(item._uuid, undefined);
+        assert.equal(item.ownership, undefined);
+        assert.equal(item.system.aptitudes, undefined);
+        for (const effect of item.effects) {
+            assert.ok(effect._id.length === 16);
+            assert.ok(effect.changes.every((change) => [2, 5].includes(change.mode)));
+        }
+    }
+
+    for (const aptitude of ["might", "deftness", "grit", "insight", "aura"]) {
+        const expectedTrait = character.traits
+            .filter((trait) => trait.aptitude === aptitude)
+            .reduce((total, trait) => total + trait.amount, 0);
+        assert.equal(actor.system.aptitudes[aptitude].trait, expectedTrait);
+    }
+
+    for (const reference of references) {
+        assert.ok(itemIds.has(reference._id), `${reference.name} is not embedded in items`);
+        const item = actor.items.find((candidate) => candidate._id === reference._id);
+        assert.equal(reference.type, item.type);
+        assert.deepEqual(reference.system, item.system);
+    }
+
+    return actor;
+}
+
+validateActor(rollCharacter(data, seededRandom(0xC0FFEE), {}, "core", 0, false, 1));
+validateActor(rollCharacter(data, seededRandom(0xB4EA5), {}, "expanded", 75, true, 10));
+
+let specialWeaponCharacter;
+for (let seed = 1; seed <= 5000 && !specialWeaponCharacter; seed += 1) {
+    const character = rollCharacter(data, seededRandom(seed), {}, "expanded", 0, false, 10);
+    const actor = buildFoundryActor(character, data);
+    if (actor.items.some((item) => item.flags["break-random-character"]?.specialChoice)) specialWeaponCharacter = actor;
+}
+assert.ok(specialWeaponCharacter);
+assert.ok(specialWeaponCharacter.system.equipment.weapon.some((item) => item.flags["break-random-character"]?.specialChoice));
+
+console.log("Foundry export checks passed");
