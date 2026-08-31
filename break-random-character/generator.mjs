@@ -700,7 +700,10 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
 
     let prodigyAbility = null;
     if (species.name === "Human, Native") {
-        prodigyAbility = { ...choose(data.callingAbilities[calling.name].standard, streams.speciesChoices), tier: "Standard", acquiredRank: 1 };
+        const standardAbilities = data.callingAbilities[calling.name].standard
+            .filter((ability) => ability.tier === "Standard");
+        if (!standardAbilities.length) throw new RangeError(`${calling.name} has no Standard Abilities for Prodigy`);
+        prodigyAbility = { ...choose(standardAbilities, streams.speciesChoices), acquiredRank: 1 };
         selections.push({ label: "Prodigy Ability", value: prodigyAbility.name, pages: prodigyAbility.pages });
         resolveAbilityAcquisitionChoice(data, prodigyAbility, 1, safeRank, selections, streams.speciesChoices);
     }

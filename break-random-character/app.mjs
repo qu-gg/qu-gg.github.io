@@ -1,4 +1,4 @@
-import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=24";
+import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=25";
 import { downloadFoundryActor } from "./foundry-export.mjs?v=1";
 import { downloadQuestlineCharacter } from "./questline-export.mjs?v=3";
 

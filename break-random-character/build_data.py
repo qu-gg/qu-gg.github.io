@@ -757,6 +757,8 @@ def build_expanded_callings(ability_data: dict[str, dict]) -> list[dict]:
             deepcopy(ability) for ability in abilities[variant["base"]]["standard"]
             if ability["name"] not in variant["removeStandard"]
         ] + variant["addStandard"]
+        for ability in standard:
+            ability["tier"] = "Standard"
         abilities[variant["name"]] = {
             "starting": variant["starting"],
             "standard": standard,

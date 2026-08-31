@@ -20,10 +20,13 @@ assert.equal(data.advancementTables.Champion[9].hearts, 7);
 assert.deepEqual(data.advancementTables.Champion[9].aptitudes, { might: 14, deftness: 12, grit: 13, insight: 11, aura: 12 });
 assert.deepEqual(data.advancementTables.Balladeer[9].aptitudes, { might: 10, deftness: 11, grit: 11, insight: 14, aura: 14 });
 assert.equal(data.advancementTables["Henshin Hero"][9].attack, 7);
-for (const calling of Object.values(data.callingAbilities)) {
+for (const [callingName, calling] of Object.entries(data.callingAbilities)) {
     assert.ok(calling.starting.length >= 3);
     assert.ok(calling.standard.length >= 6);
     assert.ok(calling.advanced.length >= 6);
+    assert.ok(calling.standard.every((ability) => ability.tier === "Standard"), `${callingName} Standard pool contains another tier`);
+    const advancedNames = new Set(calling.advanced.map((ability) => ability.name));
+    assert.ok(calling.standard.every((ability) => !advancedNames.has(ability.name)), `${callingName} Standard and Advanced pools overlap`);
 }
 const publicAbilityKeys = new Set(["name", "pages", "sourceUrl", "tier", "magical", "allegiance", "repeatable", "effects"]);
 for (const ability of [
@@ -706,6 +709,12 @@ for (let seed = 1; seed <= 10000; seed += 1) {
     if (character.species.name === "Mundymutt") seenMundymuttSizes.add(character.size.name);
     assert.equal(character.contentMode, "expanded");
     assert.ok(character.rolls.calling !== 4);
+    if (character.species.name === "Human, Native") {
+        const standardPool = data.callingAbilities[character.calling.name].standard;
+        assert.equal(character.abilities.prodigy.tier, "Standard");
+        assert.ok(standardPool.some((ability) => ability.name === character.abilities.prodigy.name));
+        assert.equal(data.callingAbilities[character.calling.name].advanced.some((ability) => ability.name === character.abilities.prodigy.name), false);
+    }
     if (expectedVariantAbilities[character.calling.name]) {
         assert.deepEqual(character.abilities.calling.map((ability) => ability.name), expectedVariantAbilities[character.calling.name]);
         assert.equal(character.calling.expanded, true);
