@@ -26,4 +26,9 @@ Overall, it's pretty slick. It even has the [Porc](https://breakrpg.blogspot.com
 
 ![Porc Balladeer](../../break-random-character/HuzzaFontaine.webp "Just a medium-sized guy trying to sing songs.")
 
+**[August 30, 2026 Update]** After some more work on it, I am happy to say that I was able to get an auto-export to [QuestlineVTT](https://questlinevtt.com/) feature functional! There is a new button on each character card that downloads a character_name.zip file which can be easily imported into Questline. It builds out as much as it can within the license, including Weapon Actions, Items, Ability Templates, etc. etc. Here is an example of an imported character:
+
+![Questline Import](../../break-random-character/QuestlineIntegration.webp "Questline import functionality...")
+![Questline Import2](../../break-random-character/QuestlineIntegration2.webp "...with Items!")
+
 I hope you might find some use out of it, or at least some fun in seeing what goobers churn out of the machine. I've tried to make it as readable as possible with just some hints of flare. If you have feedback or requests, I'd love to hear them!
