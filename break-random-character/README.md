@@ -108,6 +108,12 @@ rest of the site until it is ready to be linked publicly.
   equipment references, rank, traits, currency, resolved choices, and portable
   numeric effects. It does not include compendium metadata, official
   descriptions, Actions, or separate Companion Actors.
+- Use the `Export to QuestlineVTT` button on a card to download one native
+  Questline `.characters` ZIP package. The package includes a generated player
+  character, high-level identity and stat values, generated inventory,
+  currency, Followers/Soul Companion entries, editable weapon Actions, feature
+  records with completion guidance, and page/source references. It contains no external
+  Questline files, assets, or full feature descriptions.
 
 The official post does not provide a separate Dimensional Stray name table, so
 Dimensional Strays currently use the Native Human table. An Elf result that says
@@ -183,9 +189,12 @@ values, combat classifications, and page references are exported.
 - `generator.mjs`: Pure random table and dependency-resolution engine.
 - `foundry-export.mjs`: Isolated Foundry Actor document builder and browser
   download adapter.
+- `questline-export.mjs`: Isolated Questline character package builder and ZIP
+  download adapter.
 - `data.json`: Generated public, sanitized rules data.
 - `build_data.py`: Local normalization step for the transcribed source data.
 - `test-generator.mjs`: Seeded rules and coverage checks.
+- `test-questline-export.mjs`: Questline package schema and ZIP checks.
 
 ## Local development
 
@@ -195,6 +204,7 @@ From the repository root:
 python break-random-character/build_data.py
 node break-random-character/test-generator.mjs
 node break-random-character/test-foundry-export.mjs
+node break-random-character/test-questline-export.mjs
 python -m http.server 8765
 ```
 
@@ -225,25 +235,24 @@ comparison only and should not override the PDF.
 
 ### Questline export
 
-Questline export is explicitly deferred, but the roller's structured character
-object is designed to support a later adapter.
+Questline export is implemented in `questline-export.mjs` and enabled by the
+`ENABLE_QUESTLINE_EXPORT` flag in `app.mjs`. It builds a native ZIP package with
+only `manifest.json` and `entities.json`; no files from `questline-vtt-tools/`
+or any other ignored Questline source are read by the browser adapter.
 
-The current official `.characters` reference is a ZIP-based Questline package
-containing `manifest.json`, `entities.json`, and optional assets. It contains
-adversaries, companions, and guides rather than a reusable player-character
-template, so export should not be built by mutating one of those entities.
+The exported character uses the BREAK!! player sheet, deterministic
+Questline-compatible IDs, generated high-level values, custom inventory Items,
+and reference-only descriptions. Weapon Actions contain a d20 roll linked to
+the character Attack Bonus and are embedded on their corresponding weapon Item,
+so Questline can surface them with the equipped item. Abilities and Quirks are
+kept only in the Ability section; their records carry source references and
+completion guidance instead of duplicate Action shells. Followers and Soul
+Companions remain attached inventory/choice entries rather than separate
+characters.
 
-A future export phase should:
-
-1. Confirm the current Questline player-character schema with a clean manual
-   player export.
-2. Map the roller result into that schema in a separate adapter module.
-3. Generate deterministic IDs for character-owned fields and entries.
-4. Package a minimal `manifest.json` and `entities.json`; omit assets initially.
-5. Validate round-trip import in Questline before exposing a download button.
-
-Questline export must remain optional and must not add licensed rule descriptions
-to the generated package.
+The package intentionally contains no full rules descriptions, external assets,
+compendium dependencies, or separate Companion Actors. The generated data is
+derived only from the roller result and sanitized `data.json`.
 
 ### FoundryVTT export
 

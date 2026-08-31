@@ -1,7 +1,9 @@
 import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=24";
 import { downloadFoundryActor } from "./foundry-export.mjs?v=1";
+import { downloadQuestlineCharacter } from "./questline-export.mjs?v=3";
 
 const ENABLE_FOUNDRY_EXPORT = false;
+const ENABLE_QUESTLINE_EXPORT = true;
 
 const form = document.querySelector("#roll-form");
 const countInput = document.querySelector("#character-count");
@@ -253,6 +255,7 @@ function renderCharacter(character, index) {
                     ${rerollIcon("name", "name")}
                     <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="${escapeHtml(imageActionAriaLabel())}" title="${escapeHtml(imageActionTitle())}">${imageActionLabel()}</button>
                     ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
+                    ${ENABLE_QUESTLINE_EXPORT ? `<button type="button" class="questline-export-button" data-export-questline data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to QuestlineVTT" title="Export character to QuestlineVTT">Export to QuestlineVTT</button>` : ""}
                 </div>
                 <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
                 <p class="character-origin">${escapeHtml(character.history.name)} [${escapeHtml(character.history.tier)}] · ${escapeHtml(character.homeland.name)}</p>
@@ -508,6 +511,13 @@ results.addEventListener("click", (event) => {
         const card = foundryButton.closest(".character-card");
         const index = [...results.children].indexOf(card);
         if (currentCharacters[index]) downloadFoundryActor(currentCharacters[index], data);
+        return;
+    }
+    const questlineButton = event.target.closest("[data-export-questline]");
+    if (questlineButton) {
+        const card = questlineButton.closest(".character-card");
+        const index = [...results.children].indexOf(card);
+        if (currentCharacters[index]) downloadQuestlineCharacter(currentCharacters[index], data);
         return;
     }
     const copyButton = event.target.closest("[data-copy-image]");

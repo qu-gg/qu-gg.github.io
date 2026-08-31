@@ -416,7 +416,8 @@ body {
 }
 
 .copy-image-button,
-.foundry-export-button {
+.foundry-export-button,
+.questline-export-button {
     min-height: 26px;
     margin-left: auto;
     padding: 0.28rem 0.5rem;
@@ -435,10 +436,16 @@ body {
     margin-left: 0;
 }
 
+.questline-export-button {
+    margin-left: 0;
+}
+
 .copy-image-button:hover,
 .copy-image-button:focus-visible,
 .foundry-export-button:hover,
-.foundry-export-button:focus-visible {
+.foundry-export-button:focus-visible,
+.questline-export-button:hover,
+.questline-export-button:focus-visible {
     border-color: var(--card-accent);
     color: var(--card-accent);
     outline: none;
