@@ -15,6 +15,7 @@ const emptyState = document.querySelector("#empty-state");
 const resultCount = document.querySelector("#result-count");
 const captureStage = document.querySelector("#card-capture-stage");
 const COPY_CAPTURE_WIDTH = 1100;
+const MOBILE_LAYOUT_QUERY = "(max-width: 800px)";
 
 let data;
 let currentCharacters = [];
@@ -146,6 +147,22 @@ function displayedGearSlots(item) {
     return formatSlots(item.slotTenths || 0);
 }
 
+function isMobileLayout() {
+    return matchMedia(MOBILE_LAYOUT_QUERY).matches;
+}
+
+function imageActionLabel() {
+    return isMobileLayout() ? "Save Image" : "Copy as Image";
+}
+
+function imageActionAriaLabel() {
+    return isMobileLayout() ? "Save character card as an image" : "Copy character card as an image";
+}
+
+function imageActionTitle() {
+    return isMobileLayout() ? "Save card as image" : "Copy card as image";
+}
+
 function gearRemoveButton(section, index, item) {
     const label = `Remove ${item.name} from ${section === "gear" ? "Starting Gear" : "Purchased Gear"}`;
     return `<button type="button" class="gear-remove-button" data-remove-gear data-remove-section="${section}" data-remove-index="${index}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"><span class="gear-bullet" aria-hidden="true"></span><span class="gear-remove-x" aria-hidden="true">×</span></button>`;
@@ -234,7 +251,7 @@ function renderCharacter(character, index) {
                 <div class="character-title-row rerollable-section" data-reroll-target="name" title="Reroll name">
                     <h3 id="character-${index + 1}-title">${escapeHtml(character.name)}</h3>
                     ${rerollIcon("name", "name")}
-                    <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="Copy ${escapeHtml(character.name)} as an image" title="Copy card as image">Copy as Image</button>
+                    <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="${escapeHtml(imageActionAriaLabel())}" title="${escapeHtml(imageActionTitle())}">${imageActionLabel()}</button>
                     ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
                 </div>
                 <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
@@ -370,14 +387,15 @@ function setCopyButtonState(button, state) {
     clearTimeout(button.copyStateTimeout);
     button.dataset.state = state;
     button.disabled = state === "copying";
-    button.textContent = state === "copying" ? "Copying..." : state === "success" ? "Copied" : state === "error" ? "Copy failed" : "Copy as Image";
-    button.setAttribute("aria-label", state === "success" ? "Character card copied as an image" : state === "error" ? "Character card image copy failed" : "Copy character card as an image");
+    button.textContent = state === "copying" ? (isMobileLayout() ? "Saving..." : "Copying...") : state === "success" ? (isMobileLayout() ? "Saved" : "Copied") : state === "error" ? (isMobileLayout() ? "Save failed" : "Copy failed") : imageActionLabel();
+    button.setAttribute("aria-label", state === "success" ? `Character card ${isMobileLayout() ? "saved" : "copied"} as an image` : state === "error" ? `Character card image ${isMobileLayout() ? "save" : "copy"} failed` : imageActionAriaLabel());
     if (state === "success" || state === "error") {
         button.copyStateTimeout = setTimeout(() => {
             button.dataset.state = "";
             button.disabled = false;
-            button.textContent = "Copy as Image";
-            button.setAttribute("aria-label", "Copy character card as an image");
+            button.textContent = imageActionLabel();
+            button.title = imageActionTitle();
+            button.setAttribute("aria-label", imageActionAriaLabel());
         }, 1800);
     }
 }
@@ -388,8 +406,29 @@ function canvasToBlob(canvas) {
     });
 }
 
+function imageFileName(name) {
+    const baseName = String(name || "break-character")
+        .replace(/[^a-z0-9]+/gi, "-")
+        .replace(/^-+|-+$/g, "")
+        .toLowerCase();
+    return `${baseName || "break-character"}.png`;
+}
+
+function downloadImageBlob(blob, name) {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = imageFileName(name);
+    link.hidden = true;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
 async function copyCardAsImage(card, button) {
-    if (!window.html2canvas || !navigator.clipboard || !window.ClipboardItem) {
+    const mobileLayout = isMobileLayout();
+    if (!window.html2canvas || (!mobileLayout && (!navigator.clipboard || !window.ClipboardItem))) {
         setCopyButtonState(button, "error");
         return;
     }
@@ -405,13 +444,19 @@ async function copyCardAsImage(card, button) {
         clone.querySelectorAll("[data-html2canvas-ignore]").forEach((element) => element.remove());
         captureStage.appendChild(clone);
         balanceCharacterCard(clone, true);
-        const pngPromise = window.html2canvas(clone, {
+        const canvasPromise = window.html2canvas(clone, {
             scale: 2,
             useCORS: true,
             backgroundColor: "#fffefe",
             logging: false,
-        }).then(canvasToBlob);
-        await navigator.clipboard.write([new ClipboardItem({ "image/png": pngPromise })]);
+        });
+        if (mobileLayout) {
+            const blob = await canvasPromise.then(canvasToBlob);
+            downloadImageBlob(blob, card.querySelector("h3")?.textContent);
+        } else {
+            const pngPromise = canvasPromise.then(canvasToBlob);
+            await navigator.clipboard.write([new ClipboardItem({ "image/png": pngPromise })]);
+        }
         setCopyButtonState(button, "success");
     } catch (error) {
         console.error(error);
@@ -420,6 +465,15 @@ async function copyCardAsImage(card, button) {
         captureStage.replaceChildren();
         card.classList.remove("copying");
     }
+}
+
+function updateImageActionButtons() {
+    results.querySelectorAll("[data-copy-image]").forEach((button) => {
+        if (button.dataset.state) return;
+        button.textContent = imageActionLabel();
+        button.title = imageActionTitle();
+        button.setAttribute("aria-label", imageActionAriaLabel());
+    });
 }
 
 async function loadData() {
@@ -486,6 +540,7 @@ let balanceFrame;
 addEventListener("resize", () => {
     cancelAnimationFrame(balanceFrame);
     balanceFrame = requestAnimationFrame(balanceCharacterCards);
+    updateImageActionButtons();
 });
 
 rollButton.disabled = true;

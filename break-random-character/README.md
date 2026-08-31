@@ -97,9 +97,10 @@ rest of the site until it is ready to be linked publicly.
   page references.
 - Reroll individual random components while preserving unrelated results and
   rebuilding dependent values, gear restrictions, and modifiers.
-- Use the `Copy Image` button on a card to copy it to the system clipboard as a
-  PNG. The captured card uses a fixed desktop-style two-column layout for
-  readability, including when the button is pressed on a mobile device.
+- Use the `Copy as Image` button on a card to copy it to the system clipboard as
+  a PNG on desktop. On mobile layouts, the same action becomes `Save Image` and
+  downloads the PNG instead, avoiding mobile clipboard permissions. The
+  captured card uses a fixed desktop-style two-column layout in both cases.
   Normal browser right-click behavior remains available.
 - Use the `Export to FoundryVTT` button on a card to download one portable
   Foundry v14 BREAK!! character Actor JSON document. The export includes the
