@@ -261,28 +261,49 @@ derived only from the roller result and sanitized `data.json`.
 
 Foundry export is implemented as a separate adapter so the generator remains
 browser-only and its public data boundary remains unchanged. The downloaded
-document is a standard `character` Actor for Foundry v14 and the BREAK!! v1.2
+document is a standard `character` Actor for Foundry v14 and the BREAK!! v1.31
 system. It is self-contained: all generated Items are embedded in the Actor,
 and every `system.equipment` reference points to the matching embedded Item
 ID. The export retains minimal Foundry and system version metadata plus the
 required prototype token defaults so Foundry v14 imports it as current document
-data instead of treating it as a pre-v10 document. The Foundry button is enabled
-for testing and can be disabled with the `ENABLE_FOUNDRY_EXPORT` flag in `app.mjs`.
+data instead of treating it as a pre-v10 document. Languages use the v1.3 list
+field, and every embedded Item carries an explicit `containerId` value. The
+Foundry button is enabled and can be disabled with the `ENABLE_FOUNDRY_EXPORT`
+flag in `app.mjs`.
 
-The adapter exports portable numeric effects for verified adjustments, including
-size and species aptitude/Defense/Heart changes, quirk and ability Attack,
-Defense, Hearts, and Speed changes, inventory capacity, and Allegiance. It also
-preserves Stowing by giving the selected stowed item zero current Slots while
-retaining its original slot provenance. Conditional Brazen Defense and Bulwark
-of Disdain armor replacement is represented with an equipment-level override.
+The adapter exports portable string-typed effects for verified adjustments,
+including size and species aptitude/Defense/Heart changes, quirk and ability
+Attack, Defense, Hearts, and Speed changes, inventory capacity, and Allegiance.
+It also preserves Stowing by giving the selected stowed item zero current Slots
+while retaining its original slot provenance. Conditional Brazen Defense and
+Bulwark of Disdain armor replacement is represented with an equipment-level
+override.
+
+Backpacks and Traveler's Bags are native v1.31 containers. Backpacks provide
+five Slots and take two Actions to retrieve an item; Traveler's Bags provide
+three Slots and take one Action. Factotum's Pack is exported as an eight-Slot
+container that takes one Action to retrieve an item. Carried non-equipped gear
+is packed into the selected physical container in a deterministic order, while
+equipment, stowed gear, and nested containers remain outside it. The actor's
+generated capacity excludes the physical container bonus, so the two capacities
+are not double-counted. Optional currency weight remains generator metadata and
+is not represented by a mutable synthetic Foundry Item.
+
+Master Weapon exports its unique `+1 ATK` as the native weapon attack bonus, so
+it is retained when Foundry prepares the weapon's attack data.
+
 Foundry still recalculates derived values from its Calling, Species, equipment,
 Active Effects, and world settings. The export therefore stores the generator
 result in a custom flag for comparison after import.
 
-The BREAK!! v1.2 system currently has an upstream Rank 10 preparation bug: its
+The BREAK!! v1.31 release retains an upstream Rank 10 preparation bug in the
+BREAK!! v1.3 system: its
 ten-row advancement loop reads an eleventh row while calculating the next-rank
-XP. Rank 1-9 imports have been verified in Foundry v14.367; Rank 10 currently
-requires that system bug to be fixed or a compatible system update.
+XP. Rank 10 exports include one non-rank sentinel row and a final next-rank
+guard so the imported Actor remains Rank 10 and reports no false next rank.
+Rank 1, Rank 10, Backpack, Traveler's Bag, Factotum's Pack, movement, and
+container deletion behavior have been verified in Foundry v14.367 with BREAK!!
+v1.31.
 
 The public export deliberately leaves Item descriptions and Actions empty. It
 also represents Followers and Soul Companions as Items or resolved-choice

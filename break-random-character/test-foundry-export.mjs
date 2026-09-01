@@ -29,14 +29,19 @@ function validateActor(character) {
     const advancementName = data.callings.concat(data.expandedCallings ?? [])
         .find((calling) => calling.name === character.calling.name)?.baseCalling || character.calling.name;
     const advancement = data.advancementTables[advancementName][character.rank - 1];
+    const callingItem = actor.items.find((item) => item.type === "calling");
 
     assert.deepEqual(actor, repeated);
     assert.equal(actor.type, "character");
     assert.equal(actor._id.length, 16);
     assert.equal(actor.system.xp.rank, character.rank);
     assert.equal(actor.system.xp.current, advancement.xp);
+    assert.equal(actor.flags["break-random-character"].exportVersion, 2);
+    assert.equal(callingItem.system.advancementTable.length, data.advancementTables[advancementName].length + (character.rank === 10 ? 1 : 0));
+    if (character.rank === 10) assert.equal(callingItem.system.advancementTable.at(-1).xp, advancement.xp + 1);
     assert.deepEqual(actor.system.currency, currencyFromStones(character.shopping.totalCurrencyStones));
-    assert.equal(actor.system.languages, character.languages.join(", "));
+    assert.ok(Array.isArray(actor.system.languages));
+    assert.deepEqual(actor.system.languages, character.languages);
     assert.equal(actor.system.size.value, { Tiny: 0, Small: 1, Medium: 2, Large: 3, Massive: 4, Colossal: 5 }[character.size.name]);
     assert.equal(actor.flags["break-random-character"].generatorSchemaVersion, data.schemaVersion);
     assert.deepEqual(actor.flags["break-random-character"].seeds, character.seeds);
@@ -44,15 +49,35 @@ function validateActor(character) {
     assert.deepEqual(actor._stats, {
         coreVersion: "14.367",
         systemId: "break",
-        systemVersion: "1.2",
+        systemVersion: "1.3",
     });
     assert.equal(actor.prototypeToken.depth, 1);
     const capacityChanges = actor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
         .filter((change) => change.key === "system.slots.total");
     assert.equal(capacityChanges.length, 1);
-    assert.equal(capacityChanges[0].mode, 5);
+    assert.equal(capacityChanges[0].type, "override");
     assert.equal(capacityChanges[0].phase, "final");
-    assert.equal(Number(capacityChanges[0].value), character.combat.inventory);
+    const physicalContainerBonus = (character.modifiers.combat.inventory ?? [])
+        .filter((modifier) => modifier.kind === "gear")
+        .reduce((total, modifier) => total + modifier.amount, 0)
+        + actor.items
+            .filter((item) => item.flags["break-random-character"]?.synthetic)
+            .reduce((total, item) => total + item.system.container.capacity, 0);
+    assert.equal(Number(capacityChanges[0].value), character.combat.inventory - physicalContainerBonus);
+    const inventorySlotChanges = actor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
+        .filter((change) => change.key === "system.inventorySlots");
+    assert.equal(inventorySlotChanges.length, 1);
+    assert.equal(inventorySlotChanges[0].type, "override");
+    assert.equal(inventorySlotChanges[0].phase, "final");
+    assert.equal(Number(inventorySlotChanges[0].value), character.combat.inventory - physicalContainerBonus);
+    const rank10GuardChanges = actor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
+        .filter((change) => change.key === "system.xpNextRank");
+    assert.equal(rank10GuardChanges.length, character.rank === 10 ? 1 : 0);
+    if (character.rank === 10) {
+        assert.equal(rank10GuardChanges[0].type, "override");
+        assert.equal(rank10GuardChanges[0].phase, "final");
+        assert.equal(Number(rank10GuardChanges[0].value), 0);
+    }
     assert.equal(actor.system.hearts.value, character.combat.hearts);
     const expectedHeartChanges = (character.modifiers.combat.hearts ?? [])
         .map((modifier) => ({ key: "system.hearts.max", value: String(modifier.amount) }))
@@ -87,10 +112,21 @@ function validateActor(character) {
         assert.equal(item._stats, undefined);
         assert.equal(item._uuid, undefined);
         assert.equal(item.ownership, undefined);
+        assert.equal(item.system.containerId, item.flags["break-random-character"]?.containerId ?? null);
         assert.equal(item.system.aptitudes, undefined);
+        if (["armor", "accessory"].includes(item.type)) {
+            assert.ok(item.system.container);
+            assert.deepEqual(item.system.container.allowedItemTypes, []);
+            assert.deepEqual(item.system.container.allowedItemCategories, []);
+        }
+        if (item.system.containerId) {
+            const container = actor.items.find((candidate) => candidate._id === item.system.containerId);
+            assert.ok(container?.system.container?.enabled, `${item.name} references a non-container item`);
+            assert.notEqual(item._id, container._id);
+        }
         for (const effect of item.effects) {
             assert.ok(effect._id.length === 16);
-            assert.ok(effect.changes.every((change) => [2, 5].includes(change.mode)));
+            assert.ok(effect.changes.every((change) => ["add", "override"].includes(change.type)));
         }
     }
 
@@ -131,14 +167,98 @@ assert.ok(specialWeaponCharacter.system.equipment.weapon.some((item) => item.fla
 const backpackCharacter = rollCharacter(data, seededRandom(2), {}, "expanded", 75, true, 1);
 const backpackActor = buildFoundryActor(backpackCharacter, data);
 const backpack = backpackActor.items.find((item) => item.name === "Backpack");
+assert.ok(backpack);
+assert.deepEqual(backpack.system.container, {
+    enabled: true,
+    capacity: 5,
+    accessCost: 2,
+    allowedItemTypes: [],
+    allowedItemCategories: [],
+});
+assert.equal(backpack.system.containerId, null);
 const backpackSlotEffects = backpack.effects.flatMap((effect) => effect.changes)
     .filter((change) => change.key === "system.slots.value");
-assert.equal(backpackSlotEffects.length, 1);
-assert.equal(backpackSlotEffects[0].value, "5");
+assert.equal(backpackSlotEffects.length, 0);
+const packedBackpackItems = backpackActor.items.filter((item) => item.system.containerId === backpack._id);
+assert.ok(packedBackpackItems.length > 0);
+assert.ok(packedBackpackItems.reduce((total, item) => total + item.system.slots * item.system.quantity, 0) <= backpack.system.container.capacity);
 const capacityChanges = backpackActor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
     .filter((change) => change.key === "system.slots.total");
 assert.equal(capacityChanges.length, 1);
-assert.equal(Number(capacityChanges[0].value), backpackCharacter.combat.inventory);
+const backpackPhysicalContainerBonus = backpackCharacter.modifiers.combat.inventory
+    .filter((modifier) => modifier.kind === "gear")
+    .reduce((total, modifier) => total + modifier.amount, 0);
+assert.equal(Number(capacityChanges[0].value), backpackCharacter.combat.inventory - backpackPhysicalContainerBonus);
+
+const travelerCharacter = rollCharacter(data, seededRandom(1), {}, "expanded", 75, true, 1);
+const travelerActor = buildFoundryActor(travelerCharacter, data);
+const travelerBag = travelerActor.items.find((item) => item.name === "Traveler's Bag");
+assert.ok(travelerBag);
+assert.deepEqual(travelerBag.system.container, {
+    enabled: true,
+    capacity: 3,
+    accessCost: 1,
+    allowedItemTypes: [],
+    allowedItemCategories: [],
+});
+assert.equal(travelerBag.system.containerId, null);
+assert.equal(travelerBag.effects.flatMap((effect) => effect.changes)
+    .filter((change) => change.key === "system.slots.value").length, 0);
+const packedTravelerItems = travelerActor.items.filter((item) => item.system.containerId === travelerBag._id);
+assert.equal(packedTravelerItems.find((item) => item.name === travelerCharacter.equippedOutfit), undefined);
+assert.ok(packedTravelerItems.reduce((total, item) => total + item.system.slots * item.system.quantity, 0) <= travelerBag.system.container.capacity);
+
+const uncategorizedTravelerCharacter = rollCharacter(data, seededRandom(6), {}, "expanded", 0, false, 1);
+const uncategorizedTravelerActor = buildFoundryActor(uncategorizedTravelerCharacter, data);
+const uncategorizedTravelerBag = uncategorizedTravelerActor.items.find((item) => item.name === "Traveler's Bag");
+assert.ok(uncategorizedTravelerBag);
+assert.equal(uncategorizedTravelerBag.type, "accessory");
+assert.deepEqual(uncategorizedTravelerBag.system.container, travelerBag.system.container);
+assert.ok(uncategorizedTravelerActor.system.equipment.accessory.some((item) => item._id === uncategorizedTravelerBag._id));
+
+const noContainerCharacter = rollCharacter(data, seededRandom(1), {}, "expanded", 0, false, 1);
+const noContainerActor = buildFoundryActor(noContainerCharacter, data);
+assert.equal(noContainerActor.items.filter((item) => item.system.container?.enabled).length, 0);
+assert.equal(noContainerActor.items.filter((item) => item.system.containerId).length, 0);
+
+const factotumCharacter = rollCharacter(data, seededRandom(8), {}, "expanded", 75, true, 1);
+const factotumActor = buildFoundryActor(factotumCharacter, data);
+const factotumPack = factotumActor.items.find((item) => item.name === "Factotum's Pack" && item.type === "accessory");
+assert.ok(factotumPack);
+assert.deepEqual(factotumPack.system.container, {
+    enabled: true,
+    capacity: 8,
+    accessCost: 1,
+    allowedItemTypes: [],
+    allowedItemCategories: [],
+});
+assert.equal(factotumPack.system.containerId, null);
+const packedFactotumItems = factotumActor.items.filter((item) => item.system.containerId === factotumPack._id);
+assert.ok(packedFactotumItems.length > 0);
+assert.ok(packedFactotumItems.reduce((total, item) => total + item.system.slots * item.system.quantity, 0) <= factotumPack.system.container.capacity);
+const factotumCapacity = factotumActor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
+    .filter((change) => change.key === "system.slots.total");
+assert.equal(factotumCapacity.length, 1);
+assert.equal(Number(factotumCapacity[0].value), factotumCharacter.combat.inventory - factotumPack.system.container.capacity);
+const factotumBonusEffects = factotumPack.effects.flatMap((effect) => effect.changes)
+    .filter((change) => change.key === "system.slots.value");
+assert.equal(factotumBonusEffects.length, 0);
+
+const largeMechanicalCharacter = rollCharacter(data, seededRandom(20), {}, "expanded", 75, true, 1);
+const largeMechanicalActor = buildFoundryActor(largeMechanicalCharacter, data);
+const largeMechanicalWeapons = largeMechanicalActor.items.filter((item) => item.system.weaponType1 === "mechanicalLarge");
+assert.ok(largeMechanicalWeapons.length > 0);
+for (const weapon of largeMechanicalWeapons) {
+    assert.equal(weapon.system.ranged, true);
+    assert.equal(weapon.system.melee, false);
+    assert.equal(weapon.system.rangedExtraDamage, weapon.system.extraDamage);
+}
+
+const masterCharacter = rollCharacter(data, seededRandom(108), {}, "core", 0, false, 10);
+const masterActor = buildFoundryActor(masterCharacter, data);
+const masterWeapons = masterActor.items.filter((item) => item.system.weaponType1 === "master");
+assert.ok(masterWeapons.length > 0);
+for (const weapon of masterWeapons) assert.equal(weapon.system.attackBonus, 1);
 
 const brazenCharacter = rollCharacter(data, seededRandom(1236), {}, "core", 0, false, 10);
 const brazenActor = buildFoundryActor(brazenCharacter, data);
@@ -147,7 +267,7 @@ assert.equal(brazenArmor.system.defenseBonus, 2);
 const armorReplacementChanges = brazenActor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
     .filter((change) => change.key === "system.equipment.armor.system.defenseBonus");
 assert.equal(armorReplacementChanges.length, 1);
-assert.equal(armorReplacementChanges[0].mode, 5);
+assert.equal(armorReplacementChanges[0].type, "override");
 assert.equal(armorReplacementChanges[0].value, "0");
 
 const bulwarkCharacter = rollCharacter(data, seededRandom(49), {}, "core", 0, false, 9);
@@ -155,7 +275,7 @@ const bulwarkActor = buildFoundryActor(bulwarkCharacter, data);
 const bulwarkArmorReplacementChanges = bulwarkActor.items.flatMap((item) => item.effects).flatMap((effect) => effect.changes)
     .filter((change) => change.key === "system.equipment.armor.system.defenseBonus");
 assert.equal(bulwarkArmorReplacementChanges.length, 1);
-assert.equal(bulwarkArmorReplacementChanges[0].mode, 5);
+assert.equal(bulwarkArmorReplacementChanges[0].type, "override");
 assert.equal(bulwarkArmorReplacementChanges[0].value, "0");
 
 const stowingCharacter = rollCharacter(data, seededRandom(22), {}, "core", 75, false, 9);

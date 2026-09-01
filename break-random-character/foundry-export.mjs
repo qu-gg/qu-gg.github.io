@@ -1,11 +1,18 @@
 const APTITUDES = ["might", "deftness", "grit", "insight", "aura"];
-const ACTIVE_EFFECT_ADD = 2;
-const ACTIVE_EFFECT_OVERRIDE = 5;
+const ACTIVE_EFFECT_ADD = "add";
+const ACTIVE_EFFECT_OVERRIDE = "override";
 const EXPORT_FLAG = "break-random-character";
-const EXPORT_VERSION = 1;
+const EXPORT_VERSION = 2;
 const FOUNDRY_CORE_VERSION = "14.367";
 const FOUNDRY_SYSTEM_ID = "break";
-const FOUNDRY_SYSTEM_VERSION = "1.2";
+const FOUNDRY_SYSTEM_VERSION = "1.3";
+const FACTOTUM_PACK_NAME = "Factotum's Pack";
+const FACTOTUM_PACK_SOURCE = "Factotum Pack";
+const CONTAINER_ACCESS_COSTS = {
+    Backpack: 2,
+    "Traveler's Bag": 1,
+    [FACTOTUM_PACK_NAME]: 1,
+};
 const SPEED_VALUES = { Slow: 0, Average: 1, Fast: 2, "Very Fast": 3 };
 const SIZE_VALUES = { Tiny: 0, Small: 1, Medium: 2, Large: 3, Massive: 4, Colossal: 5 };
 const GENERIC_ITEM_TYPES = {
@@ -17,7 +24,7 @@ const GENERIC_ITEM_TYPES = {
     "Combustibles & Chemicals": "combustible",
     Miscellaneous: "miscellaneous",
     "Curiosities, Artifacts & Gadgets": "curiosity",
-    Otherworldly: "otherworld",
+    Otherworldly: "otherworldly",
 };
 const WEAPON_TYPE_KEYS = {
     Standard: "standard",
@@ -37,14 +44,14 @@ const WEAPON_TYPE_DATA = {
     standard: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 1, ranged: false },
     concealed: { extraDamage: 22, loadingTime: 1, hands: 1, slots: 1, ranged: false },
     quick: { extraDamage: 22, loadingTime: 1, hands: 1, slots: 1, ranged: false },
-    master: { extraDamage: 18, loadingTime: 1, hands: 1, slots: 2, ranged: false },
+    master: { extraDamage: 18, attackBonus: 1, loadingTime: 1, hands: 1, slots: 2, ranged: false },
     mighty: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 2, ranged: false },
     arc: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 3, ranged: false },
     lash: { extraDamage: 22, loadingTime: 1, hands: 1, slots: 1, ranged: false },
     thrown: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 0, ranged: true },
     drawn: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 0, ranged: true },
     mechanicalSmall: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 0, ranged: true },
-    mechanicalLarge: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 0, ranged: false },
+    mechanicalLarge: { extraDamage: 20, loadingTime: 1, hands: 1, slots: 0, ranged: true },
 };
 const ARMOR_SPEED_LIMITS = { Light: 3, Medium: 2, Heavy: 1, Superheavy: 0 };
 const EFFECT_PATHS = {
@@ -216,7 +223,7 @@ function gearDocumentType(item) {
     if (item.gearCategory === "armor") return "armor";
     if (item.gearCategory === "shields") return "shield";
     if (isOutfit(item)) return "outfit";
-    if (item.category === "Wearable Accessories") return "accessory";
+    if (item.category === "Wearable Accessories" || numberOrZero(item.inventoryBonusTenths) > 0) return "accessory";
     return "item";
 }
 
@@ -250,14 +257,36 @@ function baseItemSystem(item, quantity) {
     };
 }
 
-function createActiveEffect(nextId, name, changes, mode = ACTIVE_EFFECT_ADD) {
+function emptyContainerData() {
+    return {
+        enabled: false,
+        capacity: 0,
+        accessCost: 0,
+        allowedItemTypes: [],
+        allowedItemCategories: [],
+    };
+}
+
+function gearContainerData(item) {
+    const capacity = numberOrZero(item.inventoryBonusTenths) / 10;
+    if (capacity <= 0) return emptyContainerData();
+    return {
+        enabled: true,
+        capacity,
+        accessCost: CONTAINER_ACCESS_COSTS[item.name] ?? 0,
+        allowedItemTypes: [],
+        allowedItemCategories: [],
+    };
+}
+
+function createActiveEffect(nextId, name, changes, type = ACTIVE_EFFECT_ADD) {
     return {
         _id: nextId(`effect:${name}`),
         name,
         icon: "icons/svg/aura.svg",
         changes: changes.map(({ key, value, phase = "initial" }) => ({
             key,
-            mode,
+            type,
             value: String(value),
             priority: 20,
             phase,
@@ -268,14 +297,14 @@ function createActiveEffect(nextId, name, changes, mode = ACTIVE_EFFECT_ADD) {
     };
 }
 
-function addActiveEffect(item, nextId, name, changes, mode = ACTIVE_EFFECT_ADD) {
+function addActiveEffect(item, nextId, name, changes, type = ACTIVE_EFFECT_ADD) {
     const validChanges = changes.filter((change) => EFFECT_PATHS[change.key] || change.path);
     if (!validChanges.length) return;
     item.effects.push(createActiveEffect(nextId, name, validChanges.map((change) => ({
         key: change.path || EFFECT_PATHS[change.key],
         value: change.value,
         phase: change.phase,
-    })), mode));
+    })), type));
 }
 
 function makeFlags(reference, generator = {}) {
@@ -293,7 +322,7 @@ function makeItem(nextId, name, type, system, reference, generator = {}) {
         name,
         type,
         img: "icons/svg/item-bag.svg",
-        system,
+        system: { containerId: null, ...system },
         effects: [],
         flags: makeFlags(reference, generator),
     };
@@ -303,6 +332,20 @@ function buildCallingItem(character, data, nextId, abilityNames) {
     const source = findCalling(data, character.calling.name) || character.calling;
     const progressionName = source.baseCalling || source.name;
     const advancementTable = data.advancementTables?.[progressionName] ?? [];
+    const exportedAdvancementTable = advancementTable.map((row) => ({
+        attack: integerOrZero(row.attack),
+        hearts: integerOrZero(row.hearts),
+        might: integerOrZero(row.aptitudes?.might),
+        deftness: integerOrZero(row.aptitudes?.deftness),
+        grit: integerOrZero(row.aptitudes?.grit),
+        insight: integerOrZero(row.aptitudes?.insight),
+        aura: integerOrZero(row.aptitudes?.aura),
+        xp: integerOrZero(row.xp),
+    }));
+    if (integerOrZero(character.rank) >= 10 && exportedAdvancementTable.length) {
+        const lastRank = exportedAdvancementTable.at(-1);
+        exportedAdvancementTable.push({ ...lastRank, xp: lastRank.xp + 1 });
+    }
     const system = {
         description: "",
         overview: "",
@@ -310,16 +353,7 @@ function buildCallingItem(character, data, nextId, abilityNames) {
         baseSpeed: speedValue(source.speed ?? character.combat.speed),
         baseDefense: numberOrZero(source.defense),
         startingAbilities: abilityNames,
-        advancementTable: advancementTable.map((row) => ({
-            attack: integerOrZero(row.attack),
-            hearts: integerOrZero(row.hearts),
-            might: integerOrZero(row.aptitudes?.might),
-            deftness: integerOrZero(row.aptitudes?.deftness),
-            grit: integerOrZero(row.aptitudes?.grit),
-            insight: integerOrZero(row.aptitudes?.insight),
-            aura: integerOrZero(row.aptitudes?.aura),
-            xp: integerOrZero(row.xp),
-        })),
+        advancementTable: exportedAdvancementTable,
         armorAllowances: clone(source.gearAllowance?.armor ?? []),
         shieldAllowances: clone(source.gearAllowance?.shields ?? []),
         weaponAllowances: clone(source.gearAllowance?.weapons ?? []),
@@ -347,6 +381,28 @@ function buildSpeciesItem(character, data, nextId, abilityNames, maturativeNames
         expanded: Boolean(source.expanded),
         baseSize: source.size,
         inventoryBonusSource: source.inventoryBonusSource || "",
+    });
+}
+
+function buildFactotumPackItem(character, data, nextId) {
+    const source = findCalling(data, character.calling.name);
+    if (source?.inventoryBonusSource !== FACTOTUM_PACK_SOURCE || !numberOrZero(source.inventoryBonus)) return null;
+    const capacity = numberOrZero(source.inventoryBonus);
+    return makeItem(nextId, FACTOTUM_PACK_NAME, "accessory", {
+        ...baseItemSystem({}, 1),
+        container: {
+            enabled: true,
+            capacity,
+            accessCost: CONTAINER_ACCESS_COSTS[FACTOTUM_PACK_NAME],
+            allowedItemTypes: [],
+            allowedItemCategories: [],
+        },
+    }, character.calling, {
+        source: FACTOTUM_PACK_SOURCE,
+        synthetic: true,
+        inventoryBonusTenths: capacity * 10,
+        equipped: true,
+        stowed: false,
     });
 }
 
@@ -424,7 +480,7 @@ function weaponSystem(type1, type2, slots, value) {
         quantity: 1,
         extraDamage: primary.extraDamage,
         rangedExtraDamage: primary.ranged ? primary.extraDamage : 0,
-        attackBonus: 0,
+        attackBonus: primary.attackBonus ?? 0,
         rangedAttackBonus: 0,
         range: 0,
         loadingTime: primary.loadingTime,
@@ -476,12 +532,15 @@ function buildGearItem(item, section, index, nextId) {
         system.speedLimit = ARMOR_SPEED_LIMITS[item.gearType] ?? 3;
         system.type = normalizedKey(item.gearType) || "light";
         system.abilities = [];
+        system.container = emptyContainerData();
     } else if (type === "shield") {
         system.defenseBonus = numberOrZero(item.defenseBonus);
         system.speedPenalty = 0;
         system.type = normalizedKey(item.gearType) || "small";
         system.abilities = [];
         system.hands = 1;
+    } else if (type === "accessory") {
+        system.container = gearContainerData(item);
     } else if (type === "item") {
         system.type = genericItemType(item.category);
         system.uses = { value: 1, total: 1 };
@@ -533,11 +592,11 @@ function sourceItemForModifier(source, character, roles) {
     return roles.gear.find((item) => item.name === source) || null;
 }
 
-function addModifierEffect(source, character, roles, label, key, value, mode = ACTIVE_EFFECT_ADD) {
-    if (!numberOrZero(value) && mode !== ACTIVE_EFFECT_OVERRIDE) return;
+function addModifierEffect(source, character, roles, label, key, value, type = ACTIVE_EFFECT_ADD) {
+    if (!numberOrZero(value) && type !== ACTIVE_EFFECT_OVERRIDE) return;
     const item = sourceItemForModifier(source, character, roles);
     if (!item) return;
-    addActiveEffect(item, roles.nextId, label, [{ key, value }], mode);
+    addActiveEffect(item, roles.nextId, label, [{ key, value }], type);
 }
 
 function applyKnownEffects(character, roles) {
@@ -584,7 +643,9 @@ function applyKnownEffects(character, roles) {
     });
 
     (character.modifiers?.combat?.inventory ?? []).forEach((modifier) => {
-        if (modifier.kind === "species") return;
+        const factotumPackSource = roles.factotumPack?.flags?.[EXPORT_FLAG]?.source;
+        if (modifier.kind === "species" || modifier.kind === "gear"
+            || (factotumPackSource && modifier.source === factotumPackSource)) return;
         addModifierEffect(modifier.source, character, roles, `${modifier.source} Inventory`, "slots", modifier.amount);
     });
 
@@ -602,11 +663,52 @@ function applyKnownEffects(character, roles) {
 
 function applyInventoryCapacity(character, roles) {
     if (!roles.calling) return;
+    const physicalContainerBonus = (character.modifiers?.combat?.inventory ?? [])
+        .filter((modifier) => modifier.kind === "gear")
+        .reduce((total, modifier) => total + numberOrZero(modifier.amount), 0)
+        + numberOrZero(roles.factotumPack?.system?.container?.capacity);
+    const baseInventory = numberOrZero(character.combat?.inventory) - physicalContainerBonus;
     addActiveEffect(roles.calling, roles.nextId, "Generated Inventory Capacity", [{
         path: "system.slots.total",
-        value: numberOrZero(character.combat?.inventory),
+        value: baseInventory,
+        phase: "final",
+    }, {
+        path: "system.inventorySlots",
+        value: baseInventory,
         phase: "final",
     }], ACTIVE_EFFECT_OVERRIDE);
+}
+
+function applyRank10ProgressionGuard(character, roles) {
+    if (integerOrZero(character.rank) < 10 || !roles.calling) return;
+    addActiveEffect(roles.calling, roles.nextId, "Rank 10 Progression Guard", [{
+        path: "system.xpNextRank",
+        value: 0,
+        phase: "final",
+    }], ACTIVE_EFFECT_OVERRIDE);
+}
+
+function itemSlotCost(item) {
+    return numberOrZero(item.system?.slots) * numberOrZero(item.system?.quantity ?? 1);
+}
+
+function packGearIntoContainer(roles, container, equippedItemIds) {
+    if (!container?.system?.container?.enabled) return;
+    const capacity = numberOrZero(container.system.container.capacity);
+    let used = 0;
+    for (const item of roles.gear) {
+        const generatorFlags = item.flags?.[EXPORT_FLAG] ?? {};
+        if (item._id === container._id
+            || equippedItemIds.has(item._id)
+            || generatorFlags.equipped
+            || generatorFlags.stowed
+            || item.system?.container?.enabled) continue;
+        const slots = itemSlotCost(item);
+        if (used + slots > capacity) continue;
+        item.system.containerId = container._id;
+        item.flags[EXPORT_FLAG].containerId = container._id;
+        used += slots;
+    }
 }
 
 function addResolvedChoiceItems(character, nextId, items, roles) {
@@ -706,6 +808,7 @@ export function buildFoundryActor(character, data) {
         additionalQuirks: [],
         leisurelyFocus: null,
         soulCompanion: null,
+        factotumPack: null,
     };
 
     const callingAbilities = data.callingAbilities?.[character.calling.name] ?? {};
@@ -760,8 +863,16 @@ export function buildFoundryActor(character, data) {
         roles.gear.push(document);
     });
 
+    const factotumPack = buildFactotumPackItem(character, data, nextId);
+    if (factotumPack) {
+        items.push(factotumPack);
+        roles.gear.push(factotumPack);
+        roles.factotumPack = factotumPack;
+    }
+
     applyKnownEffects(character, roles);
     applyInventoryCapacity(character, roles);
+    applyRank10ProgressionGuard(character, roles);
 
     const equipmentGear = roles.gear;
     const armor = bestItem(equipmentGear, (item) => item.type === "armor");
@@ -772,6 +883,15 @@ export function buildFoundryActor(character, data) {
         && numberOrZero(item.flags?.[EXPORT_FLAG]?.inventoryBonusTenths) > 0);
     const normalWeapons = equipmentGear.filter((item) => item.type === "weapon");
     const equippedWeapons = specialWeapons.length ? specialWeapons : normalWeapons.slice(0, 1);
+    const equippedItemIds = new Set([
+        armor?._id,
+        outfit?._id,
+        shield?._id,
+        ...equippedWeapons.map((item) => item._id),
+        ...containerAccessories.map((item) => item._id),
+        ...equipmentGear.filter((item) => item.flags?.[EXPORT_FLAG]?.equipped).map((item) => item._id),
+    ].filter(Boolean));
+    packGearIntoContainer(roles, containerAccessories[0], equippedItemIds);
 
     const rank = Math.max(1, Math.min(10, integerOrZero(character.rank) || 1));
     const progressionName = findCalling(data, character.calling.name)?.baseCalling || character.calling.name;
@@ -804,7 +924,7 @@ export function buildFoundryActor(character, data) {
             rank,
             current: integerOrZero(advancement.xp),
         },
-        languages: (character.languages ?? []).join(", "),
+        languages: clone(character.languages ?? []),
         description: "",
         purviews: [],
         currency: currencyFromStones(character.shopping?.totalCurrencyStones ?? character.coins * 100),
