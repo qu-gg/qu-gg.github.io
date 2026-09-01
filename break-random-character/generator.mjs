@@ -451,7 +451,7 @@ function resolveNestedChoices(data, calling, species, quirk, rank, streams) {
             sourceUrl: calling.sourceUrl,
         });
         if (rank >= 3) choices.push({ label: "Holy Sword Property", value: choose(["Glittering", "Righteous", "Sheltering"], streams.callingChoices), sourceUrl: calling.sourceUrl });
-        choices.push({ label: "Bonded Mount", value: "Guardian Animal / Mount", sourceUrl: calling.sourceUrl });
+        choices.push({ label: "Bonded Mount", value: `Guardian Animal / Mount${rank >= 5 ? " / +1 Heart" : ""}`, sourceUrl: calling.sourceUrl });
     }
 
     if (calling.name === "Haunted Knight") {
@@ -668,6 +668,9 @@ export function rollCharacter(data, random = Math.random, suppliedSeeds = {}, co
     }
     if (species.inventoryBonus) {
         addModifier(modifiers, "combat", "inventory", species.inventoryBonusSource || species.name, species.inventoryBonus, "ability");
+    }
+    if (species.name === "Gruun") {
+        addModifier(modifiers, "combat", "hearts", species.name, 1, "ability");
     }
     if (calling.inventoryBonus) {
         addModifier(modifiers, "combat", "inventory", calling.inventoryBonusSource || calling.name, calling.inventoryBonus, "ability");

@@ -269,12 +269,20 @@ required prototype token defaults so Foundry v14 imports it as current document
 data instead of treating it as a pre-v10 document. The Foundry button is enabled
 for testing and can be disabled with the `ENABLE_FOUNDRY_EXPORT` flag in `app.mjs`.
 
-The adapter exports portable numeric effects for verified unconditional
-adjustments, including applicable aptitude, Attack, Defense, Hearts, Speed,
-Inventory, and Allegiance changes. Foundry still recalculates derived values
-from its Calling, Species, equipment, Active Effects, and world settings. The
-export therefore stores the generator result in a custom flag for comparison
-after import.
+The adapter exports portable numeric effects for verified adjustments, including
+size and species aptitude/Defense/Heart changes, quirk and ability Attack,
+Defense, Hearts, and Speed changes, inventory capacity, and Allegiance. It also
+preserves Stowing by giving the selected stowed item zero current Slots while
+retaining its original slot provenance. Conditional Brazen Defense and Bulwark
+of Disdain armor replacement is represented with an equipment-level override.
+Foundry still recalculates derived values from its Calling, Species, equipment,
+Active Effects, and world settings. The export therefore stores the generator
+result in a custom flag for comparison after import.
+
+The BREAK!! v1.2 system currently has an upstream Rank 10 preparation bug: its
+ten-row advancement loop reads an eleventh row while calculating the next-rank
+XP. Rank 1-9 imports have been verified in Foundry v14.367; Rank 10 currently
+requires that system bug to be fixed or a compatible system update.
 
 The public export deliberately leaves Item descriptions and Actions empty. It
 also represents Followers and Soul Companions as Items or resolved-choice

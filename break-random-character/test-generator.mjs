@@ -207,9 +207,12 @@ for (const princess of [rankTenBattlePrincess, rankTenMurderPrincess]) {
     assert.ok(princess.selections.some((selection) => selection.label === `${bladeLabel.split(" Blade")[0]} Blade Property`));
 }
 assert.ok(rankTenBattlePrincess.selections.find((selection) => selection.label === "Soul Companion").value.includes("+1 Heart"));
+assert.ok(!rankTenBattlePrincess.modifiers.combat.hearts.some((modifier) => modifier.source === "Soul Companion"));
 assert.equal(rankTenBattlePrincess.selections.find((selection) => selection.label === "Shield of Love").value, "3 people");
 assert.equal(rankTenHenshin.selections.find((selection) => selection.label === "Finisher Quality").value.split(" / ").length, 2);
 assert.ok(rankTenBrightHeart.selections.find((selection) => selection.label === "Holy Sword").value.includes(" + "));
+assert.ok(rankTenBrightHeart.selections.find((selection) => selection.label === "Bonded Mount").value.includes("+1 Heart"));
+assert.ok(!rankTenBrightHeart.modifiers.combat.hearts.some((modifier) => modifier.source === "Bonded Mount"));
 assert.ok(rankTenBrightHeart.selections.some((selection) => selection.label === "Holy Sword Property"));
 assert.ok(rankTenHauntedKnight.selections.find((selection) => selection.label === "Wrath's Blade").value.includes(" + "));
 assert.ok(rankTenHauntedKnight.selections.some((selection) => selection.label === "Wrath's Blade Property"));
@@ -515,6 +518,9 @@ for (let seed = 1; seed <= 5000; seed += 1) {
     }
     if (character.species.name === "Dwarf") {
         assert.ok(character.modifiers.combat.inventory.some((modifier) => modifier.source === "Sturdy" && modifier.amount === 2));
+    }
+    if (character.species.name === "Gruun") {
+        assert.ok(character.modifiers.combat.hearts.some((modifier) => modifier.source === "Gruun" && modifier.amount === 1));
     }
     const gearInventoryBonus = expectedCallingInventory
         ? 0

@@ -463,6 +463,7 @@ function buildGearItem(item, section, index, nextId) {
     const type = gearDocumentType(item);
     const quantity = parseQuantity(item);
     const system = baseItemSystem(item, quantity);
+    if (item.stowed) system.slots = 0;
     if (type === "weapon") {
         const type1 = weaponTypeKey(item.gearType);
         const primary = WEAPON_TYPE_DATA[type1] ?? WEAPON_TYPE_DATA.standard;
@@ -524,6 +525,7 @@ function sourceItemForModifier(source, character, roles) {
     const speciesFlags = roles.species.flags?.[EXPORT_FLAG] ?? {};
     if (source === character.calling.name || source === callingFlags.baseCalling || source === callingFlags.inventoryBonusSource) return roles.calling;
     if (source === character.species.name || source === speciesFlags.inventoryBonusSource) return roles.species;
+    if (source === `${character.size.name} Species`) return roles.species;
     if (source === character.quirk.name) return roles.quirk;
     if (source === "Leisurely Focus") return roles.leisurelyFocus || roles.species;
     const ability = roles.abilities.find((item) => item.name === source);
@@ -541,6 +543,16 @@ function addModifierEffect(source, character, roles, label, key, value, mode = A
 function applyKnownEffects(character, roles) {
     const abilityHasEffect = (source, key) => roles.abilities.some((item) => item.name === source
         && item.flags?.[EXPORT_FLAG]?.sourceAbility?.effects?.[key] !== undefined);
+    const defenseAlternative = (character.modifiers?.combat?.defense ?? [])
+        .find((modifier) => ["Brazen Defense", "Bulwark of Disdain"].includes(modifier.source));
+    const armor = bestItem(roles.gear, (item) => item.type === "armor");
+    if (defenseAlternative && armor && numberOrZero(armor.system?.defenseBonus) < 4) {
+        const defenseAlternativeItem = roles.abilities.find((item) => item.name === defenseAlternative.source) || roles.calling;
+        addActiveEffect(defenseAlternativeItem, roles.nextId, `${defenseAlternative.source} Armor Replacement`, [{
+            path: "system.equipment.armor.system.defenseBonus",
+            value: 0,
+        }], ACTIVE_EFFECT_OVERRIDE);
+    }
 
     roles.abilities.forEach((item) => {
         const sourceAbility = item.flags?.[EXPORT_FLAG]?.sourceAbility;
@@ -551,14 +563,21 @@ function applyKnownEffects(character, roles) {
 
     Object.entries(character.modifiers?.aptitudes ?? {}).forEach(([aptitude, modifiers]) => {
         modifiers.forEach((modifier) => {
-            if (modifier.kind === "species" || modifier.source === `${character.size.name} Species`) return;
+            if (modifier.kind === "species") {
+                if (modifier.source === `${character.size.name} Species`) addModifierEffect(modifier.source, character, roles, `${modifier.source} ${aptitude}`, aptitude, modifier.amount);
+                return;
+            }
             addModifierEffect(modifier.source, character, roles, `${modifier.source} ${aptitude}`, aptitude, modifier.amount);
         });
     });
 
     ["attack", "defense", "speed", "hearts"].forEach((stat) => {
         (character.modifiers?.combat?.[stat] ?? []).forEach((modifier) => {
-            if (modifier.kind === "gear" || modifier.kind === "species") return;
+            if (modifier.kind === "gear") return;
+            if (modifier.kind === "species") {
+                if (modifier.source === `${character.size.name} Species`) addModifierEffect(modifier.source, character, roles, `${modifier.source} ${stat}`, stat, modifier.amount);
+                return;
+            }
             if (abilityHasEffect(modifier.source, stat)) return;
             addModifierEffect(modifier.source, character, roles, `${modifier.source} ${stat}`, stat, modifier.amount, modifier.kind === "set" ? ACTIVE_EFFECT_OVERRIDE : ACTIVE_EFFECT_ADD);
         });
