@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T00:05:18.677388Z",
+  "lastUpdated": "2026-09-01T12:02:21.933058Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:weru67dtqiliulv377buo4aj/app.bsky.feed.post/3mugbakr4kc2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "luckynewtgames.bsky.social",
+        "displayName": "Mama Newt \ud83e\udd8e\ud83c\udfb2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:weru67dtqiliulv377buo4aj/bafkreib56zsektiqx2pxthdkzk7kj7egxiwddov7leaqo64ozo7ng3xyjm"
+      },
+      "record": {
+        "text": "This is such a great place to start your indie TTRPG journey!\n\nOr some great games to introduce to any friends who might be new to them!\n\nitch.io/b/3856/begin...",
+        "createdAt": "2026-09-01T01:25:58.670Z"
+      },
+      "indexedAt": "2026-09-01T01:26:00.008Z",
+      "replyCount": 0,
+      "repostCount": 8,
+      "likeCount": 9,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/b/3856/beginner-friendly-pay-what-you-want-ttrpgs",
+        "title": "",
+        "description": "",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mufjrned3c2d",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-08-31T18:26:11.410Z",
       "replyCount": 1,
       "repostCount": 4,
-      "likeCount": 27,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +123,7 @@
       "indexedAt": "2026-08-31T18:20:59.006Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 17,
+      "likeCount": 19,
       "embed": {
         "type": "images",
         "images": [
@@ -122,7 +151,7 @@
       "indexedAt": "2026-08-31T16:35:44.604Z",
       "replyCount": 0,
       "repostCount": 11,
-      "likeCount": 20,
+      "likeCount": 22,
       "embed": {
         "type": "images",
         "images": [
@@ -342,7 +371,7 @@
       "indexedAt": "2026-08-24T18:02:40.272Z",
       "replyCount": 2,
       "repostCount": 13,
-      "likeCount": 49,
+      "likeCount": 50,
       "embed": {
         "type": "images",
         "images": [
@@ -1594,7 +1623,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3891,
+      "likeCount": 3890,
       "embed": {
         "type": "images",
         "images": [
@@ -1946,7 +1975,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1244,
-      "likeCount": 6543,
+      "likeCount": 6542,
       "embed": {
         "type": "images",
         "images": [
@@ -2709,7 +2738,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 543,
-      "likeCount": 3030,
+      "likeCount": 3029,
       "embed": {
         "type": "images",
         "images": [
