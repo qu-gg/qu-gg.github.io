@@ -3,6 +3,9 @@ const ACTIVE_EFFECT_ADD = 2;
 const ACTIVE_EFFECT_OVERRIDE = 5;
 const EXPORT_FLAG = "break-random-character";
 const EXPORT_VERSION = 1;
+const FOUNDRY_CORE_VERSION = "14.367";
+const FOUNDRY_SYSTEM_ID = "break";
+const FOUNDRY_SYSTEM_VERSION = "1.2";
 const SPEED_VALUES = { Slow: 0, Average: 1, Fast: 2, "Very Fast": 3 };
 const SIZE_VALUES = { Tiny: 0, Small: 1, Medium: 2, Large: 3, Massive: 4, Colossal: 5 };
 const GENERIC_ITEM_TYPES = {
@@ -252,11 +255,12 @@ function createActiveEffect(nextId, name, changes, mode = ACTIVE_EFFECT_ADD) {
         _id: nextId(`effect:${name}`),
         name,
         icon: "icons/svg/aura.svg",
-        changes: changes.map(({ key, value }) => ({
+        changes: changes.map(({ key, value, phase = "initial" }) => ({
             key,
             mode,
             value: String(value),
             priority: 20,
+            phase,
         })),
         disabled: false,
         transfer: true,
@@ -270,6 +274,7 @@ function addActiveEffect(item, nextId, name, changes, mode = ACTIVE_EFFECT_ADD) 
     item.effects.push(createActiveEffect(nextId, name, validChanges.map((change) => ({
         key: change.path || EFFECT_PATHS[change.key],
         value: change.value,
+        phase: change.phase,
     })), mode));
 }
 
@@ -495,12 +500,6 @@ function buildGearItem(item, section, index, nextId) {
         stowed: Boolean(item.stowed),
         currencyStones: numberOrZero(item.currencyStones),
     });
-    if (numberOrZero(item.inventoryBonusTenths)) {
-        addActiveEffect(document, nextId, `${item.name} Inventory`, [{
-            key: "slots",
-            value: numberOrZero(item.inventoryBonusTenths) / 10,
-        }]);
-    }
     return document;
 }
 
@@ -580,6 +579,15 @@ function applyKnownEffects(character, roles) {
             value: modifier.amount,
         }]);
     });
+}
+
+function applyInventoryCapacity(character, roles) {
+    if (!roles.calling) return;
+    addActiveEffect(roles.calling, roles.nextId, "Generated Inventory Capacity", [{
+        path: "system.slots.total",
+        value: numberOrZero(character.combat?.inventory),
+        phase: "final",
+    }], ACTIVE_EFFECT_OVERRIDE);
 }
 
 function addResolvedChoiceItems(character, nextId, items, roles) {
@@ -734,6 +742,7 @@ export function buildFoundryActor(character, data) {
     });
 
     applyKnownEffects(character, roles);
+    applyInventoryCapacity(character, roles);
 
     const equipmentGear = roles.gear;
     const armor = bestItem(equipmentGear, (item) => item.type === "armor");
@@ -806,7 +815,12 @@ export function buildFoundryActor(character, data) {
                 },
             },
         },
-        prototypeToken: { actorLink: true },
+        _stats: {
+            coreVersion: FOUNDRY_CORE_VERSION,
+            systemId: FOUNDRY_SYSTEM_ID,
+            systemVersion: FOUNDRY_SYSTEM_VERSION,
+        },
+        prototypeToken: { actorLink: true, depth: 1 },
         ownership: { default: 0 },
         folder: null,
         sort: 0,

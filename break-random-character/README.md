@@ -102,6 +102,9 @@ rest of the site until it is ready to be linked publicly.
   downloads the PNG instead, avoiding mobile clipboard permissions. The
   captured card uses a fixed desktop-style two-column layout in both cases.
   Normal browser right-click behavior remains available.
+- On mobile layouts, use the character-actions menu in the card header to
+  access `Save Image`, `Export to FoundryVTT`, and `Export to QuestlineVTT`
+  without expanding the card header.
 - Use the `Export to FoundryVTT` button on a card to download one portable
   Foundry v14 BREAK!! character Actor JSON document. The export includes the
   selected Calling, Species, identity Items, abilities, Gifts, generated gear,
@@ -261,8 +264,10 @@ browser-only and its public data boundary remains unchanged. The downloaded
 document is a standard `character` Actor for Foundry v14 and the BREAK!! v1.2
 system. It is self-contained: all generated Items are embedded in the Actor,
 and every `system.equipment` reference points to the matching embedded Item
-ID. The page button is currently hidden behind the `ENABLE_FOUNDRY_EXPORT`
-feature flag in `app.mjs` while the export format is developed further.
+ID. The export retains minimal Foundry and system version metadata plus the
+required prototype token defaults so Foundry v14 imports it as current document
+data instead of treating it as a pre-v10 document. The Foundry button is enabled
+for testing and can be disabled with the `ENABLE_FOUNDRY_EXPORT` flag in `app.mjs`.
 
 The adapter exports portable numeric effects for verified unconditional
 adjustments, including applicable aptitude, Attack, Defense, Hearts, Speed,

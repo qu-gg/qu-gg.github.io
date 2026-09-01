@@ -1,8 +1,8 @@
 import { removeGearItem, rerollCharacter, rollCharacters } from "./generator.mjs?v=25";
-import { downloadFoundryActor } from "./foundry-export.mjs?v=1";
+import { downloadFoundryActor } from "./foundry-export.mjs?v=2";
 import { downloadQuestlineCharacter } from "./questline-export.mjs?v=3";
 
-const ENABLE_FOUNDRY_EXPORT = false;
+const ENABLE_FOUNDRY_EXPORT = true;
 const ENABLE_QUESTLINE_EXPORT = true;
 
 const form = document.querySelector("#roll-form");
@@ -253,9 +253,12 @@ function renderCharacter(character, index) {
                 <div class="character-title-row rerollable-section" data-reroll-target="name" title="Reroll name">
                     <h3 id="character-${index + 1}-title">${escapeHtml(character.name)}</h3>
                     ${rerollIcon("name", "name")}
-                    <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore aria-label="${escapeHtml(imageActionAriaLabel())}" title="${escapeHtml(imageActionTitle())}">${imageActionLabel()}</button>
-                    ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
-                    ${ENABLE_QUESTLINE_EXPORT ? `<button type="button" class="questline-export-button" data-export-questline data-html2canvas-ignore aria-label="Export ${escapeHtml(character.name)} to QuestlineVTT" title="Export character to QuestlineVTT">Export to QuestlineVTT</button>` : ""}
+                    <div class="character-card-actions" id="character-${index + 1}-actions" data-card-actions data-html2canvas-ignore>
+                        <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore role="menuitem" aria-label="${escapeHtml(imageActionAriaLabel())}" title="${escapeHtml(imageActionTitle())}">${imageActionLabel()}</button>
+                        ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore role="menuitem" aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
+                        ${ENABLE_QUESTLINE_EXPORT ? `<button type="button" class="questline-export-button" data-export-questline data-html2canvas-ignore role="menuitem" aria-label="Export ${escapeHtml(character.name)} to QuestlineVTT" title="Export character to QuestlineVTT">Export to QuestlineVTT</button>` : ""}
+                    </div>
+                    <button type="button" class="card-actions-menu-toggle" data-card-actions-toggle data-html2canvas-ignore aria-haspopup="menu" aria-expanded="false" aria-controls="character-${index + 1}-actions" aria-label="Character actions" title="Character actions"><span class="card-actions-menu-icon" aria-hidden="true"></span></button>
                 </div>
                 <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
                 <p class="character-origin">${escapeHtml(character.history.name)} [${escapeHtml(character.history.tier)}] · ${escapeHtml(character.homeland.name)}</p>
@@ -479,6 +482,23 @@ function updateImageActionButtons() {
     });
 }
 
+function setCardActionsMenu(card, open, focusFirst = false) {
+    const menu = card?.querySelector("[data-card-actions]");
+    const toggle = card?.querySelector("[data-card-actions-toggle]");
+    if (!menu || !toggle) return;
+    if (open) menu.dataset.menuOpen = "true";
+    else delete menu.dataset.menuOpen;
+    toggle.setAttribute("aria-expanded", String(open));
+    if (open && focusFirst) menu.querySelector("button")?.focus();
+}
+
+function closeCardActionsMenus(except = null) {
+    results.querySelectorAll("[data-card-actions][data-menu-open='true']").forEach((menu) => {
+        const card = menu.closest(".character-card");
+        if (card !== except) setCardActionsMenu(card, false);
+    });
+}
+
 async function loadData() {
     try {
         const response = await fetch("./data.json", { cache: "no-store" });
@@ -505,9 +525,22 @@ form.addEventListener("submit", (event) => {
 });
 
 results.addEventListener("click", (event) => {
-    if (event.target.closest("a")) return;
+    const menuToggle = event.target.closest("[data-card-actions-toggle]");
+    if (menuToggle) {
+        const card = menuToggle.closest(".character-card");
+        const menu = card?.querySelector("[data-card-actions]");
+        const open = menu?.dataset.menuOpen === "true";
+        closeCardActionsMenus(card);
+        setCardActionsMenu(card, !open, !open);
+        return;
+    }
+    if (event.target.closest("a")) {
+        closeCardActionsMenus();
+        return;
+    }
     const foundryButton = event.target.closest("[data-export-foundry]");
     if (foundryButton) {
+        closeCardActionsMenus();
         const card = foundryButton.closest(".character-card");
         const index = [...results.children].indexOf(card);
         if (currentCharacters[index]) downloadFoundryActor(currentCharacters[index], data);
@@ -515,6 +548,7 @@ results.addEventListener("click", (event) => {
     }
     const questlineButton = event.target.closest("[data-export-questline]");
     if (questlineButton) {
+        closeCardActionsMenus();
         const card = questlineButton.closest(".character-card");
         const index = [...results.children].indexOf(card);
         if (currentCharacters[index]) downloadQuestlineCharacter(currentCharacters[index], data);
@@ -522,6 +556,7 @@ results.addEventListener("click", (event) => {
     }
     const copyButton = event.target.closest("[data-copy-image]");
     if (copyButton) {
+        closeCardActionsMenus();
         copyCardAsImage(copyButton.closest(".character-card"), copyButton);
         return;
     }
@@ -537,6 +572,20 @@ results.addEventListener("click", (event) => {
     const card = target.closest(".character-card");
     const index = [...results.children].indexOf(card);
     replaceCharacter(index, target.dataset.rerollTarget);
+});
+
+document.addEventListener("click", (event) => {
+    if (event.target.closest("[data-card-actions-toggle], [data-card-actions]")) return;
+    closeCardActionsMenus();
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const menu = results.querySelector("[data-card-actions][data-menu-open='true']");
+    if (!menu) return;
+    const card = menu.closest(".character-card");
+    setCardActionsMenu(card, false);
+    card?.querySelector("[data-card-actions-toggle]")?.focus();
 });
 
 const navToggle = document.querySelector(".nav-toggle");

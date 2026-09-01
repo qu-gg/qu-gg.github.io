@@ -370,6 +370,14 @@ body {
     flex-wrap: wrap;
 }
 
+.character-card-actions {
+    display: contents;
+}
+
+.card-actions-menu-toggle {
+    display: none;
+}
+
 .section-heading h4 {
     margin: 0;
 }
@@ -1017,6 +1025,21 @@ body {
     100% { box-shadow: 0 4px 15px rgba(37, 35, 41, 0.08); }
 }
 
+@media (max-width: 900px) {
+    .roll-controls {
+        width: 100%;
+        grid-template-areas:
+            "fields"
+            "options"
+            "generate";
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .roll-controls button {
+        width: 100%;
+    }
+}
+
 @media (max-width: 800px) {
     .character-body {
         grid-template-columns: 1fr;
@@ -1043,6 +1066,76 @@ body {
 
     .generator-masthead h1 {
         font-size: 3.25rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .character-title-row {
+        position: relative;
+    }
+
+    .card-actions-menu-toggle {
+        width: 24px;
+        height: 24px;
+        min-height: 24px;
+        flex: 0 0 auto;
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        padding: 0;
+        border: 1px solid var(--generator-line);
+        border-radius: 3px;
+        background: var(--generator-paper);
+        color: var(--generator-muted);
+        cursor: pointer;
+        font: inherit;
+        line-height: 0;
+    }
+
+    .card-actions-menu-icon {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: currentColor;
+        box-shadow: 0 -4px currentColor, 0 4px currentColor;
+    }
+
+    .card-actions-menu-toggle:hover,
+    .card-actions-menu-toggle:focus-visible,
+    .card-actions-menu-toggle[aria-expanded="true"] {
+        border-color: var(--card-accent);
+        color: var(--card-accent);
+        outline: none;
+    }
+
+    .character-card-actions {
+        position: absolute;
+        top: calc(100% + 0.35rem);
+        right: 0;
+        z-index: 5;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.35rem;
+        width: min(210px, calc(100vw - 2.5rem));
+        padding: 0.5rem;
+        border: 1px solid var(--generator-line);
+        border-radius: 4px;
+        background: var(--generator-paper);
+        box-shadow: 0 8px 20px rgba(37, 35, 41, 0.18);
+    }
+
+    .character-card-actions[data-menu-open="true"] {
+        display: flex;
+    }
+
+    .character-card-actions .copy-image-button,
+    .character-card-actions .foundry-export-button,
+    .character-card-actions .questline-export-button {
+        width: 100%;
+        margin-left: 0;
+        min-height: 34px;
+        text-align: left;
     }
 }
 
@@ -1081,15 +1174,6 @@ body {
         display: none;
     }
 
-    .roll-controls {
-        width: 100%;
-        grid-template-areas:
-            "fields"
-            "options"
-            "generate";
-        grid-template-columns: 1fr;
-    }
-
     .roll-fields {
         display: grid;
         grid-template-columns: 54px 54px minmax(0, 1fr);
@@ -1098,10 +1182,6 @@ body {
     .roll-options {
         align-items: center;
         flex-wrap: wrap;
-    }
-
-    .roll-controls button {
-        width: 100%;
     }
 
     .stat-grid {
