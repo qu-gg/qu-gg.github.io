@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T12:02:36.305951Z",
+  "lastUpdated": "2026-09-03T00:04:44.638555Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,94 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mukak7csvk2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "Infernus looking fly as hell",
+        "createdAt": "2026-09-02T15:24:07.429Z"
+      },
+      "indexedAt": "2026-09-02T15:24:12.409Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 46,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicnim6yx6zbqlvxi3vchyd55r4bjk7c6u3id7debfl4r3e73bbkge",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicnim6yx6zbqlvxi3vchyd55r4bjk7c6u3id7debfl4r3e73bbkge",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3muk3gwpzec22",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "DRAGONS in BREAK!!?\n\nIt's lore today, but they'll be playable in GENUS!\n\nbreakrpg.blogspot.com/2026/07/the-...",
+        "createdAt": "2026-09-02T13:52:48.998Z"
+      },
+      "indexedAt": "2026-09-02T13:52:58.111Z",
+      "replyCount": 4,
+      "repostCount": 4,
+      "likeCount": 25,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifulyze46smf7g3atlg6qsche6zf74iiodvi22jz52z4hxdavv5uy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreifulyze46smf7g3atlg6qsche6zf74iiodvi22jz52z4hxdavv5uy",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3muk3eha6222s",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "\"I want to check out BREAK!! rpg - lets go to their website at breakrpg.com \"\n\n\"There is also a blog with bi-weekly updates of free game material at breakrpg.blogspot.com \"\n\n\"You can also get the game at Indie press revolution and other outlets!\"\n\n\"That's nice but we are hitting the character limi-\"",
+        "createdAt": "2026-09-02T13:51:25.675Z"
+      },
+      "indexedAt": "2026-09-02T13:51:28.306Z",
+      "replyCount": 2,
+      "repostCount": 15,
+      "likeCount": 52,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiblopk6awmdlrzjpf2v5yklidqikghq7u7d37f6d4fbcbtqmwbr5u",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiblopk6awmdlrzjpf2v5yklidqikghq7u7d37f6d4fbcbtqmwbr5u",
+            "alt": "A set of signs in a fantasy language, and a Rai-Neko and Tenebrate from the BREAK!! rpg discussing which direction they should take."
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
       "uri": "at://did:plc:7nq4crqduz42x4dz6vtexafd/app.bsky.feed.post/3mujreuqcfk2h",
       "source": "bluesky",
       "author": {
@@ -65,8 +153,8 @@
       },
       "indexedAt": "2026-09-02T10:53:06.700Z",
       "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 7,
+      "repostCount": 5,
+      "likeCount": 11,
       "embed": {
         "type": "external",
         "uri": "https://www.designedinthedmv.org",
@@ -94,14 +182,43 @@
       },
       "indexedAt": "2026-09-02T10:24:38.502Z",
       "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 3,
+      "repostCount": 3,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://ko-fi.com/zakbfree",
         "title": "Buy Zak Barouh | LEAF & LANCE a Coffee",
         "description": "Hi, I'm Zak Barouh. I'm a writer and Tabletop RPG designer. My latest big release is Animon Story, and TTRPG about Kids & their Monster friends!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:x4nyticnv2hnk3vq5z2qssra/bafkreihbsig2grxa4sjitdiwqwst5cmmhxijkhc7isir5wruhtzvtfnoxa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mujnint3u22z",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
+      },
+      "record": {
+        "text": "Some very cool secret stuff is happening for Intergalactic Bastionland. \n\nAre you one of the BILLIONS of people NOT currently following the kickstarter?\n\nwww.kickstarter.com/projects/bas...",
+        "createdAt": "2026-09-02T09:43:14.440Z"
+      },
+      "indexedAt": "2026-09-02T09:43:14.405Z",
+      "replyCount": 6,
+      "repostCount": 26,
+      "likeCount": 106,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
+        "title": "Coming soon: Intergalactic Bastionland RPG - Beyond Into the Odd",
+        "description": "Rules light roleplaying amongst the living stars of Bastionland.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreibdbynlvb7hmc4ke3mp4jyznxxtbmcmsreol5v6z7ynualmp7mf2q"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -181,8 +298,8 @@
       },
       "indexedAt": "2026-09-01T01:26:00.008Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 11,
+      "repostCount": 12,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3856/beginner-friendly-pay-what-you-want-ttrpgs",
@@ -266,8 +383,8 @@
       },
       "indexedAt": "2026-08-31T16:35:44.604Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 22,
+      "repostCount": 17,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -544,38 +661,6 @@
       }
     },
     {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mttlcexl442y",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f Gamehole Con",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
-      },
-      "record": {
-        "text": "A Construct's Nature is a solo journaling TTRPG full of adventure, calm moments, challenging choices, world lore, and NPCs who grow with your character.\n\nFind links to both physical copy sellers on the TTRPGkids itchio page, and happy gaming!\n\nhttps://ttrpgkids.itch.io/a-constructs-nature\n\n",
-        "createdAt": "2026-08-24T15:05:22Z"
-      },
-      "indexedAt": "2026-08-24T15:05:22.277Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreidvkzxt7lrnncsmypq4g5xurrdc7zby6dcqymxzhyszbs7gg2ffee",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreidvkzxt7lrnncsmypq4g5xurrdc7zby6dcqymxzhyszbs7gg2ffee",
-            "alt": "Find ACN on Indie Press Revolution, itch.io, and DTRPG!"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mtr5rrsbcs2t",
       "source": "bluesky",
       "author": {
@@ -640,7 +725,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ipr.bsky.social",
-        "displayName": "IPR @ PAX West 4104",
+        "displayName": "Indie Press Revolution",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
       },
       "record": {
@@ -785,35 +870,6 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:m3qyafzqopezwtww7wl7xvdr/app.bsky.feed.post/3msqn7q2ius24",
-      "source": "bluesky",
-      "author": {
-        "handle": "manysidedmedia.bsky.social",
-        "displayName": "Many Sided Media",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreigif4akac2jdsexb6jq7zadwe35o4mtseovl5hcf4hzmejygfoxjm"
-      },
-      "record": {
-        "text": "NEW EPISODE - Talk of the Table\n\n@brianflaherty.bsky.social & @moreblueberries.bsky.social sit down with @stickydoodler.bsky.social to discuss the ENNIE-award-winning The Bonsai Diary, the rise of solo TTRPGs, and accessibility in game design. \n\nSuch a great conversation for this current moment!",
-        "createdAt": "2026-08-10T17:36:29.703Z"
-      },
-      "indexedAt": "2026-08-10T17:36:30.573Z",
-      "replyCount": 3,
-      "repostCount": 21,
-      "likeCount": 42,
-      "embed": {
-        "type": "external",
-        "uri": "https://open.spotify.com/episode/0xsEvyqNQOsEJ0tTJcppC6?si=e2a7bc1d63dc4e16",
-        "title": "Growing Alongside The Bonsai Diary (w/ Gene Koo)",
-        "description": "Talk of the Table \u00b7 Episode",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m3qyafzqopezwtww7wl7xvdr/bafkreienbl7hxwan5urgwkqdmkzpsu2wwecmfcnk3fuq7n5ya7qoe2yxge"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mslmzlnz7c2m",
       "source": "bluesky",
       "author": {
@@ -846,7 +902,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ipr.bsky.social",
-        "displayName": "IPR @ PAX West 4104",
+        "displayName": "Indie Press Revolution",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
       },
       "record": {
@@ -878,7 +934,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ipr.bsky.social",
-        "displayName": "IPR @ PAX West 4104",
+        "displayName": "Indie Press Revolution",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
       },
       "record": {
@@ -1087,38 +1143,6 @@
       "link": "https://www.artstation.com/artwork/O3yy5e"
     },
     {
-      "uri": "at://did:plc:52zzdjbqfm7w4r42wctzwrvy/app.bsky.feed.post/3mp3d3ejick2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "puppiesandanime.bsky.social",
-        "displayName": "Shawn\ud83d\udc36",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreihkgjnx2eud7vvrfdaqcaelvvjwqfbepbhjoq6qdpxfi7upnv3s7a"
-      },
-      "record": {
-        "text": "Druaga sprites",
-        "createdAt": "2026-06-25T01:53:36.586Z"
-      },
-      "indexedAt": "2026-06-25T01:53:39.070Z",
-      "replyCount": 10,
-      "repostCount": 219,
-      "likeCount": 1095,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreig5sa4acwm4ne5c43okjdkq4ddgiukagfj3ycaraacuy7qcix7lxy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:52zzdjbqfm7w4r42wctzwrvy/bafkreig5sa4acwm4ne5c43okjdkq4ddgiukagfj3ycaraacuy7qcix7lxy",
-            "alt": "Pixel art character sprites of Gil and Ki from Tower of Druaga, facing to the left. Gil is holding a sword in front of him, while Ki is holding the blue rod to her chest. They are on a grey background. "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/BkxK1D",
       "source": "artstation",
       "author": {
@@ -1181,38 +1205,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/BkxK1D"
-    },
-    {
-      "uri": "at://did:plc:ye4htupvnfjdvehquglifx45/app.bsky.feed.post/3mnfkf5e2cc2z",
-      "source": "bluesky",
-      "author": {
-        "handle": "garretthanna.bsky.social",
-        "displayName": "Garrett",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreif5ewotzvgiyu64kah5kji4k6tij6ii75k27oyidvxqoj37tjbufe"
-      },
-      "record": {
-        "text": "",
-        "createdAt": "2026-06-03T16:40:34.931Z"
-      },
-      "indexedAt": "2026-06-03T16:40:25.969Z",
-      "replyCount": 2,
-      "repostCount": 78,
-      "likeCount": 549,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreihdb2qwcjfkqeyuxjrhg2ax4tj4vk6bgy7mupyuigeqxir6wehreq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ye4htupvnfjdvehquglifx45/bafkreihdb2qwcjfkqeyuxjrhg2ax4tj4vk6bgy7mupyuigeqxir6wehreq",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/Ov2qWy",
@@ -1375,8 +1367,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 501,
-      "likeCount": 2635,
+      "repostCount": 504,
+      "likeCount": 2643,
       "embed": {
         "type": "images",
         "images": [
@@ -3084,7 +3076,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2651,
-      "likeCount": 15625,
+      "likeCount": 15624,
       "embed": {
         "type": "images",
         "images": [
