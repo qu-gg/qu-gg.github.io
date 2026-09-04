@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T12:02:32.460815Z",
+  "lastUpdated": "2026-09-04T00:04:58.611411Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,125 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3munbjqd23z2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - read games!!!!!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
+      },
+      "record": {
+        "text": "There's a tornado overheas but also I've published DAWN: The RPG on RPG Trader if you wanna go check that out! rpg-trader.com/products/910...",
+        "createdAt": "2026-09-03T20:19:44.649Z"
+      },
+      "indexedAt": "2026-09-03T20:19:45.369Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreiff47kvzvc22dx6uc474u3b4yn3evfekrejci2cjcqjzce4zqxdba",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreiff47kvzvc22dx6uc474u3b4yn3evfekrejci2cjcqjzce4zqxdba",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:hzal5qhw7ypg2z7iquwksmjr/app.bsky.feed.post/3mun2p7ljv22y",
+      "source": "bluesky",
+      "author": {
+        "handle": "dorklordcanada.bsky.social",
+        "displayName": "Brent Jans (he/they)\ud83d\udc9c\ud83d\udda4\ud83e\udd0d",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreidghqunalhuxtogdipqcxotgeodve44shus4n4ww3wd77vbbjuj5q"
+      },
+      "record": {
+        "text": "Hello friends, and the android following me through time! I am an excellent editor of words, specifically TTRPG words. Perhaps your TTRPG words? Let's talk. #ttrpg #ttrpgsky renaissancedork.wordpress.com/need-an-edit...",
+        "createdAt": "2026-09-03T18:17:32.252Z"
+      },
+      "indexedAt": "2026-09-03T18:17:34.562Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://renaissancedork.wordpress.com/need-an-editor/",
+        "title": "Need an Editor?",
+        "description": "I provide editing services for TTRPG creators at reasonable rates.\u00a0 If you are a small press publisher or indie role-playing game writer/designer, I would love to help you\u00a0with your next \u2026",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreiagoevst6h5ujpxug3r74di6dj76v6szwcudrdjttnqka2k3clwku"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mumnw7alxs2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "amandalee.bsky.social",
+        "displayName": "The Amanda Lee Mystery House",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
+      },
+      "record": {
+        "text": "amandalee.bearblog.dev/the-most-pow...",
+        "createdAt": "2026-09-03T14:28:48.130Z"
+      },
+      "indexedAt": "2026-09-03T14:28:49.399Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 18,
+      "embed": {
+        "type": "external",
+        "uri": "https://amandalee.bearblog.dev/the-most-power-spell-in-the-world/",
+        "title": "The Most Powerful Spell In the World",
+        "description": "pit\n\n<u>Instant Pit</u>\t\n\nA five foot wide, ten foot deep pit appears immediately, anywhere in view of the caster.\n\nNotes:\nWe were painstakingly playi...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreid6cnwub5kofiih6wikpcfxshnds2x352ody4tfydks343zkkrxni"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mumhybhwbk2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "prismaticwasteland.com",
+        "displayName": "Prismatic Wasteland",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
+      },
+      "record": {
+        "text": "I have made using True Names for fae and demons compelling and gameable, which some said was impossible.\n\nAlso, this is part of both the ongoing Name and Indonesian TTRPG Blogwagons\n#ttrpg #osr",
+        "createdAt": "2026-09-03T12:42:35.126Z"
+      },
+      "indexedAt": "2026-09-03T12:42:36.900Z",
+      "replyCount": 4,
+      "repostCount": 32,
+      "likeCount": 113,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.prismaticwasteland.com/blog/true-names-in-elf-games",
+        "title": "True Names in Elf Games \u2014 Prismatic Wasteland",
+        "description": "Rules for learning and using True Names against fey, demons and other sorts that preserve player agency. Also a brief note about animals in human form. For the Name and Indonesian Blogwagons.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreief4z7bsdbgtvy5wjodwfmr3djnmavrggz3rmmpvufxv5rawojg5m"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mukak7csvk2e",
       "source": "bluesky",
       "author": {
@@ -66,7 +185,7 @@
       "indexedAt": "2026-09-02T15:24:12.409Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 50,
+      "likeCount": 51,
       "embed": {
         "type": "images",
         "images": [
@@ -125,8 +244,8 @@
       },
       "indexedAt": "2026-09-02T13:51:28.306Z",
       "replyCount": 2,
-      "repostCount": 15,
-      "likeCount": 55,
+      "repostCount": 17,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -212,7 +331,7 @@
       "indexedAt": "2026-09-02T09:43:14.405Z",
       "replyCount": 6,
       "repostCount": 26,
-      "likeCount": 107,
+      "likeCount": 109,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -383,8 +502,8 @@
       },
       "indexedAt": "2026-08-31T16:35:44.604Z",
       "replyCount": 0,
-      "repostCount": 17,
-      "likeCount": 33,
+      "repostCount": 18,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -626,38 +745,9 @@
         ]
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mttq4x3c6k2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2: Follow GRIDSHOCK on Gamefound",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "In the latest update for GRIDSHOCK Zero Edition, I talk a little about the game's core mechanic and tease one of the ways it modifies Free League's Year Zero Engine rules.\n\ngamefound.com/en/projects/...",
-        "createdAt": "2026-08-24T16:31:48.474Z"
-      },
-      "indexedAt": "2026-08-24T16:31:50.164Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition/updates/3",
-        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - GRIDSHOCK: Rules, Vectors, and Grid Dice - Gamefound",
-        "description": "What's the core mechanic of this game like? What changes does GRIDSHOCK make to the Year Zero Engine?",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreibswb5yr6nycsy4et42nljjg2t3r3o6rzn7xvv4wrgszr534ioj2i"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -1368,7 +1458,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 504,
-      "likeCount": 2644,
+      "likeCount": 2643,
       "embed": {
         "type": "images",
         "images": [
