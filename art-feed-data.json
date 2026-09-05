@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T12:02:24.150310Z",
+  "lastUpdated": "2026-09-05T00:04:21.668086Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,53 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3muozieri6g2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "tabletopbookshelf.com",
+        "displayName": "Tabletop Bookshelf",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
+      },
+      "record": {
+        "text": "LABOR DAY SALE! This weekend only get up to 50% off tabletop RPGs, board games, books, dice & more!\n\nIncluding popular titles like Pendragon, The Wildsea, and Delta Green you're sure to find a new favorite game or great read for your next break from the grind  \ntabletopbookshelf.com/collections/...",
+        "createdAt": "2026-09-04T13:01:08.505Z"
+      },
+      "indexedAt": "2026-09-04T13:01:09.358Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 16,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicc4d4yshyh5s3rzt74pxshz2fqtr3r3bpxofbhgwiizd4jkddn3q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicc4d4yshyh5s3rzt74pxshz2fqtr3r3bpxofbhgwiizd4jkddn3q",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreib6fhijewqqdgpuy2zijfoywcuor3s53si2wuovspoyd4zjzubf7a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreib6fhijewqqdgpuy2zijfoywcuor3s53si2wuovspoyd4zjzubf7a",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicrdkm7fp7ps6ksehrecyjoc36veid6jo6jes5qfo6ltvuimcx64y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicrdkm7fp7ps6ksehrecyjoc36veid6jo6jes5qfo6ltvuimcx64y",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidnqg22z4cpo6526uskld7v5sl6o43jbiweorsoflv2snvis2w2am",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidnqg22z4cpo6526uskld7v5sl6o43jbiweorsoflv2snvis2w2am",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3munbjqd23z2z",
       "source": "bluesky",
       "author": {
@@ -66,13 +113,45 @@
       "indexedAt": "2026-09-03T20:19:45.369Z",
       "replyCount": 0,
       "repostCount": 10,
-      "likeCount": 20,
+      "likeCount": 21,
       "embed": {
         "type": "images",
         "images": [
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreiff47kvzvc22dx6uc474u3b4yn3evfekrejci2cjcqjzce4zqxdba",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreiff47kvzvc22dx6uc474u3b4yn3evfekrejci2cjcqjzce4zqxdba",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3munabchu3k2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "Coming soon, from @karlyanddd.bsky.social and Cairn Press!",
+        "createdAt": "2026-09-03T19:57:07.951Z"
+      },
+      "indexedAt": "2026-09-03T19:57:29.470Z",
+      "replyCount": 6,
+      "repostCount": 22,
+      "likeCount": 131,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreid4db7ce5sqyxyy6tt4xxmox4p5mpzj6ltlkuted2bvk5gopug7ky",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreid4db7ce5sqyxyy6tt4xxmox4p5mpzj6ltlkuted2bvk5gopug7ky",
             "alt": ""
           }
         ]
@@ -97,8 +176,8 @@
       },
       "indexedAt": "2026-09-03T18:17:34.562Z",
       "replyCount": 2,
-      "repostCount": 5,
-      "likeCount": 4,
+      "repostCount": 8,
+      "likeCount": 7,
       "embed": {
         "type": "external",
         "uri": "https://renaissancedork.wordpress.com/need-an-editor/",
@@ -155,8 +234,8 @@
       },
       "indexedAt": "2026-09-03T12:42:36.900Z",
       "replyCount": 4,
-      "repostCount": 33,
-      "likeCount": 122,
+      "repostCount": 34,
+      "likeCount": 124,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/true-names-in-elf-games",
@@ -185,7 +264,7 @@
       "indexedAt": "2026-09-02T15:24:12.409Z",
       "replyCount": 1,
       "repostCount": 5,
-      "likeCount": 51,
+      "likeCount": 52,
       "embed": {
         "type": "images",
         "images": [
@@ -216,8 +295,8 @@
       },
       "indexedAt": "2026-09-02T13:52:58.111Z",
       "replyCount": 4,
-      "repostCount": 5,
-      "likeCount": 34,
+      "repostCount": 6,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -245,7 +324,7 @@
       "indexedAt": "2026-09-02T13:51:28.306Z",
       "replyCount": 2,
       "repostCount": 17,
-      "likeCount": 60,
+      "likeCount": 61,
       "embed": {
         "type": "images",
         "images": [
@@ -331,7 +410,7 @@
       "indexedAt": "2026-09-02T09:43:14.405Z",
       "replyCount": 6,
       "repostCount": 26,
-      "likeCount": 110,
+      "likeCount": 111,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -616,35 +695,6 @@
       }
     },
     {
-      "uri": "at://did:plc:uxdy65vbtrrxcla3c722svhh/app.bsky.feed.post/3mtymitl5lc2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "crucibleofaether.bsky.social",
-        "displayName": "Crucible of Aether \u27a1\ufe0f Live on Itch!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uxdy65vbtrrxcla3c722svhh/bafkreie6l2idhh3rbqcaj5qzcdatop2fxkrnryskg4t6vvktxczvasxiii"
-      },
-      "record": {
-        "text": "We've officially launched Crucible of Aether on itch! Come check out our store page to dive into the Empire of Odayos: living-metal-games.itch.io/crucible-of-...\n\nNews about a physical edition coming soon (Kickstarter backers will be getting theirs first!)",
-        "createdAt": "2026-08-26T15:10:11.177Z"
-      },
-      "indexedAt": "2026-08-26T15:10:12.771Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 15,
-      "embed": {
-        "type": "external",
-        "uri": "https://living-metal-games.itch.io/crucible-of-aether",
-        "title": "Crucible of Aether by Living Metal Games",
-        "description": "A Mystic-Industrial TTRPG",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uxdy65vbtrrxcla3c722svhh/bafkreidgncnjx2zk6ly6flgvq45xyxvnsxkrakjpbaqtfiu3dokuhk4zmq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mtvztqplxb2e",
       "source": "bluesky",
       "author": {
@@ -667,38 +717,6 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiam3g5q4p5dxhuuzzwfwh5jlhbzsl323tjuruljpe7cyyigswmf2y",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiam3g5q4p5dxhuuzzwfwh5jlhbzsl323tjuruljpe7cyyigswmf2y",
             "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:lfiv6xbex4jaimebpyypkr6t/app.bsky.feed.post/3mtv6ybsi2c2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "sinland.gay",
-        "displayName": "\ud835\udc00\ud835\udc1b\ud835\udc2c\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc22\ud835\udc1a \ud83d\udc1f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreig6znuwf53y3sfqufbhz2zgveuadey26apsbvypsff67wfb4qoxsi"
-      },
-      "record": {
-        "text": "The next #dowagerrpg update is gonna be fun (I'll be releasing whatever I've got finished at the end of this month)",
-        "createdAt": "2026-08-25T06:30:17.809Z"
-      },
-      "indexedAt": "2026-08-25T06:30:20.464Z",
-      "replyCount": 2,
-      "repostCount": 9,
-      "likeCount": 20,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifmzhgpiamdt44qqjj4vnshumyngqltga7p7qpyjsvfm6wsvsjecm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lfiv6xbex4jaimebpyypkr6t/bafkreifmzhgpiamdt44qqjj4vnshumyngqltga7p7qpyjsvfm6wsvsjecm",
-            "alt": "A statblock for the White Widow, a powerful boss adversary in Dowager: The Sacred & Strange. Its description reads:\n\nTier 3 Huge Ascendant Chimera. The White Widow is the most blessed and revered of Martyrs, born from the marriage of a devout maiden\u2019s upper body to an armored, bio-mechanical abdomen with six spider-like legs. Unlike most of her peers, the White Widow is free to roam High Calia\u2019s ruin, blindfolded and unspeaking, trusting in her prior faith to guide her through the megastructure to wherever something wicked needs to be eviscerated.\n\nSometimes, the White Widow will dance in the wilds with a cadre of chanters and revelers who may seek to one day follow her example. Though she is silent and docile, they insist they can her her speak. Beyond this frolicking, the Imperial Church only looks for one of its widows to ensure her heavy anti-materiel rifle is still functional."
           }
         ]
       },
@@ -1647,7 +1665,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1442,
-      "likeCount": 6310,
+      "likeCount": 6309,
       "embed": {
         "type": "images",
         "images": [
