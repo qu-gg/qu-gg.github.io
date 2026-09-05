@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T00:04:21.668086Z",
+  "lastUpdated": "2026-09-05T12:02:01.424793Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,38 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:d3rszjnyswbycgmqxruhqylj/app.bsky.feed.post/3muqa6preic2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "j-k.games",
+        "displayName": "ARBco",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d3rszjnyswbycgmqxruhqylj/bafkreig7qlvrjxeavjyodglzmkzkmq2wr5maeoix4hrxfzkxzskvu7i6sy"
+      },
+      "record": {
+        "text": "There was an issue with the most recent digital version of Mutants in the Next (arachnid-free version) still being infested! I got a quick fix now up (on @itch.io, @drivethrurpg.com, @rpgtrader.bsky.social, and Bits and Mortar) until the larger upcoming revision, so it's now safe from spiders.",
+        "createdAt": "2026-09-05T00:33:40.459Z"
+      },
+      "indexedAt": "2026-09-05T00:33:43.265Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 11,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:d3rszjnyswbycgmqxruhqylj/bafkreib7ikgwyyanam4jzuwaso4rfni3d6g42krjgb26cj5h33p5k3xug4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:d3rszjnyswbycgmqxruhqylj/bafkreib7ikgwyyanam4jzuwaso4rfni3d6g42krjgb26cj5h33p5k3xug4",
+            "alt": "The cover to \"Julian Kay's Mutants in the Next\", featuring a polar bear in rough rags with a propeller for a weapon, a punk bluebird hacker, and a shark tough in worn business casual along with a shark kid in a hoodie. The subtitle says \"arachnid-free\", along with \"companion 1 for the retro-modern mutant-animal rpg!\""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3muozieri6g2n",
       "source": "bluesky",
@@ -1211,38 +1243,38 @@
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/568/449/large/nick-bray-kelpiem1.jpg?1783349967",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/568/449/large/nick-bray-kelpiem1.jpg?1783349967",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/568/449/large/nick-bray-kelpiem1.webp?1783349967",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/568/449/large/nick-bray-kelpiem1.webp?1783349967",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/100/568/438/large/nick-bray-kelpief1.jpg?1783350015",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/100/568/438/large/nick-bray-kelpief1.jpg?1783350015",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/100/568/438/large/nick-bray-kelpief1.webp?1783350015",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/100/568/438/large/nick-bray-kelpief1.webp?1783350015",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/568/455/large/nick-bray-kelpiesmf1.jpg?1783349589",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/568/455/large/nick-bray-kelpiesmf1.jpg?1783349589",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/568/455/large/nick-bray-kelpiesmf1.webp?1783349589",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/568/455/large/nick-bray-kelpiesmf1.webp?1783349589",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/570/421/large/nick-bray-blurb.jpg?1783353417",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/570/421/large/nick-bray-blurb.jpg?1783353417",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/570/421/large/nick-bray-blurb.webp?1783353417",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/570/421/large/nick-bray-blurb.webp?1783353417",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/100/568/444/large/nick-bray-kelpielayers.jpg?1783349562",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/100/568/444/large/nick-bray-kelpielayers.jpg?1783349562",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/100/568/444/large/nick-bray-kelpielayers.webp?1783349562",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/100/568/444/large/nick-bray-kelpielayers.webp?1783349562",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/569/523/large/nick-bray-process.jpg?1783351656",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/569/523/large/nick-bray-process.jpg?1783351656",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/569/523/large/nick-bray-process.webp?1783351656",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/569/523/large/nick-bray-process.webp?1783351656",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/570/075/large/nick-bray-refs.jpg?1783352714",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/570/075/large/nick-bray-refs.jpg?1783352714",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/100/570/075/large/nick-bray-refs.webp?1783352714",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/100/570/075/large/nick-bray-refs.webp?1783352714",
             "alt": ""
           }
         ]
@@ -2904,8 +2936,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 726,
-      "likeCount": 3340,
+      "repostCount": 725,
+      "likeCount": 3339,
       "embed": {
         "type": "images",
         "images": [
@@ -3183,8 +3215,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2651,
-      "likeCount": 15624,
+      "repostCount": 2650,
+      "likeCount": 15623,
       "embed": {
         "type": "images",
         "images": [
