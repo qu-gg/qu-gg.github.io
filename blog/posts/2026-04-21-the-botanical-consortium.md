@@ -23,7 +23,7 @@ An uneasy blanket of Dark (or Flesh)-based Mana permeates the area as you close 
 
 - 1x Mushroom + 6x Funguys rather upset at recent sludgey developments ([BREAK!! Blog](https://breakrpg.blogspot.com/2023/09/freebie-funguy-and-mushdoom-adversaries.html))
 - 3x Goops Ambush!
-- 4x Carnivorous Plants awkwardly hiding amongst the flora ([Horfhog](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing) Reskin)
+- 4x Carnivorous Plants awkwardly hiding amongst the flora ([Horfhog](https://its.quagg.studio/break-homebrew-adversary-compendium.html) Reskin)
 - 6x Skelemen Archers fire off the Cliffside
 
 **Layout:** Aside from just the top-down map here, I believe it is rather important to specify the verticality of the Adventure Site, i.e. having the lower, accessible dome and having the higher, closed-off dome atop the cliffside. While the upper dome is fully inaccessible by the outside, reward players that can scale the cliff with some kinda reward/friendly encounter.
@@ -42,7 +42,7 @@ I'd personally recommend showcasing the vertical slice of the map with the lower
 
 Successful **Stealthy Movement** gets by them unseen. **Cautious Movement** points them out though some manner of stopping them is required - they are terribly bored without masters and in need of simple entertainment [Negotiation].
 
-**3. Exterior Greenhouse [Guardian Encounter/Harmful Terrain]:** Outside the dome and clearly once a showpiece building for those touring the Facility, this greenhouse is now massively overgrown with flora both local, foreign, and of other times altogether. 3x Carnivorous Plants ([Horfhog](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing) Reskin) lie within the foliage, waiting to Ambush. Brash movements cause poisonous bulbs to unfurl, causing all Areas inside to become Harmful unless wearing proper protection like a Rebreather.
+**3. Exterior Greenhouse [Guardian Encounter/Harmful Terrain]:** Outside the dome and clearly once a showpiece building for those touring the Facility, this greenhouse is now massively overgrown with flora both local, foreign, and of other times altogether. 3x Carnivorous Plants ([Horfhog](https://its.quagg.studio/break-homebrew-adversary-compendium.html) Reskin) lie within the foliage, waiting to Ambush. Brash movements cause poisonous bulbs to unfurl, causing all Areas inside to become Harmful unless wearing proper protection like a Rebreather.
 
 The notable backroom (closed by a rusted metal door) is the office and resting place of an ancient Gleyian Researcher's skeleton - fully skeletized within a punctured Anti-Hazard Outfit. On their person is a keycard with writing in Gleysian Code: "Designation: Lou Waters. **Security Clearance: Tier 1**.", usable for terminals within the Facility.
 
@@ -69,7 +69,7 @@ Inspecting the room reveals a hidden to-do note by the Head Researcher Norin Rex
 
 **8. Dissolution Chamber [Secret Room] [Guardian Encounter]:** Entering this chamber requires going through a detox airlock that douses the room in solvent as a means of killing any errant goop exiting the chamber. Direct skin contact results in a Burning Injury. Any not under Anti-Hazard Protection when entering the chamber must make a Grit Check or become Jellyfied from exposure to the substance within.
 
-This is a smooth-walled metal chamber where, from the door, a grated platform juts out over a massive bubbling pool of Mana Waste. This pool itself is a [Supergoop](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing) fused from the dissolved material of many, many test subjects. Seemingly still composed of some sentience, it will pathetically try and raise pods onto the platform towards living creatures. It makes soft noises eerily reminiscent of human pain and longing.
+This is a smooth-walled metal chamber where, from the door, a grated platform juts out over a massive bubbling pool of Mana Waste. This pool itself is a [Supergoop](https://its.quagg.studio/break-homebrew-adversary-compendium.html) fused from the dissolved material of many, many test subjects. Seemingly still composed of some sentience, it will pathetically try and raise pods onto the platform towards living creatures. It makes soft noises eerily reminiscent of human pain and longing.
 
 While no actual Combat or Encounter is intended here, feel free to up the stakes with the platform being corroded enough to be faulty and collapse, or let the Supergoop reach the platform and attack directly.
 
@@ -90,7 +90,7 @@ A porcelain half-mask connects to the portal via tethers of Mana, resting on the
 
 Seated at a lovely picnic spread just in front of the portal is a lavender-haired Chib named Skippi, boredly twirling a flower in her hands. Non-threatening if she is alerted to the party, she simply invites them to join claiming *"she's naught to do but relax while stuck on babysitting duty"*.
 
-- **Party Fights:** She'll simply sigh with a *"tsk tsk read the room"* and engage. She is a [Betrayal Demon](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing) and calls for 4x [Rose Lalkas](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing), who have been waltzing in the courtyard nearby, to come help.
+- **Party Fights:** She'll simply sigh with a *"tsk tsk read the room"* and engage. She is a [Betrayal Demon](https://its.quagg.studio/break-homebrew-adversary-compendium.html) and calls for 4x [Rose Lalkas](https://its.quagg.studio/break-homebrew-adversary-compendium.html), who have been waltzing in the courtyard nearby, to come help.
 - **Party Picnics:** She'll have a quite candid conversation with the Party, offering information on the Facility and the Elsewhere Ynn as belonging to a Divine Ruler trying to cross into the Outer World. She's a manufactured servitor of the Ruler who has to follow-out orders but is a bit *"over it with all the bossiness"*. The picnic food is, of course, poisoned. 5 minutes after consuming, make a Grit Check or become Putrefied. The Party may try to Socialize with Skippi over any topic. On Success, she will point out the poison and give Antidotes with a chuckling "oopsies".
 - **Recommended Map:** I used this amazingly fitting Czepeku map ["Painted Portal"](https://www.czepeku.com/fantasy/maps/dragons-memorial/painted-portal) for atmosphere/Combat.
 

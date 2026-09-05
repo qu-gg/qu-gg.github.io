@@ -6,10 +6,10 @@
 
 **Rank Range:** 5-6
 - **Decrease:** Consider reducing the Hiratagaan's stats but keeping the flavor and abilities.
-- **Increase:** Follow the Customization suggestions within the [Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing)
+- **Increase:** Follow the Customization suggestions within the [Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html)
 #### **Sources:**
 **Skyray:** Flying manta-ray-like creatures common in the Meridian.
-**Hiratagaan** by KeJoRo ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Hiratagaan** by KeJoRo ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Law and Disorder** by One-Shot Wonders
 
 #### **Adventure Description:** 

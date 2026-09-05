@@ -35,7 +35,7 @@ Set just on the outside of a swampy portion of the Murk in the Wistful Dark, Roo
 
 #### **Adversary References:**
 - The Adversary name and a page number are given if from the base BREAK!! book (e.g., Chompa pg. XX).
-- "DB" is used to denote entries found within the Unofficial BREAK!! Adversary Compendium, found here: https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing 
+- "DB" is used to denote entries found within the Unofficial BREAK!! Adversary Compendium, found here: https://its.quagg.studio/break-homebrew-adversary-compendium.html
 
 #### **Scene 0: Pre-Set Up**
 Allow the players to choose characters and introduce them briefly. Explain the starting situation to the players. In brief:

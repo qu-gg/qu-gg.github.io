@@ -10,7 +10,7 @@
 
 **PC Starting Coins:** 600C
 #### **Sources:**
-**Monster:** Drakkenheim Sewer Gator by ichiCharmed ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Monster:** Drakkenheim Sewer Gator by ichiCharmed ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Wave of Destruction** by One-Shot Wonders
 **Tikuto** by [BREAK!! Blog](https://breakrpg.blogspot.com/2025/12/river-village-tikuto-freebie-settlement.html)
 

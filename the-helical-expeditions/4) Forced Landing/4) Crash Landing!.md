@@ -9,11 +9,11 @@
 - **Increase:** You could change the Railgun Shrimp into Solar Orb Sentinel or Obsidian Hexalith.
 #### **Sources:**
 **Scholar:** Source pg. 185
-**Dust Mephit:** Reflavored Steam Mephit by Wretched Jarrah ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Ghost Peppers** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Railgun Shrimp** by Quagg ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Solar Orb Sentinel** by Quagg ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Obsidian Hexalith** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Dust Mephit:** Reflavored Steam Mephit by Wretched Jarrah ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Ghost Peppers** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Railgun Shrimp** by Quagg ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Solar Orb Sentinel** by Quagg ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Obsidian Hexalith** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Monstrich** by the BREAK!! [Blog](https://breakrpg.blogspot.com/2025/09/freebie-monstrich-adversary.html)
 **Glide Mantle** by the BREAK!! [Blog](https://breakrpg.blogspot.com/2025/01/freebie-akenian-relics-gear.html)
 

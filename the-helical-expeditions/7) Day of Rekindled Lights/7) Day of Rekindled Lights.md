@@ -8,8 +8,8 @@
 - **Decrease:** Consider reducing the Ghost Peppers to Goops or Mooks instead.
 - **Increase:** Consider swapping the Skelemen for Skele-masters, or add some Ghost Peppers.
 #### **Sources:**
-**Ghost Peppers** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Malignant Echoes** by Atyai ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Ghost Peppers** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Malignant Echoes** by Atyai ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Crossed bones** by One-Shot Wonders
 
 #### **Adventure Description:** 

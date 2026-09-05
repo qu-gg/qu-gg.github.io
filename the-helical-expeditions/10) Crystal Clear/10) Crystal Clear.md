@@ -10,10 +10,10 @@
 
 **Suggested Starting Coin:** 600C
 #### **Sources:**
-**Crystalline Dreg** by ichiCharmed ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Synthisters** by ichiCharmed ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Betrayal Demon** by Wretched Jarrah ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Doppelganger:** Changinc, Impersonator by Luui ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Crystalline Dreg** by ichiCharmed ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Synthisters** by ichiCharmed ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Betrayal Demon** by Wretched Jarrah ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Doppelganger:** Changinc, Impersonator by Luui ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Frozen Asset** by One-Shot Wonders
 
 #### **Adventure Description:** 

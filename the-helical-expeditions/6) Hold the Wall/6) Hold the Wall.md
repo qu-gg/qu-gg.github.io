@@ -9,9 +9,9 @@
 - **Increase:** Considering adding debuff/support Mooks alongside the Marbled Gohma or reducing the Wall's Hearts. 
 #### **Sources:**
 **Blighted Demons**: Source, pg. 372
-**Marbled Gohma** by VictorSeven ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Malignant Echo** by Atyai ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Shadow Sorceress** by Yan Kodiac  ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Marbled Gohma** by VictorSeven ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Malignant Echo** by Atyai ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Shadow Sorceress** by Yan Kodiac  ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Creatures of the Deep** by One-Shot Wonders
 **Sunblade** by Yan Kodiac 
 

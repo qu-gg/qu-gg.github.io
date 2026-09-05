@@ -11,8 +11,8 @@
 
 #### **Sources:**
 **Adversaries**
-- **Yeeti** by The Lonely Sand Person ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-- **Peppermint Lalka** by Quagg ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+- **Yeeti** by The Lonely Sand Person ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+- **Peppermint Lalka** by Quagg ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 - **Polar Bear:** Chompa reflavor
 - **Giant Fluffed Skree:** Rokko-Do with a Flying Speed of Fast
 

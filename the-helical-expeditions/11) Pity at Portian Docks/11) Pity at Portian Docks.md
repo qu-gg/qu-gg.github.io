@@ -10,8 +10,8 @@
 
 **PC Starting Coins:** 100C
 #### **Sources:**
-**Bedmunk Swarm** by Quagg ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Mire Leech Swarm** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Bedmunk Swarm** by Quagg ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Mire Leech Swarm** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Goop**: Source, pg. 382.
 **Booster Cake:** Source, pg. 177
 **Blaster Knight**: Reflavored Blaster Mage w/o Mana Burst.

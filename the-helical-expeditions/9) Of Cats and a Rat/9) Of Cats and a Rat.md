@@ -10,7 +10,7 @@
 
 **Suggested Starting Coin:** 300-400C
 #### **Sources:**
-**Peacekeeper** by Quagg ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Peacekeeper** by Quagg ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Clan Members:** Reflavored Mundymutts, Source pg. 400
 
 #### **Adventure Description:** 

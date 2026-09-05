@@ -23,7 +23,7 @@ jobs:
       - name: Download spreadsheet
         run: |
           curl -sL -o /tmp/adversary-sheet.xlsx \
-            "https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/export?format=xlsx"
+            "https://docs.google.com/spreadsheets/d/1nUPZZgctg5Litgy1SfKZHqxSoaf8itK-vL53dxkN1eM/export?format=xlsx"
 
       - name: Build compendium JSON
         run: |

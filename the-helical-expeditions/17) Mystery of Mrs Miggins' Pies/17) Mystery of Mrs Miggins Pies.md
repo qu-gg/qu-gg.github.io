@@ -10,8 +10,8 @@
 
 **Suggested Starting Coin:** 300C
 #### **Sources:**
-**Delinquent Goon** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Werebear** by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Delinquent Goon** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Werebear** by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 **Mushdoom:** Mushdoom by BREAK!! Blog ([Freebie](https://breakrpg.blogspot.com/2023/09/freebie-funguy-and-mushdoom-adversaries.html))
 **Chompa:** Source Book, pg. 368
 **Snarl:** Source Book, pg. 436

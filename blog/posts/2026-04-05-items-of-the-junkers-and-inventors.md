@@ -85,7 +85,7 @@ stats: 2 Slots . 50 Coins
 :::
 
 ### Flash Pop
-This Item stems from my Peacekeeper Adversary on the [BREAK!! Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing), just reflavored to be more scrappy. Is it just a reflavored Grenade? Yeah, kinda. I chose straight Turn count as the Blinded duration rather than the more standard "Requires an Action/Check to remove" approach to emulate eyes just needing time to readjust from the flash.
+This Item stems from my Peacekeeper Adversary on the [BREAK!! Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html), just reflavored to be more scrappy. Is it just a reflavored Grenade? Yeah, kinda. I chose straight Turn count as the Blinded duration rather than the more standard "Requires an Action/Check to remove" approach to emulate eyes just needing time to readjust from the flash.
 :::item
 name: Flash Pop
 type: Combustible

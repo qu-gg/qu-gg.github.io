@@ -10,9 +10,9 @@
 
 #### **Sources:**
 **Adversaries**
-- **Sea Witch:** Water Hag by wretchedJarrah ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-- **Hopper Majo:** Hopper Majo by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-- **Frog Ninja:** Froggie Ninja by Yan Kodiac ([Homebrew Sheet](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+- **Sea Witch:** Water Hag by wretchedJarrah ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+- **Hopper Majo:** Hopper Majo by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+- **Frog Ninja:** Froggie Ninja by Yan Kodiac ([Homebrew Sheet](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 - **Octopus:** Chompa but with Lash Weapons (Source Book, pg. 368)
 - **Giant Crabs:** Random Mooks (1HP | 14DR | 0ATK | 6 all Stats | Slow Speed)
 

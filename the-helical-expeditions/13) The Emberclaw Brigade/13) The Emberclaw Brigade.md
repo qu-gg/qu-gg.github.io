@@ -8,9 +8,9 @@
 - **Decrease:** Consider leveraging the [Refuge in Slapstick](https://breakrpg.blogspot.com/2023/12/freebie-troublesome-trio-adversaries.html) rules to limit Injuries.
 - **Increase:** Consider swapping (or adding)  Naiads for Froggie Ninjas.
 #### **Sources:**
-**Salamancer, Emberclaw** by Yan Kodiac ([Homebrew](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Hopper Majo** by Yan Kodiac ([Homebrew](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
-**Froggie Ninja** by Yan Kodiac ([Homebrew](https://docs.google.com/spreadsheets/d/1v-w7FDshDTHNeUfQCivfJXWHy-yW8DsHS41cVS8Peq0/edit?usp=sharing))
+**Salamancer, Emberclaw** by Yan Kodiac ([Homebrew](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Hopper Majo** by Yan Kodiac ([Homebrew](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
+**Froggie Ninja** by Yan Kodiac ([Homebrew](https://its.quagg.studio/break-homebrew-adversary-compendium.html))
 
 #### **Adventure Description:** 
 When a literal boatload for fiery little salamanders haul an outrageously large fish into a beachside bar and demand a feast, the party must step up and aid the tired, solo bartender in preparing a grand party while defending the catch from jealous adversaries.
