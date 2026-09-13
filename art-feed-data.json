@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T00:05:01.541051Z",
+  "lastUpdated": "2026-09-13T12:02:16.627035Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,67 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mveg3gzzys2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "tabletopbookshelf.com",
+        "displayName": "Tabletop Bookshelf",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
+      },
+      "record": {
+        "text": "Goodnight Moon \nGoodnight floor \nGoodnight combination game and bookstore",
+        "createdAt": "2026-09-13T01:12:27.862Z"
+      },
+      "indexedAt": "2026-09-13T01:12:29.164Z",
+      "replyCount": 0,
+      "repostCount": 10,
+      "likeCount": 66,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreiei24lpm7nluooppciytifmacyptocfkzdzih7mzy7qb6srp2lrmu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreiei24lpm7nluooppciytifmacyptocfkzdzih7mzy7qb6srp2lrmu",
+            "alt": "A bookstore empty closing time."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mvdf5f2zps2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2: Follow GRIDSHOCK on Gamefound",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "I sat down with @arcanecirclegames.bsky.social a little while ago to talk shock - GRIDSHOCK Zero Edition, that is.\nyoutu.be/dlWi-a02m6g?...\n\n(I look like quite the creep in that still image)",
+        "createdAt": "2026-09-12T15:22:59.428Z"
+      },
+      "indexedAt": "2026-09-12T15:23:00.262Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/dlWi-a02m6g?is=1jIZIRjXET5PtKQO",
+        "title": "Paul Vermeren with GRIDSHOCK Zero Edition | AC Spotlight",
+        "description": "YouTube video by Arcane Circle",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreib5lcidzzhkifghvo3eikmq2h2u6wa3pqbrridakfwwvie2dphvky"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:7nq4crqduz42x4dz6vtexafd/app.bsky.feed.post/3mvbccla6ec2k",
       "source": "bluesky",
@@ -288,7 +349,7 @@
       "indexedAt": "2026-09-07T14:07:21.365Z",
       "replyCount": 1,
       "repostCount": 167,
-      "likeCount": 400,
+      "likeCount": 402,
       "embed": {
         "type": "images",
         "images": [
@@ -521,7 +582,7 @@
       "indexedAt": "2026-09-03T19:57:29.470Z",
       "replyCount": 7,
       "repostCount": 22,
-      "likeCount": 138,
+      "likeCount": 139,
       "embed": {
         "type": "images",
         "images": [
@@ -709,9 +770,9 @@
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreibdbynlvb7hmc4ke3mp4jyznxxtbmcmsreol5v6z7ynualmp7mf2q"
       },
       "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
