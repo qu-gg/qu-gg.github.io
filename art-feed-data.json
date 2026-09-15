@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T12:02:53.101761Z",
+  "lastUpdated": "2026-09-15T00:04:36.918140Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mvi7zfrfkc2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "prismaticwasteland.com",
+        "displayName": "Prismatic Wasteland",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
+      },
+      "record": {
+        "text": "For those asking if you could buy just the PDFs for Into the Oddish, the answer is now \"yes, here is the itch page\". Go grab it \n#osr #ttrpg #pokemon\nprismatic-wasteland.itch.io/into-the-odd...",
+        "createdAt": "2026-09-14T13:34:35.925Z"
+      },
+      "indexedAt": "2026-09-14T13:34:37.960Z",
+      "replyCount": 2,
+      "repostCount": 41,
+      "likeCount": 94,
+      "embed": {
+        "type": "external",
+        "uri": "https://prismatic-wasteland.itch.io/into-the-oddish",
+        "title": "Into the Oddish by Prismatic Wasteland",
+        "description": "TTRPG where you play as pocket-sized monsters in a Pokapocalyptic world",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiex6euk7ik4qsrrv4avlcrgejrftbqyuzpjgy4wqn2ihso35o7kqq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mveg3gzzys2k",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-09-13T01:12:29.164Z",
       "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 85,
+      "repostCount": 12,
+      "likeCount": 86,
       "embed": {
         "type": "images",
         "images": [
@@ -155,8 +184,8 @@
       },
       "indexedAt": "2026-09-11T15:01:21.366Z",
       "replyCount": 0,
-      "repostCount": 21,
-      "likeCount": 17,
+      "repostCount": 22,
+      "likeCount": 19,
       "embed": {
         "type": "images",
         "images": [
@@ -582,7 +611,7 @@
       "indexedAt": "2026-09-03T19:57:29.470Z",
       "replyCount": 7,
       "repostCount": 22,
-      "likeCount": 139,
+      "likeCount": 140,
       "embed": {
         "type": "images",
         "images": [
@@ -621,64 +650,6 @@
         "title": "Need an Editor?",
         "description": "I provide editing services for TTRPG creators at reasonable rates.\u00a0 If you are a small press publisher or indie role-playing game writer/designer, I would love to help you\u00a0with your next \u2026",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreiagoevst6h5ujpxug3r74di6dj76v6szwcudrdjttnqka2k3clwku"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mumnw7alxs2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "amandalee.bsky.social",
-        "displayName": "The Amanda Lee Mystery House",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
-      },
-      "record": {
-        "text": "amandalee.bearblog.dev/the-most-pow...",
-        "createdAt": "2026-09-03T14:28:48.130Z"
-      },
-      "indexedAt": "2026-09-03T14:28:49.399Z",
-      "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 20,
-      "embed": {
-        "type": "external",
-        "uri": "https://amandalee.bearblog.dev/the-most-power-spell-in-the-world/",
-        "title": "The Most Powerful Spell In the World",
-        "description": "pit\n\n<u>Instant Pit</u>\t\n\nA five foot wide, ten foot deep pit appears immediately, anywhere in view of the caster.\n\nNotes:\nWe were painstakingly playi...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreid6cnwub5kofiih6wikpcfxshnds2x352ody4tfydks343zkkrxni"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mumhybhwbk2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "I have made using True Names for fae and demons compelling and gameable, which some said was impossible.\n\nAlso, this is part of both the ongoing Name and Indonesian TTRPG Blogwagons\n#ttrpg #osr",
-        "createdAt": "2026-09-03T12:42:35.126Z"
-      },
-      "indexedAt": "2026-09-03T12:42:36.900Z",
-      "replyCount": 4,
-      "repostCount": 35,
-      "likeCount": 136,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.prismaticwasteland.com/blog/true-names-in-elf-games",
-        "title": "True Names in Elf Games \u2014 Prismatic Wasteland",
-        "description": "Rules for learning and using True Names against fey, demons and other sorts that preserve player agency. Also a brief note about animals in human form. For the Name and Indonesian Blogwagons.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreief4z7bsdbgtvy5wjodwfmr3djnmavrggz3rmmpvufxv5rawojg5m"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1718,7 +1689,7 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1442,
+      "repostCount": 1441,
       "likeCount": 6307,
       "embed": {
         "type": "images",
@@ -1871,8 +1842,8 @@
       },
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
-      "repostCount": 760,
-      "likeCount": 3889,
+      "repostCount": 759,
+      "likeCount": 3888,
       "embed": {
         "type": "images",
         "images": [
@@ -2649,7 +2620,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1948,
-      "likeCount": 8453,
+      "likeCount": 8452,
       "embed": {
         "type": "images",
         "images": [
