@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T00:04:08.672436Z",
+  "lastUpdated": "2026-09-16T12:02:42.926123Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6kyfxisu7icskz2c72szh4we/app.bsky.feed.post/3mvlz524oek2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "plusoneexp.bsky.social",
+        "displayName": "Plus One Exp @ \ud83d\udd1c CIGS in Chicago",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6kyfxisu7icskz2c72szh4we/bafkreicwdsi6gtylzdjbb6wx65rkctd2tt6m4nk2d3uwdcnt5dfv6jjqoy"
+      },
+      "record": {
+        "text": "MYCO//DRIFT by @crimsonaddergames.bsky.social w/ art by John from @terriblegames.bsky.social, layout from @deeplydapper.bsky.social is on the edge of funding!\n\nFungal mechs battle for a broken world! Thanks @wittlegoblin.bsky.social for the video today! \n\nTTRPG.link/mycodrift",
+        "createdAt": "2026-09-16T01:42:00.684Z"
+      },
+      "indexedAt": "2026-09-16T01:42:05.585Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 16,
+      "embed": {
+        "type": "external",
+        "uri": "https://TTRPG.link/mycodrift",
+        "title": "Myco//Drift by Crimson Adder - Gamefound",
+        "description": "Myco//Drift is a biopunk tabletop RPG where players take on the role of genetically altered pilots bonded to skyscraper-sized fungal bio-mechs known as Myco Suits. Once child soldiers in a war, humani...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6kyfxisu7icskz2c72szh4we/bafkreihwwgh5whtxsu4dvugaz6ouz6lzomm72h76p23l3taq4eeywqlpom"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:fmygsbyrivu6x77lnfaovfft/app.bsky.feed.post/3mvlyfy6znk2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "icastlight.bsky.social",
+        "displayName": "\ud835\udd82.\ud835\udd6f.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiattu7vqvagz7hyfy3kubktyyflhadvyzidy2hfc3s6jed2gdkaku"
+      },
+      "record": {
+        "text": "If you ever wonder how old-school PC survive their low hp and/or wonder how many hirelings an old-school group rolls with, well, here's an answer: the token at the top is the PC, tokens below are the hirelings\n\nIf this intrigues you, check out @inplacesdeep.bsky.social fever-dream isles of CUCCAGNA!",
+        "createdAt": "2026-09-16T01:29:06.916Z"
+      },
+      "indexedAt": "2026-09-16T01:29:08.973Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiaghc34jh5wjes2qnb5wng3jw5lvleayr3gwbtbjjhx6rugywmf34",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiaghc34jh5wjes2qnb5wng3jw5lvleayr3gwbtbjjhx6rugywmf34",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mvktmhojyk2y",
       "source": "bluesky",
       "author": {
@@ -65,7 +126,7 @@
       },
       "indexedAt": "2026-09-15T14:30:37.067Z",
       "replyCount": 0,
-      "repostCount": 9,
+      "repostCount": 10,
       "likeCount": 15,
       "embed": {
         "type": "external",
@@ -93,9 +154,9 @@
         "createdAt": "2026-09-15T13:03:46.533Z"
       },
       "indexedAt": "2026-09-15T13:03:50.967Z",
-      "replyCount": 3,
-      "repostCount": 31,
-      "likeCount": 54,
+      "replyCount": 4,
+      "repostCount": 34,
+      "likeCount": 59,
       "embed": {
         "type": "images",
         "images": [
@@ -579,53 +640,6 @@
       }
     },
     {
-      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3muozieri6g2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "tabletopbookshelf.com",
-        "displayName": "Tabletop Bookshelf",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
-      },
-      "record": {
-        "text": "LABOR DAY SALE! This weekend only get up to 50% off tabletop RPGs, board games, books, dice & more!\n\nIncluding popular titles like Pendragon, The Wildsea, and Delta Green you're sure to find a new favorite game or great read for your next break from the grind  \ntabletopbookshelf.com/collections/...",
-        "createdAt": "2026-09-04T13:01:08.505Z"
-      },
-      "indexedAt": "2026-09-04T13:01:09.358Z",
-      "replyCount": 1,
-      "repostCount": 13,
-      "likeCount": 23,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicc4d4yshyh5s3rzt74pxshz2fqtr3r3bpxofbhgwiizd4jkddn3q",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicc4d4yshyh5s3rzt74pxshz2fqtr3r3bpxofbhgwiizd4jkddn3q",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreib6fhijewqqdgpuy2zijfoywcuor3s53si2wuovspoyd4zjzubf7a",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreib6fhijewqqdgpuy2zijfoywcuor3s53si2wuovspoyd4zjzubf7a",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicrdkm7fp7ps6ksehrecyjoc36veid6jo6jes5qfo6ltvuimcx64y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreicrdkm7fp7ps6ksehrecyjoc36veid6jo6jes5qfo6ltvuimcx64y",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidnqg22z4cpo6526uskld7v5sl6o43jbiweorsoflv2snvis2w2am",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreidnqg22z4cpo6526uskld7v5sl6o43jbiweorsoflv2snvis2w2am",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mukak7csvk2e",
       "source": "bluesky",
       "author": {
@@ -700,7 +714,7 @@
       "indexedAt": "2026-09-02T09:43:14.405Z",
       "replyCount": 6,
       "repostCount": 27,
-      "likeCount": 113,
+      "likeCount": 114,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
