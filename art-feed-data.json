@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T12:02:17.689285Z",
+  "lastUpdated": "2026-09-19T00:04:29.984693Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,70 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3mvsw2i7mak2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "antqgames.bsky.social",
+        "displayName": "Antiquarian Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreiguml7lwsg3agdfwdlldtgyx76txhbq7b6pgqqmiujdx5twxsuycq"
+      },
+      "record": {
+        "text": "Interested in L.O.R.E., but want to get a personal taste? Our lead designer is hosting character creation sessions this (9/19) and next (9/26) Saturdays!\n\nThey'll be on the Antiquarian Discord, with event links posted below. Check us out, and see what the fuss is about!",
+        "createdAt": "2026-09-18T19:35:31.745Z"
+      },
+      "indexedAt": "2026-09-18T19:35:37.064Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreicsteeygc32jajctpqjy56ryyf3cdnh5frjphyhwbx7bqprnmvgra",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreicsteeygc32jajctpqjy56ryyf3cdnh5frjphyhwbx7bqprnmvgra",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mvsncqbqx22x",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "It felt pretty dang good to get a pull quote like this about an RPG I created from @stevekenson.com, a designer whose name is on a large number of the games I've played, run, and loved over the years.\n\nYou can find out more here: gamefound.com/en/projects/...",
+        "createdAt": "2026-09-18T16:59:04.962Z"
+      },
+      "indexedAt": "2026-09-18T16:59:08.966Z",
+      "replyCount": 2,
+      "repostCount": 3,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreieyketzbgbtawsmwoa3rjis66b25zul6fndgumjro4wligndnnqqa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreieyketzbgbtawsmwoa3rjis66b25zul6fndgumjro4wligndnnqqa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mvqo4et6xs25",
       "source": "bluesky",
       "author": {
@@ -98,7 +162,7 @@
       "indexedAt": "2026-09-17T20:06:24.760Z",
       "replyCount": 4,
       "repostCount": 16,
-      "likeCount": 36,
+      "likeCount": 38,
       "embed": {
         "type": "external",
         "uri": "https://farmergadda.neocities.org/posts/dki-hexcrawl-intro/",
@@ -688,70 +752,6 @@
       }
     },
     {
-      "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3muymyo2re22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "voxparlour.bsky.social",
-        "displayName": "Scott M | Chocopro \ud83c\udf6b",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreidiaxha53lly7zbo42wt4lra5boyythvdf6k6ving6kfz7eafsi44"
-      },
-      "record": {
-        "text": "I'm a full time TTRPG writer and marketer. I'd love to work with you. Drop me a DM, email, or pop me a message on Discord and let's chat \ud83d\udcac- reposts hugely appreciated",
-        "createdAt": "2026-09-08T08:44:13.896Z"
-      },
-      "indexedAt": "2026-09-08T08:44:16.359Z",
-      "replyCount": 2,
-      "repostCount": 33,
-      "likeCount": 42,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreidmyuhnmi2dlawbw3fafhcoi774fdu2nb6cwla7ozhnozj6zvomvq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreidmyuhnmi2dlawbw3fafhcoi774fdu2nb6cwla7ozhnozj6zvomvq",
-            "alt": "Details about Scott Malthouse, TTRPG designer, PR and marketing pro."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3muy3byst2s24",
-      "source": "bluesky",
-      "author": {
-        "handle": "sandroad.moe",
-        "displayName": "Sandro AD \ud83d\udd1c PAX Unplugged",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreib2dz3bkwsdj2x5qwkekgnvxicn5g5pg6gesfkioavc5wvthi232e"
-      },
-      "record": {
-        "text": "Played in @knightattheopera.bsky.social's EXCELLENT Rivers & Lakes - This is /exactly/ what I love to see in a tactics game, and it was so FLAVORFUL too",
-        "createdAt": "2026-09-08T03:27:19.795Z"
-      },
-      "indexedAt": "2026-09-08T03:27:25.563Z",
-      "replyCount": 4,
-      "repostCount": 4,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiebzjpa6wpg4zqt5tzz4neppmjp5bj7fmadjec7ejeblydeh7fnzu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreiebzjpa6wpg4zqt5tzz4neppmjp5bj7fmadjec7ejeblydeh7fnzu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mukak7csvk2e",
       "source": "bluesky",
       "author": {
@@ -1228,6 +1228,53 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
+      "uri": "at://did:plc:csnepw2bitaubo6oqjzy3lfd/app.bsky.feed.post/3mrat4qbhkc25",
+      "source": "bluesky",
+      "author": {
+        "handle": "owenstge.bsky.social",
+        "displayName": "Owen St.Gelais \u2013 Anti-AI, Anti-Fascist, Queer, Woke, Leftist.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreifjnv3h5maspizkfzzucqhybj7ykdpxn5xckqwpy72oj3qo3upkcy"
+      },
+      "record": {
+        "text": "OPEN FOR NEW COMMISSIONS\n\u2022 20+ years experience in graphic design\n\u2022 Specialization in print and prepress\n\u2022 TTRPG layout and design since 2017\n\nIf you're in the market for design work of any kind for your next project, I'd love to hear from you.\n\nstgelaisdesign.com",
+        "createdAt": "2026-07-22T17:14:24.274Z"
+      },
+      "indexedAt": "2026-07-22T17:14:32.366Z",
+      "replyCount": 1,
+      "repostCount": 13,
+      "likeCount": 31,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreibazxajy2sjzaa4stiygqmwvc2pxzu63y32w64an3yjjmzt6gmwiu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreibazxajy2sjzaa4stiygqmwvc2pxzu63y32w64an3yjjmzt6gmwiu",
+            "alt": "A promotional image of the DM's Screen from Beadle & Grimm's Aracana Unleashed: Deadfall premium D&D box set, made in collaboration with Wizards of the Coast. It features both a front and back view mockup of the screen."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreifquj5dztdngdmkox6nqt2ndrkcggazfdopcxadx72aw63jvhmmyi",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreifquj5dztdngdmkox6nqt2ndrkcggazfdopcxadx72aw63jvhmmyi",
+            "alt": "An Image of the Consequence and mostrosity cards from Shadows Over Sol second edition. It features an image of the tuck box side by side with a stacked deck showing the back of the Consequence cards. In the foreground are 3 cards showing examples of 2 different fronts and the back of a Monstrosities card."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreib7pw2oxauzvtf3hm5dv2jicnct6qbcxqhxhp2w4r47o5b3cnk2y4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreib7pw2oxauzvtf3hm5dv2jicnct6qbcxqhxhp2w4r47o5b3cnk2y4",
+            "alt": "A picture of the Cosmere RPG table from Brotherwise Games convention booth."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreiegl5ybtmqnyigkn7dq6mm3gaehdzl7zdy2nkiikic43j2e4f5oue",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:csnepw2bitaubo6oqjzy3lfd/bafkreiegl5ybtmqnyigkn7dq6mm3gaehdzl7zdy2nkiikic43j2e4f5oue",
+            "alt": "An image of 3 different spreads from Omega Horizon mocked up onto books and laid on top of each other."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -3227,8 +3274,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2649,
-      "likeCount": 15616,
+      "repostCount": 2648,
+      "likeCount": 15615,
       "embed": {
         "type": "images",
         "images": [
