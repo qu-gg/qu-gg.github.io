@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T00:04:36.523461Z",
+  "lastUpdated": "2026-09-23T12:03:02.051924Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mw6g3goyvs2f",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
+      },
+      "record": {
+        "text": "Bringing back BIG HORNS for BIG SHIPS.\nBWAAAA\nBWAAAAAA\nwww.bastionland.com/2026/09/brea...",
+        "createdAt": "2026-09-23T09:21:40.700Z"
+      },
+      "indexedAt": "2026-09-23T09:21:41.361Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 17,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.bastionland.com/2026/09/breaking-wave.html",
+        "title": "Breaking the Wave",
+        "description": "One of the big non-rules changes I\u2019ve made to Intergalactic , just added in the latest update , is a downgrade of galactic communication. So...",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:bar5qnofxhtdg66ftq536bxu/app.bsky.feed.post/3mw4jsr4tts24",
       "source": "bluesky",
       "author": {
@@ -65,8 +94,8 @@
       },
       "indexedAt": "2026-09-22T15:23:07.366Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 21,
+      "repostCount": 14,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/lunarpunkgames/colorjam",
@@ -93,15 +122,57 @@
         "createdAt": "2026-09-22T14:18:05.569Z"
       },
       "indexedAt": "2026-09-22T14:18:07.157Z",
-      "replyCount": 2,
-      "repostCount": 22,
-      "likeCount": 34,
+      "replyCount": 3,
+      "repostCount": 28,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=d1nciO7mczA",
         "title": "KOKOT\u00d6NA - A grim-to-nobledark RPG inspired by precolonial Mesoamerica (Trailer)",
         "description": "YouTube video by El Chupalabras",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreieivaxs24qhp4gofwwzbhojrd2qcgmareufltr3i7xhvptz3b4xhi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mw45u23zqk2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "Ea-n\u0101\u1e63ir Must Die! has a release date: 13 October 2026!\n\nWe are collaborating with @plusoneexp.bsky.social and @davidblandyrpgs.bsky.social Copy/Paste Co-op for a full release on both digital and physical.\n\nAn OSR (Mark of the Odd) adventure for 3\u20135 players set in Ancient Mesopotamia!\n\n#ttrpg #osr",
+        "createdAt": "2026-09-22T11:49:03.197Z"
+      },
+      "indexedAt": "2026-09-22T11:49:14.865Z",
+      "replyCount": 6,
+      "repostCount": 38,
+      "likeCount": 80,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigxhtwq5df43n24pk5b64okfid5gq3koq42tajinwmxbntq5v323a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigxhtwq5df43n24pk5b64okfid5gq3koq42tajinwmxbntq5v323a",
+            "alt": "A copper plate wanted poster of Ea-n\u0101\u1e63ir that looks like the meme. And an illustration of Ea-n\u0101\u1e63ir by Citaaticat."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiadersecp6mdqvqsicrseb6wmdha4j6qfgnxzpvrxckacyoly36ai",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiadersecp6mdqvqsicrseb6wmdha4j6qfgnxzpvrxckacyoly36ai",
+            "alt": "Ea-n\u0101\u1e63ir is a copper merchant from Ur.\nEa-n\u0101\u1e63ir sold bad copper.\nEa-n\u0101\u1e63ir received many complaint tablets.\nEa-n\u0101\u1e63ir made many enemies.\nEa-n\u0101\u1e63ir Must Die!"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiemvvyofwkfqtnafr4jtoo54zvglviohv4v3rftx44mvdofzydhum",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiemvvyofwkfqtnafr4jtoo54zvglviohv4v3rftx44mvdofzydhum",
+            "alt": "Cover of Ea-n\u0101\u1e63ir Must Die!\n\nComing soon on 13 October 2026 from Copy/Paste Co-op UK & Plus One Exp US"
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -123,8 +194,8 @@
       },
       "indexedAt": "2026-09-22T08:44:18.765Z",
       "replyCount": 8,
-      "repostCount": 48,
-      "likeCount": 93,
+      "repostCount": 60,
+      "likeCount": 112,
       "embed": {
         "type": "images",
         "images": [
@@ -740,8 +811,8 @@
       },
       "indexedAt": "2026-09-15T14:30:37.067Z",
       "replyCount": 0,
-      "repostCount": 13,
-      "likeCount": 17,
+      "repostCount": 14,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
@@ -780,35 +851,6 @@
             "alt": "A collage of characters from across the three campaign frames for Hope Dies Last. Defiant heroism in the face of overwhelming odds... Live Now!"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mvi7zfrfkc2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "For those asking if you could buy just the PDFs for Into the Oddish, the answer is now \"yes, here is the itch page\". Go grab it \n#osr #ttrpg #pokemon\nprismatic-wasteland.itch.io/into-the-odd...",
-        "createdAt": "2026-09-14T13:34:35.925Z"
-      },
-      "indexedAt": "2026-09-14T13:34:37.960Z",
-      "replyCount": 2,
-      "repostCount": 45,
-      "likeCount": 110,
-      "embed": {
-        "type": "external",
-        "uri": "https://prismatic-wasteland.itch.io/into-the-oddish",
-        "title": "Into the Oddish by Prismatic Wasteland",
-        "description": "TTRPG where you play as pocket-sized monsters in a Pokapocalyptic world",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiex6euk7ik4qsrrv4avlcrgejrftbqyuzpjgy4wqn2ihso35o7kqq"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1693,8 +1735,8 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 507,
-      "likeCount": 2652,
+      "repostCount": 508,
+      "likeCount": 2654,
       "embed": {
         "type": "images",
         "images": [
@@ -2036,7 +2078,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3889,
+      "likeCount": 3888,
       "embed": {
         "type": "images",
         "images": [
@@ -2812,8 +2854,8 @@
       },
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
-      "repostCount": 1948,
-      "likeCount": 8450,
+      "repostCount": 1947,
+      "likeCount": 8449,
       "embed": {
         "type": "images",
         "images": [
@@ -3346,7 +3388,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1875,
-      "likeCount": 8954,
+      "likeCount": 8953,
       "embed": {
         "type": "images",
         "images": [
@@ -3402,7 +3444,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2647,
-      "likeCount": 15613,
+      "likeCount": 15612,
       "embed": {
         "type": "images",
         "images": [
