@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T12:03:02.051924Z",
+  "lastUpdated": "2026-09-24T00:04:08.185105Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:7hmvvn47vdph6m6gieh2qgs3/app.bsky.feed.post/3mw7g33e6722v",
+      "source": "bluesky",
+      "author": {
+        "handle": "magnolienne.bsky.social",
+        "displayName": "Paolino Caputo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7hmvvn47vdph6m6gieh2qgs3/bafkreih7rjaqgaujliwo2jzrhlqy6yrpfkke4g33dutqw67ouzufxdxxk4"
+      },
+      "record": {
+        "text": "The last few months have given me an unexpected surge of motivation to work on Opera Eterna. Check out some of the fundamentals in the new blog up on PinkSpace!\n\nwww.magnolienne.com/pinkspace/20...\n\n#ttrpg",
+        "createdAt": "2026-09-23T18:54:08.547Z"
+      },
+      "indexedAt": "2026-09-23T18:54:10.865Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 10,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.magnolienne.com/pinkspace/2026/09/23/how-to-play-opera-eterna/",
+        "title": "How to Play Opera Eterna \u2013 PinkSpace",
+        "description": "Get a Job Opera Eterna (OE) is a game of operatic science fantasy set in the World of Saints: a post-catholic imagination that echoes my family\u2019s stories of post-war Italy....",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7hmvvn47vdph6m6gieh2qgs3/bafkreiak2zhbzzaft44jwkhpmfgykylzbqnbrmqhquhmycpuxq3rq7chc4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:ecavfcdxgbly2ojyclnm5627/app.bsky.feed.post/3mw77oey67k24",
+      "source": "bluesky",
+      "author": {
+        "handle": "benlaurence.bsky.social",
+        "displayName": "Ben L",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ecavfcdxgbly2ojyclnm5627/bafkreia74a7aezfnvrgi4a6qnnffqnmu6slzna7kkgtd6kxs34mzhhf26a"
+      },
+      "record": {
+        "text": "I just released a 139 digest-sized ruleset for my upcoming Jorune campaign to my Patrons. I'll be sharing some material on my blog next week. In the meantime, if you want to see a ruleset built for large player base, living world campaigns in a psychedelic science fantasy setting, link is in  bio.",
+        "createdAt": "2026-09-23T16:59:39.981Z"
+      },
+      "indexedAt": "2026-09-23T16:59:42.367Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 27,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ecavfcdxgbly2ojyclnm5627/bafkreihcuiiwtw4c2z6j2nkxlifwjhx2zgnydx4fjfze7dottn2yrck6by",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ecavfcdxgbly2ojyclnm5627/bafkreihcuiiwtw4c2z6j2nkxlifwjhx2zgnydx4fjfze7dottn2yrck6by",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mw6pdkyy322z",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Beholders are part of the D&D IP but these other totally original floating orb monsters are yours to freely use, bay-bee",
+        "createdAt": "2026-09-23T12:07:17.332Z"
+      },
+      "indexedAt": "2026-09-23T12:07:20.460Z",
+      "replyCount": 4,
+      "repostCount": 17,
+      "likeCount": 72,
+      "embed": {
+        "type": "external",
+        "uri": "https://riseupcomus.blogspot.com/2026/09/beholders-are-intellectual-property-eh.html",
+        "title": "Beholders are intellectual property, eh?",
+        "description": "No matter what you call them , Beholders are vile servants of the coastal wizards.\u00a0 But worry not. They have monstrous cousins that can be u...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidhmi4g63qwyrypysuxkkwlnqhpdbnbw2z5gry3siru7bd7jdopua"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mw6g3goyvs2f",
       "source": "bluesky",
       "author": {
@@ -66,7 +156,7 @@
       "indexedAt": "2026-09-23T09:21:41.361Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 17,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/09/breaking-wave.html",
@@ -122,9 +212,9 @@
         "createdAt": "2026-09-22T14:18:05.569Z"
       },
       "indexedAt": "2026-09-22T14:18:07.157Z",
-      "replyCount": 3,
-      "repostCount": 28,
-      "likeCount": 41,
+      "replyCount": 5,
+      "repostCount": 30,
+      "likeCount": 42,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=d1nciO7mczA",
@@ -194,8 +284,8 @@
       },
       "indexedAt": "2026-09-22T08:44:18.765Z",
       "replyCount": 8,
-      "repostCount": 60,
-      "likeCount": 112,
+      "repostCount": 62,
+      "likeCount": 114,
       "embed": {
         "type": "images",
         "images": [
@@ -737,128 +827,6 @@
       }
     },
     {
-      "uri": "at://did:plc:6kyfxisu7icskz2c72szh4we/app.bsky.feed.post/3mvlz524oek2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "plusoneexp.bsky.social",
-        "displayName": "Plus One Exp @ \ud83d\udd1c CIGS in Chicago",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6kyfxisu7icskz2c72szh4we/bafkreicwdsi6gtylzdjbb6wx65rkctd2tt6m4nk2d3uwdcnt5dfv6jjqoy"
-      },
-      "record": {
-        "text": "MYCO//DRIFT by @crimsonaddergames.bsky.social w/ art by John from @terriblegames.bsky.social, layout from @deeplydapper.bsky.social is on the edge of funding!\n\nFungal mechs battle for a broken world! Thanks @wittlegoblin.bsky.social for the video today! \n\nTTRPG.link/mycodrift",
-        "createdAt": "2026-09-16T01:42:00.684Z"
-      },
-      "indexedAt": "2026-09-16T01:42:05.585Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 22,
-      "embed": {
-        "type": "external",
-        "uri": "https://TTRPG.link/mycodrift",
-        "title": "Myco//Drift by Crimson Adder - Gamefound",
-        "description": "Myco//Drift is a biopunk tabletop RPG where players take on the role of genetically altered pilots bonded to skyscraper-sized fungal bio-mechs known as Myco Suits. Once child soldiers in a war, humani...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6kyfxisu7icskz2c72szh4we/bafkreihwwgh5whtxsu4dvugaz6ouz6lzomm72h76p23l3taq4eeywqlpom"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fmygsbyrivu6x77lnfaovfft/app.bsky.feed.post/3mvlyfy6znk2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "icastlight.bsky.social",
-        "displayName": "\ud835\udd82.\ud835\udd6f.",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiattu7vqvagz7hyfy3kubktyyflhadvyzidy2hfc3s6jed2gdkaku"
-      },
-      "record": {
-        "text": "If you ever wonder how old-school PC survive their low hp and/or wonder how many hirelings an old-school group rolls with, well, here's an answer: the token at the top is the PC, tokens below are the hirelings\n\nIf this intrigues you, check out @inplacesdeep.bsky.social fever-dream isles of CUCCAGNA!",
-        "createdAt": "2026-09-16T01:29:06.916Z"
-      },
-      "indexedAt": "2026-09-16T01:29:08.973Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiaghc34jh5wjes2qnb5wng3jw5lvleayr3gwbtbjjhx6rugywmf34",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fmygsbyrivu6x77lnfaovfft/bafkreiaghc34jh5wjes2qnb5wng3jw5lvleayr3gwbtbjjhx6rugywmf34",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mvktmhojyk2y",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "GRIDSHOCK Zero Edition is LIVE and open for backers on Gamefound. A new, standalone TTRPG of superpowered resistance on the run, powered by Free League Publishing's acclaimed Year Zero Engine.\n\nFight to restore hope to a world its heroes failed to save.\n\ngamefound.com/en/projects/...",
-        "createdAt": "2026-09-15T14:30:36.035Z"
-      },
-      "indexedAt": "2026-09-15T14:30:37.067Z",
-      "replyCount": 0,
-      "repostCount": 14,
-      "likeCount": 18,
-      "embed": {
-        "type": "external",
-        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
-        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
-        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiai5xrn4dakdvty7eijnf5qrkanxhy63e5tp2pgwvj6dqrbzfn4ti"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:k2bx3bv5tz5bibwpvetindmc/app.bsky.feed.post/3mvkor7jlek2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "infinite-citadel.com",
-        "displayName": "Infinite Citadel",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2bx3bv5tz5bibwpvetindmc/bafkreiaynuqmd2wiqe52tax4jvrfdjzifzwkj6qg2nvxhbz6muyvcrwbe4"
-      },
-      "record": {
-        "text": "HOPE DIES LAST is live! #ttrpg #daggerheart\n3 Campaign Frames\n1 Toolbox Zine\nA deck of new cards\nA pack of gorgeous maps\nttrpg.fund/hope-dies-last",
-        "createdAt": "2026-09-15T13:03:46.533Z"
-      },
-      "indexedAt": "2026-09-15T13:03:50.967Z",
-      "replyCount": 4,
-      "repostCount": 37,
-      "likeCount": 61,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k2bx3bv5tz5bibwpvetindmc/bafkreibpidabdvgio3eunznndfbt6ax4yrc3t4nu4hcz7oli74o2f757ba",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k2bx3bv5tz5bibwpvetindmc/bafkreibpidabdvgio3eunznndfbt6ax4yrc3t4nu4hcz7oli74o2f757ba",
-            "alt": "A collage of characters from across the three campaign frames for Hope Dies Last. Defiant heroism in the face of overwhelming odds... Live Now!"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:hrbhyfjkfzlifttbmop4it3q/app.bsky.feed.post/3mvba6fgna22d",
       "source": "bluesky",
       "author": {
@@ -1052,7 +1020,7 @@
       "indexedAt": "2026-08-31T18:20:59.006Z",
       "replyCount": 1,
       "repostCount": 4,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -1736,7 +1704,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 508,
-      "likeCount": 2654,
+      "likeCount": 2653,
       "embed": {
         "type": "images",
         "images": [
