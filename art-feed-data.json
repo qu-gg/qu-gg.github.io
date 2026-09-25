@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T12:02:55.651045Z",
+  "lastUpdated": "2026-09-25T00:04:35.305609Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,93 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:ifcuwsf64evnhiqu5ihy4djf/app.bsky.feed.post/3mwbuysv54k2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "nightjargames.bsky.social",
+        "displayName": "Galen Pejeau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ifcuwsf64evnhiqu5ihy4djf/bafkreiavakwwcpb7mhecw2ztyhkihaoh2nplrklgulsnca6anl3vwncef4"
+      },
+      "record": {
+        "text": "Speaking of space games, SOLARCRAWL, my system-neutral campaign of \"what if NASA did an OSR\" is printed and on its way to backers! That means we can sell it to the rest of you all as well!\n\nCopies will soon be available from pandiongames.com/products/sol...",
+        "createdAt": "2026-09-24T18:26:38.163Z"
+      },
+      "indexedAt": "2026-09-24T18:26:41.762Z",
+      "replyCount": 1,
+      "repostCount": 21,
+      "likeCount": 54,
+      "embed": {
+        "type": "external",
+        "uri": "https://pandiongames.com/products/solarcrawl",
+        "title": "Solarcrawl",
+        "description": "Solarcrawl is currently in production. Once the Kickstarter campaign is fulfilled, the game will be for sale here. Click the \"Notify Me\" button to get an email when it is available! --- Our homeworld ...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ifcuwsf64evnhiqu5ihy4djf/bafkreictweh3va4xqeil6svz3ku2mg3ypvssubawqkshekecjn7doyk45y"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mwbkkhnimc2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "evlynmoreau.bsky.social",
+        "displayName": "Evlyn Moreau",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreiflvcgiu7bimoerkafgognfahw5lifs3yxwprhned5h2ujnbe7g6m"
+      },
+      "record": {
+        "text": "Can a friendly ghost possess me during the night and upload all my zine catalogue on RPG Trader for me? I just don't have the energy to do it.\nrpg-trader.com/creator/1843...",
+        "createdAt": "2026-09-24T15:19:39.198Z"
+      },
+      "indexedAt": "2026-09-24T15:19:42.864Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 36,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/creator/1843/evlyn-moreau",
+        "title": "Evlyn Moreau on RPG Trader",
+        "description": "Independent TTRPG creator on RPG Trader.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihijfp76pwkmkanwbj3manri6vddvcsup2ipzcj64u2dcwpmbk6e4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mwb7po3vyc26",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "Today on Between Two Cairns, @bradkerr.net, @betterlegends.bsky.social and I are joined by @weirdwonder.bsky.social to review Johnson Squared by  Joshua Luke Cable and Samuel T. McNally, and answer a mailbag question about props at the table.\n\nwww.patreon.com/betweentwoca...",
+        "createdAt": "2026-09-24T12:05:42.574Z"
+      },
+      "indexedAt": "2026-09-24T12:05:43.774Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 29,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.patreon.com/betweentwocairns/posts/johnson-squared-169983386",
+        "title": "Johnson Squared | Between Two Cairns",
+        "description": "Yochai, Brad, and Sam are joined by Amanda P. to review Johnson Squared by Joshua Luke Cable and Samuel T. McNally, and answer a mailbag que",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreib7xda7nfaxjcm7cfnqstrpxjawiptyds4q5xjccgtzc7nk27274i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:7hmvvn47vdph6m6gieh2qgs3/app.bsky.feed.post/3mw7g33e6722v",
       "source": "bluesky",
       "author": {
@@ -65,8 +152,8 @@
       },
       "indexedAt": "2026-09-23T18:54:10.865Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 15,
+      "repostCount": 8,
+      "likeCount": 17,
       "embed": {
         "type": "external",
         "uri": "https://www.magnolienne.com/pinkspace/2026/09/23/how-to-play-opera-eterna/",
@@ -94,8 +181,8 @@
       },
       "indexedAt": "2026-09-23T16:59:42.367Z",
       "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 30,
+      "repostCount": 8,
+      "likeCount": 33,
       "embed": {
         "type": "images",
         "images": [
@@ -127,7 +214,7 @@
       "indexedAt": "2026-09-23T12:07:20.460Z",
       "replyCount": 5,
       "repostCount": 18,
-      "likeCount": 77,
+      "likeCount": 81,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/09/beholders-are-intellectual-property-eh.html",
@@ -214,7 +301,7 @@
       "indexedAt": "2026-09-22T14:18:07.157Z",
       "replyCount": 5,
       "repostCount": 30,
-      "likeCount": 43,
+      "likeCount": 44,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=d1nciO7mczA",
@@ -284,7 +371,7 @@
       },
       "indexedAt": "2026-09-22T08:44:18.765Z",
       "replyCount": 8,
-      "repostCount": 63,
+      "repostCount": 64,
       "likeCount": 114,
       "embed": {
         "type": "images",
@@ -332,7 +419,7 @@
       "indexedAt": "2026-09-21T20:43:33.563Z",
       "replyCount": 3,
       "repostCount": 10,
-      "likeCount": 43,
+      "likeCount": 45,
       "embed": {
         "type": "external",
         "uri": "https://stevencolling.itch.io/hexxmap/devlog/1672373/version-13-linux-more",
@@ -783,71 +870,13 @@
       "indexedAt": "2026-09-17T12:13:05.683Z",
       "replyCount": 0,
       "repostCount": 24,
-      "likeCount": 58,
+      "likeCount": 59,
       "embed": {
         "type": "external",
         "uri": "https://widdershinswanderings.bearblog.dev/ttrpg-table-alignments/",
         "title": "TTRPG Table Alignments",
         "description": "A blog post where I compare a Tabletop Roleplaying Game session to having a communal meal, and why its important for everyone's expectations to be aligned.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreic7rnyf5bs4ey6oizvsookk253rd7gfxrkvjt2hfnpegwupeskypi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3mvnjzpevcs24",
-      "source": "bluesky",
-      "author": {
-        "handle": "hodagrpg.bsky.social",
-        "displayName": "HODAG RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreiggwe63s2olqx2fozr7cnnn633ierbbeo7jgnjjcbz7oao3rmdk6y"
-      },
-      "record": {
-        "text": "Today would have been Ursa Minor's 40th Birthday. \n\nPlease enjoy this adventure I made a few years ago to honor him:\n\nhodagrpg.itch.io/leblaque",
-        "createdAt": "2026-09-16T16:17:02.108Z"
-      },
-      "indexedAt": "2026-09-16T16:17:05.663Z",
-      "replyCount": 1,
-      "repostCount": 3,
-      "likeCount": 16,
-      "embed": {
-        "type": "external",
-        "uri": "https://hodagrpg.itch.io/leblaque",
-        "title": "Beneath! Leblaque's Tomb! by Hodag RPG",
-        "description": "An Expansion set for Beneath! The Dungeonfloor!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreie7dlgkxopxaoqwungnx7pvnngki57ppelkuj4hps5yrs4ztqetaa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:hrbhyfjkfzlifttbmop4it3q/app.bsky.feed.post/3mvba6fgna22d",
-      "source": "bluesky",
-      "author": {
-        "handle": "dorkland.itch.io",
-        "displayName": "Christopher Helton",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreibsrycqi6un7fotqnfwttfegyxy5ousei6v3z5pgve6hev6t3f4cm"
-      },
-      "record": {
-        "text": "I am really proud of my Action-Heroes #TTRPG. This was originally published by Outland Entertainment, and they returned the rights to me a couple of years ago ago (along with all the art). It is a game of big damn heroes trying to make the world a better place for those who do not have the power.",
-        "createdAt": "2026-09-11T18:48:45.167Z"
-      },
-      "indexedAt": "2026-09-11T18:48:46.761Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 9,
-      "embed": {
-        "type": "external",
-        "uri": "https://dorkland.itch.io/action-heroes",
-        "title": "Action-Heroes: Adventure Role-Playing by Christopher Helton",
-        "description": "Be a Hero and change the world for the better!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hrbhyfjkfzlifttbmop4it3q/bafkreiam3vwmsm7td2yqokhp6eakg6ahyog55pbrscxdgqqujk6u7fypf4"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3076,7 +3105,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2344,
-      "likeCount": 11833,
+      "likeCount": 11832,
       "embed": {
         "type": "images",
         "images": [
@@ -3161,7 +3190,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 542,
-      "likeCount": 3028,
+      "likeCount": 3027,
       "embed": {
         "type": "images",
         "images": [
@@ -3412,7 +3441,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2647,
-      "likeCount": 15612,
+      "likeCount": 15611,
       "embed": {
         "type": "images",
         "images": [
