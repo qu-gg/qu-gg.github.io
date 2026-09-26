@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T12:03:08.039294Z",
+  "lastUpdated": "2026-09-26T00:04:24.023008Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,157 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mwerncklkk2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "I wrote a little post about how this new adventure came to be, and how my little OSR show played a small part.\n\nwww.patreon.com/betweentwoca...",
+        "createdAt": "2026-09-25T22:04:29.930Z"
+      },
+      "indexedAt": "2026-09-25T22:04:31.569Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 18,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.patreon.com/betweentwocairns/posts/another-and-its-170577146?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+        "title": "Another Kickstarter! And it's all our fault! | Between Two Cairns",
+        "description": "Hello patrons! It's your old buddy Yochai here. I'm launching another Kickstarter today on behalf of Cairn Press: A Sliver of Evidence. But",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibvxhcpidnbalx76cxf7sgrv5nvd6gdrsdfyjgndav74dmriluzwq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:r3hqasi6ieev262wffln35nw/app.bsky.feed.post/3mwe7zqdark2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "arcanejellycult.itch.io",
+        "displayName": "arjecu",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreihya5ylbbshkljg2zd53eeglfbmdcbbvlvnfphjbeazlbw6ggqfpq"
+      },
+      "record": {
+        "text": "COMING SOON...\n\nStorm CASTLE M\u00d6RK & defend LJUSSTADT from COUNT VANIA'S rage before TIME RUNS OUT!\n\nVANIA is vampire horror meets arcade action by way of M\u00d6RK BORG. VANIA streamlines M\u00d6RK BORG's simple rules with a focus on quick play, short campaigns, & one shots.\n\narcanejellycult.itch.io/vania",
+        "createdAt": "2026-09-25T16:49:19.656Z"
+      },
+      "indexedAt": "2026-09-25T16:49:21.173Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreifq67gteyh7yepty2tv7icd7gkhpdulnkafrdrq4vtjm3cmjbf46y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreifq67gteyh7yepty2tv7icd7gkhpdulnkafrdrq4vtjm3cmjbf46y",
+            "alt": "Cover for VANIA, a \"Mork Borg Roleplaying Compatible\" game bearing the \"official quality seal\" of ARJECU. The cover looks like a classic NES game box, thick black borders and red header included.\n\nThe logo is inspired by the classic CASTLEVANIA logo, with the a stylized serif text in bright yellow, surrounded by a red and yellow stylized backer.\n\nIn contrasting and complementary colors (purple, green, blue, yellow, orange), a scene of a barbaric Vampire Killer wielding twin wooden stakes stands on a rocky hill overlooking Castle Mork."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:ib7naxquxssnwmkbh7zvcauk/app.bsky.feed.post/3mwdz5yyiv22l",
+      "source": "bluesky",
+      "author": {
+        "handle": "cairnrpg.com",
+        "displayName": "warden",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreih7bke2lpqb6f6ehlckjmrcta4sta2yariry4sdjoxcbnnwlz5vvi"
+      },
+      "record": {
+        "text": "Cairn Press is VERY happy to announce our next kickstarter: A Sliver of Evidence by @karlyanddd.bsky.social.\n\nwww.kickstarter.com/projects/cai...",
+        "createdAt": "2026-09-25T14:46:26.780Z"
+      },
+      "indexedAt": "2026-09-25T14:46:28.759Z",
+      "replyCount": 1,
+      "repostCount": 31,
+      "likeCount": 97,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence",
+        "title": "A Sliver of Evidence",
+        "description": "A werewolf-inspired adventure for Cairn 2e, written & illustrated by Karly Andersen.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreiddlcnxkgm5g5eoafo2y46ymargwwonoh522ruoyuh734yf7kj2rm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:sgwjzmbtjckme2myaa5vsn4g/app.bsky.feed.post/3mwdqoam3d22h",
+      "source": "bluesky",
+      "author": {
+        "handle": "ghostofcinders.bsky.social",
+        "displayName": "Michele, a Ghost of Cinders",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgwjzmbtjckme2myaa5vsn4g/bafkreie4ftegr52lno5k7mltchajtavh46wkji3r7iytaf2hdbefnqxyzy"
+      },
+      "record": {
+        "text": "I'll do my own post with link:\n\nAt the Gates is a brand new TTRPG inspired by JRPGs such as Final Fantasy, Fire Emblem, Tales Of, Zelda and much more\n\nCreated by the always powerful @impernious.bsky.social and a badass team, it's cool, sleek, and original alike. A badass game.\n\n\ud83d\udd04RT are appreciated \ud83d\udd04",
+        "createdAt": "2026-09-25T12:14:27.957Z"
+      },
+      "indexedAt": "2026-09-25T12:14:28.458Z",
+      "replyCount": 0,
+      "repostCount": 8,
+      "likeCount": 12,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.drivethrurpg.com/en/product/578315/at-the-gates-core-rulebook?affiliate_id=1997626",
+        "title": "DriveThruRPG - The Largest RPG Download Store!",
+        "description": "Your one-stop online shop for new and vintage RPG products from the top publishers, delivered fresh to your desktop in electronic format.",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:muzjhmsedtz3yytindxdv46f/app.bsky.feed.post/3mwcbujfzw22x",
+      "source": "bluesky",
+      "author": {
+        "handle": "queerwizard.co.uk",
+        "displayName": "Ripley \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreigz24hmlrkvakkjz7chcxtaki2y7kbwirvm26oe4lrxlsnikcsaum"
+      },
+      "record": {
+        "text": "Busy busy busy drawing dungeons",
+        "createdAt": "2026-09-24T22:16:52.650Z"
+      },
+      "indexedAt": "2026-09-24T22:16:57.166Z",
+      "replyCount": 6,
+      "repostCount": 13,
+      "likeCount": 70,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiabncojecvqto5wd75gae43wekxdym5ex5kgycyutxgdkm2o2kknu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiabncojecvqto5wd75gae43wekxdym5ex5kgycyutxgdkm2o2kknu",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:ifcuwsf64evnhiqu5ihy4djf/app.bsky.feed.post/3mwbuysv54k2s",
       "source": "bluesky",
       "author": {
@@ -65,8 +216,8 @@
       },
       "indexedAt": "2026-09-24T18:26:41.762Z",
       "replyCount": 1,
-      "repostCount": 24,
-      "likeCount": 72,
+      "repostCount": 27,
+      "likeCount": 82,
       "embed": {
         "type": "external",
         "uri": "https://pandiongames.com/products/solarcrawl",
@@ -124,7 +275,7 @@
       "indexedAt": "2026-09-24T12:05:43.774Z",
       "replyCount": 3,
       "repostCount": 9,
-      "likeCount": 41,
+      "likeCount": 44,
       "embed": {
         "type": "external",
         "uri": "https://www.patreon.com/betweentwocairns/posts/johnson-squared-169983386",
@@ -182,7 +333,7 @@
       "indexedAt": "2026-09-23T16:59:42.367Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
@@ -243,7 +394,7 @@
       "indexedAt": "2026-09-23T09:21:41.361Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 28,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://www.bastionland.com/2026/09/breaking-wave.html",
@@ -301,7 +452,7 @@
       "indexedAt": "2026-09-22T14:18:07.157Z",
       "replyCount": 5,
       "repostCount": 32,
-      "likeCount": 47,
+      "likeCount": 48,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=d1nciO7mczA",
@@ -330,7 +481,7 @@
       "indexedAt": "2026-09-22T11:49:14.865Z",
       "replyCount": 6,
       "repostCount": 39,
-      "likeCount": 81,
+      "likeCount": 83,
       "embed": {
         "type": "images",
         "images": [
@@ -372,7 +523,7 @@
       "indexedAt": "2026-09-22T08:44:18.765Z",
       "replyCount": 8,
       "repostCount": 64,
-      "likeCount": 115,
+      "likeCount": 116,
       "embed": {
         "type": "images",
         "images": [
@@ -730,153 +881,6 @@
         "title": "Farmer Gadda's TTRPG Hayloft : The Donkey Kong Island Hexcrawl - Introduction & Kongo Jungle",
         "description": "It is, in fact, On.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:l273ogahvzmitwvo27kej3v3/bafkreibeto3werxsv6eshktzdj4ck72ps27z5mdzui5w6idrmbf5yka3z4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fto4kykyqh3dt4qi5we7yoxt/app.bsky.feed.post/3mvq5iuv7222a",
-      "source": "bluesky",
-      "author": {
-        "handle": "ceruleanfive.bsky.social",
-        "displayName": "Lucas Falk",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fto4kykyqh3dt4qi5we7yoxt/bafkreib6dvxyyxhymwzus5p2ckphbg3l7ery3l276kpr3lya5bfzc4vc2i"
-      },
-      "record": {
-        "text": "Wrote up a couple more Overworld locations for Heroes of Cerulea. PWYW.\n\nceruleanfive.itch.io/overworld-ar...",
-        "createdAt": "2026-09-17T17:10:51.776Z"
-      },
-      "indexedAt": "2026-09-17T17:10:53.773Z",
-      "replyCount": 1,
-      "repostCount": 2,
-      "likeCount": 14,
-      "embed": {
-        "type": "external",
-        "uri": "https://ceruleanfive.itch.io/overworld-areas-ii",
-        "title": "Overworld Areas II by ceruleanfive",
-        "description": "More pixelated locations compatible with Heroes of Cerulea",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fto4kykyqh3dt4qi5we7yoxt/bafkreiagadfmefmldvree46ikq6ksvubh2kkasajdeiwr347hdjxgdtgjq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mvpqw7mqcc2g",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "The gear section of the BREAK!! book is pretty big, one of the largest in the book. Part of that is because I think it's one of the most prominent ways players interact with an adventure game, and part of it is just that I'm just such a huge fan of stuff. Stuff is fun!",
-        "createdAt": "2026-09-17T13:25:40.591Z"
-      },
-      "indexedAt": "2026-09-17T13:25:46.361Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 56,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibrtrbesvn45jeukbiarjkh54boqegfiyjjwp5njeaozuzq6ygwky",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibrtrbesvn45jeukbiarjkh54boqegfiyjjwp5njeaozuzq6ygwky",
-            "alt": "A shopkeeper looks on with glee as someone tries to sell a sword to a curious adventurer"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3mvpq4x56nk2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "hodagrpg.bsky.social",
-        "displayName": "HODAG RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreiggwe63s2olqx2fozr7cnnn633ierbbeo7jgnjjcbz7oao3rmdk6y"
-      },
-      "record": {
-        "text": "IT'S FINALLY HERE! \n\nGo OVERLAND! AND ABROAD! in your BENEATH! THE DUNGEONFLOOR! games...\n\nSolo Role-playing never felt so good! Explore the world of your imagination!\n\nhodagrpg.itch.io/overland",
-        "createdAt": "2026-09-17T13:11:32.833Z"
-      },
-      "indexedAt": "2026-09-17T13:11:34.574Z",
-      "replyCount": 2,
-      "repostCount": 17,
-      "likeCount": 37,
-      "embed": {
-        "type": "external",
-        "uri": "https://hodagrpg.itch.io/overland",
-        "title": "Overland! And Abroad! by Hodag RPG",
-        "description": "A new expansion for Beneath! The Dungeonfloor! Plus other rarities and curiosities!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jlg2eoawuzj73yidbmdxoliy/bafkreifbxbv7qod2ufj4wct3nit2rhqyzc644ysokzndgokiacpdz7hft4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:67acdzswmethkst5oniz6gl2/app.bsky.feed.post/3mvpng2znnc2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "golden-achiever.bsky.social",
-        "displayName": "Golden Achiever",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreif2p5g3ejmu4un5fknfcraxukzdifl4ida623ap7sedvrah4dretm"
-      },
-      "record": {
-        "text": "I had this idea and started on it months ago. Through some luck I recently managed to get in touch with an actual real life paleontologist who I interviewed (and asked ridiculous questions). And suddenly, here we are... A companion magazine to Year 100 Million B.C.\n\nDownload it for free. Link below!",
-        "createdAt": "2026-09-17T12:22:57.680Z"
-      },
-      "indexedAt": "2026-09-17T12:26:52.260Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 41,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreidmbbpjlytf3euhwcciiop74mwuxl6cldcft4np74dozkrrcn5vvu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreidmbbpjlytf3euhwcciiop74mwuxl6cldcft4np74dozkrrcn5vvu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5znvwcngxw4byieen2biqmrv/app.bsky.feed.post/3mvpmu6jhkc2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "naeolin.bsky.social",
-        "displayName": "WiddershinsWanderings",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreibc7prmep376lkq7wbhqoquihapufrvafxbqmfste3mdthvwico3y"
-      },
-      "record": {
-        "text": "I've been talking about play style preferences lately, but there's another aspect of table culture that I think is a key determining factor on whether a gaming table stays together.\n\nWhether you're playing Cairn, Mothership, or Vampire.\n\nwiddershinswanderings.bearblog.dev/ttrpg-table-...",
-        "createdAt": "2026-09-17T12:12:57.364Z"
-      },
-      "indexedAt": "2026-09-17T12:13:05.683Z",
-      "replyCount": 0,
-      "repostCount": 24,
-      "likeCount": 59,
-      "embed": {
-        "type": "external",
-        "uri": "https://widdershinswanderings.bearblog.dev/ttrpg-table-alignments/",
-        "title": "TTRPG Table Alignments",
-        "description": "A blog post where I compare a Tabletop Roleplaying Game session to having a communal meal, and why its important for everyone's expectations to be aligned.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreic7rnyf5bs4ey6oizvsookk253rd7gfxrkvjt2hfnpegwupeskypi"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3385,7 +3389,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1875,
-      "likeCount": 8953,
+      "likeCount": 8951,
       "embed": {
         "type": "images",
         "images": [
