@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A topical reader for the BREAK!! Devblog archive.">
     <title>BREAK!! Blog Compendium</title>
-    <link rel="stylesheet" href="styles.css?v=20260926">
+    <link rel="stylesheet" href="styles.css?v=20260926-toc-loading">
 </head>
 <body>
     <div class="mobile-scrim" id="mobile-scrim" aria-hidden="true"></div>
@@ -13,10 +13,15 @@
     <aside class="toc-sidebar" id="toc-sidebar" aria-label="Table of contents">
         <div class="sidebar-brand">
             <span class="brand-eyebrow">BREAK!!</span>
-            <strong>Blog Compendium</strong>
+            <strong>Blog Compilation</strong>
         </div>
 
-        <nav class="toc-sidebar-content" id="toc-sidebar-content" aria-label="Compendium contents"></nav>
+        <nav class="toc-sidebar-content" id="toc-sidebar-content" aria-label="Compendium contents">
+            <div class="toc-loading" id="toc-loading" aria-live="polite">
+                <span class="toc-loading-spinner" aria-hidden="true"></span>
+                <span id="toc-loading-text">Loading contents...</span>
+            </div>
+        </nav>
 
         <div class="sidebar-controls">
             <button class="control-button control-button-primary" id="print-button" type="button">

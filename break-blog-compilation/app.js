@@ -23,6 +23,8 @@ const elements = {
     loadingStatus: document.getElementById("loading-status"),
     sidebar: document.getElementById("toc-sidebar"),
     sidebarContent: document.getElementById("toc-sidebar-content"),
+    tocLoading: document.getElementById("toc-loading"),
+    tocLoadingText: document.getElementById("toc-loading-text"),
     menuToggle: document.getElementById("menu-toggle"),
     mobileScrim: document.getElementById("mobile-scrim"),
     printButton: document.getElementById("print-button"),
@@ -125,6 +127,11 @@ async function fetchPost(postId) {
 
 function setLoadingStatus(text) {
     if (elements.loadingStatus) elements.loadingStatus.textContent = text;
+    if (elements.tocLoadingText) {
+        elements.tocLoadingText.textContent = text.startsWith("Loading ")
+            ? `Loading contents · ${text.slice("Loading ".length)}`
+            : text;
+    }
 }
 
 function createPageShell(page, options = {}) {
@@ -153,7 +160,7 @@ function createCoverPage() {
     const page = createPage("cover-page");
     const title = createElement("h1");
     title.appendChild(createElement("span", null, "BREAK!!"));
-    title.appendChild(createElement("span", null, "Blog Compendium"));
+    title.appendChild(createElement("span", null, "Blog Compilation"));
     page.appendChild(title);
     page.appendChild(createElement("div", "cover-rule"));
     page.appendChild(createElement("p", "cover-credit cover-credit-label", "Original Blog Content by:"));
