@@ -18,6 +18,7 @@ const resultCount = document.querySelector("#result-count");
 const captureStage = document.querySelector("#card-capture-stage");
 const COPY_CAPTURE_WIDTH = 1100;
 const MOBILE_LAYOUT_QUERY = "(max-width: 800px)";
+const MAX_CHARACTER_NAME_LENGTH = 80;
 
 let data;
 let currentCharacters = [];
@@ -29,6 +30,29 @@ function escapeHtml(value) {
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+}
+
+function cleanCharacterName(value) {
+    const normalized = String(value ?? "")
+        .normalize("NFC")
+        .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u00AD\u061C\u180E\u200B-\u200F\u202A-\u202E\u2060-\u206F\uFEFF]/gu, "")
+        .replace(/\s+/gu, " ")
+        .trim();
+    return Array.from(normalized).slice(0, MAX_CHARACTER_NAME_LENGTH).join("");
+}
+
+function resizeNameInput(input) {
+    if (!input) return;
+    const style = getComputedStyle(input);
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    if (context) {
+        context.font = style.font;
+        const textWidth = context.measureText(input.value || " ").width;
+        const horizontalPadding = Number.parseFloat(style.paddingLeft) + Number.parseFloat(style.paddingRight);
+        input.style.width = `${Math.ceil(textWidth + horizontalPadding + 4)}px`;
+    }
+    input.size = Math.max(1, Math.min(MAX_CHARACTER_NAME_LENGTH, Array.from(input.value).length));
 }
 
 function pageReference(entry) {
@@ -45,11 +69,18 @@ function rerollIcon(target, label, extraClass = "") {
     return `<button type="button" class="reroll-button ${extraClass}" data-reroll-target="${target}" data-html2canvas-ignore aria-label="Reroll ${escapeHtml(label)}" title="Reroll ${escapeHtml(label)}">↻</button>`;
 }
 
+function cardLockButton() {
+    return `<button type="button" class="card-lock-toggle" data-card-lock-toggle data-html2canvas-ignore aria-pressed="false" aria-label="Lock character card" title="Lock card from rerolls"><span class="card-lock-icon" aria-hidden="true"></span></button>`;
+}
+
+function nameEditButton() {
+    return `<button type="button" class="name-edit-button" data-name-edit data-html2canvas-ignore aria-pressed="false" aria-label="Edit character name" title="Edit character name">✎</button>`;
+}
+
 function referenceItem(label, value, reference, rerollTarget = "", suppressBlogLink = false, prefix = "") {
     const control = rerollTarget ? rerollIcon(rerollTarget, label) : "";
-    const interaction = rerollTarget ? `data-reroll-target="${rerollTarget}" title="Reroll ${escapeHtml(label)}"` : "";
     const referenceMarkup = suppressBlogLink && reference.sourceUrl ? "" : pageReference(reference);
-    return `<li class="${rerollTarget ? "rerollable-item" : ""}" ${interaction}><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span><span class="reference-value">${prefix}${escapeHtml(value)}</span> ${referenceMarkup}</li>`;
+    return `<li class="${rerollTarget ? "rerollable-item" : ""}"><span class="field-heading"><strong>${escapeHtml(label)}</strong>${control}</span><span class="reference-value">${prefix}${escapeHtml(value)}</span> ${referenceMarkup}</li>`;
 }
 
 function modifierMarkup(modifiers = []) {
@@ -206,7 +237,7 @@ function renderCharacter(character, index) {
         referenceItem(`${ability.tier} · Rank ${ability.acquiredRank}`, ability.name, ability, "", false, allegianceDots(abilityAllegiance(character, ability), 1, ability.name))
     ).join("");
     const electiveSectionMarkup = character.abilities.elective.length
-        ? `<section class="card-section rerollable-section elective-abilities-section" data-reroll-target="abilities" data-balance-section data-balance-order="2" title="Reroll elective abilities">
+        ? `<section class="card-section rerollable-section elective-abilities-section" data-balance-section data-balance-order="2">
             <div class="section-heading"><h4>Elective abilities</h4>${rerollIcon("abilities", "elective abilities")}</div>
             <ul class="reference-list">${electiveAbilityMarkup}</ul>
         </section>`
@@ -216,7 +247,7 @@ function renderCharacter(character, index) {
         ? rerollIcon("choices", "resolved choices")
         : "";
     const selectionMarkup = character.selections.length
-        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}" ${choicesControl ? 'data-reroll-target="choices" title="Reroll resolved choices"' : ""}><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection, "", true, selectionAllegianceDots(character, selection))).join("")}</ul></section>`
+        ? `<section class="card-section ${choicesControl ? "rerollable-section" : ""}"><div class="section-heading"><h4>Resolved choices</h4>${choicesControl}</div><ul class="selection-list">${character.selections.map((selection) => referenceItem(selection.label, selection.value, selection, "", true, selectionAllegianceDots(character, selection))).join("")}</ul></section>`
         : "";
 
     const quirkValue = [character.quirk.name, ...character.additionalQuirks.map((quirk) => quirk.name)].join(" + ");
@@ -233,12 +264,12 @@ function renderCharacter(character, index) {
             : "";
         return `<li class="removable-gear-item">${gearRemoveButton("gear", itemIndex, item)}${escapeHtml(item.name)}${nickname} ${pageReference(item)}${carriedStateMarkup(item)}${gearMeta(startingGearCost(item), displayedGearSlots(item))}${restriction}</li>`;
     });
-    gearItems.push(`<li class="starting-coins-item rerollable-item" data-reroll-target="coins" title="Reroll d20 Coins"><span class="coin-heading"><strong>d20 Coins: ${formatCurrency(character.coins * 100)}</strong>${rerollIcon("coins", "d20 Coins")}</span></li>`);
+    gearItems.push(`<li class="starting-coins-item rerollable-item"><span class="coin-heading"><strong>d20 Coins: ${formatCurrency(character.coins * 100)}</strong>${rerollIcon("coins", "d20 Coins")}</span></li>`);
     const purchasedGearItems = character.purchasedGear.map((item, itemIndex) => `
         <li class="removable-gear-item">${gearRemoveButton("purchasedGear", itemIndex, item)}${escapeHtml(item.name)}${item.quantity > 1 ? ` ×${item.quantity}` : ""} ${pageReference(item)}${carriedStateMarkup(item)}${gearMeta(formatCurrency(item.costStones), displayedGearSlots(item))}</li>
     `).join("");
     const purchasedGearMarkup = character.shopping.budgetCoins > 0
-        ? `<section class="card-section rerollable-section purchased-gear-section" data-reroll-target="purchasedGear" title="Reroll purchased gear">
+        ? `<section class="card-section rerollable-section purchased-gear-section">
             <div class="section-heading"><h4>Purchased gear</h4>${rerollIcon("purchasedGear", "purchased gear")}</div>
             ${purchasedGearItems ? `<ul class="gear-list">${purchasedGearItems}</ul>` : `<p class="no-purchases">No legal purchases fit.</p>`}
         </section>`
@@ -248,16 +279,22 @@ function renderCharacter(character, index) {
         : "";
 
     return `
-        <article class="character-card" style="--card-index: ${index}" aria-labelledby="character-${index + 1}-title">
+        <article class="character-card" data-locked="false" style="--card-index: ${index}" aria-labelledby="character-${index + 1}-title">
             <header class="character-header">
-                <div class="character-title-row rerollable-section" data-reroll-target="name" title="Reroll name">
-                    <h3 id="character-${index + 1}-title">${escapeHtml(character.name)}</h3>
-                    ${rerollIcon("name", "name")}
+                <div class="character-title-row">
+                    <div class="character-name-tools">
+                        <div class="character-name-display" data-name-display>
+                            <h3 id="character-${index + 1}-title" class="character-name-heading" aria-label="${escapeHtml(character.name)}">${escapeHtml(character.name)}</h3>
+                            ${rerollIcon("name", "name")}
+                            ${nameEditButton()}
+                        </div>
+                    </div>
                     <div class="character-card-actions" id="character-${index + 1}-actions" data-card-actions data-html2canvas-ignore>
                         <button type="button" class="copy-image-button" data-copy-image data-html2canvas-ignore role="menuitem" aria-label="${escapeHtml(imageActionAriaLabel())}" title="${escapeHtml(imageActionTitle())}">${imageActionLabel()}</button>
                         ${ENABLE_FOUNDRY_EXPORT ? `<button type="button" class="foundry-export-button" data-export-foundry data-html2canvas-ignore role="menuitem" aria-label="Export ${escapeHtml(character.name)} to FoundryVTT" title="Export character to FoundryVTT">Export to FoundryVTT</button>` : ""}
                         ${ENABLE_QUESTLINE_EXPORT ? `<button type="button" class="questline-export-button" data-export-questline data-html2canvas-ignore role="menuitem" aria-label="Export ${escapeHtml(character.name)} to QuestlineVTT" title="Export character to QuestlineVTT">Export to QuestlineVTT</button>` : ""}
                     </div>
+                    ${cardLockButton()}
                     <button type="button" class="card-actions-menu-toggle" data-card-actions-toggle data-html2canvas-ignore aria-haspopup="menu" aria-expanded="false" aria-controls="character-${index + 1}-actions" aria-label="Character actions" title="Character actions"><span class="card-actions-menu-icon" aria-hidden="true"></span></button>
                 </div>
                 <p class="character-build">${escapeHtml(displaySpeciesName(character.species.name))} ${escapeHtml(character.calling.name)}, Rank ${character.rank}</p>
@@ -278,7 +315,7 @@ function renderCharacter(character, index) {
                         </ul>
                     </section>
 
-                    <section class="aptitude-section rerollable-section" data-reroll-target="traits" title="Reroll traits">
+                    <section class="aptitude-section rerollable-section">
                         ${rerollIcon("traits", "traits", "reroll-section")}
                         <dl class="stat-grid">${aptitudeMarkup}</dl>
                     </section>
@@ -307,7 +344,7 @@ function renderCharacter(character, index) {
 
                     ${selectionMarkup}
 
-                    <section class="card-section rerollable-section" data-reroll-target="gear" title="Reroll starting gear">
+                    <section class="card-section rerollable-section">
                         <div class="section-heading"><h4>Starting gear</h4>${rerollIcon("gear", "starting gear")}</div>
                         <ul class="gear-list">${gearItems.join("")}</ul>
                     </section>
@@ -362,30 +399,139 @@ function balanceCharacterCards() {
 function renderCharacters(characters) {
     currentCharacters = characters;
     results.innerHTML = characters.map(renderCharacter).join("");
+    results.querySelectorAll("[data-name-input]").forEach(resizeNameInput);
     balanceCharacterCards();
     emptyState.hidden = true;
     resultCount.textContent = `${characters.length} ${characters.length === 1 ? "Result" : "Results"}`;
 }
 
 function replaceCharacter(index, target) {
-    const nextCharacter = rerollCharacter(data, currentCharacters[index], target);
+    const previousCharacter = currentCharacters[index];
+    const nextCharacter = rerollCharacter(data, previousCharacter, target);
+    if (target !== "name" && previousCharacter.nameOverride) {
+        nextCharacter.name = previousCharacter.name;
+        nextCharacter.nameOverride = true;
+    }
     currentCharacters[index] = nextCharacter;
     const replacement = document.createElement("template");
     replacement.innerHTML = renderCharacter(nextCharacter, index).trim();
     const nextCard = replacement.content.firstElementChild;
     results.children[index].replaceWith(nextCard);
+    resizeNameInput(nextCard.querySelector("[data-name-input]"));
     balanceCharacterCard(nextCard);
     nextCard.classList.add("rerolled");
 }
 
+function setCardLocked(card, locked) {
+    if (!card) return;
+    card.dataset.locked = String(locked);
+    card.classList.toggle("is-locked", locked);
+    const toggle = card.querySelector("[data-card-lock-toggle]");
+    toggle?.setAttribute("aria-pressed", String(locked));
+    toggle?.setAttribute("aria-label", locked ? "Unlock character card" : "Lock character card");
+    toggle?.setAttribute("title", locked ? "Unlock card for rerolls" : "Lock card from rerolls");
+    card.querySelectorAll(".reroll-button").forEach((button) => {
+        button.disabled = locked;
+    });
+}
+
+function startNameEdit(card) {
+    if (!card) return;
+    const heading = card.querySelector(".character-name-heading");
+    const toggle = card.querySelector("[data-name-edit]");
+    if (!heading || !toggle || heading.querySelector("[data-name-input]")) return;
+    card.dataset.editingName = heading.textContent;
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "character-name-input";
+    input.dataset.nameInput = "";
+    input.value = heading.textContent;
+    input.maxLength = MAX_CHARACTER_NAME_LENGTH;
+    input.autocomplete = "off";
+    input.spellcheck = false;
+    input.setAttribute("aria-label", "Character name");
+    heading.replaceChildren(input);
+    heading.setAttribute("aria-label", "Editing character name");
+    card.classList.add("name-editing");
+    toggle.dataset.editing = "true";
+    toggle.setAttribute("aria-pressed", "true");
+    toggle.setAttribute("aria-label", "Save character name");
+    toggle.setAttribute("title", "Save character name");
+    toggle.textContent = "✓";
+    resizeNameInput(input);
+    input.focus();
+    input.select();
+}
+
+function finishNameEdit(card, restoreFocus = true) {
+    if (!card) return;
+    const heading = card.querySelector(".character-name-heading");
+    const toggle = card.querySelector("[data-name-edit]");
+    const input = heading?.querySelector("[data-name-input]");
+    if (!input || !heading || !toggle) return;
+    heading.textContent = input.value;
+    heading.setAttribute("aria-label", heading.textContent);
+    card.classList.remove("name-editing");
+    toggle.dataset.editing = "false";
+    toggle.setAttribute("aria-pressed", "false");
+    toggle.setAttribute("aria-label", "Edit character name");
+    toggle.setAttribute("title", "Edit character name");
+    toggle.textContent = "✎";
+    delete card.dataset.editingName;
+    if (restoreFocus) toggle.focus();
+}
+
+function cancelNameEdit(card, restoreFocus = true) {
+    if (!card) return;
+    const heading = card.querySelector(".character-name-heading");
+    const input = heading?.querySelector("[data-name-input]");
+    if (!input) return;
+    if (card.dataset.editingName !== undefined) input.value = card.dataset.editingName;
+    finishNameEdit(card, restoreFocus);
+}
+
+function saveCharacterName(card) {
+    if (!card) return;
+    const input = card.querySelector("[data-name-input]");
+    const heading = input?.closest(".character-name-heading");
+    if (!input || !heading) return;
+    const name = cleanCharacterName(input.value);
+    if (!name) {
+        input.classList.add("name-edit-invalid");
+        input.setAttribute("aria-invalid", "true");
+        input.setAttribute("title", "Enter a character name.");
+        input.focus();
+        return;
+    }
+    input.value = name;
+    resizeNameInput(input);
+    input.classList.remove("name-edit-invalid");
+    const index = [...results.children].indexOf(card);
+    const wasLocked = card.dataset.locked === "true";
+    currentCharacters[index] = { ...currentCharacters[index], name, nameOverride: true };
+    finishNameEdit(card, false);
+    const replacement = document.createElement("template");
+    replacement.innerHTML = renderCharacter(currentCharacters[index], index).trim();
+    const nextCard = replacement.content.firstElementChild;
+    results.children[index].replaceWith(nextCard);
+    resizeNameInput(nextCard.querySelector("[data-name-input]"));
+    balanceCharacterCard(nextCard);
+    setCardLocked(nextCard, wasLocked);
+    nextCard.classList.add("name-updated");
+    nextCard.querySelector("[data-name-edit]")?.focus();
+}
+
 function removeCharacterGear(index, section, itemIndex) {
+    const wasLocked = results.children[index]?.dataset.locked === "true";
     const nextCharacter = removeGearItem(currentCharacters[index], section, itemIndex);
     currentCharacters[index] = nextCharacter;
     const replacement = document.createElement("template");
     replacement.innerHTML = renderCharacter(nextCharacter, index).trim();
     const nextCard = replacement.content.firstElementChild;
     results.children[index].replaceWith(nextCard);
+    resizeNameInput(nextCard.querySelector("[data-name-input]"));
     balanceCharacterCard(nextCard);
+    setCardLocked(nextCard, wasLocked);
     nextCard.classList.add("rerolled");
 }
 
@@ -560,6 +706,19 @@ results.addEventListener("click", (event) => {
         copyCardAsImage(copyButton.closest(".character-card"), copyButton);
         return;
     }
+    const nameEdit = event.target.closest("[data-name-edit]");
+    if (nameEdit) {
+        const card = nameEdit.closest(".character-card");
+        if (nameEdit.dataset.editing === "true") saveCharacterName(card);
+        else startNameEdit(card);
+        return;
+    }
+    const lockToggle = event.target.closest("[data-card-lock-toggle]");
+    if (lockToggle) {
+        const card = lockToggle.closest(".character-card");
+        setCardLocked(card, card?.dataset.locked !== "true");
+        return;
+    }
     const removeButton = event.target.closest("[data-remove-gear]");
     if (removeButton) {
         const card = removeButton.closest(".character-card");
@@ -567,11 +726,34 @@ results.addEventListener("click", (event) => {
         removeCharacterGear(index, removeButton.dataset.removeSection, Number(removeButton.dataset.removeIndex));
         return;
     }
-    const target = event.target.closest("[data-reroll-target]");
-    if (!target) return;
-    const card = target.closest(".character-card");
+    const rerollButton = event.target.closest(".reroll-button");
+    if (!rerollButton || rerollButton.disabled) return;
+    const card = rerollButton.closest(".character-card");
+    if (card?.dataset.locked === "true") return;
     const index = [...results.children].indexOf(card);
-    replaceCharacter(index, target.dataset.rerollTarget);
+    replaceCharacter(index, rerollButton.dataset.rerollTarget);
+});
+
+results.addEventListener("keydown", (event) => {
+    const heading = event.target.closest("[data-name-input]");
+    if (!heading) return;
+    const card = heading.closest(".character-card");
+    if (event.key === "Enter") {
+        event.preventDefault();
+        saveCharacterName(card);
+    } else if (event.key === "Escape") {
+        event.preventDefault();
+        cancelNameEdit(card);
+    }
+});
+
+results.addEventListener("input", (event) => {
+    const input = event.target.closest("[data-name-input]");
+    if (!input) return;
+    input.classList.remove("name-edit-invalid");
+    input.removeAttribute("aria-invalid");
+    input.removeAttribute("title");
+    resizeNameInput(input);
 });
 
 document.addEventListener("click", (event) => {

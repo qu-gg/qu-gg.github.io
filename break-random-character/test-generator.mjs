@@ -469,6 +469,7 @@ const seen = {
     armorDefense: false,
     shieldDefense: false,
 };
+let wearyWalkerCount = 0;
 
 for (let seed = 1; seed <= 5000; seed += 1) {
     const [character] = rollCharacters(data, 1, seededRandom(seed));
@@ -577,7 +578,8 @@ for (let seed = 1; seed <= 5000; seed += 1) {
         assert.ok(wearyPath);
         if (wearyPath.value.startsWith("Walker")) {
             assert.ok(character.additionalHistory);
-            assert.notEqual(character.additionalHistory.name, character.history.name);
+            wearyWalkerCount += 1;
+            assert.notEqual(character.additionalHistory.name, character.history.name, "Weary must choose a distinct second History");
             assert.equal(character.gear.length, 6);
         } else {
             assert.equal(character.additionalHistory, null);
@@ -766,6 +768,7 @@ for (let seed = 1; seed <= 10000; seed += 1) {
         assert.equal(character.species.expanded, true);
     }
 }
+assert.ok(wearyWalkerCount > 0, "seeded tests should exercise the Weary second-History path");
 assert.deepEqual(seenExpandedCallings, expectedExpandedCallings);
 assert.deepEqual(seenExpandedSpecies, expectedExpandedSpecies);
 assert.deepEqual(seenMundymuttSizes, new Set(["Small", "Medium", "Large"]));

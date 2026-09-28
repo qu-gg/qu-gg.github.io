@@ -144,7 +144,15 @@ ward, Peculiar Taste nourishment, and Sneezles allergen.
 
 ## Card interactions
 
-- Click a rerollable value or its circular-arrow control to replace that result.
+- Use the circular-arrow button beside a rerollable value to replace that
+  result; clicking the surrounding section or value does not reroll it.
+- Use the pencil button beside a character's name to edit the name directly in
+  place. Press Enter or click the checkmark to save, or press Escape to cancel;
+  the custom name remains available to card copies and exports for the current
+  batch.
+- Use the lock button in a card header to disable every reroll control for that
+  card. The lock lasts for the current batch and can be toggled off; copying,
+  exports, links, and gear removal remain available.
 - Hover a Starting or Purchased Gear item to change its diamond bullet into a
   remove control. Removing Starting Gear releases its carried Inventory Slots
   without changing currency. Removing Purchased Gear also returns its full
@@ -227,7 +235,6 @@ comparison only and should not override the PDF.
 
 ### Per-field controls
 
-- Add explicit lock controls for generating a new card around favored results.
 - Consider editable selectors alongside random rerolls.
 
 ### Expanded content

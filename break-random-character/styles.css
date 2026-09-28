@@ -370,6 +370,82 @@ body {
     flex-wrap: wrap;
 }
 
+.character-name-tools {
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.character-name-display {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.character-name-input {
+    width: auto;
+    min-width: 1ch;
+    max-width: 100%;
+    padding: 0.08rem 0.2rem;
+    margin: -0.08rem -0.2rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+.character-name-input[readonly] {
+    cursor: default;
+}
+
+.character-name-input:not([readonly]) {
+    border-bottom-color: var(--card-accent);
+    background: color-mix(in srgb, var(--card-accent) 8%, transparent);
+    cursor: text;
+}
+
+.character-name-input.name-edit-invalid {
+    border-bottom-color: #a52f45;
+    background: rgba(165, 47, 69, 0.08);
+}
+
+.name-edit-button {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--card-accent);
+    cursor: pointer;
+    font-family: "Generator Sans", sans-serif;
+    font-size: 0.76rem;
+    line-height: 1;
+    opacity: 0.52;
+    transition: opacity 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+
+.name-edit-button:hover,
+.name-edit-button:focus-visible,
+.name-edit-button[aria-pressed="true"] {
+    opacity: 1;
+    border-color: rgba(103, 52, 133, 0.35);
+    background: rgba(103, 52, 133, 0.09);
+    outline: none;
+}
+
 .character-card-actions {
     display: contents;
 }
@@ -418,9 +494,69 @@ body {
     position: relative;
 }
 
-.rerollable-item,
-.rerollable-section {
+.reroll-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.card-lock-toggle {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    margin-left: 0.35rem;
+    padding: 0;
+    border: 1px solid var(--generator-line);
+    border-radius: 3px;
+    background: var(--generator-paper);
+    color: var(--generator-muted);
     cursor: pointer;
+    font: inherit;
+    line-height: 0;
+}
+
+.card-lock-toggle:hover,
+.card-lock-toggle:focus-visible,
+.card-lock-toggle[aria-pressed="true"] {
+    border-color: var(--card-accent);
+    color: var(--card-accent);
+    outline: none;
+}
+
+.card-lock-toggle[aria-pressed="true"] {
+    background: var(--card-accent);
+    color: var(--generator-paper);
+}
+
+.card-lock-icon {
+    width: 10px;
+    height: 8px;
+    position: relative;
+    margin-top: 4px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.card-lock-icon::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border: 1.5px solid currentColor;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.card-lock-toggle[aria-pressed="false"] .card-lock-icon::before {
+    left: 3px;
+    transform: rotate(24deg);
+    transform-origin: left bottom;
 }
 
 .copy-image-button,
@@ -965,7 +1101,8 @@ body {
     box-shadow: 0 0 0 3px rgba(103, 52, 133, 0.3), 0 4px 15px rgba(37, 35, 41, 0.08);
 }
 
-.character-card.rerolled {
+.character-card.rerolled,
+.character-card.name-updated {
     animation: reroll-flash 420ms ease-out;
 }
 
@@ -1090,6 +1227,14 @@ body {
         cursor: pointer;
         font: inherit;
         line-height: 0;
+    }
+
+    .card-lock-toggle {
+        margin-left: auto;
+    }
+
+    .card-actions-menu-toggle {
+        margin-left: 0.35rem;
     }
 
     .card-actions-menu-icon {

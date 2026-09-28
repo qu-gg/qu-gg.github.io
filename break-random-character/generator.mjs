@@ -572,11 +572,17 @@ function resolveNestedChoices(data, calling, species, quirk, rank, streams) {
 }
 
 function rollDistinctHistory(data, homelandName, currentHistory, random) {
-    let history;
-    do {
-        history = chooseByRange(data.histories[homelandName], rollDie(20, random));
-    } while (history.name === currentHistory.name);
-    return history;
+    const currentName = currentHistory?.name;
+    const candidateRolls = (data.histories[homelandName] ?? [])
+        .filter((history) => history.name !== currentName)
+        .flatMap((history) => {
+            const [start, end] = history.range;
+            return Array.from({ length: end - start + 1 }, () => history);
+        });
+    if (!candidateRolls.length) {
+        throw new RangeError(`No distinct History available for ${homelandName}`);
+    }
+    return candidateRolls[rollDie(candidateRolls.length, random) - 1];
 }
 
 function resolveFinalSize(species, quirk) {
