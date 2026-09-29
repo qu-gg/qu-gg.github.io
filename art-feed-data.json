@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T12:03:01.291410Z",
+  "lastUpdated": "2026-09-29T00:05:08.796502Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,43 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mwlbkpo5ak23",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "How it started vs How it's going:",
+        "createdAt": "2026-09-28T12:05:21.313Z"
+      },
+      "indexedAt": "2026-09-28T12:05:24.558Z",
+      "replyCount": 2,
+      "repostCount": 9,
+      "likeCount": 112,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreifc73hv774srdkdz24pciuwz57mxhymmtwjkgvvypddsv5s4a7t7y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreifc73hv774srdkdz24pciuwz57mxhymmtwjkgvvypddsv5s4a7t7y",
+            "alt": "A screenshot of a conversation between me and Karly, where I aks if she wants to get her adventure in print."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibldund4coontm2a5bu5obqe2ybrcocrjhe2rl7tzyoafjchyinrm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibldund4coontm2a5bu5obqe2ybrcocrjhe2rl7tzyoafjchyinrm",
+            "alt": "A screenshot of a successful Kickstarter campaign."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:4a77bgi4bgvip2s557essret/app.bsky.feed.post/3mwjhjtffuk2k",
       "source": "bluesky",
@@ -724,38 +761,6 @@
         "title": "Shelfie #002 - Seraphina from Dice Exploder",
         "description": "Seraphina shares some beautiful stories about her wide-ranging RPG collection.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ivcv2f73hr7rmo2cqonhmrg6/bafkreidhmrsylhuyrasjoic5qse2m5uqbyut5szbks744zurdpghgd56wa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jinn7h2sloy3d66denprqnln/app.bsky.feed.post/3mvt7jp6tvk2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "sandroad.moe",
-        "displayName": "Sandro AD \ud83d\udd1c PAX Unplugged",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreib2dz3bkwsdj2x5qwkekgnvxicn5g5pg6gesfkioavc5wvthi232e"
-      },
-      "record": {
-        "text": "I think my writing for Beneath the Floating World hit another high water mark...",
-        "createdAt": "2026-09-18T22:25:06.045Z"
-      },
-      "indexedAt": "2026-09-18T22:25:09.566Z",
-      "replyCount": 2,
-      "repostCount": 4,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreigtavuhsfg6s5iypr5ztqih652l5nlk65d6wdpvwuiifnvj5v4cea",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jinn7h2sloy3d66denprqnln/bafkreigtavuhsfg6s5iypr5ztqih652l5nlk65d6wdpvwuiifnvj5v4cea",
-            "alt": "Description for the stand the Big Chili and the Chili Hawker Modisara"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2937,7 +2942,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2344,
-      "likeCount": 11831,
+      "likeCount": 11830,
       "embed": {
         "type": "images",
         "images": [
@@ -3273,7 +3278,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2647,
-      "likeCount": 15611,
+      "likeCount": 15610,
       "embed": {
         "type": "images",
         "images": [
