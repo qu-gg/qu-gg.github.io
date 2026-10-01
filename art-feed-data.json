@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T12:02:59.639592Z",
+  "lastUpdated": "2026-10-01T00:05:27.818056Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:elgujk7ymggw3my7vuweup4w/app.bsky.feed.post/3mwqsj7d3js25",
+      "source": "bluesky",
+      "author": {
+        "handle": "explorersdesign.bsky.social",
+        "displayName": "Clayton",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:elgujk7ymggw3my7vuweup4w/bafkreigkihquequgckubvjb5vazhl2unuoaf6de653kufdsq47flovlp3e"
+      },
+      "record": {
+        "text": "I\u2019ve been thinking a lot more about freelance design and how mystifying it is to most people, especially if you came through the proverbial back door with rpgs.\n\nToday, I\u2019m thinking about the three most popular pricing models and my thoughts on them. \n\nwww.explorersdesign.com/working-desi...",
+        "createdAt": "2026-09-30T16:52:02.917Z"
+      },
+      "indexedAt": "2026-09-30T16:52:05.680Z",
+      "replyCount": 4,
+      "repostCount": 30,
+      "likeCount": 65,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.explorersdesign.com/working-designer-he-pricing-101/",
+        "title": "Design Hireling: Pricing Models",
+        "description": "3 pricing models for freelance graphic designers and artists in rpgs.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:elgujk7ymggw3my7vuweup4w/bafkreiduc7nrxzlmgeex4wgfe66yvu4ghqeadzr2rhnpdd22caeyqo7lya"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7ganmttsjl2igu7qyhqas4mk/app.bsky.feed.post/3mwqhaaxvw22h",
+      "source": "bluesky",
+      "author": {
+        "handle": "bradkerr.net",
+        "displayName": "Brad Kerr",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreifb7dsuyivvylwgyrem7h6q6ceb4vouy3umt6w3lwulktsghvpvii"
+      },
+      "record": {
+        "text": "I have a new RPG adventure for OSE on my Patreon today. \"The Shore's Hungry Mouth.\" Cover art by Andrew Walter! www.patreon.com/BradKerr/pos...",
+        "createdAt": "2026-09-30T13:30:11.500Z"
+      },
+      "indexedAt": "2026-09-30T13:30:14.365Z",
+      "replyCount": 0,
+      "repostCount": 12,
+      "likeCount": 50,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreiellz4vrkewnrgqnc4ydo5dkueb4qpmcumbwap4pqmczgkt2tpb6m",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7ganmttsjl2igu7qyhqas4mk/bafkreiellz4vrkewnrgqnc4ydo5dkueb4qpmcumbwap4pqmczgkt2tpb6m",
+            "alt": "Cover of a book. A creepy octopus thing is inside a treasure chest and a bottle and a helmet and a sword. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:beg4tjsj2dqwjlxqhrnbavg7/app.bsky.feed.post/3mwq5qpepe223",
       "source": "bluesky",
       "author": {
@@ -65,8 +126,8 @@
       },
       "indexedAt": "2026-09-30T10:40:28.756Z",
       "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 8,
+      "repostCount": 10,
+      "likeCount": 16,
       "embed": {
         "type": "external",
         "uri": "https://rpgtrader.com/products/9754/journeymon-monster-trainer-roleplaying",
@@ -94,8 +155,8 @@
       },
       "indexedAt": "2026-09-29T18:55:40.564Z",
       "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 23,
+      "repostCount": 16,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/oakleaf-insignia/in-the-end-a-solo-journaling-duology",
@@ -122,9 +183,9 @@
         "createdAt": "2026-09-29T18:06:21.178Z"
       },
       "indexedAt": "2026-09-29T18:06:36.968Z",
-      "replyCount": 8,
-      "repostCount": 30,
-      "likeCount": 94,
+      "replyCount": 12,
+      "repostCount": 39,
+      "likeCount": 129,
       "embed": {
         "type": "images",
         "images": [
@@ -156,7 +217,7 @@
       "indexedAt": "2026-09-29T13:21:07.466Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "external",
         "uri": "https://joel-happyhil.itch.io/full-metal-spirits-conquest",
@@ -292,8 +353,8 @@
       },
       "indexedAt": "2026-09-28T23:18:04.162Z",
       "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 13,
+      "repostCount": 5,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -340,7 +401,7 @@
       "indexedAt": "2026-09-28T12:05:24.558Z",
       "replyCount": 2,
       "repostCount": 9,
-      "likeCount": 116,
+      "likeCount": 117,
       "embed": {
         "type": "images",
         "images": [
@@ -474,35 +535,6 @@
         "title": "A Sliver of Evidence",
         "description": "A werewolf-inspired adventure for Cairn 2e, written & illustrated by Karly Andersen.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreiddlcnxkgm5g5eoafo2y46ymargwwonoh522ruoyuh734yf7kj2rm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:sgwjzmbtjckme2myaa5vsn4g/app.bsky.feed.post/3mwdqoam3d22h",
-      "source": "bluesky",
-      "author": {
-        "handle": "ghostofcinders.bsky.social",
-        "displayName": "Michele, a Ghost of Cinders",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgwjzmbtjckme2myaa5vsn4g/bafkreie4ftegr52lno5k7mltchajtavh46wkji3r7iytaf2hdbefnqxyzy"
-      },
-      "record": {
-        "text": "I'll do my own post with link:\n\nAt the Gates is a brand new TTRPG inspired by JRPGs such as Final Fantasy, Fire Emblem, Tales Of, Zelda and much more\n\nCreated by the always powerful @impernious.bsky.social and a badass team, it's cool, sleek, and original alike. A badass game.\n\n\ud83d\udd04RT are appreciated \ud83d\udd04",
-        "createdAt": "2026-09-25T12:14:27.957Z"
-      },
-      "indexedAt": "2026-09-25T12:14:28.458Z",
-      "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 13,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.drivethrurpg.com/en/product/578315/at-the-gates-core-rulebook?affiliate_id=1997626",
-        "title": "DriveThruRPG - The Largest RPG Download Store!",
-        "description": "Your one-stop online shop for new and vintage RPG products from the top publishers, delivered fresh to your desktop in electronic format.",
-        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -741,106 +773,6 @@
         "title": "Breaking the Wave",
         "description": "One of the big non-rules changes I\u2019ve made to Intergalactic , just added in the latest update , is a downgrade of galactic communication. So...",
         "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:bar5qnofxhtdg66ftq536bxu/app.bsky.feed.post/3mw4jsr4tts24",
-      "source": "bluesky",
-      "author": {
-        "handle": "lunarpunk.games",
-        "displayName": "Lunarpunk Games",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bar5qnofxhtdg66ftq536bxu/bafkreid7ajgu77nzbwbq6m3h6ybozwzo45nr4vhwmwu4v2m4k5zg76th2q"
-      },
-      "record": {
-        "text": "The Color Jam Kickstarter is now live! \ud83d\udd8d\ufe0f\n\nWe're very excited by the design work Gene Koo and Joe Kell put into this game, along with the beautiful art by Erin Laue, and are honored we get to share it with you. \n\nWe can't wait to see the incredible art you make through this cozy, puzzle-y game.",
-        "createdAt": "2026-09-22T15:23:05.140Z"
-      },
-      "indexedAt": "2026-09-22T15:23:07.366Z",
-      "replyCount": 1,
-      "repostCount": 14,
-      "likeCount": 23,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/lunarpunkgames/colorjam",
-        "title": "Color Jam: A Print-and-Puzzle Coloring Game",
-        "description": "Enjoy cozy and clever coloring at your next game night. Craft the story of each hand-illustrated picture with creative color choices!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bar5qnofxhtdg66ftq536bxu/bafkreidqw5rkh3tbj4tzibwjykgun64zjt7mri3secqvgrbawqkhn7rofy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:27cuveizangbypmwn7fkc4dw/app.bsky.feed.post/3mw4g6k7f222a",
-      "source": "bluesky",
-      "author": {
-        "handle": "elchupalabras.itch.io",
-        "displayName": "BUY KOKOT\u00d6NA \ud83e\udec0| EC \ud83d\udc80 Artistic Spectral Disaster",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreia23wra2ea6cqgpwyoxu7yygyohhsum3benkmgrpdbpcgsdobqmfy"
-      },
-      "record": {
-        "text": "The flesh that covers your bones is a stolen gift...\n\n#KOKOT\u00d6NA, A grim-to-nobledark #TTRPG inspired by precolonial Mesoamerica and compatible with #M\u00d6RKBORG is now available!\n\nCheck out it's launch trailer below and get it today on elchupalabras.itch.io/kokotona-eng...\n\n#RPGLatAm",
-        "createdAt": "2026-09-22T14:18:05.569Z"
-      },
-      "indexedAt": "2026-09-22T14:18:07.157Z",
-      "replyCount": 5,
-      "repostCount": 33,
-      "likeCount": 49,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.youtube.com/watch?v=d1nciO7mczA",
-        "title": "KOKOT\u00d6NA - A grim-to-nobledark RPG inspired by precolonial Mesoamerica (Trailer)",
-        "description": "YouTube video by El Chupalabras",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:27cuveizangbypmwn7fkc4dw/bafkreieivaxs24qhp4gofwwzbhojrd2qcgmareufltr3i7xhvptz3b4xhi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3mw45u23zqk2v",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.bsky.social",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "Ea-n\u0101\u1e63ir Must Die! has a release date: 13 October 2026!\n\nWe are collaborating with @plusoneexp.bsky.social and @davidblandyrpgs.bsky.social Copy/Paste Co-op for a full release on both digital and physical.\n\nAn OSR (Mark of the Odd) adventure for 3\u20135 players set in Ancient Mesopotamia!\n\n#ttrpg #osr",
-        "createdAt": "2026-09-22T11:49:03.197Z"
-      },
-      "indexedAt": "2026-09-22T11:49:14.865Z",
-      "replyCount": 6,
-      "repostCount": 39,
-      "likeCount": 84,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigxhtwq5df43n24pk5b64okfid5gq3koq42tajinwmxbntq5v323a",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigxhtwq5df43n24pk5b64okfid5gq3koq42tajinwmxbntq5v323a",
-            "alt": "A copper plate wanted poster of Ea-n\u0101\u1e63ir that looks like the meme. And an illustration of Ea-n\u0101\u1e63ir by Citaaticat."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiadersecp6mdqvqsicrseb6wmdha4j6qfgnxzpvrxckacyoly36ai",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiadersecp6mdqvqsicrseb6wmdha4j6qfgnxzpvrxckacyoly36ai",
-            "alt": "Ea-n\u0101\u1e63ir is a copper merchant from Ur.\nEa-n\u0101\u1e63ir sold bad copper.\nEa-n\u0101\u1e63ir received many complaint tablets.\nEa-n\u0101\u1e63ir made many enemies.\nEa-n\u0101\u1e63ir Must Die!"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiemvvyofwkfqtnafr4jtoo54zvglviohv4v3rftx44mvdofzydhum",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiemvvyofwkfqtnafr4jtoo54zvglviohv4v3rftx44mvdofzydhum",
-            "alt": "Cover of Ea-n\u0101\u1e63ir Must Die!\n\nComing soon on 13 October 2026 from Copy/Paste Co-op UK & Plus One Exp US"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3430,7 +3362,7 @@
       "indexedAt": "2024-10-22T13:23:13.427Z",
       "replyCount": 15,
       "repostCount": 453,
-      "likeCount": 2431,
+      "likeCount": 2432,
       "embed": {
         "type": "images",
         "images": [
