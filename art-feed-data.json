@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T13:26:36.916673Z",
+  "lastUpdated": "2026-10-04T00:49:56.831042Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,72 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:tlgtg34jl3dqb6kjvh64lv4k/app.bsky.feed.post/3mwybtt6zuk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "barilleon.com",
+        "displayName": "Leon Barillaro",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tlgtg34jl3dqb6kjvh64lv4k/bafkreicr6zzmgop6dlllgd5snt5qelf3emq4cfycs4zsqamehsmvs73qou"
+      },
+      "record": {
+        "text": "Tacoma Honk Fest today!! \ud83c\udfb7\ud83c\udfba\ud83e\ude8a\ud83e\udd41\n\nIt has been such a long week/month/life I really need to just make some joyful noise with my friends. \n\nIf you\u2019re in the Seattle area and looking for something to do today, come see! \n\ntacomahonk.org",
+        "createdAt": "2026-10-03T16:15:03.602Z"
+      },
+      "indexedAt": "2026-10-03T16:15:05.469Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://tacomahonk.org",
+        "title": "Tacoma HONK! Fest",
+        "description": "",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tlgtg34jl3dqb6kjvh64lv4k/bafkreigvcjqjnu5dreqrkjuwtp467v7hynbsa6lsufkzimatfuxu5a5piq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:fovaxznxa3qizw2eovyahkad/app.bsky.feed.post/3mwybrlwwy22h",
+      "source": "bluesky",
+      "author": {
+        "handle": "perplexingruins.bsky.social",
+        "displayName": "Perplexing Ruins",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreihvmfng2oypivekt2niz26p6pw453kcsoapvomb36mo56ynrzpqay"
+      },
+      "record": {
+        "text": "Have a free 10 room island adventure up at the itch page! Have a download, run your table\nperplexingruins.itch.io/isle-of-the-...",
+        "createdAt": "2026-10-03T16:13:48.871Z"
+      },
+      "indexedAt": "2026-10-03T16:13:50.870Z",
+      "replyCount": 0,
+      "repostCount": 6,
+      "likeCount": 17,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreig7tm375yzm5ol63lqmou6j3gg4w6rodavjr7u4lcwpbfnw2xt4oq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreig7tm375yzm5ol63lqmou6j3gg4w6rodavjr7u4lcwpbfnw2xt4oq",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreic2uty22eudqrcza34zfda225sqlif3rkmofollv3kyh3zrm3emq4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fovaxznxa3qizw2eovyahkad/bafkreic2uty22eudqrcza34zfda225sqlif3rkmofollv3kyh3zrm3emq4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:27cuveizangbypmwn7fkc4dw/app.bsky.feed.post/3mwv4gcutqs2f",
       "source": "bluesky",
@@ -123,7 +189,7 @@
       },
       "indexedAt": "2026-10-01T14:20:52.563Z",
       "replyCount": 2,
-      "repostCount": 12,
+      "repostCount": 13,
       "likeCount": 15,
       "embed": {
         "type": "external",
@@ -153,7 +219,7 @@
       "indexedAt": "2026-10-01T13:09:57.658Z",
       "replyCount": 0,
       "repostCount": 22,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/miriamrobern/portal-witch?ref=abaahw&token=4fa1bbc5",
@@ -391,7 +457,7 @@
       "indexedAt": "2026-09-29T18:55:40.564Z",
       "replyCount": 1,
       "repostCount": 17,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/oakleaf-insignia/in-the-end-a-solo-journaling-duology",
@@ -709,99 +775,6 @@
         "title": "Another Kickstarter! And it's all our fault! | Between Two Cairns",
         "description": "Hello patrons! It's your old buddy Yochai here. I'm launching another Kickstarter today on behalf of Cairn Press: A Sliver of Evidence. But",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibvxhcpidnbalx76cxf7sgrv5nvd6gdrsdfyjgndav74dmriluzwq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:r3hqasi6ieev262wffln35nw/app.bsky.feed.post/3mwe7zqdark2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "arcanejellycult.itch.io",
-        "displayName": "arjecu but a vampire",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreihya5ylbbshkljg2zd53eeglfbmdcbbvlvnfphjbeazlbw6ggqfpq"
-      },
-      "record": {
-        "text": "COMING SOON...\n\nStorm CASTLE M\u00d6RK & defend LJUSSTADT from COUNT VANIA'S rage before TIME RUNS OUT!\n\nVANIA is vampire horror meets arcade action by way of M\u00d6RK BORG. VANIA streamlines M\u00d6RK BORG's simple rules with a focus on quick play, short campaigns, & one shots.\n\narcanejellycult.itch.io/vania",
-        "createdAt": "2026-09-25T16:49:19.656Z"
-      },
-      "indexedAt": "2026-09-25T16:49:21.173Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 6,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreifq67gteyh7yepty2tv7icd7gkhpdulnkafrdrq4vtjm3cmjbf46y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r3hqasi6ieev262wffln35nw/bafkreifq67gteyh7yepty2tv7icd7gkhpdulnkafrdrq4vtjm3cmjbf46y",
-            "alt": "Cover for VANIA, a \"Mork Borg Roleplaying Compatible\" game bearing the \"official quality seal\" of ARJECU. The cover looks like a classic NES game box, thick black borders and red header included.\n\nThe logo is inspired by the classic CASTLEVANIA logo, with the a stylized serif text in bright yellow, surrounded by a red and yellow stylized backer.\n\nIn contrasting and complementary colors (purple, green, blue, yellow, orange), a scene of a barbaric Vampire Killer wielding twin wooden stakes stands on a rocky hill overlooking Castle Mork."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ib7naxquxssnwmkbh7zvcauk/app.bsky.feed.post/3mwdz5yyiv22l",
-      "source": "bluesky",
-      "author": {
-        "handle": "cairnrpg.com",
-        "displayName": "warden",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreih7bke2lpqb6f6ehlckjmrcta4sta2yariry4sdjoxcbnnwlz5vvi"
-      },
-      "record": {
-        "text": "Cairn Press is VERY happy to announce our next kickstarter: A Sliver of Evidence by @karlyanddd.bsky.social.\n\nwww.kickstarter.com/projects/cai...",
-        "createdAt": "2026-09-25T14:46:26.780Z"
-      },
-      "indexedAt": "2026-09-25T14:46:28.759Z",
-      "replyCount": 1,
-      "repostCount": 35,
-      "likeCount": 120,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence",
-        "title": "A Sliver of Evidence",
-        "description": "A werewolf-inspired adventure for Cairn 2e, written & illustrated by Karly Andersen.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ib7naxquxssnwmkbh7zvcauk/bafkreiddlcnxkgm5g5eoafo2y46ymargwwonoh522ruoyuh734yf7kj2rm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:muzjhmsedtz3yytindxdv46f/app.bsky.feed.post/3mwcbujfzw22x",
-      "source": "bluesky",
-      "author": {
-        "handle": "queerwizard.co.uk",
-        "displayName": "Ripley \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreigz24hmlrkvakkjz7chcxtaki2y7kbwirvm26oe4lrxlsnikcsaum"
-      },
-      "record": {
-        "text": "Busy busy busy drawing dungeons",
-        "createdAt": "2026-09-24T22:16:52.650Z"
-      },
-      "indexedAt": "2026-09-24T22:16:57.166Z",
-      "replyCount": 7,
-      "repostCount": 15,
-      "likeCount": 81,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiabncojecvqto5wd75gae43wekxdym5ex5kgycyutxgdkm2o2kknu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:muzjhmsedtz3yytindxdv46f/bafkreiabncojecvqto5wd75gae43wekxdym5ex5kgycyutxgdkm2o2kknu",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1750,7 +1723,7 @@
       },
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
-      "repostCount": 1442,
+      "repostCount": 1441,
       "likeCount": 6305,
       "embed": {
         "type": "images",
@@ -1846,8 +1819,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 615,
-      "likeCount": 2902,
+      "repostCount": 616,
+      "likeCount": 2903,
       "embed": {
         "type": "images",
         "images": [
@@ -2256,7 +2229,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1244,
-      "likeCount": 6540,
+      "likeCount": 6538,
       "embed": {
         "type": "images",
         "images": [
@@ -3214,7 +3187,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1875,
-      "likeCount": 8950,
+      "likeCount": 8949,
       "embed": {
         "type": "images",
         "images": [
@@ -3269,8 +3242,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2646,
-      "likeCount": 15605,
+      "repostCount": 2645,
+      "likeCount": 15606,
       "embed": {
         "type": "images",
         "images": [
