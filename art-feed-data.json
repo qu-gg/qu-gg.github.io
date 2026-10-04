@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04T00:49:56.831042Z",
+  "lastUpdated": "2026-10-04T13:43:05.384842Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mx2dhjr5jc2w",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "Searchable scans of public domain art!\ninsideoutlibrary.com",
+        "createdAt": "2026-10-04T11:49:18.018Z"
+      },
+      "indexedAt": "2026-10-04T11:49:19.764Z",
+      "replyCount": 0,
+      "repostCount": 29,
+      "likeCount": 60,
+      "embed": {
+        "type": "external",
+        "uri": "https://insideoutlibrary.com/",
+        "title": "Inside Out Library",
+        "description": "Orbital diagrams, suits of armour, pulp sci-fi covers and wood type, from the pages of public-domain books. Free to use for anything.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreifvr753stmucm5ubysnfwqirhsziy6pwcyda7agcucidosemwjgtq"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:tlgtg34jl3dqb6kjvh64lv4k/app.bsky.feed.post/3mwybtt6zuk2o",
       "source": "bluesky",
@@ -306,7 +335,7 @@
       "indexedAt": "2026-10-01T06:12:33.956Z",
       "replyCount": 2,
       "repostCount": 8,
-      "likeCount": 37,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -746,35 +775,6 @@
         "title": "Beneath the Floating World by SandroAD",
         "description": "psychedelic zenpunk exorcism",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4a77bgi4bgvip2s557essret/bafkreidnu4gcjmdf2j4sug7qupifegtyjlxklzcijpuwhm424ghw6m5piy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mwerncklkk2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "I wrote a little post about how this new adventure came to be, and how my little OSR show played a small part.\n\nwww.patreon.com/betweentwoca...",
-        "createdAt": "2026-09-25T22:04:29.930Z"
-      },
-      "indexedAt": "2026-09-25T22:04:31.569Z",
-      "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 37,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.patreon.com/betweentwocairns/posts/another-and-its-170577146?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
-        "title": "Another Kickstarter! And it's all our fault! | Between Two Cairns",
-        "description": "Hello patrons! It's your old buddy Yochai here. I'm launching another Kickstarter today on behalf of Cairn Press: A Sliver of Evidence. But",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibvxhcpidnbalx76cxf7sgrv5nvd6gdrsdfyjgndav74dmriluzwq"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1877,7 +1877,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3888,
+      "likeCount": 3887,
       "embed": {
         "type": "images",
         "images": [
