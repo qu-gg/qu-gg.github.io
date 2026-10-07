@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T00:05:01.093021Z",
+  "lastUpdated": "2026-10-07T12:03:12.339508Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,125 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mxbjmmx2l22j",
+      "source": "bluesky",
+      "author": {
+        "handle": "glitzydemon.itch.io",
+        "displayName": "Fabian Blake(he/him)Rose tint my world",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreigac4kdewfskbofxdxcbk7dzfeaunv27x3o4seadj76h7ul4vu7ii"
+      },
+      "record": {
+        "text": "Y'all are amazing, we're over half way there to paying for a basic cremation that family can attend \ud83d\ude4f\ud83d\udc96 (I'm sorry I've been quiet, we are currently losing my Mum as well, she's on end of life care\ud83d\udc94)\n\ud83d\ude4fReally appreciate all the shares and support so much\ud83d\ude4f\n\n itch.io/b/3922/mutua...",
+        "createdAt": "2026-10-07T08:28:09.748Z"
+      },
+      "indexedAt": "2026-10-07T08:28:11.856Z",
+      "replyCount": 1,
+      "repostCount": 15,
+      "likeCount": 14,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/b/3922/mutual-aid-for-grahams-funeral-costs",
+        "title": "Mutual Aid for Graham's Funeral Costs by Fabian Blake and 19 others",
+        "description": "Mutual Aid for Graham's Funeral Costs: 75 items for $5.00",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:yiudyecbo4kqdboj6tufqiyl/app.bsky.feed.post/3mxawx3kivs2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "jasonanarchy.bsky.social",
+        "displayName": "Jason Anarchy \ud83d\udd1c Auckland Armageddon Booth C99",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreicrmg6bh4mqxamtyfrqe42qwkjq2skcgjezrnpdo4gc2vh2bvjque"
+      },
+      "record": {
+        "text": "Does someone want to be follower 800 for the game I'm making with @fieldexplores.bsky.social?\n\nIf yes, follow here: gamefound.com/en/projects/...",
+        "createdAt": "2026-10-07T02:53:59.504Z"
+      },
+      "indexedAt": "2026-10-07T02:54:05.763Z",
+      "replyCount": 2,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreih7sbr547zklqktcukeknap4t7zcbzwx4xvqvn2mv3hwwkghkhgqa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreih7sbr547zklqktcukeknap4t7zcbzwx4xvqvn2mv3hwwkghkhgqa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:j5nsqrjwfsyba2rj5hpgv7vc/app.bsky.feed.post/3mxaw3k7iss2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "megaflare0.bsky.social",
+        "displayName": "Mega Flare",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j5nsqrjwfsyba2rj5hpgv7vc/bafkreigq4b7vfxdkd2wbb3x7pw3fzpfhqaowktzfvoze2flfogxxcrsghu"
+      },
+      "record": {
+        "text": "Did a small hotfix of Dire Hit some clarity and buffs. Have some more community copies too why not. \n\n#nsr #osr \n\nmegaflare0.itch.io/dire-hit-1st...",
+        "createdAt": "2026-10-07T02:38:35.353Z"
+      },
+      "indexedAt": "2026-10-07T02:38:35.869Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://megaflare0.itch.io/dire-hit-1st-havoc",
+        "title": "Dire Hit: 1st Havoc by megaflare0",
+        "description": "A Tactical Fighting Game TTRPG",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mxapbfysgs2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "gamefound.com/en/projects/...",
+        "createdAt": "2026-10-07T00:36:36.080Z"
+      },
+      "indexedAt": "2026-10-07T00:36:36.962Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 2,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
+        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiai5xrn4dakdvty7eijnf5qrkanxhy63e5tp2pgwvj6dqrbzfn4ti"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:oageechq2gcpkkqcduwclsnd/app.bsky.feed.post/3mx7pr3faoc2w",
       "source": "bluesky",
       "author": {
@@ -66,7 +185,7 @@
       "indexedAt": "2026-10-06T15:12:45.273Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 25,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -610,9 +729,9 @@
         "createdAt": "2026-10-01T06:12:32.018Z"
       },
       "indexedAt": "2026-10-01T06:12:33.956Z",
-      "replyCount": 2,
+      "replyCount": 4,
       "repostCount": 9,
-      "likeCount": 43,
+      "likeCount": 46,
       "embed": {
         "type": "images",
         "images": [
@@ -749,67 +868,6 @@
       }
     },
     {
-      "uri": "at://did:plc:5q4pt2jj34njj3dafwtvdggi/app.bsky.feed.post/3mwoixbvk5223",
-      "source": "bluesky",
-      "author": {
-        "handle": "oakleafinsignia.games",
-        "displayName": "Sadie is \ud83c\udfb2 Laying It All on the Line \ud83c\udfb2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5q4pt2jj34njj3dafwtvdggi/bafkreib23c42iseup7oiztjdwonbd6qj7x5z4e5q55ej3pwviymf26pstm"
-      },
-      "record": {
-        "text": "In The End, a solo journaling duology will be crowdfunding through @backerkit.com !\n\nwww.backerkit.com/c/projects/o...",
-        "createdAt": "2026-09-29T18:55:38.493Z"
-      },
-      "indexedAt": "2026-09-29T18:55:40.564Z",
-      "replyCount": 1,
-      "repostCount": 17,
-      "likeCount": 28,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/oakleaf-insignia/in-the-end-a-solo-journaling-duology",
-        "title": "In the End: A Solo Journaling Duology",
-        "description": "Get notified when In the End: A Solo Journaling Duology launches on BackerKit!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5q4pt2jj34njj3dafwtvdggi/bafkreicv4vhbax5nuinueb3dqf2qsbpwf2l4bupefjiww6rptet4vbq57u"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:455zzwe5x4gpir4xigv5oti3/app.bsky.feed.post/3mwog75lk522f",
-      "source": "bluesky",
-      "author": {
-        "handle": "mockman.bsky.social",
-        "displayName": "Jason Bradley Thompson",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:455zzwe5x4gpir4xigv5oti3/bafkreif6fodjrtssgjtmyeyhehc5qrf6wo34hh5fxtrspapmm2cvz72zv4"
-      },
-      "record": {
-        "text": "Hey everyone! I'm so excited to announce this! If you like the D&D 'walkthrough maps' I've done over the years, I'm proud to present my new book... DUNGEONS! ILLUSTRATED MAPS OF CLASSIC DUNGEONS & DRAGONS ADVENTURES, coming from Ten Speed Press on April 27, 2027!\n\n(1/4) #dnd #ttrpg",
-        "createdAt": "2026-09-29T18:06:21.178Z"
-      },
-      "indexedAt": "2026-09-29T18:06:36.968Z",
-      "replyCount": 12,
-      "repostCount": 39,
-      "likeCount": 134,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:455zzwe5x4gpir4xigv5oti3/bafkreifq5umr4itbatilyeoutsanri5qzu6xilj7pewlkzi6livf466ba4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:455zzwe5x4gpir4xigv5oti3/bafkreifq5umr4itbatilyeoutsanri5qzu6xilj7pewlkzi6livf466ba4",
-            "alt": "\"Dungeons!\" book cover showing the exterior of the Tomb of Horrors, in a nighttime swamp, surrounded by red-eyed monsters. A group of stick-figure adventurers stands with a lantern preparing to enter the tomb"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/yA4D39",
       "source": "artstation",
       "author": {
@@ -887,53 +945,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/yA4D39"
-    },
-    {
-      "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mwmh5lrvxs24",
-      "source": "bluesky",
-      "author": {
-        "handle": "tabletopbookshelf.com",
-        "displayName": "Tabletop Bookshelf\ud83d\udd1cGamehole Con",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigtvrqnzcuuyawfs7gcuebyrjhaqoddhtuceeuz3wwx2gwloqs63e"
-      },
-      "record": {
-        "text": "NEW: The world of Cloudbreaker Alliance is populated by a colorful array of sentient lifeforms, from Orcs to Elves, Onis & Faunalians. The newly discovered humans form a minority among the ever-expanding registry of lifeforms, in this imaginative game & setting by C. J. Leung",
-        "createdAt": "2026-09-28T23:18:03.188Z"
-      },
-      "indexedAt": "2026-09-28T23:18:04.162Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 16,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreihy2g45owznqh4drvkrel73ssfy3ouq2ckexqhpzvzuykgcpqo5ze",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreihy2g45owznqh4drvkrel73ssfy3ouq2ckexqhpzvzuykgcpqo5ze",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreid6ptorsovujo35v4y7gtrbvkjkln73nlr4f62oedx7bxdiaqfnia",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreid6ptorsovujo35v4y7gtrbvkjkln73nlr4f62oedx7bxdiaqfnia",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreic73xvrj4e65yg5fjzkdzaba4w2gy7yevvjateaya6uvbcdmsonki",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreic73xvrj4e65yg5fjzkdzaba4w2gy7yevvjateaya6uvbcdmsonki",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigbmyfym6lprvwcg2cd53b66pkaqyxwe3vvx2rl5gtyjukqsb4vfa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dxlpsmirvrsrseht4bfbonbl/bafkreigbmyfym6lprvwcg2cd53b66pkaqyxwe3vvx2rl5gtyjukqsb4vfa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mv3xh3loic2k",
@@ -3340,7 +3351,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1874,
-      "likeCount": 8947,
+      "likeCount": 8946,
       "embed": {
         "type": "images",
         "images": [
