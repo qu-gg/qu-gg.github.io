@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T12:02:54.370115Z",
+  "lastUpdated": "2026-10-07T00:05:01.093021Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,75 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:oageechq2gcpkkqcduwclsnd/app.bsky.feed.post/3mx7pr3faoc2w",
+      "source": "bluesky",
+      "author": {
+        "handle": "avartwork.bsky.social",
+        "displayName": "Vandy: The Thing Forsaken By God",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreihxexh35gl4uqhv7jcz5xcv4faj4hdyuaxovdrzn7shwa7qq424dq"
+      },
+      "record": {
+        "text": "The kids books I did the art for wants your baby\u2019s first word to be something cool look \u201csnake\u201d or \u201cshark\u201d. \n\na.co/d/08la1Omi",
+        "createdAt": "2026-10-06T15:12:42.074Z"
+      },
+      "indexedAt": "2026-10-06T15:12:45.273Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 25,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiahdqkfnl6uu4wgauxf2hepvbl2mj3g3q6qdxoqyp2npcvjifq37y",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiahdqkfnl6uu4wgauxf2hepvbl2mj3g3q6qdxoqyp2npcvjifq37y",
+            "alt": "Adventure Ace: Valley of the Giant Snakes "
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiafiikaipt66ryf5fyfoll53dh64ijbg35vzhml5pnzpx7e6kvx3e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:oageechq2gcpkkqcduwclsnd/bafkreiafiikaipt66ryf5fyfoll53dh64ijbg35vzhml5pnzpx7e6kvx3e",
+            "alt": "Adventure Ace: Deep Sea Danger "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:67acdzswmethkst5oniz6gl2/app.bsky.feed.post/3mx7hypua7k2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "golden-achiever.bsky.social",
+        "displayName": "Golden Achiever",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreif2p5g3ejmu4un5fknfcraxukzdifl4ida623ap7sedvrah4dretm"
+      },
+      "record": {
+        "text": "Year 100 Million B.C. is coming to print!\nI'm also releasing a free adventure today. Links below!",
+        "createdAt": "2026-10-06T12:53:48.492Z"
+      },
+      "indexedAt": "2026-10-06T12:57:44.460Z",
+      "replyCount": 2,
+      "repostCount": 5,
+      "likeCount": 17,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreigi6vxbzjf5nwzzn3srqcoktqjzy2rsrisbvpsj7met5ncqhlvewa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreigi6vxbzjf5nwzzn3srqcoktqjzy2rsrisbvpsj7met5ncqhlvewa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mx5ys4lynk2w",
       "source": "bluesky",
       "author": {
@@ -65,14 +134,46 @@
       },
       "indexedAt": "2026-10-05T22:49:01.660Z",
       "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 9,
+      "repostCount": 9,
+      "likeCount": 17,
       "embed": {
         "type": "external",
         "uri": "https://joel-happyhil.itch.io/dawn/devlog/1692690/update-lionwing-errata",
         "title": "Update: Lionwing Errata",
         "description": "Sorry for the wait, but the lionwing prints are now on the way to be sent out before the end of the year, and because of that I've decided to put out the errataed file that I plan to use for that\u2026",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreicopxfozkxy74sj5mqcmwcgoxqj2zcd4wqkelkmvmjlqyet7lcd2e"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3mx5x2oy6bk2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "kywardkyoti.vtubers.social",
+        "displayName": "Kyward ~ Trash Dog",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigdmxdzig4clcgtcw37ytmaqezq7nrqlfilrdfkp6lsl2xbypoive"
+      },
+      "record": {
+        "text": "\ud83d\udfe3Sightings of the Backstreet Chimera\ud83d\udfe3\n\nStream Schedule for the week! Also will start streaming on @altstream.online as well! very excited to see what comes of it!\n\n\ud83d\udfe2 twitch.tv/kywardkyoti\n\ud83d\udd34 youtube.com/@KywardKyoti \n\ud83d\udfe0 altstream.online/kywardkyoti\n\ud83d\udd35 discord.gg/z7wyv9yPZX\n\n#vtuber | #vsky | #envtuber",
+        "createdAt": "2026-10-05T22:18:01.322Z"
+      },
+      "indexedAt": "2026-10-05T22:18:04.864Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 3,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiaqz34uuzgjmzwecfrlmbggjmuinphfyexubjgazttowphufqxafa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreiaqz34uuzgjmzwecfrlmbggjmuinphfyexubjgazttowphufqxafa",
+            "alt": "Kyward's stream schedule for the week of 10/5 to 10/11 \n\n\n* Tuesday Oct 6th, at 8pm EDT will be playing Signalis.\n* Wednesday Oct 7th, at 7pm EDT will be playing Slay the Spire 2.\n* Thursday Oct 8th, at 6pm EDT will be playing Eyes of Hellfire with Eldechii and the gang.\n* Friday Oct 9th, at 8pm EDT will be playing The Forest with Palu.\n* Saturday Oct 10th, at 6pm EDT will be running my False Promise Adventure!\n* Sunday Oct 11th, at 7pm EDT will be playing in the Gravemire Oneshot Himeutsugi is running!"
+          }
+        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -95,7 +196,7 @@
       "indexedAt": "2026-10-05T18:55:25.065Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 12,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -126,8 +227,8 @@
       },
       "indexedAt": "2026-10-05T18:00:05.166Z",
       "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 15,
+      "repostCount": 8,
+      "likeCount": 19,
       "embed": {
         "type": "images",
         "images": [
@@ -261,8 +362,8 @@
       "source": "bluesky",
       "author": {
         "handle": "barilleon.com",
-        "displayName": "Leon Barillaro",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tlgtg34jl3dqb6kjvh64lv4k/bafkreicr6zzmgop6dlllgd5snt5qelf3emq4cfycs4zsqamehsmvs73qou"
+        "displayName": "Leon Barillaro is UNIONIZING",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tlgtg34jl3dqb6kjvh64lv4k/bafkreiesgm47kzanoarn64agbyy6g4bdqjydxu6flxiwz6ohcxl26naao4"
       },
       "record": {
         "text": "Tacoma Honk Fest today!! \ud83c\udfb7\ud83c\udfba\ud83e\ude8a\ud83e\udd41\n\nIt has been such a long week/month/life I really need to just make some joyful noise with my friends. \n\nIf you\u2019re in the Seattle area and looking for something to do today, come see! \n\ntacomahonk.org",
@@ -709,35 +810,6 @@
       }
     },
     {
-      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mwnwb33h4j2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "joelhappyhil.bsky.social",
-        "displayName": "Joel Happyhil - read games!!!!!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
-      },
-      "record": {
-        "text": "You should buy my moba tabletop game even tho dragonkid didn't make a video about it, I promise it's just as good as the other games you guys buy from those videos.\njoel-happyhil.itch.io/full-metal-s...",
-        "createdAt": "2026-09-29T13:21:04.574Z"
-      },
-      "indexedAt": "2026-09-29T13:21:07.466Z",
-      "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 15,
-      "embed": {
-        "type": "external",
-        "uri": "https://joel-happyhil.itch.io/full-metal-spirits-conquest",
-        "title": "FULL-METAL SPIRITS: CONQUEST by Joel Happyhil",
-        "description": "A vulgar tabletop MOBA",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreianfqgtw2zj3z7ndrsfvgipl4dnazr4o3mi5rlfd6ihihzd5wpibm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/yA4D39",
       "source": "artstation",
       "author": {
@@ -815,35 +887,6 @@
       },
       "repostBy": null,
       "link": "https://www.artstation.com/artwork/yA4D39"
-    },
-    {
-      "uri": "at://did:plc:2c7qu5xu5l3dwmmzln24irnh/app.bsky.feed.post/3mwmkih5bus2e",
-      "source": "bluesky",
-      "author": {
-        "handle": "gruefodder.bsky.social",
-        "displayName": "Phil, Ziapelta Games",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2c7qu5xu5l3dwmmzln24irnh/bafkreid754kbv4lbsmmsm3u7bgx7gnb7dz3nemezdxank3ysd65f3l6ybm"
-      },
-      "record": {
-        "text": "Lavender Hack kickstarter is live here: www.kickstarter.com/projects/lav...\n\nIt's a short campaign, running for 10 days. Check it out for an interesting take on handling resources in fantasy exploration games!",
-        "createdAt": "2026-09-29T00:17:48.679Z"
-      },
-      "indexedAt": "2026-09-29T00:17:50.766Z",
-      "replyCount": 0,
-      "repostCount": 12,
-      "likeCount": 16,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/lavhack1/lavender-hack-rpg-grindcore-edition-book-1-core-rules",
-        "title": "Lavender Hack RPG: Grindcore Edition \u2014 Book #1 (Core Rules)",
-        "description": "You are not limited by your imagination. You are limited by crushing levels of debt.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2c7qu5xu5l3dwmmzln24irnh/bafkreig3p3baaz4jpji3cze2xnrpk5sija3nozvkpd44dvf2mdfdpyn6hi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:dxlpsmirvrsrseht4bfbonbl/app.bsky.feed.post/3mwmh5lrvxs24",
@@ -1929,8 +1972,8 @@
       },
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
-      "repostCount": 617,
-      "likeCount": 2907,
+      "repostCount": 616,
+      "likeCount": 2906,
       "embed": {
         "type": "images",
         "images": [
@@ -2338,8 +2381,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1243,
-      "likeCount": 6538,
+      "repostCount": 1242,
+      "likeCount": 6536,
       "embed": {
         "type": "images",
         "images": [
@@ -3102,7 +3145,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 542,
-      "likeCount": 3028,
+      "likeCount": 3027,
       "embed": {
         "type": "images",
         "images": [
@@ -3185,8 +3228,8 @@
       },
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
-      "repostCount": 455,
-      "likeCount": 2441,
+      "repostCount": 454,
+      "likeCount": 2440,
       "embed": {
         "type": "images",
         "images": [
@@ -3296,8 +3339,8 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
-      "repostCount": 1875,
-      "likeCount": 8949,
+      "repostCount": 1874,
+      "likeCount": 8947,
       "embed": {
         "type": "images",
         "images": [
@@ -3352,8 +3395,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2647,
-      "likeCount": 15608,
+      "repostCount": 2646,
+      "likeCount": 15607,
       "embed": {
         "type": "images",
         "images": [
