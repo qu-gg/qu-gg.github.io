@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T12:02:44.606455Z",
+  "lastUpdated": "2026-10-09T00:04:53.924529Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,34 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mxeo3pqqsk2e",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "You know, sometimes I do make myself laugh here and again.",
+        "createdAt": "2026-10-08T14:26:10.186Z"
+      },
+      "indexedAt": "2026-10-08T14:26:12.061Z",
+      "replyCount": 3,
+      "repostCount": 2,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiefhgoeut6ottaecaudaq4kjzmz6i24njx4i3icj2ruv5cxobny5i",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiefhgoeut6ottaecaudaq4kjzmz6i24njx4i3icj2ruv5cxobny5i",
+            "alt": "A follower entry for Acorn Aggro, an attempted tough guy whose trying to deny that he's very small"
+          }
+        ]
+      },
+      "repostBy": null
+    },
     {
       "uri": "at://did:plc:3yggal4oooau2uk5ty52j2c7/app.bsky.feed.post/3mxcwrh7s3c26",
       "source": "bluesky",
@@ -141,8 +169,8 @@
       },
       "indexedAt": "2026-10-07T08:28:11.856Z",
       "replyCount": 1,
-      "repostCount": 18,
-      "likeCount": 21,
+      "repostCount": 19,
+      "likeCount": 22,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3922/mutual-aid-for-grahams-funeral-costs",
@@ -537,8 +565,8 @@
       },
       "indexedAt": "2026-10-04T11:49:19.764Z",
       "replyCount": 1,
-      "repostCount": 70,
-      "likeCount": 142,
+      "repostCount": 71,
+      "likeCount": 143,
       "embed": {
         "type": "external",
         "uri": "https://insideoutlibrary.com/",
@@ -873,58 +901,58 @@
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/668/large/ines-rotzinger-supercell-projectrise-visualdevelopment-updated-separated.jpg?1790435327",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/668/large/ines-rotzinger-supercell-projectrise-visualdevelopment-updated-separated.jpg?1790435327",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/668/large/ines-rotzinger-supercell-projectrise-visualdevelopment-updated-separated.webp?1790435327",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/668/large/ines-rotzinger-supercell-projectrise-visualdevelopment-updated-separated.webp?1790435327",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/605/large/ines-rotzinger-1.jpg?1790435256",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/605/large/ines-rotzinger-1.jpg?1790435256",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/605/large/ines-rotzinger-1.webp?1790435256",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/605/large/ines-rotzinger-1.webp?1790435256",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/609/large/ines-rotzinger-2.jpg?1790435262",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/609/large/ines-rotzinger-2.jpg?1790435262",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/609/large/ines-rotzinger-2.webp?1790435262",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/609/large/ines-rotzinger-2.webp?1790435262",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/612/large/ines-rotzinger-3.jpg?1790435268",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/612/large/ines-rotzinger-3.jpg?1790435268",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/612/large/ines-rotzinger-3.webp?1790435268",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/612/large/ines-rotzinger-3.webp?1790435268",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/620/large/ines-rotzinger-4.jpg?1790435277",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/620/large/ines-rotzinger-4.jpg?1790435277",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/620/large/ines-rotzinger-4.webp?1790435277",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/620/large/ines-rotzinger-4.webp?1790435277",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/654/large/ines-rotzinger-10.jpg?1790435320",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/654/large/ines-rotzinger-10.jpg?1790435320",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/654/large/ines-rotzinger-10.webp?1790435320",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/654/large/ines-rotzinger-10.webp?1790435320",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/646/large/ines-rotzinger-9.jpg?1790435313",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/646/large/ines-rotzinger-9.jpg?1790435313",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/646/large/ines-rotzinger-9.webp?1790435313",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/646/large/ines-rotzinger-9.webp?1790435313",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/628/large/ines-rotzinger-5.jpg?1790435285",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/628/large/ines-rotzinger-5.jpg?1790435285",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/628/large/ines-rotzinger-5.webp?1790435285",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/628/large/ines-rotzinger-5.webp?1790435285",
             "alt": ""
           },
           {
-            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/633/large/ines-rotzinger-6.jpg?1790435293",
-            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/633/large/ines-rotzinger-6.jpg?1790435293",
+            "thumb": "https://cdnb.artstation.com/p/assets/images/images/102/734/633/large/ines-rotzinger-6.webp?1790435293",
+            "fullsize": "https://cdnb.artstation.com/p/assets/images/images/102/734/633/large/ines-rotzinger-6.webp?1790435293",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/636/large/ines-rotzinger-7.jpg?1790435299",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/636/large/ines-rotzinger-7.jpg?1790435299",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/636/large/ines-rotzinger-7.webp?1790435299",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/636/large/ines-rotzinger-7.webp?1790435299",
             "alt": ""
           },
           {
-            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/642/large/ines-rotzinger-8.jpg?1790435307",
-            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/642/large/ines-rotzinger-8.jpg?1790435307",
+            "thumb": "https://cdna.artstation.com/p/assets/images/images/102/734/642/large/ines-rotzinger-8.webp?1790435307",
+            "fullsize": "https://cdna.artstation.com/p/assets/images/images/102/734/642/large/ines-rotzinger-8.webp?1790435307",
             "alt": ""
           }
         ]
