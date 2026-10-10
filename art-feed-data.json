@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T00:05:51.611765Z",
+  "lastUpdated": "2026-10-10T12:02:29.283517Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,91 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mxjdrur4ek2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "Put your art on a tele",
+        "createdAt": "2026-10-10T11:05:01.165Z"
+      },
+      "indexedAt": "2026-10-10T11:05:08.061Z",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 9,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidspfiwuamhtjkmqzwploqtce3fwiug4fleqjqxhokfzptlmzguzm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreidspfiwuamhtjkmqzwploqtce3fwiug4fleqjqxhokfzptlmzguzm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mxjdmjtxoc2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "Rituals",
+        "createdAt": "2026-10-10T11:02:01.935Z"
+      },
+      "indexedAt": "2026-10-10T11:02:09.167Z",
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 2,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiasq6k6x4yttn4k3c35yph2zvteopjcplkfdetdi7foh6qtlosefa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreiasq6k6x4yttn4k3c35yph2zvteopjcplkfdetdi7foh6qtlosefa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mxi6w56dek2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
+      },
+      "record": {
+        "text": "I really like fishing minigames so I made a video about fishing minigames (and generally fishing themed games) \ud83d\udc1f\ud83d\udc20",
+        "createdAt": "2026-10-10T00:05:15.762Z"
+      },
+      "indexedAt": "2026-10-10T00:05:18.263Z",
+      "replyCount": 2,
+      "repostCount": 8,
+      "likeCount": 26,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/c4R3wns2icM",
+        "title": "Why save the world when you could be fishing?",
+        "description": "YouTube video by Weird Place",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreigqenr6qiaadhtebyfrp4jd5wwgjwq5vhjnfxpy7m6gbcqf6lejay"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:jskobsv6ofmzzh6qwzxcswzr/app.bsky.feed.post/3mxhcvenqyk22",
       "source": "bluesky",
       "author": {
@@ -66,7 +151,7 @@
       "indexedAt": "2026-10-09T15:43:56.067Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "images",
         "images": [
@@ -321,7 +406,7 @@
       "indexedAt": "2026-10-06T15:12:45.273Z",
       "replyCount": 1,
       "repostCount": 12,
-      "likeCount": 30,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -598,7 +683,7 @@
       "indexedAt": "2026-10-04T11:49:19.764Z",
       "replyCount": 1,
       "repostCount": 72,
-      "likeCount": 144,
+      "likeCount": 145,
       "embed": {
         "type": "external",
         "uri": "https://insideoutlibrary.com/",
@@ -708,64 +793,6 @@
       }
     },
     {
-      "uri": "at://did:plc:hzal5qhw7ypg2z7iquwksmjr/app.bsky.feed.post/3mwt2joquxs2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "dorklordcanada.bsky.social",
-        "displayName": "Brent Jans (he/they)\ud83d\udc9c\ud83d\udda4\ud83e\udd0d",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreidghqunalhuxtogdipqcxotgeodve44shus4n4ww3wd77vbbjuj5q"
-      },
-      "record": {
-        "text": "We're officially two months out from the launch of my very first Backerkit campaign for the second volume (Issues 7-12) of The Hearth Magazine. I need to see an exponential jump in Followers for the campaign to have some confidence in it. www.backerkit.com/c/projects/p...",
-        "createdAt": "2026-10-01T14:20:48.516Z"
-      },
-      "indexedAt": "2026-10-01T14:20:52.563Z",
-      "replyCount": 2,
-      "repostCount": 13,
-      "likeCount": 15,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/prairie-dragon-press/the-hearth-magazine-volume-2-7-12/pre-launch?stay=true",
-        "title": "The Hearth Magazine Volume 2 (7-12)",
-        "description": "Get notified when The Hearth Magazine Volume 2 (7-12) launches on BackerKit!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreihyt7kaf2lorq2pp7ilepyaesdskswy2gq6oc3yh6swihwdzsc3gu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3mwsvmjmizs2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "A lot of people are making their own stuff for Into the Oddish. For those who want to make more types of Pokemon as player characters, I put together some guidelines for how I would design them. It is a lot less formulaic than designing Pokemon as enemies.\n#ttrpg #osr #pokemon",
-        "createdAt": "2026-10-01T12:52:55.083Z"
-      },
-      "indexedAt": "2026-10-01T12:53:01.065Z",
-      "replyCount": 1,
-      "repostCount": 35,
-      "likeCount": 75,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.prismaticwasteland.com/blog/wanting-to-be-the-very-best-pokmon-playable-pokmon-for-into-the-oddish",
-        "title": "Wanting to Be the Very Best Pok\u00e9mon: Playable Pok\u00e9mon for Into the Oddish \u2014 Prismatic Wasteland",
-        "description": "Guidelines for creating playable Pokemon (essentially classes) for Into the Oddish.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreighor3wegse5xcmbqi5xexdzvkikufnklsvzpjjjyffxytc2pqh3y"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3mws7algwi22k",
       "source": "bluesky",
       "author": {
@@ -780,7 +807,7 @@
       "indexedAt": "2026-10-01T06:12:33.956Z",
       "replyCount": 4,
       "repostCount": 9,
-      "likeCount": 49,
+      "likeCount": 50,
       "embed": {
         "type": "images",
         "images": [
@@ -1323,70 +1350,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mrx3zesxsd2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "ipr.bsky.social",
-        "displayName": "Indie Press Revolution",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
-      },
-      "record": {
-        "text": "14/18 The last copies of Apocalypse World 2e we have! Also Under Hollow Hills, BREAK!!!, Fiasco Classic and more.",
-        "createdAt": "2026-07-31T13:51:39.368Z"
-      },
-      "indexedAt": "2026-07-31T13:52:19.409Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 22,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiekfft2slpyvf2xxxo6tzz6ctq5djom2hzninntyyjdgl522dxmem",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiekfft2slpyvf2xxxo6tzz6ctq5djom2hzninntyyjdgl522dxmem",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mrx3yi2grd2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "ipr.bsky.social",
-        "displayName": "Indie Press Revolution",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
-      },
-      "record": {
-        "text": "1/18 IPR #Booth449 at #GenCon2026 Thursday before open, with 156 games of the 600+ we carry, from 96 of our 220 member-publishers. Photos courtesy of Nicholas.\nwww.indiepressrevolution.com/xcart/Gen-Co...",
-        "createdAt": "2026-07-31T13:51:39.356Z"
-      },
-      "indexedAt": "2026-07-31T13:52:19.085Z",
-      "replyCount": 6,
-      "repostCount": 34,
-      "likeCount": 109,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiae2ljfszwcapkc4it3llxf2zrqvg66ar4qyyvw72jpquy3el5qgm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreiae2ljfszwcapkc4it3llxf2zrqvg66ar4qyyvw72jpquy3el5qgm",
-            "alt": "Three IPR booth 449 staff at Gen Con 2026 stand behind a table stacked with small press roleplaying and storytelling games."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "greywizard.bsky.social",
-        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/O3yy5e",
@@ -3336,8 +3299,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2646,
-      "likeCount": 15604,
+      "repostCount": 2645,
+      "likeCount": 15603,
       "embed": {
         "type": "images",
         "images": [
