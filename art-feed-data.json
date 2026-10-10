@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T12:02:46.351568Z",
+  "lastUpdated": "2026-10-10T00:05:51.611765Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,38 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:jskobsv6ofmzzh6qwzxcswzr/app.bsky.feed.post/3mxhcvenqyk22",
+      "source": "bluesky",
+      "author": {
+        "handle": "mudknightmedia.bsky.social",
+        "displayName": "Mudknight Media",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jskobsv6ofmzzh6qwzxcswzr/bafkreidoo6takequ3hauhz57avugj66bmkq2xq2xf5rkhg3faagpffga2a"
+      },
+      "record": {
+        "text": "We've been hard at work making everything ready for backers of Duginthroat Divided. Check out all the stuff we've been able to make! See the Kickstarter-update for more here: www.kickstarter.com/projects/dan...\n\n#ttrpg #osr #dnd #indie #kickstarter #ose #demonmonth #osemonth",
+        "createdAt": "2026-10-09T15:43:45.276Z"
+      },
+      "indexedAt": "2026-10-09T15:43:56.067Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jskobsv6ofmzzh6qwzxcswzr/bafkreihftadk2iva3st2yvouv7ri43hlmbtfxhs6aw4nztkhjidt3dyage",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jskobsv6ofmzzh6qwzxcswzr/bafkreihftadk2iva3st2yvouv7ri43hlmbtfxhs6aw4nztkhjidt3dyage",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mxeo3pqqsk2e",
       "source": "bluesky",
@@ -169,8 +201,8 @@
       },
       "indexedAt": "2026-10-07T08:28:11.856Z",
       "replyCount": 1,
-      "repostCount": 19,
-      "likeCount": 22,
+      "repostCount": 20,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3922/mutual-aid-for-grahams-funeral-costs",
@@ -288,8 +320,8 @@
       },
       "indexedAt": "2026-10-06T15:12:45.273Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 29,
+      "repostCount": 12,
+      "likeCount": 30,
       "embed": {
         "type": "images",
         "images": [
@@ -565,8 +597,8 @@
       },
       "indexedAt": "2026-10-04T11:49:19.764Z",
       "replyCount": 1,
-      "repostCount": 71,
-      "likeCount": 143,
+      "repostCount": 72,
+      "likeCount": 144,
       "embed": {
         "type": "external",
         "uri": "https://insideoutlibrary.com/",
@@ -676,35 +708,6 @@
       }
     },
     {
-      "uri": "at://did:plc:4a77bgi4bgvip2s557essret/app.bsky.feed.post/3mwt5exon722h",
-      "source": "bluesky",
-      "author": {
-        "handle": "sprintingowl.bsky.social",
-        "displayName": "SprintingOwlDesigns",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4a77bgi4bgvip2s557essret/bafkreihjst3q4cgnqpodephqoqsldodptciaechg7bckyub7wtxob6xzgi"
-      },
-      "record": {
-        "text": "Predictably, launching the campaign has given me ideas for stuff to add to the book so I'm adding the stuff to the book.\n\nNo stretch goals. We're not doing that here. Just my own unwise decisions about how much I can pack into a game.\n\nwww.kickstarter.com/projects/rod...",
-        "createdAt": "2026-10-01T15:11:51.332Z"
-      },
-      "indexedAt": "2026-10-01T15:11:52.156Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/rodreel/cinderella-smile?ref=f0swlz",
-        "title": "Cinderella Smile",
-        "description": "Stop the wedding, save the kingdom. TTRPG.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4a77bgi4bgvip2s557essret/bafkreigeq3ul27bhhctew7s4pakus4xclu7kt5u2qhyei2ord562jtawsq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:hzal5qhw7ypg2z7iquwksmjr/app.bsky.feed.post/3mwt2joquxs2t",
       "source": "bluesky",
       "author": {
@@ -726,35 +729,6 @@
         "title": "The Hearth Magazine Volume 2 (7-12)",
         "description": "Get notified when The Hearth Magazine Volume 2 (7-12) launches on BackerKit!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hzal5qhw7ypg2z7iquwksmjr/bafkreihyt7kaf2lorq2pp7ilepyaesdskswy2gq6oc3yh6swihwdzsc3gu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3mwswkwnaz22c",
-      "source": "bluesky",
-      "author": {
-        "handle": "evlynmoreau.bsky.social",
-        "displayName": "Evlyn Moreau",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreiflvcgiu7bimoerkafgognfahw5lifs3yxwprhned5h2ujnbe7g6m"
-      },
-      "record": {
-        "text": "Miriam is launching a new project, a RPG for kids that use the cortex system. If it finance I will be illustrating the whole book with whimsical art!\n\nPlease reshare if willing. :3 #ttrpg \nwww.kickstarter.com/projects/mir...",
-        "createdAt": "2026-10-01T13:09:55.372Z"
-      },
-      "indexedAt": "2026-10-01T13:09:57.658Z",
-      "replyCount": 0,
-      "repostCount": 22,
-      "likeCount": 31,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/miriamrobern/portal-witch?ref=abaahw&token=4fa1bbc5",
-        "title": "The Portal Witch, a Kids RPG Primed by Cortex",
-        "description": "World-Hopping, Magical-Costumed, Do-Gooder Kids",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreihfkuboawdfewhjbgzyvvdjdhla3amlaobbsp2hiloarri6mjphgy"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -792,35 +766,6 @@
       }
     },
     {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mwsublgvr226",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up (From the Grave) Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "How do you write a fighter class that's interesting?\nHow do you take standard fantasy and make it fresh?\nHow do you frame campaign setting details without giving reading homework?\nHow do you set up a long-term campaign from session 0?\n\nHere's my pitch:\nriseupcomus.blogspot.com/2026/09/knig...",
-        "createdAt": "2026-10-01T12:28:54.156Z"
-      },
-      "indexedAt": "2026-10-01T12:28:56.563Z",
-      "replyCount": 10,
-      "repostCount": 30,
-      "likeCount": 122,
-      "embed": {
-        "type": "external",
-        "uri": "https://riseupcomus.blogspot.com/2026/09/knight-in-house-of-high-king.html",
-        "title": "Knight [In the House of the High King]",
-        "description": "I watched Princess Arete  and it got my brain going .  What's the right word for this genre? I hesitate to say \"Ghibli-esque\" because it's s...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifxt3anrboqtdo6vlwmedjvlj2wa4o3n4htdfx7hswwr7ywuz3kyy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:jlg2eoawuzj73yidbmdxoliy/app.bsky.feed.post/3mws7algwi22k",
       "source": "bluesky",
       "author": {
@@ -845,35 +790,6 @@
             "alt": "A multiple dives near near an underwater shipwreck \n\nText POK\u00c9MON BX III"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mwrg5qhf5c2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "The first 3 Cairn adventure series adventures are now available as markdown with image support! You can run them from the browser!\n\ncairnrpg.com/adventures/f...",
-        "createdAt": "2026-09-30T22:43:33.068Z"
-      },
-      "indexedAt": "2026-09-30T22:43:32.361Z",
-      "replyCount": 2,
-      "repostCount": 28,
-      "likeCount": 83,
-      "embed": {
-        "type": "external",
-        "uri": "https://cairnrpg.com/adventures/first-party/",
-        "title": "First Party",
-        "description": "",
-        "thumb": null
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1902,7 +1818,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1443,
-      "likeCount": 6312,
+      "likeCount": 6310,
       "embed": {
         "type": "images",
         "images": [
@@ -2406,8 +2322,8 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1241,
-      "likeCount": 6536,
+      "repostCount": 1240,
+      "likeCount": 6535,
       "embed": {
         "type": "images",
         "images": [
@@ -2740,7 +2656,7 @@
       },
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
-      "repostCount": 447,
+      "repostCount": 446,
       "likeCount": 1880,
       "embed": {
         "type": "images",
@@ -3421,7 +3337,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2646,
-      "likeCount": 15606,
+      "likeCount": 15604,
       "embed": {
         "type": "images",
         "images": [
