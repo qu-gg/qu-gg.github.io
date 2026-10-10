@@ -3,9 +3,30 @@ const PAGE_WIDTH_INCHES = 8.5;
 const ZOOM_MIN = 60;
 const ZOOM_MAX = 140;
 const ZOOM_STEP = 10;
-const TOC_ITEMS_PER_PAGE = 80;
 const PAPER_BACKGROUND = [250, 246, 237];
 const FALLBACK_SOURCE_COLOR = "rgb(32, 37, 58)";
+const PADDING_EASTER_EGGS = [
+    "apokwdwqpokdqopjg.webp",
+    "awdiwqdqw.webp",
+    "bnenjkern.webp",
+    "dkwqopkdpoqwj.webp",
+    "happyslime.webp",
+    "iopajwdpoqajg.webp",
+    "kopqwkdqopwgjg.webp",
+    "qkwdiqgihg.webp",
+    "qwiopeugerg.webp",
+    "wegwegwegw.webp",
+];
+const PADDING_EASTER_EGG_NUDGES = {
+    "apokwdwqpokdqopjg.webp": "padding-easter-egg-lower-2",
+    "awdiwqdqw.webp": "padding-easter-egg-lower-2",
+    "dkwqopkdpoqwj.webp": "padding-easter-egg-lower-4",
+    "iopajwdpoqajg.webp": "padding-easter-egg-lower-2",
+    "kopqwkdqopwgjg.webp": "padding-easter-egg-lower-3",
+    "qkwdiqgihg.webp": "padding-easter-egg-lower-4",
+    "qwiopeugerg.webp": "padding-easter-egg-lower-3",
+    "wegwegwegw.webp": "padding-easter-egg-lower-4",
+};
 
 const state = {
     manifest: null,
@@ -51,12 +72,11 @@ function formatDate(value) {
     }).format(date);
 }
 
-function formatMonthYear(value) {
+function formatYear(value) {
     const date = new Date(`${value}T00:00:00Z`);
-    if (Number.isNaN(date.valueOf())) return value || "Unknown date";
+    if (Number.isNaN(date.valueOf())) return value || "Unknown year";
     return new Intl.DateTimeFormat("en-US", {
         year: "numeric",
-        month: "long",
         timeZone: "UTC",
     }).format(date);
 }
@@ -64,7 +84,8 @@ function formatMonthYear(value) {
 const TOC_SMALL_WORDS = new Set(["a", "an", "and", "as", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to"]);
 
 function toTocTitle(title) {
-    const loweredTitle = title.toLocaleLowerCase();
+    const cleanedTitle = stripDisplayQualifiers(title);
+    const loweredTitle = cleanedTitle.toLocaleLowerCase();
     let wordNumber = 0;
     const standardizedTitle = loweredTitle.replace(/[A-Za-z0-9][A-Za-z0-9'’!?]*/g, (word, offset) => {
         const previousText = loweredTitle.slice(0, offset).trimEnd();
@@ -81,14 +102,40 @@ function toTocTitle(title) {
     return standardizedTitle.replace(/BREAK!!-Ing/g, "BREAK!!-ing");
 }
 
-function cleanPostTitle(title) {
+function stripFreebieQualifier(title) {
     return title
+        .replace(/\s*\(Freebie(?:,\s*[^)]*)?\)/gi, "")
+        .replace(/\s{2,}/g, " ")
+        .trim();
+}
+
+function stripDisplayQualifiers(title) {
+    return stripFreebieQualifier(title)
+        .replace(/\s*\([^)]*\bSetting\b[^)]*\)/gi, "")
+        .replace(/\s{2,}/g, " ")
+        .trim();
+}
+
+function stripTrailingParentheticals(title) {
+    return title.replace(/(?:\s*\([^()]*\))+\s*$/, "").trim();
+}
+
+function isSpeciesSection(sectionTitle) {
+    return sectionTitle?.toLocaleLowerCase() === "species";
+}
+
+function cleanPostTitle(title, preserveTrailingParentheticals = false) {
+    const displayTitle = preserveTrailingParentheticals
+        ? title
+        : stripTrailingParentheticals(title);
+    return displayTitle
         .replace(/^Option Menu:\s*/i, "")
         .replace(/^Setting\/Freebie:\s*/i, "")
         .replace(/^Setting:\s*/i, "")
         .replace(/^Freebie Mini-Entry:\s*/i, "")
         .replace(/^Freebie:\s*/i, "")
         .replace(/^Ennies Update and Freebie:\s*/i, "")
+        .replace(/\s{2,}/g, " ")
         .trim();
 }
 
@@ -158,17 +205,44 @@ function createPage(className) {
 
 function createCoverPage() {
     const page = createPage("cover-page");
+
+    const hero = createElement("section", "cover-hero");
+    const artwork = createElement("img");
+    artwork.src = "mana-allegiance-gifts.png";
+    artwork.alt = "BREAK!! artwork depicting Mana, Allegiance, and Gifts";
+    hero.appendChild(artwork);
+    hero.appendChild(createElement("div", "cover-hero-shade"));
+
+    const brand = createElement("div", "cover-brand");
+    const logo = createElement("img");
+    logo.src = "BREAK_LOGO_WHITE.webp";
+    logo.alt = "BREAK!!";
+    brand.appendChild(logo);
+    hero.appendChild(brand);
+    page.appendChild(hero);
+
+    const footer = createElement("section", "cover-footer");
+    const heading = createElement("div", "cover-heading");
     const title = createElement("h1");
-    title.appendChild(createElement("span", null, "BREAK!!"));
-    title.appendChild(createElement("span", null, "Blog Compilation"));
-    page.appendChild(title);
-    page.appendChild(createElement("div", "cover-rule"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-label", "Original Blog Content by:"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-names", "Reynaldo Madriñan and Carlo Tartaglia"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-label cover-credit-compilation-label", "Compilation by:"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-names cover-credit-compilation-name", "Quagg"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-label cover-credit-coverage-label", "COVERS THE BREAK!! BLOG FROM:"));
-    page.appendChild(createElement("p", "cover-credit cover-credit-coverage-dates", `${formatMonthYear(state.manifest.coverage.start)} - ${formatMonthYear(state.manifest.coverage.end)}`));
+    title.appendChild(createElement("span", null, "Devblog"));
+    title.appendChild(createElement("span", null, "Compilation"));
+    heading.appendChild(title);
+    heading.appendChild(createElement("strong", "cover-years", `${formatYear(state.manifest.coverage.start)} - ${formatYear(state.manifest.coverage.end)}`));
+    footer.appendChild(heading);
+    footer.appendChild(createElement("div", "cover-rule"));
+
+    const credits = createElement("div", "cover-credits");
+    const authors = createElement("div", "cover-credit-block");
+    authors.appendChild(createElement("span", "cover-credit-label", "Original blog content"));
+    authors.appendChild(createElement("strong", null, "Reynaldo Madriñan · Carlo Tartaglia"));
+    credits.appendChild(authors);
+
+    const compiler = createElement("div", "cover-credit-block");
+    compiler.appendChild(createElement("span", "cover-credit-label", "Compiled by"));
+    compiler.appendChild(createElement("strong", null, "Quagg"));
+    credits.appendChild(compiler);
+    footer.appendChild(credits);
+    page.appendChild(footer);
     return page;
 }
 
@@ -181,7 +255,7 @@ function createBlankPage() {
 function createTocPage(index) {
     const page = createPage("toc-page");
     const header = createElement("header", "toc-header");
-    header.appendChild(createElement("h1", null, index === 0 ? "Contents" : "Contents continued"));
+    header.appendChild(createElement("h1", null, index === 0 ? "Contents" : "Contents"));
     header.appendChild(createElement("div", "header-divider"));
     page.appendChild(header);
     page.appendChild(createElement("div", "toc-list"));
@@ -191,7 +265,7 @@ function createTocPage(index) {
 function createBackCoverPage() {
     const page = createPage("back-page");
     page.appendChild(createElement("div", "back-mark"));
-    page.appendChild(createElement("div", "disclaimer", "BREAK!! Blog Compendium is an independent product published under BREAK!! RPG's Non-Commercial License and is not affiliated with BREAK!!'s creators or publishers."));
+    page.appendChild(createElement("div", "disclaimer", "BREAK!! Blog Compendium is an officially-endorsed though independent work published with explicit permission by BREAK!!'s Creators. BREAK!! logo and cover art used with explicit permission by Grey Wizard Press."));
     return page;
 }
 
@@ -199,7 +273,7 @@ function buildFrontMatter() {
     createPageShell(createCoverPage(), { kind: "cover", showNumber: false, id: "cover-page" });
     createPageShell(createBlankPage(), { kind: "blank", showNumber: false, id: "blank-page" });
 
-    const tocCount = Math.ceil(buildTocItems().length / TOC_ITEMS_PER_PAGE);
+    const tocCount = buildTocPages().length;
     for (let index = 0; index < tocCount; index += 1) {
         const record = createPageShell(createTocPage(index), {
             kind: "toc",
@@ -210,71 +284,116 @@ function buildFrontMatter() {
 
 }
 
-function buildTocItems() {
-    const items = [];
-    for (const category of state.manifest.categories) {
-        items.push({ type: "category", title: category.title });
-        const sections = category.sections || [{ title: category.section, entries: category.entries }];
-        for (const section of sections) {
-            items.push({ type: "section", title: section.title });
-            for (const entry of section.entries) {
-                items.push({
-                    type: "article",
-                    title: entry.tocTitle,
-                    target: entry.id,
-                });
-            }
+function buildCategoryTocItems(category) {
+    const items = [{ type: "category", title: category.title }];
+    const sections = category.sections || [{ title: category.section, entries: category.entries }];
+    for (const section of sections) {
+        items.push({ type: "section", title: section.title });
+        for (const entry of section.entries) {
+            items.push({
+                type: "article",
+                title: entry.tocTitle,
+                target: entry.id,
+            });
         }
     }
     return items;
 }
 
-function renderToc() {
-    const items = buildTocItems();
-    const chunks = [];
-    for (let index = 0; index < items.length; index += TOC_ITEMS_PER_PAGE) {
-        chunks.push(items.slice(index, index + TOC_ITEMS_PER_PAGE));
+function flattenCategoryRange(categories) {
+    const items = [];
+    for (const category of categories) {
+        items.push(...buildCategoryTocItems(category));
+    }
+    return items;
+}
+
+function buildTocPages() {
+    const categories = state.manifest.categories;
+    const adventureIndex = categories.findIndex((category) => category.id === "hazards-adventure-sites");
+    const settingIndex = categories.findIndex((category) => category.id === "worldbuilding-setting");
+
+    if (adventureIndex < 0 || settingIndex <= adventureIndex) {
+        return [[flattenCategoryRange(categories), []]];
     }
 
-    chunks.forEach((chunk, pageIndex) => {
+    return [
+        [
+            flattenCategoryRange(categories.slice(0, adventureIndex)),
+            flattenCategoryRange(categories.slice(adventureIndex, settingIndex)),
+        ],
+        [flattenCategoryRange(categories.slice(settingIndex))],
+    ];
+}
+
+function renderTocEntry(container, item) {
+    if (item.type === "category") {
+        container.appendChild(createElement("div", "toc-entry category-entry", item.title));
+        return;
+    }
+    if (item.type === "section") {
+        container.appendChild(createElement("div", "toc-entry section-entry", item.title));
+        return;
+    }
+    const row = createElement("div", "toc-entry");
+    row.dataset.tocTarget = item.target;
+    const entryRecord = state.entryRecords.get(item.target);
+    const sourceTitle = entryRecord?.post.title;
+    const preserveTrailingParentheticals = isSpeciesSection(entryRecord?.entry.sectionTitle);
+    const displayTitle = sourceTitle
+        ? cleanPostTitle(sourceTitle, preserveTrailingParentheticals)
+        : toTocTitle(item.title);
+    row.appendChild(createElement("span", "toc-title", displayTitle));
+    const targetShell = document.getElementById(`article-${item.target}`);
+    const pageIndex = targetShell
+        ? [...document.querySelectorAll(".page-shell")].indexOf(targetShell)
+        : -1;
+    if (pageIndex >= 0) {
+        const pageNumber = String(pageIndex + 1).padStart(2, "0");
+        const link = createElement("a", "toc-page-number", pageNumber);
+        link.href = `#article-${item.target}`;
+        link.setAttribute("aria-label", `Go to ${displayTitle}, page ${pageNumber}`);
+        row.appendChild(link);
+    }
+    container.appendChild(row);
+}
+
+function renderToc() {
+    const pages = buildTocPages();
+    pages.forEach((columns, pageIndex) => {
         const list = state.tocPages[pageIndex].page.querySelector(".toc-list");
+        list.classList.toggle("toc-list-explicit", pageIndex === 0);
+        list.classList.toggle("toc-list-setting", pageIndex === 1);
         list.replaceChildren();
-        for (const item of chunk) {
-            if (item.type === "category") {
-                list.appendChild(createElement("div", "toc-entry category-entry", item.title));
-                continue;
+
+        if (pageIndex === 0) {
+            for (const columnItems of columns) {
+                const column = createElement("div", "toc-column");
+                columnItems.forEach((item) => renderTocEntry(column, item));
+                list.appendChild(column);
             }
-            if (item.type === "section") {
-                list.appendChild(createElement("div", "toc-entry section-entry", item.title));
-                continue;
-            }
-            const row = createElement("div", "toc-entry");
-            row.dataset.tocTarget = item.target;
-            row.appendChild(createElement("span", "toc-title", toTocTitle(item.title)));
-            list.appendChild(row);
+            return;
         }
+
+        columns[0].forEach((item) => renderTocEntry(list, item));
     });
 }
 
 function parseRGBColor(color) {
     const match = color.match(/^rgba?\(([^)]+)\)$/i);
     if (!match) return null;
-
     const channels = match[1].split(/[\s,\/]+/).filter(Boolean);
     if (channels.length < 3) return null;
-
     const rgb = channels.slice(0, 3).map((channel) => {
         const value = Number.parseFloat(channel);
         return channel.endsWith("%") ? value * 2.55 : value;
     });
     if (rgb.some((channel) => Number.isNaN(channel))) return null;
-
     const alphaValue = channels[3] || "1";
     const alpha = alphaValue.endsWith("%")
         ? Number.parseFloat(alphaValue) / 100
         : Number.parseFloat(alphaValue);
     if (Number.isNaN(alpha)) return null;
-
     return rgb.map((channel, index) => (
         channel * alpha + PAPER_BACKGROUND[index] * (1 - alpha)
     ));
@@ -302,15 +421,12 @@ function contrastRatio(firstColor, secondColor) {
 function getReadableSourceColor(styleText) {
     const match = styleText.match(/(?:^|;)\s*color\s*:\s*([^;]+)/i);
     if (!match) return null;
-
-    const candidate = match[1].replace(/\s*!important\s*$/i, "").trim();
     const probe = document.createElement("span");
-    probe.style.color = candidate;
+    probe.style.color = match[1].replace(/\s*!important\s*$/i, "").trim();
     if (!probe.style.color) return null;
     document.body.appendChild(probe);
     const computedColor = getComputedStyle(probe).color;
     probe.remove();
-
     const rgbColor = parseRGBColor(computedColor);
     if (!rgbColor) return null;
     return contrastRatio(rgbColor, PAPER_BACKGROUND) >= 4.5
@@ -326,7 +442,6 @@ function getSourceFormatting(styleText) {
         ["fontWeight", /^(normal|bold|bolder|lighter|[1-9]00)$/i],
         ["fontStyle", /^(normal|italic|oblique(?:\s+-?[0-9.]+deg)?)$/i],
         ["textDecoration", /^(none|underline|overline|line-through)(?:\s+(?:solid|double|dotted|dashed|wavy))?(?:\s+[^\s]+)?$/i],
-        ["textAlign", /^(left|right|center|justify|start|end)$/i],
         ["verticalAlign", /^(baseline|sub|super|top|text-top|middle|bottom|text-bottom)$/i],
         ["backgroundColor", /^(?!transparent$)(?:[a-z]+|#[0-9a-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\))$/i],
     ];
@@ -493,6 +608,186 @@ function sourceNodes(fragment) {
     return nodes;
 }
 
+function normalizeListStructure(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+
+    if (node.tagName === "UL" || node.tagName === "OL") {
+        let previousItem = null;
+        for (const child of [...node.children]) {
+            normalizeListStructure(child);
+            if (child.tagName === "LI") {
+                previousItem = child;
+            } else if ((child.tagName === "UL" || child.tagName === "OL") && previousItem) {
+                previousItem.appendChild(child);
+            }
+        }
+    } else {
+        [...node.children].forEach(normalizeListStructure);
+    }
+}
+
+function collapseBreakRuns(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+    [...node.children].forEach(collapseBreakRuns);
+
+    let previousBreak = false;
+    for (const child of [...node.childNodes]) {
+        if (child.nodeType === Node.TEXT_NODE && !child.textContent.trim()) continue;
+        if (child.nodeType === Node.ELEMENT_NODE && child.tagName === "BR") {
+            if (previousBreak) child.remove();
+            previousBreak = true;
+        } else {
+            previousBreak = false;
+        }
+    }
+}
+
+function isEmptyLayoutNode(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE) return false;
+    if (node.textContent.trim()) return false;
+    if (node.querySelector("img, table, video, audio, canvas, iframe")) return false;
+    return ["BR", "DIV", "P", "SPAN"].includes(node.tagName);
+}
+
+const CONCEPT_LABEL_PATTERN = /^(?:overview|physiology|typical demeanor|demeanor|outlook|history|adventurers?|typical names?)$/i;
+const COMPACT_LABEL_PATTERN = /^quirks?$/i;
+
+function directConceptLabel(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE
+        || (!isBoldElement(node) && !allTextIsBold(node))) return null;
+    const text = node.textContent.trim().replace(/\s+/g, " ");
+    const label = text.replace(/:\s*$/, "").trim();
+    const hasColon = /:\s*$/.test(text)
+        || (node.nextSibling?.nodeType === Node.TEXT_NODE
+            && /^\s*:/.test(node.nextSibling.textContent));
+    if (!hasColon || (!CONCEPT_LABEL_PATTERN.test(label) && !COMPACT_LABEL_PATTERN.test(label))) {
+        return null;
+    }
+    return { label, compact: COMPACT_LABEL_PATTERN.test(label) };
+}
+
+function isSegmentEdgeSpacer(node) {
+    return (node.nodeType === Node.TEXT_NODE && !node.textContent.trim())
+        || (node.nodeType === Node.ELEMENT_NODE && node.tagName === "BR");
+}
+
+function cloneConceptSegment(node, children, concept = null) {
+    const segmentChildren = [...children];
+    while (segmentChildren.length && isSegmentEdgeSpacer(segmentChildren[0])) segmentChildren.shift();
+    while (segmentChildren.length && isSegmentEdgeSpacer(segmentChildren.at(-1))) segmentChildren.pop();
+    if (!segmentChildren.some((child) => child.textContent.trim())) return null;
+
+    const clone = cloneContainerFragment(node, segmentChildren);
+    if (concept) {
+        clone.classList.add(concept.compact ? "compact-labeled-field" : "labeled-concept-block");
+        clone.dataset.conceptLabel = concept.label;
+    }
+    return clone;
+}
+
+function splitLabeledConceptBlock(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE || !["P", "DIV"].includes(node.tagName)) return [node];
+    const children = [...node.childNodes];
+    const labels = children
+        .map((child, index) => ({ index, concept: directConceptLabel(child) }))
+        .filter((candidate) => candidate.concept);
+    if (!labels.length) return [node];
+
+    const output = [];
+    if (labels[0].index > 0) {
+        const prefix = cloneConceptSegment(node, children.slice(0, labels[0].index));
+        if (prefix) output.push(prefix);
+    }
+    labels.forEach((label, index) => {
+        const end = labels[index + 1]?.index ?? children.length;
+        const segment = cloneConceptSegment(node, children.slice(label.index, end), label.concept);
+        if (segment) output.push(segment);
+    });
+    return output.length ? output : [node];
+}
+
+function normalizeArticleNodes(nodes) {
+    const normalized = nodes.filter((node) => {
+        normalizeListStructure(node);
+        collapseBreakRuns(node);
+        if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains("source-separator")) {
+            return false;
+        }
+        return !isEmptyLayoutNode(node);
+    });
+    const structured = normalized.flatMap(splitLabeledConceptBlock);
+    markSemanticLeads(structured);
+    return structured;
+}
+
+function semanticLeadTextIsExcluded(text) {
+    return /^(?:gain\s+\d+\s+points?\s+of\s+.+\s+allegiance|requires?\b|failure:|success:|aura\s+check\s+required$)/i.test(text)
+    || /^(?:cost|slots?|hearts?|attack|defense rating|speed|might|deftness|grit|insight|aura|damage|range|type)\s*(?::|\[)/i.test(text)
+        || /^.+,\s*rank\s+\d+$/i.test(text)
+        || /\(\s*\d*d\d+(?:\s+roll)?\s*\)$/i.test(text);
+}
+
+function semanticLeadCandidate(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE || !["P", "DIV", "B", "STRONG"].includes(node.tagName)) {
+        return false;
+    }
+    const text = node.textContent.trim().replace(/\s+/g, " ");
+    return text.length > 0
+        && text.length <= 180
+        && allTextIsBold(node)
+        && !semanticLeadTextIsExcluded(text);
+}
+
+function nodeContainsMedia(node) {
+    return node?.nodeType === Node.ELEMENT_NODE
+        && (node.matches("img, figure") || node.querySelector("img, figure"));
+}
+
+function markSemanticLeads(nodes) {
+    const listCount = nodes.reduce((count, node) => (
+        node.nodeType === Node.ELEMENT_NODE
+            ? count + Number(node.matches("ul, ol")) + node.querySelectorAll("ul, ol").length
+            : count
+    ), 0);
+    const rulesHeavy = listCount >= 3;
+
+    nodes.forEach((node, index) => {
+        if (semanticLeadCandidate(node)) {
+            const previous = [...nodes.slice(0, index)]
+                .reverse()
+                .find((candidate) => candidate.textContent.trim() || nodeContainsMedia(candidate));
+            const next = nodes.slice(index + 1)
+                .find((candidate) => candidate.textContent.trim() || nodeContainsMedia(candidate));
+            if (!nodeContainsMedia(previous) && !nodeContainsMedia(next)) {
+                node.classList.add(rulesHeavy ? "content-entry-lead" : "prose-section-lead");
+            }
+        }
+
+        if (!rulesHeavy || node.nodeType !== Node.ELEMENT_NODE) return;
+        for (const candidate of node.querySelectorAll("li > p, li > div")) {
+            if (!semanticLeadCandidate(candidate)) continue;
+            const owner = candidate.parentElement;
+            if (owner?.tagName !== "LI" || owner.parentElement?.closest("li")) continue;
+            owner.classList.add("content-entry-item");
+        }
+    });
+}
+
+function waitForImages(root) {
+    const images = [...root.querySelectorAll("img")];
+    images.forEach((image) => {
+        image.loading = "eager";
+    });
+    return Promise.all(images.map((image) => {
+        if (image.complete) return Promise.resolve();
+        return new Promise((resolve) => {
+            const finish = () => resolve();
+            image.addEventListener("load", finish, { once: true });
+            image.addEventListener("error", finish, { once: true });
+        });
+    }));
+}
+
 function nodeTextLength(node) {
     return (node.textContent || "").length;
 }
@@ -569,10 +864,11 @@ function pageFits(body) {
 }
 
 function bodyContentExtent(body) {
-    const lastChild = body.lastElementChild;
-    if (!lastChild) return 0;
     const bodyRect = body.getBoundingClientRect();
-    return lastChild.getBoundingClientRect().bottom - bodyRect.top;
+    const boxes = [...body.querySelectorAll("*")]
+        .map((node) => node.getBoundingClientRect())
+        .filter((rect) => rect.width || rect.height);
+    return boxes.length ? Math.max(...boxes.map((rect) => rect.bottom - bodyRect.top)) : 0;
 }
 
 const BLOCK_BOUNDARY_TAGS = new Set([
@@ -615,7 +911,11 @@ function cloneListPortion(node, path, boundary, prefix) {
         if (depth === path.length) {
             const children = [...current.childNodes];
             const selected = prefix ? children.slice(0, boundary) : children.slice(boundary);
-            return cloneWithChildren(current, selected);
+            const clone = cloneWithChildren(current, selected);
+            if (!prefix && current.tagName === "OL") {
+                clone.start = Number(current.getAttribute("start") || 1) + boundary;
+            }
+            return clone;
         }
 
         const targetIndex = path[depth];
@@ -635,32 +935,142 @@ function cloneListPortion(node, path, boundary, prefix) {
     return cloneAt(node, 0);
 }
 
+function listChildGroups(list) {
+    const groups = [];
+    let current = [];
+    let hasListItem = false;
+
+    for (const child of [...list.childNodes]) {
+        if (child.nodeType === Node.ELEMENT_NODE
+            && child.tagName === "LI"
+            && hasListItem
+            && current.length) {
+            groups.push(current);
+            current = [];
+        }
+        current.push(child);
+        if (child.nodeType === Node.ELEMENT_NODE && child.tagName === "LI") {
+            hasListItem = true;
+        }
+    }
+    if (current.length) groups.push(current);
+    return groups;
+}
+
+function cloneListGroupsPortion(node, path, start, end, prefix) {
+    function cloneAt(current, depth) {
+        if (depth === path.length) {
+            const groups = listChildGroups(current);
+            const clone = cloneWithChildren(current, groups.slice(start, end).flat());
+            if (!prefix && current.tagName === "OL") {
+                clone.start = Number(current.getAttribute("start") || 1) + start;
+            }
+            return clone;
+        }
+
+        const targetIndex = path[depth];
+        const clone = current.cloneNode(false);
+        [...current.childNodes].forEach((child, index) => {
+            if (prefix) {
+                if (index < targetIndex) clone.appendChild(child.cloneNode(true));
+                if (index === targetIndex) clone.appendChild(cloneAt(child, depth + 1));
+            } else {
+                if (index === targetIndex) clone.appendChild(cloneAt(child, depth + 1));
+                if (index > targetIndex) clone.appendChild(child.cloneNode(true));
+            }
+        });
+        return clone;
+    }
+
+    return cloneAt(node, 0);
+}
+
+function listSplitCandidates(node) {
+    const candidates = [];
+    const listPaths = findListPaths(node).filter((path) => (
+        !path.some((_, index) => {
+            const ancestor = nodeAtPath(node, path.slice(0, index));
+            return ancestor?.tagName === "UL" || ancestor?.tagName === "OL";
+        })
+    ));
+    for (const path of listPaths) {
+        const list = nodeAtPath(node, path);
+        const groups = listChildGroups(list);
+        for (let boundary = 1; boundary < groups.length; boundary += 1) {
+            const prefix = cloneListGroupsPortion(node, path, 0, boundary, true);
+            const remainder = cloneListGroupsPortion(node, path, boundary, groups.length, false);
+            if (prefix.textContent.trim() && remainder.textContent.trim()) {
+                candidates.push({ prefix, remainder });
+            }
+        }
+    }
+    return candidates;
+}
+
+function tableDataRows(table) {
+    const rows = [...table.querySelectorAll("tr")];
+    return rows.filter((row) => !row.closest("thead"));
+}
+
+function tableHeaderRows(table, rows) {
+    if (table.tHead?.rows.length) return [...table.tHead.rows];
+    const first = rows[0];
+    if (first && (first.querySelector("th") || /rank|attack|hearts|aptitudes|abilities/i.test(first.textContent))) {
+        return [first];
+    }
+    return [];
+}
+
+function cloneTableSlice(table, headerRows, dataRows, start, end) {
+    const clone = table.cloneNode(false);
+    [...table.children]
+        .filter((child) => !["THEAD", "TBODY", "TFOOT"].includes(child.tagName))
+        .forEach((child) => clone.appendChild(child.cloneNode(true)));
+
+    if (headerRows.length) {
+        const header = document.createElement("thead");
+        headerRows.forEach((row) => header.appendChild(row.cloneNode(true)));
+        clone.appendChild(header);
+    }
+
+    const body = document.createElement("tbody");
+    dataRows.slice(start, end).forEach((row) => body.appendChild(row.cloneNode(true)));
+    clone.appendChild(body);
+    if (table.tFoot) clone.appendChild(table.tFoot.cloneNode(true));
+    return clone;
+}
+
+function splitTableAtRowBoundary(table, body) {
+    const dataRows = tableDataRows(table);
+    const headerRows = tableHeaderRows(table, dataRows);
+    const firstDataIndex = headerRows.includes(dataRows[0]) ? 1 : 0;
+    if (dataRows.length - firstDataIndex < 2) return null;
+
+    let best = null;
+    for (let boundary = firstDataIndex + 1; boundary < dataRows.length; boundary += 1) {
+        const prefix = cloneTableSlice(table, headerRows, dataRows, firstDataIndex, boundary);
+        body.appendChild(prefix);
+        const fits = pageFits(body);
+        body.removeChild(prefix);
+        if (!fits) break;
+        best = {
+            prefix,
+            remainder: cloneTableSlice(table, headerRows, dataRows, boundary, dataRows.length),
+        };
+    }
+    return best;
+}
+
 function splitNodeAtListBoundary(node, body) {
     let bestSplit = null;
     let bestLength = 0;
-    for (const path of findListPaths(node)) {
-        const list = nodeAtPath(node, path);
-        const children = [...list.childNodes];
-        let bestBoundary = 0;
-        for (let index = 1; index < children.length; index += 1) {
-            if (children[index - 1].nodeType !== Node.ELEMENT_NODE
-                || children[index - 1].tagName !== "LI") continue;
-            const candidate = cloneListPortion(node, path, index, true);
-            if (!candidate.textContent.trim()) continue;
-            body.appendChild(candidate);
-            const fits = pageFits(body);
-            body.removeChild(candidate);
-            if (!fits) break;
-            bestBoundary = index;
-        }
-
-        if (!bestBoundary || bestBoundary >= children.length) continue;
-        const prefix = cloneListPortion(node, path, bestBoundary, true);
-        const remainder = cloneListPortion(node, path, bestBoundary, false);
-        if (prefix.textContent.trim() && remainder.textContent.trim()
-            && prefix.textContent.length > bestLength) {
-            bestSplit = { prefix, remainder };
-            bestLength = prefix.textContent.length;
+    for (const candidate of listSplitCandidates(node)) {
+        body.appendChild(candidate.prefix);
+        const fits = pageFits(body);
+        body.removeChild(candidate.prefix);
+        if (fits && candidate.prefix.textContent.length > bestLength) {
+            bestSplit = candidate;
+            bestLength = candidate.prefix.textContent.length;
         }
     }
     return bestSplit;
@@ -721,12 +1131,23 @@ function allTextIsBold(node) {
     return hasText && bold;
 }
 
+function hasBoldLeadPrefix(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE
+        || !["P", "DIV"].includes(node.tagName)) return false;
+    const firstMeaningfulChild = [...node.childNodes].find((child) => child.textContent.trim());
+    if (!firstMeaningfulChild || firstMeaningfulChild.nodeType !== Node.ELEMENT_NODE) return false;
+    return isBoldElement(firstMeaningfulChild)
+        && /:\s*$/.test(firstMeaningfulChild.textContent.trim())
+        && node.textContent.trim().length <= 320;
+}
+
 function isLeadBlock(node) {
     if (node.nodeType !== Node.ELEMENT_NODE) return false;
+    if (node.classList.contains("labeled-concept-block")) return true;
     if (/^H[1-6]$/.test(node.tagName)) return true;
     if (!["P", "DIV", "B", "STRONG"].includes(node.tagName)) return false;
     const text = node.textContent.trim();
-    return text.length <= 180 && allTextIsBold(node);
+    return (text.length <= 180 && allTextIsBold(node)) || hasBoldLeadPrefix(node);
 }
 
 function isListLeadNode(node) {
@@ -755,6 +1176,7 @@ function boundaryLeavesLeadAlone(children, boundary) {
 
 function splitNodeAtBoundary(node, body) {
     if (node.nodeType !== Node.ELEMENT_NODE) return null;
+    if (node.tagName === "UL" || node.tagName === "OL") return null;
 
     const children = [...node.childNodes];
     if (children.length < 2 || !children.some(isBlockBoundary)) return null;
@@ -793,19 +1215,7 @@ function semanticSplitCandidates(node) {
         }
     }
 
-    for (const path of findListPaths(node)) {
-        const list = nodeAtPath(node, path);
-        const listChildren = [...list.childNodes];
-        for (let index = 1; index < listChildren.length; index += 1) {
-            if (listChildren[index - 1].nodeType !== Node.ELEMENT_NODE
-                || listChildren[index - 1].tagName !== "LI") continue;
-            const prefix = cloneListPortion(node, path, index, true);
-            const remainder = cloneListPortion(node, path, index, false);
-            if (prefix.textContent.trim() && remainder.textContent.trim()) {
-                candidates.push({ prefix, remainder });
-            }
-        }
-    }
+    candidates.push(...listSplitCandidates(node));
 
     const seenLengths = new Set();
     return candidates.filter((candidate) => {
@@ -814,6 +1224,46 @@ function semanticSplitCandidates(node) {
         seenLengths.add(length);
         return true;
     });
+}
+
+function articleNodesFit(body, nodes) {
+    nodes.forEach((node) => body.appendChild(node));
+    const fits = pageFits(body);
+    nodes.slice().reverse().forEach((node) => body.removeChild(node));
+    return fits;
+}
+
+function leadMinimumNodes(nodes) {
+    const minimum = [];
+    let meaningfulCount = 0;
+    for (const node of nodes) {
+        minimum.push(node);
+        if (node.textContent.trim()) meaningfulCount += 1;
+        if (meaningfulCount >= 2) break;
+    }
+    return minimum;
+}
+
+function shouldMoveLeadUnit(body, nodes, nextLeadNodes = []) {
+    if (!bodyHasContent(body)) return false;
+    const currentFill = bodyContentExtent(body) / body.clientHeight;
+    if (currentFill < 0.85) return false;
+    return nodes.length > 1 || nextLeadNodes.length > 0;
+}
+
+function buildArticleUnits(nodes) {
+    const units = [];
+    let current = null;
+    for (const node of nodes) {
+        if (current && isLeadBlock(node)) {
+            units.push(current);
+            current = null;
+        }
+        if (!current) current = { lead: isLeadBlock(node), nodes: [] };
+        current.nodes.push(node);
+    }
+    if (current) units.push(current);
+    return units;
 }
 
 function rebalanceFinalArticlePage(articleRecords) {
@@ -992,8 +1442,13 @@ function rebalanceArticlePagePairs(articleRecords) {
 function createArticlePage(post, entry) {
     const page = createPage("article-page");
     const header = createElement("header", "article-header");
-    header.appendChild(createElement("div", "article-kicker", `${entry.categoryTitle} · ${entry.sectionTitle}`));
-    header.appendChild(createElement("h1", null, cleanPostTitle(post.title)));
+    const titleRow = createElement("div", "article-title-row");
+    titleRow.appendChild(createElement("h1", null, cleanPostTitle(post.title, isSpeciesSection(entry.sectionTitle))));
+    const contextRail = createElement("div", "article-context-rail");
+    contextRail.appendChild(createElement("strong", null, entry.sectionTitle));
+    contextRail.appendChild(createElement("span", null, entry.categoryTitle));
+    titleRow.appendChild(contextRail);
+    header.appendChild(titleRow);
     const meta = createElement("div", "article-meta");
     const primaryMeta = createElement("div", "article-meta-primary");
     primaryMeta.appendChild(createElement("time", null, formatDate(post.published)));
@@ -1016,20 +1471,191 @@ function createArticlePage(post, entry) {
     return { page, body };
 }
 
-async function renderArticle(entry) {
-    const post = await fetchPost(entry.id);
-    const nodes = sourceNodes(sanitizeSourceHTML(post.content_html));
-    const article = createArticlePage(post, entry);
-    const firstRecord = createPageShell(article.page, {
+function createArticleContinuationPage() {
+    const page = createPage("article-page article-continuation");
+    const body = createElement("div", "article-body");
+    page.appendChild(body);
+    return { page, body };
+}
+
+function createArticlePaddingPage(id) {
+    const page = createPage("article-padding-page");
+    const marker = createElement("div", "article-padding-marker");
+    const rule = createElement("span", "article-padding-rule");
+    rule.setAttribute("aria-hidden", "true");
+    marker.appendChild(rule);
+    const logo = createElement("img");
+    logo.className = "article-padding-logo";
+    logo.src = "BREAK_LOGO_WHITE.webp";
+    logo.alt = "BREAK!! RPG";
+    marker.appendChild(logo);
+    page.appendChild(marker);
+    return createPageShell(page, {
+        kind: "article-padding",
+        id,
+        showNumber: false,
+    });
+}
+
+function createSeededRandom(seed) {
+    let value = seed >>> 0;
+    return () => {
+        value += 0x6D2B79F5;
+        let result = value;
+        result = Math.imul(result ^ (result >>> 15), result | 1);
+        result ^= result + Math.imul(result ^ (result >>> 7), result | 61);
+        return ((result ^ (result >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+function shuffleWithRandom(items, random) {
+    const shuffled = [...items];
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const target = Math.floor(random() * (index + 1));
+        [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+    }
+    return shuffled;
+}
+
+function placePaddingEasterEggs() {
+    const paddingPages = [...document.querySelectorAll(".article-padding-page")];
+    if (paddingPages.length < PADDING_EASTER_EGGS.length) return;
+
+    const random = createSeededRandom(0x42524541 ^ paddingPages.length);
+    const images = shuffleWithRandom(PADDING_EASTER_EGGS, random);
+    images.forEach((filename, index) => {
+        const bucketStart = Math.floor(index * paddingPages.length / images.length);
+        const bucketEnd = Math.floor((index + 1) * paddingPages.length / images.length) - 1;
+        const pageIndex = bucketStart + Math.floor(random() * (bucketEnd - bucketStart + 1));
+        const page = paddingPages[pageIndex];
+        const marker = page.querySelector(".article-padding-marker");
+        const image = createElement("img", "padding-easter-egg");
+        if (filename === "happyslime.webp") image.classList.add("padding-easter-egg-slime");
+        if (PADDING_EASTER_EGG_NUDGES[filename]) {
+            image.classList.add(PADDING_EASTER_EGG_NUDGES[filename]);
+        }
+        image.src = `random-pictures/${filename}`;
+        image.alt = "";
+        image.setAttribute("aria-hidden", "true");
+        marker.appendChild(image);
+        page.dataset.easterEgg = filename;
+    });
+}
+
+function createArticlePageRecord(article, entry, pageNumber) {
+    const record = createPageShell(article.page, {
         kind: "article",
         className: "article-shell",
         entryId: entry.id,
-        id: `article-${entry.id}`,
+        id: pageNumber === 1 ? `article-${entry.id}` : `article-${entry.id}-page-${pageNumber}`,
         showNumber: false,
     });
+    if (pageNumber === 1) article.page.classList.add("article-start");
+    return record;
+}
+
+function chooseArticlePageSplit(node, body) {
+    const candidates = [
+        splitNodeAtBoundary(node, body),
+        splitNodeAtListBoundary(node, body),
+    ].filter(Boolean);
+    if (node.tagName === "TABLE") {
+        candidates.push(splitTableAtRowBoundary(node, body));
+    } else if (node.tagName !== "UL" && node.tagName !== "OL") {
+        candidates.push(splitNode(node, body));
+    }
+    return candidates.filter(Boolean).sort((first, second) => (
+        nodeTextLength(second.prefix) - nodeTextLength(first.prefix)
+    ))[0] || null;
+}
+
+async function renderArticle(entry) {
+    const post = await fetchPost(entry.id);
+    const nodes = normalizeArticleNodes(sourceNodes(sanitizeSourceHTML(post.content_html)));
+    if (state.pageRecords.length % 2 === 1) {
+        createArticlePaddingPage(`article-padding-before-${entry.id}`);
+    }
+    const article = createArticlePage(post, entry);
+    const firstRecord = createArticlePageRecord(article, entry, 1);
     state.entryRecords.set(entry.id, { entry, post, firstRecord });
+
     nodes.forEach((node) => article.body.appendChild(node));
-    article.page.classList.add("article-start", "article-end");
+    await waitForImages(article.body);
+    article.body.replaceChildren();
+
+    const units = buildArticleUnits(nodes);
+    const articleRecords = [firstRecord];
+    let current = article;
+    let pageNumber = 1;
+
+    const startContinuation = () => {
+        pageNumber += 1;
+        current = createArticleContinuationPage();
+        articleRecords.push(createArticlePageRecord(current, entry, pageNumber));
+    };
+
+    for (let unitIndex = 0; unitIndex < units.length; unitIndex += 1) {
+        const unit = units[unitIndex];
+        const nextLeadNodes = units[unitIndex + 1]?.lead
+            ? leadMinimumNodes(units[unitIndex + 1].nodes)
+            : [];
+        if (unit.lead && shouldMoveLeadUnit(current.body, unit.nodes, nextLeadNodes)) {
+            startContinuation();
+        }
+
+        const pending = [...unit.nodes];
+        while (pending.length) {
+            const node = pending.shift();
+            current.body.appendChild(node);
+            if (pageFits(current.body)) continue;
+
+            current.body.removeChild(node);
+            if (bodyHasContent(current.body)) {
+                if (node.tagName === "TABLE") {
+                    startContinuation();
+                    pending.unshift(node);
+                    continue;
+                }
+                const split = chooseArticlePageSplit(node, current.body);
+                if (split) {
+                    current.body.appendChild(split.prefix);
+                    pending.unshift(split.remainder);
+                    continue;
+                }
+
+                startContinuation();
+                pending.unshift(node);
+                continue;
+            }
+
+            const split = chooseArticlePageSplit(node, current.body);
+            if (split) {
+                current.body.appendChild(split.prefix);
+                pending.unshift(split.remainder);
+                continue;
+            }
+
+            if (current.page.classList.contains("article-start")) {
+                startContinuation();
+                pending.unshift(node);
+                continue;
+            }
+
+            current.body.appendChild(node);
+            node.classList?.add("source-overflow");
+        }
+    }
+
+    if (!articleRecords.length) {
+        pageNumber += 1;
+        current = createArticleContinuationPage();
+        articleRecords.push(createArticlePageRecord(current, entry, pageNumber));
+    }
+
+    articleRecords.at(-1).page.classList.add("article-end");
+    if (articleRecords.length % 2 === 1) {
+        createArticlePaddingPage(`article-padding-after-${entry.id}`);
+    }
 }
 
 function buildSidebar() {
@@ -1132,11 +1758,15 @@ async function init() {
         buildFrontMatter();
         renderToc();
 
+        if (document.fonts?.ready) await document.fonts.ready;
+
         for (let index = 0; index < state.entries.length; index += 1) {
             const entry = state.entries[index];
             setLoadingStatus(`Loading ${index + 1} of ${state.entries.length}`);
             await renderArticle(entry);
         }
+
+        placePaddingEasterEggs();
 
         const backCover = createPageShell(createBackCoverPage(), {
             kind: "back-cover",
@@ -1146,6 +1776,7 @@ async function init() {
         state.frontMatterRecords.set("back-cover", backCover);
 
         if (document.fonts?.ready) await document.fonts.ready;
+        renderToc();
         buildSidebar();
         observePages();
         setLoadingStatus(`${state.entries.length} articles ready`);
