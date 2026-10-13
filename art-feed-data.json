@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T00:05:01.970601Z",
+  "lastUpdated": "2026-10-13T12:03:41.146277Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mxqwnq64qs2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "GRIDSHOCK is my dream game: a tabletop RPG where people with powers fight to bring down those in power. \n\nIt's also a game about death, greed, hope, and trucking in a post-apocalyptic world.\n\nIts crowdfunding campaign has less than 24 hours to go. It hasn't funded yet.\n\ngamefound.com/en/projects/...",
+        "createdAt": "2026-10-13T11:31:21.399Z"
+      },
+      "indexedAt": "2026-10-13T11:31:22.152Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://gamefound.com/en/projects/paul-vermeren--vx2/gridshock-zero-edition",
+        "title": "GRIDSHOCK Zero Edition by Paul Vermeren | VX2 - Gamefound",
+        "description": "You are a new breed of heroes, fighting to restore hope to a warped world in the grip of villainy. A new, standalone tabletop roleplaying game of superpowered resistance on the run, powered by the Yea...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreiai5xrn4dakdvty7eijnf5qrkanxhy63e5tp2pgwvj6dqrbzfn4ti"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mxoiev2fv22n",
       "source": "bluesky",
       "author": {
@@ -64,9 +93,9 @@
         "createdAt": "2026-10-12T12:10:32.668Z"
       },
       "indexedAt": "2026-10-12T12:10:32.662Z",
-      "replyCount": 1,
+      "replyCount": 2,
       "repostCount": 13,
-      "likeCount": 61,
+      "likeCount": 65,
       "embed": {
         "type": "external",
         "uri": "https://drive.google.com/file/d/1z9UiAq-M7Pp0F0OPiIYix4_kJ7VSO88Y/view",
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-10-11T16:32:27.951Z",
       "replyCount": 4,
-      "repostCount": 15,
-      "likeCount": 56,
+      "repostCount": 16,
+      "likeCount": 58,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/10/sorcerous-spells-in-house-of-high-king.html",
@@ -707,7 +736,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ehronlime.bsky.social",
-        "displayName": "Scare-on Lim \u6797\u5bb6\u4e30 @ PAX Aus",
+        "displayName": "Scare-on Lim \u6797\u5bb6\u4e30 @ Plane Seat With An Empty Seat Next To Me",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwzfl24tupml5kamt7gw672x/bafkreihuwabu4w42rxmmj3ja6lbxnttdbmg7x5axec2sqrmluvjpkasy5m"
       },
       "record": {
@@ -3237,7 +3266,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1874,
-      "likeCount": 8944,
+      "likeCount": 8943,
       "embed": {
         "type": "images",
         "images": [
