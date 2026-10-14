@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T00:04:35.756042Z",
+  "lastUpdated": "2026-10-14T12:02:31.507933Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:mh7l7xyhbahyrl7srmlfvsvp/app.bsky.feed.post/3mxse6uqdzk2r",
+      "source": "bluesky",
+      "author": {
+        "handle": "ipr.bsky.social",
+        "displayName": "Indie Press Revolution",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreidtibeicrlgx6r26ssprz7v3ogoff2sq6wkyeuv76x26nacoz4774"
+      },
+      "record": {
+        "text": "New!\n\nJourneyMon: Monster Trainer Roleplaying is an RPG about monster trainers on a journey of discovery.\n\nwww.indiepressrevolution.com/xcart/",
+        "createdAt": "2026-10-14T01:06:14.995Z"
+      },
+      "indexedAt": "2026-10-14T01:06:17.455Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreig7qvkdohbmllsmwwh6orrjxi5hqzhyfzngbvwbnpnpzlng7sefaq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mh7l7xyhbahyrl7srmlfvsvp/bafkreig7qvkdohbmllsmwwh6orrjxi5hqzhyfzngbvwbnpnpzlng7sefaq",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:7om5h43ddjbhm7cmuvc5n6ep/app.bsky.feed.post/3mxrozbqwy22s",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-10-13T18:47:24.452Z",
       "replyCount": 3,
-      "repostCount": 25,
-      "likeCount": 43,
+      "repostCount": 30,
+      "likeCount": 54,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +129,8 @@
       },
       "indexedAt": "2026-10-13T15:36:52.263Z",
       "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 20,
+      "repostCount": 17,
+      "likeCount": 42,
       "embed": {
         "type": "external",
         "uri": "https://diceexploder.com/posts/transcript-thri-kreen-dark-sun-with-zedeck-siew",
@@ -126,8 +158,8 @@
       },
       "indexedAt": "2026-10-13T14:29:31.957Z",
       "replyCount": 2,
-      "repostCount": 6,
-      "likeCount": 32,
+      "repostCount": 7,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -158,8 +190,8 @@
       },
       "indexedAt": "2026-10-13T13:59:55.357Z",
       "replyCount": 3,
-      "repostCount": 18,
-      "likeCount": 29,
+      "repostCount": 19,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -190,8 +222,8 @@
       },
       "indexedAt": "2026-10-13T12:57:24.058Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 15,
+      "repostCount": 7,
+      "likeCount": 16,
       "embed": {
         "type": "external",
         "uri": "https://omnes.exeunt.press/p/gene-koo-peoplecon",
@@ -219,8 +251,8 @@
       },
       "indexedAt": "2026-10-13T12:32:46.160Z",
       "replyCount": 7,
-      "repostCount": 51,
-      "likeCount": 159,
+      "repostCount": 58,
+      "likeCount": 173,
       "embed": {
         "type": "images",
         "images": [
@@ -289,7 +321,7 @@
       "source": "bluesky",
       "author": {
         "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
+        "displayName": "Paul VX2",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
       },
       "record": {
@@ -298,7 +330,7 @@
       },
       "indexedAt": "2026-10-13T11:31:22.152Z",
       "replyCount": 2,
-      "repostCount": 11,
+      "repostCount": 12,
       "likeCount": 16,
       "embed": {
         "type": "external",
@@ -778,7 +810,7 @@
       "source": "bluesky",
       "author": {
         "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2: Back GRIDSHOCK on Gamefound",
+        "displayName": "Paul VX2",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
       },
       "record": {
@@ -1830,7 +1862,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1441,
-      "likeCount": 6309,
+      "likeCount": 6308,
       "embed": {
         "type": "images",
         "images": [
@@ -3349,7 +3381,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2645,
-      "likeCount": 15602,
+      "likeCount": 15601,
       "embed": {
         "type": "images",
         "images": [
