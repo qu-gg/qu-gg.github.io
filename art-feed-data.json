@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T00:04:31.392527Z",
+  "lastUpdated": "2026-10-15T12:02:30.251988Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mxulrqhkes2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "Super cool update from @karlyanddd.bsky.social on her process in creating A Sliver of Evidence. \n\nwww.kickstarter.com/projects/cai...",
+        "createdAt": "2026-10-14T22:27:23.719Z"
+      },
+      "indexedAt": "2026-10-14T22:27:24.862Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 24,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence/posts/4828440",
+        "title": "Update 3: The Story of A Sliver of Evidence \u00b7 A Sliver of Evidence",
+        "description": "Hi everyone! Karly here. Gigantic THANK YOU to everyone who has checked out and backed this project!!&nbsp;I\u2019m very excited for this adventure to be out and hopefully it brings a lot of fun to your ta...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibzpc5awva3crp7ev4uqtmg5karqp56vlqgkddve3tdhywdbbnbz4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mxtsy6sggo2d",
       "source": "bluesky",
       "author": {
@@ -66,7 +95,7 @@
       "indexedAt": "2026-10-14T15:03:37.560Z",
       "replyCount": 3,
       "repostCount": 7,
-      "likeCount": 24,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +127,7 @@
       "indexedAt": "2026-10-14T14:56:56.854Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 11,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -129,8 +158,8 @@
       },
       "indexedAt": "2026-10-14T12:40:56.863Z",
       "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 11,
+      "repostCount": 10,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -162,7 +191,7 @@
       "indexedAt": "2026-10-14T01:06:17.455Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 13,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -194,7 +223,7 @@
       "indexedAt": "2026-10-13T18:47:24.452Z",
       "replyCount": 4,
       "repostCount": 35,
-      "likeCount": 65,
+      "likeCount": 67,
       "embed": {
         "type": "images",
         "images": [
@@ -347,8 +376,8 @@
       },
       "indexedAt": "2026-10-13T12:32:46.160Z",
       "replyCount": 7,
-      "repostCount": 58,
-      "likeCount": 176,
+      "repostCount": 59,
+      "likeCount": 175,
       "embed": {
         "type": "images",
         "images": [
@@ -812,67 +841,6 @@
       }
     },
     {
-      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mxbjmmx2l22j",
-      "source": "bluesky",
-      "author": {
-        "handle": "glitzydemon.itch.io",
-        "displayName": "Fabian Blake(he/him)My heart has joined the thousand\ud83d\udc94",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreigac4kdewfskbofxdxcbk7dzfeaunv27x3o4seadj76h7ul4vu7ii"
-      },
-      "record": {
-        "text": "Y'all are amazing, we're over half way there to paying for a basic cremation that family can attend \ud83d\ude4f\ud83d\udc96 (I'm sorry I've been quiet, we are currently losing my Mum as well, she's on end of life care\ud83d\udc94)\n\ud83d\ude4fReally appreciate all the shares and support so much\ud83d\ude4f\n\n itch.io/b/3922/mutua...",
-        "createdAt": "2026-10-07T08:28:09.748Z"
-      },
-      "indexedAt": "2026-10-07T08:28:11.856Z",
-      "replyCount": 1,
-      "repostCount": 20,
-      "likeCount": 23,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/b/3922/mutual-aid-for-grahams-funeral-costs",
-        "title": "Mutual Aid for Graham's Funeral Costs by Fabian Blake and 19 others",
-        "description": "Mutual Aid for Graham's Funeral Costs: 75 items for $5.00",
-        "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:yiudyecbo4kqdboj6tufqiyl/app.bsky.feed.post/3mxawx3kivs2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "jasonanarchy.bsky.social",
-        "displayName": "Jason Anarchy \ud83d\udd1c Auckland Armageddon Booth C99",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreicrmg6bh4mqxamtyfrqe42qwkjq2skcgjezrnpdo4gc2vh2bvjque"
-      },
-      "record": {
-        "text": "Does someone want to be follower 800 for the game I'm making with @fieldexplores.bsky.social?\n\nIf yes, follow here: gamefound.com/en/projects/...",
-        "createdAt": "2026-10-07T02:53:59.504Z"
-      },
-      "indexedAt": "2026-10-07T02:54:05.763Z",
-      "replyCount": 2,
-      "repostCount": 2,
-      "likeCount": 7,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreih7sbr547zklqktcukeknap4t7zcbzwx4xvqvn2mv3hwwkghkhgqa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yiudyecbo4kqdboj6tufqiyl/bafkreih7sbr547zklqktcukeknap4t7zcbzwx4xvqvn2mv3hwwkghkhgqa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "https://www.artstation.com/artwork/q0JXZN",
       "source": "artstation",
       "author": {
@@ -1098,7 +1066,7 @@
       "indexedAt": "2026-09-02T09:43:14.405Z",
       "replyCount": 6,
       "repostCount": 27,
-      "likeCount": 114,
+      "likeCount": 113,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/bastionland/intergalactic-bastionland-rpg-beyond-into-the-odd",
@@ -2373,7 +2341,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1240,
-      "likeCount": 6535,
+      "likeCount": 6534,
       "embed": {
         "type": "images",
         "images": [
@@ -2798,7 +2766,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1948,
-      "likeCount": 8453,
+      "likeCount": 8452,
       "embed": {
         "type": "images",
         "images": [
