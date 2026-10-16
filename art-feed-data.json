@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T12:02:30.251988Z",
+  "lastUpdated": "2026-10-16T00:04:23.100541Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,97 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mxwtkjltsk2y",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "One of my favorite running jokes when writing setting stuff for BREAK!! is that people from the in-game setting think our world (or at least, one very much like it) is really, really lame.\n\n(The one exception is generally they think video games are pretty cool)",
+        "createdAt": "2026-10-15T19:51:51.047Z"
+      },
+      "indexedAt": "2026-10-15T19:51:53.557Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 34,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigr5prakpgk4h2yiiejrortj7uaaagqsaqwhaizwiupic3njnypey",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreigr5prakpgk4h2yiiejrortj7uaaagqsaqwhaizwiupic3njnypey",
+            "alt": "An entry on the \"Other World\" from BREAK!!'s core rules - it's one that resembles our own, and the fantasy people don't think very much of it."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiaqcaioeygatt2d4y5xran5awde4bq6glsdtbe6tnh4rtf5jngx44",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiaqcaioeygatt2d4y5xran5awde4bq6glsdtbe6tnh4rtf5jngx44",
+            "alt": "A description of \"Donothan the Otherworlder\", a performance in Outer World that pokes fun at how lame he is"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mxwlbljwm22p",
+      "source": "bluesky",
+      "author": {
+        "handle": "binarystar.games",
+        "displayName": "Binary",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim"
+      },
+      "record": {
+        "text": "APOCALYPSE FRAME 2E devlog #2 is up. Tags are dead. Long live not-tags. \n\nbinarystar.games/posts/origin...",
+        "createdAt": "2026-10-15T17:23:41.160Z"
+      },
+      "indexedAt": "2026-10-15T17:23:41.963Z",
+      "replyCount": 2,
+      "repostCount": 11,
+      "likeCount": 23,
+      "embed": {
+        "type": "external",
+        "uri": "https://binarystar.games/posts/original-1791849166-post-apocalypse-2-the-death-of-tags/",
+        "title": "Post-APOCALYPSE #2: The Death of Tags",
+        "description": "At the end of the first post in this (intermittent, barely-started) series, I mentioned I wanted to talk about weapons (or specifically armaments), systems, and enemies. All of them changed in the sam...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreigg4zkr3g4mp3xzaq3rlojowgg6ya5tymdvjkseaayjvkefoufcd4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:afvllw5lz6bxxrpjhzddky7i/app.bsky.feed.post/3mxw3s3odbs2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "kobanya.bsky.social",
+        "displayName": "Basildur, Throw It Into the Fire!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afvllw5lz6bxxrpjhzddky7i/bafkreig7t4dz2g4krhbohpz6kbkbzot4ebifnonmtma3a3rpwctofjmqp4"
+      },
+      "record": {
+        "text": "You should buy my games. \n\nYou like Greek myths? Cats? Poignant sacrifices? Being naked? Riding the bus?\n\nAll my games are weird because I'm weird. \n\nYour support helps me patronize local food trucks! And get actual groceries lol\n\nrpg-trader.com/creator/205/...",
+        "createdAt": "2026-10-15T12:46:35.084Z"
+      },
+      "indexedAt": "2026-10-15T12:46:56.455Z",
+      "replyCount": 1,
+      "repostCount": 31,
+      "likeCount": 36,
+      "embed": {
+        "type": "external",
+        "uri": "https://rpg-trader.com/creator/205/basil-wright",
+        "title": "Basil Wright on RPG Trader",
+        "description": "I\u2019m a Game Writer, Designer, and Cultural Consultant. I love puns, fantasy novels, and psychology. My game design philosophy is to create games that promote community and have the lowest barrier of en...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:afvllw5lz6bxxrpjhzddky7i/bafkreibtx7opuijjg6fsw6jm5t3obboprxp5clt3sx4qnvnh35vmkafuha"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mxulrqhkes2h",
       "source": "bluesky",
       "author": {
@@ -64,9 +155,9 @@
         "createdAt": "2026-10-14T22:27:23.719Z"
       },
       "indexedAt": "2026-10-14T22:27:24.862Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 24,
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 32,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence/posts/4828440",
@@ -94,8 +185,8 @@
       },
       "indexedAt": "2026-10-14T15:03:37.560Z",
       "replyCount": 3,
-      "repostCount": 7,
-      "likeCount": 28,
+      "repostCount": 9,
+      "likeCount": 36,
       "embed": {
         "type": "images",
         "images": [
@@ -222,8 +313,8 @@
       },
       "indexedAt": "2026-10-13T18:47:24.452Z",
       "replyCount": 4,
-      "repostCount": 35,
-      "likeCount": 67,
+      "repostCount": 37,
+      "likeCount": 69,
       "embed": {
         "type": "images",
         "images": [
@@ -348,7 +439,7 @@
       "indexedAt": "2026-10-13T12:57:24.058Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 17,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://omnes.exeunt.press/p/gene-koo-peoplecon",
@@ -763,82 +854,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:3yggal4oooau2uk5ty52j2c7/app.bsky.feed.post/3mxcwrh7s3c26",
-      "source": "bluesky",
-      "author": {
-        "handle": "thegamingtable.bsky.social",
-        "displayName": "thegamingtable.bsky.social",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreihikxy7ssotykk2wzcdlvhdqijqtfduvp72mk6lct5meipwtnezgm"
-      },
-      "record": {
-        "text": "Hello, I have a new #review up. The dark age of man from Graham and Braham. You can watch it here: youtu.be/_H7DMI6DIMY?...\n\nThank you to candlelight games for sending this my way!\n\n#ttrpg #indierpg #tabletopreviews #indiegame",
-        "createdAt": "2026-10-07T21:56:09.891Z"
-      },
-      "indexedAt": "2026-10-07T21:56:11.261Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/_H7DMI6DIMY?si=w5rXiH92bMB5BpbJ",
-        "title": "Can You Survive the Dark Age of Man? Dark age of Man Ttrpg review",
-        "description": "YouTube video by The Gaming Table",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreibqnibgmhvtuxroxowpnboqf5tiy4smecgbbybosbdj7j5icg3kzi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:zi5arn7yfjhjr66krmvwxt4h/app.bsky.feed.post/3mxchvj6cp22g",
-      "source": "bluesky",
-      "author": {
-        "handle": "karlyanddd.bsky.social",
-        "displayName": "Karly!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreibebb2vtvghzjgcyt67ov3xznf6negaowuogpsom3pvttwmurpzly"
-      },
-      "record": {
-        "text": "Beginning, middle, and end for this guy",
-        "createdAt": "2026-10-07T17:30:00.030Z"
-      },
-      "indexedAt": "2026-10-07T17:30:07.275Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreigr3rgg2nbxudylwjtkrapdged5mn7la3w4melw7duh6jr27rv2s4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreigr3rgg2nbxudylwjtkrapdged5mn7la3w4melw7duh6jr27rv2s4",
-            "alt": "Scribbled idea"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreif4azirgtuq43vtc7jdigr7ifpskpehdfsuqj725sia3qxmeeespm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreif4azirgtuq43vtc7jdigr7ifpskpehdfsuqj725sia3qxmeeespm",
-            "alt": "Rough pencils "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreiguh3lsbypnt2jvvgy4wltevqam5smyadqwi2h2djmgi3pewrcaqq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreiguh3lsbypnt2jvvgy4wltevqam5smyadqwi2h2djmgi3pewrcaqq",
-            "alt": "Clean pencils. I don\u2019t always clean it up this much "
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreihlyrxfni3sfbj67rdbpfzsgxdsgh7wwsj6pnt3vyor7uckgyr6ky",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zi5arn7yfjhjr66krmvwxt4h/bafkreihlyrxfni3sfbj67rdbpfzsgxdsgh7wwsj6pnt3vyor7uckgyr6ky",
-            "alt": "Final lines and color! "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/q0JXZN",
@@ -2766,7 +2781,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1948,
-      "likeCount": 8452,
+      "likeCount": 8451,
       "embed": {
         "type": "images",
         "images": [
@@ -3019,7 +3034,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2344,
-      "likeCount": 11827,
+      "likeCount": 11826,
       "embed": {
         "type": "images",
         "images": [
@@ -3327,7 +3342,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 407,
-      "likeCount": 2363,
+      "likeCount": 2362,
       "embed": {
         "type": "images",
         "images": [
