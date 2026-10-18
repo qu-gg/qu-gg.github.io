@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T00:04:33.748014Z",
+  "lastUpdated": "2026-10-18T12:02:16.284137Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3my4hjsgvjs2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "As usual, Arcane Con was amazing, and mostly due to the hard work for @arcanesword.bsky.social. I was also fortunate this year to have a TON of great help from the Cairn Press team!\n\nNote: I don't know what the candelabra is doing. Ask @bymattkelly.bsky.social",
+        "createdAt": "2026-10-18T01:32:40.287Z"
+      },
+      "indexedAt": "2026-10-18T01:32:51.061Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 45,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigclrbqasx3xdzo4pq3uzn5psjmq4sivmvpz7bwjds74lvrbpp5l4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigclrbqasx3xdzo4pq3uzn5psjmq4sivmvpz7bwjds74lvrbpp5l4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3my3k2btben2x",
       "source": "bluesky",
       "author": {
@@ -66,7 +98,7 @@
       "indexedAt": "2026-10-17T16:45:01.757Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 5,
+      "likeCount": 6,
       "embed": {
         "type": "images",
         "images": [
@@ -163,8 +195,8 @@
       },
       "indexedAt": "2026-10-16T18:17:33.154Z",
       "replyCount": 3,
-      "repostCount": 15,
-      "likeCount": 22,
+      "repostCount": 16,
+      "likeCount": 23,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/B4CEiZvN5Io",
@@ -193,7 +225,7 @@
       "indexedAt": "2026-10-16T12:57:04.657Z",
       "replyCount": 4,
       "repostCount": 13,
-      "likeCount": 59,
+      "likeCount": 60,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/10/the-stone-isles-campaign-setting-in.html",
@@ -220,9 +252,9 @@
         "createdAt": "2026-10-15T19:51:51.047Z"
       },
       "indexedAt": "2026-10-15T19:51:53.557Z",
-      "replyCount": 3,
-      "repostCount": 13,
-      "likeCount": 74,
+      "replyCount": 4,
+      "repostCount": 14,
+      "likeCount": 75,
       "embed": {
         "type": "images",
         "images": [
@@ -313,7 +345,7 @@
       "indexedAt": "2026-10-14T22:27:24.862Z",
       "replyCount": 1,
       "repostCount": 6,
-      "likeCount": 34,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence/posts/4828440",
@@ -342,7 +374,7 @@
       "indexedAt": "2026-10-14T15:03:37.560Z",
       "replyCount": 4,
       "repostCount": 14,
-      "likeCount": 50,
+      "likeCount": 51,
       "embed": {
         "type": "images",
         "images": [
@@ -563,7 +595,7 @@
       "indexedAt": "2026-10-13T13:59:55.357Z",
       "replyCount": 3,
       "repostCount": 20,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "images",
         "images": [
