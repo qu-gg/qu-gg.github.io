@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T12:02:27.291475Z",
+  "lastUpdated": "2026-10-18T00:04:33.748014Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3my3k2btben2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids \u27a1\ufe0f Gamehole Con",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "On October 23, I'll be doing a live chat with Adventurer tier and up Patreons about my upcoming review of Beak, Feather, & Bone (game by @possibleworlds.bsky.social)! \n\nJoin here to be part of the action: https://www.patreon.com/cw/TTRPGkids\n\n",
+        "createdAt": "2026-10-17T16:45:01Z"
+      },
+      "indexedAt": "2026-10-17T16:45:01.757Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifu5xgh64zego3vpw77fgrbdkomir4cktcums4x4mzpjoogvktara",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreifu5xgh64zego3vpw77fgrbdkomir4cktcums4x4mzpjoogvktara",
+            "alt": "TTRPGkids Review Chat\nFriday, October 23 @ 10am ET\nexclusive discord live access for \nPatreon Adventurers (and up)\nshows graphics for an October 23 calendar, a microphone, and the cover of the game (which features an illustration of a raven in a cloak)"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:7drlurnmq2zztwn4qlf32sfg/app.bsky.feed.post/3my3gj4kxbs2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "bigbisdotdotdot.bsky.social",
+        "displayName": "Big B trans rights are human rights",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7drlurnmq2zztwn4qlf32sfg/bafkreidb3ynj2dffblxgsuzvpb2udcsyi6blmytsh24udozsdrip4m7mwe"
+      },
+      "record": {
+        "text": "You still have a chance to back this awesome project! \nForge Your Legend. \nCheck out L.O.R.E. Tabletop RPG by Antiquarian Games on @kickstarter.com @antqgames.bsky.social  #ttrpg #ttrpgcommunity www.kickstarter.com/projects/ant...",
+        "createdAt": "2026-10-17T15:41:43.883Z"
+      },
+      "indexedAt": "2026-10-17T15:41:45.654Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 3,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/antqgames/lore-tabletop-rpg?ref=project_bsky",
+        "title": "L.O.R.E. Tabletop RPG",
+        "description": "Final Fantasy Tactics meets D&D in a new, epic fantasy roleplaying game.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7drlurnmq2zztwn4qlf32sfg/bafkreidkhlkf7oi7ggbtaxomusa5k2fyxqc2gklmimc5fylowndhoive6m"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mxzbzdtmk22w",
       "source": "bluesky",
       "author": {
@@ -102,8 +163,8 @@
       },
       "indexedAt": "2026-10-16T18:17:33.154Z",
       "replyCount": 3,
-      "repostCount": 14,
-      "likeCount": 21,
+      "repostCount": 15,
+      "likeCount": 22,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/B4CEiZvN5Io",
@@ -131,8 +192,8 @@
       },
       "indexedAt": "2026-10-16T12:57:04.657Z",
       "replyCount": 4,
-      "repostCount": 12,
-      "likeCount": 52,
+      "repostCount": 13,
+      "likeCount": 59,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/10/the-stone-isles-campaign-setting-in.html",
@@ -160,8 +221,8 @@
       },
       "indexedAt": "2026-10-15T19:51:53.557Z",
       "replyCount": 3,
-      "repostCount": 11,
-      "likeCount": 64,
+      "repostCount": 13,
+      "likeCount": 74,
       "embed": {
         "type": "images",
         "images": [
@@ -280,8 +341,8 @@
       },
       "indexedAt": "2026-10-14T15:03:37.560Z",
       "replyCount": 4,
-      "repostCount": 13,
-      "likeCount": 47,
+      "repostCount": 14,
+      "likeCount": 50,
       "embed": {
         "type": "images",
         "images": [
@@ -376,8 +437,8 @@
       },
       "indexedAt": "2026-10-14T01:06:17.455Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 14,
+      "repostCount": 6,
+      "likeCount": 15,
       "embed": {
         "type": "images",
         "images": [
@@ -860,35 +921,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mxi6w56dek2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
-      },
-      "record": {
-        "text": "I really like fishing minigames so I made a video about fishing minigames (and generally fishing themed games) \ud83d\udc1f\ud83d\udc20",
-        "createdAt": "2026-10-10T00:05:15.762Z"
-      },
-      "indexedAt": "2026-10-10T00:05:18.263Z",
-      "replyCount": 2,
-      "repostCount": 9,
-      "likeCount": 33,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/c4R3wns2icM",
-        "title": "Why save the world when you could be fishing?",
-        "description": "YouTube video by Weird Place",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreigqenr6qiaadhtebyfrp4jd5wwgjwq5vhjnfxpy7m6gbcqf6lejay"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/q0JXZN",
@@ -1746,7 +1778,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 510,
-      "likeCount": 2659,
+      "likeCount": 2657,
       "embed": {
         "type": "images",
         "images": [
@@ -1886,7 +1918,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1441,
-      "likeCount": 6305,
+      "likeCount": 6303,
       "embed": {
         "type": "images",
         "images": [
@@ -1982,7 +2014,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 615,
-      "likeCount": 2902,
+      "likeCount": 2901,
       "embed": {
         "type": "images",
         "images": [
@@ -2039,7 +2071,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3886,
+      "likeCount": 3885,
       "embed": {
         "type": "images",
         "images": [
@@ -2391,7 +2423,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1239,
-      "likeCount": 6529,
+      "likeCount": 6528,
       "embed": {
         "type": "images",
         "images": [
@@ -2555,7 +2587,7 @@
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
       "repostCount": 670,
-      "likeCount": 2954,
+      "likeCount": 2953,
       "embed": {
         "type": "images",
         "images": [
@@ -2816,7 +2848,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1948,
-      "likeCount": 8447,
+      "likeCount": 8446,
       "embed": {
         "type": "images",
         "images": [
@@ -3068,8 +3100,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2342,
-      "likeCount": 11819,
+      "repostCount": 2341,
+      "likeCount": 11817,
       "embed": {
         "type": "images",
         "images": [
@@ -3125,8 +3157,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
-      "repostCount": 722,
-      "likeCount": 3334,
+      "repostCount": 721,
+      "likeCount": 3333,
       "embed": {
         "type": "images",
         "images": [
@@ -3154,7 +3186,7 @@
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
       "repostCount": 541,
-      "likeCount": 3024,
+      "likeCount": 3023,
       "embed": {
         "type": "images",
         "images": [
@@ -3349,7 +3381,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 61,
       "repostCount": 1873,
-      "likeCount": 8941,
+      "likeCount": 8940,
       "embed": {
         "type": "images",
         "images": [
@@ -3405,7 +3437,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2645,
-      "likeCount": 15595,
+      "likeCount": 15593,
       "embed": {
         "type": "images",
         "images": [
