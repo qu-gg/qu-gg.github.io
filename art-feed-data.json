@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T12:02:16.284137Z",
+  "lastUpdated": "2026-10-19T00:04:37.663731Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:3yggal4oooau2uk5ty52j2c7/app.bsky.feed.post/3my6fpas6kk2w",
+      "source": "bluesky",
+      "author": {
+        "handle": "thegamingtable.bsky.social",
+        "displayName": "thegamingtable.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreihikxy7ssotykk2wzcdlvhdqijqtfduvp72mk6lct5meipwtnezgm"
+      },
+      "record": {
+        "text": "A strange city, failed careers, and debts. \ud83c\udfd9\ufe0f\n\nI\u2019ve been checking out Electric Bastionland for The Gaming Table! If you\u2019re into weird settings and old-school RPGs, my review is up now.\n\nWhat\u2019s your favourite weird and wonderful RPG setting?\n\n\ud83c\udfa5 youtu.be/EpXemGY5-BU?...\n\n#TTRPG #indierrpg",
+        "createdAt": "2026-10-18T20:05:15.106Z"
+      },
+      "indexedAt": "2026-10-18T20:05:16.357Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 13,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/EpXemGY5-BU?si=D09LVttuXMiof6T2",
+        "title": "Electric Bastionland Review,Weird Fantasy at Its Best",
+        "description": "YouTube video by The Gaming Table",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3yggal4oooau2uk5ty52j2c7/bafkreigu47vfblmgnl56mm6waqklka7pt66r7jlk43vg5w4fefv2ucrmse"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3my4hjsgvjs2i",
       "source": "bluesky",
       "author": {
@@ -64,9 +93,9 @@
         "createdAt": "2026-10-18T01:32:40.287Z"
       },
       "indexedAt": "2026-10-18T01:32:51.061Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 45,
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 60,
       "embed": {
         "type": "images",
         "images": [
@@ -196,7 +225,7 @@
       "indexedAt": "2026-10-16T18:17:33.154Z",
       "replyCount": 3,
       "repostCount": 16,
-      "likeCount": 23,
+      "likeCount": 24,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/B4CEiZvN5Io",
@@ -225,7 +254,7 @@
       "indexedAt": "2026-10-16T12:57:04.657Z",
       "replyCount": 4,
       "repostCount": 13,
-      "likeCount": 60,
+      "likeCount": 61,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/10/the-stone-isles-campaign-setting-in.html",
@@ -254,7 +283,7 @@
       "indexedAt": "2026-10-15T19:51:53.557Z",
       "replyCount": 4,
       "repostCount": 14,
-      "likeCount": 75,
+      "likeCount": 76,
       "embed": {
         "type": "images",
         "images": [
@@ -316,7 +345,7 @@
       "indexedAt": "2026-10-15T12:46:56.455Z",
       "replyCount": 1,
       "repostCount": 33,
-      "likeCount": 40,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/creator/205/basil-wright",
@@ -374,7 +403,7 @@
       "indexedAt": "2026-10-14T15:03:37.560Z",
       "replyCount": 4,
       "repostCount": 14,
-      "likeCount": 51,
+      "likeCount": 52,
       "embed": {
         "type": "images",
         "images": [
@@ -3190,7 +3219,7 @@
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 14,
       "repostCount": 721,
-      "likeCount": 3333,
+      "likeCount": 3332,
       "embed": {
         "type": "images",
         "images": [
@@ -3469,7 +3498,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2645,
-      "likeCount": 15593,
+      "likeCount": 15592,
       "embed": {
         "type": "images",
         "images": [
