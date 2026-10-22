@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T12:02:23.545317Z",
+  "lastUpdated": "2026-10-22T00:04:08.369841Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,64 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jpa3wqeowobqu6zptuc2phwg/app.bsky.feed.post/3myfgegodfs2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "whatchadoingpod.bsky.social",
+        "displayName": "Whatcha Doing? podcast!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jpa3wqeowobqu6zptuc2phwg/bafkreibuzk4nnwseyv5d5hluhu6rraemf4rptnk7httjgez4ie72jm277m"
+      },
+      "record": {
+        "text": "New episode!!!\n\nThis time I'm sitting down with @calebzane.bsky.social and @seanireland.bsky.social to talking about Triangle Agency, Haunted Table and... Fergie???\n\nGo back The House Edge now!!!",
+        "createdAt": "2026-10-21T15:05:44.092Z"
+      },
+      "indexedAt": "2026-10-21T15:05:45.447Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://rss.com/podcasts/whatcha-doing/3251159/",
+        "title": "Caleb Zane Huett and Sean Ireland from Haunted Table!!! | Whatcha Doing?",
+        "description": "This time I'm sitting down with Caleb Zane Huett and Sean Ireland from Haunted Table!!",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jpa3wqeowobqu6zptuc2phwg/bafkreidp7yfbhwnhfm2t6ojw4jrhlzji5hvfplifucdn4y42yakygug4ja"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:ivcv2f73hr7rmo2cqonhmrg6/app.bsky.feed.post/3myerhubj722n",
+      "source": "bluesky",
+      "author": {
+        "handle": "jonasmerlin.bsky.social",
+        "displayName": "Jonas-Merlin Schumacher",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ivcv2f73hr7rmo2cqonhmrg6/bafkreiddk3uwws4i3p5x3txuiufdd4k6yzr37a5socwnp4zn37fj4f7ssa"
+      },
+      "record": {
+        "text": "Quick little mechanic for your October TPKs.\n\nwww.dungeonmerl.in/blog/unfinis...",
+        "createdAt": "2026-10-21T08:51:50.437Z"
+      },
+      "indexedAt": "2026-10-21T08:51:52.543Z",
+      "replyCount": 1,
+      "repostCount": 4,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.dungeonmerl.in/blog/unfinished-business",
+        "title": "Unfinished Business | Dungeon Merlin",
+        "description": "You can bargain with Death, but their schedule is immutable.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ivcv2f73hr7rmo2cqonhmrg6/bafkreib7bel23xec66cjp7oe365dkturzlikhihvpxvnw3svebubhd6nsu"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3myd6j335nc2x",
       "source": "bluesky",
       "author": {
@@ -66,7 +124,7 @@
       "indexedAt": "2026-10-20T17:40:04.946Z",
       "replyCount": 2,
       "repostCount": 3,
-      "likeCount": 37,
+      "likeCount": 38,
       "embed": {
         "type": "images",
         "images": [
@@ -94,7 +152,7 @@
       "indexedAt": "2026-10-20T14:52:17.340Z",
       "replyCount": 1,
       "repostCount": 6,
-      "likeCount": 16,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://diceexploder.com/posts/transcript-npcs-with-amanda-p",
@@ -184,7 +242,7 @@
       "indexedAt": "2026-10-20T12:19:04.644Z",
       "replyCount": 2,
       "repostCount": 26,
-      "likeCount": 48,
+      "likeCount": 49,
       "embed": {
         "type": "external",
         "uri": "https://podcasts.apple.com/us/podcast/dice-exploder/id1684883107",
@@ -212,8 +270,8 @@
       },
       "indexedAt": "2026-10-20T10:55:10.636Z",
       "replyCount": 2,
-      "repostCount": 36,
-      "likeCount": 36,
+      "repostCount": 42,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/202458/wh-arthur-birthday-sale-2026",
@@ -386,7 +444,7 @@
       },
       "indexedAt": "2026-10-18T01:32:51.061Z",
       "replyCount": 1,
-      "repostCount": 6,
+      "repostCount": 7,
       "likeCount": 67,
       "embed": {
         "type": "images",
@@ -955,53 +1013,6 @@
         "title": "Talking about PeopleCon with Gene Koo",
         "description": "People\u2019s Book in Takoma Park, MD (Washington, D.C. area) is hosting a free indie tabletop game market on Saturday, October 17, 2026. I\u2019ll be there! Here\u2019s what to expect!",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreif3edvcmpbipzxa4numhjbstrm246zb674p6lkii3slblxbonokgy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:qvetwdpnmrhxhialsevieylo/app.bsky.feed.post/3mxr23azkf22a",
-      "source": "bluesky",
-      "author": {
-        "handle": "diceless.club",
-        "displayName": "Har\u00b7bowoputra",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreiftkrnnymavisjflhndecnauaspqwc4xpcorohewafzgle5iw5j4u"
-      },
-      "record": {
-        "text": "EVERYONE PLEASE TAKE A LOOK AT OUR NEW GAME IT IS BEAUTIFUL AAAAAARGH\n\nYou play as a translator of divine language, translating newly revealed verses of God. Three competing noble Houses want to steer your translation to legitimize their claim to power.\n\nDICTUM demo out now on itch! \ud83d\udd17\u23ec",
-        "createdAt": "2026-10-13T12:32:36.498Z"
-      },
-      "indexedAt": "2026-10-13T12:32:46.160Z",
-      "replyCount": 7,
-      "repostCount": 61,
-      "likeCount": 177,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreibaewwm3ojjsj55frebfvn3weiw7bgv6aahclehbrwf5irpywk5he",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreibaewwm3ojjsj55frebfvn3weiw7bgv6aahclehbrwf5irpywk5he",
-            "alt": "A boy in priestly garb sitting and thinking. On the left is a tablet full of newly-revealed divine verse."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreigzquvuqekaupeairxivppqk2hfxbl32u2z63n5kgwaxtt45rjj4i",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreigzquvuqekaupeairxivppqk2hfxbl32u2z63n5kgwaxtt45rjj4i",
-            "alt": "Three golden bells hovering above a falling boy."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreihyfqqcx57uw7f2pxuwcxosi7xkhsl4lgfti4gbu5b5rmrmgasosy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreihyfqqcx57uw7f2pxuwcxosi7xkhsl4lgfti4gbu5b5rmrmgasosy",
-            "alt": "Three humanoid egregores, towering above on their thrones."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreidbnx7eiesutoieu35rjnhonjdv4znb6mo7s5bpmoiov4yvb36y6y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qvetwdpnmrhxhialsevieylo/bafkreidbnx7eiesutoieu35rjnhonjdv4znb6mo7s5bpmoiov4yvb36y6y",
-            "alt": "A boy in priestly garb reading a letter while sitting on a couch."
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2094,7 +2105,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1441,
-      "likeCount": 6299,
+      "likeCount": 6297,
       "embed": {
         "type": "images",
         "images": [
@@ -2247,7 +2258,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3884,
+      "likeCount": 3883,
       "embed": {
         "type": "images",
         "images": [
@@ -3361,8 +3372,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
-      "repostCount": 541,
-      "likeCount": 3021,
+      "repostCount": 540,
+      "likeCount": 3020,
       "embed": {
         "type": "images",
         "images": [
@@ -3612,7 +3623,7 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2644,
+      "repostCount": 2643,
       "likeCount": 15585,
       "embed": {
         "type": "images",
