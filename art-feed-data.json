@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T00:04:08.369841Z",
+  "lastUpdated": "2026-10-22T12:02:28.588849Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -51,6 +51,35 @@
     }
   },
   "posts": [
+    {
+      "uri": "at://did:plc:3grcjzxdkdpiurlkvhggokrl/app.bsky.feed.post/3myfobqbcec2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "masterconspirator.bsky.social",
+        "displayName": "Diogo Barros",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3grcjzxdkdpiurlkvhggokrl/bafkreicp25qnhseiu35fugffu4gx3rez4vfxmupqdimhw3uuxhaxuvwvfq"
+      },
+      "record": {
+        "text": "Well what've we got here? My base-building game of losers settling the worst place in existence is out on @spacepenguinink.bsky.social! Incredibly excited about this, we worked real hard to make this as good as possible. I think we even achieved it! See for yourself:\nspacepenguin.ink/products/hel...",
+        "createdAt": "2026-10-21T17:27:23.416Z"
+      },
+      "indexedAt": "2026-10-21T17:27:35.853Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://spacepenguin.ink/products/hellward-unto-the-breach?se_activity_id=201859629363&syclid=dbcf9fj8gh8s73d84kig&utm_campaign=It%27s+new+release+Wednesday%21_201859629363&utm_medium=email&utm_source=shopify_email",
+        "title": "Hellward Unto the Breach",
+        "description": "When slipgate technology was first discovered, and we chanced upon the Hell Dimension, there were those that feared that this would leave Earth open to Infernal takeover. The discovery that crossing a...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3grcjzxdkdpiurlkvhggokrl/bafkreibh2rf77yut2kezib3n74ffq4e65asr5cygeihzqrphw3olkdhgee"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
     {
       "uri": "at://did:plc:jpa3wqeowobqu6zptuc2phwg/app.bsky.feed.post/3myfgegodfs2g",
       "source": "bluesky",
@@ -167,6 +196,38 @@
       }
     },
     {
+      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mycu2z3bxg2d",
+      "source": "bluesky",
+      "author": {
+        "handle": "ttrpgkids.com",
+        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
+      },
+      "record": {
+        "text": "Today's new review is for Beak, Feather, & Bone, a map making TTRPG by  @possibleworlds.bsky.social! This is a game of collaboration, creation, and competition as you take on the roles of entire factions of ravenfolk.  Full review here: https://loom.ly/LgyswxI\n",
+        "createdAt": "2026-10-20T14:33:00Z"
+      },
+      "indexedAt": "2026-10-20T14:33:04.547Z",
+      "replyCount": 3,
+      "repostCount": 8,
+      "likeCount": 20,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihmbg2k7v6v6p4l4e4lmab5mbay36qpcmurtae5h7gusszsp2apra",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihmbg2k7v6v6p4l4e4lmab5mbay36qpcmurtae5h7gusszsp2apra",
+            "alt": "Review: Beak, Feather, & Bone\nshows cover art for the game that has an illustration of a ravenfolk on it"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:6rcdfmwy3hjpixblefsgkt7o/app.bsky.feed.post/3mycsq6w6bk2a",
       "source": "bluesky",
       "author": {
@@ -242,7 +303,7 @@
       "indexedAt": "2026-10-20T12:19:04.644Z",
       "replyCount": 2,
       "repostCount": 26,
-      "likeCount": 49,
+      "likeCount": 50,
       "embed": {
         "type": "external",
         "uri": "https://podcasts.apple.com/us/podcast/dice-exploder/id1684883107",
@@ -329,7 +390,7 @@
       "indexedAt": "2026-10-19T18:05:51.353Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/thirdkingdom/populated-hexes-monthly-issue-61",
@@ -467,7 +528,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f Gamehole Con",
+        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
       },
       "record": {
@@ -528,7 +589,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f Gamehole Con",
+        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
       },
       "record": {
@@ -952,67 +1013,6 @@
             "alt": ""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:67acdzswmethkst5oniz6gl2/app.bsky.feed.post/3mxr6x7v5ws2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "golden-achiever.bsky.social",
-        "displayName": "Golden Achiever",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreif2p5g3ejmu4un5fknfcraxukzdifl4ida623ap7sedvrah4dretm"
-      },
-      "record": {
-        "text": "Year 100 Million B.C. is live!\nA wildly historically inaccurate prehistoric rpg. Based on the tried-and-tested Into the Odd rules. Comes with a big wilderness sandbox and generators for millions of years of play. Ships from the USA.\nLinks below!",
-        "createdAt": "2026-10-13T13:59:49.791Z"
-      },
-      "indexedAt": "2026-10-13T13:59:55.357Z",
-      "replyCount": 3,
-      "repostCount": 20,
-      "likeCount": 34,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreidrxjbncabgccssdoyxltar4shoy57eg274tzvnbuffjjbez4ybgq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:67acdzswmethkst5oniz6gl2/bafkreidrxjbncabgccssdoyxltar4shoy57eg274tzvnbuffjjbez4ybgq",
-            "alt": "Promotional image for the game Year 100 Million B.C. A big monkey is staring down a mastodon. They will probably fight."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:o4clyujg33gf5bw6ppma6pwo/app.bsky.feed.post/3mxr3hkhu7c2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "binarystar.games",
-        "displayName": "Binary",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreiexvyghszrfmtogl2jh2agqzp4r4ohwxh3n4hl7atafqgh6evwqim"
-      },
-      "record": {
-        "text": "@exeunt.press wrote a fantastic article about PeopleCon (Takoma Park, this Saturday, October 17th)! omnes.exeunt.press/p/gene-koo-p...",
-        "createdAt": "2026-10-13T12:57:22.808Z"
-      },
-      "indexedAt": "2026-10-13T12:57:24.058Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 21,
-      "embed": {
-        "type": "external",
-        "uri": "https://omnes.exeunt.press/p/gene-koo-peoplecon",
-        "title": "Talking about PeopleCon with Gene Koo",
-        "description": "People\u2019s Book in Takoma Park, MD (Washington, D.C. area) is hosting a free indie tabletop game market on Saturday, October 17, 2026. I\u2019ll be there! Here\u2019s what to expect!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4clyujg33gf5bw6ppma6pwo/bafkreif3edvcmpbipzxa4numhjbstrm246zb674p6lkii3slblxbonokgy"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
