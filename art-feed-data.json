@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T12:02:35.694959Z",
+  "lastUpdated": "2026-10-24T00:04:03.246790Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,125 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:bktssur4phxokmndtgekh3eo/app.bsky.feed.post/3mykgt77v7k2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "mindstorm.bsky.social",
+        "displayName": "Ty",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreieudskyzwgnyjhbwinw4ruymod2swea42h3tmf3q5gibke53pxkqy"
+      },
+      "record": {
+        "text": "I've got a special treat today! We organized a collaborative project in @prismaticwasteland.com's discord. Our goal was a hexcrawl project inspired by OVER THE GARDEN WALL. This is the PRISMATIC PUMPKINCRAWL. 31 powderkeg-packed hexes. \n\nIt's completely free. mindstormpress.itch.io/prismatic-pu...",
+        "createdAt": "2026-10-23T14:57:18.273Z"
+      },
+      "indexedAt": "2026-10-23T14:57:21.149Z",
+      "replyCount": 3,
+      "repostCount": 36,
+      "likeCount": 64,
+      "embed": {
+        "type": "external",
+        "uri": "https://mindstormpress.itch.io/prismatic-pumpkincrawl",
+        "title": "Prismatic Pumpkincrawl by mindstorm",
+        "description": "An autumnal adventure",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreicjyldwm5u64dttijqryqiq6zjxux3wcxnaqprxczwbewiuvzobza"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3myk54g5u3s2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up (From the Grave) Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Did you know? Were you aware? I'm now on RPGTrader! \n\nrpgtrader.com/creator/1838...\n\nIf you ever thought, \"I love Josh's books, but I'd like to buy them in digital format from a DIFFERENT web shop,\" this will be good news!",
+        "createdAt": "2026-10-23T12:03:30.130Z"
+      },
+      "indexedAt": "2026-10-23T12:03:33.943Z",
+      "replyCount": 3,
+      "repostCount": 20,
+      "likeCount": 91,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibtm4eiuhmkrhnqxciqqzg7srnp7gtexidnuzeulcyl7uane3ne2m",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibtm4eiuhmkrhnqxciqqzg7srnp7gtexidnuzeulcyl7uane3ne2m",
+            "alt": "My product page of His Majesty the Worm and Under HIll, By Water books at RPGTrader: https://rpgtrader.com/creator/1838/rise-up-comus?sort=price_desc"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:kvimu4243sxr5pv44eitkckc/app.bsky.feed.post/3myjtqn557k2w",
+      "source": "bluesky",
+      "author": {
+        "handle": "tidalwavegames.com",
+        "displayName": "Tidal Wave Games | TURTLE TIME 10/23",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kvimu4243sxr5pv44eitkckc/bafkreiejopbboaho7howztkq2ddc2gkeqp6pupqisncgfzt3fmkdnadyyy"
+      },
+      "record": {
+        "text": "Writing by \n@kattkirsch.bsky.social @sadslut.club @hawkdc.bsky.social @discodan.bsky.social @bellebitesback.bsky.social @scarius.bsky.social and @onslaughtsix.bsky.social.\n\nArt by @tonytranrpg.bsky.social @chaoclypse.bsky.social @hodagrpg.bsky.social.\n\nFree Torshua. \n\nSave the world.",
+        "createdAt": "2026-10-23T09:15:51.109Z"
+      },
+      "indexedAt": "2026-10-23T09:15:53.146Z",
+      "replyCount": 0,
+      "repostCount": 18,
+      "likeCount": 28,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=bvu2jq",
+        "title": "All The Way Down",
+        "description": "A Cosmic Turtle Megadungeon for Old School Roleplaying Games",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kvimu4243sxr5pv44eitkckc/bafkreihaptkbpiwx2i7kgcra4rmqioof2i7rpugflimxyumqi4qxbcehpi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5znvwcngxw4byieen2biqmrv/app.bsky.feed.post/3myineqivws27",
+      "source": "bluesky",
+      "author": {
+        "handle": "naeolin.bsky.social",
+        "displayName": "WiddershinsWanderings",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreibc7prmep376lkq7wbhqoquihapufrvafxbqmfste3mdthvwico3y"
+      },
+      "record": {
+        "text": "I've been running a sandbox campaign for my kids! Read all about the joys and challenges of running an OSR game for kids under 10. With special thanks to @n8hps.bsky.social 's Dogtooth Valley for a great little module.\n\nwiddershinswanderings.bearblog.dev/running-cair...",
+        "createdAt": "2026-10-22T21:49:09.808Z"
+      },
+      "indexedAt": "2026-10-22T21:49:11.242Z",
+      "replyCount": 0,
+      "repostCount": 11,
+      "likeCount": 46,
+      "embed": {
+        "type": "external",
+        "uri": "https://widdershinswanderings.bearblog.dev/running-cairn-with-my-kids/",
+        "title": "Running Cairn for My Kids",
+        "description": "A blog post in which I describe my experiences running a modified version of Cairn for my own kids.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreicoai4ubsgtkgu5vn3uahizc2unkreevfyqcecdhliwvk6xpor3yi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3myimyqg3cc2l",
       "source": "bluesky",
       "author": {
@@ -66,7 +185,7 @@
       "indexedAt": "2026-10-22T21:42:49.380Z",
       "replyCount": 4,
       "repostCount": 0,
-      "likeCount": 22,
+      "likeCount": 23,
       "embed": {
         "type": "images",
         "images": [
@@ -130,8 +249,8 @@
       },
       "indexedAt": "2026-10-22T15:49:17.738Z",
       "replyCount": 2,
-      "repostCount": 14,
-      "likeCount": 29,
+      "repostCount": 15,
+      "likeCount": 31,
       "embed": {
         "type": "images",
         "images": [
@@ -194,8 +313,8 @@
       },
       "indexedAt": "2026-10-22T13:59:22.949Z",
       "replyCount": 2,
-      "repostCount": 20,
-      "likeCount": 58,
+      "repostCount": 21,
+      "likeCount": 60,
       "embed": {
         "type": "images",
         "images": [
@@ -227,7 +346,7 @@
       "indexedAt": "2026-10-22T12:30:28.039Z",
       "replyCount": 0,
       "repostCount": 3,
-      "likeCount": 10,
+      "likeCount": 12,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/third-kingdom-games/a-game-master-s-guide-to-poisons",
@@ -256,7 +375,7 @@
       "indexedAt": "2026-10-22T12:02:11.141Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 32,
+      "likeCount": 33,
       "embed": {
         "type": "external",
         "uri": "https://www.patreon.com/betweentwocairns/posts/folly-of-172378662/",
@@ -372,7 +491,7 @@
       "indexedAt": "2026-10-20T17:40:04.946Z",
       "replyCount": 2,
       "repostCount": 3,
-      "likeCount": 38,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -399,7 +518,7 @@
       },
       "indexedAt": "2026-10-20T14:52:17.340Z",
       "replyCount": 1,
-      "repostCount": 6,
+      "repostCount": 7,
       "likeCount": 19,
       "embed": {
         "type": "external",
@@ -637,8 +756,8 @@
       },
       "indexedAt": "2026-10-19T17:35:55.361Z",
       "replyCount": 0,
-      "repostCount": 16,
-      "likeCount": 17,
+      "repostCount": 17,
+      "likeCount": 18,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/b/3936/halloween-hijinks-ttrpg",
@@ -855,7 +974,7 @@
       "indexedAt": "2026-10-16T18:17:33.154Z",
       "replyCount": 3,
       "repostCount": 16,
-      "likeCount": 24,
+      "likeCount": 25,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/B4CEiZvN5Io",
@@ -975,138 +1094,13 @@
       "indexedAt": "2026-10-15T12:46:56.455Z",
       "replyCount": 1,
       "repostCount": 32,
-      "likeCount": 42,
+      "likeCount": 43,
       "embed": {
         "type": "external",
         "uri": "https://rpg-trader.com/creator/205/basil-wright",
         "title": "Basil Wright on RPG Trader",
         "description": "I\u2019m a Game Writer, Designer, and Cultural Consultant. I love puns, fantasy novels, and psychology. My game design philosophy is to create games that promote community and have the lowest barrier of en...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:afvllw5lz6bxxrpjhzddky7i/bafkreibtx7opuijjg6fsw6jm5t3obboprxp5clt3sx4qnvnh35vmkafuha"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3mxulrqhkes2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "Super cool update from @karlyanddd.bsky.social on her process in creating A Sliver of Evidence. \n\nwww.kickstarter.com/projects/cai...",
-        "createdAt": "2026-10-14T22:27:23.719Z"
-      },
-      "indexedAt": "2026-10-14T22:27:24.862Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 35,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/cairnpress/a-sliver-of-evidence/posts/4828440",
-        "title": "Update 3: The Story of A Sliver of Evidence \u00b7 A Sliver of Evidence",
-        "description": "Hi everyone! Karly here. Gigantic THANK YOU to everyone who has checked out and backed this project!!&nbsp;I\u2019m very excited for this adventure to be out and hopefully it brings a lot of fun to your ta...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreibzpc5awva3crp7ev4uqtmg5karqp56vlqgkddve3tdhywdbbnbz4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:bw3aundhc7d5dgqctbh3bsqi/app.bsky.feed.post/3mxtsy6sggo2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "mythworks.bsky.social",
-        "displayName": "Mythworks is making the Myth Work",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreiaep2xkqejvvc3ra2sy73p2lot43nfz6espzjlx3j5egkdwt3k3ym"
-      },
-      "record": {
-        "text": "WHAT IS MYTHWORKS PRESENTS?!\n\nMythworks Presents are projects that we love! They may have the same passion for worldbuilding as we do, tell a compelling story, or offer a different perspective of the world.\n\nSee what we love \ud83d\udc49\nhttps://www.myth.works/collections/mythopoeia-presents",
-        "createdAt": "2026-10-14T15:03:36.300635558Z"
-      },
-      "indexedAt": "2026-10-14T15:03:37.560Z",
-      "replyCount": 4,
-      "repostCount": 14,
-      "likeCount": 56,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreihz2ysb77g7tpxei7ywlujgcn5oztstetylcmkir7avfbk5be7z2y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bw3aundhc7d5dgqctbh3bsqi/bafkreihz2ysb77g7tpxei7ywlujgcn5oztstetylcmkir7avfbk5be7z2y",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:wvwija3mtz2q3l3tz5d66xze/app.bsky.feed.post/3mxtsm5zp5c2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "bentobitt.bsky.social",
-        "displayName": "Bone Tower",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreicnqrekwsyimynfdu2oxyeohmd6slw7enqkychfsdtop3o4ucrxje"
-      },
-      "record": {
-        "text": "As part of the Zero Hour Kickstarter campaign, you can also get the discounted Digital map pack with both pre-made maps, pre-made rooms and items to make your own secret lab to fill with mutated horrors.\n\nwww.kickstarter.com/projects/163...",
-        "createdAt": "2026-10-14T14:56:53.069Z"
-      },
-      "indexedAt": "2026-10-14T14:56:56.854Z",
-      "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 12,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreihj3hy7ld5v3qldhqodit4jl6o6xhw67gqym7n2vs7una2ochmdmy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wvwija3mtz2q3l3tz5d66xze/bafkreihj3hy7ld5v3qldhqodit4jl6o6xhw67gqym7n2vs7una2ochmdmy",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:f45qwudyed2mnzuwyeaca7iw/app.bsky.feed.post/3mxtkyzlyws23",
-      "source": "bluesky",
-      "author": {
-        "handle": "jackguignol.bsky.social",
-        "displayName": "Jack Guignol",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreibuxpnncf64jgjtezccwtwqs3b3nxhzd3jdwcyenqnuixrjkkbqci"
-      },
-      "record": {
-        "text": "My novel is on sale as an absolute STEAL at under fourteen bones! You get a LOT of novel for that price! This one's for the dark fantasy fans out there. Support indie authors! And please share this around! www.amazon.com/Ornamental-W...",
-        "createdAt": "2026-10-14T12:40:54.702Z"
-      },
-      "indexedAt": "2026-10-14T12:40:56.863Z",
-      "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 14,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreif4e6qmqnkl7dzsvezuhcyvtlfgr56gt7xrp4tcwq7v56tfjomtcm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreif4e6qmqnkl7dzsvezuhcyvtlfgr56gt7xrp4tcwq7v56tfjomtcm",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2199,7 +2193,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1441,
-      "likeCount": 6297,
+      "likeCount": 6296,
       "embed": {
         "type": "images",
         "images": [
@@ -2352,7 +2346,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3883,
+      "likeCount": 3882,
       "embed": {
         "type": "images",
         "images": [
@@ -3129,7 +3123,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1946,
-      "likeCount": 8441,
+      "likeCount": 8440,
       "embed": {
         "type": "images",
         "images": [
@@ -3382,7 +3376,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2341,
-      "likeCount": 11812,
+      "likeCount": 11811,
       "embed": {
         "type": "images",
         "images": [
@@ -3494,8 +3488,8 @@
       },
       "indexedAt": "2025-02-01T18:33:08.562Z",
       "replyCount": 3,
-      "repostCount": 175,
-      "likeCount": 1285,
+      "repostCount": 174,
+      "likeCount": 1284,
       "embed": {
         "type": "images",
         "images": [
@@ -3550,8 +3544,8 @@
       },
       "indexedAt": "2025-01-02T01:05:38.750Z",
       "replyCount": 9,
-      "repostCount": 454,
-      "likeCount": 2435,
+      "repostCount": 452,
+      "likeCount": 2433,
       "embed": {
         "type": "images",
         "images": [
@@ -3662,7 +3656,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
       "repostCount": 1873,
-      "likeCount": 8937,
+      "likeCount": 8936,
       "embed": {
         "type": "images",
         "images": [
@@ -3718,7 +3712,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2642,
-      "likeCount": 15583,
+      "likeCount": 15581,
       "embed": {
         "type": "images",
         "images": [
