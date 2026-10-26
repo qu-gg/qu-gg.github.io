@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T12:02:23.436681Z",
+  "lastUpdated": "2026-10-26T00:04:38.787352Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-10-24T22:45:44.245Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 27,
+      "repostCount": 12,
+      "likeCount": 31,
       "embed": {
         "type": "external",
         "uri": "https://share.google/wBTu2d7nOyCfghTO2",
@@ -94,8 +94,8 @@
       },
       "indexedAt": "2026-10-24T18:18:43.237Z",
       "replyCount": 0,
-      "repostCount": 10,
-      "likeCount": 13,
+      "repostCount": 19,
+      "likeCount": 28,
       "embed": {
         "type": "external",
         "uri": "https://forms.gle/ee8WBLq4KVvJf3ap8",
@@ -107,6 +107,43 @@
         "handle": "naldodrinan.bsky.social",
         "displayName": "Reynaldo (Going to PAX U)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3mymtr5zwrk2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy is at Arcanecon",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "Did you know that by Subscribing on Patreon, you get access to the spot art I'm making? It's all CCby and you can use it for your books! (the actual versions that aren't low res screenshots are hi res, tasty .pngs) patreon.com/better_legends",
+        "createdAt": "2026-10-24T13:54:08.054Z"
+      },
+      "indexedAt": "2026-10-24T13:54:09.643Z",
+      "replyCount": 1,
+      "repostCount": 14,
+      "likeCount": 82,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiee75qkotgg5vjcrygrvkl4yzr3r5bzuauyrjq5qrxv45islkmeyu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreiee75qkotgg5vjcrygrvkl4yzr3r5bzuauyrjq5qrxv45islkmeyu",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicbrz2icrsfoj6qn6crtv7hdohhjn3klgdha4kbnmtppzopiglwba",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreicbrz2icrsfoj6qn6crtv7hdohhjn3klgdha4kbnmtppzopiglwba",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
       }
     },
     {
@@ -123,8 +160,8 @@
       },
       "indexedAt": "2026-10-23T15:11:44.450Z",
       "replyCount": 0,
-      "repostCount": 20,
-      "likeCount": 39,
+      "repostCount": 21,
+      "likeCount": 40,
       "embed": {
         "type": "external",
         "uri": "https://oddsandents.itch.io/digital-notebook",
@@ -152,7 +189,7 @@
       },
       "indexedAt": "2026-10-23T14:57:21.149Z",
       "replyCount": 3,
-      "repostCount": 41,
+      "repostCount": 42,
       "likeCount": 82,
       "embed": {
         "type": "external",
@@ -182,7 +219,7 @@
       "indexedAt": "2026-10-23T12:03:33.943Z",
       "replyCount": 3,
       "repostCount": 21,
-      "likeCount": 99,
+      "likeCount": 101,
       "embed": {
         "type": "images",
         "images": [
@@ -213,8 +250,8 @@
       },
       "indexedAt": "2026-10-23T09:15:53.146Z",
       "replyCount": 0,
-      "repostCount": 21,
-      "likeCount": 32,
+      "repostCount": 24,
+      "likeCount": 35,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=bvu2jq",
@@ -1990,7 +2027,7 @@
       },
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
-      "repostCount": 510,
+      "repostCount": 511,
       "likeCount": 2658,
       "embed": {
         "type": "images",
@@ -3061,7 +3098,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1945,
-      "likeCount": 8440,
+      "likeCount": 8439,
       "embed": {
         "type": "images",
         "images": [
@@ -3398,8 +3435,8 @@
       },
       "indexedAt": "2025-02-06T23:53:28.858Z",
       "replyCount": 12,
-      "repostCount": 540,
-      "likeCount": 3019,
+      "repostCount": 539,
+      "likeCount": 3018,
       "embed": {
         "type": "images",
         "images": [
@@ -3593,7 +3630,7 @@
       },
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
-      "repostCount": 1873,
+      "repostCount": 1872,
       "likeCount": 8936,
       "embed": {
         "type": "images",
@@ -3649,8 +3686,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2641,
-      "likeCount": 15580,
+      "repostCount": 2640,
+      "likeCount": 15578,
       "embed": {
         "type": "images",
         "images": [
