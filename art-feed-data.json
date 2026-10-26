@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T00:04:38.787352Z",
+  "lastUpdated": "2026-10-26T12:58:36.846324Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,72 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3myqn7thapc2u",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.bsky.social",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "They call me and my friends \"HERETICS\" and \"CULTISTS\" in the local TTRPG scene\n\nafraidofencounters.bearblog.dev/being-called...",
+        "createdAt": "2026-10-26T02:07:43.034Z"
+      },
+      "indexedAt": "2026-10-26T02:07:47.135Z",
+      "replyCount": 2,
+      "repostCount": 18,
+      "likeCount": 43,
+      "embed": {
+        "type": "external",
+        "uri": "https://afraidofencounters.bearblog.dev/being-called-a-heretic-and-a-cultist-in-the-indonesian-ttrpg-scene/",
+        "title": "Being called a \"Heretic\" and a \"Cultist\" in the Indonesian TTRPG scene",
+        "description": "My experience being called a Heretic and a Cultist in the Indonesian TTRPG scene",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreidzjs3snx63qbdlcfjty7hwpi2xf7qyv6lsybjd5l4maryqhiui4q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:lxj6fo7atoir35pvn3idij42/app.bsky.feed.post/3mypdq7ll622m",
+      "source": "bluesky",
+      "author": {
+        "handle": "sharkabytes.bsky.social",
+        "displayName": "Sasha's Retrobytes \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lxj6fo7atoir35pvn3idij42/bafkreidhilakat727a5fdqf5f6yepxi5jscw5xuulcmyxcy5eb6wfpdfdq"
+      },
+      "record": {
+        "text": "Hey y'all. I've been let down again on some promised client work that would have tided me over till the end of the month. \n\nI've put together this mega-bundle containing all 38 issues of my retro gaming history, features, and community contributions digi-zine. \n\nko-fi.com/s/fab638b683\n\n1/2",
+        "createdAt": "2026-10-25T13:45:15.466Z"
+      },
+      "indexedAt": "2026-10-25T13:45:17.945Z",
+      "replyCount": 2,
+      "repostCount": 99,
+      "likeCount": 125,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lxj6fo7atoir35pvn3idij42/bafkreiemvowu24fsbrjyiniyyms4glfam5vnwofaldf2grtoydgvln2yfy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lxj6fo7atoir35pvn3idij42/bafkreiemvowu24fsbrjyiniyyms4glfam5vnwofaldf2grtoydgvln2yfy",
+            "alt": "A fundraising mega bundle banner advertising the Scanlines zine mega bundle"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lxj6fo7atoir35pvn3idij42/bafkreib2dulucihu4pmuwoi7dvzqevxzablvvsxqo7uhxpfxlko2fhhl4e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lxj6fo7atoir35pvn3idij42/bafkreib2dulucihu4pmuwoi7dvzqevxzablvvsxqo7uhxpfxlko2fhhl4e",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:ldxdlx5g2cedynnj6tapzqdu/app.bsky.feed.post/3mynrhoy5x22w",
       "source": "bluesky",
       "author": {
@@ -95,7 +161,7 @@
       "indexedAt": "2026-10-24T18:18:43.237Z",
       "replyCount": 0,
       "repostCount": 19,
-      "likeCount": 28,
+      "likeCount": 29,
       "embed": {
         "type": "external",
         "uri": "https://forms.gle/ee8WBLq4KVvJf3ap8",
@@ -124,7 +190,7 @@
       "indexedAt": "2026-10-24T13:54:09.643Z",
       "replyCount": 1,
       "repostCount": 14,
-      "likeCount": 82,
+      "likeCount": 83,
       "embed": {
         "type": "images",
         "images": [
@@ -189,8 +255,8 @@
       },
       "indexedAt": "2026-10-23T14:57:21.149Z",
       "replyCount": 3,
-      "repostCount": 42,
-      "likeCount": 82,
+      "repostCount": 43,
+      "likeCount": 83,
       "embed": {
         "type": "external",
         "uri": "https://mindstormpress.itch.io/prismatic-pumpkincrawl",
@@ -438,7 +504,7 @@
       "indexedAt": "2026-10-22T13:59:22.949Z",
       "replyCount": 2,
       "repostCount": 21,
-      "likeCount": 60,
+      "likeCount": 61,
       "embed": {
         "type": "images",
         "images": [
@@ -852,7 +918,7 @@
       "indexedAt": "2026-10-19T18:05:51.353Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 9,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/thirdkingdom/populated-hexes-monthly-issue-61",
@@ -1039,43 +1105,6 @@
         "title": "L.O.R.E. Tabletop RPG",
         "description": "Final Fantasy Tactics meets D&D in a new, epic fantasy roleplaying game.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7drlurnmq2zztwn4qlf32sfg/bafkreidkhlkf7oi7ggbtaxomusa5k2fyxqc2gklmimc5fylowndhoive6m"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mxzbzdtmk22w",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
-      },
-      "record": {
-        "text": "Come find games by TTRPGkids at Gamehole Con!\n\n@tabletopbookshelf.com, @9thlevelgames.bsky.social, and @nattwo.bsky.social have a mix between them of Mystery Snacks, Bakers Charge, Storyguider, Making a TTRPG for Your Particular Kid, and A Construct's Nature!",
-        "createdAt": "2026-10-16T19:16:00.157Z"
-      },
-      "indexedAt": "2026-10-16T19:16:19.857Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 15,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiefo5fnrrzfanbmypu5un4g76u72r25dzadqfcvmvqs3yufnoxhci",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiefo5fnrrzfanbmypu5un4g76u72r25dzadqfcvmvqs3yufnoxhci",
-            "alt": "A photo of the tabletop bookshelf booth with the owner pointing to books for sale!"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreig273a4wuqme3jlgpvjdbdc725i3xsqv4znjstdzxg2aoulm2enui",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreig273a4wuqme3jlgpvjdbdc725i3xsqv4znjstdzxg2aoulm2enui",
-            "alt": "A photo of the 9th level games booth "
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
