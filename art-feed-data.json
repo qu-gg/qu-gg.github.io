@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T12:01:16.923072Z",
+  "lastUpdated": "2026-10-29T00:03:13.467502Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,93 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3myx6r4rbbc2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "theurbanavian.bsky.social",
+        "displayName": "Yanni \ud83e\uddff\u27a1\ufe0f Metatopia",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreibkzmj5gjc36btef42d6laflvs772kr6g4c5e6dssbmft3dlrtoyu"
+      },
+      "record": {
+        "text": "Heir of Swordtember is live on Kickstarter!\n\nThis little zine is a celebration of Heir of Swords and Ambition, my love of swords and tarot. It's got three new ways to play Heir of Swords, 30 kickass swords for Ambition (or your fav ttrpg), and an entire ORACLE DECK.\n\nttrpg.fund/heirofswordt...",
+        "createdAt": "2026-10-28T16:37:35.265Z"
+      },
+      "indexedAt": "2026-10-28T16:37:37.077Z",
+      "replyCount": 0,
+      "repostCount": 17,
+      "likeCount": 30,
+      "embed": {
+        "type": "external",
+        "uri": "https://ttrpg.fund/heirofswordtember",
+        "title": "Heir of Swordtember; an Oracle Deck for Carving Fate",
+        "description": "Thirty swords to wield in your favorite tabletop game. Thirty cards to carve the future through spread and divination \u2014 cut down fate.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreihi7tmce3hwbohpst3el3shm6us6ojgxnastwykmtjmyc332mitma"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:crhwbba6qdmvnifyen5pn2jc/app.bsky.feed.post/3mywvoivedw2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "joelhappyhil.bsky.social",
+        "displayName": "Joel Happyhil - read games!!!!!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:crhwbba6qdmvnifyen5pn2jc/bafkreifmjnw5yfsrpwg6yae7clyq5yaqgv3te2sapq7wd5saheeqiozzka"
+      },
+      "record": {
+        "text": "Everything must go!!!!!!\nitch.io/s/212027/hal...",
+        "createdAt": "2026-10-28T13:55:03.618Z"
+      },
+      "indexedAt": "2026-10-28T13:55:05.605Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/s/212027/halloween-sale-2026",
+        "title": "Halloween Sale 2026 by Joel Happyhil",
+        "description": "A bundle by Joel Happyhil, $55.58 for 10 games",
+        "thumb": null
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mywgcnm6n22m",
+      "source": "bluesky",
+      "author": {
+        "handle": "glitzydemon.itch.io",
+        "displayName": "Fabian Blake(he/him)My heart has joined the thousand\ud83d\udc94",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreigac4kdewfskbofxdxcbk7dzfeaunv27x3o4seadj76h7ul4vu7ii"
+      },
+      "record": {
+        "text": "All my games are political. Even (especially?) my 'cozy hopepunk' ones. Indigo Summer invites players to explore the theme of the colonisation of Indigenous arts & crafts and relate that to the modern rise of AI, while working together to gather herbs and make ink \ud83d\udc99 glitzydemon.itch.io/indigo-summer",
+        "createdAt": "2026-10-28T09:19:59.804Z"
+      },
+      "indexedAt": "2026-10-28T09:20:01.270Z",
+      "replyCount": 3,
+      "repostCount": 7,
+      "likeCount": 19,
+      "embed": {
+        "type": "external",
+        "uri": "https://glitzydemon.itch.io/indigo-summer",
+        "title": "INDIGO SUMMER by Fabian Blake",
+        "description": "",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreictmtxf6c55rkeajn62xuwal4lveoxz7bcxayny4jmxxyeyjksusm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3myumq2pgt22g",
       "source": "bluesky",
       "author": {
@@ -94,8 +181,8 @@
       },
       "indexedAt": "2026-10-27T13:01:56.078Z",
       "replyCount": 3,
-      "repostCount": 34,
-      "likeCount": 95,
+      "repostCount": 35,
+      "likeCount": 101,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
@@ -248,7 +335,7 @@
       "indexedAt": "2026-10-24T22:45:44.245Z",
       "replyCount": 1,
       "repostCount": 12,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://share.google/wBTu2d7nOyCfghTO2",
@@ -276,8 +363,8 @@
       },
       "indexedAt": "2026-10-24T18:18:43.237Z",
       "replyCount": 0,
-      "repostCount": 20,
-      "likeCount": 31,
+      "repostCount": 21,
+      "likeCount": 32,
       "embed": {
         "type": "external",
         "uri": "https://forms.gle/ee8WBLq4KVvJf3ap8",
@@ -710,7 +797,7 @@
       "indexedAt": "2026-10-21T17:27:35.853Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://spacepenguin.ink/products/hellward-unto-the-breach?se_activity_id=201859629363&syclid=dbcf9fj8gh8s73d84kig&utm_campaign=It%27s+new+release+Wednesday%21_201859629363&utm_medium=email&utm_source=shopify_email",
@@ -783,63 +870,6 @@
       }
     },
     {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3myd6j335nc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "I recently grabbed a big spiral notebook a bit ago to make a new collection of location and adventure sites to use when I run personally BREAK!! (rather than to publish). I have been using the same set for a while and I have a bit of a gap before running again, so it's the best time for me to do so.",
-        "createdAt": "2026-10-20T17:39:50.279Z"
-      },
-      "indexedAt": "2026-10-20T17:40:04.946Z",
-      "replyCount": 2,
-      "repostCount": 3,
-      "likeCount": 39,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreihrj5nwgulvnkaczpbzlygl63nvkrc4nnhpvavqog6llsbwnea2fm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreihrj5nwgulvnkaczpbzlygl63nvkrc4nnhpvavqog6llsbwnea2fm",
-            "alt": "A simple map of points and the like doodled on a sprial notebook. Little snippets of text throughout. You can tell the writer of BREAK!! rather than the artist did this one."
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:b7kmn7n7zu44n3qmn6sufagk/app.bsky.feed.post/3mycv5adjwc2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "sam.diceexploder.com",
-        "displayName": "Sam D",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:b7kmn7n7zu44n3qmn6sufagk/bafkreih5gndktonzjb4jxhodgxtyefibk76b2t3d62wt5a643sjyuo7rje"
-      },
-      "record": {
-        "text": "This week on Dice Exploder @weirdwonder.bsky.social talks with me about designing NPCs. We focus on the context of writing adventures / modules, but a lot of what Amanda said I took straight into my GMing. I could do a whole series on this one topic, take a listen!",
-        "createdAt": "2026-10-20T14:52:09.477Z"
-      },
-      "indexedAt": "2026-10-20T14:52:17.340Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 20,
-      "embed": {
-        "type": "external",
-        "uri": "https://diceexploder.com/posts/transcript-npcs-with-amanda-p",
-        "title": "Transcript: NPCs with Amanda P. - Dice Exploder",
-        "description": "Listen to this episode here.\u00a0 Further Reading Beyond the Pale, Tannic, Landmark, Hidden, Secret Socials Amanda P. on Bluesky and at Weird Wonder Sam on Bluesky and itch The Dice...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:b7kmn7n7zu44n3qmn6sufagk/bafkreihadwnrhczkrtojb4y2wbjin24d4x46wy2ovgvtiiivizhxsz62ni"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mycu2z3bxg2d",
       "source": "bluesky",
       "author": {
@@ -864,35 +894,6 @@
             "alt": "Review: Beak, Feather, & Bone\nshows cover art for the game that has an illustration of a ravenfolk on it"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:6rcdfmwy3hjpixblefsgkt7o/app.bsky.feed.post/3mycsq6w6bk2a",
-      "source": "bluesky",
-      "author": {
-        "handle": "tgimenezrgm.itch.io",
-        "displayName": "Tomas Gimenez Rioja @ Crypt of the Nekrolych \ud83d\udc80",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6rcdfmwy3hjpixblefsgkt7o/bafkreidrrmttcyeoyikdbm5rga4gll6ktsnvqktikjvlxdlhbb236asv3i"
-      },
-      "record": {
-        "text": "Tis the season! \ud83c\udf83\n\nAnd I know you love vampires and all the tragedies surrounding them. Now let's add them to your Mork Borg... Goth Borg, if you will.\n\nCheck out my latest physical release, partnered with the amazing folks at +1EXP!\n\nplusoneexp.com/products/got...",
-        "createdAt": "2026-10-20T14:09:03.170Z"
-      },
-      "indexedAt": "2026-10-20T14:09:05.036Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://plusoneexp.com/products/goth-borg",
-        "title": "Goth Borg",
-        "description": "Explore the uncharted\u00a0forbidden lands\u00a0ruled by a\u00a0spawn of Hell These lands are filled with nightmarish creatures,tragic upbringings, and terrifying monstrosities.Rise up from the murderous gloom\u2026",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6rcdfmwy3hjpixblefsgkt7o/bafkreicadedsixvuq5b2bqarrkgooznh5xmxh2ol3ongc766ukm47zddie"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1846,7 +1847,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 511,
-      "likeCount": 2658,
+      "likeCount": 2656,
       "embed": {
         "type": "images",
         "images": [
@@ -2491,7 +2492,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1239,
-      "likeCount": 6526,
+      "likeCount": 6525,
       "embed": {
         "type": "images",
         "images": [
