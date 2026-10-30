@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T12:01:37.774156Z",
+  "lastUpdated": "2026-10-30T00:03:22.558680Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3myzy4wfwvk2x",
+      "source": "bluesky",
+      "author": {
+        "handle": "antqgames.bsky.social",
+        "displayName": "Antiquarian Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreiguml7lwsg3agdfwdlldtgyx76txhbq7b6pgqqmiujdx5twxsuycq"
+      },
+      "record": {
+        "text": "Hey friends!\n\nWe've been busy with a restructure, as with 7 days left to our Kickstarter, it's clear we're not going hit our funding goal. \n\nBut that's okay!\n\nYou can read more below, but the important bit is we're going to RELAUNCH in a few months! \n\nIf you want to stay updated, here's a new link:",
+        "createdAt": "2026-10-29T19:16:54.278Z"
+      },
+      "indexedAt": "2026-10-29T19:16:55.579Z",
+      "replyCount": 1,
+      "repostCount": 5,
+      "likeCount": 5,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/antqgames/legends-of-realms-eternal-lore",
+        "title": "Coming soon: Legends of Realms Eternal (L.O.R.E.)",
+        "description": "A grand, tactical tabletop RPG of legendary realms, characters, and stories.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreief3idlc2wkbkbqav3sgrj3gjajyg2ywrvpua75w7acwwjdennrvm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3myx6r4rbbc2h",
       "source": "bluesky",
       "author": {
@@ -64,9 +93,9 @@
         "createdAt": "2026-10-28T16:37:35.265Z"
       },
       "indexedAt": "2026-10-28T16:37:37.077Z",
-      "replyCount": 0,
+      "replyCount": 1,
       "repostCount": 19,
-      "likeCount": 33,
+      "likeCount": 34,
       "embed": {
         "type": "external",
         "uri": "https://ttrpg.fund/heirofswordtember",
@@ -94,8 +123,8 @@
       },
       "indexedAt": "2026-10-28T13:55:05.605Z",
       "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 4,
+      "repostCount": 4,
+      "likeCount": 5,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/212027/halloween-sale-2026",
@@ -115,7 +144,7 @@
       "author": {
         "handle": "glitzydemon.itch.io",
         "displayName": "Fabian Blake(he/him)My heart has joined the thousand\ud83d\udc94",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreigac4kdewfskbofxdxcbk7dzfeaunv27x3o4seadj76h7ul4vu7ii"
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreic4uhdpu2imhykm7s5pie6feapumnvkicm4xw3orjvxezeqnajzam"
       },
       "record": {
         "text": "All my games are political. Even (especially?) my 'cozy hopepunk' ones. Indigo Summer invites players to explore the theme of the colonisation of Indigenous arts & crafts and relate that to the modern rise of AI, while working together to gather herbs and make ink \ud83d\udc99 glitzydemon.itch.io/indigo-summer",
@@ -180,9 +209,9 @@
         "createdAt": "2026-10-27T13:01:54.423Z"
       },
       "indexedAt": "2026-10-27T13:01:56.078Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 35,
-      "likeCount": 101,
+      "likeCount": 104,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
@@ -486,7 +515,7 @@
         "createdAt": "2026-10-23T12:03:30.130Z"
       },
       "indexedAt": "2026-10-23T12:03:33.943Z",
-      "replyCount": 3,
+      "replyCount": 4,
       "repostCount": 21,
       "likeCount": 102,
       "embed": {
@@ -894,35 +923,6 @@
             "alt": "Review: Beak, Feather, & Bone\nshows cover art for the game that has an illustration of a ravenfolk on it"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:h77jqwjj6g76trilthpnntgq/app.bsky.feed.post/3mychvf3t522s",
-      "source": "bluesky",
-      "author": {
-        "handle": "wharthur.bsky.social",
-        "displayName": "W.H. Arthur RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:h77jqwjj6g76trilthpnntgq/bafkreiecavj6bs32imzsbzm33phz763roq236el5dxgwyyecnqozi6rbky"
-      },
-      "record": {
-        "text": "My job application got rejected. \ud83d\ude14\nWould be great if people check out my games and help me pay my bills. \ud83d\udc49\ud83d\udc48\nitch.io/s/202458/wh-...",
-        "createdAt": "2026-10-20T10:55:07.379Z"
-      },
-      "indexedAt": "2026-10-20T10:55:10.636Z",
-      "replyCount": 2,
-      "repostCount": 43,
-      "likeCount": 42,
-      "embed": {
-        "type": "external",
-        "uri": "https://itch.io/s/202458/wh-arthur-birthday-sale-2026",
-        "title": "W.H. Arthur Birthday Sale 2026 by W.H. Arthur",
-        "description": "A bundle by W.H. Arthur, $30.00 for 16 games",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:h77jqwjj6g76trilthpnntgq/bafkreieinuu76iu4ppb2544ia5lwmw6epv7wsvqfcdep5lnxyck5lfn4sa"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2491,7 +2491,7 @@
       },
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
-      "repostCount": 1239,
+      "repostCount": 1238,
       "likeCount": 6525,
       "embed": {
         "type": "images",
@@ -2655,7 +2655,7 @@
       },
       "indexedAt": "2025-11-19T11:15:17.757Z",
       "replyCount": 7,
-      "repostCount": 670,
+      "repostCount": 669,
       "likeCount": 2951,
       "embed": {
         "type": "images",
@@ -3478,7 +3478,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 405,
-      "likeCount": 2356,
+      "likeCount": 2355,
       "embed": {
         "type": "images",
         "images": [
@@ -3506,7 +3506,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2639,
-      "likeCount": 15576,
+      "likeCount": 15575,
       "embed": {
         "type": "images",
         "images": [
