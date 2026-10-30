@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T00:03:22.558680Z",
+  "lastUpdated": "2026-10-30T12:01:49.266449Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mz23rhsgua2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "metalweavegames.com",
+        "displayName": "Metal Weave Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreigv6ydvv6fm5dqjjbano3z26ag2y2oyk7f7wyqufzd3fyuzq4t6li"
+      },
+      "record": {
+        "text": "\"The book has a ton of adorable artwork. The rules are light and flexible - perfect for any age and any creature-friendship-based story to tell. There's a fair amount in this book but I'm glad to see there will be more to come!\" \n\nAnimon Story is great, but don't just take our word for it.",
+        "createdAt": "2026-10-29T20:22:04.781Z"
+      },
+      "indexedAt": "2026-10-29T20:22:05.614Z",
+      "replyCount": 0,
+      "repostCount": 7,
+      "likeCount": 18,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreiecbnochna2cg5gctgu2pcx6zu4g3lg25o7icxsfoi7zn2hksueru",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:m54e7ztuvmm43u4rxqjix2ks/bafkreiecbnochna2cg5gctgu2pcx6zu4g3lg25o7icxsfoi7zn2hksueru",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      }
+    },
+    {
       "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3myzy4wfwvk2x",
       "source": "bluesky",
       "author": {
@@ -65,14 +97,43 @@
       },
       "indexedAt": "2026-10-29T19:16:55.579Z",
       "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 5,
+      "repostCount": 6,
+      "likeCount": 6,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/antqgames/legends-of-realms-eternal-lore",
         "title": "Coming soon: Legends of Realms Eternal (L.O.R.E.)",
         "description": "A grand, tactical tabletop RPG of legendary realms, characters, and stories.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreief3idlc2wkbkbqav3sgrj3gjajyg2ywrvpua75w7acwwjdennrvm"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:nqheoqptjt4gol6dsig5dpkr/app.bsky.feed.post/3myze3u7d2c2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "tonytranrpg.bsky.social",
+        "displayName": "Tony Tran",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nqheoqptjt4gol6dsig5dpkr/bafkreihl3uxd4ergx4vr4rdwjzpypg75nfytikewtf5qqly3fr224uca6q"
+      },
+      "record": {
+        "text": "Check out All The Way Down - OSR Cosmic Turtle Megadungeon by Onslaught Six on @kickstarter.com www.kickstarter.com/projects/see... - some really good things happening on this turtle. We half way there!",
+        "createdAt": "2026-10-29T13:18:23.566Z"
+      },
+      "indexedAt": "2026-10-29T13:18:27.869Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=project_bsky",
+        "title": "All The Way Down - OSR Cosmic Turtle Megadungeon",
+        "description": "A Cosmic Turtle Megadungeon for Old School Roleplaying Games",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nqheoqptjt4gol6dsig5dpkr/bafkreihepl6sqjxdriezbxj7onvtajlv33uxvys3c76tb7coku6co6utru"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -211,7 +272,7 @@
       "indexedAt": "2026-10-27T13:01:56.078Z",
       "replyCount": 4,
       "repostCount": 35,
-      "likeCount": 104,
+      "likeCount": 107,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
@@ -488,7 +549,7 @@
       "indexedAt": "2026-10-23T14:57:21.149Z",
       "replyCount": 3,
       "repostCount": 43,
-      "likeCount": 83,
+      "likeCount": 84,
       "embed": {
         "type": "external",
         "uri": "https://mindstormpress.itch.io/prismatic-pumpkincrawl",
@@ -833,96 +894,6 @@
         "title": "Hellward Unto the Breach",
         "description": "When slipgate technology was first discovered, and we chanced upon the Hell Dimension, there were those that feared that this would leave Earth open to Infernal takeover. The discovery that crossing a...",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3grcjzxdkdpiurlkvhggokrl/bafkreibh2rf77yut2kezib3n74ffq4e65asr5cygeihzqrphw3olkdhgee"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jpa3wqeowobqu6zptuc2phwg/app.bsky.feed.post/3myfgegodfs2g",
-      "source": "bluesky",
-      "author": {
-        "handle": "whatchadoingpod.bsky.social",
-        "displayName": "Whatcha Doing? podcast!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jpa3wqeowobqu6zptuc2phwg/bafkreibuzk4nnwseyv5d5hluhu6rraemf4rptnk7httjgez4ie72jm277m"
-      },
-      "record": {
-        "text": "New episode!!!\n\nThis time I'm sitting down with @calebzane.bsky.social and @seanireland.bsky.social to talking about Triangle Agency, Haunted Table and... Fergie???\n\nGo back The House Edge now!!!",
-        "createdAt": "2026-10-21T15:05:44.092Z"
-      },
-      "indexedAt": "2026-10-21T15:05:45.447Z",
-      "replyCount": 1,
-      "repostCount": 5,
-      "likeCount": 7,
-      "embed": {
-        "type": "external",
-        "uri": "https://rss.com/podcasts/whatcha-doing/3251159/",
-        "title": "Caleb Zane Huett and Sean Ireland from Haunted Table!!! | Whatcha Doing?",
-        "description": "This time I'm sitting down with Caleb Zane Huett and Sean Ireland from Haunted Table!!",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jpa3wqeowobqu6zptuc2phwg/bafkreidp7yfbhwnhfm2t6ojw4jrhlzji5hvfplifucdn4y42yakygug4ja"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ivcv2f73hr7rmo2cqonhmrg6/app.bsky.feed.post/3myerhubj722n",
-      "source": "bluesky",
-      "author": {
-        "handle": "jonasmerlin.bsky.social",
-        "displayName": "Jonas-Merlin Schumacher",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ivcv2f73hr7rmo2cqonhmrg6/bafkreiddk3uwws4i3p5x3txuiufdd4k6yzr37a5socwnp4zn37fj4f7ssa"
-      },
-      "record": {
-        "text": "Quick little mechanic for your October TPKs.\n\nwww.dungeonmerl.in/blog/unfinis...",
-        "createdAt": "2026-10-21T08:51:50.437Z"
-      },
-      "indexedAt": "2026-10-21T08:51:52.543Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.dungeonmerl.in/blog/unfinished-business",
-        "title": "Unfinished Business | Dungeon Merlin",
-        "description": "You can bargain with Death, but their schedule is immutable.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ivcv2f73hr7rmo2cqonhmrg6/bafkreib7bel23xec66cjp7oe365dkturzlikhihvpxvnw3svebubhd6nsu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:puzrf6isqtwrvyu77ohg6xr4/app.bsky.feed.post/3mycu2z3bxg2d",
-      "source": "bluesky",
-      "author": {
-        "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
-      },
-      "record": {
-        "text": "Today's new review is for Beak, Feather, & Bone, a map making TTRPG by  @possibleworlds.bsky.social! This is a game of collaboration, creation, and competition as you take on the roles of entire factions of ravenfolk.  Full review here: https://loom.ly/LgyswxI\n",
-        "createdAt": "2026-10-20T14:33:00Z"
-      },
-      "indexedAt": "2026-10-20T14:33:04.547Z",
-      "replyCount": 3,
-      "repostCount": 8,
-      "likeCount": 21,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihmbg2k7v6v6p4l4e4lmab5mbay36qpcmurtae5h7gusszsp2apra",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreihmbg2k7v6v6p4l4e4lmab5mbay36qpcmurtae5h7gusszsp2apra",
-            "alt": "Review: Beak, Feather, & Bone\nshows cover art for the game that has an illustration of a ravenfolk on it"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3169,8 +3140,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2341,
-      "likeCount": 11809,
+      "repostCount": 2340,
+      "likeCount": 11808,
       "embed": {
         "type": "images",
         "images": [
@@ -3450,7 +3421,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
       "repostCount": 1872,
-      "likeCount": 8936,
+      "likeCount": 8935,
       "embed": {
         "type": "images",
         "images": [
