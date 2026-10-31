@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T12:01:49.266449Z",
+  "lastUpdated": "2026-10-31T00:02:59.298179Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,75 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:2zrff62cw4ma3o322x5y4m7r/app.bsky.feed.post/3mz4h2i54j22u",
+      "source": "bluesky",
+      "author": {
+        "handle": "seanrunamok.bsky.social",
+        "displayName": "Sean Poppe",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreidrzuv7fjv4srlvxhbpvg3u2mcegvzvx5v73y363ddw6ghnfedc7q"
+      },
+      "record": {
+        "text": "Halloween sale for my paper minis \uff3c(\u00ba \u25a1 \u00ba l|l)/\n\n$2.99 each \u3023( \u00ba\u0394\u00ba )\u3023or get BOTH for $4.99! That's 20 guys!\n\nPerfect for Forbidden Psalm, Frostgrave, Sword Weirdos, etc.",
+        "createdAt": "2026-10-30T18:49:17.802Z"
+      },
+      "indexedAt": "2026-10-30T18:49:24.171Z",
+      "replyCount": 2,
+      "repostCount": 24,
+      "likeCount": 62,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreicsskvj273dzkdrjyemjpygb3v6kc34aixjm5774nnrebf7jkk6sy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreicsskvj273dzkdrjyemjpygb3v6kc34aixjm5774nnrebf7jkk6sy",
+            "alt": "photograph of fantasy paper miniatures for ttrpgs and skirmish games, posed on some minecraft toys with a toy castle in the background."
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreiegmibldqznvycubne32uagq765c2wxfzs6wteoiuyl3sgzrllyrq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreiegmibldqznvycubne32uagq765c2wxfzs6wteoiuyl3sgzrllyrq",
+            "alt": "photograph of fantasy paper miniatures for ttrpgs and skirmish games, posed on some minecraft toys with a toy castle in the background."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:st6rwikncekpzavnopswjsu5/app.bsky.feed.post/3mz4atx4chkq5",
+      "source": "bluesky",
+      "author": {
+        "handle": "nuclearpasta.bsky.social",
+        "displayName": "Nuclearpasta",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreibsl4vrdgnke27w4fy6nlvhskjdpz42xlbiocjd2gqmbxyv5dchca"
+      },
+      "record": {
+        "text": "Comic book guy tries to make a TTRPG! A tale as old as time!\n\nThis is the skeleton of a game, nowhere near playable yet, but if you want to get an idea of the core rules and contribute to my desert drifting, I would be ecstatic if you considered supporting me on Patreon!",
+        "createdAt": "2026-10-30T16:58:16.174Z"
+      },
+      "indexedAt": "2026-10-30T16:58:18.987Z",
+      "replyCount": 2,
+      "repostCount": 18,
+      "likeCount": 73,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreielnxx4npcbqvek3nwnbiszehferxgq3ksxvi5nrsocdldruoyr7u",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreielnxx4npcbqvek3nwnbiszehferxgq3ksxvi5nrsocdldruoyr7u",
+            "alt": "Two people walking in the desert, seen from above. It's the provisional cover of the 10ESB RPG"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mz23rhsgua2n",
       "source": "bluesky",
       "author": {
@@ -66,7 +135,7 @@
       "indexedAt": "2026-10-29T20:22:05.614Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 18,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +166,8 @@
       },
       "indexedAt": "2026-10-29T19:16:55.579Z",
       "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 6,
+      "repostCount": 7,
+      "likeCount": 7,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/antqgames/legends-of-realms-eternal-lore",
@@ -126,8 +195,8 @@
       },
       "indexedAt": "2026-10-29T13:18:27.869Z",
       "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 4,
+      "repostCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=project_bsky",
@@ -270,9 +339,9 @@
         "createdAt": "2026-10-27T13:01:54.423Z"
       },
       "indexedAt": "2026-10-27T13:01:56.078Z",
-      "replyCount": 4,
-      "repostCount": 35,
-      "likeCount": 107,
+      "replyCount": 5,
+      "repostCount": 36,
+      "likeCount": 109,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
@@ -473,7 +542,7 @@
       "source": "bluesky",
       "author": {
         "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy is at Arcanecon",
+        "displayName": "Skullboy",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
       },
       "record": {
@@ -482,8 +551,8 @@
       },
       "indexedAt": "2026-10-24T13:54:09.643Z",
       "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 83,
+      "repostCount": 16,
+      "likeCount": 85,
       "embed": {
         "type": "images",
         "images": [
@@ -719,38 +788,6 @@
       }
     },
     {
-      "uri": "at://did:plc:4cssogwxqtgf2ogidyq63x7r/app.bsky.feed.post/3myhzb5rd722l",
-      "source": "bluesky",
-      "author": {
-        "handle": "letitmelo.bsky.social",
-        "displayName": "Melo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreihg6bsstf46gjxierqvfg2ph43zt6y45f4qavct5dwk446rzqkuzu"
-      },
-      "record": {
-        "text": "Today on Monsters & Mysteries: the party prepares to unsplit\u2026if shadowy interlopers don\u2019t find them first.\n\nLatest page: mnmcomic.com/comic/m5-p8\n\nChapter start: mnmcomic.com/comic/m5-cover\n\nRead from the beginning: mnmcomic.com/comic/m1-cov...",
-        "createdAt": "2026-10-22T15:49:14.649Z"
-      },
-      "indexedAt": "2026-10-22T15:49:17.738Z",
-      "replyCount": 2,
-      "repostCount": 15,
-      "likeCount": 31,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreieop6aqomrie4kgwfxsh4sb46tsb63ep323lxq733bcjngzddood4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4cssogwxqtgf2ogidyq63x7r/bafkreieop6aqomrie4kgwfxsh4sb46tsb63ep323lxq733bcjngzddood4",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:4npkxjw4hom3c2wmdcqbovia/app.bsky.feed.post/3myhz2anzzc2f",
       "source": "bluesky",
       "author": {
@@ -796,7 +833,7 @@
       },
       "indexedAt": "2026-10-22T13:59:22.949Z",
       "replyCount": 2,
-      "repostCount": 21,
+      "repostCount": 20,
       "likeCount": 61,
       "embed": {
         "type": "images",
@@ -807,93 +844,6 @@
             "alt": "The portal witch, holding a broom and pointing at a portal, 3 kids in costumes in front of her, excited to go on adventures"
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:ubufr42zf5q2kqc6jblm76pu/app.bsky.feed.post/3myho5oocjc2x",
-      "source": "bluesky",
-      "author": {
-        "handle": "thirdkingdom.bsky.social",
-        "displayName": "Todd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ubufr42zf5q2kqc6jblm76pu/bafkreiapfvxqudnbsoydp3wa6kirung3eh42davstqv3sy5h5ymzs4qsxu"
-      },
-      "record": {
-        "text": "We're 1.00 away from A Game Master's Guide to Poisons hitting 800.00! It's a short (16-page) zine with rules and guidelines for poisons in OSR games, including harvesting from monsters, buying and selling, synthesizing toxins, and tables to randomly generate new poisons.  #ttrpg #dnd #osr",
-        "createdAt": "2026-10-22T12:30:27.010Z"
-      },
-      "indexedAt": "2026-10-22T12:30:28.039Z",
-      "replyCount": 0,
-      "repostCount": 3,
-      "likeCount": 13,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.backerkit.com/c/projects/third-kingdom-games/a-game-master-s-guide-to-poisons",
-        "title": "A Game Master's Guide to Poisons",
-        "description": "Rules and tables for randomly generating poisons, harvesting them from monsters, and determining the value and dosage of toxins",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ubufr42zf5q2kqc6jblm76pu/bafkreig5vrejendol4jhnu53caaffuonfxkvmizqqaddqcdsbmts6cg3ii"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3myhml3ti3k2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "yochaigal.bsky.social",
-        "displayName": "Yochai Gal",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
-      },
-      "record": {
-        "text": "Today on Between Two Cairns, @bradkerr.net, @betterlegends.bsky.social and I review Folly of the Forgemaster by Russel Holley, and take a look at some questions from /r/OSR that one asked us to answer.\n\nwww.patreon.com/betweentwoca...",
-        "createdAt": "2026-10-22T12:02:09.534Z"
-      },
-      "indexedAt": "2026-10-22T12:02:11.141Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 33,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.patreon.com/betweentwocairns/posts/folly-of-172378662/",
-        "title": "Folly of the Forgemaster | Between Two Cairns",
-        "description": "Yochai, Brad, and Sam review Folly of the Forgemaster by Russel Holley and look at some questions from /r/OSR that no one asked us to answe",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreicrkvrnth2mrqncmqns3t54j5pzozmfcht2jgpm3ldfadr7tgjajq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3grcjzxdkdpiurlkvhggokrl/app.bsky.feed.post/3myfobqbcec2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "masterconspirator.bsky.social",
-        "displayName": "Diogo Barros",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3grcjzxdkdpiurlkvhggokrl/bafkreicp25qnhseiu35fugffu4gx3rez4vfxmupqdimhw3uuxhaxuvwvfq"
-      },
-      "record": {
-        "text": "Well what've we got here? My base-building game of losers settling the worst place in existence is out on @spacepenguinink.bsky.social! Incredibly excited about this, we worked real hard to make this as good as possible. I think we even achieved it! See for yourself:\nspacepenguin.ink/products/hel...",
-        "createdAt": "2026-10-21T17:27:23.416Z"
-      },
-      "indexedAt": "2026-10-21T17:27:35.853Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://spacepenguin.ink/products/hellward-unto-the-breach?se_activity_id=201859629363&syclid=dbcf9fj8gh8s73d84kig&utm_campaign=It%27s+new+release+Wednesday%21_201859629363&utm_medium=email&utm_source=shopify_email",
-        "title": "Hellward Unto the Breach",
-        "description": "When slipgate technology was first discovered, and we chanced upon the Hell Dimension, there were those that feared that this would leave Earth open to Infernal takeover. The discovery that crossing a...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3grcjzxdkdpiurlkvhggokrl/bafkreibh2rf77yut2kezib3n74ffq4e65asr5cygeihzqrphw3olkdhgee"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -1146,7 +1096,7 @@
       "source": "bluesky",
       "author": {
         "handle": "betterlegends.bsky.social",
-        "displayName": "Skullboy is at Arcanecon",
+        "displayName": "Skullboy",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
       },
       "record": {
@@ -2111,7 +2061,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3881,
+      "likeCount": 3880,
       "embed": {
         "type": "images",
         "images": [
@@ -2797,7 +2747,7 @@
       "indexedAt": "2025-10-29T18:01:12.962Z",
       "replyCount": 7,
       "repostCount": 446,
-      "likeCount": 1879,
+      "likeCount": 1878,
       "embed": {
         "type": "images",
         "images": [
@@ -2888,7 +2838,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1945,
-      "likeCount": 8438,
+      "likeCount": 8435,
       "embed": {
         "type": "images",
         "images": [
@@ -3282,7 +3232,7 @@
       "indexedAt": "2025-01-23T22:29:54.765Z",
       "replyCount": 6,
       "repostCount": 249,
-      "likeCount": 1506,
+      "likeCount": 1505,
       "embed": {
         "type": "images",
         "images": [
@@ -3477,7 +3427,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2639,
-      "likeCount": 15575,
+      "likeCount": 15576,
       "embed": {
         "type": "images",
         "images": [
