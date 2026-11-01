@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T12:01:19.665503Z",
+  "lastUpdated": "2026-11-01T00:03:36.882246Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,121 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:gvtnauh3uvychl46myirqtf2/app.bsky.feed.post/3mz6qtnhvfk22",
+      "source": "bluesky",
+      "author": {
+        "handle": "stung.art",
+        "displayName": "Sam Tung",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gvtnauh3uvychl46myirqtf2/bafkreic7ymr65jvsotcou7n2d4kczonttthbihbnoxcsmmdt6p5tj5rrza"
+      },
+      "record": {
+        "text": "Adam Royster and I present BEAN BALL, one-shot #TTRPG about 1970s #baseball players executing a revenge plan, as part of the Baseball Jam '26.\n\nBuild your ballplayer and park, then enact America's national pastime of vengeance before you\u2019re tossed from the game.\n\nsamtung.itch.io/bean-ball",
+        "createdAt": "2026-10-31T16:49:45.415Z"
+      },
+      "indexedAt": "2026-10-31T16:49:46.782Z",
+      "replyCount": 1,
+      "repostCount": 10,
+      "likeCount": 15,
+      "embed": {
+        "type": "external",
+        "uri": "https://samtung.itch.io/bean-ball",
+        "title": "Bean Ball by SamTung",
+        "description": "A one-shot TTRPG about 1970s baseball players executing a revenge plan on the other team for hitting their star player.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gvtnauh3uvychl46myirqtf2/bafkreic2qxttn4hv7cej6w7scs4a2cdkcoajdte6akhveupbl3fhvtgvpa"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mz6n7uu34s2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      },
+      "record": {
+        "text": "Happy Halloween!\nOn this day of ghouls and ghosts\nI bring you some themed BREAK!! DevBlog Posts!\nOoooooOOooo",
+        "createdAt": "2026-10-31T15:45:00.840Z"
+      },
+      "indexedAt": "2026-10-31T15:45:04.479Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 38,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiclaosvsl3d5mkuy5rkphafdp2iqadh2oxyelplk6tllncokiv5vq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiclaosvsl3d5mkuy5rkphafdp2iqadh2oxyelplk6tllncokiv5vq",
+            "alt": "An assortment of baddies from the BREAK!! tabletop rpg"
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mz6ll3uvec2v",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
+      },
+      "record": {
+        "text": "\ud83d\udc7b Happy Halloween!! \ud83c\udf83 In the spirit of old school horror double features, the Weird Place research lab brings you a 2-in-1 special! #horror #ttrpg",
+        "createdAt": "2026-10-31T15:15:29.820Z"
+      },
+      "indexedAt": "2026-10-31T15:15:32.280Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 26,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/ODnyNbUqhX0",
+        "title": "Two Horror TTRPGs That Prey on Fear!",
+        "description": "YouTube video by Weird Place",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihatvlptucrsknec5mt4im34rejnxjkklfkygp3as447xcdpm55dy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:rd7okd2qfxipi37kiffhkqzv/app.bsky.feed.post/3mz4rzoja4k2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "infrabeige.bsky.social",
+        "displayName": "Leo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rd7okd2qfxipi37kiffhkqzv/bafkreihyzt4mnwufhsmanwex2glkel764hyshvzguky5ttul4bsek7657y"
+      },
+      "record": {
+        "text": "Hey so something serious for once, my mum is raising money for the Northumberland Air Ambulance as they saved her life when I was a lad. I am offering an original commissioned Vaults of Vaarn drawing to one lucky donor to the campaign! More details at the link www.justgiving.com/page/careyle...",
+        "createdAt": "2026-10-30T22:05:42.097Z"
+      },
+      "indexedAt": "2026-10-30T22:05:43.878Z",
+      "replyCount": 1,
+      "repostCount": 15,
+      "likeCount": 28,
+      "embed": {
+        "type": "external",
+        "uri": "https://www.justgiving.com/page/careyleo-2?utm_medium=FA&utm_source=WA",
+        "title": "Carey's fundraiser for Great North Air Ambulance Service",
+        "description": "Help Carey Fluker Hunt raise money to support Great North Air Ambulance Service",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rd7okd2qfxipi37kiffhkqzv/bafkreiajet5zaclvhbky72ggvpuov46qmkorrjpuwl35fvw3vmtoubyb2y"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:2zrff62cw4ma3o322x5y4m7r/app.bsky.feed.post/3mz4h2i54j22u",
       "source": "bluesky",
       "author": {
@@ -65,8 +180,8 @@
       },
       "indexedAt": "2026-10-30T18:49:24.171Z",
       "replyCount": 4,
-      "repostCount": 32,
-      "likeCount": 81,
+      "repostCount": 33,
+      "likeCount": 87,
       "embed": {
         "type": "images",
         "images": [
@@ -103,7 +218,7 @@
       "indexedAt": "2026-10-30T16:58:18.987Z",
       "replyCount": 2,
       "repostCount": 22,
-      "likeCount": 107,
+      "likeCount": 109,
       "embed": {
         "type": "images",
         "images": [
@@ -196,7 +311,7 @@
       "indexedAt": "2026-10-29T13:18:27.869Z",
       "replyCount": 0,
       "repostCount": 7,
-      "likeCount": 9,
+      "likeCount": 10,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=project_bsky",
@@ -341,7 +456,7 @@
       "indexedAt": "2026-10-27T13:01:56.078Z",
       "replyCount": 5,
       "repostCount": 36,
-      "likeCount": 109,
+      "likeCount": 110,
       "embed": {
         "type": "external",
         "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
@@ -427,7 +542,7 @@
       },
       "indexedAt": "2026-10-26T02:07:47.135Z",
       "replyCount": 3,
-      "repostCount": 22,
+      "repostCount": 21,
       "likeCount": 60,
       "embed": {
         "type": "external",
@@ -552,7 +667,7 @@
       "indexedAt": "2026-10-24T13:54:09.643Z",
       "replyCount": 1,
       "repostCount": 16,
-      "likeCount": 85,
+      "likeCount": 86,
       "embed": {
         "type": "images",
         "images": [
@@ -617,7 +732,7 @@
       },
       "indexedAt": "2026-10-23T14:57:21.149Z",
       "replyCount": 3,
-      "repostCount": 43,
+      "repostCount": 42,
       "likeCount": 84,
       "embed": {
         "type": "external",
@@ -625,38 +740,6 @@
         "title": "Prismatic Pumpkincrawl by mindstorm",
         "description": "An autumnal adventure",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bktssur4phxokmndtgekh3eo/bafkreicjyldwm5u64dttijqryqiq6zjxux3wcxnaqprxczwbewiuvzobza"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3myk54g5u3s2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up (From the Grave) Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "Did you know? Were you aware? I'm now on RPGTrader! \n\nrpgtrader.com/creator/1838...\n\nIf you ever thought, \"I love Josh's books, but I'd like to buy them in digital format from a DIFFERENT web shop,\" this will be good news!",
-        "createdAt": "2026-10-23T12:03:30.130Z"
-      },
-      "indexedAt": "2026-10-23T12:03:33.943Z",
-      "replyCount": 4,
-      "repostCount": 21,
-      "likeCount": 102,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibtm4eiuhmkrhnqxciqqzg7srnp7gtexidnuzeulcyl7uane3ne2m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreibtm4eiuhmkrhnqxciqqzg7srnp7gtexidnuzeulcyl7uane3ne2m",
-            "alt": "My product page of His Majesty the Worm and Under HIll, By Water books at RPGTrader: https://rpgtrader.com/creator/1838/rise-up-comus?sort=price_desc"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -686,164 +769,6 @@
         "title": "All The Way Down",
         "description": "A Cosmic Turtle Megadungeon for Old School Roleplaying Games",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kvimu4243sxr5pv44eitkckc/bafkreihaptkbpiwx2i7kgcra4rmqioof2i7rpugflimxyumqi4qxbcehpi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5znvwcngxw4byieen2biqmrv/app.bsky.feed.post/3myineqivws27",
-      "source": "bluesky",
-      "author": {
-        "handle": "naeolin.bsky.social",
-        "displayName": "WiddershinsWanderings",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreibc7prmep376lkq7wbhqoquihapufrvafxbqmfste3mdthvwico3y"
-      },
-      "record": {
-        "text": "I've been running a sandbox campaign for my kids! Read all about the joys and challenges of running an OSR game for kids under 10. With special thanks to @n8hps.bsky.social 's Dogtooth Valley for a great little module.\n\nwiddershinswanderings.bearblog.dev/running-cair...",
-        "createdAt": "2026-10-22T21:49:09.808Z"
-      },
-      "indexedAt": "2026-10-22T21:49:11.242Z",
-      "replyCount": 0,
-      "repostCount": 11,
-      "likeCount": 46,
-      "embed": {
-        "type": "external",
-        "uri": "https://widdershinswanderings.bearblog.dev/running-cairn-with-my-kids/",
-        "title": "Running Cairn for My Kids",
-        "description": "A blog post in which I describe my experiences running a modified version of Cairn for my own kids.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5znvwcngxw4byieen2biqmrv/bafkreicoai4ubsgtkgu5vn3uahizc2unkreevfyqcecdhliwvk6xpor3yi"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3myimyqg3cc2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "The Mario Moleskien notebook I have been writing my GM notes in for about 7 years now is just about full - only 10 pages left. Pretty nuts to think about.",
-        "createdAt": "2026-10-22T21:42:27.030Z"
-      },
-      "indexedAt": "2026-10-22T21:42:49.380Z",
-      "replyCount": 4,
-      "repostCount": 0,
-      "likeCount": 23,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehvpq3nowemkbassipgygrfxbx5pc3zan4xh3ibgk3evlzlnigtm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiehvpq3nowemkbassipgygrfxbx5pc3zan4xh3ibgk3evlzlnigtm",
-            "alt": "A picture of a Mario themed notebook"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicu4brufalnymbeantdpb4n5hj6m574ii62p3dmghbkgphas7jp3m",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreicu4brufalnymbeantdpb4n5hj6m574ii62p3dmghbkgphas7jp3m",
-            "alt": "Some chicken scratch notes for an adventure I ran back in 2019"
-          }
-        ]
-      },
-      "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:b46lipwyu6hpa4w2tze4j72n/app.bsky.feed.post/3myiailby4s2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "wheelofwebcomics.bsky.social",
-        "displayName": "WHEEL OF WEBCOMICS",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:b46lipwyu6hpa4w2tze4j72n/bafkreie4vztbcxzxelebqrxkpm4wbdjzw3ybnbhth2ardjbdyiqy6mhniy"
-      },
-      "record": {
-        "text": "2 days 'til Wheel of Webcomics hosts a slideshow & tell!\nAlthough submissions are closed, feel free to join for a discussion on Storytelling Tropes and Genre!!\ninterested in #webcomics? Let's hear about it together!!!\n\nCheck out Wheel of Webcomics at WheelofWebcomics.com!",
-        "createdAt": "2026-10-22T17:58:39.909Z"
-      },
-      "indexedAt": "2026-10-22T17:58:42.540Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 7,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:b46lipwyu6hpa4w2tze4j72n/bafkreigjrsym5tihfu576c2gu5cbyjn2fzrlsk5nvgzefb5feeb7nne6ei",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:b46lipwyu6hpa4w2tze4j72n/bafkreigjrsym5tihfu576c2gu5cbyjn2fzrlsk5nvgzefb5feeb7nne6ei",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4npkxjw4hom3c2wmdcqbovia/app.bsky.feed.post/3myhz2anzzc2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "hatchlingdm.itch.io",
-        "displayName": "Hatchlings Games ~ shop open!",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreiboapkcozvuerv6uoepmigyihuthj5izpiuncmurz7vaqh7ikaqle"
-      },
-      "record": {
-        "text": "It's my birthday and I'd appreciate you joining the Hatchlings Patreon. I'm really enjoying the platform and intend to post most of our project updates there. Become a FREE member or pick the Hatchlings Download tier for the newly published Gorgon and Artipelago colouring book! \ud83c\udf89\ud83e\udef6\ud83c\udffd\n\nLink in replies",
-        "createdAt": "2026-10-22T15:45:22.815Z"
-      },
-      "indexedAt": "2026-10-22T15:45:32.343Z",
-      "replyCount": 6,
-      "repostCount": 13,
-      "likeCount": 32,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreibewnsd7e7ut55fesocxd42aerzkuv4ls3gals7iitlise7mwtrzm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4npkxjw4hom3c2wmdcqbovia/bafkreibewnsd7e7ut55fesocxd42aerzkuv4ls3gals7iitlise7mwtrzm",
-            "alt": "Happy Birthday in BSL fingerspelling sign language"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:zkorluqwz5fl2okxgseh3uyu/app.bsky.feed.post/3myht4inor22p",
-      "source": "bluesky",
-      "author": {
-        "handle": "evlynmoreau.bsky.social",
-        "displayName": "Evlyn Moreau",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreiflvcgiu7bimoerkafgognfahw5lifs3yxwprhned5h2ujnbe7g6m"
-      },
-      "record": {
-        "text": "I drew a promo art for The Portal Witch, a RPG for kids written by Miriam R. Hoping that her art budget will get bigger as I will be the main artist. \n\nwww.kickstarter.com/projects/mir...\n\n#TTRPG #RPG",
-        "createdAt": "2026-10-22T13:59:15.818Z"
-      },
-      "indexedAt": "2026-10-22T13:59:22.949Z",
-      "replyCount": 2,
-      "repostCount": 20,
-      "likeCount": 61,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreidmcixch73bhzy5334rtjn2ykqiqnyfscqrs7ymbvdyrj32cwei2y",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zkorluqwz5fl2okxgseh3uyu/bafkreidmcixch73bhzy5334rtjn2ykqiqnyfscqrs7ymbvdyrj32cwei2y",
-            "alt": "The portal witch, holding a broom and pointing at a portal, 3 kids in costumes in front of her, excited to go on adventures"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -899,7 +824,7 @@
       "indexedAt": "2026-10-10T11:05:08.061Z",
       "replyCount": 1,
       "repostCount": 2,
-      "likeCount": 57,
+      "likeCount": 58,
       "embed": {
         "type": "images",
         "images": [
