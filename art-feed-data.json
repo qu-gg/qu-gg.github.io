@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T00:03:23.933044Z",
+  "lastUpdated": "2026-11-04T12:01:40.153041Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,48 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6gbricujupbk2veztj36cdit/app.bsky.feed.post/3mzh6pwbr6c2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "socksandpuppets.com",
+        "displayName": "ahdok",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreie6c4o3ri5k5zwk3owweeqch7ixzl3ndlk6v3g2gp5bxnk4psujcu"
+      },
+      "record": {
+        "text": "Friday's my birthday, so let's do something: An art contest! With a twist!\n\nI want to encourage you to give art a go, especially these days, and especially you don't think of yourself as an \"artist\", so there are prizes just for \"non-artists.\" This is an excuse to try out something out just for fun.",
+        "createdAt": "2026-11-04T01:19:30.723Z"
+      },
+      "indexedAt": "2026-11-04T01:19:34.590Z",
+      "replyCount": 4,
+      "repostCount": 7,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreihjjwos46c3uiyeuera5ghsydg7jq3g443shr2lpp4v7isd2krlkm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreihjjwos46c3uiyeuera5ghsydg7jq3g443shr2lpp4v7isd2krlkm",
+            "alt": "Birthday art learning competition!\n\nPrize:\nA hand-drawn avatar/token of your OC. \n2+ winners:\n1+ new/beginner artists. \n1 experienced artist.\nExtra winners if we get a lot of entries.\n\nRules:\nFollow + Repost\nRead the submission guide in this post\nReply with your art to enter\nNo genAI (you will get blocked)"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreih7oyj4fqp7sfpmvcbdbgo7if3v7s463drmxquaa2b6z2bpety6lm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreih7oyj4fqp7sfpmvcbdbgo7if3v7s463drmxquaa2b6z2bpety6lm",
+            "alt": "Submission/entry guidelines\n\nYou can submit anything you like, but it must be made by you, during the submission period.\nTo enter, simply post your art in a reply to this bluesky post.\nWrite in your reply if you\u2019re a new/beginner artist, or an experienced artist.\n(Don\u2019t stress over definitions. If you don\u2019t think of yourself as an hobby or professional artist, write \u201cbeginner\u201d)\nIf you have reference art of your OC (for the prize), include that with your reply.\nSubmissions close at the end of Sunday 8th November 2026\n\nThe aim of the competition is to try out something new, not to make something perfect, so:\n\nYou don\u2019t need to spend a long time on your art. 30-60 mins is a good target.\nAny media is fine, use whatever you already have access to.\nUnsure what to draw? check the \u201csuggestions\u201d in this post.\n\nFor established artists, try to experiment and do something outside of your comfort zone.\n(You could try swapping between digital/physical media, or trying a medium you don\u2019t normally use.)"
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreichw4dt2jjntyg3ziwbbd36rswz6n2phmlwwd7wucwzqz7kcicjj4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreichw4dt2jjntyg3ziwbbd36rswz6n2phmlwwd7wucwzqz7kcicjj4",
+            "alt": "Suggestions/ideas\n\nIf you have an Original Character that you want to use for the prize, but no existing art of them, try drawing them as your submission.\nFanart of one of your favourite characters from media/comics/video games.\nStill life, (e.g. an interesting thing from your home.)\nPets! (they are also an interesting thing from your home.)\nIt\u2019s my birthday, so if you want to draw my OC (Konsi) I\u2019d love that. (References in replies.)\n\nFor established artists, why not make something that\u2019s been on your to-do list for too long?\n\nTips for new artists\n\nPencil/paper is a very beginner friendly medium, and even cheap pencil/paper works well. (Scanning art is nice, but if you don\u2019t have access to a scanner, you can just take a photo to submit your art.)\nUse visual references! Spend 50% of your time studying your subject and 50% drawing.\nDraw as big as you can easily manage, it makes your mistakes smaller.\nDraw something you like (you\u2019re going to be looking at it a lot!)"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3mzgtbwqa6c22",
       "source": "bluesky",
       "author": {
@@ -64,9 +106,9 @@
         "createdAt": "2026-11-03T21:54:50.278Z"
       },
       "indexedAt": "2026-11-03T21:54:52.786Z",
-      "replyCount": 1,
-      "repostCount": 4,
-      "likeCount": 4,
+      "replyCount": 2,
+      "repostCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "external",
         "uri": "https://www.kickstarter.com/projects/thepressbetwixt/ambition-swordtember/posts/4845985",
@@ -95,7 +137,7 @@
       "indexedAt": "2026-11-03T18:10:35.480Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 23,
+      "likeCount": 24,
       "embed": {
         "type": "images",
         "images": [
@@ -103,6 +145,38 @@
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dpmmwvu6ogjwnvqz3rm5xiyo/bafkreieb56jmhkiqodtkykypxnlw2punucbabxb4itrwym6gvdm7lrfdre",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:dpmmwvu6ogjwnvqz3rm5xiyo/bafkreieb56jmhkiqodtkykypxnlw2punucbabxb4itrwym6gvdm7lrfdre",
             "alt": "The wrap-around cover of Grimwild Community Edition, showing player characters healing in a dark forest with a strange horned creature, covered in moss, with glowing eyes stares at them from behind a tree."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5j2subtw3azb2bud72ls2t2e/app.bsky.feed.post/3mzgflxff5c2s",
+      "source": "bluesky",
+      "author": {
+        "handle": "eldjester.bsky.social",
+        "displayName": "Eld the Anti-fascist Malewife",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreigolumq5ob7yodaegr2jnk42dvf7uubelfi3l3dnd7qs7nuvfwhpa"
+      },
+      "record": {
+        "text": "SHIRTLESS ON A ROOFTOP V1.0 (ALPHA) is out NOW!\nNow with Cover Art!\nPunch cops into a trashcan, go to a host club, drink a beer, face off drunken office workers!\n\nWelcome to SOAR, a SLASH of LIFE Beat them all TTRPG!\nCover by @skycrime.bsky.social\nCheck it out here:\neldjester.itch.io/soar-shirtle...",
+        "createdAt": "2026-11-03T17:49:54.129Z"
+      },
+      "indexedAt": "2026-11-03T17:50:07.971Z",
+      "replyCount": 2,
+      "repostCount": 32,
+      "likeCount": 61,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreies6pnv3k3wsxvx5ygu7afgvykmx4vhm6jmfphng6gdptdjdj3stq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreies6pnv3k3wsxvx5ygu7afgvykmx4vhm6jmfphng6gdptdjdj3stq",
+            "alt": ""
           }
         ]
       },
@@ -127,7 +201,7 @@
       "indexedAt": "2026-11-03T15:43:13.685Z",
       "replyCount": 2,
       "repostCount": 1,
-      "likeCount": 25,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -154,8 +228,8 @@
       },
       "indexedAt": "2026-11-03T14:10:46.278Z",
       "replyCount": 3,
-      "repostCount": 23,
-      "likeCount": 49,
+      "repostCount": 25,
+      "likeCount": 55,
       "embed": {
         "type": "external",
         "uri": "https://diceexploder.com/posts/transcript-traits-pendragon-with-caleb-zane-huett",
@@ -216,7 +290,7 @@
       "indexedAt": "2026-11-03T12:45:54.880Z",
       "replyCount": 2,
       "repostCount": 30,
-      "likeCount": 90,
+      "likeCount": 97,
       "embed": {
         "type": "images",
         "images": [
@@ -338,7 +412,7 @@
       "indexedAt": "2026-11-01T13:07:29.186Z",
       "replyCount": 7,
       "repostCount": 27,
-      "likeCount": 117,
+      "likeCount": 118,
       "embed": {
         "type": "external",
         "uri": "https://riseupcomus.blogspot.com/2026/10/the-retinue-came-arrayed-in-their.html",
@@ -767,35 +841,6 @@
         "title": "INDIGO SUMMER by Fabian Blake",
         "description": "",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreictmtxf6c55rkeajn62xuwal4lveoxz7bcxayny4jmxxyeyjksusm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3myumq2pgt22g",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "Hey! Do you need a dungeon for HIS MAJESTY THE WORM? Have you checked out Julian Phantasm's excellent The Garden of Glass Hours? It's PWYW!",
-        "createdAt": "2026-10-27T16:09:32.724Z"
-      },
-      "indexedAt": "2026-10-27T16:09:35.275Z",
-      "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 36,
-      "embed": {
-        "type": "external",
-        "uri": "https://dreamingphantasm.itch.io/the-garden-of-glass-hours",
-        "title": "The Garden of Glass Hours by Julian Phantasm",
-        "description": "A botanical dungeon for His Majesty the Worm.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreifu5rjvntvwsskh3jinmqf3juuh4dwjerbtnaqv4l7pix3h2xq5ra"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -2022,7 +2067,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 615,
-      "likeCount": 2898,
+      "likeCount": 2897,
       "embed": {
         "type": "images",
         "images": [
@@ -3109,7 +3154,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2340,
-      "likeCount": 11806,
+      "likeCount": 11805,
       "embed": {
         "type": "images",
         "images": [
@@ -3389,7 +3434,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
       "repostCount": 1872,
-      "likeCount": 8933,
+      "likeCount": 8931,
       "embed": {
         "type": "images",
         "images": [
