@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T12:01:40.153041Z",
+  "lastUpdated": "2026-11-05T00:03:26.759415Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,93 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/app.bsky.feed.post/3mzj6dljsrk2o",
+      "source": "bluesky",
+      "author": {
+        "handle": "lorenmakesvideos.itch.io",
+        "displayName": "Lorenmakesvideos",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreiewkrzzvpryktjrevxtrpuypsbrqkglr6cwegu2owbp65ilddctfa"
+      },
+      "record": {
+        "text": "New video! I play my new game Vampire Bride \ud83e\udd87 \n\nIt's available on Itch and Patreon \ud83e\udddb\n\nyoutu.be/4VL4moQr-lM",
+        "createdAt": "2026-11-04T20:17:56.267Z"
+      },
+      "indexedAt": "2026-11-04T20:17:58.790Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 4,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/4VL4moQr-lM",
+        "title": "Can I survive my own game? | Vampire Bride | Solo RPG",
+        "description": "YouTube video by Loren makes videos",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreidpmppdhf5iavrzsu4ciu3ylaudvf7kkzdawstxffplg7wx5synna"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:gul2wn2x5wj2xxerx6wllldc/app.bsky.feed.post/3mzipizfp3224",
+      "source": "bluesky",
+      "author": {
+        "handle": "superdracula.bsky.social",
+        "displayName": "Rodrigo D. Lopez",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gul2wn2x5wj2xxerx6wllldc/bafkreigx4ujes7evgm74xk36hevlanscp5rbyzaoisgmm6yu4dm3wjqw7a"
+      },
+      "record": {
+        "text": "Hey, I\u2019m in this too talking about Beacon: Koronil!\n\nopen.spotify.com/episode/0VpQ...",
+        "createdAt": "2026-11-04T15:52:32.466Z"
+      },
+      "indexedAt": "2026-11-04T15:52:34.189Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://open.spotify.com/episode/0VpQieiOSsp9joPaR7YNVU?si=daVPekrhRsyuz83Lc7-h9w&utm_source=copy-link",
+        "title": "The Process of Making a TTRPG Expansion with Tim Gonzalez and Rodrigo D. Lopez - GM2 86",
+        "description": "Game Mechanics - A Critical Tabletop Podcast \u00b7 Episode",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gul2wn2x5wj2xxerx6wllldc/bafkreidkhotxcs52gpdlz3z574efg6awr2kirtt5754imylmhhjy4gk26i"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:sg3np2mzl2awrdsexyf3eok5/app.bsky.feed.post/3mzinfb7wbk2i",
+      "source": "bluesky",
+      "author": {
+        "handle": "pandiongames.com",
+        "displayName": "Andy | Pandion Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreiekjrb33bzksuzuniq5vivkaidljytmlf6m6pstoz6tfh4ejmnboi"
+      },
+      "record": {
+        "text": "Holy shit, what a turn out! As a thank you for all the amazing people who came out across the country yesterday, we are running a Banish the Darkness Sale!\n\nALL of our games are FREE on itchio for the next 48 hours! \n\n(yes, even Midnight Muscadines!)\n\nGo get 'em: itch.io/s/215898/ban...",
+        "createdAt": "2026-11-04T15:14:38.966Z"
+      },
+      "indexedAt": "2026-11-04T15:14:41.695Z",
+      "replyCount": 1,
+      "repostCount": 29,
+      "likeCount": 53,
+      "embed": {
+        "type": "external",
+        "uri": "https://itch.io/s/215898/banish-the-darkness-sale",
+        "title": "Banish the Darkness Sale by Pandion Games",
+        "description": "A sale by Pandion Games, 100% off 13 games",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreifkz3btr43bme65ujwiiox5v4u6w7wjyhar5c4kjoynfv5hjfdu3q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:6gbricujupbk2veztj36cdit/app.bsky.feed.post/3mzh6pwbr6c2h",
       "source": "bluesky",
       "author": {
@@ -65,8 +152,8 @@
       },
       "indexedAt": "2026-11-04T01:19:34.590Z",
       "replyCount": 4,
-      "repostCount": 7,
-      "likeCount": 13,
+      "repostCount": 8,
+      "likeCount": 14,
       "embed": {
         "type": "images",
         "images": [
@@ -137,7 +224,7 @@
       "indexedAt": "2026-11-03T18:10:35.480Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 24,
+      "likeCount": 26,
       "embed": {
         "type": "images",
         "images": [
@@ -168,8 +255,8 @@
       },
       "indexedAt": "2026-11-03T17:50:07.971Z",
       "replyCount": 2,
-      "repostCount": 32,
-      "likeCount": 61,
+      "repostCount": 33,
+      "likeCount": 65,
       "embed": {
         "type": "images",
         "images": [
@@ -201,7 +288,7 @@
       "indexedAt": "2026-11-03T15:43:13.685Z",
       "replyCount": 2,
       "repostCount": 1,
-      "likeCount": 26,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -227,9 +314,9 @@
         "createdAt": "2026-11-03T14:10:44.316Z"
       },
       "indexedAt": "2026-11-03T14:10:46.278Z",
-      "replyCount": 3,
-      "repostCount": 25,
-      "likeCount": 55,
+      "replyCount": 5,
+      "repostCount": 29,
+      "likeCount": 63,
       "embed": {
         "type": "external",
         "uri": "https://diceexploder.com/posts/transcript-traits-pendragon-with-caleb-zane-huett",
@@ -288,9 +375,9 @@
         "createdAt": "2026-11-03T12:45:51.504Z"
       },
       "indexedAt": "2026-11-03T12:45:54.880Z",
-      "replyCount": 2,
-      "repostCount": 30,
-      "likeCount": 97,
+      "replyCount": 4,
+      "repostCount": 34,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -351,7 +438,7 @@
       "indexedAt": "2026-11-02T14:48:05.489Z",
       "replyCount": 1,
       "repostCount": 20,
-      "likeCount": 101,
+      "likeCount": 102,
       "embed": {
         "type": "images",
         "images": [
@@ -812,64 +899,6 @@
         "title": "Halloween Sale 2026 by Joel Happyhil",
         "description": "A bundle by Joel Happyhil, $55.58 for 10 games",
         "thumb": null
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:37tze2pjc6ydkn4z22f4bvws/app.bsky.feed.post/3mywgcnm6n22m",
-      "source": "bluesky",
-      "author": {
-        "handle": "glitzydemon.itch.io",
-        "displayName": "Fabian Blake(he/him)My heart has joined the thousand\ud83d\udc94",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreic4uhdpu2imhykm7s5pie6feapumnvkicm4xw3orjvxezeqnajzam"
-      },
-      "record": {
-        "text": "All my games are political. Even (especially?) my 'cozy hopepunk' ones. Indigo Summer invites players to explore the theme of the colonisation of Indigenous arts & crafts and relate that to the modern rise of AI, while working together to gather herbs and make ink \ud83d\udc99 glitzydemon.itch.io/indigo-summer",
-        "createdAt": "2026-10-28T09:19:59.804Z"
-      },
-      "indexedAt": "2026-10-28T09:20:01.270Z",
-      "replyCount": 3,
-      "repostCount": 7,
-      "likeCount": 19,
-      "embed": {
-        "type": "external",
-        "uri": "https://glitzydemon.itch.io/indigo-summer",
-        "title": "INDIGO SUMMER by Fabian Blake",
-        "description": "",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:37tze2pjc6ydkn4z22f4bvws/bafkreictmtxf6c55rkeajn62xuwal4lveoxz7bcxayny4jmxxyeyjksusm"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:pp7ohy3dg7cw67u5l6qdbez5/app.bsky.feed.post/3myucajxeas2m",
-      "source": "bluesky",
-      "author": {
-        "handle": "prismaticwasteland.com",
-        "displayName": "Prismatic Wasteland",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreiaojhso3f2lqvnb7hi4a2zoweu2ecludil72dww45fo4s2uqx2igu"
-      },
-      "record": {
-        "text": "Checklist for Making a Cool Monster\nVampires are undeniably cool. I break down what makes them so cool and how that can be applied to designing other monsters to make them almost as cool as a vampire\n#osr #ttrpg",
-        "createdAt": "2026-10-27T13:01:54.423Z"
-      },
-      "indexedAt": "2026-10-27T13:01:56.078Z",
-      "replyCount": 5,
-      "repostCount": 37,
-      "likeCount": 111,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.prismaticwasteland.com/blog/making-a-cool-monster",
-        "title": "Making a Cool Monster \u2014 Prismatic Wasteland",
-        "description": "A checklist you can use to make your monsters more interesting.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pp7ohy3dg7cw67u5l6qdbez5/bafkreighwdh3hmkwjmen6mcouba2rzyla4lerdqvw4coq2k3qgpgrwuhre"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
