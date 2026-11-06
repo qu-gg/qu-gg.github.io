@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05T12:01:32.413294Z",
+  "lastUpdated": "2026-11-06T00:03:12.781678Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,75 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:tjejp3gxg2yl5aoprqbx35uw/app.bsky.feed.post/3mzlxw6rfv22t",
+      "source": "bluesky",
+      "author": {
+        "handle": "momatoes.com",
+        "displayName": "momatoes ",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigtvpd6thxsczaeglunwxriu5pcxgg4nx2zpu4nz3tsqjq6urvldy"
+      },
+      "record": {
+        "text": "I am running a small sale for my games! \n\nGames about the apocalypse, about legacy, and even one where you live atop a chimera. \ud83c\udf3e \n\nGames that can make you feel adrenaline or melancholy \ud83c\udf42\n\nAnd games that have won industry recognition. \ud83c\udf96\ufe0f\n\nitch.io/s/216059/a-l...\n\nRunning until Sunday only.",
+        "createdAt": "2026-11-05T23:01:03.449Z"
+      },
+      "indexedAt": "2026-11-05T23:01:08.774Z",
+      "replyCount": 1,
+      "repostCount": 15,
+      "likeCount": 21,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigfzijx3cqml7u6qwuaf7wiuyfuln4e2zpqd4d557xebrr46nahf4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigfzijx3cqml7u6qwuaf7wiuyfuln4e2zpqd4d557xebrr46nahf4",
+            "alt": "A shoddily written promo ad that says:\n\nSALE\nVery cool\nAward-winning\nTTRPGS \ud83d\udd25 "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mzl3nvb7zk23",
+      "source": "bluesky",
+      "author": {
+        "handle": "letsdamage.bsky.social",
+        "displayName": "Paul VX2",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
+      },
+      "record": {
+        "text": "I'm happy to announce that GRIDSHOCK 20XX is now available as Pay What You Want PDFs on itch.io and DriveThruRPG.\n\nA limited number of print zines are still available from Exalted Funeral - at a drastically reduced price.\n\nLinks to all of the above: linktr.ee/vx2games",
+        "createdAt": "2026-11-05T14:35:20.275Z"
+      },
+      "indexedAt": "2026-11-05T14:35:30.585Z",
+      "replyCount": 1,
+      "repostCount": 6,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifkbydzaqpk4xkz4ft5q62tv5lcxwgnj4crtaeh6ndk6enacejem4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifkbydzaqpk4xkz4ft5q62tv5lcxwgnj4crtaeh6ndk6enacejem4",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifujluq3ojfzghycibxq2ek5k2uwtntsegkgdt7wu4drqrp3n4try",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifujluq3ojfzghycibxq2ek5k2uwtntsegkgdt7wu4drqrp3n4try",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mzjrfuuulc2i",
       "source": "bluesky",
       "author": {
@@ -66,7 +135,7 @@
       "indexedAt": "2026-11-05T01:59:22.281Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 27,
+      "likeCount": 35,
       "embed": {
         "type": "images",
         "images": [
@@ -155,8 +224,8 @@
       },
       "indexedAt": "2026-11-04T15:14:41.695Z",
       "replyCount": 1,
-      "repostCount": 34,
-      "likeCount": 58,
+      "repostCount": 40,
+      "likeCount": 65,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/215898/banish-the-darkness-sale",
@@ -184,8 +253,8 @@
       },
       "indexedAt": "2026-11-04T01:19:34.590Z",
       "replyCount": 5,
-      "repostCount": 10,
-      "likeCount": 17,
+      "repostCount": 11,
+      "likeCount": 18,
       "embed": {
         "type": "images",
         "images": [
@@ -287,8 +356,8 @@
       },
       "indexedAt": "2026-11-03T17:50:07.971Z",
       "replyCount": 2,
-      "repostCount": 33,
-      "likeCount": 66,
+      "repostCount": 37,
+      "likeCount": 73,
       "embed": {
         "type": "images",
         "images": [
@@ -873,35 +942,6 @@
         "title": "All The Way Down - OSR Cosmic Turtle Megadungeon",
         "description": "A Cosmic Turtle Megadungeon for Old School Roleplaying Games",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nqheoqptjt4gol6dsig5dpkr/bafkreihepl6sqjxdriezbxj7onvtajlv33uxvys3c76tb7coku6co6utru"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3myx6r4rbbc2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "theurbanavian.bsky.social",
-        "displayName": "Yanni \ud83e\uddff\u27a1\ufe0f Metatopia",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreibkzmj5gjc36btef42d6laflvs772kr6g4c5e6dssbmft3dlrtoyu"
-      },
-      "record": {
-        "text": "Heir of Swordtember is live on Kickstarter!\n\nThis little zine is a celebration of Heir of Swords and Ambition, my love of swords and tarot. It's got three new ways to play Heir of Swords, 30 kickass swords for Ambition (or your fav ttrpg), and an entire ORACLE DECK.\n\nttrpg.fund/heirofswordt...",
-        "createdAt": "2026-10-28T16:37:35.265Z"
-      },
-      "indexedAt": "2026-10-28T16:37:37.077Z",
-      "replyCount": 1,
-      "repostCount": 19,
-      "likeCount": 34,
-      "embed": {
-        "type": "external",
-        "uri": "https://ttrpg.fund/heirofswordtember",
-        "title": "Heir of Swordtember; an Oracle Deck for Carving Fate",
-        "description": "Thirty swords to wield in your favorite tabletop game. Thirty cards to carve the future through spread and divination \u2014 cut down fate.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreihi7tmce3hwbohpst3el3shm6us6ojgxnastwykmtjmyc332mitma"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3186,7 +3226,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2341,
-      "likeCount": 11806,
+      "likeCount": 11805,
       "embed": {
         "type": "images",
         "images": [
@@ -3466,7 +3506,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
       "repostCount": 1872,
-      "likeCount": 8931,
+      "likeCount": 8930,
       "embed": {
         "type": "images",
         "images": [
@@ -3522,7 +3562,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2639,
-      "likeCount": 15572,
+      "likeCount": 15571,
       "embed": {
         "type": "images",
         "images": [
