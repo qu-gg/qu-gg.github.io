@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T00:03:22.838198Z",
+  "lastUpdated": "2026-11-08T12:01:22.960783Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -65,8 +65,8 @@
       },
       "indexedAt": "2026-11-07T18:22:37.381Z",
       "replyCount": 2,
-      "repostCount": 21,
-      "likeCount": 36,
+      "repostCount": 33,
+      "likeCount": 52,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/bloggies-27-announcement/",
@@ -93,9 +93,9 @@
         "createdAt": "2026-11-07T14:24:01.140Z"
       },
       "indexedAt": "2026-11-07T14:24:04.276Z",
-      "replyCount": 6,
-      "repostCount": 9,
-      "likeCount": 105,
+      "replyCount": 8,
+      "repostCount": 13,
+      "likeCount": 121,
       "embed": {
         "type": "images",
         "images": [
@@ -219,7 +219,7 @@
       },
       "indexedAt": "2026-11-05T23:01:08.774Z",
       "replyCount": 1,
-      "repostCount": 39,
+      "repostCount": 38,
       "likeCount": 56,
       "embed": {
         "type": "images",
@@ -379,7 +379,7 @@
       "indexedAt": "2026-11-04T15:14:41.695Z",
       "replyCount": 1,
       "repostCount": 40,
-      "likeCount": 66,
+      "likeCount": 67,
       "embed": {
         "type": "external",
         "uri": "https://itch.io/s/215898/banish-the-darkness-sale",
@@ -406,7 +406,7 @@
         "createdAt": "2026-11-04T01:19:30.723Z"
       },
       "indexedAt": "2026-11-04T01:19:34.590Z",
-      "replyCount": 5,
+      "replyCount": 6,
       "repostCount": 13,
       "likeCount": 19,
       "embed": {
@@ -479,7 +479,7 @@
       "indexedAt": "2026-11-03T18:10:35.480Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 27,
+      "likeCount": 28,
       "embed": {
         "type": "images",
         "images": [
@@ -510,8 +510,8 @@
       },
       "indexedAt": "2026-11-03T17:50:07.971Z",
       "replyCount": 2,
-      "repostCount": 47,
-      "likeCount": 81,
+      "repostCount": 48,
+      "likeCount": 82,
       "embed": {
         "type": "images",
         "images": [
@@ -632,7 +632,7 @@
       "indexedAt": "2026-11-03T12:45:54.880Z",
       "replyCount": 6,
       "repostCount": 42,
-      "likeCount": 133,
+      "likeCount": 134,
       "embed": {
         "type": "images",
         "images": [
@@ -844,7 +844,7 @@
       "indexedAt": "2026-10-31T16:49:46.782Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 16,
+      "likeCount": 17,
       "embed": {
         "type": "external",
         "uri": "https://samtung.itch.io/bean-ball",
@@ -1708,6 +1708,38 @@
         ]
       },
       "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:ydxzohkx2mhz3n4xu7hjbfiw/app.bsky.feed.post/3msxpdtfgsc2b",
+      "source": "bluesky",
+      "author": {
+        "handle": "pirategonzalez.bsky.social",
+        "displayName": "Tim Gonzalez | BEACON RPG",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreig7d5fmo2vhvxyfw6lcxfxlz6syjs75ofb27ufft7bugskl45hogi"
+      },
+      "record": {
+        "text": "Tabletop folks! Are you looking for a one-shot for your stream, show, or blog? Beacon: Koronil is right up your alley, and I've got cool stuff in the works. Message me or reach out to pirategonzalezgames@gmail.com and we can set something up.",
+        "createdAt": "2026-08-13T13:03:13.074Z"
+      },
+      "indexedAt": "2026-08-13T13:03:14.263Z",
+      "replyCount": 0,
+      "repostCount": 8,
+      "likeCount": 13,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreiazrgoveydbux4hyct32s6cm7jqgvx7hmzpt5rpp3sgsjqnfqy5ea",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreiazrgoveydbux4hyct32s6cm7jqgvx7hmzpt5rpp3sgsjqnfqy5ea",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
     },
     {
       "uri": "https://www.artstation.com/artwork/O3yy5e",
