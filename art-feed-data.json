@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T12:01:31.261136Z",
+  "lastUpdated": "2026-11-08T00:03:22.838198Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mzqjc33wh22j",
+      "source": "bluesky",
+      "author": {
+        "handle": "elmc.at",
+        "displayName": "elmcat",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreiezz5pra2n3sucz73zwsp2vpt5coshrepqq6n36d4rswqekp3chbi"
+      },
+      "record": {
+        "text": "ROAD TO BLOGGIES\n\nAnd we need your favorite posts!\n\n\ud83e\udef5\n\nelmc.at/bloggies-27-...",
+        "createdAt": "2026-11-07T18:22:34.820Z"
+      },
+      "indexedAt": "2026-11-07T18:22:37.381Z",
+      "replyCount": 2,
+      "repostCount": 21,
+      "likeCount": 36,
+      "embed": {
+        "type": "external",
+        "uri": "https://elmc.at/bloggies-27-announcement/",
+        "title": "Bloggies '27 - Enter the Arena",
+        "description": "The Bloggies are coming back. Nominate your favorite blog posts of 2026 and prepare for the bloodshed.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreifnyyg3z36szomu3fzmsbxynw7p26ej2w2tyvdr5htjglsssz6yc4"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mzq3xij5bk2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Another Knock! sneak peak.",
+        "createdAt": "2026-11-07T14:24:01.140Z"
+      },
+      "indexedAt": "2026-11-07T14:24:04.276Z",
+      "replyCount": 6,
+      "repostCount": 9,
+      "likeCount": 105,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihzijqlzpxpuhfnrfydpb4bozx6sqrryokfktf74x6j2nfiad5upu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihzijqlzpxpuhfnrfydpb4bozx6sqrryokfktf74x6j2nfiad5upu",
+            "alt": "Two sample monsters from Knock, called Monsters That Violate in Many Ways, but Don't Violate Intellectual Property Laws. There are two versions of the Beholder, but the Mumbler is a big mouth and the Grasper is a big hand."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:a3yz5w4xe6b5vuaxt3b57thl/app.bsky.feed.post/3mznyvmejqn2i",
       "source": "bluesky",
       "author": {
@@ -98,7 +159,7 @@
       "indexedAt": "2026-11-06T17:29:44.377Z",
       "replyCount": 1,
       "repostCount": 1,
-      "likeCount": 12,
+      "likeCount": 13,
       "embed": {
         "type": "images",
         "images": [
@@ -129,8 +190,8 @@
       },
       "indexedAt": "2026-11-06T15:14:50.479Z",
       "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 16,
+      "repostCount": 9,
+      "likeCount": 20,
       "embed": {
         "type": "external",
         "uri": "https://hairic.itch.io/this-is-not-your-house",
@@ -149,7 +210,7 @@
       "source": "bluesky",
       "author": {
         "handle": "momatoes.com",
-        "displayName": "momatoes ",
+        "displayName": "momatoes",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigtvpd6thxsczaeglunwxriu5pcxgg4nx2zpu4nz3tsqjq6urvldy"
       },
       "record": {
@@ -418,7 +479,7 @@
       "indexedAt": "2026-11-03T18:10:35.480Z",
       "replyCount": 1,
       "repostCount": 10,
-      "likeCount": 26,
+      "likeCount": 27,
       "embed": {
         "type": "images",
         "images": [
@@ -449,7 +510,7 @@
       },
       "indexedAt": "2026-11-03T17:50:07.971Z",
       "replyCount": 2,
-      "repostCount": 46,
+      "repostCount": 47,
       "likeCount": 81,
       "embed": {
         "type": "images",
@@ -510,7 +571,7 @@
       "indexedAt": "2026-11-03T14:10:46.278Z",
       "replyCount": 5,
       "repostCount": 31,
-      "likeCount": 64,
+      "likeCount": 65,
       "embed": {
         "type": "external",
         "uri": "https://diceexploder.com/posts/transcript-traits-pendragon-with-caleb-zane-huett",
@@ -569,9 +630,9 @@
         "createdAt": "2026-11-03T12:45:51.504Z"
       },
       "indexedAt": "2026-11-03T12:45:54.880Z",
-      "replyCount": 4,
-      "repostCount": 35,
-      "likeCount": 117,
+      "replyCount": 6,
+      "repostCount": 42,
+      "likeCount": 133,
       "embed": {
         "type": "images",
         "images": [
@@ -632,7 +693,7 @@
       "indexedAt": "2026-11-02T14:48:05.489Z",
       "replyCount": 1,
       "repostCount": 20,
-      "likeCount": 102,
+      "likeCount": 103,
       "embed": {
         "type": "images",
         "images": [
@@ -982,35 +1043,6 @@
         "handle": "greywizard.bsky.social",
         "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
-      }
-    },
-    {
-      "uri": "at://did:plc:nqheoqptjt4gol6dsig5dpkr/app.bsky.feed.post/3myze3u7d2c2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "tonytranrpg.bsky.social",
-        "displayName": "Tony Tran",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nqheoqptjt4gol6dsig5dpkr/bafkreihl3uxd4ergx4vr4rdwjzpypg75nfytikewtf5qqly3fr224uca6q"
-      },
-      "record": {
-        "text": "Check out All The Way Down - OSR Cosmic Turtle Megadungeon by Onslaught Six on @kickstarter.com www.kickstarter.com/projects/see... - some really good things happening on this turtle. We half way there!",
-        "createdAt": "2026-10-29T13:18:23.566Z"
-      },
-      "indexedAt": "2026-10-29T13:18:27.869Z",
-      "replyCount": 0,
-      "repostCount": 7,
-      "likeCount": 10,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/seeyouspacecowboy/all-the-way-down?ref=project_bsky",
-        "title": "All The Way Down - OSR Cosmic Turtle Megadungeon",
-        "description": "A Cosmic Turtle Megadungeon for Old School Roleplaying Games",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nqheoqptjt4gol6dsig5dpkr/bafkreihepl6sqjxdriezbxj7onvtajlv33uxvys3c76tb7coku6co6utru"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
     },
     {
@@ -3037,7 +3069,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1945,
-      "likeCount": 8432,
+      "likeCount": 8431,
       "embed": {
         "type": "images",
         "images": [
