@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T00:03:24.062610Z",
+  "lastUpdated": "2026-11-09T12:01:38.070692Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,35 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mzuqkjdtmc2n",
+      "source": "bluesky",
+      "author": {
+        "handle": "voxparlour.bsky.social",
+        "displayName": "Scott M \ud83c\udf42",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreie5qhfzjvfofcy7ranljicxvsfxn2pcfbcpbnsybqcnzr2yheeyeu"
+      },
+      "record": {
+        "text": "Big announcement: I've launched a new venture called Curious Quests, helping attractions create immersive analogue narrative games for visitors. This is super exciting!\n\nwrite.as/trollish-del...",
+        "createdAt": "2026-11-09T10:43:13.342Z"
+      },
+      "indexedAt": "2026-11-09T10:42:54.376Z",
+      "replyCount": 3,
+      "repostCount": 9,
+      "likeCount": 13,
+      "embed": {
+        "type": "external",
+        "uri": "https://write.as/trollish-delver/announcement-curious-quests-brings-analogue-narrative-games-to-attractions",
+        "title": "Announcement: Curious Quests brings analogue narrative games to attractions",
+        "description": "I\u2019m very excited to announce the launch of Curious Quests, my new brand designed to bring analogue imagin...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreigwowuhypi7ysffoezfjqlxds6rx3u227ue6w5earrueoecdps7ta"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mzsymsmyoc2h",
       "source": "bluesky",
       "author": {
@@ -96,9 +125,9 @@
         "createdAt": "2026-11-07T18:22:34.820Z"
       },
       "indexedAt": "2026-11-07T18:22:37.381Z",
-      "replyCount": 2,
-      "repostCount": 34,
-      "likeCount": 60,
+      "replyCount": 3,
+      "repostCount": 38,
+      "likeCount": 66,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/bloggies-27-announcement/",
@@ -126,8 +155,8 @@
       },
       "indexedAt": "2026-11-07T14:24:04.276Z",
       "replyCount": 8,
-      "repostCount": 14,
-      "likeCount": 123,
+      "repostCount": 15,
+      "likeCount": 125,
       "embed": {
         "type": "images",
         "images": [
@@ -860,63 +889,6 @@
         "displayName": "Reynaldo (Going to PAX U)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
       }
-    },
-    {
-      "uri": "at://did:plc:gvtnauh3uvychl46myirqtf2/app.bsky.feed.post/3mz6qtnhvfk22",
-      "source": "bluesky",
-      "author": {
-        "handle": "stung.art",
-        "displayName": "Sam Tung",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gvtnauh3uvychl46myirqtf2/bafkreic7ymr65jvsotcou7n2d4kczonttthbihbnoxcsmmdt6p5tj5rrza"
-      },
-      "record": {
-        "text": "Adam Royster and I present BEAN BALL, one-shot #TTRPG about 1970s #baseball players executing a revenge plan, as part of the Baseball Jam '26.\n\nBuild your ballplayer and park, then enact America's national pastime of vengeance before you\u2019re tossed from the game.\n\nsamtung.itch.io/bean-ball",
-        "createdAt": "2026-10-31T16:49:45.415Z"
-      },
-      "indexedAt": "2026-10-31T16:49:46.782Z",
-      "replyCount": 1,
-      "repostCount": 10,
-      "likeCount": 17,
-      "embed": {
-        "type": "external",
-        "uri": "https://samtung.itch.io/bean-ball",
-        "title": "Bean Ball by SamTung",
-        "description": "A one-shot TTRPG about 1970s baseball players executing a revenge plan on the other team for hitting their star player.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gvtnauh3uvychl46myirqtf2/bafkreic2qxttn4hv7cej6w7scs4a2cdkcoajdte6akhveupbl3fhvtgvpa"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3nbrcmrud3qaxczckbswhrfc/app.bsky.feed.post/3mz6n7uu34s2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      },
-      "record": {
-        "text": "Happy Halloween!\nOn this day of ghouls and ghosts\nI bring you some themed BREAK!! DevBlog Posts!\nOoooooOOooo",
-        "createdAt": "2026-10-31T15:45:00.840Z"
-      },
-      "indexedAt": "2026-10-31T15:45:04.479Z",
-      "replyCount": 1,
-      "repostCount": 9,
-      "likeCount": 50,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiclaosvsl3d5mkuy5rkphafdp2iqadh2oxyelplk6tllncokiv5vq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreiclaosvsl3d5mkuy5rkphafdp2iqadh2oxyelplk6tllncokiv5vq",
-            "alt": "An assortment of baddies from the BREAK!! tabletop rpg"
-          }
-        ]
-      },
-      "repostBy": null
     },
     {
       "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3mz5pldele225",
@@ -1968,7 +1940,7 @@
       "indexedAt": "2026-05-12T07:36:22.665Z",
       "replyCount": 9,
       "repostCount": 510,
-      "likeCount": 2655,
+      "likeCount": 2654,
       "embed": {
         "type": "images",
         "images": [
@@ -2108,7 +2080,7 @@
       "indexedAt": "2026-04-14T13:48:42.858Z",
       "replyCount": 28,
       "repostCount": 1442,
-      "likeCount": 6296,
+      "likeCount": 6295,
       "embed": {
         "type": "images",
         "images": [
@@ -2261,7 +2233,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3879,
+      "likeCount": 3878,
       "embed": {
         "type": "images",
         "images": [
@@ -2613,7 +2585,7 @@
       "indexedAt": "2025-12-26T11:59:46.332Z",
       "replyCount": 36,
       "repostCount": 1238,
-      "likeCount": 6521,
+      "likeCount": 6520,
       "embed": {
         "type": "images",
         "images": [
@@ -3038,7 +3010,7 @@
       "indexedAt": "2025-08-14T03:17:39.013Z",
       "replyCount": 54,
       "repostCount": 1945,
-      "likeCount": 8431,
+      "likeCount": 8430,
       "embed": {
         "type": "images",
         "images": [
@@ -3291,7 +3263,7 @@
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
       "repostCount": 2341,
-      "likeCount": 11806,
+      "likeCount": 11805,
       "embed": {
         "type": "images",
         "images": [
@@ -3571,7 +3543,7 @@
       "indexedAt": "2024-12-18T23:56:48.150Z",
       "replyCount": 60,
       "repostCount": 1872,
-      "likeCount": 8929,
+      "likeCount": 8928,
       "embed": {
         "type": "images",
         "images": [
@@ -3599,7 +3571,7 @@
       "indexedAt": "2024-12-06T12:26:21.361Z",
       "replyCount": 6,
       "repostCount": 405,
-      "likeCount": 2354,
+      "likeCount": 2353,
       "embed": {
         "type": "images",
         "images": [
