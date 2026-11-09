@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T12:01:22.960783Z",
+  "lastUpdated": "2026-11-09T00:03:24.062610Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mzsymsmyoc2h",
+      "source": "bluesky",
+      "author": {
+        "handle": "weirdplace.bsky.social",
+        "displayName": "Weird Place \ud83d\udd1c PAXU",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
+      },
+      "record": {
+        "text": "Speculum Fractum. An encyclopedia about the Endless compiled by Dusar Umenis, Mantihistorian. Available now for backers.\n\nRESIDUE\u00b0 late pledges: www.kickstarter.com/projects/wei...",
+        "createdAt": "2026-11-08T18:02:20.640Z"
+      },
+      "indexedAt": "2026-11-08T18:02:23.573Z",
+      "replyCount": 1,
+      "repostCount": 2,
+      "likeCount": 3,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihyhfhaez5x4mmdaox7dyebljho3qfhvltgopn7hjfrgjfpgwrxfq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihyhfhaez5x4mmdaox7dyebljho3qfhvltgopn7hjfrgjfpgwrxfq",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:nkdv3fdhjhqtk5ov2swoo6ys/app.bsky.feed.post/3mzqjc33wh22j",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-11-07T18:22:37.381Z",
       "replyCount": 2,
-      "repostCount": 33,
-      "likeCount": 52,
+      "repostCount": 34,
+      "likeCount": 60,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/bloggies-27-announcement/",
@@ -94,8 +126,8 @@
       },
       "indexedAt": "2026-11-07T14:24:04.276Z",
       "replyCount": 8,
-      "repostCount": 13,
-      "likeCount": 121,
+      "repostCount": 14,
+      "likeCount": 123,
       "embed": {
         "type": "images",
         "images": [
@@ -219,7 +251,7 @@
       },
       "indexedAt": "2026-11-05T23:01:08.774Z",
       "replyCount": 1,
-      "repostCount": 38,
+      "repostCount": 37,
       "likeCount": 56,
       "embed": {
         "type": "images",
@@ -887,123 +919,28 @@
       "repostBy": null
     },
     {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mz6ll3uvec2v",
+      "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3mz5pldele225",
       "source": "bluesky",
       "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
+        "handle": "penflower-ink.bsky.social",
+        "displayName": "Penflower Ink",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic6je44q4aaogk7ic5urcpntratsg5pom4o5zs4pp5odiv6kcovlq"
       },
       "record": {
-        "text": "\ud83d\udc7b Happy Halloween!! \ud83c\udf83 In the spirit of old school horror double features, the Weird Place research lab brings you a 2-in-1 special! #horror #ttrpg",
-        "createdAt": "2026-10-31T15:15:29.820Z"
+        "text": "I'll be writing more about this in the next blog post (coming out today), but:\nI don't use Discord anymore and I'm barely active here.\nIf you'd like to chat about art, games and other things, please check out my forum.\nI made all the icons myself and I think it's pretty cool.\npennyspace.boards.net",
+        "createdAt": "2026-10-31T06:54:32.899Z"
       },
-      "indexedAt": "2026-10-31T15:15:32.280Z",
-      "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 27,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/ODnyNbUqhX0",
-        "title": "Two Horror TTRPGs That Prey on Fear!",
-        "description": "YouTube video by Weird Place",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihatvlptucrsknec5mt4im34rejnxjkklfkygp3as447xcdpm55dy"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:rd7okd2qfxipi37kiffhkqzv/app.bsky.feed.post/3mz4rzoja4k2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "infrabeige.bsky.social",
-        "displayName": "Leo",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rd7okd2qfxipi37kiffhkqzv/bafkreihyzt4mnwufhsmanwex2glkel764hyshvzguky5ttul4bsek7657y"
-      },
-      "record": {
-        "text": "Hey so something serious for once, my mum is raising money for the Northumberland Air Ambulance as they saved her life when I was a lad. I am offering an original commissioned Vaults of Vaarn drawing to one lucky donor to the campaign! More details at the link www.justgiving.com/page/careyle...",
-        "createdAt": "2026-10-30T22:05:42.097Z"
-      },
-      "indexedAt": "2026-10-30T22:05:43.878Z",
-      "replyCount": 1,
-      "repostCount": 15,
-      "likeCount": 28,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.justgiving.com/page/careyleo-2?utm_medium=FA&utm_source=WA",
-        "title": "Carey's fundraiser for Great North Air Ambulance Service",
-        "description": "Help Carey Fluker Hunt raise money to support Great North Air Ambulance Service",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rd7okd2qfxipi37kiffhkqzv/bafkreiajet5zaclvhbky72ggvpuov46qmkorrjpuwl35fvw3vmtoubyb2y"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:2zrff62cw4ma3o322x5y4m7r/app.bsky.feed.post/3mz4h2i54j22u",
-      "source": "bluesky",
-      "author": {
-        "handle": "seanrunamok.bsky.social",
-        "displayName": "Sean Poppe",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreidrzuv7fjv4srlvxhbpvg3u2mcegvzvx5v73y363ddw6ghnfedc7q"
-      },
-      "record": {
-        "text": "Halloween sale for my paper minis \uff3c(\u00ba \u25a1 \u00ba l|l)/\n\n$2.99 each \u3023( \u00ba\u0394\u00ba )\u3023or get BOTH for $4.99! That's 20 guys!\n\nPerfect for Forbidden Psalm, Frostgrave, Sword Weirdos, etc.",
-        "createdAt": "2026-10-30T18:49:17.802Z"
-      },
-      "indexedAt": "2026-10-30T18:49:24.171Z",
-      "replyCount": 4,
-      "repostCount": 33,
-      "likeCount": 90,
+      "indexedAt": "2026-10-31T06:54:36.176Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 6,
       "embed": {
         "type": "images",
         "images": [
           {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreicsskvj273dzkdrjyemjpygb3v6kc34aixjm5774nnrebf7jkk6sy",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreicsskvj273dzkdrjyemjpygb3v6kc34aixjm5774nnrebf7jkk6sy",
-            "alt": "photograph of fantasy paper miniatures for ttrpgs and skirmish games, posed on some minecraft toys with a toy castle in the background."
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreiegmibldqznvycubne32uagq765c2wxfzs6wteoiuyl3sgzrllyrq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2zrff62cw4ma3o322x5y4m7r/bafkreiegmibldqznvycubne32uagq765c2wxfzs6wteoiuyl3sgzrllyrq",
-            "alt": "photograph of fantasy paper miniatures for ttrpgs and skirmish games, posed on some minecraft toys with a toy castle in the background."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:st6rwikncekpzavnopswjsu5/app.bsky.feed.post/3mz4atx4chkq5",
-      "source": "bluesky",
-      "author": {
-        "handle": "nuclearpasta.bsky.social",
-        "displayName": "Nuclearpasta",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreibsl4vrdgnke27w4fy6nlvhskjdpz42xlbiocjd2gqmbxyv5dchca"
-      },
-      "record": {
-        "text": "Comic book guy tries to make a TTRPG! A tale as old as time!\n\nThis is the skeleton of a game, nowhere near playable yet, but if you want to get an idea of the core rules and contribute to my desert drifting, I would be ecstatic if you considered supporting me on Patreon!",
-        "createdAt": "2026-10-30T16:58:16.174Z"
-      },
-      "indexedAt": "2026-10-30T16:58:18.987Z",
-      "replyCount": 2,
-      "repostCount": 23,
-      "likeCount": 112,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreielnxx4npcbqvek3nwnbiszehferxgq3ksxvi5nrsocdldruoyr7u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:st6rwikncekpzavnopswjsu5/bafkreielnxx4npcbqvek3nwnbiszehferxgq3ksxvi5nrsocdldruoyr7u",
-            "alt": "Two people walking in the desert, seen from above. It's the provisional cover of the 10ESB RPG"
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic4bsqge476melprgfnom43fty3e2ilkkh7aiojczo4rw4kqk6dfq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic4bsqge476melprgfnom43fty3e2ilkkh7aiojczo4rw4kqk6dfq",
+            "alt": "\"Pennyspace\" traditionally hand-drawn in chunky green letters. The \"A\" is replaced by a gold star with big cartoon eyes."
           }
         ]
       },
@@ -2267,7 +2204,7 @@
       "indexedAt": "2026-03-19T14:50:39.553Z",
       "replyCount": 14,
       "repostCount": 615,
-      "likeCount": 2896,
+      "likeCount": 2895,
       "embed": {
         "type": "images",
         "images": [
@@ -2324,7 +2261,7 @@
       "indexedAt": "2026-03-12T14:58:47.559Z",
       "replyCount": 19,
       "repostCount": 760,
-      "likeCount": 3880,
+      "likeCount": 3879,
       "embed": {
         "type": "images",
         "images": [
@@ -3690,7 +3627,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2638,
-      "likeCount": 15570,
+      "likeCount": 15569,
       "embed": {
         "type": "images",
         "images": [
