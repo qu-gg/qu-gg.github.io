@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T12:01:38.070692Z",
+  "lastUpdated": "2026-11-10T00:03:16.934561Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,11 +52,100 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:daqltowi4gqss3tkdwizsddz/app.bsky.feed.post/3mzvfojxdxh26",
+      "source": "bluesky",
+      "author": {
+        "handle": "bodieh.bsky.social",
+        "displayName": "Bodie H.",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreibvqrfevqiytldnyjltuh4afkfjn4b5onix6h4abwwaqo7l34ltma"
+      },
+      "record": {
+        "text": "The cover of my new adventure: Forest of the Wailing Bear.\nOther than being a great spooky forest adventure, this is the first appearance of my new header font! Pretty pleased with it, you can see it there as the title text.\n\nThis adventure is now on Patreon!",
+        "createdAt": "2026-11-09T17:01:16.772Z"
+      },
+      "indexedAt": "2026-11-09T17:01:17.487Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 25,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreifyvfstd6ie4nyvueagpojc4vkt66t73dzjovvt7fqh4acq3fckde",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreifyvfstd6ie4nyvueagpojc4vkt66t73dzjovvt7fqh4acq3fckde",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mzvaugjnes2z",
+      "source": "bluesky",
+      "author": {
+        "handle": "greywizard.bsky.social",
+        "displayName": "Grey Wizard - LATE PLEDGES ON KICKSTARTER NOW!",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreielyf6mvru5rq5wiqedlhpphlt3qlgdulpauudlegopu7xlw6rrha"
+      },
+      "record": {
+        "text": "Minis?",
+        "createdAt": "2026-11-09T15:35:05.789Z"
+      },
+      "indexedAt": "2026-11-09T15:35:08.872Z",
+      "replyCount": 3,
+      "repostCount": 3,
+      "likeCount": 33,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibcnzxmflx2b52xmgurilao6nqxwxfd6nfionvqq5c5ihxeffgu4u",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:q6tdtn7jwuuhoguohqks5a4g/bafkreibcnzxmflx2b52xmgurilao6nqxwxfd6nfionvqq5c5ihxeffgu4u",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": null
+    },
+    {
+      "uri": "at://did:plc:f45qwudyed2mnzuwyeaca7iw/app.bsky.feed.post/3mzv66gblpk2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "jackguignol.bsky.social",
+        "displayName": "Jack Guignol",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreibuxpnncf64jgjtezccwtwqs3b3nxhzd3jdwcyenqnuixrjkkbqci"
+      },
+      "record": {
+        "text": "A look back at all the horror movies the Angel of the Graves showed us in the run up to Halloween talesofthegrotesqueanddungeonesque.blogspot.com/2026/11/sera...",
+        "createdAt": "2026-11-09T14:46:59.848Z"
+      },
+      "indexedAt": "2026-11-09T14:47:00.779Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 7,
+      "embed": {
+        "type": "external",
+        "uri": "https://talesofthegrotesqueanddungeonesque.blogspot.com/2026/11/serafinas-halloween-party-2026.html",
+        "title": "Serafina's Halloween Party 2026",
+        "description": "As is tradition during the Halloween season, Serafina, aka Krevborna's Angel of the Graves, aka protagonist of my novel Ornamental Women , f...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreifpgutcfrhgbzspmosoe45qlcgnolpblx4keqvnrddvu73hd4atze"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mzuqkjdtmc2n",
       "source": "bluesky",
       "author": {
         "handle": "voxparlour.bsky.social",
-        "displayName": "Scott M \ud83c\udf42",
+        "displayName": "Scott M | Curious Quests \u2694\ufe0f",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreie5qhfzjvfofcy7ranljicxvsfxn2pcfbcpbnsybqcnzr2yheeyeu"
       },
       "record": {
@@ -64,9 +153,9 @@
         "createdAt": "2026-11-09T10:43:13.342Z"
       },
       "indexedAt": "2026-11-09T10:42:54.376Z",
-      "replyCount": 3,
-      "repostCount": 9,
-      "likeCount": 13,
+      "replyCount": 4,
+      "repostCount": 17,
+      "likeCount": 41,
       "embed": {
         "type": "external",
         "uri": "https://write.as/trollish-delver/announcement-curious-quests-brings-analogue-narrative-games-to-attractions",
@@ -126,8 +215,8 @@
       },
       "indexedAt": "2026-11-07T18:22:37.381Z",
       "replyCount": 3,
-      "repostCount": 38,
-      "likeCount": 66,
+      "repostCount": 39,
+      "likeCount": 68,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/bloggies-27-announcement/",
@@ -156,7 +245,7 @@
       "indexedAt": "2026-11-07T14:24:04.276Z",
       "replyCount": 8,
       "repostCount": 15,
-      "likeCount": 125,
+      "likeCount": 127,
       "embed": {
         "type": "images",
         "images": [
@@ -570,9 +659,9 @@
         "createdAt": "2026-11-03T17:49:54.129Z"
       },
       "indexedAt": "2026-11-03T17:50:07.971Z",
-      "replyCount": 2,
-      "repostCount": 48,
-      "likeCount": 82,
+      "replyCount": 3,
+      "repostCount": 52,
+      "likeCount": 91,
       "embed": {
         "type": "images",
         "images": [
@@ -693,7 +782,7 @@
       "indexedAt": "2026-11-03T12:45:54.880Z",
       "replyCount": 6,
       "repostCount": 42,
-      "likeCount": 134,
+      "likeCount": 135,
       "embed": {
         "type": "images",
         "images": [
@@ -754,7 +843,7 @@
       "indexedAt": "2026-11-02T14:48:05.489Z",
       "replyCount": 1,
       "repostCount": 20,
-      "likeCount": 103,
+      "likeCount": 105,
       "embed": {
         "type": "images",
         "images": [
@@ -793,96 +882,6 @@
         "title": "Vampire Bride | Halloween Sale 2026 by lorenmakesvideos",
         "description": "A sale by lorenmakesvideos, 50% off Vampire Bride",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreiemjedksrncdcw7wcks252ul3tl52fkrcv7rwyfflvsyfvpuygkpu"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mzauv2vjxs2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "I invite you to play Fashion Souls with me",
-        "createdAt": "2026-11-01T13:07:27.492Z"
-      },
-      "indexedAt": "2026-11-01T13:07:29.186Z",
-      "replyCount": 7,
-      "repostCount": 27,
-      "likeCount": 118,
-      "embed": {
-        "type": "external",
-        "uri": "https://riseupcomus.blogspot.com/2026/10/the-retinue-came-arrayed-in-their.html",
-        "title": "The retinue came arrayed in their finery and their armor [In the House of the High King]",
-        "description": "This post almost killed me. I said, \"I know how to make the Stone Isles  setting fun to read! I'll make Dark Souls-esque armor sets.\" That's...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiahnnhxpqat73xtunax3tivlvl7xwjcssbaeyjx3k733g3fr5deg4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:a46ctvgu3uvamtd2mumr2m4p/app.bsky.feed.post/3mz7jxo4cfk2l",
-      "source": "bluesky",
-      "author": {
-        "handle": "amandalee.bsky.social",
-        "displayName": "The Amanda Lee Mystery House",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreia3qfjcl3awcplpzzcubmbksgrhfkspb2wq7hqzhh4ryrstsx65za"
-      },
-      "record": {
-        "text": "Haunted outer space\n(spot art posting soon on Patreon & comradery! Free to use in your books & games! I will upload it tomorrow on account of I gotta get dressed up for Halloween)",
-        "createdAt": "2026-11-01T00:19:23.817Z"
-      },
-      "indexedAt": "2026-11-01T00:19:29.076Z",
-      "replyCount": 4,
-      "repostCount": 15,
-      "likeCount": 59,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreihscmqmoh4z3qhpohsrxhoe4zplehpd3jjg5x555egpav5usi3d6u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a46ctvgu3uvamtd2mumr2m4p/bafkreihscmqmoh4z3qhpohsrxhoe4zplehpd3jjg5x555egpav5usi3d6u",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5vapg2uipmfhjihfzb4pob3k/app.bsky.feed.post/3mz7amzuatk2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "save.vs.totalpartykill.ca",
-        "displayName": "\u0bb0\u0bae\u0ba3\u0ba9\u0bcd",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreia3g2bvpb7oanffxf2beybe3rztkv2m3idjrn6g5ocgro6k6u2rve"
-      },
-      "record": {
-        "text": "Sad news: @alexeivella.bsky.social, who did the layout for Turnip 28 and made a lot of RPG and skirmish games himself, has passed away. From Toronto, but we never met in real life because of his health issues. Poor guy. So young.",
-        "createdAt": "2026-10-31T21:32:23.385Z"
-      },
-      "indexedAt": "2026-10-31T21:32:24.678Z",
-      "replyCount": 1,
-      "repostCount": 16,
-      "likeCount": 58,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.instagram.com/p/DfKowfzDxUR/",
-        "title": "Hella Vella! on Instagram: \"On Oct. 30, at 7:25 p.m., our sweet Alexei left the world peacefully.\n\nHe was surrounded by his mother, father, sister and brother-in-law in his final moments, listening to...",
-        "description": "264 likes, 69 comments - alexeivella on October 31, 2026: \"On Oct. 30, at 7:25 p.m., our sweet Alexei left the world peacefully.\n\nHe was surrounded by his mother, father, sister and brother-in-law in ...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5vapg2uipmfhjihfzb4pob3k/bafkreigeag6hoiwlhmvm2qmeru6wpj4h3b4niursrl774vfz7rkunobe4u"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
