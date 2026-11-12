@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T12:01:37.867726Z",
+  "lastUpdated": "2026-11-12T00:03:20.140858Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,96 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3n22hemslec2t",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
+      },
+      "record": {
+        "text": "Right, the art reveal trailer is UP\nyoutu.be/utnnxzGeibc\nIn the replies I'll talk a bit about what's happening with this",
+        "createdAt": "2026-11-11T17:14:50.397Z"
+      },
+      "indexedAt": "2026-11-11T17:15:47.479Z",
+      "replyCount": 6,
+      "repostCount": 54,
+      "likeCount": 169,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/utnnxzGeibc",
+        "title": "Intergalactic Bastionland Art Reveal Trailer",
+        "description": "YouTube video by Bastionland",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreiabj6z2tfo4g4bfu56xoamuq2tkuepu6anr2lkchunpz4nb67dz5q"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:mahuykzbrzw5cv3vnll33qv3/app.bsky.feed.post/3n22gsz5jss2k",
+      "source": "bluesky",
+      "author": {
+        "handle": "atmosphericunderworld.com",
+        "displayName": "Atmospheric Underworld",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mahuykzbrzw5cv3vnll33qv3/bafkreigk6ipli4zy5763cionexzy6yhyaylrpjy4mkb2njmvc4dzdrb2zy"
+      },
+      "record": {
+        "text": "It's been about a year since @jamesgrafe.bsky.social and I started on Other Magics, our spell-crafting game about whimsical wizards solving problems through the power of teamwork (and violating the laws of physics).\n\nCome check out the 1-year retrospective!\natmosphericunderworld.com/making-other...",
+        "createdAt": "2026-11-11T17:04:59.360Z"
+      },
+      "indexedAt": "2026-11-11T17:05:01.578Z",
+      "replyCount": 0,
+      "repostCount": 5,
+      "likeCount": 8,
+      "embed": {
+        "type": "external",
+        "uri": "https://atmosphericunderworld.com/making-other-magics-one-year-of-indie-ttrpg-design/",
+        "title": "Making Other Magics - One Year of Indie TTRPG Design",
+        "description": "Designing the high octane world of experimental wizardly, one catastrophic mishap at a time.",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mahuykzbrzw5cv3vnll33qv3/bafkreicqjjr5s76lqh6nmjpy2z6tpl45x2pdlba3fm4bw2pu6qbmhkslja"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3n22fqwzlok2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "zedecksiew.bsky.social",
+        "displayName": "Zedeck Siew",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74"
+      },
+      "record": {
+        "text": "In the place where MACE OF THE MONKEY KING is set, twelve gods are venerated.\n\nBrother Bantam, the cockerel god of bloodsport, a chicken supremacist, who won freedom for His people only twenty years ago, is the newest amongst them.\n\nslowlorispress.com/post/8329580...",
+        "createdAt": "2026-11-11T16:45:56.279Z"
+      },
+      "indexedAt": "2026-11-11T16:46:00.770Z",
+      "replyCount": 1,
+      "repostCount": 9,
+      "likeCount": 41,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreiewojlobnsnj76lytc5nvv4mcxyahj2ht7p66inytlyflbxorgze4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreiewojlobnsnj76lytc5nvv4mcxyahj2ht7p66inytlyflbxorgze4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3mzy2t3z25s2q",
       "source": "bluesky",
       "author": {
@@ -65,8 +155,8 @@
       },
       "indexedAt": "2026-11-10T18:23:56.175Z",
       "replyCount": 0,
-      "repostCount": 4,
-      "likeCount": 18,
+      "repostCount": 5,
+      "likeCount": 22,
       "embed": {
         "type": "external",
         "uri": "https://www.youtube.com/watch?v=utnnxzGeibc",
@@ -93,9 +183,9 @@
         "createdAt": "2026-11-10T18:03:29.960Z"
       },
       "indexedAt": "2026-11-10T18:05:00.674Z",
-      "replyCount": 5,
-      "repostCount": 26,
-      "likeCount": 91,
+      "replyCount": 7,
+      "repostCount": 31,
+      "likeCount": 98,
       "embed": {
         "type": "images",
         "images": [
@@ -126,8 +216,8 @@
       },
       "indexedAt": "2026-11-10T17:15:58.274Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 8,
+      "repostCount": 7,
+      "likeCount": 9,
       "embed": {
         "type": "external",
         "uri": "https://www.backerkit.com/c/projects/alewood-games/a-most-brilliant-spark-dreamscape-ttrpg-for-deceased-pcs",
@@ -154,9 +244,9 @@
         "createdAt": "2026-11-10T16:03:20Z"
       },
       "indexedAt": "2026-11-10T16:03:21.080Z",
-      "replyCount": 2,
-      "repostCount": 3,
-      "likeCount": 6,
+      "replyCount": 3,
+      "repostCount": 5,
+      "likeCount": 9,
       "embed": {
         "type": "images",
         "images": [
@@ -217,7 +307,7 @@
       "indexedAt": "2026-11-10T15:31:18.579Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 4,
+      "likeCount": 5,
       "embed": {
         "type": "external",
         "uri": "https://breakrpg.com/",
@@ -455,7 +545,7 @@
         "createdAt": "2026-11-07T18:22:34.820Z"
       },
       "indexedAt": "2026-11-07T18:22:37.381Z",
-      "replyCount": 4,
+      "replyCount": 5,
       "repostCount": 42,
       "likeCount": 73,
       "embed": {
@@ -486,7 +576,7 @@
       "indexedAt": "2026-11-07T14:24:04.276Z",
       "replyCount": 8,
       "repostCount": 15,
-      "likeCount": 128,
+      "likeCount": 129,
       "embed": {
         "type": "images",
         "images": [
@@ -777,109 +867,6 @@
         "title": "Banish the Darkness Sale by Pandion Games",
         "description": "A sale by Pandion Games, 100% off 13 games",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sg3np2mzl2awrdsexyf3eok5/bafkreifkz3btr43bme65ujwiiox5v4u6w7wjyhar5c4kjoynfv5hjfdu3q"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:6gbricujupbk2veztj36cdit/app.bsky.feed.post/3mzh6pwbr6c2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "socksandpuppets.com",
-        "displayName": "ahdok",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreie6c4o3ri5k5zwk3owweeqch7ixzl3ndlk6v3g2gp5bxnk4psujcu"
-      },
-      "record": {
-        "text": "Friday's my birthday, so let's do something: An art contest! With a twist!\n\nI want to encourage you to give art a go, especially these days, and especially you don't think of yourself as an \"artist\", so there are prizes just for \"non-artists.\" This is an excuse to try out something out just for fun.",
-        "createdAt": "2026-11-04T01:19:30.723Z"
-      },
-      "indexedAt": "2026-11-04T01:19:34.590Z",
-      "replyCount": 6,
-      "repostCount": 13,
-      "likeCount": 20,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreihjjwos46c3uiyeuera5ghsydg7jq3g443shr2lpp4v7isd2krlkm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreihjjwos46c3uiyeuera5ghsydg7jq3g443shr2lpp4v7isd2krlkm",
-            "alt": "Birthday art learning competition!\n\nPrize:\nA hand-drawn avatar/token of your OC. \n2+ winners:\n1+ new/beginner artists. \n1 experienced artist.\nExtra winners if we get a lot of entries.\n\nRules:\nFollow + Repost\nRead the submission guide in this post\nReply with your art to enter\nNo genAI (you will get blocked)"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreih7oyj4fqp7sfpmvcbdbgo7if3v7s463drmxquaa2b6z2bpety6lm",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreih7oyj4fqp7sfpmvcbdbgo7if3v7s463drmxquaa2b6z2bpety6lm",
-            "alt": "Submission/entry guidelines\n\nYou can submit anything you like, but it must be made by you, during the submission period.\nTo enter, simply post your art in a reply to this bluesky post.\nWrite in your reply if you\u2019re a new/beginner artist, or an experienced artist.\n(Don\u2019t stress over definitions. If you don\u2019t think of yourself as an hobby or professional artist, write \u201cbeginner\u201d)\nIf you have reference art of your OC (for the prize), include that with your reply.\nSubmissions close at the end of Sunday 8th November 2026\n\nThe aim of the competition is to try out something new, not to make something perfect, so:\n\nYou don\u2019t need to spend a long time on your art. 30-60 mins is a good target.\nAny media is fine, use whatever you already have access to.\nUnsure what to draw? check the \u201csuggestions\u201d in this post.\n\nFor established artists, try to experiment and do something outside of your comfort zone.\n(You could try swapping between digital/physical media, or trying a medium you don\u2019t normally use.)"
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreichw4dt2jjntyg3ziwbbd36rswz6n2phmlwwd7wucwzqz7kcicjj4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6gbricujupbk2veztj36cdit/bafkreichw4dt2jjntyg3ziwbbd36rswz6n2phmlwwd7wucwzqz7kcicjj4",
-            "alt": "Suggestions/ideas\n\nIf you have an Original Character that you want to use for the prize, but no existing art of them, try drawing them as your submission.\nFanart of one of your favourite characters from media/comics/video games.\nStill life, (e.g. an interesting thing from your home.)\nPets! (they are also an interesting thing from your home.)\nIt\u2019s my birthday, so if you want to draw my OC (Konsi) I\u2019d love that. (References in replies.)\n\nFor established artists, why not make something that\u2019s been on your to-do list for too long?\n\nTips for new artists\n\nPencil/paper is a very beginner friendly medium, and even cheap pencil/paper works well. (Scanning art is nice, but if you don\u2019t have access to a scanner, you can just take a photo to submit your art.)\nUse visual references! Spend 50% of your time studying your subject and 50% drawing.\nDraw as big as you can easily manage, it makes your mistakes smaller.\nDraw something you like (you\u2019re going to be looking at it a lot!)"
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:hdjwyazidgcjnkyjtiyollmn/app.bsky.feed.post/3mzgtbwqa6c22",
-      "source": "bluesky",
-      "author": {
-        "handle": "theurbanavian.bsky.social",
-        "displayName": "Yanni \ud83e\uddff\u27a1\ufe0f PAX U",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreibkzmj5gjc36btef42d6laflvs772kr6g4c5e6dssbmft3dlrtoyu"
-      },
-      "record": {
-        "text": "new UPDATE IS OUT for Heir of Swordtember! We're almost done with ALL OF OUR STRETCH GOALS, come vote on what you WANT TO SEE NEXT!\n\nWe're also SHOUTING OUT some AMAZING PROJECTS!!",
-        "createdAt": "2026-11-03T21:54:50.278Z"
-      },
-      "indexedAt": "2026-11-03T21:54:52.786Z",
-      "replyCount": 2,
-      "repostCount": 7,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://www.kickstarter.com/projects/thepressbetwixt/ambition-swordtember/posts/4845985",
-        "title": "Update 3: Almost All Guest Artist Stretch Goals Funded \u00b7 Heir of Swordtember; an Oracle Deck for Carving Fate",
-        "description": "FELLAS!We are on the brink of funding our last artist stretch goal, inviting the wonderful Neko Beuno to design an Imp and sword to add to the deck. Afterwards, we\u2019ll be chasing gilded edges for the H...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hdjwyazidgcjnkyjtiyollmn/bafkreiaudyao7r34dsumlipp2khitdtcckoyvg2lmijvjbkezxu3wz5dfq"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5j2subtw3azb2bud72ls2t2e/app.bsky.feed.post/3mzgflxff5c2s",
-      "source": "bluesky",
-      "author": {
-        "handle": "eldjester.bsky.social",
-        "displayName": "Eld the Anti-fascist Malewife",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreigolumq5ob7yodaegr2jnk42dvf7uubelfi3l3dnd7qs7nuvfwhpa"
-      },
-      "record": {
-        "text": "SHIRTLESS ON A ROOFTOP V1.0 (ALPHA) is out NOW!\nNow with Cover Art!\nPunch cops into a trashcan, go to a host club, drink a beer, face off drunken office workers!\n\nWelcome to SOAR, a SLASH of LIFE Beat them all TTRPG!\nCover by @skycrime.bsky.social\nCheck it out here:\neldjester.itch.io/soar-shirtle...",
-        "createdAt": "2026-11-03T17:49:54.129Z"
-      },
-      "indexedAt": "2026-11-03T17:50:07.971Z",
-      "replyCount": 3,
-      "repostCount": 54,
-      "likeCount": 97,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreies6pnv3k3wsxvx5ygu7afgvykmx4vhm6jmfphng6gdptdjdj3stq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5j2subtw3azb2bud72ls2t2e/bafkreies6pnv3k3wsxvx5ygu7afgvykmx4vhm6jmfphng6gdptdjdj3stq",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3596,7 +3583,7 @@
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
       "repostCount": 2638,
-      "likeCount": 15569,
+      "likeCount": 15570,
       "embed": {
         "type": "images",
         "images": [
