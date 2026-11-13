@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T12:01:34.677117Z",
+  "lastUpdated": "2026-11-13T00:03:30.763155Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,38 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3n24lwp5g3c26",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.itch.io",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "I've been inspired by fellow Indonesians and @elmc.at to run my online sessions without a VTT. One can argue that an online whiteboard is a VTT, but honestly it feels rather liberating.\n\nThe screenshot is my set up for my Electric Bastionland: Bastion Elysium campaign in Canva.",
+        "createdAt": "2026-11-12T13:41:51.272Z"
+      },
+      "indexedAt": "2026-11-12T13:41:59.181Z",
+      "replyCount": 3,
+      "repostCount": 1,
+      "likeCount": 17,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3n22hemslec2t",
       "source": "bluesky",
       "author": {
@@ -65,8 +97,8 @@
       },
       "indexedAt": "2026-11-11T17:15:47.479Z",
       "replyCount": 7,
-      "repostCount": 62,
-      "likeCount": 196,
+      "repostCount": 66,
+      "likeCount": 214,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/utnnxzGeibc",
@@ -123,8 +155,8 @@
       },
       "indexedAt": "2026-11-11T16:46:00.770Z",
       "replyCount": 1,
-      "repostCount": 11,
-      "likeCount": 48,
+      "repostCount": 12,
+      "likeCount": 55,
       "embed": {
         "type": "images",
         "images": [
@@ -134,6 +166,35 @@
             "alt": ""
           }
         ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:rmtojcus3eq6cyrt4fc466bu/app.bsky.feed.post/3mzzyj674l22t",
+      "source": "bluesky",
+      "author": {
+        "handle": "penflower-ink.bsky.social",
+        "displayName": "Penflower Ink",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreic6je44q4aaogk7ic5urcpntratsg5pom4o5zs4pp5odiv6kcovlq"
+      },
+      "record": {
+        "text": "Chimeric Fantasy is a modular fantasy TTRPG and resource book. It contains a wealth of roll tables you can use to create unique worlds, quests, spells, characters and more!\nI've published the text-only version and am crowdfunding an illustrated/PoD version.\npenflower-ink.com/product/chim...",
+        "createdAt": "2026-11-11T12:48:56.722Z"
+      },
+      "indexedAt": "2026-11-11T12:49:02.772Z",
+      "replyCount": 2,
+      "repostCount": 11,
+      "likeCount": 23,
+      "embed": {
+        "type": "external",
+        "uri": "https://penflower-ink.com/product/chimeric-fantasy-text-only/",
+        "title": "Chimeric Fantasy (Text Only) - penflower-ink.com",
+        "description": "A modular fantasy table-top role-playing game and resource book containing a large collection of roll tables, prompts and examples that can be combined in various ways to create unique fantasy worlds,...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmtojcus3eq6cyrt4fc466bu/bafkreiaz75lsi2q3f6vfgwho2fbeh2cee57pzzug5jj3gqehggo3x6gw6y"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -185,7 +246,7 @@
       "indexedAt": "2026-11-10T18:05:00.674Z",
       "replyCount": 7,
       "repostCount": 31,
-      "likeCount": 101,
+      "likeCount": 103,
       "embed": {
         "type": "images",
         "images": [
@@ -245,8 +306,8 @@
       },
       "indexedAt": "2026-11-10T16:03:21.080Z",
       "replyCount": 3,
-      "repostCount": 5,
-      "likeCount": 10,
+      "repostCount": 7,
+      "likeCount": 12,
       "embed": {
         "type": "images",
         "images": [
@@ -397,7 +458,7 @@
       "indexedAt": "2026-11-09T17:01:17.487Z",
       "replyCount": 1,
       "repostCount": 8,
-      "likeCount": 31,
+      "likeCount": 32,
       "embed": {
         "type": "images",
         "images": [
@@ -748,96 +809,6 @@
             "alt": ""
           }
         ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3mzjrfuuulc2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "zedecksiew.bsky.social",
-        "displayName": "Zedeck Siew",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74"
-      },
-      "record": {
-        "text": "Been thinking about this because my MACE OF THE MONKEY KING playtest campaign is now a full-on four-way political tussle: the local feudal lord vs nouveau riche business owners vs communards come down from the hills vs the town's main temple.\n\nPS: MACE OF THE MONKEY KING, coming soon.",
-        "createdAt": "2026-11-05T01:59:14.279Z"
-      },
-      "indexedAt": "2026-11-05T01:59:22.281Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 38,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreihgcifaniygw6lezmo6iz2guofefw2fll63r374o4zbptwbupnytu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreihgcifaniygw6lezmo6iz2guofefw2fll63r374o4zbptwbupnytu",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/app.bsky.feed.post/3mzj6dljsrk2o",
-      "source": "bluesky",
-      "author": {
-        "handle": "lorenmakesvideos.itch.io",
-        "displayName": "Lorenmakesvideos",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreiewkrzzvpryktjrevxtrpuypsbrqkglr6cwegu2owbp65ilddctfa"
-      },
-      "record": {
-        "text": "New video! I play my new game Vampire Bride \ud83e\udd87 \n\nIt's available on Itch and Patreon \ud83e\udddb\n\nyoutu.be/4VL4moQr-lM",
-        "createdAt": "2026-11-04T20:17:56.267Z"
-      },
-      "indexedAt": "2026-11-04T20:17:58.790Z",
-      "replyCount": 0,
-      "repostCount": 1,
-      "likeCount": 6,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/4VL4moQr-lM",
-        "title": "Can I survive my own game? | Vampire Bride | Solo RPG",
-        "description": "YouTube video by Loren makes videos",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreidpmppdhf5iavrzsu4ciu3ylaudvf7kkzdawstxffplg7wx5synna"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:gul2wn2x5wj2xxerx6wllldc/app.bsky.feed.post/3mzipizfp3224",
-      "source": "bluesky",
-      "author": {
-        "handle": "superdracula.bsky.social",
-        "displayName": "Rodrigo D. Lopez",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gul2wn2x5wj2xxerx6wllldc/bafkreigx4ujes7evgm74xk36hevlanscp5rbyzaoisgmm6yu4dm3wjqw7a"
-      },
-      "record": {
-        "text": "Hey, I\u2019m in this too talking about Beacon: Koronil!\n\nopen.spotify.com/episode/0VpQ...",
-        "createdAt": "2026-11-04T15:52:32.466Z"
-      },
-      "indexedAt": "2026-11-04T15:52:34.189Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://open.spotify.com/episode/0VpQieiOSsp9joPaR7YNVU?si=daVPekrhRsyuz83Lc7-h9w&utm_source=copy-link",
-        "title": "The Process of Making a TTRPG Expansion with Tim Gonzalez and Rodrigo D. Lopez - GM2 86",
-        "description": "Game Mechanics - A Critical Tabletop Podcast \u00b7 Episode",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gul2wn2x5wj2xxerx6wllldc/bafkreidkhotxcs52gpdlz3z574efg6awr2kirtt5754imylmhhjy4gk26i"
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
@@ -3273,7 +3244,7 @@
         "createdAt": "2025-02-13T22:11:43.849Z"
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
-      "replyCount": 14,
+      "replyCount": 13,
       "repostCount": 721,
       "likeCount": 3327,
       "embed": {
