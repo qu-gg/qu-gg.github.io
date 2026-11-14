@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T12:01:24.145747Z",
+  "lastUpdated": "2026-11-14T00:03:16.662780Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,70 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3n2a2m4sios2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "yochaigal.bsky.social",
+        "displayName": "Yochai Gal",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreigh43bws3kqzv6g26wt7f4sz3kdxbiqosj6oh3ujfsobenumxalqq"
+      },
+      "record": {
+        "text": "Cover art to the upcoming Cairn Press Style Guide by @karlyanddd.bsky.social!",
+        "createdAt": "2026-11-13T22:42:21.828Z"
+      },
+      "indexedAt": "2026-11-13T22:42:32.284Z",
+      "replyCount": 4,
+      "repostCount": 14,
+      "likeCount": 83,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreie5zyhk6wtsq5vteuluk2sjs7w2nfmtpmw2y3vqv7bgppgldsrt6q",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fs5h4aikxtuyuhok3hlw4pdh/bafkreie5zyhk6wtsq5vteuluk2sjs7w2nfmtpmw2y3vqv7bgppgldsrt6q",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3n27kw7tts22w",
+      "source": "bluesky",
+      "author": {
+        "handle": "bastionland.bsky.social",
+        "displayName": "Bastionland Press",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
+      },
+      "record": {
+        "text": "",
+        "createdAt": "2026-11-13T18:01:40.700Z"
+      },
+      "indexedAt": "2026-11-13T18:01:43.571Z",
+      "replyCount": 4,
+      "repostCount": 15,
+      "likeCount": 82,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreigic5ntmybtoaew47rpea5hzccentcyamljpoaa4amy3zg65x3gm4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreigic5ntmybtoaew47rpea5hzccentcyamljpoaa4amy3zg65x3gm4",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3n24lwp5g3c26",
       "source": "bluesky",
       "author": {
@@ -66,7 +130,7 @@
       "indexedAt": "2026-11-12T13:41:59.181Z",
       "replyCount": 3,
       "repostCount": 1,
-      "likeCount": 19,
+      "likeCount": 20,
       "embed": {
         "type": "images",
         "images": [
@@ -96,9 +160,9 @@
         "createdAt": "2026-11-11T17:14:50.397Z"
       },
       "indexedAt": "2026-11-11T17:15:47.479Z",
-      "replyCount": 7,
-      "repostCount": 69,
-      "likeCount": 222,
+      "replyCount": 8,
+      "repostCount": 72,
+      "likeCount": 227,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/utnnxzGeibc",
@@ -156,7 +220,7 @@
       "indexedAt": "2026-11-11T16:46:00.770Z",
       "replyCount": 1,
       "repostCount": 12,
-      "likeCount": 57,
+      "likeCount": 58,
       "embed": {
         "type": "images",
         "images": [
@@ -246,7 +310,7 @@
       "indexedAt": "2026-11-10T18:05:00.674Z",
       "replyCount": 7,
       "repostCount": 31,
-      "likeCount": 104,
+      "likeCount": 105,
       "embed": {
         "type": "images",
         "images": [
@@ -608,207 +672,13 @@
       "indexedAt": "2026-11-07T18:22:37.381Z",
       "replyCount": 5,
       "repostCount": 43,
-      "likeCount": 74,
+      "likeCount": 75,
       "embed": {
         "type": "external",
         "uri": "https://elmc.at/bloggies-27-announcement/",
         "title": "Bloggies '27 - Enter the Arena",
         "description": "The Bloggies are coming back. Nominate your favorite blog posts of 2026 and prepare for the bloodshed.",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nkdv3fdhjhqtk5ov2swoo6ys/bafkreifnyyg3z36szomu3fzmsbxynw7p26ej2w2tyvdr5htjglsssz6yc4"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3mzq3xij5bk2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "riseupcomus.bsky.social",
-        "displayName": "Rise Up Comus",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
-      },
-      "record": {
-        "text": "Another Knock! sneak peak.",
-        "createdAt": "2026-11-07T14:24:01.140Z"
-      },
-      "indexedAt": "2026-11-07T14:24:04.276Z",
-      "replyCount": 8,
-      "repostCount": 15,
-      "likeCount": 129,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihzijqlzpxpuhfnrfydpb4bozx6sqrryokfktf74x6j2nfiad5upu",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreihzijqlzpxpuhfnrfydpb4bozx6sqrryokfktf74x6j2nfiad5upu",
-            "alt": "Two sample monsters from Knock, called Monsters That Violate in Many Ways, but Don't Violate Intellectual Property Laws. There are two versions of the Beholder, but the Mumbler is a big mouth and the Grasper is a big hand."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:a3yz5w4xe6b5vuaxt3b57thl/app.bsky.feed.post/3mznyvmejqn2i",
-      "source": "bluesky",
-      "author": {
-        "handle": "thoughtcrimegames.bsky.social",
-        "displayName": "thoughtcrimegames",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a3yz5w4xe6b5vuaxt3b57thl/bafkreiaekguqadoew4rois67hrnnfou4o67yrrl54ppzyzuwuc336nr6m4"
-      },
-      "record": {
-        "text": "Run the Set is a love letter to fighting games and the communities that form around them.\n\nPlay as a one-shot or as part of their own \"weekly tournament\". Get in as many sets as you can before the venue shuts down for good!\n\nGrab the Free PDF below! #ttrpg #OnePageTTRPG\n\nthoughtcrimegames.it...",
-        "createdAt": "2026-11-06T18:23:56.000Z"
-      },
-      "indexedAt": "2026-11-06T18:23:57.483Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 8,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a3yz5w4xe6b5vuaxt3b57thl/bafkreibx56gt2dnvba7qyclwed6xfyzqf3ngkyesn72extoibrmgxe3bue",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a3yz5w4xe6b5vuaxt3b57thl/bafkreibx56gt2dnvba7qyclwed6xfyzqf3ngkyesn72extoibrmgxe3bue",
-            "alt": "Run the Set from Thoughtcrime Games."
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:vvq7nvt7arqp5jvl3cstlrga/app.bsky.feed.post/3mznvumfbvs2r",
-      "source": "bluesky",
-      "author": {
-        "handle": "harpingharp.bsky.social",
-        "displayName": "harping",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vvq7nvt7arqp5jvl3cstlrga/bafkreidun2q2oktxkas5kybbvsms53g2klpc6tbvv2olpm3wns2rdt3dnq"
-      },
-      "record": {
-        "text": "New video about one of my favorite narrative game mechanics :) On Youtube now!!",
-        "createdAt": "2026-11-06T17:29:42.617Z"
-      },
-      "indexedAt": "2026-11-06T17:29:44.377Z",
-      "replyCount": 1,
-      "repostCount": 1,
-      "likeCount": 13,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vvq7nvt7arqp5jvl3cstlrga/bafkreiard4ng5m62xinzqcww4i3tufh45f2npzqqhn5dsbsmmzwfzwpvra",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:vvq7nvt7arqp5jvl3cstlrga/bafkreiard4ng5m62xinzqcww4i3tufh45f2npzqqhn5dsbsmmzwfzwpvra",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:qeoty6zjf7prs56xxnkwyxax/app.bsky.feed.post/3mznodf7v722a",
-      "source": "bluesky",
-      "author": {
-        "handle": "hairic.bsky.social",
-        "displayName": "Hairic Lilred",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qeoty6zjf7prs56xxnkwyxax/bafkreiah7royqafmsw3lncngj5fs6gxyysrbwmz3bwrqsfpi5jug25yfmy"
-      },
-      "record": {
-        "text": "I made anothe small game for Trijam!\n\n#gamedev #godot\nhairic.itch.io/this-is-not-...",
-        "createdAt": "2026-11-06T15:14:48.485Z"
-      },
-      "indexedAt": "2026-11-06T15:14:50.479Z",
-      "replyCount": 0,
-      "repostCount": 9,
-      "likeCount": 20,
-      "embed": {
-        "type": "external",
-        "uri": "https://hairic.itch.io/this-is-not-your-house",
-        "title": "This isn't your house by Hairic Lilred",
-        "description": "escape someone else's house",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qeoty6zjf7prs56xxnkwyxax/bafkreig663xp4ndjffqruow6bwqmbdtjiemvgmx57pa3rdsrbvqrquca64"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:tjejp3gxg2yl5aoprqbx35uw/app.bsky.feed.post/3mzlxw6rfv22t",
-      "source": "bluesky",
-      "author": {
-        "handle": "momatoes.com",
-        "displayName": "momatoes",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigtvpd6thxsczaeglunwxriu5pcxgg4nx2zpu4nz3tsqjq6urvldy"
-      },
-      "record": {
-        "text": "I am running a small sale for my games! \n\nGames about the apocalypse, about legacy, and even one where you live atop a chimera. \ud83c\udf3e \n\nGames that can make you feel adrenaline or melancholy \ud83c\udf42\n\nAnd games that have won industry recognition. \ud83c\udf96\ufe0f\n\nitch.io/s/216059/a-l...\n\nRunning until Sunday only.",
-        "createdAt": "2026-11-05T23:01:03.449Z"
-      },
-      "indexedAt": "2026-11-05T23:01:08.774Z",
-      "replyCount": 1,
-      "repostCount": 37,
-      "likeCount": 56,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigfzijx3cqml7u6qwuaf7wiuyfuln4e2zpqd4d557xebrr46nahf4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tjejp3gxg2yl5aoprqbx35uw/bafkreigfzijx3cqml7u6qwuaf7wiuyfuln4e2zpqd4d557xebrr46nahf4",
-            "alt": "A shoddily written promo ad that says:\n\nSALE\nVery cool\nAward-winning\nTTRPGS \ud83d\udd25 "
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:xdipngn2ji3wgbj7o2u6253g/app.bsky.feed.post/3mzl3nvb7zk23",
-      "source": "bluesky",
-      "author": {
-        "handle": "letsdamage.bsky.social",
-        "displayName": "Paul VX2",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreihfzl2jpf7r5jookzglhka6iqir6htlvu47larwqeuio56aixjroy"
-      },
-      "record": {
-        "text": "I'm happy to announce that GRIDSHOCK 20XX is now available as Pay What You Want PDFs on itch.io and DriveThruRPG.\n\nA limited number of print zines are still available from Exalted Funeral - at a drastically reduced price.\n\nLinks to all of the above: linktr.ee/vx2games",
-        "createdAt": "2026-11-05T14:35:20.275Z"
-      },
-      "indexedAt": "2026-11-05T14:35:30.585Z",
-      "replyCount": 1,
-      "repostCount": 7,
-      "likeCount": 9,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifkbydzaqpk4xkz4ft5q62tv5lcxwgnj4crtaeh6ndk6enacejem4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifkbydzaqpk4xkz4ft5q62tv5lcxwgnj4crtaeh6ndk6enacejem4",
-            "alt": ""
-          },
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifujluq3ojfzghycibxq2ek5k2uwtntsegkgdt7wu4drqrp3n4try",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xdipngn2ji3wgbj7o2u6253g/bafkreifujluq3ojfzghycibxq2ek5k2uwtntsegkgdt7wu4drqrp3n4try",
-            "alt": ""
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
