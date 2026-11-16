@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T12:01:17.577278Z",
+  "lastUpdated": "2026-11-16T00:03:19.952054Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,48 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3n2eg5ans4k2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "isaacisafraid.itch.io",
+        "displayName": "Afraid of Encounters (He/Him)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
+      },
+      "record": {
+        "text": "Haven't been active lately because I was busy preparing and organizing LFGcon SESSION 4, which happened to be our first anniversary as an Indonesian TTRPG community. A two-day celebration of our hobby and our community. \n\nI'm grateful and hopeful for this community.",
+        "createdAt": "2026-11-15T16:19:26.398Z"
+      },
+      "indexedAt": "2026-11-15T16:19:36.749Z",
+      "replyCount": 0,
+      "repostCount": 4,
+      "likeCount": 10,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiffdsnia4tsd7bionl7oerlh4cgf44dolp6wcglu3pbiivkinj4cy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreiffdsnia4tsd7bionl7oerlh4cgf44dolp6wcglu3pbiivkinj4cy",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreihedvs35qchccb3vuklophz3qndskpvkrn45rqszdvb6ign2ryjr4",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreihedvs35qchccb3vuklophz3qndskpvkrn45rqszdvb6ign2ryjr4",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreifr5vyghzuufsihnfkgg2joetjllqywjpviemyjbq24kqpi2sappu",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreifr5vyghzuufsihnfkgg2joetjllqywjpviemyjbq24kqpi2sappu",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:fs5h4aikxtuyuhok3hlw4pdh/app.bsky.feed.post/3n2a2m4sios2m",
       "source": "bluesky",
       "author": {
@@ -66,7 +108,7 @@
       "indexedAt": "2026-11-13T22:42:32.284Z",
       "replyCount": 11,
       "repostCount": 62,
-      "likeCount": 401,
+      "likeCount": 415,
       "embed": {
         "type": "images",
         "images": [
@@ -98,7 +140,7 @@
       "indexedAt": "2026-11-13T18:01:43.571Z",
       "replyCount": 4,
       "repostCount": 38,
-      "likeCount": 239,
+      "likeCount": 240,
       "embed": {
         "type": "images",
         "images": [
@@ -191,7 +233,7 @@
       "indexedAt": "2026-11-11T17:05:01.578Z",
       "replyCount": 0,
       "repostCount": 5,
-      "likeCount": 8,
+      "likeCount": 9,
       "embed": {
         "type": "external",
         "uri": "https://atmosphericunderworld.com/making-other-magics-one-year-of-indie-ttrpg-design/",
@@ -309,8 +351,8 @@
       },
       "indexedAt": "2026-11-10T18:05:00.674Z",
       "replyCount": 7,
-      "repostCount": 34,
-      "likeCount": 112,
+      "repostCount": 35,
+      "likeCount": 115,
       "embed": {
         "type": "images",
         "images": [
@@ -611,7 +653,7 @@
       "indexedAt": "2026-11-09T10:42:54.376Z",
       "replyCount": 4,
       "repostCount": 18,
-      "likeCount": 45,
+      "likeCount": 46,
       "embed": {
         "type": "external",
         "uri": "https://write.as/trollish-delver/announcement-curious-quests-brings-analogue-narrative-games-to-attractions",
@@ -1384,38 +1426,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:ydxzohkx2mhz3n4xu7hjbfiw/app.bsky.feed.post/3msxpdtfgsc2b",
-      "source": "bluesky",
-      "author": {
-        "handle": "pirategonzalez.bsky.social",
-        "displayName": "Tim Gonzalez | BEACON RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreig7d5fmo2vhvxyfw6lcxfxlz6syjs75ofb27ufft7bugskl45hogi"
-      },
-      "record": {
-        "text": "Tabletop folks! Are you looking for a one-shot for your stream, show, or blog? Beacon: Koronil is right up your alley, and I've got cool stuff in the works. Message me or reach out to pirategonzalezgames@gmail.com and we can set something up.",
-        "createdAt": "2026-08-13T13:03:13.074Z"
-      },
-      "indexedAt": "2026-08-13T13:03:14.263Z",
-      "replyCount": 0,
-      "repostCount": 8,
-      "likeCount": 13,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreiazrgoveydbux4hyct32s6cm7jqgvx7hmzpt5rpp3sgsjqnfqy5ea",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ydxzohkx2mhz3n4xu7hjbfiw/bafkreiazrgoveydbux4hyct32s6cm7jqgvx7hmzpt5rpp3sgsjqnfqy5ea",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "https://www.artstation.com/artwork/O3yy5e",
