@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T12:01:25.921724Z",
+  "lastUpdated": "2026-11-17T00:03:21.690685Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,141 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/app.bsky.feed.post/3n2hpawbh4c2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "lorenmakesvideos.itch.io",
+        "displayName": "Lorenmakesvideos",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreiewkrzzvpryktjrevxtrpuypsbrqkglr6cwegu2owbp65ilddctfa"
+      },
+      "record": {
+        "text": "Just ordered the printer's proof for The Final Days of Anne Boleyn. My first solo RPG!\n\nyoutu.be/wCcR8JMrR88?...",
+        "createdAt": "2026-11-16T23:40:32.626Z"
+      },
+      "indexedAt": "2026-11-16T23:40:33.446Z",
+      "replyCount": 0,
+      "repostCount": 3,
+      "likeCount": 6,
+      "embed": {
+        "type": "external",
+        "uri": "https://youtu.be/wCcR8JMrR88?is=oIDBsqe5WBOFnbhl",
+        "title": "I Tried To Change Anne Boleyn's Fate (Solo RPG)",
+        "description": "YouTube video by Loren makes videos",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/bafkreiaunnvgnqrnavabgrjvbvyzzaqs6e7c3uq4puupe3yxylzr42dtcy"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3n2hh53iyqs24",
+      "source": "bluesky",
+      "author": {
+        "handle": "antqgames.bsky.social",
+        "displayName": "Antiquarian Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreiguml7lwsg3agdfwdlldtgyx76txhbq7b6pgqqmiujdx5twxsuycq"
+      },
+      "record": {
+        "text": "In L.O.R.E., Mystics are Gnostic Casters--they alter their souls (and sometimes their physical forms) to take on roles covered traditionally by monsters.\n\nLiches, angels, demons, devils, even aberrations, their power can be drawn from themselves as an Ascendant, or another as a Warlock.",
+        "createdAt": "2026-11-16T21:15:13.975Z"
+      },
+      "indexedAt": "2026-11-16T21:15:17.743Z",
+      "replyCount": 0,
+      "repostCount": 2,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreieqv3yqx6z3dzrffrumt3nyw4oy42nv476cvxbk5vvexqsrvikkna",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreieqv3yqx6z3dzrffrumt3nyw4oy42nv476cvxbk5vvexqsrvikkna",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreidx4csukftmkej5e2q7mpskd4zadjw76kg55axvcyp3f5zrwz67qa",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreidx4csukftmkej5e2q7mpskd4zadjw76kg55axvcyp3f5zrwz67qa",
+            "alt": ""
+          },
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreickos3zhvuzrvzgb336sknb5ccp2qroevdy7yxby6lf6agxr7nb4e",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreickos3zhvuzrvzgb336sknb5ccp2qroevdy7yxby6lf6agxr7nb4e",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:z2v6tu2ygijwo4i3jpmgmofh/app.bsky.feed.post/3n2gp4nsuys2j",
+      "source": "bluesky",
+      "author": {
+        "handle": "prototyperappy.bsky.social",
+        "displayName": "Prototype raptor",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:z2v6tu2ygijwo4i3jpmgmofh/bafkreibb5y5vkpwwhtvoouyr5mpm3oh4sg3oz3hkouq3aeeizknq5masru"
+      },
+      "record": {
+        "text": "#microreviewmonday \n\nSkies Above by @losthavenart.bsky.social is a #jrpg inspired #ttrpg with a lot of charm. While system is relatively simple d8 roll over, the game captures neatly the nostalgic feeling of playing certain unnamed games on your old NES. Rappy likes. 8V",
+        "createdAt": "2026-11-16T14:05:29.786Z"
+      },
+      "indexedAt": "2026-11-16T14:05:43.650Z",
+      "replyCount": 1,
+      "repostCount": 3,
+      "likeCount": 7,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:z2v6tu2ygijwo4i3jpmgmofh/bafkreibpu7wrtedaqthltux4sttkamkrjsqqjpqhjfgqb3z23grwllomau",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:z2v6tu2ygijwo4i3jpmgmofh/bafkreibpu7wrtedaqthltux4sttkamkrjsqqjpqhjfgqb3z23grwllomau",
+            "alt": "Skies Above rpg core rulebook with the title on the bottom along with a string of japanese that raptor cant understand. The cover features a dreamy white and skyline background with a three humanoids and one feline looking creature standing in front and back. "
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:eet3aptjrngr7dn3qsitafg7/app.bsky.feed.post/3n2gno2krzs2g",
+      "source": "bluesky",
+      "author": {
+        "handle": "izzydotpng.bsky.social",
+        "displayName": "Izzy.PNG | comms closed",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigdrciwzvu54p5josxp56jftwjjf3qi4bbk67zpt7o742a2up5kei"
+      },
+      "record": {
+        "text": "My game-in-progress for the last 3 years has been, at its core, about making gunfights work in an old school-inspired point/hex crawl game. Formerly Hard Six and Pilgrim's Moon, the game is now GUN COVEN, a map crawling adventure TTRPG about gunslinging witches in the endless Nightwood.\n\n#ttrpg #art",
+        "createdAt": "2026-11-16T13:39:26.111Z"
+      },
+      "indexedAt": "2026-11-16T13:39:29.250Z",
+      "replyCount": 4,
+      "repostCount": 19,
+      "likeCount": 58,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreie3aetdcv6fpp3p3vbmxrrmgcsvi7ny72zj5id5ulub2hl4oi7bzm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreie3aetdcv6fpp3p3vbmxrrmgcsvi7ny72zj5id5ulub2hl4oi7bzm",
+            "alt": "A young person with red hair in a witch hat holding a huge rifle shaped like a cannon in a dark forest under a sickle moon"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:qtu5u37sum46z6z47m4kwmdg/app.bsky.feed.post/3n2f5ysqj2c24",
       "source": "bluesky",
       "author": {
@@ -65,8 +200,8 @@
       },
       "indexedAt": "2026-11-15T23:26:29.943Z",
       "replyCount": 1,
-      "repostCount": 18,
-      "likeCount": 37,
+      "repostCount": 19,
+      "likeCount": 44,
       "embed": {
         "type": "external",
         "uri": "https://rpgtrader.com/products/11159/the-bookspark",
@@ -93,9 +228,9 @@
         "createdAt": "2026-11-15T21:51:57.011Z"
       },
       "indexedAt": "2026-11-15T21:51:59.550Z",
-      "replyCount": 14,
-      "repostCount": 46,
-      "likeCount": 118,
+      "replyCount": 19,
+      "repostCount": 57,
+      "likeCount": 155,
       "embed": {
         "type": "images",
         "images": [
@@ -126,8 +261,8 @@
       },
       "indexedAt": "2026-11-15T16:19:36.749Z",
       "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 13,
+      "repostCount": 6,
+      "likeCount": 16,
       "embed": {
         "type": "images",
         "images": [
@@ -167,9 +302,9 @@
         "createdAt": "2026-11-13T22:42:21.828Z"
       },
       "indexedAt": "2026-11-13T22:42:32.284Z",
-      "replyCount": 11,
+      "replyCount": 12,
       "repostCount": 62,
-      "likeCount": 423,
+      "likeCount": 425,
       "embed": {
         "type": "images",
         "images": [
@@ -412,8 +547,8 @@
       },
       "indexedAt": "2026-11-10T18:05:00.674Z",
       "replyCount": 7,
-      "repostCount": 35,
-      "likeCount": 115,
+      "repostCount": 36,
+      "likeCount": 118,
       "embed": {
         "type": "images",
         "images": [
@@ -611,38 +746,6 @@
       }
     },
     {
-      "uri": "at://did:plc:daqltowi4gqss3tkdwizsddz/app.bsky.feed.post/3mzvfojxdxh26",
-      "source": "bluesky",
-      "author": {
-        "handle": "bodieh.bsky.social",
-        "displayName": "Bodie H.",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreibvqrfevqiytldnyjltuh4afkfjn4b5onix6h4abwwaqo7l34ltma"
-      },
-      "record": {
-        "text": "The cover of my new adventure: Forest of the Wailing Bear.\nOther than being a great spooky forest adventure, this is the first appearance of my new header font! Pretty pleased with it, you can see it there as the title text.\n\nThis adventure is now on Patreon!",
-        "createdAt": "2026-11-09T17:01:16.772Z"
-      },
-      "indexedAt": "2026-11-09T17:01:17.487Z",
-      "replyCount": 1,
-      "repostCount": 8,
-      "likeCount": 32,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreifyvfstd6ie4nyvueagpojc4vkt66t73dzjovvt7fqh4acq3fckde",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:daqltowi4gqss3tkdwizsddz/bafkreifyvfstd6ie4nyvueagpojc4vkt66t73dzjovvt7fqh4acq3fckde",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
       "uri": "at://did:plc:q6tdtn7jwuuhoguohqks5a4g/app.bsky.feed.post/3mzvaugjnes2z",
       "source": "bluesky",
       "author": {
@@ -669,96 +772,6 @@
         ]
       },
       "repostBy": null
-    },
-    {
-      "uri": "at://did:plc:f45qwudyed2mnzuwyeaca7iw/app.bsky.feed.post/3mzv66gblpk2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "jackguignol.bsky.social",
-        "displayName": "Jack Guignol",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreibuxpnncf64jgjtezccwtwqs3b3nxhzd3jdwcyenqnuixrjkkbqci"
-      },
-      "record": {
-        "text": "A look back at all the horror movies the Angel of the Graves showed us in the run up to Halloween talesofthegrotesqueanddungeonesque.blogspot.com/2026/11/sera...",
-        "createdAt": "2026-11-09T14:46:59.848Z"
-      },
-      "indexedAt": "2026-11-09T14:47:00.779Z",
-      "replyCount": 0,
-      "repostCount": 2,
-      "likeCount": 8,
-      "embed": {
-        "type": "external",
-        "uri": "https://talesofthegrotesqueanddungeonesque.blogspot.com/2026/11/serafinas-halloween-party-2026.html",
-        "title": "Serafina's Halloween Party 2026",
-        "description": "As is tradition during the Halloween season, Serafina, aka Krevborna's Angel of the Graves, aka protagonist of my novel Ornamental Women , f...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:f45qwudyed2mnzuwyeaca7iw/bafkreifpgutcfrhgbzspmosoe45qlcgnolpblx4keqvnrddvu73hd4atze"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:sslhdlodnlt6wl557fvibgdx/app.bsky.feed.post/3mzuqkjdtmc2n",
-      "source": "bluesky",
-      "author": {
-        "handle": "voxparlour.bsky.social",
-        "displayName": "Scott M | Curious Quests \u2694\ufe0f",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreie5qhfzjvfofcy7ranljicxvsfxn2pcfbcpbnsybqcnzr2yheeyeu"
-      },
-      "record": {
-        "text": "Big announcement: I've launched a new venture called Curious Quests, helping attractions create immersive analogue narrative games for visitors. This is super exciting!\n\nwrite.as/trollish-del...",
-        "createdAt": "2026-11-09T10:43:13.342Z"
-      },
-      "indexedAt": "2026-11-09T10:42:54.376Z",
-      "replyCount": 4,
-      "repostCount": 18,
-      "likeCount": 46,
-      "embed": {
-        "type": "external",
-        "uri": "https://write.as/trollish-delver/announcement-curious-quests-brings-analogue-narrative-games-to-attractions",
-        "title": "Announcement: Curious Quests brings analogue narrative games to attractions",
-        "description": "I\u2019m very excited to announce the launch of Curious Quests, my new brand designed to bring analogue imagin...",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sslhdlodnlt6wl557fvibgdx/bafkreigwowuhypi7ysffoezfjqlxds6rx3u227ue6w5earrueoecdps7ta"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4rzc3knnmceptfq7wipq3apr/app.bsky.feed.post/3mzsymsmyoc2h",
-      "source": "bluesky",
-      "author": {
-        "handle": "weirdplace.bsky.social",
-        "displayName": "Weird Place \ud83d\udd1c PAXU",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihp62fxfojqwyjxk2ih45pvknidfdk64ys7bktsi4s4efgh3mwnsu"
-      },
-      "record": {
-        "text": "Speculum Fractum. An encyclopedia about the Endless compiled by Dusar Umenis, Mantihistorian. Available now for backers.\n\nRESIDUE\u00b0 late pledges: www.kickstarter.com/projects/wei...",
-        "createdAt": "2026-11-08T18:02:20.640Z"
-      },
-      "indexedAt": "2026-11-08T18:02:23.573Z",
-      "replyCount": 1,
-      "repostCount": 2,
-      "likeCount": 3,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihyhfhaez5x4mmdaox7dyebljho3qfhvltgopn7hjfrgjfpgwrxfq",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4rzc3knnmceptfq7wipq3apr/bafkreihyhfhaez5x4mmdaox7dyebljho3qfhvltgopn7hjfrgjfpgwrxfq",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
     },
     {
       "uri": "at://did:plc:m54e7ztuvmm43u4rxqjix2ks/app.bsky.feed.post/3mz23rhsgua2n",
