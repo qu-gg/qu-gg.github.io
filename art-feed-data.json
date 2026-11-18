@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T12:01:24.713628Z",
+  "lastUpdated": "2026-11-18T00:03:14.479944Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,67 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:jr5vn2zn5mkxcyym4xyh57p4/app.bsky.feed.post/3n2jgouc5ec2l",
+      "source": "bluesky",
+      "author": {
+        "handle": "betterlegends.bsky.social",
+        "displayName": "Skullboy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreig26ysymiq6gfefhpuniipwfaluynwf2jcco2xk32lb3xe2wos54e"
+      },
+      "record": {
+        "text": "I reopened my web store with a bunch of new prints and zines! Go check it out betterlegends.com/webstore",
+        "createdAt": "2026-11-17T16:12:36.125Z"
+      },
+      "indexedAt": "2026-11-17T16:12:40.058Z",
+      "replyCount": 1,
+      "repostCount": 13,
+      "likeCount": 35,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreibgte6pnof2vuzwipbnh642fwz62eqgyl7osdlyaipog7mutgc5pm",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jr5vn2zn5mkxcyym4xyh57p4/bafkreibgte6pnof2vuzwipbnh642fwz62eqgyl7osdlyaipog7mutgc5pm",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:3iexcc3zgy47y45ub47gurhu/app.bsky.feed.post/3n2j3u6gj5k2q",
+      "source": "bluesky",
+      "author": {
+        "handle": "riseupcomus.bsky.social",
+        "displayName": "Rise Up Comus",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreidnkl76uuua5ayuyc3hmxwmj4tcayzqshbvkfit64jy66uedax36e"
+      },
+      "record": {
+        "text": "Sometimes I blather on about fantasy religions in your fantasy adventure games\n\nI guess it's time to put my money where my mouth is",
+        "createdAt": "2026-11-17T12:58:43.366Z"
+      },
+      "indexedAt": "2026-11-17T12:58:44.950Z",
+      "replyCount": 5,
+      "repostCount": 11,
+      "likeCount": 47,
+      "embed": {
+        "type": "external",
+        "uri": "https://riseupcomus.blogspot.com/2026/11/religion-in-stones-isles-in-house-of.html",
+        "title": "Religion in the Stones Isles [In the House of the High King]",
+        "description": "The Increate  The people of the Stone Islands have a simple, unquestioned belief that the universe was created and is sustained by a nameles...",
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3iexcc3zgy47y45ub47gurhu/bafkreiekvwy23ehfkll63o5iodfwimonrcmji4kbgm42xzenr55ywk52mi"
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:oxhn2bqsq7wjfs6fcp7uqkjw/app.bsky.feed.post/3n2hpawbh4c2j",
       "source": "bluesky",
       "author": {
@@ -66,7 +127,7 @@
       "indexedAt": "2026-11-16T23:40:33.446Z",
       "replyCount": 0,
       "repostCount": 4,
-      "likeCount": 15,
+      "likeCount": 17,
       "embed": {
         "type": "external",
         "uri": "https://youtu.be/wCcR8JMrR88?is=oIDBsqe5WBOFnbhl",
@@ -95,7 +156,7 @@
       "indexedAt": "2026-11-16T21:15:17.743Z",
       "replyCount": 0,
       "repostCount": 2,
-      "likeCount": 6,
+      "likeCount": 7,
       "embed": {
         "type": "images",
         "images": [
@@ -167,9 +228,9 @@
         "createdAt": "2026-11-16T13:39:26.111Z"
       },
       "indexedAt": "2026-11-16T13:39:29.250Z",
-      "replyCount": 4,
-      "repostCount": 20,
-      "likeCount": 61,
+      "replyCount": 6,
+      "repostCount": 21,
+      "likeCount": 64,
       "embed": {
         "type": "images",
         "images": [
@@ -261,8 +322,8 @@
       },
       "indexedAt": "2026-11-15T16:19:36.749Z",
       "replyCount": 0,
-      "repostCount": 6,
-      "likeCount": 16,
+      "repostCount": 7,
+      "likeCount": 17,
       "embed": {
         "type": "images",
         "images": [
@@ -304,7 +365,7 @@
       "indexedAt": "2026-11-13T22:42:32.284Z",
       "replyCount": 12,
       "repostCount": 62,
-      "likeCount": 426,
+      "likeCount": 429,
       "embed": {
         "type": "images",
         "images": [
@@ -546,9 +607,9 @@
         "createdAt": "2026-11-10T18:03:29.960Z"
       },
       "indexedAt": "2026-11-10T18:05:00.674Z",
-      "replyCount": 7,
-      "repostCount": 43,
-      "likeCount": 143,
+      "replyCount": 8,
+      "repostCount": 50,
+      "likeCount": 159,
       "embed": {
         "type": "images",
         "images": [
@@ -599,7 +660,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
+        "displayName": "TTRPGkids \u27a1\ufe0f ConFusion (MI)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
       },
       "record": {
@@ -660,7 +721,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
+        "displayName": "TTRPGkids \u27a1\ufe0f ConFusion (MI)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
       },
       "record": {
@@ -689,7 +750,7 @@
       "source": "bluesky",
       "author": {
         "handle": "ttrpgkids.com",
-        "displayName": "TTRPGkids \u27a1\ufe0f U-Con",
+        "displayName": "TTRPGkids \u27a1\ufe0f ConFusion (MI)",
         "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiarvoyzpwd5t7ll4y4bpkjfqlua3wd2ts42dspxqvyab3wyjombwq"
       },
       "record": {
@@ -706,38 +767,6 @@
         "title": "Adventures in Aetheria TTRPG",
         "description": "A starter tabletop role-playing game for families with kids ages 4+",
         "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:puzrf6isqtwrvyu77ohg6xr4/bafkreiakd7idu3otl3etr6nfqta3ns7z2fr3adpu5mbrre6me2lqzt457m"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:h77jqwjj6g76trilthpnntgq/app.bsky.feed.post/3mzxfamnyek2f",
-      "source": "bluesky",
-      "author": {
-        "handle": "wharthur.bsky.social",
-        "displayName": "W.H. Arthur RPG",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:h77jqwjj6g76trilthpnntgq/bafkreiecavj6bs32imzsbzm33phz763roq236el5dxgwyyecnqozi6rbky"
-      },
-      "record": {
-        "text": "My upcoming events in November 2026! \ud83d\uddd3\ufe0f\n\nI'll be trading at HKUK Carnival Publishing Fair on the 14-15th and Dragonmeet on the 28th! \ud83d\udc09\n\n(Deleted an earlier post because the paper texture from Canva was AI-generated. \ud83d\ude29)",
-        "createdAt": "2026-11-10T11:58:49.315Z"
-      },
-      "indexedAt": "2026-11-10T11:58:52.174Z",
-      "replyCount": 1,
-      "repostCount": 6,
-      "likeCount": 19,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:h77jqwjj6g76trilthpnntgq/bafkreibehfajlhtrfelzthuyql75m6bc7mnfbr6mr6ruc3a2zuyoe4be2u",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:h77jqwjj6g76trilthpnntgq/bafkreibehfajlhtrfelzthuyql75m6bc7mnfbr6mr6ruc3a2zuyoe4be2u",
-            "alt": "Upcoming events for W.H. Arthur RPG.\nHKUK Carnival Publishing Fair Kingston 14-15th November\nDragonmeet London 28th November"
-          }
-        ]
       },
       "repostBy": {
         "handle": "naldodrinan.bsky.social",
