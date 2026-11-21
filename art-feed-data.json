@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T12:01:22.140611Z",
+  "lastUpdated": "2026-11-21T00:03:06.406218Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,70 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3n2re6oc4hc2p",
+      "source": "bluesky",
+      "author": {
+        "handle": "antqgames.bsky.social",
+        "displayName": "Antiquarian Games",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreiguml7lwsg3agdfwdlldtgyx76txhbq7b6pgqqmiujdx5twxsuycq"
+      },
+      "record": {
+        "text": "Okay then, we hit our 100 follower goal in one day?\n\nSo! A L.O.R.E. post a day until we hit 200!\n\nWhat is L.O.R.E.? \u2014 Final Fantasy Tactics Meets D&D\nA tactical d20 system where combat, social conflicts, and environmental hazards share a single, unified encounter engine.\n\n\ud83d\udd17\u2935\ufe0f",
+        "createdAt": "2026-11-20T19:49:03.383Z"
+      },
+      "indexedAt": "2026-11-20T19:49:10.149Z",
+      "replyCount": 1,
+      "repostCount": 7,
+      "likeCount": 8,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreif3hqkqbnwise5zplpvrk44z7npiz5grz7iiorydmdzq5mnbxk64a",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pqxykssmtdb7uot6fgq5zow/bafkreif3hqkqbnwise5zplpvrk44z7npiz5grz7iiorydmdzq5mnbxk64a",
+            "alt": ""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:eet3aptjrngr7dn3qsitafg7/app.bsky.feed.post/3n2qos52dpc2a",
+      "source": "bluesky",
+      "author": {
+        "handle": "izzydotpng.bsky.social",
+        "displayName": "Izzy.PNG | comms closed",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigdrciwzvu54p5josxp56jftwjjf3qi4bbk67zpt7o742a2up5kei"
+      },
+      "record": {
+        "text": "people seemed to like yesterday's emo knight, so i used her for some inking practice. still looking for a name for her. this inking style is still new for me, what do folks think?\n\ud83d\udde1\ufe0f\ud83d\udc0c\ud83c\udf3b\n#knight #art",
+        "createdAt": "2026-11-20T13:26:14.069Z"
+      },
+      "indexedAt": "2026-11-20T13:26:16.353Z",
+      "replyCount": 2,
+      "repostCount": 8,
+      "likeCount": 39,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreifsjrgquaj6oyz44nln2vfyi4pwb2b4qrcep62zna4hyhms3jgxwq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreifsjrgquaj6oyz44nln2vfyi4pwb2b4qrcep62zna4hyhms3jgxwq",
+            "alt": "ink drawing of a woman with big black hair in a metal breast plate and wide pants with calf wraps, holding a great sword"
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:dfhn37hckm5e7ewcp5vrmscm/app.bsky.feed.post/3n2nxqlnrbk2n",
       "source": "bluesky",
       "author": {
@@ -66,7 +130,7 @@
       "indexedAt": "2026-11-19T11:28:29.951Z",
       "replyCount": 0,
       "repostCount": 1,
-      "likeCount": 7,
+      "likeCount": 8,
       "embed": {
         "type": "images",
         "images": [
@@ -97,8 +161,8 @@
       },
       "indexedAt": "2026-11-18T18:39:40.848Z",
       "replyCount": 3,
-      "repostCount": 15,
-      "likeCount": 38,
+      "repostCount": 16,
+      "likeCount": 43,
       "embed": {
         "type": "images",
         "images": [
@@ -238,7 +302,7 @@
       "indexedAt": "2026-11-18T12:51:34.248Z",
       "replyCount": 6,
       "repostCount": 16,
-      "likeCount": 117,
+      "likeCount": 118,
       "embed": {
         "type": "images",
         "images": [
@@ -299,7 +363,7 @@
       "indexedAt": "2026-11-17T16:12:40.058Z",
       "replyCount": 1,
       "repostCount": 13,
-      "likeCount": 38,
+      "likeCount": 39,
       "embed": {
         "type": "images",
         "images": [
@@ -669,96 +733,6 @@
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:5pf4bcxd3o4ev3cxlurtped7/app.bsky.feed.post/3n22hemslec2t",
-      "source": "bluesky",
-      "author": {
-        "handle": "bastionland.bsky.social",
-        "displayName": "Bastionland Press",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreig6qx52vldqlybadi2o3bgjzuv674pd7xuinoux2rqzw2im2pzlae"
-      },
-      "record": {
-        "text": "Right, the art reveal trailer is UP\nyoutu.be/utnnxzGeibc\nIn the replies I'll talk a bit about what's happening with this",
-        "createdAt": "2026-11-11T17:14:50.397Z"
-      },
-      "indexedAt": "2026-11-11T17:15:47.479Z",
-      "replyCount": 8,
-      "repostCount": 72,
-      "likeCount": 234,
-      "embed": {
-        "type": "external",
-        "uri": "https://youtu.be/utnnxzGeibc",
-        "title": "Intergalactic Bastionland Art Reveal Trailer",
-        "description": "YouTube video by Bastionland",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreiabj6z2tfo4g4bfu56xoamuq2tkuepu6anr2lkchunpz4nb67dz5q"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:mahuykzbrzw5cv3vnll33qv3/app.bsky.feed.post/3n22gsz5jss2k",
-      "source": "bluesky",
-      "author": {
-        "handle": "atmosphericunderworld.com",
-        "displayName": "Atmospheric Underworld \ud83d\udd1c PAXU",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mahuykzbrzw5cv3vnll33qv3/bafkreigk6ipli4zy5763cionexzy6yhyaylrpjy4mkb2njmvc4dzdrb2zy"
-      },
-      "record": {
-        "text": "It's been about a year since @jamesgrafe.bsky.social and I started on Other Magics, our spell-crafting game about whimsical wizards solving problems through the power of teamwork (and violating the laws of physics).\n\nCome check out the 1-year retrospective!\natmosphericunderworld.com/making-other...",
-        "createdAt": "2026-11-11T17:04:59.360Z"
-      },
-      "indexedAt": "2026-11-11T17:05:01.578Z",
-      "replyCount": 0,
-      "repostCount": 5,
-      "likeCount": 9,
-      "embed": {
-        "type": "external",
-        "uri": "https://atmosphericunderworld.com/making-other-magics-one-year-of-indie-ttrpg-design/",
-        "title": "Making Other Magics - One Year of Indie TTRPG Design",
-        "description": "Designing the high octane world of experimental wizardly, one catastrophic mishap at a time.",
-        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mahuykzbrzw5cv3vnll33qv3/bafkreicqjjr5s76lqh6nmjpy2z6tpl45x2pdlba3fm4bw2pu6qbmhkslja"
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:jtd7af5iuwku3z752h4ywebm/app.bsky.feed.post/3n22fqwzlok2q",
-      "source": "bluesky",
-      "author": {
-        "handle": "zedecksiew.bsky.social",
-        "displayName": "Zedeck Siew",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreifoc6t35p2pxq2fe4iapwgs3zopiaxd7enmynk3bdvjumwjl2xv74"
-      },
-      "record": {
-        "text": "In the place where MACE OF THE MONKEY KING is set, twelve gods are venerated.\n\nBrother Bantam, the cockerel god of bloodsport, a chicken supremacist, who won freedom for His people only twenty years ago, is the newest amongst them.\n\nslowlorispress.com/post/8329580...",
-        "createdAt": "2026-11-11T16:45:56.279Z"
-      },
-      "indexedAt": "2026-11-11T16:46:00.770Z",
-      "replyCount": 1,
-      "repostCount": 12,
-      "likeCount": 58,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreiewojlobnsnj76lytc5nvv4mcxyahj2ht7p66inytlyflbxorgze4",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jtd7af5iuwku3z752h4ywebm/bafkreiewojlobnsnj76lytc5nvv4mcxyahj2ht7p66inytlyflbxorgze4",
             "alt": ""
           }
         ]
@@ -3442,8 +3416,8 @@
       },
       "indexedAt": "2024-11-25T04:48:26.864Z",
       "replyCount": 87,
-      "repostCount": 2637,
-      "likeCount": 15568,
+      "repostCount": 2636,
+      "likeCount": 15566,
       "embed": {
         "type": "images",
         "images": [
