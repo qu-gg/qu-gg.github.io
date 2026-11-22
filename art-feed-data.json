@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T00:03:23.150710Z",
+  "lastUpdated": "2026-11-22T12:01:22.337375Z",
   "profiles": {
     "bluesky:naldodrinan.bsky.social": {
       "handle": "naldodrinan.bsky.social",
@@ -52,6 +52,70 @@
   },
   "posts": [
     {
+      "uri": "at://did:plc:6ailxzeervgdfuqmjeq3svmc/app.bsky.feed.post/3n2ucn6vxik2m",
+      "source": "bluesky",
+      "author": {
+        "handle": "kywardkyoti.vtubers.social",
+        "displayName": "Kyward ~ Trash Dog",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigdmxdzig4clcgtcw37ytmaqezq7nrqlfilrdfkp6lsl2xbypoive"
+      },
+      "record": {
+        "text": "\ud83d\udfe3BROADCASTING FROM STRAY CITY\ud83d\udfe3Tonight going to be showing off Dungeon Reader because it looks super cool and then designing some stuff for BREAK!!'s fan zine!\n\n\ud83d\udfe2 twitch.tv/kywardkyoti\n\ud83d\udd34 youtube.com/@KywardKyoti\n\ud83d\udfe0 altstream.online/kywardkyoti\n\n#vtuber | #vsky | #ttrpg | #BREAKrpg",
+        "createdAt": "2026-11-21T23:59:22.306Z"
+      },
+      "indexedAt": "2026-11-21T23:59:25.356Z",
+      "replyCount": 0,
+      "repostCount": 1,
+      "likeCount": 5,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigxvsmwkvk43tyamht7stz2ap6uyqnyp5nraqh4ugrtgj2szg2hgy",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ailxzeervgdfuqmjeq3svmc/bafkreigxvsmwkvk43tyamht7stz2ap6uyqnyp5nraqh4ugrtgj2szg2hgy",
+            "alt": "Going live thumbnail featuring my vtuber model with the logo \"TTRPG Yapping & Homebrewing for BREAK!! rpg\" with the background from the book showing a robot with its foot up in the air surrounded by barbwire and a fire in the back."
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
+      "uri": "at://did:plc:eet3aptjrngr7dn3qsitafg7/app.bsky.feed.post/3n2tpfjzaqk2c",
+      "source": "bluesky",
+      "author": {
+        "handle": "izzydotpng.bsky.social",
+        "displayName": "Izzy.PNG | comms OPEN",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigdrciwzvu54p5josxp56jftwjjf3qi4bbk67zpt7o742a2up5kei"
+      },
+      "record": {
+        "text": "Character commissions are finally open again, hit me up! Or if you don't need art right now, help me out and spread the word!",
+        "createdAt": "2026-11-21T18:15:04.413Z"
+      },
+      "indexedAt": "2026-11-21T18:15:08.747Z",
+      "replyCount": 1,
+      "repostCount": 11,
+      "likeCount": 19,
+      "embed": {
+        "type": "images",
+        "images": [
+          {
+            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigri2xcwxv4zz2lxt5z7rdfgczer7ujmw5sgc26y5v6r33f4brhsq",
+            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eet3aptjrngr7dn3qsitafg7/bafkreigri2xcwxv4zz2lxt5z7rdfgczer7ujmw5sgc26y5v6r33f4brhsq",
+            "alt": "a stern, pink-bearded gnome in silvery armor holding a sign reading \"comms open\""
+          }
+        ]
+      },
+      "repostBy": {
+        "handle": "naldodrinan.bsky.social",
+        "displayName": "Reynaldo (Going to PAX U)",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
+      }
+    },
+    {
       "uri": "at://did:plc:2pqxykssmtdb7uot6fgq5zow/app.bsky.feed.post/3n2re6oc4hc2p",
       "source": "bluesky",
       "author": {
@@ -98,7 +162,7 @@
       "indexedAt": "2026-11-20T13:26:16.353Z",
       "replyCount": 2,
       "repostCount": 8,
-      "likeCount": 43,
+      "likeCount": 44,
       "embed": {
         "type": "images",
         "images": [
@@ -701,38 +765,6 @@
           {
             "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreigic5ntmybtoaew47rpea5hzccentcyamljpoaa4amy3zg65x3gm4",
             "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:5pf4bcxd3o4ev3cxlurtped7/bafkreigic5ntmybtoaew47rpea5hzccentcyamljpoaa4amy3zg65x3gm4",
-            "alt": ""
-          }
-        ]
-      },
-      "repostBy": {
-        "handle": "naldodrinan.bsky.social",
-        "displayName": "Reynaldo (Going to PAX U)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3nbrcmrud3qaxczckbswhrfc/bafkreibpnmwcr5eljcggt4uq6pmv4mqvcco5m24y75kwoe6dajj7zhlraa"
-      }
-    },
-    {
-      "uri": "at://did:plc:4oinziik7xscky7moaojqwfu/app.bsky.feed.post/3n24lwp5g3c26",
-      "source": "bluesky",
-      "author": {
-        "handle": "isaacisafraid.itch.io",
-        "displayName": "Afraid of Encounters (He/Him)",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreibdxm3rdmwirgynzfpdxzzqhcx3zloq2ukxtore2nlgbwuoqnbafe"
-      },
-      "record": {
-        "text": "I've been inspired by fellow Indonesians and @elmc.at to run my online sessions without a VTT. One can argue that an online whiteboard is a VTT, but honestly it feels rather liberating.\n\nThe screenshot is my set up for my Electric Bastionland: Bastion Elysium campaign in Canva.",
-        "createdAt": "2026-11-12T13:41:51.272Z"
-      },
-      "indexedAt": "2026-11-12T13:41:59.181Z",
-      "replyCount": 3,
-      "repostCount": 1,
-      "likeCount": 20,
-      "embed": {
-        "type": "images",
-        "images": [
-          {
-            "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
-            "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4oinziik7xscky7moaojqwfu/bafkreigrcq5vv7ewkz3ocdspzv7rvzfeeoe6xwtputlxqrfe6mf2ut2ipa",
             "alt": ""
           }
         ]
@@ -3051,8 +3083,8 @@
       },
       "indexedAt": "2025-02-25T22:30:05.756Z",
       "replyCount": 64,
-      "repostCount": 2340,
-      "likeCount": 11803,
+      "repostCount": 2339,
+      "likeCount": 11802,
       "embed": {
         "type": "images",
         "images": [
@@ -3108,8 +3140,8 @@
       },
       "indexedAt": "2025-02-13T22:10:43.449Z",
       "replyCount": 13,
-      "repostCount": 721,
-      "likeCount": 3327,
+      "repostCount": 720,
+      "likeCount": 3326,
       "embed": {
         "type": "images",
         "images": [
